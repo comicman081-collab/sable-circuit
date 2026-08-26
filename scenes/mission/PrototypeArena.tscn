@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/missions/prototype_arena.gd" id="1_arena"]
+[ext_resource type="Script" path="res://scripts/actors/squad_controller.gd" id="2_squad"]
+[ext_resource type="PackedScene" path="res://scenes/actors/enemy/TargetDummy.tscn" id="3_dummy"]
+[ext_resource type="Script" path="res://scripts/ui/prototype_hud.gd" id="4_hud"]
+
+[node name="PrototypeArena" type="Node2D"]
+script = ExtResource("1_arena")
+
+[node name="SquadController" type="Node2D" parent="."]
+script = ExtResource("2_squad")
+
+[node name="TargetDummyA" parent="." instance=ExtResource("3_dummy")]
+position = Vector2(820, 280)
+
+[node name="TargetDummyB" parent="." instance=ExtResource("3_dummy")]
+position = Vector2(950, 410)
+
+[node name="TargetDummyC" parent="." instance=ExtResource("3_dummy")]
+position = Vector2(720, 560)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(480, 390)
+position_smoothing_enabled = true
+position_smoothing_speed = 7.0
+
+[node name="PrototypeHUD" type="CanvasLayer" parent="."]
+script = ExtResource("4_hud")
