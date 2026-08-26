@@ -9,14 +9,19 @@ required_files = [
     'assets/external/manifest.json','schemas/repository_layout.json',
     'scenes/bootstrap/Bootstrap.tscn','scripts/core/bootstrap.gd',
     'docs/GDD_v0.1.md','docs/TECH_ARCHITECTURE_v0.1.md','docs/ANIMATION_SPEC_v0.1.md',
-    'docs/FOLDER_STRUCTURE.md','docs/GITHUB_ACTIONS_POLICY.md','docs/VALIDATION_REPORT.md','docs/TITLE_AND_REPO.md'
+    'docs/FOLDER_STRUCTURE.md','docs/GITHUB_ACTIONS_POLICY.md','docs/VALIDATION_REPORT.md','docs/TITLE_AND_REPO.md',
+    'scenes/mission/PrototypeArena.tscn','scenes/actors/player/OperatorActor.tscn',
+    'scenes/actors/enemy/TargetDummy.tscn','scripts/actors/operator_actor.gd',
+    'scripts/actors/squad_controller.gd','scripts/actors/target_dummy.gd',
+    'scripts/animation/operator_visual.gd','scripts/combat/prototype_projectile.gd',
+    'scripts/missions/prototype_arena.gd','scripts/ui/prototype_hud.gd',
+    'tests/smoke/prototype_smoke.gd','docs/M1_PLAYABLE_SQUAD_PROTOTYPE.md'
 ]
 errors=[]
 for f in required_files:
     if not (ROOT/f).is_file():
         errors.append(f'missing required file: {f}')
 
-# Machine-readable repository layout contract.
 layout_path=ROOT/'schemas/repository_layout.json'
 if layout_path.exists():
     try:
@@ -34,14 +39,12 @@ if layout_path.exists():
     except Exception as e:
         errors.append(f'repository layout parse error: {e}')
 
-# Root/main-scene contract.
 project_text=(ROOT/'project.godot').read_text(encoding='utf-8') if (ROOT/'project.godot').exists() else ''
 if 'run/main_scene="res://scenes/bootstrap/Bootstrap.tscn"' not in project_text:
-    errors.append('project.godot must point to the CI-safe Bootstrap.tscn main scene')
+    errors.append('project.godot must point to Bootstrap.tscn')
 if (ROOT/'game').exists():
-    errors.append('forbidden root wrapper: game/ (project.godot must remain at repository root)')
+    errors.append('forbidden root wrapper: game/')
 
-# External manifest integrity contract.
 mp=ROOT/'assets/external/manifest.json'
 if mp.exists():
     try:
@@ -61,7 +64,6 @@ if mp.exists():
     except Exception as e:
         errors.append(f'external manifest parse error: {e}')
 
-# No Pages deployment during pre-production.
 wfdir=ROOT/'.github/workflows'
 if wfdir.exists():
     for p in wfdir.glob('*.y*ml'):
@@ -69,9 +71,24 @@ if wfdir.exists():
         if 'actions/deploy-pages' in text or 'pages: write' in text or 'github-pages' in text:
             errors.append(f'pages deployment is forbidden in pre-production: {p.relative_to(ROOT)}')
 
+prototype_contracts = {
+    'scripts/animation/operator_visual.gd': ['Skeleton2D.new()', 'Bone2D.new()', 'AnimationPlayer.new()', 'AnimationTree.new()', 'muzzle_socket'],
+    'scripts/actors/operator_actor.gd': ['CharacterBody2D', 'move_and_slide()', 'debug_fire_once', '_sector_from_vector'],
+    'scripts/actors/squad_controller.gd': ['request_control', '_update_formation', 'operators'],
+    'tests/smoke/prototype_smoke.gd': ['PROTOTYPE_SMOKE: PASS', 'get_bone_count()', 'debug_fire_once'],
+}
+for rel, needles in prototype_contracts.items():
+    path=ROOT/rel
+    if not path.exists():
+        continue
+    text=path.read_text(encoding='utf-8')
+    for needle in needles:
+        if needle not in text:
+            errors.append(f'{rel} missing milestone contract token: {needle}')
+
 if errors:
     print('VALIDATION: FAIL')
     for e in errors: print(' -', e)
     sys.exit(1)
 print('VALIDATION: PASS')
-print(f'checked {len(required_files)} required files and repository layout manifest')
+print(f'checked {len(required_files)} required files, repository policy, and M1 prototype contracts')
