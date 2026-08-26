@@ -1,7 +1,7 @@
 extends Node
 
-const PROTOTYPE_ARENA := preload("res://scenes/mission/PrototypeArena.tscn")
+const GAME_FLOW := preload("res://scenes/bootstrap/GameFlow.tscn")
 
 func _ready() -> void:
-    var arena := PROTOTYPE_ARENA.instantiate()
-    add_child(arena)
+    var flow := GAME_FLOW.instantiate()
+    add_child(flow)
