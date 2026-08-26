@@ -1,30 +1,32 @@
 # SABLE CIRCUIT
 
-**Status:** Pre-production / repository baseline v0.1  
+**Status:** M1 playable squad prototype  
 **Engine:** Godot 4.7.2 stable · GDScript · Compatibility renderer  
 **Genre:** Top-down real-time 3-operator squad action RPG + extraction roguelite + base progression
 
-## Core promise
+## Current playable milestone
 
-SABLE CIRCUIT is built around fully animated **3–4-head-tall operators** using the **same runtime actor for field traversal and combat**. Characters walk, run, turn, strafe, backpedal, aim, fire, reload, evade, use skills, interact, get hit, go down, revive and extract without changing into a static map token or a separate battle-only representation.
+The repository now boots directly into an internal prototype arena with three **3–4-head-tall animated operators**. One operator is player-controlled while two use companion formation AI; control can be swapped instantly with 1/2/3.
 
-Movement and aim are independent: the lower body follows locomotion while facing/upper-body combat presentation follows the aim vector through a coherent torso–arm–hand–weapon chain.
+Current controls: **WASD move · Shift run · mouse aim · LMB fire · R reload · Space evade · 1/2/3 swap**.
 
-## Baseline decisions
+Every prototype operator uses the same runtime actor for traversal and combat and contains a `Skeleton2D`/`Bone2D` semantic rig, `AnimationPlayer`, active `AnimationTree`, coherent arm/weapon aiming, muzzle socket, locomotion motion, recoil and reload presentation. The current body parts are engine-native placeholder polygons, not production artwork.
 
-1. `project.godot` is at repository root; a nested `game/` wrapper is forbidden.
-2. Three operators deploy together; one is directly controlled and can be swapped instantly.
-3. Field traversal and combat happen in the same mission space.
-4. Gameplay authority is data-driven and auditable; visuals do not author damage results.
-5. External resources fetched by CI require explicit source/version/license/destination/SHA-256 metadata.
-6. CI validates repository structure and performs a **real pinned Godot 4.7.2 headless import/smoke run**.
-7. GitHub Pages/public deployment is intentionally disabled during pre-production.
+## Frozen architecture rules
+
+1. `project.godot` remains at repository root; a nested `game/` wrapper is forbidden.
+2. Field traversal and combat use the same operator actor.
+3. Movement and aim are independent; locomotion continues while aim tracks another direction.
+4. Gameplay code authors damage/results; VFX and animation do not.
+5. External resources require source/version/license/destination/SHA-256 metadata.
+6. CI uses the exact SHA-pinned Godot 4.7.2 editor and runs real headless smoke tests.
+7. GitHub Pages/public deployment remains intentionally disabled.
 
 ## Start here
 
 - `docs/GDD_v0.1.md` — game design baseline
 - `docs/TECH_ARCHITECTURE_v0.1.md` — runtime/data/AI/save architecture
-- `docs/ANIMATION_SPEC_v0.1.md` — mandatory operator animation contract
-- `docs/FOLDER_STRUCTURE.md` — frozen repository ownership/layout
+- `docs/ANIMATION_SPEC_v0.1.md` — operator animation contract
+- `docs/M1_PLAYABLE_SQUAD_PROTOTYPE.md` — implemented playable milestone and acceptance gates
+- `docs/FOLDER_STRUCTURE.md` — repository ownership/layout
 - `docs/GITHUB_ACTIONS_POLICY.md` — CI and external-resource policy
-- `docs/VALIDATION_REPORT.md` — validation status and remaining risks
