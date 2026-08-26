@@ -179,7 +179,7 @@ func _try_fire(force: bool) -> bool:
     _visual.trigger_fire()
 
     var projectile := Projectile.new()
-    get_tree().current_scene.add_child(projectile)
+    get_tree().root.add_child(projectile)
     projectile.setup(_visual.get_muzzle_global_position(), aim_world, self, accent_color.lightened(0.35))
     return true
 
