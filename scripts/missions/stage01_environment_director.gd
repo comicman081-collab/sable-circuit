@@ -37,7 +37,7 @@ func _draw() -> void:
 
 func _draw_global_floor_detail() -> void:
     for x in range(70, 2400, 48):
-        var alpha := 0.055 if (x / 48) as int % 2 == 0 else 0.035
+        var alpha := 0.055 if int(x / 48) % 2 == 0 else 0.035
         draw_line(Vector2(x,105), Vector2(x,845), Color(0.30,0.46,0.54,alpha), 1.0)
     for y in range(115, 840, 48):
         draw_line(Vector2(60,y), Vector2(2400,y), Color(0.28,0.42,0.49,0.035), 1.0)
