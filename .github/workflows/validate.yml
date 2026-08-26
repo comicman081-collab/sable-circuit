@@ -2,7 +2,7 @@ name: Validate SABLE CIRCUIT
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "feat/**"]
   pull_request:
   workflow_dispatch:
 
