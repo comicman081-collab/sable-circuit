@@ -28,19 +28,21 @@ sable-circuit/
 │  ├─ enemies/
 │  ├─ weapons/
 │  ├─ skills/
-│  ├─ missions/
+│  ├─ missions/                  # authored stage graphs / objective authority
+│  ├─ story/                     # chapter synopsis, briefing and post-mission story
 │  ├─ loot/
 │  ├─ progression/
 │  └─ localization/
 ├─ schemas/
 │  └─ repository_layout.json
 ├─ scenes/
-│  ├─ bootstrap/
-│  ├─ base/
-│  ├─ mission/
+│  ├─ bootstrap/                 # Bootstrap + persistent GameFlow
+│  ├─ base/                      # Operations Base lobby
+│  ├─ mission/                   # PrototypeArena + authored StoryStage scenes
+│  ├─ story/                     # briefing/story presentation scenes
 │  ├─ actors/{player,companion,enemy}/
 │  ├─ world/
-│  └─ ui/
+│  └─ ui/                        # title, HUD and results
 ├─ scripts/
 │  ├─ core/
 │  ├─ actors/
@@ -62,10 +64,12 @@ sable-circuit/
 
 The earlier `game/` wrapper proposal was rejected because this repository is one Godot project. Keeping `project.godot` at root simplifies editor opening, `res://` paths, headless CI invocation and export tooling.
 
+M2 adds `data/story` and `scenes/story` as first-class owners instead of hiding narrative data inside mission scripts. Stage topology remains in `data/missions`; narrative text/briefing belongs in `data/story`.
+
 ## Folder ownership rules
 
 - `assets/`: runtime media, not gameplay authority.
-- `data/`: balance/content authority in reviewable text.
+- `data/`: balance/content/story authority in reviewable text.
 - `schemas/`: machine-readable validation contracts.
 - `scenes/`: Godot composition.
 - `scripts/`: behavior/runtime authority.

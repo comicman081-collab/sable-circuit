@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/missions/story_stage_01.gd" id="1_stage"]
+[ext_resource type="Script" path="res://scripts/actors/squad_controller.gd" id="2_squad"]
+[ext_resource type="Script" path="res://scripts/ui/story_stage_hud.gd" id="3_hud"]
+
+[node name="StoryStage01" type="Node2D"]
+script = ExtResource("1_stage")
+
+[node name="SquadController" type="Node2D" parent="."]
+script = ExtResource("2_squad")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(410, 390)
+position_smoothing_enabled = true
+position_smoothing_speed = 7.0
+
+[node name="StoryStageHUD" type="CanvasLayer" parent="."]
+script = ExtResource("3_hud")

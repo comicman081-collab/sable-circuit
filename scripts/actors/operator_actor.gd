@@ -20,6 +20,7 @@ var combat_mode := true
 var aim_world := Vector2.RIGHT
 var facing_sector := 0
 var ammo := 24
+var movement_bounds := Rect2(90.0, 110.0, 1100.0, 540.0)
 
 var _visual: OperatorVisual
 var _fire_cooldown := 0.0
@@ -54,6 +55,9 @@ func set_controlled(value: bool) -> void:
 
 func set_ai_goal(world_pos: Vector2) -> void:
     _ai_goal = world_pos
+
+func set_movement_bounds(bounds: Rect2) -> void:
+    movement_bounds = bounds
 
 func debug_drive(move_vec: Vector2, aim_vec: Vector2) -> void:
     _debug_drive = true
@@ -195,5 +199,9 @@ func _sector_from_vector(vec: Vector2) -> int:
     return int(floor(wrapped / (PI / 4.0))) % 8
 
 func _clamp_to_arena() -> void:
-    global_position.x = clampf(global_position.x, 90.0, 1190.0)
-    global_position.y = clampf(global_position.y, 110.0, 650.0)
+    var left := movement_bounds.position.x
+    var top := movement_bounds.position.y
+    var right := movement_bounds.position.x + movement_bounds.size.x
+    var bottom := movement_bounds.position.y + movement_bounds.size.y
+    global_position.x = clampf(global_position.x, left, right)
+    global_position.y = clampf(global_position.y, top, bottom)
