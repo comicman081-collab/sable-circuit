@@ -8,9 +8,10 @@ required_files=[
  'scenes/bootstrap/Bootstrap.tscn','scripts/core/bootstrap.gd','docs/GDD_v0.1.md','docs/TECH_ARCHITECTURE_v0.1.md','docs/ANIMATION_SPEC_v0.1.md','docs/FOLDER_STRUCTURE.md','docs/GITHUB_ACTIONS_POLICY.md','docs/VALIDATION_REPORT.md','docs/TITLE_AND_REPO.md',
  'scenes/mission/PrototypeArena.tscn','scenes/actors/player/OperatorActor.tscn','scenes/actors/enemy/TargetDummy.tscn','scripts/actors/operator_actor.gd','scripts/actors/squad_controller.gd','scripts/actors/target_dummy.gd','scripts/animation/operator_visual.gd','scripts/combat/prototype_projectile.gd','scripts/missions/prototype_arena.gd','scripts/ui/prototype_hud.gd','tests/smoke/prototype_smoke.gd','docs/M1_PLAYABLE_SQUAD_PROTOTYPE.md',
  'scenes/bootstrap/GameFlow.tscn','scripts/core/game_flow.gd','scenes/ui/TitleScreen.tscn','scripts/ui/title_screen.gd','scenes/base/BaseLobby.tscn','scripts/ui/base_lobby.gd','scenes/story/BriefingScreen.tscn','scripts/ui/briefing_screen.gd','scenes/mission/StoryStage01.tscn','scripts/missions/story_stage_01.gd','scripts/ui/story_stage_hud.gd','scenes/ui/MissionResults.tscn','scripts/ui/mission_results.gd','data/story/chapter_01.json','data/missions/MIS_CH01_01.json','tests/smoke/m2_story_flow_smoke.gd','docs/M2_STORY_VERTICAL_SLICE.md',
- 'data/art_profiles/playable_profiles.json','data/art_profiles/enemy_profiles.json','scripts/data/art_profile_registry.gd','scripts/actors/enemy_actor.gd','scenes/actors/enemy/EnemyActor.tscn','scripts/vfx/combat_hit_vfx.gd','scripts/audio/procedural_combat_sfx.gd','scripts/combat/combat_feedback.gd','tools/validate_unique_art.py','tests/smoke/m3_unique_art_smoke.gd','docs/M3_UNIQUE_2P5D_ART_BIBLE.md',
+ 'data/art_profiles/playable_profiles.json','data/art_profiles/enemy_profiles.json','scripts/data/art_profile_registry.gd','scripts/actors/enemy_actor.gd','scenes/actors/enemy/EnemyActor.tscn','scripts/vfx/combat_hit_vfx.gd','scripts/audio/procedural_combat_sfx.gd','scripts/combat/combat_feedback.gd','tools/validate_unique_art.py','tests/smoke/m3_unique_art_smoke.gd','docs/M3_UNIQUE_2P5D_ART_BIBLE.md','docs/M3_HIGH_RES_UNIQUE_ART_RUNTIME.md',
  'assets/characters/playable/aster/aster_master.svg','assets/characters/playable/aster/aster_rig_sheet.svg','assets/characters/playable/rook/rook_master.svg','assets/characters/playable/rook/rook_rig_sheet.svg','assets/characters/playable/mica/mica_master.svg','assets/characters/playable/mica/mica_rig_sheet.svg',
- 'assets/enemies/rifle_trooper/rifle_trooper_master.svg','assets/enemies/rifle_trooper/rifle_trooper_rig_sheet.svg','assets/enemies/shield_breacher/shield_breacher_master.svg','assets/enemies/shield_breacher/shield_breacher_rig_sheet.svg','assets/enemies/recon_drone/recon_drone_master.svg','assets/enemies/recon_drone/recon_drone_rig_sheet.svg','assets/enemies/aberrant_melee/aberrant_melee_master.svg','assets/enemies/aberrant_melee/aberrant_melee_rig_sheet.svg','assets/enemies/signal_anchor_guardian/signal_anchor_guardian_master.svg','assets/enemies/signal_anchor_guardian/signal_anchor_guardian_rig_sheet.svg'
+ 'assets/enemies/rifle_trooper/rifle_trooper_master.svg','assets/enemies/rifle_trooper/rifle_trooper_rig_sheet.svg','assets/enemies/shield_breacher/shield_breacher_master.svg','assets/enemies/shield_breacher/shield_breacher_rig_sheet.svg','assets/enemies/recon_drone/recon_drone_master.svg','assets/enemies/recon_drone/recon_drone_rig_sheet.svg','assets/enemies/aberrant_melee/aberrant_melee_master.svg','assets/enemies/aberrant_melee/aberrant_melee_rig_sheet.svg','assets/enemies/signal_anchor_guardian/signal_anchor_guardian_master.svg','assets/enemies/signal_anchor_guardian/signal_anchor_guardian_rig_sheet.svg',
+ 'scripts/animation/face_micro_rig.gd','scripts/animation/premium_operator_presentation.gd','scripts/animation/premium_enemy_presentation.gd','scripts/vfx/enemy_death_sequence.gd','scripts/missions/stage01_environment_director.gd','tests/smoke/m4_premium_motion_environment_smoke.gd','docs/M4_PREMIUM_MOTION_ENVIRONMENT.md'
 ]
 errors=[]
 for f in required_files:
@@ -71,7 +72,13 @@ contracts={
  'scripts/actors/enemy_actor.gd':['UniqueLayerRig','_build_rifle_rig','_build_shield_rig','_build_drone_rig','_build_aberrant_rig','_build_boss_rig'],
  'scripts/combat/prototype_projectile.gd':['target_group','projectile_profile','CombatFeedback.spawn_hit'],
  'tools/validate_unique_art.py':['rig_sheet','sha256','UNIQUE_ART_VALIDATION: PASS'],
- 'tests/smoke/m3_unique_art_smoke.gd':['M3_UNIQUE_ART_SMOKE: PASS','15+ high-resolution SVG rig layers','Signal Anchor Guardian boss']
+ 'tests/smoke/m3_unique_art_smoke.gd':['M3_UNIQUE_ART_SMOKE: PASS','15+ high-resolution SVG rig layers','Signal Anchor Guardian boss'],
+ 'scripts/animation/face_micro_rig.gd':['facing_sector','visible = sector not in [5, 6, 7]','MICA'],
+ 'scripts/animation/premium_operator_presentation.gd':['FaceMicroRig.new()','debug_sector_contract','debug_has_face_rig','_apply_secondary_springs'],
+ 'scripts/animation/premium_enemy_presentation.gd':['EnemyDeathSequence.new()','_fire_phase_pattern','debug_phase','debug_sector'],
+ 'scripts/vfx/enemy_death_sequence.gd':['enemy_death_sequences','_configure_identity','debug_mode'],
+ 'scripts/missions/stage01_environment_director.gd':['GATE_RIBS_AMBER_TERMINAL','SIGNAL_TEAL_WAVEFORM','debug_room_style_count','debug_room_signatures'],
+ 'tests/smoke/m4_premium_motion_environment_smoke.gd':['M4_PREMIUM_MOTION_ENVIRONMENT_SMOKE: PASS','eight directional sectors are addressable','boss enters phase 3','eight authored room environment styles']
 }
 for rel,needles in contracts.items():
  path=ROOT/rel
@@ -108,4 +115,4 @@ if errors:
  for e in errors: print(' -',e)
  sys.exit(1)
 print('VALIDATION: PASS')
-print(f'checked {len(required_files)} required files and M1/M2/M3 runtime/art contracts')
+print(f'checked {len(required_files)} required files and M1/M2/M3/M4 runtime/art contracts')
