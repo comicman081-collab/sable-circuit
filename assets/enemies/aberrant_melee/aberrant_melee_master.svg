@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+<defs><linearGradient id="bio" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c9c5ba"/><stop offset=".5" stop-color="#5b455d"/><stop offset="1" stop-color="#302d32"/></linearGradient></defs>
+<ellipse cx="508" cy="1370" rx="300" ry="62" fill="#09070b" opacity=".5"/>
+<!-- trailing biofilament tail -->
+<path d="M596 918 C780 936 862 1110 778 1260 C730 1340 650 1378 590 1408 C694 1284 720 1168 644 1090 C602 1048 572 1000 596 918Z" fill="none" stroke="#7f3fa4" stroke-width="28" stroke-linecap="round"/>
+<path d="M604 930 C758 954 804 1080 748 1188" fill="none" stroke="#da6b83" stroke-width="10" opacity=".65"/>
+<!-- hunched pelvis and legs -->
+<path d="M380 846 Q502 794 620 850 L602 1040 Q484 1106 350 1032Z" fill="#43383f"/>
+<path d="M374 1010 L480 1030 L412 1256 L282 1366 L226 1300 L344 1190Z" fill="#51444e"/>
+<path d="M516 1030 L612 1008 L692 1204 L812 1300 L756 1372 L618 1270 L548 1150Z" fill="#3d343b"/>
+<!-- long forelimbs -->
+<path d="M376 634 L244 728 L168 1024 L250 1048 L352 826 L430 744Z" fill="url(#bio)"/>
+<path d="M612 650 L744 724 L862 1008 L790 1054 L654 850 L570 766Z" fill="url(#bio)"/>
+<!-- claw hands -->
+<path d="M166 1000 L118 1098 L164 1072 L184 1140 L214 1076 L252 1122 L244 1026Z" fill="#c9c5ba"/>
+<path d="M786 1026 L818 1132 L846 1074 L888 1118 L870 1048 L918 1066 L858 994Z" fill="#c9c5ba"/>
+<!-- collapsed upper torso -->
+<path d="M330 568 Q486 486 648 594 L620 834 Q490 908 344 830Z" fill="url(#bio)"/>
+<path d="M358 596 L606 570 L574 690 L372 720Z" fill="#7f3fa4" opacity=".28"/>
+<!-- split mask skull plate -->
+<path d="M374 414 Q396 264 500 248 Q620 266 640 420 L582 560 L430 542Z" fill="#c9c5ba"/>
+<path d="M506 250 L492 548" stroke="#302d32" stroke-width="28"/>
+<path d="M398 410 L482 384 L468 456 L404 472Z" fill="#2a232b"/>
+<path d="M526 384 L616 410 L608 476 L540 454Z" fill="#2a232b"/>
+<circle cx="446" cy="424" r="16" fill="#da6b83"/>
+<circle cx="570" cy="426" r="22" fill="#7f3fa4"/>
+<!-- bio seams -->
+<path d="M388 742 C466 706 544 726 610 760" fill="none" stroke="#da6b83" stroke-width="12" opacity=".55"/>
+<path d="M310 860 C274 918 252 972 236 1022" fill="none" stroke="#7f3fa4" stroke-width="10"/>
+</svg>
