@@ -9,25 +9,29 @@ func _init() -> void:
     call_deferred("_run")
 
 func _run() -> void:
-    var playable_ids := ["CHR_PROTO_01", "CHR_PROTO_02", "CHR_PROTO_03"]
-    var enemy_ids := ["ENM_SITE7_RIFLE_01", "ENM_SITE7_SHIELD_01", "ENM_SITE7_DRONE_01", "ENM_SITE7_ABERRANT_01", "BOSS_SITE7_ANCHOR_01"]
-    var fields := ["visual_profile","motion_profile","projectile_profile","hit_vfx_profile","fire_sfx_profile","impact_sfx_profile","master_asset"]
+    var playable_ids: Array[String] = ["CHR_PROTO_01", "CHR_PROTO_02", "CHR_PROTO_03"]
+    var enemy_ids: Array[String] = ["ENM_SITE7_RIFLE_01", "ENM_SITE7_SHIELD_01", "ENM_SITE7_DRONE_01", "ENM_SITE7_ABERRANT_01", "BOSS_SITE7_ANCHOR_01"]
+    var fields: Array[String] = ["visual_profile","motion_profile","projectile_profile","hit_vfx_profile","fire_sfx_profile","impact_sfx_profile","master_asset"]
     var seen: Dictionary = {}
+    var all_ids: Array[String] = playable_ids.duplicate()
+    all_ids.append_array(enemy_ids)
 
-    for identity in playable_ids + enemy_ids:
-        var profile := ArtProfileRegistry.get_profile(identity)
+    for identity: String in all_ids:
+        var profile: Dictionary = ArtProfileRegistry.get_profile(identity)
         _check(not profile.is_empty(), identity + " profile loads")
-        for field in fields:
-            var value := str(profile.get(field, ""))
+        for field: String in fields:
+            var value: String = str(profile.get(field, ""))
             _check(not value.is_empty(), identity + " has " + field)
-            var key := field + "::" + value
+            var key: String = field + "::" + value
             _check(not seen.has(key), identity + " has unique " + field)
             seen[key] = identity
         _check(ResourceLoader.exists("res://" + str(profile.get("master_asset", ""))), identity + " master asset imports")
 
-    for i in range(playable_ids.size()):
+    var names: Array[String] = ["ASTER","ROOK","MICA"]
+    var colors: Array[Color] = [Color("69d2ff"),Color("ff9d6c"),Color("a8f07a")]
+    for i: int in range(playable_ids.size()):
         var actor := OPERATOR_SCENE.instantiate() as OperatorActor
-        actor.configure(playable_ids[i], ["ASTER","ROOK","MICA"][i], [Color("69d2ff"),Color("ff9d6c"),Color("a8f07a")][i])
+        actor.configure(playable_ids[i], names[i], colors[i])
         root.add_child(actor)
         await process_frame
         _check(actor.art_profile.get("visual_profile", "") != "", actor.display_name + " runtime profile bound")
@@ -37,7 +41,7 @@ func _run() -> void:
         actor.queue_free()
         await process_frame
 
-    for enemy_id in enemy_ids:
+    for enemy_id: String in enemy_ids:
         var enemy := ENEMY_SCENE.instantiate() as EnemyActor
         enemy.configure(enemy_id, 100.0)
         root.add_child(enemy)
@@ -53,7 +57,7 @@ func _run() -> void:
         quit(0)
         return
     print("M3_UNIQUE_ART_SMOKE: FAIL (%d)" % failures.size())
-    for failure in failures:
+    for failure: String in failures:
         print(" - " + failure)
     quit(1)
 
