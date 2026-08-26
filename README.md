@@ -12,6 +12,8 @@ Current controls: **WASD move · Shift run · mouse aim · LMB fire · R reload 
 
 Every prototype operator uses the same runtime actor for traversal and combat and contains a `Skeleton2D`/`Bone2D` semantic rig, `AnimationPlayer`, active `AnimationTree`, coherent arm/weapon aiming, muzzle socket, locomotion motion, recoil and reload presentation. The current body parts are engine-native placeholder polygons, not production artwork.
 
+The M1 branch is not eligible to merge until repository-contract and real Godot 4.7.2 headless/smoke CI gates pass.
+
 ## Frozen architecture rules
 
 1. `project.godot` remains at repository root; a nested `game/` wrapper is forbidden.
