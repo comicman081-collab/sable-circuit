@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+<defs>
+ <linearGradient id="coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#79d8ff"/><stop offset="1" stop-color="#16374a"/></linearGradient>
+ <linearGradient id="rifle" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#e8f7ff"/><stop offset=".55" stop-color="#425969"/><stop offset="1" stop-color="#13232d"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ffffff"/><stop offset=".35" stop-color="#79d8ff"/><stop offset="1" stop-color="#79d8ff" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="500" cy="1390" rx="260" ry="60" fill="#071016" opacity=".48"/>
+<!-- comet ponytail -->
+<path d="M560 360 C720 350 826 490 744 650 C702 720 628 750 572 780 C626 660 658 540 580 472 Z" fill="#143a50"/>
+<path d="M602 420 C730 428 760 510 716 602 C684 650 642 678 610 700 C642 600 646 510 602 420Z" fill="#79d8ff" opacity=".34"/>
+<!-- legs: narrow fast silhouette -->
+<path d="M386 940 L482 940 L462 1264 L400 1368 L340 1342 L388 1232Z" fill="#173746"/>
+<path d="M510 940 L594 952 L642 1234 L698 1330 L644 1370 L568 1266 L526 1110Z" fill="#1c4255"/>
+<path d="M330 1332 L414 1346 L392 1414 L286 1416 Q278 1372 330 1332" fill="#0e202b"/>
+<path d="M638 1348 L706 1318 Q758 1368 746 1414 L626 1414Z" fill="#0e202b"/>
+<!-- pelvis and short asymmetric jacket -->
+<path d="M346 694 Q470 630 598 688 L630 968 Q502 1036 344 952Z" fill="url(#coat)"/>
+<path d="M344 790 L286 986 L390 952 L430 794Z" fill="#70cdec"/>
+<path d="M598 758 L694 934 L594 918 L550 780Z" fill="#214b5d"/>
+<path d="M382 704 L546 688 L584 894 L396 902Z" fill="#e8f7ff" opacity=".13"/>
+<!-- torso armor -->
+<path d="M374 532 Q486 480 580 538 L618 736 Q494 802 354 730Z" fill="#1b4356"/>
+<path d="M392 548 L542 524 L574 670 L414 696Z" fill="#dff6ff" opacity=".14"/>
+<!-- unique right shoulder plate -->
+<path d="M580 546 L684 570 L712 640 L612 674 L566 622Z" fill="#79d8ff"/>
+<path d="M610 572 L675 592 L690 622 L620 645Z" fill="#ffcf70"/>
+<!-- left arm -->
+<path d="M358 570 L286 624 L310 810 L366 800 L380 650Z" fill="#205164"/>
+<path d="M304 782 L360 774 L396 870 L344 898Z" fill="#e6cabc"/>
+<!-- right arm aligned to rifle -->
+<path d="M624 624 L700 658 L674 804 L612 782Z" fill="#1b4356"/>
+<path d="M616 772 L680 790 L726 850 L678 882 L612 824Z" fill="#e6cabc"/>
+<!-- head -->
+<ellipse cx="484" cy="410" rx="116" ry="128" fill="#f2d6c5"/>
+<!-- hair cap and asymmetric fringe -->
+<path d="M368 414 Q348 276 488 260 Q622 276 612 406 Q580 336 526 324 Q446 360 368 414Z" fill="#143a50"/>
+<path d="M390 310 Q454 244 536 276 L476 456 Q432 402 390 310Z" fill="#1d526c"/>
+<path d="M514 284 Q598 296 608 394 L548 450 L526 326Z" fill="#0e2d3e"/>
+<!-- face features -->
+<path d="M420 424 Q448 404 470 428 Q446 444 420 424" fill="#183b50"/>
+<path d="M510 426 Q538 402 558 426 Q536 444 510 426" fill="#183b50"/>
+<path d="M466 490 Q490 502 514 488" stroke="#bd746f" stroke-width="8" fill="none" stroke-linecap="round"/>
+<!-- rifle: long precision silhouette -->
+<g transform="rotate(-9 650 760)">
+ <path d="M470 742 L878 698 L940 724 L886 760 L610 790 L560 850 L486 844 L516 790 L456 782Z" fill="url(#rifle)" stroke="#0d1d25" stroke-width="10"/>
+ <path d="M742 714 L842 704 L850 744 L752 756Z" fill="#79d8ff"/>
+ <path d="M872 696 L944 708 L982 734 L930 758 L874 754Z" fill="#ffcf70"/>
+ <path d="M600 774 L658 766 L642 844 L594 850Z" fill="#263b48"/>
+ <circle cx="730" cy="737" r="20" fill="url(#glow)"/>
+</g>
+<!-- tech seams -->
+<path d="M410 828 L554 814" stroke="#79d8ff" stroke-width="10" opacity=".7"/>
+<path d="M450 1040 L430 1250" stroke="#79d8ff" stroke-width="8" opacity=".45"/>
+</svg>
