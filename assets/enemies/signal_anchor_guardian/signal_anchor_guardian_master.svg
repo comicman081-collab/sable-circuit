@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1536" viewBox="0 0 1536 1536">
+<defs>
+ <radialGradient id="iris"><stop stop-color="#f9f4ff"/><stop offset=".18" stop-color="#f0529d"/><stop offset=".5" stop-color="#8572ff"/><stop offset="1" stop-color="#17161f"/></radialGradient>
+ <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#414857"/><stop offset=".5" stop-color="#20232b"/><stop offset="1" stop-color="#0e1015"/></linearGradient>
+</defs>
+<ellipse cx="768" cy="1268" rx="440" ry="96" fill="#05050a" opacity=".55"/>
+<!-- outer suspended ring -->
+<circle cx="768" cy="690" r="410" fill="none" stroke="url(#ring)" stroke-width="120"/>
+<circle cx="768" cy="690" r="398" fill="none" stroke="#8572ff" stroke-width="16" opacity=".55" stroke-dasharray="70 36 18 28"/>
+<!-- offset armor pylons -->
+<g fill="#2a313b" stroke="#11141a" stroke-width="14">
+ <path d="M354 350 L520 280 L572 444 L430 534Z"/>
+ <path d="M1054 286 L1224 382 L1110 542 L978 430Z"/>
+ <path d="M300 914 L458 856 L530 1050 L360 1122Z"/>
+ <path d="M1050 902 L1238 860 L1202 1086 L1024 1036Z"/>
+</g>
+<g fill="#f0529d" opacity=".55">
+ <path d="M394 366 L486 326 L514 418 L434 466Z"/>
+ <path d="M1088 334 L1172 382 L1114 466 L1048 410Z"/>
+</g>
+<!-- four articulated emitter arms -->
+<g stroke="#414857" stroke-width="58" fill="none" stroke-linecap="round">
+ <path d="M532 520 L340 610 L204 560"/>
+ <path d="M1004 520 L1188 610 L1328 548"/>
+ <path d="M518 874 L342 980 L210 946"/>
+ <path d="M1018 874 L1192 980 L1340 930"/>
+</g>
+<g fill="#8572ff" stroke="#e7e0ff" stroke-width="12">
+ <polygon points="168,516 246,538 254,596 170,612 120,566"/>
+ <polygon points="1366,504 1432,544 1412,610 1334,602 1300,554"/>
+ <polygon points="172,908 246,920 266,980 196,1016 132,970"/>
+ <polygon points="1366,888 1438,930 1418,996 1330,994 1300,934"/>
+</g>
+<!-- inner signal iris -->
+<circle cx="768" cy="690" r="244" fill="#12131a" stroke="#4b456f" stroke-width="34"/>
+<circle cx="768" cy="690" r="170" fill="url(#iris)"/>
+<path d="M768 514 L836 640 L1020 690 L836 740 L768 868 L700 740 L516 690 L700 640Z" fill="#090911" opacity=".78"/>
+<circle cx="768" cy="690" r="68" fill="#f9f4ff"/>
+<circle cx="768" cy="690" r="34" fill="#101018"/>
+<!-- orbital distortion ribs -->
+<g fill="none" stroke="#f0529d" opacity=".36">
+ <ellipse cx="768" cy="690" rx="500" ry="210" stroke-width="18" transform="rotate(14 768 690)"/>
+ <ellipse cx="768" cy="690" rx="480" ry="170" stroke-width="10" transform="rotate(-23 768 690)" stroke-dasharray="44 32"/>
+</g>
+<!-- hanging lower anchor -->
+<path d="M700 1070 L836 1070 L892 1260 L768 1370 L646 1260Z" fill="#20232b" stroke="#8572ff" stroke-width="18"/>
+<path d="M722 1130 L814 1130 L842 1232 L768 1290 L696 1232Z" fill="#f0529d" opacity=".42"/>
+</svg>
