@@ -21,6 +21,7 @@ var aim_world := Vector2.RIGHT
 var facing_sector := 0
 var ammo := 24
 var movement_bounds := Rect2(90.0, 110.0, 1100.0, 540.0)
+var art_profile: Dictionary = {}
 
 var _visual: OperatorVisual
 var _fire_cooldown := 0.0
@@ -38,14 +39,27 @@ func _ready() -> void:
     add_to_group("operators")
     _visual = $VisualRoot as OperatorVisual
     ammo = magazine_size
-    _visual.configure(display_name, accent_color)
+    if art_profile.is_empty():
+        art_profile = ArtProfileRegistry.get_profile(operator_id)
+    _visual.configure(display_name, accent_color, art_profile)
 
 func configure(id_value: String, label: String, color: Color) -> void:
     operator_id = id_value
     display_name = label
     accent_color = color
+    art_profile = ArtProfileRegistry.get_profile(operator_id)
+    _apply_profile_gamefeel()
     if is_node_ready():
-        _visual.configure(display_name, accent_color)
+        _visual.configure(display_name, accent_color, art_profile)
+
+func _apply_profile_gamefeel() -> void:
+    match str(art_profile.get("motion_profile", "")):
+        "MOT_ASTER_01":
+            walk_speed = 165.0; run_speed = 250.0; fire_interval = 0.105; reload_duration = 1.02
+        "MOT_ROOK_01":
+            walk_speed = 138.0; run_speed = 205.0; fire_interval = 0.42; reload_duration = 1.38; magazine_size = 10
+        "MOT_MICA_01":
+            walk_speed = 152.0; run_speed = 224.0; fire_interval = 0.17; reload_duration = 1.12; magazine_size = 18
 
 func set_controlled(value: bool) -> void:
     controlled = value
@@ -181,11 +195,19 @@ func _try_fire(force: bool) -> bool:
     ammo -= 1
     ammo_changed.emit(self, ammo, magazine_size)
     _visual.trigger_fire()
+    CombatFeedback.play_fire(get_tree(), art_profile)
 
+    if "ROOK" in str(art_profile.get("projectile_profile", "")):
+        for spread in [-0.13, -0.065, 0.0, 0.065, 0.13]:
+            _spawn_projectile(aim_world.rotated(spread))
+    else:
+        _spawn_projectile(aim_world)
+    return true
+
+func _spawn_projectile(dir: Vector2) -> void:
     var projectile := Projectile.new()
     get_tree().root.add_child(projectile)
-    projectile.setup(_visual.get_muzzle_global_position(), aim_world, self, accent_color.lightened(0.35))
-    return true
+    projectile.setup(_visual.get_muzzle_global_position(), dir, self, accent_color.lightened(0.35), art_profile)
 
 func _begin_reload() -> void:
     if _reload_left > 0.0 or ammo >= magazine_size:
