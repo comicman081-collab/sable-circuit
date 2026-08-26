@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "mission_id": "MIS_CH01_01",
+  "chapter_id": "CH01",
+  "title": "SITE-7: FIRST DESCENT",
+  "zone": "Abandoned Research Complex",
+  "main_route": [
+    {"id":"R01_ENTRY","type":"EVENT","title":"Outer Gate","x":260,"y":420,"objective":"Inspect the silent access terminal","story":"The gate is powered, but every personnel badge was invalidated at the same second."},
+    {"id":"R02_CORRIDOR","type":"COMBAT","title":"Decon Corridor","x":650,"y":420,"objective":"Clear the decontamination corridor","enemy_count":3,"enemy_health":80},
+    {"id":"R03_ARCHIVE","type":"RESEARCH","title":"Archive Annex","x":1040,"y":420,"objective":"Recover the missing team ledger","story":"The archive log ends mid-sentence. The final entry repeatedly references Core C and an unknown carrier signal."},
+    {"id":"R04_CONTAINMENT","type":"ELITE","title":"Containment Junction","x":1430,"y":420,"objective":"Break the containment guard line","enemy_count":2,"enemy_health":170},
+    {"id":"R05_CORE","type":"BOSS","title":"Containment Core C","x":1820,"y":420,"objective":"Destroy the signal anchor","enemy_count":1,"enemy_health":520},
+    {"id":"R06_EXTRACTION","type":"EXTRACTION","title":"Emergency Lift","x":2210,"y":420,"objective":"Extract with the recovered ledger","story":"The auxiliary reactor is failing. The team has one clean route back to the surface."}
+  ],
+  "optional_rooms": [
+    {"id":"O01_SUPPLY","type":"SUPPLY","title":"Emergency Stores","x":1040,"y":720,"reward":"field_supplies","story":"A sealed emergency locker still contains usable medical and ammunition packs."},
+    {"id":"O02_RESEARCH","type":"RESEARCH","title":"Signal Lab","x":1430,"y":720,"reward":"carrier_fragment","story":"A local recorder captured the carrier signal before the blackout. The waveform appears to respond to human movement."}
+  ]
+}
