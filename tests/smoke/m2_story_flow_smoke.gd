@@ -79,6 +79,7 @@ func _run() -> void:
     if failures.is_empty():
         print("M2_STORY_FLOW_SMOKE: PASS")
         quit(0)
+        return
     print("M2_STORY_FLOW_SMOKE: FAIL (%d)" % failures.size())
     for failure in failures:
         print(" - " + failure)
