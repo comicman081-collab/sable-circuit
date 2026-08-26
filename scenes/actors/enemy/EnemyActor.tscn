@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/actors/enemy_actor.gd" id="1_enemy"]
+
+[sub_resource type="CircleShape2D" id="Circle_enemy"]
+radius = 18.0
+
+[node name="EnemyActor" type="CharacterBody2D"]
+script = ExtResource("1_enemy")
+collision_layer = 2
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -18)
+shape = SubResource("Circle_enemy")

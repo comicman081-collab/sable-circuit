@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024">
+<defs>
+ <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9dbac7"/><stop offset="1" stop-color="#1d2a31"/></linearGradient>
+ <radialGradient id="eye"><stop stop-color="#ffffff"/><stop offset=".25" stop-color="#d9577d"/><stop offset="1" stop-color="#d9577d" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="768" cy="820" rx="310" ry="62" fill="#061016" opacity=".36"/>
+<!-- crescent chassis -->
+<path d="M298 502 Q430 232 782 232 Q1122 236 1244 500 Q1090 420 938 442 Q782 468 640 450 Q474 430 298 502Z" fill="url(#shell)" stroke="#111b20" stroke-width="18"/>
+<path d="M364 486 Q488 308 770 300 Q1048 306 1178 478 Q1040 444 910 472 Q766 504 622 474 Q494 448 364 486Z" fill="#65e1e8" opacity=".20"/>
+<!-- uneven sensor eyes -->
+<circle cx="594" cy="452" r="64" fill="#202b31"/>
+<circle cx="594" cy="452" r="48" fill="url(#eye)"/>
+<circle cx="776" cy="412" r="46" fill="#202b31"/>
+<circle cx="776" cy="412" r="34" fill="#65e1e8"/>
+<circle cx="960" cy="462" r="76" fill="#202b31"/>
+<circle cx="960" cy="462" r="56" fill="url(#eye)"/>
+<!-- asymmetrical fins -->
+<path d="M376 458 L222 354 L270 548Z" fill="#4f707d"/>
+<path d="M1120 452 L1328 322 L1240 568Z" fill="#38535e"/>
+<path d="M730 276 L776 126 L836 286Z" fill="#65e1e8" opacity=".65"/>
+<!-- dangling micro thruster -->
+<path d="M704 544 L836 544 L810 704 L728 704Z" fill="#263840"/>
+<path d="M738 704 L802 704 L834 808 L708 808Z" fill="#d9577d" opacity=".42"/>
+<path d="M742 704 L794 704 L812 780 L724 780Z" fill="#65e1e8" opacity=".72"/>
+<!-- scan aperture -->
+<path d="M522 566 Q768 650 1014 566" fill="none" stroke="#d9577d" stroke-width="18" stroke-dasharray="24 28" opacity=".7"/>
+<path d="M630 610 Q768 674 906 610" fill="none" stroke="#65e1e8" stroke-width="10" opacity=".65"/>
+<!-- panel scars -->
+<path d="M452 394 L526 342" stroke="#d7e8ee" stroke-width="10" opacity=".45"/>
+<path d="M1042 382 L1114 424" stroke="#d7e8ee" stroke-width="10" opacity=".35"/>
+</svg>

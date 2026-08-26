@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+<defs><linearGradient id="plate" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c7d0d5"/><stop offset="1" stop-color="#2d3942"/></linearGradient></defs>
+<ellipse cx="520" cy="1400" rx="310" ry="70" fill="#090d10" opacity=".58"/>
+<!-- body hidden behind shield -->
+<path d="M448 602 Q566 540 692 604 L722 984 L626 1040 L440 980Z" fill="#3b474e"/>
+<path d="M468 966 L568 972 L540 1284 L484 1380 L412 1350Z" fill="#313c43"/>
+<path d="M594 974 L684 984 L718 1288 L772 1360 L704 1390 L628 1294Z" fill="#2c373e"/>
+<!-- wedge helmet -->
+<path d="M470 438 L538 292 L688 330 L734 448 L646 526 L494 500Z" fill="url(#plate)"/>
+<path d="M550 354 L686 370 L704 426 L560 420Z" fill="#7d342e"/>
+<path d="M576 378 L664 386" stroke="#e2a94e" stroke-width="14"/>
+<!-- giant slab shield unique -->
+<path d="M170 472 L446 426 L488 1270 L254 1370 L130 1248Z" fill="#39464f" stroke="#182126" stroke-width="18"/>
+<path d="M212 520 L398 486 L424 1182 L270 1260 L188 1172Z" fill="url(#plate)"/>
+<path d="M230 654 L406 626" stroke="#e2a94e" stroke-width="24"/>
+<path d="M250 918 L420 886" stroke="#7d342e" stroke-width="38" opacity=".75"/>
+<rect x="286" y="746" width="112" height="128" rx="14" fill="#27343c"/>
+<!-- exposed hydraulic right arm -->
+<path d="M680 620 L792 678 L768 836 L690 824 L646 704Z" fill="#2e3c44"/>
+<circle cx="744" cy="710" r="34" fill="#e2a94e"/>
+<path d="M738 724 L818 860" stroke="#c7d0d5" stroke-width="32"/>
+<path d="M752 728 L832 858" stroke="#7d342e" stroke-width="10"/>
+<!-- ram pistol -->
+<g transform="rotate(11 820 850)">
+ <path d="M736 820 L942 834 L970 878 L928 916 L754 896Z" fill="#45332c" stroke="#201a18" stroke-width="10"/>
+ <rect x="790" y="840" width="112" height="28" fill="#e2a94e"/>
+ <path d="M780 886 L838 892 L820 972 L770 962Z" fill="#2b2a28"/>
+</g>
+<!-- hydraulic cables -->
+<path d="M698 760 C770 784 786 930 720 986" fill="none" stroke="#e2a94e" stroke-width="12"/>
+</svg>

@@ -4,7 +4,7 @@ class_name StoryStage01
 signal stage_completed(summary: Dictionary)
 
 const MISSION_PATH := "res://data/missions/MIS_CH01_01.json"
-const TARGET_SCENE := preload("res://scenes/actors/enemy/TargetDummy.tscn")
+const ENEMY_SCENE := preload("res://scenes/actors/enemy/EnemyActor.tscn")
 
 var mission: Dictionary = {}
 var main_route: Array = []
@@ -16,6 +16,7 @@ var _interact_latch := false
 var _supply_found := false
 var _signal_found := false
 var _ledger_recovered := false
+var _active_enemy_ids: Array[String] = []
 
 @onready var squad: SquadController = $SquadController
 @onready var camera: Camera2D = $Camera2D
@@ -96,36 +97,42 @@ func _handle_interaction(active: OperatorActor) -> void:
 func _spawn_combat(node: Dictionary) -> void:
     _combat_started = true
     enemies_alive = 0
-    var count := int(node.get("enemy_count", 1))
-    var hp := float(node.get("enemy_health", 100.0))
+    _active_enemy_ids.clear()
     var center := Vector2(float(node.get("x", 0)), float(node.get("y", 0)))
     var kind := str(node.get("type", "COMBAT"))
-    for i in range(count):
-        var enemy := TARGET_SCENE.instantiate() as PrototypeTargetDummy
-        enemy.reset_on_zero = false
-        enemy.max_health = hp
-        enemy.body_color = _enemy_color(kind)
-        enemy.position = center + Vector2(70.0 + i * 58.0, -50.0 + (i % 2) * 90.0)
-        enemy.scale = Vector2.ONE * (1.45 if kind == "BOSS" else (1.15 if kind == "ELITE" else 1.0))
+    var encounter: Array = node.get("encounter", [])
+    if encounter.is_empty():
+        push_error("StoryStage01 encounter missing for " + str(node.get("id", "?")))
+        return
+
+    for row_variant in encounter:
+        if not (row_variant is Dictionary):
+            continue
+        var row: Dictionary = row_variant
+        var identity := str(row.get("enemy_id", ""))
+        if ArtProfileRegistry.get_profile(identity).is_empty():
+            push_error("StoryStage01 unknown enemy profile: " + identity)
+            continue
+        var enemy := ENEMY_SCENE.instantiate() as EnemyActor
+        enemy.configure(identity, float(row.get("health", 100.0)))
+        enemy.position = center + Vector2(float(row.get("offset_x", 70.0)), float(row.get("offset_y", 0.0)))
         enemy.defeated.connect(_on_story_enemy_defeated)
         add_child(enemy)
         enemies_alive += 1
+        _active_enemy_ids.append(identity)
+
     hud.set_story(_combat_story(kind))
     hud.set_combat_status(enemies_alive)
-
-func _enemy_color(kind: String) -> Color:
-    match kind:
-        "BOSS": return Color("b477ff")
-        "ELITE": return Color("ff9d62")
-        _: return Color("c8d0d9")
+    queue_redraw()
 
 func _combat_story(kind: String) -> String:
     match kind:
-        "BOSS": return "CORE C // The carrier signal condenses around a physical anchor. Destroy it before the reactor warning reaches critical."
-        "ELITE": return "CONTAINMENT JUNCTION // Security frames are still following a corrupted quarantine order."
-        _: return "DECON CORRIDOR // Automated security wakes as the squad crosses the inner seal."
+        "BOSS": return "CORE C // The carrier signal condenses into the Signal Anchor Guardian. Its ring, pylons and emitter arms move as one hostile machine."
+        "ELITE": return "CONTAINMENT JUNCTION // A Shield Breacher anchors the corridor while a rifle unit works the exposed angles."
+        _: return "DECON CORRIDOR // Rifle security, a recon drone and an aberrant runner wake with three completely different attack rhythms."
 
-func _on_story_enemy_defeated(_enemy: PrototypeTargetDummy) -> void:
+func _on_story_enemy_defeated(enemy: EnemyActor) -> void:
+    _active_enemy_ids.erase(enemy.enemy_id)
     enemies_alive = maxi(0, enemies_alive - 1)
     hud.set_combat_status(enemies_alive)
     if enemies_alive == 0:
@@ -144,7 +151,7 @@ func _activate_step() -> void:
     if kind in ["EVENT", "RESEARCH", "EXTRACTION"]:
         hud.set_story("Move into the marked room and press F to interact.")
     else:
-        hud.set_story("Advance into the marked room. Combat locks progression until the room is secure.")
+        hud.set_story("Advance into the marked room. Combat locks progression until every unique hostile in the authored encounter is down.")
     _apply_progress_bounds()
     queue_redraw()
 
@@ -227,3 +234,15 @@ func debug_finish() -> Dictionary:
         "carrier_fragment": true,
         "secured_rewards": 220
     }
+
+func debug_spawn_encounter_for_step(step_index: int) -> Array[String]:
+    if step_index < 0 or step_index >= main_route.size():
+        return []
+    for node in get_tree().get_nodes_in_group("m3_enemies"):
+        if is_instance_valid(node): node.queue_free()
+    enemies_alive = 0
+    _combat_started = false
+    current_step = step_index
+    var row: Dictionary = main_route[current_step]
+    _spawn_combat(row)
+    return _active_enemy_ids.duplicate()
