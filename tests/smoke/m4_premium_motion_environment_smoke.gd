@@ -21,7 +21,7 @@ func _run() -> void:
     if premium:
         var sector_classes: Array[String] = []
         for sector in range(8):
-            var c := premium.debug_sector_contract(sector)
+            var c: Dictionary = premium.debug_sector_contract(sector)
             sector_classes.append("%d:%s:%s:%s" % [sector, c.get("front"), c.get("rear"), c.get("left")])
         _check(sector_classes.size() == 8, "eight directional sectors are addressable")
         actor.facing_sector = 6
@@ -61,11 +61,11 @@ func _run() -> void:
     var stage := STAGE_SCENE.instantiate() as StoryStage01
     root.add_child(stage)
     await process_frame
-    var env := stage.get_node_or_null("EnvironmentDirector") as Stage01EnvironmentDirector
+    var env: Stage01EnvironmentDirector = stage.get_node_or_null("EnvironmentDirector") as Stage01EnvironmentDirector
     _check(env != null, "Stage01 environment director exists")
     if env:
         _check(env.debug_room_style_count() == 8, "Stage01 has eight authored room environment styles")
-        var signatures := env.debug_room_signatures()
+        var signatures: Array = env.debug_room_signatures()
         var unique: Dictionary = {}
         for sig in signatures:
             unique[str(sig)] = true
