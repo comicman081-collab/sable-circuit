@@ -15,32 +15,46 @@ static func play(tree: SceneTree, profile_id: String, volume_db: float = -11.0) 
     player.play()
 
 static func _build_stream(profile_id: String) -> AudioStreamWAV:
-    var spec := _spec(profile_id)
-    var rate := 22050
-    var duration: float = spec.duration
-    var sample_count := maxi(64, int(duration * rate))
+    var spec: Dictionary = _spec(profile_id)
+    var rate: int = 22050
+    var duration: float = float(spec["duration"])
+    var sample_count: int = maxi(64, int(duration * float(rate)))
     var bytes := PackedByteArray()
     bytes.resize(sample_count * 2)
     var rng := RandomNumberGenerator.new()
     rng.seed = abs(profile_id.hash()) + 1
 
+    var attack_time: float = float(spec["attack"])
+    var decay_power: float = float(spec["decay"])
+    var base_hz: float = float(spec["base_hz"])
+    var sweep_hz: float = float(spec["sweep_hz"])
+    var harmonic_ratio: float = float(spec["harmonic_ratio"])
+    var phase_offset: float = float(spec["phase_offset"])
+    var fundamental_mix: float = float(spec["fundamental_mix"])
+    var harmonic_mix: float = float(spec["harmonic_mix"])
+    var square_mix: float = float(spec["square_mix"])
+    var noise_mix: float = float(spec["noise_mix"])
+    var pulse_hz: float = float(spec["pulse_hz"])
+    var pulse_mix: float = float(spec["pulse_mix"])
+    var click_strength: float = float(spec["click_strength"])
+    var gain: float = float(spec["gain"])
+
     for i in range(sample_count):
-        var t := float(i) / float(sample_count - 1)
-        var attack := clampf(t / maxf(0.002, spec.attack), 0.0, 1.0)
-        var env := attack * pow(maxf(0.0, 1.0 - t), spec.decay)
-        var freq := spec.base_hz + spec.sweep_hz * t
-        var phase := TAU * (spec.base_hz * t * duration + 0.5 * spec.sweep_hz * t * t * duration)
-        var fundamental := sin(phase)
-        var harmonic := sin(phase * spec.harmonic_ratio + spec.phase_offset)
-        var squareish := signf(sin(phase * 0.5 + 0.3))
-        var noise := rng.randf_range(-1.0, 1.0)
-        var pulse := sin(TAU * spec.pulse_hz * t * duration) if spec.pulse_hz > 0.0 else 0.0
-        var value := fundamental * spec.fundamental_mix + harmonic * spec.harmonic_mix + squareish * spec.square_mix + noise * spec.noise_mix + pulse * spec.pulse_mix
-        if spec.click_strength > 0.0:
-            value += exp(-t * 95.0) * spec.click_strength * (1.0 if i % 2 == 0 else -1.0)
-        value = clampf(value * env * spec.gain, -1.0, 1.0)
-        var sample := int(round(value * 32767.0))
-        var unsigned := sample & 0xffff
+        var t: float = float(i) / float(sample_count - 1)
+        var attack: float = clampf(t / maxf(0.002, attack_time), 0.0, 1.0)
+        var env: float = attack * pow(maxf(0.0, 1.0 - t), decay_power)
+        var phase: float = TAU * (base_hz * t * duration + 0.5 * sweep_hz * t * t * duration)
+        var fundamental: float = sin(phase)
+        var harmonic: float = sin(phase * harmonic_ratio + phase_offset)
+        var squareish: float = signf(sin(phase * 0.5 + 0.3))
+        var noise: float = rng.randf_range(-1.0, 1.0)
+        var pulse: float = sin(TAU * pulse_hz * t * duration) if pulse_hz > 0.0 else 0.0
+        var value: float = fundamental * fundamental_mix + harmonic * harmonic_mix + squareish * square_mix + noise * noise_mix + pulse * pulse_mix
+        if click_strength > 0.0:
+            value += exp(-t * 95.0) * click_strength * (1.0 if i % 2 == 0 else -1.0)
+        value = clampf(value * env * gain, -1.0, 1.0)
+        var sample: int = int(round(value * 32767.0))
+        var unsigned: int = sample & 0xffff
         bytes[i * 2] = unsigned & 0xff
         bytes[i * 2 + 1] = (unsigned >> 8) & 0xff
 
