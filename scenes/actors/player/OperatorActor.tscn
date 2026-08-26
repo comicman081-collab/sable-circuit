@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/actors/operator_actor.gd" id="1_actor"]
+[ext_resource type="Script" path="res://scripts/animation/operator_visual.gd" id="2_visual"]
+
+[sub_resource type="CapsuleShape2D" id="Capsule_operator"]
+radius = 14.0
+height = 36.0
+
+[node name="OperatorActor" type="CharacterBody2D"]
+script = ExtResource("1_actor")
+collision_layer = 1
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -18)
+shape = SubResource("Capsule_operator")
+
+[node name="VisualRoot" type="Node2D" parent="."]
+script = ExtResource("2_visual")

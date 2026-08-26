@@ -1,6 +1,7 @@
 extends Node
 
-## Minimal boot scene for repository/CI validation.
-## Runtime services are added after the architecture gate is accepted.
+const PROTOTYPE_ARENA := preload("res://scenes/mission/PrototypeArena.tscn")
+
 func _ready() -> void:
-    pass
+    var arena := PROTOTYPE_ARENA.instantiate()
+    add_child(arena)
