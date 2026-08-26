@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+<defs><linearGradient id="haz" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9e1e7"/><stop offset="1" stop-color="#43525c"/></linearGradient></defs>
+<ellipse cx="500" cy="1390" rx="250" ry="56" fill="#0a0e10" opacity=".5"/>
+<!-- narrow split armored legs -->
+<path d="M372 878 L474 884 L452 1248 L398 1364 L328 1348 L366 1224Z" fill="#374650"/>
+<path d="M506 882 L600 898 L638 1236 L696 1336 L636 1370 L560 1254 L526 1080Z" fill="#303f49"/>
+<path d="M330 1338 L408 1352 L390 1414 L292 1414Z" fill="#202a31"/>
+<path d="M630 1352 L704 1328 L740 1414 L620 1414Z" fill="#202a31"/>
+<!-- torso hazard armor -->
+<path d="M350 566 Q482 512 602 570 L640 930 Q506 992 340 926Z" fill="url(#haz)"/>
+<path d="M372 592 L578 556 L608 736 L360 760Z" fill="#b83b45" opacity=".34"/>
+<!-- offset radio mast -->
+<path d="M584 548 L644 416 L674 430 L630 570Z" fill="#2d3941"/>
+<circle cx="660" cy="414" r="18" fill="#b83b45"/>
+<!-- arms -->
+<path d="M350 620 L278 674 L298 846 L354 834 L382 692Z" fill="#4a5961"/>
+<path d="M604 620 L690 666 L674 826 L616 818 L582 690Z" fill="#3c4b54"/>
+<!-- hazard hood head -->
+<path d="M378 430 Q374 292 490 270 Q608 286 614 426 L568 526 L412 510Z" fill="#414f57"/>
+<path d="M394 322 Q486 244 588 326 L572 444 L414 452Z" fill="#d9e1e7"/>
+<path d="M416 366 L568 350 L554 426 L432 438Z" fill="#1a272d"/>
+<path d="M438 382 L486 374" stroke="#78a9b7" stroke-width="12"/>
+<path d="M506 372 L550 366" stroke="#b83b45" stroke-width="12"/>
+<!-- bullpup rifle -->
+<g transform="rotate(-5 650 790)">
+ <path d="M420 770 L900 734 L950 768 L916 802 L650 824 L600 872 L516 868 L544 822 L412 818Z" fill="#26333a" stroke="#151d21" stroke-width="10"/>
+ <path d="M526 782 L650 770 L670 820 L548 832Z" fill="#b83b45"/>
+ <path d="M720 754 L842 744 L858 786 L736 798Z" fill="#50656e"/>
+ <path d="M626 816 L682 810 L668 892 L618 894Z" fill="#202a30"/>
+</g>
+<!-- hazard striping -->
+<path d="M370 850 L600 820" stroke="#b83b45" stroke-width="18" stroke-dasharray="34 24" opacity=".7"/>
+</svg>
