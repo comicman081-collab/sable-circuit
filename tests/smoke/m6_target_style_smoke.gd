@@ -38,6 +38,10 @@ func _run() -> void:
     _check(stage.hud != null and stage.hud.debug_uses_unique_hud_art(), "HUD has twelve unique weapon/action SVG assets")
     _check(stage.hud != null and stage.hud.debug_hud_art_loaded(), "active weapon and three action icons load")
 
+    var formation: Dictionary = stage.squad.debug_formation_contract()
+    _check(bool(formation.get("compact", false)), "M6 live squad uses compact three-person echelon")
+    _check(float(formation.get("side", 999.0)) <= 60.0, "M6 followers stay readable without drifting off-frame")
+
     var camera := stage.get_node_or_null("Camera2D") as Camera2D
     _check(camera != null and camera.zoom.x >= 1.40, "M6 camera keeps premium room-focused framing")
 
@@ -70,6 +74,7 @@ func _run() -> void:
     _check(ik != null and ik.debug_connected(), "both arms solve to authoritative weapon")
     var shading := active.get_node_or_null("PremiumSpriteShading") as PremiumSpriteShading
     _check(shading != null and shading.debug_bound(), "operator high-resolution rig keeps premium shading")
+    _check(shading != null and shading.debug_premium_volume_contract(), "operator material uses key light, AO, bounce and sheen volume pass")
     active.debug_stop_drive()
 
     stage.debug_spawn_encounter_for_step(1)
@@ -77,6 +82,7 @@ func _run() -> void:
     var enemy_count := 0
     var scaled_enemy_count := 0
     var shaded_enemy_count := 0
+    var volume_enemy_count := 0
     for node in get_nodes_in_group("m3_enemies"):
         if node is EnemyActor:
             enemy_count += 1
@@ -86,9 +92,12 @@ func _run() -> void:
             var enemy_shading := node.get_node_or_null("PremiumSpriteShading") as PremiumSpriteShading
             if enemy_shading != null and enemy_shading.debug_bound():
                 shaded_enemy_count += 1
+            if enemy_shading != null and enemy_shading.debug_premium_volume_contract():
+                volume_enemy_count += 1
     _check(enemy_count >= 3, "Decon still spawns its unique enemy composition")
     _check(scaled_enemy_count == enemy_count, "all normal enemies use corrected field scale")
     _check(shaded_enemy_count == enemy_count, "all enemies keep premium render pipeline")
+    _check(volume_enemy_count == enemy_count, "all enemies receive the same volumetric shader system without sharing final art")
 
     stage.queue_free()
     await process_frame

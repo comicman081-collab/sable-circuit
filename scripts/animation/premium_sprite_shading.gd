@@ -4,6 +4,7 @@ class_name PremiumSpriteShading
 const SHADER := preload("res://assets/shaders/premium_2p5d_sprite.gdshader")
 
 var _bound := false
+var _material: ShaderMaterial
 
 func _ready() -> void:
     call_deferred("_bind")
@@ -13,21 +14,24 @@ func _bind() -> void:
         return
     var owner_actor := get_parent()
     var accent := _resolve_accent(owner_actor)
-    var material := ShaderMaterial.new()
-    material.shader = SHADER
-    material.set_shader_parameter("accent_color", accent)
-    material.set_shader_parameter("top_light", 0.24)
-    material.set_shader_parameter("lower_shadow", 0.22)
-    material.set_shader_parameter("rim_strength", 0.14)
-    material.set_shader_parameter("contrast", 1.10)
-    material.set_shader_parameter("saturation", 1.06)
+    _material = ShaderMaterial.new()
+    _material.shader = SHADER
+    _material.set_shader_parameter("accent_color", accent)
+    _material.set_shader_parameter("top_light", 0.20)
+    _material.set_shader_parameter("lower_shadow", 0.26)
+    _material.set_shader_parameter("rim_strength", 0.08)
+    _material.set_shader_parameter("contrast", 1.12)
+    _material.set_shader_parameter("saturation", 0.96)
+    _material.set_shader_parameter("bounce_strength", 0.08)
+    _material.set_shader_parameter("sheen_strength", 0.12)
+    _material.set_shader_parameter("edge_ao_strength", 0.07)
 
     var sprites: Array[Sprite2D] = []
     _collect_sprites(owner_actor, sprites)
     for sprite in sprites:
         if sprite.name == "UniqueMasterSprite":
             continue
-        sprite.material = material
+        sprite.material = _material
     _bound = true
 
 func _collect_sprites(node: Node, out: Array[Sprite2D]) -> void:
@@ -55,3 +59,13 @@ func _resolve_accent(owner_actor: Node) -> Color:
 
 func debug_bound() -> bool:
     return _bound
+
+func debug_premium_volume_contract() -> bool:
+    if not _bound or _material == null:
+        return false
+    return (
+        float(_material.get_shader_parameter("lower_shadow")) >= 0.25
+        and float(_material.get_shader_parameter("bounce_strength")) > 0.0
+        and float(_material.get_shader_parameter("sheen_strength")) > 0.0
+        and float(_material.get_shader_parameter("saturation")) <= 0.98
+    )

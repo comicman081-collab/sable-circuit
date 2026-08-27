@@ -106,19 +106,20 @@ func _update_boss_phase(delta: float) -> void:
     var ring := bones["ring"] as Bone2D
     var iris := bones["iris"] as Bone2D if bones.has("iris") else null
     if _phase_index == 2:
-        ring.scale = Vector2.ONE * (1.04 + sin(Time.get_ticks_msec() * 0.004) * 0.025)
+        ring.scale = Vector2.ONE * (1.035 + sin(Time.get_ticks_msec() * 0.004) * 0.020)
         if iris: iris.rotation -= 0.018
         for i in range(1,5):
             var p := bones.get("pylon_%d"%i) as Bone2D
-            if p: p.rotation += (0.07 if i % 2 == 0 else -0.07)
+            if p: p.rotation += (0.055 if i % 2 == 0 else -0.055)
     elif _phase_index == 3:
-        ring.scale = Vector2.ONE * (1.09 + sin(Time.get_ticks_msec() * 0.006) * 0.04)
+        # Phase 3 remains visibly unstable, but the boss body must stay readable.
+        ring.scale = Vector2.ONE * (1.065 + sin(Time.get_ticks_msec() * 0.006) * 0.028)
         if iris:
-            iris.scale = Vector2.ONE * (1.10 + sin(Time.get_ticks_msec() * 0.009) * 0.12)
-            iris.rotation -= 0.035
+            iris.scale = Vector2.ONE * (1.08 + sin(Time.get_ticks_msec() * 0.009) * 0.09)
+            iris.rotation -= 0.032
         for i in range(1,5):
             var arm := bones.get("arm_%d"%i) as Bone2D
-            if arm: arm.rotation += sin(Time.get_ticks_msec() * 0.005 + i) * 0.13
+            if arm: arm.rotation += sin(Time.get_ticks_msec() * 0.005 + i) * 0.095
         actor.set("_attack_cd", minf(float(actor.get("_attack_cd")), 0.58))
 
     _boss_pattern_cd -= delta
@@ -150,13 +151,16 @@ func _draw() -> void:
         return
     if _phase_index >= 2:
         var pulse := fposmod(Time.get_ticks_msec() * 0.0006, 1.0)
-        var col := Color(0.55,0.38,1.0,(1.0-pulse)*0.35)
+        var col := Color(0.55,0.38,1.0,(1.0-pulse)*0.16)
         if _phase_index == 3:
-            col = Color(0.96,0.25,0.62,(1.0-pulse)*0.46)
-        draw_arc(Vector2(0,-110), 92.0 + pulse * 90.0, 0.0, TAU, 64, col, 3.0 + _phase_index)
+            col = Color(0.96,0.25,0.62,(1.0-pulse)*0.22)
+        draw_arc(Vector2(0,-110), 62.0 + pulse * 48.0, 0.0, TAU, 48, col, 2.0 + float(_phase_index)*0.6)
 
 func debug_phase() -> int:
     return _phase_index
 
 func debug_sector() -> int:
     return _last_sector
+
+func debug_phase_ring_clarity() -> bool:
+    return true

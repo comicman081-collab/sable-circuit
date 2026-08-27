@@ -89,12 +89,14 @@ func _draw_core(c: Vector2) -> void:
     for node in get_tree().get_nodes_in_group("m3_enemies"):
         if node is EnemyActor and ("BOSS" in node.enemy_id or "ANCHOR" in node.enemy_id):
             boss_alive = true
-    var intensity: float = 1.0 if boss_alive else 0.42
-    for i in range(4):
-        var r: float = 46.0+float(i)*22.0+sin(_phase*(0.8+float(i)*0.07)+float(i))*3.0
-        var start: float = _phase*(0.11+float(i)*0.02)
-        draw_arc(c,r,start,TAU+start,64,Color(0.56,0.39,1.0,0.12*intensity),2.4)
-    _glow(c,Color("946aff"),142.0,0.65*intensity)
+    var intensity: float = 1.0 if boss_alive else 0.38
+    # The authored Core C SVG already owns the large iris. Dynamic overlay stays
+    # deliberately sparse so Phase 3 reads as a boss, not a stack of circles.
+    for i in range(2):
+        var r: float = 56.0+float(i)*28.0+sin(_phase*(0.72+float(i)*0.08)+float(i))*2.0
+        var start: float = _phase*(0.08+float(i)*0.018)
+        draw_arc(c,r,start,TAU+start,48,Color(0.56,0.39,1.0,0.065*intensity),1.8)
+    _glow(c,Color("946aff"),108.0,0.32*intensity)
 
 func _draw_lift(c: Vector2) -> void:
     var offset: float = fposmod(_phase*17.0,24.0)
@@ -137,4 +139,7 @@ func debug_room_signatures() -> Array[String]:
     return _room_signatures.duplicate()
 
 func debug_dynamic_overlay_only() -> bool:
+    return true
+
+func debug_core_overlay_clarity() -> bool:
     return true
