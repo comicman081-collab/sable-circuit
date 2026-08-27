@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=6 format=3]
 
 [ext_resource type="Script" path="res://scripts/actors/enemy_actor.gd" id="1_enemy"]
 [ext_resource type="Script" path="res://scripts/animation/premium_enemy_presentation.gd" id="2_premium"]
 [ext_resource type="Script" path="res://scripts/animation/enemy_ground_shadow.gd" id="3_shadow"]
+[ext_resource type="Script" path="res://scripts/ui/enemy_overhead_ui.gd" id="4_overhead"]
 
 [sub_resource type="CircleShape2D" id="Circle_enemy"]
 radius = 18.0
@@ -21,3 +22,6 @@ shape = SubResource("Circle_enemy")
 
 [node name="PremiumPresentation" type="Node2D" parent="."]
 script = ExtResource("2_premium")
+
+[node name="OverheadUI" type="Node2D" parent="."]
+script = ExtResource("4_overhead")
