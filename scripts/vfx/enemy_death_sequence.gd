@@ -131,3 +131,16 @@ func _draw() -> void:
 
 func debug_mode() -> String:
     return _mode
+
+func debug_piece_count() -> int:
+    var visible_count := 0
+    for piece in _pieces:
+        if is_instance_valid(piece) and piece.visible and piece.modulate.a > 0.02:
+            visible_count += 1
+    return visible_count
+
+func debug_progress() -> float:
+    return clampf(_age / maxf(_duration, 0.001), 0.0, 1.0)
+
+func debug_duration() -> float:
+    return _duration
