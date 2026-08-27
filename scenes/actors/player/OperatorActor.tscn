@@ -18,6 +18,7 @@ position = Vector2(0, -18)
 shape = SubResource("Capsule_operator")
 
 [node name="VisualRoot" type="Node2D" parent="."]
+scale = Vector2(1.18, 1.18)
 script = ExtResource("2_visual")
 
 [node name="PremiumPresentation" type="Node2D" parent="."]
