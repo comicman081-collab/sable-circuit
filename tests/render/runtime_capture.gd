@@ -11,6 +11,7 @@ const REQUIRED_EVIDENCE: Array[String] = [
 var stage: StoryStage01
 var camera: Camera2D
 var camera_presentation: SquadCameraPresentation
+var capture_failed := false
 
 func _init() -> void:
     call_deferred("_run")
@@ -33,7 +34,7 @@ func _run() -> void:
     await _capture_all_rooms()
     await _capture_eight_directions()
     await _capture_unique_deaths()
-    if not _verify_required_evidence():
+    if capture_failed or not _verify_required_evidence():
         quit(1)
         return
     print("RUNTIME_CAPTURE: PASS")
@@ -140,20 +141,56 @@ func _capture_unique_deaths() -> void:
     stage.call("_activate_step")
     var ids: Array[String] = ["ENM_SITE7_RIFLE_01","ENM_SITE7_SHIELD_01","ENM_SITE7_DRONE_01","ENM_SITE7_ABERRANT_01","BOSS_SITE7_ANCHOR_01"]
     var names: Array[String] = ["rifle","shield","drone","aberrant","boss"]
+    var camera_was_processing := false
+    if camera_presentation != null:
+        camera_was_processing = camera_presentation.is_processing()
+        camera_presentation.set_process(false)
     for i in range(ids.size()):
         await _clear_enemies()
         var center := Vector2(1510,350)
-        camera.global_position = center
+        var death_origin := center + Vector2(72,0)
+        camera.global_position = death_origin
         _place_squad(center+Vector2(-158,96),Vector2.RIGHT)
         var enemy := ENEMY_SCENE.instantiate() as EnemyActor
         enemy.configure(ids[i],300.0 if i==4 else 90.0)
-        enemy.global_position = center+Vector2(72,0)
+        enemy.global_position = death_origin
         stage.add_child(enemy)
         await _settle(4)
         enemy.apply_damage(9999.0)
-        await _settle(7 if i<4 else 11)
-        camera.global_position = center
+        var sequence := await _await_death_sequence(ids[i])
+        if sequence == null:
+            push_error("death evidence missing sequence for " + ids[i])
+            capture_failed = true
+            break
+        if sequence.debug_piece_count() <= 0:
+            push_error("death evidence has zero authored fragments for " + ids[i])
+            capture_failed = true
+            break
+        var target_progress := 0.30 if i < 4 else 0.24
+        var guard := 0
+        while is_instance_valid(sequence) and sequence.debug_progress() < target_progress and guard < 60:
+            camera.global_position = death_origin
+            await process_frame
+            guard += 1
+        if not is_instance_valid(sequence) or sequence.debug_piece_count() <= 0:
+            push_error("death evidence expired before capture for " + ids[i])
+            capture_failed = true
+            break
+        camera.global_position = death_origin
+        await _settle(1)
+        camera.global_position = death_origin
+        print("DEATH_EVIDENCE: %s mode=%s pieces=%d progress=%.3f" % [ids[i], sequence.debug_mode(), sequence.debug_piece_count(), sequence.debug_progress()])
         await _save("%02d_death_%s.png" % [20+i,names[i]])
+    if camera_presentation != null:
+        camera_presentation.set_process(camera_was_processing)
+
+func _await_death_sequence(expected_id: String) -> EnemyDeathSequence:
+    for _frame in range(18):
+        for node in get_nodes_in_group("enemy_death_sequences"):
+            if node is EnemyDeathSequence and node.enemy_id == expected_id:
+                return node as EnemyDeathSequence
+        await process_frame
+    return null
 
 func _place_squad(center: Vector2, aim: Vector2) -> void:
     var aim_dir := aim.normalized() if aim.length_squared() > 0.001 else Vector2.RIGHT
@@ -195,7 +232,7 @@ func _save(filename: String) -> void:
     var err := image.save_png(path)
     if err != OK:
         push_error("capture failed: " + path + " err=" + str(err))
-        quit(1)
+        capture_failed = true
         return
     print("CAPTURED: " + path)
 
