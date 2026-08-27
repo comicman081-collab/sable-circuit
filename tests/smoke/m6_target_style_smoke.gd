@@ -36,8 +36,7 @@ func _run() -> void:
     _check(depth != null and depth.debug_diagonal_depth(), "M6 depth pass follows the diagonal facility route")
 
     var minimap: TacticalMinimap = null
-    if stage.hud != null:
-        minimap = stage.hud.get("_minimap") as TacticalMinimap
+    if stage.hud != null: minimap = stage.hud.get("_minimap") as TacticalMinimap
     _check(minimap != null and minimap.debug_diagonal_route(), "HUD minimap renders the spatial diagonal route")
     _check(stage.hud != null and stage.hud.debug_uses_unique_portraits(), "HUD keeps three dedicated operator portraits")
     _check(stage.hud != null and stage.hud.debug_uses_unique_hud_art(), "HUD has twelve unique weapon/action SVG assets")
@@ -54,13 +53,14 @@ func _run() -> void:
     if camera_presentation:
         var camera_contract := camera_presentation.debug_camera_contract()
         _check(float(camera_contract.get("aim_look_ahead_x",0.0)) >= 80.0, "camera reserves forward combat space along aim")
-        _check(float(camera_contract.get("vertical_safe_bias",0.0)) >= 16.0, "camera keeps squad above the lower HUD safe area")
+        _check(float(camera_contract.get("vertical_composition_bias",999.0)) <= 0.0, "camera positions the squad lower in the viewport")
+        _check(bool(camera_contract.get("player_lower_screen_bias",false)), "camera explicitly targets lower-left player composition")
         _check(bool(camera_contract.get("compact_squad_safe",false)), "camera contract preserves all three compact squad members")
 
     var marker_contract := stage.debug_progress_marker_contract()
     _check(bool(marker_contract.get("giant_room_circles_forbidden",false)), "prototype giant room progress circles are forbidden")
-    _check(float(marker_contract.get("active_radius",999.0)) <= 30.0, "active room marker is a small floor cue")
-    _check(float(marker_contract.get("optional_radius",999.0)) <= 16.0, "optional room marker stays unobtrusive")
+    _check(bool(marker_contract.get("active_arc_removed",false)), "active room marker has no circular progress arc")
+    _check(bool(marker_contract.get("floor_chevrons",false)), "active room uses small floor chevrons only")
 
     var active := stage.squad.operators[0] as OperatorActor
     var visual_root := active.get_node_or_null("VisualRoot") as Node2D
@@ -94,6 +94,10 @@ func _run() -> void:
     _check(shading != null and shading.debug_premium_volume_contract(), "operator material uses key light, AO, bounce, sheen and softened ink")
     active.debug_stop_drive()
 
+    var boss_projectile := PrototypeProjectile.new()
+    _check(boss_projectile.debug_anchor_visual_width() <= 10.0, "Phase 3 anchor lance visual width stays restrained")
+    boss_projectile.free()
+
     stage.debug_spawn_encounter_for_step(1)
     await _frames(5)
     var enemy_count := 0
@@ -117,21 +121,16 @@ func _run() -> void:
     await process_frame
     if failures.is_empty():
         print("M6_TARGET_STYLE_SMOKE: PASS")
-        quit(0)
-        return
+        quit(0); return
     print("M6_TARGET_STYLE_SMOKE: FAIL (%d)" % failures.size())
-    for failure in failures:
-        print(" - " + failure)
+    for failure in failures: print(" - " + failure)
     quit(1)
 
 func _frames(count: int) -> void:
     for _i in range(count): await process_frame
-
 func _physics_frames(count: int) -> void:
     for _i in range(count): await physics_frame
-
 func _check(condition: bool, label: String) -> void:
     if condition: print("PASS: " + label)
     else:
-        failures.append(label)
-        push_error("FAIL: " + label)
+        failures.append(label); push_error("FAIL: " + label)

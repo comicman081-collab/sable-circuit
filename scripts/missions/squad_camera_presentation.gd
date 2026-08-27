@@ -3,7 +3,7 @@ class_name SquadCameraPresentation
 
 const AIM_LOOK_AHEAD_X := 92.0
 const AIM_LOOK_AHEAD_Y := 62.0
-const VERTICAL_SAFE_BIAS := 22.0
+const VERTICAL_COMPOSITION_BIAS := -10.0
 const SQUAD_WEIGHT := 0.22
 const FOLLOW_RATE := 8.2
 
@@ -45,15 +45,18 @@ func _target_for_active(active: OperatorActor) -> Vector2:
     var anchor := active.global_position.lerp(centroid, SQUAD_WEIGHT)
     var aim := active.aim_world.normalized() if active.aim_world.length_squared() > 0.001 else Vector2.RIGHT
     var look_ahead := Vector2(aim.x * AIM_LOOK_AHEAD_X, aim.y * AIM_LOOK_AHEAD_Y)
-    return anchor + look_ahead + Vector2(0.0, VERTICAL_SAFE_BIAS)
+    # Negative Y moves the camera slightly upward in world space so the squad
+    # appears lower in the viewport, matching the intended lower-left combat read.
+    return anchor + look_ahead + Vector2(0.0, VERTICAL_COMPOSITION_BIAS)
 
 func debug_camera_contract() -> Dictionary:
     return {
         "aim_look_ahead_x": AIM_LOOK_AHEAD_X,
         "aim_look_ahead_y": AIM_LOOK_AHEAD_Y,
-        "vertical_safe_bias": VERTICAL_SAFE_BIAS,
+        "vertical_composition_bias": VERTICAL_COMPOSITION_BIAS,
         "squad_weight": SQUAD_WEIGHT,
         "player_left_of_aim": true,
+        "player_lower_screen_bias": true,
         "compact_squad_safe": true
     }
 
