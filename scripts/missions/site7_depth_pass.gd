@@ -15,7 +15,8 @@ const ROOMS := [
 var _phase := 0.0
 
 func _ready() -> void:
-    z_index = -1
+    # Same z as the world; scene order places this after the base architecture and before VFX/actors.
+    z_index = 0
     queue_redraw()
 
 func _process(delta: float) -> void:
@@ -28,7 +29,6 @@ func _draw() -> void:
         _draw_room_depth(row[0], row[1], row[2])
 
 func _draw_corridor_depth() -> void:
-    # Deep upper cable tray / lower lip gives the horizontal route a raised-deck feel.
     draw_rect(Rect2(36,248,2365,36),Color("04080b"),true)
     draw_rect(Rect2(48,257,2340,18),Color("1d2a32"),true)
     draw_line(Vector2(55,278),Vector2(2380,278),Color(0.32,0.48,0.56,0.24),2.0)
@@ -47,43 +47,36 @@ func _draw_room_depth(center: Vector2, size: Vector2, accent: Color) -> void:
     var top_depth := Vector2(0,-24)
     var right_depth := Vector2(22,15)
 
-    # Soft cast shadow below/right of the raised room shell.
     var shadow := PackedVector2Array([
         p0+Vector2(18,26),p1+Vector2(30,26),p2+Vector2(32,32),p3+Vector2(18,32)
     ])
     draw_colored_polygon(shadow,Color(0,0,0,0.46))
 
-    # Raised top wall face.
     var top_face := PackedVector2Array([p0+top_depth,p1+top_depth,p1,p0])
     draw_colored_polygon(top_face,Color("334751"))
     draw_line(p0+top_depth+Vector2(10,2),p1+top_depth-Vector2(10,-2),Color(accent,0.48),3.0)
     draw_line(p0,p1,Color(0.07,0.10,0.12,0.90),3.0)
 
-    # Right wall face.
     var right_face := PackedVector2Array([p1,p1+right_depth,p2+right_depth,p2])
     draw_colored_polygon(right_face,Color("18262e"))
     draw_line(p1+right_depth,p2+right_depth,Color(0.34,0.49,0.56,0.22),2.0)
 
-    # Left structural rib and bottom lip.
     var left_face := PackedVector2Array([p0+top_depth,p0,p3,p3+Vector2(-12,10)])
     draw_colored_polygon(left_face,Color("253841"))
     draw_rect(Rect2(p3+Vector2(8,-6),Vector2(size.x-16,13)),Color("2a3d46"),true)
     draw_line(p3+Vector2(18,2),p2-Vector2(18,-2),Color(0.38,0.55,0.61,0.16),2.0)
 
-    # Corner braces and luminous insets.
     for side in [-1.0,1.0]:
         var x := center.x + side*(half.x-24.0)
         draw_rect(Rect2(x-7,p0.y-13,14,54),Color("0c151b"),true)
         draw_rect(Rect2(x-3,p0.y-8,6,32),Color(accent.r,accent.g,accent.b,0.34),true)
         draw_circle(Vector2(x,p0.y-12),3.5,Color(accent,0.88))
 
-    # Recessed floor plate gives a second height level.
     var inset := Rect2(center-Vector2(size.x*0.31,size.y*0.25),Vector2(size.x*0.62,size.y*0.50))
     draw_rect(inset.grow(5),Color(0,0,0,0.30),true)
     draw_rect(inset,Color(0.04,0.075,0.095,0.30),true)
     draw_rect(inset,Color(accent.r,accent.g,accent.b,0.13),false,1.5)
 
-    # Diagonal deck seams sell the slight oblique viewpoint without changing gameplay coordinates.
     var seam_alpha := 0.08 + sin(_phase*0.7+center.x*0.01)*0.015
     for i in range(4):
         var y := p0.y + 36.0 + float(i)*46.0
