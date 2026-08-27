@@ -10,8 +10,8 @@ var _key_latch := [false, false, false]
 func _ready() -> void:
     add_to_group("squad_controller")
     _spawn_operator("CHR_PROTO_01", "ASTER", Color("69d2ff"), Vector2(410,390))
-    _spawn_operator("CHR_PROTO_02", "ROOK", Color("ff9d6c"), Vector2(350,455))
-    _spawn_operator("CHR_PROTO_03", "MICA", Color("a8f07a"), Vector2(470,455))
+    _spawn_operator("CHR_PROTO_02", "ROOK", Color("d39a58"), Vector2(350,455))
+    _spawn_operator("CHR_PROTO_03", "MICA", Color("62d8c8"), Vector2(470,455))
     request_control(0)
 
 func _process(_delta: float) -> void:
