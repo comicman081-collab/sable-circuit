@@ -8,7 +8,8 @@ contracts = {
     "scripts/missions/site7_depth_pass.gd": [
         "class_name Site7DepthPass",
         "_draw_room_depth",
-        "Raised top wall face",
+        "var top_face",
+        "var right_face",
     ],
     "scripts/ui/cinematic_field_overlay.gd": [
         "class_name CinematicFieldOverlay",
@@ -48,7 +49,7 @@ contracts = {
         "RUNTIME_CAPTURE: PASS",
     ],
     "scenes/mission/StoryStage01.tscn": [
-        "Site7FacilityArchitecture",
+        "site7_facility_architecture.gd",
         "site7_depth_pass.gd",
         "cinematic_field_overlay.gd",
     ],
@@ -59,6 +60,19 @@ contracts = {
     "scenes/actors/enemy/EnemyActor.tscn": [
         "enemy_ground_shadow.gd",
         "enemy_overhead_ui.gd",
+    ],
+    "scripts/ui/story_stage_hud.gd": [
+        "Rajdhani-Medium.ttf",
+        "bundled-rajdhani-v1.201",
+        "debug_font_source",
+    ],
+    "tools/fetch_external_assets.py": [
+        "SHA-256 mismatch",
+        "EXTERNAL_ASSET: PASS",
+    ],
+    "tests/smoke/m5_font_smoke.gd": [
+        "M5_FONT_SMOKE: PASS",
+        "bundled Rajdhani v1.201",
     ],
 }
 
