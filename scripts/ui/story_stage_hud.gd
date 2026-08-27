@@ -104,9 +104,9 @@ func _build_top_status() -> void:
     _optional_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 
 func _build_squad_cards() -> void:
-    var ids := ["CHR_PROTO_01","CHR_PROTO_02","CHR_PROTO_03"]
-    var names := ["ASTER","ROOK","MICA"]
-    var accents := [Color("69d2ff"),Color("ff9d6c"),Color("a8f07a")]
+    var ids: Array[String] = ["CHR_PROTO_01","CHR_PROTO_02","CHR_PROTO_03"]
+    var names: Array[String] = ["ASTER","ROOK","MICA"]
+    var accents: Array[Color] = [Color("69d2ff"),Color("ff9d6c"),Color("a8f07a")]
     for i in range(3):
         var p := _panel(Vector2(18+i*112,548),Vector2(104,154),accents[i],0.94)
         var num := _label(p,str(i+1),Vector2(7,4),14,Color.WHITE)
@@ -133,9 +133,9 @@ func _build_squad_cards() -> void:
         _cards.append({"id":ids[i],"portrait":portrait,"hp":hp,"bar":bar,"panel":p,"accent":accents[i]})
 
 func _bind_card_portraits() -> void:
-    for card in _cards:
-        var profile := ArtProfileRegistry.get_profile(str(card["id"]))
-        var path := str(profile.get("master_asset",""))
+    for card: Dictionary in _cards:
+        var profile: Dictionary = ArtProfileRegistry.get_profile(str(card["id"]))
+        var path: String = str(profile.get("master_asset",""))
         if path.is_empty() or not ResourceLoader.exists("res://"+path):
             continue
         var texture := load("res://"+path) as Texture2D
@@ -143,8 +143,8 @@ func _bind_card_portraits() -> void:
             continue
         var atlas := AtlasTexture.new()
         atlas.atlas = texture
-        var w := float(texture.get_width())
-        var h := float(texture.get_height())
+        var w: float = float(texture.get_width())
+        var h: float = float(texture.get_height())
         atlas.region = Rect2(w*0.20,h*0.12,w*0.60,h*0.48)
         (card["portrait"] as TextureRect).texture = atlas
 
@@ -169,10 +169,12 @@ func _build_weapon_panel() -> void:
     _ammo_label.size = Vector2(70,42)
     _ammo_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
     _label(p,"AMMO",Vector2(14,12),12,Color("829ba5"))
+    var keys: Array[String] = ["Q","E","R"]
+    var glyphs: Array[String] = ["✦","➤","◎"]
     for i in range(3):
         var skill := _panel(Vector2(1022+i*76,630),Vector2(66,56),Color("3a515b"),0.92)
-        var key := ["Q","E","R"][i]
-        var glyph := ["✦","➤","◎"][i]
+        var key: String = keys[i]
+        var glyph: String = glyphs[i]
         var icon := _label(skill,glyph,Vector2(21,4),21,Color("ecf4f6"))
         icon.size = Vector2(28,28)
         var kl := _label(skill,key,Vector2(26,34),12,Color("b5c7ce"))
@@ -191,7 +193,7 @@ func _update_runtime_values() -> void:
         var actor := _stage.squad.operators[i]
         var card: Dictionary = _cards[i]
         (card["hp"] as Label).text = "%d/%d" % [int(actor.health),int(actor.max_health)]
-        var ratio := clampf(actor.health/maxf(1.0,actor.max_health),0.0,1.0)
+        var ratio: float = clampf(actor.health/maxf(1.0,actor.max_health),0.0,1.0)
         (card["bar"] as ColorRect).size.x = 88.0*ratio
         var panel := card["panel"] as Panel
         panel.modulate = Color(1,1,1,1) if not actor.is_downed() else Color(0.48,0.52,0.55,0.72)
