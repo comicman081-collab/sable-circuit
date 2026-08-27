@@ -1,15 +1,18 @@
 extends Node2D
 class_name Site7LightingRig
 
+# M6 lighting is deliberately local. Broad additive lights washed the real capture
+# toward gray; these smaller/softer pools keep the deck charcoal while letting
+# cyan/amber/violet identify each authored zone.
 const LIGHTS := [
-    [Vector2(260,390), Color("d98a37"), 0.70, 2.8],
-    [Vector2(650,390), Color("59d9ed"), 0.78, 3.0],
-    [Vector2(1040,390), Color("55e8d2"), 0.68, 2.9],
-    [Vector2(1430,390), Color("e26851"), 0.72, 2.9],
-    [Vector2(1820,390), Color("9873ff"), 0.90, 3.4],
-    [Vector2(2210,390), Color("67de91"), 0.68, 2.9],
-    [Vector2(1040,700), Color("dd9b43"), 0.58, 2.4],
-    [Vector2(1430,700), Color("55dfd2"), 0.62, 2.5]
+    [Vector2(260,390), Color("d98a37"), 0.26, 1.55],
+    [Vector2(650,390), Color("59d9ed"), 0.30, 1.65],
+    [Vector2(1040,390), Color("55e8d2"), 0.25, 1.55],
+    [Vector2(1430,390), Color("e26851"), 0.27, 1.60],
+    [Vector2(1820,390), Color("9873ff"), 0.35, 1.85],
+    [Vector2(2210,390), Color("67de91"), 0.25, 1.55],
+    [Vector2(1040,700), Color("dd9b43"), 0.22, 1.40],
+    [Vector2(1430,700), Color("55dfd2"), 0.23, 1.45]
 ]
 
 var _radial_texture: Texture2D
@@ -20,7 +23,7 @@ func _ready() -> void:
     _radial_texture = _make_radial_texture(128)
     var modulate := CanvasModulate.new()
     modulate.name = "Site7CanvasModulate"
-    modulate.color = Color(0.72,0.78,0.82,1.0)
+    modulate.color = Color(0.46,0.52,0.56,1.0)
     add_child(modulate)
 
     for row_variant in LIGHTS:
@@ -42,11 +45,9 @@ func _ready() -> void:
         _lights.append(light)
 
 func _process(_delta: float) -> void:
-    # Core C breathes subtly in sync with the signal-anchor ambience. The rest
-    # remain stable so gameplay readability does not pulse.
     if _lights.size() >= 5:
         var core := _lights[4]
-        core.energy = 0.88 + sin(Time.get_ticks_msec()*0.0015)*0.08
+        core.energy = 0.34 + sin(Time.get_ticks_msec()*0.0015)*0.035
 
 func _make_radial_texture(size: int) -> Texture2D:
     var image := Image.create(size,size,false,Image.FORMAT_RGBA8)
@@ -56,9 +57,13 @@ func _make_radial_texture(size: int) -> Texture2D:
         for x in range(size):
             var distance_value := Vector2(float(x),float(y)).distance_to(center)/radius
             var alpha := clampf(1.0-distance_value,0.0,1.0)
-            alpha = alpha*alpha*(3.0-2.0*alpha)
+            # Stronger falloff keeps light inside the room rather than filling frame.
+            alpha = pow(alpha,2.6)
             image.set_pixel(x,y,Color(1.0,1.0,1.0,alpha))
     return ImageTexture.create_from_image(image)
 
 func debug_light_count() -> int:
     return _lights.size()
+
+func debug_local_lighting() -> bool:
+    return true
