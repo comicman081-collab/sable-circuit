@@ -131,8 +131,8 @@ func _build_squad_cards() -> void:
         var num := _label(p,str(i+1),Vector2(7,4),15,Color.WHITE)
         num.size = Vector2(18,18)
         var portrait := TextureRect.new()
-        portrait.position = Vector2(8,23)
-        portrait.size = Vector2(88,70)
+        portrait.position = Vector2(8,20)
+        portrait.size = Vector2(88,74)
         portrait.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
         portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
         portrait.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
@@ -154,6 +154,12 @@ func _build_squad_cards() -> void:
 func _bind_card_portraits() -> void:
     for card: Dictionary in _cards:
         var profile: Dictionary = ArtProfileRegistry.get_profile(str(card["id"]))
+        var portrait_path: String = str(profile.get("portrait_asset",""))
+        if not portrait_path.is_empty() and ResourceLoader.exists("res://"+portrait_path):
+            var portrait_texture := load("res://"+portrait_path) as Texture2D
+            if portrait_texture != null:
+                (card["portrait"] as TextureRect).texture = portrait_texture
+                continue
         var path: String = str(profile.get("master_asset",""))
         if path.is_empty() or not ResourceLoader.exists("res://"+path):
             continue
@@ -200,7 +206,6 @@ func _build_weapon_panel() -> void:
         _skill_labels.append(kl)
 
 func _build_story_strip() -> void:
-    # Thin comms strip: keeps story context without blocking the playfield.
     var p := _panel(Vector2(388,621),Vector2(510,38),Color("24414b"),0.62)
     _story_label = _label(p,"Move into the marked room and press F to interact.",Vector2(12,7),13,Color("b9cbd1"))
     _story_label.size = Vector2(486,26)
@@ -250,3 +255,10 @@ func set_optional_status(supply_found: bool, signal_found: bool) -> void:
 
 func debug_font_source() -> String:
     return _font_source
+
+func debug_uses_unique_portraits() -> bool:
+    for card: Dictionary in _cards:
+        var profile := ArtProfileRegistry.get_profile(str(card["id"]))
+        if str(profile.get("portrait_asset","")).is_empty():
+            return false
+    return true
