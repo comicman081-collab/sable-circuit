@@ -9,23 +9,23 @@
     {
       "id":"R02_CORRIDOR","type":"COMBAT","title":"Decon Corridor","x":690,"y":350,"objective":"Clear the decontamination corridor",
       "encounter":[
-        {"enemy_id":"ENM_SITE7_RIFLE_01","health":92,"offset_x":82,"offset_y":-48},
-        {"enemy_id":"ENM_SITE7_DRONE_01","health":68,"offset_x":138,"offset_y":34},
-        {"enemy_id":"ENM_SITE7_ABERRANT_01","health":108,"offset_x":55,"offset_y":92}
+        {"enemy_id":"ENM_SITE7_RIFLE_01","health":92,"offset_x":118,"offset_y":-82},
+        {"enemy_id":"ENM_SITE7_DRONE_01","health":68,"offset_x":168,"offset_y":-18},
+        {"enemy_id":"ENM_SITE7_ABERRANT_01","health":108,"offset_x":128,"offset_y":68}
       ]
     },
     {"id":"R03_ARCHIVE","type":"RESEARCH","title":"Archive Annex","x":1100,"y":490,"objective":"Recover the missing team ledger","story":"The archive log ends mid-sentence. The final entry repeatedly references Core C and an unknown carrier signal."},
     {
       "id":"R04_CONTAINMENT","type":"ELITE","title":"Containment Junction","x":1510,"y":350,"objective":"Break the containment guard line",
       "encounter":[
-        {"enemy_id":"ENM_SITE7_SHIELD_01","health":230,"offset_x":70,"offset_y":-26},
-        {"enemy_id":"ENM_SITE7_RIFLE_01","health":108,"offset_x":150,"offset_y":75}
+        {"enemy_id":"ENM_SITE7_SHIELD_01","health":230,"offset_x":116,"offset_y":34},
+        {"enemy_id":"ENM_SITE7_RIFLE_01","health":108,"offset_x":176,"offset_y":-70}
       ]
     },
     {
       "id":"R05_CORE","type":"BOSS","title":"Containment Core C","x":1920,"y":490,"objective":"Destroy the signal anchor",
       "encounter":[
-        {"enemy_id":"BOSS_SITE7_ANCHOR_01","health":620,"offset_x":106,"offset_y":-16}
+        {"enemy_id":"BOSS_SITE7_ANCHOR_01","health":620,"offset_x":136,"offset_y":-34}
       ]
     },
     {"id":"R06_EXTRACTION","type":"EXTRACTION","title":"Emergency Lift","x":2330,"y":350,"objective":"Extract with the recovered ledger","story":"The auxiliary reactor is failing. The team has one clean route back to the surface."}
