@@ -1,6 +1,7 @@
 extends SceneTree
 
 const STAGE_SCENE := preload("res://scenes/mission/StoryStage01.tscn")
+const ENEMY_SCENE := preload("res://scenes/actors/enemy/EnemyActor.tscn")
 const OUT_DIR := "res://artifacts/runtime_capture"
 
 var stage: StoryStage01
@@ -12,7 +13,6 @@ func _init() -> void:
 func _run() -> void:
     DisplayServer.window_set_size(Vector2i(1280, 720))
     DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(OUT_DIR))
-
     stage = STAGE_SCENE.instantiate() as StoryStage01
     root.add_child(stage)
     current_scene = stage
@@ -20,76 +20,150 @@ func _run() -> void:
     camera = stage.get_node("Camera2D") as Camera2D
     camera.enabled = true
     camera.position_smoothing_enabled = false
+    # Freeze only StoryStage01's follow/interact process. Child actors, VFX and environments continue processing.
+    stage.set_process(false)
 
     await _capture_movement()
     await _capture_combat()
     await _capture_boss_phase3()
     await _capture_all_rooms()
+    await _capture_eight_directions()
+    await _capture_unique_deaths()
 
     print("RUNTIME_CAPTURE: PASS")
     quit(0)
 
 func _capture_movement() -> void:
-    _clear_enemies()
+    await _clear_enemies()
     stage.current_step = 0
     stage.call("_activate_step")
-    _place_squad(Vector2(360, 430), Vector2.RIGHT)
-    camera.global_position = Vector2(410, 420)
+    _place_squad(Vector2(330, 435), Vector2(0.93,-0.36))
+    camera.global_position = Vector2(320, 420)
     var active := stage.squad.get_active_operator()
     if active:
         active.debug_drive(Vector2.RIGHT, Vector2(0.93, -0.36))
-    await _settle(20)
+    await _settle(18)
     if active:
         active.debug_stop_drive()
+    camera.global_position = Vector2(320,420)
+    await _settle(2)
     await _save("01_map_movement.png")
 
 func _capture_combat() -> void:
-    _clear_enemies()
+    await _clear_enemies()
+    stage.current_step = 1
+    stage.call("_activate_step")
     stage.debug_spawn_encounter_for_step(1)
-    _place_squad(Vector2(510, 470), Vector2.RIGHT)
+    _place_squad(Vector2(510, 475), Vector2.RIGHT)
     camera.global_position = Vector2(650, 420)
-    await _settle(30)
+    await _settle(22)
     var active := stage.squad.get_active_operator()
     if active:
         active.aim_world = Vector2.RIGHT
         active.debug_fire_once()
-    await _settle(4)
+    camera.global_position = Vector2(650,420)
+    await _settle(1)
     await _save("02_combat_decon.png")
 
 func _capture_boss_phase3() -> void:
-    _clear_enemies()
+    await _clear_enemies()
+    stage.current_step = 4
+    stage.call("_activate_step")
     stage.debug_spawn_encounter_for_step(4)
-    _place_squad(Vector2(1660, 500), Vector2.RIGHT)
+    _place_squad(Vector2(1640, 500), Vector2.RIGHT)
     camera.global_position = Vector2(1820, 420)
-    await _settle(12)
+    await _settle(8)
     for node in get_nodes_in_group("m3_enemies"):
         if node is EnemyActor and ("BOSS" in node.enemy_id or "ANCHOR" in node.enemy_id):
             node.health = node.max_health * 0.24
-    await _settle(45)
+    await _settle(18)
+    camera.global_position = Vector2(1820,420)
+    await _settle(2)
     await _save("03_boss_phase3.png")
 
 func _capture_all_rooms() -> void:
-    _clear_enemies()
-    var rooms := [
-        ["04_room_outer_gate.png", Vector2(260,420)],
-        ["05_room_decon_corridor.png", Vector2(650,420)],
-        ["06_room_archive_annex.png", Vector2(1040,420)],
-        ["07_room_containment_junction.png", Vector2(1430,420)],
-        ["08_room_core_c.png", Vector2(1820,420)],
-        ["09_room_emergency_lift.png", Vector2(2210,420)],
-        ["10_room_emergency_stores.png", Vector2(1040,720)],
-        ["11_room_signal_lab.png", Vector2(1430,720)]
+    await _clear_enemies()
+    var rooms: Array = [
+        ["04_room_outer_gate.png", Vector2(260,420),0],
+        ["05_room_decon_corridor.png", Vector2(650,420),1],
+        ["06_room_archive_annex.png", Vector2(1040,420),2],
+        ["07_room_containment_junction.png", Vector2(1430,420),3],
+        ["08_room_core_c.png", Vector2(1820,420),4],
+        ["09_room_emergency_lift.png", Vector2(2210,420),5],
+        ["10_room_emergency_stores.png", Vector2(1040,720),2],
+        ["11_room_signal_lab.png", Vector2(1430,720),3]
     ]
     for row in rooms:
-        var filename: String = row[0]
+        var filename: String = str(row[0])
         var pos: Vector2 = row[1]
+        stage.current_step = int(row[2])
+        stage.call("_activate_step")
+        _place_squad(pos + Vector2(-105, 58), Vector2.RIGHT)
         camera.global_position = pos
-        _place_squad(pos + Vector2(-110, 60), Vector2.RIGHT)
-        await _settle(12)
+        await _settle(8)
+        camera.global_position = pos
+        await _settle(1)
         await _save(filename)
 
+func _capture_eight_directions() -> void:
+    await _clear_enemies()
+    stage.current_step = 2
+    stage.call("_activate_step")
+    camera.global_position = Vector2(1040,420)
+    var active := stage.squad.operators[0]
+    stage.squad.request_control(0)
+    stage.squad.operators[1].visible = false
+    stage.squad.operators[2].visible = false
+    active.global_position = Vector2(1040,445)
+    var vectors: Array[Vector2] = [
+        Vector2.RIGHT,
+        Vector2(1,1).normalized(),
+        Vector2.DOWN,
+        Vector2(-1,1).normalized(),
+        Vector2.LEFT,
+        Vector2(-1,-1).normalized(),
+        Vector2.UP,
+        Vector2(1,-1).normalized()
+    ]
+    for sector in range(8):
+        active.aim_world = vectors[sector]
+        active.facing_sector = sector
+        active.velocity = Vector2.ZERO
+        await _settle(3)
+        camera.global_position = Vector2(1040,420)
+        await _save("%02d_direction_sector_%d.png" % [12+sector,sector])
+    stage.squad.operators[1].visible = true
+    stage.squad.operators[2].visible = true
+
+func _capture_unique_deaths() -> void:
+    await _clear_enemies()
+    stage.current_step = 3
+    stage.call("_activate_step")
+    var ids: Array[String] = [
+        "ENM_SITE7_RIFLE_01",
+        "ENM_SITE7_SHIELD_01",
+        "ENM_SITE7_DRONE_01",
+        "ENM_SITE7_ABERRANT_01",
+        "BOSS_SITE7_ANCHOR_01"
+    ]
+    var names: Array[String] = ["rifle","shield","drone","aberrant","boss"]
+    for i in range(ids.size()):
+        await _clear_enemies()
+        var center := Vector2(1430,420)
+        camera.global_position = center
+        _place_squad(center+Vector2(-160,95),Vector2.RIGHT)
+        var enemy := ENEMY_SCENE.instantiate() as EnemyActor
+        enemy.configure(ids[i],300.0 if i==4 else 90.0)
+        enemy.global_position = center+Vector2(55,0)
+        stage.add_child(enemy)
+        await _settle(4)
+        enemy.apply_damage(9999.0)
+        await _settle(7 if i<4 else 11)
+        camera.global_position = center
+        await _save("%02d_death_%s.png" % [20+i,names[i]])
+
 func _place_squad(center: Vector2, aim: Vector2) -> void:
-    var positions := [center, center + Vector2(-62, 64), center + Vector2(-112, 104)]
+    var positions: Array[Vector2] = [center, center + Vector2(-62, 64), center + Vector2(-112, 104)]
     for i in range(stage.squad.operators.size()):
         var actor := stage.squad.operators[i]
         actor.global_position = positions[i]
@@ -104,6 +178,7 @@ func _clear_enemies() -> void:
     for node in get_nodes_in_group("enemy_death_sequences"):
         if is_instance_valid(node):
             node.queue_free()
+    await process_frame
     await process_frame
 
 func _settle(frames: int) -> void:
