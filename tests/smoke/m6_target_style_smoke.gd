@@ -25,6 +25,11 @@ func _run() -> void:
     _check(room_art != null and room_art.debug_unique_asset_count() == 8, "M6 room art paths are all unique")
     _check(room_art != null and room_art.debug_all_assets_loaded(), "all eight room SVGs import and render")
 
+    var prop_art := stage.get_node_or_null("PropArtLayer") as Site7PropArtLayer
+    _check(prop_art != null and prop_art.debug_asset_count() == 8, "M6 loads eight room-specific environment prop SVGs")
+    _check(prop_art != null and prop_art.debug_unique_asset_count() == 8, "M6 prop art paths are all unique")
+    _check(prop_art != null and prop_art.debug_all_assets_loaded(), "all eight environment prop SVGs import and render")
+
     var surface := stage.get_node_or_null("SurfaceDetail") as Site7SurfaceDetail
     _check(surface != null and surface.debug_surface_count() == 8, "M6 retains eight unique high-density room surfaces")
     var depth := stage.get_node_or_null("DepthPass") as Site7DepthPass
@@ -74,7 +79,7 @@ func _run() -> void:
     _check(ik != null and ik.debug_connected(), "both arms solve to authoritative weapon")
     var shading := active.get_node_or_null("PremiumSpriteShading") as PremiumSpriteShading
     _check(shading != null and shading.debug_bound(), "operator high-resolution rig keeps premium shading")
-    _check(shading != null and shading.debug_premium_volume_contract(), "operator material uses key light, AO, bounce and sheen volume pass")
+    _check(shading != null and shading.debug_premium_volume_contract(), "operator material uses key light, AO, bounce, sheen and softened ink")
     active.debug_stop_drive()
 
     stage.debug_spawn_encounter_for_step(1)
@@ -87,17 +92,14 @@ func _run() -> void:
         if node is EnemyActor:
             enemy_count += 1
             var scale_layer := node.get_node_or_null("FieldScalePresentation") as EnemyFieldScalePresentation
-            if scale_layer != null and scale_layer.debug_scaled_for_field():
-                scaled_enemy_count += 1
+            if scale_layer != null and scale_layer.debug_scaled_for_field(): scaled_enemy_count += 1
             var enemy_shading := node.get_node_or_null("PremiumSpriteShading") as PremiumSpriteShading
-            if enemy_shading != null and enemy_shading.debug_bound():
-                shaded_enemy_count += 1
-            if enemy_shading != null and enemy_shading.debug_premium_volume_contract():
-                volume_enemy_count += 1
+            if enemy_shading != null and enemy_shading.debug_bound(): shaded_enemy_count += 1
+            if enemy_shading != null and enemy_shading.debug_premium_volume_contract(): volume_enemy_count += 1
     _check(enemy_count >= 3, "Decon still spawns its unique enemy composition")
     _check(scaled_enemy_count == enemy_count, "all normal enemies use corrected field scale")
     _check(shaded_enemy_count == enemy_count, "all enemies keep premium render pipeline")
-    _check(volume_enemy_count == enemy_count, "all enemies receive the same volumetric shader system without sharing final art")
+    _check(volume_enemy_count == enemy_count, "all enemies receive volumetric shader system without sharing final art")
 
     stage.queue_free()
     await process_frame
@@ -111,16 +113,13 @@ func _run() -> void:
     quit(1)
 
 func _frames(count: int) -> void:
-    for _i in range(count):
-        await process_frame
+    for _i in range(count): await process_frame
 
 func _physics_frames(count: int) -> void:
-    for _i in range(count):
-        await physics_frame
+    for _i in range(count): await physics_frame
 
 func _check(condition: bool, label: String) -> void:
-    if condition:
-        print("PASS: " + label)
+    if condition: print("PASS: " + label)
     else:
         failures.append(label)
         push_error("FAIL: " + label)

@@ -25,6 +25,7 @@ func _bind() -> void:
     _material.set_shader_parameter("bounce_strength", 0.08)
     _material.set_shader_parameter("sheen_strength", 0.12)
     _material.set_shader_parameter("edge_ao_strength", 0.07)
+    _material.set_shader_parameter("ink_softening", 0.24)
 
     var sprites: Array[Sprite2D] = []
     _collect_sprites(owner_actor, sprites)
@@ -45,16 +46,11 @@ func _resolve_accent(owner_actor: Node) -> Color:
         return (owner_actor as OperatorActor).accent_color
     if owner_actor is EnemyActor:
         var id := (owner_actor as EnemyActor).enemy_id
-        if "RIFLE" in id:
-            return Color("ef7d72")
-        if "SHIELD" in id:
-            return Color("f0ad55")
-        if "DRONE" in id:
-            return Color("e667a0")
-        if "ABERRANT" in id:
-            return Color("c566d9")
-        if "BOSS" in id or "ANCHOR" in id:
-            return Color("a78cff")
+        if "RIFLE" in id: return Color("ef7d72")
+        if "SHIELD" in id: return Color("f0ad55")
+        if "DRONE" in id: return Color("e667a0")
+        if "ABERRANT" in id: return Color("c566d9")
+        if "BOSS" in id or "ANCHOR" in id: return Color("a78cff")
     return Color("72dbe8")
 
 func debug_bound() -> bool:
@@ -68,4 +64,5 @@ func debug_premium_volume_contract() -> bool:
         and float(_material.get_shader_parameter("bounce_strength")) > 0.0
         and float(_material.get_shader_parameter("sheen_strength")) > 0.0
         and float(_material.get_shader_parameter("saturation")) <= 0.98
+        and float(_material.get_shader_parameter("ink_softening")) >= 0.20
     )
