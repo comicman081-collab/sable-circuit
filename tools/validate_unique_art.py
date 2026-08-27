@@ -31,9 +31,13 @@ for i,p in enumerate(profiles):
     ident=p.get('actor_id') or p.get('enemy_id') or f'profile[{i}]'
     for key in REQUIRED:
         if not p.get(key): errors.append(f'{ident}: missing {key}')
+    if p.get('actor_id') and not p.get('portrait_asset'):
+        errors.append(f'{ident}: playable identity missing portrait_asset')
     palette=p.get('palette',[])
     if not isinstance(palette,list) or len(palette)<4: errors.append(f'{ident}: palette must contain at least 4 colors')
-    for asset_key in ('master_asset','rig_sheet'):
+    asset_keys=['master_asset','rig_sheet']
+    if p.get('actor_id'): asset_keys.append('portrait_asset')
+    for asset_key in asset_keys:
         rel=p.get(asset_key)
         if not rel: continue
         asset=ROOT/rel
@@ -49,6 +53,14 @@ for field in UNIQUE_FIELDS:
         if value in seen: errors.append(f'duplicate {field}: {value!r} used by {seen[value]} and {ident}')
         else: seen[value]=ident
 
+portrait_seen={}
+for p in profiles:
+    if not p.get('actor_id'): continue
+    ident=p['actor_id']; value=str(p.get('portrait_asset','')).strip()
+    if not value: continue
+    if value in portrait_seen: errors.append(f'duplicate portrait_asset: {value!r} used by {portrait_seen[value]} and {ident}')
+    else: portrait_seen[value]=ident
+
 # Visible final sources may not be byte-identical under different paths/names.
 for asset_key in ('master_asset','rig_sheet'):
     hashes={}
@@ -62,6 +74,17 @@ for asset_key in ('master_asset','rig_sheet'):
         if digest in hashes: errors.append(f'byte-identical {asset_key} reused by {hashes[digest]} and {ident}: sha256={digest}')
         else: hashes[digest]=ident
 
+portrait_hashes={}
+for p in profiles:
+    if not p.get('actor_id'): continue
+    ident=p['actor_id']; rel=p.get('portrait_asset')
+    if not rel: continue
+    asset=ROOT/rel
+    if not asset.is_file(): continue
+    digest=hashlib.sha256(asset.read_bytes()).hexdigest()
+    if digest in portrait_hashes: errors.append(f'byte-identical portrait_asset reused by {portrait_hashes[digest]} and {ident}: sha256={digest}')
+    else: portrait_hashes[digest]=ident
+
 identity_ids=[]
 for p in profiles:
     ident=p.get('actor_id') or p.get('enemy_id')
@@ -74,4 +97,4 @@ if errors:
     for e in errors: print(' -',e)
     sys.exit(1)
 print('UNIQUE_ART_VALIDATION: PASS')
-print(f'validated {len(profiles)} identities with unique master art, rig sheets, motion, projectile, VFX and SFX identities')
+print(f'validated {len(profiles)} identities with unique master/rig/portrait art plus motion, projectile, VFX and SFX identities')
