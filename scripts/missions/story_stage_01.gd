@@ -182,35 +182,43 @@ func _finish_mission() -> void:
     stage_completed.emit(summary)
 
 func _draw() -> void:
-    draw_rect(Rect2(40, 70, 2380, 790), Color("0d171e"), true)
+    # M6: StoryStage01 no longer paints opaque prototype rooms. Gameplay authority
+    # remains here, while FacilityArchitecture/SurfaceDetail/EnvironmentDirector own
+    # the visible Site-7 world. Only lightweight progression markers are drawn.
     for i in range(main_route.size()):
         var node: Dictionary = main_route[i]
         var p := Vector2(float(node.get("x", 0)), float(node.get("y", 0)))
         if i < main_route.size() - 1:
             var next_node: Dictionary = main_route[i + 1]
             var np := Vector2(float(next_node.get("x", 0)), float(next_node.get("y", 0)))
-            draw_line(p, np, Color("344d5a"), 18.0)
-        _draw_room(node, i <= current_step)
+            draw_line(p, np, Color(0.18,0.34,0.40,0.10 if i >= current_step else 0.18), 5.0)
+        _draw_room_marker(node, i, i <= current_step)
     for room_variant in optional_rooms:
         var room: Dictionary = room_variant
         var main_x := float(room.get("x", 0))
-        draw_line(Vector2(main_x, 520), Vector2(main_x, float(room.get("y", 720)) - 120), Color("2a444f"), 12.0)
+        var room_y := float(room.get("y", 720))
+        draw_line(Vector2(main_x, 530), Vector2(main_x, room_y - 105), Color(0.20,0.42,0.46,0.10), 4.0)
         var recovered := (str(room.get("id", "")) == "O01_SUPPLY" and _supply_found) or (str(room.get("id", "")) == "O02_RESEARCH" and _signal_found)
-        _draw_optional_room(room, recovered)
+        _draw_optional_marker(room, recovered)
 
-func _draw_room(node: Dictionary, unlocked: bool) -> void:
+func _draw_room_marker(node: Dictionary, index: int, unlocked: bool) -> void:
     var p := Vector2(float(node.get("x", 0)), float(node.get("y", 0)))
-    var rect := Rect2(p - Vector2(155, 120), Vector2(310, 240))
-    var fill := Color("19303b") if unlocked else Color("11191e")
-    draw_rect(rect, fill, true)
-    draw_rect(rect, Color("588396") if unlocked else Color("28353b"), false, 4.0)
-    draw_circle(p, 12.0, Color("63c7df") if unlocked else Color("34434a"))
+    var active := index == current_step
+    var color := Color("6ee7f1") if active else (Color(0.34,0.55,0.61,0.24) if unlocked else Color(0.20,0.27,0.31,0.18))
+    var radius := 80.0 if active else 66.0
+    draw_arc(p,radius,-0.28,PI*0.68,24,Color(color.r,color.g,color.b,color.a*0.55),2.0)
+    if active:
+        draw_arc(p,radius+8.0,PI*0.78,PI*1.28,12,Color(0.95,0.68,0.24,0.50),3.0)
+        for i in range(4):
+            var angle := -0.18+float(i)*PI*0.44
+            var d := Vector2.RIGHT.rotated(angle)
+            draw_line(p+d*(radius-4.0),p+d*(radius+8.0),Color(0.54,0.95,0.98,0.50),2.0)
 
-func _draw_optional_room(node: Dictionary, recovered: bool) -> void:
+func _draw_optional_marker(node: Dictionary, recovered: bool) -> void:
     var p := Vector2(float(node.get("x", 0)), float(node.get("y", 0)))
-    var rect := Rect2(p - Vector2(130, 92), Vector2(260, 184))
-    draw_rect(rect, Color("18272d"), true)
-    draw_rect(rect, Color("69a07f") if recovered else Color("496472"), false, 3.0)
+    var color := Color("71e0a0") if recovered else Color(0.35,0.65,0.68,0.28)
+    draw_arc(p,58.0,0.0,TAU,32,color,2.0)
+    draw_circle(p,4.0,Color(color.r,color.g,color.b,0.62))
 
 func debug_route_count() -> int:
     return main_route.size()
@@ -239,7 +247,8 @@ func debug_spawn_encounter_for_step(step_index: int) -> Array[String]:
     if step_index < 0 or step_index >= main_route.size():
         return []
     for node in get_tree().get_nodes_in_group("m3_enemies"):
-        if is_instance_valid(node): node.queue_free()
+        if is_instance_valid(node):
+            node.queue_free()
     enemies_alive = 0
     _combat_started = false
     current_step = step_index
