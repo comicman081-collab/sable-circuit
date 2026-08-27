@@ -164,7 +164,7 @@ func _bind_card_portraits() -> void:
         atlas.atlas = texture
         var w: float = float(texture.get_width())
         var h: float = float(texture.get_height())
-        atlas.region = Rect2(w*0.20,h*0.12,w*0.60,h*0.48)
+        atlas.region = Rect2(w*0.20,h*0.08,w*0.60,h*0.46)
         (card["portrait"] as TextureRect).texture = atlas
 
 func _build_energy_bar() -> void:
@@ -200,10 +200,11 @@ func _build_weapon_panel() -> void:
         _skill_labels.append(kl)
 
 func _build_story_strip() -> void:
-    var p := _panel(Vector2(356,602),Vector2(610,58),Color("223a43"),0.78)
-    _story_label = _label(p,"Move into the marked room and press F to interact.",Vector2(14,8),15,Color("c7d8de"))
-    _story_label.size = Vector2(582,42)
-    _story_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+    # Thin comms strip: keeps story context without blocking the playfield.
+    var p := _panel(Vector2(388,621),Vector2(510,38),Color("24414b"),0.62)
+    _story_label = _label(p,"Move into the marked room and press F to interact.",Vector2(12,7),13,Color("b9cbd1"))
+    _story_label.size = Vector2(486,26)
+    _story_label.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 
 func _update_runtime_values() -> void:
     if _stage == null or _stage.squad == null:
