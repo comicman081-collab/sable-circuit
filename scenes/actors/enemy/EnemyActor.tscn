@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Script" path="res://scripts/actors/enemy_actor.gd" id="1_enemy"]
 [ext_resource type="Script" path="res://scripts/animation/premium_enemy_presentation.gd" id="2_premium"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://scripts/ui/enemy_overhead_ui.gd" id="4_overhead"]
 [ext_resource type="Script" path="res://scripts/animation/premium_sprite_shading.gd" id="5_shading"]
 [ext_resource type="Script" path="res://scripts/animation/enemy_field_scale_presentation.gd" id="6_field_scale"]
+[ext_resource type="Script" path="res://scripts/animation/enemy_detail_overlay_presentation.gd" id="7_detail"]
 
 [sub_resource type="CircleShape2D" id="Circle_enemy"]
 radius = 18.0
@@ -27,6 +28,9 @@ script = ExtResource("2_premium")
 
 [node name="FieldScalePresentation" type="Node" parent="."]
 script = ExtResource("6_field_scale")
+
+[node name="DetailOverlayPresentation" type="Node" parent="."]
+script = ExtResource("7_detail")
 
 [node name="OverheadUI" type="Node2D" parent="."]
 script = ExtResource("4_overhead")
