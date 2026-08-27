@@ -1,15 +1,67 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2048" height="2048" viewBox="0 0 2048 2048">
 <defs>
- <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8de2ff"/><stop offset=".52" stop-color="#2c7693"/><stop offset="1" stop-color="#16374a"/></linearGradient>
- <linearGradient id="m" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#eefaff"/><stop offset=".5" stop-color="#617887"/><stop offset="1" stop-color="#172832"/></linearGradient>
+ <linearGradient id="coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#315a70"/><stop offset=".48" stop-color="#183344"/><stop offset="1" stop-color="#0e1f2b"/></linearGradient>
+ <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1f5fb"/><stop offset=".55" stop-color="#b9c5d8"/><stop offset="1" stop-color="#77879f"/></linearGradient>
+ <linearGradient id="gun" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#edf6fa"/><stop offset=".36" stop-color="#708493"/><stop offset=".72" stop-color="#263a45"/><stop offset="1" stop-color="#101a20"/></linearGradient>
 </defs>
-<!-- tile 0 head --> <g transform="translate(256 256)"><ellipse rx="128" ry="144" fill="#f1d7c7"/><path d="M-100-22 Q-76-132 6-140 Q104-130 108-18 Q54-72 2-78 Q-46-48-100-22" fill="#16475e"/><path d="M-66 16 Q-30-8 0 18 Q-34 39-66 16M24 16 Q61-8 90 18 Q58 39 24 16" fill="#163c51"/><path d="M-20 83 Q10 101 41 80" fill="none" stroke="#c27b72" stroke-width="10" stroke-linecap="round"/><path d="M-90-60 Q-30-144 48-118 L-10 30Z" fill="#26708c" opacity=".65"/></g>
-<!-- tile 1 hair/tail --> <g transform="translate(768 256)"><path d="M-140-72 Q-22-168 96-88 Q148-30 112 58 Q80 132 4 184 Q58 42 16-38 Q-24-102-140-72Z" fill="#153f54"/><path d="M-54-92 Q70-100 104-4 Q92 74 24 138 Q66 30 20-52Z" fill="#3b96b4" opacity=".45"/><path d="M-112-38 L-8-128 L68-86 L-42 38Z" fill="#1e627c"/></g>
-<!-- tile 2 torso jacket --> <g transform="translate(1280 256)"><path d="M-138-120 Q0-170 138-116 L164 116 Q10 178-154 116Z" fill="url(#a)"/><path d="M-94-90 L92-112 L118 68 L-76 90Z" fill="#e8f7ff" opacity=".16"/><path d="M84-106 L174-72 L148 10 L64-18Z" fill="#79d8ff" stroke="#ffcf70" stroke-width="13"/><path d="M-142 36 L-190 152 L-62 110Z" fill="#61c8e8"/></g>
-<!-- tile 3 pelvis/short jacket --> <g transform="translate(1792 256)"><path d="M-126-78 Q0-112 126-72 L112 108 Q0 150-134 92Z" fill="#1c536a"/><path d="M-104 56 L-156 182 L-24 112Z" fill="#77d7f5"/><path d="M78 40 L150 154 L66 118Z" fill="#244b5b"/><rect x="-92" y="-12" width="184" height="23" rx="10" fill="#ffcf70" opacity=".68"/></g>
-<!-- arms --> <g transform="translate(256 768)"><path d="M-24-38 Q34-55 156-10 L150 30 Q42 70-28 36Z" fill="#2f7892"/><path d="M112-19 L160-5 L150 24 L104 18Z" fill="#79d8ff"/></g><g transform="translate(768 768)"><path d="M-18-30 Q60-42 154-7 L150 25 Q68 52-18 28Z" fill="#e8cdbd"/><rect x="70" y="-18" width="70" height="14" rx="5" fill="#d4edf5"/></g><g transform="translate(1280 768)"><path d="M-25-42 Q38-60 160-12 L150 34 Q42 76-30 36Z" fill="#5bb9d8"/><path d="M88-32 L164-8 L152 34 L82 20Z" fill="#79d8ff"/></g><g transform="translate(1792 768)"><path d="M-18-30 Q64-42 154-8 L148 26 Q64 50-18 28Z" fill="#e8cdbd"/><path d="M76-20 L144-8" stroke="#79d8ff" stroke-width="12"/></g>
-<!-- legs --> <g transform="translate(256 1280)"><path d="M-46-80 Q0-100 48-78 L58 156 L-24 168 L-56 12Z" fill="#183c4b"/><path d="M-24-40 L24-54 L40 120 L-12 130Z" fill="#2c6379"/></g><g transform="translate(768 1280)"><path d="M-34-78 Q0-92 38-74 L42 152 L-26 160Z" fill="#4e6672"/><path d="M-12-40 L18-48 L25 116 L-8 120Z" fill="#6e8a96"/></g><g transform="translate(1280 1280)"><path d="M-46-78 Q0-100 48-76 L56 156 L-26 168 L-54 10Z" fill="#183c4b"/><path d="M-20-42 L28-52 L38 120 L-8 130Z" fill="#2c6379"/></g><g transform="translate(1792 1280)"><path d="M-34-78 Q0-92 38-74 L42 152 L-26 160Z" fill="#4e6672"/><path d="M-10-42 L18-48 L24 116 L-8 120Z" fill="#6e8a96"/></g>
-<!-- feet --> <g transform="translate(256 1792)"><path d="M-54-24 L54-35 L118 24 L90 60 L-62 52Z" fill="#102530"/><path d="M34-16 L98 18" stroke="#79d8ff" stroke-width="10"/></g><g transform="translate(768 1792)"><path d="M-54-24 L54-35 L118 24 L90 60 L-62 52Z" fill="#102530"/><path d="M34-16 L98 18" stroke="#79d8ff" stroke-width="10"/></g>
-<!-- weapon --> <g transform="translate(1280 1792)"><path d="M-220-34 L188-48 L238-8 L210 30 L-78 46 L-128 112 L-198 104 L-160 40 L-234 28Z" fill="url(#m)" stroke="#0d2029" stroke-width="14"/><path d="M28-38 L136-42 L150 8 L42 16Z" fill="#79d8ff"/><path d="M188-48 L244-24 L274 0 L224 34 L190 30Z" fill="#ffcf70"/><circle cx="18" cy="-4" r="24" fill="#79d8ff" opacity=".35"/></g>
-<!-- accessory --> <g transform="translate(1792 1792)"><path d="M-136-80 L-20-120 L96-74 L72 56 L-58 94Z" fill="#1b5268"/><path d="M-84-52 L28-86" stroke="#79d8ff" stroke-width="14"/><path d="M62-56 L128-32 L105 28 L48 10Z" fill="#ffcf70"/></g>
+<!-- head -->
+<g transform="translate(256 256)" stroke="#071117" stroke-width="11" stroke-linejoin="round">
+ <ellipse rx="126" ry="142" fill="#f2d7c8"/>
+ <path d="M-105-20 Q-88-130 0-146 Q106-134 112-14 Q70-72 14-82 Q-49-55-105-20Z" fill="url(#hair)"/>
+ <path d="M-91-63 Q-27-145 54-116 L-4 37 L-79 48Z" fill="#d9e2ef"/>
+ <path d="M62-112 Q109-78 111-17 L77 13 L55-88Z" fill="#8999b2"/>
+ <path d="M-65 15 Q-34-8-5 17 Q-34 34-65 15 M25 15 Q58-8 87 17 Q57 35 25 15" fill="#213a52" stroke="none"/>
+ <circle cx="-31" cy="16" r="5" fill="#7be4f0" stroke="none"/><circle cx="57" cy="16" r="5" fill="#7be4f0" stroke="none"/>
+ <path d="M-18 78 Q8 94 39 76" stroke="#b96f70" stroke-width="8" fill="none" stroke-linecap="round"/>
+ <path d="M77-89 L112-73 L101-39 L68-51Z" fill="#68d9e8" stroke="#f2c15e" stroke-width="7"/>
+</g>
+<!-- comet ponytail / hair -->
+<g transform="translate(768 256)" stroke="#071117" stroke-width="12" stroke-linejoin="round">
+ <path d="M-152-70 Q-54-172 72-118 Q157-79 151 20 Q145 118 15 201 Q73 81 30-11 Q-12-101-152-70Z" fill="url(#hair)"/>
+ <path d="M-81-102 Q24-142 91-72 Q117-5 67 97 Q76 6 16-58Z" fill="#a9b6d8" stroke="none"/>
+ <path d="M-130-31 L-15-128 L64-84 L-46 43Z" fill="#dce7f2"/>
+ <path d="M13-86 Q87-47 105 35" stroke="#66d8e8" stroke-width="15" fill="none" stroke-linecap="round"/>
+</g>
+<!-- torso precision jacket -->
+<g transform="translate(1280 256)" stroke="#071117" stroke-width="12" stroke-linejoin="round">
+ <path d="M-142-121 Q0-173 141-114 L163 118 Q8 181-156 111Z" fill="url(#coat)"/>
+ <path d="M-94-88 L96-111 L120 64 L-84 91Z" fill="#e8f5fa" opacity=".14" stroke="none"/>
+ <path d="M-127 43 L-181 151 L-62 112Z" fill="#3f9db8"/>
+ <path d="M78-107 L176-73 L150 13 L61-17Z" fill="#59cfe0"/>
+ <path d="M109-92 L160-75 L146-35 L94-49Z" fill="#f1c267" stroke-width="7"/>
+ <path d="M-80-40 L63-53" stroke="#68d9e8" stroke-width="9" fill="none"/>
+ <path d="M-57 45 L72 31" stroke="#93eff5" stroke-width="6" fill="none" opacity=".65"/>
+</g>
+<!-- pelvis / jacket skirt -->
+<g transform="translate(1792 256)" stroke="#071117" stroke-width="11" stroke-linejoin="round">
+ <path d="M-130-79 Q0-116 130-73 L114 108 Q0 151-138 91Z" fill="#17394a"/>
+ <path d="M-108 54 L-164 188 L-24 112Z" fill="#53b9d4"/>
+ <path d="M76 42 L153 160 L62 118Z" fill="#1d4556"/>
+ <rect x="-94" y="-13" width="188" height="24" rx="9" fill="#101d25"/>
+ <rect x="-19" y="-22" width="38" height="40" rx="6" fill="#f0c164"/>
+</g>
+<!-- arms -->
+<g transform="translate(256 768)" stroke="#071117" stroke-width="10"><path d="M-29-42 Q39-60 162-11 L153 37 Q46 77-34 34Z" fill="#27556a"/><path d="M91-30 L163-8 L153 36 L83 20Z" fill="#61d5e5"/><path d="M15 5 L102 9" stroke="#88e8ef" stroke-width="6"/></g>
+<g transform="translate(768 768)" stroke="#071117" stroke-width="9"><path d="M-21-32 Q59-45 158-8 L152 28 Q65 56-22 29Z" fill="#efd1c0"/><rect x="70" y="-20" width="72" height="16" rx="5" fill="#d9e8ef"/><path d="M93 15 L143 18" stroke="#62d6e6" stroke-width="7"/></g>
+<g transform="translate(1280 768)" stroke="#071117" stroke-width="10"><path d="M-30-44 Q36-62 165-12 L153 39 Q43 79-35 34Z" fill="#346e84"/><path d="M89-34 L168-9 L154 38 L79 19Z" fill="#5fd2e2"/><path d="M8 2 L96 6" stroke="#8be7ef" stroke-width="6"/></g>
+<g transform="translate(1792 768)" stroke="#071117" stroke-width="9"><path d="M-21-32 Q61-44 158-8 L151 28 Q65 54-20 29Z" fill="#efd1c0"/><path d="M76-21 L147-5" stroke="#69d8e7" stroke-width="12"/><circle cx="115" cy="18" r="9" fill="#f0c164"/></g>
+<!-- legs / armored knees -->
+<g transform="translate(256 1280)" stroke="#071117" stroke-width="11"><path d="M-49-84 Q0-105 52-81 L61 160 L-27 173 L-60 10Z" fill="#142e3c"/><path d="M-25-45 L29-56 L43 122 L-10 134Z" fill="#28586d"/><path d="M-26 24 L35 16 L40 69 L-20 76Z" fill="#3d7990"/></g>
+<g transform="translate(768 1280)" stroke="#071117" stroke-width="10"><path d="M-37-82 Q0-97 40-78 L46 155 L-29 166Z" fill="#3d4e59"/><path d="M-13-42 L20-50 L29 117 L-9 125Z" fill="#657985"/><rect x="-27" y="8" width="62" height="45" rx="8" fill="#283944"/></g>
+<g transform="translate(1280 1280)" stroke="#071117" stroke-width="11"><path d="M-49-84 Q0-105 52-81 L61 160 L-27 173 L-60 10Z" fill="#142e3c"/><path d="M-25-45 L29-56 L43 122 L-10 134Z" fill="#28586d"/><path d="M-26 24 L35 16 L40 69 L-20 76Z" fill="#3d7990"/></g>
+<g transform="translate(1792 1280)" stroke="#071117" stroke-width="10"><path d="M-37-82 Q0-97 40-78 L46 155 L-29 166Z" fill="#3d4e59"/><path d="M-13-42 L20-50 L29 117 L-9 125Z" fill="#657985"/><rect x="-27" y="8" width="62" height="45" rx="8" fill="#283944"/></g>
+<!-- boots -->
+<g transform="translate(256 1792)" stroke="#071117" stroke-width="11"><path d="M-59-28 L55-39 L123 22 L92 64 L-67 55Z" fill="#0d1d26"/><path d="M30-15 L103 19" stroke="#60d3e3" stroke-width="10"/><path d="M-37 37 L90 45" stroke="#758894" stroke-width="6"/></g>
+<g transform="translate(768 1792)" stroke="#071117" stroke-width="11"><path d="M-59-28 L55-39 L123 22 L92 64 L-67 55Z" fill="#0d1d26"/><path d="M30-15 L103 19" stroke="#60d3e3" stroke-width="10"/><path d="M-37 37 L90 45" stroke="#758894" stroke-width="6"/></g>
+<!-- coil rifle -->
+<g transform="translate(1280 1792)" stroke="#071117" stroke-width="14" stroke-linejoin="round">
+ <path d="M-226-39 L188-51 L243-11 L214 33 L-79 49 L-132 117 L-205 108 L-166 43 L-240 30Z" fill="url(#gun)"/>
+ <path d="M20-43 L140-47 L153 9 L35 18Z" fill="#58cfdf"/>
+ <path d="M187-50 L246-26 L279 0 L228 37 L190 32Z" fill="#efc15f"/>
+ <path d="M-81 38 L-8 36 L-29 130 L-96 126Z" fill="#273944"/>
+ <circle cx="7" cy="-3" r="25" fill="#65dce9" opacity=".35" stroke="#baf7fb" stroke-width="7"/>
+ <path d="M53-18 L125-23" stroke="#e9f6fa" stroke-width="7"/>
+</g>
+<!-- tech accessory -->
+<g transform="translate(1792 1792)" stroke="#071117" stroke-width="11" stroke-linejoin="round"><path d="M-143-84 L-20-126 L103-75 L77 61 L-61 99Z" fill="#183c4d"/><path d="M-89-55 L32-91" stroke="#60d4e4" stroke-width="14"/><path d="M61-61 L134-34 L108 32 L45 11Z" fill="#efc15f"/><circle cx="-18" cy="26" r="19" fill="#65dce9" opacity=".55"/></g>
 </svg>

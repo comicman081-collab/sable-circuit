@@ -10,8 +10,8 @@ var _key_latch := [false, false, false]
 func _ready() -> void:
     add_to_group("squad_controller")
     _spawn_operator("CHR_PROTO_01", "ASTER", Color("69d2ff"), Vector2(410,390))
-    _spawn_operator("CHR_PROTO_02", "ROOK", Color("ff9d6c"), Vector2(350,455))
-    _spawn_operator("CHR_PROTO_03", "MICA", Color("a8f07a"), Vector2(470,455))
+    _spawn_operator("CHR_PROTO_02", "ROOK", Color("d39a58"), Vector2(330,470))
+    _spawn_operator("CHR_PROTO_03", "MICA", Color("62d8c8"), Vector2(485,475))
     request_control(0)
 
 func _process(_delta: float) -> void:
@@ -48,8 +48,14 @@ func _on_operator_downed(actor: OperatorActor) -> void:
 func _update_formation() -> void:
     var active:=get_active_operator()
     if active==null: return
-    var side:=Vector2(-active.aim_world.y,active.aim_world.x); var rear:=-active.aim_world
-    var slots: Array[Vector2] = [active.global_position,active.global_position+rear*62.0+side*58.0,active.global_position+rear*62.0-side*58.0]
+    var side:=Vector2(-active.aim_world.y,active.aim_world.x)
+    var rear:=-active.aim_world
+    # Wider echelon keeps all three high-resolution identities readable during traversal and combat.
+    var slots: Array[Vector2] = [
+        active.global_position,
+        active.global_position+rear*86.0+side*76.0,
+        active.global_position+rear*104.0-side*82.0
+    ]
     var follower_slot:=1
     for i in range(operators.size()):
         if i==active_index or operators[i].is_downed(): continue
