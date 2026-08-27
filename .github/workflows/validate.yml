@@ -85,8 +85,12 @@ jobs:
           test -f artifacts/runtime_capture/01_map_movement.png
           test -f artifacts/runtime_capture/02_combat_decon.png
           test -f artifacts/runtime_capture/03_boss_phase3.png
+          test -f artifacts/runtime_capture/12_direction_sector_0.png
+          test -f artifacts/runtime_capture/19_direction_sector_7.png
+          test -f artifacts/runtime_capture/20_death_rifle.png
+          test -f artifacts/runtime_capture/24_death_boss.png
           count=$(find artifacts/runtime_capture -name '*.png' | wc -l)
-          test "$count" -eq 11
+          test "$count" -eq 24
       - name: Upload real runtime screenshots
         uses: actions/upload-artifact@v4
         with:
