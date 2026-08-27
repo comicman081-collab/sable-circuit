@@ -11,17 +11,28 @@ func _run() -> void:
     var stage := STAGE_SCENE.instantiate() as StoryStage01
     root.add_child(stage)
     current_scene = stage
-    await _frames(4)
+    await _frames(5)
 
     var lighting := stage.get_node_or_null("LightingRig") as Site7LightingRig
     _check(lighting != null, "M6 Site-7 lighting rig exists")
-    _check(lighting != null and lighting.debug_light_count() == 8, "M6 lighting owns eight authored room lights")
+    _check(lighting != null and lighting.debug_light_count() == 8, "M6 lighting owns eight authored semantic light sockets")
+    _check(lighting != null and lighting.debug_additive_wash_disabled(), "M6 disables Compatibility additive wash and keeps illumination in authored emissive art")
+
+    var room_art := stage.get_node_or_null("RoomArtLayer") as Site7RoomArtLayer
+    _check(room_art != null, "M6 room art layer exists")
+    _check(room_art != null and room_art.debug_asset_count() == 8, "M6 loads eight authored room-specific SVG art assets")
+    _check(room_art != null and room_art.debug_unique_asset_count() == 8, "M6 room art paths are all unique")
+    _check(room_art != null and room_art.debug_all_assets_loaded(), "all eight room SVGs import and render")
 
     var surface := stage.get_node_or_null("SurfaceDetail") as Site7SurfaceDetail
     _check(surface != null and surface.debug_surface_count() == 8, "M6 has eight unique high-density room surface treatments")
 
     var camera := stage.get_node_or_null("Camera2D") as Camera2D
     _check(camera != null and camera.zoom.x >= 1.40, "M6 camera fills the screen with one premium room instead of prototype boxes")
+
+    _check(stage.hud != null and stage.hud.debug_uses_unique_portraits(), "HUD keeps three dedicated operator portrait assets")
+    _check(stage.hud != null and stage.hud.debug_uses_unique_hud_art(), "HUD has twelve unique weapon/action SVG assets across three operators")
+    _check(stage.hud != null and stage.hud.debug_hud_art_loaded(), "active operator weapon and three action icons load as textures")
 
     var active := stage.squad.operators[0] as OperatorActor
     stage.squad.request_control(0)
@@ -65,7 +76,7 @@ func _run() -> void:
             if enemy_shading != null and enemy_shading.debug_bound():
                 shaded_enemy_count += 1
     _check(enemy_count >= 3, "Decon encounter still spawns its unique enemy composition")
-    _check(shaded_enemy_count == enemy_count, "all spawned enemies receive the same premium render pipeline without asset reuse")
+    _check(shaded_enemy_count == enemy_count, "all spawned enemies receive the premium render pipeline without asset reuse")
 
     stage.queue_free()
     await process_frame

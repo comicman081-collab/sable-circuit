@@ -17,6 +17,9 @@ var _energy_fill: ColorRect
 var _minimap: TacticalMinimap
 var _cards: Array[Dictionary] = []
 var _skill_labels: Array[Label] = []
+var _skill_icons: Array[TextureRect] = []
+var _weapon_icon: TextureRect
+var _active_hud_operator_id := ""
 
 func _ready() -> void:
     layer = 20
@@ -46,6 +49,7 @@ func _bind_runtime() -> void:
     if _minimap:
         _minimap.bind_stage(_stage)
     _bind_card_portraits()
+    _update_runtime_values()
 
 func _process(_delta: float) -> void:
     _update_runtime_values()
@@ -154,22 +158,19 @@ func _build_squad_cards() -> void:
 func _bind_card_portraits() -> void:
     for card: Dictionary in _cards:
         var profile: Dictionary = ArtProfileRegistry.get_profile(str(card["id"]))
-        var portrait_path: String = str(profile.get("portrait_asset",""))
-        if not portrait_path.is_empty() and ResourceLoader.exists("res://"+portrait_path):
-            var portrait_texture := load("res://"+portrait_path) as Texture2D
-            if portrait_texture != null:
-                (card["portrait"] as TextureRect).texture = portrait_texture
-                continue
-        var path: String = str(profile.get("master_asset",""))
-        if path.is_empty() or not ResourceLoader.exists("res://"+path):
+        var portrait_path := str(profile.get("portrait_asset",""))
+        var portrait_texture := _load_visual_texture(portrait_path)
+        if portrait_texture != null:
+            (card["portrait"] as TextureRect).texture = portrait_texture
             continue
-        var texture := load("res://"+path) as Texture2D
+        var master_path := str(profile.get("master_asset",""))
+        var texture := _load_visual_texture(master_path)
         if texture == null:
             continue
         var atlas := AtlasTexture.new()
         atlas.atlas = texture
-        var w: float = float(texture.get_width())
-        var h: float = float(texture.get_height())
+        var w := float(texture.get_width())
+        var h := float(texture.get_height())
         atlas.region = Rect2(w*0.20,h*0.08,w*0.60,h*0.46)
         (card["portrait"] as TextureRect).texture = atlas
 
@@ -189,20 +190,31 @@ func _build_energy_bar() -> void:
 
 func _build_weapon_panel() -> void:
     var p := _panel(Vector2(1012,548),Vector2(252,154),Color("345d66"),0.94)
-    _weapon_label = _label(p,"COIL ASSAULT RIFLE",Vector2(14,52),15,Color("62d8e3"))
+    _label(p,"AMMO",Vector2(14,10),13,Color("829ba5"))
     _ammo_label = _label(p,"24",Vector2(162,8),36,Color("f0f5f6"))
     _ammo_label.size = Vector2(70,42)
     _ammo_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-    _label(p,"AMMO",Vector2(14,12),13,Color("829ba5"))
+    _weapon_icon = TextureRect.new()
+    _weapon_icon.position = Vector2(14,29)
+    _weapon_icon.size = Vector2(132,31)
+    _weapon_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+    _weapon_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+    _weapon_icon.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+    p.add_child(_weapon_icon)
+    _weapon_label = _label(p,"COIL ASSAULT RIFLE",Vector2(14,62),15,Color("62d8e3"))
     var keys: Array[String] = ["Q","E","R"]
-    var glyphs: Array[String] = ["✦","➤","◎"]
     for i in range(3):
         var skill := _panel(Vector2(1022+i*76,630),Vector2(66,56),Color("3a515b"),0.92)
-        var key: String = keys[i]
-        var glyph: String = glyphs[i]
-        var icon := _label(skill,glyph,Vector2(21,4),21,Color("ecf4f6"))
-        icon.size = Vector2(28,28)
-        var kl := _label(skill,key,Vector2(26,34),13,Color("b5c7ce"))
+        var icon := TextureRect.new()
+        icon.position = Vector2(13,4)
+        icon.size = Vector2(40,34)
+        icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+        icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+        icon.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+        skill.add_child(icon)
+        _skill_icons.append(icon)
+        var key := keys[i]
+        var kl := _label(skill,key,Vector2(27,35),13,Color("b5c7ce"))
         _skill_labels.append(kl)
 
 func _build_story_strip() -> void:
@@ -218,7 +230,7 @@ func _update_runtime_values() -> void:
         var actor := _stage.squad.operators[i]
         var card: Dictionary = _cards[i]
         (card["hp"] as Label).text = "%d/%d" % [int(actor.health),int(actor.max_health)]
-        var ratio: float = clampf(actor.health/maxf(1.0,actor.max_health),0.0,1.0)
+        var ratio := clampf(actor.health/maxf(1.0,actor.max_health),0.0,1.0)
         (card["bar"] as ColorRect).size.x = 88.0*ratio
         var panel := card["panel"] as Panel
         panel.modulate = Color(1,1,1,1) if not actor.is_downed() else Color(0.48,0.52,0.55,0.72)
@@ -231,6 +243,28 @@ func _update_runtime_values() -> void:
             "ROOK": _weapon_label.text = "MAG SCATTERGUN"
             "MICA": _weapon_label.text = "SENSOR CARBINE"
             _: _weapon_label.text = "COIL ASSAULT RIFLE"
+        if _active_hud_operator_id != active.operator_id:
+            _active_hud_operator_id = active.operator_id
+            _bind_active_hud_art(active)
+
+func _bind_active_hud_art(active: OperatorActor) -> void:
+    var profile := active.art_profile
+    if profile.is_empty():
+        profile = ArtProfileRegistry.get_profile(active.operator_id)
+    if _weapon_icon:
+        _weapon_icon.texture = _load_visual_texture(str(profile.get("weapon_hud_asset","")))
+    var action_assets: Array = profile.get("hud_action_icon_assets", [])
+    for i in range(_skill_icons.size()):
+        var rel_path := str(action_assets[i]) if i < action_assets.size() else ""
+        _skill_icons[i].texture = _load_visual_texture(rel_path)
+
+func _load_visual_texture(rel_path: String) -> Texture2D:
+    if rel_path.is_empty():
+        return null
+    var resource_path := rel_path if rel_path.begins_with("res://") else "res://" + rel_path
+    if not ResourceLoader.exists(resource_path):
+        return null
+    return load(resource_path) as Texture2D
 
 func set_room(index: int, total: int, room_title: String, room_type: String) -> void:
     if _room_label:
@@ -260,5 +294,31 @@ func debug_uses_unique_portraits() -> bool:
     for card: Dictionary in _cards:
         var profile := ArtProfileRegistry.get_profile(str(card["id"]))
         if str(profile.get("portrait_asset","")).is_empty():
+            return false
+    return true
+
+func debug_uses_unique_hud_art() -> bool:
+    var paths: Dictionary = {}
+    for identity in ["CHR_PROTO_01","CHR_PROTO_02","CHR_PROTO_03"]:
+        var profile := ArtProfileRegistry.get_profile(identity)
+        var weapon_path := str(profile.get("weapon_hud_asset",""))
+        if weapon_path.is_empty() or paths.has(weapon_path):
+            return false
+        paths[weapon_path] = true
+        var actions: Array = profile.get("hud_action_icon_assets", [])
+        if actions.size() != 3:
+            return false
+        for value in actions:
+            var path := str(value)
+            if path.is_empty() or paths.has(path):
+                return false
+            paths[path] = true
+    return paths.size() == 12
+
+func debug_hud_art_loaded() -> bool:
+    if _weapon_icon == null or _weapon_icon.texture == null or _skill_icons.size() != 3:
+        return false
+    for icon in _skill_icons:
+        if icon.texture == null:
             return false
     return true
