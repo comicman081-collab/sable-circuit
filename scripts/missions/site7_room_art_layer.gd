@@ -8,7 +8,9 @@ var _sprites: Array[Sprite2D] = []
 var _load_failures := 0
 
 func _ready() -> void:
-    z_index = -3
+    # Authored room SVGs are the primary environment art layer. They stay behind
+    # actors but above procedural floor/depth support.
+    z_index = -1
     add_to_group("m6_room_art")
     _load_manifest()
 
@@ -47,7 +49,7 @@ func _load_manifest() -> void:
         var scale_value := float(row.get("scale", 0.37))
         sprite.scale = Vector2.ONE * scale_value
         sprite.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
-        sprite.modulate = Color(1.0, 1.0, 1.0, 0.98)
+        sprite.modulate = Color(0.88, 0.92, 0.94, 0.96)
         add_child(sprite)
         _sprites.append(sprite)
         _asset_paths.append(rel_path)
@@ -63,3 +65,6 @@ func debug_unique_asset_count() -> int:
 
 func debug_all_assets_loaded() -> bool:
     return _load_failures == 0 and _sprites.size() == 8 and debug_unique_asset_count() == 8
+
+func debug_primary_art_layer() -> bool:
+    return z_index == -1
