@@ -53,8 +53,13 @@ if not isinstance(profiles, list) or len(profiles) != 3:
     errors.append("playable profiles must contain exactly 3 operators")
 for profile in profiles if isinstance(profiles, list) else []:
     ident = str(profile.get("actor_id", "?"))
+    detail = str(profile.get("detail_overlay_asset", ""))
     weapon = str(profile.get("weapon_hud_asset", ""))
     actions = profile.get("hud_action_icon_assets", [])
+    if not detail:
+        errors.append(f"{ident}: missing detail_overlay_asset")
+    else:
+        visible_assets.append((f"detail:{ident}", detail))
     if not weapon:
         errors.append(f"{ident}: missing weapon_hud_asset")
     else:
@@ -86,8 +91,8 @@ for owner, rel in visible_assets:
     else:
         hashes[digest] = owner
 
-if len(visible_assets) != 28:
-    errors.append(f"expected 28 M6 authored visible assets (8 rooms + 8 props + 3 weapons + 9 action icons), got {len(visible_assets)}")
+if len(visible_assets) != 31:
+    errors.append(f"expected 31 M6 authored visible assets (8 rooms + 8 props + 3 detail overlays + 3 weapons + 9 action icons), got {len(visible_assets)}")
 
 if errors:
     print("M6_VISUAL_ASSET_VALIDATION: FAIL")
@@ -96,4 +101,4 @@ if errors:
     sys.exit(1)
 
 print("M6_VISUAL_ASSET_VALIDATION: PASS")
-print("validated 28 unique authored M6 SVG assets with unique paths and SHA-256")
+print("validated 31 unique authored M6 SVG assets with unique paths and SHA-256")
