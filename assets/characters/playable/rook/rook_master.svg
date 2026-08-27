@@ -1,46 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
 <defs>
- <linearGradient id="armor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ff9566"/><stop offset="1" stop-color="#3a2024"/></linearGradient>
- <linearGradient id="gun" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ffe09a"/><stop offset=".3" stop-color="#7b4d37"/><stop offset="1" stop-color="#24171a"/></linearGradient>
+ <linearGradient id="armor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#4b5660"/><stop offset=".55" stop-color="#2a3239"/><stop offset="1" stop-color="#171d22"/></linearGradient>
+ <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f0efeb"/><stop offset=".56" stop-color="#c8cbd0"/><stop offset="1" stop-color="#8c939a"/></linearGradient>
+ <linearGradient id="gun" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#e3bc75"/><stop offset=".28" stop-color="#87613e"/><stop offset=".58" stop-color="#394148"/><stop offset="1" stop-color="#171c20"/></linearGradient>
 </defs>
-<ellipse cx="500" cy="1390" rx="284" ry="68" fill="#090b0d" opacity=".55"/>
+<ellipse cx="500" cy="1390" rx="284" ry="68" fill="#090b0d" opacity=".58"/>
 <!-- heavy legs -->
-<path d="M332 918 L478 918 L460 1234 L394 1368 L300 1342 L336 1202Z" fill="#402329"/>
-<path d="M500 918 L638 930 L686 1198 L742 1324 L658 1374 L570 1246 L530 1084Z" fill="#4d282b"/>
-<path d="M286 1324 L406 1344 L386 1420 L246 1420 Q242 1362 286 1324" fill="#1f1719"/>
-<path d="M650 1350 L754 1308 Q810 1362 790 1420 L632 1420Z" fill="#1f1719"/>
+<path d="M332 918 L478 918 L460 1234 L394 1368 L300 1342 L336 1202Z" fill="#252c31" stroke="#080c10" stroke-width="14"/>
+<path d="M500 918 L638 930 L686 1198 L742 1324 L658 1374 L570 1246 L530 1084Z" fill="#30383e" stroke="#080c10" stroke-width="14"/>
+<path d="M286 1324 L406 1344 L386 1420 L246 1420 Q242 1362 286 1324" fill="#151a1e" stroke="#080c10" stroke-width="13"/>
+<path d="M650 1350 L754 1308 Q810 1362 790 1420 L632 1420Z" fill="#151a1e" stroke="#080c10" stroke-width="13"/>
 <!-- broad mantle -->
-<path d="M284 520 Q482 442 704 530 L752 744 L644 814 L320 788 L244 694Z" fill="#351f24"/>
-<path d="M268 536 Q466 470 684 550 L700 620 Q478 578 278 642Z" fill="#ff9566" opacity=".78"/>
+<path d="M284 520 Q482 442 704 530 L752 744 L644 814 L320 788 L244 694Z" fill="#1c2328" stroke="#080c10" stroke-width="16"/>
+<path d="M268 536 Q466 470 684 550 L700 620 Q478 578 278 642Z" fill="#a66f42" opacity=".88"/>
+<path d="M291 572 Q480 514 672 582" fill="none" stroke="#e0b976" stroke-width="12" opacity=".7"/>
 <!-- torso -->
-<path d="M330 596 Q492 532 640 602 L674 944 Q506 1014 310 932Z" fill="url(#armor)"/>
-<path d="M368 620 L596 590 L628 814 L352 836Z" fill="#f7d7c5" opacity=".10"/>
+<path d="M330 596 Q492 532 640 602 L674 944 Q506 1014 310 932Z" fill="url(#armor)" stroke="#080c10" stroke-width="15"/>
+<path d="M368 620 L596 590 L628 814 L352 836Z" fill="#f3f0e9" opacity=".08"/>
+<path d="M370 748 L615 719" stroke="#a87449" stroke-width="10" opacity=".7"/>
 <!-- left heavy gauntlet -->
-<path d="M300 630 L188 704 L180 886 L254 924 L334 826 L340 696Z" fill="#3b2628"/>
-<path d="M176 820 L264 814 L302 984 L204 1008 L146 930Z" fill="#ff9566"/>
-<path d="M170 852 L260 846 L274 920 L182 934Z" fill="#ffe09a" opacity=".72"/>
+<path d="M300 630 L188 704 L180 886 L254 924 L334 826 L340 696Z" fill="#303940" stroke="#080c10" stroke-width="14"/>
+<path d="M176 820 L264 814 L302 984 L204 1008 L146 930Z" fill="#a66f42" stroke="#080c10" stroke-width="14"/>
+<path d="M170 852 L260 846 L274 920 L182 934Z" fill="#e2bc78" opacity=".82"/>
+<circle cx="226" cy="940" r="28" fill="#20282e" stroke="#b57b48" stroke-width="9"/>
 <!-- right arm -->
-<path d="M650 648 L736 694 L710 842 L640 812Z" fill="#4c292c"/>
-<path d="M646 806 L710 826 L760 878 L710 920 L638 866Z" fill="#efc9b5"/>
+<path d="M650 648 L736 694 L710 842 L640 812Z" fill="#363f46" stroke="#080c10" stroke-width="13"/>
+<path d="M646 806 L710 826 L760 878 L710 920 L638 866Z" fill="#e8c9b8" stroke="#080c10" stroke-width="10"/>
 <!-- head -->
-<ellipse cx="490" cy="408" rx="122" ry="126" fill="#efc9b5"/>
-<!-- blunt bob -->
-<path d="M362 404 Q360 254 492 252 Q628 260 626 410 L598 486 L566 420 L548 316 Q446 286 372 418Z" fill="#2f2024"/>
-<path d="M374 306 Q438 240 520 268 L470 430 L400 466Z" fill="#5a3031"/>
-<path d="M532 272 Q614 294 622 398 L572 464 L548 324Z" fill="#24181b"/>
+<ellipse cx="490" cy="408" rx="122" ry="126" fill="#e9c9b7" stroke="#080c10" stroke-width="14"/>
+<!-- white blunt hair -->
+<path d="M362 404 Q360 254 492 252 Q628 260 626 410 L598 486 L566 420 L548 316 Q446 286 372 418Z" fill="url(#hair)" stroke="#080c10" stroke-width="13"/>
+<path d="M374 306 Q438 240 520 268 L470 430 L400 466Z" fill="#eef0f2"/>
+<path d="M532 272 Q614 294 622 398 L572 464 L548 324Z" fill="#939aa2"/>
 <!-- eyes -->
-<path d="M420 424 Q452 400 476 426 Q448 446 420 424" fill="#6b3a32"/>
-<path d="M510 426 Q542 402 562 428 Q540 446 510 426" fill="#6b3a32"/>
-<path d="M458 494 Q490 512 524 490" stroke="#bd756b" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M420 424 Q452 400 476 426 Q448 446 420 424" fill="#4a403b"/>
+<path d="M510 426 Q542 402 562 428 Q540 446 510 426" fill="#4a403b"/>
+<path d="M458 494 Q490 512 524 490" stroke="#ad7068" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M562 304 L610 330 L588 370 L548 344Z" fill="#a97145" stroke="#e2bd79" stroke-width="6"/>
 <!-- rectangular scattergun -->
 <g transform="rotate(7 650 800)">
- <path d="M420 760 L844 744 L926 786 L850 838 L582 834 L510 900 L414 886 L466 828 L404 812Z" fill="url(#gun)" stroke="#181214" stroke-width="12"/>
- <rect x="568" y="774" width="178" height="36" rx="6" fill="#4b2d2b"/>
- <path d="M768 758 L882 764 L914 792 L866 820 L772 818Z" fill="#ff9566"/>
- <path d="M516 822 L604 818 L578 914 L506 918Z" fill="#332326"/>
- <rect x="650" y="788" width="58" height="8" fill="#ffe09a"/>
+ <path d="M420 760 L844 744 L926 786 L850 838 L582 834 L510 900 L414 886 L466 828 L404 812Z" fill="url(#gun)" stroke="#080c10" stroke-width="14"/>
+ <rect x="568" y="774" width="178" height="36" rx="6" fill="#30383e"/>
+ <path d="M768 758 L882 764 L914 792 L866 820 L772 818Z" fill="#b47a46"/>
+ <path d="M516 822 L604 818 L578 914 L506 918Z" fill="#262d32"/>
+ <rect x="650" y="788" width="58" height="8" fill="#e3bc75"/>
+ <path d="M600 796 L732 792" stroke="#d7d9d8" stroke-width="7"/>
 </g>
 <!-- belt / weight cues -->
-<rect x="350" y="896" width="278" height="34" rx="10" fill="#211619"/>
-<rect x="466" y="884" width="52" height="56" rx="8" fill="#ff9566"/>
+<rect x="350" y="896" width="278" height="34" rx="10" fill="#11161a"/>
+<rect x="466" y="884" width="52" height="56" rx="8" fill="#a97145"/>
 </svg>
