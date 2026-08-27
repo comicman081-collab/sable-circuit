@@ -47,15 +47,15 @@ func _capture_movement() -> void:
     await _clear_enemies()
     stage.current_step = 0
     stage.call("_activate_step")
-    _place_squad(Vector2(330, 435), Vector2(0.93,-0.36))
-    camera.global_position = Vector2(320, 420)
+    _place_squad(Vector2(350, 420), Vector2(0.93,-0.36))
+    camera.global_position = Vector2(355, 420)
     var active := stage.squad.get_active_operator()
     if active:
         active.debug_drive(Vector2.RIGHT, Vector2(0.93, -0.36))
     await _settle(18)
     if active:
         active.debug_stop_drive()
-    camera.global_position = Vector2(320,420)
+    camera.global_position = Vector2(355,420)
     await _settle(2)
     await _save("01_map_movement.png")
 
@@ -64,7 +64,7 @@ func _capture_combat() -> void:
     stage.current_step = 1
     stage.call("_activate_step")
     stage.debug_spawn_encounter_for_step(1)
-    _place_squad(Vector2(510, 475), Vector2.RIGHT)
+    _place_squad(Vector2(520, 465), Vector2.RIGHT)
     camera.global_position = Vector2(650, 420)
     await _settle(22)
     var active := stage.squad.get_active_operator()
@@ -80,7 +80,7 @@ func _capture_boss_phase3() -> void:
     stage.current_step = 4
     stage.call("_activate_step")
     stage.debug_spawn_encounter_for_step(4)
-    _place_squad(Vector2(1640, 500), Vector2.RIGHT)
+    _place_squad(Vector2(1650, 485), Vector2.RIGHT)
     camera.global_position = Vector2(1820, 420)
     await _settle(8)
     for node in get_nodes_in_group("m3_enemies"):
@@ -108,7 +108,7 @@ func _capture_all_rooms() -> void:
         var pos: Vector2 = row[1]
         stage.current_step = int(row[2])
         stage.call("_activate_step")
-        _place_squad(pos + Vector2(-105, 58), Vector2.RIGHT)
+        _place_squad(pos + Vector2(-78, 54), Vector2.RIGHT)
         camera.global_position = pos
         await _settle(8)
         camera.global_position = pos
@@ -161,10 +161,10 @@ func _capture_unique_deaths() -> void:
         await _clear_enemies()
         var center := Vector2(1430,420)
         camera.global_position = center
-        _place_squad(center+Vector2(-160,95),Vector2.RIGHT)
+        _place_squad(center+Vector2(-145,90),Vector2.RIGHT)
         var enemy := ENEMY_SCENE.instantiate() as EnemyActor
         enemy.configure(ids[i],300.0 if i==4 else 90.0)
-        enemy.global_position = center+Vector2(55,0)
+        enemy.global_position = center+Vector2(62,0)
         stage.add_child(enemy)
         await _settle(4)
         enemy.apply_damage(9999.0)
@@ -173,7 +173,12 @@ func _capture_unique_deaths() -> void:
         await _save("%02d_death_%s.png" % [20+i,names[i]])
 
 func _place_squad(center: Vector2, aim: Vector2) -> void:
-    var positions: Array[Vector2] = [center, center + Vector2(-62, 64), center + Vector2(-112, 104)]
+    # Mirror the live wide-echelon formation so evidence reflects actual gameplay readability.
+    var positions: Array[Vector2] = [
+        center,
+        center + Vector2(-86, 78),
+        center + Vector2(-155, 126)
+    ]
     for i in range(stage.squad.operators.size()):
         var actor := stage.squad.operators[i]
         actor.global_position = positions[i]
