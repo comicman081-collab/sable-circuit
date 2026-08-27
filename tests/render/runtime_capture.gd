@@ -10,6 +10,7 @@ const REQUIRED_EVIDENCE: Array[String] = [
 
 var stage: StoryStage01
 var camera: Camera2D
+var camera_presentation: SquadCameraPresentation
 
 func _init() -> void:
     call_deferred("_run")
@@ -22,6 +23,7 @@ func _run() -> void:
     current_scene = stage
     await _settle(10)
     camera = stage.get_node("Camera2D") as Camera2D
+    camera_presentation = stage.get_node_or_null("SquadCameraPresentation") as SquadCameraPresentation
     camera.enabled = true
     camera.position_smoothing_enabled = false
     stage.set_process(false)
@@ -42,13 +44,13 @@ func _capture_movement() -> void:
     stage.current_step = 0
     stage.call("_activate_step")
     _place_squad(Vector2(320,515), Vector2(0.98,-0.18))
-    camera.global_position = Vector2(300,470)
     var active := stage.squad.get_active_operator()
     if active:
         # M6 evidence is captured while the actor is actually travelling diagonally
         active.debug_drive(Vector2(1.0,-1.0).normalized(), Vector2(0.98,-0.18))
     await _settle(11)
-    camera.global_position = Vector2(300,470)
+    _focus_live_camera()
+    await _settle(1)
     await _save("01_map_movement.png")
     if active:
         active.debug_stop_drive()
@@ -60,13 +62,12 @@ func _capture_combat() -> void:
     stage.call("_activate_step")
     stage.debug_spawn_encounter_for_step(1)
     _place_squad(Vector2(548,432), Vector2(0.98,-0.14))
-    camera.global_position = Vector2(690,350)
     await _settle(22)
     var active := stage.squad.get_active_operator()
     if active:
         active.aim_world = Vector2(0.98,-0.14).normalized()
         active.debug_fire_once()
-    camera.global_position = Vector2(690,350)
+    _focus_live_camera()
     await _settle(1)
     await _save("02_combat_decon.png")
 
@@ -76,13 +77,12 @@ func _capture_boss_phase3() -> void:
     stage.call("_activate_step")
     stage.debug_spawn_encounter_for_step(4)
     _place_squad(Vector2(1740,575), Vector2(0.96,-0.28))
-    camera.global_position = Vector2(1920,490)
     await _settle(8)
     for node in get_nodes_in_group("m3_enemies"):
         if node is EnemyActor and ("BOSS" in node.enemy_id or "ANCHOR" in node.enemy_id):
             node.health = node.max_health * 0.24
     await _settle(18)
-    camera.global_position = Vector2(1920,490)
+    _focus_live_camera()
     await _settle(2)
     await _save("03_boss_phase3.png")
 
@@ -156,13 +156,26 @@ func _capture_unique_deaths() -> void:
         await _save("%02d_death_%s.png" % [20+i,names[i]])
 
 func _place_squad(center: Vector2, aim: Vector2) -> void:
-    var positions: Array[Vector2] = [center,center+Vector2(-72,64),center+Vector2(-132,108)]
+    var aim_dir := aim.normalized() if aim.length_squared() > 0.001 else Vector2.RIGHT
+    var side := Vector2(-aim_dir.y,aim_dir.x)
+    var rear := -aim_dir
+    var positions: Array[Vector2] = [
+        center,
+        center+rear*66.0+side*58.0,
+        center+rear*82.0-side*58.0
+    ]
     for i in range(stage.squad.operators.size()):
         var actor := stage.squad.operators[i]
         actor.global_position = positions[i]
-        actor.aim_world = aim
-        actor.facing_sector = actor.call("_sector_from_vector", aim)
+        actor.aim_world = aim_dir
+        actor.facing_sector = actor.call("_sector_from_vector", aim_dir)
         actor.velocity = Vector2.ZERO
+
+func _focus_live_camera() -> void:
+    if camera_presentation != null:
+        camera.global_position = camera_presentation.debug_target_for_active()
+    elif stage.squad.get_active_operator() != null:
+        camera.global_position = stage.squad.get_active_operator().global_position
 
 func _clear_enemies() -> void:
     for node in get_nodes_in_group("m3_enemies"):
