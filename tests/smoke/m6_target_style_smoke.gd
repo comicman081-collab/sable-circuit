@@ -22,14 +22,17 @@ func _run() -> void:
 
     var active := stage.squad.operators[0] as OperatorActor
     stage.squad.request_control(0)
-    active.global_position = Vector2(520,470)
+    # Movement mechanics are tested independently of story route locks. StoryStage01
+    # remains responsible for restoring its authored bounds during normal play.
+    active.set_movement_bounds(Rect2(100,100,2100,900))
+    active.global_position = Vector2(620,480)
     active.aim_world = Vector2.RIGHT
     var start := active.global_position
     active.debug_drive(Vector2(1,-1).normalized(),Vector2.RIGHT)
-    await _physics_frames(10)
+    await _physics_frames(12)
     var travel := active.global_position-start
-    _check(travel.x > 4.0 and travel.y < -4.0, "W+D/W+A style simultaneous axes produce real diagonal travel")
-    _check(absf(absf(travel.x)-absf(travel.y)) < maxf(5.0,travel.length()*0.20), "diagonal travel is normalized instead of faster than axial movement")
+    _check(travel.x > 6.0 and travel.y < -6.0, "simultaneous horizontal and vertical axes produce real diagonal travel")
+    _check(absf(absf(travel.x)-absf(travel.y)) < maxf(4.0,travel.length()*0.12), "diagonal vector stays normalized and balanced across both axes")
     _check(active.aim_world.dot(Vector2.RIGHT) > 0.98, "aim remains independent while travelling diagonally")
 
     var diagonal := active.get_node_or_null("DiagonalLocomotionPresentation") as DiagonalLocomotionPresentation
