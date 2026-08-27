@@ -1,7 +1,10 @@
 extends CanvasLayer
 class_name StoryStageHUD
 
-var _tech_font := SystemFont.new()
+const TECH_FONT_PATH := "res://assets/fonts/Rajdhani-Medium.ttf"
+
+var _tech_font: Font
+var _font_source := "system-fallback"
 var _stage: StoryStage01
 var _room_label: Label
 var _objective_label: Label
@@ -17,7 +20,7 @@ var _skill_labels: Array[Label] = []
 
 func _ready() -> void:
     layer = 20
-    _tech_font.font_names = PackedStringArray(["Rajdhani","Bahnschrift SemiCondensed","Arial Narrow","DejaVu Sans Condensed","Liberation Sans"])
+    _tech_font = _load_tech_font()
     _build_minimap_panel()
     _build_objective_panel()
     _build_top_status()
@@ -26,6 +29,17 @@ func _ready() -> void:
     _build_weapon_panel()
     _build_story_strip()
     call_deferred("_bind_runtime")
+
+func _load_tech_font() -> Font:
+    if ResourceLoader.exists(TECH_FONT_PATH):
+        var bundled := load(TECH_FONT_PATH) as Font
+        if bundled != null:
+            _font_source = "bundled-rajdhani-v1.201"
+            return bundled
+    var fallback := SystemFont.new()
+    fallback.font_names = PackedStringArray(["Rajdhani","Bahnschrift SemiCondensed","Arial Narrow","DejaVu Sans Condensed","Liberation Sans"])
+    _font_source = "system-fallback"
+    return fallback
 
 func _bind_runtime() -> void:
     _stage = get_parent() as StoryStage01
@@ -69,7 +83,7 @@ func _label(parent: Node, text_value: String, pos: Vector2, font_size: int, colo
 
 func _build_minimap_panel() -> void:
     var p := _panel(Vector2(16,14),Vector2(266,174),Color("66808a"),0.92)
-    _label(p,"CH01  BLACKOUT AT SITE-7",Vector2(14,8),17,Color("cbd9df"))
+    _label(p,"CH01  BLACKOUT AT SITE-7",Vector2(14,8),18,Color("d9e4e8"))
     var rule := ColorRect.new()
     rule.position = Vector2(14,34)
     rule.size = Vector2(238,1)
@@ -79,11 +93,11 @@ func _build_minimap_panel() -> void:
     _minimap.position = Vector2(14,42)
     _minimap.size = Vector2(238,102)
     p.add_child(_minimap)
-    _room_label = _label(p,"SITE-7 // OUTER GATE",Vector2(14,148),12,Color("8299a4"))
+    _room_label = _label(p,"SITE-7 // OUTER GATE",Vector2(14,148),13,Color("8299a4"))
 
 func _build_objective_panel() -> void:
     var p := _panel(Vector2(16,198),Vector2(310,104),Color("506b75"),0.90)
-    _label(p,"OBJECTIVES",Vector2(14,8),15,Color("d8e5ea"))
+    _label(p,"OBJECTIVES",Vector2(14,8),16,Color("e3edf0"))
     var diamond := Label.new()
     diamond.text = "◇"
     diamond.position = Vector2(12,34)
@@ -91,25 +105,30 @@ func _build_objective_panel() -> void:
     diamond.add_theme_font_size_override("font_size",20)
     diamond.add_theme_color_override("font_color",Color("f2b544"))
     p.add_child(diamond)
-    _objective_label = _label(p,"Inspect the silent access terminal",Vector2(38,38),15,Color("f2c765"))
-    _objective_label.size = Vector2(252,54)
+    _objective_label = _label(p,"Inspect the silent access terminal",Vector2(38,36),16,Color("f2c765"))
+    _objective_label.size = Vector2(252,56)
     _objective_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 func _build_top_status() -> void:
-    _status_label = _label(self,"AREA SECURE",Vector2(955,18),15,Color("f0b850"))
+    _status_label = _label(self,"AREA SECURE",Vector2(955,18),16,Color("f0b850"))
     _status_label.size = Vector2(305,26)
     _status_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-    _optional_label = _label(self,"STORES --   SIGNAL --",Vector2(922,48),12,Color("7894a0"))
+    _optional_label = _label(self,"STORES --   SIGNAL --",Vector2(922,48),13,Color("7894a0"))
     _optional_label.size = Vector2(338,42)
     _optional_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 
 func _build_squad_cards() -> void:
     var ids: Array[String] = ["CHR_PROTO_01","CHR_PROTO_02","CHR_PROTO_03"]
     var names: Array[String] = ["ASTER","ROOK","MICA"]
-    var accents: Array[Color] = [Color("69d2ff"),Color("ff9d6c"),Color("a8f07a")]
+    var accents: Array[Color] = [Color("69d2ff"),Color("d39a58"),Color("62d8c8")]
     for i in range(3):
         var p := _panel(Vector2(18+i*112,548),Vector2(104,154),accents[i],0.94)
-        var num := _label(p,str(i+1),Vector2(7,4),14,Color.WHITE)
+        var top_glow := ColorRect.new()
+        top_glow.position = Vector2(1,1)
+        top_glow.size = Vector2(102,2)
+        top_glow.color = Color(accents[i].r,accents[i].g,accents[i].b,0.62)
+        p.add_child(top_glow)
+        var num := _label(p,str(i+1),Vector2(7,4),15,Color.WHITE)
         num.size = Vector2(18,18)
         var portrait := TextureRect.new()
         portrait.position = Vector2(8,23)
@@ -118,8 +137,8 @@ func _build_squad_cards() -> void:
         portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
         portrait.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
         p.add_child(portrait)
-        _label(p,names[i],Vector2(8,94),14,Color("eaf5f8"))
-        var hp := _label(p,"--/--",Vector2(8,114),12,Color("cddce2"))
+        _label(p,names[i],Vector2(8,94),15,Color("eef8fa"))
+        var hp := _label(p,"--/--",Vector2(8,114),13,Color("cddce2"))
         var bar_bg := ColorRect.new()
         bar_bg.position = Vector2(8,135)
         bar_bg.size = Vector2(88,7)
@@ -130,7 +149,7 @@ func _build_squad_cards() -> void:
         bar.size = Vector2(88,7)
         bar.color = accents[i]
         p.add_child(bar)
-        _cards.append({"id":ids[i],"portrait":portrait,"hp":hp,"bar":bar,"panel":p,"accent":accents[i]})
+        _cards.append({"id":ids[i],"portrait":portrait,"hp":hp,"bar":bar,"panel":p,"accent":accents[i],"top_glow":top_glow})
 
 func _bind_card_portraits() -> void:
     for card: Dictionary in _cards:
@@ -149,7 +168,7 @@ func _bind_card_portraits() -> void:
         (card["portrait"] as TextureRect).texture = atlas
 
 func _build_energy_bar() -> void:
-    _label(self,"ENERGY",Vector2(500,674),12,Color("61dce8"))
+    _label(self,"ENERGY",Vector2(500,674),13,Color("61dce8"))
     var bg := ColorRect.new()
     bg.position = Vector2(560,681)
     bg.size = Vector2(250,7)
@@ -160,15 +179,15 @@ func _build_energy_bar() -> void:
     _energy_fill.size = Vector2(220,7)
     _energy_fill.color = Color("71e8eb")
     add_child(_energy_fill)
-    _label(self,"100/100",Vector2(818,672),12,Color("dbe8ec"))
+    _label(self,"100/100",Vector2(818,672),13,Color("dbe8ec"))
 
 func _build_weapon_panel() -> void:
     var p := _panel(Vector2(1012,548),Vector2(252,154),Color("345d66"),0.94)
-    _weapon_label = _label(p,"COIL ASSAULT RIFLE",Vector2(14,52),13,Color("62d8e3"))
-    _ammo_label = _label(p,"24",Vector2(162,8),34,Color("f0f5f6"))
+    _weapon_label = _label(p,"COIL ASSAULT RIFLE",Vector2(14,52),15,Color("62d8e3"))
+    _ammo_label = _label(p,"24",Vector2(162,8),36,Color("f0f5f6"))
     _ammo_label.size = Vector2(70,42)
     _ammo_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-    _label(p,"AMMO",Vector2(14,12),12,Color("829ba5"))
+    _label(p,"AMMO",Vector2(14,12),13,Color("829ba5"))
     var keys: Array[String] = ["Q","E","R"]
     var glyphs: Array[String] = ["✦","➤","◎"]
     for i in range(3):
@@ -177,13 +196,13 @@ func _build_weapon_panel() -> void:
         var glyph: String = glyphs[i]
         var icon := _label(skill,glyph,Vector2(21,4),21,Color("ecf4f6"))
         icon.size = Vector2(28,28)
-        var kl := _label(skill,key,Vector2(26,34),12,Color("b5c7ce"))
+        var kl := _label(skill,key,Vector2(26,34),13,Color("b5c7ce"))
         _skill_labels.append(kl)
 
 func _build_story_strip() -> void:
     var p := _panel(Vector2(356,602),Vector2(610,58),Color("223a43"),0.78)
-    _story_label = _label(p,"Move into the marked room and press F to interact.",Vector2(14,10),14,Color("c7d8de"))
-    _story_label.size = Vector2(582,40)
+    _story_label = _label(p,"Move into the marked room and press F to interact.",Vector2(14,8),15,Color("c7d8de"))
+    _story_label.size = Vector2(582,42)
     _story_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 func _update_runtime_values() -> void:
@@ -197,6 +216,8 @@ func _update_runtime_values() -> void:
         (card["bar"] as ColorRect).size.x = 88.0*ratio
         var panel := card["panel"] as Panel
         panel.modulate = Color(1,1,1,1) if not actor.is_downed() else Color(0.48,0.52,0.55,0.72)
+        var glow := card["top_glow"] as ColorRect
+        glow.modulate.a = 1.0 if i == _stage.squad.active_index else 0.28
     var active := _stage.squad.get_active_operator()
     if active:
         _ammo_label.text = "%02d" % active.ammo
@@ -225,3 +246,6 @@ func set_combat_status(alive: int) -> void:
 func set_optional_status(supply_found: bool, signal_found: bool) -> void:
     if _optional_label:
         _optional_label.text = "STORES  %s     SIGNAL  %s" % ["OK" if supply_found else "--","OK" if signal_found else "--"]
+
+func debug_font_source() -> String:
+    return _font_source
