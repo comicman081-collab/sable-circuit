@@ -37,11 +37,13 @@ func _load_mission() -> void:
         main_route = mission.get("main_route", [])
         optional_rooms = mission.get("optional_rooms", [])
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
     var active := squad.get_active_operator()
     if active == null:
         return
-    camera.global_position = camera.global_position.lerp(active.global_position, 1.0 - pow(0.0004, delta))
+    # Camera authority moved to SquadCameraPresentation. StoryStage remains
+    # gameplay/progression authority only, so presentation can use aim look-ahead
+    # without coupling mission logic to framing.
     _check_current_room_entry(active)
 
     var interact_pressed := Input.is_key_pressed(KEY_F)
@@ -182,43 +184,60 @@ func _finish_mission() -> void:
     stage_completed.emit(summary)
 
 func _draw() -> void:
-    # M6: StoryStage01 no longer paints opaque prototype rooms. Gameplay authority
-    # remains here, while FacilityArchitecture/SurfaceDetail/EnvironmentDirector own
-    # the visible Site-7 world. Only lightweight progression markers are drawn.
+    # The authored room/deck art is primary. Progress information is now a small
+    # floor language only; giant prototype circles are forbidden in M6.
     for i in range(main_route.size()):
         var node: Dictionary = main_route[i]
         var p := Vector2(float(node.get("x", 0)), float(node.get("y", 0)))
         if i < main_route.size() - 1:
             var next_node: Dictionary = main_route[i + 1]
             var np := Vector2(float(next_node.get("x", 0)), float(next_node.get("y", 0)))
-            draw_line(p, np, Color(0.18,0.34,0.40,0.10 if i >= current_step else 0.18), 5.0)
+            draw_line(p, np, Color(0.18,0.34,0.40,0.035 if i >= current_step else 0.065), 2.0)
         _draw_room_marker(node, i, i <= current_step)
+
     for room_variant in optional_rooms:
         var room: Dictionary = room_variant
-        var main_x := float(room.get("x", 0))
-        var room_y := float(room.get("y", 720))
-        draw_line(Vector2(main_x, 530), Vector2(main_x, room_y - 105), Color(0.20,0.42,0.46,0.10), 4.0)
-        var recovered := (str(room.get("id", "")) == "O01_SUPPLY" and _supply_found) or (str(room.get("id", "")) == "O02_RESEARCH" and _signal_found)
+        var room_id := str(room.get("id", ""))
+        var parent_index := 2 if room_id == "O01_SUPPLY" else 3
+        if parent_index < main_route.size():
+            var parent_row: Dictionary = main_route[parent_index]
+            var parent_p := Vector2(float(parent_row.get("x", 0)), float(parent_row.get("y", 0)))
+            var room_p := Vector2(float(room.get("x", 0)), float(room.get("y", 0)))
+            var dir := (room_p-parent_p).normalized()
+            draw_line(parent_p+dir*78.0, room_p-dir*68.0, Color(0.20,0.42,0.46,0.055), 2.0)
+        var recovered := (room_id == "O01_SUPPLY" and _supply_found) or (room_id == "O02_RESEARCH" and _signal_found)
         _draw_optional_marker(room, recovered)
 
 func _draw_room_marker(node: Dictionary, index: int, unlocked: bool) -> void:
-    var p := Vector2(float(node.get("x", 0)), float(node.get("y", 0)))
+    var p := Vector2(float(node.get("x", 0)), float(node.get("y", 0))) + Vector2(0, 46)
     var active := index == current_step
-    var color := Color("6ee7f1") if active else (Color(0.34,0.55,0.61,0.24) if unlocked else Color(0.20,0.27,0.31,0.18))
-    var radius := 80.0 if active else 66.0
-    draw_arc(p,radius,-0.28,PI*0.68,24,Color(color.r,color.g,color.b,color.a*0.55),2.0)
     if active:
-        draw_arc(p,radius+8.0,PI*0.78,PI*1.28,12,Color(0.95,0.68,0.24,0.50),3.0)
-        for i in range(4):
-            var angle := -0.18+float(i)*PI*0.44
-            var d := Vector2.RIGHT.rotated(angle)
-            draw_line(p+d*(radius-4.0),p+d*(radius+8.0),Color(0.54,0.95,0.98,0.50),2.0)
+        var cyan := Color(0.43,0.91,0.95,0.42)
+        var amber := Color(0.94,0.66,0.25,0.54)
+        draw_arc(p,26.0,PI*1.12,PI*1.88,16,cyan,1.6)
+        draw_line(p+Vector2(-13,2),p+Vector2(0,9),amber,2.0)
+        draw_line(p+Vector2(0,9),p+Vector2(13,2),amber,2.0)
+        draw_circle(p,2.2,Color(0.76,0.96,0.98,0.56))
+    elif unlocked:
+        draw_arc(p,14.0,PI*1.20,PI*1.80,10,Color(0.34,0.55,0.61,0.17),1.0)
+        draw_circle(p,1.5,Color(0.42,0.62,0.68,0.18))
 
 func _draw_optional_marker(node: Dictionary, recovered: bool) -> void:
-    var p := Vector2(float(node.get("x", 0)), float(node.get("y", 0)))
-    var color := Color("71e0a0") if recovered else Color(0.35,0.65,0.68,0.28)
-    draw_arc(p,58.0,0.0,TAU,32,color,2.0)
-    draw_circle(p,4.0,Color(color.r,color.g,color.b,0.62))
+    var p := Vector2(float(node.get("x", 0)), float(node.get("y", 0))) + Vector2(0,34)
+    var color := Color(0.44,0.88,0.62,0.32) if recovered else Color(0.35,0.65,0.68,0.16)
+    draw_arc(p,13.0,PI*1.15,PI*1.85,10,color,1.2)
+    if recovered:
+        draw_line(p+Vector2(-6,0),p+Vector2(-1,5),color,1.6)
+        draw_line(p+Vector2(-1,5),p+Vector2(7,-4),color,1.6)
+
+func debug_progress_marker_contract() -> Dictionary:
+    return {
+        "active_radius": 26.0,
+        "unlocked_radius": 14.0,
+        "optional_radius": 13.0,
+        "giant_room_circles_forbidden": true,
+        "floor_chevrons": true
+    }
 
 func debug_route_count() -> int:
     return main_route.size()

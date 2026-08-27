@@ -49,6 +49,18 @@ func _run() -> void:
 
     var camera := stage.get_node_or_null("Camera2D") as Camera2D
     _check(camera != null and camera.zoom.x >= 1.40, "M6 camera keeps premium room-focused framing")
+    var camera_presentation := stage.get_node_or_null("SquadCameraPresentation") as SquadCameraPresentation
+    _check(camera_presentation != null, "M6 gameplay camera presentation is attached")
+    if camera_presentation:
+        var camera_contract := camera_presentation.debug_camera_contract()
+        _check(float(camera_contract.get("aim_look_ahead_x",0.0)) >= 80.0, "camera reserves forward combat space along aim")
+        _check(float(camera_contract.get("vertical_safe_bias",0.0)) >= 16.0, "camera keeps squad above the lower HUD safe area")
+        _check(bool(camera_contract.get("compact_squad_safe",false)), "camera contract preserves all three compact squad members")
+
+    var marker_contract := stage.debug_progress_marker_contract()
+    _check(bool(marker_contract.get("giant_room_circles_forbidden",false)), "prototype giant room progress circles are forbidden")
+    _check(float(marker_contract.get("active_radius",999.0)) <= 30.0, "active room marker is a small floor cue")
+    _check(float(marker_contract.get("optional_radius",999.0)) <= 16.0, "optional room marker stays unobtrusive")
 
     var active := stage.squad.operators[0] as OperatorActor
     var visual_root := active.get_node_or_null("VisualRoot") as Node2D

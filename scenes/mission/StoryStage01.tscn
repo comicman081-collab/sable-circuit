@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3]
+[gd_scene load_steps=13 format=3]
 
 [ext_resource type="Script" path="res://scripts/missions/story_stage_01.gd" id="1_stage"]
 [ext_resource type="Script" path="res://scripts/actors/squad_controller.gd" id="2_squad"]
@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://scripts/missions/site7_surface_detail.gd" id="9_surface"]
 [ext_resource type="Script" path="res://scripts/missions/site7_room_art_layer.gd" id="10_room_art"]
 [ext_resource type="Script" path="res://scripts/missions/site7_prop_art_layer.gd" id="11_prop_art"]
+[ext_resource type="Script" path="res://scripts/missions/squad_camera_presentation.gd" id="12_camera"]
 
 [node name="StoryStage01" type="Node2D"]
 script = ExtResource("1_stage")
@@ -51,8 +52,10 @@ script = ExtResource("2_squad")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(410, 390)
 zoom = Vector2(1.46, 1.46)
-position_smoothing_enabled = true
-position_smoothing_speed = 7.0
+position_smoothing_enabled = false
+
+[node name="SquadCameraPresentation" type="Node" parent="."]
+script = ExtResource("12_camera")
 
 [node name="FieldOverlay" type="CanvasLayer" parent="."]
 layer = 10
