@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3]
+[gd_scene load_steps=11 format=3]
 
 [ext_resource type="Script" path="res://scripts/actors/operator_actor.gd" id="1_actor"]
 [ext_resource type="Script" path="res://scripts/animation/operator_visual.gd" id="2_visual"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://scripts/animation/diagonal_locomotion_presentation.gd" id="6_diagonal"]
 [ext_resource type="Script" path="res://scripts/animation/operator_weapon_ik.gd" id="7_ik"]
 [ext_resource type="Script" path="res://scripts/animation/upright_stance_presentation.gd" id="8_upright"]
+[ext_resource type="Script" path="res://scripts/animation/operator_detail_overlay_presentation.gd" id="9_detail"]
 
 [sub_resource type="CapsuleShape2D" id="Capsule_operator"]
 radius = 14.0
@@ -40,6 +41,9 @@ script = ExtResource("8_upright")
 
 [node name="OperatorWeaponIK" type="Node2D" parent="."]
 script = ExtResource("7_ik")
+
+[node name="DetailOverlayPresentation" type="Node" parent="."]
+script = ExtResource("9_detail")
 
 [node name="PremiumSpriteShading" type="Node" parent="."]
 script = ExtResource("5_shading")
