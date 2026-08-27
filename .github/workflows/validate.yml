@@ -58,3 +58,39 @@ jobs:
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m3_unique_art_smoke.gd"
       - name: M4 premium motion and environment smoke test
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m4_premium_motion_environment_smoke.gd"
+
+  runtime-capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Download pinned Godot editor
+        shell: bash
+        run: |
+          set -euo pipefail
+          url="https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/${GODOT_ARCHIVE}"
+          curl -fL --retry 3 --retry-delay 2 "$url" -o "$RUNNER_TEMP/godot.zip"
+          echo "${GODOT_SHA256}  $RUNNER_TEMP/godot.zip" | sha256sum -c -
+          mkdir -p "$RUNNER_TEMP/godot"
+          unzip -q "$RUNNER_TEMP/godot.zip" -d "$RUNNER_TEMP/godot"
+          chmod +x "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64"
+      - name: Import assets for rendered capture
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --editor --path $GITHUB_WORKSPACE --quit"
+      - name: Render actual runtime captures
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p artifacts/runtime_capture
+          xvfb-run -a -s "-screen 0 1280x720x24" "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64" --path "$GITHUB_WORKSPACE" --resolution 1280x720 --rendering-method gl_compatibility --script res://tests/render/runtime_capture.gd
+          test -f artifacts/runtime_capture/01_map_movement.png
+          test -f artifacts/runtime_capture/02_combat_decon.png
+          test -f artifacts/runtime_capture/03_boss_phase3.png
+          count=$(find artifacts/runtime_capture -name '*.png' | wc -l)
+          test "$count" -eq 11
+      - name: Upload real runtime screenshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: sable-circuit-runtime-captures
+          path: artifacts/runtime_capture/*.png
+          if-no-files-found: error
+          retention-days: 14
