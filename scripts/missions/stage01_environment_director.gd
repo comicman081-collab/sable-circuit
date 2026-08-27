@@ -16,7 +16,7 @@ var _room_signatures: Array[String] = [
 
 func _ready() -> void:
     _stage = get_parent() as StoryStage01
-    z_index = 0
+    z_index = -1
     queue_redraw()
 
 func _process(delta: float) -> void:
@@ -25,166 +25,170 @@ func _process(delta: float) -> void:
 
 func _draw() -> void:
     _draw_global_floor_detail()
-    _draw_outer_gate(Vector2(260.0, 420.0))
-    _draw_decon(Vector2(650.0, 420.0))
-    _draw_archive(Vector2(1040.0, 420.0))
-    _draw_containment(Vector2(1430.0, 420.0))
-    _draw_core(Vector2(1820.0, 420.0))
-    _draw_lift(Vector2(2210.0, 420.0))
-    _draw_supply(Vector2(1040.0, 720.0))
-    _draw_signal_lab(Vector2(1430.0, 720.0))
+    _draw_outer_gate(Vector2(260.0,420.0))
+    _draw_decon(Vector2(650.0,420.0))
+    _draw_archive(Vector2(1040.0,420.0))
+    _draw_containment(Vector2(1430.0,420.0))
+    _draw_core(Vector2(1820.0,420.0))
+    _draw_lift(Vector2(2210.0,420.0))
+    _draw_supply(Vector2(1040.0,720.0))
+    _draw_signal_lab(Vector2(1430.0,720.0))
     _draw_ambient_particles()
 
 func _draw_global_floor_detail() -> void:
-    for x_i in range(70, 2400, 48):
+    # Sparse deck markings only; base architecture now owns the actual floor plane.
+    for x_i in range(110,2350,260):
         var x: float = float(x_i)
-        var alpha: float = 0.055 if int(x_i / 48) % 2 == 0 else 0.035
-        draw_line(Vector2(x, 105.0), Vector2(x, 845.0), Color(0.30, 0.46, 0.54, alpha), 1.0)
-    for y_i in range(115, 840, 48):
-        var y: float = float(y_i)
-        draw_line(Vector2(60.0, y), Vector2(2400.0, y), Color(0.28, 0.42, 0.49, 0.035), 1.0)
-    for x_i in range(120, 2350, 270):
+        draw_line(Vector2(x,333.0),Vector2(x+82.0,326.0),Color(0.42,0.61,0.68,0.08),2.0)
+        draw_line(Vector2(x+18.0,506.0),Vector2(x+98.0,499.0),Color(0.42,0.61,0.68,0.055),2.0)
+    for x_i in range(140,2320,420):
         var x: float = float(x_i)
-        draw_line(Vector2(x, 105.0), Vector2(x + 120.0, 105.0), Color(0.42, 0.62, 0.70, 0.14), 4.0)
-        draw_circle(Vector2(x + 60.0, 105.0), 5.0, Color(0.46, 0.82, 0.90, 0.28))
-    for x_i in range(120, 2350, 340):
-        var x: float = float(x_i)
-        var wobble: float = sin(_phase * 0.55 + x * 0.01) * 8.0
-        draw_bezier(Vector2(x, 790.0), Vector2(x + 50.0, 740.0 + wobble), Vector2(x + 115.0, 825.0 - wobble), Vector2(x + 170.0, 770.0), Color(0.08, 0.13, 0.16, 0.72), 5.0)
+        _deck_stencil(Vector2(x,474.0),"A%d" % int(x_i/140))
 
-func draw_bezier(p0: Vector2, p1: Vector2, p2: Vector2, p3: Vector2, color: Color, width: float) -> void:
-    var prev: Vector2 = p0
-    for i in range(1, 17):
-        var t: float = float(i) / 16.0
-        var u: float = 1.0 - t
-        var p: Vector2 = u * u * u * p0 + 3.0 * u * u * t * p1 + 3.0 * u * t * t * p2 + t * t * t * p3
-        draw_line(prev, p, color, width)
-        prev = p
+func _deck_stencil(p: Vector2, text_value: String) -> void:
+    # Typography is represented as industrial bars so this presentation does not
+    # depend on a world font resource.
+    draw_line(p,p+Vector2(34.0,-3.0),Color(0.65,0.48,0.24,0.18),3.0)
+    draw_line(p+Vector2(40.0,-4.0),p+Vector2(61.0,-6.0),Color(0.65,0.48,0.24,0.10),3.0)
 
 func _glow(center: Vector2, color: Color, radius: float, energy: float = 1.0) -> void:
-    for i in range(6, 0, -1):
-        var f: float = float(i) / 6.0
-        var alpha: float = 0.018 * energy * float(7 - i)
-        draw_circle(center, radius * f, Color(color.r, color.g, color.b, alpha))
+    for i in range(6,0,-1):
+        var f: float = float(i)/6.0
+        var alpha: float = 0.012*energy*float(7-i)
+        draw_circle(center,radius*f,Color(color.r,color.g,color.b,alpha))
+
+func _console(p: Vector2, accent: Color, width: float = 66.0) -> void:
+    draw_rect(Rect2(p-Vector2(width*0.5,18.0),Vector2(width,36.0)),Color("26353d"),true)
+    draw_rect(Rect2(p-Vector2(width*0.5-5.0,12.0),Vector2(width-10.0,24.0)),Color("0a141a"),true)
+    draw_line(p+Vector2(-width*0.34,3.0),p+Vector2(width*0.34,-1.0),Color(accent.r,accent.g,accent.b,0.58),2.0)
+    draw_circle(p+Vector2(width*0.35,-7.0),3.0,Color(accent,0.84))
+
+func _crate(p: Vector2, accent: Color, size: Vector2 = Vector2(54,40)) -> void:
+    draw_rect(Rect2(p-size*0.5,size),Color("29343a"),true)
+    draw_rect(Rect2(p-size*0.5+Vector2(4,4),size-Vector2(8,8)),Color("111a20"),false,2.0)
+    draw_line(p+Vector2(-size.x*0.35,0),p+Vector2(size.x*0.35,-2),Color(accent.r,accent.g,accent.b,0.52),3.0)
+    draw_line(p+Vector2(0,-size.y*0.35),p+Vector2(0,size.y*0.35),Color(0.38,0.49,0.54,0.20),2.0)
 
 func _draw_outer_gate(c: Vector2) -> void:
-    for i in range(-4, 5):
-        var x: float = c.x + float(i) * 28.0
-        draw_rect(Rect2(x - 7.0, c.y - 105.0, 14.0, 205.0), Color("1d2b33"), true)
-        draw_line(Vector2(x, c.y - 95.0), Vector2(x, c.y + 90.0), Color(0.33, 0.49, 0.56, 0.28), 2.0)
-    var pulse: float = 0.65 + sin(_phase * 2.3) * 0.25
-    draw_rect(Rect2(c + Vector2(-44.0, -38.0), Vector2(88.0, 76.0)), Color("15242c"), true)
-    draw_rect(Rect2(c + Vector2(-35.0, -29.0), Vector2(70.0, 58.0)), Color(0.96, 0.58, 0.18, 0.14 * pulse), true)
-    draw_line(c + Vector2(-22.0, 0.0), c + Vector2(22.0, 0.0), Color(1.0, 0.70, 0.30, pulse), 3.0)
-    _glow(c, Color("ff9a35"), 80.0, pulse)
+    # Gate hardware is now concentrated on the rear wall instead of filling the
+    # playable floor with vertical bars.
+    for i in range(-3,4):
+        var x: float = c.x+float(i)*34.0
+        draw_rect(Rect2(x-6.0,c.y-126.0,12.0,52.0),Color("2b3940"),true)
+        draw_line(Vector2(x,c.y-120.0),Vector2(x+4.0,c.y-82.0),Color(0.46,0.60,0.66,0.22),2.0)
+    var pulse: float = 0.66+sin(_phase*2.4)*0.22
+    _console(c+Vector2(0,-82),Color("f2a13b"),82.0)
+    draw_arc(c+Vector2(0,-82),32.0,0.0,TAU,32,Color(1.0,0.66,0.25,0.28*pulse),3.0)
+    _glow(c+Vector2(0,-82),Color("ff9d3b"),70.0,pulse)
 
 func _draw_decon(c: Vector2) -> void:
-    for side_value in [-1.0, 1.0]:
-        var side: float = float(side_value)
-        draw_rect(Rect2(c + Vector2(side * 120.0 - 14.0, -100.0), Vector2(28.0, 200.0)), Color("213944"), true)
-        for y_value in [-70.0, -20.0, 30.0, 80.0]:
-            var y: float = float(y_value)
-            draw_circle(c + Vector2(side * 120.0, y), 5.0, Color("79e8ff"))
-    for i in range(6):
-        var drift: float = fposmod(_phase * 34.0 + float(i) * 47.0, 260.0)
-        var p: Vector2 = c + Vector2(-125.0 + drift, sin(_phase * 1.7 + float(i)) * 55.0)
-        var radius: float = 18.0 + sin(_phase * 2.0 + float(i)) * 5.0
-        draw_circle(p, radius, Color(0.55, 0.91, 0.96, 0.035))
-    draw_line(c + Vector2(-125.0, -86.0), c + Vector2(125.0, -86.0), Color(0.38, 0.86, 0.95, 0.45), 5.0)
-    _glow(c + Vector2(0.0, -75.0), Color("66dff5"), 110.0, 0.75)
+    # Paired decontamination columns sit against the back corners; mist drifts over
+    # the floor plane where the squad actually walks.
+    for side in [-1.0,1.0]:
+        var p := c+Vector2(side*122.0,-78.0)
+        draw_rect(Rect2(p-Vector2(13,31),Vector2(26,62)),Color("233740"),true)
+        for j in range(4):
+            draw_circle(p+Vector2(0,-20.0+float(j)*14.0),3.5,Color("74e8f6"))
+        draw_line(p+Vector2(-9,25),p+Vector2(9,25),Color(0.42,0.85,0.92,0.40),3.0)
+    for i in range(8):
+        var drift: float = fposmod(_phase*28.0+float(i)*52.0,290.0)
+        var p := c+Vector2(-145.0+drift,18.0+sin(_phase*1.3+float(i))*58.0)
+        var r: float = 16.0+sin(_phase*1.9+float(i))*5.0
+        draw_circle(p,r,Color(0.55,0.94,1.0,0.025))
+    draw_line(c+Vector2(-138,-74),c+Vector2(138,-82),Color(0.39,0.86,0.95,0.42),4.0)
+    _glow(c+Vector2(0,-56),Color("62dff1"),125.0,0.55)
 
 func _draw_archive(c: Vector2) -> void:
-    for side_value in [-1.0, 1.0]:
-        var side: float = float(side_value)
-        for row in range(3):
-            var r: Rect2 = Rect2(c + Vector2(side * 88.0 - 32.0, -88.0 + float(row) * 58.0), Vector2(64.0, 46.0))
-            draw_rect(r, Color("26343b"), true)
-            for k in range(4):
-                var shelf_x: float = 8.0 + float(k) * 13.0
-                draw_line(r.position + Vector2(shelf_x, 8.0), r.position + Vector2(shelf_x, 36.0), Color(0.36, 0.54, 0.60, 0.32), 3.0)
-    var scan: float = fposmod(_phase * 52.0, 92.0)
-    draw_rect(Rect2(c + Vector2(-55.0, -45.0), Vector2(110.0, 90.0)), Color(0.20, 0.72, 0.78, 0.05), true)
-    draw_line(c + Vector2(-48.0, -38.0 + scan), c + Vector2(48.0, -38.0 + scan), Color(0.45, 1.0, 0.95, 0.55), 2.0)
-    _glow(c, Color("5df1df"), 95.0, 0.65)
+    # Low archive cabinets hug the rear/side edges and leave the center open.
+    for side in [-1.0,1.0]:
+        for row in range(2):
+            var p := c+Vector2(side*118.0,-58.0+float(row)*76.0)
+            _crate(p,Color("59e8d4"),Vector2(62,48))
+            for slot in range(3):
+                draw_line(p+Vector2(-18+float(slot)*18,-13),p+Vector2(-18+float(slot)*18,13),Color(0.38,0.58,0.63,0.25),2.0)
+    var holo := c+Vector2(0,-18)
+    draw_rect(Rect2(holo-Vector2(54,36),Vector2(108,72)),Color(0.24,0.82,0.78,0.025),true)
+    var scan: float = fposmod(_phase*44.0,64.0)
+    draw_line(holo+Vector2(-45,-28+scan),holo+Vector2(45,-28+scan),Color(0.48,1.0,0.92,0.52),2.0)
+    draw_arc(holo,58.0,-1.2,1.2,24,Color(0.38,0.92,0.84,0.23),2.0)
+    _glow(holo,Color("55ead7"),95.0,0.45)
 
 func _draw_containment(c: Vector2) -> void:
-    for i in range(-4, 5):
-        var x: float = c.x + float(i) * 31.0
-        draw_line(Vector2(x, c.y - 105.0), Vector2(x + 20.0, c.y - 70.0), Color("8a3e35"), 7.0)
-        draw_line(Vector2(x + 20.0, c.y - 70.0), Vector2(x, c.y - 35.0), Color("3c2928"), 7.0)
-    for side_value in [-1.0, 1.0]:
-        var side: float = float(side_value)
-        var base: Vector2 = c + Vector2(side * 96.0, 48.0)
-        draw_rect(Rect2(base - Vector2(42.0, 15.0), Vector2(84.0, 30.0)), Color("343c40"), true)
-        draw_line(base + Vector2(-36.0, -10.0), base + Vector2(36.0, 10.0), Color("d96b3e"), 5.0)
-        draw_line(base + Vector2(-36.0, 10.0), base + Vector2(36.0, -10.0), Color("d96b3e"), 5.0)
-    var alarm: float = 0.3 + 0.7 * maxf(0.0, sin(_phase * 4.2))
-    _glow(c + Vector2(0.0, -92.0), Color("ff4e3f"), 125.0, alarm)
+    # Red containment braces on the rear wall plus low floor barricades.
+    for i in range(-3,4):
+        var x: float = c.x+float(i)*40.0
+        draw_line(Vector2(x,c.y-118),Vector2(x+22,c.y-92),Color("843b35"),6.0)
+        draw_line(Vector2(x+22,c.y-92),Vector2(x,c.y-70),Color("392526"),6.0)
+    for side in [-1.0,1.0]:
+        var p := c+Vector2(side*92.0,42.0)
+        draw_rect(Rect2(p-Vector2(48,10),Vector2(96,20)),Color("313a3f"),true)
+        draw_line(p+Vector2(-38,-7),p+Vector2(38,7),Color("de6843"),4.0)
+        draw_line(p+Vector2(-38,7),p+Vector2(38,-7),Color("de6843"),4.0)
+    var alarm: float = 0.32+0.68*maxf(0.0,sin(_phase*4.1))
+    _glow(c+Vector2(0,-82),Color("ff5145"),125.0,alarm)
 
 func _draw_core(c: Vector2) -> void:
-    var boss_alive: bool = false
+    var boss_alive := false
     for node in get_tree().get_nodes_in_group("m3_enemies"):
         if node is EnemyActor and ("BOSS" in node.enemy_id or "ANCHOR" in node.enemy_id):
             boss_alive = true
-    var intensity: float = 1.0 if boss_alive else 0.45
-    for i in range(5):
-        var radius: float = 54.0 + float(i) * 27.0 + sin(_phase * (0.9 + float(i) * 0.08) + float(i)) * 5.0
-        var start_angle: float = _phase * (0.10 + float(i) * 0.025)
-        var width: float = 3.0 if i < 3 else 2.0
-        draw_arc(c, radius, start_angle, TAU + start_angle, 72, Color(0.48 + 0.06 * float(i), 0.32, 0.95, 0.12 * intensity), width)
-    for side_value in [-1.0, 1.0]:
-        var side: float = float(side_value)
-        var p: Vector2 = c + Vector2(side * 120.0, 0.0)
-        draw_rect(Rect2(p - Vector2(18.0, 95.0), Vector2(36.0, 190.0)), Color("202533"), true)
-        draw_line(p + Vector2(0.0, -78.0), p + Vector2(0.0, 78.0), Color(0.76, 0.34, 1.0, 0.52 * intensity), 6.0)
-    _glow(c, Color("8e5cff"), 180.0, 1.4 * intensity)
+    var intensity: float = 1.0 if boss_alive else 0.42
+    # Core C is a floor iris / containment dais rather than a wall target.
+    for i in range(6):
+        var r: float = 44.0+float(i)*23.0+sin(_phase*(0.8+float(i)*0.06)+float(i))*4.0
+        var start: float = _phase*(0.10+float(i)*0.018)
+        draw_arc(c,r,start,TAU+start,72,Color(0.56,0.39,1.0,0.10*intensity),3.0 if i<3 else 2.0)
+    for side in [-1.0,1.0]:
+        var p := c+Vector2(side*125.0,-48.0)
+        draw_rect(Rect2(p-Vector2(13,42),Vector2(26,84)),Color("252836"),true)
+        draw_line(p+Vector2(0,-32),p+Vector2(0,32),Color(0.77,0.37,1.0,0.52*intensity),5.0)
+    _glow(c,Color("946aff"),175.0,1.0*intensity)
 
 func _draw_lift(c: Vector2) -> void:
-    for side_value in [-1.0, 1.0]:
-        var side: float = float(side_value)
-        var x: float = c.x + side * 100.0
-        draw_rect(Rect2(x - 9.0, c.y - 108.0, 18.0, 216.0), Color("263138"), true)
-        for i in range(8):
-            var y: float = c.y - 92.0 + float(i) * 27.0 + fposmod(_phase * 18.0, 27.0)
-            draw_line(Vector2(x - 5.0, y), Vector2(x + 5.0, y), Color(0.40, 0.95, 0.58, 0.65), 3.0)
-    draw_rect(Rect2(c - Vector2(72.0, 70.0), Vector2(144.0, 140.0)), Color(0.11, 0.22, 0.19, 0.24), true)
-    _glow(c, Color("55e68a"), 115.0, 0.8)
+    # Parallel floor rails and rear lift console read naturally from above.
+    for side in [-1.0,1.0]:
+        var x: float = c.x+side*82.0
+        draw_line(Vector2(x,c.y-84),Vector2(x+16,c.y+88),Color("2f4147"),10.0)
+        for j in range(7):
+            var y: float = c.y-70.0+float(j)*24.0+fposmod(_phase*16.0,24.0)
+            draw_line(Vector2(x-4,y),Vector2(x+7,y-1),Color(0.42,0.94,0.59,0.62),3.0)
+    _console(c+Vector2(0,-85),Color("5ae287"),74.0)
+    _glow(c,Color("59e48b"),115.0,0.55)
 
 func _draw_supply(c: Vector2) -> void:
-    for i in range(5):
-        var col: int = i % 3
-        var row: int = i / 3
-        var p: Vector2 = c + Vector2(-82.0 + float(col) * 72.0, -46.0 + float(row) * 62.0)
-        draw_rect(Rect2(p, Vector2(58.0, 46.0)), Color("3b3328"), true)
-        draw_rect(Rect2(p + Vector2(4.0, 4.0), Vector2(50.0, 38.0)), Color("6a5230"), false, 3.0)
-        draw_line(p + Vector2(9.0, 23.0), p + Vector2(49.0, 23.0), Color("f0a33d"), 3.0)
-    _glow(c, Color("e7993b"), 105.0, 0.45)
+    var positions: Array[Vector2] = [
+        Vector2(-92,-46),Vector2(-28,-62),Vector2(74,-42),
+        Vector2(-76,34),Vector2(66,42)
+    ]
+    for offset in positions:
+        _crate(c+offset,Color("e3a247"),Vector2(56,42))
+    _console(c+Vector2(0,-74),Color("e0a14a"),66.0)
+    _glow(c,Color("e59b43"),98.0,0.35)
 
 func _draw_signal_lab(c: Vector2) -> void:
-    draw_rect(Rect2(c - Vector2(112.0, 76.0), Vector2(224.0, 152.0)), Color("142a2c"), true)
+    _console(c+Vector2(0,-72),Color("54e5d5"),94.0)
+    var holo_center := c+Vector2(0,5)
     var points := PackedVector2Array()
-    for i in range(41):
-        var x: float = -94.0 + float(i) * 4.7
-        var y: float = sin(float(i) * 0.62 + _phase * 3.4) * 20.0 + sin(float(i) * 0.17 - _phase) * 9.0
-        points.append(c + Vector2(x, y))
-    draw_polyline(points, Color(0.36, 0.96, 0.87, 0.72), 2.5)
+    for i in range(45):
+        var x: float = -94.0+float(i)*4.3
+        var y: float = sin(float(i)*0.58+_phase*3.2)*17.0+sin(float(i)*0.17-_phase)*7.0
+        points.append(holo_center+Vector2(x,y))
+    draw_polyline(points,Color(0.38,0.98,0.89,0.66),2.3)
     for i in range(3):
-        var radius: float = 34.0 + float(i) * 18.0
-        var rotation_speed: float = 0.45 + float(i) * 0.12
-        draw_arc(c, radius, -_phase * rotation_speed, PI * 1.55 - _phase * rotation_speed, 32, Color(0.34, 0.89, 0.83, 0.24), 2.0)
-    _glow(c, Color("57e7d7"), 120.0, 0.55)
+        var r: float = 30.0+float(i)*18.0
+        draw_arc(holo_center,r,-_phase*(0.44+float(i)*0.10),1.55*PI-_phase*(0.44+float(i)*0.10),32,Color(0.35,0.91,0.84,0.20),2.0)
+    _glow(holo_center,Color("58e7d8"),112.0,0.45)
 
 func _draw_ambient_particles() -> void:
-    for i in range(48):
-        var seed: float = float((i * 137) % 997)
-        var x: float = 70.0 + fposmod(seed * 2.3 + _phase * (7.0 + float(i % 5)), 2300.0)
-        var y: float = 125.0 + fposmod(seed * 0.83 + sin(_phase * 0.3 + float(i)) * 45.0, 690.0)
-        var alpha: float = 0.05 + 0.04 * sin(_phase * 0.7 + float(i))
-        var radius: float = 1.0 + float(i % 3) * 0.6
-        draw_circle(Vector2(x, y), radius, Color(0.64, 0.80, 0.86, maxf(0.015, alpha)))
+    for i in range(38):
+        var seed: float = float((i*137)%997)
+        var x: float = 72.0+fposmod(seed*2.15+_phase*(4.0+float(i%4)),2300.0)
+        var y: float = 300.0+fposmod(seed*0.47+sin(_phase*0.24+float(i))*28.0,260.0)
+        var alpha: float = 0.08+0.05*float(i%3)
+        draw_circle(Vector2(x,y),1.2+float(i%2),Color(0.44,0.73,0.78,alpha))
 
 func debug_room_style_count() -> int:
     return _room_signatures.size()
 
-func debug_room_signatures() -> Array:
+func debug_room_signatures() -> Array[String]:
     return _room_signatures.duplicate()
