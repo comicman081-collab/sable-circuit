@@ -3,6 +3,13 @@ extends SceneTree
 const STAGE_SCENE := preload("res://scenes/mission/StoryStage01.tscn")
 const ENEMY_SCENE := preload("res://scenes/actors/enemy/EnemyActor.tscn")
 const OUT_DIR := "res://artifacts/runtime_capture"
+const REQUIRED_EVIDENCE: Array[String] = [
+    "01_map_movement.png",
+    "02_combat_decon.png",
+    "03_boss_phase3.png",
+    "19_direction_sector_7.png",
+    "24_death_boss.png"
+]
 
 var stage: StoryStage01
 var camera: Camera2D
@@ -29,6 +36,9 @@ func _run() -> void:
     await _capture_all_rooms()
     await _capture_eight_directions()
     await _capture_unique_deaths()
+    if not _verify_required_evidence():
+        quit(1)
+        return
 
     print("RUNTIME_CAPTURE: PASS")
     quit(0)
@@ -195,3 +205,11 @@ func _save(filename: String) -> void:
         quit(1)
         return
     print("CAPTURED: " + path)
+
+func _verify_required_evidence() -> bool:
+    for filename in REQUIRED_EVIDENCE:
+        var path := ProjectSettings.globalize_path(OUT_DIR + "/" + filename)
+        if not FileAccess.file_exists(path):
+            push_error("missing required runtime evidence: " + filename)
+            return false
+    return true
