@@ -5,33 +5,33 @@
   "title": "SITE-7: FIRST DESCENT",
   "zone": "Abandoned Research Complex",
   "main_route": [
-    {"id":"R01_ENTRY","type":"EVENT","title":"Outer Gate","x":260,"y":420,"objective":"Inspect the silent access terminal","story":"The gate is powered, but every personnel badge was invalidated at the same second."},
+    {"id":"R01_ENTRY","type":"EVENT","title":"Outer Gate","x":280,"y":470,"objective":"Inspect the silent access terminal","story":"The gate is powered, but every personnel badge was invalidated at the same second."},
     {
-      "id":"R02_CORRIDOR","type":"COMBAT","title":"Decon Corridor","x":650,"y":420,"objective":"Clear the decontamination corridor",
+      "id":"R02_CORRIDOR","type":"COMBAT","title":"Decon Corridor","x":690,"y":350,"objective":"Clear the decontamination corridor",
       "encounter":[
-        {"enemy_id":"ENM_SITE7_RIFLE_01","health":92,"offset_x":76,"offset_y":-76},
-        {"enemy_id":"ENM_SITE7_DRONE_01","health":68,"offset_x":126,"offset_y":10},
-        {"enemy_id":"ENM_SITE7_ABERRANT_01","health":108,"offset_x":64,"offset_y":92}
+        {"enemy_id":"ENM_SITE7_RIFLE_01","health":92,"offset_x":82,"offset_y":-48},
+        {"enemy_id":"ENM_SITE7_DRONE_01","health":68,"offset_x":138,"offset_y":34},
+        {"enemy_id":"ENM_SITE7_ABERRANT_01","health":108,"offset_x":55,"offset_y":92}
       ]
     },
-    {"id":"R03_ARCHIVE","type":"RESEARCH","title":"Archive Annex","x":1040,"y":420,"objective":"Recover the missing team ledger","story":"The archive log ends mid-sentence. The final entry repeatedly references Core C and an unknown carrier signal."},
+    {"id":"R03_ARCHIVE","type":"RESEARCH","title":"Archive Annex","x":1100,"y":490,"objective":"Recover the missing team ledger","story":"The archive log ends mid-sentence. The final entry repeatedly references Core C and an unknown carrier signal."},
     {
-      "id":"R04_CONTAINMENT","type":"ELITE","title":"Containment Junction","x":1430,"y":420,"objective":"Break the containment guard line",
+      "id":"R04_CONTAINMENT","type":"ELITE","title":"Containment Junction","x":1510,"y":350,"objective":"Break the containment guard line",
       "encounter":[
-        {"enemy_id":"ENM_SITE7_SHIELD_01","health":230,"offset_x":62,"offset_y":-36},
-        {"enemy_id":"ENM_SITE7_RIFLE_01","health":108,"offset_x":142,"offset_y":82}
+        {"enemy_id":"ENM_SITE7_SHIELD_01","health":230,"offset_x":70,"offset_y":-26},
+        {"enemy_id":"ENM_SITE7_RIFLE_01","health":108,"offset_x":150,"offset_y":75}
       ]
     },
     {
-      "id":"R05_CORE","type":"BOSS","title":"Containment Core C","x":1820,"y":420,"objective":"Destroy the signal anchor",
+      "id":"R05_CORE","type":"BOSS","title":"Containment Core C","x":1920,"y":490,"objective":"Destroy the signal anchor",
       "encounter":[
-        {"enemy_id":"BOSS_SITE7_ANCHOR_01","health":620,"offset_x":96,"offset_y":0}
+        {"enemy_id":"BOSS_SITE7_ANCHOR_01","health":620,"offset_x":106,"offset_y":-16}
       ]
     },
-    {"id":"R06_EXTRACTION","type":"EXTRACTION","title":"Emergency Lift","x":2210,"y":420,"objective":"Extract with the recovered ledger","story":"The auxiliary reactor is failing. The team has one clean route back to the surface."}
+    {"id":"R06_EXTRACTION","type":"EXTRACTION","title":"Emergency Lift","x":2330,"y":350,"objective":"Extract with the recovered ledger","story":"The auxiliary reactor is failing. The team has one clean route back to the surface."}
   ],
   "optional_rooms": [
-    {"id":"O01_SUPPLY","type":"SUPPLY","title":"Emergency Stores","x":1040,"y":720,"reward":"field_supplies","story":"A sealed emergency locker still contains usable medical and ammunition packs."},
-    {"id":"O02_RESEARCH","type":"RESEARCH","title":"Signal Lab","x":1430,"y":720,"reward":"carrier_fragment","story":"A local recorder captured the carrier signal before the blackout. The waveform appears to respond to human movement."}
+    {"id":"O01_SUPPLY","type":"SUPPLY","title":"Emergency Stores","x":1100,"y":705,"reward":"field_supplies","story":"A sealed emergency locker still contains usable medical and ammunition packs."},
+    {"id":"O02_RESEARCH","type":"RESEARCH","title":"Signal Lab","x":1510,"y":705,"reward":"carrier_fragment","story":"A local recorder captured the carrier signal before the blackout. The waveform appears to respond to human movement."}
   ]
 }

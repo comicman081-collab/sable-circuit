@@ -1,20 +1,17 @@
 extends Node2D
 class_name Site7LightingRig
 
-# The target art direction keeps most of Site-7 near charcoal/black and reserves
-# cyan/amber/violet for emissive fixtures. Compatibility-renderer PointLight2D
-# additive pools were lifting whole wall/deck faces toward gray in real captures.
-# We retain eight authored light nodes as semantic sockets but set emitted energy
-# to zero; visible illumination is authored by room emissive/glow presentation.
+# Compatibility renderer additive lights remain semantic-only. Visible lighting
+# comes from authored room SVG emissives and dynamic overlay glows.
 const LIGHTS := [
-    [Vector2(260,390), Color("d98a37")],
-    [Vector2(650,390), Color("59d9ed")],
-    [Vector2(1040,390), Color("55e8d2")],
-    [Vector2(1430,390), Color("e26851")],
-    [Vector2(1820,390), Color("9873ff")],
-    [Vector2(2210,390), Color("67de91")],
-    [Vector2(1040,700), Color("dd9b43")],
-    [Vector2(1430,700), Color("55dfd2")]
+    [Vector2(280,440), Color("d98a37")],
+    [Vector2(690,320), Color("59d9ed")],
+    [Vector2(1100,460), Color("55e8d2")],
+    [Vector2(1510,320), Color("e26851")],
+    [Vector2(1920,460), Color("9873ff")],
+    [Vector2(2330,320), Color("67de91")],
+    [Vector2(1100,685), Color("dd9b43")],
+    [Vector2(1510,685), Color("55dfd2")]
 ]
 
 var _radial_texture: Texture2D
@@ -23,12 +20,10 @@ var _lights: Array[PointLight2D] = []
 func _ready() -> void:
     add_to_group("m6_lighting_rig")
     _radial_texture = _make_radial_texture(128)
-
     var modulate := CanvasModulate.new()
     modulate.name = "Site7CanvasModulate"
     modulate.color = Color(0.74,0.78,0.82,1.0)
     add_child(modulate)
-
     for row_variant in LIGHTS:
         var row: Array = row_variant
         var light := PointLight2D.new()
@@ -44,8 +39,6 @@ func _ready() -> void:
         _lights.append(light)
 
 func _process(_delta: float) -> void:
-    # Core pulse is handled by Stage01EnvironmentDirector's visible violet rings,
-    # not by a full-scene additive light.
     pass
 
 func _make_radial_texture(size: int) -> Texture2D:

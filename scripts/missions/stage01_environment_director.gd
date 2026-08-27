@@ -14,6 +14,15 @@ var _room_signatures: Array[String] = [
     "SIGNAL_TEAL_WAVEFORM"
 ]
 
+const GATE := Vector2(280,470)
+const DECON := Vector2(690,350)
+const ARCHIVE := Vector2(1100,490)
+const JUNCTION := Vector2(1510,350)
+const CORE := Vector2(1920,490)
+const LIFT := Vector2(2330,350)
+const STORES := Vector2(1100,705)
+const SIGNAL := Vector2(1510,705)
+
 func _ready() -> void:
     _stage = get_parent() as StoryStage01
     z_index = -1
@@ -25,21 +34,26 @@ func _process(delta: float) -> void:
 
 func _draw() -> void:
     _draw_global_floor_detail()
-    _draw_outer_gate(Vector2(260.0,420.0))
-    _draw_decon(Vector2(650.0,420.0))
-    _draw_archive(Vector2(1040.0,420.0))
-    _draw_containment(Vector2(1430.0,420.0))
-    _draw_core(Vector2(1820.0,420.0))
-    _draw_lift(Vector2(2210.0,420.0))
-    _draw_supply(Vector2(1040.0,720.0))
-    _draw_signal_lab(Vector2(1430.0,720.0))
+    _draw_outer_gate(GATE)
+    _draw_decon(DECON)
+    _draw_archive(ARCHIVE)
+    _draw_containment(JUNCTION)
+    _draw_core(CORE)
+    _draw_lift(LIFT)
+    _draw_supply(STORES)
+    _draw_signal_lab(SIGNAL)
     _draw_ambient_particles()
 
 func _draw_global_floor_detail() -> void:
-    for x_i in range(120,2350,330):
-        var x: float = float(x_i)
-        draw_line(Vector2(x,344),Vector2(x+72,338),Color(0.42,0.61,0.68,0.045),1.5)
-        draw_line(Vector2(x+18,522),Vector2(x+84,516),Color(0.42,0.61,0.68,0.035),1.5)
+    var route: Array[Vector2] = [GATE,DECON,ARCHIVE,JUNCTION,CORE,LIFT]
+    for i in range(route.size()-1):
+        var a: Vector2 = route[i]
+        var b: Vector2 = route[i+1]
+        var dir: Vector2 = (b-a).normalized()
+        var normal: Vector2 = Vector2(-dir.y,dir.x)
+        for j in range(4):
+            var p: Vector2 = a.lerp(b,(float(j)+0.5)/4.0)
+            draw_line(p-normal*34.0,p+normal*34.0,Color(0.42,0.61,0.68,0.040),1.2)
 
 func _glow(center: Vector2, color: Color, radius: float, energy: float = 1.0) -> void:
     for i in range(6,0,-1):
@@ -112,8 +126,8 @@ func _draw_signal_lab(c: Vector2) -> void:
 func _draw_ambient_particles() -> void:
     for i in range(24):
         var seed: float = float((i*137)%997)
-        var x: float = 72.0+fposmod(seed*2.15+_phase*(3.5+float(i%4)),2300.0)
-        var y: float = 300.0+fposmod(seed*0.47+sin(_phase*0.24+float(i))*26.0,260.0)
+        var x: float = 72.0+fposmod(seed*2.15+_phase*(3.5+float(i%4)),2400.0)
+        var y: float = 220.0+fposmod(seed*0.47+sin(_phase*0.24+float(i))*26.0,520.0)
         draw_circle(Vector2(x,y),1.0+float(i%2),Color(0.44,0.73,0.78,0.065+0.035*float(i%3)))
 
 func debug_room_style_count() -> int:

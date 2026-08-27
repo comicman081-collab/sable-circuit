@@ -3,10 +3,11 @@ class_name Site7FacilityArchitecture
 
 var _phase: float = 0.0
 
-const ROOM_CENTERS: Array[Vector2] = [
-    Vector2(260,420), Vector2(650,420), Vector2(1040,420), Vector2(1430,420),
-    Vector2(1820,420), Vector2(2210,420), Vector2(1040,720), Vector2(1430,720)
+const MAIN_ROUTE: Array[Vector2] = [
+    Vector2(280,470), Vector2(690,350), Vector2(1100,490),
+    Vector2(1510,350), Vector2(1920,490), Vector2(2330,350)
 ]
+const OPTIONAL_ROOMS: Array[Vector2] = [Vector2(1100,705), Vector2(1510,705)]
 const ROOM_ACCENTS: Array[Color] = [
     Color("d88a32"), Color("58cfe5"), Color("4de2c8"), Color("dc6549"),
     Color("8f65ee"), Color("58d889"), Color("d7953e"), Color("4adcca")
@@ -21,113 +22,119 @@ func _process(delta: float) -> void:
     queue_redraw()
 
 func _draw() -> void:
-    draw_rect(Rect2(-900,-500,4300,1900), Color("04080c"), true)
-    _draw_connected_main_deck()
-    _draw_back_wall()
-    _draw_foreground_structure()
-    _draw_branch_decks()
-    _draw_section_frames()
-    _draw_room_floor_languages()
-    _draw_overhead_services()
+    draw_rect(Rect2(-1100,-700,5000,2300), Color("03070b"), true)
+    _draw_route_shadow()
+    for i in range(MAIN_ROUTE.size()-1):
+        _draw_connector(MAIN_ROUTE[i], MAIN_ROUTE[i+1], ROOM_ACCENTS[i].lerp(ROOM_ACCENTS[i+1],0.5), i)
+    _draw_connector(MAIN_ROUTE[2], OPTIONAL_ROOMS[0], ROOM_ACCENTS[6], 6, 82.0)
+    _draw_connector(MAIN_ROUTE[3], OPTIONAL_ROOMS[1], ROOM_ACCENTS[7], 7, 82.0)
+    _draw_room_foundations()
+    _draw_section_thresholds()
+    _draw_service_runs()
 
-func _draw_connected_main_deck() -> void:
-    var deck: Rect2 = Rect2(38,286,2375,310)
-    draw_rect(deck.grow(44),Color(0,0,0,0.72),true)
-    draw_rect(deck.grow(22),Color("101820"),true)
-    draw_rect(deck,Color("1a252c"),true)
-    draw_rect(Rect2(48,312,2352,34),Color("0a1117"),true)
-    draw_rect(Rect2(48,520,2352,42),Color("0b1319"),true)
-    for x_i in range(70,2390,92):
-        var x: float = float(x_i)
-        draw_line(Vector2(x,292),Vector2(x+26,586),Color(0.31,0.44,0.50,0.075),1.0)
-    for y_value in [370.0,446.0,503.0]:
-        var y: float = float(y_value)
-        draw_line(Vector2(55,y),Vector2(2395,y-15.0),Color(0.34,0.47,0.53,0.10),1.0)
-    for start_x in range(120,2300,410):
-        var grate: Rect2 = Rect2(float(start_x),462,260,48)
-        draw_rect(grate.grow(5),Color(0,0,0,0.28),true)
-        draw_rect(grate,Color("0b1217"),true)
-        for gx in range(int(grate.position.x)+6,int(grate.end.x)-4,15):
-            draw_line(Vector2(float(gx),grate.position.y+4),Vector2(float(gx)+28,grate.end.y-4),Color(0.38,0.52,0.57,0.13),1.0)
-    for x_i in range(90,2380,120):
-        var x: float = float(x_i)
-        var lamp_y: float = 352.0+float((x_i/120)%2)*166.0
-        draw_circle(Vector2(x,lamp_y),2.5,Color("e1a54c"))
-        draw_circle(Vector2(x,lamp_y),9.0,Color(0.95,0.57,0.20,0.025))
+func _draw_route_shadow() -> void:
+    for i in range(MAIN_ROUTE.size()-1):
+        var a: Vector2 = MAIN_ROUTE[i] + Vector2(22,30)
+        var b: Vector2 = MAIN_ROUTE[i+1] + Vector2(22,30)
+        draw_colored_polygon(_corridor_poly(a,b,126.0),Color(0,0,0,0.52))
+    draw_colored_polygon(_corridor_poly(MAIN_ROUTE[2]+Vector2(18,28),OPTIONAL_ROOMS[0]+Vector2(18,28),98.0),Color(0,0,0,0.46))
+    draw_colored_polygon(_corridor_poly(MAIN_ROUTE[3]+Vector2(18,28),OPTIONAL_ROOMS[1]+Vector2(18,28),98.0),Color(0,0,0,0.46))
 
-func _draw_back_wall() -> void:
-    var wall: Rect2 = Rect2(38,170,2375,122)
-    draw_rect(wall,Color("111a20"),true)
-    draw_rect(Rect2(38,170,2375,18),Color("34434b"),true)
-    draw_line(Vector2(55,187),Vector2(2392,187),Color(0.44,0.62,0.68,0.16),2.0)
-    for x_i in range(55,2395,92):
-        var x: float = float(x_i)
-        draw_rect(Rect2(x,202,66,65),Color("1e2b32"),true)
-        draw_rect(Rect2(x+8,211,50,43),Color("172229"),true)
-        draw_line(Vector2(x+10,259),Vector2(x+55,259),Color(0.39,0.55,0.61,0.12),2.0)
-    for x_value in [245.0,635.0,1025.0,1415.0,1805.0,2195.0]:
-        var x: float = float(x_value)
-        draw_line(Vector2(x-56,226),Vector2(x+46,226),Color(0.44,0.56,0.61,0.10),5.0)
-        draw_line(Vector2(x-56,238),Vector2(x+8,238),Color(0.44,0.56,0.61,0.07),3.0)
+func _draw_connector(a: Vector2, b: Vector2, accent: Color, seed: int, half_width: float = 108.0) -> void:
+    var dir: Vector2 = (b-a).normalized()
+    var normal: Vector2 = Vector2(-dir.y,dir.x)
+    var outer: PackedVector2Array = _corridor_poly(a,b,half_width+13.0)
+    var main: PackedVector2Array = _corridor_poly(a,b,half_width)
+    var inset: PackedVector2Array = _corridor_poly(a,b,half_width-18.0)
+    draw_colored_polygon(outer,Color("0b1116"))
+    draw_colored_polygon(main,Color("18242b"))
+    draw_colored_polygon(inset,Color("121d23"))
+    draw_polyline(PackedVector2Array([outer[0],outer[1],outer[2],outer[3],outer[0]]),Color(0.32,0.45,0.51,0.16),2.0)
 
-func _draw_foreground_structure() -> void:
-    draw_rect(Rect2(28,590,2398,25),Color("293941"),true)
-    draw_rect(Rect2(28,615,2398,38),Color("070b0e"),true)
-    draw_line(Vector2(44,592),Vector2(2405,592),Color(0.42,0.58,0.64,0.18),2.0)
-    for x_i in range(65,2390,126):
-        var x: float = float(x_i)
-        draw_rect(Rect2(x,598,72,8),Color("0d151a"),true)
-        draw_line(Vector2(x+4,601),Vector2(x+68,601),Color(0.54,0.68,0.70,0.08),2.0)
+    var length: float = a.distance_to(b)
+    var seam_count: int = maxi(3,int(length/72.0))
+    for j in range(1,seam_count):
+        var t: float = float(j)/float(seam_count)
+        var p: Vector2 = a.lerp(b,t)
+        var skew: float = sin(float(j*19+seed*11))*5.0
+        draw_line(p-normal*(half_width-22.0)+dir*skew,p+normal*(half_width-22.0)+dir*skew,Color(0.33,0.48,0.54,0.075),1.0)
 
-func _draw_branch_decks() -> void:
-    for x_value in [1040.0,1430.0]:
-        var x: float = float(x_value)
-        var poly: PackedVector2Array = PackedVector2Array([
-            Vector2(x-70,565),Vector2(x+70,565),Vector2(x+118,806),Vector2(x-118,806)
+    draw_line(a+normal*(half_width-6.0),b+normal*(half_width-6.0),Color(accent.r,accent.g,accent.b,0.20),3.0)
+    draw_line(a-normal*(half_width-6.0),b-normal*(half_width-6.0),Color(0.31,0.43,0.48,0.16),2.0)
+
+    var marker_count: int = maxi(3,int(length/120.0))
+    for j in range(marker_count):
+        var t: float = (float(j)+0.5)/float(marker_count)
+        var p: Vector2 = a.lerp(b,t)
+        var side: float = 1.0 if (j+seed)%2==0 else -1.0
+        var lamp: Vector2 = p+normal*(half_width-14.0)*side
+        draw_circle(lamp,2.5,Color(accent,0.72))
+        draw_circle(lamp,9.0,Color(accent.r,accent.g,accent.b,0.022))
+
+func _draw_room_foundations() -> void:
+    var all_centers: Array[Vector2] = MAIN_ROUTE.duplicate()
+    all_centers.append_array(OPTIONAL_ROOMS)
+    for i in range(all_centers.size()):
+        var c: Vector2 = all_centers[i]
+        var optional: bool = i>=6
+        var rx: float = 184.0 if not optional else 154.0
+        var ry: float = 126.0 if not optional else 105.0
+        if i==4:
+            rx=202.0
+            ry=138.0
+        var plate: PackedVector2Array = PackedVector2Array([
+            c+Vector2(-rx,-ry*0.55),
+            c+Vector2(rx,-ry*0.72),
+            c+Vector2(rx*0.90,ry*0.72),
+            c+Vector2(-rx*0.90,ry)
         ])
-        draw_colored_polygon(poly,Color("151f25"))
-        draw_polyline(PackedVector2Array([poly[0],poly[1],poly[2],poly[3],poly[0]]),Color(0.36,0.50,0.55,0.18),2.0)
-        for y_i in range(596,790,34):
-            var y: float = float(y_i)
-            var expand: float = (y-565.0)*0.18
-            draw_line(Vector2(x-48-expand,y),Vector2(x+48+expand,y),Color(0.33,0.47,0.51,0.10),1.0)
-
-func _draw_section_frames() -> void:
-    for x_value in [435.0,825.0,1215.0,1605.0,1995.0]:
-        var x: float = float(x_value)
-        draw_rect(Rect2(x-15,185,11,112),Color("40515a"),true)
-        draw_rect(Rect2(x+5,185,11,112),Color("1b272e"),true)
-        draw_rect(Rect2(x-15,185,31,10),Color("465b64"),true)
-        draw_line(Vector2(x-9,207),Vector2(x-9,269),Color(0.35,0.80,0.87,0.32),2.0)
-        draw_circle(Vector2(x+10,212),3.2,Color("d69b4b"))
-
-func _draw_room_floor_languages() -> void:
-    for i in range(ROOM_CENTERS.size()):
-        var c: Vector2 = ROOM_CENTERS[i]
+        var shadow: PackedVector2Array = PackedVector2Array()
+        for p in plate:
+            shadow.append(p+Vector2(16,22))
         var accent: Color = ROOM_ACCENTS[i]
-        var optional: bool = i >= 6
-        var w: float = 290.0 if optional else (320.0 if i != 4 else 350.0)
-        var h: float = 170.0 if optional else 205.0
-        var plate: Rect2 = Rect2(c-Vector2(w*0.5,h*0.5),Vector2(w,h))
-        draw_rect(plate,Color(accent.r*0.08,accent.g*0.08,accent.b*0.08,0.20),true)
-        draw_rect(plate,Color(accent.r,accent.g,accent.b,0.10),false,1.5)
-        draw_line(Vector2(plate.position.x+20,plate.position.y+6),Vector2(plate.end.x-20,plate.position.y+6),Color(accent.r,accent.g,accent.b,0.34),2.5)
-        draw_line(c+Vector2(-54,72),c+Vector2(18,65),Color(accent.r,accent.g,accent.b,0.20),3.0)
-        draw_line(c+Vector2(30,64),c+Vector2(60,61),Color(accent.r,accent.g,accent.b,0.10),3.0)
-        var lamp_points: Array[Vector2] = [plate.position+Vector2(14,14),Vector2(plate.end.x-14,plate.position.y+14)]
-        for p in lamp_points:
-            draw_circle(p,3.0,Color(accent,0.74))
+        draw_colored_polygon(shadow,Color(0,0,0,0.42))
+        draw_colored_polygon(plate,Color("172229"))
+        draw_polyline(PackedVector2Array([plate[0],plate[1],plate[2],plate[3],plate[0]]),Color(accent.r,accent.g,accent.b,0.18),2.0)
+        draw_line(c+Vector2(-rx*0.68,-ry*0.45),c+Vector2(rx*0.72,-ry*0.54),Color(accent.r,accent.g,accent.b,0.26),3.0)
 
-func _draw_overhead_services() -> void:
-    for lane in range(3):
-        var y: float = 140.0-float(lane)*13.0
-        draw_line(Vector2(58,y),Vector2(2400,y),Color(0.02,0.03,0.04,0.94),8.0-float(lane))
-        for x_i in range(110+lane*65,2380,350):
-            var x: float = float(x_i)
-            draw_circle(Vector2(x,y),5.0,Color("20333b"))
-            draw_circle(Vector2(x,y),2.0,Color(0.36,0.76,0.83,0.25))
+func _draw_section_thresholds() -> void:
+    for i in range(1,MAIN_ROUTE.size()):
+        var prev: Vector2 = MAIN_ROUTE[i-1]
+        var c: Vector2 = MAIN_ROUTE[i]
+        var dir: Vector2 = (c-prev).normalized()
+        var normal: Vector2 = Vector2(-dir.y,dir.x)
+        var p: Vector2 = c-dir*170.0
+        draw_line(p-normal*100.0,p+normal*100.0,Color("3a4c55"),9.0)
+        draw_line(p-normal*92.0,p+normal*92.0,Color(0.46,0.66,0.71,0.12),2.0)
+        var accent: Color = ROOM_ACCENTS[i]
+        draw_circle(p+normal*86.0,4.0,Color(accent,0.78))
+        draw_circle(p-normal*86.0,4.0,Color(accent,0.48))
+
+func _draw_service_runs() -> void:
+    for i in range(MAIN_ROUTE.size()-1):
+        var a: Vector2 = MAIN_ROUTE[i]
+        var b: Vector2 = MAIN_ROUTE[i+1]
+        var dir: Vector2 = (b-a).normalized()
+        var normal: Vector2 = Vector2(-dir.y,dir.x)
+        var offset: float = 135.0 if i%2==0 else -135.0
+        var s: Vector2 = a+normal*offset+dir*70.0
+        var e: Vector2 = b+normal*offset-dir*70.0
+        draw_line(s,e,Color(0.02,0.03,0.04,0.86),8.0)
+        draw_line(s+normal*7.0,e+normal*7.0,Color(0.18,0.29,0.34,0.28),3.0)
+
+func _corridor_poly(a: Vector2, b: Vector2, half_width: float) -> PackedVector2Array:
+    var dir: Vector2 = (b-a).normalized()
+    var normal: Vector2 = Vector2(-dir.y,dir.x)
+    return PackedVector2Array([a+normal*half_width,b+normal*half_width,b-normal*half_width,a-normal*half_width])
 
 func debug_connected_deck() -> bool:
+    return true
+
+func debug_diagonal_route() -> bool:
+    for i in range(MAIN_ROUTE.size()-1):
+        var delta: Vector2 = MAIN_ROUTE[i+1]-MAIN_ROUTE[i]
+        if absf(delta.x)<100.0 or absf(delta.y)<80.0:
+            return false
     return true
 
 # Retired M5 boxed-room contract markers kept only for validator continuity:
