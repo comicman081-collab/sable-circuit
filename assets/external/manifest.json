@@ -1,5 +1,17 @@
 {
   "schema_version": 1,
   "policy": "Only explicitly approved, license-documented, immutable/hashed external resources may be fetched.",
-  "assets": []
+  "assets": [
+    {
+      "id": "FONT_RAJDHANI_MEDIUM_1201",
+      "name": "Rajdhani Medium",
+      "origin": "https://raw.githubusercontent.com/google/fonts/9d1ce2fc3c335cca32b6db00c19f55d57b0a68fe/ofl/rajdhani/Rajdhani-Medium.ttf",
+      "version": "v1.201@9d1ce2fc3c335cca32b6db00c19f55d57b0a68fe",
+      "license": "OFL-1.1",
+      "destination": "assets/fonts/Rajdhani-Medium.ttf",
+      "sha256": "12ff7dcfe4c206e3875ac53b1762eab57de6a2fa7f5a86c26b97b88d6591eac2",
+      "license_file": "assets/fonts/RAJDHANI_OFL.txt",
+      "redistribution_policy": "May be bundled and redistributed with the game under SIL OFL 1.1; license text must accompany distribution."
+    }
+  ]
 }
