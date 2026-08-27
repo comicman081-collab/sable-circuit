@@ -17,13 +17,14 @@ func _run() -> void:
     _check(lighting != null, "M6 Site-7 lighting rig exists")
     _check(lighting != null and lighting.debug_light_count() == 8, "M6 lighting owns eight authored room lights")
 
+    var surface := stage.get_node_or_null("SurfaceDetail") as Site7SurfaceDetail
+    _check(surface != null and surface.debug_surface_count() == 8, "M6 has eight unique high-density room surface treatments")
+
     var camera := stage.get_node_or_null("Camera2D") as Camera2D
-    _check(camera != null and camera.zoom.x >= 1.10, "M6 camera uses tighter premium 2.5D framing")
+    _check(camera != null and camera.zoom.x >= 1.40, "M6 camera fills the screen with one premium room instead of prototype boxes")
 
     var active := stage.squad.operators[0] as OperatorActor
     stage.squad.request_control(0)
-    # Movement mechanics are tested independently of story route locks. StoryStage01
-    # remains responsible for restoring its authored bounds during normal play.
     active.set_movement_bounds(Rect2(100,100,2100,900))
     active.global_position = Vector2(620,480)
     active.aim_world = Vector2.RIGHT
@@ -42,6 +43,10 @@ func _run() -> void:
         _check(bool(contract.get("screen_diagonal",false)), "lower-body presentation resolves diagonal movement")
         _check(absf(float(contract.get("forward",0.0))) > 0.45 and absf(float(contract.get("strafe",0.0))) > 0.45, "diagonal locomotion blends forward and strafe components")
 
+    var upright := active.get_node_or_null("UprightStancePresentation") as UprightStancePresentation
+    _check(upright != null and upright.debug_upright(), "field actor keeps an upright body axis during diagonal travel")
+    var ik := active.get_node_or_null("OperatorWeaponIK") as OperatorWeaponIK
+    _check(ik != null and ik.debug_connected(), "both operator arms solve to the authoritative weapon instead of detached paper-doll aim")
     var shading := active.get_node_or_null("PremiumSpriteShading") as PremiumSpriteShading
     _check(shading != null and shading.debug_bound(), "operator layered rig receives premium 2.5D shading")
     active.debug_stop_drive()
