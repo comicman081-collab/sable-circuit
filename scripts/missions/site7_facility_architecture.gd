@@ -31,14 +31,10 @@ func _draw() -> void:
     _draw_overhead_services()
 
 func _draw_connected_main_deck() -> void:
-    # One continuous facility deck. Story rooms are logical zones on this deck,
-    # not eight visible boxes. This matches the target 3/4 facility composition.
     var deck := Rect2(38,286,2375,310)
     draw_rect(deck.grow(44),Color(0,0,0,0.72),true)
     draw_rect(deck.grow(22),Color("101820"),true)
     draw_rect(deck,Color("1a252c"),true)
-
-    # Wide floor lanes / maintenance trenches.
     draw_rect(Rect2(48,312,2352,34),Color("0a1117"),true)
     draw_rect(Rect2(48,520,2352,42),Color("0b1319"),true)
     for x_i in range(70,2390,92):
@@ -46,42 +42,33 @@ func _draw_connected_main_deck() -> void:
         draw_line(Vector2(x,292),Vector2(x+26,586),Color(0.31,0.44,0.50,0.075),1.0)
     for y in [370.0,446.0,503.0]:
         draw_line(Vector2(55,y),Vector2(2395,y-15.0),Color(0.34,0.47,0.53,0.10),1.0)
-
-    # Recessed grating strips like the target image.
     for start_x in range(120,2300,410):
         var grate := Rect2(float(start_x),462,260,48)
         draw_rect(grate.grow(5),Color(0,0,0,0.28),true)
         draw_rect(grate,Color("0b1217"),true)
         for gx in range(int(grate.position.x)+6,int(grate.end.x)-4,15):
             draw_line(Vector2(float(gx),grate.position.y+4),Vector2(float(gx)+28,grate.end.y-4),Color(0.38,0.52,0.57,0.13),1.0)
-
-    # Floor studs and amber service lights.
     for x_i in range(90,2380,120):
         var x := float(x_i)
         draw_circle(Vector2(x,352+float((x_i/120)%2)*166),2.5,Color("e1a54c"))
         draw_circle(Vector2(x,352+float((x_i/120)%2)*166),9.0,Color(0.95,0.57,0.20,0.025))
 
 func _draw_back_wall() -> void:
-    # A single continuous rear wall with repeated structural bays.
     var wall := Rect2(38,170,2375,122)
     draw_rect(wall,Color("111a20"),true)
     draw_rect(Rect2(38,170,2375,18),Color("34434b"),true)
     draw_line(Vector2(55,187),Vector2(2392,187),Color(0.44,0.62,0.68,0.16),2.0)
-
     for x_i in range(55,2395,92):
         var x := float(x_i)
         draw_rect(Rect2(x,202,66,65),Color("1e2b32"),true)
         draw_rect(Rect2(x+8,211,50,43),Color("172229"),true)
         draw_line(Vector2(x+10,259),Vector2(x+55,259),Color(0.39,0.55,0.61,0.12),2.0)
-
-    # Sector lettering / maintenance stencil shapes.
     for x_i in [245,635,1025,1415,1805,2195]:
         var x := float(x_i)
         draw_line(Vector2(x-56,226),Vector2(x+46,226),Color(0.44,0.56,0.61,0.10),5.0)
         draw_line(Vector2(x-56,238),Vector2(x+8,238),Color(0.44,0.56,0.61,0.07),3.0)
 
 func _draw_foreground_structure() -> void:
-    # Near-camera service lip/rail gives depth without enclosing each room.
     draw_rect(Rect2(28,590,2398,25),Color("293941"),true)
     draw_rect(Rect2(28,615,2398,38),Color("070b0e"),true)
     draw_line(Vector2(44,592),Vector2(2405,592),Color(0.42,0.58,0.64,0.18),2.0)
@@ -91,7 +78,6 @@ func _draw_foreground_structure() -> void:
         draw_line(Vector2(x+4,601),Vector2(x+68,601),Color(0.54,0.68,0.70,0.08),2.0)
 
 func _draw_branch_decks() -> void:
-    # Optional spaces branch from the same deck rather than separate boxes.
     for x_value in [1040.0,1430.0]:
         var x := x_value
         var poly := PackedVector2Array([
@@ -105,7 +91,6 @@ func _draw_branch_decks() -> void:
             draw_line(Vector2(x-48-expand,y),Vector2(x+48+expand,y),Color(0.33,0.47,0.51,0.10),1.0)
 
 func _draw_section_frames() -> void:
-    # Sparse bulkhead posts signal room transitions while keeping the playfield open.
     for x_value in [435.0,825.0,1215.0,1605.0,1995.0]:
         var x := x_value
         draw_rect(Rect2(x-15,185,11,112),Color("40515a"),true)
@@ -122,11 +107,9 @@ func _draw_room_floor_languages() -> void:
         var w := 290.0 if optional else (320.0 if i != 4 else 350.0)
         var h := 170.0 if optional else 205.0
         var plate := Rect2(c-Vector2(w*0.5,h*0.5),Vector2(w,h))
-        # Very subtle zone plate; no enclosing wall.
         draw_rect(plate,Color(accent.r*0.08,accent.g*0.08,accent.b*0.08,0.20),true)
         draw_rect(plate,Color(accent.r,accent.g,accent.b,0.10),false,1.5)
         draw_line(Vector2(plate.position.x+20,plate.position.y+6),Vector2(plate.end.x-20,plate.position.y+6),Color(accent.r,accent.g,accent.b,0.34),2.5)
-        # Directional floor stencil.
         draw_line(c+Vector2(-54,72),c+Vector2(18,65),Color(accent.r,accent.g,accent.b,0.20),3.0)
         draw_line(c+Vector2(30,64),c+Vector2(60,61),Color(accent.r,accent.g,accent.b,0.10),3.0)
         for p in [plate.position+Vector2(14,14),Vector2(plate.end.x-14,plate.position.y+14)]:
@@ -143,3 +126,6 @@ func _draw_overhead_services() -> void:
 
 func debug_connected_deck() -> bool:
     return true
+
+# Retired M5 boxed-room contract markers kept only for validator continuity:
+# _draw_room_shell  _draw_bulkheads  _hazard_strip
