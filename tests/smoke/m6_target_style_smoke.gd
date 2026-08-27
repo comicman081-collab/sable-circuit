@@ -42,9 +42,12 @@ func _run() -> void:
         var contract := diagonal.debug_locomotion_contract()
         _check(bool(contract.get("screen_diagonal",false)), "lower-body presentation resolves diagonal movement")
         _check(absf(float(contract.get("forward",0.0))) > 0.45 and absf(float(contract.get("strafe",0.0))) > 0.45, "diagonal locomotion blends forward and strafe components")
+        _check(bool(contract.get("pelvis_rotation_forbidden",false)), "diagonal locomotion never rotates the pelvis/root")
 
     var upright := active.get_node_or_null("UprightStancePresentation") as UprightStancePresentation
     _check(upright != null and upright.debug_upright(), "field actor keeps an upright body axis during diagonal travel")
+    _check(upright != null and upright.debug_body_axis_locked(), "pelvis body axis is hard-locked upright after diagonal presentation")
+
     var ik := active.get_node_or_null("OperatorWeaponIK") as OperatorWeaponIK
     _check(ik != null and ik.debug_connected(), "both operator arms solve to the authoritative weapon instead of detached paper-doll aim")
     var shading := active.get_node_or_null("PremiumSpriteShading") as PremiumSpriteShading
