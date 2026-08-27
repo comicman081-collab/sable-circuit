@@ -11,7 +11,8 @@ required_files=[
  'data/art_profiles/playable_profiles.json','data/art_profiles/enemy_profiles.json','scripts/data/art_profile_registry.gd','scripts/actors/enemy_actor.gd','scenes/actors/enemy/EnemyActor.tscn','scripts/vfx/combat_hit_vfx.gd','scripts/audio/procedural_combat_sfx.gd','scripts/combat/combat_feedback.gd','tools/validate_unique_art.py','tests/smoke/m3_unique_art_smoke.gd','docs/M3_UNIQUE_2P5D_ART_BIBLE.md','docs/M3_HIGH_RES_UNIQUE_ART_RUNTIME.md',
  'assets/characters/playable/aster/aster_master.svg','assets/characters/playable/aster/aster_rig_sheet.svg','assets/characters/playable/rook/rook_master.svg','assets/characters/playable/rook/rook_rig_sheet.svg','assets/characters/playable/mica/mica_master.svg','assets/characters/playable/mica/mica_rig_sheet.svg',
  'assets/enemies/rifle_trooper/rifle_trooper_master.svg','assets/enemies/rifle_trooper/rifle_trooper_rig_sheet.svg','assets/enemies/shield_breacher/shield_breacher_master.svg','assets/enemies/shield_breacher/shield_breacher_rig_sheet.svg','assets/enemies/recon_drone/recon_drone_master.svg','assets/enemies/recon_drone/recon_drone_rig_sheet.svg','assets/enemies/aberrant_melee/aberrant_melee_master.svg','assets/enemies/aberrant_melee/aberrant_melee_rig_sheet.svg','assets/enemies/signal_anchor_guardian/signal_anchor_guardian_master.svg','assets/enemies/signal_anchor_guardian/signal_anchor_guardian_rig_sheet.svg',
- 'scripts/animation/face_micro_rig.gd','scripts/animation/premium_operator_presentation.gd','scripts/animation/premium_enemy_presentation.gd','scripts/vfx/enemy_death_sequence.gd','scripts/missions/stage01_environment_director.gd','tests/smoke/m4_premium_motion_environment_smoke.gd','docs/M4_PREMIUM_MOTION_ENVIRONMENT.md'
+ 'scripts/animation/face_micro_rig.gd','scripts/animation/premium_operator_presentation.gd','scripts/animation/premium_enemy_presentation.gd','scripts/vfx/enemy_death_sequence.gd','scripts/missions/stage01_environment_director.gd','tests/smoke/m4_premium_motion_environment_smoke.gd','docs/M4_PREMIUM_MOTION_ENVIRONMENT.md',
+ 'tests/render/runtime_capture.gd','scripts/ui/tactical_minimap.gd','scripts/missions/site7_facility_architecture.gd','docs/M5_ACTUAL_RUNTIME_VISUAL_VALIDATION.md'
 ]
 errors=[]
 for f in required_files:
@@ -78,7 +79,12 @@ contracts={
  'scripts/animation/premium_enemy_presentation.gd':['EnemyDeathSequence.new()','_fire_phase_pattern','debug_phase','debug_sector'],
  'scripts/vfx/enemy_death_sequence.gd':['enemy_death_sequences','_configure_identity','debug_mode'],
  'scripts/missions/stage01_environment_director.gd':['GATE_RIBS_AMBER_TERMINAL','SIGNAL_TEAL_WAVEFORM','debug_room_style_count','debug_room_signatures'],
- 'tests/smoke/m4_premium_motion_environment_smoke.gd':['M4_PREMIUM_MOTION_ENVIRONMENT_SMOKE: PASS','eight directional sectors are addressable','boss enters phase 3','eight authored room environment styles']
+ 'tests/smoke/m4_premium_motion_environment_smoke.gd':['M4_PREMIUM_MOTION_ENVIRONMENT_SMOKE: PASS','eight directional sectors are addressable','boss enters phase 3','eight authored room environment styles'],
+ 'tests/render/runtime_capture.gd':['RUNTIME_CAPTURE: PASS','01_map_movement.png','03_boss_phase3.png','direction_sector_7.png','death_boss.png'],
+ 'scripts/ui/tactical_minimap.gd':['class_name TacticalMinimap','m3_enemies','active.aim_world'],
+ 'scripts/ui/story_stage_hud.gd':['Rajdhani','Bahnschrift SemiCondensed','COIL ASSAULT RIFLE','TacticalMinimap.new()'],
+ 'scripts/missions/site7_facility_architecture.gd':['class_name Site7FacilityArchitecture','_draw_room_shell','_draw_bulkheads','_hazard_strip'],
+ 'docs/M5_ACTUAL_RUNTIME_VISUAL_VALIDATION.md':['Generated concept art, mockups, edited screenshots and AI-generated images are **not** runtime evidence','exactly 24 PNG files','Public deployment / GitHub Pages remains disabled']
 }
 for rel,needles in contracts.items():
  path=ROOT/rel
@@ -115,4 +121,4 @@ if errors:
  for e in errors: print(' -',e)
  sys.exit(1)
 print('VALIDATION: PASS')
-print(f'checked {len(required_files)} required files and M1/M2/M3/M4 runtime/art contracts')
+print(f'checked {len(required_files)} required files and M1/M2/M3/M4/M5 runtime/art/evidence contracts')
