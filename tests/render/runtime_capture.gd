@@ -27,7 +27,6 @@ func _run() -> void:
     camera = stage.get_node("Camera2D") as Camera2D
     camera.enabled = true
     camera.position_smoothing_enabled = false
-    # Freeze only StoryStage01's follow/interact process. Child actors, VFX and environments continue processing.
     stage.set_process(false)
 
     await _capture_movement()
@@ -47,17 +46,19 @@ func _capture_movement() -> void:
     await _clear_enemies()
     stage.current_step = 0
     stage.call("_activate_step")
-    _place_squad(Vector2(350, 420), Vector2(0.93,-0.36))
-    camera.global_position = Vector2(355, 420)
+    _place_squad(Vector2(310, 475), Vector2(0.98,-0.18))
+    camera.global_position = Vector2(350, 420)
     var active := stage.squad.get_active_operator()
     if active:
-        active.debug_drive(Vector2.RIGHT, Vector2(0.93, -0.36))
-    await _settle(18)
+        # M6 evidence is captured while the actor is actually travelling diagonally.
+        # Aim remains independent to prove move/aim decoupling during diagonal motion.
+        active.debug_drive(Vector2(1.0,-1.0).normalized(), Vector2(0.98,-0.18))
+    await _settle(11)
+    camera.global_position = Vector2(350,420)
+    await _save("01_map_movement.png")
     if active:
         active.debug_stop_drive()
-    camera.global_position = Vector2(355,420)
     await _settle(2)
-    await _save("01_map_movement.png")
 
 func _capture_combat() -> void:
     await _clear_enemies()
@@ -173,7 +174,6 @@ func _capture_unique_deaths() -> void:
         await _save("%02d_death_%s.png" % [20+i,names[i]])
 
 func _place_squad(center: Vector2, aim: Vector2) -> void:
-    # Mirror the live wide-echelon formation so evidence reflects actual gameplay readability.
     var positions: Array[Vector2] = [
         center,
         center + Vector2(-86, 78),
