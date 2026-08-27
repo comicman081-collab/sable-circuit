@@ -45,6 +45,7 @@ func _capture_movement() -> void:
     camera.global_position = Vector2(300,470)
     var active := stage.squad.get_active_operator()
     if active:
+        # M6 evidence is captured while the actor is actually travelling diagonally
         active.debug_drive(Vector2(1.0,-1.0).normalized(), Vector2(0.98,-0.18))
     await _settle(11)
     camera.global_position = Vector2(300,470)
