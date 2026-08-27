@@ -3,7 +3,7 @@
   "profiles": [
     {
       "actor_id":"CHR_PROTO_01","name":"ASTER","role":"ASSAULT","visual_profile":"VIS_ASTER_01",
-      "master_asset":"assets/characters/playable/aster/aster_master.svg","rig_sheet":"assets/characters/playable/aster/aster_rig_sheet.svg",
+      "master_asset":"assets/characters/playable/aster/aster_master.svg","portrait_asset":"assets/characters/playable/aster/aster_portrait.svg","rig_sheet":"assets/characters/playable/aster/aster_rig_sheet.svg",
       "silhouette":"forward-canted short jacket, asymmetrical right shoulder plate, split comet ponytail, long narrow rifle","palette":["#79D8FF","#16374A","#E8F7FF","#FFCF70"],"weapon_signature":"precision coil AR with triangular muzzle cage",
       "motion_profile":"MOT_ASTER_01","motion_signature":"light forward lean, quick two-beat stride, low vertical bob, sharp recoil recovery",
       "projectile_profile":"PRJ_ASTER_NEEDLE_01","projectile_signature":"thin cyan-white needle with segmented wake and short golden tip flare",
@@ -13,8 +13,8 @@
     },
     {
       "actor_id":"CHR_PROTO_02","name":"ROOK","role":"BREACH","visual_profile":"VIS_ROOK_01",
-      "master_asset":"assets/characters/playable/rook/rook_master.svg","rig_sheet":"assets/characters/playable/rook/rook_rig_sheet.svg",
-      "silhouette":"broad cropped mantle, heavy left gauntlet, compact blunt bob, oversized rectangular shotgun","palette":["#FF9566","#3A2024","#F7D7C5","#FFE09A"],"weapon_signature":"box-frame magnetic scattergun with vented fore-end",
+      "master_asset":"assets/characters/playable/rook/rook_master.svg","portrait_asset":"assets/characters/playable/rook/rook_portrait.svg","rig_sheet":"assets/characters/playable/rook/rook_rig_sheet.svg",
+      "silhouette":"broad cropped mantle, heavy left gauntlet, compact blunt bob, oversized rectangular shotgun","palette":["#D39A58","#2D3338","#F0EDE7","#E3BC75"],"weapon_signature":"box-frame magnetic scattergun with vented fore-end",
       "motion_profile":"MOT_ROOK_01","motion_signature":"lower center of gravity, deliberate heel-heavy stride, strong shoulder counter-rotation, deep recoil compression",
       "projectile_profile":"PRJ_ROOK_SCATTER_01","projectile_signature":"five hot amber shards with widening fan and thick ember tails",
       "hit_vfx_profile":"HIT_ROOK_CRUSH_01","hit_vfx_signature":"wide orange pressure ring, chunky dark debris and square sparks",
@@ -23,8 +23,8 @@
     },
     {
       "actor_id":"CHR_PROTO_03","name":"MICA","role":"SUPPORT_RECON","visual_profile":"VIS_MICA_01",
-      "master_asset":"assets/characters/playable/mica/mica_master.svg","rig_sheet":"assets/characters/playable/mica/mica_rig_sheet.svg",
-      "silhouette":"long split tech-coat, twin sensor fins, rounded side braid, compact floating-support carbine","palette":["#A8F07A","#18382D","#E9FFE0","#7CF4E7"],"weapon_signature":"sensor carbine with circular emitter and under-barrel scanner",
+      "master_asset":"assets/characters/playable/mica/mica_master.svg","portrait_asset":"assets/characters/playable/mica/mica_portrait.svg","rig_sheet":"assets/characters/playable/mica/mica_rig_sheet.svg",
+      "silhouette":"long split tech-coat, twin sensor fins, rounded side braid, compact floating-support carbine","palette":["#62D8C8","#263B3F","#D8C2AC","#7CF4E7"],"weapon_signature":"sensor carbine with circular emitter and under-barrel scanner",
       "motion_profile":"MOT_MICA_01","motion_signature":"upright glide-like steps, softer cadence, delayed coat/fins secondary motion, controlled recoil with sensor settle",
       "projectile_profile":"PRJ_MICA_PULSE_01","projectile_signature":"mint concentric pulse bead with a hollow center and dotted telemetry trail",
       "hit_vfx_profile":"HIT_MICA_SCANBURST_01","hit_vfx_signature":"mint hex scan bloom with two rotating arc fragments",
