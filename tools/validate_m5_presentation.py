@@ -8,8 +8,8 @@ contracts = {
     "scripts/missions/site7_depth_pass.gd": [
         "class_name Site7DepthPass",
         "_draw_room_depth",
-        "var top_face",
-        "var right_face",
+        "back_shadow",
+        "side_shadow",
     ],
     "scripts/ui/cinematic_field_overlay.gd": [
         "class_name CinematicFieldOverlay",
@@ -45,7 +45,7 @@ contracts = {
     "tests/render/runtime_capture.gd": [
         "19_direction_sector_7.png",
         "24_death_boss.png",
-        "Mirror the live wide-echelon formation",
+        "M6 evidence is captured while the actor is actually travelling diagonally",
         "RUNTIME_CAPTURE: PASS",
     ],
     "scenes/mission/StoryStage01.tscn": [
@@ -85,15 +85,14 @@ for rel, needles in contracts.items():
     text = path.read_text(encoding="utf-8")
     for needle in needles:
         if needle not in text:
-            errors.append(f"{rel} missing M5 presentation token: {needle}")
+            errors.append(f"{rel} missing M5/M6 presentation token: {needle}")
 
-# Deployment remains explicitly out of scope while art/runtime is still in production.
 workflow_dir = ROOT / ".github" / "workflows"
 if workflow_dir.exists():
     for path in workflow_dir.glob("*.y*ml"):
         lower = path.read_text(encoding="utf-8", errors="replace").lower()
         if "actions/deploy-pages" in lower or "pages: write" in lower or "github-pages" in lower:
-            errors.append(f"deployment forbidden during M5 production: {path.relative_to(ROOT)}")
+            errors.append(f"deployment forbidden during production: {path.relative_to(ROOT)}")
 
 if errors:
     print("M5_PRESENTATION_VALIDATION: FAIL")
@@ -102,4 +101,4 @@ if errors:
     sys.exit(1)
 
 print("M5_PRESENTATION_VALIDATION: PASS")
-print(f"checked {len(contracts)} M5 production presentation contracts")
+print(f"checked {len(contracts)} retained M5 + upgraded M6 production presentation contracts")
