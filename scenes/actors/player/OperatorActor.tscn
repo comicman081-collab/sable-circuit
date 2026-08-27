@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource type="Script" path="res://scripts/actors/operator_actor.gd" id="1_actor"]
 [ext_resource type="Script" path="res://scripts/animation/operator_visual.gd" id="2_visual"]
 [ext_resource type="Script" path="res://scripts/animation/premium_operator_presentation.gd" id="3_premium"]
 [ext_resource type="Script" path="res://scripts/animation/operator_ground_shadow.gd" id="4_shadow"]
 [ext_resource type="Script" path="res://scripts/animation/premium_sprite_shading.gd" id="5_shading"]
+[ext_resource type="Script" path="res://scripts/animation/diagonal_locomotion_presentation.gd" id="6_diagonal"]
 
 [sub_resource type="CapsuleShape2D" id="Capsule_operator"]
 radius = 14.0
@@ -28,6 +29,9 @@ script = ExtResource("2_visual")
 
 [node name="PremiumPresentation" type="Node2D" parent="."]
 script = ExtResource("3_premium")
+
+[node name="DiagonalLocomotionPresentation" type="Node2D" parent="."]
+script = ExtResource("6_diagonal")
 
 [node name="PremiumSpriteShading" type="Node" parent="."]
 script = ExtResource("5_shading")
