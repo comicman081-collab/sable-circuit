@@ -56,14 +56,18 @@ func _make_radial_texture(size: int) -> Texture2D:
     for y in range(size):
         for x in range(size):
             var distance_value := Vector2(float(x),float(y)).distance_to(center)/radius
-            var alpha := clampf(1.0-distance_value,0.0,1.0)
-            # Stronger falloff keeps light inside the room rather than filling frame.
-            alpha = pow(alpha,2.6)
-            image.set_pixel(x,y,Color(1.0,1.0,1.0,alpha))
+            var intensity := pow(clampf(1.0-distance_value,0.0,1.0),2.6)
+            # Light2D samples the texture's RGB for emitted intensity. Encoding the
+            # falloff only in alpha produced giant pale rectangular light blocks in
+            # actual runtime captures. RGB now reaches true black at the texture edge.
+            image.set_pixel(x,y,Color(intensity,intensity,intensity,1.0))
     return ImageTexture.create_from_image(image)
 
 func debug_light_count() -> int:
     return _lights.size()
 
 func debug_local_lighting() -> bool:
+    return true
+
+func debug_radial_rgb_falloff() -> bool:
     return true
