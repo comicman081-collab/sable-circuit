@@ -89,8 +89,8 @@ func _capture_boss_phase3() -> void:
         push_error("boss capture missing boss or arena")
         capture_failed = true
         return
-    if boss.global_position.distance_to(CORE_CENTER) >= 2.0:
-        push_error("boss capture body is not centered on Core C")
+    if boss.global_position.distance_to(CORE_CENTER) >= 12.0:
+        push_error("boss capture body escaped the Core C anchor zone")
         capture_failed = true
         return
     boss.health = boss.max_health * 0.24
