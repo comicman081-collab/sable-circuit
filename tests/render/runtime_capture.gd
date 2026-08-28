@@ -268,19 +268,29 @@ func _capture_m8_wipe_results() -> void:
     wipe_summary["campaign"] = {
         "research_value":364,"salvage":3,"signal_fragments":1,"armory_level":1,"lab_level":1
     }
+    var ui_layer := CanvasLayer.new()
+    ui_layer.layer = 100
+    root.add_child(ui_layer)
     var results := RESULTS_SCENE.instantiate() as MissionResults
     results.configure(wipe_summary)
-    root.add_child(results)
+    ui_layer.add_child(results)
     await _settle(4)
     var shown := results.debug_summary()
     if str(shown.get("outcome","")) != "WIPED" or bool(shown.get("carrier_fragment_secured",true)):
         push_error("M8 wipe result capture does not distinguish found vs secured high-value cargo")
         capture_failed = true
+    var origin := results.get_global_transform_with_canvas().origin
+    if origin.distance_to(Vector2.ZERO) > 1.0:
+        push_error("M8 wipe results are not viewport anchored: " + str(origin))
+        capture_failed = true
     await _save("26_m8_wipe_results.png")
-    results.queue_free()
+    ui_layer.queue_free()
     await process_frame
 
 func _capture_m8_base_armory() -> void:
+    var ui_layer := CanvasLayer.new()
+    ui_layer.layer = 100
+    root.add_child(ui_layer)
     var lobby := LOBBY_SCENE.instantiate() as BaseLobby
     lobby.configure_campaign({
         "research_value":620,"salvage":5,"signal_fragments":3,
@@ -289,7 +299,7 @@ func _capture_m8_base_armory() -> void:
         "armory_cost":{"research":240,"salvage":2,"fragments":0},
         "lab_cost":{"research":220,"salvage":0,"fragments":1}
     })
-    root.add_child(lobby)
+    ui_layer.add_child(lobby)
     await _settle(3)
     lobby.call("_show_facility","ARMORY")
     await _settle(2)
@@ -297,8 +307,12 @@ func _capture_m8_base_armory() -> void:
     if int(snapshot.get("research_value",0)) != 620 or int(snapshot.get("armory_level",0)) != 1:
         push_error("M8 base capture campaign snapshot mismatch")
         capture_failed = true
+    var origin := lobby.get_global_transform_with_canvas().origin
+    if origin.distance_to(Vector2.ZERO) > 1.0:
+        push_error("M8 base lobby is not viewport anchored: " + str(origin))
+        capture_failed = true
     await _save("27_m8_base_armory.png")
-    lobby.queue_free()
+    ui_layer.queue_free()
     await process_frame
 
 func _await_death_sequence(expected_id: String) -> EnemyDeathSequence:
@@ -344,6 +358,8 @@ func _settle(frames: int) -> void:
 func _save(filename: String) -> void:
     await RenderingServer.frame_post_draw
     var image := root.get_texture().get_image()
+    if not _validate_m8_ui_content(image, filename):
+        capture_failed = true
     var path := ProjectSettings.globalize_path(OUT_DIR + "/" + filename)
     var err := image.save_png(path)
     if err != OK:
@@ -351,6 +367,21 @@ func _save(filename: String) -> void:
         capture_failed = true
         return
     print("CAPTURED: " + path)
+
+func _validate_m8_ui_content(image: Image, filename: String) -> bool:
+    if filename not in ["26_m8_wipe_results.png","27_m8_base_armory.png"]:
+        return true
+    var bright_samples := 0
+    for y in range(80, 640, 4):
+        for x in range(180, 1100, 4):
+            var pixel := image.get_pixel(x,y)
+            if maxf(pixel.r,maxf(pixel.g,pixel.b)) > 0.22:
+                bright_samples += 1
+    print("M8_UI_EVIDENCE %s bright_samples=%d" % [filename,bright_samples])
+    if bright_samples < 80:
+        push_error("M8 UI evidence is visually empty/off-canvas: %s samples=%d" % [filename,bright_samples])
+        return false
+    return true
 
 func _verify_required_evidence() -> bool:
     for filename in REQUIRED_EVIDENCE:
