@@ -82,8 +82,8 @@ jobs:
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m9_operator_skill_synergy_smoke.gd"
       - name: M10 intel analysis and loadout smoke test
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m10_intel_loadout_smoke.gd"
-      - name: M10 Base UI binding smoke test
-        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m10_ui_binding_smoke.gd"
+      - name: M10 Base UI action smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m10_base_ui_action_smoke.gd"
       - name: M10 persistence and migration smoke test
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m10_persistence_smoke.gd"
 
