@@ -142,12 +142,21 @@ func _capture_eight_directions() -> void:
         Vector2.LEFT,Vector2(-1,-1).normalized(),Vector2.UP,Vector2(1,-1).normalized()
     ]
     for sector in range(8):
-        active.aim_world = vectors[sector]
-        active.facing_sector = sector
+        # Lock aim through the authoritative actor debug path. Directly assigning
+        # aim_world/facing_sector was not valid evidence because a controlled actor
+        # overwrites both from mouse aim on the next physics frame.
+        active.debug_drive(Vector2.ZERO, vectors[sector])
         active.velocity = Vector2.ZERO
-        await _settle(3)
+        await physics_frame
+        await physics_frame
+        await _settle(1)
+        if active.facing_sector != sector:
+            push_error("direction evidence sector drift: expected=%d actual=%d" % [sector, active.facing_sector])
+            capture_failed = true
+            break
         camera.global_position = Vector2(1100,490)
         await _save("%02d_direction_sector_%d.png" % [12+sector,sector])
+    active.debug_stop_drive()
     stage.squad.operators[1].visible = true
     stage.squad.operators[2].visible = true
 
