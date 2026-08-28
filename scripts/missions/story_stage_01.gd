@@ -5,6 +5,7 @@ signal stage_completed(summary: Dictionary)
 
 const MISSION_PATH := "res://data/missions/MIS_CH01_01.json"
 const ENEMY_SCENE := preload("res://scenes/actors/enemy/EnemyActor.tscn")
+const EXTRACTION_OFFER_IDS := ["R03_ARCHIVE", "R04_JUNCTION", "R05_CORE_C"]
 
 var mission: Dictionary = {}
 var main_route: Array = []
@@ -18,6 +19,23 @@ var _signal_found := false
 var _ledger_recovered := false
 var _active_enemy_ids: Array[String] = []
 
+# M8 run authority. Common cargo has partial emergency recovery; high-value cargo
+# only becomes permanent through extraction. Story-critical ledger data is retained
+# explicitly so narrative progress and economic risk are not conflated.
+var _run_id := "UNCONFIGURED-RUN"
+var _campaign_snapshot: Dictionary = {}
+var _research_multiplier := 1.0
+var _cargo_common_research := 0
+var _cargo_unsecured_research := 0
+var _cargo_salvage := 0
+var _cargo_fragments := 0
+var _completed_depth := 0
+var _extraction_offer_active := false
+var _extraction_offer_room := ""
+var _extract_latch := false
+var _continue_latch := false
+var _mission_ended := false
+
 @onready var squad: SquadController = $SquadController
 @onready var camera: Camera2D = $Camera2D
 @onready var hud: StoryStageHUD = $StoryStageHUD
@@ -27,8 +45,19 @@ func _ready() -> void:
     _load_mission()
     _apply_progress_bounds()
     hud.set_optional_status(_supply_found, _signal_found)
+    _refresh_cargo_hud()
     queue_redraw()
     call_deferred("_activate_step")
+
+func configure_campaign(snapshot: Dictionary, run_id: String) -> void:
+    _campaign_snapshot = snapshot.duplicate(true)
+    _run_id = run_id if not run_id.is_empty() else "UNCONFIGURED-RUN"
+    _research_multiplier = clampf(float(snapshot.get("research_multiplier", 1.0)), 1.0, 2.0)
+    var damage_multiplier := clampf(float(snapshot.get("damage_multiplier", 1.0)), 1.0, 2.0)
+    if squad != null:
+        for actor in squad.operators:
+            actor.apply_campaign_modifiers({"damage_multiplier": damage_multiplier})
+    _refresh_cargo_hud()
 
 func _load_mission() -> void:
     var parsed = JSON.parse_string(FileAccess.get_file_as_string(MISSION_PATH))
@@ -38,6 +67,23 @@ func _load_mission() -> void:
         optional_rooms = mission.get("optional_rooms", [])
 
 func _process(_delta: float) -> void:
+    if _mission_ended:
+        return
+    if _all_squad_downed():
+        _finish_mission("WIPED")
+        return
+
+    if _extraction_offer_active:
+        var extract_pressed := Input.is_key_pressed(KEY_F)
+        var continue_pressed := Input.is_key_pressed(KEY_C)
+        if extract_pressed and not _extract_latch:
+            _finish_mission("EXTRACTED")
+        elif continue_pressed and not _continue_latch:
+            _continue_after_extraction_offer()
+        _extract_latch = extract_pressed
+        _continue_latch = continue_pressed
+        return
+
     var active := squad.get_active_operator()
     if active == null:
         return
@@ -46,6 +92,14 @@ func _process(_delta: float) -> void:
     if interact_pressed and not _interact_latch:
         _handle_interaction(active)
     _interact_latch = interact_pressed
+
+func _all_squad_downed() -> bool:
+    if squad == null or squad.operators.is_empty():
+        return false
+    for actor in squad.operators:
+        if actor != null and not actor.is_downed():
+            return false
+    return true
 
 func _check_current_room_entry(active: OperatorActor) -> void:
     if current_step < 0 or current_step >= main_route.size(): return
@@ -66,8 +120,9 @@ func _handle_interaction(active: OperatorActor) -> void:
                 hud.set_story(str(node.get("story", "Objective complete.")))
                 _complete_step(); return
             if kind == "EXTRACTION":
+                _completed_depth = maxi(_completed_depth, current_step + 1)
                 hud.set_story(str(node.get("story", "Extraction confirmed.")))
-                _finish_mission(); return
+                _finish_mission("EXTRACTED"); return
     if current_step >= 2:
         for room_variant in optional_rooms:
             var room: Dictionary = room_variant
@@ -75,10 +130,17 @@ func _handle_interaction(active: OperatorActor) -> void:
             if (room_id == "O01_SUPPLY" and _supply_found) or (room_id == "O02_RESEARCH" and _signal_found): continue
             var room_pos := Vector2(float(room.get("x", 0)), float(room.get("y", 0)))
             if active.global_position.distance_to(room_pos) <= 150.0:
-                if room_id == "O01_SUPPLY": _supply_found = true
-                elif room_id == "O02_RESEARCH": _signal_found = true
+                if room_id == "O01_SUPPLY":
+                    _supply_found = true
+                    _cargo_common_research += 20
+                    _cargo_salvage += 2
+                elif room_id == "O02_RESEARCH":
+                    _signal_found = true
+                    _cargo_unsecured_research += 40
+                    _cargo_fragments += 1
                 hud.set_story("OPTIONAL RECOVERY // " + str(room.get("story", "Recovered.")))
                 hud.set_optional_status(_supply_found, _signal_found)
+                _refresh_cargo_hud()
                 queue_redraw(); return
 
 func _spawn_combat(node: Dictionary) -> void:
@@ -114,6 +176,7 @@ func _activate_step() -> void:
     if main_route.is_empty() or current_step >= main_route.size(): return
     var node: Dictionary = main_route[current_step]
     var kind := str(node.get("type", "EVENT"))
+    hud.set_extraction_offer(false, 0, 0)
     hud.set_room(current_step, main_route.size(), str(node.get("title", "Unknown")), kind)
     hud.set_objective(str(node.get("objective", "Proceed")), kind in ["EVENT", "RESEARCH", "EXTRACTION"])
     hud.set_combat_status(0)
@@ -122,8 +185,49 @@ func _activate_step() -> void:
     _apply_progress_bounds(); queue_redraw()
 
 func _complete_step() -> void:
+    if current_step < 0 or current_step >= main_route.size():
+        return
+    var completed_node: Dictionary = main_route[current_step]
+    _award_main_route_reward(completed_node)
+    _completed_depth = maxi(_completed_depth, current_step + 1)
+    if str(completed_node.get("id", "")) in EXTRACTION_OFFER_IDS:
+        _offer_extraction(completed_node)
+        return
     current_step += 1
     if current_step < main_route.size(): _activate_step()
+
+func _award_main_route_reward(node: Dictionary) -> void:
+    var kind := str(node.get("type", "EVENT"))
+    match kind:
+        "EVENT": _cargo_common_research += 10
+        "COMBAT": _cargo_common_research += 25
+        "RESEARCH": _cargo_common_research += 45
+        "ELITE": _cargo_common_research += 35
+        "BOSS": _cargo_unsecured_research += 45
+    _refresh_cargo_hud()
+
+func _offer_extraction(node: Dictionary) -> void:
+    _extraction_offer_active = true
+    _extraction_offer_room = str(node.get("id", ""))
+    # Prevent the same F press that completed a research interaction from also
+    # immediately accepting extraction. A release/repress is required.
+    _extract_latch = Input.is_key_pressed(KEY_F)
+    _continue_latch = Input.is_key_pressed(KEY_C)
+    hud.set_extraction_offer(true, _completed_depth, _cargo_common_research + _cargo_unsecured_research)
+    hud.set_story("EXTRACTION WINDOW // [F] secure cargo now   [C] continue deeper and keep high-value cargo at risk.")
+    hud.set_objective("Choose extraction or continue deeper", false)
+    _apply_progress_bounds()
+
+func _continue_after_extraction_offer() -> void:
+    if not _extraction_offer_active:
+        return
+    _extraction_offer_active = false
+    _extraction_offer_room = ""
+    _extract_latch = false
+    _continue_latch = true
+    current_step += 1
+    if current_step < main_route.size():
+        _activate_step()
 
 func _apply_progress_bounds() -> void:
     if main_route.is_empty(): return
@@ -133,9 +237,64 @@ func _apply_progress_bounds() -> void:
     var bounds := Rect2(90.0, 120.0, maxf(260.0, right_edge - 90.0), 650.0)
     for actor in squad.operators: actor.set_movement_bounds(bounds)
 
-func _finish_mission() -> void:
-    var summary := {"mission_id": mission.get("mission_id", "MIS_CH01_01"),"chapter_id": mission.get("chapter_id", "CH01"),"ledger_recovered": _ledger_recovered,"field_supplies": _supply_found,"carrier_fragment": _signal_found,"secured_rewards": 120 + (40 if _supply_found else 0) + (60 if _signal_found else 0)}
-    stage_completed.emit(summary)
+func _refresh_cargo_hud() -> void:
+    if hud == null:
+        return
+    hud.set_cargo_status(_cargo_common_research, _cargo_unsecured_research, _cargo_salvage, _cargo_fragments)
+
+func _build_summary(outcome: String) -> Dictionary:
+    var wiped := outcome.to_upper() == "WIPED"
+    var raw_research := 0
+    var secured_salvage := 0
+    var secured_fragments := 0
+    var lost_research := 0
+    if wiped:
+        raw_research = int(floor(float(_cargo_common_research) * 0.5))
+        secured_salvage = int(floor(float(_cargo_salvage) * 0.5))
+        secured_fragments = 0
+        lost_research = (_cargo_common_research - raw_research) + _cargo_unsecured_research
+    else:
+        raw_research = _cargo_common_research + _cargo_unsecured_research
+        secured_salvage = _cargo_salvage
+        secured_fragments = _cargo_fragments
+        lost_research = 0
+    var secured_research := int(round(float(raw_research) * _research_multiplier))
+    return {
+        "mission_id": mission.get("mission_id", "MIS_CH01_01"),
+        "chapter_id": mission.get("chapter_id", "CH01"),
+        "transaction_id": _run_id,
+        "run_id": _run_id,
+        "outcome": outcome.to_upper(),
+        "early_extraction": not wiped and _completed_depth < main_route.size(),
+        "extraction_room": _extraction_offer_room,
+        "extraction_depth": _completed_depth,
+        "ledger_recovered": _ledger_recovered,
+        "ledger_retained_on_wipe": wiped and _ledger_recovered,
+        "field_supplies": _supply_found,
+        "carrier_fragment": _signal_found,
+        "carrier_fragment_secured": secured_fragments > 0,
+        "secured_research": secured_research,
+        "secured_salvage": secured_salvage,
+        "secured_fragments": secured_fragments,
+        "secured_rewards": secured_research,
+        "lost_unsecured": lost_research,
+        "research_multiplier": _research_multiplier,
+        "cargo_before_resolution": {
+            "common_research": _cargo_common_research,
+            "unsecured_research": _cargo_unsecured_research,
+            "salvage": _cargo_salvage,
+            "fragments": _cargo_fragments
+        },
+        "wipe_policy": "50% COMMON RESEARCH/SALVAGE RETAINED; HIGH-VALUE RESEARCH + SIGNAL FRAGMENTS LOST; STORY LEDGER RETAINED"
+    }
+
+func _finish_mission(outcome: String = "EXTRACTED") -> void:
+    if _mission_ended:
+        return
+    _mission_ended = true
+    _extraction_offer_active = false
+    hud.set_extraction_offer(false, 0, 0)
+    stage_completed.emit(_build_summary(outcome))
 
 func _draw() -> void:
     for i in range(main_route.size()):
@@ -188,10 +347,18 @@ func debug_progress_marker_contract() -> Dictionary:
 func debug_route_count() -> int: return main_route.size()
 func debug_optional_count() -> int: return optional_rooms.size()
 func debug_advance_step() -> void:
-    if current_step < main_route.size() - 1: _complete_step()
+    if current_step < main_route.size() - 1:
+        _complete_step()
+        if _extraction_offer_active:
+            _continue_after_extraction_offer()
 func debug_finish() -> Dictionary:
     _ledger_recovered = true; _supply_found = true; _signal_found = true
-    return {"mission_id": mission.get("mission_id", "MIS_CH01_01"),"chapter_id": "CH01","ledger_recovered": true,"field_supplies": true,"carrier_fragment": true,"secured_rewards": 220}
+    _cargo_common_research = 135
+    _cargo_unsecured_research = 85
+    _cargo_salvage = 2
+    _cargo_fragments = 1
+    _completed_depth = 6
+    return _build_summary("EXTRACTED")
 func debug_spawn_encounter_for_step(step_index: int) -> Array[String]:
     if step_index < 0 or step_index >= main_route.size(): return []
     for node in get_tree().get_nodes_in_group("m3_enemies"):
@@ -199,3 +366,44 @@ func debug_spawn_encounter_for_step(step_index: int) -> Array[String]:
     enemies_alive = 0; _combat_started = false; current_step = step_index
     var row: Dictionary = main_route[current_step]; _spawn_combat(row)
     return _active_enemy_ids.duplicate()
+
+func debug_seed_cargo(common_research: int, unsecured_research: int, salvage_value: int, fragments: int, ledger: bool, depth: int) -> void:
+    _cargo_common_research = maxi(0, common_research)
+    _cargo_unsecured_research = maxi(0, unsecured_research)
+    _cargo_salvage = maxi(0, salvage_value)
+    _cargo_fragments = maxi(0, fragments)
+    _ledger_recovered = ledger
+    _supply_found = _cargo_salvage > 0
+    _signal_found = _cargo_fragments > 0
+    _completed_depth = clampi(depth, 0, main_route.size())
+    _refresh_cargo_hud()
+
+func debug_extraction_summary(room_id: String = "DEBUG_EXTRACTION") -> Dictionary:
+    _extraction_offer_room = room_id
+    return _build_summary("EXTRACTED")
+
+func debug_wipe_summary() -> Dictionary:
+    return _build_summary("WIPED")
+
+func debug_offer_extraction(room_id: String = "R03_ARCHIVE") -> void:
+    _extraction_offer_active = true
+    _extraction_offer_room = room_id
+    hud.set_extraction_offer(true, _completed_depth, _cargo_common_research + _cargo_unsecured_research)
+
+func debug_continue_extraction() -> void:
+    _continue_after_extraction_offer()
+
+func debug_extraction_active() -> bool:
+    return _extraction_offer_active
+
+func debug_campaign_contract() -> Dictionary:
+    return {
+        "run_id": _run_id,
+        "research_multiplier": _research_multiplier,
+        "damage_multiplier": squad.operators[0].debug_campaign_damage_multiplier() if squad != null and not squad.operators.is_empty() else 1.0,
+        "wipe_common_retain_ratio": 0.5,
+        "high_value_lost_on_wipe": true,
+        "signal_fragments_lost_on_wipe": true,
+        "ledger_retained_on_wipe": true,
+        "extraction_offer_ids": EXTRACTION_OFFER_IDS.duplicate()
+    }

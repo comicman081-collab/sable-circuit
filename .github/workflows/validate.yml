@@ -72,6 +72,8 @@ jobs:
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m6_target_style_smoke.gd"
       - name: M7 authored visual and boss arena smoke test
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m7_authored_visual_smoke.gd"
+      - name: M8 extraction and progression smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m8_extraction_progression_smoke.gd"
 
   runtime-capture:
     runs-on: ubuntu-latest
@@ -105,8 +107,11 @@ jobs:
           test -f artifacts/runtime_capture/19_direction_sector_7.png
           test -f artifacts/runtime_capture/20_death_rifle.png
           test -f artifacts/runtime_capture/24_death_boss.png
+          test -f artifacts/runtime_capture/25_m8_extraction_window.png
+          test -f artifacts/runtime_capture/26_m8_wipe_results.png
+          test -f artifacts/runtime_capture/27_m8_base_armory.png
           count=$(find artifacts/runtime_capture -name '*.png' | wc -l)
-          test "$count" -eq 24
+          test "$count" -eq 27
       - name: Upload real runtime screenshots
         uses: actions/upload-artifact@v4
         with:
