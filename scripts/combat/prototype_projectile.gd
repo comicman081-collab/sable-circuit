@@ -59,12 +59,20 @@ func _physics_process(delta: float) -> void:
             if owner_actor is OperatorActor and (owner_actor as OperatorActor).operator_id=="CHR_PROTO_01":
                 if target.has_method("is_exposed") and bool(target.call("is_exposed")):
                     applied_damage *= 1.35
+                    var aster := owner_actor as OperatorActor
+                    if aster.has_module("MOD_PRISM_FOCUS") and _is_security_target(target):
+                        applied_damage *= 1.15
             if target.has_method("apply_damage"): target.apply_damage(applied_damage)
             if owner_actor != null and owner_actor.has_method("on_projectile_hit"):
                 owner_actor.call("on_projectile_hit",target,applied_damage)
             CombatFeedback.spawn_hit(get_tree(), global_position, art_profile, tint)
             queue_free(); return
     if lifetime <= 0.0: queue_free()
+
+func _is_security_target(target: Node) -> bool:
+    if not (target is EnemyActor): return false
+    var id := (target as EnemyActor).enemy_id.to_upper()
+    return "RIFLE" in id or "SHIELD" in id or "DRONE" in id
 
 func _draw() -> void:
     if "ASTER" in projectile_profile: _draw_aster()
