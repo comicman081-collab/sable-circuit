@@ -37,6 +37,11 @@ func _run() -> void:
     _check(enemies.size()>=1,"M9 synergy smoke has a live hostile")
     if enemies.is_empty(): _finish(); return
     var target:=enemies[0]
+    # Keep the authority target alive for the full setup→exploit→consume→ultimate
+    # audit. The previous test used production encounter HP and MICA Sensor Bloom
+    # killed the already-damaged target before the final status-source assertion.
+    target.max_health=400.0
+    target.health=400.0
     target.global_position=Vector2(700,420)
     for i in range(1,enemies.size()): enemies[i].global_position=Vector2(1450+float(i)*120.0,650)
     squad.debug_set_energy(0.0)
@@ -99,8 +104,10 @@ func _run() -> void:
     _check((hud_contract.get("keys",[]) as Array)==["Q","E","X"],"HUD exposes Q/E/X skill keys")
     _check(str(hud_contract.get("reload_key",""))=="R","HUD keeps R reserved for reload")
 
-    var status_contract:=target.debug_status_contract()
-    _check(str(status_contract.get("status_source","")) in ["MICA_SENSOR_BLOOM","ROOK_BREACH_SLAM"],"enemy status authority records skill source")
+    _check(is_instance_valid(target),"M9 status audit target remains alive through the full combo")
+    if is_instance_valid(target):
+        var status_contract:=target.debug_status_contract()
+        _check(str(status_contract.get("status_source","")) in ["MICA_SENSOR_BLOOM","ROOK_BREACH_SLAM"],"enemy status authority records skill source")
 
     stage.queue_free(); await process_frame
     _finish()
