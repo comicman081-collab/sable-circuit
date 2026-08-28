@@ -2,11 +2,14 @@ extends SceneTree
 
 const STAGE_SCENE := preload("res://scenes/mission/StoryStage01.tscn")
 const ENEMY_SCENE := preload("res://scenes/actors/enemy/EnemyActor.tscn")
+const RESULTS_SCENE := preload("res://scenes/ui/MissionResults.tscn")
+const LOBBY_SCENE := preload("res://scenes/base/BaseLobby.tscn")
 const OUT_DIR := "res://artifacts/runtime_capture"
 const CORE_CENTER := Vector2(1920.0, 490.0)
 const REQUIRED_EVIDENCE: Array[String] = [
     "01_map_movement.png","02_combat_decon.png","03_boss_phase3.png",
-    "19_direction_sector_7.png","24_death_boss.png"
+    "19_direction_sector_7.png","24_death_boss.png",
+    "25_m8_extraction_window.png","26_m8_wipe_results.png","27_m8_base_armory.png"
 ]
 
 var stage: StoryStage01
@@ -35,6 +38,9 @@ func _run() -> void:
     await _capture_all_rooms()
     await _capture_eight_directions()
     await _capture_unique_deaths()
+    await _capture_m8_extraction_window()
+    await _capture_m8_wipe_results()
+    await _capture_m8_base_armory()
     if capture_failed or not _verify_required_evidence():
         quit(1)
         return
@@ -99,10 +105,6 @@ func _capture_boss_phase3() -> void:
         push_error("boss capture Phase 3 arena contract failed")
         capture_failed = true
         return
-
-    # Phase 3 intentionally removes the boss from prototype_targets for the guard
-    # window. Runtime visual evidence must prove the camera still discovers the live
-    # boss through m3_enemies and switches to the giant-boss zoom-out composition.
     var camera_context := camera_presentation.debug_focus_context()
     if not bool(camera_context.get("boss_focus",false)):
         push_error("boss capture camera lost Phase 3 boss while targetability guard was active")
@@ -155,19 +157,12 @@ func _capture_eight_directions() -> void:
     camera.global_position = Vector2(1100,490)
     camera.zoom = Vector2.ONE * 1.46
     stage.squad.request_control(0)
-
-    # Keep the canonical 24-frame evidence budget, but make each directional frame
-    # prove ASTER, ROOK and MICA simultaneously. This prevents a profile/rear fix from
-    # being accepted for only the active operator while companions retain frontal art.
-    var direction_positions: Array[Vector2] = [
-        Vector2(1030,515), Vector2(1100,515), Vector2(1170,515)
-    ]
+    var direction_positions: Array[Vector2] = [Vector2(1030,515), Vector2(1100,515), Vector2(1170,515)]
     for i in range(stage.squad.operators.size()):
         var actor := stage.squad.operators[i]
         actor.visible = true
         actor.global_position = direction_positions[i]
         actor.velocity = Vector2.ZERO
-
     var vectors: Array[Vector2] = [
         Vector2.RIGHT,Vector2(1,1).normalized(),Vector2.DOWN,Vector2(-1,1).normalized(),
         Vector2.LEFT,Vector2(-1,-1).normalized(),Vector2.UP,Vector2(1,-1).normalized()
@@ -190,7 +185,6 @@ func _capture_eight_directions() -> void:
         camera.global_position = Vector2(1100,490)
         camera.zoom = Vector2.ONE * 1.46
         await _save("%02d_direction_sector_%d.png" % [12+sector,sector])
-
     for actor in stage.squad.operators:
         actor.debug_stop_drive()
 
@@ -244,6 +238,69 @@ func _capture_unique_deaths() -> void:
     if camera_presentation != null:
         camera_presentation.set_process(camera_was_processing)
 
+func _capture_m8_extraction_window() -> void:
+    await _clear_enemies()
+    stage.visible = true
+    stage.hud.visible = true
+    stage.current_step = 4
+    stage.call("_activate_step")
+    stage.debug_seed_cargo(115,85,2,1,true,5)
+    stage.debug_offer_extraction("R05_CORE_C")
+    _place_squad(Vector2(1695,615),Vector2(0.96,-0.28))
+    camera.global_position = CORE_CENTER
+    camera.zoom = Vector2.ONE * 1.28
+    await _settle(4)
+    if not stage.hud.debug_extraction_visible():
+        push_error("M8 extraction capture missing visible extraction decision panel")
+        capture_failed = true
+        return
+    var cargo_text := stage.hud.debug_cargo_text()
+    if not ("R 115" in cargo_text and "+HV 085" in cargo_text and "S 02" in cargo_text and "F 01" in cargo_text):
+        push_error("M8 extraction capture cargo HUD is not authoritative: " + cargo_text)
+        capture_failed = true
+        return
+    await _save("25_m8_extraction_window.png")
+
+func _capture_m8_wipe_results() -> void:
+    stage.hud.visible = false
+    stage.visible = false
+    var wipe_summary := stage.debug_wipe_summary()
+    wipe_summary["campaign"] = {
+        "research_value":364,"salvage":3,"signal_fragments":1,"armory_level":1,"lab_level":1
+    }
+    var results := RESULTS_SCENE.instantiate() as MissionResults
+    results.configure(wipe_summary)
+    root.add_child(results)
+    await _settle(4)
+    var shown := results.debug_summary()
+    if str(shown.get("outcome","")) != "WIPED" or bool(shown.get("carrier_fragment_secured",true)):
+        push_error("M8 wipe result capture does not distinguish found vs secured high-value cargo")
+        capture_failed = true
+    await _save("26_m8_wipe_results.png")
+    results.queue_free()
+    await process_frame
+
+func _capture_m8_base_armory() -> void:
+    var lobby := LOBBY_SCENE.instantiate() as BaseLobby
+    lobby.configure_campaign({
+        "research_value":620,"salvage":5,"signal_fragments":3,
+        "armory_level":1,"lab_level":1,"completed_runs":3,"extracted_runs":2,"wiped_runs":1,
+        "damage_multiplier":1.08,"research_multiplier":1.12,"max_upgrade_level":3,
+        "armory_cost":{"research":240,"salvage":2,"fragments":0},
+        "lab_cost":{"research":220,"salvage":0,"fragments":1}
+    })
+    root.add_child(lobby)
+    await _settle(3)
+    lobby.call("_show_facility","ARMORY")
+    await _settle(2)
+    var snapshot := lobby.debug_campaign_snapshot()
+    if int(snapshot.get("research_value",0)) != 620 or int(snapshot.get("armory_level",0)) != 1:
+        push_error("M8 base capture campaign snapshot mismatch")
+        capture_failed = true
+    await _save("27_m8_base_armory.png")
+    lobby.queue_free()
+    await process_frame
+
 func _await_death_sequence(expected_id: String) -> EnemyDeathSequence:
     for _frame in range(18):
         for node in get_nodes_in_group("enemy_death_sequences"):
@@ -256,11 +313,7 @@ func _place_squad(center: Vector2, aim: Vector2) -> void:
     var aim_dir := aim.normalized() if aim.length_squared() > 0.001 else Vector2.RIGHT
     var side := Vector2(-aim_dir.y,aim_dir.x)
     var rear := -aim_dir
-    var positions: Array[Vector2] = [
-        center,
-        center+rear*82.0+side*72.0,
-        center+rear*118.0-side*48.0
-    ]
+    var positions: Array[Vector2] = [center,center+rear*82.0+side*72.0,center+rear*118.0-side*48.0]
     for i in range(stage.squad.operators.size()):
         var actor := stage.squad.operators[i]
         actor.global_position = positions[i]
