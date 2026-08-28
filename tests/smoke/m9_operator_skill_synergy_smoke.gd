@@ -26,6 +26,9 @@ func _run() -> void:
     var aster_contract:=aster_skills.debug_contract(); var rook_contract:=rook_skills.debug_contract(); var mica_contract:=mica_skills.debug_contract()
     _check(str(aster_contract.get("ultimate_key",""))=="X" and str(aster_contract.get("reload_key",""))=="R","M9 preserves R reload and assigns X ultimate")
     _check((aster_contract.get("skill_icons",[]) as Array).size()==3 and (rook_contract.get("skill_icons",[]) as Array).size()==3 and (mica_contract.get("skill_icons",[]) as Array).size()==3,"three authored skill icons remain bound per operator")
+    _check(str(aster_contract.get("passive_id",""))=="ASTER_PRISM_LOCK","ASTER owns PRISM LOCK passive")
+    _check(str(rook_contract.get("passive_id",""))=="ROOK_BREACH_MOMENTUM","ROOK owns BREACH MOMENTUM passive")
+    _check(str(mica_contract.get("passive_id",""))=="MICA_SENSOR_FEEDBACK","MICA owns SENSOR FEEDBACK passive")
 
     stage.current_step=1
     stage.call("_activate_step")
@@ -37,9 +40,6 @@ func _run() -> void:
     _check(enemies.size()>=1,"M9 synergy smoke has a live hostile")
     if enemies.is_empty(): _finish(); return
     var target:=enemies[0]
-    # Keep the authority target alive for the full setup→exploit→consume→ultimate
-    # audit. The previous test used production encounter HP and MICA Sensor Bloom
-    # killed the already-damaged target before the final status-source assertion.
     target.max_health=400.0
     target.health=400.0
     target.global_position=Vector2(700,420)
@@ -53,6 +53,9 @@ func _run() -> void:
     _check(str(mica_skills.debug_contract().get("last_synergy",""))=="EXPOSED_SETUP","MICA records EXPOSED setup role")
     var energy_after_scan:=float(squad.debug_energy_contract().get("current",0.0))
     _check(energy_after_scan>0.0,"MICA setup contributes squad energy")
+    var energy_before_sensor_passive:=float(squad.debug_energy_contract().get("current",0.0))
+    _check(mica_skills.debug_force_passive_tick(),"MICA SENSOR FEEDBACK detects an EXPOSED hostile")
+    _check(float(squad.debug_energy_contract().get("current",0.0))>=energy_before_sensor_passive+0.9,"MICA SENSOR FEEDBACK contributes passive energy")
 
     aster.global_position=Vector2(505,420); aster.aim_world=Vector2.RIGHT; squad.request_control(0)
     var hp_before_prism:=target.health
@@ -61,6 +64,9 @@ func _run() -> void:
     _check(target.health<hp_before_prism-40.0,"ASTER Prism receives EXPOSED exploit multiplier")
     _check(target.is_exposed(),"ASTER exploit does not consume EXPOSED before Breach")
     _check(str(aster_skills.debug_contract().get("last_synergy",""))=="EXPOSED_EXPLOIT","ASTER records EXPOSED exploit")
+    var energy_before_prism_lock:=float(squad.debug_energy_contract().get("current",0.0))
+    aster.on_projectile_hit(target,10.0)
+    _check(float(squad.debug_energy_contract().get("current",0.0))>=energy_before_prism_lock+3.2,"ASTER PRISM LOCK rewards primary hits on EXPOSED targets")
 
     rook.global_position=Vector2(555,420); rook.aim_world=Vector2.RIGHT; squad.request_control(1)
     var energy_before_breach:=float(squad.debug_energy_contract().get("current",0.0))
@@ -69,6 +75,9 @@ func _run() -> void:
     _check(not target.is_exposed() and target.is_staggered(),"ROOK consumes EXPOSED into STAGGER")
     _check(float(squad.debug_energy_contract().get("current",0.0))>=energy_before_breach+27.9,"stagger grants large squad-energy reward")
     _check(str(rook_skills.debug_contract().get("last_synergy",""))=="EXPOSED_CONSUMED_STAGGER","ROOK records setup-consume synergy")
+    var energy_before_rook_passive:=float(squad.debug_energy_contract().get("current",0.0))
+    _check(rook_skills.debug_force_passive_tick(),"ROOK BREACH MOMENTUM detects a staggered hostile")
+    _check(float(squad.debug_energy_contract().get("current",0.0))>=energy_before_rook_passive+1.4,"ROOK BREACH MOMENTUM contributes passive energy")
 
     aster.global_position=Vector2(450,520); aster.aim_world=Vector2.RIGHT; squad.request_control(0)
     var dash_start:=aster.global_position
