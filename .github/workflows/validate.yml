@@ -102,6 +102,7 @@ jobs:
           set -euo pipefail
           mkdir -p artifacts/runtime_capture
           xvfb-run -a -s "-screen 0 1280x720x24" "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64" --path "$GITHUB_WORKSPACE" --resolution 1280x720 --rendering-method gl_compatibility --script res://tests/render/runtime_capture.gd
+          xvfb-run -a -s "-screen 0 1280x720x24" "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64" --path "$GITHUB_WORKSPACE" --resolution 1280x720 --rendering-method gl_compatibility --script res://tests/render/m9_skill_capture.gd
           test -f artifacts/runtime_capture/01_map_movement.png
           test -f artifacts/runtime_capture/02_combat_decon.png
           test -f artifacts/runtime_capture/03_boss_phase3.png
@@ -112,8 +113,12 @@ jobs:
           test -f artifacts/runtime_capture/25_m8_extraction_window.png
           test -f artifacts/runtime_capture/26_m8_wipe_results.png
           test -f artifacts/runtime_capture/27_m8_base_armory.png
+          test -f artifacts/runtime_capture/28_m9_mica_exposed.png
+          test -f artifacts/runtime_capture/29_m9_aster_exploit.png
+          test -f artifacts/runtime_capture/30_m9_rook_stagger.png
+          test -f artifacts/runtime_capture/31_m9_ultimate_ready.png
           count=$(find artifacts/runtime_capture -name '*.png' | wc -l)
-          test "$count" -eq 27
+          test "$count" -eq 31
       - name: Upload real runtime screenshots
         uses: actions/upload-artifact@v4
         with:
