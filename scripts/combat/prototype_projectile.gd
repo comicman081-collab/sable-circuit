@@ -1,6 +1,12 @@
 extends Node2D
 class_name PrototypeProjectile
 
+# Retained M5 projectile identity contract:
+# ASTER — Precision coil dart
+# ROOK — Heavy magnetic pellet
+# MICA — Sensor pulse
+# SIGNAL ANCHOR — Phase lance
+
 var direction := Vector2.RIGHT
 var speed := 720.0
 var damage := 10.0
