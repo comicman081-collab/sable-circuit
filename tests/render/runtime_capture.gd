@@ -85,8 +85,8 @@ func _capture_boss_phase3() -> void:
             boss = node
             break
     var boss_arena := stage.get_node_or_null("BossArenaPresentation") as BossArenaPresentation
-    if boss == null or boss_arena == null:
-        push_error("boss capture missing boss or arena")
+    if boss == null or boss_arena == null or camera_presentation == null:
+        push_error("boss capture missing boss, arena or camera presentation")
         capture_failed = true
         return
     if boss.global_position.distance_to(CORE_CENTER) >= 12.0:
@@ -99,6 +99,26 @@ func _capture_boss_phase3() -> void:
         push_error("boss capture Phase 3 arena contract failed")
         capture_failed = true
         return
+
+    # Phase 3 intentionally removes the boss from prototype_targets for the guard
+    # window. Runtime visual evidence must prove the camera still discovers the live
+    # boss through m3_enemies and switches to the giant-boss zoom-out composition.
+    var camera_context := camera_presentation.debug_focus_context()
+    if not bool(camera_context.get("boss_focus",false)):
+        push_error("boss capture camera lost Phase 3 boss while targetability guard was active")
+        capture_failed = true
+        return
+    var boss_zoom := float(camera_context.get("zoom",99.0))
+    if boss_zoom > 1.05:
+        push_error("boss capture camera failed giant-boss zoom-out: %.3f" % boss_zoom)
+        capture_failed = true
+        return
+    print("BOSS_CAMERA_EVIDENCE guard_targetable=%s boss_focus=%s zoom=%.3f target=%s" % [
+        str(boss.is_in_group("prototype_targets")),
+        str(bool(camera_context.get("boss_focus",false))),
+        boss_zoom,
+        str(camera_context.get("target",Vector2.ZERO))
+    ])
     _focus_live_camera()
     await _settle(2)
     await _save("03_boss_phase3.png")
@@ -122,6 +142,7 @@ func _capture_all_rooms() -> void:
         stage.call("_activate_step")
         _place_squad(pos + Vector2(-118,82), Vector2(0.98,-0.10))
         camera.global_position = pos
+        camera.zoom = Vector2.ONE * 1.46
         await _settle(8)
         camera.global_position = pos
         await _settle(1)
@@ -132,6 +153,7 @@ func _capture_eight_directions() -> void:
     stage.current_step = 2
     stage.call("_activate_step")
     camera.global_position = Vector2(1100,490)
+    camera.zoom = Vector2.ONE * 1.46
     stage.squad.request_control(0)
 
     # Keep the canonical 24-frame evidence budget, but make each directional frame
@@ -166,6 +188,7 @@ func _capture_eight_directions() -> void:
         if capture_failed:
             break
         camera.global_position = Vector2(1100,490)
+        camera.zoom = Vector2.ONE * 1.46
         await _save("%02d_direction_sector_%d.png" % [12+sector,sector])
 
     for actor in stage.squad.operators:
@@ -181,6 +204,7 @@ func _capture_unique_deaths() -> void:
     if camera_presentation != null:
         camera_was_processing = camera_presentation.is_processing()
         camera_presentation.set_process(false)
+    camera.zoom = Vector2.ONE * 1.46
     for i in range(ids.size()):
         await _clear_enemies()
         var center := Vector2(1510,350)
@@ -246,9 +270,12 @@ func _place_squad(center: Vector2, aim: Vector2) -> void:
 
 func _focus_live_camera() -> void:
     if camera_presentation != null:
-        camera.global_position = camera_presentation.debug_target_for_active()
+        var context := camera_presentation.debug_focus_context()
+        camera.global_position = context.get("target", camera_presentation.debug_target_for_active())
+        camera.zoom = Vector2.ONE * float(context.get("zoom",1.46))
     elif stage.squad.get_active_operator() != null:
         camera.global_position = stage.squad.get_active_operator().global_position
+        camera.zoom = Vector2.ONE * 1.46
 
 func _clear_enemies() -> void:
     for node in get_nodes_in_group("m3_enemies"):
