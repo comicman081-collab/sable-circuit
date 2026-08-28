@@ -30,6 +30,12 @@ var art_profile: Dictionary = {}
 var campaign_damage_multiplier := 1.0
 var equipped_module_id := ""
 
+# M11 run-only authority. These values are owned by the current deployment and
+# are deliberately absent from CampaignProgression persistence.
+var run_speed_multiplier := 1.0
+var run_incoming_damage_multiplier := 1.0
+var run_primary_damage_multiplier := 1.0
+
 var _visual: OperatorVisual
 var _fire_cooldown := 0.0
 var _reload_left := 0.0
@@ -82,6 +88,11 @@ func apply_campaign_modifiers(modifiers: Dictionary) -> void:
     campaign_damage_multiplier = clampf(float(modifiers.get("damage_multiplier", 1.0)), 1.0, 2.0)
     equipped_module_id = str(modifiers.get("module_id","")).to_upper()
 
+func apply_run_boosts(modifiers: Dictionary) -> void:
+    run_speed_multiplier = clampf(float(modifiers.get("operator_speed_multiplier",1.0)),0.75,1.50)
+    run_incoming_damage_multiplier = clampf(float(modifiers.get("incoming_damage_multiplier",1.0)),0.50,1.50)
+    run_primary_damage_multiplier = clampf(float(modifiers.get("primary_damage_multiplier",1.0)),0.75,1.75)
+
 func has_module(module_id: String) -> bool:
     return not equipped_module_id.is_empty() and equipped_module_id == module_id.to_upper()
 
@@ -101,7 +112,7 @@ func apply_damage(amount: float) -> void:
     if downed_state or amount <= 0.0:
         return
     var reduction := _guard_reduction if _guard_left>0.0 else 0.0
-    var applied := amount * (1.0-clampf(reduction,0.0,0.80))
+    var applied := amount * (1.0-clampf(reduction,0.0,0.80)) * run_incoming_damage_multiplier
     health = maxf(0.0, health - applied)
     if is_node_ready():
         _visual.trigger_hit()
@@ -171,6 +182,12 @@ func debug_fire_once() -> bool: return _try_fire(true)
 func debug_begin_reload() -> void: _begin_reload()
 func debug_campaign_damage_multiplier() -> float: return campaign_damage_multiplier
 func debug_equipped_module() -> String: return equipped_module_id
+func debug_run_boost_contract() -> Dictionary:
+    return {
+        "operator_speed_multiplier":run_speed_multiplier,
+        "incoming_damage_multiplier":run_incoming_damage_multiplier,
+        "primary_damage_multiplier":run_primary_damage_multiplier
+    }
 func debug_runtime_skill_buffs() -> Dictionary:
     return {"guard_left":_guard_left,"guard_reduction":_guard_reduction,"overclock_left":_overclock_left,"scatter_cycle_left":_scatter_cycle_left,"module_id":equipped_module_id}
 func is_reloading() -> bool: return _reload_left>0.0
@@ -208,10 +225,11 @@ func _physics_process(delta: float) -> void:
         move_input=_ai_move_vector(); _update_ai_aim_and_fire()
 
     if _dash_left>0.0: _dash_left=maxf(0.0,_dash_left-delta)
-    else: velocity=move_input*(run_speed if want_run else walk_speed)
+    else: velocity=move_input*(run_speed if want_run else walk_speed)*run_speed_multiplier
     move_and_slide(); _clamp_to_arena()
     facing_sector=_sector_from_vector(aim_world if combat_mode else (move_input if move_input.length_squared()>0.01 else aim_world))
-    _visual.set_runtime_state(velocity,aim_world,velocity.length()/run_speed,combat_mode,facing_sector,is_reloading(),get_reload_progress())
+    var visual_speed_denominator:=maxf(1.0,run_speed*run_speed_multiplier)
+    _visual.set_runtime_state(velocity,aim_world,velocity.length()/visual_speed_denominator,combat_mode,facing_sector,is_reloading(),get_reload_progress())
 
 func _read_move_input() -> Vector2:
     var move:=Vector2(float(Input.is_key_pressed(KEY_D))-float(Input.is_key_pressed(KEY_A)),float(Input.is_key_pressed(KEY_S))-float(Input.is_key_pressed(KEY_W)))
@@ -265,7 +283,7 @@ func _try_fire(force: bool) -> bool:
 func _spawn_projectile(dir: Vector2) -> void:
     var projectile:=Projectile.new(); get_tree().root.add_child(projectile); projectile.setup(_visual.get_muzzle_global_position(),dir,self,accent_color.lightened(0.35),art_profile)
     var skill_multiplier := 1.25 if _overclock_left>0.0 else (1.18 if _scatter_cycle_left>0.0 else 1.0)
-    projectile.damage *= campaign_damage_multiplier*skill_multiplier
+    projectile.damage *= campaign_damage_multiplier*skill_multiplier*run_primary_damage_multiplier
 
 func _begin_reload() -> void:
     if downed_state or _reload_left>0.0 or ammo>=magazine_size: return
