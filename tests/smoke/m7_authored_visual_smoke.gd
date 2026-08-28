@@ -21,6 +21,31 @@ func _run() -> void:
     _check(bool(formation.get("open_aim_lane", false)), "M7 echelon reserves the firing lane")
     _check(float(formation.get("rear_b", 0.0)) >= 110.0, "M7 rear operator separation is expanded")
 
+    # Authored raster is allowed to stage incrementally, but a partial upload must
+    # never reach Godot's WebP decoder or hide the validated directional SVG/vector
+    # presentation. Complete payloads promote automatically after decode validation.
+    for operator in stage.squad.operators:
+        var raster := operator.get_node_or_null("AuthoredRasterPresentation") as OperatorAuthoredRasterPresentation
+        _check(raster != null, "%s owns authored raster staging layer" % operator.display_name)
+        if raster:
+            var raster_contract := raster.debug_contract()
+            var raster_status := str(raster_contract.get("status","unknown"))
+            _check(raster_status not in ["decode_error","invalid_dimensions","length_mismatch","invalid_header"], "%s raster staging has no malformed/decode-error state" % operator.display_name)
+            if raster_status == "partial":
+                _check(bool(raster_contract.get("partial_payload_quarantined",false)), "%s partial raster is quarantined before image decode" % operator.display_name)
+                _check(int(raster_contract.get("declared_bytes",0)) > int(raster_contract.get("decoded_bytes",0)) and int(raster_contract.get("decoded_bytes",0)) > 0, "%s partial raster exposes RIFF declared/present byte gap" % operator.display_name)
+                _check(not bool(raster_contract.get("authored_raster",true)), "%s partial raster never activates" % operator.display_name)
+                _check(not bool(raster_contract.get("svg_render_hidden",true)), "%s partial raster preserves validated vector rendering" % operator.display_name)
+            elif raster_status == "missing":
+                _check(not bool(raster_contract.get("authored_raster",true)), "%s missing raster remains on validated vector rendering" % operator.display_name)
+                _check(not bool(raster_contract.get("svg_render_hidden",true)), "%s missing raster never hides vector rendering" % operator.display_name)
+            elif raster_status == "loaded":
+                _check(bool(raster_contract.get("payload_complete",false)), "%s loaded raster owns a complete RIFF payload" % operator.display_name)
+                _check(bool(raster_contract.get("authored_raster",false)), "%s validated raster activates" % operator.display_name)
+                _check(bool(raster_contract.get("svg_render_hidden",false)), "%s validated raster replaces only visible vector rendering" % operator.display_name)
+            else:
+                _check(false, "%s raster staging status is recognized" % operator.display_name)
+
     var camera_presentation := stage.get_node_or_null("SquadCameraPresentation") as SquadCameraPresentation
     _check(camera_presentation != null, "M7 target-aware camera exists")
     if camera_presentation:
