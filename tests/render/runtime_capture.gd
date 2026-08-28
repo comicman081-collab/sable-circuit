@@ -242,10 +242,13 @@ func _capture_m8_extraction_window() -> void:
     await _clear_enemies()
     stage.visible = true
     stage.hud.visible = true
+    stage.configure_campaign({"damage_multiplier":1.08,"research_multiplier":1.12},"M8-CAPTURE-RUN")
     stage.current_step = 4
     stage.call("_activate_step")
     stage.debug_seed_cargo(115,85,2,1,true,5)
     stage.debug_offer_extraction("R05_CORE_C")
+    stage.hud.set_objective("Choose extraction or continue deeper", false)
+    stage.hud.set_story("EXTRACTION WINDOW // [F] secure cargo now   [C] continue deeper and keep high-value cargo at risk.")
     _place_squad(Vector2(1695,615),Vector2(0.96,-0.28))
     camera.global_position = CORE_CENTER
     camera.zoom = Vector2.ONE * 1.28
@@ -278,6 +281,9 @@ func _capture_m8_wipe_results() -> void:
     var shown := results.debug_summary()
     if str(shown.get("outcome","")) != "WIPED" or bool(shown.get("carrier_fragment_secured",true)):
         push_error("M8 wipe result capture does not distinguish found vs secured high-value cargo")
+        capture_failed = true
+    if int(shown.get("secured_research",0)) != 64:
+        push_error("M8 wipe result capture did not apply LAB research multiplier")
         capture_failed = true
     var origin := results.get_global_transform_with_canvas().origin
     if origin.distance_to(Vector2.ZERO) > 1.0:
