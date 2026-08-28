@@ -143,9 +143,10 @@ func _cast_ultimate() -> bool:
             _spawn_vfx("SCATTER_CYCLE",160.0,actor.aim_world,0.85)
             _last_skill="ROOK_SCATTER_CYCLE"; return true
         "CHR_PROTO_03":
+            var bloom_exposed := 12.0 if actor.has_module("MOD_SENSOR_ARRAY") else 10.0
             var targets := _hostiles_in_radius(620.0)
             for enemy in targets:
-                enemy.apply_exposed(10.0,"MICA_SENSOR_BLOOM")
+                enemy.apply_exposed(bloom_exposed,"MICA_SENSOR_BLOOM")
                 enemy.apply_damage(18.0)
                 if not ("BOSS" in enemy.enemy_id or "ANCHOR" in enemy.enemy_id): enemy.apply_stagger(0.8,"MICA_SENSOR_BLOOM")
             squad.apply_relay_support(0.08,6.0,0.15)
@@ -159,6 +160,8 @@ func _aster_prism() -> bool:
     if target == null: return false
     var exploited := target.is_exposed()
     var amount := 26.0 * (1.65 if exploited else 1.0)
+    if exploited and actor.has_module("MOD_PRISM_FOCUS") and _is_security_target(target):
+        amount *= 1.15
     target.apply_damage(amount)
     if exploited:
         squad.add_energy(8.0,"aster_exploit")
@@ -171,8 +174,11 @@ func _aster_prism() -> bool:
 func _rook_breach_slam() -> bool:
     var target := _nearest_in_aim(220.0,-0.10)
     if target == null: return false
-    var consumed := target.consume_exposed_for_stagger(2.4,"ROOK_BREACH_SLAM")
-    target.apply_damage(42.0 if consumed else 30.0)
+    var module_active := actor.has_module("MOD_BREACH_LINER")
+    var stagger_duration := 3.0 if module_active else 2.4
+    var consumed := target.consume_exposed_for_stagger(stagger_duration,"ROOK_BREACH_SLAM")
+    var consumed_damage := 52.0 if module_active else 42.0
+    target.apply_damage(consumed_damage if consumed else 30.0)
     if consumed:
         squad.add_energy(28.0,"rook_exposed_stagger")
         _last_synergy="EXPOSED_CONSUMED_STAGGER"
@@ -182,12 +188,15 @@ func _rook_breach_slam() -> bool:
     return true
 
 func _mica_pulse_scan() -> bool:
-    var targets := _hostiles_in_radius(420.0)
+    var module_active := actor.has_module("MOD_SENSOR_ARRAY")
+    var scan_radius := 500.0 if module_active else 420.0
+    var exposed_duration := 8.0 if module_active else 6.0
+    var targets := _hostiles_in_radius(scan_radius)
     if targets.is_empty(): return false
-    for enemy in targets: enemy.apply_exposed(6.0,"MICA_PULSE_SCAN")
+    for enemy in targets: enemy.apply_exposed(exposed_duration,"MICA_PULSE_SCAN")
     squad.add_energy(minf(8.0,2.0+float(targets.size())*1.5),"mica_scan")
     actor.trigger_skill_visual("Q")
-    _spawn_vfx("MICA_PULSE_SCAN",300.0,actor.aim_world,0.82)
+    _spawn_vfx("MICA_PULSE_SCAN",340.0 if module_active else 300.0,actor.aim_world,0.82)
     _last_skill="MICA_PULSE_SCAN"; _last_hits=targets.size(); _last_synergy="EXPOSED_SETUP"
     return true
 
@@ -214,6 +223,10 @@ func _nearest_in_aim(radius: float, min_dot: float) -> EnemyActor:
             best_score=score; best=enemy
     return best
 
+func _is_security_target(target: EnemyActor) -> bool:
+    var id := target.enemy_id.to_upper()
+    return "RIFLE" in id or "SHIELD" in id or "DRONE" in id
+
 func _spawn_vfx(id_value: String, radius: float, aim_value: Vector2, duration: float = 0.62) -> void:
     var fx := SkillVFX.new()
     actor.get_tree().root.add_child(fx)
@@ -239,6 +252,12 @@ func debug_contract() -> Dictionary:
         "e_ready":e_left<=0.0,
         "ultimate_key":"X",
         "reload_key":"R",
+        "module_id":actor.equipped_module_id if actor else "",
+        "mica_scan_radius":500.0 if actor and actor.has_module("MOD_SENSOR_ARRAY") else 420.0,
+        "mica_scan_exposed":8.0 if actor and actor.has_module("MOD_SENSOR_ARRAY") else 6.0,
+        "rook_breach_stagger":3.0 if actor and actor.has_module("MOD_BREACH_LINER") else 2.4,
+        "rook_breach_damage":52.0 if actor and actor.has_module("MOD_BREACH_LINER") else 42.0,
+        "aster_prism_focus_multiplier":1.15 if actor and actor.has_module("MOD_PRISM_FOCUS") else 1.0,
         "last_skill":_last_skill,
         "last_target_id":_last_target_id,
         "last_synergy":_last_synergy,
