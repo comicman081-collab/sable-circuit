@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "hazards": [
+    {
+      "id": "HARDENED_HOSTILES",
+      "title": "HARDENED HOSTILES",
+      "enemy_health_multiplier": 1.25,
+      "enemy_damage_multiplier": 1.00,
+      "enemy_speed_multiplier": 1.00,
+      "enemy_attack_interval_multiplier": 1.00,
+      "reward_multiplier": 1.18,
+      "risk_score": 2
+    },
+    {
+      "id": "HUNTER_PROTOCOL",
+      "title": "HUNTER PROTOCOL",
+      "enemy_health_multiplier": 1.00,
+      "enemy_damage_multiplier": 1.20,
+      "enemy_speed_multiplier": 1.10,
+      "enemy_attack_interval_multiplier": 0.88,
+      "reward_multiplier": 1.22,
+      "risk_score": 3
+    },
+    {
+      "id": "VOLATILE_GRID",
+      "title": "VOLATILE GRID",
+      "enemy_health_multiplier": 1.12,
+      "enemy_damage_multiplier": 1.12,
+      "enemy_speed_multiplier": 1.05,
+      "enemy_attack_interval_multiplier": 0.92,
+      "reward_multiplier": 1.20,
+      "risk_score": 3
+    },
+    {
+      "id": "SUSTAINED_ALERT",
+      "title": "SUSTAINED ALERT",
+      "enemy_health_multiplier": 1.08,
+      "enemy_damage_multiplier": 1.10,
+      "enemy_speed_multiplier": 1.08,
+      "enemy_attack_interval_multiplier": 0.90,
+      "reward_multiplier": 1.17,
+      "risk_score": 2
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "RESEARCH_SURGE",
+      "title": "RESEARCH SURGE",
+      "research_reward_multiplier": 1.30,
+      "salvage_reward_multiplier": 1.00,
+      "fragment_reward_multiplier": 1.00
+    },
+    {
+      "id": "SALVAGE_PRIORITY",
+      "title": "SALVAGE PRIORITY",
+      "research_reward_multiplier": 1.05,
+      "salvage_reward_multiplier": 1.50,
+      "fragment_reward_multiplier": 1.00
+    },
+    {
+      "id": "SIGNAL_DIVIDEND",
+      "title": "SIGNAL DIVIDEND",
+      "research_reward_multiplier": 1.10,
+      "salvage_reward_multiplier": 1.00,
+      "fragment_reward_multiplier": 1.50
+    },
+    {
+      "id": "BALANCED_CACHE",
+      "title": "BALANCED CACHE",
+      "research_reward_multiplier": 1.15,
+      "salvage_reward_multiplier": 1.20,
+      "fragment_reward_multiplier": 1.00
+    }
+  ],
+  "run_only_boosts": [
+    {
+      "id": "FIELD_STIM",
+      "title": "FIELD STIM",
+      "source_room": "O01_SUPPLY",
+      "operator_speed_multiplier": 1.10,
+      "incoming_damage_multiplier": 0.90,
+      "primary_damage_multiplier": 1.00,
+      "energy_gain_multiplier": 1.00
+    },
+    {
+      "id": "OVERCHARGE_CELL",
+      "title": "OVERCHARGE CELL",
+      "source_room": "O02_RESEARCH",
+      "operator_speed_multiplier": 1.00,
+      "incoming_damage_multiplier": 1.00,
+      "primary_damage_multiplier": 1.08,
+      "energy_gain_multiplier": 1.20
+    }
+  ]
+}

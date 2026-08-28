@@ -10,6 +10,7 @@ const RESULTS_SCENE := preload("res://scenes/ui/MissionResults.tscn")
 var current_state := "BOOT"
 var current_view: Node = null
 var last_mission_summary: Dictionary = {}
+var last_run_contract: Dictionary = {}
 var campaign: CampaignProgression
 
 func _ready() -> void:
@@ -38,7 +39,8 @@ func open_briefing() -> void:
 func deploy_stage_01() -> void:
     var view := _replace_view(STAGE_SCENE, "STAGE_01") as StoryStage01
     var run_id := campaign.issue_run_id("CH01")
-    view.configure_campaign(campaign.snapshot(), run_id)
+    last_run_contract = RunContract.build(run_id)
+    view.configure_campaign(campaign.snapshot(), run_id, last_run_contract)
     view.stage_completed.connect(show_results)
 
 func show_results(summary: Dictionary) -> void:
@@ -79,6 +81,7 @@ func debug_open_briefing() -> void: open_briefing()
 func debug_deploy_stage() -> void: deploy_stage_01()
 func debug_return_base() -> void: enter_base()
 func debug_campaign_snapshot() -> Dictionary: return campaign.snapshot() if campaign != null else {}
+func debug_last_run_contract() -> Dictionary: return last_run_contract.duplicate(true)
 
 func debug_show_results() -> void:
     show_results({
