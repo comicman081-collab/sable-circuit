@@ -28,6 +28,9 @@ func _run() -> void:
         _check(bool(camera_contract.get("m7_camera", false)), "M7 camera contract is active")
         _check(bool(camera_contract.get("target_aware_combat_frame", false)), "camera frames actual hostile group")
         _check(float(camera_contract.get("combat_target_weight", 0.0)) >= 0.35, "camera reserves enemy-side screen space")
+        _check(bool(camera_contract.get("boss_safe_frame", false)), "camera owns dedicated boss safe framing")
+        _check(float(camera_contract.get("boss_combat_target_weight", 0.0)) >= 0.48, "boss framing reserves additional target space")
+        _check(float(camera_contract.get("boss_vertical_composition_bias", 0.0)) <= -60.0, "boss framing protects top-edge silhouette clearance")
 
     var boss_arena := stage.get_node_or_null("BossArenaPresentation") as BossArenaPresentation
     _check(boss_arena != null, "Core C has dedicated boss arena presentation")
@@ -41,6 +44,8 @@ func _run() -> void:
         _check(bool(arena_contract.get("weakpoint_exposed_phase3",false)), "Phase 3 exposes the authored weakpoint core")
         _check(bool(arena_contract.get("phase3_body_clear",false)), "Phase 3 keeps the boss body readable")
         _check(bool(arena_contract.get("clear_movement_gaps",false)), "Phase 3 preserves movement gaps")
+        _check(bool(arena_contract.get("floor_only_telegraphs",false)), "Phase 3 telegraphs remain on the floor plane")
+        _check(int(arena_contract.get("arena_z",99)) <= -1, "boss arena renders behind combatants")
 
     stage.current_step = 4
     stage.call("_activate_step")
@@ -76,31 +81,31 @@ func _run() -> void:
         var travel := active.global_position-start
         _check(travel.x > 5.0 and travel.y < -5.0, "M7 preserves true diagonal movement")
         _check(active.aim_world.dot(Vector2.RIGHT) > 0.98, "M7 preserves independent aim")
-        active.debug_stop_drive()
 
         var sector_visual := active.get_node_or_null("SectorSilhouettePresentation") as OperatorSectorSilhouettePresentation
         _check(sector_visual != null, "M7 attaches eight-sector silhouette presentation")
         if sector_visual:
-            active.aim_world = Vector2.RIGHT
-            active.facing_sector = 0
-            await _frames(2)
+            # Keep debug drive active while sampling. A controlled operator otherwise
+            # refreshes aim from the mouse every physics frame, which made the old
+            # runtime direction evidence collapse back to one facing.
+            active.debug_drive(Vector2.ZERO, Vector2.RIGHT)
+            await _physics_frames(2)
             var side_contract := sector_visual.debug_current_contract()
-            active.aim_world = Vector2.DOWN
-            active.facing_sector = 2
-            await _frames(2)
+            active.debug_drive(Vector2.ZERO, Vector2.DOWN)
+            await _physics_frames(2)
             var front_contract := sector_visual.debug_current_contract()
-            active.aim_world = Vector2.UP
-            active.facing_sector = 6
-            await _frames(2)
+            active.debug_drive(Vector2.ZERO, Vector2.UP)
+            await _physics_frames(2)
             var rear_contract := sector_visual.debug_current_contract()
-            _check(bool(side_contract.get("profile",false)), "sector 0 resolves as a true profile silhouette")
+            _check(int(side_contract.get("sector",-1)) == 0 and bool(side_contract.get("profile",false)), "sector 0 resolves as a true profile silhouette")
             _check(float(side_contract.get("body_width",1.0)) <= 0.74, "profile body width is visibly compressed")
             _check(float(side_contract.get("shoulder_width",1.0)) <= 0.60, "profile shoulders collapse into side depth")
             _check(float(side_contract.get("face_width",1.0)) <= 0.50, "profile face is narrowed instead of front-facing")
-            _check(float(front_contract.get("body_width",0.0)) >= 0.98, "front sector restores full body width")
-            _check(bool(rear_contract.get("rear",false)), "sector 6 resolves as rear presentation")
+            _check(int(front_contract.get("sector",-1)) == 2 and float(front_contract.get("body_width",0.0)) >= 0.98, "front sector restores full body width")
+            _check(int(rear_contract.get("sector",-1)) == 6 and bool(rear_contract.get("rear",false)), "sector 6 resolves as rear presentation")
             _check(float(rear_contract.get("body_width",0.0)) >= 0.98, "rear sector keeps full rear silhouette width")
             _check(absf(float(front_contract.get("body_width",0.0))-float(side_contract.get("body_width",0.0))) >= 0.24, "front/profile silhouettes differ materially")
+        active.debug_stop_drive()
 
     stage.queue_free()
     await process_frame
