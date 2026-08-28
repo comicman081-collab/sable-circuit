@@ -47,7 +47,6 @@ func _capture_movement() -> void:
     _place_squad(Vector2(320,515), Vector2(0.98,-0.18))
     var active := stage.squad.get_active_operator()
     if active:
-        # M6 evidence is captured while the actor is actually travelling diagonally
         active.debug_drive(Vector2(1.0,-1.0).normalized(), Vector2(0.98,-0.18))
     await _settle(11)
     _focus_live_camera()
@@ -77,7 +76,7 @@ func _capture_boss_phase3() -> void:
     stage.current_step = 4
     stage.call("_activate_step")
     stage.debug_spawn_encounter_for_step(4)
-    _place_squad(Vector2(1740,575), Vector2(0.96,-0.28))
+    _place_squad(Vector2(1710,610), Vector2(0.96,-0.28))
     await _settle(8)
     for node in get_nodes_in_group("m3_enemies"):
         if node is EnemyActor and ("BOSS" in node.enemy_id or "ANCHOR" in node.enemy_id):
@@ -104,7 +103,7 @@ func _capture_all_rooms() -> void:
         var pos: Vector2 = row[1]
         stage.current_step = int(row[2])
         stage.call("_activate_step")
-        _place_squad(pos + Vector2(-96,68), Vector2(0.98,-0.10))
+        _place_squad(pos + Vector2(-118,82), Vector2(0.98,-0.10))
         camera.global_position = pos
         await _settle(8)
         camera.global_position = pos
@@ -150,7 +149,7 @@ func _capture_unique_deaths() -> void:
         var center := Vector2(1510,350)
         var death_origin := center + Vector2(72,0)
         camera.global_position = death_origin
-        _place_squad(center+Vector2(-158,96),Vector2.RIGHT)
+        _place_squad(center+Vector2(-190,118),Vector2.RIGHT)
         var enemy := ENEMY_SCENE.instantiate() as EnemyActor
         enemy.configure(ids[i],300.0 if i==4 else 90.0)
         enemy.global_position = death_origin
@@ -196,10 +195,11 @@ func _place_squad(center: Vector2, aim: Vector2) -> void:
     var aim_dir := aim.normalized() if aim.length_squared() > 0.001 else Vector2.RIGHT
     var side := Vector2(-aim_dir.y,aim_dir.x)
     var rear := -aim_dir
+    # Match the real M7 live echelon exactly.
     var positions: Array[Vector2] = [
         center,
-        center+rear*66.0+side*58.0,
-        center+rear*82.0-side*58.0
+        center+rear*82.0+side*72.0,
+        center+rear*118.0-side*48.0
     ]
     for i in range(stage.squad.operators.size()):
         var actor := stage.squad.operators[i]
