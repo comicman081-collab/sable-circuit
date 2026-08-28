@@ -65,7 +65,7 @@ func try_cast(slot: String) -> bool:
     if key == "X":
         if not squad.spend_energy(100.0,"ultimate:"+actor.display_name): return false
         if not _cast_ultimate():
-            squad.add_energy(100.0,"ultimate_refund")
+            squad.add_energy(100.0,"ultimate_refund",false)
             return false
         return true
     return false
