@@ -34,6 +34,8 @@ jobs:
         run: python tools/validate_m6_visual_assets.py
       - name: Validate M7 staged raster payload integrity
         run: python tools/validate_m7_raster_payloads.py
+      - name: Validate M9 operator skill contract
+        run: python tools/validate_m9_skill_contract.py
 
   godot-headless:
     runs-on: ubuntu-latest
@@ -74,6 +76,8 @@ jobs:
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m7_authored_visual_smoke.gd"
       - name: M8 extraction and progression smoke test
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m8_extraction_progression_smoke.gd"
+      - name: M9 operator skill and synergy smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m9_operator_skill_synergy_smoke.gd"
 
   runtime-capture:
     runs-on: ubuntu-latest
@@ -100,6 +104,7 @@ jobs:
           set -euo pipefail
           mkdir -p artifacts/runtime_capture
           xvfb-run -a -s "-screen 0 1280x720x24" "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64" --path "$GITHUB_WORKSPACE" --resolution 1280x720 --rendering-method gl_compatibility --script res://tests/render/runtime_capture.gd
+          xvfb-run -a -s "-screen 0 1280x720x24" "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64" --path "$GITHUB_WORKSPACE" --resolution 1280x720 --rendering-method gl_compatibility --script res://tests/render/m9_skill_capture.gd
           test -f artifacts/runtime_capture/01_map_movement.png
           test -f artifacts/runtime_capture/02_combat_decon.png
           test -f artifacts/runtime_capture/03_boss_phase3.png
@@ -110,8 +115,12 @@ jobs:
           test -f artifacts/runtime_capture/25_m8_extraction_window.png
           test -f artifacts/runtime_capture/26_m8_wipe_results.png
           test -f artifacts/runtime_capture/27_m8_base_armory.png
+          test -f artifacts/runtime_capture/28_m9_mica_exposed.png
+          test -f artifacts/runtime_capture/29_m9_aster_exploit.png
+          test -f artifacts/runtime_capture/30_m9_rook_stagger.png
+          test -f artifacts/runtime_capture/31_m9_ultimate_ready.png
           count=$(find artifacts/runtime_capture -name '*.png' | wc -l)
-          test "$count" -eq 27
+          test "$count" -eq 31
       - name: Upload real runtime screenshots
         uses: actions/upload-artifact@v4
         with:

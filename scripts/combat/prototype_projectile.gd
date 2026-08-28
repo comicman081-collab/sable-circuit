@@ -1,6 +1,12 @@
 extends Node2D
 class_name PrototypeProjectile
 
+# Retained M5 projectile identity contract:
+# ASTER — Precision coil dart
+# ROOK — Heavy magnetic pellet
+# MICA — Sensor pulse
+# SIGNAL ANCHOR — Phase lance
+
 var direction := Vector2.RIGHT
 var speed := 720.0
 var damage := 10.0
@@ -49,7 +55,13 @@ func _physics_process(delta: float) -> void:
         if not is_instance_valid(target) or target == owner_actor:
             continue
         if target is Node2D and global_position.distance_squared_to(target.global_position) <= 24.0 * 24.0:
-            if target.has_method("apply_damage"): target.apply_damage(damage)
+            var applied_damage := damage
+            if owner_actor is OperatorActor and (owner_actor as OperatorActor).operator_id=="CHR_PROTO_01":
+                if target.has_method("is_exposed") and bool(target.call("is_exposed")):
+                    applied_damage *= 1.35
+            if target.has_method("apply_damage"): target.apply_damage(applied_damage)
+            if owner_actor != null and owner_actor.has_method("on_projectile_hit"):
+                owner_actor.call("on_projectile_hit",target,applied_damage)
             CombatFeedback.spawn_hit(get_tree(), global_position, art_profile, tint)
             queue_free(); return
     if lifetime <= 0.0: queue_free()
@@ -69,7 +81,6 @@ func _draw() -> void:
         draw_circle(Vector2(9, 0), 3.2, tint)
 
 func _draw_aster() -> void:
-    # Precision coil dart
     draw_line(Vector2(-76,0),Vector2(9,0),Color(0.33,0.86,1.0,0.11),8.0)
     draw_line(Vector2(-56,0),Vector2(12,0),Color(tint,0.42),3.2)
     for x in [-52.0,-35.0,-18.0]: draw_line(Vector2(x,0),Vector2(x+10.0,0),Color("eaf9ff",0.76),1.8)
@@ -77,14 +88,12 @@ func _draw_aster() -> void:
     draw_circle(Vector2(17,0),4.0,Color("ffcf70")); draw_circle(Vector2(17,0),8.0,Color(1.0,0.76,0.30,0.10))
 
 func _draw_rook() -> void:
-    # Heavy magnetic pellet
     draw_line(Vector2(-50,0),Vector2(-8,0),Color("d39a58",0.13),13.0)
     draw_line(Vector2(-38,0),Vector2(-7,0),Color("ffe0ad",0.34),6.0)
     draw_polygon(PackedVector2Array([Vector2(-12,-5),Vector2(8,-7),Vector2(17,0),Vector2(8,7),Vector2(-12,5)]),PackedColorArray([Color("d6a15f")]))
     draw_line(Vector2(-2,0),Vector2(12,0),Color("fff0c8"),2.0)
 
 func _draw_mica() -> void:
-    # Sensor pulse
     draw_line(Vector2(-62,0),Vector2(-12,0),Color("62d8c8",0.10),8.0)
     draw_circle(Vector2.ZERO,8.0,Color("62d8c8",0.13),true); draw_circle(Vector2.ZERO,7.0,Color("7cf4e7"),false,2.5); draw_circle(Vector2.ZERO,2.5,Color("e9fff9"),true)
     for x in [-48.0,-34.0,-21.0,-11.0]: draw_circle(Vector2(x,0),1.8,Color("62d8c8",0.52),true)
@@ -111,8 +120,6 @@ func _draw_aberrant() -> void:
     draw_line(Vector2(-9,-2),Vector2(10,1),Color("ef9ab0"),2.2)
 
 func _draw_anchor() -> void:
-    # Phase lance keeps its unique violet/magenta identity but is deliberately
-    # slimmer in M6 so five-way Phase 3 patterns do not obscure the boss body.
     draw_line(Vector2(-78,0),Vector2(15,0),Color("9179ff",0.085),10.0)
     draw_line(Vector2(-64,0),Vector2(16,0),Color("f0529d",0.28),4.5)
     draw_rect(Rect2(-20,-6,35,12),Color("8572ff"),true)

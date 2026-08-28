@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3]
+[gd_scene load_steps=15 format=3]
 
 [ext_resource type="Script" path="res://scripts/actors/operator_actor.gd" id="1_actor"]
 [ext_resource type="Script" path="res://scripts/animation/operator_visual.gd" id="2_visual"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://scripts/animation/operator_sector_silhouette_presentation.gd" id="10_sector"]
 [ext_resource type="Script" path="res://scripts/animation/operator_directional_scale_guard.gd" id="11_scale_guard"]
 [ext_resource type="Script" path="res://scripts/animation/operator_authored_raster_presentation.gd" id="12_raster"]
+[ext_resource type="Script" path="res://scripts/combat/operator_skill_controller.gd" id="13_skills"]
 
 [sub_resource type="CapsuleShape2D" id="Capsule_operator"]
 radius = 14.0
@@ -59,3 +60,6 @@ script = ExtResource("5_shading")
 
 [node name="AuthoredRasterPresentation" type="Node2D" parent="."]
 script = ExtResource("12_raster")
+
+[node name="SkillController" type="Node" parent="."]
+script = ExtResource("13_skills")
