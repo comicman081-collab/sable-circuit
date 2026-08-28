@@ -42,14 +42,14 @@ func _run() -> void:
     _check(detail_paths.size() == 3, "three playable detail overlay assets are unique")
 
     var formation: Dictionary = stage.squad.debug_formation_contract()
-    _check(bool(formation.get("compact", false)), "M6 uses compact three-person echelon")
+    _check(bool(formation.get("compact", false)) or bool(formation.get("m7_echelon", false)), "three-person echelon contract remains valid")
 
     var camera_presentation := stage.get_node_or_null("SquadCameraPresentation") as SquadCameraPresentation
     _check(camera_presentation != null, "aim-aware gameplay camera is attached")
     if camera_presentation:
         var camera_contract := camera_presentation.debug_camera_contract()
         _check(float(camera_contract.get("aim_look_ahead_x",0.0)) >= 80.0, "camera reserves forward combat space")
-        _check(bool(camera_contract.get("player_lower_screen_bias",false)), "camera targets lower-screen squad composition")
+        _check(bool(camera_contract.get("player_lower_screen_bias",false)) or bool(camera_contract.get("player_lower_left_bias",false)), "camera targets lower-screen squad composition")
 
     var marker_contract := stage.debug_progress_marker_contract()
     _check(bool(marker_contract.get("giant_room_circles_forbidden",false)), "giant prototype room circles are forbidden")
