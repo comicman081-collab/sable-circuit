@@ -1,0 +1,99 @@
+name: Fetch Quaternius Free Standard Assets
+
+on:
+  push:
+    branches: ["chore/quaternius-free-standard-assets"]
+    paths:
+      - "assets/external/manifest.json"
+      - "assets/external/quaternius/**"
+      - "tools/fetch_external_assets.py"
+      - ".github/workflows/fetch-quaternius-free.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch-free-standard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Fetch only approved free Standard Quaternius assets
+        run: python tools/fetch_external_assets.py --group quaternius
+
+      - name: Verify downloaded set and basic file structure
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import struct
+          from pathlib import Path
+
+          root = Path("assets/external/quaternius")
+          expected = {
+              root / "ubc/Superhero_Female_FullBody.gltf": 31656,
+              root / "ubc/Superhero_Female_FullBody.bin": 990808,
+              root / "ual1/UAL1_Standard.glb": 7618436,
+              root / "ual1/UAL1_Standard_RM.glb": 7620504,
+              root / "ual2/UAL2_Standard.glb": 8091444,
+              root / "ual2/UAL2_Standard_RM.glb": 8095936,
+          }
+
+          for path, expected_size in expected.items():
+              if not path.is_file():
+                  raise SystemExit(f"missing: {path}")
+              actual = path.stat().st_size
+              if actual != expected_size:
+                  raise SystemExit(f"size mismatch: {path}: {actual} != {expected_size}")
+
+          gltf = json.loads((root / "ubc/Superhero_Female_FullBody.gltf").read_text(encoding="utf-8"))
+          buffers = gltf.get("buffers", [])
+          if not buffers or buffers[0].get("uri") != "Superhero_Female_FullBody.bin":
+              raise SystemExit("UBC female glTF buffer reference mismatch")
+
+          for path in [
+              root / "ual1/UAL1_Standard.glb",
+              root / "ual1/UAL1_Standard_RM.glb",
+              root / "ual2/UAL2_Standard.glb",
+              root / "ual2/UAL2_Standard_RM.glb",
+          ]:
+              with path.open("rb") as f:
+                  header = f.read(12)
+              if len(header) != 12 or header[:4] != b"glTF":
+                  raise SystemExit(f"invalid GLB magic: {path}")
+              version, declared_length = struct.unpack("<II", header[4:12])
+              if version != 2 or declared_length != path.stat().st_size:
+                  raise SystemExit(f"invalid GLB header: {path}: version={version} length={declared_length}")
+
+          forbidden = ("[pro]", "[source]", "/pro/", "/source/", ".blend")
+          for path in root.rglob("*"):
+              lower = str(path).lower()
+              if any(marker in lower for marker in forbidden):
+                  raise SystemExit(f"forbidden paid/source-tier path present: {path}")
+
+          total = sum(p.stat().st_size for p in expected)
+          print(f"QUATERNIUS_FREE_STANDARD: PASS files={len(expected)} bytes={total}")
+          PY
+
+      - name: Upload verified free Standard asset bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: sable-quaternius-free-standard-assets
+          path: |
+            assets/external/quaternius/README.md
+            assets/external/quaternius/ubc/Superhero_Female_FullBody.gltf
+            assets/external/quaternius/ubc/Superhero_Female_FullBody.bin
+            assets/external/quaternius/ual1/UAL1_Standard.glb
+            assets/external/quaternius/ual1/UAL1_Standard_RM.glb
+            assets/external/quaternius/ual2/UAL2_Standard.glb
+            assets/external/quaternius/ual2/UAL2_Standard_RM.glb
+          if-no-files-found: error
+          retention-days: 14
