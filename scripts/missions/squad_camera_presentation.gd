@@ -4,16 +4,21 @@ class_name SquadCameraPresentation
 const AIM_LOOK_AHEAD_X := 108.0
 const AIM_LOOK_AHEAD_Y := 72.0
 const VERTICAL_COMPOSITION_BIAS := -24.0
-const BOSS_VERTICAL_COMPOSITION_BIAS := -150.0
+const BOSS_VERTICAL_COMPOSITION_BIAS := -25.0
+const NORMAL_ZOOM := 1.46
+const BOSS_ZOOM := 1.02
 const SQUAD_WEIGHT := 0.28
 const COMBAT_TARGET_WEIGHT := 0.40
 const BOSS_COMBAT_TARGET_WEIGHT := 0.50
 const MAX_COMBAT_TARGET_DISTANCE := 620.0
+const MAX_BOSS_CAMERA_DISTANCE := 900.0
 const FOLLOW_RATE := 8.6
+const ZOOM_FOLLOW_RATE := 6.2
 
 var stage: StoryStage01
 var camera: Camera2D
 var _last_target := Vector2.ZERO
+var _last_boss_focus := false
 
 func _ready() -> void:
     process_priority = 140
@@ -27,10 +32,15 @@ func _process(delta: float) -> void:
     var active := stage.squad.get_active_operator() if stage.squad else null
     if active == null:
         return
-    var target := _target_for_active(active)
+    var context := _focus_context(active)
+    var target: Vector2 = context.get("target", active.global_position)
+    var desired_zoom := float(context.get("zoom", NORMAL_ZOOM))
     _last_target = target
-    var blend := 1.0 - pow(0.00028, delta * FOLLOW_RATE / 8.6)
-    camera.global_position = camera.global_position.lerp(target, blend)
+    _last_boss_focus = bool(context.get("boss_focus", false))
+    var position_blend := 1.0 - pow(0.00028, delta * FOLLOW_RATE / 8.6)
+    var zoom_blend := 1.0 - pow(0.00055, delta * ZOOM_FOLLOW_RATE / 6.2)
+    camera.global_position = camera.global_position.lerp(target, position_blend)
+    camera.zoom = camera.zoom.lerp(Vector2.ONE * desired_zoom, zoom_blend)
 
 func _squad_centroid(active: OperatorActor) -> Vector2:
     if stage == null or stage.squad == null:
@@ -43,11 +53,30 @@ func _squad_centroid(active: OperatorActor) -> Vector2:
             count += 1.0
     return centroid / count if count > 0.0 else active.global_position
 
+func _priority_boss(active: OperatorActor) -> EnemyActor:
+    # Combat targetability is intentionally suspended for a short Phase-3 guard
+    # window. Camera composition must not interpret that gameplay protection as
+    # "the boss no longer exists". The camera therefore tracks the authoritative
+    # live enemy group, independently from prototype_targets.
+    var best: EnemyActor = null
+    var best_d2 := INF
+    for node in active.get_tree().get_nodes_in_group("m3_enemies"):
+        if node is EnemyActor and is_instance_valid(node):
+            var enemy := node as EnemyActor
+            if enemy.health <= 0.0:
+                continue
+            if not ("BOSS" in enemy.enemy_id or "ANCHOR" in enemy.enemy_id):
+                continue
+            var d2 := active.global_position.distance_squared_to(enemy.global_position)
+            if d2 <= MAX_BOSS_CAMERA_DISTANCE * MAX_BOSS_CAMERA_DISTANCE and d2 < best_d2:
+                best = enemy
+                best_d2 = d2
+    return best
+
 func _hostile_centroid(active: OperatorActor) -> Dictionary:
     var sum := Vector2.ZERO
     var count := 0.0
     var nearest_d2 := INF
-    var has_boss := false
     for node in active.get_tree().get_nodes_in_group("prototype_targets"):
         if node is Node2D and is_instance_valid(node):
             var d2 := active.global_position.distance_squared_to(node.global_position)
@@ -55,44 +84,54 @@ func _hostile_centroid(active: OperatorActor) -> Dictionary:
                 sum += node.global_position
                 count += 1.0
                 nearest_d2 = minf(nearest_d2, d2)
-                if node is EnemyActor and ("BOSS" in node.enemy_id or "ANCHOR" in node.enemy_id):
-                    has_boss = true
     return {
         "valid": count > 0.0,
         "position": sum / count if count > 0.0 else active.global_position,
         "count": count,
-        "nearest_d2": nearest_d2,
-        "has_boss": has_boss
+        "nearest_d2": nearest_d2
     }
 
-func _target_for_active(active: OperatorActor) -> Vector2:
+func _focus_context(active: OperatorActor) -> Dictionary:
     var centroid := _squad_centroid(active)
     var squad_anchor := active.global_position.lerp(centroid, SQUAD_WEIGHT)
     var aim := active.aim_world.normalized() if active.aim_world.length_squared() > 0.001 else Vector2.RIGHT
+    var boss := _priority_boss(active)
+
+    if boss != null:
+        var boss_pos := boss.global_position
+        var boss_delta := boss_pos - squad_anchor
+        if boss_delta.length() > MAX_BOSS_CAMERA_DISTANCE:
+            boss_pos = squad_anchor + boss_delta.normalized() * MAX_BOSS_CAMERA_DISTANCE
+        var boss_target := squad_anchor.lerp(boss_pos, BOSS_COMBAT_TARGET_WEIGHT)
+        boss_target += Vector2(aim.x * 14.0, aim.y * 7.0)
+        boss_target += Vector2(0.0, BOSS_VERTICAL_COMPOSITION_BIAS)
+        return {
+            "target": boss_target,
+            "zoom": BOSS_ZOOM,
+            "boss_focus": true,
+            "boss": boss,
+            "hostile_count": 1
+        }
+
     var hostile := _hostile_centroid(active)
     var target := squad_anchor
-    var vertical_bias := VERTICAL_COMPOSITION_BIAS
     if bool(hostile.get("valid", false)):
         var hostile_pos: Vector2 = hostile.get("position", active.global_position)
         var delta := hostile_pos - squad_anchor
         if delta.length() > MAX_COMBAT_TARGET_DISTANCE:
             hostile_pos = squad_anchor + delta.normalized() * MAX_COMBAT_TARGET_DISTANCE
-        var has_boss := bool(hostile.get("has_boss", false))
-        var target_weight := BOSS_COMBAT_TARGET_WEIGHT if has_boss else COMBAT_TARGET_WEIGHT
-        # Blend toward the actual hostile group instead of simply panning in aim
-        # direction. Signal Anchor occupies substantially more vertical space than a
-        # normal enemy: the earlier -78 bias still left its upper ring touching the
-        # 1280x720 top edge. The dedicated -150 anchor moves the camera farther into
-        # upper-world space, lowering the full boss/ring composition on screen while
-        # retaining the squad above the bottom combat HUD.
-        target = squad_anchor.lerp(hostile_pos, target_weight)
-        target += Vector2(aim.x * (18.0 if has_boss else 24.0), aim.y * (10.0 if has_boss else 18.0))
-        if has_boss:
-            vertical_bias = BOSS_VERTICAL_COMPOSITION_BIAS
+        target = squad_anchor.lerp(hostile_pos, COMBAT_TARGET_WEIGHT)
+        target += Vector2(aim.x * 24.0, aim.y * 18.0)
     else:
         target += Vector2(aim.x * AIM_LOOK_AHEAD_X, aim.y * AIM_LOOK_AHEAD_Y)
-    target += Vector2(0.0, vertical_bias)
-    return target
+    target += Vector2(0.0, VERTICAL_COMPOSITION_BIAS)
+    return {
+        "target": target,
+        "zoom": NORMAL_ZOOM,
+        "boss_focus": false,
+        "boss": null,
+        "hostile_count": int(hostile.get("count", 0.0))
+    }
 
 func debug_camera_contract() -> Dictionary:
     return {
@@ -100,33 +139,46 @@ func debug_camera_contract() -> Dictionary:
         "aim_look_ahead_y": AIM_LOOK_AHEAD_Y,
         "vertical_composition_bias": VERTICAL_COMPOSITION_BIAS,
         "boss_vertical_composition_bias": BOSS_VERTICAL_COMPOSITION_BIAS,
+        "normal_zoom": NORMAL_ZOOM,
+        "boss_zoom": BOSS_ZOOM,
         "squad_weight": SQUAD_WEIGHT,
         "combat_target_weight": COMBAT_TARGET_WEIGHT,
         "boss_combat_target_weight": BOSS_COMBAT_TARGET_WEIGHT,
         "max_combat_target_distance": MAX_COMBAT_TARGET_DISTANCE,
+        "max_boss_camera_distance": MAX_BOSS_CAMERA_DISTANCE,
         "target_aware_combat_frame": true,
+        "priority_boss_scan_m3_enemies": true,
+        "boss_targetability_independent": true,
         "boss_safe_frame": true,
+        "boss_zoom_out": true,
         "boss_large_silhouette_clearance": true,
         "player_lower_left_bias": true,
         "hostile_upper_right_bias": true,
         "m7_camera": true
     }
 
-func debug_target_for_active() -> Vector2:
+func debug_focus_context() -> Dictionary:
     if stage == null or stage.squad == null:
-        return Vector2.ZERO
+        return {}
     var active := stage.squad.get_active_operator()
     if active == null:
+        return {}
+    return _focus_context(active)
+
+func debug_target_for_active() -> Vector2:
+    var context := debug_focus_context()
+    if context.is_empty():
         return Vector2.ZERO
-    var hostile := _hostile_centroid(active)
-    var target := _target_for_active(active)
-    print("M7_CAMERA_DEBUG active=%s hostile_valid=%s boss=%s hostile_count=%d active_pos=%s hostile_pos=%s target=%s" % [
+    var active := stage.squad.get_active_operator()
+    var target: Vector2 = context.get("target", Vector2.ZERO)
+    var boss := context.get("boss") as EnemyActor
+    print("M7_CAMERA_DEBUG active=%s boss_focus=%s boss_id=%s active_pos=%s boss_pos=%s target=%s zoom=%.3f" % [
         active.display_name,
-        str(bool(hostile.get("valid",false))),
-        str(bool(hostile.get("has_boss",false))),
-        int(hostile.get("count",0.0)),
+        str(bool(context.get("boss_focus",false))),
+        boss.enemy_id if boss != null else "NONE",
         str(active.global_position),
-        str(hostile.get("position",active.global_position)),
-        str(target)
+        str(boss.global_position) if boss != null else "NONE",
+        str(target),
+        float(context.get("zoom",NORMAL_ZOOM))
     ])
     return target
