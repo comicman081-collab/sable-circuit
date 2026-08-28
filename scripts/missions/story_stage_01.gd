@@ -5,7 +5,7 @@ signal stage_completed(summary: Dictionary)
 
 const MISSION_PATH := "res://data/missions/MIS_CH01_01.json"
 const ENEMY_SCENE := preload("res://scenes/actors/enemy/EnemyActor.tscn")
-const EXTRACTION_OFFER_IDS := ["R03_ARCHIVE", "R04_JUNCTION", "R05_CORE_C"]
+const EXTRACTION_OFFER_IDS := ["R03_ARCHIVE", "R04_CONTAINMENT", "R05_CORE"]
 const INTEL_KEYS := ["SECURITY","ABERRANT","ANCHOR"]
 
 var mission: Dictionary = {}
