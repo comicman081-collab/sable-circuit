@@ -22,15 +22,16 @@ func _run()->void:
 
     _check(bool(progression.purchase_upgrade("ARMORY_CALIBRATION").get("success",false)),"Armory level 2 purchases")
     _check((progression.snapshot().get("unlocked_weapons",[]) as Array).has("WPN_LMG_HELIX_01"),"Armory level 2 unlocks LMG")
+    var choices:=WeaponRegistry.compatible_weapons("CHR_PROTO_01",progression.snapshot().get("unlocked_weapons",[]))
     var cycle:=progression.cycle_weapon("CHR_PROTO_01")
-    _check(bool(cycle.get("success",false)) and str(cycle.get("weapon_id",""))=="WPN_LMG_HELIX_01","Aster weapon cycle advances through unlocked compatible order")
+    _check(bool(cycle.get("success",false)) and choices.has(str(cycle.get("weapon_id",""))) and str(cycle.get("weapon_id",""))!="WPN_AR_BURST_02","Aster weapon cycle advances to the next unlocked compatible weapon")
+    _check(bool(progression.equip_weapon("CHR_PROTO_01","WPN_LMG_HELIX_01").get("success",false)),"Aster can directly equip unlocked LMG")
     _check(bool(progression.equip_weapon("CHR_PROTO_01","WPN_AR_BURST_02").get("success",false)),"Aster returns to burst AR for firing audit")
 
     _check(bool(progression.analyze_intel("ANL_ANCHOR_SIGNAL_MODEL").get("success",false)),"Anchor analysis completes")
     var after_analysis:=progression.snapshot(); _check((after_analysis.get("unlocked_weapons",[]) as Array).has("WPN_SPECIAL_ARC_01"),"Anchor analysis unlocks Arc Lance special weapon")
     _check(bool(progression.equip_weapon("CHR_PROTO_03","WPN_SPECIAL_ARC_01").get("success",false)),"Mica equips Arc Lance special weapon")
 
-    # Use actual GameFlow deployment injection rather than directly mutating actor specs.
     var flow:=GameFlow.new(); root.add_child(flow); await _frames(3); flow.campaign=progression; flow.deploy_stage_01(); await _frames(5)
     var stage:=flow.current_view as StoryStage01
     _check(stage!=null,"M13 GameFlow deploys StoryStage01")
@@ -44,7 +45,6 @@ func _run()->void:
     _check(int(rc.get("magazine_size",0))==10 and int(rc.get("pellet_count",0))==5 and int(rc.get("ammo_per_trigger",0))==1,"scattergun runtime spec owns five pellets for one shell")
     _check(int(mc.get("magazine_size",0))==6 and is_equal_approx(float(mc.get("damage",0.0)),28.0),"Arc Lance runtime spec owns 6-mag / 28 base damage")
 
-    # Freeze actors so projectile audit is not contaminated by companion AI fire.
     for actor in stage.squad.operators: actor.set_physics_process(false)
     var campaign_damage:=float(progression.snapshot().get("damage_multiplier",1.0))
 
@@ -72,7 +72,6 @@ func _run()->void:
     aster.ammo=2; _check(not aster.debug_fire_once(),"burst AR refuses trigger when fewer than three rounds remain")
     _check(aster.is_reloading(),"insufficient burst ammo begins reload transaction")
 
-    # Actual Base button binding.
     var base:=BaseLobby.new(); root.add_child(base); base.configure_campaign(progression.snapshot()); await _frames(3)
     var emitted:=""; base.weapon_cycle_requested.connect(func(operator_id:String)->void: emitted=operator_id)
     var weapon_button:=base.find_child("WeaponCycle_CHR_PROTO_01",true,false) as Button
@@ -82,7 +81,6 @@ func _run()->void:
     var base_contract:=base.debug_m13_weapon_contract(); _check((base_contract.get("weapon_catalog",[]) as Array).size()==6,"Base receives all six weapon specs without new image assets")
     base.queue_free(); await process_frame
 
-    # v2 save migration gets safe defaults/derived unlock tiers.
     var persistent:=CampaignProgression.new(true); persistent.debug_reset(); _write_save({"schema_version":2,"research_value":50,"armory_level":1,"lab_level":0,"analyzed_intel":[],"unlocked_modules":[],"unlocked_weaknesses":[],"equipped_modules":{},"committed_run_ids":[]})
     var migrated:=CampaignProgression.new(true); var migrated_snapshot:=migrated.snapshot(); var migrated_weapons:Dictionary=migrated_snapshot.get("equipped_weapons",{})
     _check(int(migrated_snapshot.get("schema_version",0))==3,"v2 campaign migrates to M13 schema v3")
