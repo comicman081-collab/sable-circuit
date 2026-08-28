@@ -1,6 +1,6 @@
 # SABLE CIRCUIT
 
-**Status:** M5 actual Godot runtime visual baseline  
+**Status:** M7 runtime visual stabilization · validated vector presentation authoritative · authored raster staged/quarantined  
 **Engine:** Godot 4.7.2 stable · GDScript · Compatibility renderer  
 **Genre:** Top-down real-time 3-operator squad action RPG + extraction roguelite + base progression
 
@@ -10,33 +10,60 @@
 
 Chapter 01 is **BLACKOUT AT SITE-7** with six required authored rooms plus two optional rooms. Required progress is gated and cannot be skipped.
 
-## M5 actual-runtime visual baseline
+## M7 current runtime baseline
 
-M5 makes **real Godot GUI rendering** part of visual acceptance. AI-generated concepts or mockups are not valid implementation evidence.
+M7 keeps **real Godot GUI rendering** as the visual acceptance authority. AI concepts, isolated mockups and metadata-only asset presence are not implementation evidence.
 
-GitHub Actions launches exact SHA-pinned Godot 4.7.2 under Xvfb at 1280×720 and must render exactly 24 PNG evidence frames:
-- traversal / map movement
-- Decon Corridor combat
-- Signal Anchor Guardian Phase 3
-- all eight Stage-01 environment styles
-- ASTER facing sectors 0–7
-- unique Rifle / Shield / Drone / Aberrant / Boss death frames
+The current validated runtime adds:
+- true eight-sector operator evidence for **ASTER / ROOK / MICA**, with all three operators visible in each direction capture,
+- dedicated side-profile and rear identity plates instead of treating a compressed frontal paper-doll as a side/rear view,
+- frontal head/torso suppression in exact side and rear sectors so baked facial/chest art cannot leak through,
+- normalized profile/rear head scale to prevent visible size pumping during direction changes,
+- independent movement and aim with non-accumulating diagonal locomotion offsets,
+- target-aware squad camera framing,
+- a dedicated **Signal Anchor Guardian** boss camera that remains authoritative while Phase 3 temporarily removes the boss from the combat-target group,
+- Phase-3 giant-boss zoom-out (`1.02` versus normal `1.46`) so the boss ring and all four pylons remain inside the 1280×720 safe frame,
+- Core C floor-plane telegraphs behind combatants rather than painting over the boss body.
+
+GitHub Actions launches exact SHA-pinned Godot 4.7.2 under Xvfb at 1280×720 and must render exactly **24 PNG evidence frames**:
+- traversal / map movement,
+- Decon Corridor combat,
+- Signal Anchor Guardian Phase 3,
+- all eight Stage-01 environment styles,
+- eight directional frames with ASTER / ROOK / MICA shown together,
+- unique Rifle / Shield / Drone / Aberrant / Boss death frames.
+
+### Authored raster promotion gate
+
+M7 contains a staging loader for future authored 4×2 / eight-direction raster atlases, but **raster is not currently the authoritative live operator presentation**.
+
+Current repository state:
+- **ASTER:** staged payload is incomplete — `15,000 / 94,718 bytes` (`15.84%`) and is automatically quarantined before the WebP decoder is invoked.
+- **ROOK:** raster atlas payload not present.
+- **MICA:** raster atlas payload not present.
+- Therefore the validated M7 directional vector/rig presentation remains authoritative for all three operators.
+
+`tools/validate_m7_raster_payloads.py` verifies chunk ordering, base64 integrity and RIFF/WebP declared length. A valid staged prefix may report `PARTIAL_QUARANTINED`; malformed, over-length or broken chunk payloads fail CI. Runtime promotion occurs only after the full RIFF payload is present, WebP decode succeeds and atlas dimensions are valid. Partial raster data can never hide the validated vector fallback.
+
+## M5 foundation retained
+
+M5 established actual-runtime screenshot acceptance, the tactical HUD, pinned typography and Site-7 facility-depth presentation. These remain retained contracts under M7.
 
 ### Tactical HUD and typography
 
-The field HUD now includes a route minimap, objective panel, live ASTER / ROOK / MICA portrait cards and HP, ammunition / weapon panel, ENERGY and Q/E/R slots.
+The field HUD includes a route minimap, objective panel, live ASTER / ROOK / MICA portrait cards and HP, ammunition / weapon panel, ENERGY and Q/E/R slots.
 
 HUD typography is **Rajdhani Medium v1.201** from pinned Google Fonts revision `9d1ce2fc3c335cca32b6db00c19f55d57b0a68fe`. The font is declared in `assets/external/manifest.json`, fetched through `tools/fetch_external_assets.py`, verified against SHA-256, and licensed under SIL OFL 1.1. CI verifies Godot actually selects the bundled font instead of a system fallback.
 
 ### Site-7 2.5D field presentation
 
-M4's eight unique room identities remain intact. M5 adds a consistent facility-depth pass:
-- raised metallic room shells
-- top / side wall faces
-- deck lips and cast shadows
-- structural braces and luminous insets
-- recessed floor plates and deck seams
-- cinematic edge attenuation, scan texture and subtle cool / amber blooms
+The eight unique room identities remain intact with a consistent facility-depth pass:
+- raised metallic room shells,
+- top / side wall faces,
+- deck lips and cast shadows,
+- structural braces and luminous insets,
+- recessed floor plates and deck seams,
+- cinematic edge attenuation, scan texture and subtle cool / amber blooms.
 
 ### Operators
 
@@ -52,24 +79,24 @@ The live formation is widened for on-field readability. Each operator has contac
 Every unique enemy keeps its own rig and motion grammar, with contact shadows and segmented overhead health/threat UI.
 
 Projectile and impact presentation remains identity-specific rather than recolored reuse:
-- ASTER — precision coil dart
-- ROOK — magnetic pressure wake
-- MICA — sensor pulse packet
-- Rifle — red/white segmented tracer
-- Shield — amber heavy slug
-- Drone — magenta/cyan packet
-- Aberrant — organic purple bolt
-- Signal Anchor Guardian — violet/magenta phase lance
+- ASTER — precision coil dart,
+- ROOK — magnetic pressure wake,
+- MICA — sensor pulse packet,
+- Rifle — red/white segmented tracer,
+- Shield — amber heavy slug,
+- Drone — magenta/cyan packet,
+- Aberrant — organic purple bolt,
+- Signal Anchor Guardian — violet/magenta phase lance.
 
 Associated hit VFX retain separate shapes, timing and motion.
 
-## M4 systems preserved and runtime-verified
+## Premium motion and environment contracts
 
 ### Eight-sector character presentation
 
-ASTER / ROOK / MICA resolve all eight facing sectors. Sector changes affect front/rear depth, head/torso perspective, arm/weapon z-order and rear shading rather than rotating only the weapon.
+ASTER / ROOK / MICA resolve all eight facing sectors. Side sectors now use authored profile identity plates; rear sectors use authored rear hair/back-armor identity plates. Arms, legs, weapon sockets and weapon IK remain on the authoritative articulated rig.
 
-Rear-facing sectors hide the facial overlay; front/side sectors show an identity-specific facial micro rig with blinking, eye aim, brow shape and hit expression.
+Rear-facing sectors contain no baked face. Front-facing sectors restore the authored frontal head and facial micro rig. Forward diagonals retain controlled perspective compression without replacing the authoritative front identity art.
 
 ### Identity-specific secondary motion
 
@@ -93,6 +120,8 @@ Visible death is detached from the authoritative enemy transaction, so destructi
 - **Phase 1:** >66% HP — base orbital behavior.
 - **Phase 2:** 34–66% — expanded ring/pylon motion and additional angled lance pattern.
 - **Phase 3:** <=33% — unstable iris/arms, increased attack pressure and five-way lance pattern.
+
+Phase 3 temporarily suspends combat targetability during its transition guard, but camera focus is deliberately independent from that gameplay group and continues tracking the authoritative live boss through `m3_enemies`.
 
 ### Stage 01 authored environment identities
 
@@ -124,10 +153,13 @@ Current field controls: **WASD move · Shift run · mouse aim · LMB fire · R r
 7. Every combat identity owns unique visual, motion, projectile, hit-VFX, fire-SFX and impact-SFX profiles.
 8. Master art and layered rig sheets are checked against byte-identical reuse.
 9. Animation/VFX are presentation; gameplay code authors results.
-10. M4 premium presentation preserves eight sectors, identity secondary motion, unique enemy death, boss phases and eight unique Stage-01 room signatures.
-11. M5 adds pinned typography, facility depth, field grounding, overhead combat UI and actual-runtime screenshot evidence.
-12. CI uses exact SHA-pinned Godot 4.7.2 and retains M1/M2/M3/M4/M5 smoke coverage.
-13. **GitHub Pages/public deployment remains intentionally disabled until the game is complete.**
+10. M4 premium presentation preserves identity secondary motion, unique enemy death, boss phases and eight unique Stage-01 room signatures.
+11. M5 retains pinned typography, facility depth, field grounding, overhead combat UI and actual-runtime screenshot evidence.
+12. M6/M7 retain independent diagonal movement/aim, true profile/rear operator presentation, target-aware camera framing and authored Site-7 visual identities.
+13. M7 boss camera authority is independent from temporary combat-targetability state.
+14. Incomplete raster staging can never replace or hide the validated vector presentation.
+15. CI uses exact SHA-pinned Godot 4.7.2 and retains M1 through M7 smoke coverage plus 24 actual-runtime screenshots.
+16. **GitHub Pages/public deployment remains intentionally disabled until the game is complete.**
 
 ## Start here
 
@@ -136,7 +168,7 @@ Current field controls: **WASD move · Shift run · mouse aim · LMB fire · R r
 - `docs/M2_STORY_VERTICAL_SLICE.md` — lobby/story-stage loop
 - `docs/M3_UNIQUE_2P5D_ART_BIBLE.md` — non-reuse production-art rules
 - `docs/M3_HIGH_RES_UNIQUE_ART_RUNTIME.md` — M3 high-resolution runtime
-- `docs/M4_PREMIUM_MOTION_ENVIRONMENT.md` — M4 direction/motion/reaction/boss/environment contract
+- `docs/M4_PREMIUM_MOTION_ENVIRONMENT.md` — direction/motion/reaction/boss/environment contract
 - `docs/M5_ACTUAL_RUNTIME_VISUAL_BASELINE.md` — real-render visual evidence, HUD/font/depth baseline
 - `docs/ANIMATION_SPEC_v0.1.md` — animation contract
 - `docs/TECH_ARCHITECTURE_v0.1.md` — runtime/data architecture
