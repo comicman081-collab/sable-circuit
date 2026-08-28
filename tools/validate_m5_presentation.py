@@ -45,7 +45,8 @@ contracts = {
     "tests/render/runtime_capture.gd": [
         "19_direction_sector_7.png",
         "24_death_boss.png",
-        "M6 evidence is captured while the actor is actually travelling diagonally",
+        "active.debug_drive(Vector2(1.0,-1.0).normalized()",
+        "Match the real M7 live echelon exactly.",
         "RUNTIME_CAPTURE: PASS",
     ],
     "scenes/mission/StoryStage01.tscn": [
@@ -101,4 +102,4 @@ if errors:
     sys.exit(1)
 
 print("M5_PRESENTATION_VALIDATION: PASS")
-print(f"checked {len(contracts)} retained M5 + upgraded M6 production presentation contracts")
+print(f"checked {len(contracts)} retained M5 + upgraded M6/M7 production presentation contracts")
