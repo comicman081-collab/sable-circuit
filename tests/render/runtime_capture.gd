@@ -132,33 +132,44 @@ func _capture_eight_directions() -> void:
     stage.current_step = 2
     stage.call("_activate_step")
     camera.global_position = Vector2(1100,490)
-    var active := stage.squad.operators[0]
     stage.squad.request_control(0)
-    stage.squad.operators[1].visible = false
-    stage.squad.operators[2].visible = false
-    active.global_position = Vector2(1100,515)
+
+    # Keep the canonical 24-frame evidence budget, but make each directional frame
+    # prove ASTER, ROOK and MICA simultaneously. This prevents a profile/rear fix from
+    # being accepted for only the active operator while companions retain frontal art.
+    var direction_positions: Array[Vector2] = [
+        Vector2(1030,515), Vector2(1100,515), Vector2(1170,515)
+    ]
+    for i in range(stage.squad.operators.size()):
+        var actor := stage.squad.operators[i]
+        actor.visible = true
+        actor.global_position = direction_positions[i]
+        actor.velocity = Vector2.ZERO
+
     var vectors: Array[Vector2] = [
         Vector2.RIGHT,Vector2(1,1).normalized(),Vector2.DOWN,Vector2(-1,1).normalized(),
         Vector2.LEFT,Vector2(-1,-1).normalized(),Vector2.UP,Vector2(1,-1).normalized()
     ]
     for sector in range(8):
-        # Lock aim through the authoritative actor debug path. Directly assigning
-        # aim_world/facing_sector was not valid evidence because a controlled actor
-        # overwrites both from mouse aim on the next physics frame.
-        active.debug_drive(Vector2.ZERO, vectors[sector])
-        active.velocity = Vector2.ZERO
+        for actor in stage.squad.operators:
+            actor.global_position = direction_positions[stage.squad.operators.find(actor)]
+            actor.debug_drive(Vector2.ZERO, vectors[sector])
+            actor.velocity = Vector2.ZERO
         await physics_frame
         await physics_frame
         await _settle(1)
-        if active.facing_sector != sector:
-            push_error("direction evidence sector drift: expected=%d actual=%d" % [sector, active.facing_sector])
-            capture_failed = true
+        for actor in stage.squad.operators:
+            if actor.facing_sector != sector:
+                push_error("direction evidence sector drift: %s expected=%d actual=%d" % [actor.display_name, sector, actor.facing_sector])
+                capture_failed = true
+                break
+        if capture_failed:
             break
         camera.global_position = Vector2(1100,490)
         await _save("%02d_direction_sector_%d.png" % [12+sector,sector])
-    active.debug_stop_drive()
-    stage.squad.operators[1].visible = true
-    stage.squad.operators[2].visible = true
+
+    for actor in stage.squad.operators:
+        actor.debug_stop_drive()
 
 func _capture_unique_deaths() -> void:
     await _clear_enemies()
