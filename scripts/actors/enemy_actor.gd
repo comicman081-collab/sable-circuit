@@ -24,6 +24,13 @@ var _stagger_left := 0.0
 var _status_source := ""
 var _last_consumed_source := ""
 
+# M11 deployment-only modifiers. They are applied after authored encounter HP is
+# configured and never written to CampaignProgression.
+var run_health_multiplier := 1.0
+var run_damage_multiplier := 1.0
+var run_speed_multiplier := 1.0
+var run_attack_interval_multiplier := 1.0
+
 var _visual_root: Node2D
 var _hidden_master: Sprite2D
 var _rig: Skeleton2D
@@ -51,6 +58,14 @@ func configure(id_value: String, hp: float = -1.0) -> void:
     _exposed_left=0.0; _stagger_left=0.0; _status_source=""; _last_consumed_source=""
     if is_node_ready():
         _rebuild_visual()
+
+func apply_run_modifiers(modifiers: Dictionary) -> void:
+    run_health_multiplier = clampf(float(modifiers.get("enemy_health_multiplier",1.0)),0.5,3.0)
+    run_damage_multiplier = clampf(float(modifiers.get("enemy_damage_multiplier",1.0)),0.5,3.0)
+    run_speed_multiplier = clampf(float(modifiers.get("enemy_speed_multiplier",1.0)),0.5,2.0)
+    run_attack_interval_multiplier = clampf(float(modifiers.get("enemy_attack_interval_multiplier",1.0)),0.5,2.0)
+    max_health *= run_health_multiplier
+    health = max_health
 
 func apply_damage(amount: float) -> void:
     if amount<=0.0 or health<=0.0: return
@@ -103,6 +118,7 @@ func _physics_process(delta: float) -> void:
         var target := _nearest_operator()
         if target:
             _update_tactics(target, delta)
+            velocity *= run_speed_multiplier
         else:
             velocity = velocity.move_toward(Vector2.ZERO, 260.0 * delta)
     move_and_slide()
@@ -154,7 +170,7 @@ func _update_tactics(target: OperatorActor, delta: float) -> void:
             velocity = dir * 126.0
             if dist < 270.0 and _attack_cd <= 0.0:
                 _lunge_left = 0.22
-                _attack_cd = 1.35
+                _attack_cd = 1.35 * run_attack_interval_multiplier
         else:
             velocity = Vector2.ZERO
             _try_attack(dir, 1.25)
@@ -168,7 +184,7 @@ func _update_tactics(target: OperatorActor, delta: float) -> void:
 func _try_attack(dir: Vector2, interval: float) -> void:
     if _attack_cd > 0.0 or _stagger_left>0.0:
         return
-    _attack_cd = interval
+    _attack_cd = interval * run_attack_interval_multiplier
     CombatFeedback.play_fire(get_tree(), art_profile)
     _spawn_projectile(dir)
     if "BOSS" in str(art_profile.get("projectile_profile", "")):
@@ -179,6 +195,7 @@ func _spawn_projectile(dir: Vector2) -> void:
     var projectile := Projectile.new()
     get_tree().root.add_child(projectile)
     projectile.setup(global_position + dir * _muzzle_distance(), dir, self, _projectile_color(), art_profile, "operators")
+    projectile.damage *= run_damage_multiplier
 
 func _muzzle_distance() -> float:
     if "BOSS" in enemy_id: return 92.0
@@ -256,7 +273,7 @@ func _animate_identity() -> void:
     elif "BOSS" in motion or "ANCHOR" in motion: _animate_boss()
 
 func _animate_rifle() -> void:
-    var gait:float=sin(_phase*7.2)*0.28*minf(1.0,velocity.length()/105.0); (_bones["leg_L"] as Bone2D).rotation=gait; (_bones["leg_R"] as Bone2D).rotation=-gait; (_bones["shin_L"] as Bone2D).rotation=-gait*.55; (_bones["shin_R"] as Bone2D).rotation=gait*.55; (_bones["body"] as Bone2D).rotation=sin(_phase*3.6)*.018; (_bones["weapon"] as Bone2D).rotation=_aim_dir.angle(); (_bones["arm_L"] as Bone2D).rotation=_aim_dir.angle()+.10; (_bones["arm_R"] as Bone2D).rotation=_aim_dir.angle()-.08
+    var gait:float=sin(_phase*7.2)*0.28*minf(1.0,velocity.length()/maxf(1.0,105.0*run_speed_multiplier)); (_bones["leg_L"] as Bone2D).rotation=gait; (_bones["leg_R"] as Bone2D).rotation=-gait; (_bones["shin_L"] as Bone2D).rotation=-gait*.55; (_bones["shin_R"] as Bone2D).rotation=gait*.55; (_bones["body"] as Bone2D).rotation=sin(_phase*3.6)*.018; (_bones["weapon"] as Bone2D).rotation=_aim_dir.angle(); (_bones["arm_L"] as Bone2D).rotation=_aim_dir.angle()+.10; (_bones["arm_R"] as Bone2D).rotation=_aim_dir.angle()-.08
 func _animate_shield() -> void:
     var stomp:float=absf(sin(_phase*4.1)); (_bones["body"] as Bone2D).position=(_base_positions["body"] as Vector2)+Vector2(0,stomp*3.2); (_bones["shield"] as Bone2D).rotation=-.06+sin(_phase*2.0)*.025; (_bones["hydraulic_arm"] as Bone2D).rotation=_aim_dir.angle()*.45; (_bones["weapon"] as Bone2D).rotation=_aim_dir.angle()*.55
 func _animate_drone() -> void:
@@ -280,3 +297,13 @@ func _draw() -> void:
 
 func debug_status_contract() -> Dictionary:
     return {"exposed":is_exposed(),"exposed_left":_exposed_left,"staggered":is_staggered(),"stagger_left":_stagger_left,"status_source":_status_source,"last_consumed_source":_last_consumed_source}
+
+func debug_run_modifier_contract() -> Dictionary:
+    return {
+        "enemy_health_multiplier":run_health_multiplier,
+        "enemy_damage_multiplier":run_damage_multiplier,
+        "enemy_speed_multiplier":run_speed_multiplier,
+        "enemy_attack_interval_multiplier":run_attack_interval_multiplier,
+        "max_health":max_health,
+        "health":health
+    }
