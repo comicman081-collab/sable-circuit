@@ -109,9 +109,17 @@ func _process(_delta: float) -> void:
         _finish_mission("WIPED")
         return
 
+    # M12: F is shared by field interaction and manual revive. A nearby downed
+    # squadmate always reserves F first. Latches still follow the held key so a
+    # completed revive cannot accidentally extract/interact without release+press.
+    var revive_reserved := squad != null and squad.has_revivable_target_in_range()
     if _extraction_offer_active:
         var extract_pressed := Input.is_key_pressed(KEY_F)
         var continue_pressed := Input.is_key_pressed(KEY_C)
+        if revive_reserved:
+            _extract_latch = extract_pressed
+            _continue_latch = continue_pressed
+            return
         if extract_pressed and not _extract_latch:
             _finish_mission("EXTRACTED")
         elif continue_pressed and not _continue_latch:
@@ -125,7 +133,7 @@ func _process(_delta: float) -> void:
         return
     _check_current_room_entry(active)
     var interact_pressed := Input.is_key_pressed(KEY_F)
-    if interact_pressed and not _interact_latch:
+    if interact_pressed and not _interact_latch and not revive_reserved:
         _handle_interaction(active)
     _interact_latch = interact_pressed
 
@@ -471,6 +479,7 @@ func debug_intel_cargo()->Dictionary: return _cargo_intel.duplicate(true)
 func debug_run_contract()->Dictionary: return _run_contract.duplicate(true)
 func debug_active_run_boosts()->Array[String]: return _active_run_boost_ids.duplicate()
 func debug_activate_run_boost_for_room(room_id:String)->String: return _activate_run_boost_for_room(room_id)
+func debug_interaction_reserved_for_revive()->bool: return squad!=null and squad.has_revivable_target_in_range()
 func debug_campaign_contract()->Dictionary:
     return {
         "run_id":_run_id,
