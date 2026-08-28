@@ -40,9 +40,12 @@ need("scripts/missions/story_stage_01.gd", [
     "debug_interaction_reserved_for_revive",
     "_extraction_offer_active",
 ])
-need("scripts/actors/operator_actor.gd", [
-    "func revive", "downed_state = false", "health = maxf(1.0",
+# Semantic revive contract: formatting/whitespace may evolve in later actor refactors.
+operator_text = need("scripts/actors/operator_actor.gd", [
+    "func revive", "downed_state", "maxf(1.0", "health_changed.emit",
 ])
+if "downed_state=false" not in operator_text.replace(" ", ""):
+    ERRORS.append("scripts/actors/operator_actor.gd revive path no longer clears downed state")
 need("tests/smoke/m12_squad_revive_smoke.gd", ["M12_SQUAD_REVIVE_SMOKE: PASS"])
 
 campaign = need("scripts/core/campaign_progression.gd", ["SAVE_SCHEMA_VERSION"])
