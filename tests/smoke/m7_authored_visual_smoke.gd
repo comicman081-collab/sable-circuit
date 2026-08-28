@@ -29,8 +29,12 @@ func _run() -> void:
         _check(bool(camera_contract.get("target_aware_combat_frame", false)), "camera frames actual hostile group")
         _check(float(camera_contract.get("combat_target_weight", 0.0)) >= 0.35, "camera reserves enemy-side screen space")
         _check(bool(camera_contract.get("boss_safe_frame", false)), "camera owns dedicated boss safe framing")
+        _check(bool(camera_contract.get("priority_boss_scan_m3_enemies", false)), "boss framing uses authoritative live-enemy scan")
+        _check(bool(camera_contract.get("boss_targetability_independent", false)), "boss framing is independent from combat targetability")
+        _check(bool(camera_contract.get("boss_zoom_out", false)), "boss framing owns a dedicated zoom-out")
         _check(float(camera_contract.get("boss_combat_target_weight", 0.0)) >= 0.48, "boss framing reserves additional target space")
-        _check(float(camera_contract.get("boss_vertical_composition_bias", 0.0)) <= -60.0, "boss framing protects top-edge silhouette clearance")
+        _check(float(camera_contract.get("boss_zoom", 99.0)) <= 1.05, "boss framing zooms out enough for giant silhouette clearance")
+        _check(float(camera_contract.get("normal_zoom", 0.0)) - float(camera_contract.get("boss_zoom", 99.0)) >= 0.35, "boss zoom materially differs from normal traversal zoom")
 
     var boss_arena := stage.get_node_or_null("BossArenaPresentation") as BossArenaPresentation
     _check(boss_arena != null, "Core C has dedicated boss arena presentation")
@@ -59,6 +63,10 @@ func _run() -> void:
     _check(boss != null, "M7 boss spawns in Core C")
     if boss:
         _check(boss.global_position.distance_to(CORE_CENTER) < 2.0, "boss body is centered on the authored Core C dais")
+        var boss_focus_operator := stage.squad.get_active_operator()
+        if boss_focus_operator:
+            boss_focus_operator.global_position = Vector2(1695,615)
+            boss_focus_operator.aim_world = (boss.global_position-boss_focus_operator.global_position).normalized()
         boss.health = boss.max_health * 0.24
         await _frames(6)
         var premium := boss.get_node_or_null("PremiumPresentation") as PremiumEnemyPresentation
@@ -70,6 +78,13 @@ func _run() -> void:
         _check(boss_arena != null and boss_arena.debug_phase() == 3, "boss arena follows boss into Phase 3")
         _check(boss_arena != null and boss_arena.debug_active_pylon_count() == 4, "Phase 3 runtime has four active pylons")
         _check(boss_arena != null and boss_arena.debug_weakpoint_exposed(), "Phase 3 runtime exposes the weakpoint")
+        _check(not boss.is_in_group("prototype_targets"), "Phase 3 targetability guard temporarily removes boss from combat target group")
+        if camera_presentation:
+            var phase3_camera := camera_presentation.debug_focus_context()
+            _check(bool(phase3_camera.get("boss_focus",false)), "camera retains boss focus while Phase 3 targetability guard is active")
+            _check(float(phase3_camera.get("zoom",99.0)) <= 1.05, "Phase 3 runtime activates giant-boss zoom-out")
+            var camera_boss := phase3_camera.get("boss") as EnemyActor
+            _check(camera_boss == boss, "camera priority scan resolves the authoritative live boss")
 
     var active := stage.squad.get_active_operator()
     if active:
@@ -83,7 +98,14 @@ func _run() -> void:
         _check(active.aim_world.dot(Vector2.RIGHT) > 0.98, "M7 preserves independent aim")
 
         var sector_visual := active.get_node_or_null("SectorSilhouettePresentation") as OperatorSectorSilhouettePresentation
+        var scale_guard := active.get_node_or_null("DirectionalScaleGuard") as OperatorDirectionalScaleGuard
         _check(sector_visual != null, "M7 attaches eight-sector silhouette presentation")
+        _check(scale_guard != null, "M7 attaches directional scale normalization")
+        if scale_guard:
+            var scale_contract := scale_guard.debug_contract()
+            _check(bool(scale_contract.get("prevents_direction_size_pumping",false)), "direction scale guard forbids head-size pumping")
+            _check(float(scale_contract.get("profile_head_scale",99.0)) <= 0.85, "profile replacement head is normalized to frontal gameplay scale")
+            _check(float(scale_contract.get("rear_head_scale",99.0)) <= 0.87, "rear replacement head is normalized to frontal gameplay scale")
         if sector_visual:
             # Keep debug drive active while sampling. A controlled operator otherwise
             # refreshes aim from the mouse every physics frame, which made the old
@@ -91,14 +113,17 @@ func _run() -> void:
             active.debug_drive(Vector2.ZERO, Vector2.RIGHT)
             await _physics_frames(2)
             sector_visual.sync_now()
+            if scale_guard: scale_guard.sync_now()
             var side_contract := sector_visual.debug_current_contract()
             active.debug_drive(Vector2.ZERO, Vector2.DOWN)
             await _physics_frames(2)
             sector_visual.sync_now()
+            if scale_guard: scale_guard.sync_now()
             var front_contract := sector_visual.debug_current_contract()
             active.debug_drive(Vector2.ZERO, Vector2.UP)
             await _physics_frames(2)
             sector_visual.sync_now()
+            if scale_guard: scale_guard.sync_now()
             var rear_contract := sector_visual.debug_current_contract()
 
             _check(int(side_contract.get("sector",-1)) == 0 and bool(side_contract.get("profile",false)), "sector 0 resolves as a true profile silhouette")
