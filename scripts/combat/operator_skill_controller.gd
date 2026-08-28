@@ -10,6 +10,8 @@ var actor: OperatorActor
 var squad: SquadController
 var q_left := 0.0
 var e_left := 0.0
+var _passive_left := 1.0
+var _passive_pulses := 0
 var _q_latch := false
 var _e_latch := false
 var _x_latch := false
@@ -29,8 +31,15 @@ func _bind_squad() -> void:
 func _process(delta: float) -> void:
     q_left = maxf(0.0,q_left-delta)
     e_left = maxf(0.0,e_left-delta)
-    if actor == null or squad == null or not actor.controlled or actor.is_downed():
-        _q_latch = false; _e_latch = false; _x_latch = false
+    _passive_left = maxf(0.0,_passive_left-delta)
+    if actor == null or squad == null or actor.is_downed():
+        _q_latch=false; _e_latch=false; _x_latch=false
+        return
+    if _passive_left<=0.0:
+        _tick_passive()
+        _passive_left=1.0
+    if not actor.controlled:
+        _q_latch=false; _e_latch=false; _x_latch=false
         return
     var q_pressed := Input.is_key_pressed(KEY_Q)
     var e_pressed := Input.is_key_pressed(KEY_E)
@@ -38,7 +47,7 @@ func _process(delta: float) -> void:
     if q_pressed and not _q_latch: try_cast("Q")
     if e_pressed and not _e_latch: try_cast("E")
     if x_pressed and not _x_latch: try_cast("X")
-    _q_latch = q_pressed; _e_latch = e_pressed; _x_latch = x_pressed
+    _q_latch=q_pressed; _e_latch=e_pressed; _x_latch=x_pressed
 
 func try_cast(slot: String) -> bool:
     if actor == null or squad == null or actor.is_downed(): return false
@@ -59,6 +68,35 @@ func try_cast(slot: String) -> bool:
             squad.add_energy(100.0,"ultimate_refund")
             return false
         return true
+    return false
+
+func _tick_passive() -> bool:
+    if actor==null or squad==null or actor.is_downed(): return false
+    match actor.operator_id:
+        "CHR_PROTO_02":
+            if _any_hostile_status("is_staggered"):
+                squad.add_energy(1.5,"rook_breach_momentum")
+                _passive_pulses+=1
+                return true
+        "CHR_PROTO_03":
+            if _any_hostile_status("is_exposed"):
+                squad.add_energy(1.0,"mica_sensor_feedback")
+                _passive_pulses+=1
+                return true
+    return false
+
+func _passive_id() -> String:
+    match actor.operator_id if actor else "":
+        "CHR_PROTO_01": return "ASTER_PRISM_LOCK"
+        "CHR_PROTO_02": return "ROOK_BREACH_MOMENTUM"
+        "CHR_PROTO_03": return "MICA_SENSOR_FEEDBACK"
+    return "UNKNOWN_PASSIVE"
+
+func _any_hostile_status(method_name: String) -> bool:
+    if actor==null: return false
+    for node in actor.get_tree().get_nodes_in_group("prototype_targets"):
+        if is_instance_valid(node) and node.has_method(method_name) and bool(node.call(method_name)):
+            return true
     return false
 
 func _cast_q() -> bool:
@@ -187,9 +225,14 @@ func debug_force_cast(slot: String) -> bool:
     if slot.to_upper()=="E": e_left=0.0
     return try_cast(slot)
 
+func debug_force_passive_tick() -> bool:
+    return _tick_passive()
+
 func debug_contract() -> Dictionary:
     return {
         "operator_id":actor.operator_id if actor else "",
+        "passive_id":_passive_id(),
+        "passive_pulses":_passive_pulses,
         "q_cooldown":q_left,
         "e_cooldown":e_left,
         "q_ready":q_left<=0.0,
