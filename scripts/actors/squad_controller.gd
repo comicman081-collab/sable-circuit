@@ -12,6 +12,7 @@ var active_index := 0
 var _key_latch := [false, false, false]
 var squad_energy := 0.0
 var _last_energy_reason := "INIT"
+var run_energy_gain_multiplier := 1.0
 
 func _ready() -> void:
     add_to_group("squad_controller")
@@ -51,10 +52,14 @@ func get_active_operator() -> OperatorActor:
             return operators[i]
     return null
 
-func add_energy(amount: float, reason: String = "") -> float:
+func configure_run_energy_multiplier(value: float) -> void:
+    run_energy_gain_multiplier=clampf(value,0.5,2.0)
+
+func add_energy(amount: float, reason: String = "", apply_run_multiplier: bool = true) -> float:
     if amount<=0.0: return squad_energy
+    var credited:=amount*(run_energy_gain_multiplier if apply_run_multiplier else 1.0)
     var before:=squad_energy
-    squad_energy=clampf(squad_energy+amount,0.0,MAX_ENERGY)
+    squad_energy=clampf(squad_energy+credited,0.0,MAX_ENERGY)
     _last_energy_reason=reason
     if not is_equal_approx(before,squad_energy): energy_changed.emit(squad_energy,MAX_ENERGY)
     return squad_energy
@@ -104,7 +109,13 @@ func debug_set_energy(value: float) -> void:
     energy_changed.emit(squad_energy,MAX_ENERGY)
 
 func debug_energy_contract() -> Dictionary:
-    return {"current":squad_energy,"maximum":MAX_ENERGY,"ultimate_ready":squad_energy>=MAX_ENERGY-0.001,"last_reason":_last_energy_reason}
+    return {
+        "current":squad_energy,
+        "maximum":MAX_ENERGY,
+        "ultimate_ready":squad_energy>=MAX_ENERGY-0.001,
+        "last_reason":_last_energy_reason,
+        "run_energy_gain_multiplier":run_energy_gain_multiplier
+    }
 
 func debug_formation_contract() -> Dictionary:
     return {
