@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3]
+[gd_scene load_steps=14 format=3]
 
 [ext_resource type="Script" path="res://scripts/missions/story_stage_01.gd" id="1_stage"]
 [ext_resource type="Script" path="res://scripts/actors/squad_controller.gd" id="2_squad"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://scripts/missions/site7_room_art_layer.gd" id="10_room_art"]
 [ext_resource type="Script" path="res://scripts/missions/site7_prop_art_layer.gd" id="11_prop_art"]
 [ext_resource type="Script" path="res://scripts/missions/squad_camera_presentation.gd" id="12_camera"]
+[ext_resource type="Script" path="res://scripts/missions/boss_arena_presentation.gd" id="13_boss_arena"]
 
 [node name="StoryStage01" type="Node2D"]
 script = ExtResource("1_stage")
@@ -42,6 +43,9 @@ script = ExtResource("9_surface")
 
 [node name="EnvironmentDirector" type="Node2D" parent="."]
 script = ExtResource("4_env")
+
+[node name="BossArenaPresentation" type="Node2D" parent="."]
+script = ExtResource("13_boss_arena")
 
 [node name="LightingRig" type="Node2D" parent="."]
 script = ExtResource("8_lighting")
