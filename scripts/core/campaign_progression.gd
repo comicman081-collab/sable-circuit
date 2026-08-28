@@ -3,9 +3,10 @@ class_name CampaignProgression
 
 const SAVE_PATH := "user://campaign_progression_v1.json"
 const INTEL_PATH := "res://data/progression/intel_discoveries.json"
+const SAVE_SCHEMA_VERSION := 2
 const MAX_UPGRADE_LEVEL := 3
-const INTEL_KEYS := ["SECURITY","ABERRANT","ANCHOR"]
-const OPERATOR_IDS := ["CHR_PROTO_01","CHR_PROTO_02","CHR_PROTO_03"]
+const INTEL_KEYS := ["SECURITY", "ABERRANT", "ANCHOR"]
+const OPERATOR_IDS := ["CHR_PROTO_01", "CHR_PROTO_02", "CHR_PROTO_03"]
 
 var research_value := 0
 var salvage := 0
@@ -17,8 +18,8 @@ var extracted_runs := 0
 var wiped_runs := 0
 var run_serial := 0
 var last_transaction: Dictionary = {}
-var intel_samples: Dictionary = {"SECURITY":0,"ABERRANT":0,"ANCHOR":0}
-var equipped_modules: Dictionary = {"CHR_PROTO_01":"","CHR_PROTO_02":"","CHR_PROTO_03":""}
+var intel_samples: Dictionary = {"SECURITY": 0, "ABERRANT": 0, "ANCHOR": 0}
+var equipped_modules: Dictionary = {"CHR_PROTO_01": "", "CHR_PROTO_02": "", "CHR_PROTO_03": ""}
 
 var _analyzed_intel: Array[String] = []
 var _unlocked_modules: Array[String] = []
@@ -60,14 +61,15 @@ func commit_mission(summary: Dictionary) -> Dictionary:
     salvage += secured_salvage
     signal_fragments += secured_fragments
     for key in INTEL_KEYS:
-        intel_samples[key] = int(intel_samples.get(key,0)) + int(secured_intel.get(key,0))
+        intel_samples[key] = int(intel_samples.get(key, 0)) + int(secured_intel.get(key, 0))
+
     completed_runs += 1
     if outcome == "WIPED":
         wiped_runs += 1
     else:
         extracted_runs += 1
 
-    _committed_run_ids.append(run_id)
+    _append_unique(_committed_run_ids, run_id)
     while _committed_run_ids.size() > 64:
         _committed_run_ids.pop_front()
 
@@ -114,6 +116,7 @@ func purchase_upgrade(upgrade_id: String) -> Dictionary:
         armory_level += 1
     elif id == "LAB_SIGNAL_ANALYSIS":
         lab_level += 1
+
     _save()
     return {
         "success": true,
@@ -128,47 +131,66 @@ func analyze_intel(analysis_id: String) -> Dictionary:
     var id := analysis_id.to_upper()
     var definition := get_discovery(id)
     if definition.is_empty():
-        return {"success":false,"reason":"UNKNOWN_ANALYSIS","analysis_id":id,"campaign":snapshot()}
+        return {"success": false, "reason": "UNKNOWN_ANALYSIS", "analysis_id": id, "campaign": snapshot()}
     if _analyzed_intel.has(id):
-        return {"success":false,"reason":"ALREADY_ANALYZED","analysis_id":id,"campaign":snapshot()}
-    var sample_key := str(definition.get("sample_key","")).to_upper()
-    var sample_cost := maxi(0,int(definition.get("sample_cost",0)))
-    var research_cost := maxi(0,int(definition.get("research_cost",0)))
-    if research_value < research_cost or int(intel_samples.get(sample_key,0)) < sample_cost:
+        return {"success": false, "reason": "ALREADY_ANALYZED", "analysis_id": id, "campaign": snapshot()}
+
+    var sample_key := str(definition.get("sample_key", "")).to_upper()
+    var sample_cost := maxi(0, int(definition.get("sample_cost", 0)))
+    var research_cost := maxi(0, int(definition.get("research_cost", 0)))
+    if research_value < research_cost or int(intel_samples.get(sample_key, 0)) < sample_cost:
         return {
-            "success":false,"reason":"INSUFFICIENT_INTEL","analysis_id":id,
-            "research_cost":research_cost,"sample_key":sample_key,"sample_cost":sample_cost,"campaign":snapshot()
+            "success": false,
+            "reason": "INSUFFICIENT_INTEL",
+            "analysis_id": id,
+            "research_cost": research_cost,
+            "sample_key": sample_key,
+            "sample_cost": sample_cost,
+            "campaign": snapshot()
         }
+
     research_value -= research_cost
-    intel_samples[sample_key] = int(intel_samples.get(sample_key,0)) - sample_cost
-    _analyzed_intel.append(id)
-    var module_id := str(definition.get("module_id","")).to_upper()
-    var weakness_id := str(definition.get("weakness_id","")).to_upper()
-    if not module_id.is_empty() and not _unlocked_modules.has(module_id): _unlocked_modules.append(module_id)
-    if not weakness_id.is_empty() and not _unlocked_weaknesses.has(weakness_id): _unlocked_weaknesses.append(weakness_id)
+    intel_samples[sample_key] = int(intel_samples.get(sample_key, 0)) - sample_cost
+    _append_unique(_analyzed_intel, id)
+
+    var module_id := str(definition.get("module_id", "")).to_upper()
+    var weakness_id := str(definition.get("weakness_id", "")).to_upper()
+    if not module_id.is_empty():
+        _append_unique(_unlocked_modules, module_id)
+    if not weakness_id.is_empty():
+        _append_unique(_unlocked_weaknesses, weakness_id)
+
     _save()
     return {
-        "success":true,"reason":"ANALYZED","analysis_id":id,"module_id":module_id,"weakness_id":weakness_id,
-        "campaign":snapshot()
+        "success": true,
+        "reason": "ANALYZED",
+        "analysis_id": id,
+        "module_id": module_id,
+        "weakness_id": weakness_id,
+        "campaign": snapshot()
     }
 
 func equip_module(operator_id: String, module_id: String) -> Dictionary:
     var operator := operator_id.to_upper()
     var module := module_id.to_upper()
     if not OPERATOR_IDS.has(operator):
-        return {"success":false,"reason":"UNKNOWN_OPERATOR","operator_id":operator,"campaign":snapshot()}
-    if module in ["","NONE"]:
+        return {"success": false, "reason": "UNKNOWN_OPERATOR", "operator_id": operator, "campaign": snapshot()}
+
+    if module in ["", "NONE"]:
         equipped_modules[operator] = ""
         _save()
-        return {"success":true,"reason":"UNEQUIPPED","operator_id":operator,"module_id":"","campaign":snapshot()}
+        return {"success": true, "reason": "UNEQUIPPED", "operator_id": operator, "module_id": "", "campaign": snapshot()}
+
     if not _unlocked_modules.has(module):
-        return {"success":false,"reason":"MODULE_LOCKED","operator_id":operator,"module_id":module,"campaign":snapshot()}
+        return {"success": false, "reason": "MODULE_LOCKED", "operator_id": operator, "module_id": module, "campaign": snapshot()}
+
     var definition := get_discovery_by_module(module)
-    if definition.is_empty() or str(definition.get("operator_id","")).to_upper() != operator:
-        return {"success":false,"reason":"MODULE_INCOMPATIBLE","operator_id":operator,"module_id":module,"campaign":snapshot()}
+    if definition.is_empty() or str(definition.get("operator_id", "")).to_upper() != operator:
+        return {"success": false, "reason": "MODULE_INCOMPATIBLE", "operator_id": operator, "module_id": module, "campaign": snapshot()}
+
     equipped_modules[operator] = module
     _save()
-    return {"success":true,"reason":"EQUIPPED","operator_id":operator,"module_id":module,"campaign":snapshot()}
+    return {"success": true, "reason": "EQUIPPED", "operator_id": operator, "module_id": module, "campaign": snapshot()}
 
 func get_upgrade_cost(upgrade_id: String) -> Dictionary:
     var id := upgrade_id.to_upper()
@@ -182,19 +204,20 @@ func get_upgrade_cost(upgrade_id: String) -> Dictionary:
 func get_discovery(analysis_id: String) -> Dictionary:
     var id := analysis_id.to_upper()
     for row in _discovery_cache:
-        if str(row.get("analysis_id","")).to_upper() == id:
+        if str(row.get("analysis_id", "")).to_upper() == id:
             return row.duplicate(true)
     return {}
 
 func get_discovery_by_module(module_id: String) -> Dictionary:
     var id := module_id.to_upper()
     for row in _discovery_cache:
-        if str(row.get("module_id","")).to_upper() == id:
+        if str(row.get("module_id", "")).to_upper() == id:
             return row.duplicate(true)
     return {}
 
 func snapshot() -> Dictionary:
     return {
+        "schema_version": SAVE_SCHEMA_VERSION,
         "research_value": research_value,
         "salvage": salvage,
         "signal_fragments": signal_fragments,
@@ -220,29 +243,31 @@ func _discovery_ui_rows() -> Array[Dictionary]:
     var out: Array[Dictionary] = []
     for row in _discovery_cache:
         var copy := row.duplicate(true)
-        var id := str(copy.get("analysis_id","")).to_upper()
-        var sample_key := str(copy.get("sample_key","")).to_upper()
+        var id := str(copy.get("analysis_id", "")).to_upper()
+        var sample_key := str(copy.get("sample_key", "")).to_upper()
         copy["analyzed"] = _analyzed_intel.has(id)
-        copy["module_unlocked"] = _unlocked_modules.has(str(copy.get("module_id","")).to_upper())
+        copy["module_unlocked"] = _unlocked_modules.has(str(copy.get("module_id", "")).to_upper())
         copy["can_analyze"] = (
             not bool(copy["analyzed"])
-            and research_value >= int(copy.get("research_cost",0))
-            and int(intel_samples.get(sample_key,0)) >= int(copy.get("sample_cost",0))
+            and research_value >= int(copy.get("research_cost", 0))
+            and int(intel_samples.get(sample_key, 0)) >= int(copy.get("sample_cost", 0))
         )
         out.append(copy)
     return out
 
 func _upgrade_level(upgrade_id: String) -> int:
-    if upgrade_id == "ARMORY_CALIBRATION": return armory_level
-    if upgrade_id == "LAB_SIGNAL_ANALYSIS": return lab_level
+    if upgrade_id == "ARMORY_CALIBRATION":
+        return armory_level
+    if upgrade_id == "LAB_SIGNAL_ANALYSIS":
+        return lab_level
     return -1
 
 func _sanitize_intel(value: Variant) -> Dictionary:
-    var out := {"SECURITY":0,"ABERRANT":0,"ANCHOR":0}
+    var out := {"SECURITY": 0, "ABERRANT": 0, "ANCHOR": 0}
     if value is Dictionary:
         var source: Dictionary = value
         for key in INTEL_KEYS:
-            out[key] = maxi(0,int(source.get(key,0)))
+            out[key] = maxi(0, int(source.get(key, 0)))
     return out
 
 func _load_discoveries() -> void:
@@ -250,31 +275,39 @@ func _load_discoveries() -> void:
     if not FileAccess.file_exists(INTEL_PATH):
         push_warning("CampaignProgression missing M10 intel registry")
         return
+
     var parsed = JSON.parse_string(FileAccess.get_file_as_string(INTEL_PATH))
     if not (parsed is Dictionary):
         push_warning("CampaignProgression ignored malformed M10 intel registry")
         return
-    for row_variant in (parsed as Dictionary).get("discoveries",[]):
+
+    for row_variant in (parsed as Dictionary).get("discoveries", []):
         if row_variant is Dictionary:
             _discovery_cache.append((row_variant as Dictionary).duplicate(true))
 
 func _save() -> void:
-    if not _persistence_enabled: return
+    if not _persistence_enabled:
+        return
+
     var file := FileAccess.open(SAVE_PATH, FileAccess.WRITE)
     if file == null:
         push_warning("CampaignProgression could not open save path")
         return
+
     var payload := snapshot()
     payload["run_serial"] = run_serial
-    payload["committed_run_ids"] = _committed_run_ids
+    payload["committed_run_ids"] = _committed_run_ids.duplicate()
     file.store_string(JSON.stringify(payload))
 
 func _load() -> void:
-    if not FileAccess.file_exists(SAVE_PATH): return
+    if not FileAccess.file_exists(SAVE_PATH):
+        return
+
     var parsed = JSON.parse_string(FileAccess.get_file_as_string(SAVE_PATH))
     if not (parsed is Dictionary):
         push_warning("CampaignProgression ignored malformed save")
         return
+
     var data: Dictionary = parsed
     research_value = maxi(0, int(data.get("research_value", 0)))
     salvage = maxi(0, int(data.get("salvage", 0)))
@@ -285,25 +318,71 @@ func _load() -> void:
     extracted_runs = maxi(0, int(data.get("extracted_runs", 0)))
     wiped_runs = maxi(0, int(data.get("wiped_runs", 0)))
     run_serial = maxi(0, int(data.get("run_serial", 0)))
-    intel_samples = _sanitize_intel(data.get("intel_samples",{}))
-    equipped_modules = {"CHR_PROTO_01":"","CHR_PROTO_02":"","CHR_PROTO_03":""}
-    var saved_equipped: Dictionary = data.get("equipped_modules",{})
+    intel_samples = _sanitize_intel(data.get("intel_samples", {}))
+
+    _analyzed_intel.clear()
+    _unlocked_modules.clear()
+    _unlocked_weaknesses.clear()
+    _committed_run_ids.clear()
+
+    for value in data.get("analyzed_intel", []):
+        var id := str(value).to_upper()
+        if not id.is_empty() and not get_discovery(id).is_empty():
+            _append_unique(_analyzed_intel, id)
+
+    for value in data.get("unlocked_modules", []):
+        var id := str(value).to_upper()
+        if not id.is_empty() and not get_discovery_by_module(id).is_empty():
+            _append_unique(_unlocked_modules, id)
+
+    for value in data.get("unlocked_weaknesses", []):
+        var id := str(value).to_upper()
+        if not id.is_empty():
+            _append_unique(_unlocked_weaknesses, id)
+
+    for value in data.get("committed_run_ids", []):
+        var id := str(value)
+        if not id.is_empty():
+            _append_unique(_committed_run_ids, id)
+    while _committed_run_ids.size() > 64:
+        _committed_run_ids.pop_front()
+
+    equipped_modules = {"CHR_PROTO_01": "", "CHR_PROTO_02": "", "CHR_PROTO_03": ""}
+    var saved_equipped: Dictionary = data.get("equipped_modules", {})
     for operator in OPERATOR_IDS:
-        equipped_modules[operator] = str(saved_equipped.get(operator,""))
-    _analyzed_intel.clear(); _unlocked_modules.clear(); _unlocked_weaknesses.clear(); _committed_run_ids.clear()
-    for value in data.get("analyzed_intel",[]):
-        var id:=str(value).to_upper(); if not id.is_empty(): _analyzed_intel.append(id)
-    for value in data.get("unlocked_modules",[]):
-        var id:=str(value).to_upper(); if not id.is_empty(): _unlocked_modules.append(id)
-    for value in data.get("unlocked_weaknesses",[]):
-        var id:=str(value).to_upper(); if not id.is_empty(): _unlocked_weaknesses.append(id)
-    for value in data.get("committed_run_ids",[]):
-        var id:=str(value); if not id.is_empty(): _committed_run_ids.append(id)
+        var module := str(saved_equipped.get(operator, "")).to_upper()
+        if module.is_empty():
+            continue
+        if not _unlocked_modules.has(module):
+            continue
+        var definition := get_discovery_by_module(module)
+        if definition.is_empty():
+            continue
+        if str(definition.get("operator_id", "")).to_upper() != operator:
+            continue
+        equipped_modules[operator] = module
+
+func _append_unique(target: Array[String], value: String) -> void:
+    if not target.has(value):
+        target.append(value)
 
 func debug_reset() -> void:
-    research_value=0; salvage=0; signal_fragments=0; armory_level=0; lab_level=0; completed_runs=0; extracted_runs=0; wiped_runs=0; run_serial=0
-    last_transaction.clear(); _analyzed_intel.clear(); _unlocked_modules.clear(); _unlocked_weaknesses.clear(); _committed_run_ids.clear()
-    intel_samples={"SECURITY":0,"ABERRANT":0,"ANCHOR":0}
-    equipped_modules={"CHR_PROTO_01":"","CHR_PROTO_02":"","CHR_PROTO_03":""}
+    research_value = 0
+    salvage = 0
+    signal_fragments = 0
+    armory_level = 0
+    lab_level = 0
+    completed_runs = 0
+    extracted_runs = 0
+    wiped_runs = 0
+    run_serial = 0
+    last_transaction.clear()
+    _analyzed_intel.clear()
+    _unlocked_modules.clear()
+    _unlocked_weaknesses.clear()
+    _committed_run_ids.clear()
+    intel_samples = {"SECURITY": 0, "ABERRANT": 0, "ANCHOR": 0}
+    equipped_modules = {"CHR_PROTO_01": "", "CHR_PROTO_02": "", "CHR_PROTO_03": ""}
+
     if _persistence_enabled and FileAccess.file_exists(SAVE_PATH):
-        DirAccess.remove_absolute(SAVE_PATH)
+        DirAccess.remove_absolute(ProjectSettings.globalize_path(SAVE_PATH))
