@@ -30,6 +30,7 @@ func _run() -> void:
     var restored := CampaignProgression.new(true)
     var after := restored.snapshot()
 
+    _check(int(after.get("schema_version",0))==2,"M10 snapshot writes schema version 2")
     _check(int(after.get("research_value",-1))==int(before.get("research_value",-2)),"research inventory survives CampaignProgression recreation")
     _check(int(after.get("salvage",-1))==int(before.get("salvage",-2)),"salvage inventory survives CampaignProgression recreation")
     _check(int(after.get("signal_fragments",-1))==int(before.get("signal_fragments",-2)),"signal inventory survives CampaignProgression recreation")
@@ -47,8 +48,69 @@ func _run() -> void:
     })
     _check(bool(duplicate.get("duplicate",false)) and not bool(duplicate.get("committed",true)),"persisted run-ID ledger still blocks duplicate rewards after recreation")
 
+    # Legacy M8/M9 save migration: those saves predate intel/module fields and
+    # schema_version. M10 must preserve their campaign currencies/upgrades while
+    # initializing every new discovery/loadout field to a safe empty value.
     restored.debug_reset()
+    _write_save({
+        "research_value":321,
+        "salvage":4,
+        "signal_fragments":2,
+        "armory_level":2,
+        "lab_level":1,
+        "completed_runs":7,
+        "extracted_runs":5,
+        "wiped_runs":2,
+        "run_serial":9,
+        "committed_run_ids":["LEGACY-RUN-001"]
+    })
+    var migrated := CampaignProgression.new(true)
+    var migrated_snapshot := migrated.snapshot()
+    _check(int(migrated_snapshot.get("research_value",0))==321 and int(migrated_snapshot.get("salvage",0))==4,"legacy campaign inventory migrates without reset")
+    _check(int(migrated_snapshot.get("armory_level",0))==2 and int(migrated_snapshot.get("lab_level",0))==1,"legacy facility levels migrate without reset")
+    _check((migrated_snapshot.get("intel_samples",{}) as Dictionary)=={"SECURITY":0,"ABERRANT":0,"ANCHOR":0},"legacy save initializes M10 intel inventory safely")
+    _check((migrated_snapshot.get("analyzed_intel",[]) as Array).is_empty(),"legacy save initializes analysis ledger empty")
+    _check((migrated_snapshot.get("unlocked_modules",[]) as Array).is_empty(),"legacy save initializes module unlocks empty")
+    var migrated_equipped:Dictionary=migrated_snapshot.get("equipped_modules",{})
+    _check(str(migrated_equipped.get("CHR_PROTO_01",""))=="" and str(migrated_equipped.get("CHR_PROTO_02",""))=="" and str(migrated_equipped.get("CHR_PROTO_03",""))=="","legacy save initializes all operator loadouts empty")
+
+    var legacy_duplicate:=migrated.commit_mission({"transaction_id":"LEGACY-RUN-001","outcome":"EXTRACTED","secured_research":999})
+    _check(bool(legacy_duplicate.get("duplicate",false)),"legacy committed-run ledger still blocks duplicate rewards after migration")
+
+    # Tampered/inconsistent M10 data must not grant locked modules or allow a
+    # module to jump to another operator simply because it appears in JSON.
+    migrated.debug_reset()
+    _write_save({
+        "schema_version":2,
+        "research_value":50,
+        "intel_samples":{"SECURITY":0,"ABERRANT":0,"ANCHOR":0},
+        "analyzed_intel":["ANL_SECURITY_ARC_GAP"],
+        "unlocked_modules":["MOD_PRISM_FOCUS"],
+        "unlocked_weaknesses":["SECURITY_ARC_GAP"],
+        "equipped_modules":{
+            "CHR_PROTO_01":"MOD_PRISM_FOCUS",
+            "CHR_PROTO_02":"MOD_PRISM_FOCUS",
+            "CHR_PROTO_03":"MOD_SENSOR_ARRAY"
+        },
+        "committed_run_ids":[]
+    })
+    var sanitized := CampaignProgression.new(true)
+    var sanitized_snapshot:=sanitized.snapshot()
+    var sanitized_equipped:Dictionary=sanitized_snapshot.get("equipped_modules",{})
+    _check(str(sanitized_equipped.get("CHR_PROTO_01",""))=="MOD_PRISM_FOCUS","valid unlocked module survives save sanitation")
+    _check(str(sanitized_equipped.get("CHR_PROTO_02",""))=="","cross-operator module assignment is removed on load")
+    _check(str(sanitized_equipped.get("CHR_PROTO_03",""))=="","locked module assignment is removed on load")
+
+    sanitized.debug_reset()
     _finish()
+
+func _write_save(payload:Dictionary)->void:
+    var file:=FileAccess.open(CampaignProgression.SAVE_PATH,FileAccess.WRITE)
+    if file==null:
+        _check(false,"test can open CampaignProgression save path")
+        return
+    file.store_string(JSON.stringify(payload))
+    file=null
 
 func _check(condition:bool,label:String)->void:
     if condition: print("PASS: "+label)
