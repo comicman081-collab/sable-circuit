@@ -3,6 +3,7 @@ extends SceneTree
 const STAGE_SCENE := preload("res://scenes/mission/StoryStage01.tscn")
 const ENEMY_SCENE := preload("res://scenes/actors/enemy/EnemyActor.tscn")
 const OUT_DIR := "res://artifacts/runtime_capture"
+const CORE_CENTER := Vector2(1920.0, 490.0)
 const REQUIRED_EVIDENCE: Array[String] = [
     "01_map_movement.png","02_combat_decon.png","03_boss_phase3.png",
     "19_direction_sector_7.png","24_death_boss.png"
@@ -76,12 +77,28 @@ func _capture_boss_phase3() -> void:
     stage.current_step = 4
     stage.call("_activate_step")
     stage.debug_spawn_encounter_for_step(4)
-    _place_squad(Vector2(1710,610), Vector2(0.96,-0.28))
+    _place_squad(Vector2(1695,615), Vector2(0.96,-0.28))
     await _settle(8)
+    var boss: EnemyActor = null
     for node in get_nodes_in_group("m3_enemies"):
         if node is EnemyActor and ("BOSS" in node.enemy_id or "ANCHOR" in node.enemy_id):
-            node.health = node.max_health * 0.24
+            boss = node
+            break
+    var boss_arena := stage.get_node_or_null("BossArenaPresentation") as BossArenaPresentation
+    if boss == null or boss_arena == null:
+        push_error("boss capture missing boss or arena")
+        capture_failed = true
+        return
+    if boss.global_position.distance_to(CORE_CENTER) >= 2.0:
+        push_error("boss capture body is not centered on Core C")
+        capture_failed = true
+        return
+    boss.health = boss.max_health * 0.24
     await _settle(18)
+    if boss_arena.debug_phase() != 3 or boss_arena.debug_active_pylon_count() != 4 or not boss_arena.debug_weakpoint_exposed():
+        push_error("boss capture Phase 3 arena contract failed")
+        capture_failed = true
+        return
     _focus_live_camera()
     await _settle(2)
     await _save("03_boss_phase3.png")
@@ -195,7 +212,6 @@ func _place_squad(center: Vector2, aim: Vector2) -> void:
     var aim_dir := aim.normalized() if aim.length_squared() > 0.001 else Vector2.RIGHT
     var side := Vector2(-aim_dir.y,aim_dir.x)
     var rear := -aim_dir
-    # Match the real M7 live echelon exactly.
     var positions: Array[Vector2] = [
         center,
         center+rear*82.0+side*72.0,

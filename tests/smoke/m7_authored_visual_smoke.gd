@@ -1,6 +1,7 @@
 extends SceneTree
 
 const STAGE_SCENE := preload("res://scenes/mission/StoryStage01.tscn")
+const CORE_CENTER := Vector2(1920.0, 490.0)
 var failures: Array[String] = []
 
 func _init() -> void:
@@ -33,7 +34,12 @@ func _run() -> void:
     if boss_arena:
         var arena_contract := boss_arena.debug_contract()
         _check(int(arena_contract.get("pylon_count",0)) == 4, "Core C owns four authored pylon anchors")
+        _check(int(arena_contract.get("phase1_active_pylons",-1)) == 0, "Phase 1 pylons stay dormant")
+        _check(int(arena_contract.get("phase2_active_pylons",0)) == 2, "Phase 2 activates two opposing pylons")
+        _check(int(arena_contract.get("phase3_active_pylons",0)) == 4, "Phase 3 activates all four pylons")
         _check(int(arena_contract.get("phase3_wedges",0)) == 4, "Phase 3 uses four readable arena wedges")
+        _check(bool(arena_contract.get("weakpoint_exposed_phase3",false)), "Phase 3 exposes the authored weakpoint core")
+        _check(bool(arena_contract.get("phase3_body_clear",false)), "Phase 3 keeps the boss body readable")
         _check(bool(arena_contract.get("clear_movement_gaps",false)), "Phase 3 preserves movement gaps")
 
     stage.current_step = 4
@@ -47,8 +53,9 @@ func _run() -> void:
             break
     _check(boss != null, "M7 boss spawns in Core C")
     if boss:
+        _check(boss.global_position.distance_to(CORE_CENTER) < 2.0, "boss body is centered on the authored Core C dais")
         boss.health = boss.max_health * 0.24
-        await _frames(5)
+        await _frames(6)
         var premium := boss.get_node_or_null("PremiumPresentation") as PremiumEnemyPresentation
         _check(premium != null and premium.debug_phase() == 3, "M7 boss reaches Phase 3")
         if premium:
@@ -56,8 +63,9 @@ func _run() -> void:
             _check(int(phase_contract.get("phase3_burst",0)) == 5, "Phase 3 keeps five separated lanes")
             _check(bool(phase_contract.get("body_clear",false)), "Phase 3 body remains visually readable")
         _check(boss_arena != null and boss_arena.debug_phase() == 3, "boss arena follows boss into Phase 3")
+        _check(boss_arena != null and boss_arena.debug_active_pylon_count() == 4, "Phase 3 runtime has four active pylons")
+        _check(boss_arena != null and boss_arena.debug_weakpoint_exposed(), "Phase 3 runtime exposes the weakpoint")
 
-    # Gameplay diagonal movement remains independent from aim after all M7 art work.
     var active := stage.squad.get_active_operator()
     if active:
         active.set_movement_bounds(Rect2(100,100,2500,1000))
