@@ -85,27 +85,51 @@ func _run() -> void:
     stage.call("_complete_step")
     _check(stage.debug_extraction_active(),"Core C actual node opens extraction window")
 
-    # M10 module behavior with a live SECURITY target.
+    # M10 module behavior with one deterministic live SECURITY target. All other
+    # encounter actors are moved outside every tested skill radius so nearest-in-aim
+    # gameplay targeting cannot make this regression nondeterministic.
     for node in get_nodes_in_group("m3_enemies"):
         if is_instance_valid(node): node.queue_free()
     await _frames(2)
     stage.debug_spawn_encounter_for_step(1); await _frames(3)
     var target:EnemyActor=null
     for node in get_nodes_in_group("m3_enemies"):
-        if node is EnemyActor and "RIFLE" in (node as EnemyActor).enemy_id: target=node as EnemyActor; break
+        if node is EnemyActor and "RIFLE" in (node as EnemyActor).enemy_id:
+            target=node as EnemyActor
+            break
     _check(target!=null,"M10 module smoke resolves live SECURITY target")
     if target!=null:
-        target.max_health=500.0; target.health=500.0; target.global_position=Vector2(990,450); target.set_physics_process(false)
+        var parked_index:=0
+        for node in get_nodes_in_group("m3_enemies"):
+            if not (node is EnemyActor):
+                continue
+            var enemy:=node as EnemyActor
+            enemy.set_physics_process(false)
+            if enemy==target:
+                continue
+            enemy.global_position=Vector2(1700.0+float(parked_index)*160.0,650.0)
+            parked_index+=1
+
+        target.max_health=500.0
+        target.health=500.0
+        target.global_position=Vector2(990,450)
+        target.set_physics_process(false)
+
         mica.global_position=Vector2(520,450); mica.aim_world=Vector2.RIGHT; stage.squad.request_control(2)
         var mica_skills:=mica.get_node("SkillController") as OperatorSkillController
         _check(mica_skills.debug_force_cast("Q"),"SENSOR ARRAY reaches target beyond vanilla 420 range")
         var status:=target.debug_status_contract()
         _check(float(status.get("exposed_left",0.0))>7.5,"SENSOR ARRAY applies extended EXPOSED duration")
+
         aster.global_position=Vector2(520,450); aster.aim_world=Vector2.RIGHT; stage.squad.request_control(0)
-        var before:=target.health; _check((aster.get_node("SkillController") as OperatorSkillController).debug_force_cast("Q"),"PRISM FOCUS casts against analyzed SECURITY target")
+        var before:=target.health
+        _check((aster.get_node("SkillController") as OperatorSkillController).debug_force_cast("Q"),"PRISM FOCUS casts against analyzed SECURITY target")
         _check(before-target.health>49.0,"PRISM FOCUS adds 15 percent to EXPOSED security Prism damage")
-        target.apply_exposed(6.0,"M10-RESET"); rook.global_position=Vector2(800,450); rook.aim_world=Vector2.RIGHT; stage.squad.request_control(1)
-        var rook_before:=target.health; _check((rook.get_node("SkillController") as OperatorSkillController).debug_force_cast("Q"),"BREACH LINER consumes EXPOSED")
+
+        target.apply_exposed(6.0,"M10-RESET")
+        rook.global_position=Vector2(800,450); rook.aim_world=Vector2.RIGHT; stage.squad.request_control(1)
+        var rook_before:=target.health
+        _check((rook.get_node("SkillController") as OperatorSkillController).debug_force_cast("Q"),"BREACH LINER consumes EXPOSED")
         var post_breach:=target.debug_status_contract()
         _check(rook_before-target.health>=51.9 and float(post_breach.get("stagger_left",0.0))>2.8,"BREACH LINER applies boosted damage and 3 second stagger")
 
