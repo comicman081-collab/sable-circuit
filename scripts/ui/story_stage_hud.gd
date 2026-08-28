@@ -12,6 +12,7 @@ var _story_label: Label
 var _status_label: Label
 var _optional_label: Label
 var _cargo_label: Label
+var _intel_label: Label
 var _weapon_label: Label
 var _ammo_label: Label
 var _energy_fill: ColorRect
@@ -128,6 +129,9 @@ func _build_top_status() -> void:
     _cargo_label = _label(self,"CARGO  R 000 +HV 000   S 00   F 00",Vector2(842,78),12,Color("8fb9c4"))
     _cargo_label.size = Vector2(418,26)
     _cargo_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+    _intel_label = _label(self,"INTEL  SEC 00   ABR 00   ANC 00",Vector2(842,101),11,Color("78c9c1"))
+    _intel_label.size = Vector2(418,22)
+    _intel_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 
 func _build_squad_cards() -> void:
     var ids: Array[String] = ["CHR_PROTO_01","CHR_PROTO_02","CHR_PROTO_03"]
@@ -325,6 +329,16 @@ func set_cargo_status(common_research: int, unsecured_research: int, salvage: in
         _cargo_label.text = "CARGO  R %03d +HV %03d   S %02d   F %02d" % [maxi(0,common_research),maxi(0,unsecured_research),maxi(0,salvage),maxi(0,fragments)]
         _cargo_label.add_theme_color_override("font_color",Color("e2a76c") if unsecured_research>0 or fragments>0 else Color("8fb9c4"))
 
+func set_intel_status(samples: Dictionary) -> void:
+    if _intel_label:
+        _intel_label.text = "INTEL  SEC %02d   ABR %02d   ANC %02d" % [
+            maxi(0,int(samples.get("SECURITY",0))),
+            maxi(0,int(samples.get("ABERRANT",0))),
+            maxi(0,int(samples.get("ANCHOR",0)))
+        ]
+        var risky := int(samples.get("SECURITY",0))+int(samples.get("ABERRANT",0))+int(samples.get("ANCHOR",0)) > 0
+        _intel_label.add_theme_color_override("font_color",Color("8ff0df") if risky else Color("5d827f"))
+
 func set_extraction_offer(active: bool, depth: int, cargo_value: int) -> void:
     if _extraction_panel == null:
         return
@@ -334,48 +348,38 @@ func set_extraction_offer(active: bool, depth: int, cargo_value: int) -> void:
 
 func debug_extraction_visible() -> bool:
     return _extraction_panel != null and _extraction_panel.visible
-
 func debug_cargo_text() -> String:
     return _cargo_label.text if _cargo_label != null else ""
-
+func debug_intel_text() -> String:
+    return _intel_label.text if _intel_label != null else ""
 func debug_font_source() -> String:
     return _font_source
-
 func debug_skill_hud_contract() -> Dictionary:
     var labels: Array[String] = []
     for label in _skill_labels:
         labels.append(label.text)
     return {"keys":["Q","E","X"],"reload_key":"R","energy_text":_energy_value_label.text if _energy_value_label else "","skill_labels":labels}
-
 func debug_uses_unique_portraits() -> bool:
     for card: Dictionary in _cards:
         var profile := ArtProfileRegistry.get_profile(str(card["id"]))
-        if str(profile.get("portrait_asset","")).is_empty():
-            return false
+        if str(profile.get("portrait_asset","")).is_empty(): return false
     return true
-
 func debug_uses_unique_hud_art() -> bool:
     var paths: Dictionary = {}
     for identity in ["CHR_PROTO_01","CHR_PROTO_02","CHR_PROTO_03"]:
         var profile := ArtProfileRegistry.get_profile(identity)
         var weapon_path := str(profile.get("weapon_hud_asset",""))
-        if weapon_path.is_empty() or paths.has(weapon_path):
-            return false
+        if weapon_path.is_empty() or paths.has(weapon_path): return false
         paths[weapon_path] = true
         var actions: Array = profile.get("hud_action_icon_assets", [])
-        if actions.size() != 3:
-            return false
+        if actions.size() != 3: return false
         for value in actions:
             var path := str(value)
-            if path.is_empty() or paths.has(path):
-                return false
+            if path.is_empty() or paths.has(path): return false
             paths[path] = true
     return paths.size() == 12
-
 func debug_hud_art_loaded() -> bool:
-    if _weapon_icon == null or _weapon_icon.texture == null or _skill_icons.size() != 3:
-        return false
+    if _weapon_icon == null or _weapon_icon.texture == null or _skill_icons.size() != 3: return false
     for icon in _skill_icons:
-        if icon.texture == null:
-            return false
+        if icon.texture == null: return false
     return true

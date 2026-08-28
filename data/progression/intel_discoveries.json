@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "discoveries": [
+    {
+      "analysis_id": "ANL_SECURITY_ARC_GAP",
+      "title": "SECURITY ARC-GAP MAPPING",
+      "sample_key": "SECURITY",
+      "sample_cost": 2,
+      "research_cost": 120,
+      "weakness_id": "SECURITY_ARC_GAP",
+      "module_id": "MOD_PRISM_FOCUS",
+      "module_name": "PRISM FOCUS",
+      "operator_id": "CHR_PROTO_01",
+      "effect_text": "ASTER gains an additional 15% damage against EXPOSED security targets."
+    },
+    {
+      "analysis_id": "ANL_ABERRANT_JOINT_MAP",
+      "title": "ABERRANT JOINT STRESS MAP",
+      "sample_key": "ABERRANT",
+      "sample_cost": 1,
+      "research_cost": 140,
+      "weakness_id": "ABERRANT_JOINT_MAP",
+      "module_id": "MOD_BREACH_LINER",
+      "module_name": "BREACH LINER",
+      "operator_id": "CHR_PROTO_02",
+      "effect_text": "ROOK Breach Slam gains +10 damage and +0.6s STAGGER when consuming EXPOSED."
+    },
+    {
+      "analysis_id": "ANL_ANCHOR_SIGNAL_MODEL",
+      "title": "ANCHOR SIGNAL MODEL",
+      "sample_key": "ANCHOR",
+      "sample_cost": 1,
+      "research_cost": 180,
+      "weakness_id": "ANCHOR_SIGNAL_MODEL",
+      "module_id": "MOD_SENSOR_ARRAY",
+      "module_name": "SENSOR ARRAY",
+      "operator_id": "CHR_PROTO_03",
+      "effect_text": "MICA Pulse Scan gains +80 range and +2s EXPOSED duration; Sensor Bloom gains +2s EXPOSED duration."
+    }
+  ]
+}
