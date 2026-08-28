@@ -10,9 +10,13 @@ const RESULTS_SCENE := preload("res://scenes/ui/MissionResults.tscn")
 var current_state := "BOOT"
 var current_view: Node = null
 var last_mission_summary: Dictionary = {}
+var campaign: CampaignProgression
 
 func _ready() -> void:
     add_to_group("game_flow")
+    # Headless smoke runs stay deterministic and never leak state between CI steps.
+    # Browser/native runtime keeps the same campaign through user:// persistence.
+    campaign = CampaignProgression.new(DisplayServer.get_name() != "headless")
     show_title()
 
 func show_title() -> void:
@@ -21,8 +25,10 @@ func show_title() -> void:
 
 func enter_base() -> void:
     var view := _replace_view(LOBBY_SCENE, "BASE") as BaseLobby
+    view.configure_campaign(campaign.snapshot())
     view.mission_requested.connect(open_briefing)
     view.title_requested.connect(show_title)
+    view.upgrade_requested.connect(_on_upgrade_requested)
 
 func open_briefing() -> void:
     var view := _replace_view(BRIEFING_SCENE, "BRIEFING") as BriefingScreen
@@ -31,13 +37,23 @@ func open_briefing() -> void:
 
 func deploy_stage_01() -> void:
     var view := _replace_view(STAGE_SCENE, "STAGE_01") as StoryStage01
+    var run_id := campaign.issue_run_id("CH01")
+    view.configure_campaign(campaign.snapshot(), run_id)
     view.stage_completed.connect(show_results)
 
 func show_results(summary: Dictionary) -> void:
     last_mission_summary = summary.duplicate(true)
+    var transaction := campaign.commit_mission(last_mission_summary)
+    last_mission_summary["campaign_transaction"] = transaction
+    last_mission_summary["campaign"] = campaign.snapshot()
     var view := _replace_view(RESULTS_SCENE, "RESULTS") as MissionResults
     view.configure(last_mission_summary)
     view.return_requested.connect(enter_base)
+
+func _on_upgrade_requested(upgrade_id: String) -> void:
+    var result := campaign.purchase_upgrade(upgrade_id)
+    if current_view is BaseLobby:
+        (current_view as BaseLobby).refresh_campaign(campaign.snapshot(), result)
 
 func _replace_view(scene: PackedScene, next_state: String) -> Node:
     if current_view != null and is_instance_valid(current_view):
@@ -64,11 +80,29 @@ func debug_show_results() -> void:
     show_results({
         "mission_id": "MIS_CH01_01",
         "chapter_id": "CH01",
+        "transaction_id": "DEBUG-M2-RESULT",
+        "outcome": "EXTRACTED",
         "ledger_recovered": true,
         "field_supplies": true,
         "carrier_fragment": true,
-        "secured_rewards": 220
+        "secured_research": 220,
+        "secured_salvage": 2,
+        "secured_fragments": 1,
+        "secured_rewards": 220,
+        "lost_unsecured": 0,
+        "extraction_depth": 6
     })
 
 func debug_return_base() -> void:
     enter_base()
+
+func debug_campaign_snapshot() -> Dictionary:
+    return campaign.snapshot() if campaign != null else {}
+
+func debug_purchase(upgrade_id: String) -> Dictionary:
+    if campaign == null:
+        return {"success": false, "reason": "NO_CAMPAIGN"}
+    var result := campaign.purchase_upgrade(upgrade_id)
+    if current_view is BaseLobby:
+        (current_view as BaseLobby).refresh_campaign(campaign.snapshot(), result)
+    return result

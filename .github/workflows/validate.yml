@@ -72,6 +72,8 @@ jobs:
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m6_target_style_smoke.gd"
       - name: M7 authored visual and boss arena smoke test
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m7_authored_visual_smoke.gd"
+      - name: M8 extraction and progression smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m8_extraction_progression_smoke.gd"
 
   runtime-capture:
     runs-on: ubuntu-latest

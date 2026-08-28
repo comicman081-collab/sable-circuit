@@ -11,6 +11,7 @@ var _objective_label: Label
 var _story_label: Label
 var _status_label: Label
 var _optional_label: Label
+var _cargo_label: Label
 var _weapon_label: Label
 var _ammo_label: Label
 var _energy_fill: ColorRect
@@ -20,6 +21,8 @@ var _skill_labels: Array[Label] = []
 var _skill_icons: Array[TextureRect] = []
 var _weapon_icon: TextureRect
 var _active_hud_operator_id := ""
+var _extraction_panel: Panel
+var _extraction_label: Label
 
 func _ready() -> void:
     layer = 20
@@ -30,6 +33,7 @@ func _ready() -> void:
     _build_squad_cards()
     _build_energy_bar()
     _build_weapon_panel()
+    _build_extraction_panel()
     _build_story_strip()
     call_deferred("_bind_runtime")
 
@@ -118,8 +122,11 @@ func _build_top_status() -> void:
     _status_label.size = Vector2(305,26)
     _status_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
     _optional_label = _label(self,"STORES --   SIGNAL --",Vector2(922,48),13,Color("7894a0"))
-    _optional_label.size = Vector2(338,42)
+    _optional_label.size = Vector2(338,32)
     _optional_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+    _cargo_label = _label(self,"CARGO  R 000 +HV 000   S 00   F 00",Vector2(842,78),12,Color("8fb9c4"))
+    _cargo_label.size = Vector2(418,26)
+    _cargo_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 
 func _build_squad_cards() -> void:
     var ids: Array[String] = ["CHR_PROTO_01","CHR_PROTO_02","CHR_PROTO_03"]
@@ -217,6 +224,13 @@ func _build_weapon_panel() -> void:
         var kl := _label(skill,key,Vector2(27,35),13,Color("b5c7ce"))
         _skill_labels.append(kl)
 
+func _build_extraction_panel() -> void:
+    _extraction_panel = _panel(Vector2(388,568),Vector2(510,46),Color("d59a5f"),0.96)
+    _extraction_label = _label(_extraction_panel,"EXTRACTION WINDOW // [F] EXTRACT   [C] CONTINUE",Vector2(12,9),15,Color("ffd8a0"))
+    _extraction_label.size = Vector2(486,28)
+    _extraction_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+    _extraction_panel.visible = false
+
 func _build_story_strip() -> void:
     var p := _panel(Vector2(388,621),Vector2(510,38),Color("24414b"),0.62)
     _story_label = _label(p,"Move into the marked room and press F to interact.",Vector2(12,7),13,Color("b9cbd1"))
@@ -286,6 +300,26 @@ func set_combat_status(alive: int) -> void:
 func set_optional_status(supply_found: bool, signal_found: bool) -> void:
     if _optional_label:
         _optional_label.text = "STORES  %s     SIGNAL  %s" % ["OK" if supply_found else "--","OK" if signal_found else "--"]
+
+func set_cargo_status(common_research: int, unsecured_research: int, salvage: int, fragments: int) -> void:
+    if _cargo_label:
+        _cargo_label.text = "CARGO  R %03d +HV %03d   S %02d   F %02d" % [
+            maxi(0,common_research),maxi(0,unsecured_research),maxi(0,salvage),maxi(0,fragments)
+        ]
+        _cargo_label.add_theme_color_override("font_color",Color("e2a76c") if unsecured_research>0 or fragments>0 else Color("8fb9c4"))
+
+func set_extraction_offer(active: bool, depth: int, cargo_value: int) -> void:
+    if _extraction_panel == null:
+        return
+    _extraction_panel.visible = active
+    if active and _extraction_label:
+        _extraction_label.text = "WINDOW %d/6 // [F] SECURE %dR   [C] CONTINUE" % [clampi(depth,0,6),maxi(0,cargo_value)]
+
+func debug_extraction_visible() -> bool:
+    return _extraction_panel != null and _extraction_panel.visible
+
+func debug_cargo_text() -> String:
+    return _cargo_label.text if _cargo_label != null else ""
 
 func debug_font_source() -> String:
     return _font_source

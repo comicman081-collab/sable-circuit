@@ -27,6 +27,7 @@ var health := 100.0
 var downed_state := false
 var movement_bounds := Rect2(90.0, 110.0, 1100.0, 540.0)
 var art_profile: Dictionary = {}
+var campaign_damage_multiplier := 1.0
 
 var _visual: OperatorVisual
 var _fire_cooldown := 0.0
@@ -71,6 +72,9 @@ func _apply_profile_gamefeel() -> void:
         "MOT_MICA_01":
             walk_speed=152.0; run_speed=224.0; fire_interval=0.17; reload_duration=1.12; magazine_size=18; max_health=112.0
 
+func apply_campaign_modifiers(modifiers: Dictionary) -> void:
+    campaign_damage_multiplier = clampf(float(modifiers.get("damage_multiplier", 1.0)), 1.0, 2.0)
+
 func set_controlled(value: bool) -> void:
     controlled = value and not downed_state
     if is_node_ready():
@@ -111,6 +115,7 @@ func debug_drive(move_vec: Vector2, aim_vec: Vector2) -> void:
 func debug_stop_drive() -> void: _debug_drive=false
 func debug_fire_once() -> bool: return _try_fire(true)
 func debug_begin_reload() -> void: _begin_reload()
+func debug_campaign_damage_multiplier() -> float: return campaign_damage_multiplier
 func is_reloading() -> bool: return _reload_left>0.0
 func get_reload_progress() -> float:
     if _reload_left<=0.0: return 0.0
@@ -193,6 +198,7 @@ func _try_fire(force: bool) -> bool:
 
 func _spawn_projectile(dir: Vector2) -> void:
     var projectile:=Projectile.new(); get_tree().root.add_child(projectile); projectile.setup(_visual.get_muzzle_global_position(),dir,self,accent_color.lightened(0.35),art_profile)
+    projectile.damage *= campaign_damage_multiplier
 
 func _begin_reload() -> void:
     if downed_state or _reload_left>0.0 or ammo>=magazine_size: return
