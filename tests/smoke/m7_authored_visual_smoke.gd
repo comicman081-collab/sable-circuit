@@ -78,6 +78,30 @@ func _run() -> void:
         _check(active.aim_world.dot(Vector2.RIGHT) > 0.98, "M7 preserves independent aim")
         active.debug_stop_drive()
 
+        var sector_visual := active.get_node_or_null("SectorSilhouettePresentation") as OperatorSectorSilhouettePresentation
+        _check(sector_visual != null, "M7 attaches eight-sector silhouette presentation")
+        if sector_visual:
+            active.aim_world = Vector2.RIGHT
+            active.facing_sector = 0
+            await _frames(2)
+            var side_contract := sector_visual.debug_current_contract()
+            active.aim_world = Vector2.DOWN
+            active.facing_sector = 2
+            await _frames(2)
+            var front_contract := sector_visual.debug_current_contract()
+            active.aim_world = Vector2.UP
+            active.facing_sector = 6
+            await _frames(2)
+            var rear_contract := sector_visual.debug_current_contract()
+            _check(bool(side_contract.get("profile",false)), "sector 0 resolves as a true profile silhouette")
+            _check(float(side_contract.get("body_width",1.0)) <= 0.74, "profile body width is visibly compressed")
+            _check(float(side_contract.get("shoulder_width",1.0)) <= 0.60, "profile shoulders collapse into side depth")
+            _check(float(side_contract.get("face_width",1.0)) <= 0.50, "profile face is narrowed instead of front-facing")
+            _check(float(front_contract.get("body_width",0.0)) >= 0.98, "front sector restores full body width")
+            _check(bool(rear_contract.get("rear",false)), "sector 6 resolves as rear presentation")
+            _check(float(rear_contract.get("body_width",0.0)) >= 0.98, "rear sector keeps full rear silhouette width")
+            _check(absf(float(front_contract.get("body_width",0.0))-float(side_contract.get("body_width",0.0))) >= 0.24, "front/profile silhouettes differ materially")
+
     stage.queue_free()
     await process_frame
     if failures.is_empty():
@@ -86,7 +110,7 @@ func _run() -> void:
         return
     print("M7_AUTHORED_VISUAL_SMOKE: FAIL (%d)" % failures.size())
     for failure in failures:
-        print(" - " + failure)
+        print(" - "+failure)
     quit(1)
 
 func _frames(count:int) -> void:
