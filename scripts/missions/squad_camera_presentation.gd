@@ -118,4 +118,15 @@ func debug_target_for_active() -> Vector2:
     var active := stage.squad.get_active_operator()
     if active == null:
         return Vector2.ZERO
-    return _target_for_active(active)
+    var hostile := _hostile_centroid(active)
+    var target := _target_for_active(active)
+    print("M7_CAMERA_DEBUG active=%s hostile_valid=%s boss=%s hostile_count=%d active_pos=%s hostile_pos=%s target=%s" % [
+        active.display_name,
+        str(bool(hostile.get("valid",false))),
+        str(bool(hostile.get("has_boss",false))),
+        int(hostile.get("count",0.0)),
+        str(active.global_position),
+        str(hostile.get("position",active.global_position)),
+        str(target)
+    ])
+    return target
