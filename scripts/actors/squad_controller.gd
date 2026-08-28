@@ -55,14 +55,16 @@ func _on_operator_downed(actor: OperatorActor) -> void:
 func _update_formation() -> void:
     var active:=get_active_operator()
     if active==null: return
-    var side:=Vector2(-active.aim_world.y,active.aim_world.x)
-    var rear:=-active.aim_world
-    # Compact echelon for the smaller M6 field actors. The squad remains visibly
-    # three-person, but no follower should drift off-frame or sit on top of HUD.
+    var aim:=active.aim_world.normalized() if active.aim_world.length_squared()>0.001 else Vector2.RIGHT
+    var side:=Vector2(-aim.y,aim.x)
+    var rear:=-aim
+    # M7 combat echelon: one wingman close-rear/high side, the other deeper-rear
+    # on the opposite side. This keeps all three readable as a triangular squad
+    # while leaving the aim-side of the screen open for hostiles and projectiles.
     var slots: Array[Vector2] = [
         active.global_position,
-        active.global_position+rear*66.0+side*58.0,
-        active.global_position+rear*82.0-side*58.0
+        active.global_position+rear*82.0+side*72.0,
+        active.global_position+rear*118.0-side*48.0
     ]
     var follower_slot:=1
     for i in range(operators.size()):
@@ -71,4 +73,12 @@ func _update_formation() -> void:
         follower_slot+=1
 
 func debug_formation_contract() -> Dictionary:
-    return {"rear_a":66.0,"rear_b":82.0,"side":58.0,"compact":true}
+    return {
+        "rear_a":82.0,
+        "rear_b":118.0,
+        "side_a":72.0,
+        "side_b":48.0,
+        "compact":false,
+        "m7_echelon":true,
+        "open_aim_lane":true
+    }
