@@ -46,7 +46,7 @@ contracts = {
         "19_direction_sector_7.png",
         "24_death_boss.png",
         "active.debug_drive(Vector2(1.0,-1.0).normalized()",
-        "Match the real M7 live echelon exactly.",
+        "center+rear*118.0-side*48.0",
         "RUNTIME_CAPTURE: PASS",
     ],
     "scenes/mission/StoryStage01.tscn": [
