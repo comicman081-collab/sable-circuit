@@ -41,6 +41,11 @@ var _debug_drive := false
 var _debug_move := Vector2.ZERO
 var _debug_aim := Vector2.RIGHT
 
+var _guard_left := 0.0
+var _guard_reduction := 0.0
+var _overclock_left := 0.0
+var _scatter_cycle_left := 0.0
+
 func _ready() -> void:
     add_to_group("operators")
     _visual = $VisualRoot as OperatorVisual
@@ -90,7 +95,9 @@ func set_movement_bounds(bounds: Rect2) -> void:
 func apply_damage(amount: float) -> void:
     if downed_state or amount <= 0.0:
         return
-    health = maxf(0.0, health - amount)
+    var reduction := _guard_reduction if _guard_left>0.0 else 0.0
+    var applied := amount * (1.0-clampf(reduction,0.0,0.80))
+    health = maxf(0.0, health - applied)
     if is_node_ready():
         _visual.trigger_hit()
     health_changed.emit(self, health, max_health)
@@ -99,6 +106,13 @@ func apply_damage(amount: float) -> void:
         controlled = false
         velocity = Vector2.ZERO
         downed.emit(self)
+
+func heal(amount: float) -> float:
+    if downed_state or amount<=0.0: return 0.0
+    var before := health
+    health = minf(max_health,health+amount)
+    if health>before: health_changed.emit(self,health,max_health)
+    return health-before
 
 func revive(ratio: float = 0.35) -> void:
     if not downed_state:
@@ -110,12 +124,49 @@ func revive(ratio: float = 0.35) -> void:
 func is_downed() -> bool:
     return downed_state
 
+func apply_guard(duration: float, reduction: float) -> void:
+    _guard_left=maxf(_guard_left,duration)
+    _guard_reduction=maxf(_guard_reduction,clampf(reduction,0.0,0.80))
+
+func skill_dash(direction: Vector2, distance: float) -> void:
+    if downed_state: return
+    var dir := direction.normalized() if direction.length_squared()>0.001 else aim_world
+    global_position += dir*distance
+    _clamp_to_arena()
+    _dash_left=maxf(_dash_left,0.10)
+    _dash_cooldown=maxf(_dash_cooldown,0.18)
+    if is_node_ready(): _visual.trigger_evade()
+
+func activate_overclock(duration: float) -> void:
+    _overclock_left=maxf(_overclock_left,duration)
+    _reload_left=0.0
+
+func activate_scatter_cycle(duration: float) -> void:
+    _scatter_cycle_left=maxf(_scatter_cycle_left,duration)
+    _reload_left=0.0
+    ammo=magazine_size
+    ammo_changed.emit(self,ammo,magazine_size)
+
+func trigger_skill_visual(slot: String) -> void:
+    if not is_node_ready(): return
+    if slot.to_upper()=="E": _visual.trigger_evade()
+    else: _visual.trigger_fire()
+
+func on_projectile_hit(target: Node, applied_damage: float) -> void:
+    var parent_squad := get_parent() as SquadController
+    if parent_squad==null: return
+    parent_squad.add_energy(1.25,"primary_hit")
+    if operator_id=="CHR_PROTO_01" and target.has_method("is_exposed") and bool(target.call("is_exposed")):
+        parent_squad.add_energy(2.0,"aster_exposed_primary")
+
 func debug_drive(move_vec: Vector2, aim_vec: Vector2) -> void:
     _debug_drive=true; _debug_move=move_vec; _debug_aim=aim_vec
 func debug_stop_drive() -> void: _debug_drive=false
 func debug_fire_once() -> bool: return _try_fire(true)
 func debug_begin_reload() -> void: _begin_reload()
 func debug_campaign_damage_multiplier() -> float: return campaign_damage_multiplier
+func debug_runtime_skill_buffs() -> Dictionary:
+    return {"guard_left":_guard_left,"guard_reduction":_guard_reduction,"overclock_left":_overclock_left,"scatter_cycle_left":_scatter_cycle_left}
 func is_reloading() -> bool: return _reload_left>0.0
 func get_reload_progress() -> float:
     if _reload_left<=0.0: return 0.0
@@ -123,6 +174,10 @@ func get_reload_progress() -> float:
 
 func _physics_process(delta: float) -> void:
     _fire_cooldown=maxf(0.0,_fire_cooldown-delta); _dash_cooldown=maxf(0.0,_dash_cooldown-delta)
+    _guard_left=maxf(0.0,_guard_left-delta)
+    if _guard_left<=0.0: _guard_reduction=0.0
+    _overclock_left=maxf(0.0,_overclock_left-delta)
+    _scatter_cycle_left=maxf(0.0,_scatter_cycle_left-delta)
     if _reload_left>0.0:
         _reload_left=maxf(0.0,_reload_left-delta)
         if _reload_left<=0.0:
@@ -186,11 +241,16 @@ func _update_ai_aim_and_fire() -> void:
 
 func _try_fire(force: bool) -> bool:
     if downed_state: return false
-    if _reload_left>0.0 or ammo<=0:
+    var free_scatter := operator_id=="CHR_PROTO_02" and _scatter_cycle_left>0.0
+    if not free_scatter and (_reload_left>0.0 or ammo<=0):
         if ammo<=0: _begin_reload()
         return false
     if not force and _fire_cooldown>0.0: return false
-    _fire_cooldown=fire_interval; ammo-=1; ammo_changed.emit(self,ammo,magazine_size); _visual.trigger_fire(); CombatFeedback.play_fire(get_tree(),art_profile)
+    var interval_scale := 0.55 if _overclock_left>0.0 else (0.52 if free_scatter else 1.0)
+    _fire_cooldown=fire_interval*interval_scale
+    if not free_scatter:
+        ammo-=1; ammo_changed.emit(self,ammo,magazine_size)
+    _visual.trigger_fire(); CombatFeedback.play_fire(get_tree(),art_profile)
     if "ROOK" in str(art_profile.get("projectile_profile","")):
         for spread in [-0.13,-0.065,0.0,0.065,0.13]: _spawn_projectile(aim_world.rotated(spread))
     else: _spawn_projectile(aim_world)
@@ -198,10 +258,12 @@ func _try_fire(force: bool) -> bool:
 
 func _spawn_projectile(dir: Vector2) -> void:
     var projectile:=Projectile.new(); get_tree().root.add_child(projectile); projectile.setup(_visual.get_muzzle_global_position(),dir,self,accent_color.lightened(0.35),art_profile)
-    projectile.damage *= campaign_damage_multiplier
+    var skill_multiplier := 1.25 if _overclock_left>0.0 else (1.18 if _scatter_cycle_left>0.0 else 1.0)
+    projectile.damage *= campaign_damage_multiplier*skill_multiplier
 
 func _begin_reload() -> void:
     if downed_state or _reload_left>0.0 or ammo>=magazine_size: return
+    if operator_id=="CHR_PROTO_02" and _scatter_cycle_left>0.0: return
     _reload_left=reload_duration
 
 func _sector_from_vector(vec: Vector2) -> int:
