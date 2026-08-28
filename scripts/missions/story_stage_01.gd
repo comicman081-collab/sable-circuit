@@ -20,8 +20,7 @@ var _signal_found := false
 var _ledger_recovered := false
 var _active_enemy_ids: Array[String] = []
 
-# M8/M10 run authority. Common cargo has partial emergency recovery; high-value
-# cargo and intel samples only become permanent through extraction.
+# Persistent campaign authority is separate from deployment-only run authority.
 var _run_id := "UNCONFIGURED-RUN"
 var _campaign_snapshot: Dictionary = {}
 var _research_multiplier := 1.0
@@ -38,6 +37,20 @@ var _extract_latch := false
 var _continue_latch := false
 var _mission_ended := false
 
+# M11 run contract. These values are never committed to CampaignProgression.
+var _run_contract: Dictionary = {}
+var _enemy_run_modifiers: Dictionary = {
+    "enemy_health_multiplier":1.0,
+    "enemy_damage_multiplier":1.0,
+    "enemy_speed_multiplier":1.0,
+    "enemy_attack_interval_multiplier":1.0
+}
+var _run_research_reward_multiplier := 1.0
+var _run_salvage_reward_multiplier := 1.0
+var _run_fragment_reward_multiplier := 1.0
+var _run_boost_definitions: Array = []
+var _active_run_boost_ids: Array[String] = []
+
 @onready var squad: SquadController = $SquadController
 @onready var camera: Camera2D = $Camera2D
 @onready var hud: StoryStageHUD = $StoryStageHUD
@@ -51,19 +64,36 @@ func _ready() -> void:
     queue_redraw()
     call_deferred("_activate_step")
 
-func configure_campaign(snapshot: Dictionary, run_id: String) -> void:
+func configure_campaign(snapshot: Dictionary, run_id: String, run_contract: Dictionary = {}) -> void:
     _campaign_snapshot = snapshot.duplicate(true)
     _run_id = run_id if not run_id.is_empty() else "UNCONFIGURED-RUN"
     _research_multiplier = clampf(float(snapshot.get("research_multiplier", 1.0)), 1.0, 2.0)
     var damage_multiplier := clampf(float(snapshot.get("damage_multiplier", 1.0)), 1.0, 2.0)
     var equipped: Dictionary = snapshot.get("equipped_modules",{})
+
+    _configure_run_contract(run_contract)
     if squad != null:
         for actor in squad.operators:
             actor.apply_campaign_modifiers({
                 "damage_multiplier": damage_multiplier,
                 "module_id": str(equipped.get(actor.operator_id,""))
             })
+        _apply_active_run_boosts()
     _refresh_cargo_hud()
+
+func _configure_run_contract(run_contract: Dictionary) -> void:
+    _run_contract = run_contract.duplicate(true)
+    _enemy_run_modifiers = {
+        "enemy_health_multiplier":clampf(float(_run_contract.get("enemy_health_multiplier",1.0)),0.5,3.0),
+        "enemy_damage_multiplier":clampf(float(_run_contract.get("enemy_damage_multiplier",1.0)),0.5,3.0),
+        "enemy_speed_multiplier":clampf(float(_run_contract.get("enemy_speed_multiplier",1.0)),0.5,2.0),
+        "enemy_attack_interval_multiplier":clampf(float(_run_contract.get("enemy_attack_interval_multiplier",1.0)),0.5,2.0)
+    }
+    _run_research_reward_multiplier = clampf(float(_run_contract.get("research_reward_multiplier",1.0)),0.5,4.0)
+    _run_salvage_reward_multiplier = clampf(float(_run_contract.get("salvage_reward_multiplier",1.0)),0.5,4.0)
+    _run_fragment_reward_multiplier = clampf(float(_run_contract.get("fragment_reward_multiplier",1.0)),0.5,4.0)
+    _run_boost_definitions = (_run_contract.get("run_only_boosts",[]) as Array).duplicate(true)
+    _active_run_boost_ids.clear()
 
 func _load_mission() -> void:
     var parsed = JSON.parse_string(FileAccess.get_file_as_string(MISSION_PATH))
@@ -144,10 +174,46 @@ func _handle_interaction(active: OperatorActor) -> void:
                     _signal_found = true
                     _cargo_unsecured_research += 40
                     _cargo_fragments += 1
-                hud.set_story("OPTIONAL RECOVERY // " + str(room.get("story", "Recovered.")))
+                var boost_id := _activate_run_boost_for_room(room_id)
+                var boost_suffix := ""
+                if not boost_id.is_empty(): boost_suffix = " // RUN BOOST " + boost_id
+                hud.set_story("OPTIONAL RECOVERY // " + str(room.get("story", "Recovered.")) + boost_suffix)
                 hud.set_optional_status(_supply_found, _signal_found)
                 _refresh_cargo_hud()
                 queue_redraw(); return
+
+func _activate_run_boost_for_room(room_id: String) -> String:
+    for row_variant in _run_boost_definitions:
+        if not (row_variant is Dictionary): continue
+        var row: Dictionary = row_variant
+        if str(row.get("source_room", "")) != room_id: continue
+        var boost_id := str(row.get("id", "")).to_upper()
+        if boost_id.is_empty() or _active_run_boost_ids.has(boost_id): return ""
+        _active_run_boost_ids.append(boost_id)
+        _apply_active_run_boosts()
+        return boost_id
+    return ""
+
+func _apply_active_run_boosts() -> void:
+    if squad == null: return
+    var aggregate := {
+        "operator_speed_multiplier":1.0,
+        "incoming_damage_multiplier":1.0,
+        "primary_damage_multiplier":1.0,
+        "energy_gain_multiplier":1.0
+    }
+    for row_variant in _run_boost_definitions:
+        if not (row_variant is Dictionary): continue
+        var row: Dictionary = row_variant
+        var boost_id := str(row.get("id", "")).to_upper()
+        if not _active_run_boost_ids.has(boost_id): continue
+        aggregate["operator_speed_multiplier"] = float(aggregate["operator_speed_multiplier"]) * clampf(float(row.get("operator_speed_multiplier",1.0)),0.75,1.50)
+        aggregate["incoming_damage_multiplier"] = float(aggregate["incoming_damage_multiplier"]) * clampf(float(row.get("incoming_damage_multiplier",1.0)),0.50,1.50)
+        aggregate["primary_damage_multiplier"] = float(aggregate["primary_damage_multiplier"]) * clampf(float(row.get("primary_damage_multiplier",1.0)),0.75,1.75)
+        aggregate["energy_gain_multiplier"] = float(aggregate["energy_gain_multiplier"]) * clampf(float(row.get("energy_gain_multiplier",1.0)),0.50,2.00)
+    for actor in squad.operators:
+        actor.apply_run_boosts(aggregate)
+    squad.configure_run_energy_multiplier(float(aggregate["energy_gain_multiplier"]))
 
 func _spawn_combat(node: Dictionary) -> void:
     _combat_started = true; enemies_alive = 0; _active_enemy_ids.clear()
@@ -162,6 +228,7 @@ func _spawn_combat(node: Dictionary) -> void:
         if ArtProfileRegistry.get_profile(identity).is_empty(): push_error("StoryStage01 unknown enemy profile: " + identity); continue
         var enemy := ENEMY_SCENE.instantiate() as EnemyActor
         enemy.configure(identity, float(row.get("health", 100.0)))
+        enemy.apply_run_modifiers(_enemy_run_modifiers)
         enemy.position = center + Vector2(float(row.get("offset_x", 70.0)), float(row.get("offset_y", 0.0)))
         enemy.defeated.connect(_on_story_enemy_defeated); add_child(enemy)
         enemies_alive += 1; _active_enemy_ids.append(identity)
@@ -263,21 +330,24 @@ func _refresh_cargo_hud() -> void:
 func _build_summary(outcome: String) -> Dictionary:
     var wiped := outcome.to_upper() == "WIPED"
     var raw_research := 0
-    var secured_salvage := 0
-    var secured_fragments := 0
+    var base_salvage := 0
+    var base_fragments := 0
     var lost_research := 0
     var secured_intel := {"SECURITY":0,"ABERRANT":0,"ANCHOR":0}
     if wiped:
         raw_research = int(floor(float(_cargo_common_research) * 0.5))
-        secured_salvage = int(floor(float(_cargo_salvage) * 0.5))
-        secured_fragments = 0
+        base_salvage = int(floor(float(_cargo_salvage) * 0.5))
+        base_fragments = 0
         lost_research = (_cargo_common_research - raw_research) + _cargo_unsecured_research
     else:
         raw_research = _cargo_common_research + _cargo_unsecured_research
-        secured_salvage = _cargo_salvage
-        secured_fragments = _cargo_fragments
+        base_salvage = _cargo_salvage
+        base_fragments = _cargo_fragments
         for key in INTEL_KEYS: secured_intel[key] = int(_cargo_intel.get(key,0))
-    var secured_research := int(round(float(raw_research) * _research_multiplier))
+
+    var secured_research := maxi(0,int(round(float(raw_research) * _research_multiplier * _run_research_reward_multiplier)))
+    var secured_salvage := maxi(0,int(round(float(base_salvage) * _run_salvage_reward_multiplier)))
+    var secured_fragments := maxi(0,int(round(float(base_fragments) * _run_fragment_reward_multiplier)))
     return {
         "mission_id": mission.get("mission_id", "MIS_CH01_01"),
         "chapter_id": mission.get("chapter_id", "CH01"),
@@ -300,6 +370,12 @@ func _build_summary(outcome: String) -> Dictionary:
         "lost_unsecured": lost_research,
         "lost_intel_samples": 0 if not wiped else int(_cargo_intel.get("SECURITY",0))+int(_cargo_intel.get("ABERRANT",0))+int(_cargo_intel.get("ANCHOR",0)),
         "research_multiplier": _research_multiplier,
+        "run_research_reward_multiplier": _run_research_reward_multiplier,
+        "run_salvage_reward_multiplier": _run_salvage_reward_multiplier,
+        "run_fragment_reward_multiplier": _run_fragment_reward_multiplier,
+        "run_contract": _run_contract.duplicate(true),
+        "active_run_boosts": _active_run_boost_ids.duplicate(),
+        "run_only_boosts_expire_on_return": true,
         "cargo_before_resolution": {
             "common_research": _cargo_common_research,
             "unsecured_research": _cargo_unsecured_research,
@@ -307,7 +383,7 @@ func _build_summary(outcome: String) -> Dictionary:
             "fragments": _cargo_fragments,
             "intel": _cargo_intel.duplicate(true)
         },
-        "wipe_policy": "50% COMMON RESEARCH/SALVAGE RETAINED; HIGH-VALUE RESEARCH + SIGNAL FRAGMENTS + INTEL SAMPLES LOST; STORY LEDGER RETAINED"
+        "wipe_policy": "50% COMMON RESEARCH/SALVAGE RETAINED; HIGH-VALUE RESEARCH + SIGNAL FRAGMENTS + INTEL SAMPLES LOST; RUN-ONLY BOOSTS EXPIRE; STORY LEDGER RETAINED"
     }
 
 func _finish_mission(outcome: String = "EXTRACTED") -> void:
@@ -392,6 +468,9 @@ func debug_offer_extraction(room_id:String="R03_ARCHIVE")->void:
 func debug_continue_extraction()->void: _continue_after_extraction_offer()
 func debug_extraction_active()->bool: return _extraction_offer_active
 func debug_intel_cargo()->Dictionary: return _cargo_intel.duplicate(true)
+func debug_run_contract()->Dictionary: return _run_contract.duplicate(true)
+func debug_active_run_boosts()->Array[String]: return _active_run_boost_ids.duplicate()
+func debug_activate_run_boost_for_room(room_id:String)->String: return _activate_run_boost_for_room(room_id)
 func debug_campaign_contract()->Dictionary:
     return {
         "run_id":_run_id,
@@ -401,6 +480,7 @@ func debug_campaign_contract()->Dictionary:
         "high_value_lost_on_wipe":true,
         "signal_fragments_lost_on_wipe":true,
         "intel_samples_lost_on_wipe":true,
+        "run_only_boosts_expire_on_return":true,
         "ledger_retained_on_wipe":true,
         "extraction_offer_ids":EXTRACTION_OFFER_IDS.duplicate()
     }
