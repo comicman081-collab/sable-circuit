@@ -4,7 +4,7 @@ class_name SquadCameraPresentation
 const AIM_LOOK_AHEAD_X := 108.0
 const AIM_LOOK_AHEAD_Y := 72.0
 const VERTICAL_COMPOSITION_BIAS := -24.0
-const BOSS_VERTICAL_COMPOSITION_BIAS := -78.0
+const BOSS_VERTICAL_COMPOSITION_BIAS := -150.0
 const SQUAD_WEIGHT := 0.28
 const COMBAT_TARGET_WEIGHT := 0.40
 const BOSS_COMBAT_TARGET_WEIGHT := 0.50
@@ -80,9 +80,11 @@ func _target_for_active(active: OperatorActor) -> Vector2:
         var has_boss := bool(hostile.get("has_boss", false))
         var target_weight := BOSS_COMBAT_TARGET_WEIGHT if has_boss else COMBAT_TARGET_WEIGHT
         # Blend toward the actual hostile group instead of simply panning in aim
-        # direction. Boss encounters use a stronger target weight and a higher camera
-        # anchor so the full Signal Anchor silhouette and Phase-3 ring stay inside the
-        # safe frame rather than clipping against the top edge.
+        # direction. Signal Anchor occupies substantially more vertical space than a
+        # normal enemy: the earlier -78 bias still left its upper ring touching the
+        # 1280x720 top edge. The dedicated -150 anchor moves the camera farther into
+        # upper-world space, lowering the full boss/ring composition on screen while
+        # retaining the squad above the bottom combat HUD.
         target = squad_anchor.lerp(hostile_pos, target_weight)
         target += Vector2(aim.x * (18.0 if has_boss else 24.0), aim.y * (10.0 if has_boss else 18.0))
         if has_boss:
@@ -104,6 +106,7 @@ func debug_camera_contract() -> Dictionary:
         "max_combat_target_distance": MAX_COMBAT_TARGET_DISTANCE,
         "target_aware_combat_frame": true,
         "boss_safe_frame": true,
+        "boss_large_silhouette_clearance": true,
         "player_lower_left_bias": true,
         "hostile_upper_right_bias": true,
         "m7_camera": true
