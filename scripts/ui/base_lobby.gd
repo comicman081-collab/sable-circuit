@@ -64,8 +64,8 @@ func _build_facilities() -> void:
     for i in range(names.size()):
         var button:=Button.new(); button.text=names[i]; button.position=Vector2(18,58+i*54); button.size=Vector2(242,42); var facility_name:String=names[i]; button.pressed.connect(func()->void:_show_facility(facility_name)); panel.add_child(button)
     _facility_title=Label.new(); _facility_title.position=Vector2(18,225); _facility_title.add_theme_font_size_override("font_size",17); panel.add_child(_facility_title)
-    _facility_body=Label.new(); _facility_body.position=Vector2(18,255); _facility_body.size=Vector2(240,64); _facility_body.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART; _facility_body.add_theme_color_override("font_color",Color("9fb4c0")); panel.add_child(_facility_body)
-    _upgrade_button=Button.new(); _upgrade_button.position=Vector2(18,322); _upgrade_button.size=Vector2(242,34); _upgrade_button.pressed.connect(_request_current_upgrade); panel.add_child(_upgrade_button)
+    _facility_body=Label.new(); _facility_body.position=Vector2(18,255); _facility_body.size=Vector2(240,58); _facility_body.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART; _facility_body.add_theme_font_size_override("font_size",15); _facility_body.add_theme_color_override("font_color",Color("9fb4c0")); panel.add_child(_facility_body)
+    _upgrade_button=Button.new(); _upgrade_button.position=Vector2(18,318); _upgrade_button.size=Vector2(242,36); _upgrade_button.pressed.connect(_request_current_upgrade); panel.add_child(_upgrade_button)
     _purchase_status=Label.new(); _purchase_status.position=Vector2(18,360); _purchase_status.size=Vector2(242,22); _purchase_status.add_theme_font_size_override("font_size",12); panel.add_child(_purchase_status)
 
 func _show_facility(name:String)->void:
@@ -76,15 +76,15 @@ func _show_facility(name:String)->void:
     _upgrade_button.visible = name in ["ARMORY","LAB"]
     match name:
         "COMMAND":
-            _facility_body.text="Mission routing, extraction windows and zone access. Site-7 is the authorized Chapter 01 operation."
+            _facility_body.text="Mission routing, extraction windows\nand zone access for Site-7."
         "ARMORY":
             var level:=int(_campaign.get("armory_level",0)); var max_level:=int(_campaign.get("max_upgrade_level",3)); var cost:Dictionary=_campaign.get("armory_cost",{})
-            _facility_body.text="CALIBRATION LEVEL %d/%d\n+8%% operator projectile damage per level."%[level,max_level]
+            _facility_body.text="CALIBRATION LEVEL %d/%d\n+8%% projectile damage per level."%[level,max_level]
             _upgrade_button.text="CALIBRATE // %dR + %dS"%[int(cost.get("research",0)),int(cost.get("salvage",0))]
             _upgrade_button.disabled = level>=max_level or not _can_afford(cost)
         "LAB":
             var level:=int(_campaign.get("lab_level",0)); var max_level:=int(_campaign.get("max_upgrade_level",3)); var cost:Dictionary=_campaign.get("lab_cost",{})
-            _facility_body.text="SIGNAL ANALYSIS LEVEL %d/%d\n+12%% secured research value per level."%[level,max_level]
+            _facility_body.text="SIGNAL ANALYSIS LEVEL %d/%d\n+12%% secured research per level."%[level,max_level]
             _upgrade_button.text="ANALYZE // %dR + %dF"%[int(cost.get("research",0)),int(cost.get("fragments",0))]
             _upgrade_button.disabled = level>=max_level or not _can_afford(cost)
 
@@ -120,7 +120,7 @@ func _build_mission_panel() -> void:
     var panel:=Panel.new(); panel.position=Vector2(784,92); panel.size=Vector2(468,390); add_child(panel)
     var title:=Label.new(); title.text="COMMAND // AVAILABLE OPERATION"; title.position=Vector2(20,18); title.add_theme_font_size_override("font_size",18); panel.add_child(title)
     var chapter:=Label.new(); chapter.text="CHAPTER 01\nBLACKOUT AT SITE-7"; chapter.position=Vector2(20,72); chapter.add_theme_font_size_override("font_size",28); chapter.add_theme_color_override("font_color",Color("e7f2f7")); panel.add_child(chapter)
-    var desc:=Label.new(); desc.text="Recover the missing team ledger, push deeper for signal value, or take an emergency extraction window before a squad wipe strips unsecured cargo."; desc.position=Vector2(20,158); desc.size=Vector2(426,94); desc.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART; desc.add_theme_color_override("font_color",Color("9bb1bd")); panel.add_child(desc)
+    var desc:=Label.new(); desc.text="Recover the missing team ledger.\nPush deeper for signal value, or extract early\nbefore a squad wipe strips unsecured cargo."; desc.position=Vector2(20,158); desc.size=Vector2(426,82); desc.add_theme_font_size_override("font_size",15); desc.add_theme_color_override("font_color",Color("9bb1bd")); panel.add_child(desc)
     var route:=Label.new(); route.text="6 STORY ROOMS + 2 OPTIONAL // 3 EXTRACTION WINDOWS"; route.position=Vector2(20,266); route.add_theme_color_override("font_color",Color("70b6ce")); panel.add_child(route)
     var risk:=Label.new(); risk.text="WIPE: 50% COMMON RETAINED · HIGH-VALUE / SIGNAL LOST"; risk.position=Vector2(20,290); risk.add_theme_font_size_override("font_size",12); risk.add_theme_color_override("font_color",Color("d59a6b")); panel.add_child(risk)
     var start:=Button.new(); start.text="OPEN MISSION BRIEFING"; start.position=Vector2(20,322); start.size=Vector2(426,46); start.pressed.connect(func()->void:mission_requested.emit()); panel.add_child(start)
