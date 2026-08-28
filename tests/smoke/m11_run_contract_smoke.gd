@@ -40,7 +40,6 @@ func _run() -> void:
             break
     _check(rifle!=null,"M11 smoke resolves authored rifle hostile")
     if rifle!=null:
-        rifle.set_physics_process(false)
         var enemy_contract:=rifle.debug_run_modifier_contract()
         _check(is_equal_approx(float(enemy_contract.get("enemy_health_multiplier",0.0)),float(contract_a.get("enemy_health_multiplier",0.0))),"enemy receives run health multiplier")
         _check(is_equal_approx(float(enemy_contract.get("enemy_damage_multiplier",0.0)),float(contract_a.get("enemy_damage_multiplier",0.0))),"enemy receives run damage multiplier")
@@ -48,6 +47,16 @@ func _run() -> void:
         _check(is_equal_approx(float(enemy_contract.get("enemy_attack_interval_multiplier",0.0)),float(contract_a.get("enemy_attack_interval_multiplier",0.0))),"enemy receives run attack interval multiplier")
         var expected_hp:=92.0*float(contract_a.get("enemy_health_multiplier",1.0))
         _check(is_equal_approx(rifle.max_health,expected_hp),"authored rifle HP is multiplied exactly once by run contract")
+
+    # Freeze the encounter after enemy-modifier assertions. Run-boost checks below
+    # must measure only explicit test damage/energy, never incidental enemy AI.
+    for node in get_nodes_in_group("m3_enemies"):
+        if node is EnemyActor:
+            (node as EnemyActor).set_physics_process(false)
+    for node in root.get_children():
+        if node is PrototypeProjectile and (node as PrototypeProjectile).target_group=="operators":
+            node.queue_free()
+    await process_frame
 
     stage.debug_seed_cargo(100,40,2,1,true,5)
     var summary:=stage.debug_extraction_summary("R05_CORE")
