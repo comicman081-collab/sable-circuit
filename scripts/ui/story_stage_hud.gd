@@ -15,6 +15,7 @@ var _cargo_label: Label
 var _weapon_label: Label
 var _ammo_label: Label
 var _energy_fill: ColorRect
+var _energy_value_label: Label
 var _minimap: TacticalMinimap
 var _cards: Array[Dictionary] = []
 var _skill_labels: Array[Label] = []
@@ -165,13 +166,11 @@ func _build_squad_cards() -> void:
 func _bind_card_portraits() -> void:
     for card: Dictionary in _cards:
         var profile: Dictionary = ArtProfileRegistry.get_profile(str(card["id"]))
-        var portrait_path := str(profile.get("portrait_asset",""))
-        var portrait_texture := _load_visual_texture(portrait_path)
+        var portrait_texture := _load_visual_texture(str(profile.get("portrait_asset","")))
         if portrait_texture != null:
             (card["portrait"] as TextureRect).texture = portrait_texture
             continue
-        var master_path := str(profile.get("master_asset",""))
-        var texture := _load_visual_texture(master_path)
+        var texture := _load_visual_texture(str(profile.get("master_asset","")))
         if texture == null:
             continue
         var atlas := AtlasTexture.new()
@@ -190,10 +189,11 @@ func _build_energy_bar() -> void:
     add_child(bg)
     _energy_fill = ColorRect.new()
     _energy_fill.position = Vector2(560,681)
-    _energy_fill.size = Vector2(220,7)
+    _energy_fill.size = Vector2(0,7)
     _energy_fill.color = Color("71e8eb")
     add_child(_energy_fill)
-    _label(self,"100/100",Vector2(818,672),13,Color("dbe8ec"))
+    _energy_value_label = _label(self,"000/100",Vector2(818,672),13,Color("dbe8ec"))
+    _energy_value_label.size = Vector2(80,22)
 
 func _build_weapon_panel() -> void:
     var p := _panel(Vector2(1012,548),Vector2(252,154),Color("345d66"),0.94)
@@ -209,19 +209,20 @@ func _build_weapon_panel() -> void:
     _weapon_icon.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
     p.add_child(_weapon_icon)
     _weapon_label = _label(p,"COIL ASSAULT RIFLE",Vector2(14,62),15,Color("62d8e3"))
-    var keys: Array[String] = ["Q","E","R"]
+    var keys: Array[String] = ["Q","E","X"]
     for i in range(3):
         var skill := _panel(Vector2(1022+i*76,630),Vector2(66,56),Color("3a515b"),0.92)
         var icon := TextureRect.new()
         icon.position = Vector2(13,4)
-        icon.size = Vector2(40,34)
+        icon.size = Vector2(40,32)
         icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
         icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
         icon.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
         skill.add_child(icon)
         _skill_icons.append(icon)
-        var key := keys[i]
-        var kl := _label(skill,key,Vector2(27,35),13,Color("b5c7ce"))
+        var kl := _label(skill,keys[i],Vector2(3,35),12,Color("b5c7ce"))
+        kl.size = Vector2(60,18)
+        kl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
         _skill_labels.append(kl)
 
 func _build_extraction_panel() -> void:
@@ -250,6 +251,11 @@ func _update_runtime_values() -> void:
         panel.modulate = Color(1,1,1,1) if not actor.is_downed() else Color(0.48,0.52,0.55,0.72)
         var glow := card["top_glow"] as ColorRect
         glow.modulate.a = 1.0 if i == _stage.squad.active_index else 0.28
+    var energy := _stage.squad.debug_energy_contract()
+    var current := float(energy.get("current",0.0))
+    _energy_fill.size.x = 250.0*clampf(current/100.0,0.0,1.0)
+    _energy_value_label.text = "%03d/100" % int(round(current))
+    _energy_fill.color = Color("ffe18a") if current>=99.9 else Color("71e8eb")
     var active := _stage.squad.get_active_operator()
     if active:
         _ammo_label.text = "%02d" % active.ammo
@@ -260,6 +266,19 @@ func _update_runtime_values() -> void:
         if _active_hud_operator_id != active.operator_id:
             _active_hud_operator_id = active.operator_id
             _bind_active_hud_art(active)
+        _update_skill_state(active,current)
+
+func _update_skill_state(active: OperatorActor, energy: float) -> void:
+    var controller := active.get_node_or_null("SkillController") as OperatorSkillController
+    if controller == null:
+        return
+    var c := controller.debug_contract()
+    var q := float(c.get("q_cooldown",0.0))
+    var e := float(c.get("e_cooldown",0.0))
+    _skill_labels[0].text = "Q READY" if q<=0.0 else "Q %.1f"%q
+    _skill_labels[1].text = "E READY" if e<=0.0 else "E %.1f"%e
+    _skill_labels[2].text = "X READY" if energy>=99.9 else "X %02d%%"%int(round(energy))
+    _skill_labels[2].add_theme_color_override("font_color",Color("ffe18a") if energy>=99.9 else Color("7f929a"))
 
 func _bind_active_hud_art(active: OperatorActor) -> void:
     var profile := active.art_profile
@@ -303,9 +322,7 @@ func set_optional_status(supply_found: bool, signal_found: bool) -> void:
 
 func set_cargo_status(common_research: int, unsecured_research: int, salvage: int, fragments: int) -> void:
     if _cargo_label:
-        _cargo_label.text = "CARGO  R %03d +HV %03d   S %02d   F %02d" % [
-            maxi(0,common_research),maxi(0,unsecured_research),maxi(0,salvage),maxi(0,fragments)
-        ]
+        _cargo_label.text = "CARGO  R %03d +HV %03d   S %02d   F %02d" % [maxi(0,common_research),maxi(0,unsecured_research),maxi(0,salvage),maxi(0,fragments)]
         _cargo_label.add_theme_color_override("font_color",Color("e2a76c") if unsecured_research>0 or fragments>0 else Color("8fb9c4"))
 
 func set_extraction_offer(active: bool, depth: int, cargo_value: int) -> void:
@@ -323,6 +340,12 @@ func debug_cargo_text() -> String:
 
 func debug_font_source() -> String:
     return _font_source
+
+func debug_skill_hud_contract() -> Dictionary:
+    var labels: Array[String] = []
+    for label in _skill_labels:
+        labels.append(label.text)
+    return {"keys":["Q","E","X"],"reload_key":"R","energy_text":_energy_value_label.text if _energy_value_label else "","skill_labels":labels}
 
 func debug_uses_unique_portraits() -> bool:
     for card: Dictionary in _cards:
