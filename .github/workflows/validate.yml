@@ -1,13 +1,20 @@
 name: Validate SABLE CIRCUIT
 
 on:
-  push:
-    branches: ["main", "feat/**"]
-  pull_request:
   workflow_dispatch:
+    inputs:
+      run_heavy:
+        description: "Run Godot headless checks and runtime capture (uses Actions minutes)"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: read
+
+concurrency:
+  group: sable-circuit-validate-${{ github.ref }}
+  cancel-in-progress: true
 
 env:
   GODOT_VERSION: "4.7.2"
@@ -17,6 +24,7 @@ env:
 jobs:
   repository-contract:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -42,9 +50,13 @@ jobs:
         run: python tools/validate_m11_run_contract.py
       - name: Validate M12 squad revive system
         run: python tools/validate_m12_revive_contract.py
+      - name: Validate M13 weapon/loadout system
+        run: python tools/validate_m13_weapon_contract.py
 
   godot-headless:
+    if: ${{ inputs.run_heavy }}
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -94,9 +106,13 @@ jobs:
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m11_run_contract_smoke.gd"
       - name: M12 squad revive smoke test
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m12_squad_revive_smoke.gd"
+      - name: M13 weapon/loadout smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m13_weapon_loadout_smoke.gd"
 
   runtime-capture:
+    if: ${{ inputs.run_heavy }}
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v6
