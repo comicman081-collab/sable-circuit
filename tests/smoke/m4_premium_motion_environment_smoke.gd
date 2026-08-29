@@ -41,9 +41,15 @@ func _run() -> void:
     _check(enemy_premium != null, "enemy premium presentation exists")
     enemy.apply_damage(999.0)
     await process_frame
-    _check(get_nodes_in_group("enemy_death_sequences").size() >= 1, "enemy defeat spawns identity death sequence")
-    for seq in get_nodes_in_group("enemy_death_sequences"):
-        if is_instance_valid(seq): seq.queue_free()
+    var death_nodes := get_nodes_in_group("enemy_death_sequences")
+    _check(death_nodes.size() >= 1, "enemy defeat spawns identity death sequence")
+    if death_nodes.size() >= 1:
+        var seq := death_nodes[0] as EnemyDeathSequence
+        _check(seq != null and seq.debug_piece_count() > 0, "enemy death sequence builds visible authored fragments")
+        await process_frame
+        _check(seq != null and seq.debug_progress() > 0.0 and seq.debug_progress() < 1.0, "enemy death sequence is visibly in progress")
+    for seq_node in get_nodes_in_group("enemy_death_sequences"):
+        if is_instance_valid(seq_node): seq_node.queue_free()
     await process_frame
 
     var boss := ENEMY_SCENE.instantiate() as EnemyActor

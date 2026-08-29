@@ -49,13 +49,10 @@ func _physics_process(delta: float) -> void:
         if not is_instance_valid(target) or target == owner_actor:
             continue
         if target is Node2D and global_position.distance_squared_to(target.global_position) <= 24.0 * 24.0:
-            if target.has_method("apply_damage"):
-                target.apply_damage(damage)
+            if target.has_method("apply_damage"): target.apply_damage(damage)
             CombatFeedback.spawn_hit(get_tree(), global_position, art_profile, tint)
-            queue_free()
-            return
-    if lifetime <= 0.0:
-        queue_free()
+            queue_free(); return
+    if lifetime <= 0.0: queue_free()
 
 func _draw() -> void:
     if "ASTER" in projectile_profile: _draw_aster()
@@ -72,49 +69,40 @@ func _draw() -> void:
         draw_circle(Vector2(9, 0), 3.2, tint)
 
 func _draw_aster() -> void:
-    # Precision coil dart: long cool sheath + segmented white core + warm needle tip.
+    # Precision coil dart
     draw_line(Vector2(-76,0),Vector2(9,0),Color(0.33,0.86,1.0,0.11),8.0)
     draw_line(Vector2(-56,0),Vector2(12,0),Color(tint,0.42),3.2)
-    for x in [-52.0,-35.0,-18.0]:
-        draw_line(Vector2(x,0),Vector2(x+10.0,0),Color("eaf9ff",0.76),1.8)
+    for x in [-52.0,-35.0,-18.0]: draw_line(Vector2(x,0),Vector2(x+10.0,0),Color("eaf9ff",0.76),1.8)
     draw_line(Vector2(-7,0),Vector2(15,0),Color("f4fbff"),2.4)
-    draw_circle(Vector2(17,0),4.0,Color("ffcf70"))
-    draw_circle(Vector2(17,0),8.0,Color(1.0,0.76,0.30,0.10))
+    draw_circle(Vector2(17,0),4.0,Color("ffcf70")); draw_circle(Vector2(17,0),8.0,Color(1.0,0.76,0.30,0.10))
 
 func _draw_rook() -> void:
-    # Heavy magnetic pellet: broad pressure wake instead of a thin tracer.
+    # Heavy magnetic pellet
     draw_line(Vector2(-50,0),Vector2(-8,0),Color("d39a58",0.13),13.0)
     draw_line(Vector2(-38,0),Vector2(-7,0),Color("ffe0ad",0.34),6.0)
     draw_polygon(PackedVector2Array([Vector2(-12,-5),Vector2(8,-7),Vector2(17,0),Vector2(8,7),Vector2(-12,5)]),PackedColorArray([Color("d6a15f")]))
     draw_line(Vector2(-2,0),Vector2(12,0),Color("fff0c8"),2.0)
 
 func _draw_mica() -> void:
-    # Sensor pulse: a hollow teal packet with telemetry beads trailing behind it.
+    # Sensor pulse
     draw_line(Vector2(-62,0),Vector2(-12,0),Color("62d8c8",0.10),8.0)
-    draw_circle(Vector2.ZERO,8.0,Color("62d8c8",0.13),true)
-    draw_circle(Vector2.ZERO,7.0,Color("7cf4e7"),false,2.5)
-    draw_circle(Vector2.ZERO,2.5,Color("e9fff9"),true)
-    for x in [-48.0,-34.0,-21.0,-11.0]:
-        draw_circle(Vector2(x,0),1.8,Color("62d8c8",0.52),true)
+    draw_circle(Vector2.ZERO,8.0,Color("62d8c8",0.13),true); draw_circle(Vector2.ZERO,7.0,Color("7cf4e7"),false,2.5); draw_circle(Vector2.ZERO,2.5,Color("e9fff9"),true)
+    for x in [-48.0,-34.0,-21.0,-11.0]: draw_circle(Vector2(x,0),1.8,Color("62d8c8",0.52),true)
 
 func _draw_rifle() -> void:
     draw_line(Vector2(-64,0),Vector2(10,0),Color("c93643",0.12),8.0)
     draw_line(Vector2(-48,0),Vector2(13,0),Color("eef5f7",0.80),2.0)
-    for x in [-43.0,-27.0,-11.0,4.0]:
-        draw_line(Vector2(x,0),Vector2(x+7,0),Color("d84d59"),3.0)
+    for x in [-43.0,-27.0,-11.0,4.0]: draw_line(Vector2(x,0),Vector2(x+7,0),Color("d84d59"),3.0)
     draw_circle(Vector2(14,0),2.6,Color("fff0ee"))
 
 func _draw_shield() -> void:
     draw_line(Vector2(-48,0),Vector2(-13,0),Color("e2a94e",0.16),14.0)
-    draw_rect(Rect2(-15,-6,31,12),Color("e2a94e"),true)
-    draw_rect(Rect2(-7,-3,24,6),Color("fff0b2"),true)
-    draw_rect(Rect2(-28,-8,11,16),Color("7d342e",0.45),true)
+    draw_rect(Rect2(-15,-6,31,12),Color("e2a94e"),true); draw_rect(Rect2(-7,-3,24,6),Color("fff0b2"),true); draw_rect(Rect2(-28,-8,11,16),Color("7d342e",0.45),true)
 
 func _draw_drone() -> void:
     draw_line(Vector2(-66,0),Vector2(11,0),Color("e45a91",0.12),7.0)
     draw_line(Vector2(-48,0),Vector2(13,0),Color("e45a91",0.52),2.0)
-    for x in [-36.0,-23.0,-10.0,3.0]:
-        draw_circle(Vector2(x,sin(x*0.18)*2.2),2.6,Color("e45a91"),true)
+    for x in [-36.0,-23.0,-10.0,3.0]: draw_circle(Vector2(x,sin(x*0.18)*2.2),2.6,Color("e45a91"),true)
     draw_circle(Vector2(14,0),4.0,Color("65e1e8"),true)
 
 func _draw_aberrant() -> void:
@@ -123,10 +111,13 @@ func _draw_aberrant() -> void:
     draw_line(Vector2(-9,-2),Vector2(10,1),Color("ef9ab0"),2.2)
 
 func _draw_anchor() -> void:
-    # Phase lance: long violet/magenta energy rail with a bright core.
-    draw_line(Vector2(-88,0),Vector2(18,0),Color("9179ff",0.11),16.0)
-    draw_line(Vector2(-72,0),Vector2(19,0),Color("f0529d",0.34),7.0)
-    draw_rect(Rect2(-24,-8,43,16),Color("8572ff"),true)
-    draw_rect(Rect2(-10,-4,31,8),Color("f5dcff"),true)
-    for x in [-60.0,-45.0,-31.0]:
-        draw_line(Vector2(x,-9),Vector2(x,9),Color("0b0b12",0.72),3.0)
+    # Phase lance keeps its unique violet/magenta identity but is deliberately
+    # slimmer in M6 so five-way Phase 3 patterns do not obscure the boss body.
+    draw_line(Vector2(-78,0),Vector2(15,0),Color("9179ff",0.085),10.0)
+    draw_line(Vector2(-64,0),Vector2(16,0),Color("f0529d",0.28),4.5)
+    draw_rect(Rect2(-20,-6,35,12),Color("8572ff"),true)
+    draw_rect(Rect2(-7,-3,24,6),Color("f5dcff"),true)
+    for x in [-52.0,-39.0,-26.0]: draw_line(Vector2(x,-6),Vector2(x,6),Color("0b0b12",0.68),2.2)
+
+func debug_anchor_visual_width() -> float:
+    return 10.0

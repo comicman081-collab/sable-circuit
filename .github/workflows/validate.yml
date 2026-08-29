@@ -18,7 +18,7 @@ concurrency:
 
 env:
   GODOT_VERSION: "4.7.2"
-  GODOT_ARCHIVE: "Godot_v4.7.2-stable_linux.x86_64.zip"
+  GODOT_ARCHIVE: Godot_v4.7.2-stable_linux.x86_64.zip
   GODOT_SHA256: cadd3204e728a35d3f13adb7fd0d7902636b79f6b95c40c265eb73b6c35329e4
 
 jobs:
@@ -38,6 +38,10 @@ jobs:
         run: python tools/validate_unique_art.py
       - name: Validate M5 production presentation
         run: python tools/validate_m5_presentation.py
+      - name: Validate M6 authored visual assets
+        run: python tools/validate_m6_visual_assets.py
+      - name: Validate M7 staged raster payload integrity
+        run: python tools/validate_m7_raster_payloads.py
 
   godot-headless:
     if: ${{ inputs.run_heavy }}
@@ -74,6 +78,10 @@ jobs:
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m4_premium_motion_environment_smoke.gd"
       - name: M5 bundled HUD font smoke test
         run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m5_font_smoke.gd"
+      - name: M6 target-style diagonal movement smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m6_target_style_smoke.gd"
+      - name: M7 authored visual and boss arena smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m7_authored_visual_smoke.gd"
 
   runtime-capture:
     if: ${{ inputs.run_heavy }}
