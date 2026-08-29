@@ -1,14 +1,14 @@
 name: Validate M6 Enemy Details
 
 on:
-  push:
-    branches:
-      - main
-      - 'feat/**'
-  pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
+
+concurrency:
+  group: sable-circuit-enemy-detail-${{ github.ref }}
+  cancel-in-progress: true
 
 env:
   GODOT_VERSION: '4.7.2'
@@ -18,6 +18,7 @@ env:
 jobs:
   enemy-detail-runtime:
     runs-on: ubuntu-24.04
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
