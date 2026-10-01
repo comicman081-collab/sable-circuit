@@ -100,6 +100,7 @@ func _update_boss_phase(delta: float) -> void:
     if new_phase != _phase_index:
         _phase_index = new_phase
         _boss_pattern_cd = 0.35
+        ImpactFeel.boss_phase_changed(actor.get_tree(), new_phase)
     var bones: Dictionary = actor.get("_bones")
     if not bones.has("ring"):
         return
@@ -141,6 +142,7 @@ func _fire_phase_pattern() -> void:
 func _on_defeated(_enemy: EnemyActor) -> void:
     if actor == null:
         return
+    ImpactFeel.enemy_defeated(actor.get_tree(), actor.enemy_id)
     var seq := EnemyDeathSequence.new()
     actor.get_tree().root.add_child(seq)
     seq.setup(actor.global_position, actor.enemy_id, actor.art_profile)

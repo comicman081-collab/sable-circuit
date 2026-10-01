@@ -19,6 +19,9 @@ func _init() -> void:
 
 func _run() -> void:
     DisplayServer.window_set_size(Vector2i(1280, 720))
+    # Evidence frames must be deterministic: no camera shake or hit-stop slowdown while capturing.
+    ImpactFeel.shake_scale = 0.0
+    ImpactFeel.hit_stop_enabled = false
     DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(OUT_DIR))
     stage = STAGE_SCENE.instantiate() as StoryStage01
     root.add_child(stage)

@@ -138,6 +138,7 @@ Current field controls: **WASD move · Shift run · mouse aim · LMB fire · R r
 - `docs/M3_HIGH_RES_UNIQUE_ART_RUNTIME.md` — M3 high-resolution runtime
 - `docs/M4_PREMIUM_MOTION_ENVIRONMENT.md` — M4 direction/motion/reaction/boss/environment contract
 - `docs/M5_ACTUAL_RUNTIME_VISUAL_BASELINE.md` — real-render visual evidence, HUD/font/depth baseline
+- `docs/IMPACT_FEEL.md` — presentation-only camera shake and hit-stop (hit feel)
 - `docs/ANIMATION_SPEC_v0.1.md` — animation contract
 - `docs/TECH_ARCHITECTURE_v0.1.md` — runtime/data architecture
 - `docs/FOLDER_STRUCTURE.md` — repository ownership/layout

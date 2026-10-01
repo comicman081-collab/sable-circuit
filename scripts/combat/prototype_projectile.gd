@@ -4,6 +4,7 @@ class_name PrototypeProjectile
 var direction := Vector2.RIGHT
 var speed := 720.0
 var damage := 10.0
+var impact_weight := 0.15
 var lifetime := 1.1
 var owner_actor: Node = null
 var tint := Color("fff0a8")
@@ -26,21 +27,21 @@ func setup(origin: Vector2, dir: Vector2, source: Node, color: Color, profile: D
 
 func _apply_profile_tuning() -> void:
     if "ASTER" in projectile_profile:
-        speed = 1040.0; damage = 10.0; lifetime = 0.9
+        speed = 1040.0; damage = 10.0; lifetime = 0.9; impact_weight = 0.0
     elif "ROOK" in projectile_profile:
-        speed = 760.0; damage = 7.0; lifetime = 0.58
+        speed = 760.0; damage = 7.0; lifetime = 0.58; impact_weight = 0.30
     elif "MICA" in projectile_profile:
-        speed = 640.0; damage = 8.0; lifetime = 1.22
+        speed = 640.0; damage = 8.0; lifetime = 1.22; impact_weight = 0.0
     elif "RIFLE" in projectile_profile:
-        speed = 900.0; damage = 8.0
+        speed = 900.0; damage = 8.0; impact_weight = 0.25
     elif "SHIELD" in projectile_profile:
-        speed = 620.0; damage = 16.0
+        speed = 620.0; damage = 16.0; impact_weight = 0.45
     elif "DRONE" in projectile_profile:
-        speed = 780.0; damage = 7.0
+        speed = 780.0; damage = 7.0; impact_weight = 0.20
     elif "ABERRANT" in projectile_profile:
-        speed = 440.0; damage = 12.0; lifetime = 1.5
+        speed = 440.0; damage = 12.0; lifetime = 1.5; impact_weight = 0.38
     elif "ANCHOR" in projectile_profile:
-        speed = 560.0; damage = 24.0; lifetime = 1.6
+        speed = 560.0; damage = 24.0; lifetime = 1.6; impact_weight = 0.65
 
 func _physics_process(delta: float) -> void:
     global_position += direction * speed * delta
@@ -52,6 +53,7 @@ func _physics_process(delta: float) -> void:
             if target.has_method("apply_damage"):
                 target.apply_damage(damage)
             CombatFeedback.spawn_hit(get_tree(), global_position, art_profile, tint)
+            ImpactFeel.projectile_hit(get_tree(), impact_weight)
             queue_free()
             return
     if lifetime <= 0.0:

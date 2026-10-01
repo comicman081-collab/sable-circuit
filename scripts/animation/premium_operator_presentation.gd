@@ -16,8 +16,12 @@ func _ready() -> void:
     process_priority = 80
     actor = get_parent() as OperatorActor
     if actor:
+        actor.downed.connect(_on_actor_downed)
         visual = actor.get_node_or_null("VisualRoot") as OperatorVisual
     call_deferred("_bind_face")
+
+func _on_actor_downed(_actor: OperatorActor) -> void:
+    ImpactFeel.operator_downed(actor.get_tree())
 
 func _bind_face() -> void:
     if visual == null:

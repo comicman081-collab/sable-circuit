@@ -12,7 +12,8 @@ required_files=[
  'assets/characters/playable/aster/aster_master.svg','assets/characters/playable/aster/aster_rig_sheet.svg','assets/characters/playable/rook/rook_master.svg','assets/characters/playable/rook/rook_rig_sheet.svg','assets/characters/playable/mica/mica_master.svg','assets/characters/playable/mica/mica_rig_sheet.svg',
  'assets/enemies/rifle_trooper/rifle_trooper_master.svg','assets/enemies/rifle_trooper/rifle_trooper_rig_sheet.svg','assets/enemies/shield_breacher/shield_breacher_master.svg','assets/enemies/shield_breacher/shield_breacher_rig_sheet.svg','assets/enemies/recon_drone/recon_drone_master.svg','assets/enemies/recon_drone/recon_drone_rig_sheet.svg','assets/enemies/aberrant_melee/aberrant_melee_master.svg','assets/enemies/aberrant_melee/aberrant_melee_rig_sheet.svg','assets/enemies/signal_anchor_guardian/signal_anchor_guardian_master.svg','assets/enemies/signal_anchor_guardian/signal_anchor_guardian_rig_sheet.svg',
  'scripts/animation/face_micro_rig.gd','scripts/animation/premium_operator_presentation.gd','scripts/animation/premium_enemy_presentation.gd','scripts/vfx/enemy_death_sequence.gd','scripts/missions/stage01_environment_director.gd','tests/smoke/m4_premium_motion_environment_smoke.gd','docs/M4_PREMIUM_MOTION_ENVIRONMENT.md',
- 'tests/render/runtime_capture.gd','scripts/ui/tactical_minimap.gd','scripts/missions/site7_facility_architecture.gd','docs/M5_ACTUAL_RUNTIME_VISUAL_VALIDATION.md'
+ 'tests/render/runtime_capture.gd','scripts/ui/tactical_minimap.gd','scripts/missions/site7_facility_architecture.gd','docs/M5_ACTUAL_RUNTIME_VISUAL_VALIDATION.md',
+ 'scripts/vfx/impact_feel.gd','tests/smoke/m6_impact_feel_smoke.gd','docs/IMPACT_FEEL.md'
 ]
 errors=[]
 for f in required_files:
@@ -71,19 +72,22 @@ contracts={
  'scripts/missions/story_stage_01.gd':['ENEMY_SCENE','debug_spawn_encounter_for_step','_apply_progress_bounds','_finish_mission','stage_completed'],
  'tests/smoke/m2_story_flow_smoke.gd':['M2_STORY_FLOW_SMOKE: PASS','game boots to title','result debrief returns to operations base'],
  'scripts/actors/enemy_actor.gd':['UniqueLayerRig','_build_rifle_rig','_build_shield_rig','_build_drone_rig','_build_aberrant_rig','_build_boss_rig'],
- 'scripts/combat/prototype_projectile.gd':['target_group','projectile_profile','CombatFeedback.spawn_hit'],
+ 'scripts/combat/prototype_projectile.gd':['target_group','projectile_profile','CombatFeedback.spawn_hit','impact_weight','ImpactFeel.projectile_hit'],
  'tools/validate_unique_art.py':['rig_sheet','sha256','UNIQUE_ART_VALIDATION: PASS'],
  'tests/smoke/m3_unique_art_smoke.gd':['M3_UNIQUE_ART_SMOKE: PASS','15+ high-resolution SVG rig layers','Signal Anchor Guardian boss'],
  'scripts/animation/face_micro_rig.gd':['facing_sector','visible = sector not in [5, 6, 7]','MICA'],
- 'scripts/animation/premium_operator_presentation.gd':['FaceMicroRig.new()','debug_sector_contract','debug_has_face_rig','_apply_secondary_springs'],
- 'scripts/animation/premium_enemy_presentation.gd':['EnemyDeathSequence.new()','_fire_phase_pattern','debug_phase','debug_sector'],
+ 'scripts/animation/premium_operator_presentation.gd':['FaceMicroRig.new()','debug_sector_contract','debug_has_face_rig','_apply_secondary_springs','ImpactFeel.operator_downed'],
+ 'scripts/animation/premium_enemy_presentation.gd':['EnemyDeathSequence.new()','_fire_phase_pattern','debug_phase','debug_sector','ImpactFeel.enemy_defeated','ImpactFeel.boss_phase_changed'],
  'scripts/vfx/enemy_death_sequence.gd':['enemy_death_sequences','_configure_identity','debug_mode'],
  'scripts/missions/stage01_environment_director.gd':['GATE_RIBS_AMBER_TERMINAL','SIGNAL_TEAL_WAVEFORM','debug_room_style_count','debug_room_signatures'],
  'tests/smoke/m4_premium_motion_environment_smoke.gd':['M4_PREMIUM_MOTION_ENVIRONMENT_SMOKE: PASS','eight directional sectors are addressable','boss enters phase 3','eight authored room environment styles'],
- 'tests/render/runtime_capture.gd':['RUNTIME_CAPTURE: PASS','01_map_movement.png','03_boss_phase3.png','direction_sector_7.png','death_boss.png'],
+ 'tests/render/runtime_capture.gd':['RUNTIME_CAPTURE: PASS','01_map_movement.png','03_boss_phase3.png','direction_sector_7.png','death_boss.png','ImpactFeel.shake_scale = 0.0','ImpactFeel.hit_stop_enabled = false'],
  'scripts/ui/tactical_minimap.gd':['class_name TacticalMinimap','m3_enemies','active.aim_world'],
  'scripts/ui/story_stage_hud.gd':['Rajdhani','Bahnschrift SemiCondensed','COIL ASSAULT RIFLE','TacticalMinimap.new()'],
  'scripts/missions/site7_facility_architecture.gd':['class_name Site7FacilityArchitecture','_draw_room_shell','_draw_bulkheads','_hazard_strip'],
+ 'scripts/vfx/impact_feel.gd':['class_name ImpactFeel','HIT_STOP_MAX_SEC','HIT_STOP_COOLDOWN_SEC','SHAKE_DECAY','Engine.time_scale','_exit_tree','camera-shake'],
+ 'tests/smoke/m6_impact_feel_smoke.gd':['M6_IMPACT_FEEL_SMOKE: PASS','camera returns exactly to rest','cooldown blocks back-to-back freezes','operator down shakes the camera'],
+ 'docs/IMPACT_FEEL.md':['awesome-ai-motion','Presentation-only','HIT_STOP_MAX_SEC'],
  'docs/M5_ACTUAL_RUNTIME_VISUAL_VALIDATION.md':['Generated concept art, mockups, edited screenshots and AI-generated images are **not** runtime evidence','exactly 24 PNG files','Public deployment / GitHub Pages remains disabled']
 }
 for rel,needles in contracts.items():
