@@ -1329,6 +1329,53 @@
   branches were not touched. One small snapshot commit with this record sits on top of it (a
   fast-forward). Later changes go out only when the user asks, again as one small commit on top;
   replacing the branch again needs the user's order again.
+- The four kArchive props taken out — user instruction 2026-10-07 ("빼줘", the answer to Claude's
+  offer to upload again without them, made after the kArchive question in the last bullet).
+  The public copy no longer holds
+  `third_party/karchive/site7_props_20260919/{barrier,cabinet,crate,generator}.glb`; their
+  `ATTRIBUTION.txt`, `WEB_TERMS_20260919.txt`, `bundled_LICENSE.txt` and
+  `model-license-manifest.json` stay in it. The local files stay too and nothing in the working
+  tree changed: `tools/environment/render_karchive_props.py` and `prepare_karchive_props.py`
+  read the GLBs and the manifest binds their hashes (a search of `scripts`, `scenes`, `data`,
+  `tests`, `tools` and `docs` finds no other reader; the game draws only the renders in
+  `assets/environments/site7/karchive_props_v1/`, which stay public). The five other `.glb`
+  paths (the Tripo reference and Quaternius UAL 1 and 2) stay public: the order named only the
+  four. Method as in "The replacement": `.cache/claude_scratch/intro_public/
+  build_public_snapshot_v3.py r1` built the root commit `c6d8782d` (tree `c57b49c4`: the tree
+  of the local `a54442a2` with the two re-encoded videos and exactly those four paths deleted;
+  no parent, so the removed blobs are not in the new history; its diff to the previous
+  snapshot's tree `32fac9ca` is the four `D` lines, and none of the four blob ids occurs
+  anywhere in the new tree). A thin shallow pack against the old tip is 893 bytes. It went first
+  to the temporary branch `release/2026-10-07-staging` (no large-file warning) and was read
+  back from GitHub (`verify_remote_v3.py`: tip, tree, no parent, the kArchive folder holding
+  only the four text files, five `.glb` paths left, none of the four blob ids among the 11,327
+  tree entries); then `release/2026-10-07` was moved onto it with `--force-with-lease` against
+  `fafcad70` (the second forced update of this work, ordered by "빼줘") and the staging branch
+  was deleted. The default branch showed the complete copy until that one ref update, so the
+  public copy could be cloned and downloaded throughout. Read back afterwards: public, default
+  branch `release/2026-10-07`, intro videos 48,041,680 and 48,834,408 bytes (under 50 MiB),
+  `main` (`743af6b0`) and the 21 other branches untouched, 0 forks, stars and watchers, 7 open
+  items (the August pull requests), Actions 0 runs / 0 artifacts / 2 workflows, no deployment,
+  release or environment, and the Pages API and `comicman081-collab.github.io/sable-circuit/`
+  both 404. The seven first snapshot commits, `0d798557` and `fafcad70` are on no branch and
+  still hold the four files: GitHub keeps commits that nothing references reachable by their
+  hash until its own cleanup, and only GitHub support can purge them sooner (not requested).
+  The web demo on ChatGPT Sites never held the files: `tools/environment/build_sites_demo.py`
+  stages only `scripts`, `scenes`, `data`, `assets`, `sound/music/runtime`, the motion atlas
+  folder and `project.godot`. One small snapshot commit with this record goes on top (a
+  fast-forward); replacing the branch again needs the user's order again.
+- Playable link — the user asked on 2026-10-07 for the game-run link ("게임 실행 링크로 줘").
+  The repository is source, not a playable site (Pages stays off), so the link is the ChatGPT
+  Sites web demo `https://sable-circuit-demo.comicman081.chatgpt.site`, public since the user's
+  choice of 2026-09-20 (`qa/demo_web_20260920/deployment.json`,
+  `qa/music_integration_20260920/deployment.json`). It answered HTTP 200 on 2026-10-07 and its
+  loading text reads "five-operation demo". The local Sites checkout `web_demo` was last
+  committed on 2026-09-23; its `dist/` holds a later build of 2026-09-25 that is uncommitted,
+  and operations 6-10 opened from 2026-09-29, so the last web build recorded in the repository
+  (`qa/web_build_20260925`) predates them. A new web build and publish
+  (`tools/environment/build_sites_demo.py`, `docs/WEB_DEMO_20260920.md`, 256 MiB archive limit,
+  reuse `web_demo/.openai/hosting.json`) is an outward action for the user to order; never
+  through GitHub Pages.
 - First screen: since 2026-10-07 the default branch is `release/2026-10-07`, switched in the
   user's own signed-in in-app browser on the user's order (Settings > General > Default branch >
   switch > "I understand, update the default branch."; GitHub answered "Default branch changed to
@@ -1365,23 +1412,26 @@
   pattern; a synthetic repository with seven fake secrets is the control and all seven were
   caught. GitHub's own secret scanning shows "Disabled" in the repository's settings; it
   was not turned on (the user's call).
-- Third-party originals are in the public tree: four kArchive props
-  (`third_party/karchive/site7_props_20260919/*.glb`: the bundled licence allows use and
-  modification in personal and commercial projects with credit and forbids AI training, the web
-  terms forbid reselling the originals; neither names public hosting, and both texts sit beside
-  the files), `Seed-san.vrm` (VRM Public License 1.0, redistribution with notice), CC0 sets
-  (Quaternius UAL 1 and 2, Blender Studio human base meshes) and one Tripo motion reference
+- Third-party originals in the public tree: `Seed-san.vrm` (VRM Public License 1.0,
+  redistribution with notice), CC0 sets (Quaternius UAL 1 and 2, Blender Studio human base
+  meshes) and one Tripo motion reference
   (`art_src/motion_reference/tripo_run_20260908/source/ORIGINAL_Run.glb`, 2 MB, called
-  licensed in the project's documents; its terms were not re-read for public hosting).
+  licensed in the project's documents; its terms were not re-read for public hosting; it stays
+  public because the user's order named only the four kArchive props). Those four props
+  (`third_party/karchive/site7_props_20260919/*.glb`) were in the public tree until the removal
+  above: the bundled licence allows use and modification in personal and commercial projects
+  with credit and forbids AI training, the web terms forbid reselling the originals, and
+  neither names public hosting.
   The user asked on 2026-10-07 whether the four props may stay because they are not modified
-  separately, not used for training and not resold ("상관 없지?"). Claude's reading is yes: the
+  separately, not used for training and not resold ("상관 없지?"). Claude's reading was yes: the
   game draws only renders made from them, nothing was trained on them, nothing is sold, and the
   credit ("자료: kArchive / 출처: 쓰레드 dogfooter" with the licence line) is in the title
   screen's credits (`scripts/ui/title_screen.gd`). The one point neither text covers in words is
   handing the unmodified original files out for free in a public repository: not a resale, but
-  not named as allowed either. This is a reading of the texts, not legal advice. The files stay
-  as they are; taking them or the Tripo file out of the public copy means rewriting the branch,
-  which only the user can order.
+  not named as allowed either. This is a reading of the texts, not legal advice. Claude offered
+  to leave them out and the user ordered it ("빼줘"); the licence, credit and manifest texts
+  still sit in the public tree beside the gap. Taking the Tripo file out too would mean
+  rewriting the branch again, which only the user can order.
 
 ## Upgrade economy — user instruction 2026-09-29
 
