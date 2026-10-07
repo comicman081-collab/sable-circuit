@@ -1,0 +1,46 @@
+{
+ "suite": "custom",
+ "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+ "started": "2026-10-02T11:52:04",
+ "git_head": "e2ca52ed9c0892d1b1530cec3250c09c6bb60fb0",
+ "git_dirty": 0,
+ "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+ "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+ "workers": 1,
+ "seconds": 67,
+ "overall": "PASS",
+ "guard": {
+  "changed": [],
+  "removed": [],
+  "added": []
+ },
+ "results": [
+  {
+   "test": "campaign_data",
+   "status": "PASS",
+   "seconds": 0.6,
+   "exit_code": 0,
+   "checks": 297,
+   "status_line": "SITE7_CAMPAIGN_DATA: PASS (297 checks)",
+   "notes": []
+  },
+  {
+   "test": "world_route",
+   "status": "PASS",
+   "seconds": 21.9,
+   "exit_code": 0,
+   "checks": 94,
+   "status_line": "SITE7_WORLD_ROUTE_NAVIGATION: PASS (94 checks)",
+   "notes": []
+  },
+  {
+   "test": "battle_geometry",
+   "status": "PASS",
+   "seconds": 29.7,
+   "exit_code": 0,
+   "checks": 5039,
+   "status_line": "SITE7_BATTLE_GEOMETRY_SMOKE: PASS (5039 checks)",
+   "notes": []
+  }
+ ]
+}

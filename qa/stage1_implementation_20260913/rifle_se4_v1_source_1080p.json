@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-13T08:58:50.373449+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\source_panels\\a062e70908d8_3f539202\\native_upper_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 719636,
+      "sha256": "0270b3b131a1e4cbd239d1be2326e13f8d8fc80405732f970df9bc050ea25abd"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\source_panels\\a062e70908d8_3f539202\\native_lower_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 442205,
+      "sha256": "f406ef670b7b8c986cfdc959cfd11b03caa1b177f156d607cb49fb473e7f8bd9"
+    }
+  ]
+}

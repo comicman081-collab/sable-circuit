@@ -1,0 +1,25 @@
+{
+  "selected_candidate": 2,
+  "method": "Dawn backdrop contact shadow from the original void silhouette",
+  "mission": "MIS_CH01_08",
+  "width_source_px": 24,
+  "padding_source_px": 72,
+  "strength": 0.88,
+  "storage_scale": 0.25,
+  "field_count": 15,
+  "atlas_size": [
+    1928,
+    1408
+  ],
+  "atlas_format": "L8",
+  "reason": "Darken clouds touching the architecture without eroding wall alpha or changing shadows/contrast. Existing dark wall recesses stay opaque.",
+  "plate_shader_unchanged": true,
+  "void_max_unchanged": 12,
+  "one_existing_backdrop_quad": true,
+  "web_fog_octaves": 2,
+  "desktop_fog_octaves": 4,
+  "actors_robots_elites_props_tinted": false,
+  "imagegen_calls": 0,
+  "rejected_candidate": 1,
+  "rejected_reason": "Alpha fade exposed dark recesses; no prototype feather setting remains in runtime."
+}

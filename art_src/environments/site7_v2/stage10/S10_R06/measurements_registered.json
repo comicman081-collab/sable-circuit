@@ -1,0 +1,178 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_R06/attempt01/S10_R06_GAME.png",
+  "luma": 0.20004530251026154,
+  "p10": 0.15944314002990723,
+  "p90": 0.24607843160629272,
+  "saturation": 0.05000090305112068,
+  "hue": 149.654013572252,
+  "axis": 27.26040919867559,
+  "problems": [],
+  "plate": "S10_R06",
+  "attempt": 1,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      182,
+      528
+    ],
+    [
+      849,
+      193
+    ],
+    [
+      943,
+      193
+    ],
+    [
+      1538,
+      505
+    ],
+    [
+      772,
+      860
+    ],
+    [
+      466,
+      716
+    ],
+    [
+      466,
+      737
+    ],
+    [
+      334,
+      812
+    ],
+    [
+      118,
+      687
+    ],
+    [
+      270,
+      614
+    ]
+  ],
+  "doors_px": {
+    "SW": [
+      368,
+      665,
+      220
+    ]
+  },
+  "raw_sha256": "5bf2630a51c772319fe9adf71570c2cecf77a35d3df716314b4126bef9390d5a",
+  "master_sha256": "5bf2630a51c772319fe9adf71570c2cecf77a35d3df716314b4126bef9390d5a",
+  "game_sha256": "6a165077bb11d98e8e0d367dd65a1ed3e382d9c509a2943551230a5c98bd4ab0",
+  "game_exposure_factor_srgb": 0.7687,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-5a01bf79-4159-48ae-a248-953d135c4c80.png",
+  "inspection": "SW 단일 문, NW/NE/SE 닫힘. S3_R06 원형 윈치를 직사각 리프트 케이지와 NE 선형 카운터웨이트로 바꿈. 공통 골조 허용 기준 적용. 바닥 가운데 비움, 초록 점 조명은 벽에만.",
+  "floor_area_px2": 513170.5,
+  "floor_area_fraction": 0.3261638209377177,
+  "floor_bounds_px": [
+    118,
+    193,
+    1538,
+    860
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1672,
+      941
+    ],
+    "actual_size": [
+      1672,
+      941
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "SW": [
+        [
+          270,
+          614
+        ],
+        [
+          118,
+          687
+        ],
+        [
+          334,
+          812
+        ],
+        [
+          466,
+          737
+        ],
+        [
+          466,
+          716
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      182,
+      193,
+      1538,
+      860
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.10885167464114832,
+      0.2051009564293305,
+      0.08014354066985646,
+      0.08607863974495218
+    ],
+    "whole_floor_bounds_px": [
+      118,
+      193,
+      1538,
+      860
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.07057416267942583,
+      0.2051009564293305,
+      0.08014354066985646,
+      0.08607863974495218
+    ],
+    "main_floor_area_px2": 478863,
+    "current_rule_20261001": {
+      "main_lr_minimum": 0.045,
+      "whole_lr_minimum": 0.035,
+      "main_tb_minimum": 0.05,
+      "whole_tb_minimum": 0.04,
+      "prompt_main_target": 0.05,
+      "prompt_whole_target": 0.04,
+      "scope": "remaining operation 10 rooms; explicit user decision"
+    }
+  },
+  "apron_stats": {
+    "SW": {
+      "luma": 0.24947157502174377,
+      "saturation": 0.07200923341441598,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  },
+  "prompt": "EXACT OPEN SIDES: SW. CLOSED SIDES: NW, NE, SE. Closed sides have continuous solid back walls or uninterrupted low foreground rails; NO other openings, aprons, floor tongues or doorway-like recesses. Do not copy the extra doors of Image 1. Exactly 1 open threshold(s).\nGEOMETRY FIRST: exact native 1672x941 RGB landscape. Main floor diamond (190,480),(830,160),(1470,480),(830,800), opposing edges parallel at 2:1 slope 26.6 degrees. SW apron corners (355,562),(195,642),(463,776),(623,696). COMPLETE painted floor outline INCLUDING apron tips: (190,480),(830,160),(1470,480),(830,800),(623,696),(463,776),(195,642),(355,562). Target main floor at least 5% inside every border, whole floor INCLUDING apron tips at least 4% inside every border. Preserve broad neutral open deck at least 850x450px and more than 25% of canvas. SW is the ONLY open doorway: a gap in the foreground low rail with a plain neutral grey coplanar apron. NW, NE and SE are CLOSED; the back-wall lift equipment is NOT an open doorway. Apron outer end (195,642)-(463,776) is diagonal, not a vertical-cut pocket. No other apron or passage.\nUse case: stylized-concept. ONE new finished opaque RGB room plate S10_R06, R06_EXIT. Image 1 is only fixed camera, scale, neutral standard deck, minimum floor size and doorway dimensions. Image 2 is only premium hard-surface material quality; ignore its actors, markings and UI.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nROOM PLATE. The walkable floor is a dimetric diamond or elongated hexagon whose sides face NW (upper-left), NE (upper-right), SE (lower-right) and SW (lower-left). Back walls rise only along the NW and NE sides; the SW and SE sides end in a low lip or railing with no wall so nothing hides the floor. Keep the main floor at least 5% away from every image border and the complete floor including apron tips at least 4%.\nDOORS: open doorways exactly on these sides: SW. Each doorway is an unobstructed opening about 2.3 adult-heights wide with a heavy steel frame (a framed opening in a back wall, or a gap in the lip railing on the SW/SE side); no door leaf, no shutter. The same standard deck and the same neutral-white overhead light continue through every doorway for about 1.5 adult-heights on both sides of the threshold.\nROOM TYPE: non-combat room — walkable floor at least 850 x 450 (long x short, in the scale above).\nIDENTITY: origin-shaft service lift: vertical guide rails and lift-cage machinery on the back wall. Accent colour green, on walls and fixtures only.\nExactly 1 usable opening(s), only SW. All other sides (NW, NE, SE) are continuous closed walls or continuous low foreground railings: no rail gaps, floor tongues, passages, apparent doorway recesses or shutters there.\nCRITICAL NEW WALL SILHOUETTE: redraw the wall architecture and machinery from the IDENTITY above; do not copy Image 1 wall masses, fans, consoles or machine arrangement. This room must differ from other operation-10 rooms and all earlier operation plates. Black alloy and red seams stay on the WALL architecture; include a few distinct small practical wall lamps in the required accent, with visible lamp cores and a restrained local wall glow. No lettering-like floor patterns, red light bloom, black floor or coloured floor. The floor is standard neutral gunmetal grey, mean sRGB luminance 0.17-0.24; doorway apron saturation at most 0.10. The exposed outside remains uniform #07090D.\nDoor apron outer edges are oblique and parallel to the attached deck; no vertical-cut pocket. Main floor must remain at least 5% and all apron tips at least 4% inside each image border. Floor material and light are neutral, with no red wash or black alloy on the deck. Several clear perimeter lamp cores illuminate the wall only.\nWALL CONTENT CRITERION: the shared map-kit corner/end columns, wall bays, door gap and door-flanking columns may match Image 1. The equipment and panel configuration INSIDE each bay must be new and specific to this IDENTITY, different from the same-slot S3 plate and the other operation-10 plates. Do not reproduce the reference bay contents with only recolouring.\nSPECIFIC NEW BAY CONTENT: origin-shaft SERVICE LIFT, a single broad rectangular recessed lift-cage mechanism in the NW back wall with two separated vertical guide rails, a horizontal top crosshead and a closed metal-grid cage panel. NE back wall has exposed paired linear counterweight slider tracks and shallow maintenance brackets. NO round winch drum or cable spool, no S3_R06 repeated tall motor/winch bays, no circular fans, no relay obelisks, record cartridges, forked null emitters or monolithic core housing. Shared corner/end posts and door frames are allowed; bay equipment must be newly drawn. Several distinctly green practical lamp cores on the rail housings, wall-local glow only. White and red seam details confined to black-alloy walls. Standard gunmetal grey floor and SW apron have neutral-white uniform overhead light and saturation <=0.10 at apron. Lift cage is wall machinery with closed infill, not a passage. The whole middle stays empty.",
+  "references": [
+    "assets/environments/site7_v2/stage03/S3_R06/S3_R06_GAME.png",
+    "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png"
+  ],
+  "status": "SELECTED",
+  "reason": "",
+  "reference_sha256": {
+    "assets/environments/site7_v2/stage03/S3_R06/S3_R06_GAME.png": "5d0a23110915add2b317b8cdc4196499f2a049b4e6e0c72352d2bf0ac13966c6",
+    "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de"
+  },
+  "raw": "art_src/environments/site7_v2/stage10/S10_R06/S10_R06_RAW_NATIVE.png",
+  "master": "art_src/environments/site7_v2/stage10/S10_R06/S10_R06_MASTER.png",
+  "game": "assets/environments/site7_v2/stage10/S10_R06/S10_R06_GAME.png"
+}

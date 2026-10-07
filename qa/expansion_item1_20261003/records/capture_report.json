@@ -1,0 +1,2913 @@
+{
+  "art_note": "Existing common weathering is retained. Affixes add no sprite material or tint.",
+  "balance_approval": false,
+  "checks": 124,
+  "controlled_runtime_fixture": true,
+  "events": [
+    {
+      "destruction_settle_seconds": 1.5,
+      "enemy_count_after": 5,
+      "enemy_count_before": 4,
+      "fixture": "BROODING",
+      "hatch_duration": 0.6,
+      "hatchlings": 2,
+      "mission": "MIS_CH01_06",
+      "order": "Real apply_damage reserves both hatchlings before the parent defeated signal; hatch timers then held, actual destruction effect allowed to expire for 1.5 s, stage and owned fixture effects freed after capture.",
+      "parent_capture_damage": 99999.0,
+      "parent_health_before": 148.0,
+      "parent_position": [
+        9697.76,
+        -2669.23
+      ]
+    },
+    {
+      "cleanup": "Stage freed with all room actors/hazards; only visual root nodes newly created within this fixture scope were removed. Existing roots/autoloaders and unrelated nodes were untouched.",
+      "mission": "MIS_CH01_06",
+      "orphan_groups_empty": true,
+      "owned_fixture_root_effects_removed": 1
+    },
+    {
+      "fixture": "BEACON",
+      "links_before": 3,
+      "mission": "MIS_CH01_09",
+      "peer_positions": [
+        [
+          -6237.38,
+          3644.54
+        ],
+        [
+          -6120.34,
+          3569.26
+        ],
+        [
+          -6103.62,
+          3663.36
+        ]
+      ],
+      "reduction": 0.25
+    },
+    {
+      "cleanup": "Stage freed with all room actors/hazards; only visual root nodes newly created within this fixture scope were removed. Existing roots/autoloaders and unrelated nodes were untouched.",
+      "mission": "MIS_CH01_09",
+      "orphan_groups_empty": true,
+      "owned_fixture_root_effects_removed": 2
+    },
+    {
+      "fixture": "SPORE_CLOUD",
+      "hazard_contract": {
+        "discharges": 1,
+        "draw_commands_max": 2,
+        "hazard": "SPORE_CLOUD",
+        "mode": "continuous",
+        "phase": "DISCHARGE",
+        "phase_left": 2.949,
+        "position": [
+          4168.68017578125,
+          -661.099975585938
+        ],
+        "radius": 70.0,
+        "shape": "ellipse",
+        "slow_actor_count": 0
+      },
+      "mission": "MIS_CH01_06",
+      "note": "Damage/timing numbers describe a staged frame, not a balance or avoidance test.",
+      "operator_damage_observed": 0.204000000000008,
+      "position": [
+        4168.68,
+        -661.1
+      ],
+      "robot_damage_observed": 0.408000000000015,
+      "staging": "Idle/telegraph targets on real painted floor outside the unchanged hazard. Active targets moved to opposite inside ends only, before the real damage/slow controller tick. Smallest existing plain robot chosen; native art and game camera zoom unchanged."
+    },
+    {
+      "cleanup": "Stage freed with all room actors/hazards; only visual root nodes newly created within this fixture scope were removed. Existing roots/autoloaders and unrelated nodes were untouched.",
+      "mission": "MIS_CH01_06",
+      "orphan_groups_empty": true,
+      "owned_fixture_root_effects_removed": 2
+    },
+    {
+      "fixture": "FROST_PLATE",
+      "hazard_contract": {
+        "discharges": 0,
+        "draw_commands_max": 2,
+        "hazard": "FROST_PLATE",
+        "mode": "slow",
+        "phase": "DISCHARGE",
+        "phase_left": 0.0,
+        "position": [
+          -865.880004882813,
+          1434.07995605469
+        ],
+        "radius": 70.0,
+        "shape": "ellipse",
+        "slow_actor_count": 2
+      },
+      "mission": "MIS_CH01_07",
+      "note": "Damage/timing numbers describe a staged frame, not a balance or avoidance test.",
+      "operator_damage_observed": 0.0,
+      "position": [
+        -865.88,
+        1434.08
+      ],
+      "robot_damage_observed": 0.0,
+      "staging": "Idle/telegraph targets on real painted floor outside the unchanged hazard. Active targets moved to opposite inside ends only, before the real damage/slow controller tick. Smallest existing plain robot chosen; native art and game camera zoom unchanged."
+    },
+    {
+      "cleanup": "Stage freed with all room actors/hazards; only visual root nodes newly created within this fixture scope were removed. Existing roots/autoloaders and unrelated nodes were untouched.",
+      "mission": "MIS_CH01_07",
+      "orphan_groups_empty": true,
+      "owned_fixture_root_effects_removed": 0
+    },
+    {
+      "fixture": "RAIL_LANE",
+      "hazard_contract": {
+        "discharges": 1,
+        "draw_commands_max": 2,
+        "hazard": "RAIL_LANE",
+        "mode": "burst",
+        "phase": "DISCHARGE",
+        "phase_left": 0.249,
+        "position": [
+          4409.52001953125,
+          -452.799987792969
+        ],
+        "radius": 93.145048178,
+        "shape": "band",
+        "slow_actor_count": 0
+      },
+      "mission": "MIS_CH01_08",
+      "note": "Damage/timing numbers describe a staged frame, not a balance or avoidance test.",
+      "operator_damage_observed": 14.0,
+      "position": [
+        4409.52,
+        -452.8
+      ],
+      "robot_damage_observed": 24.0,
+      "staging": "Idle/telegraph targets on real painted floor outside the unchanged hazard. Active targets moved to opposite inside ends only, before the real damage/slow controller tick. Smallest existing plain robot chosen; native art and game camera zoom unchanged."
+    },
+    {
+      "cleanup": "Stage freed with all room actors/hazards; only visual root nodes newly created within this fixture scope were removed. Existing roots/autoloaders and unrelated nodes were untouched.",
+      "mission": "MIS_CH01_08",
+      "orphan_groups_empty": true,
+      "owned_fixture_root_effects_removed": 3
+    }
+  ],
+  "failures": [],
+  "headless_note": "Headless checks fixture geometry only and emits no image evidence.",
+  "human_play": false,
+  "native_capture": true,
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "rows": [
+    {
+      "actors": [
+        {
+          "affix": "BROODING",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "hazard_speed_factor": 1.0,
+          "health": 148.0,
+          "max_health": 148.0,
+          "on_screen": true,
+          "position": [
+            9697.76,
+            -2669.23
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 148.0,
+            "max_health": 148.0
+          },
+          "screen": [
+            944.09,
+            581.57
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        9706.45,
+        -2691.95
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/01_op6_brooding_parent.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "BROODING_PARENT",
+      "mission": "MIS_CH01_06",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 96.0,
+          "on_screen": false,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            8995.52,
+            -2499.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            -341.01,
+            891.54
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": false,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            8925.52,
+            -2444.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            -469.11,
+            992.19
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": false,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            8860.52,
+            -2559.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            -588.06,
+            781.74
+          ]
+        }
+      ],
+      "room": "R04_PUMPS",
+      "sha256": "5934b3b524aa25290dd42fecac63897cef01db3811baea40356f7b308df58b90"
+    },
+    {
+      "actors": [
+        {
+          "affix": "",
+          "brood_generation": 1,
+          "brood_hatch_left": 0.3,
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "hazard_speed_factor": 1.0,
+          "health": 37.0,
+          "max_health": 37.0,
+          "on_screen": true,
+          "position": [
+            9729.76,
+            -2669.23
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 37.0,
+            "max_health": 37.0
+          },
+          "screen": [
+            1018.56,
+            548.24
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/sensor_cluster/Eyes",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/sensor_cluster/Eyes/EyesDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/fins/Fins",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/fins/Fins/FinsDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/mast/Mast",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/mast/Mast/MastDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/thruster/Thruster",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/thruster/Thruster/ThrusterDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/ScanArc",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/ScanArc/ScanArcDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/Gun",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/Gun/GunDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Crescent",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Crescent/CrescentDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Glow",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Glow/GlowDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        },
+        {
+          "affix": "",
+          "brood_generation": 1,
+          "brood_hatch_left": 0.3,
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "hazard_speed_factor": 1.0,
+          "health": 37.0,
+          "max_health": 37.0,
+          "on_screen": true,
+          "position": [
+            9697.76,
+            -2637.23
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 37.0,
+            "max_health": 37.0
+          },
+          "screen": [
+            960.0,
+            606.8
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/sensor_cluster/Eyes",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/sensor_cluster/Eyes/EyesDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/fins/Fins",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/fins/Fins/FinsDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/mast/Mast",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/mast/Mast/MastDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/thruster/Thruster",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/thruster/Thruster/ThrusterDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/ScanArc",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/ScanArc/ScanArcDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/Gun",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/Gun/GunDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Crescent",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Crescent/CrescentDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Glow",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Glow/GlowDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        9697.76,
+        -2673.73
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/02_op6_brooding_hatching.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "BROODING_HATCHING",
+      "mission": "MIS_CH01_06",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 96.0,
+          "on_screen": false,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            8995.52,
+            -2499.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            -325.1,
+            858.21
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": false,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            8925.52,
+            -2444.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            -453.2,
+            958.86
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": false,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            8860.52,
+            -2559.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            -572.15,
+            748.41
+          ]
+        }
+      ],
+      "room": "R04_PUMPS",
+      "sha256": "a91ff13d96accd5523cdd728ee48b123a1c5907294cbe2665cc6fa5335d9bec4"
+    },
+    {
+      "actors": [
+        {
+          "affix": "",
+          "brood_generation": 1,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "hazard_speed_factor": 1.0,
+          "health": 37.0,
+          "max_health": 37.0,
+          "on_screen": true,
+          "position": [
+            9729.76,
+            -2669.23
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 37.0,
+            "max_health": 37.0
+          },
+          "screen": [
+            1018.56,
+            548.24
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/sensor_cluster/Eyes",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/sensor_cluster/Eyes/EyesDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/fins/Fins",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/fins/Fins/FinsDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/mast/Mast",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/mast/Mast/MastDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/thruster/Thruster",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/thruster/Thruster/ThrusterDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/ScanArc",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/ScanArc/ScanArcDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/Gun",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/Gun/GunDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Crescent",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Crescent/CrescentDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Glow",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Glow/GlowDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        },
+        {
+          "affix": "",
+          "brood_generation": 1,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "hazard_speed_factor": 1.0,
+          "health": 37.0,
+          "max_health": 37.0,
+          "on_screen": true,
+          "position": [
+            9697.76,
+            -2637.23
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 37.0,
+            "max_health": 37.0
+          },
+          "screen": [
+            960.0,
+            606.8
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/sensor_cluster/Eyes",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/sensor_cluster/Eyes/EyesDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/fins/Fins",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/fins/Fins/FinsDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/mast/Mast",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/mast/Mast/MastDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/thruster/Thruster",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/thruster/Thruster/ThrusterDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/ScanArc",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/ScanArc/ScanArcDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/Gun",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/emitter/Gun/GunDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Crescent",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Crescent/CrescentDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Glow",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueLayerRig/chassis/Glow/GlowDetail",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        9697.76,
+        -2673.73
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/03_op6_brooding_hatched.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "BROODING_HATCHED",
+      "mission": "MIS_CH01_06",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 96.0,
+          "on_screen": false,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            8995.52,
+            -2499.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            -325.1,
+            858.21
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": false,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            8925.52,
+            -2444.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            -453.2,
+            958.86
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": false,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            8860.52,
+            -2559.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            -572.15,
+            748.41
+          ]
+        }
+      ],
+      "room": "R04_PUMPS",
+      "sha256": "4af2aecf237b1466b6ca47b3ec75c3ffc87e576e0ffb5fa6adf88ac033bdd68a"
+    },
+    {
+      "actors": [
+        {
+          "affix": "BEACON",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "hazard_speed_factor": 1.0,
+          "health": 246.0,
+          "max_health": 246.0,
+          "on_screen": true,
+          "position": [
+            -6354.42,
+            3588.08
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 246.0,
+            "max_health": 246.0
+          },
+          "screen": [
+            723.44,
+            538.58
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        },
+        {
+          "affix": "",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "hazard_speed_factor": 1.0,
+          "health": 246.0,
+          "max_health": 246.0,
+          "on_screen": true,
+          "position": [
+            -6237.38,
+            3644.54
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 246.0,
+            "max_health": 246.0
+          },
+          "screen": [
+            937.62,
+            641.9
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        },
+        {
+          "affix": "OVERCHARGED",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "hazard_speed_factor": 1.0,
+          "health": 218.0,
+          "max_health": 218.0,
+          "on_screen": true,
+          "position": [
+            -6120.34,
+            3569.26
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 0.9,
+            "enemy_damage_multiplier": 1.2,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.05,
+            "health": 218.0,
+            "max_health": 218.0
+          },
+          "screen": [
+            1151.8,
+            504.14
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        },
+        {
+          "affix": "",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "hazard_speed_factor": 1.0,
+          "health": 164.0,
+          "max_health": 164.0,
+          "on_screen": true,
+          "position": [
+            -6103.62,
+            3663.36
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 164.0,
+            "max_health": 164.0
+          },
+          "screen": [
+            1182.4,
+            676.35
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        -6225.15,
+        3588.85
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/04_op9_beacon_links.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "BEACON_LINKED",
+      "mission": "MIS_CH01_09",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 96.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            -5735.78,
+            3465.75
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            1855.55,
+            314.72
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            -5805.78,
+            3520.75
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            1727.45,
+            415.37
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            -5870.78,
+            3405.75
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            1608.5,
+            204.92
+          ]
+        }
+      ],
+      "room": "R04_GALLERY",
+      "sha256": "496f514a048f2f884fe130a087c0fe02f22b44b21fd4f215df372865194701ef"
+    },
+    {
+      "actors": [
+        {
+          "affix": "",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "hazard_speed_factor": 1.0,
+          "health": 246.0,
+          "max_health": 246.0,
+          "on_screen": true,
+          "position": [
+            -6237.38,
+            3644.54
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 246.0,
+            "max_health": 246.0
+          },
+          "screen": [
+            937.62,
+            641.9
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        },
+        {
+          "affix": "OVERCHARGED",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "hazard_speed_factor": 1.0,
+          "health": 218.0,
+          "max_health": 218.0,
+          "on_screen": true,
+          "position": [
+            -6120.34,
+            3569.26
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 0.9,
+            "enemy_damage_multiplier": 1.2,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.05,
+            "health": 218.0,
+            "max_health": 218.0
+          },
+          "screen": [
+            1151.8,
+            504.14
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        },
+        {
+          "affix": "",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "hazard_speed_factor": 1.0,
+          "health": 164.0,
+          "max_health": 164.0,
+          "on_screen": true,
+          "position": [
+            -6103.62,
+            3663.36
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 164.0,
+            "max_health": 164.0
+          },
+          "screen": [
+            1182.4,
+            676.35
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        -6225.15,
+        3588.85
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/05_op9_beacon_released.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "BEACON_RELEASED",
+      "mission": "MIS_CH01_09",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 96.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            -5735.78,
+            3465.75
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            1855.55,
+            314.72
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            -5805.78,
+            3520.75
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            1727.45,
+            415.37
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            -5870.78,
+            3405.75
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            1608.5,
+            204.92
+          ]
+        }
+      ],
+      "room": "R04_GALLERY",
+      "sha256": "a5230b889c0e48c522bf31a481e783b12847d65ccce8285c5b37cfe0349ef50e"
+    },
+    {
+      "actors": [
+        {
+          "affix": "",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "hazard_speed_factor": 1.0,
+          "health": 196.0,
+          "max_health": 196.0,
+          "on_screen": true,
+          "position": [
+            4348.68,
+            -661.1
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 196.0,
+            "max_health": 196.0
+          },
+          "screen": [
+            1289.4,
+            507.06
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        4168.68,
+        -643.1
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/06_spore_cloud_idle.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "SPORE_CLOUD_IDLE",
+      "hazard": {
+        "discharges": 0,
+        "draw_commands_max": 2,
+        "hazard": "SPORE_CLOUD",
+        "mode": "continuous",
+        "phase": "IDLE",
+        "phase_left": 3.75,
+        "position": [
+          4168.68017578125,
+          -661.099975585938
+        ],
+        "radius": 70.0,
+        "shape": "ellipse",
+        "slow_actor_count": 0
+      },
+      "hazard_on_screen": true,
+      "hazard_screen": [
+        960.0,
+        507.06
+      ],
+      "mission": "MIS_CH01_06",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 96.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            3988.68,
+            -661.1
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            630.6,
+            507.06
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            3881.32,
+            -370.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            434.13,
+            1038.22
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            3816.32,
+            -485.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            315.18,
+            827.77
+          ]
+        }
+      ],
+      "room": "R02_GALLERY",
+      "sha256": "570de37183b06e231a372af91fe70a65e3ed56258dcf9f3dab0739aa65ac3e91"
+    },
+    {
+      "actors": [
+        {
+          "affix": "",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "hazard_speed_factor": 1.0,
+          "health": 196.0,
+          "max_health": 196.0,
+          "on_screen": true,
+          "position": [
+            4348.68,
+            -661.1
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 196.0,
+            "max_health": 196.0
+          },
+          "screen": [
+            1289.4,
+            507.06
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        4168.68,
+        -643.1
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/06_spore_cloud_telegraph.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "SPORE_CLOUD_TELEGRAPH",
+      "hazard": {
+        "discharges": 0,
+        "draw_commands_max": 2,
+        "hazard": "SPORE_CLOUD",
+        "mode": "continuous",
+        "phase": "TELEGRAPH",
+        "phase_left": 0.54,
+        "position": [
+          4168.68017578125,
+          -661.099975585938
+        ],
+        "radius": 70.0,
+        "shape": "ellipse",
+        "slow_actor_count": 0
+      },
+      "hazard_on_screen": true,
+      "hazard_screen": [
+        960.0,
+        507.06
+      ],
+      "mission": "MIS_CH01_06",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 96.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            3988.68,
+            -661.1
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            630.6,
+            507.06
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            3881.32,
+            -370.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            434.13,
+            1038.22
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            3816.32,
+            -485.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            315.18,
+            827.77
+          ]
+        }
+      ],
+      "room": "R02_GALLERY",
+      "sha256": "6eaae217b0b2f11364bd905652f8a982961c8d989cba0e7ca44d4f3d64cee72c"
+    },
+    {
+      "actors": [
+        {
+          "affix": "",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "hazard_speed_factor": 1.0,
+          "health": 195.592,
+          "max_health": 196.0,
+          "on_screen": true,
+          "position": [
+            4231.68,
+            -674.57
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 195.592,
+            "max_health": 196.0
+          },
+          "screen": [
+            1075.29,
+            482.4
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        4168.68,
+        -643.1
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/06_spore_cloud_active.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "SPORE_CLOUD_ACTIVE",
+      "hazard": {
+        "discharges": 1,
+        "draw_commands_max": 2,
+        "hazard": "SPORE_CLOUD",
+        "mode": "continuous",
+        "phase": "DISCHARGE",
+        "phase_left": 2.949,
+        "position": [
+          4168.68017578125,
+          -661.099975585938
+        ],
+        "radius": 70.0,
+        "shape": "ellipse",
+        "slow_actor_count": 0
+      },
+      "hazard_on_screen": true,
+      "hazard_screen": [
+        960.0,
+        507.06
+      ],
+      "mission": "MIS_CH01_06",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 95.796,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            4105.68,
+            -674.57
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            844.71,
+            482.4
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            3881.32,
+            -370.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            434.13,
+            1038.22
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            3816.32,
+            -485.85
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            315.18,
+            827.77
+          ]
+        }
+      ],
+      "room": "R02_GALLERY",
+      "sha256": "01492d943896ed2fe68661e39a80d312970f57669bf8270d5724a7b8cabcf7b4"
+    },
+    {
+      "actors": [
+        {
+          "affix": "",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "hazard_speed_factor": 1.0,
+          "health": 178.0,
+          "max_health": 178.0,
+          "on_screen": true,
+          "position": [
+            -685.88,
+            1434.08
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 178.0,
+            "max_health": 178.0
+          },
+          "screen": [
+            1289.4,
+            507.06
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        -865.88,
+        1452.08
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/07_frost_plate_idle.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "FROST_PLATE_IDLE",
+      "hazard": {
+        "discharges": 0,
+        "draw_commands_max": 2,
+        "hazard": "FROST_PLATE",
+        "mode": "slow",
+        "phase": "IDLE",
+        "phase_left": 3.75,
+        "position": [
+          -865.880004882813,
+          1434.07995605469
+        ],
+        "radius": 70.0,
+        "shape": "ellipse",
+        "slow_actor_count": 0
+      },
+      "hazard_on_screen": true,
+      "hazard_screen": [
+        960.0,
+        507.06
+      ],
+      "mission": "MIS_CH01_07",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 96.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            -1045.88,
+            1434.08
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            630.6,
+            507.06
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            -618.2,
+            1526.72
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            1413.25,
+            676.59
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            -683.2,
+            1411.72
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            1294.3,
+            466.14
+          ]
+        }
+      ],
+      "room": "R02_FREEZE",
+      "sha256": "9bf17265eaaf41d784fcf4f08558cdf855dd5f66798b4632b29bd785427132c3"
+    },
+    {
+      "actors": [
+        {
+          "affix": "",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "hazard_speed_factor": 0.7,
+          "health": 178.0,
+          "max_health": 178.0,
+          "on_screen": true,
+          "position": [
+            -802.88,
+            1420.6
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 178.0,
+            "max_health": 178.0
+          },
+          "screen": [
+            1075.29,
+            482.4
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        -865.88,
+        1452.08
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/07_frost_plate_active.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "FROST_PLATE_ACTIVE",
+      "hazard": {
+        "discharges": 0,
+        "draw_commands_max": 2,
+        "hazard": "FROST_PLATE",
+        "mode": "slow",
+        "phase": "DISCHARGE",
+        "phase_left": 0.0,
+        "position": [
+          -865.880004882813,
+          1434.07995605469
+        ],
+        "radius": 70.0,
+        "shape": "ellipse",
+        "slow_actor_count": 2
+      },
+      "hazard_on_screen": true,
+      "hazard_screen": [
+        960.0,
+        507.06
+      ],
+      "mission": "MIS_CH01_07",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 0.7,
+          "health": 96.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            -928.88,
+            1420.6
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            844.71,
+            482.4
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            -618.2,
+            1526.72
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            1413.25,
+            676.59
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            -683.2,
+            1411.72
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            1294.3,
+            466.14
+          ]
+        }
+      ],
+      "room": "R02_FREEZE",
+      "sha256": "e4c3a5f60b700c20f0be381609626d12ee50593bf00b5a8ef17c5a6b8f6f4833"
+    },
+    {
+      "actors": [
+        {
+          "affix": "",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "hazard_speed_factor": 1.0,
+          "health": 178.0,
+          "max_health": 178.0,
+          "on_screen": true,
+          "position": [
+            -802.88,
+            1420.6
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 178.0,
+            "max_health": 178.0
+          },
+          "screen": [
+            1075.29,
+            482.4
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        -865.88,
+        1452.08
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/07_frost_plate_cleared.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "FROST_PLATE_CLEARED",
+      "mission": "MIS_CH01_07",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 96.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            -928.88,
+            1420.6
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            844.71,
+            482.4
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            -618.2,
+            1526.72
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            1413.25,
+            676.59
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            -683.2,
+            1411.72
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            1294.3,
+            466.14
+          ]
+        }
+      ],
+      "room": "R02_FREEZE",
+      "sha256": "4e675d6ffa2310fc0866341c052765b82615ad9be240fecf9e0f36e5358cff57"
+    },
+    {
+      "actors": [
+        {
+          "affix": "",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "hazard_speed_factor": 1.0,
+          "health": 210.0,
+          "max_health": 210.0,
+          "on_screen": true,
+          "position": [
+            4612.67,
+            -452.8
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 210.0,
+            "max_health": 210.0
+          },
+          "screen": [
+            1331.76,
+            507.06
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        4409.52,
+        -434.8
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/08_rail_lane_idle.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "RAIL_LANE_IDLE",
+      "hazard": {
+        "discharges": 0,
+        "draw_commands_max": 2,
+        "hazard": "RAIL_LANE",
+        "mode": "burst",
+        "phase": "IDLE",
+        "phase_left": 2.4,
+        "position": [
+          4409.52001953125,
+          -452.799987792969
+        ],
+        "radius": 93.145048178,
+        "shape": "band",
+        "slow_actor_count": 0
+      },
+      "hazard_on_screen": true,
+      "hazard_screen": [
+        960.0,
+        507.06
+      ],
+      "mission": "MIS_CH01_08",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 96.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            4206.38,
+            -452.8
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            588.24,
+            507.06
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            3966.98,
+            -353.45
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            150.15,
+            688.87
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            3901.98,
+            -468.45
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            31.2,
+            478.42
+          ]
+        }
+      ],
+      "room": "R02_MARSHALLING",
+      "sha256": "4d8310175380502a730df1e7b54d3bed94d1968c9216ed71a2c53f67d6ea8013"
+    },
+    {
+      "actors": [
+        {
+          "affix": "",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "hazard_speed_factor": 1.0,
+          "health": 210.0,
+          "max_health": 210.0,
+          "on_screen": true,
+          "position": [
+            4612.67,
+            -452.8
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 210.0,
+            "max_health": 210.0
+          },
+          "screen": [
+            1331.76,
+            507.06
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        4409.52,
+        -434.8
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/08_rail_lane_telegraph.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "RAIL_LANE_TELEGRAPH",
+      "hazard": {
+        "discharges": 0,
+        "draw_commands_max": 2,
+        "hazard": "RAIL_LANE",
+        "mode": "burst",
+        "phase": "TELEGRAPH",
+        "phase_left": 0.63,
+        "position": [
+          4409.52001953125,
+          -452.799987792969
+        ],
+        "radius": 93.145048178,
+        "shape": "band",
+        "slow_actor_count": 0
+      },
+      "hazard_on_screen": true,
+      "hazard_screen": [
+        960.0,
+        507.06
+      ],
+      "mission": "MIS_CH01_08",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 96.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            4206.38,
+            -452.8
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            588.24,
+            507.06
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            3966.98,
+            -353.45
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            150.15,
+            688.87
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            3901.98,
+            -468.45
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            31.2,
+            478.42
+          ]
+        }
+      ],
+      "room": "R02_MARSHALLING",
+      "sha256": "14759d69c98b406c5a4d66c4e938fe8f0df44fcfb7b9d55622de3bdd036c9950"
+    },
+    {
+      "actors": [
+        {
+          "affix": "",
+          "brood_generation": 0,
+          "brood_hatch_left": 0.0,
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "hazard_speed_factor": 1.0,
+          "health": 186.0,
+          "max_health": 210.0,
+          "on_screen": true,
+          "position": [
+            4470.97,
+            -500.96
+          ],
+          "run_modifiers": {
+            "enemy_attack_interval_multiplier": 1.0,
+            "enemy_damage_multiplier": 1.0,
+            "enemy_health_multiplier": 1.0,
+            "enemy_speed_multiplier": 1.0,
+            "health": 186.0,
+            "max_health": 210.0
+          },
+          "screen": [
+            1072.45,
+            418.92
+          ],
+          "sprites": [
+            {
+              "material_path": "",
+              "material_present": false,
+              "modulate": "ffffffff",
+              "node": "HighResVisualRoot/UniqueMasterSprite",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            },
+            {
+              "material_path": "",
+              "material_present": true,
+              "modulate": "ffffffff",
+              "node": "AuthoredMachine/AuthoredMachinePixels",
+              "note": "Common weathering is retained; compare with the same plain robot.",
+              "self_modulate": "ffffffff"
+            }
+          ]
+        }
+      ],
+      "actual_size": [
+        1920,
+        1080
+      ],
+      "camera_position": [
+        4409.52,
+        -434.8
+      ],
+      "camera_zoom": [
+        1.22,
+        1.22
+      ],
+      "capture": "res://.cache/diag/expansion_item1_20261003/capture_native_v2/08_rail_lane_active.png",
+      "controlled_runtime_fixture": true,
+      "fixture": "RAIL_LANE_ACTIVE",
+      "hazard": {
+        "discharges": 1,
+        "draw_commands_max": 2,
+        "hazard": "RAIL_LANE",
+        "mode": "burst",
+        "phase": "DISCHARGE",
+        "phase_left": 0.249,
+        "position": [
+          4409.52001953125,
+          -452.799987792969
+        ],
+        "radius": 93.145048178,
+        "shape": "band",
+        "slow_actor_count": 0
+      },
+      "hazard_on_screen": true,
+      "hazard_screen": [
+        960.0,
+        507.06
+      ],
+      "mission": "MIS_CH01_08",
+      "native_capture": true,
+      "operators": [
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 82.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_01",
+          "position": [
+            4334.12,
+            -432.54
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            822.02,
+            544.13
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 138.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_02",
+          "position": [
+            3966.98,
+            -353.45
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            150.15,
+            688.87
+          ]
+        },
+        {
+          "hazard_speed_factor": 1.0,
+          "health": 112.0,
+          "on_screen": true,
+          "operator_id": "CHR_PROTO_03",
+          "position": [
+            3901.98,
+            -468.45
+          ],
+          "run_modifiers": {
+            "incoming_damage_multiplier": 1.0,
+            "operator_speed_multiplier": 1.0,
+            "primary_damage_multiplier": 1.0
+          },
+          "screen": [
+            31.2,
+            478.42
+          ]
+        }
+      ],
+      "room": "R02_MARSHALLING",
+      "sha256": "3e899f27f96a93f481b95591ae5a2713f85edc9655b4cf6b6fa29051a9eb32e6"
+    }
+  ],
+  "skipped_fixtures": [],
+  "staging_note": "Real mission rooms and runtime controllers. Actors are frozen; hazard phases and hatch timers are held for inspection. BROODING parent damage is a capture fixture, not player damage. No art or mission data is changed.",
+  "status": "PASS_TECHNICAL_ONLY",
+  "visual_approval": false
+}

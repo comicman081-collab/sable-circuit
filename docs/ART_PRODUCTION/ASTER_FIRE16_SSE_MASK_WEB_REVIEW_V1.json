@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "reviewed_at_utc": "2026-08-30T10:45:04.7156064Z",
+  "review_session": {
+    "title": "V6 독립 검수 판정",
+    "url": "https://chatgpt.com/c/6a93c84f-fb1c-83e8-9d88-959e708b2463",
+    "reused_existing_conversation": true
+  },
+  "submitted_evidence": [
+    {
+      "path": "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_sse_semantic_masks_v1/manual_fallback_v1/ASTER_FIRE_SE_THREE_PART_SOURCE_MASK_REVIEW_V1_1920X1440.png",
+      "sha256": "459bea0bab586da2bdc1f1978702f2c39bf7ed9f48f9e0e69611cf9027ad64af"
+    },
+    {
+      "path": "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_sse_rigid_cluster_preview_v1/ASTER_FIRE_SSE_RIGID_CLUSTER_PREVIEW_V1_REVIEW_1920X1440.png",
+      "sha256": "c68e532c2f6d279c8a219f50620d54c0fb1b9241d3a393cf3fea840f676ba930"
+    }
+  ],
+  "verdict": "FIRE16_SSE_MASK_REVIEW: PASS_TO_CONTINUE",
+  "scope": "three SE source masks and rigid-cluster structural geometry only",
+  "assessment": {
+    "three_masks_are_suitable_for_remaining_manual_mask_authoring": "PASS",
+    "identity_pollution_cut_hands_cut_rifle_double_muzzle_or_obvious_halo": "PASS_NONE_OBSERVED",
+    "rigid_cluster_is_valid_structural_only_evidence": "PASS",
+    "proceed_to_remaining_thirteen_masks": true
+  },
+  "non_blockers_to_recheck": [
+    "cover the proximal trigger-forearm cut with the adjacent upper-arm or torso seam mask",
+    "resolve ownership of the small dark flap or strap below the receiver",
+    "recheck hand-to-rifle occlusion in the complete body composite",
+    "inspect for green pinholes and edge fringe after all seventeen masks exist"
+  ],
+  "decision": {
+    "keep_manual_three_mask_v1": true,
+    "keep_rigid_cluster_preview_v1": true,
+    "author_remaining_thirteen_masks": true,
+    "contract_complete": false,
+    "runtime_promotion_allowed": false,
+    "visual_pass_claimed": false
+  }
+}

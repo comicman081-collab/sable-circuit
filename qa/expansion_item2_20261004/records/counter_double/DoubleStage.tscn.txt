@@ -1,0 +1,87 @@
+[gd_scene load_steps=16 format=3]
+
+[ext_resource type="Script" path="res://.cache/diag/expansion_item2_20261004/counter_double/double_stage.gd" id="1_stage"]
+[ext_resource type="Script" path="res://scripts/actors/squad_controller.gd" id="2_squad"]
+[ext_resource type="Script" path="res://scripts/ui/story_stage_hud.gd" id="3_hud"]
+[ext_resource type="Script" path="res://scripts/missions/stage01_environment_director.gd" id="4_env"]
+[ext_resource type="Script" path="res://scripts/missions/site7_facility_architecture.gd" id="5_arch"]
+[ext_resource type="Script" path="res://scripts/missions/site7_depth_pass.gd" id="6_depth"]
+[ext_resource type="Script" path="res://scripts/ui/cinematic_field_overlay.gd" id="7_overlay"]
+[ext_resource type="Script" path="res://scripts/missions/site7_lighting_rig.gd" id="8_lighting"]
+[ext_resource type="Script" path="res://scripts/missions/site7_surface_detail.gd" id="9_surface"]
+[ext_resource type="Script" path="res://scripts/missions/site7_room_art_layer.gd" id="10_room_art"]
+[ext_resource type="Script" path="res://scripts/missions/site7_prop_art_layer.gd" id="11_prop_art"]
+[ext_resource type="Script" path="res://scripts/missions/squad_camera_presentation.gd" id="12_camera"]
+[ext_resource type="Script" path="res://scripts/missions/boss_arena_presentation.gd" id="13_boss_arena"]
+[ext_resource type="Script" path="res://scripts/missions/site7_battlefield.gd" id="14_battlefield"]
+[ext_resource type="Script" path="res://scripts/missions/site7_environment_props.gd" id="15_environment_props"]
+
+[node name="StoryStage01" type="Node2D"]
+script = ExtResource("1_stage")
+
+[node name="WorldBackground" type="CanvasLayer" parent="."]
+layer = -100
+
+[node name="ClearColor" type="ColorRect" parent="WorldBackground"]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.006, 0.012, 0.018, 1)
+mouse_filter = 2
+
+[node name="FacilityArchitecture" type="Node2D" parent="."]
+visible = false
+script = ExtResource("5_arch")
+
+[node name="RoomArtLayer" type="Node2D" parent="."]
+script = ExtResource("10_room_art")
+
+[node name="PropArtLayer" type="Node2D" parent="."]
+visible = false
+script = ExtResource("11_prop_art")
+
+[node name="EnvironmentProps" type="Node2D" parent="."]
+script = ExtResource("15_environment_props")
+
+[node name="DepthPass" type="Node2D" parent="."]
+visible = false
+script = ExtResource("6_depth")
+
+[node name="SurfaceDetail" type="Node2D" parent="."]
+visible = false
+script = ExtResource("9_surface")
+
+[node name="EnvironmentDirector" type="Node2D" parent="."]
+visible = false
+script = ExtResource("4_env")
+
+[node name="BossArenaPresentation" type="Node2D" parent="."]
+script = ExtResource("13_boss_arena")
+
+[node name="LightingRig" type="Node2D" parent="."]
+script = ExtResource("8_lighting")
+
+[node name="SquadController" type="Node2D" parent="."]
+script = ExtResource("2_squad")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(410, 390)
+zoom = Vector2(1.46, 1.46)
+position_smoothing_enabled = false
+
+[node name="SquadCameraPresentation" type="Node" parent="."]
+script = ExtResource("12_camera")
+
+[node name="Battlefield" type="Node" parent="."]
+script = ExtResource("14_battlefield")
+
+[node name="FieldOverlay" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="Vignette" type="Control" parent="FieldOverlay"]
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+script = ExtResource("7_overlay")
+
+[node name="StoryStageHUD" type="CanvasLayer" parent="."]
+script = ExtResource("3_hud")

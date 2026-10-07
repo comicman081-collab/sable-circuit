@@ -1,0 +1,7 @@
+Independent Ponytail FULL: **PASS_SAMPLED_NUMERIC_PREREQUISITES_ONLY**; native motion remains HOLD. Exact data, source code and input hashes are in the adjacent JSON and `native_dense_audit_r03/AUDIT.json`.
+
+The basis transfer `P_old × inverse(R_old) × R_native` preserves deformation to5.96e-8 in the independently recomposed matrices. The target curve has97 separately solved samples from49 measured references. Untouched root/upper matrices and hip positions match the independently reconstructed rebased curve exactly; lengths differ by at most9.53e-8 m, with no unreachable pose or knee-pole flip.
+
+All592 unused opaque source sole points were evaluated against the actual native neutral floor. Quarter, half and threequarter local TRS interpolation was also evaluated in every support interval. Worst right clearance is now **+0.881 mm** at19→20 halfway, with anchor chord deviation0.583 mm. Worst left clearance is+1.547 mm, deviation0.108 mm. The prior49-key midpoint penetration is absent at these tested times.
+
+This remains sampled numerical evidence. The entire visible sole is not rigidly stationary: left low-point speed RMS0.01387 m/s and right0.000709 m/s remain. Endpoint equality is exact, but high discrete knee accelerations around the existing transition samples44/20 still need native temporal inspection. No native pose execution, complete clip, other view, combat, runtime, HTML or production is approved by this review.

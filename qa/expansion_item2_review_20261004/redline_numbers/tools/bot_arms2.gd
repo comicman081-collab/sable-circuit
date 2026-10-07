@@ -1,0 +1,325 @@
+extends SceneTree
+## Full route integration bot. No health/ammo/damage cheats, enemy deletes,
+## teleportation, debug_finish(), or forced mission advancement. This is a
+## technical playthrough, not a human-input or artistic motion approval.
+const STAGE := preload("res://scenes/mission/StoryStage01.tscn")
+var OUT := "res://qa/stage1_implementation_20260913"
+var mission_id := "MIS_CH01_01"
+var expected_hostiles := 0
+const NAV := preload("res://scripts/combat/cover_navigation.gd")
+var nav := NAV.new()
+var stage: StoryStage01
+var result: Dictionary = {}
+var trace: Array[Dictionary] = []
+## Damage each operator took, by room step and source, for balance diagnosis.
+var damage_by_source: Dictionary = {}
+var skill_casts: Dictionary = {}
+var failures: Array[String] = []
+var key_down := false
+var tick := 0
+var last_step := -1
+var checked_damage := false
+var watched_enemies: Dictionary = {}
+var attack_trace: Array[Dictionary] = []
+var emission_trace: Array[Dictionary] = []
+var flank_goal := Vector2.INF
+var flank_target := 0
+var flank_plans := 0
+var returned_from_branch := [false, false]
+
+func firing_lane_goal(active: OperatorActor, enemy: EnemyActor) -> Vector2:
+    # Test-input policy only: walk around real cover instead of endlessly
+    # orbiting one side of a stationary mortar. Never move actors by teleport.
+    var obstacles := NAV.ground_obstacles(active)
+    var best := Vector2.INF
+    var best_cost := INF
+    var runtime := active.get_node("MotionLabCharacterRuntime") as MotionLabCharacterRuntime
+    for radius in [160.0,220.0,280.0,360.0]:
+        for index in range(32):
+            var point: Vector2 = enemy.global_position+Vector2.from_angle(index*TAU/32.0)*float(radius)
+            if not NAV._on_floor(active,point) or not NAV._clear_ground(active,point,point,obstacles): continue
+            # Translate the target into the present root frame, solve the same
+            # authored socket, then translate that socket to the proposed root.
+            # No actor transform, animation or world state is mutated here.
+            var shift := point-active.global_position
+            var solution := runtime.resolve_pointer_aim(enemy.get_combat_aim_point()-shift)
+            if not bool(solution.converges): continue
+            var sector: int = solution.direction
+            var action := "walk" if runtime._moving else "idle"
+            var clip: Dictionary = runtime._clips[runtime.DIRECTIONS[sector]][action]
+            var frame_index := 0 if action=="idle" else runtime._frame_for_phase(clip,runtime._render_phase(sector))
+            var muzzle := runtime.to_global(runtime.sprite.position+(runtime._point(clip.muzzles[frame_index])-runtime._cell_size*0.5)*runtime._display_scale)+shift
+            if not NAV.clear_shot(self,muzzle,enemy): continue
+            var path := nav._plan(active,active.global_position,point,obstacles)
+            if path.is_empty(): continue
+            var cost := 0.0
+            var previous := active.global_position
+            for waypoint in path:
+                cost += previous.distance_to(waypoint)
+                previous=waypoint
+            if cost<best_cost: best=point; best_cost=cost
+    flank_plans += 1
+    return best
+
+func track_emissions() -> void:
+    for node in get_nodes_in_group("m3_enemies"):
+        if not node is EnemyActor or watched_enemies.has(node.get_instance_id()):continue
+        watched_enemies[node.get_instance_id()]=node.tactics.get_instance_id()
+        node.projectile_emitted.connect(func(event: Dictionary) -> void:emission_trace.append(event))
+        node.tactics.attack_started.connect(func(event: Dictionary) -> void:attack_trace.append(event))
+
+func check_emissions() -> void:
+    var ordinals: Dictionary = {}
+    var attacks: Dictionary = {}
+    for event in attack_trace:attacks[str(event.actor_id)+"/"+str(event.attack_serial)]=event
+    check(not emission_trace.is_empty(),"Observe actual hostile projectiles during the operation")
+    for event in emission_trace:
+        var key := str(event.actor_id)+"/"+str(event.attack_serial)
+        check(event.owner_id==watched_enemies.get(event.actor_id),"Every real projectile has the sole tactics owner")
+        check(attacks.has(key),"Projectile belongs to an observed attack, not a legacy timer")
+        check(event.ordinal==int(ordinals.get(key,0)),"No duplicated/skipped shot ordinal within the actor attack")
+        ordinals[key]=int(ordinals.get(key,0))+1
+        if not attacks.has(key):continue
+        var attack: Dictionary=attacks[key]
+        var expected := 3 if event.enemy_id=="ENM_SITE7_RIFLE_01" else 1
+        if event.enemy_id == "BOSS_SITE7_ANCHOR_01":
+            expected=0 if attack.phase>=2 and attack.attack_serial%2==0 else (3 if attack.phase==1 else 5)
+        elif event.enemy_id in ["BOSS_SITE7_RELAY_01", "BOSS_SITE7_FORGE_01"]:
+            expected=2
+        elif event.enemy_id == "BOSS_SITE7_CARRIER_01":
+            expected=2 if attack.phase==1 else 0
+        elif event.enemy_id in ["BOSS_SITE7_REMNANT_01", "BOSS_SITE7_GANTRY_01", "BOSS_SITE7_ARCHIVE_01"]:
+            expected=0
+        elif event.enemy_id == "BOSS_SITE7_AERATOR_01":
+            expected=3
+        elif event.enemy_id in ["BOSS_SITE7_CRYO_01", "BOSS_SITE7_ORIGIN_01"]:
+            expected=2
+        elif event.enemy_id=="ENM_SITE7_ABERRANT_01":expected=0
+        # Death/stagger may interrupt a burst. Complete counts are separately
+        # tested; the full-route trace must never exceed its allowed fan.
+        check(int(ordinals[key])<=expected,"No additional untelegraphed projectile in live encounter")
+
+func _init() -> void:
+    call_deferred("run")
+
+func key(code: Key, pressed: bool) -> void:
+    var event := InputEventKey.new()
+    event.keycode = code
+    event.physical_keycode = code
+    event.pressed = pressed
+    Input.parse_input_event(event)
+
+## Skills through real key presses, as a player uses them: Q whenever it has a target, ROOK's
+## guard and MICA's relay step on cooldown (ASTER's E dashes at the target, so it is skipped),
+## and the squad ultimate once charged. The skill controller applies every cooldown and cost.
+func skills(fighting: bool) -> void:
+    var active := stage.squad.get_active_operator()
+    var phase := tick % 30
+    key(KEY_Q, fighting and phase < 3)
+    key(KEY_E, fighting and active != null and active.operator_id != "CHR_PROTO_01" and phase >= 10 and phase < 13)
+    key(KEY_X, fighting and phase >= 20 and phase < 23)
+
+func check(condition: bool, note: String) -> void:
+    if not condition:
+        failures.append(note)
+        push_error(note)
+
+func pulse(code: Key) -> void:
+    key(code, tick % 30 < 3)
+
+
+## Claude review helper (REDLINE number study): the contract arm and the upgrade level of this playthrough.
+##   --contract=neutral | default:<run id> | redline | redline:<hp>,<damage>,<speed>,<gap>
+##   --damage=<armory damage multiplier>   (snapshot key damage_multiplier, clamped 1..2 by configure_campaign)
+## Only enemy stats of the REDLINE contract are overridden; ids, boss exemption and rewards stay the shipped ones.
+func _arm_contract() -> Dictionary:
+    for arg in OS.get_cmdline_user_args():
+        if arg.begins_with("--contract="):
+            var spec := arg.get_slice("=", 1)
+            if spec == "neutral": return {}
+            if spec.begins_with("redline"):
+                var contract := RunContract.redline(mission_id + "-TECHNICAL-PLAYTHROUGH")
+                if spec.begins_with("redline:"):
+                    var v := spec.get_slice(":", 1).split(",")
+                    contract["enemy_health_multiplier"] = float(v[0])
+                    contract["enemy_damage_multiplier"] = float(v[1])
+                    contract["enemy_speed_multiplier"] = float(v[2])
+                    contract["enemy_attack_interval_multiplier"] = float(v[3])
+                return contract
+            if spec.begins_with("default:"): return RunContract.build(spec.get_slice(":", 1))
+    return {}
+
+func _arm_snapshot() -> Dictionary:
+    for arg in OS.get_cmdline_user_args():
+        if arg.begins_with("--damage="): return {"damage_multiplier": float(arg.get_slice("=", 1))}
+    return {}
+
+func run() -> void:
+    for arg in OS.get_cmdline_user_args():
+        if arg.begins_with("--mission="): mission_id = arg.get_slice("=",1)
+        if arg.begins_with("--out="): OUT = arg.get_slice("=",1)
+    DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(OUT))
+    stage = STAGE.instantiate()
+    stage.mission_id = mission_id
+    root.add_child(stage)
+    stage.configure_campaign(_arm_snapshot(), mission_id + "-TECHNICAL-PLAYTHROUGH", _arm_contract())
+    for actor in stage.squad.operators:
+        actor.damage_taken.connect(func(who: OperatorActor, applied: float, source: String) -> void:
+            var slot := "%d:%s:%s" % [stage.current_step, who.operator_id, source]
+            damage_by_source[slot] = float(damage_by_source.get(slot, 0.0)) + applied)
+        var skill_node := actor.get_node("SkillController") as OperatorSkillController
+        skill_node.skill_cast.connect(func(who: OperatorActor, slot: String, _skill: String, _hits: int) -> void:
+            var cast_key := who.operator_id + ":" + slot
+            skill_casts[cast_key] = int(skill_casts.get(cast_key, 0)) + 1)
+    for row: Dictionary in stage.main_route:
+        expected_hostiles += (row.get("encounter", []) as Array).size()
+        for wave: Array in row.get("reinforcements", []): expected_hostiles += wave.size()
+        # Each authored BROODING parent releases two ordinary, one-generation
+        # drones before its death decrements the room count. They also have to
+        # be defeated through real damage to finish the route.
+        var authored_waves: Array = [row.get("encounter", [])]
+        authored_waves.append_array(row.get("reinforcements", []))
+        for wave: Array in authored_waves:
+            for enemy_row: Dictionary in wave:
+                if str(enemy_row.get("affix", "")).strip_edges().to_upper() == "BROODING":
+                    expected_hostiles += int(EliteAffix.table()["BROODING"].get("brood_count", 2))
+    stage.stage_completed.connect(func(summary: Dictionary) -> void: result = summary)
+    for frame in range(36000):
+        tick = frame
+        await physics_frame
+        await process_frame
+        track_emissions()
+        if not result.is_empty(): break
+        var active := stage.squad.get_active_operator()
+        if active == null: continue
+        # Only the controlled operator is bot-driven. A revived former lead
+        # returns to the real follower AI instead of replaying stale input.
+        for member in stage.squad.operators:
+            if member != active and member._debug_drive: member.debug_stop_drive()
+        if last_step != stage.current_step or frame % 600 == 0:
+            last_step = stage.current_step
+            var event := {"tick":frame,"step":last_step,"wave":stage._wave_index,"remaining":stage.enemies_alive,
+                "position":[active.global_position.x,active.global_position.y],
+                "health":[],"ammo":active.ammo,"hostiles":[]}
+            for actor in stage.squad.operators: event.health.append(actor.health)
+            for node in get_nodes_in_group("m3_enemies"):
+                if node is EnemyActor: event.hostiles.append({"id":node.enemy_id,"hp":node.health,"position":node.global_position})
+            trace.append(event)
+            print("FULL_OPERATION_TRACE " + JSON.stringify(event))
+        if stage.squad.has_revivable_target_in_range():
+            skills(false)
+            active.debug_drive(Vector2.ZERO,Vector2.RIGHT)
+            key(KEY_C,false)
+            key(KEY_F,true)
+            continue
+        if stage.debug_extraction_active():
+            skills(false)
+            key(KEY_F,false)
+            active.debug_drive(Vector2.ZERO, Vector2.RIGHT)
+            pulse(KEY_C)
+            continue
+        key(KEY_C,false)
+        var enemy: EnemyActor = null
+        var nearest := INF
+        for node in get_nodes_in_group("m3_enemies"):
+            if not node is EnemyActor or node.health <= 0.0: continue
+            var dist := active.global_position.distance_squared_to(node.global_position)
+            if dist < nearest:
+                nearest = dist
+                enemy = node
+        if enemy:
+            key(KEY_F,false)
+            var toward := (enemy.global_position - active.global_position).normalized()
+            var dist := sqrt(nearest)
+            var desired := 290.0 if "ABERRANT" not in enemy.enemy_id else 350.0
+            var radial := clampf((dist - desired) / 85.0,-1.0,1.0)
+            var move := (toward * radial + toward.orthogonal() * (0.8 if (frame / 240) % 2 == 0 else -0.8)).limit_length(1.0)
+            var next := active.global_position + move * 45.0
+            if stage.has_battle_floor() and not stage.battlefield.contains(next):
+                move = (stage.battlefield.constrain(next) - active.global_position).normalized()
+            if not NAV.clear_shot(self,active._get_projectile_spawn_origin(),enemy):
+                if flank_target!=enemy.get_instance_id() or not flank_goal.is_finite() or active.global_position.distance_to(flank_goal)<14 or frame%240==0:
+                    flank_target=enemy.get_instance_id()
+                    flank_goal=firing_lane_goal(active,enemy)
+                if flank_goal.is_finite(): move=nav.direction(active,flank_goal,1.0/60.0)
+            else:
+                flank_goal=Vector2.INF
+            # Like a player reading the telegraph, step off a vent that is about to discharge.
+            var off_vent := ZoneHazard.steer(self, active.global_position, Vector2.INF, stage)
+            if off_vent.is_finite(): move = nav.direction(active, off_vent, 1.0/60.0)
+            # Aim through the same visible muzzle solver used by the app.
+            var runtime := active.get_node("MotionLabCharacterRuntime")
+            var solution: Dictionary = runtime.resolve_pointer_aim(enemy.get_combat_aim_point())
+            var aim: Vector2 = solution.get("aim", (enemy.get_combat_aim_point() - active.get_combat_aim_point()).normalized())
+            active.debug_drive(move, aim)
+            # Commit the current authored facing/muzzle before checking cover,
+            # as a real pointer update does. Old muzzle state can falsely veto
+            # every shot after a turn even though the new lane is clear.
+            active._pointer_target=enemy.get_combat_aim_point()
+            active._resolve_pointer_target()
+            active._debug_run = false
+            if active.ammo <= 0 and not active.is_reloading(): active.debug_begin_reload()
+            if NAV.clear_shot(self,active._get_projectile_spawn_origin(),enemy): active._try_fire(false)
+            skills(true)
+        else:
+            skills(false)
+            var row: Dictionary = stage.main_route[stage.current_step]
+            var goal := Vector2(float(row.x),float(row.y))
+            # Each optional room branches from its parent room on the physical map
+            # (StoryStage01.branch_parent). Take a branch once its parent room is
+            # done, then walk back to the parent; the compressed legacy coordinates
+            # accidentally allowed a diagonal shortcut.
+            for branch in range(mini(2, stage.optional_rooms.size())):
+                var parent: Dictionary = stage.branch_parent(branch)
+                var parent_step := 0
+                for i in range(stage.main_route.size()):
+                    if str(stage.main_route[i].id) == str(parent.id): parent_step = i
+                if stage.current_step <= maxi(1, parent_step): continue
+                var found: bool = stage.optional_recovered(branch)
+                if not found:
+                    goal = Vector2(float(stage.optional_rooms[branch].x),float(stage.optional_rooms[branch].y))
+                    break
+                if not returned_from_branch[branch]:
+                    goal = Vector2(float(parent.x),float(parent.y))
+                    if active.global_position.distance_to(goal) < 130.0: returned_from_branch[branch] = true
+                    break
+            var offset := goal - active.global_position
+            active.debug_drive(nav.direction(active,goal,1.0/60.0) if offset.length() > 50.0 else Vector2.ZERO, Vector2.RIGHT)
+            active._debug_run = true
+            pulse(KEY_F) if offset.length() < 130.0 else key(KEY_F,false)
+    key(KEY_F,false)
+    key(KEY_C,false)
+    check(not result.is_empty(), "Route finishes within technical playthrough bound")
+    check(result.get("outcome", "") == "EXTRACTED", "Live combat and extraction succeed without cheats")
+    check(result.get("full_route_cleared",false), "All six rooms reached; not early extraction")
+    check(result.get("ledger_recovered",false), "Ledger acquired through interaction")
+    check(result.get("field_supplies",false) and result.get("carrier_fragment",false), "Both optional rooms recovered")
+    check(result.get("hostiles_defeated",0) == expected_hostiles, "All authored waves and boss defeated through real damage")
+    check_emissions()
+    var code: Dictionary = {}
+    for path in ["res://tests/smoke/site7_full_operation_smoke.gd","res://scripts/actors/enemy_actor.gd","res://scripts/combat/site7_enemy_tactics.gd","res://scripts/combat/site7_attack_warning.gd","res://scripts/animation/premium_enemy_presentation.gd","res://scripts/missions/story_stage_01.gd","res://data/missions/MIS_CH01_01.json","res://scripts/animation/site7_machine_sprite.gd","res://data/art_profiles/enemy_profiles.json","res://assets/enemies/recon_drone/authored_yaw8_v1/spec.json","res://assets/enemies/signal_anchor_guardian/authored_core_v1/spec.json","res://scripts/ui/enemy_overhead_ui.gd"]:
+        code[path] = FileAccess.get_sha256(path)
+    var output := {"recorded_utc":Time.get_datetime_string_from_system(true),"tested_code_sha256":code,"status":"PASS_TECHNICAL_PLAYTHROUGH" if failures.is_empty() else "FAIL", "result":result,"trace":trace,"attacks":attack_trace,"emissions":emission_trace,"failures":failures,"visual_approval":false,"drive":"test bot -> real actor physics / weapon cooldown / projectile collisions / mission interactions"}
+    output["cover_flank_plans"]=flank_plans
+    output["damage_by_source"]=damage_by_source
+    print("FULL_OPERATION_DAMAGE " + JSON.stringify(damage_by_source))
+    output["skill_casts"]=skill_casts
+    print("FULL_OPERATION_SKILLS " + JSON.stringify(skill_casts))
+    code["res://data/missions/"+mission_id+".json"] = FileAccess.get_sha256("res://data/missions/"+mission_id+".json")
+    var old_path := OUT + "/full_operation.json"
+    code["res://scripts/animation/boss_phase_transition_guard.gd"]=FileAccess.get_sha256("res://scripts/animation/boss_phase_transition_guard.gd")
+    for path in ["res://scripts/actors/operator_actor.gd","res://scripts/combat/cover_navigation.gd","res://data/visual/site7_environment_props.json","res://assets/environments/site7/karchive_props_v1/spec.json","res://scripts/missions/site7_environment_prop.gd","res://scripts/missions/site7_environment_props.gd","res://scripts/combat/prototype_projectile.gd","res://scenes/mission/StoryStage01.tscn"]:
+        code[path] = FileAccess.get_sha256(path)
+    if FileAccess.file_exists(old_path):
+        var old_hash := FileAccess.get_sha256(old_path)
+        var previous := OUT + "/operation_history/" + old_hash + ".json"
+        DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(OUT+"/operation_history"))
+        if not FileAccess.file_exists(previous):
+            DirAccess.copy_absolute(ProjectSettings.globalize_path(old_path),ProjectSettings.globalize_path(previous))
+    var file := FileAccess.open(OUT + "/full_operation.json",FileAccess.WRITE)
+    file.store_string(JSON.stringify(output,"  "))
+    file.close()
+    stage.queue_free()
+    await process_frame
+    print("SITE7_FULL_OPERATION_SMOKE: " + ("PASS" if failures.is_empty() else "FAIL"))
+    quit(0 if failures.is_empty() else 1)

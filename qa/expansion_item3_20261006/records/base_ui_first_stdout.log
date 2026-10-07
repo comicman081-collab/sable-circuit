@@ -1,0 +1,46 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+SCRIPT ERROR: Invalid assignment of property or key 'name' with value of type 'StringName' on a base object of type 'Nil'.
+   at: BaseLobby._build_m10_progression_panel (res://scripts/ui/base_lobby.gd:274)
+   GDScript backtrace (most recent call first):
+       [0] _build_m10_progression_panel (res://scripts/ui/base_lobby.gd:274)
+       [1] _ready (res://scripts/ui/base_lobby.gd:50)
+       [2] _run (res://tests/smoke/m10_base_ui_action_smoke.gd:24)
+ERROR: FAIL: M10 Base renders three actionable Lab analysis buttons
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/smoke/m10_base_ui_action_smoke.gd:77)
+       [1] _run (res://tests/smoke/m10_base_ui_action_smoke.gd:31)
+       [2] _frames (res://tests/smoke/m10_base_ui_action_smoke.gd:73)
+ERROR: FAIL: dynamic Lab buttons preserve their own authored analysis IDs
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/smoke/m10_base_ui_action_smoke.gd:77)
+       [1] _run (res://tests/smoke/m10_base_ui_action_smoke.gd:34)
+       [2] _frames (res://tests/smoke/m10_base_ui_action_smoke.gd:73)
+PASS: UI loadout seed analyzes SECURITY
+PASS: UI loadout seed analyzes ABERRANT
+PASS: UI loadout seed analyzes ANCHOR
+SCRIPT ERROR: Invalid assignment of property or key 'name' with value of type 'StringName' on a base object of type 'Nil'.
+   at: BaseLobby._build_m10_progression_panel (res://scripts/ui/base_lobby.gd:274)
+   GDScript backtrace (most recent call first):
+       [0] _build_m10_progression_panel (res://scripts/ui/base_lobby.gd:274)
+       [1] _ready (res://scripts/ui/base_lobby.gd:50)
+       [2] _run (res://tests/smoke/m10_base_ui_action_smoke.gd:46)
+ERROR: FAIL: M10 Base renders three unlocked operator EQUIP buttons
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/smoke/m10_base_ui_action_smoke.gd:77)
+       [1] _run (res://tests/smoke/m10_base_ui_action_smoke.gd:53)
+       [2] _frames (res://tests/smoke/m10_base_ui_action_smoke.gd:73)
+ERROR: FAIL: all three loadout buttons emit module requests
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/smoke/m10_base_ui_action_smoke.gd:77)
+       [1] _run (res://tests/smoke/m10_base_ui_action_smoke.gd:56)
+       [2] _frames (res://tests/smoke/m10_base_ui_action_smoke.gd:73)
+M10_BASE_UI_ACTION_SMOKE: FAIL (4)
+ - M10 Base renders three actionable Lab analysis buttons
+ - dynamic Lab buttons preserve their own authored analysis IDs
+ - M10 Base renders three unlocked operator EQUIP buttons
+ - all three loadout buttons emit module requests

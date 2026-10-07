@@ -1,0 +1,66 @@
+{
+  "tool": "image_gen.imagegen",
+  "attempt": "luna_max_v4_alpha",
+  "worker": "gpt-5.6-luna",
+  "reasoningEffort": "max",
+  "returnedPath": "C:\\Users\\AAA\\.codex\\generated_images\\01a09aa0-43f8-7190-b88c-a5318c96f39d\\exec-36df2b71-9c56-4571-9764-5a9860856867.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a09aa0-43f8-7190-b88c-a5318c96f39d as C:\\Users\\AAA\\.codex\\generated_images\\01a09aa0-43f8-7190-b88c-a5318c96f39d\\exec-36df2b71-9c56-4571-9764-5a9860856867.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "qa/site7_rifle/quarantine/290192c8f75124804e13cb7013eefef9afa429af9698277e8b96b85deaa64cc5/S_walk_0_master_luna_max_20260913_v4_mixed.png",
+  "projectCopySHA256": "290192c8f75124804e13cb7013eefef9afa429af9698277e8b96b85deaa64cc5",
+  "request": {
+    "character": "site7_rifle",
+    "slot": "S/walk/0",
+    "direction": "S",
+    "action": "walk",
+    "frame": 0,
+    "phaseName": "left_contact",
+    "reference": "art/site7_rifle/identity_reference.png",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "poseGuide": "reference/ual_guides/S_Walk_Loop_0.png",
+    "poseGuideSHA256": "bfc98ae8f3528ffd823bf9f470c130cbb67662f62b8c3d711e47307f7f3c0553",
+    "inputOrder": [
+      "reference/ual_guides/S_Walk_Loop_0.png",
+      "art/site7_rifle/identity_reference.png"
+    ],
+    "background": "transparent_alpha",
+    "sourceArtPolicy": "native_rgba_alpha_0_254_v1",
+    "prompt": "Create exactly one high-resolution full-body source illustration for the SABLE CIRCUIT SITE-7 rifle trooper, slot S/walk/0, preserving the exact established appearance from input image 2 only: same hooded dark tactical suit, weathered silver/red armor, boots, face, right-side holster, and bullpup rifle. Input image 1 is ONLY the straight-front camera and LOWER-LEG S_Walk_Loop_0 pose authority; ignore its arms, hands, torso, weapon, and costume completely.\n\nPose and camera are strict: straight front, one centered humanoid, exactly two anatomically connected legs. S0 left_contact means anatomical LEFT leg is forward and planted in contact on viewer-right, while anatomical RIGHT leg with the holster is trailing behind on viewer-left. Do not reverse these legs and do not add a third knee, shin, foot, or duplicate limb. The torso faces the camera and actively aims the rifle toward the camera: buttstock seated at the character's RIGHT shoulder (viewer-left), right hand on the trigger grip, left hand supporting the fore-end, and a short visible foreshortened front muzzle pointing forward toward camera. The rifle must be shouldered and aimed, never vertical, never muzzle-down, never hanging toward the thigh, and never a side-profile carry. Keep hands, weapon, face, hair/hood, garment and boot edges complete and coherent.\n\nReturn an actual native RGBA PNG source with genuine transparency: background pixels alpha 0, visible pixels alpha 1..254, solid interior pixels alpha 254, and no alpha 255 anywhere. Preserve native alpha; do not flatten, clamp, key, redraw, or composite. Absolutely no green/chroma background, no checkerboard, no backdrop, no matte, no floor, no shadow, no glow, no halo, no scenery, no text, no watermark, and no panels. One subject only, high-resolution with subject at least 1300 pixels tall."
+  },
+  "rawInspection": {
+    "path": "qa/site7_rifle/quarantine/290192c8f75124804e13cb7013eefef9afa429af9698277e8b96b85deaa64cc5/S_walk_0_master_luna_max_20260913_v4_mixed.png",
+    "size": [1024, 1536],
+    "mode": "RGB",
+    "format": "PNG",
+    "bytes": 2267102,
+    "alphaMin": 255,
+    "alphaMax": 255,
+    "alphaUniqueCount": 1,
+    "transparentPixels": 0,
+    "visiblePixels": 1572864,
+    "partialAlphaPixels": 0,
+    "alpha255Pixels": 1572864,
+    "status": "FAIL",
+    "reason": "Returned master is RGB opaque and therefore has no genuine native alpha; upstream visual review also reported mixed other-character content. It is quarantine-only and was not normalized or keyed."
+  },
+  "sourceAlphaPolicy": {
+    "command": "source_alpha_policy.py --source qa/site7_rifle/quarantine/290192c8f75124804e13cb7013eefef9afa429af9698277e8b96b85deaa64cc5/S_walk_0_master_luna_max_20260913_v4_mixed.png",
+    "status": "FAIL",
+    "error": "NATIVE_ALPHA_REQUIRED: returned master must be an actual RGBA PNG; RGB, green and painted checkerboard are rejected",
+    "exitCode": 1
+  },
+  "status": "HOLD",
+  "intake": "NOT_RUN",
+  "prepareSlotReview": "NOT_RUN",
+  "sourceReview": "NOT_RUN",
+  "runtimeReview": "NOT_RUN",
+  "delivery": "NOT_RUN",
+  "preservation": {
+    "rawPreserved": true,
+    "actualResponsePreserved": true,
+    "activeS0Mutated": false,
+    "approvedESEMutated": false,
+    "additionalGenerationAuthorized": false
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-26T02:09:17.973974+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\combat_vfx_overhaul_20260926\\01_live_combat.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1961732,
+      "sha256": "7da2cbf7cd2e6cf74e8d54f173a3fdbdab52734d2a1fcfd0fe0f029fc526742b"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\combat_vfx_overhaul_20260926\\03_projectiles_muzzle_charge.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2074764,
+      "sha256": "1af7da1a4a0ded3a95c8d1f6cee2f439f0bc0944c8a0713f13328300e87d89cb"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\combat_vfx_overhaul_20260926\\07_explosions_mid.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1978034,
+      "sha256": "c07b806f80d4c684e14873f7db79244bc429266763c69409589bb2e5f40a7f90"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\combat_vfx_overhaul_20260926\\09_boss_destruction.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2038896,
+      "sha256": "b0ccc6159e3f35c0274c8b7bef67d9bc64f3584a891764e69440e9a90b69c066"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\combat_vfx_overhaul_20260926\\12_skills_x.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2041740,
+      "sha256": "c4bf8cd3cca0797dc557a4bb086165845a8633a511b75c1b9e268b39d9bd28fe"
+    }
+  ]
+}

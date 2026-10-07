@@ -1,0 +1,23 @@
+{
+  "status": "PACKAGED_REVIEWED_LOCAL_DRONE_ONLY",
+  "spec": "assets/enemies/recon_drone/authored_yaw8_v1/spec.json",
+  "sha256": "0c716b309edfa5ecaa29cffef01642e23c855a3527a979a922002a9e8ad6b5ba",
+  "candidate": "motion_lab_v1/qa/stage1_enemies_20260913/drone_yaw8/a2a58793089e24f3/candidate_spec.json",
+  "candidate_sha256": "f3cc4fb74925e0a84fb1c475911af0c4e3e0ac4467cfb4d092b0ed41dfe880a8",
+  "source_binding": "ce4daecec75d37dd8ebc8f0eb16fc0bbaa00f3ddee919e12c0ec3dcb7219fcb8",
+  "visual_review": {
+    "path": "qa/stage1_implementation_20260913/DRONE_YAW8_VISUAL_REVIEW.md",
+    "sha256": "8bc55b3dd011c17932bb473f0830a3600623d5232bf5877e79eef93479b4f240"
+  },
+  "native_capture": {
+    "path": "qa/stage1_implementation_20260913/facing_native_1789285783_092/capture_report.json",
+    "sha256": "a1cc5e2791fcbf721e12c7848bb7296989f58917ab252bd4fe0b4366cdf44d06"
+  },
+  "operations": [
+    "byte-identical copy",
+    "texture path rebinding"
+  ],
+  "registry_changed": false,
+  "deployment": false,
+  "luna_reproduction": false
+}

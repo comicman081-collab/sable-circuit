@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "mission_id": "MIS_CH01_03",
+  "chapter_id": "CH01",
+  "title": "SITE-7: CORE PRESSURE",
+  "zone": "Abandoned Research Complex",
+  "objectives": [
+    {
+      "id": "OBJ_CORE_BREACH",
+      "kind": "PRIMARY",
+      "source_room": "R01_BREACH",
+      "title": "Open the sealed pressure route",
+      "prerequisites": [],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_CORE_DEFENSE",
+      "kind": "PRIMARY",
+      "source_room": "R02_DEFENSE",
+      "title": "Break the inner defense line",
+      "prerequisites": [
+        "OBJ_CORE_BREACH"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_CORE_TRACE",
+      "kind": "PRIMARY",
+      "source_room": "R03_TRACE",
+      "title": "Map the carrier's exit vector",
+      "prerequisites": [
+        "OBJ_CORE_DEFENSE"
+      ],
+      "required_for_extraction": true
+    },
+    {
+      "id": "OBJ_CORE_ARMORY",
+      "kind": "OPTIONAL",
+      "source_room": "O01_SUPPLY",
+      "title": "Secure the breached armory cache",
+      "prerequisites": [
+        "OBJ_CORE_DEFENSE"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_CORE_RESONANCE",
+      "kind": "OPTIONAL",
+      "source_room": "O02_RESEARCH",
+      "title": "Capture the resonance sample",
+      "prerequisites": [
+        "OBJ_CORE_TRACE"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_CORE_BULKHEAD",
+      "kind": "DEEP",
+      "source_room": "R04_BULKHEAD",
+      "title": "Hold the collapsed bulkhead",
+      "prerequisites": [
+        "OBJ_CORE_TRACE"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_CORE_ANCHOR",
+      "kind": "DEEP",
+      "source_room": "R05_ANCHOR",
+      "title": "Destroy the anchor remnant",
+      "prerequisites": [
+        "OBJ_CORE_BULKHEAD"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_CORE_ESCAPE",
+      "kind": "PRIMARY",
+      "source_room": "R06_ESCAPE",
+      "title": "Extract through the emergency shaft",
+      "prerequisites": [
+        "OBJ_CORE_ANCHOR"
+      ],
+      "required_for_extraction": false
+    }
+  ],
+  "branches": [
+    {
+      "id": "BR_CORE_ARMORY",
+      "kind": "OPTIONAL",
+      "from_room": "R03_TRACE",
+      "target_room": "O01_SUPPLY",
+      "target_objective": "OBJ_CORE_ARMORY",
+      "prerequisites": [
+        "OBJ_CORE_DEFENSE"
+      ]
+    },
+    {
+      "id": "BR_CORE_RESONANCE",
+      "kind": "OPTIONAL",
+      "from_room": "R04_BULKHEAD",
+      "target_room": "O02_RESEARCH",
+      "target_objective": "OBJ_CORE_RESONANCE",
+      "prerequisites": [
+        "OBJ_CORE_TRACE"
+      ]
+    },
+    {
+      "id": "BR_CORE_DEEP",
+      "kind": "DEEP",
+      "from_room": "R03_TRACE",
+      "target_room": "R04_BULKHEAD",
+      "target_objective": "OBJ_CORE_BULKHEAD",
+      "prerequisites": [
+        "OBJ_CORE_TRACE"
+      ]
+    }
+  ],
+  "main_route": [
+    {
+      "id": "R01_BREACH",
+      "objective_id": "OBJ_CORE_BREACH",
+      "type": "EVENT",
+      "title": "Pressure Breach",
+      "x": 280,
+      "y": 560,
+      "objective": "Open the sealed pressure route",
+      "story": "The lower core is venting into the access spine. The carrier signature remains active on the far side.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 16
+        }
+      ]
+    },
+    {
+      "id": "R02_DEFENSE",
+      "objective_id": "OBJ_CORE_DEFENSE",
+      "encounter_id": "ENC_CORE_DEFENSE_01",
+      "type": "COMBAT",
+      "title": "Inner Defense Line",
+      "x": 660,
+      "y": 240,
+      "objective": "Break the inner defense line",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 1
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "health": 134,
+          "offset_x": 218,
+          "offset_y": 102
+        },
+        {
+          "enemy_id": "ENM_SITE7_BULWARK_01",
+          "health": 242,
+          "offset_x": 292,
+          "offset_y": -18
+        },
+        {
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "health": 116,
+          "offset_x": 220,
+          "offset_y": -108
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 90,
+          "offset_x": 260,
+          "offset_y": 40
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 32
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 124
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 88
+          },
+          {
+            "enemy_id": "ENM_SITE7_MORTAR_01",
+            "health": 104
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R03_TRACE",
+      "objective_id": "OBJ_CORE_TRACE",
+      "type": "RESEARCH",
+      "title": "Carrier Trace",
+      "x": 1040,
+      "y": 560,
+      "objective": "Map the carrier's exit vector",
+      "story": "The signal is no longer contained by Site-7. Its path leaves the complex through an offshore transit corridor.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 42
+        },
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 24
+        }
+      ]
+    },
+    {
+      "id": "R04_BULKHEAD",
+      "objective_id": "OBJ_CORE_BULKHEAD",
+      "encounter_id": "ENC_CORE_BULKHEAD_01",
+      "type": "ELITE",
+      "title": "Collapsed Bulkhead",
+      "x": 1420,
+      "y": 240,
+      "objective": "Hold the collapsed bulkhead",
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_BULWARK_01",
+          "affix": "SHIELDED",
+          "health": 272,
+          "offset_x": 212,
+          "offset_y": 64
+        },
+        {
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "health": 142,
+          "offset_x": 302,
+          "offset_y": 90
+        },
+        {
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "health": 96,
+          "offset_x": 292,
+          "offset_y": -96
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "affix": "VOLATILE",
+          "health": 92,
+          "offset_x": 250,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 38
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_BULWARK_01",
+            "health": 200
+          },
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 130
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 90
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R05_ANCHOR",
+      "objective_id": "OBJ_CORE_ANCHOR",
+      "encounter_id": "ENC_CORE_ANCHOR_01",
+      "type": "BOSS",
+      "title": "Anchor Remnant",
+      "x": 1800,
+      "y": 560,
+      "objective": "Destroy the anchor remnant",
+      "encounter": [
+        {
+          "enemy_id": "BOSS_SITE7_REMNANT_01",
+          "health": 820,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 90,
+          "offset_x": 240,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "health": 120,
+          "offset_x": 240,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 68
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 90
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 90
+          }
+        ],
+        [
+          {
+            "enemy_id": "ENM_SITE7_MORTAR_01",
+            "health": 104
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 90
+          }
+        ]
+      ],
+      "reinforce_at": 1
+    },
+    {
+      "id": "R06_ESCAPE",
+      "objective_id": "OBJ_CORE_ESCAPE",
+      "type": "EXTRACTION",
+      "title": "Emergency Shaft",
+      "x": 2180,
+      "y": 240,
+      "objective": "Extract with the exit vector",
+      "story": "The anchor is silent. The squad has a narrow opening to leave before the core seals itself again.",
+      "loot": []
+    }
+  ],
+  "optional_rooms": [
+    {
+      "id": "O01_SUPPLY",
+      "from": "R03_TRACE",
+      "objective_id": "OBJ_CORE_ARMORY",
+      "type": "SUPPLY",
+      "title": "Breached Armory",
+      "x": 1040,
+      "y": 800,
+      "reward": "field_supplies",
+      "story": "The armory racks are damaged, but enough field hardware remains for a final push.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 22
+        },
+        {
+          "loot_id": "LOT_SALVAGE_FIELD",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "id": "O02_RESEARCH",
+      "from": "R05_ANCHOR",
+      "objective_id": "OBJ_CORE_RESONANCE",
+      "type": "RESEARCH",
+      "title": "Resonance Chamber",
+      "x": 1420,
+      "y": 800,
+      "reward": "carrier_fragment",
+      "story": "Robot-frame stress data accompanies the resonance sample: the carrier can jump between isolated sites without a physical relay.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 46
+        },
+        {
+          "loot_id": "LOT_SIGNAL_FRAGMENT",
+          "quantity": 2
+        },
+        {
+          "loot_id": "LOT_INTEL_MECHANICAL",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "extraction_offer_room_ids": [
+    "R03_TRACE",
+    "R04_BULKHEAD",
+    "R05_ANCHOR"
+  ],
+  "enemy_roster_revision": 2,
+  "new_enemy_ids": [
+    "ENM_SITE7_MORTAR_01",
+    "BOSS_SITE7_REMNANT_01"
+  ]
+}

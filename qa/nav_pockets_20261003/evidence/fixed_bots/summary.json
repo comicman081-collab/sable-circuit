@@ -1,0 +1,55 @@
+{
+ "suite": "custom",
+ "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+ "started": "2026-10-03T15:44:33",
+ "git_head": "cce3e6244c07783ff555cf04761e955f6ba34f38",
+ "git_dirty": 4,
+ "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+ "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+ "workers": 1,
+ "seconds": 614,
+ "overall": "FAIL",
+ "guard": {
+  "changed": [],
+  "removed": [],
+  "added": []
+ },
+ "results": [
+  {
+   "test": "full_op_01",
+   "status": "PASS",
+   "seconds": 132.0,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_05",
+   "status": "PASS",
+   "seconds": 158.9,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_09",
+   "status": "PASS",
+   "seconds": 170.8,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_10",
+   "status": "FAIL",
+   "seconds": 138.4,
+   "exit_code": 1,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: FAIL",
+   "notes": []
+  }
+ ]
+}

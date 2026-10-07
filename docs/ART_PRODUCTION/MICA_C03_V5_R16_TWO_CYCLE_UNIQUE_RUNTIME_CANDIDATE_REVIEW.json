@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "role": "MICA C03 V5 R16 two-cycle unique-frame runtime candidate review ledger",
+  "generated_at": "2026-09-05",
+  "actor_id": "CHR_PROTO_03",
+  "costume_id": "MICA_RECON_C03",
+  "candidate": "assets/units/operators/mica/fast_runtime_v1/candidate_r14_r8c_unique_move_qa",
+  "candidate_manifest": "assets/units/operators/mica/fast_runtime_v1/candidate_r14_r8c_unique_move_qa/MICA_C03_R14_R8C_UNIQUE_RUNTIME_CANDIDATE.json",
+  "candidate_manifest_sha256": "4febfdaa1e5424492ae160fc6d31a130b2b69b7fbc01355b6118fdd832d5b979",
+  "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+  "promotion": "HOLD_PENDING_PONYTAIL_FULL_AND_CHATGPT_WEB_REVIEW_AND_PACKAGE_GATE",
+  "source_art_modified": false,
+  "motion_source": "Blender + UAL R14 unique move cells; deterministic two-cycle Godot runtime capture",
+  "frame_contract": {
+    "cell_size": 384,
+    "directions": ["E", "SE", "S", "SW", "W", "NW", "N", "NE"],
+    "unique_move_frames_per_direction": 24,
+    "captured_move_frames_per_direction": 48,
+    "cycles_per_direction": 2,
+    "root_motion_scale": 1.0,
+    "move_root_sync": "disabled; every captured sample uses the unique authored cell and continuous root factor 1.0",
+    "idle_and_fire": "copied unchanged from current runtime for QA isolation"
+  },
+  "local_runtime_evidence": {
+    "capture_script": "tests/render/mica_c03_v5_r16_candidate_runtime_capture.gd",
+    "evidence": "artifacts/mica_c03_v5_r16_candidate_runtime_capture/MICA_C03_V5_RUNTIME_UNIQUE_EVIDENCE_R16.json",
+    "evidence_sha256": "6b320f18f700c6205d8eaa09142f3a883e2b100c663f468bcce351911667c13f",
+    "result": "PASS",
+    "native_resolution": [1920, 1080],
+    "fps": 24,
+    "frame_count": 384,
+    "active_frames_and_sector_match": "PASS; each direction visits 00..23 twice",
+    "continuous_root_gate": "PASS; every transition advances; scheduler-bounded cadence; root factor 1.0",
+    "collision_and_camera": "capture-only isolation; hidden squad/active actor collision disabled; fixed world/no Camera2D lag",
+    "visual_promotion": "PONYTAIL_FULL_AND_CHATGPT_WEB_REVIEW_REQUIRED"
+  },
+  "video_evidence": {
+    "path": "artifacts/mica_c03_v5_r16_candidate_runtime_capture/MICA_C03_V5_R16_TWO_CYCLE_UNIQUE_MOVE_8DIR_NATIVE_1920X1080.mp4",
+    "sha256": "fd30c888a0a9355b00549ebb7adfdcde9aab8b23ffbc888fe8881a16c55e6137",
+    "manifest": "artifacts/mica_c03_v5_r16_candidate_runtime_capture/MICA_C03_V5_R16_TWO_CYCLE_UNIQUE_MOVE_VIDEO_MANIFEST.json",
+    "manifest_sha256": "ba5512a00565f938e3eafbbfa45030282996f7f5d46373dcca773598311da520",
+    "native_dynamic_validation": "PASS",
+    "native_dynamic_validation_path": "artifacts/mica_c03_v5_r16_candidate_runtime_capture/MICA_C03_V5_R16_TWO_CYCLE_UNIQUE_MOVE_1080P_VALIDATION.json",
+    "native_dynamic_validation_sha256": "e42652bc2ef116e30557c32b65d1cbcb7c2af04c485002889ac34eac7be482c9"
+  },
+  "html_fallback_evidence": {
+    "preview_root": "artifacts/mica_c03_v5_r16_candidate_interactive_preview",
+    "html": "artifacts/mica_c03_v5_r16_candidate_interactive_preview/MICA_C03_INTERACTIVE_STRIDE_FIRE.html",
+    "html_sha256": "514a91f8fc33beef284d3fc6f76f4a481c660afe427cb97ad8e84c71f0d6a8ba",
+    "bundle_manifest": "artifacts/mica_c03_v5_r16_candidate_interactive_preview/MICA_C03_INTERACTIVE_RUNTIME_BUNDLE.json",
+    "static_bundle_validation": "artifacts/mica_c03_v5_r16_candidate_interactive_preview/MICA_C03_R16_HTML_VALIDATION.json",
+    "native_container_validation": "artifacts/mica_c03_v5_r16_candidate_interactive_preview/MICA_C03_R16_HTML_1080P_VALIDATION.json",
+    "static_gate": "PASS_STATIC_RUNTIME_BUNDLE_AND_PASS_STATIC_CONFIG_ONLY",
+    "dynamic_visual_gate": "NOT_PROVIDED; static HTML is not visual PASS evidence"
+  },
+  "prior_gate": {
+    "r14_chatgpt_web_review": "FAIL_RUNTIME_GAIT_GATE_NOT_PROMOTABLE",
+    "r14_chatgpt_web_review_summary": "R14 MP4 was visually reviewed; support sole lock failed, visible cadence pulse remained, same-direction F23-to-F00 was not captured",
+    "r14_candidate_review": "docs/ART_PRODUCTION/MICA_C03_V5_R14_UNIQUE_RUNTIME_CANDIDATE_REVIEW.json",
+    "r13_ponytail_review": "docs/ART_PRODUCTION/MICA_C03_V5_RUNTIME_TEMPORAL_R13_RUNTIME_SYNC_REVIEW.json",
+    "r13_result": "HOLD_STRICT_CADENCE_DUPLICATE_RASTER_PAIRS"
+  },
+  "review_gate": {
+    "ponytail_full": "FAIL_NOT_PROMOTABLE",
+    "ponytail_full_review": "docs/ART_PRODUCTION/MICA_C03_V5_R16_TWO_CYCLE_UNIQUE_RUNTIME_PONYTAIL_FULL_REVIEW.json",
+    "ponytail_full_summary": "All eight directions fail actual support-sole lock and strict cadence: tracked soles never hold a 0–1px planted interval, while the runtime root ledger alternates 7.600px and 5.066px. Shape/alpha/weapon continuity pass, but A/C/D are hard blockers and runtime F remains HOLD because this is capture-only and the production registry still points to current.",
+    "chatgpt_web_planning_conversation": "PENDING_R16_VIDEO_AND_HTML_ATTACHMENT_REVIEW",
+    "runtime_and_pointer_promotion": "HOLD",
+    "do_not_delete_failed_or_held_assets": true,
+    "quarantine_policy": "retain R13/R14 and every prior FAIL/HOLD candidate, derivative, manifest, QA evidence, log, and provenance until a completed replacement passes every required gate"
+  }
+}

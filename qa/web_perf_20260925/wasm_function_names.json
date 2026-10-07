@@ -1,0 +1,338 @@
+{
+  "wasm_sha256": "35116f68540ac41acf7d71ea457added91b5e960a9cca3e2acc72918eaf01277",
+  "wasm_bytes": 39513091,
+  "method": "The shipped index.wasm has no name section. Function bodies were decoded; i32.const operands were resolved to C strings in the data segments (error-macro file/function names, signal and setting names), imported callees were named through the JS glue wasmImports map, and direct-call edges were followed.",
+  "functions": [
+    {
+      "wasm_function": "wasm-function[2238]",
+      "identified_as": "GDScriptFunction::call (GDScript VM)",
+      "basis": "gdscript_vm.cpp messages (stack overflow, await, \"is\" on freed instance), 154-entry opcode br_table, 56.6 KB body",
+      "body_bytes": 56600,
+      "max_br_table": 154,
+      "strings_sample": [
+        "container",
+        "Stack overflow (stack size: %s). Check for infinite recursion in your script.",
+        "Left operand of 'is' is a previously freed instance.",
+        "static function '",
+        "' in type '",
+        "function '",
+        "Trying to await on a freed object.",
+        "completed"
+      ],
+      "imported_callees": []
+    },
+    {
+      "wasm_function": "wasm-function[43559]",
+      "identified_as": "GDScript::callp (static function call)",
+      "basis": "\"Can't call non-static function\", gdscript.cpp; calls f2238",
+      "body_bytes": 614,
+      "max_br_table": 0,
+      "strings_sample": [
+        "Can't call non-static function '",
+        "' in script.",
+        "callp",
+        "modules/gdscript/gdscript.cpp",
+        "Condition \"!E->value->is_static()\" is true. Returning: Variant()"
+      ],
+      "imported_callees": []
+    },
+    {
+      "wasm_function": "wasm-function[21616]",
+      "identified_as": "main loop callback (os_web main_loop_callback)",
+      "basis": "display size update, canvas resize, fs sync, calls f18792",
+      "body_bytes": 489,
+      "max_br_table": 0,
+      "strings_sample": [],
+      "imported_callees": [
+        "_emscripten_cancel_main_loop",
+        "_emscripten_set_canvas_element_size",
+        "_emscripten_set_main_loop",
+        "_godot_js_display_size_update",
+        "_godot_js_os_finish_async",
+        "_godot_js_os_fs_sync"
+      ]
+    },
+    {
+      "wasm_function": "wasm-function[18792]",
+      "identified_as": "Main::iteration",
+      "basis": "\"debug/settings/stdout/print_fps\", \"Project FPS: %d\"",
+      "body_bytes": 7656,
+      "max_br_table": 0,
+      "strings_sample": [
+        "debug/settings/stdout/print_fps",
+        "Project FPS: %d (%s mspf)",
+        "%s:%s:%s:%s",
+        "MovieWriter: Frame %d (time: %s) - %s",
+        "Formatting error in string \"",
+        "\": ",
+        "vformat",
+        "./core/variant/variant.h"
+      ],
+      "imported_callees": []
+    },
+    {
+      "wasm_function": "wasm-function[65213]",
+      "identified_as": "SceneTree::physics_process",
+      "basis": "\"physics_frame\", \"_process_picking\"",
+      "body_bytes": 348,
+      "max_br_table": 0,
+      "strings_sample": [
+        "physics_frame",
+        "_picking_viewports",
+        "_process_picking"
+      ],
+      "imported_callees": []
+    },
+    {
+      "wasm_function": "wasm-function[65205]",
+      "identified_as": "SceneTree::process",
+      "basis": "\"process_frame\", \"_flush_scene_change\"",
+      "body_bytes": 1165,
+      "max_br_table": 0,
+      "strings_sample": [
+        "process_frame",
+        "get_instance",
+        "./core/object/object.h",
+        "Condition \"slot >= slot_max\" is true. Returning: nullptr",
+        "scene_changed",
+        "_flush_scene_change",
+        "scene/main/scene_tree.cpp",
+        "Scene instance has been freed before becoming the current scene. No current scene is set."
+      ],
+      "imported_callees": []
+    },
+    {
+      "wasm_function": "wasm-function[67320]",
+      "identified_as": "RasterizerCanvasGLES3::canvas_render_items",
+      "basis": "\"2D Batch UBO\", \"2D Lights UBO\", GL buffer calls",
+      "body_bytes": 10419,
+      "max_br_table": 0,
+      "strings_sample": [
+        " mismatch between specified (%d) and\nactual (%d) cropping region lower boundary",
+        "match between specified (%d) and\nactual (%d) cropping region lower boundary",
+        "_opacity",
+        "2D Batch UBO[",
+        "][0]",
+        "t_capacity",
+        " sorry",
+        "2D Lights UBO["
+      ],
+      "imported_callees": [
+        "_glActiveTexture",
+        "_glBindBuffer",
+        "_glBindBufferBase",
+        "_glBindFramebuffer",
+        "_glBindTexture",
+        "_glBufferData",
+        "_glBufferSubData",
+        "_glClear",
+        "_glClearColor",
+        "_glDeleteSync",
+        "_glFenceSync",
+        "_glGenBuffers",
+        "_glGetSynciv",
+        "_glUniform4f",
+        "_glUniform4fv",
+        "_glUseProgram"
+      ]
+    },
+    {
+      "wasm_function": "wasm-function[67307]",
+      "identified_as": "RasterizerCanvasGLES3::request_polygon",
+      "basis": "\"request_polygon\", \"Polygon 2D vertex buffer\"; glGenVertexArrays/glGenBuffers/glBufferData",
+      "body_bytes": 2686,
+      "max_br_table": 0,
+      "strings_sample": [
+        "_opacity",
+        "Polygon 2D vertex buffer",
+        "pacity",
+        "request_polygon",
+        "drivers/gles3/rasterizer_canvas_gles3.cpp",
+        "Condition \"base_offset != stride\" is true. Returning: 0",
+        "opacity",
+        "Polygon 2D index buffer"
+      ],
+      "imported_callees": [
+        "_glBindBuffer",
+        "_glBindVertexArray",
+        "_glBufferData",
+        "_glDisableVertexAttribArray",
+        "_glEnableVertexAttribArray",
+        "_glGenBuffers",
+        "_glGenVertexArrays",
+        "_glVertexAttribPointer"
+      ]
+    },
+    {
+      "wasm_function": "wasm-function[67306]",
+      "identified_as": "RasterizerCanvasGLES3::free_polygon",
+      "basis": "\"free_polygon\"; glDeleteBuffers/glDeleteVertexArrays",
+      "body_bytes": 823,
+      "max_br_table": 0,
+      "strings_sample": [
+        "free_polygon",
+        "drivers/gles3/rasterizer_canvas_gles3.cpp",
+        "Parameter \"pb_ptr\" is null.",
+        "buffer_free_data",
+        "./drivers/gles3/storage/utilities.h",
+        "Condition \"!buffer_allocs_cache.has(p_id)\" is true."
+      ],
+      "imported_callees": [
+        "_glDeleteBuffers",
+        "_glDeleteVertexArrays"
+      ]
+    },
+    {
+      "wasm_function": "wasm-function[19098]",
+      "identified_as": "RendererCanvasCull::canvas_item_add_polygon",
+      "basis": "\"canvas_item_add_polygon\", \"Invalid polygon data, triangulation failed.\"",
+      "body_bytes": 802,
+      "max_br_table": 0,
+      "strings_sample": [
+        "get_or_null",
+        "./core/templates/rid_owner.h",
+        "Method/function failed. Returning: nullptr",
+        "Attempting to use an uninitialized RID",
+        "canvas_item_add_polygon",
+        "servers/rendering/renderer_canvas_cull.cpp",
+        "Parameter \"canvas_item\" is null.",
+        "Condition \"indices.is_empty()\" is true."
+      ],
+      "imported_callees": []
+    },
+    {
+      "wasm_function": "wasm-function[3148]",
+      "identified_as": "CanvasItem::draw_polygon",
+      "basis": "\"draw_polygon\", scene/main/canvas_item.cpp",
+      "body_bytes": 620,
+      "max_br_table": 0,
+      "strings_sample": [
+        "draw_polygon",
+        "scene/main/canvas_item.cpp",
+        "Condition \"!drawing\" is true.",
+        "Drawing is only allowed inside this node's `_draw()`, functions connected to its `draw` signal, or when it receives NOTIFICATION_DRAW.",
+        "ptrw",
+        "./core/templates/cowdata.h",
+        "FATAL: Condition \"_copy_on_write()\" is true."
+      ],
+      "imported_callees": []
+    },
+    {
+      "wasm_function": "wasm-function[19109]",
+      "identified_as": "RendererCanvasCull::canvas_item_add_polyline",
+      "basis": "\"canvas_item_add_polyline\"",
+      "body_bytes": 7191,
+      "max_br_table": 0,
+      "strings_sample": [
+        "canvas_item_add_polyline",
+        "servers/rendering/renderer_canvas_cull.cpp",
+        "Condition \"p_points.size() < 2\" is true.",
+        "get_or_null",
+        "./core/templates/rid_owner.h",
+        "Method/function failed. Returning: nullptr",
+        "Attempting to use an uninitialized RID",
+        "Parameter \"canvas_item\" is null."
+      ],
+      "imported_callees": []
+    },
+    {
+      "wasm_function": "wasm-function[24112]",
+      "identified_as": "CanvasItem::draw_polyline",
+      "basis": "\"draw_polyline\", scene/main/canvas_item.cpp",
+      "body_bytes": 246,
+      "max_br_table": 0,
+      "strings_sample": [
+        "draw_polyline",
+        "scene/main/canvas_item.cpp",
+        "Condition \"!drawing\" is true.",
+        "Drawing is only allowed inside this node's `_draw()`, functions connected to its `draw` signal, or when it receives NOTIFICATION_DRAW.",
+        "CowData",
+        "./core/templates/cowdata.h",
+        "FATAL: Condition \"_alloc_exact(p_init.size())\" is true."
+      ],
+      "imported_callees": []
+    },
+    {
+      "wasm_function": "wasm-function[9311]",
+      "identified_as": "RendererCanvasCull::canvas_item_add_ellipse",
+      "basis": "\"canvas_item_add_ellipse\"",
+      "body_bytes": 2365,
+      "max_br_table": 0,
+      "strings_sample": [
+        "get_or_null",
+        "./core/templates/rid_owner.h",
+        "Method/function failed. Returning: nullptr",
+        "Attempting to use an uninitialized RID",
+        "canvas_item_add_ellipse",
+        "servers/rendering/renderer_canvas_cull.cpp",
+        "Parameter \"canvas_item\" is null.",
+        "Parameter \"ellipse\" is null."
+      ],
+      "imported_callees": []
+    },
+    {
+      "wasm_function": "wasm-function[24122]",
+      "identified_as": "CanvasItem::draw_ellipse (draw_circle)",
+      "basis": "\"draw_ellipse\", scene/main/canvas_item.cpp",
+      "body_bytes": 648,
+      "max_br_table": 0,
+      "strings_sample": [
+        "draw_ellipse",
+        "scene/main/canvas_item.cpp",
+        "Condition \"!drawing\" is true.",
+        "Drawing is only allowed inside this node's `_draw()`, functions connected to its `draw` signal, or when it receives NOTIFICATION_DRAW.",
+        "The \"width\" argument has no effect when \"filled\" is \"true\".",
+        "ptrw",
+        "./core/templates/cowdata.h",
+        "FATAL: Condition \"_copy_on_write()\" is true."
+      ],
+      "imported_callees": []
+    },
+    {
+      "wasm_function": "wasm-function[65926]",
+      "identified_as": "CanvasItem::_redraw_callback",
+      "basis": "\"_draw\"; reached from the MessageQueue flush (f3022) via f788/f662",
+      "body_bytes": 845,
+      "max_br_table": 0,
+      "strings_sample": [
+        "_draw"
+      ],
+      "imported_callees": []
+    },
+    {
+      "wasm_function": "wasm-function[67327]",
+      "identified_as": "RasterizerGLES3 initialisation",
+      "basis": "\"RasterizerGLES3\", shader cache setup; the only caller of glGetIntegerv/glGetFloatv/glGetInteger64v",
+      "body_bytes": 66953,
+      "max_br_table": 0,
+      "strings_sample": [
+        "user://",
+        "Can't create shader cache folder, no shader caching will happen: ",
+        "RasterizerGLES3",
+        "drivers/gles3/rasterizer_gles3.cpp",
+        "shader_cache",
+        "rendering/shader_compiler/shader_cache/enabled",
+        "reserve",
+        "./core/templates/hash_set.h"
+      ],
+      "imported_callees": [
+        "_emscripten_webgl_get_supported_extensions",
+        "_glBindBuffer",
+        "_glBindTexture",
+        "_glBindVertexArray",
+        "_glBufferData",
+        "_glDisable",
+        "_glEnableVertexAttribArray",
+        "_glFenceSync",
+        "_glGenBuffers",
+        "_glGenFramebuffers",
+        "_glGenQueries",
+        "_glGenTextures",
+        "_glGenVertexArrays",
+        "_glGetFloatv",
+        "_glGetInteger64v",
+        "_glGetIntegerv"
+      ]
+    }
+  ]
+}

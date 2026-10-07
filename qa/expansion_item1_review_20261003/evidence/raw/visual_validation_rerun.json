@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-10-03T02:30:54.413508+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\01_op6_brooding_parent.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2230965,
+      "sha256": "5934b3b524aa25290dd42fecac63897cef01db3811baea40356f7b308df58b90"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\02_op6_brooding_hatching.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2214750,
+      "sha256": "a91ff13d96accd5523cdd728ee48b123a1c5907294cbe2665cc6fa5335d9bec4"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\03_op6_brooding_hatched.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2210299,
+      "sha256": "4af2aecf237b1466b6ca47b3ec75c3ffc87e576e0ffb5fa6adf88ac033bdd68a"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\04_op9_beacon_links.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2461903,
+      "sha256": "496f514a048f2f884fe130a087c0fe02f22b44b21fd4f215df372865194701ef"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\05_op9_beacon_released.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2465731,
+      "sha256": "a5230b889c0e48c522bf31a481e783b12847d65ccce8285c5b37cfe0349ef50e"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\06_spore_cloud_active.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2496772,
+      "sha256": "01492d943896ed2fe68661e39a80d312970f57669bf8270d5724a7b8cabcf7b4"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\06_spore_cloud_idle.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2493901,
+      "sha256": "570de37183b06e231a372af91fe70a65e3ed56258dcf9f3dab0739aa65ac3e91"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\06_spore_cloud_telegraph.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2491135,
+      "sha256": "6eaae217b0b2f11364bd905652f8a982961c8d989cba0e7ca44d4f3d64cee72c"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\07_frost_plate_active.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2422442,
+      "sha256": "e4c3a5f60b700c20f0be381609626d12ee50593bf00b5a8ef17c5a6b8f6f4833"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\07_frost_plate_cleared.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2412078,
+      "sha256": "4e675d6ffa2310fc0866341c052765b82615ad9be240fecf9e0f36e5358cff57"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\07_frost_plate_idle.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2409751,
+      "sha256": "9bf17265eaaf41d784fcf4f08558cdf855dd5f66798b4632b29bd785427132c3"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\08_rail_lane_active.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2367701,
+      "sha256": "3e899f27f96a93f481b95591ae5a2713f85edc9655b4cf6b6fa29051a9eb32e6"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\08_rail_lane_idle.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2360003,
+      "sha256": "4d8310175380502a730df1e7b54d3bed94d1968c9216ed71a2c53f67d6ea8013"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item1_20261003\\captures\\08_rail_lane_telegraph.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2355781,
+      "sha256": "14759d69c98b406c5a4d66c4e938fe8f0df44fcfb7b9d55622de3bdd036c9950"
+    }
+  ]
+}

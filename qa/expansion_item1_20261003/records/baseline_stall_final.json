@@ -1,0 +1,99 @@
+{
+  "status": "FAIL",
+  "result": {},
+  "failures": [
+    "Route finishes within technical playthrough bound",
+    "Live combat and extraction succeed without cheats",
+    "All six rooms reached; not early extraction",
+    "Ledger acquired through interaction",
+    "Both optional rooms recovered",
+    "All authored waves and boss defeated through real damage"
+  ],
+  "damage_by_source": {
+    "1:CHR_PROTO_01:ENM_SITE7_DRONE_01": 28.0,
+    "1:CHR_PROTO_01:ENM_SITE7_PRISM_01": 10.0,
+    "1:CHR_PROTO_02:ENM_SITE7_NULL_PYLON_01": 18.0,
+    "1:CHR_PROTO_03:ENM_SITE7_DRONE_01": 21.0,
+    "1:CHR_PROTO_03:ENM_SITE7_NULL_PYLON_01": 18.0,
+    "3:CHR_PROTO_01:ENM_SITE7_DRONE_01": 14.0
+  },
+  "tested_code_sha256": {
+    "res://assets/enemies/recon_drone/authored_yaw8_v1/spec.json": "0c716b309edfa5ecaa29cffef01642e23c855a3527a979a922002a9e8ad6b5ba",
+    "res://assets/enemies/signal_anchor_guardian/authored_core_v1/spec.json": "c3f98d11fc537fd5e7d542e7114296cdc0c12b7f2f4877e71c1bd6fed194b763",
+    "res://assets/environments/site7/karchive_props_v1/spec.json": "785acaf2c1ba077892d565261455d736ef27c2ec15186ab40f277b7cdc05dbee",
+    "res://data/art_profiles/enemy_profiles.json": "eaa1c7b0ae8486b8175d22d2540340ba81a58ef62249770e1c330bdef0c91ecf",
+    "res://data/missions/MIS_CH01_01.json": "dde2821f8813bb0fa19843b62966cf2f81f908bbbc134b959befdb25375a3159",
+    "res://data/missions/MIS_CH01_09.json": "b091917fced12c8bb8736769fc3d3849885048876a54203bf2992b2038d22f3f",
+    "res://data/visual/site7_environment_props.json": "8bfdce268fba5f8d0f3713dd1cb72a47209a6bc7e4e3f406d1c536274c82f865",
+    "res://scenes/mission/StoryStage01.tscn": "b7a0253953bbe9b7782511a6f5f380a430b707914bdf6df18a19773b758db3f0",
+    "res://scripts/actors/enemy_actor.gd": "4d11244a5870783b5dec565f5ac1f62ec87305ad3e2cb9e2b3a039700bb58e67",
+    "res://scripts/actors/operator_actor.gd": "03b9fc36ea98c77179e2c029e903f4d3e04b2ace0c622939a8b105ada3bb9677",
+    "res://scripts/animation/boss_phase_transition_guard.gd": "ef4da2e861c111dcb15b36df9544acb6b5f4f5dd156a02f4fcd478d0c893215b",
+    "res://scripts/animation/premium_enemy_presentation.gd": "6e857ca973cedfdadfbb7d3d375fe25f7afe37232df9c0251a5bfe2fdfd51528",
+    "res://scripts/animation/site7_machine_sprite.gd": "d226ac72391434d8b20e98ad0480e5c00338a534a59e71c6338e6b44cd313efd",
+    "res://scripts/combat/cover_navigation.gd": "cf73f545f4b7511e382c24c0ac73d83a335691d8869236a64a5b6c076e794960",
+    "res://scripts/combat/prototype_projectile.gd": "b156dfa72e3313070adb3745e6f64cafb18fa7aa0e6e60a9d70d267194903537",
+    "res://scripts/combat/site7_attack_warning.gd": "932b85e1bf4b4f071b2cee5749e6fa1fc5f51dd8df32bc9ed9110ae603318e2e",
+    "res://scripts/combat/site7_enemy_tactics.gd": "eea21cbe0be02073304cae3b9be4b6cf7c3169ab3636ff81f0943e88bd0e0bc2",
+    "res://scripts/missions/site7_environment_prop.gd": "8ff2942ebe6ec530be19ee997a66ec5902c5d585e5f5c6142758fe4e9f7654f3",
+    "res://scripts/missions/site7_environment_props.gd": "7bc4d13fa693873b94608ae4ee617f8cda4b9518e99aaa08d89a41fb858b360d",
+    "res://scripts/missions/story_stage_01.gd": "0ce95f81b47bfe754f4f09f75075852a24eaeb25914002788affe9cd51dc3eab",
+    "res://scripts/ui/enemy_overhead_ui.gd": "17915f0be953eb54744602588302f7718b9a651a61311eb8e799f6633ae5243f",
+    "res://tests/smoke/site7_full_operation_smoke.gd": "a58b199bf50307b4096a052e2f011e2cf5c4642d14fa8f57eccacbba81720aae"
+  },
+  "last_trace": [
+    {
+      "ammo": 16,
+      "health": [
+        44.0,
+        120.0,
+        73.0
+      ],
+      "hostiles": [],
+      "position": [
+        -6100.857421875,
+        3838.12670898438
+      ],
+      "remaining": 0,
+      "step": 4,
+      "tick": 34200,
+      "wave": 1
+    },
+    {
+      "ammo": 16,
+      "health": [
+        44.0,
+        120.0,
+        73.0
+      ],
+      "hostiles": [],
+      "position": [
+        -6100.857421875,
+        3838.12670898438
+      ],
+      "remaining": 0,
+      "step": 4,
+      "tick": 34800,
+      "wave": 1
+    },
+    {
+      "ammo": 16,
+      "health": [
+        44.0,
+        120.0,
+        73.0
+      ],
+      "hostiles": [],
+      "position": [
+        -6100.857421875,
+        3838.12670898438
+      ],
+      "remaining": 0,
+      "step": 4,
+      "tick": 35400,
+      "wave": 1
+    }
+  ],
+  "source_sha256": "a7c7a2237f53b341e2b39e9f0043bf915f145ca26cc6af354a4a258a3238cb75",
+  "source": ".cache\\diag\\expansion_item1_20261003\\baseline_project\\qa\\regression_runs\\20261003_103852_custom\\out\\full_op_09\\full_operation.json"
+}

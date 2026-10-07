@@ -1,0 +1,2502 @@
+{
+  "schema": 1,
+  "source": "tools/environment/build_site7_world_layout.py",
+  "coordinate_space": "world px; plate centres. No rotations. Authored deck direction is unmirrored; only legacy branches mirror. Door anchors are world-pixel threshold centres.",
+  "missions": {
+    "MIS_CH01_01": {
+      "rooms": {
+        "R01_ENTRY": [
+          1680.0,
+          470.0
+        ],
+        "R02_CORRIDOR": [
+          3776.0,
+          -573.0
+        ],
+        "R03_ARCHIVE": [
+          5915.0,
+          -1573.0
+        ],
+        "R04_CONTAINMENT": [
+          8223.0,
+          -2570.0
+        ],
+        "R05_CORE": [
+          10394.0,
+          -3543.0
+        ],
+        "R06_EXTRACTION": [
+          12531.0,
+          -4533.0
+        ],
+        "O01_SUPPLY": [
+          7889.0,
+          -565.0
+        ],
+        "O02_RESEARCH": [
+          10256.0,
+          -1563.0
+        ]
+      },
+      "connectors": [
+        {
+          "position": [
+            2725.0,
+            -6.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R01_ENTRY",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                2024.0,
+                339.5
+              ]
+            },
+            {
+              "room": "R02_CORRIDOR",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                3426.0,
+                -381.0
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            4813.0,
+            -1012.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R02_CORRIDOR",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                4112.0,
+                -713.5
+              ]
+            },
+            {
+              "room": "R03_ARCHIVE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                5514.0,
+                -1403.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            7030.0,
+            -1992.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R03_ARCHIVE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                6329.0,
+                -1693.5
+              ]
+            },
+            {
+              "room": "R04_CONTAINMENT",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                7731.0,
+                -2383.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            9297.0,
+            -2972.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R04_CONTAINMENT",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                8596.0,
+                -2673.5
+              ]
+            },
+            {
+              "room": "R05_CORE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                9998.0,
+                -3363.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            11459.0,
+            -3962.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R05_CORE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                10758.0,
+                -3663.5
+              ]
+            },
+            {
+              "room": "R06_EXTRACTION",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                12160.0,
+                -4353.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            6956.0,
+            -1009.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R03_ARCHIVE",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                6329.0,
+                -1403.5
+              ]
+            },
+            {
+              "room": "O01_SUPPLY",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                7583.0,
+                -715.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            9323.0,
+            -1996.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R04_CONTAINMENT",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                8696.0,
+                -2383.5
+              ]
+            },
+            {
+              "room": "O02_RESEARCH",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                9950.0,
+                -1713.5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MIS_CH01_02": {
+      "rooms": {
+        "R01_REENTRY": [
+          1680.0,
+          470.0
+        ],
+        "R02_MAINTENANCE": [
+          3868.0,
+          -567.5
+        ],
+        "R03_RELAY_ARCHIVE": [
+          6044.0,
+          -1555.5
+        ],
+        "R04_QUARANTINE": [
+          8261.0,
+          -2535.5
+        ],
+        "R05_RELAY": [
+          10473.3,
+          -3524.8
+        ],
+        "R06_EVAC": [
+          12597.4,
+          -4532.6
+        ],
+        "O01_SUPPLY": [
+          8037.0,
+          -556.5
+        ],
+        "O02_RESEARCH": [
+          10254.0,
+          -1554.5
+        ]
+      },
+      "connectors": [
+        {
+          "position": [
+            2725.0,
+            -6.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R01_REENTRY",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                2024.0,
+                339.5
+              ]
+            },
+            {
+              "room": "R02_MAINTENANCE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                3426.0,
+                -381.0
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            4942.0,
+            -995.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R02_MAINTENANCE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                4241.0,
+                -696.0
+              ]
+            },
+            {
+              "room": "R03_RELAY_ARCHIVE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                5643.0,
+                -1386.0
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            7159.0,
+            -1975.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R03_RELAY_ARCHIVE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                6458.0,
+                -1676.0
+              ]
+            },
+            {
+              "room": "R04_QUARANTINE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                7860.0,
+                -2366.0
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            9376.0,
+            -2955.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R04_QUARANTINE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                8675.0,
+                -2656.0
+              ]
+            },
+            {
+              "room": "R05_RELAY",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                10077.0,
+                -3346.0
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            11525.4,
+            -3962.1
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R05_RELAY",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                10824.4,
+                -3663.1
+              ]
+            },
+            {
+              "room": "R06_EVAC",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                12226.4,
+                -4353.1
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            7085.0,
+            -992.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R03_RELAY_ARCHIVE",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                6458.0,
+                -1386.0
+              ]
+            },
+            {
+              "room": "O01_SUPPLY",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                7712.0,
+                -698.0
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            9302.0,
+            -1979.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R04_QUARANTINE",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                8675.0,
+                -2366.0
+              ]
+            },
+            {
+              "room": "O02_RESEARCH",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                9929.0,
+                -1696.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MIS_CH01_03": {
+      "rooms": {
+        "R01_BREACH": [
+          1680.0,
+          470.0
+        ],
+        "R02_DEFENSE": [
+          4268.5,
+          -567.0
+        ],
+        "R03_TRACE": [
+          6777.0,
+          -1634.0
+        ],
+        "R04_BULKHEAD": [
+          9390.0,
+          -2661.0
+        ],
+        "R05_ANCHOR": [
+          11930.3,
+          -3718.9
+        ],
+        "R06_ESCAPE": [
+          14409.7,
+          -4795.9
+        ],
+        "O01_SUPPLY": [
+          8761.0,
+          -609.0
+        ],
+        "O02_RESEARCH": [
+          13914.9,
+          -2707.0
+        ]
+      },
+      "connectors": [
+        {
+          "position": [
+            2981.0,
+            -54.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R01_BREACH",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                2094.0,
+                349.5
+              ]
+            },
+            {
+              "room": "R02_DEFENSE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                3868.0,
+                -397.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            5489.0,
+            -1121.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R02_DEFENSE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                4602.0,
+                -717.5
+              ]
+            },
+            {
+              "room": "R03_TRACE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                6376.0,
+                -1464.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            8078.0,
+            -2158.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R03_TRACE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                7191.0,
+                -1754.5
+              ]
+            },
+            {
+              "room": "R04_BULKHEAD",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                8965.0,
+                -2501.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            10642.0,
+            -3206.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R04_BULKHEAD",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                9755.0,
+                -2802.5
+              ]
+            },
+            {
+              "room": "R05_ANCHOR",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                11529.0,
+                -3549.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            13151.7,
+            -4272.9
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R05_ANCHOR",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                12264.7,
+                -3869.4
+              ]
+            },
+            {
+              "room": "R06_ESCAPE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                14038.7,
+                -4616.4
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            7818.0,
+            -1070.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R03_TRACE",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                7191.0,
+                -1464.5
+              ]
+            },
+            {
+              "room": "O01_SUPPLY",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                8445.0,
+                -779.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            12971.9,
+            -3168.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R05_ANCHOR",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                12344.9,
+                -3549.5
+              ]
+            },
+            {
+              "room": "O02_RESEARCH",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                13598.9,
+                -2877.5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MIS_CH01_04": {
+      "rooms": {
+        "R01_ENTRY": [
+          1680.0,
+          470.0
+        ],
+        "R02_GATE": [
+          -830.0,
+          1538.0
+        ],
+        "R03_TRACE": [
+          -3443.0,
+          2565.0
+        ],
+        "R04_LINE": [
+          -5951.3,
+          3632.0
+        ],
+        "R05_WARDEN": [
+          -8459.6,
+          4699.0
+        ],
+        "R06_ESCAPE": [
+          -11048.6,
+          5736.0
+        ],
+        "O01_SUPPLY": [
+          -1459.0,
+          3590.0
+        ],
+        "O02_RESEARCH": [
+          -3968.0,
+          4644.0
+        ]
+      },
+      "connectors": [
+        {
+          "position": [
+            422.0,
+            993.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R01_ENTRY",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                1309.0,
+                649.5
+              ]
+            },
+            {
+              "room": "R02_GATE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -465.0,
+                1396.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -2142.0,
+            2041.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R02_GATE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                -1255.0,
+                1697.5
+              ]
+            },
+            {
+              "room": "R03_TRACE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -3029.0,
+                2444.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -4731.0,
+            3078.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R03_TRACE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                -3844.0,
+                2734.5
+              ]
+            },
+            {
+              "room": "R04_LINE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -5618.0,
+                3481.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -7238.6,
+            4145.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R04_LINE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                -6351.6,
+                3801.5
+              ]
+            },
+            {
+              "room": "R05_WARDEN",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -8125.6,
+                4548.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -9747.6,
+            5212.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R05_WARDEN",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                -8860.6,
+                4868.5
+              ]
+            },
+            {
+              "room": "R06_ESCAPE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -10634.6,
+                5615.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -2402.0,
+            3128.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R03_TRACE",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                -3029.0,
+                2734.5
+              ]
+            },
+            {
+              "room": "O01_SUPPLY",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                -1775.0,
+                3419.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -4911.0,
+            4182.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R04_LINE",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                -5538.0,
+                3801.5
+              ]
+            },
+            {
+              "room": "O02_RESEARCH",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                -4284.0,
+                4473.5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MIS_CH01_05": {
+      "rooms": {
+        "R01_ENTRY": [
+          1680.0,
+          470.0
+        ],
+        "R02_DEFENSE": [
+          4269.0,
+          -567.0
+        ],
+        "R03_TRACE": [
+          6778.0,
+          -1634.0
+        ],
+        "R04_ARRAY": [
+          9366.6,
+          -2670.7
+        ],
+        "R05_CARRIER": [
+          12149.2,
+          -3766.6
+        ],
+        "R06_ESCAPE": [
+          14963.9,
+          -4963.4
+        ],
+        "O01_SUPPLY": [
+          6253.0,
+          458.0
+        ],
+        "O02_RESEARCH": [
+          11350.3,
+          -1659.0
+        ]
+      },
+      "connectors": [
+        {
+          "position": [
+            2981.0,
+            -54.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R01_ENTRY",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                2094.0,
+                349.5
+              ]
+            },
+            {
+              "room": "R02_DEFENSE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                3868.0,
+                -397.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            5490.0,
+            -1121.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R02_DEFENSE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                4603.0,
+                -717.5
+              ]
+            },
+            {
+              "room": "R03_TRACE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                6377.0,
+                -1464.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            8079.0,
+            -2158.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R03_TRACE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                7192.0,
+                -1754.5
+              ]
+            },
+            {
+              "room": "R04_ARRAY",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                8966.0,
+                -2501.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            10597.6,
+            -3224.3
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R04_ARRAY",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                9710.6,
+                -2820.8
+              ]
+            },
+            {
+              "room": "R05_CARRIER",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                11484.6,
+                -3567.8
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            13705.9,
+            -4440.4
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R05_CARRIER",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                12818.9,
+                -4036.9
+              ]
+            },
+            {
+              "room": "R06_ESCAPE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                14592.9,
+                -4783.9
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            5310.0,
+            -3.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R02_DEFENSE",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                4683.0,
+                -397.5
+              ]
+            },
+            {
+              "room": "O01_SUPPLY",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                5937.0,
+                287.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            10407.3,
+            -2120.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R04_ARRAY",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                9780.3,
+                -2501.5
+              ]
+            },
+            {
+              "room": "O02_RESEARCH",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                11034.3,
+                -1829.5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MIS_CH01_06": {
+      "rooms": {
+        "R01_AIRLOCK": [
+          1680.0,
+          470.0
+        ],
+        "R02_GALLERY": [
+          4269.0,
+          -567.0
+        ],
+        "R03_LAB": [
+          6724.2,
+          -1604.0
+        ],
+        "R04_PUMPS": [
+          9313.2,
+          -2641.0
+        ],
+        "R05_ATRIUM": [
+          11768.5,
+          -3678.0
+        ],
+        "R06_LIFT": [
+          14193.7,
+          -4725.0
+        ],
+        "O01_STORES": [
+          3664.0,
+          1495.0
+        ],
+        "O02_NURSERY": [
+          8708.2,
+          -592.0
+        ]
+      },
+      "connectors": [
+        {
+          "position": [
+            2981.0,
+            -54.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R01_AIRLOCK",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                2094.0,
+                349.5
+              ]
+            },
+            {
+              "room": "R02_GALLERY",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                3868.0,
+                -397.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            5436.2,
+            -1091.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R02_GALLERY",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                4549.2,
+                -687.5
+              ]
+            },
+            {
+              "room": "R03_LAB",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                6323.2,
+                -1434.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            8025.2,
+            -2128.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R03_LAB",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                7138.2,
+                -1724.5
+              ]
+            },
+            {
+              "room": "R04_PUMPS",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                8912.2,
+                -2471.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            10480.5,
+            -3165.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R04_PUMPS",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                9593.5,
+                -2761.5
+              ]
+            },
+            {
+              "room": "R05_ATRIUM",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                11367.5,
+                -3508.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            12935.7,
+            -4202.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R05_ATRIUM",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                12048.7,
+                -3798.5
+              ]
+            },
+            {
+              "room": "R06_LIFT",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                13822.7,
+                -4545.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            2721.0,
+            1033.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R01_AIRLOCK",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                2094.0,
+                639.5
+              ]
+            },
+            {
+              "room": "O01_STORES",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                3348.0,
+                1324.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            7765.2,
+            -1053.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R03_LAB",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                7138.2,
+                -1434.5
+              ]
+            },
+            {
+              "room": "O02_NURSERY",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                8392.2,
+                -762.5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MIS_CH01_07": {
+      "rooms": {
+        "R01_INTAKE": [
+          1680.0,
+          470.0
+        ],
+        "R02_FREEZE": [
+          -799.0,
+          1547.0
+        ],
+        "R03_LEDGER": [
+          -3388.0,
+          2584.0
+        ],
+        "R04_COMPRESSORS": [
+          -5860.3,
+          3614.1
+        ],
+        "R05_VAULT": [
+          -8393.8,
+          4671.4
+        ],
+        "R06_LOCK": [
+          -10982.8,
+          5708.4
+        ],
+        "O01_REAGENTS": [
+          1185.0,
+          2572.0
+        ],
+        "O02_RECORDER": [
+          -6409.8,
+          5683.4
+        ]
+      },
+      "connectors": [
+        {
+          "position": [
+            422.0,
+            993.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R01_INTAKE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                1309.0,
+                649.5
+              ]
+            },
+            {
+              "room": "R02_FREEZE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -465.0,
+                1396.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -2087.0,
+            2060.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R02_FREEZE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                -1200.0,
+                1716.5
+              ]
+            },
+            {
+              "room": "R03_LEDGER",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -2974.0,
+                2463.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -4676.0,
+            3097.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R03_LEDGER",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                -3789.0,
+                2753.5
+              ]
+            },
+            {
+              "room": "R04_COMPRESSORS",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -5563.0,
+                3500.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -7172.8,
+            4117.4
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R04_COMPRESSORS",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                -6285.8,
+                3773.9
+              ]
+            },
+            {
+              "room": "R05_VAULT",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -8059.8,
+                4520.9
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -9681.8,
+            5184.4
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R05_VAULT",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                -8794.8,
+                4840.9
+              ]
+            },
+            {
+              "room": "R06_LOCK",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -10568.8,
+                5587.9
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            242.0,
+            2110.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R02_FREEZE",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                -385.0,
+                1716.5
+              ]
+            },
+            {
+              "room": "O01_REAGENTS",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                869.0,
+                2401.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -7352.8,
+            5221.9
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R05_VAULT",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                -7979.8,
+                4840.9
+              ]
+            },
+            {
+              "room": "O02_RECORDER",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                -6725.8,
+                5512.9
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MIS_CH01_08": {
+      "rooms": {
+        "R01_GATE": [
+          1680.0,
+          470.0
+        ],
+        "R02_MARSHALLING": [
+          4445.0,
+          -541.5
+        ],
+        "R03_TOWER": [
+          7181.0,
+          -1574.0
+        ],
+        "R04_JUNCTION": [
+          9917.7,
+          -2589.0
+        ],
+        "R05_TERMINAL": [
+          12636.7,
+          -3608.5
+        ],
+        "R06_PLATFORM": [
+          15329.7,
+          -4637.0
+        ],
+        "O01_DEPOT": [
+          12010.7,
+          -1597.5
+        ],
+        "O02_DISPATCH": [
+          14739.7,
+          -2540.0
+        ]
+      },
+      "connectors": [
+        {
+          "position": [
+            2986.0,
+            -24.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R01_GATE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                2099.0,
+                384.5
+              ]
+            },
+            {
+              "room": "R02_MARSHALLING",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                3873.0,
+                -336.0
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            5815.0,
+            -1058.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R02_MARSHALLING",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                4928.0,
+                -687.0
+              ]
+            },
+            {
+              "room": "R03_TOWER",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                6702.0,
+                -1381.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            8530.0,
+            -2028.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R03_TOWER",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                7643.0,
+                -1632.5
+              ]
+            },
+            {
+              "room": "R04_JUNCTION",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                9405.7,
+                -2392.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            11212.7,
+            -3101.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R04_JUNCTION",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                10325.7,
+                -2722.5
+              ]
+            },
+            {
+              "room": "R05_TERMINAL",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                12099.7,
+                -3422.0
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            13916.7,
+            -4089.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R05_TERMINAL",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                13029.7,
+                -3714.0
+              ]
+            },
+            {
+              "room": "R06_PLATFORM",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                14803.7,
+                -4412.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            11077.7,
+            -2097.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R04_JUNCTION",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                10450.7,
+                -2493.5
+              ]
+            },
+            {
+              "room": "O01_DEPOT",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                11704.7,
+                -1744.0
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            13806.7,
+            -3051.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R05_TERMINAL",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                13179.7,
+                -3446.0
+              ]
+            },
+            {
+              "room": "O02_DISPATCH",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                14433.7,
+                -2679.5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MIS_CH01_09": {
+      "rooms": {
+        "R01_ANTECHAMBER": [
+          1680.0,
+          470.0
+        ],
+        "R02_NAVE": [
+          -823.0,
+          1545.2
+        ],
+        "R03_CHAPEL": [
+          -3447.3,
+          2517.3
+        ],
+        "R04_GALLERY": [
+          -6003.3,
+          3512.8
+        ],
+        "R05_STACKS": [
+          -8598.3,
+          4511.3
+        ],
+        "R06_LIFT": [
+          -11406.7,
+          5490.7
+        ],
+        "O01_BLADES": [
+          -3964.3,
+          4646.3
+        ],
+        "O02_RESTORE": [
+          -1248.3,
+          3558.8
+        ]
+      },
+      "connectors": [
+        {
+          "position": [
+            398.0,
+            994.7
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R01_ANTECHAMBER",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                1278.0,
+                644.5
+              ]
+            },
+            {
+              "room": "R02_NAVE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -489.0,
+                1420.7
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -2155.3,
+            2065.8
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R02_NAVE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                -1290.0,
+                1714.7
+              ]
+            },
+            {
+              "room": "R03_CHAPEL",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -3042.3,
+                2437.8
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -4761.3,
+            3007.3
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R03_CHAPEL",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                -3874.3,
+                2691.8
+              ]
+            },
+            {
+              "room": "R04_GALLERY",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -5648.3,
+                3394.3
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -7358.3,
+            4010.8
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R04_GALLERY",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                -6471.3,
+                3697.3
+              ]
+            },
+            {
+              "room": "R05_STACKS",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -8245.3,
+                4387.8
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -10006.7,
+            4993.7
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "reverse": true,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R05_STACKS",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                -9137.3,
+                4630.8
+              ]
+            },
+            {
+              "room": "R06_LIFT",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                -10893.7,
+                5392.2
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -4897.3,
+            4098.8
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R04_GALLERY",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                -5524.3,
+                3697.3
+              ]
+            },
+            {
+              "room": "O01_BLADES",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                -4270.3,
+                4488.8
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            -2397.3,
+            3098.3
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R03_CHAPEL",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                -3024.3,
+                2693.8
+              ]
+            },
+            {
+              "room": "O02_RESTORE",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                -1770.3,
+                3478.3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MIS_CH01_10": {
+      "rooms": {
+        "R01_DESCENT": [
+          1680.0,
+          470.0
+        ],
+        "R02_RELAY": [
+          4310.0,
+          -495.0
+        ],
+        "R03_LOG": [
+          6852.0,
+          -1447.5
+        ],
+        "R04_GALLERY": [
+          9533.0,
+          -2477.0
+        ],
+        "R05_CORE": [
+          12200.0,
+          -3408.0
+        ],
+        "R06_EXIT": [
+          14945.0,
+          -4461.5
+        ],
+        "O01_VAULT": [
+          14247.0,
+          -2348.0
+        ],
+        "O02_RECORDER": [
+          6334.0,
+          546.5
+        ]
+      },
+      "connectors": [
+        {
+          "position": [
+            2981.0,
+            -22.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R01_DESCENT",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                2094.0,
+                383.5
+              ]
+            },
+            {
+              "room": "R02_RELAY",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                3868.0,
+                -337.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            5526.0,
+            -966.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R02_RELAY",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                4639.0,
+                -595.5
+              ]
+            },
+            {
+              "room": "R03_LOG",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                6413.0,
+                -1272.0
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            8169.0,
+            -1919.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R03_LOG",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                7282.0,
+                -1525.0
+              ]
+            },
+            {
+              "room": "R04_GALLERY",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                9028.0,
+                -2278.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            10781.0,
+            -2964.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R04_GALLERY",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                9894.0,
+                -2586.5
+              ]
+            },
+            {
+              "room": "R05_CORE",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                11668.0,
+                -3280.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            13590.0,
+            -3939.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "ascending",
+          "seam_fade": 0.1,
+          "door_anchors": [
+            {
+              "room": "R05_CORE",
+              "side": "NE",
+              "end": "start",
+              "position": [
+                12703.0,
+                -3544.5
+              ]
+            },
+            {
+              "room": "R06_EXIT",
+              "side": "SW",
+              "end": "finish",
+              "position": [
+                14477.0,
+                -4267.0
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            13308.0,
+            -2877.5
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R05_CORE",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                12681.0,
+                -3269.5
+              ]
+            },
+            {
+              "room": "O01_VAULT",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                13935.0,
+                -2497.5
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            5379.0,
+            61.0
+          ],
+          "scale": 1.0,
+          "mirror": false,
+          "deck": "descending",
+          "seam_fade": 0.075,
+          "door_anchors": [
+            {
+              "room": "R02_RELAY",
+              "side": "SE",
+              "end": "start",
+              "position": [
+                4752.0,
+                -330.5
+              ]
+            },
+            {
+              "room": "O02_RECORDER",
+              "side": "NW",
+              "end": "finish",
+              "position": [
+                6006.0,
+                389.0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

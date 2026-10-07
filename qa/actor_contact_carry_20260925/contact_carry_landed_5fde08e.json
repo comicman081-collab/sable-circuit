@@ -1,0 +1,139 @@
+{
+  "bodies": {
+    "enemy_actor.gd": {
+      "floor_snap_length": 1.0,
+      "motion_mode": 0,
+      "platform_floor_layers": 0,
+      "platform_on_leave": 0,
+      "platform_wall_layers": 0
+    },
+    "operator_actor.gd": {
+      "floor_snap_length": 1.0,
+      "motion_mode": 0,
+      "platform_floor_layers": 0,
+      "platform_on_leave": 0,
+      "platform_wall_layers": 0
+    }
+  },
+  "checks": 27,
+  "failures": [],
+  "mission": "MIS_CH01_02",
+  "recorded_utc": "2026-09-25T12:55:06",
+  "scenarios": [
+    {
+      "name": "BULWARK crawl / controlled operator north of it",
+      "physics_hz": 60,
+      "rider": "CHR_PROTO_01",
+      "rider_counts_robot_as_floor": true,
+      "rider_farthest_along_px": 0.0,
+      "rider_moved_across_px": -8.49,
+      "rider_moved_along_px": 0.0,
+      "rider_role": "controlled operator",
+      "robot": "ENM_SITE7_BULWARK_01",
+      "robot_moved_px": 93.01,
+      "robot_speed_px_s": 62.0,
+      "ticks": 90
+    },
+    {
+      "name": "BULWARK crawl / AI follower north of it",
+      "physics_hz": 60,
+      "rider": "CHR_PROTO_02",
+      "rider_counts_robot_as_floor": true,
+      "rider_farthest_along_px": 0.0,
+      "rider_moved_across_px": -8.93,
+      "rider_moved_along_px": 0.0,
+      "rider_role": "AI follower",
+      "robot": "ENM_SITE7_BULWARK_01",
+      "robot_moved_px": 92.98,
+      "robot_speed_px_s": 62.0,
+      "ticks": 90
+    },
+    {
+      "name": "CINDER approach / controlled operator north of it",
+      "physics_hz": 60,
+      "rider": "CHR_PROTO_01",
+      "rider_counts_robot_as_floor": true,
+      "rider_farthest_along_px": 0.0,
+      "rider_moved_across_px": -3.71,
+      "rider_moved_along_px": 0.0,
+      "rider_role": "controlled operator",
+      "robot": "ENM_SITE7_RAM_01",
+      "robot_moved_px": 112.0,
+      "robot_speed_px_s": 112.0,
+      "ticks": 60
+    },
+    {
+      "name": "CINDER approach / AI follower north of it",
+      "physics_hz": 60,
+      "rider": "CHR_PROTO_02",
+      "rider_counts_robot_as_floor": true,
+      "rider_farthest_along_px": 0.0,
+      "rider_moved_across_px": -3.7,
+      "rider_moved_along_px": 0.0,
+      "rider_role": "AI follower",
+      "robot": "ENM_SITE7_RAM_01",
+      "robot_moved_px": 112.0,
+      "robot_speed_px_s": 112.0,
+      "ticks": 60
+    },
+    {
+      "name": "CINDER charge / controlled operator north of it",
+      "physics_hz": 60,
+      "rider": "CHR_PROTO_01",
+      "rider_counts_robot_as_floor": true,
+      "rider_farthest_along_px": 0.0,
+      "rider_moved_across_px": -0.58,
+      "rider_moved_along_px": 0.0,
+      "rider_role": "controlled operator",
+      "robot": "ENM_SITE7_RAM_01",
+      "robot_moved_px": 150.0,
+      "robot_speed_px_s": 360.0,
+      "ticks": 25
+    },
+    {
+      "name": "CINDER charge / AI follower north of it",
+      "physics_hz": 60,
+      "rider": "CHR_PROTO_02",
+      "rider_counts_robot_as_floor": true,
+      "rider_farthest_along_px": 0.0,
+      "rider_moved_across_px": -0.57,
+      "rider_moved_along_px": 0.0,
+      "rider_role": "AI follower",
+      "robot": "ENM_SITE7_RAM_01",
+      "robot_moved_px": 150.0,
+      "robot_speed_px_s": 360.0,
+      "ticks": 25
+    },
+    {
+      "name": "operator walks out from under ENM_SITE7_BULWARK_01",
+      "operator_walk_px": 165.0,
+      "physics_hz": 60,
+      "rider": "ENM_SITE7_BULWARK_01",
+      "rider_counts_operator_as_floor": true,
+      "rider_farthest_along_px": 0.0,
+      "rider_moved_across_px": 1.96,
+      "rider_moved_along_px": 0.0,
+      "rider_role": "robot holding still",
+      "robot": "ENM_SITE7_BULWARK_01",
+      "ticks": 60
+    },
+    {
+      "name": "operator walks out from under ENM_SITE7_RAM_01",
+      "operator_walk_px": 165.0,
+      "physics_hz": 60,
+      "rider": "ENM_SITE7_RAM_01",
+      "rider_counts_operator_as_floor": true,
+      "rider_farthest_along_px": 0.0,
+      "rider_moved_across_px": 1.96,
+      "rider_moved_along_px": 0.0,
+      "rider_role": "robot holding still",
+      "robot": "ENM_SITE7_RAM_01",
+      "ticks": 60
+    }
+  ],
+  "site": [
+    3680.0,
+    240.0
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "note": "Room rules change when things happen in a combat room, never how hard they hit, and never touch robot art. A mission room opts in with \"rule\": {\"type\": \"<ID>\", \"seconds\": n} on its row (next to \"encounter\" and \"hazards\"); a room without the key behaves exactly as before. Boss rooms and the training simulator take no rule, and a rule that needs a reinforcement wave is refused on a room that has none (scripts/combat/room_rule.gd RoomRule.problems; the quick test room_rule reads every mission file).",
+  "rules": {
+    "OVERRUN": {
+      "title": "OVERRUN",
+      "tip": "OVERRUN: the next wave comes on a timer, whether or not this one is thinned out. Its entry points are marked first.",
+      "needs_reinforcements": true,
+      "seconds": 45.0,
+      "min_seconds": 20.0,
+      "max_seconds": 120.0
+    }
+  }
+}

@@ -1,0 +1,92 @@
+applied key_generic_boss_first: enemy_key tests the generic BOSS branch before the five new bosses (all five become ANCHOR)
+[key_generic_boss_first/intel_supply] exit=1 4s errors=21 scripterr=0 pass=0  INTEL_SUPPLY_SMOKE: FAIL (83 checks)
+[key_generic_boss_first/m10_intel] exit=0 7s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+[key_generic_boss_first/campaign] exit=0 30s errors=0 scripterr=0 pass=0  SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/key_generic_boss_first_campaign
+applied key_old_chain: enemy_key is the old three-key chain again (no new-boss lines)
+[key_old_chain/intel_supply] exit=1 3s errors=21 scripterr=0 pass=0  INTEL_SUPPLY_SMOKE: FAIL (83 checks)
+[key_old_chain/m10_intel] exit=0 7s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+[key_old_chain/campaign] exit=0 28s errors=0 scripterr=0 pass=0  SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/key_old_chain_campaign
+applied lost_three_keys: lost_intel_samples sums only the three old keys
+[lost_three_keys/intel_supply] exit=1 3s errors=5 scripterr=0 pass=0  INTEL_SUPPLY_SMOKE: FAIL (83 checks)
+[lost_three_keys/m10_intel] exit=0 6s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+[lost_three_keys/campaign] exit=0 29s errors=0 scripterr=0 pass=0  SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/lost_three_keys_campaign
+applied intel_keys_campaign_three: CampaignProgression.INTEL_KEYS is the three old keys (commit drops the new samples)
+[intel_keys_campaign_three/intel_supply] exit=1 3s errors=6 scripterr=0 pass=0  INTEL_SUPPLY_SMOKE: FAIL (83 checks)
+[intel_keys_campaign_three/m10_persistence] exit=0 1s errors=0 scripterr=0 pass=27  M10_PERSISTENCE_SMOKE: PASS
+[intel_keys_campaign_three/contract_save] exit=0 1s errors=0 scripterr=0 pass=0  RUN_CONTRACT_SAVE_SMOKE: PASS (175 checks)
+[intel_keys_campaign_three/m13_migration] exit=0 2s errors=0 scripterr=0 pass=9  M13_WEAPON_BASE_MIGRATION_SMOKE: PASS
+[intel_keys_campaign_three/m10_intel] exit=0 7s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+[intel_keys_campaign_three/campaign] exit=0 29s errors=0 scripterr=0 pass=0  SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/intel_keys_campaign_three_campaign
+applied intel_keys_stage_three: StoryStage01.INTEL_KEYS is the three old keys (extraction secures only three)
+[intel_keys_stage_three/intel_supply] exit=1 4s errors=5 scripterr=0 pass=0  INTEL_SUPPLY_SMOKE: FAIL (83 checks)
+[intel_keys_stage_three/m10_intel] exit=0 7s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+[intel_keys_stage_three/campaign] exit=0 29s errors=0 scripterr=0 pass=0  SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/intel_keys_stage_three_campaign
+applied sanitize_three_keys: _sanitize_intel reads only the three old keys (new samples dropped on commit and load)
+[sanitize_three_keys/intel_supply] exit=1 3s errors=7 scripterr=0 pass=0  INTEL_SUPPLY_SMOKE: FAIL (83 checks)
+[sanitize_three_keys/m10_persistence] exit=0 2s errors=0 scripterr=0 pass=27  M10_PERSISTENCE_SMOKE: PASS
+[sanitize_three_keys/contract_save] exit=0 1s errors=0 scripterr=0 pass=0  RUN_CONTRACT_SAVE_SMOKE: PASS (175 checks)
+[sanitize_three_keys/m13_migration] exit=0 1s errors=0 scripterr=0 pass=9  M13_WEAPON_BASE_MIGRATION_SMOKE: PASS
+[sanitize_three_keys/m10_intel] exit=0 7s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+applied secured_skips_origin: extraction leaves the ORIGIN sample out of secured_intel
+[secured_skips_origin/intel_supply] exit=1 3s errors=5 scripterr=0 pass=0  INTEL_SUPPLY_SMOKE: FAIL (83 checks)
+[secured_skips_origin/m10_intel] exit=0 7s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+[secured_skips_origin/campaign] exit=0 28s errors=0 scripterr=0 pass=0  SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/secured_skips_origin_campaign
+applied weapon_hit_profile_not_overridden: _weapon_art_profile overrides only the projectile family, not hit_vfx_profile
+[weapon_hit_profile_not_overridden/weapon_expansion] exit=1 5s errors=3 scripterr=0 pass=0  WEAPON_EXPANSION_SMOKE: FAIL (131 checks)
+[weapon_hit_profile_not_overridden/hit_hurt_vfx] exit=0 5s errors=0 scripterr=0 pass=0  COMBAT_HIT_HURT_VFX_SMOKE: PASS (47 checks)
+[weapon_hit_profile_not_overridden/m13_campaign] exit=0 2s errors=0 scripterr=0 pass=16  M13_WEAPON_CAMPAIGN_SMOKE: PASS
+[weapon_hit_profile_not_overridden/m13_runtime] exit=0 8s errors=0 scripterr=0 pass=18  M13_WEAPON_RUNTIME_SMOKE: PASS
+applied rail_damage_40: RAIL CARBINE damage 40 instead of 22 (burst 105, sustained above 78)
+[rail_damage_40/weapon_expansion] exit=1 5s errors=3 scripterr=0 pass=0  WEAPON_EXPANSION_SMOKE: FAIL (131 checks)
+[rail_damage_40/m13_loadout] exit=1 7s errors=3 scripterr=0 pass=50  M13_WEAPON_LOADOUT_SMOKE: FAIL (3)
+[rail_damage_40/m13_campaign] exit=0 2s errors=0 scripterr=0 pass=16  M13_WEAPON_CAMPAIGN_SMOKE: PASS
+[rail_damage_40/upgrade_economy] exit=0 3s errors=0 scripterr=0 pass=0  UPGRADE_ECONOMY: PASS (225 checks)
+applied rail_unlock_removed: the ANL_GANTRY_RAIL_MODEL -> RAIL CARBINE unlock rule is deleted
+[rail_unlock_removed/weapon_expansion] exit=1 5s errors=3 scripterr=0 pass=0  WEAPON_EXPANSION_SMOKE: FAIL (131 checks)
+[rail_unlock_removed/m13_loadout] exit=0 7s errors=0 scripterr=0 pass=53  M13_WEAPON_LOADOUT_SMOKE: PASS
+[rail_unlock_removed/m13_migration] exit=0 1s errors=0 scripterr=0 pass=9  M13_WEAPON_BASE_MIGRATION_SMOKE: PASS
+applied null_unlock_removed: the ANL_ORIGIN_NULL_MODEL -> NULL BREACHER unlock rule is deleted
+[null_unlock_removed/weapon_expansion] exit=1 4s errors=2 scripterr=0 pass=0  WEAPON_EXPANSION_SMOKE: FAIL (131 checks)
+[null_unlock_removed/m13_loadout] exit=0 7s errors=0 scripterr=0 pass=53  M13_WEAPON_LOADOUT_SMOKE: PASS
+[null_unlock_removed/m13_migration] exit=0 2s errors=0 scripterr=0 pass=9  M13_WEAPON_BASE_MIGRATION_SMOKE: PASS
+applied research_plus_52: new research costs +52 (6,132 = exactly 1.5x: boundary, expected to PASS)
+[research_plus_52/upgrade_economy] exit=0 3s errors=0 scripterr=0 pass=0  UPGRADE_ECONOMY: PASS (225 checks)
+[research_plus_52/m10_intel] exit=0 6s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+applied research_plus_53: new research costs +53 (6,133 = 1.5002x: expected to FAIL)
+[research_plus_53/upgrade_economy] exit=1 3s errors=1 scripterr=0 pass=0  UPGRADE_ECONOMY: FAIL (225 checks)
+[research_plus_53/m10_intel] exit=0 6s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+applied research_plus_60: new research costs +60 (6,140 = 1.502x)
+[research_plus_60/upgrade_economy] exit=1 3s errors=1 scripterr=0 pass=0  UPGRADE_ECONOMY: FAIL (225 checks)
+[research_plus_60/m10_intel] exit=0 6s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+applied mod_frost_lens_off: FROST LENS hook never fires
+[mod_frost_lens_off/module_expansion] exit=1 5s errors=1 scripterr=0 pass=0  MODULE_EXPANSION_SMOKE: FAIL (86 checks)
+[mod_frost_lens_off/m10_intel] exit=0 7s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+applied mod_rail_spool_cooldown_off: RAIL SPOOL cooldown hook never fires
+[mod_rail_spool_cooldown_off/module_expansion] exit=1 5s errors=1 scripterr=0 pass=0  MODULE_EXPANSION_SMOKE: FAIL (86 checks)
+[mod_rail_spool_cooldown_off/m10_intel] exit=0 8s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+applied mod_rail_spool_distance_off: RAIL SPOOL distance hook never fires
+[mod_rail_spool_distance_off/module_expansion] exit=1 5s errors=1 scripterr=0 pass=0  MODULE_EXPANSION_SMOKE: FAIL (86 checks)
+[mod_rail_spool_distance_off/m10_intel] exit=0 6s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+applied mod_spore_filter_off: SPORE FILTER hook never fires
+[mod_spore_filter_off/module_expansion] exit=1 5s errors=1 scripterr=0 pass=0  MODULE_EXPANSION_SMOKE: FAIL (86 checks)
+[mod_spore_filter_off/m10_intel] exit=0 7s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+applied mod_echo_relay_off: ECHO RELAY hook never fires
+[mod_echo_relay_off/module_expansion] exit=1 4s errors=1 scripterr=0 pass=0  MODULE_EXPANSION_SMOKE: FAIL (86 checks)
+[mod_echo_relay_off/m10_intel] exit=0 6s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+applied mod_null_anchor_off: NULL ANCHOR hook never fires
+[mod_null_anchor_off/module_expansion] exit=1 5s errors=1 scripterr=0 pass=0  MODULE_EXPANSION_SMOKE: FAIL (86 checks)
+[mod_null_anchor_off/m10_intel] exit=0 7s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+applied results_rail_old_position: T-1: the COMMAND rail is back at y 404, 88 px (touches the INTEL line)
+[results_rail_old_position/lab_geometry] exit=1 7s errors=2 scripterr=0 pass=0  LAB_GEOMETRY_SMOKE: FAIL (4005 checks)
+applied lab_effect_font_9: T-3: analysis effect text capped at 9 px (fits, but below the 10 px floor)
+[lab_effect_font_9/lab_geometry] exit=1 7s errors=32 scripterr=0 pass=0  LAB_GEOMETRY_SMOKE: FAIL (4005 checks)
+applied lab_status_overlap: the lab status label is moved onto the heading
+[lab_status_overlap/lab_geometry] exit=1 8s errors=15 scripterr=0 pass=0  LAB_GEOMETRY_SMOKE: FAIL (4005 checks)
+[lab_status_overlap/m10_base_ui] exit=0 2s errors=0 scripterr=0 pass=10  M10_BASE_UI_ACTION_SMOKE: PASS
+applied cache_ignores_weapon_change: T-4: the cached shot profile is not rebuilt when the weapon row changes
+[cache_ignores_weapon_change/weapon_expansion] exit=1 5s errors=6 scripterr=0 pass=0  WEAPON_EXPANSION_SMOKE: FAIL (131 checks)
+applied cache_ignores_art_replace: T-4: the cached shot profile is not rebuilt when the operator profile is replaced
+[cache_ignores_art_replace/weapon_expansion] exit=1 6s errors=3 scripterr=0 pass=0  WEAPON_EXPANSION_SMOKE: FAIL (131 checks)
+applied per_shot_copy_restored: T-4 undone: a fresh deep copy for every shot (the old behaviour, same values)
+[per_shot_copy_restored/weapon_expansion] exit=1 4s errors=3 scripterr=0 pass=0  WEAPON_EXPANSION_SMOKE: FAIL (131 checks)
+applied capture_wait_1s: T-8: the results capture waits 1.0 s again (count-up unfinished; only the native 1080p capture can catch it, run by hand)

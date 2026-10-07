@@ -1,0 +1,527 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-11T05:32:26.876172+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\0439bb4717c17e9f\\N_idle_pair0_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 670327,
+      "sha256": "241c9172e370b259eaa3d1fec5d3e7901262c889aabdd412783f19dd39659f6f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\0c89e1436232ed81\\NE_walk_pair0_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1084724,
+      "sha256": "8066d8c99dbfe0693f1153604cf3888ecd80e4b31a4ff540e064c06a5bab792b"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\0c89e1436232ed81\\NE_walk_pair1_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1066458,
+      "sha256": "5042362921d0c68b835866fb25ddabe6a1b9ae48c5dc7a0aa067e1a2f19d1efd"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\0c89e1436232ed81\\NE_walk_pair2_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1092116,
+      "sha256": "7fbfb129b613dcd67465077e7563dbdc4f45327da2fb724c04fa6b82275646c6"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\173da41e4cc16aff\\W_idle_pair0_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 850998,
+      "sha256": "034033216b6cc5d1da72f0f4d390ca2992500c2b967c56017b3af0a91f64f8b6"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\1c86a7d2511f97ca\\SE_idle_pair0_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 881615,
+      "sha256": "f40164d52516a36619b5e79a3a8fdb1cd2145c538bd0f83602b2a859b4a0b5de"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\2963aef3a00047d0\\NW_walk_pair0_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1229944,
+      "sha256": "720e841dae929812313d0c991422f5bb1afa512e8dea8d89dce3b4982af11853"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\2963aef3a00047d0\\NW_walk_pair1_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1190293,
+      "sha256": "a91dd2882a71090a9b440ac9581868b2c943cf46d51623b06e359059f0d36d1b"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\2963aef3a00047d0\\NW_walk_pair2_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1131247,
+      "sha256": "1631134fd765daa36b2853e576588d0153207deb6019e8074e2d294b07125df2"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\2d4494a2acd044b4\\E_idle_pair0_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 954414,
+      "sha256": "b14bf8b6d077587f5c8f0d434f8b1865e2758f869b933a2dd58ba152c4dc3964"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\308b4d30f7b7c9a2\\N_walk_pair0_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 813465,
+      "sha256": "92ffd9c768155ffc162c7c562eb05fbd7686e21523e76040ce1c016d78c646fb"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\308b4d30f7b7c9a2\\N_walk_pair1_native_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 513451,
+      "sha256": "431ade4adbbcaa42292b4a7b592097928975096865f7f293d9419d6a0f1ae799"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\308b4d30f7b7c9a2\\N_walk_pair2_native_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 489755,
+      "sha256": "f4f52a1d7cc70628005dfcc3d558cb78cfe9bd6974c8016e9b0d096a2b17293e"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\3d3ac2f712eebbde\\W_walk_pair1_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1095386,
+      "sha256": "5d81d86fe626d79cf81d84a6051c007ec73618aa64f7cb075e4885dfba4240cb"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\42c8071f4cc3baf9\\S_idle_pair0_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 813417,
+      "sha256": "fabfbd29b64bb7ba472d5d507b6d6d70af1e8df950b0ed886ad51dad9906efb6"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\5128dcb2a210841c\\SE_pair0_native_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 742942,
+      "sha256": "4fc7e466e8d7283b9ff1b2d3b32c4018880ac82d0c44e21902087c43c3ce8fde"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\5128dcb2a210841c\\SE_pair1_native_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 746935,
+      "sha256": "07d9c9d36695f5ca93329fd554bd32bffa9133005be9a87e8ea1d02bfeab547b"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\5128dcb2a210841c\\SE_pair2_native_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 793981,
+      "sha256": "14a9dd187d5bc0b6d5d223db5508f127446ef67343a5ab8dd802577d4d2db71f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\536c9b1df2f04700\\W_walk_pair0_native_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 853481,
+      "sha256": "98ea04cb454444b561dad58e9c47c0d23f227eb6694477c2e5065a5765915c65"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\612e6fdb56f59b16\\NE_idle_pair0_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 852105,
+      "sha256": "4fa70d3daa16de9ddefd7fc593cb18da2b4b821895c6647f3cd2bef55e015055"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\7befe3013142a0ba\\E_pair0_native_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 882476,
+      "sha256": "7d5029e3f001362d1479bf9b97ef4adde2dc721bc55d18adc730794d1d4ebf0f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\7befe3013142a0ba\\E_pair2_native_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 879247,
+      "sha256": "114500d137597631dc28eebb41dba4c31112deeba4ee7f9b96c8a56de95819c8"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\9a9c4331a1938742\\SW_walk_pair0_native_1920x1092.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1092
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 800232,
+      "sha256": "27cb806aa9f23e8b94518815312d74efad9db57a6272c44c5fe1115e52a2dc3d"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\9a9c4331a1938742\\SW_walk_pair1_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1183990,
+      "sha256": "7c50043a6252fc3e21cabfe707c0cfa576e032d9f39c83596c2fa88f22aa07ac"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\9a9c4331a1938742\\SW_walk_pair2_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1174179,
+      "sha256": "1d0db777db95197c1e9a66e11b323e9d60e2fe72614de891f357981a9862b2a9"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\be1e79956914cfd3\\SW_walk_pair1_native_2588x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2588,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1375613,
+      "sha256": "23ef73f9d7a421df3c2af5f7d61bd15cf3506bce7317e8c78fa6e285240a1ec5"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\d4b549e2df7da25d\\W_walk_pair2_native_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 815490,
+      "sha256": "f44ba0100a8ebe89020eee71b280a55472325e96d11594dfc650ec13c751ae47"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\da0aa2e4506630b4\\NW_idle_pair0_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 965925,
+      "sha256": "216b1e9d7e00be0a8cefe18f072c58ba97a0ea4086542f50a2fcd0aa9405378c"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\eadf56c7f8a87b85\\SW_idle_pair0_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 929108,
+      "sha256": "a352043677f3a332e30d17e3e738174dfd863a1f29794a2c1a77edc5812baf56"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\fb89e149601fbe90\\S_walk_pair0_native_1920x1102.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1102
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 644406,
+      "sha256": "637e0cfa83ecbe4df93713ca6e2d0526d67746023da083a35bea5607bff9f8f5"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\fb89e149601fbe90\\S_walk_pair1_native_1920x1094.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1094
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 597124,
+      "sha256": "e8f19a6efc32164fb6efb2457ebd158c9a1e27b07a3649a80ed8779c462715bb"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\gait\\fb89e149601fbe90\\S_walk_pair2_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1029695,
+      "sha256": "0d710787ba62ae6c88409e33c2d0f3b125c27c8307c841deb2f0d94f9ab36fee"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\runtime_v8\\NW_walk\\samples.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1164
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 894434,
+      "sha256": "06698ee487c89ef899b8e37be530f353c855a37d3dcc2dea6e47829fd73a9c3f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster\\runtime_v8\\e_walk\\samples.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1164
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 970620,
+      "sha256": "0dc3888c14c832903fd17100047be0f411371225dd8533d9f492d09071ec3994"
+    }
+  ]
+}

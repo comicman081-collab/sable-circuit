@@ -1,0 +1,88 @@
+{
+  "sourceDigest": "0439bb4717c17e9f89e7ff5ce1903eaa115d2928129c1bdeeea4b2abff9de328",
+  "sourceFrames": [
+    {
+      "path": "art\\aster\\N_idle_0_master.png",
+      "sha256": "91928053398278b26bdab4383d0c7156f7284277064e9e61bcf8fdf06fdbd16b"
+    }
+  ],
+  "nativeEvidence": [
+    [
+      2128,
+      1626
+    ]
+  ],
+  "pixelUpscaling": false,
+  "pairEvidence": [
+    "qa\\aster\\gait\\0439bb4717c17e9f\\N_idle_pair0_native_2128x1626.png"
+  ],
+  "clip": {
+    "image": "assets/atlas/aster/N_idle.webp",
+    "cell": [
+      768,
+      768
+    ],
+    "columns": 1,
+    "frames": 1,
+    "root": [
+      384,
+      716
+    ],
+    "height": 656,
+    "authoredFrames": 1,
+    "muzzles": [
+      [
+        420.9958816766739,
+        60.90233701467514
+      ]
+    ],
+    "sources": [
+      {
+        "source": "art/aster/N_idle_0_master.png",
+        "sha256": "91928053398278b26bdab4383d0c7156f7284277064e9e61bcf8fdf06fdbd16b",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          304,
+          19,
+          714,
+          1473
+        ],
+        "hipX": 492.0,
+        "scale": 0.4511691884456671,
+        "matrix": [
+          [
+            0.4511691927909851,
+            0.0,
+            162.02476501464844
+          ],
+          [
+            0.0,
+            0.4511691927909851,
+            51.42778396606445
+          ]
+        ],
+        "muzzle": [
+          420.9958816766739,
+          60.90233701467514
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            299.1801996231079,
+            59.99999862909317
+          ],
+          [
+            484.1595686674118,
+            716.0000049471855
+          ]
+        ]
+      }
+    ]
+  },
+  "sequence": "qa\\aster\\gait\\0439bb4717c17e9f\\reference\\atlas\\aster\\N_idle.gif",
+  "contact": "qa\\aster\\gait\\0439bb4717c17e9f\\reference\\atlas\\aster\\N_idle_keyframes.png",
+  "visualApproval": false
+}

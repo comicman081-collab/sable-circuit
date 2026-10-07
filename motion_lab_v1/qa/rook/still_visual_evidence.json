@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-12T03:43:10.916536+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook_runtime_still.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 667059,
+      "sha256": "09a16f3af467fb3a7bc4b0555244c0d92dda814347ee3899b595930d08ee7f88"
+    }
+  ]
+}

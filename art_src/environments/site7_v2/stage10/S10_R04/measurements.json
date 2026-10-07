@@ -1,0 +1,187 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_R04/attempt01/S10_R04_GAME.png",
+  "luma": 0.19997751712799072,
+  "p10": 0.16918431222438812,
+  "p90": 0.23512551188468933,
+  "saturation": 0.05656452712167865,
+  "hue": 146.9999354701613,
+  "axis": 22.831851199977816,
+  "problems": [],
+  "plate": "S10_R04",
+  "attempt": 1,
+  "native_size": [
+    1774,
+    887
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      134,
+      483
+    ],
+    [
+      909,
+      201
+    ],
+    [
+      1174,
+      305
+    ],
+    [
+      1308,
+      209
+    ],
+    [
+      1320,
+      216
+    ],
+    [
+      1320,
+      356
+    ],
+    [
+      1662,
+      490
+    ],
+    [
+      815,
+      815
+    ],
+    [
+      481,
+      699
+    ],
+    [
+      330,
+      774
+    ],
+    [
+      112,
+      661
+    ],
+    [
+      283,
+      586
+    ]
+  ],
+  "doors_px": {
+    "SW": [
+      382,
+      642,
+      224
+    ],
+    "NE": [
+      1248,
+      334,
+      223
+    ]
+  },
+  "raw_sha256": "10dae607a9624cf28555af3e67e4be3b301d92d1a479d2aeafa23beeb67e31f7",
+  "master_sha256": "10dae607a9624cf28555af3e67e4be3b301d92d1a479d2aeafa23beeb67e31f7",
+  "game_sha256": "7277efe6504c0392d7283cf665369c71280219cd96e3a686d0cf6994b96aade9",
+  "game_exposure_factor_srgb": 0.6446,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-259d6eb2-da3d-4f8c-8848-4a4fd224188e.png",
+  "inspection": "1774×887 전투 복도. S3 파손 벽과 돌무더기 베이 대신 검은 쌍갈래 널 방출기 행. R02의 흰 커넥터 오벨리스크/R03 기록 카트리지와 내용이 다름. SW/NE 두 문만, SE 연속 난간. 실제 바닥을 추적.",
+  "floor_area_px2": 532405.0,
+  "floor_area_fraction": 0.33834899443165656,
+  "floor_bounds_px": [
+    112,
+    201,
+    1662,
+    815
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1774,
+      887
+    ],
+    "actual_size": [
+      1774,
+      887
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "SW": [
+        [
+          283,
+          586
+        ],
+        [
+          112,
+          661
+        ],
+        [
+          330,
+          774
+        ],
+        [
+          481,
+          699
+        ]
+      ],
+      "NE": [
+        [
+          1174,
+          305
+        ],
+        [
+          1308,
+          209
+        ],
+        [
+          1320,
+          216
+        ],
+        [
+          1320,
+          356
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      134,
+      201,
+      1662,
+      815
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.07553551296505073,
+      0.2266065388951522,
+      0.06313416009019165,
+      0.08117249154453213
+    ],
+    "whole_floor_bounds_px": [
+      112,
+      201,
+      1662,
+      815
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.06313416009019165,
+      0.2266065388951522,
+      0.06313416009019165,
+      0.08117249154453213
+    ],
+    "main_floor_area_px2": 487794
+  },
+  "apron_stats": {
+    "SW": {
+      "luma": 0.21065007150173187,
+      "saturation": 0.05331931475948057,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "NE": {
+      "luma": 0.2288307547569275,
+      "saturation": 0.04380444620508034,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  }
+}

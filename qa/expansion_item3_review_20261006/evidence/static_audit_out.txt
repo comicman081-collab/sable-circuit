@@ -1,0 +1,42 @@
+# generated at HEAD 98292b3d (453d20cb..HEAD includes Codex records commit: 124 files = 33 code + 91 qa)
+files changed since 453d20cb : 124 | protected-path hits: none
+economy-related files touched: none
+distinct enemy ids in ops 1-10: 16
+  BOSS_SITE7_AERATOR_01      ops 06                     old=ANCHOR    new=AERATOR    <-- changed
+  BOSS_SITE7_ANCHOR_01       ops 01                     old=ANCHOR    new=ANCHOR   
+  BOSS_SITE7_ARCHIVE_01      ops 09                     old=ANCHOR    new=ARCHIVE    <-- changed
+  BOSS_SITE7_CARRIER_01      ops 05                     old=ANCHOR    new=ANCHOR   
+  BOSS_SITE7_CRYO_01         ops 07                     old=ANCHOR    new=CRYO       <-- changed
+  BOSS_SITE7_FORGE_01        ops 04                     old=ANCHOR    new=ANCHOR   
+  BOSS_SITE7_GANTRY_01       ops 08                     old=ANCHOR    new=GANTRY     <-- changed
+  BOSS_SITE7_ORIGIN_01       ops 10                     old=ANCHOR    new=ORIGIN     <-- changed
+  BOSS_SITE7_RELAY_01        ops 02                     old=ANCHOR    new=ANCHOR   
+  BOSS_SITE7_REMNANT_01      ops 03                     old=ANCHOR    new=ANCHOR   
+  ENM_SITE7_BULWARK_01       ops 01,02,03,04,05,06,07,08,09,10 old=SECURITY  new=SECURITY 
+  ENM_SITE7_DRONE_01         ops 01,02,03,04,05,06,07,08,09,10 old=SECURITY  new=SECURITY 
+  ENM_SITE7_MORTAR_01        ops 03,04,05,06,07,08,09,10 old=SECURITY  new=SECURITY 
+  ENM_SITE7_NULL_PYLON_01    ops 05,06,08,09,10         old=-         new=-        
+  ENM_SITE7_PRISM_01         ops 04,05,06,07,08,09,10   old=-         new=-        
+  ENM_SITE7_RAM_01           ops 02,03,04,05,06,07,08,09,10 old=ABERRANT  new=ABERRANT 
+changed ids: ['BOSS_SITE7_AERATOR_01', 'BOSS_SITE7_ARCHIVE_01', 'BOSS_SITE7_CRYO_01', 'BOSS_SITE7_GANTRY_01', 'BOSS_SITE7_ORIGIN_01'] | expected exactly the 5 new bosses: True
+negative control (generic BOSS first) would map: {'BOSS_SITE7_AERATOR_01': 'ANCHOR', 'BOSS_SITE7_CRYO_01': 'ANCHOR', 'BOSS_SITE7_GANTRY_01': 'ANCHOR', 'BOSS_SITE7_ARCHIVE_01': 'ANCHOR', 'BOSS_SITE7_ORIGIN_01': 'ANCHOR'}
+  WPN_AR_COIL_01         burst  95.2 sustained  67.8 flight  936 px range 520.0
+  WPN_AR_BURST_02        burst  91.9 sustained  61.2 flight  968 px range 560.0
+  WPN_SMG_SENSOR_01      burst  47.1 sustained  34.4 flight  756 px range 450.0
+  WPN_SHOTGUN_MAG_01     burst  83.3 sustained  62.7 flight  441 px range 300.0
+  WPN_LMG_HELIX_01       burst  60.7 sustained  47.9 flight  966 px range 540.0
+  WPN_SPECIAL_ARC_01     burst  38.9 sustained  28.1 flight  806 px range 620.0
+  WPN_DMR_RAIL_01        burst  57.9 sustained  44.3 flight 1188 px range 660.0  NEW envelope OK vs best legacy {'CHR_PROTO_01': 67.8, 'CHR_PROTO_03': 61.2}
+  WPN_SHOTGUN_NULL_01    burst  96.0 sustained  54.5 flight  558 px range 340.0  NEW envelope OK vs best legacy {'CHR_PROTO_02': 62.7}
+analyses: 8 research sum 1340 new rows sum 900 (headroom 952)
+rows missing a required field: none
+economy: research sink 5180 -> 6080, authored income 4088, ratio 1.4873 (band 0.9-1.5)
+  MOD_SPORE_FILTER  duration    5.0 ->   6.0  +1.0s  cap OK
+  MOD_FROST_LENS    cooldown    4.0 ->   3.2  -20%   cap OK
+  MOD_RAIL_SPOOL    cooldown    5.0 ->   4.0  -20%   cap OK
+  MOD_RAIL_SPOOL    distance  150.0 -> 200.0  +50px  cap OK
+  MOD_ECHO_RELAY    duration    4.0 ->   6.0  +2.0s  cap OK
+  MOD_NULL_ANCHOR   duration    5.0 ->   6.5  +1.5s  cap OK
+campaign_progression.gd blob  381ef0fb: cbd6062f094b  BASE: cbd6062f094b  before fixture commit: cbd6062f094b
+save_v5.json sha256: 0531c6e4d64c99479105954001f9c2fe7c4d0c868bfd72f2b8339d56310e8002
+save_v5.json: schema 5 intel keys ['ABERRANT', 'ANCHOR', 'SECURITY'] analyses 3 weapons 6

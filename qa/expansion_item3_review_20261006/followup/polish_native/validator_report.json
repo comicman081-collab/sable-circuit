@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-10-06T09:53:31.291254+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item3_review_20261006\\followup\\polish_native\\results_intel8.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2847680,
+      "sha256": "7edaa3e8336ef23e5b079b4796112cbea8df5f78d308630b4504e99578129a6c"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item3_review_20261006\\followup\\polish_native\\vfx_wpn_dmr_rail_01.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2278512,
+      "sha256": "a6f8b120b472a5f5e394b6fa2a807ebeaf5b98bc6ff03f967e74217507461542"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\expansion_item3_review_20261006\\followup\\polish_native\\vfx_wpn_shotgun_null_01.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2285501,
+      "sha256": "6a18b6a665e1b5c0b18f2397aa2f5536dc906132bf559c2c0c870c491f4b84f3"
+    }
+  ]
+}

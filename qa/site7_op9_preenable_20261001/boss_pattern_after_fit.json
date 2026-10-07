@@ -1,0 +1,209 @@
+{
+  "anchor_baseline": true,
+  "bosses": 10,
+  "checks": 977,
+  "escape_margin_s": 0.25,
+  "failures": [],
+  "nearest_clear_floor_px": {
+    "BOSS_SITE7_AERATOR_01": [
+      [
+        30,
+        30
+      ],
+      [
+        90,
+        30
+      ],
+      [
+        90,
+        90
+      ]
+    ],
+    "BOSS_SITE7_ARCHIVE_01": [
+      [
+        90,
+        90
+      ],
+      [
+        90,
+        90
+      ],
+      [
+        90,
+        90
+      ]
+    ],
+    "BOSS_SITE7_CARRIER_01": [
+      [
+        30,
+        30
+      ],
+      [
+        30,
+        30
+      ],
+      [
+        120,
+        120
+      ]
+    ],
+    "BOSS_SITE7_CRYO_01": [
+      [
+        30,
+        30
+      ],
+      [
+        30,
+        30
+      ],
+      [
+        30,
+        30
+      ]
+    ],
+    "BOSS_SITE7_FORGE_01": [
+      [
+        90,
+        30
+      ],
+      [
+        120,
+        30
+      ],
+      [
+        120,
+        30
+      ]
+    ],
+    "BOSS_SITE7_GANTRY_01": [
+      [
+        90,
+        120
+      ],
+      [
+        90,
+        30
+      ],
+      [
+        150,
+        150
+      ]
+    ],
+    "BOSS_SITE7_ORIGIN_01": [
+      [
+        60,
+        90
+      ],
+      [
+        90,
+        90
+      ],
+      [
+        120,
+        90
+      ]
+    ],
+    "BOSS_SITE7_RELAY_01": [
+      [
+        60,
+        60
+      ],
+      [
+        60,
+        30
+      ],
+      [
+        60,
+        30
+      ]
+    ],
+    "BOSS_SITE7_REMNANT_01": [
+      [
+        30,
+        30
+      ],
+      [
+        30,
+        30
+      ],
+      [
+        30,
+        30
+      ]
+    ]
+  },
+  "negative_control_rejected": true,
+  "new_boss_gap_limit_px": 180,
+  "new_boss_sweep_worst": {
+    "BOSS_SITE7_AERATOR_01": {
+      "nearest_clear_floor_px": 90,
+      "tightest_escape": "phase 2 attack 1, target 150 px out at 0 deg (leave 90 px in 0.65 s of 1.70 s)",
+      "tightest_escape_margin_s": 1.05,
+      "where": "phase 2 attack 1, target 150 px out at 0 deg"
+    },
+    "BOSS_SITE7_ARCHIVE_01": {
+      "nearest_clear_floor_px": 90,
+      "tightest_escape": "phase 1 attack 1, target 150 px out at 0 deg (leave 90 px in 0.65 s of 1.60 s)",
+      "tightest_escape_margin_s": 0.95,
+      "where": "phase 1 attack 1, target 150 px out at 0 deg"
+    },
+    "BOSS_SITE7_CRYO_01": {
+      "nearest_clear_floor_px": 60,
+      "tightest_escape": "phase 3 attack 1, target 150 px out at 0 deg (leave 60 px in 0.43 s of 1.10 s)",
+      "tightest_escape_margin_s": 0.67,
+      "where": "phase 3 attack 1, target 150 px out at 0 deg"
+    },
+    "BOSS_SITE7_GANTRY_01": {
+      "nearest_clear_floor_px": 150,
+      "tightest_escape": "phase 1 attack 2, target 150 px out at 0 deg (leave 120 px in 0.87 s of 1.20 s)",
+      "tightest_escape_margin_s": 0.33,
+      "where": "phase 3 attack 1, target 150 px out at 0 deg"
+    },
+    "BOSS_SITE7_ORIGIN_01": {
+      "nearest_clear_floor_px": 120,
+      "tightest_escape": "phase 3 attack 1, target 150 px out at 120 deg (leave 120 px in 0.87 s of 1.30 s)",
+      "tightest_escape_margin_s": 0.43,
+      "where": "phase 3 attack 1, target 150 px out at 120 deg"
+    }
+  },
+  "signatures": {
+    "1": {
+      "BOSS_SITE7_AERATOR_01": "S0C4L0/S0C4L0",
+      "BOSS_SITE7_ANCHOR_01": "S3C0L0/S3C0L0",
+      "BOSS_SITE7_ARCHIVE_01": "S0C1L0/S0C2L0",
+      "BOSS_SITE7_CARRIER_01": "S2C0L1/S2C0L1",
+      "BOSS_SITE7_CRYO_01": "S0C0L2/S2C0L0",
+      "BOSS_SITE7_FORGE_01": "S0C1L0/S2C0L0",
+      "BOSS_SITE7_GANTRY_01": "S0C0L2/S0C1L0",
+      "BOSS_SITE7_ORIGIN_01": "S0C0L3/S2C1L0",
+      "BOSS_SITE7_RELAY_01": "S0C3L0/S0C3L0",
+      "BOSS_SITE7_REMNANT_01": "S0C0L3/S0C0L3"
+    },
+    "2": {
+      "BOSS_SITE7_AERATOR_01": "S0C6L0/S3C0L0",
+      "BOSS_SITE7_ANCHOR_01": "S5C0L0/S0C1L0",
+      "BOSS_SITE7_ARCHIVE_01": "S0C3L0/S0C3L0",
+      "BOSS_SITE7_CARRIER_01": "S0C0L3/S0C0L3",
+      "BOSS_SITE7_CRYO_01": "S0C0L3/S0C0L4",
+      "BOSS_SITE7_FORGE_01": "S0C2L0/S2C0L0",
+      "BOSS_SITE7_GANTRY_01": "S0C0L3/S0C2L0",
+      "BOSS_SITE7_ORIGIN_01": "S0C0L4/S2C2L0",
+      "BOSS_SITE7_RELAY_01": "S0C5L0/S2C0L0",
+      "BOSS_SITE7_REMNANT_01": "S0C0L3/S0C1L2"
+    },
+    "3": {
+      "BOSS_SITE7_AERATOR_01": "S0C7L0/S0C7L0",
+      "BOSS_SITE7_ANCHOR_01": "S5C0L0/S0C1L4",
+      "BOSS_SITE7_ARCHIVE_01": "S0C4L0/S0C4L1",
+      "BOSS_SITE7_CARRIER_01": "S0C1L3/S0C1L3",
+      "BOSS_SITE7_CRYO_01": "S0C0L5/S0C0L5",
+      "BOSS_SITE7_FORGE_01": "S0C2L2/S2C0L2",
+      "BOSS_SITE7_GANTRY_01": "S0C0L4/S0C1L4",
+      "BOSS_SITE7_ORIGIN_01": "S0C1L5/S0C2L3",
+      "BOSS_SITE7_RELAY_01": "S0C7L0/S2C0L0",
+      "BOSS_SITE7_REMNANT_01": "S0C0L5/S0C1L2"
+    }
+  },
+  "slowest_walk_px_per_s": 138.0,
+  "status": "PASS"
+}

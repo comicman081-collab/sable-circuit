@@ -1,0 +1,392 @@
+[
+  {
+    "plate": "S2_R01",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. Create one opaque RGB SABLE CIRCUIT SITE-7 environment room plate: S2_R01 Service Reentry. Image 1 is the approved v2 map kit camera, 2:1 dimetric floor, neutral deck, scale and wall construction authority. Image 2 supplies only service airlock identity, not its narrow bridge, lighting or camera. Fixed near-orthographic 3/4 top-down with both floor axes at 26.6 degrees, no perspective convergence. Broad uncluttered open diamond room floor at least 850x450 native pixels and at least 25% of image, dark neutral gunmetal steel square panels with fine seams, even neutral-white overhead light, source floor luma near sRGB 0.21. NW and NE back walls only; SW and SE foreground have low railings. Exactly ONE open doorway in the NE upper-right wall, wide heavy steel frame about 300px, no leaf or shutter. Carry a full-width coplanar unobstructed neutral deck apron about 195px beyond that threshold. No other doors or gaps. Perimeter identity: armoured service re-entry airlock ribs, maintenance access housings, cable seals and amber practical lamps on walls only; no amber spill on floor or near door. Keep architecture 8% inside image border; outside flat #07090D void. Rich crisp hard-surface painterly realism matching image 1, no humans, robots, floor props, text, symbols, signage, UI, haze, vignette, dark floor holes, hotspots, double geometry or black frame. One standalone room plate.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_R01/S1_R01_MASTER.png",
+        "sha256": "242053dde48cab9462277bc71269c1e166c00d5d03ad776066096dd60fcee6d4"
+      },
+      {
+        "path": "assets/environments/site7/stage02/service_reentry/S02_01_SERVICE_REENTRY_CONTINUITY.png",
+        "sha256": "cbc34c202f74f6e38467c89d0a40a406b13eadd57f4ec2899004bdaa59a0ac9f"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_R01/S2_R01_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "10be6a74135ef21e515dfe1493329cbe0c6540279e262a52b19250ecd4869279",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-8f463f03-e6da-4032-9a32-255b325144ad.png",
+    "managed_staging_sha256": "10be6a74135ef21e515dfe1493329cbe0c6540279e262a52b19250ecd4869279",
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_R02",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB SABLE CIRCUIT SITE-7 v2 room plate: S2_R02 Flooded Maintenance, a wide COMBAT HALL. Image 1 governs approved fixed 3/4 top-down near-orthographic dimetric camera, 2:1 floor axes at 26.6 degrees, scale, neutral steel deck, perimeter construction and lighting. Image 2 supplies only the flooded-maintenance identity, not its old narrow footprint or lighting. Build a broad elongated room with an unobstructed walkable floor at least 1300px along its long axis and 380px across, neutral dark gunmetal steel panels, uniform sRGB floor luminance near 0.21 under even white overhead light. Back walls on NW/NE edges, low railings on SW/SE foreground. Exactly TWO wide open passages: SW foreground railing gap and NE upper-right back-wall framed opening, each about 300px, no door leaves. Continue flat full-width coplanar steel floor aprons ~195px through both thresholds with the same brightness; no other opening. Maintenance pipe manifolds, valves, drainage pumps and cyan practical lamps appear only on walls; any water is confined to covered perimeter channels and never covers the walking floor. Keep central floor empty and clear for combat and cover props added in game. Architecture inside canvas with near-black #07090D void outside. Crisp premium painterly hard-surface realism matching reference 1. No perspective convergence, floor tint, puddles, obstacles, text, symbols, humans, robots, UI, fog, vignette, black floor holes or hot spots.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_R04/S1_R04_MASTER.png",
+        "sha256": "c49ac9abb79dbd2b2da74637dc02b59146a6943d4b70d795b78754902dd85352"
+      },
+      {
+        "path": "assets/environments/site7/stage02/flooded_maintenance/S02_02_FLOODED_MAINTENANCE_CONTINUITY.png",
+        "sha256": "b485b3fad42f27da81e125db7a004b9824d8d333be18c41b58ff2fd2f3396bd4"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_R02/S2_R02_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "cafeab770a8b21f4aa606beb1c369ecb4eadd9449b3c14b595361f1c0b54197b",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-b1a0b219-eae9-45b1-aa39-0c775dedcf8a.png",
+    "managed_staging_sha256": "cafeab770a8b21f4aa606beb1c369ecb4eadd9449b3c14b595361f1c0b54197b",
+    "native_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_R03",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB SABLE CIRCUIT SITE-7 v2 room plate: S2_R03 Relay Archive. Image 1 is approved v2 geometry, camera, floor panels, door placement, scale and lighting; image 2 supplies only relay-archive wall identity. Fixed near-orthographic 3/4 top-down dimetric camera, 2:1 diagonals at 26.6 degrees with no perspective convergence. Wide open neutral dark gunmetal floor, at least 850x450 native pixels and 25% image area, even neutral white overhead illumination around sRGB 0.21, no tint, dark holes or highlights. NW and NE raised steel back walls, SW and SE low front railings. Exactly THREE broad open thresholds: SW lower-left gap in front railing, NE upper-right framed back-wall door and SE lower-right front-railing gap for a descending branch. Each opening around 300px and each has a coplanar full-width neutral deck apron 195px through the threshold. No other doors. Wall identity: relay archive cabinets, diagnostic scanners, bundled cable conduits and compact teal wall practicals, strictly perimeter-mounted, with no equipment or colored light across the floor. Flat #07090D void outside; keep architecture inside canvas. Premium precise hard-surface painterly style and same native scale as image 1. No text, numbers, signs, people, robots, floor props, UI, fog, vignette, doubled architecture or black frame.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_R03/S1_R03_MASTER.png",
+        "sha256": "e2a5c58bb5292c2b2b5726598c97bd3d6c26f0114be74de55952039e231d1b5c"
+      },
+      {
+        "path": "assets/environments/site7/stage02/relay_archive/S02_03_RELAY_ARCHIVE_CONTINUITY.png",
+        "sha256": "061eb752a045c5bee3dcf4854d0451a1c880ccfc367da48a8ff4f465786734e1"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_R03/S2_R03_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "4e04229338f65207e78355157f48f7811b7a11c01116e55b03d323d06b69aa79",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-f02eb417-2f2f-422f-a895-7142e29bed47.png",
+    "managed_staging_sha256": "4e04229338f65207e78355157f48f7811b7a11c01116e55b03d323d06b69aa79",
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_R04",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. Generate one opaque RGB SABLE CIRCUIT SITE-7 v2 room plate S2_R04 Quarantine Crossing. Image 1 is approved v2 authoritative camera, broad geometry, floor, door placement, scale and lighting. Image 2 supplies only quarantine checkpoint wall identity, never its narrow layout. Fixed near-orthographic 3/4 top-down dimetric camera, 2:1 floor diagonal axes at 26.6 degrees, no perspective convergence. Large open neutral dark gunmetal steel floor, at least 850x450 native pixels and 25 percent of image, fine square panels, even neutral white light around sRGB 0.21, no floor tint, dark holes or bright hotspots. NW and NE elevated back walls, SW and SE low front railings. Exactly THREE broad open thresholds: SW lower-left gap, NE upper-right framed back-wall opening, and SE lower-right front-railing gap for descending branch. Each opening ~300px wide with a straight coplanar full-width neutral deck apron extending about 195px through it. No other openings. Perimeter identity: quarantine barrier machinery, sealed inspection windows, thick ducting, biohazard shutters held fully open and dim amber wall status lamps; no signs or text, no barrier on floor or across doors, no colored spill on ground. Flat #07090D void outside plate, architecture inset. Rich crisp hard-surface painterly game art matching image 1. No people, robots, floor props, UI, haze, vignette, double geometry, black frame.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_R03/S1_R03_MASTER.png",
+        "sha256": "e2a5c58bb5292c2b2b5726598c97bd3d6c26f0114be74de55952039e231d1b5c"
+      },
+      {
+        "path": "assets/environments/site7/stage02/quarantine_crossing/S02_04_QUARANTINE_CROSSING_CONTINUITY.png",
+        "sha256": "4b7cbfad47b0a75286695e945659b9b5e05e5105138bbc84af7cb23c8584b906"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_R04/S2_R04_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "7d15d22a6d734813f69fca8f398980650dc08a80f741220f709fed02bd3478fb",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-c553f4af-4f77-46e7-866a-4a1aff1b05e3.png",
+    "managed_staging_sha256": "7d15d22a6d734813f69fca8f398980650dc08a80f741220f709fed02bd3478fb",
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_R05",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB SABLE CIRCUIT SITE-7 v2 room plate S2_R05 Sublevel Relay. Image 1 gives approved v2 map-kit camera, floor geometry and exact two opposite door placements. Image 2 supplies only sublevel relay engineering identity. Fixed orthographic 3/4 top-down dimetric 2:1 floor diagonal axes at 26.6 degrees, no vanishing point. Wide empty walkable neutral gunmetal square-panel floor, at least 850x450 native pixels and at least quarter image area, even neutral white lighting sRGB luma around 0.21; no tinted pool, dark pits or hotspots. NW and NE heavy back walls, SW and SE low front rails. Exactly TWO broad open thresholds: SW lower-left rail gap with coplanar apron and NE upper-right framed back-wall doorway with coplanar apron. Each ~300px clear and ~195px apron extended beyond threshold. No other opening. Perimeter identity: sublevel relay power conduits, paired signal racks, restrained violet magenta indicator strips and insulated vertical transformers all attached to back walls; colored glows never touch floor or threshold. Preserve simple readable playable footprint and steel panels of image 1. Void flat #07090D, architecture inset. No text, symbols, signage, people, robots, props on floor, haze, vignetting, UI, extra doors, doubles or black frame. Crisp richly detailed hard-surface painterly game asset.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_R05/S1_R05_MASTER.png",
+        "sha256": "7b19e7a66f91558eb2c6483f0c84717a44aedde4c8e45b85ea21fca17ec297c2"
+      },
+      {
+        "path": "assets/environments/site7/stage02/sublevel_relay/S02_05_SUBLEVEL_RELAY_CONTINUITY.png",
+        "sha256": "9604d7e46eaf40785479f192a5eaa9ab31294ea1238b627eff551862f790644f"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_R05/S2_R05_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "ef69ee88e99612c4c8eb7a5de8da79ea6e580168758a24854d32267c2f264017",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-7392e6e0-5a30-454b-9a0a-d6790a21fdd3.png",
+    "managed_staging_sha256": "ef69ee88e99612c4c8eb7a5de8da79ea6e580168758a24854d32267c2f264017",
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_R06",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. Create one opaque RGB SABLE CIRCUIT SITE-7 v2 room plate S2_R06 Service Lift. Image 1 approved v2 map-kit final-room camera, spacious deck, scale, sole southwest door. Image 2 only conveys service lift wall identity. Near-orthographic 3/4 top-down dimetric camera with both floor diagonal axes 26.6 degrees and no perspective convergence. Broad empty playable neutral dark gunmetal square-panel floor >=850x450 native pixels, >=25 percent of image, evenly neutral-white lit sRGB luma around 0.21, no colored spill, dark holes, hotspots. NW and NE heavy back walls, SW and SE low front railings. Exactly ONE open threshold: SW lower-left gap in railing with wide ~300px straight coplanar neutral deck apron extending 195px outside. No northeast door or other floor gaps. Perimeter identity: large closed industrial service-lift doors and hydraulic hoist machinery in the NE back wall, yellow safety hardware attached only to walls, restrained amber wall lamps. Closed lift is visual wall identity and is NOT a walkable opening. Keep all floor clean and scale identical to image 1. Flat #07090D void outside inset architecture. Crisp polished painterly hard-surface art. No people, robots, floor props, signs, writing, numbers, UI, fog, vignette, extra doors, double geometry, black frame.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_R06/S1_R06_MASTER.png",
+        "sha256": "ff89515898ae085ab01068e43183d2750daba5a3d7e49991f4b73165957d67e0"
+      },
+      {
+        "path": "assets/environments/site7/stage02/service_lift/S02_06_SERVICE_LIFT_CONTINUITY.png",
+        "sha256": "740c40adea11f786d0e997a0678e5cdb45a7ac83f6a6e3dc17ea04a148ce64b4"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_R06/S2_R06_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "326c27a2df43f3fa82fa2a5ca4e5a291c778d9a51f0c6b768e5e04c0e836ea72",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-af32997c-8c13-4fb7-b192-18711f1ee281.png",
+    "managed_staging_sha256": "326c27a2df43f3fa82fa2a5ca4e5a291c778d9a51f0c6b768e5e04c0e836ea72",
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_O01",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. Create one opaque RGB SABLE CIRCUIT SITE-7 v2 optional room plate S2_O01 Reserve Field Cache. Image 1 is approved v2 optional-room camera, floor and sole northwest branch-door geometry. Image 2 is only thematic reference for reserve cache wall equipment. Fixed near-orthographic 3/4 top-down 2:1 dimetric floor axes at 26.6 degrees without perspective convergence. Broad uncluttered neutral dark gunmetal square panel floor >=850x450 native pixels, at least 25% image, even neutral white lighting near sRGB 0.21, no tint, dark holes or hotspots. NW and NE back walls, SW and SE low railing. Exactly ONE broad open threshold at NW upper-left wall, connecting from the main-route descending branch; open ~300px with full-width coplanar neutral deck apron about 195px through opening. All other perimeter closed; no gaps in SW, SE, NE. Perimeter reserve-cache identity: sealed storage lockers, spare field cells, rugged supply cages and restrained warm amber wall lamps; all items mounted against walls, NO loose floor supplies. Flat #07090D void outside inset architecture. Rich crisp hard-surface painterly game-art. No text, labels, numerals, symbols, people, robots, floor props, UI, fog, vignette, double geometry or black frame.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_O01/S1_O01_MASTER.png",
+        "sha256": "b61a83322a26e515fe0a7eb952185db1766b98295d9f949ae8b9a2c19b696185"
+      },
+      {
+        "path": "assets/environments/site7/stage02/reserve_field_cache/S02_07_RESERVE_FIELD_CACHE_CONTINUITY.png",
+        "sha256": "368e3ba5d29d0cb87a1d26ecc5f9d7800c01c9a420ef4bb9e199d58821a46507"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_O01/S2_O01_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "bdab47240260ba36ab304d5b853cbb76c6cee3957f576ff83fedb72fc3ee02cb",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-78fe3532-ef09-4ce7-a32b-57d575ff8533.png",
+    "managed_staging_sha256": "bdab47240260ba36ab304d5b853cbb76c6cee3957f576ff83fedb72fc3ee02cb",
+    "native_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_O02",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. Create one opaque RGB SABLE CIRCUIT SITE-7 v2 optional room plate S2_O02 Echo Recorder. Image 1 is approved v2 optional room camera, broad floor and exactly one northwest branch-door geometry. Image 2 only supplies echo recorder wall identity. Fixed near-orthographic 3/4 top-down 2:1 dimetric floor axes at 26.6 degrees without perspective convergence. Broad uncluttered neutral dark gunmetal square-panel floor at least 850x450 native pixels, at least 25% image, even neutral-white illumination sRGB luma around 0.21, no tint, dark holes or hotspots. NW and NE back walls, SW and SE low railing. Exactly ONE broad open threshold in NW upper-left wall for descending branch, ~300px wide with unobstructed coplanar full-width neutral deck apron ~195px through it. Other perimeter closed, no SW/NE/SE openings. Wall identity: analogue echo recording reels, waveform capture consoles, cylindrical resonance sensors and restrained cyan wall indicator strips. All machinery mounted to walls, no floor equipment, no colored floor spill. Flat #07090D void outside inset architecture. Rich crisp painterly hard-surface asset matching image 1. No text, numerals, symbols, signage, humans, robots, floor props, UI, fog, vignette, extra gaps, double geometry or black frame.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_O02/S1_O02_MASTER.png",
+        "sha256": "559e8f355c357842a1914fd24a9a46b69a93eb935b9dc9473ef51076cfae6f62"
+      },
+      {
+        "path": "assets/environments/site7/stage02/echo_recorder/S02_08_ECHO_RECORDER_CONTINUITY.png",
+        "sha256": "d07e2f3082615b6e3d10d9bb032898c416faad786681d8c4a0c5cdc0b8848fe3"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_O02/S2_O02_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "f4e986cd582f87863156e1a0bc6254c7b01161d40d44193cfd2d7acc0fd3f560",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-fcdc7ca1-f3f0-4eb3-b922-e57713326f45.png",
+    "managed_staging_sha256": "f4e986cd582f87863156e1a0bc6254c7b01161d40d44193cfd2d7acc0fd3f560",
+    "native_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_C01",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB standalone SABLE CIRCUIT SITE-7 v2 ascending connector plate S2_C01 Reentry to Maintenance. Image 1 is APPROVED map-kit connector geometry and camera authority: closely preserve its wide straight neutral floor strip, image-border open ends, 26.6-degree up-right axis, upper-left wall and lower-right railing. Image 2 only supplies stage2 service/maintenance wall machinery identity. Fixed near-orthographic 3/4 top-down dimetric 2:1 floor axes, no perspective convergence. A SINGLE long straight ↗ deck runs from lower-left canvas border to upper-right canvas border, full-width floor open at BOTH borders, constant walkable width >=260 native pixels with coplanar plain deck on both ends. Back wall on upper-left, low railing on lower-right; NEVER mirror or rotate. Entire center floor neutral dark gunmetal square panels under even neutral white lighting around sRGB 0.21; no colored light on deck, bright stripes, dark floor voids, props or cover. Stage2 identity only in back-wall service conduits, repair housings and restrained amber practical lamps. Outside strip flat #07090D void. Match image 1 native scale and 2:1 orientation. No text, signs, numbers, humans, robots, UI, haze, vignette, extra platforms, door closures, black frame or duplicated structures.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_C01/S1_C01_MASTER.png",
+        "sha256": "6caaf7fab42c6a589e4b36064710eab4c10e184bf14c72e854fe682f3272229b"
+      },
+      {
+        "path": "assets/environments/site7/stage02/connectors/reentry_maintenance/S02_09_REENTRY_MAINTENANCE_GAME.png",
+        "sha256": "a9023067b45d5fb6665000679f1681f38d082f76f30fc89d9b7cd3e151c87ec3"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_C01/S2_C01_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "c61fa1b2fcc9c706be5983c702a3f3db294e6a0e6cdb67faf5decc9a52af6495",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-3564ff04-937d-436e-b1ec-8ade9e67a8bd.png",
+    "managed_staging_sha256": "c61fa1b2fcc9c706be5983c702a3f3db294e6a0e6cdb67faf5decc9a52af6495",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_C02",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB standalone SABLE CIRCUIT SITE-7 v2 ascending connector plate S2_C02 Maintenance to Relay Archive. Image 1 is approved v2 connector geometry, camera and neutral deck. Image 2 supplies only maintenance/archive wall equipment identity. Preserve 2:1 dimetric 26.6-degree ↗ direction exactly: one single straight wide deck runs lower-left image border to upper-right image border with full-width open flat neutral steel floor at both ends. Near-orthographic top-down 3/4 camera, no perspective convergence. Constant walkable floor width >=260 native px, dark neutral gunmetal paneling even neutral white light sRGB luma around 0.21, no hue tint, strong light patches or dark holes. Back wall along upper-left edge, low handrail along lower-right; never mirror. Mount archive fibre banks, cable maintenance boxes and restrained teal practicals only on back wall, no floor objects. Match image 1 map-kit scale, strip width, composition and outside flat #07090D void. No text, signs, humans, robots, UI, haze, vignette, side doors, broken floor, doubled architecture or black frame.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_C02/S1_C02_MASTER.png",
+        "sha256": "c7069e8aa0a6b04bf6af8c6279e412ea7dcdc8f495ad92b0363533926f3ab2ef"
+      },
+      {
+        "path": "assets/environments/site7/stage02/connectors/maintenance_relay_archive/S02_10_MAINTENANCE_RELAY_ARCHIVE_GAME.png",
+        "sha256": "c08a2b6fdd760cdca7a3ac0f2fd1c367b5cfeff4c31704aefdee02bd52ccc89a"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_C02/S2_C02_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "18e22ce696d5385c236fdb3c414c263109b7da7d958e80ebcbd94bded27a36b7",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-ed60e3e0-224d-4cab-afd5-d9bf5d9130f0.png",
+    "managed_staging_sha256": "18e22ce696d5385c236fdb3c414c263109b7da7d958e80ebcbd94bded27a36b7",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_C03",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB standalone SABLE CIRCUIT SITE-7 v2 ascending connector plate S2_C03 Relay Archive to Quarantine. Image 1 is approved v2 connector camera, width, geometry and neutral deck. Image 2 contributes only archive/quarantine wall-identity equipment. Fixed near-orthographic top-down 3/4 dimetric axes at 26.6 degrees without perspective convergence. SINGLE straight ↗ deck from lower-left image BORDER to upper-right image BORDER, open full-width coplanar floor at both edges, constant clear width >=260 native px. Upper-left back wall with sealed data conduits transitioning to quarantine pipe shielding and dim amber practicals; lower-right low railing; do not mirror. All floor steel panels neutral dark gunmetal under even neutral white illumination sRGB luma around 0.21, no tint, hotspots, holes, obstructions or cover. Match image 1 native map-kit scale and framing, outside flat #07090D void. No text, symbols, people, robots, side doors, signage, UI, fog, vignette, extra platform, double structures or black frame.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_C03/S1_C03_MASTER.png",
+        "sha256": "e1ae9520bc7b91d6e280bd7cbaab456b28c02eb336286ef2c7aa88e3a25977a4"
+      },
+      {
+        "path": "assets/environments/site7/stage02/connectors/relay_archive_quarantine/S02_11_RELAY_ARCHIVE_QUARANTINE_GAME.png",
+        "sha256": "c425667730ea1057147fe08297d677db6d883d2a447751e86ee19758f25c2632"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_C03/S2_C03_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "45b01e833be1a4da7457ee41da4189ac02b5927061df575474ffd1f07ab8c1a2",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-d197b8ca-3f46-40cc-bd32-7c8b118e1aaa.png",
+    "managed_staging_sha256": "45b01e833be1a4da7457ee41da4189ac02b5927061df575474ffd1f07ab8c1a2",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_C04",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB standalone SABLE CIRCUIT SITE-7 v2 ascending connector plate S2_C04 Quarantine to Sublevel Relay. Image 1 approved v2 map-kit connector authority: geometry, fixed 26.6-degree ↗ deck, camera, scale, rail and border openness. Image 2 only thematic reference for quarantine/sublevel wall machinery. One straight broad steel-panel deck extends from LOWER-LEFT image BORDER to UPPER-RIGHT image BORDER, full-width open coplanar floor at both ends, constant walkable width >=260 native pixels. Near-orthographic 3/4 top-down 2:1 dimetric axes with no perspective convergence. Back wall upper-left with sealed quarantine pipes becoming sublevel power couplings, low handrail lower-right, never mirror. Neutral dark gunmetal floor, evenly neutral-white lit near sRGB 0.21; red/amber/violet practical lamps confined to wall and no tinted deck, bright stripes, dark holes or props. Flat #07090D outside. Exactly match image 1 framing and scale. No text, signage, symbols, people, robots, UI, haze, vignette, side doors, barriers, floor discontinuity, black frame or doubles.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_C04/S1_C04_MASTER.png",
+        "sha256": "5a3e36835d878958de941934958ec00182582efb0c5978ceb9f109d12cabc7e0"
+      },
+      {
+        "path": "assets/environments/site7/stage02/connectors/quarantine_sublevel_relay/S02_12_QUARANTINE_SUBLEVEL_RELAY_GAME.png",
+        "sha256": "8a6035b3ad963fec4b1f143deb89837e3d27670b4af10270a4fadc731594e559"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_C04/S2_C04_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "cfbd3c6d9047322bae3816f75571249fc1c2efaa04da4e9a57119ba6ffe0c66e",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-11322a15-add8-4ee4-87bd-e00e2180064f.png",
+    "managed_staging_sha256": "cfbd3c6d9047322bae3816f75571249fc1c2efaa04da4e9a57119ba6ffe0c66e",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_C05",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB standalone SABLE CIRCUIT SITE-7 v2 ascending connector S2_C05 Sublevel Relay to Service Lift. Image 1 approved camera, geometry, width, neutral floor and composition; image 2 ONLY stage2 relay/lift wall theme. Fixed near-orthographic 3/4 top-down 2:1 dimetric camera, straight ↗ axis at 26.6 degrees, no perspective convergence. A single wide steel deck from lower-left image BORDER to upper-right image BORDER with full-width unobstructed coplanar floor at both ends, constant clear width >=260 native px. Back wall along upper-left with power cable trunking, lift hydraulic connections and dim violet-to-amber practicals; lower-right handrail, NO mirror. Walkway entirely neutral dark gunmetal steel paneling under even neutral-white light sRGB ~0.21, no colored floor spill, dark patches, cutouts, crates or cover. Outside flat #07090D void. Match image 1 precise scale and floor axes. No text, signs, humans, robots, UI, haze, vignette, side openings, stairs, floor obstructions, duplicated geometry or black frame.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_C05/S1_C05_MASTER.png",
+        "sha256": "ad4944ab2de20d288311c5fddec1a8de7d61f8981261fce818884911415ef46e"
+      },
+      {
+        "path": "assets/environments/site7/stage02/connectors/sublevel_relay_service_lift/S02_13_SUBLEVEL_RELAY_SERVICE_LIFT_GAME.png",
+        "sha256": "802756c588325a89131c269f39e69f8c4f51cfc94d58fa159df20befb4a04742"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_C05/S2_C05_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "166cdef25d582ba39a9663312e340af87f721973d44249877d2c077568c855aa",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-d925e74b-6ded-4954-99c5-0ce883f7eb4b.png",
+    "managed_staging_sha256": "166cdef25d582ba39a9663312e340af87f721973d44249877d2c077568c855aa",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_C06",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB standalone SABLE CIRCUIT SITE-7 v2 DESCENDING branch connector S2_C06 Relay Archive to Reserve Field Cache. Image 1 is approved v2 descending connector geometry and camera authority. Image 2 supplies only stage2 relay/cache back-wall identity. Carefully preserve UNMIRRORED descending direction: ONE straight broad ↘ deck runs from UPPER-LEFT canvas BORDER to LOWER-RIGHT canvas BORDER. Both ends remain fully open with full-width coplanar floor all the way to edges, constant walkable width >=260 native px. Near-orthographic 3/4 top-down 2:1 dimetric floor axes 26.6 degrees, no perspective convergence. Solid back wall along UPPER-RIGHT side; low rail along LOWER-LEFT side. Never flip the whole image or make an ascending deck. Neutral dark gunmetal square steel panels under even neutral-white light around sRGB luma 0.21; no tinted light or highlights on floor, voids or obstructions. Mount reserve cache conduits and restrained amber/cyan wall practicals only to upper-right wall. Match image 1 map-kit scale, rail and framing; flat #07090D outside. No text, labels, symbols, people, robots, floor props, UI, haze, vignette, side doors, extra platforms, doubled geometry or black frame.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_C06/S1_C06_MASTER.png",
+        "sha256": "6d3f8eebc0d22e9d91f1498691f690e312b250f3409f5a23d72759e1be34cba5"
+      },
+      {
+        "path": "assets/environments/site7/stage02/connectors/relay_archive_field_cache/S02_14_RELAY_ARCHIVE_FIELD_CACHE_GAME.png",
+        "sha256": "d2df8e97043347671e18aa037bf0daa5463920d058fcacf79ae1046baf34dba2"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_C06/S2_C06_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "87c7f9163ccaf3f1ceaa555da98d5ec29950cbcd00a4c3bb0849601c7474be62",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-ef6b6317-3fc8-4bfa-a605-8c4e8a1e4894.png",
+    "managed_staging_sha256": "87c7f9163ccaf3f1ceaa555da98d5ec29950cbcd00a4c3bb0849601c7474be62",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  },
+  {
+    "plate": "S2_C07",
+    "attempt": 1,
+    "outcome": "selected",
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB standalone SABLE CIRCUIT SITE-7 v2 DESCENDING branch connector S2_C07 Quarantine to Echo Recorder. Image 1 approved v2 descending connector camera, geometry, neutral deck, exact rail/wall sides. Image 2 only supplies quarantine-to-recording wall machinery identity. Preserve UNMIRRORED ↘ direction: a SINGLE broad straight steel deck runs from UPPER-LEFT canvas BORDER to LOWER-RIGHT canvas BORDER with full-width open coplanar floor at both image edges, constant walkable width >=260 native pixels. Fixed near-orthographic 3/4 top-down 2:1 dimetric 26.6-degree floor axes; no perspective. Solid back wall on UPPER-RIGHT side with shielded data cables, recorder banks and dim cyan/amber practical wall lights; low railing on LOWER-LEFT side; no mirror. Entire deck neutral dark gunmetal steel panels, even neutral white lighting around sRGB luma 0.21, no colored floor spill, holes, bright strips, objects or cover. Match image 1 map-kit scale and framing, outside flat #07090D. No text, signs, symbols, humans, robots, UI, fog, vignette, side doors, stairs, extra platforms, double structures or black frame.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_C07/S1_C07_MASTER.png",
+        "sha256": "941ce2715bacf23e180d39a02f62ae0592d68548d2e3cce5693054068ea5b865"
+      },
+      {
+        "path": "assets/environments/site7/stage02/connectors/quarantine_echo_recorder/S02_15_QUARANTINE_ECHO_RECORDER_GAME.png",
+        "sha256": "a4239e4355f19d43ab1dfdffb47f6a4ce2f92a37a81edcd5c4e2b484a525d540"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage02/S2_C07/S2_C07_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "c01ed751e3d22d3fd03f0d5b8afde8042d01fdbce42162b55fb9ee54642d3d25",
+    "managed_staging_path": "C:\\Users\\AAA\\.codex\\generated_images\\01a0e05b-ff4b-7d40-953c-3c9973c59ddf\\exec-ee701541-e4f7-4e07-a4e5-fc0aa12b43e9.png",
+    "managed_staging_sha256": "c01ed751e3d22d3fd03f0d5b8afde8042d01fdbce42162b55fb9ee54642d3d25",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "transparent_background": false
+  }
+]

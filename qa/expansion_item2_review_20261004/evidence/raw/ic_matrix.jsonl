@@ -1,0 +1,302 @@
+{"mutant": "base", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "base", "test": "contract_ui", "exit": "0", "wall_s": "11", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "base", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "base", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "base", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "base", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/base_p"}
+{"mutant": "mission_id_restored", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "mission_id_restored", "test": "contract_ui", "exit": "1", "wall_s": "11", "error_lines": "3", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "mission_id_restored", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "mission_id_restored", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "mission_id_restored", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "mission_id_restored", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/mission_id_restored_p"}
+{"mutant": "mission_id_restored", "test": "campaign", "exit": "0", "wall_s": "28", "error_lines": "0", "script_errors": "0", "result": "SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/mission_id_restored_c"}
+{"mutant": "offers_random", "test": "contract_offers", "exit": "1", "wall_s": "5", "error_lines": "413", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)"}
+{"mutant": "offers_random", "test": "contract_ui", "exit": "1", "wall_s": "11", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "offers_random", "test": "contract_save", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "offers_random", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "offers_random", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "offers_random", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/offers_random_p"}
+{"mutant": "offers_default_last", "test": "contract_offers", "exit": "1", "wall_s": "6", "error_lines": "640", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)"}
+{"mutant": "offers_default_last", "test": "contract_ui", "exit": "1", "wall_s": "10", "error_lines": "2", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "offers_default_last", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "offers_default_last", "test": "redline", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "offers_default_last", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "offers_default_last", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/offers_default_last_p"}
+{"mutant": "offers_dup_pair", "test": "contract_offers", "exit": "1", "wall_s": "6", "error_lines": "640", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: FAIL (25654 checks)"}
+{"mutant": "offers_dup_pair", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "offers_dup_pair", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "offers_dup_pair", "test": "redline", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "offers_dup_pair", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "offers_dup_pair", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/offers_dup_pair_p"}
+{"mutant": "offers_reward_flat", "test": "contract_offers", "exit": "1", "wall_s": "9", "error_lines": "1275", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)"}
+{"mutant": "offers_reward_flat", "test": "contract_ui", "exit": "0", "wall_s": "13", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "offers_reward_flat", "test": "contract_save", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "offers_reward_flat", "test": "redline", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "offers_reward_flat", "test": "run_contract", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "offers_reward_flat", "test": "play_log", "exit": "0", "wall_s": "12", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/offers_reward_flat_p"}
+{"mutant": "offers_no_hazard_stats", "test": "contract_offers", "exit": "0", "wall_s": "5", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "offers_no_hazard_stats", "test": "contract_ui", "exit": "0", "wall_s": "13", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "offers_no_hazard_stats", "test": "contract_save", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "offers_no_hazard_stats", "test": "redline", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "offers_no_hazard_stats", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "offers_no_hazard_stats", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/offers_no_hazard_stats_p"}
+{"mutant": "redline_reward_low", "test": "contract_offers", "exit": "1", "wall_s": "10", "error_lines": "1350", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)"}
+{"mutant": "redline_reward_low", "test": "contract_ui", "exit": "1", "wall_s": "12", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "redline_reward_low", "test": "contract_save", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "redline_reward_low", "test": "redline", "exit": "1", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "redline_reward_low", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "redline_reward_low", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_reward_low_p"}
+{"mutant": "redline_reward_high", "test": "contract_offers", "exit": "1", "wall_s": "3", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)"}
+{"mutant": "redline_reward_high", "test": "contract_ui", "exit": "1", "wall_s": "11", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "redline_reward_high", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "redline_reward_high", "test": "redline", "exit": "1", "wall_s": "5", "error_lines": "1", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "redline_reward_high", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "redline_reward_high", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "2", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_reward_high_p"}
+{"mutant": "redline_hp_high", "test": "contract_offers", "exit": "1", "wall_s": "3", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)"}
+{"mutant": "redline_hp_high", "test": "contract_ui", "exit": "0", "wall_s": "11", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "redline_hp_high", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "redline_hp_high", "test": "redline", "exit": "1", "wall_s": "7", "error_lines": "7", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "redline_hp_high", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "redline_hp_high", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_hp_high_p"}
+{"mutant": "redline_interval_low", "test": "contract_offers", "exit": "1", "wall_s": "3", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)"}
+{"mutant": "redline_interval_low", "test": "contract_ui", "exit": "0", "wall_s": "11", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "redline_interval_low", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "redline_interval_low", "test": "redline", "exit": "1", "wall_s": "6", "error_lines": "6", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "redline_interval_low", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "redline_interval_low", "test": "play_log", "exit": "0", "wall_s": "9", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_interval_low_p"}
+{"mutant": "redline_speed_high", "test": "contract_offers", "exit": "1", "wall_s": "4", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)"}
+{"mutant": "redline_speed_high", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "redline_speed_high", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "redline_speed_high", "test": "redline", "exit": "1", "wall_s": "7", "error_lines": "6", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "redline_speed_high", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "redline_speed_high", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_speed_high_p"}
+{"mutant": "redline_dmg_high", "test": "contract_offers", "exit": "1", "wall_s": "3", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)"}
+{"mutant": "redline_dmg_high", "test": "contract_ui", "exit": "0", "wall_s": "11", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "redline_dmg_high", "test": "contract_save", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "redline_dmg_high", "test": "redline", "exit": "1", "wall_s": "7", "error_lines": "14", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "redline_dmg_high", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "redline_dmg_high", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_dmg_high_p"}
+{"mutant": "redline_always_available", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "redline_always_available", "test": "contract_ui", "exit": "1", "wall_s": "11", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (490 checks)"}
+{"mutant": "redline_always_available", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "redline_always_available", "test": "redline", "exit": "1", "wall_s": "6", "error_lines": "6", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "redline_always_available", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "redline_always_available", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_always_available_p"}
+{"mutant": "redline_ignores_clear", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "redline_ignores_clear", "test": "contract_ui", "exit": "1", "wall_s": "11", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (490 checks)"}
+{"mutant": "redline_ignores_clear", "test": "contract_save", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "redline_ignores_clear", "test": "redline", "exit": "1", "wall_s": "7", "error_lines": "4", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "redline_ignores_clear", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "redline_ignores_clear", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_ignores_clear_p"}
+{"mutant": "boss_not_exempt", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "boss_not_exempt", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "boss_not_exempt", "test": "contract_save", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "boss_not_exempt", "test": "redline", "exit": "1", "wall_s": "7", "error_lines": "2", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "boss_not_exempt", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "boss_not_exempt", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/boss_not_exempt_p"}
+{"mutant": "boss_not_exempt", "test": "boss_duel", "exit": "1", "wall_s": "56", "error_lines": "61", "script_errors": "0", "result": "SITE7_BOSS_DUEL_SMOKE: FAIL (2184 checks) res://.cache/out/boss_not_exempt_b"}
+{"mutant": "boss_hp_exempt", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "boss_hp_exempt", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "boss_hp_exempt", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "boss_hp_exempt", "test": "redline", "exit": "1", "wall_s": "6", "error_lines": "1", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "boss_hp_exempt", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "boss_hp_exempt", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/boss_hp_exempt_p"}
+{"mutant": "boss_hp_exempt", "test": "boss_duel", "exit": "1", "wall_s": "57", "error_lines": "10", "script_errors": "0", "result": "SITE7_BOSS_DUEL_SMOKE: FAIL (2184 checks) res://.cache/out/boss_hp_exempt_b"}
+{"mutant": "boss_dmg_exempt", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "boss_dmg_exempt", "test": "contract_ui", "exit": "0", "wall_s": "11", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "boss_dmg_exempt", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "boss_dmg_exempt", "test": "redline", "exit": "1", "wall_s": "7", "error_lines": "2", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "boss_dmg_exempt", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "boss_dmg_exempt", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/boss_dmg_exempt_p"}
+{"mutant": "boss_dmg_exempt", "test": "boss_duel", "exit": "1", "wall_s": "57", "error_lines": "80", "script_errors": "0", "result": "SITE7_BOSS_DUEL_SMOKE: FAIL (2184 checks) res://.cache/out/boss_dmg_exempt_b"}
+{"mutant": "boss_prefix_other", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "boss_prefix_other", "test": "contract_ui", "exit": "0", "wall_s": "11", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "boss_prefix_other", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "boss_prefix_other", "test": "redline", "exit": "1", "wall_s": "6", "error_lines": "18", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "boss_prefix_other", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "boss_prefix_other", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/boss_prefix_other_p"}
+{"mutant": "boss_prefix_other", "test": "boss_duel", "exit": "1", "wall_s": "55", "error_lines": "61", "script_errors": "0", "result": "SITE7_BOSS_DUEL_SMOKE: FAIL (2184 checks) res://.cache/out/boss_prefix_other_b"}
+{"mutant": "double_apply", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "double_apply", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "double_apply", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "double_apply", "test": "redline", "exit": "1", "wall_s": "6", "error_lines": "7", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "double_apply", "test": "run_contract", "exit": "1", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: FAIL (1)"}
+{"mutant": "double_apply", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/double_apply_p"}
+{"mutant": "double_apply", "test": "boss_duel", "exit": "0", "wall_s": "57", "error_lines": "1", "script_errors": "0", "result": "SITE7_BOSS_DUEL_SMOKE: PASS (2184 checks) res://.cache/out/double_apply_b"}
+{"mutant": "mode_ids_dropped", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "mode_ids_dropped", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "mode_ids_dropped", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "mode_ids_dropped", "test": "redline", "exit": "1", "wall_s": "6", "error_lines": "2", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "mode_ids_dropped", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "mode_ids_dropped", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/mode_ids_dropped_p"}
+{"mutant": "mode_ids_dropped", "test": "boss_duel", "exit": "0", "wall_s": "57", "error_lines": "1", "script_errors": "0", "result": "SITE7_BOSS_DUEL_SMOKE: PASS (2184 checks) res://.cache/out/mode_ids_dropped_b"}
+{"mutant": "reward_research_skipped", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "reward_research_skipped", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "reward_research_skipped", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "reward_research_skipped", "test": "redline", "exit": "1", "wall_s": "6", "error_lines": "2", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "reward_research_skipped", "test": "run_contract", "exit": "1", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: FAIL (1)"}
+{"mutant": "reward_research_skipped", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/reward_research_skipped_p"}
+{"mutant": "reward_clamp_raised", "test": "contract_offers", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "reward_clamp_raised", "test": "contract_ui", "exit": "0", "wall_s": "11", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "reward_clamp_raised", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "reward_clamp_raised", "test": "redline", "exit": "1", "wall_s": "6", "error_lines": "1", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "reward_clamp_raised", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "reward_clamp_raised", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/reward_clamp_raised_p"}
+{"mutant": "deploy_off_by_one", "test": "contract_offers", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "deploy_off_by_one", "test": "contract_ui", "exit": "1", "wall_s": "10", "error_lines": "2", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "deploy_off_by_one", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "deploy_off_by_one", "test": "redline", "exit": "0", "wall_s": "5", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "deploy_off_by_one", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "deploy_off_by_one", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/deploy_off_by_one_p"}
+{"mutant": "deploy_redline_unvalidated", "test": "contract_offers", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "deploy_redline_unvalidated", "test": "contract_ui", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "deploy_redline_unvalidated", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "deploy_redline_unvalidated", "test": "redline", "exit": "0", "wall_s": "5", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "deploy_redline_unvalidated", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "deploy_redline_unvalidated", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/deploy_redline_unvalidated_p"}
+{"mutant": "briefing_consumes_serial", "test": "contract_offers", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "briefing_consumes_serial", "test": "contract_ui", "exit": "1", "wall_s": "10", "error_lines": "3", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "briefing_consumes_serial", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "briefing_consumes_serial", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "briefing_consumes_serial", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "briefing_consumes_serial", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "2", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/briefing_consumes_serial_p"}
+{"mutant": "briefing_redline_always", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "briefing_redline_always", "test": "contract_ui", "exit": "1", "wall_s": "11", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (490 checks)"}
+{"mutant": "briefing_redline_always", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "briefing_redline_always", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "briefing_redline_always", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "briefing_redline_always", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/briefing_redline_always_p"}
+{"mutant": "mission_id_restored", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "mission_id_restored", "test": "contract_ui", "exit": "1", "wall_s": "12", "error_lines": "3", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "mission_id_restored", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "mission_id_restored", "test": "redline", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "mission_id_restored", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "mission_id_restored", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/mission_id_restored_p"}
+{"mutant": "mission_id_restored", "test": "campaign", "exit": "0", "wall_s": "27", "error_lines": "0", "script_errors": "0", "result": "SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/mission_id_restored_c"}
+{"mutant": "schema_4", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "schema_4", "test": "contract_ui", "exit": "0", "wall_s": "11", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "schema_4", "test": "contract_save", "exit": "1", "wall_s": "2", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: FAIL (69 checks)"}
+{"mutant": "schema_4", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "schema_4", "test": "run_contract", "exit": "0", "wall_s": "24", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "schema_4", "test": "play_log", "exit": "0", "wall_s": "26", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/schema_4_p"}
+{"mutant": "redline_on_wipe", "test": "contract_offers", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "redline_on_wipe", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "redline_on_wipe", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "redline_on_wipe", "test": "redline", "exit": "1", "wall_s": "6", "error_lines": "2", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "redline_on_wipe", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "redline_on_wipe", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_on_wipe_p"}
+{"mutant": "redline_on_early", "test": "contract_offers", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "redline_on_early", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "redline_on_early", "test": "contract_save", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "redline_on_early", "test": "redline", "exit": "1", "wall_s": "6", "error_lines": "1", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "redline_on_early", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "redline_on_early", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_on_early_p"}
+{"mutant": "commit_gate_off", "test": "contract_offers", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "commit_gate_off", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "commit_gate_off", "test": "contract_save", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "commit_gate_off", "test": "redline", "exit": "1", "wall_s": "6", "error_lines": "2", "script_errors": "0", "result": "REDLINE_SMOKE: FAIL (77 checks)"}
+{"mutant": "commit_gate_off", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "commit_gate_off", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/commit_gate_off_p"}
+{"mutant": "sanitize_off", "test": "contract_offers", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "sanitize_off", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "sanitize_off", "test": "contract_save", "exit": "1", "wall_s": "2", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: FAIL (69 checks)"}
+{"mutant": "sanitize_off", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "sanitize_off", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "sanitize_off", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/sanitize_off_p"}
+{"mutant": "snapshot_no_redline", "test": "contract_offers", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "snapshot_no_redline", "test": "contract_ui", "exit": "1", "wall_s": "10", "error_lines": "2", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "snapshot_no_redline", "test": "contract_save", "exit": "1", "wall_s": "301", "error_lines": "0", "script_errors": "1", "result": ""}
+{"mutant": "snapshot_no_redline", "test": "redline", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "snapshot_no_redline", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "snapshot_no_redline", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "2", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/snapshot_no_redline_p"}
+{"mutant": "contract_persisted", "test": "contract_offers", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "contract_persisted", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "contract_persisted", "test": "contract_save", "exit": "1", "wall_s": "1", "error_lines": "3", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: FAIL (69 checks)"}
+{"mutant": "contract_persisted", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "contract_persisted", "test": "run_contract", "exit": "1", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: FAIL (1)"}
+{"mutant": "contract_persisted", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/contract_persisted_p"}
+{"mutant": "debug_reset_keeps", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "debug_reset_keeps", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "debug_reset_keeps", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "debug_reset_keeps", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "debug_reset_keeps", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "debug_reset_keeps", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/debug_reset_keeps_p"}
+{"mutant": "playlog_no_id", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "playlog_no_id", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "playlog_no_id", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "playlog_no_id", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "playlog_no_id", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "playlog_no_id", "test": "play_log", "exit": "1", "wall_s": "7", "error_lines": "4", "script_errors": "0", "result": ""}
+{"mutant": "playlog_no_redline", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "playlog_no_redline", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "playlog_no_redline", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "playlog_no_redline", "test": "redline", "exit": "0", "wall_s": "5", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "playlog_no_redline", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "playlog_no_redline", "test": "play_log", "exit": "1", "wall_s": "7", "error_lines": "4", "script_errors": "0", "result": ""}
+{"mutant": "results_neutral", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "results_neutral", "test": "contract_ui", "exit": "1", "wall_s": "10", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "results_neutral", "test": "contract_save", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "results_neutral", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "results_neutral", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "results_neutral", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/results_neutral_p"}
+{"mutant": "lobby_no_mark", "test": "contract_offers", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "lobby_no_mark", "test": "contract_ui", "exit": "1", "wall_s": "10", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "lobby_no_mark", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "lobby_no_mark", "test": "redline", "exit": "0", "wall_s": "5", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "lobby_no_mark", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "lobby_no_mark", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/lobby_no_mark_p"}
+{"mutant": "lobby_no_status", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "lobby_no_status", "test": "contract_ui", "exit": "1", "wall_s": "10", "error_lines": "1", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "lobby_no_status", "test": "contract_save", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "lobby_no_status", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "lobby_no_status", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "lobby_no_status", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/lobby_no_status_p"}
+{"mutant": "ui_button_overlap", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "ui_button_overlap", "test": "contract_ui", "exit": "1", "wall_s": "10", "error_lines": "24", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "ui_button_overlap", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "ui_button_overlap", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "ui_button_overlap", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "ui_button_overlap", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_button_overlap_p"}
+{"mutant": "ui_choice_short", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "ui_choice_short", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "ui_choice_short", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "ui_choice_short", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "ui_choice_short", "test": "run_contract", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "ui_choice_short", "test": "play_log", "exit": "0", "wall_s": "8", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_choice_short_p"}
+{"mutant": "ui_panel_wide", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "ui_panel_wide", "test": "contract_ui", "exit": "1", "wall_s": "13", "error_lines": "12", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "ui_panel_wide", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "ui_panel_wide", "test": "redline", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "ui_panel_wide", "test": "run_contract", "exit": "0", "wall_s": "9", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "ui_panel_wide", "test": "play_log", "exit": "0", "wall_s": "9", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_panel_wide_p"}
+{"mutant": "ui_panel_over_route", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "ui_panel_over_route", "test": "contract_ui", "exit": "1", "wall_s": "11", "error_lines": "24", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "ui_panel_over_route", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "ui_panel_over_route", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "ui_panel_over_route", "test": "run_contract", "exit": "0", "wall_s": "11", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "ui_panel_over_route", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_panel_over_route_p"}
+{"mutant": "ui_no_reveal", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "ui_no_reveal", "test": "contract_ui", "exit": "1", "wall_s": "10", "error_lines": "10", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "ui_no_reveal", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "ui_no_reveal", "test": "redline", "exit": "0", "wall_s": "5", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "ui_no_reveal", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "ui_no_reveal", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "2", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_no_reveal_p"}
+{"mutant": "ui_choice_inert", "test": "contract_offers", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "ui_choice_inert", "test": "contract_ui", "exit": "1", "wall_s": "9", "error_lines": "7", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)"}
+{"mutant": "ui_choice_inert", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "ui_choice_inert", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "ui_choice_inert", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "ui_choice_inert", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_choice_inert_p"}
+{"mutant": "ui_default_unpressed", "test": "contract_offers", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "ui_default_unpressed", "test": "contract_ui", "exit": "0", "wall_s": "10", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "ui_default_unpressed", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "ui_default_unpressed", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "ui_default_unpressed", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "ui_default_unpressed", "test": "play_log", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_default_unpressed_p"}
+{"mutant": "ui_no_effect_text", "test": "contract_offers", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)"}
+{"mutant": "ui_no_effect_text", "test": "contract_ui", "exit": "0", "wall_s": "9", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)"}
+{"mutant": "ui_no_effect_text", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)"}
+{"mutant": "ui_no_effect_text", "test": "redline", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "result": "REDLINE_SMOKE: PASS (77 checks)"}
+{"mutant": "ui_no_effect_text", "test": "run_contract", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "result": "M11_RUN_CONTRACT_SMOKE: PASS"}
+{"mutant": "ui_no_effect_text", "test": "play_log", "exit": "0", "wall_s": "6", "error_lines": "1", "script_errors": "0", "result": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_no_effect_text_p"}

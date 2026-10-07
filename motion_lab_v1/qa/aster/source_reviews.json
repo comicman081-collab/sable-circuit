@@ -1,0 +1,1913 @@
+[
+  {
+    "recordedAt": "2026-09-10T08:28:06.018439+00:00",
+    "slot": "E/idle/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the new realistic style line: native 1024x1536 full-body ASTER silhouette is contained with silver high ponytail, face, both gloved hands, precision coil rifle with triangular muzzle cage, dark armored trousers, both boots and planted soles visible. The prior-character reference contributes only realistic rendering, material detail and framing; ASTER identity remains distinct. Both shoulders are continuous dark navy fabric with established seams and no white armor, cyan shoulder stripe, gold hardware, tabs, fins, brackets, badges or studs. Controlled green backdrop is exact-green outside the source mask; raw ImageGen source, normalized derivative, matte QA and tool-response provenance are retained. One idle frame only; no claim about remaining directions or motion continuity.",
+    "sourceSHA256": "00b0a9a50b0cb74b1c51d0811e504eda796723829aea7fdeb68329869d5acbbd",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/E_idle_0_master.png",
+      "sha256": "00b0a9a50b0cb74b1c51d0811e504eda796723829aea7fdeb68329869d5acbbd"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T08:30:10.969402+00:00",
+    "slot": "E/walk/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the new realistic style line: native 1024x1536 east-facing full-body ASTER silhouette is contained with silver high ponytail, face, both gloved hands, precision coil rifle with triangular muzzle cage, dark armored trousers and both boots visible. The pose has a readable forward planted support boot and a distinct trailing leg/heel transition with clear separation from E/idle/0; hips, knees, hands and rifle remain anatomically connected. The prior-character reference contributes only realistic rendering, material detail and framing; ASTER identity remains distinct. Both shoulders are continuous dark navy fabric with established seams and no white armor, cyan shoulder stripe, gold hardware, tabs, fins, brackets, badges or studs. Controlled green backdrop is green-dominant for the deterministic source-key path; raw ImageGen source, tool-response envelope and intake receipt are retained. One pilot walk frame only; no claim about remaining phases or directions.",
+    "sourceSHA256": "3c40876f975628b6114bc34c191649abe7c307ea4f91d8d0507d763bd62afadd",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/E_walk_0_master.png",
+      "sha256": "3c40876f975628b6114bc34c191649abe7c307ea4f91d8d0507d763bd62afadd"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T08:32:03.372738+00:00",
+    "slot": "E/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the new realistic style line: native 1024x1536 east-facing full-body ASTER silhouette is contained with silver high ponytail, face, both gloved hands, precision coil rifle with triangular muzzle cage, dark armored trousers and both boots visible. This is the opposite contact to E/walk/0: the alternate leg is forward and its boot sole is clearly planted while the other leg trails with a distinct heel/toe transition; the two contact silhouettes are phase-distinct and anatomically connected through hips, knees, hands and rifle. The prior-character reference contributes only realistic rendering, material detail and framing; ASTER identity remains distinct. Both shoulders are continuous dark navy fabric with established seams and no white armor, cyan shoulder stripe, gold hardware, tabs, fins, brackets, badges or studs. Controlled green backdrop is green-dominant for deterministic source-keying; raw ImageGen source, tool-response envelope and intake receipt are retained. Two pilot walk frames plus one idle are approved; no claim about remaining phases or directions.",
+    "sourceSHA256": "b2177a64e3fb4fedb56b189731bb1ba2821acf00e8d854f7ea7e4d0605f37732",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/E_walk_3_master.png",
+      "sha256": "b2177a64e3fb4fedb56b189731bb1ba2821acf00e8d854f7ea7e4d0605f37732"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T08:34:52.421449+00:00",
+    "slot": "SE/idle/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the realistic style reset: native 1024x1536 full-body ASTER southeast three-quarter idle source is contained with silver-white high ponytail, face, both gloved hands, precision coil rifle with triangular muzzle cage, dark armored trousers and both boot soles visible. It preserves the E idle identity and material language while turning the torso/rifle into a southeast three-quarter standing read. Both shoulders remain continuous dark navy tactical fabric with established seams and no white armor, cyan shoulder stripe, gold shoulder hardware, tabs, fins, brackets, badges or studs. The prior-character image was used only for realistic rendering/framing, not identity. Green-dominant controlled backdrop, raw ImageGen source, tool-response envelope and intake receipt are retained. One standing direction only; motion phases remain unbuilt.",
+    "sourceSHA256": "2d034d978f603dd578e9cc32666d351ee70e85e46f898881f62b4ed339988077",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SE_idle_0_master.png",
+      "sha256": "2d034d978f603dd578e9cc32666d351ee70e85e46f898881f62b4ed339988077"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T08:37:02.570095+00:00",
+    "slot": "S/idle/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the realistic style reset: native 1024x1536 full-body ASTER south/front-facing idle source is centered and contained with silver-white high ponytail, face, both shoulders, both gloved hands, precision coil rifle with triangular muzzle cage, dark armored trousers and both boot soles visible. The direct front read is distinct from the E and SE three-quarter standing sources while preserving the same identity, materials, seams and rifle. Both shoulders remain continuous dark navy tactical fabric with established seams and no white armor, cyan shoulder stripe, gold shoulder hardware, tabs, fins, brackets, badges or studs. The prior-character image was used only for realistic rendering/framing, not identity. Green-dominant controlled backdrop, raw ImageGen source, tool-response envelope and intake receipt are retained. Three standing directions are now approved; walk phases and remaining directions remain unbuilt.",
+    "sourceSHA256": "c020666885ef471392bdd68332ff6c581fd6362ac9f60b1187e388a955549944",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/S_idle_0_master.png",
+      "sha256": "c020666885ef471392bdd68332ff6c581fd6362ac9f60b1187e388a955549944"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T08:39:14.212963+00:00",
+    "slot": "SW/idle/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the realistic style reset: native 1024x1536 full-body ASTER southwest/front-left three-quarter idle source is contained with silver-white high ponytail, face, both gloved hands, precision coil rifle with triangular muzzle cage, dark armored trousers and both boot soles visible. The turn is distinct from the E, SE and S standing sources while preserving the same adult identity, seams, materials and rifle. Both shoulders remain continuous dark navy tactical fabric with established seams and no white armor, cyan shoulder stripe, gold shoulder hardware, tabs, fins, brackets, badges or studs. The prior-character image was used only for realistic rendering/framing, not identity. Green-dominant controlled backdrop, raw ImageGen source, tool-response envelope and intake receipt are retained. Four standing directions are now approved; remaining directions and motion phases remain unbuilt.",
+    "sourceSHA256": "42a2872d173a9dc3ec2f7485353014bb9ab3224b246476a13e7cb567dafb9aec",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SW_idle_0_master.png",
+      "sha256": "42a2872d173a9dc3ec2f7485353014bb9ab3224b246476a13e7cb567dafb9aec"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T08:41:25.944242+00:00",
+    "slot": "W/idle/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the realistic style reset: native 1024x1536 full-body ASTER west/left-facing side-profile idle source is contained with silver-white high ponytail trailing right, face, both gloved hands, precision coil rifle with triangular muzzle cage, dark armored trousers and both boot soles visible. Profile orientation is distinct from the E, SE, S and SW sources while preserving adult identity, seams, materials and rifle. Both shoulders remain continuous dark navy tactical fabric with established seams and no white armor, cyan shoulder stripe, gold shoulder hardware, tabs, fins, brackets, badges or studs. The prior-character image was used only for realistic rendering/framing, not identity. Green-dominant controlled backdrop, raw ImageGen source, tool-response envelope and intake receipt are retained. Five standing directions are now approved; remaining directions and motion phases remain unbuilt.",
+    "sourceSHA256": "4a0b2cfc1b82311c3ef9b512a1a2eb90c98ad4b7783eec1fd0a347f2d1651456",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/W_idle_0_master.png",
+      "sha256": "4a0b2cfc1b82311c3ef9b512a1a2eb90c98ad4b7783eec1fd0a347f2d1651456"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T08:43:47.818252+00:00",
+    "slot": "NW/idle/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the realistic style reset: native 1024x1536 full-body ASTER northwest/back-left three-quarter idle source is contained with silver-white high ponytail, rear jacket seams, rifle and triangular muzzle cage, dark armored trousers and both boot soles visible. Rear-left orientation is distinct from the front and side standing sources while preserving adult identity, ponytail, jacket construction, material language and equipment. Both shoulders remain plain dark navy tactical fabric with established seams and no white armor, cyan shoulder stripe, gold shoulder hardware, tabs, fins, brackets, badges or studs. The prior-character image was used only for realistic rendering/framing, not identity. Green-dominant controlled backdrop, raw ImageGen source, tool-response envelope and intake receipt are retained. Six standing directions are now approved; remaining directions and motion phases remain unbuilt.",
+    "sourceSHA256": "d36fbadac20bb2dd3368953ccec913cffa36bb507d6ccff5e1c973c00ef38fc9",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NW_idle_0_master.png",
+      "sha256": "d36fbadac20bb2dd3368953ccec913cffa36bb507d6ccff5e1c973c00ef38fc9"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T08:46:17.806125+00:00",
+    "slot": "N/idle/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the realistic style reset: native 1024x1536 full-body ASTER direct north/back-facing idle source is centered and contained with silver-white high ponytail, rear jacket seams, rifle stock/receiver and triangular muzzle cage visible, dark armored trousers and both boot soles visible. The direct rear read is distinct from NW and the front/side sources while preserving adult identity, ponytail, jacket construction, materials and equipment. Both shoulders remain plain dark navy tactical fabric with established seams and no white armor, cyan shoulder stripe, gold shoulder hardware, tabs, fins, brackets, badges or studs. The prior-character image was used only for realistic rendering/framing, not identity. Green-dominant controlled backdrop, raw ImageGen source, tool-response envelope and intake receipt are retained. Seven standing directions are now approved; only NE standing and all motion phases remain unbuilt.",
+    "sourceSHA256": "537e6e45d0e8fcda432a8e4be2264ab1c2537c43032980a680060e17eceb7d65",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/N_idle_0_master.png",
+      "sha256": "537e6e45d0e8fcda432a8e4be2264ab1c2537c43032980a680060e17eceb7d65"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T08:48:57.721204+00:00",
+    "slot": "NE/idle/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the realistic style reset: native 1024x1536 full-body ASTER northeast/back-right three-quarter idle source is contained with silver-white high ponytail, rear/right jacket seams, rifle and triangular muzzle cage visible, dark armored trousers and both boot soles visible. Rear-right orientation is distinct from N and NW while completing the eight-direction standing set; adult identity, ponytail, jacket construction, materials and equipment remain coherent. Both shoulders are plain dark navy tactical fabric with established seams and no white armor, cyan shoulder stripe, gold shoulder hardware, tabs, fins, brackets, badges or studs. The prior-character image was used only for realistic rendering/framing, not identity. Green-dominant controlled backdrop, raw ImageGen source, tool-response envelope and intake receipt are retained. All eight standing directions are now approved; walk phases remain unbuilt.",
+    "sourceSHA256": "6aeedc88bfddb4ed43407fb8b84fe5057868375320825a60d374dd95a55c6230",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NE_idle_0_master.png",
+      "sha256": "6aeedc88bfddb4ed43407fb8b84fe5057868375320825a60d374dd95a55c6230"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T08:51:57.150350+00:00",
+    "slot": "E/walk/1",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the realistic E walk loop: native 1024x1536 east-facing full-body ASTER source is contained with silver-white ponytail, jacket, two-handed precision rifle and triangular muzzle cage, dark armored trousers and both boots visible. This is the readable in-between after E/walk/0: the support boot is planted, the opposite leg swings back with a lifted trailing heel, hips and ponytail carry motion, and hands/weapon remain connected. Identity, material detail and framing match the new standing line. Both shoulders remain plain dark navy fabric with established seams and no white armor, cyan shoulder stripe, gold hardware, tabs, fins, brackets, badges or studs. Raw ImageGen source, tool-response envelope and intake receipt are retained; E/walk/1 is one reviewed phase only.",
+    "sourceSHA256": "1a879326a40bd91e9af306b2c686a96498c3a686e2679d98990aa50171af6738",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/E_walk_1_master.png",
+      "sha256": "1a879326a40bd91e9af306b2c686a96498c3a686e2679d98990aa50171af6738"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T08:54:47.047422+00:00",
+    "slot": "E/walk/2",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the realistic E walk loop: native 1024x1536 east-facing full-body ASTER source is contained with silver-white ponytail, dark navy jacket, two-handed precision rifle and triangular muzzle cage, dark armored trousers and both boots visible. This is the passing phase after E/walk/1: the support leg is planted beneath the hips while the opposite knee advances with a lifted foot and natural toe angle; ponytail, jacket and rifle stay connected without limb duplication. Identity and material detail match the standing reset. Both shoulders remain plain dark navy fabric with established seams and no white armor, cyan shoulder stripe, gold hardware, tabs, fins, brackets, badges or studs. Raw ImageGen source, tool-response envelope and intake receipt are retained; E/walk/2 is one reviewed phase only.",
+    "sourceSHA256": "016a656b5df3a0c37159978471f89cc6810e5be9d4880629e756bab9f8d154fe",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/E_walk_2_master.png",
+      "sha256": "016a656b5df3a0c37159978471f89cc6810e5be9d4880629e756bab9f8d154fe"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T08:58:12.501116+00:00",
+    "slot": "E/walk/4",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the realistic E walk loop: native 1024x1536 east-facing full-body ASTER source is contained with silver-white ponytail, dark navy jacket, two-handed precision rifle and triangular muzzle cage, dark armored trousers and both boots visible. This is the in-between after E/walk/3: the right support boot is planted while the left leg swings behind with a clear lifted heel/toe, hips and ponytail carry the phase, and weapon/hands remain connected. Identity and material detail match the new standing reset. Both shoulders remain plain dark navy fabric with established seams and no white armor, cyan shoulder stripe, gold hardware, tabs, fins, brackets, badges or studs. Raw ImageGen source, tool-response envelope and intake receipt are retained; E/walk/4 is one reviewed phase only.",
+    "sourceSHA256": "e875ebafc5b67da7de79289af0e3d91aee218ec8a60429f6bc2661a8d296a4cf",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/E_walk_4_master.png",
+      "sha256": "e875ebafc5b67da7de79289af0e3d91aee218ec8a60429f6bc2661a8d296a4cf"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:01:06.141258+00:00",
+    "slot": "E/walk/5",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review of the realistic E walk loop: native 1024x1536 east-facing full-body ASTER source is contained with silver-white ponytail, dark navy jacket, two-handed precision rifle and triangular muzzle cage, dark armored trousers and both boots visible. This final phase has the right support leg planted while the left knee passes forward with its foot lifted and naturally angled, providing a clear transition back toward E/walk/0. Hips, ponytail, jacket, hands and rifle remain connected without duplicated limbs. Identity and material detail match the standing reset. Both shoulders remain plain dark navy fabric with established seams and no white armor, cyan shoulder stripe, gold hardware, tabs, fins, brackets, badges or studs. Raw ImageGen source, tool-response envelope and intake receipt are retained; all six E walking phases are now reviewed, while other directions remain unbuilt.",
+    "sourceSHA256": "0c33b7fe7f8e01c055c4dc8647c0cb5f38e47c58481e26faa2fab2c7b152c2ce",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/E_walk_5_master.png",
+      "sha256": "0c33b7fe7f8e01c055c4dc8647c0cb5f38e47c58481e26faa2fab2c7b152c2ce"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:29:17.736315+00:00",
+    "slot": "SE/walk/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "SE diagonal planted-contact phase; native 1024x1536 ImageGen source inspected at original scale; realistic ASTER identity and weapon remain coherent, clear support/trailing leg separation, no duplicate frame, no shoulder armor or forbidden shoulder hardware.",
+    "sourceSHA256": "99d64a980689946f84eda4ea0973ee56884a11079274ec6159f6b74242694fe0",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SE_walk_0_master.png",
+      "sha256": "99d64a980689946f84eda4ea0973ee56884a11079274ec6159f6b74242694fe0"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:29:17.935315+00:00",
+    "slot": "SE/walk/1",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "SE diagonal transition phase; native 1024x1536 source inspected in six-frame review; leg stride advances from frame 0 with readable planted/support foot, preserved rifle and hands, realistic ASTER appearance, no shoulder armor.",
+    "sourceSHA256": "eb38207c72c863ee73a2eebe04ac10020297aedd3d27ba12ec1a327d90210df9",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SE_walk_1_master.png",
+      "sha256": "eb38207c72c863ee73a2eebe04ac10020297aedd3d27ba12ec1a327d90210df9"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:29:18.142316+00:00",
+    "slot": "SE/walk/2",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "SE diagonal passing phase; native 1024x1536 source inspected in sequence; body and rifle stay connected while legs pass cleanly, no duplicate pose, no forbidden shoulder armor/hardware.",
+    "sourceSHA256": "a2840fa41b4154ece6b3a1204e6dbbabecffe2709c753f76bc70b44993a5aae0",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SE_walk_2_master.png",
+      "sha256": "a2840fa41b4154ece6b3a1204e6dbbabecffe2709c753f76bc70b44993a5aae0"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:29:18.346315+00:00",
+    "slot": "SE/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "SE diagonal opposite-contact phase; native 1024x1536 source inspected at original scale; opposite leg support is readable, coat/boots/weapon remain coherent, realistic ASTER identity, no shoulder armor.",
+    "sourceSHA256": "d17db1b0ee3e570b8f5b4d3c3c2a6e8a61c1609b41553d5d7515dbbbb2905ce1",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SE_walk_3_master.png",
+      "sha256": "d17db1b0ee3e570b8f5b4d3c3c2a6e8a61c1609b41553d5d7515dbbbb2905ce1"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:29:18.555315+00:00",
+    "slot": "SE/walk/4",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "SE diagonal recovery phase; native 1024x1536 source inspected in sequence; trailing leg and coat swing are distinct, no duplicate frame, rifle grip preserved, no forbidden shoulder hardware.",
+    "sourceSHA256": "016c22974fa8fc303bc02c406398264059165c15b4f9d8fd5e5a3a9c3d948cf1",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SE_walk_4_master.png",
+      "sha256": "016c22974fa8fc303bc02c406398264059165c15b4f9d8fd5e5a3a9c3d948cf1"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:29:18.771993+00:00",
+    "slot": "SE/walk/5",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "SE diagonal return phase; native 1024x1536 source inspected at original scale; stride closes cleanly toward frame 0 with distinct feet, realistic ASTER identity and no shoulder armor.",
+    "sourceSHA256": "41a1d9b4fe8424e4d3fee5cfde4fec8ed349d4d56e88ef38c15eb18b9d5d0413",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SE_walk_5_master.png",
+      "sha256": "41a1d9b4fe8424e4d3fee5cfde4fec8ed349d4d56e88ef38c15eb18b9d5d0413"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:38:20.295721+00:00",
+    "slot": "S/walk/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "S direct front planted-contact phase; native 1024x1536 source inspected in the six-frame review and original scale; clear left support/right trailing leg, rifle and hands connected, realistic ASTER identity, no shoulder armor.",
+    "sourceSHA256": "ee92ccd4793a73dbac18680bb9af65055022b941e6afa23f258230e1e4e6539b",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/S_walk_0_master.png",
+      "sha256": "ee92ccd4793a73dbac18680bb9af65055022b941e6afa23f258230e1e4e6539b"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:38:20.487722+00:00",
+    "slot": "S/walk/1",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "S direct front transition phase; native source inspected in sequence; advancing stride and heel lift are readable, coat tails separated, no duplicate frame or forbidden shoulder hardware.",
+    "sourceSHA256": "8fc06e8b5c9dd3d99c2fdc1d31c6d906c2692eae9fed30cab9ae040f24e77620",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/S_walk_1_master.png",
+      "sha256": "8fc06e8b5c9dd3d99c2fdc1d31c6d906c2692eae9fed30cab9ae040f24e77620"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:38:20.685722+00:00",
+    "slot": "S/walk/2",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "S direct front passing phase; native source inspected in sequence; legs pass distinctly under a stable torso, weapon remains coherent, no shoulder armor.",
+    "sourceSHA256": "1ace6ba6c70b3ad4793e000bdf36851e917630d5ec0c424dc6bb98e74a42a299",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/S_walk_2_master.png",
+      "sha256": "1ace6ba6c70b3ad4793e000bdf36851e917630d5ec0c424dc6bb98e74a42a299"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:38:20.880721+00:00",
+    "slot": "S/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "S direct front opposite-contact phase; native source inspected at original scale; right support/left trailing leg are readable, boots and coat remain complete, no shoulder armor.",
+    "sourceSHA256": "92f4787b25f72917d6989cc3ec5aa345311604fdbb26f856bff79d73afb347bc",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/S_walk_3_master.png",
+      "sha256": "92f4787b25f72917d6989cc3ec5aa345311604fdbb26f856bff79d73afb347bc"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:38:21.083721+00:00",
+    "slot": "S/walk/4",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "S direct front recovery phase; native source inspected in sequence; stride drives forward with distinct feet and coat motion, ASTER identity and rifle preserved, no forbidden shoulder hardware.",
+    "sourceSHA256": "286b6afbacac5645e34fbe7127858b19cdd022f754100a944ccdea1bd5f87b64",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/S_walk_4_master.png",
+      "sha256": "286b6afbacac5645e34fbe7127858b19cdd022f754100a944ccdea1bd5f87b64"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:38:21.286722+00:00",
+    "slot": "S/walk/5",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "S direct front return phase; native source inspected at original scale; stride closes cleanly toward frame 0 with stable feet, realistic identity and no shoulder armor.",
+    "sourceSHA256": "9917dbfc632041080046d1c9388a77d40e6c6628b0756810bb5eac456be69c8b",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/S_walk_5_master.png",
+      "sha256": "9917dbfc632041080046d1c9388a77d40e6c6628b0756810bb5eac456be69c8b"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:44:55.587320+00:00",
+    "slot": "SW/walk/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "SW three-quarter planted-contact phase; native source inspected in the six-frame review; clear forward support and trailing leg, coat and rifle remain complete, realistic ASTER identity, no shoulder armor.",
+    "sourceSHA256": "6b8fa321e61e802b86fa738c26f36c62eba2ca95f886564667764cdad5e5c69a",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SW_walk_0_master.png",
+      "sha256": "6b8fa321e61e802b86fa738c26f36c62eba2ca95f886564667764cdad5e5c69a"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:44:55.801321+00:00",
+    "slot": "SW/walk/1",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "SW three-quarter transition phase; native source inspected in sequence; stride advances with visible heel lift and no duplicate body, plain navy shoulders preserved.",
+    "sourceSHA256": "db82ea5c12b54237b5decf013da8fa065fbc9172c10c3c8abefed343ba0abfaf",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SW_walk_1_master.png",
+      "sha256": "db82ea5c12b54237b5decf013da8fa065fbc9172c10c3c8abefed343ba0abfaf"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:44:56.013320+00:00",
+    "slot": "SW/walk/2",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "SW three-quarter passing phase; native source inspected at original scale; legs pass cleanly with stable torso and two-hand weapon, no forbidden shoulder hardware.",
+    "sourceSHA256": "c39f67753b60db4fa2231b1bb5af4110cc62032f325c688600d178ff2f3519ee",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SW_walk_2_master.png",
+      "sha256": "c39f67753b60db4fa2231b1bb5af4110cc62032f325c688600d178ff2f3519ee"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:44:56.216016+00:00",
+    "slot": "SW/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "SW three-quarter opposite-contact phase; native source inspected in sequence; opposite support foot and trailing leg are distinct, coat tails and boots readable, no shoulder armor.",
+    "sourceSHA256": "d92003a1f485dc7319aac25700ea30a76a4511c25fd2a403766bb50ea3363beb",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SW_walk_3_master.png",
+      "sha256": "d92003a1f485dc7319aac25700ea30a76a4511c25fd2a403766bb50ea3363beb"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:44:56.424017+00:00",
+    "slot": "SW/walk/4",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "SW three-quarter recovery phase; native source inspected at original scale; driving leg and coat swing are separate, ASTER identity and rifle preserved, no shoulder armor.",
+    "sourceSHA256": "f1f5671dc784d9e480fff470126685a0857803b4c2add6a135c2e9cc8a4ce043",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SW_walk_4_master.png",
+      "sha256": "f1f5671dc784d9e480fff470126685a0857803b4c2add6a135c2e9cc8a4ce043"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:44:56.633016+00:00",
+    "slot": "SW/walk/5",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "SW three-quarter return phase; native source inspected in sequence; stride closes toward frame 0 with distinct feet and coherent hands/weapon, no forbidden shoulder hardware.",
+    "sourceSHA256": "fa8dd83cdc510166c0517ba58bc5dfabd03175fd7c5bd25b7c6cc1bded7fa0eb",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/SW_walk_5_master.png",
+      "sha256": "fa8dd83cdc510166c0517ba58bc5dfabd03175fd7c5bd25b7c6cc1bded7fa0eb"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:51:55.706126+00:00",
+    "slot": "W/walk/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "W side-profile planted-contact phase; native source inspected in the six-frame sheet; near support and trailing leg separate, rifle profile and boots complete, no shoulder armor.",
+    "sourceSHA256": "98235329d3f3ff5578698cfc64cfa38d9aec163c8cd9f2b450ef1da5b5336bad",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/W_walk_0_master.png",
+      "sha256": "98235329d3f3ff5578698cfc64cfa38d9aec163c8cd9f2b450ef1da5b5336bad"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:51:55.911127+00:00",
+    "slot": "W/walk/1",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "W side-profile transition phase; native source inspected in sequence; advancing stride and ponytail/coat sway are readable, plain navy shoulders preserved.",
+    "sourceSHA256": "465b5a2fbbc7fa49ac72866bda7bdb87cbac79283b3a3bd2c73c0cefb5a14993",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/W_walk_1_master.png",
+      "sha256": "465b5a2fbbc7fa49ac72866bda7bdb87cbac79283b3a3bd2c73c0cefb5a14993"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:51:56.107126+00:00",
+    "slot": "W/walk/2",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "W side-profile passing phase; native source inspected at original scale; legs pass cleanly under stable torso, barrel and hands remain aligned, no forbidden shoulder hardware.",
+    "sourceSHA256": "13d255511effceea40fa0c9e5d8039d7d29bafcdb875690eb87cd743e04c9f70",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/W_walk_2_master.png",
+      "sha256": "13d255511effceea40fa0c9e5d8039d7d29bafcdb875690eb87cd743e04c9f70"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:51:56.303127+00:00",
+    "slot": "W/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "W side-profile opposite-contact phase; native source inspected in sequence; opposite support foot is distinct, complete silhouette and no shoulder armor.",
+    "sourceSHA256": "8ea909671024f1a07e0f927bc27cbb112d067065268d79b83939f8784f07b997",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/W_walk_3_master.png",
+      "sha256": "8ea909671024f1a07e0f927bc27cbb112d067065268d79b83939f8784f07b997"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:51:56.502130+00:00",
+    "slot": "W/walk/4",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "W side-profile recovery phase; native source inspected at original scale; driving leg and coat swing read clearly, ASTER identity preserved, no shoulder armor.",
+    "sourceSHA256": "99585ecbcc5e8f3a82055f5b830895e78a6e1dd127b4ceef7dc948ee473965d4",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/W_walk_4_master.png",
+      "sha256": "99585ecbcc5e8f3a82055f5b830895e78a6e1dd127b4ceef7dc948ee473965d4"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:51:56.696126+00:00",
+    "slot": "W/walk/5",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "W side-profile return phase; native source inspected in sequence; stride closes toward frame 0 with distinct feet and stable weapon, no forbidden shoulder hardware.",
+    "sourceSHA256": "89a4a84004bc81896b7647f89d91d24d96d90851920a90e543d53a958919902d",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/W_walk_5_master.png",
+      "sha256": "89a4a84004bc81896b7647f89d91d24d96d90851920a90e543d53a958919902d"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:59:00.520721+00:00",
+    "slot": "NW/walk/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "NW back three-quarter planted-contact phase; native source inspected in the six-frame sheet; clear support/trailing leg, back silhouette, rifle and ponytail coherent, no shoulder armor.",
+    "sourceSHA256": "83ed55075f54f8e750cda2a3f76da32fc58d3e05c41beb94989ec2ce4f476ee1",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NW_walk_0_master.png",
+      "sha256": "83ed55075f54f8e750cda2a3f76da32fc58d3e05c41beb94989ec2ce4f476ee1"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:59:00.727722+00:00",
+    "slot": "NW/walk/1",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "NW back three-quarter transition phase; native source inspected in sequence; heel lift and coat/ponytail motion read clearly, plain navy shoulders preserved.",
+    "sourceSHA256": "371aa76af205dc6d86726e419d263f7e0c75d12cfc207bee33401bbf05e17f44",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NW_walk_1_master.png",
+      "sha256": "371aa76af205dc6d86726e419d263f7e0c75d12cfc207bee33401bbf05e17f44"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:59:00.934721+00:00",
+    "slot": "NW/walk/2",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "NW back three-quarter passing phase; native source inspected at original scale; legs pass distinctly under stable torso, weapon silhouette remains coherent, no forbidden shoulder hardware.",
+    "sourceSHA256": "5ad2cd657b909b491b7d7f607dcd5e422b0bf330ca6ea2a5c204e39121b50021",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NW_walk_2_master.png",
+      "sha256": "5ad2cd657b909b491b7d7f607dcd5e422b0bf330ca6ea2a5c204e39121b50021"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:59:01.156579+00:00",
+    "slot": "NW/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "NW back three-quarter opposite-contact phase; native source inspected in sequence; opposite support and trailing boot are readable, complete silhouette, no shoulder armor.",
+    "sourceSHA256": "eb5ca2899bf1b520b3a718fed8d37e9c6be0c99df82e882ecf3a9deb1bacf15a",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NW_walk_3_master.png",
+      "sha256": "eb5ca2899bf1b520b3a718fed8d37e9c6be0c99df82e882ecf3a9deb1bacf15a"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:59:01.378583+00:00",
+    "slot": "NW/walk/4",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "NW back three-quarter recovery phase; native source inspected at original scale; driving leg and coat swing are distinct, ASTER identity preserved, no shoulder armor.",
+    "sourceSHA256": "cf3d43ff23a41fee85fca63d15617eb0fe8d8c57eb1bdcb55879e2ce9dcafb30",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NW_walk_4_master.png",
+      "sha256": "cf3d43ff23a41fee85fca63d15617eb0fe8d8c57eb1bdcb55879e2ce9dcafb30"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T09:59:01.598579+00:00",
+    "slot": "NW/walk/5",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "NW back three-quarter return phase; native source inspected in sequence; stride closes toward frame 0 with distinct feet and consistent ponytail/rifle, no forbidden shoulder hardware.",
+    "sourceSHA256": "317e178055b6c0ba52ab0809260e0bb588f38338e5cf64bb987204038b6b122a",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NW_walk_5_master.png",
+      "sha256": "317e178055b6c0ba52ab0809260e0bb588f38338e5cf64bb987204038b6b122a"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T10:07:28.203846+00:00",
+    "slot": "N/walk/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "N direct-back planted-contact phase; native source inspected in the six-frame sheet; clear support/trailing leg, ponytail and rear rifle silhouette complete, no shoulder armor.",
+    "sourceSHA256": "f598c24f36b655a98b6f6ebe23ddef34b50cdaa4bd0b6e0fad686fd5eb3e8dff",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/N_walk_0_master.png",
+      "sha256": "f598c24f36b655a98b6f6ebe23ddef34b50cdaa4bd0b6e0fad686fd5eb3e8dff"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T10:07:28.411337+00:00",
+    "slot": "N/walk/1",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "N direct-back transition phase; native source inspected in sequence; heel lift and coat/ponytail motion read clearly, plain navy shoulders preserved.",
+    "sourceSHA256": "b962a14e6892afba6cf678ad62f27ccf91f403ba40877bbca010774573859041",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/N_walk_1_master.png",
+      "sha256": "b962a14e6892afba6cf678ad62f27ccf91f403ba40877bbca010774573859041"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T10:07:28.609254+00:00",
+    "slot": "N/walk/2",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "N direct-back passing phase; native source inspected at original scale; legs pass distinctly beneath stable back silhouette and weapon, no forbidden shoulder hardware.",
+    "sourceSHA256": "4ccaf39436f1a9aaa90fbc6a20479223783e7d5575b3ec6eade1c0feb7043b3f",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/N_walk_2_master.png",
+      "sha256": "4ccaf39436f1a9aaa90fbc6a20479223783e7d5575b3ec6eade1c0feb7043b3f"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T10:07:28.807254+00:00",
+    "slot": "N/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "N direct-back opposite-contact phase; native source inspected in sequence; opposite support and trailing boot are readable, complete silhouette, no shoulder armor.",
+    "sourceSHA256": "bacd8e6bdced2695e9ebb8c69721bb7f7dabce15fab54a3b967158cb1ea3e50e",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/N_walk_3_master.png",
+      "sha256": "bacd8e6bdced2695e9ebb8c69721bb7f7dabce15fab54a3b967158cb1ea3e50e"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T10:07:29.003060+00:00",
+    "slot": "N/walk/4",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "N direct-back recovery phase; native source inspected at original scale; driving leg and coat swing distinct, ASTER identity preserved, no shoulder armor.",
+    "sourceSHA256": "9e04d31a3546d3473c0b97cfb6aeb224b0efb84876acd2a6fdc4b56fff19a377",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/N_walk_4_master.png",
+      "sha256": "9e04d31a3546d3473c0b97cfb6aeb224b0efb84876acd2a6fdc4b56fff19a377"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T10:07:29.202468+00:00",
+    "slot": "N/walk/5",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "N direct-back return phase; native source inspected in sequence; stride closes toward frame 0 with distinct feet and consistent ponytail/rifle, no forbidden shoulder hardware.",
+    "sourceSHA256": "4279205fce530b42da5edd8ad13d477339384281432ffe11a4b51910808b3c55",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/N_walk_5_master.png",
+      "sha256": "4279205fce530b42da5edd8ad13d477339384281432ffe11a4b51910808b3c55"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T10:15:18.255499+00:00",
+    "slot": "NE/walk/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "NE back three-quarter planted-contact phase; native source inspected in the six-frame sheet and original scale; clear support/trailing leg, ponytail, coat and rifle complete, no shoulder armor.",
+    "sourceSHA256": "f7502270fded931f34a4c29ed619b5aa0f5586fca47491baee7f4a0bc112f019",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NE_walk_0_master.png",
+      "sha256": "f7502270fded931f34a4c29ed619b5aa0f5586fca47491baee7f4a0bc112f019"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T10:15:18.452499+00:00",
+    "slot": "NE/walk/1",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "NE back three-quarter transition phase; native source inspected in sequence; stride and ponytail motion are readable, plain navy shoulders preserved.",
+    "sourceSHA256": "767ffa4311d74282d472da24002aee2c471bf1116bbe4ef17e65d570a1bacbc5",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NE_walk_1_master.png",
+      "sha256": "767ffa4311d74282d472da24002aee2c471bf1116bbe4ef17e65d570a1bacbc5"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T10:15:18.660499+00:00",
+    "slot": "NE/walk/2",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "NE back three-quarter passing phase; native source inspected at original scale; legs pass distinctly with stable torso and two-hand rifle, no forbidden shoulder hardware.",
+    "sourceSHA256": "d3709c65295fbf9b1d83d8ce262ffed99f4a0085110146a7348dd10561b22e41",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NE_walk_2_master.png",
+      "sha256": "d3709c65295fbf9b1d83d8ce262ffed99f4a0085110146a7348dd10561b22e41"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T10:15:18.866498+00:00",
+    "slot": "NE/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "NE back three-quarter opposite-contact phase; native source inspected in sequence; opposite support/trailing foot are distinct, complete silhouette, no shoulder armor.",
+    "sourceSHA256": "159ab4d7bbcdd5179ca07ea3f4935eb80ffe02b261c100fcfd4167f1586bb9fa",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NE_walk_3_master.png",
+      "sha256": "159ab4d7bbcdd5179ca07ea3f4935eb80ffe02b261c100fcfd4167f1586bb9fa"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T10:15:19.070498+00:00",
+    "slot": "NE/walk/4",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "NE back three-quarter recovery phase; native source inspected at original scale; driving leg and coat swing read clearly, ASTER identity preserved, no shoulder armor.",
+    "sourceSHA256": "29ddbd486b95fd7089d0a6befa9fc6106088128c0b1179bdbbf46e888f40bebc",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NE_walk_4_master.png",
+      "sha256": "29ddbd486b95fd7089d0a6befa9fc6106088128c0b1179bdbbf46e888f40bebc"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T10:15:19.277501+00:00",
+    "slot": "NE/walk/5",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "NE back three-quarter return phase; native source inspected in sequence; stride closes toward frame 0 with distinct boots and consistent ponytail/rifle, no forbidden shoulder hardware.",
+    "sourceSHA256": "1aad196f972349e1cf2ec5da9f59491d02fbcc51369f6acf7c76798cb21211e5",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "art/aster/NE_walk_5_master.png",
+      "sha256": "1aad196f972349e1cf2ec5da9f59491d02fbcc51369f6acf7c76798cb21211e5"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:13:27.396429+00:00",
+    "slot": "E/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra",
+    "notes": "Viewed original-scale dark/light contact pair: left cyan leg reaches forward, right pouch leg trails; intact shouldered rifle, navy fabric shoulders, connected hips/knees, clean keyed edges. Opposite contact compared with frame 3. Full temporal runtime review remains pending.",
+    "sourceSHA256": "2d208d28caf99a1748cff8e8581d79e8e6343762f1982df31bebe5e3e46132f6",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/7befe3013142a0ba/E_pair0_native_1920x1080.png",
+      "sha256": "7d5029e3f001362d1479bf9b97ef4adde2dc721bc55d18adc730794d1d4ebf0f"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:13:27.629657+00:00",
+    "slot": "E/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra",
+    "notes": "Viewed original-scale opposite contact: right dark pouch leg forward and white/cyan left leg trailing. Rifle raised, body organically connected, same face/costume. Foot-contact phase comparison with frame 0 is visibly different, not merely a new hash. Temporal runtime remains pending.",
+    "sourceSHA256": "680cb80e181152ebc1ecb5284891322e87af6ec8c3aa4a851556ec1391c61431",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/7befe3013142a0ba/E_pair0_native_1920x1080.png",
+      "sha256": "7d5029e3f001362d1479bf9b97ef4adde2dc721bc55d18adc730794d1d4ebf0f"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.429439+00:00",
+    "slot": "SE/idle/0",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "2d034d978f603dd578e9cc32666d351ee70e85e46f898881f62b4ed339988077",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.468327+00:00",
+    "slot": "S/walk/2",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "1ace6ba6c70b3ad4793e000bdf36851e917630d5ec0c424dc6bb98e74a42a299",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.503321+00:00",
+    "slot": "SW/walk/1",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "db82ea5c12b54237b5decf013da8fa065fbc9172c10c3c8abefed343ba0abfaf",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.538324+00:00",
+    "slot": "SW/walk/2",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "c39f67753b60db4fa2231b1bb5af4110cc62032f325c688600d178ff2f3519ee",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.574323+00:00",
+    "slot": "SW/walk/4",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "f1f5671dc784d9e480fff470126685a0857803b4c2add6a135c2e9cc8a4ce043",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.610322+00:00",
+    "slot": "SW/walk/5",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "fa8dd83cdc510166c0517ba58bc5dfabd03175fd7c5bd25b7c6cc1bded7fa0eb",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.647323+00:00",
+    "slot": "SW/idle/0",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "42a2872d173a9dc3ec2f7485353014bb9ab3224b246476a13e7cb567dafb9aec",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.683322+00:00",
+    "slot": "W/walk/2",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "13d255511effceea40fa0c9e5d8039d7d29bafcdb875690eb87cd743e04c9f70",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.717322+00:00",
+    "slot": "W/walk/5",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "89a4a84004bc81896b7647f89d91d24d96d90851920a90e543d53a958919902d",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.750323+00:00",
+    "slot": "W/idle/0",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "4a0b2cfc1b82311c3ef9b512a1a2eb90c98ad4b7783eec1fd0a347f2d1651456",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.785322+00:00",
+    "slot": "NW/walk/0",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "83ed55075f54f8e750cda2a3f76da32fc58d3e05c41beb94989ec2ce4f476ee1",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.821323+00:00",
+    "slot": "NW/walk/1",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "371aa76af205dc6d86726e419d263f7e0c75d12cfc207bee33401bbf05e17f44",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.859324+00:00",
+    "slot": "NW/walk/2",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "5ad2cd657b909b491b7d7f607dcd5e422b0bf330ca6ea2a5c204e39121b50021",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.894324+00:00",
+    "slot": "NW/walk/3",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "eb5ca2899bf1b520b3a718fed8d37e9c6be0c99df82e882ecf3a9deb1bacf15a",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.930325+00:00",
+    "slot": "NW/walk/4",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "cf3d43ff23a41fee85fca63d15617eb0fe8d8c57eb1bdcb55879e2ce9dcafb30",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:21.969323+00:00",
+    "slot": "NW/walk/5",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "317e178055b6c0ba52ab0809260e0bb588f38338e5cf64bb987204038b6b122a",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.006324+00:00",
+    "slot": "NW/idle/0",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "d36fbadac20bb2dd3368953ccec913cffa36bb507d6ccff5e1c973c00ef38fc9",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.040327+00:00",
+    "slot": "N/walk/1",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "b962a14e6892afba6cf678ad62f27ccf91f403ba40877bbca010774573859041",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.077325+00:00",
+    "slot": "N/walk/2",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "4ccaf39436f1a9aaa90fbc6a20479223783e7d5575b3ec6eade1c0feb7043b3f",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.120324+00:00",
+    "slot": "N/walk/3",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "bacd8e6bdced2695e9ebb8c69721bb7f7dabce15fab54a3b967158cb1ea3e50e",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.160323+00:00",
+    "slot": "N/walk/4",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "9e04d31a3546d3473c0b97cfb6aeb224b0efb84876acd2a6fdc4b56fff19a377",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.194325+00:00",
+    "slot": "N/walk/5",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "4279205fce530b42da5edd8ad13d477339384281432ffe11a4b51910808b3c55",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.230324+00:00",
+    "slot": "N/idle/0",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "537e6e45d0e8fcda432a8e4be2264ab1c2537c43032980a680060e17eceb7d65",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.264322+00:00",
+    "slot": "NE/walk/0",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "f7502270fded931f34a4c29ed619b5aa0f5586fca47491baee7f4a0bc112f019",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.300322+00:00",
+    "slot": "NE/walk/1",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "767ffa4311d74282d472da24002aee2c471bf1116bbe4ef17e65d570a1bacbc5",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.336325+00:00",
+    "slot": "NE/walk/2",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "d3709c65295fbf9b1d83d8ce262ffed99f4a0085110146a7348dd10561b22e41",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.372324+00:00",
+    "slot": "NE/walk/3",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "159ab4d7bbcdd5179ca07ea3f4935eb80ffe02b261c100fcfd4167f1586bb9fa",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.409324+00:00",
+    "slot": "NE/walk/4",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "29ddbd486b95fd7089d0a6befa9fc6106088128c0b1179bdbbf46e888f40bebc",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.444324+00:00",
+    "slot": "NE/walk/5",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "1aad196f972349e1cf2ec5da9f59491d02fbcc51369f6acf7c76798cb21211e5",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:35:22.483322+00:00",
+    "slot": "NE/idle/0",
+    "decision": "repair",
+    "reviewer": "Astra / current user rejection and reproduced runtime diagnosis",
+    "notes": "The user rejected the currently integrated ASTER gait. This older source belongs to that rejected batch; its previous completion approval is withdrawn pending whole-body phase and runtime review. This is a batch rejection, not a fabricated frame-specific visual observation.",
+    "sourceSHA256": "6aeedc88bfddb4ed43407fb8b84fe5057868375320825a60d374dd95a55c6230",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/GAIT_REPAIR_2026-09-11.md",
+      "sha256": "87035115a2de260c5b1a36701a91b03a28a879aa8c702e9910ead6ca1a94cd29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:43.693995+00:00",
+    "slot": "E/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra direct image inspection",
+    "notes": "Viewed native dark/light counterpart panel and chronological frame poses. contact: LEFT cyan leads/supports; dark RIGHT transitions. Whole connected adult figure, silver ponytail, navy cloth shoulders, shouldered rifle, separated RGBA edges. Pair preserves distinct opposite leg roles. Approval is source-only; muzzle-axis variation and ground-slip still require temporal runtime review.",
+    "sourceSHA256": "2d208d28caf99a1748cff8e8581d79e8e6343762f1982df31bebe5e3e46132f6",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/7befe3013142a0ba/E_pair0_native_1920x1080.png",
+      "sha256": "7d5029e3f001362d1479bf9b97ef4adde2dc721bc55d18adc730794d1d4ebf0f"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:43.962996+00:00",
+    "slot": "E/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra direct image inspection",
+    "notes": "Viewed native dark/light counterpart panel and chronological frame poses. passing: LEFT cyan leads/supports; dark RIGHT transitions. Whole connected adult figure, silver ponytail, navy cloth shoulders, shouldered rifle, separated RGBA edges. Pair preserves distinct opposite leg roles. Approval is source-only; muzzle-axis variation and ground-slip still require temporal runtime review.",
+    "sourceSHA256": "79b25152642c92eff7645c1bd260b647600cb9a993c6bb57bda9776e21283c7e",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/7befe3013142a0ba/E_pair1_native_1920x1080.png",
+      "sha256": "157329e1c57af1bf537aded8f38fbe1b8e89fd217fa56705446f78f0c234a411"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:44.224995+00:00",
+    "slot": "E/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra direct image inspection",
+    "notes": "Viewed native dark/light counterpart panel and chronological frame poses. low forward swing: LEFT cyan leads/supports; dark RIGHT transitions. Whole connected adult figure, silver ponytail, navy cloth shoulders, shouldered rifle, separated RGBA edges. Pair preserves distinct opposite leg roles. Approval is source-only; muzzle-axis variation and ground-slip still require temporal runtime review.",
+    "sourceSHA256": "6a859ae99ea9afcfaabc8f516566fbe438ed6a51e2cee3067fc2f74d7647159e",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/7befe3013142a0ba/E_pair2_native_1920x1080.png",
+      "sha256": "114500d137597631dc28eebb41dba4c31112deeba4ee7f9b96c8a56de95819c8"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:44.468995+00:00",
+    "slot": "E/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra direct image inspection",
+    "notes": "Viewed native dark/light counterpart panel and chronological frame poses. contact: RIGHT dark leads/supports; cyan LEFT transitions. Whole connected adult figure, silver ponytail, navy cloth shoulders, shouldered rifle, separated RGBA edges. Pair preserves distinct opposite leg roles. Approval is source-only; muzzle-axis variation and ground-slip still require temporal runtime review.",
+    "sourceSHA256": "680cb80e181152ebc1ecb5284891322e87af6ec8c3aa4a851556ec1391c61431",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/7befe3013142a0ba/E_pair0_native_1920x1080.png",
+      "sha256": "7d5029e3f001362d1479bf9b97ef4adde2dc721bc55d18adc730794d1d4ebf0f"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:44.700992+00:00",
+    "slot": "E/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra direct image inspection",
+    "notes": "Viewed native dark/light counterpart panel and chronological frame poses. passing: RIGHT dark leads/supports; cyan LEFT transitions. Whole connected adult figure, silver ponytail, navy cloth shoulders, shouldered rifle, separated RGBA edges. Pair preserves distinct opposite leg roles. Approval is source-only; muzzle-axis variation and ground-slip still require temporal runtime review.",
+    "sourceSHA256": "0e2136f2431fd035cce093d05a02ce5952fe15009712f3aa928df22238b247be",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/7befe3013142a0ba/E_pair1_native_1920x1080.png",
+      "sha256": "157329e1c57af1bf537aded8f38fbe1b8e89fd217fa56705446f78f0c234a411"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:44.967996+00:00",
+    "slot": "E/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra direct image inspection",
+    "notes": "Viewed native dark/light counterpart panel and chronological frame poses. low forward swing: RIGHT dark leads/supports; cyan LEFT transitions. Whole connected adult figure, silver ponytail, navy cloth shoulders, shouldered rifle, separated RGBA edges. Pair preserves distinct opposite leg roles. Approval is source-only; muzzle-axis variation and ground-slip still require temporal runtime review.",
+    "sourceSHA256": "a9c2c63da129078aacc74c231dc9efaf91742ecc50883c0620cf3c06baf739d8",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/7befe3013142a0ba/E_pair2_native_1920x1080.png",
+      "sha256": "114500d137597631dc28eebb41dba4c31112deeba4ee7f9b96c8a56de95819c8"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:45.205995+00:00",
+    "slot": "SE/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra direct image inspection",
+    "notes": "Viewed native dark/light counterpart panel and chronological frame poses. contact: LEFT cyan leads/supports; dark RIGHT transitions. Whole connected adult figure, silver ponytail, navy cloth shoulders, shouldered rifle, separated RGBA edges. Pair preserves distinct opposite leg roles. Approval is source-only; muzzle-axis variation and ground-slip still require temporal runtime review.",
+    "sourceSHA256": "72955f237fdabdc26fc7ad0d61e8c43cba13d60c73d907514d4f7f4253483eff",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/5128dcb2a210841c/SE_pair0_native_1920x1080.png",
+      "sha256": "4fc7e466e8d7283b9ff1b2d3b32c4018880ac82d0c44e21902087c43c3ce8fde"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:45.439997+00:00",
+    "slot": "SE/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra direct image inspection",
+    "notes": "Viewed native dark/light counterpart panel and chronological frame poses. passing: LEFT cyan leads/supports; dark RIGHT transitions. Whole connected adult figure, silver ponytail, navy cloth shoulders, shouldered rifle, separated RGBA edges. Pair preserves distinct opposite leg roles. Approval is source-only; muzzle-axis variation and ground-slip still require temporal runtime review.",
+    "sourceSHA256": "2057f1ef6c1a01902cfe3a769ca8025aabf75f0cceb1c70cd71e8452f1816b59",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/5128dcb2a210841c/SE_pair1_native_1920x1080.png",
+      "sha256": "07d9c9d36695f5ca93329fd554bd32bffa9133005be9a87e8ea1d02bfeab547b"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:45.669993+00:00",
+    "slot": "SE/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra direct image inspection",
+    "notes": "Viewed native dark/light counterpart panel and chronological frame poses. low forward swing: LEFT cyan leads/supports; dark RIGHT transitions. Whole connected adult figure, silver ponytail, navy cloth shoulders, shouldered rifle, separated RGBA edges. Pair preserves distinct opposite leg roles. Approval is source-only; muzzle-axis variation and ground-slip still require temporal runtime review.",
+    "sourceSHA256": "3cefdfd6a27d46cad78ed431290983f832908c87528be6a8354c95593175d380",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/5128dcb2a210841c/SE_pair2_native_1920x1080.png",
+      "sha256": "14a9dd187d5bc0b6d5d223db5508f127446ef67343a5ab8dd802577d4d2db71f"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:45.898996+00:00",
+    "slot": "SE/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra direct image inspection",
+    "notes": "Viewed native dark/light counterpart panel and chronological frame poses. contact: RIGHT dark leads/supports; cyan LEFT transitions. Whole connected adult figure, silver ponytail, navy cloth shoulders, shouldered rifle, separated RGBA edges. Pair preserves distinct opposite leg roles. Approval is source-only; muzzle-axis variation and ground-slip still require temporal runtime review.",
+    "sourceSHA256": "3b3aa9da4995884ed0afee0b9c88f2b6d45ebc7da963d42c8e90294a1be85b1b",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/5128dcb2a210841c/SE_pair0_native_1920x1080.png",
+      "sha256": "4fc7e466e8d7283b9ff1b2d3b32c4018880ac82d0c44e21902087c43c3ce8fde"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:46.145488+00:00",
+    "slot": "SE/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra direct image inspection",
+    "notes": "Viewed native dark/light counterpart panel and chronological frame poses. passing: RIGHT dark leads/supports; cyan LEFT transitions. Whole connected adult figure, silver ponytail, navy cloth shoulders, shouldered rifle, separated RGBA edges. Pair preserves distinct opposite leg roles. Approval is source-only; muzzle-axis variation and ground-slip still require temporal runtime review.",
+    "sourceSHA256": "22f9533c0ca48f98c6002220dc5601be03892ce79da6eb21a234cd1e8b965e30",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/5128dcb2a210841c/SE_pair1_native_1920x1080.png",
+      "sha256": "07d9c9d36695f5ca93329fd554bd32bffa9133005be9a87e8ea1d02bfeab547b"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:46.372489+00:00",
+    "slot": "SE/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra direct image inspection",
+    "notes": "Viewed native dark/light counterpart panel and chronological frame poses. low forward swing: RIGHT dark leads/supports; cyan LEFT transitions. Whole connected adult figure, silver ponytail, navy cloth shoulders, shouldered rifle, separated RGBA edges. Pair preserves distinct opposite leg roles. Approval is source-only; muzzle-axis variation and ground-slip still require temporal runtime review.",
+    "sourceSHA256": "daf55c879e564a813d76db21e58a43d6d95d441ce474266ac2187f6527313d94",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/5128dcb2a210841c/SE_pair2_native_1920x1080.png",
+      "sha256": "14a9dd187d5bc0b6d5d223db5508f127446ef67343a5ab8dd802577d4d2db71f"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:46.621483+00:00",
+    "slot": "E/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra direct native-scale image inspection",
+    "notes": "Actually viewed native 2128x1626 dark/light source panel. Both boots planted, connected whole body, silver ponytail, navy fabric shoulders without armor, correct cyan-left and right-pouch markers. Rifle is shouldered and aimed right in side view. No opaque green backdrop remains in keyed source. Temporal firing review remains pending.",
+    "sourceSHA256": "80bd7ea7069c537e27e71cdf7571ebf98feaff4b7a69041b58f30e69d2643777",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/2d4494a2acd044b4/E_idle_pair0_native_2128x1626.png",
+      "sha256": "b14bf8b6d077587f5c8f0d434f8b1865e2758f869b933a2dd58ba152c4dc3964"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:36:46.874484+00:00",
+    "slot": "S/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra direct native-scale image inspection",
+    "notes": "Actually viewed native 2128x1626 dark/light source panel. Both boots planted, connected whole body, silver ponytail, navy fabric shoulders without armor, correct cyan-left and right-pouch markers. Rifle is shouldered and aimed directly at camera with foreshortened front muzzle. No opaque green backdrop remains in keyed source. Temporal firing review remains pending.",
+    "sourceSHA256": "aa2ae6a74276a6415a564105eb68945d22fe5a011c1a6c0b7d0b6505b8aa1f08",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/42c8071f4cc3baf9/S_idle_pair0_native_2128x1626.png",
+      "sha256": "fabfbd29b64bb7ba472d5d507b6d6d70af1e8df950b0ed886ad51dad9906efb6"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:42:09.181552+00:00",
+    "slot": "S/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra direct native panel and chronological sheet inspection",
+    "notes": "Viewed opposite contact, passing and low swing panels plus all six chronological frames at 656px atlas scale. Correct alternating cyan LEFT versus dark RIGHT support; frontal rifle remains shouldered; high-kick/costume-swapped attempts excluded. Native whole-body source with connected hips and clean keyed edges. Source approval only; browser temporal and recoil/feet review still required.",
+    "sourceSHA256": "75b606630273519b82665d648bda0af32c586b42419f79052105629081bf2f0a",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/fb89e149601fbe90/S_walk_pair0_native_1920x1102.png",
+      "sha256": "637e0cfa83ecbe4df93713ca6e2d0526d67746023da083a35bea5607bff9f8f5"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:42:09.407553+00:00",
+    "slot": "S/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra direct native panel and chronological sheet inspection",
+    "notes": "Viewed opposite contact, passing and low swing panels plus all six chronological frames at 656px atlas scale. Correct alternating cyan LEFT versus dark RIGHT support; frontal rifle remains shouldered; high-kick/costume-swapped attempts excluded. Native whole-body source with connected hips and clean keyed edges. Source approval only; browser temporal and recoil/feet review still required.",
+    "sourceSHA256": "3334978455d7f634cf4e5daeb693b3c0c21f04669096380b9cd9c32be2cbe83a",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/fb89e149601fbe90/S_walk_pair1_native_1920x1094.png",
+      "sha256": "e8f19a6efc32164fb6efb2457ebd158c9a1e27b07a3649a80ed8779c462715bb"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:42:09.629550+00:00",
+    "slot": "S/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra direct native panel and chronological sheet inspection",
+    "notes": "Viewed opposite contact, passing and low swing panels plus all six chronological frames at 656px atlas scale. Correct alternating cyan LEFT versus dark RIGHT support; frontal rifle remains shouldered; high-kick/costume-swapped attempts excluded. Native whole-body source with connected hips and clean keyed edges. Source approval only; browser temporal and recoil/feet review still required.",
+    "sourceSHA256": "2d713e2f8049b210efdf14920f9890ccbed173ad929b5edcddf75fe8435f1d82",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/fb89e149601fbe90/S_walk_pair2_native_2128x1626.png",
+      "sha256": "0d710787ba62ae6c88409e33c2d0f3b125c27c8307c841deb2f0d94f9ab36fee"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:42:09.856422+00:00",
+    "slot": "S/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra direct native panel and chronological sheet inspection",
+    "notes": "Viewed opposite contact, passing and low swing panels plus all six chronological frames at 656px atlas scale. Correct alternating cyan LEFT versus dark RIGHT support; frontal rifle remains shouldered; high-kick/costume-swapped attempts excluded. Native whole-body source with connected hips and clean keyed edges. Source approval only; browser temporal and recoil/feet review still required.",
+    "sourceSHA256": "51190bb0647e9d041868e470f7421ddb54841693a7651c3e5ef6d415f97663a7",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/fb89e149601fbe90/S_walk_pair0_native_1920x1102.png",
+      "sha256": "637e0cfa83ecbe4df93713ca6e2d0526d67746023da083a35bea5607bff9f8f5"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:42:10.081417+00:00",
+    "slot": "S/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra direct native panel and chronological sheet inspection",
+    "notes": "Viewed opposite contact, passing and low swing panels plus all six chronological frames at 656px atlas scale. Correct alternating cyan LEFT versus dark RIGHT support; frontal rifle remains shouldered; high-kick/costume-swapped attempts excluded. Native whole-body source with connected hips and clean keyed edges. Source approval only; browser temporal and recoil/feet review still required.",
+    "sourceSHA256": "0cc91a935f0bf9efc0e9d7e1fc1c5e00cd1122d32c430a5f14731375f34fe902",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/fb89e149601fbe90/S_walk_pair1_native_1920x1094.png",
+      "sha256": "e8f19a6efc32164fb6efb2457ebd158c9a1e27b07a3649a80ed8779c462715bb"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T04:42:10.304419+00:00",
+    "slot": "S/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra direct native panel and chronological sheet inspection",
+    "notes": "Viewed opposite contact, passing and low swing panels plus all six chronological frames at 656px atlas scale. Correct alternating cyan LEFT versus dark RIGHT support; frontal rifle remains shouldered; high-kick/costume-swapped attempts excluded. Native whole-body source with connected hips and clean keyed edges. Source approval only; browser temporal and recoil/feet review still required.",
+    "sourceSHA256": "e1ca9d0fa2a3ffdbb46094896f1c963fc442ec98d07caa49250a2aeb76f97205",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/fb89e149601fbe90/S_walk_pair2_native_2128x1626.png",
+      "sha256": "0d710787ba62ae6c88409e33c2d0f3b125c27c8307c841deb2f0d94f9ab36fee"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:06.961134+00:00",
+    "slot": "N/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed dark/light native panels and chronological sequence. Opposite rear contacts 0/3, tucked soles 1/4 and lower forward-step 2/5; cyan left and pouch right remain attached. Connected aimed body and clean separation. Runtime ground/temporal approval remains separate.",
+    "sourceSHA256": "e85d46cae310e27f965067e996e812984c61419ccccca759aa18ac01ad023b5f",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/308b4d30f7b7c9a2/N_walk_pair0_native_2128x1626.png",
+      "sha256": "92ffd9c768155ffc162c7c562eb05fbd7686e21523e76040ce1c016d78c646fb"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:06.994800+00:00",
+    "slot": "N/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed dark/light native panels and chronological sequence. Opposite rear contacts 0/3, tucked soles 1/4 and lower forward-step 2/5; cyan left and pouch right remain attached. Connected aimed body and clean separation. Runtime ground/temporal approval remains separate.",
+    "sourceSHA256": "3e53f344705aec9c3b83c421f85af6cff404d8af959fcd2b38b151853c7343b6",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/308b4d30f7b7c9a2/N_walk_pair1_native_1920x1080.png",
+      "sha256": "431ade4adbbcaa42292b4a7b592097928975096865f7f293d9419d6a0f1ae799"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.024329+00:00",
+    "slot": "N/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed dark/light native panels and chronological sequence. Opposite rear contacts 0/3, tucked soles 1/4 and lower forward-step 2/5; cyan left and pouch right remain attached. Connected aimed body and clean separation. Runtime ground/temporal approval remains separate.",
+    "sourceSHA256": "ca16d4bdc2da7cf968c7a25884439f26efa778f367dbbeb4fdb6664a2e5ccb05",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/308b4d30f7b7c9a2/N_walk_pair2_native_1920x1080.png",
+      "sha256": "f4f52a1d7cc70628005dfcc3d558cb78cfe9bd6974c8016e9b0d096a2b17293e"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.055371+00:00",
+    "slot": "N/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed dark/light native panels and chronological sequence. Opposite rear contacts 0/3, tucked soles 1/4 and lower forward-step 2/5; cyan left and pouch right remain attached. Connected aimed body and clean separation. Runtime ground/temporal approval remains separate.",
+    "sourceSHA256": "02c7107def19ab913268c91c5780e9beb5d4650f254fedc3e38e406f7424aeaf",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/308b4d30f7b7c9a2/N_walk_pair0_native_2128x1626.png",
+      "sha256": "92ffd9c768155ffc162c7c562eb05fbd7686e21523e76040ce1c016d78c646fb"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.086767+00:00",
+    "slot": "N/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed dark/light native panels and chronological sequence. Opposite rear contacts 0/3, tucked soles 1/4 and lower forward-step 2/5; cyan left and pouch right remain attached. Connected aimed body and clean separation. Runtime ground/temporal approval remains separate.",
+    "sourceSHA256": "236343d4c6d57e6d547c2f9be39686dfdb7c65aa36f85dba5ccb9befa8096e0a",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/308b4d30f7b7c9a2/N_walk_pair1_native_1920x1080.png",
+      "sha256": "431ade4adbbcaa42292b4a7b592097928975096865f7f293d9419d6a0f1ae799"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.116013+00:00",
+    "slot": "N/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed dark/light native panels and chronological sequence. Opposite rear contacts 0/3, tucked soles 1/4 and lower forward-step 2/5; cyan left and pouch right remain attached. Connected aimed body and clean separation. Runtime ground/temporal approval remains separate.",
+    "sourceSHA256": "60c6c4c7909746c577ca41184f4726613307d8307eef12709af130f5ed5923ce",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/308b4d30f7b7c9a2/N_walk_pair2_native_1920x1080.png",
+      "sha256": "f4f52a1d7cc70628005dfcc3d558cb78cfe9bd6974c8016e9b0d096a2b17293e"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.147660+00:00",
+    "slot": "N/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed original-scale light/dark native panel. Both boots planted, continuous body/arms/shouldered rifle, navy fabric shoulders and silver ponytail; green separated cleanly. Aimed static pose only, not proof of walking.",
+    "sourceSHA256": "91928053398278b26bdab4383d0c7156f7284277064e9e61bcf8fdf06fdbd16b",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/0439bb4717c17e9f/N_idle_pair0_native_2128x1626.png",
+      "sha256": "241c9172e370b259eaa3d1fec5d3e7901262c889aabdd412783f19dd39659f6f"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.179201+00:00",
+    "slot": "SW/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed original-scale light/dark native panel. Both boots planted, continuous body/arms/shouldered rifle, navy fabric shoulders and silver ponytail; green separated cleanly. Aimed static pose only, not proof of walking.",
+    "sourceSHA256": "cc8c4dc0afb9220c19b759a230873dd7760613b57fd5f2570312fc591f0dae3c",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/eadf56c7f8a87b85/SW_idle_pair0_native_2128x1626.png",
+      "sha256": "a352043677f3a332e30d17e3e738174dfd863a1f29794a2c1a77edc5812baf56"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.210241+00:00",
+    "slot": "W/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed original-scale light/dark native panel. Both boots planted, continuous body/arms/shouldered rifle, navy fabric shoulders and silver ponytail; green separated cleanly. Aimed static pose only, not proof of walking.",
+    "sourceSHA256": "f65142ab5c27e814a7b5d25faf9fcdb149fed208786dfa48f8e55bc4f71d6194",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/173da41e4cc16aff/W_idle_pair0_native_2128x1626.png",
+      "sha256": "034033216b6cc5d1da72f0f4d390ca2992500c2b967c56017b3af0a91f64f8b6"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.241782+00:00",
+    "slot": "SE/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed original-scale light/dark native panel. Both boots planted, continuous body/arms/shouldered rifle, navy fabric shoulders and silver ponytail; green separated cleanly. Aimed static pose only, not proof of walking.",
+    "sourceSHA256": "f894276446214f6c6b460cd95b2130576371a492e77e413c31b46bfe8b7582e9",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/1c86a7d2511f97ca/SE_idle_pair0_native_2128x1626.png",
+      "sha256": "f40164d52516a36619b5e79a3a8fdb1cd2145c538bd0f83602b2a859b4a0b5de"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.284056+00:00",
+    "slot": "NW/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed original-scale light/dark native panel. Both boots planted, continuous body/arms/shouldered rifle, navy fabric shoulders and silver ponytail; green separated cleanly. Aimed static pose only, not proof of walking.",
+    "sourceSHA256": "6b519b4ffb57f803f8bc70d10303155ce98198f46fa92c1568173f79b8b12b4e",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/da0aa2e4506630b4/NW_idle_pair0_native_2128x1626.png",
+      "sha256": "216b1e9d7e00be0a8cefe18f072c58ba97a0ea4086542f50a2fcd0aa9405378c"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.315803+00:00",
+    "slot": "SW/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed native pair and chronological sheet. Opposite forward contact and low swing roles, cyan raised rear passing at frame4, continuous whole body and clean key. Frame1 separately under repair. Weapon phase alignment and ground contact need runtime review.",
+    "sourceSHA256": "a1beed8ba4cd7a9236f5ee3c129df8290e1974d47998f6d03b2c152686330533",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/9a9c4331a1938742/SW_walk_pair0_native_1920x1092.png",
+      "sha256": "27cb806aa9f23e8b94518815312d74efad9db57a6272c44c5fe1115e52a2dc3d"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.347919+00:00",
+    "slot": "SW/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed native pair and chronological sheet. Opposite forward contact and low swing roles, cyan raised rear passing at frame4, continuous whole body and clean key. Frame1 separately under repair. Weapon phase alignment and ground contact need runtime review.",
+    "sourceSHA256": "166a144e5c3425e2ee3700324481854c93442986b63f06c3c07ac4e1da099cd3",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/9a9c4331a1938742/SW_walk_pair2_native_2128x1626.png",
+      "sha256": "1d0db777db95197c1e9a66e11b323e9d60e2fe72614de891f357981a9862b2a9"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.380457+00:00",
+    "slot": "SW/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed native pair and chronological sheet. Opposite forward contact and low swing roles, cyan raised rear passing at frame4, continuous whole body and clean key. Frame1 separately under repair. Weapon phase alignment and ground contact need runtime review.",
+    "sourceSHA256": "f32b9d7373df9f3027e21e8862daeea3b340822196df7028a14dfcd56508a995",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/9a9c4331a1938742/SW_walk_pair0_native_1920x1092.png",
+      "sha256": "27cb806aa9f23e8b94518815312d74efad9db57a6272c44c5fe1115e52a2dc3d"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.411347+00:00",
+    "slot": "SW/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed native pair and chronological sheet. Opposite forward contact and low swing roles, cyan raised rear passing at frame4, continuous whole body and clean key. Frame1 separately under repair. Weapon phase alignment and ground contact need runtime review.",
+    "sourceSHA256": "172930767f24becd46c3288593a57a331af2b23cd70641c43c5b33a11df2e6f6",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/9a9c4331a1938742/SW_walk_pair1_native_2128x1626.png",
+      "sha256": "7c50043a6252fc3e21cabfe707c0cfa576e032d9f39c83596c2fa88f22aa07ac"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.452393+00:00",
+    "slot": "SW/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed native pair and chronological sheet. Opposite forward contact and low swing roles, cyan raised rear passing at frame4, continuous whole body and clean key. Frame1 separately under repair. Weapon phase alignment and ground contact need runtime review.",
+    "sourceSHA256": "7423994b005174a15c6094689a898b932923b6d9855ea00711dcf5d8167a6176",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/9a9c4331a1938742/SW_walk_pair2_native_2128x1626.png",
+      "sha256": "1d0db777db95197c1e9a66e11b323e9d60e2fe72614de891f357981a9862b2a9"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.485590+00:00",
+    "slot": "W/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed current side-view native pair and chronological sheet. Opposite contacts or rear heel passing with cyan left and pouch right; frame4 proportion repair replaces rejected elongated source. Fullbody shoulder-aimed art; remaining high swing frames2/5 not approved here.",
+    "sourceSHA256": "950480952967376c680d6d5aea1d9c49cbb16c558be826f10b8c6790464d6177",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/536c9b1df2f04700/W_walk_pair0_native_1920x1080.png",
+      "sha256": "98ea04cb454444b561dad58e9c47c0d23f227eb6694477c2e5065a5765915c65"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.519021+00:00",
+    "slot": "W/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed current side-view native pair and chronological sheet. Opposite contacts or rear heel passing with cyan left and pouch right; frame4 proportion repair replaces rejected elongated source. Fullbody shoulder-aimed art; remaining high swing frames2/5 not approved here.",
+    "sourceSHA256": "7c01a9e6381641e6014d45680bf081d4804e54e2bdb4aa5fc7d3e5fc84b9e955",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/3d3ac2f712eebbde/W_walk_pair1_native_2128x1626.png",
+      "sha256": "5d81d86fe626d79cf81d84a6051c007ec73618aa64f7cb075e4885dfba4240cb"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.549484+00:00",
+    "slot": "W/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed current side-view native pair and chronological sheet. Opposite contacts or rear heel passing with cyan left and pouch right; frame4 proportion repair replaces rejected elongated source. Fullbody shoulder-aimed art; remaining high swing frames2/5 not approved here.",
+    "sourceSHA256": "95007dd2fd526e5e4d108c1eacd4c2ff1b8de8767568be694079b2486975e896",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/536c9b1df2f04700/W_walk_pair0_native_1920x1080.png",
+      "sha256": "98ea04cb454444b561dad58e9c47c0d23f227eb6694477c2e5065a5765915c65"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:00:07.582028+00:00",
+    "slot": "W/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed current side-view native pair and chronological sheet. Opposite contacts or rear heel passing with cyan left and pouch right; frame4 proportion repair replaces rejected elongated source. Fullbody shoulder-aimed art; remaining high swing frames2/5 not approved here.",
+    "sourceSHA256": "4a824d6c5f10aeb43919e9df3c13a48c732792a9fa907960bd474385335247fd",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/3d3ac2f712eebbde/W_walk_pair1_native_2128x1626.png",
+      "sha256": "5d81d86fe626d79cf81d84a6051c007ec73618aa64f7cb075e4885dfba4240cb"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:45.723952+00:00",
+    "slot": "NW/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed native light/dark panels and chronological cycle. Opposite contact legs, rear heel lifts and passing/swing replace repeated static poses. Whole-body aimed rifle, fabric shoulders, neutral charcoal right leg and cyan left continuity. Frame2 silhouette and frame5 lift vary; this source-stage acceptance does NOT approve runtime temporal continuity or grounding.",
+    "sourceSHA256": "e1f8f2e3d5b4a3722c9a79521c469420ee42c841da0b8c3b31f4290e4c45765e",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/2963aef3a00047d0/NW_walk_pair0_native_2128x1626.png",
+      "sha256": "720e841dae929812313d0c991422f5bb1afa512e8dea8d89dce3b4982af11853"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:45.748072+00:00",
+    "slot": "NW/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed native light/dark panels and chronological cycle. Opposite contact legs, rear heel lifts and passing/swing replace repeated static poses. Whole-body aimed rifle, fabric shoulders, neutral charcoal right leg and cyan left continuity. Frame2 silhouette and frame5 lift vary; this source-stage acceptance does NOT approve runtime temporal continuity or grounding.",
+    "sourceSHA256": "e46b93e2f34dd5527cfa15b4c2b66ef002964349acbfd5193297c09aa6b40fb7",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/2963aef3a00047d0/NW_walk_pair1_native_2128x1626.png",
+      "sha256": "a91dd2882a71090a9b440ac9581868b2c943cf46d51623b06e359059f0d36d1b"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:45.779073+00:00",
+    "slot": "NW/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed native light/dark panels and chronological cycle. Opposite contact legs, rear heel lifts and passing/swing replace repeated static poses. Whole-body aimed rifle, fabric shoulders, neutral charcoal right leg and cyan left continuity. Frame2 silhouette and frame5 lift vary; this source-stage acceptance does NOT approve runtime temporal continuity or grounding.",
+    "sourceSHA256": "c2ba1ed8ce6b4295b0c25e150e822bb5cf6c3a5629d5e8314f40b188495ebf05",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/2963aef3a00047d0/NW_walk_pair2_native_2128x1626.png",
+      "sha256": "1631134fd765daa36b2853e576588d0153207deb6019e8074e2d294b07125df2"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:45.810073+00:00",
+    "slot": "NW/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed native light/dark panels and chronological cycle. Opposite contact legs, rear heel lifts and passing/swing replace repeated static poses. Whole-body aimed rifle, fabric shoulders, neutral charcoal right leg and cyan left continuity. Frame2 silhouette and frame5 lift vary; this source-stage acceptance does NOT approve runtime temporal continuity or grounding.",
+    "sourceSHA256": "94453b0441e1c2531440023b3cab2158b9ffc088be2d9e6c36376a1e356a1616",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/2963aef3a00047d0/NW_walk_pair0_native_2128x1626.png",
+      "sha256": "720e841dae929812313d0c991422f5bb1afa512e8dea8d89dce3b4982af11853"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:45.841587+00:00",
+    "slot": "NW/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed native light/dark panels and chronological cycle. Opposite contact legs, rear heel lifts and passing/swing replace repeated static poses. Whole-body aimed rifle, fabric shoulders, neutral charcoal right leg and cyan left continuity. Frame2 silhouette and frame5 lift vary; this source-stage acceptance does NOT approve runtime temporal continuity or grounding.",
+    "sourceSHA256": "366a55c0a1e91f6522530af6506fb678a07bfa6980d479d2c66550c5a3ef88fe",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/2963aef3a00047d0/NW_walk_pair1_native_2128x1626.png",
+      "sha256": "a91dd2882a71090a9b440ac9581868b2c943cf46d51623b06e359059f0d36d1b"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:45.871588+00:00",
+    "slot": "NW/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed native light/dark panels and chronological cycle. Opposite contact legs, rear heel lifts and passing/swing replace repeated static poses. Whole-body aimed rifle, fabric shoulders, neutral charcoal right leg and cyan left continuity. Frame2 silhouette and frame5 lift vary; this source-stage acceptance does NOT approve runtime temporal continuity or grounding.",
+    "sourceSHA256": "69923852765f0c724d60a08e4fd116fd686d8be9f7da2367c9ecede7652d35ed",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/2963aef3a00047d0/NW_walk_pair2_native_2128x1626.png",
+      "sha256": "1631134fd765daa36b2853e576588d0153207deb6019e8074e2d294b07125df2"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:45.902587+00:00",
+    "slot": "NE/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed native light/dark panels and chronological cycle. Opposite contacts and heel lifts, dark pouch-right hip retained through crossing poses, cyan left remains separate; planted/swing feet alternate. No green or separated torso. Rifle projection and proportions vary across single/pair sources; temporal continuity remains mandatory runtime review, not approved here.",
+    "sourceSHA256": "e7da598be2130c128ce1f558e0fa5b0deb49caa2300270600ef02c8c465d46d3",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/0c89e1436232ed81/NE_walk_pair0_native_2128x1626.png",
+      "sha256": "8066d8c99dbfe0693f1153604cf3888ecd80e4b31a4ff540e064c06a5bab792b"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:45.934102+00:00",
+    "slot": "NE/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed native light/dark panels and chronological cycle. Opposite contacts and heel lifts, dark pouch-right hip retained through crossing poses, cyan left remains separate; planted/swing feet alternate. No green or separated torso. Rifle projection and proportions vary across single/pair sources; temporal continuity remains mandatory runtime review, not approved here.",
+    "sourceSHA256": "addf41cdc6e143e7bdb8d13e2d6321f197e19213243b30558258c739388d96e2",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/0c89e1436232ed81/NE_walk_pair1_native_2128x1626.png",
+      "sha256": "5042362921d0c68b835866fb25ddabe6a1b9ae48c5dc7a0aa067e1a2f19d1efd"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:45.964102+00:00",
+    "slot": "NE/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed native light/dark panels and chronological cycle. Opposite contacts and heel lifts, dark pouch-right hip retained through crossing poses, cyan left remains separate; planted/swing feet alternate. No green or separated torso. Rifle projection and proportions vary across single/pair sources; temporal continuity remains mandatory runtime review, not approved here.",
+    "sourceSHA256": "6551bb3b65ddbb2f9f4671b64a5026d5f2426fc45a9204cfd701591ac4b5219b",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/0c89e1436232ed81/NE_walk_pair2_native_2128x1626.png",
+      "sha256": "7fbfb129b613dcd67465077e7563dbdc4f45327da2fb724c04fa6b82275646c6"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:46.001102+00:00",
+    "slot": "NE/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed native light/dark panels and chronological cycle. Opposite contacts and heel lifts, dark pouch-right hip retained through crossing poses, cyan left remains separate; planted/swing feet alternate. No green or separated torso. Rifle projection and proportions vary across single/pair sources; temporal continuity remains mandatory runtime review, not approved here.",
+    "sourceSHA256": "3968175f9829c5c66725bba2970ef3ae7cd24b2ff1217a06b49703238cfdbe0e",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/0c89e1436232ed81/NE_walk_pair0_native_2128x1626.png",
+      "sha256": "8066d8c99dbfe0693f1153604cf3888ecd80e4b31a4ff540e064c06a5bab792b"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:46.031184+00:00",
+    "slot": "NE/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed native light/dark panels and chronological cycle. Opposite contacts and heel lifts, dark pouch-right hip retained through crossing poses, cyan left remains separate; planted/swing feet alternate. No green or separated torso. Rifle projection and proportions vary across single/pair sources; temporal continuity remains mandatory runtime review, not approved here.",
+    "sourceSHA256": "02ea260f2e550e171e81052d8f656a4153329ec72ce54249a423a00ab2d63649",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/0c89e1436232ed81/NE_walk_pair1_native_2128x1626.png",
+      "sha256": "5042362921d0c68b835866fb25ddabe6a1b9ae48c5dc7a0aa067e1a2f19d1efd"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:46.060185+00:00",
+    "slot": "NE/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed native light/dark panels and chronological cycle. Opposite contacts and heel lifts, dark pouch-right hip retained through crossing poses, cyan left remains separate; planted/swing feet alternate. No green or separated torso. Rifle projection and proportions vary across single/pair sources; temporal continuity remains mandatory runtime review, not approved here.",
+    "sourceSHA256": "59a55b7dea0d8ac56b0ca747a18d254ee3afd1be0f533a20b29fe7eca9700bb0",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/0c89e1436232ed81/NE_walk_pair2_native_2128x1626.png",
+      "sha256": "7fbfb129b613dcd67465077e7563dbdc4f45327da2fb724c04fa6b82275646c6"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:46.091185+00:00",
+    "slot": "NE/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Actually viewed native dark/light panel. Both boots planted, silver ponytail, dark navy cloth shoulders, continuous hands and shouldered up-right rifle. Clean separation, no moving feet; source-stage aimed idle only.",
+    "sourceSHA256": "20144daaba21a40966366dafa27c0198af300462b142cda0916bbc280229aaef",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/612e6fdb56f59b16/NE_idle_pair0_native_2128x1626.png",
+      "sha256": "4fa70d3daa16de9ddefd7fc593cb18da2b4b821895c6647f3cd2bef55e015055"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:46.121187+00:00",
+    "slot": "SW/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed native light/dark panels and final chronological sheet. Square-source repair restores comparable torso/head proportions, cyan support leg underneath pelvis and bent dark rear heel. Connected full-body aimed pose. Runtime contact and continuity still to be checked.",
+    "sourceSHA256": "81f86f1093058e54f6d132dd9ec816bf1b0d4f2ca69ef75c6f747df681edf2e7",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/be1e79956914cfd3/SW_walk_pair1_native_2588x1626.png",
+      "sha256": "23ef73f9d7a421df3c2af5f7d61bd15cf3506bce7317e8c78fa6e285240a1ec5"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:46.153698+00:00",
+    "slot": "W/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed native pair and final six-frame chronological sheet. Low forward boot/toe lift replaces high marching knee; opposite cyan versus dark swing leg, no green and continuous shoulder-rifle-body. This does not approve a run animation or runtime foot locking.",
+    "sourceSHA256": "e6ac63c4516c9a9536ee650d564bf2d7cbb001052605ec65d2646498abeb623c",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/d4b549e2df7da25d/W_walk_pair2_native_1920x1080.png",
+      "sha256": "f44ba0100a8ebe89020eee71b280a55472325e96d11594dfc650ec13c751ae47"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:11:46.183697+00:00",
+    "slot": "W/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra actual visual review",
+    "notes": "Viewed native pair and final six-frame chronological sheet. Low forward boot/toe lift replaces high marching knee; opposite cyan versus dark swing leg, no green and continuous shoulder-rifle-body. This does not approve a run animation or runtime foot locking.",
+    "sourceSHA256": "562e72d536ac080ccc98244ea245636867dbdddd506555af1ad824ef1ad0c833",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/gait/d4b549e2df7da25d/W_walk_pair2_native_1920x1080.png",
+      "sha256": "f44ba0100a8ebe89020eee71b280a55472325e96d11594dfc650ec13c751ae47"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:27:18.810920+00:00",
+    "slot": "E/walk/1",
+    "decision": "repair",
+    "reviewer": "Astra actual temporal review",
+    "notes": "Actual temporal review: torso rotates toward camera and rifle shortens during passing, breaking continuity with contacts0/3. New camera-pair attempt instead repeated contact-like legs and was not imported. Source repair required.",
+    "sourceSHA256": "79b25152642c92eff7645c1bd260b647600cb9a993c6bb57bda9776e21283c7e",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/runtime_v8/e_walk/samples.png",
+      "sha256": "0dc3888c14c832903fd17100047be0f411371225dd8533d9f492d09071ec3994"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:27:18.861967+00:00",
+    "slot": "E/walk/4",
+    "decision": "repair",
+    "reviewer": "Astra actual temporal review",
+    "notes": "Actual temporal review: torso and rifle projection differ from adjacent side-view sources; do not authorize natural gait based on six unique hashes. Preserve opposite cyan rear passing role while repairing camera.",
+    "sourceSHA256": "0e2136f2431fd035cce093d05a02ce5952fe15009712f3aa928df22238b247be",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/runtime_v8/e_walk/samples.png",
+      "sha256": "0dc3888c14c832903fd17100047be0f411371225dd8533d9f492d09071ec3994"
+    }
+  },
+  {
+    "recordedAt": "2026-09-11T05:27:18.908968+00:00",
+    "slot": "NW/walk/2",
+    "decision": "repair",
+    "reviewer": "Astra actual temporal review",
+    "notes": "Actual temporal review: source-normalized silhouette becomes visibly narrower at passing. Later square attempt repeats rear heel-lift phase and is rejected; keep correct forward-passing leg role while repairing proportions.",
+    "sourceSHA256": "c2ba1ed8ce6b4295b0c25e150e822bb5cf6c3a5629d5e8314f40b188495ebf05",
+    "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "evidence": {
+      "path": "qa/aster/runtime_v8/NW_walk/samples.png",
+      "sha256": "06698ee487c89ef899b8e37be530f353c855a37d3dcc2dea6e47829fd73a9c3f"
+    }
+  }
+]

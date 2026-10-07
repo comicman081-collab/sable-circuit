@@ -1,0 +1,347 @@
+{
+  "kind": "sable-cycle-observation",
+  "character": "site7_rifle",
+  "direction": "E",
+  "action": "walk",
+  "inputs": {
+    "character": "site7_rifle",
+    "direction": "E",
+    "action": "walk",
+    "recipe": {
+      "path": "characters/site7_rifle.json",
+      "sha256": "f9815484085defae74507cbda8321625456ab637352745a002221056d9030f2d"
+    },
+    "identity": {
+      "path": "art/site7_rifle/identity_reference.png",
+      "sha256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096"
+    },
+    "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+    "compilerSHA256": "1395b21aa409e4605ce769479e9984968f0a88912adda648879b6869d2dd527f",
+    "previewCodeSHA256": "7ed3f1745edc1035bea4757dc38603a1129c93e531ea235d4f10fe060cdf9740",
+    "liveReviewCodeSHA256": "8af1ed5ce4fa56e1149762323ed318dcf3e84a6ebba68b77b8eb0f23bf8c37c2",
+    "recipeValues": {
+      "speed": 1.141358024691358,
+      "stride": 1.33,
+      "heightMetres": 1.72
+    },
+    "provenanceCodeSHA256": "d6da53bb5321ad08008e52a0e371e7b712e9eb72c762baa545083f008fe5256d",
+    "reviewCodeSHA256": "3982de4d57cb3d370efa94a537a2c921c661059043e1e4268e93f1367ec42d8d",
+    "sources": [
+      {
+        "slot": "E/walk/0",
+        "pixelSHA256": "2edd9f2cd8c744194f9551a37de1375663325331bccaa7fd99c41d8a07ef6bc8",
+        "path": "art/site7_rifle/E_walk_0_master.png",
+        "sha256": "e10e98d4d9e3018b8e82cf34fbf6d5c2af4b1e9106444126f936537680f5b10e"
+      },
+      {
+        "slot": "E/walk/1",
+        "pixelSHA256": "f91a6ba6d440d6b403617f68607450b4b0d567306c13cc11611653fcca95f29a",
+        "path": "art/site7_rifle/E_walk_1_master.png",
+        "sha256": "29834d6a27022e3362b3172c2f5da448c57df90b4465d76e2d9e3852510632e0"
+      },
+      {
+        "slot": "E/walk/2",
+        "pixelSHA256": "f660c413c35487f5f0631634b8d6d3a9c6920c75f161e75994e79dc40851212c",
+        "path": "art/site7_rifle/E_walk_2_master.png",
+        "sha256": "92a1e1d1742798b42f8ec796edd331f71f8f80387ac8b6bdcabdd6f8364360cd"
+      },
+      {
+        "slot": "E/walk/3",
+        "pixelSHA256": "b0c9964f2c618f73cfe96ca73a4e4f40711fb88f99f9d9bbaa9d238e37ec9fac",
+        "path": "art/site7_rifle/E_walk_3_master.png",
+        "sha256": "3a0b16487aa4b7334f396598f230902529a38b880ddf43dca58272d5883299c8"
+      },
+      {
+        "slot": "E/walk/4",
+        "pixelSHA256": "1be74fd3d28eb51148d6eba8c250eedb00c00caf5fe23060cc81208eb752a44b",
+        "path": "art/site7_rifle/E_walk_4_master.png",
+        "sha256": "46276e65843a6fa80032139e785622ac67b6e10dbb3d9819a8690f95e1ed5755"
+      },
+      {
+        "slot": "E/walk/5",
+        "pixelSHA256": "6f0ae29a29b60735613c8e83ed2592753ddb26e44affce6fbb7d3a03ea7e43bc",
+        "path": "art/site7_rifle/E_walk_5_master.png",
+        "sha256": "d9b98cb5d83f2b5929d8d5baf29d0e6f8db2c9f48fcb088317cca1ae4af29cca"
+      }
+    ]
+  },
+  "preview": {
+    "path": "qa/site7_rifle/gait/afd699355069c1f1_1853e533/cycle-preview.json",
+    "sha256": "7eb22f88000920d3455ef3e3ae40374e3c729515524475c1ddaa049ba8d6be9b"
+  },
+  "decision": "approved",
+  "reviewer": "Codex main - observed native source pairs and actual normal-1x capture 2026-09-13",
+  "legMarkers": {
+    "left": "Far anatomical left thigh without pistol holster, traced behind near hip into its own knee and boot",
+    "right": "Near anatomical right thigh has the large black pistol holster and two straps; follow that same armored thigh to knee and boot"
+  },
+  "frames": [
+    {
+      "index": 0,
+      "phase": "left_contact",
+      "support": "double",
+      "landmarks": {
+        "leftHip": [
+          422,
+          365
+        ],
+        "leftKnee": [
+          498,
+          473
+        ],
+        "leftSole": [
+          554,
+          699
+        ],
+        "rightHip": [
+          385,
+          366
+        ],
+        "rightKnee": [
+          376,
+          489
+        ],
+        "rightSole": [
+          287,
+          710
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "phase": "right_swing",
+      "support": "left",
+      "landmarks": {
+        "leftHip": [
+          439,
+          385
+        ],
+        "leftKnee": [
+          463,
+          500
+        ],
+        "leftSole": [
+          480,
+          710
+        ],
+        "rightHip": [
+          411,
+          366
+        ],
+        "rightKnee": [
+          392,
+          493
+        ],
+        "rightSole": [
+          240,
+          672
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "phase": "right_passing",
+      "support": "left",
+      "landmarks": {
+        "leftHip": [
+          385,
+          387
+        ],
+        "leftKnee": [
+          403,
+          504
+        ],
+        "leftSole": [
+          370,
+          708
+        ],
+        "rightHip": [
+          417,
+          365
+        ],
+        "rightKnee": [
+          497,
+          473
+        ],
+        "rightSole": [
+          530,
+          681
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "phase": "right_contact",
+      "support": "double",
+      "landmarks": {
+        "leftHip": [
+          373,
+          400
+        ],
+        "leftKnee": [
+          367,
+          510
+        ],
+        "leftSole": [
+          268,
+          692
+        ],
+        "rightHip": [
+          405,
+          365
+        ],
+        "rightKnee": [
+          474,
+          482
+        ],
+        "rightSole": [
+          517,
+          710
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "phase": "left_swing",
+      "support": "right",
+      "landmarks": {
+        "leftHip": [
+          380,
+          407
+        ],
+        "leftKnee": [
+          390,
+          509
+        ],
+        "leftSole": [
+          241,
+          629
+        ],
+        "rightHip": [
+          411,
+          375
+        ],
+        "rightKnee": [
+          454,
+          484
+        ],
+        "rightSole": [
+          479,
+          710
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "phase": "left_passing",
+      "support": "right",
+      "landmarks": {
+        "leftHip": [
+          436,
+          373
+        ],
+        "leftKnee": [
+          512,
+          461
+        ],
+        "leftSole": [
+          548,
+          627
+        ],
+        "rightHip": [
+          385,
+          365
+        ],
+        "rightKnee": [
+          376,
+          490
+        ],
+        "rightSole": [
+          365,
+          710
+        ]
+      }
+    }
+  ],
+  "observations": {
+    "oppositeContacts": {
+      "decision": "pass",
+      "seconds": [
+        0.067,
+        0.633,
+        1.267,
+        1.833
+      ],
+      "notes": "At the first contact the far unholstered left foot leads, while the near holstered right foot trails; at the opposite contact the same holstered leg leads. Both halves recur, rather than relabeling the same support leg. Native pairs and the current normal1x decoded sequence were inspected."
+    },
+    "passingAndSwing": {
+      "decision": "pass",
+      "seconds": [
+        0.267,
+        0.467,
+        0.867,
+        1.067
+      ],
+      "notes": "The near holstered right boot lifts behind in frame1 then passes forward in frame2; the far unholstered left boot lifts behind in frame4 then passes forward in frame5. Each chain remains connected to its own knee and hip clothing. No cut-up limb deformation is used."
+    },
+    "loopSeam": {
+      "decision": "pass",
+      "seconds": [
+        1.1,
+        1.233,
+        2.267,
+        2.4
+      ],
+      "notes": "The final far-left forward passing pose returns to left-leading contact while the near right leg becomes trailing again. The six authored snapshots visibly step between poses; there is no duplicate-stance frozen loop. This approves the source pilot, not continuous interpolated motion."
+    },
+    "footSliding": {
+      "decision": "pass",
+      "seconds": [
+        0.067,
+        0.3,
+        0.467,
+        0.633,
+        0.9,
+        1.1
+      ],
+      "notes": "Across each support half the planted boot moves rearward relative to the pelvis as the ground moves past; the opposite foot visibly lifts instead of both feet remaining fixed. The calibrated1.33m source stride reduces the previous distance mismatch. Short hold-frame ground slip remains inherent to these six discrete pictures; acceptable for this cautious armored NPC source pilot, not zero-slip IK or final game-runtime approval. Actual collision-constrained travel must drive the eventual app phase."
+    },
+    "bodyContinuity": {
+      "decision": "pass",
+      "seconds": [
+        0.267,
+        0.867,
+        1.433,
+        2.133
+      ],
+      "notes": "Whole ImageGen bodies keep waist, armor, hood, backpack and legs connected across both support halves. There is modest authored silhouette/shoulder variation and a stepped6-frame presentation, not a different standing upper body pasted onto legs. No green source backdrop remains in the reviewed composite."
+    },
+    "weaponContinuity": {
+      "decision": "pass",
+      "seconds": [
+        0.067,
+        0.467,
+        0.867,
+        1.267
+      ],
+      "notes": "The masked rifleman retains the same shouldered bullpup silhouette with grip and support hand attached; the muzzle points toward screen right throughout this E cycle. Small authored barrel-length/perspective changes remain. The later game emission must use each frame's authored muzzle, not a body-center approximation."
+    }
+  },
+  "landmarkBasis": "Visible costume-surface hip/knee/sole proxies traced on native compiled cells, not recovered bone centers. The far hip is partly occluded; the labeled point is the visible upper-thigh boundary, not a claim to observe an occluded joint.",
+  "additionalObservedEvidence": {
+    "video": "qa/stage1_enemies_20260913/cycle_capture/site7_rifle_e_live_1789284181535.webm",
+    "videoSHA256": "a9c41eafc92f278178aabbf4be4d97d3a3e4e6087a34729ffa80212a70d17976",
+    "native": [
+      1920,
+      1080
+    ],
+    "decodedFrames": 105,
+    "normalPlaybackRate": 1,
+    "scope": "Actual canvas source-cycle capture, not the game controller; sequential native decoded frames inspected",
+    "limitations": [
+      "Six discrete authored phases, not continuous anatomical foot locking",
+      "No independent sprint or strafe artwork",
+      "No app activation or final runtime approval"
+    ]
+  }
+}

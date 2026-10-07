@@ -1,0 +1,667 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started 프로젝트 초기화 (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | 파일 구조 스캔 중...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | 전역 클래스 이름을 불러오는 중...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | GDExtensions 검증 중...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | 오토로드 스크립트를 만드는 중...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | 플러그인을 초기화 중...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | 파일 스캔 시작 중...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started 전역 클래스를 등록하는 중... (98 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   1% ] [90m[1mupdate_scripts_classes[22m | EnemyActor[39m[0m
+[   2% ] [90m[1mupdate_scripts_classes[22m | OperatorActor[39m[0m
+[   3% ] [90m[1mupdate_scripts_classes[22m | SquadController[39m[0m
+[   4% ] [90m[1mupdate_scripts_classes[22m | PrototypeTargetDummy[39m[0m
+[   5% ] [90m[1mupdate_scripts_classes[22m | AsterV4LocomotionPreview[39m[0m
+[   6% ] [90m[1mupdate_scripts_classes[22m | BossAnchorLockPresentation[39m[0m
+[   7% ] [90m[1mupdate_scripts_classes[22m | BossPhaseTransitionGuard[39m[0m
+[   8% ] [90m[1mupdate_scripts_classes[22m | DiagonalLocomotionPresentation[39m[0m
+[   9% ] [90m[1mupdate_scripts_classes[22m | EnemyDetailOverlayPresentation[39m[0m
+[  10% ] [90m[1mupdate_scripts_classes[22m | EnemyFieldScalePresentation[39m[0m
+[  11% ] [90m[1mupdate_scripts_classes[22m | EnemyGroundShadow[39m[0m
+[  12% ] [90m[1mupdate_scripts_classes[22m | FaceMicroRig[39m[0m
+[  13% ] [90m[1mupdate_scripts_classes[22m | FastCharacterRuntime[39m[0m
+[  14% ] [90m[1mupdate_scripts_classes[22m | MotionLabCharacterRuntime[39m[0m
+[  15% ] [90m[1mupdate_scripts_classes[22m | OperatorAuthoredRasterPresentation[39m[0m
+[  16% ] [90m[1mupdate_scripts_classes[22m | OperatorDetailOverlayPresentation[39m[0m
+[  17% ] [90m[1mupdate_scripts_classes[22m | OperatorDirectionalScaleGuard[39m[0m
+[  18% ] [90m[1mupdate_scripts_classes[22m | OperatorGroundShadow[39m[0m
+[  19% ] [90m[1mupdate_scripts_classes[22m | OperatorSectorSilhouettePresentation[39m[0m
+[  20% ] [90m[1mupdate_scripts_classes[22m | OperatorVisual[39m[0m
+[  21% ] [90m[1mupdate_scripts_classes[22m | OperatorWeaponIK[39m[0m
+[  22% ] [90m[1mupdate_scripts_classes[22m | PremiumEnemyPresentation[39m[0m
+[  23% ] [90m[1mupdate_scripts_classes[22m | PremiumOperatorPresentation[39m[0m
+[  24% ] [90m[1mupdate_scripts_classes[22m | PremiumSpriteShading[39m[0m
+[  25% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  26% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  27% ] [90m[1mupdate_scripts_classes[22m | SkeletalMotionPlayer[39m[0m
+[  28% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  29% ] [90m[1mupdate_scripts_classes[22m | SourceSkinView[39m[0m
+[  30% ] [90m[1mupdate_scripts_classes[22m | SourceSkinViewport[39m[0m
+[  31% ] [90m[1mupdate_scripts_classes[22m | SourceSkinWeaponBinding[39m[0m
+[  32% ] [90m[1mupdate_scripts_classes[22m | UprightStancePresentation[39m[0m
+[  33% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  34% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  35% ] [90m[1mupdate_scripts_classes[22m | ProceduralCombatSFX[39m[0m
+[  36% ] [90m[1mupdate_scripts_classes[22m | CombatFeedback[39m[0m
+[  37% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  38% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  39% ] [90m[1mupdate_scripts_classes[22m | EliteAffix[39m[0m
+[  40% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  41% ] [90m[1mupdate_scripts_classes[22m | OperatorSkillController[39m[0m
+[  42% ] [90m[1mupdate_scripts_classes[22m | PrototypeProjectile[39m[0m
+[  43% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  44% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  45% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  46% ] [90m[1mupdate_scripts_classes[22m | ZoneHazard[39m[0m
+[  47% ] [90m[1mupdate_scripts_classes[22m | BattleTextureLibrary[39m[0m
+[  48% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  49% ] [90m[1mupdate_scripts_classes[22m | CampaignProgression[39m[0m
+[  50% ] [90m[1mupdate_scripts_classes[22m | GameFlow[39m[0m
+[  51% ] [90m[1mupdate_scripts_classes[22m | GameSettings[39m[0m
+[  52% ] [90m[1mupdate_scripts_classes[22m | PlaySessionLog[39m[0m
+[  53% ] [90m[1mupdate_scripts_classes[22m | RunContract[39m[0m
+[  54% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  55% ] [90m[1mupdate_scripts_classes[22m | ArtProfileRegistry[39m[0m
+[  56% ] [90m[1mupdate_scripts_classes[22m | WeaponRegistry[39m[0m
+[  57% ] [90m[1mupdate_scripts_classes[22m | BossArenaPresentation[39m[0m
+[  58% ] [90m[1mupdate_scripts_classes[22m | PrototypeArena[39m[0m
+[  59% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  60% ] [90m[1mupdate_scripts_classes[22m | Site7DepthPass[39m[0m
+[  61% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  62% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  63% ] [90m[1mupdate_scripts_classes[22m | Site7FacilityArchitecture[39m[0m
+[  64% ] [90m[1mupdate_scripts_classes[22m | Site7FloorGuide[39m[0m
+[  65% ] [90m[1mupdate_scripts_classes[22m | Site7LightingRig[39m[0m
+[  66% ] [90m[1mupdate_scripts_classes[22m | Site7PropArtLayer[39m[0m
+[  67% ] [90m[1mupdate_scripts_classes[22m | Site7RoomArtLayer[39m[0m
+[  68% ] [90m[1mupdate_scripts_classes[22m | Site7SurfaceDetail[39m[0m
+[  69% ] [90m[1mupdate_scripts_classes[22m | SquadCameraPresentation[39m[0m
+[  70% ] [90m[1mupdate_scripts_classes[22m | Stage01EnvironmentDirector[39m[0m
+[  71% ] [90m[1mupdate_scripts_classes[22m | StoryStage01[39m[0m
+[  72% ] [90m[1mupdate_scripts_classes[22m | AsterStaticPreGatePreview[39m[0m
+[  73% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  74% ] [90m[1mupdate_scripts_classes[22m | BaseLobby[39m[0m
+[  75% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  76% ] [90m[1mupdate_scripts_classes[22m | BriefingScreen[39m[0m
+[  77% ] [90m[1mupdate_scripts_classes[22m | CinematicFieldOverlay[39m[0m
+[  78% ] [90m[1mupdate_scripts_classes[22m | CinematicMenuButton[39m[0m
+[  79% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  80% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  81% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  82% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  83% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  84% ] [90m[1mupdate_scripts_classes[22m | EnemyOverheadUI[39m[0m
+[  85% ] [90m[1mupdate_scripts_classes[22m | HudWidgets[39m[0m
+[  86% ] [90m[1mupdate_scripts_classes[22m | MenuAtmosphere[39m[0m
+[  87% ] [90m[1mupdate_scripts_classes[22m | MenuBackdrop[39m[0m
+[  88% ] [90m[1mupdate_scripts_classes[22m | MenuFx[39m[0m
+[  89% ] [90m[1mupdate_scripts_classes[22m | MissionResults[39m[0m
+[  90% ] [90m[1mupdate_scripts_classes[22m | OperatorLineup[39m[0m
+[  91% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  92% ] [90m[1mupdate_scripts_classes[22m | StoryStageHUD[39m[0m
+[  93% ] [90m[1mupdate_scripts_classes[22m | TacticalMinimap[39m[0m
+[  94% ] [90m[1mupdate_scripts_classes[22m | TitleScreen[39m[0m
+[  95% ] [90m[1mupdate_scripts_classes[22m | CombatHitVFX[39m[0m
+[  96% ] [90m[1mupdate_scripts_classes[22m | EnemyDeathSequence[39m[0m
+[  97% ] [90m[1mupdate_scripts_classes[22m | OperatorSkillVFX[39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1m_update_scan_actions[22m | Started 액션 스캔 중... (424 steps)[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | aster_detail_overlay.svg[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | aster_master.svg[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | aster_portrait.svg[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | aster_rig_sheet.svg[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | mica_detail_overlay.svg[39m[0m
+[   1% ] [90m[1m_update_scan_actions[22m | mica_master.svg[39m[0m
+[   1% ] [90m[1m_update_scan_actions[22m | mica_portrait.svg[39m[0m
+[   1% ] [90m[1m_update_scan_actions[22m | mica_rig_sheet.svg[39m[0m
+[   1% ] [90m[1m_update_scan_actions[22m | rook_detail_overlay.svg[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | rook_master.svg[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | rook_portrait.svg[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | rook_rig_sheet.svg[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | aberrant_melee_detail_overlay.svg[39m[0m
+[   3% ] [90m[1m_update_scan_actions[22m | aberrant_melee_master.svg[39m[0m
+[   3% ] [90m[1m_update_scan_actions[22m | aberrant_melee_rig_sheet.svg[39m[0m
+[   3% ] [90m[1m_update_scan_actions[22m | E.png[39m[0m
+[   3% ] [90m[1m_update_scan_actions[22m | E.web.webp[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | N.png[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | N.web.webp[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | NE.png[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | NE.web.webp[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | NW.png[39m[0m
+[   5% ] [90m[1m_update_scan_actions[22m | NW.web.webp[39m[0m
+[   5% ] [90m[1m_update_scan_actions[22m | S.png[39m[0m
+[   5% ] [90m[1m_update_scan_actions[22m | S.web.webp[39m[0m
+[   5% ] [90m[1m_update_scan_actions[22m | SE.png[39m[0m
+[   6% ] [90m[1m_update_scan_actions[22m | SE.web.webp[39m[0m
+[   6% ] [90m[1m_update_scan_actions[22m | SW.png[39m[0m
+[   6% ] [90m[1m_update_scan_actions[22m | SW.web.webp[39m[0m
+[   6% ] [90m[1m_update_scan_actions[22m | W.png[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | W.web.webp[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | E.png[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | E.web.webp[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | N.png[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | N.web.webp[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | NE.png[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | NE.web.webp[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | NW.png[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | NW.web.webp[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | S.png[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | S.web.webp[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | SE.png[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | SE.web.webp[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | SW.png[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | SW.web.webp[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | W.png[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | W.web.webp[39m[0m
+[  11% ] [90m[1m_update_scan_actions[22m | NULL_PYLON.png[39m[0m
+[  11% ] [90m[1m_update_scan_actions[22m | NULL_PYLON.web.webp[39m[0m
+[  11% ] [90m[1m_update_scan_actions[22m | E.png[39m[0m
+[  11% ] [90m[1m_update_scan_actions[22m | E.web.webp[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | N.png[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | N.web.webp[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | NE.png[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | NE.web.webp[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | NW.png[39m[0m
+[  13% ] [90m[1m_update_scan_actions[22m | NW.web.webp[39m[0m
+[  13% ] [90m[1m_update_scan_actions[22m | S.png[39m[0m
+[  13% ] [90m[1m_update_scan_actions[22m | S.web.webp[39m[0m
+[  13% ] [90m[1m_update_scan_actions[22m | SE.png[39m[0m
+[  14% ] [90m[1m_update_scan_actions[22m | SE.web.webp[39m[0m
+[  14% ] [90m[1m_update_scan_actions[22m | SW.png[39m[0m
+[  14% ] [90m[1m_update_scan_actions[22m | SW.web.webp[39m[0m
+[  14% ] [90m[1m_update_scan_actions[22m | W.png[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | W.web.webp[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | E.png[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | E.web.webp[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | N.png[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | N.web.webp[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | NE.png[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | NE.web.webp[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | NW.png[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | NW.web.webp[39m[0m
+[  17% ] [90m[1m_update_scan_actions[22m | S.png[39m[0m
+[  17% ] [90m[1m_update_scan_actions[22m | S.web.webp[39m[0m
+[  17% ] [90m[1m_update_scan_actions[22m | SE.png[39m[0m
+[  17% ] [90m[1m_update_scan_actions[22m | SE.web.webp[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | SW.png[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | SW.web.webp[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | W.png[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | W.web.webp[39m[0m
+[  19% ] [90m[1m_update_scan_actions[22m | recon_drone_detail_overlay.svg[39m[0m
+[  19% ] [90m[1m_update_scan_actions[22m | recon_drone_master.svg[39m[0m
+[  19% ] [90m[1m_update_scan_actions[22m | recon_drone_rig_sheet.svg[39m[0m
+[  19% ] [90m[1m_update_scan_actions[22m | rifle_trooper_detail_overlay.svg[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | rifle_trooper_master.svg[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | rifle_trooper_rig_sheet.svg[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | shield_breacher_detail_overlay.svg[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | shield_breacher_master.svg[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | shield_breacher_rig_sheet.svg[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | anchor.png[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | anchor.web.webp[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | signal_anchor_guardian_detail_overlay.svg[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | signal_anchor_guardian_master.svg[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | signal_anchor_guardian_rig_sheet.svg[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | FORGE_WARDEN.png[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | FORGE_WARDEN.web.webp[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | CARRIER_NULL.png[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | CARRIER_NULL.web.webp[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | ANCHORED.png[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | ANCHORED.web.webp[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | 03_ARCHIVE_ANNEX_CONTINUITY.png[39m[0m
+[  24% ] [90m[1m_update_scan_actions[22m | 03_ARCHIVE_ANNEX_CONTINUITY.webp[39m[0m
+[  24% ] [90m[1m_update_scan_actions[22m | 03_ARCHIVE_ANNEX_GAME.png[39m[0m
+[  24% ] [90m[1m_update_scan_actions[22m | 03_ARCHIVE_ANNEX_GAME.webp[39m[0m
+[  24% ] [90m[1m_update_scan_actions[22m | 11_ARCHIVE_CONTAINMENT_CONNECTOR_CONTINUITY.png[39m[0m
+[  24% ] [90m[1m_update_scan_actions[22m | 11_ARCHIVE_CONTAINMENT_CONNECTOR_CONTINUITY.webp[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | 11_ARCHIVE_CONTAINMENT_CONNECTOR_GAME.png[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | 11_ARCHIVE_CONTAINMENT_CONNECTOR_GAME.webp[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | 14_ARCHIVE_STORES_CONNECTOR_CONTINUITY.png[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | 14_ARCHIVE_STORES_CONNECTOR_CONTINUITY.webp[39m[0m
+[  26% ] [90m[1m_update_scan_actions[22m | 14_ARCHIVE_STORES_CONNECTOR_GAME.png[39m[0m
+[  26% ] [90m[1m_update_scan_actions[22m | 14_ARCHIVE_STORES_CONNECTOR_GAME.webp[39m[0m
+[  26% ] [90m[1m_update_scan_actions[22m | 12_CONTAINMENT_CORE_CONNECTOR_CONTINUITY.png[39m[0m
+[  26% ] [90m[1m_update_scan_actions[22m | 12_CONTAINMENT_CORE_CONNECTOR_CONTINUITY.webp[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | 12_CONTAINMENT_CORE_CONNECTOR_GAME.png[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | 12_CONTAINMENT_CORE_CONNECTOR_GAME.webp[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | 15_CONTAINMENT_SIGNAL_CONNECTOR_CONTINUITY.png[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | 15_CONTAINMENT_SIGNAL_CONNECTOR_CONTINUITY.webp[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | 15_CONTAINMENT_SIGNAL_CONNECTOR_GAME.png[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | 15_CONTAINMENT_SIGNAL_CONNECTOR_GAME.webp[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | 13_CORE_LIFT_CONNECTOR_CONTINUITY.png[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | 13_CORE_LIFT_CONNECTOR_CONTINUITY.webp[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | 13_CORE_LIFT_CONNECTOR_GAME.png[39m[0m
+[  29% ] [90m[1m_update_scan_actions[22m | 13_CORE_LIFT_CONNECTOR_GAME.webp[39m[0m
+[  29% ] [90m[1m_update_scan_actions[22m | 10_DECON_ARCHIVE_CONNECTOR_CONTINUITY.png[39m[0m
+[  29% ] [90m[1m_update_scan_actions[22m | 10_DECON_ARCHIVE_CONNECTOR_CONTINUITY.webp[39m[0m
+[  29% ] [90m[1m_update_scan_actions[22m | 10_DECON_ARCHIVE_CONNECTOR_GAME.png[39m[0m
+[  30% ] [90m[1m_update_scan_actions[22m | 10_DECON_ARCHIVE_CONNECTOR_GAME.webp[39m[0m
+[  30% ] [90m[1m_update_scan_actions[22m | 09_GATE_DECON_CONNECTOR_CONTINUITY.png[39m[0m
+[  30% ] [90m[1m_update_scan_actions[22m | 09_GATE_DECON_CONNECTOR_CONTINUITY.webp[39m[0m
+[  30% ] [90m[1m_update_scan_actions[22m | 09_GATE_DECON_CONNECTOR_GAME.png[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | 09_GATE_DECON_CONNECTOR_GAME.webp[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | 04_CONTAINMENT_JUNCTION_CONTINUITY.png[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | 04_CONTAINMENT_JUNCTION_CONTINUITY.webp[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | 04_CONTAINMENT_JUNCTION_GAME.png[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | 04_CONTAINMENT_JUNCTION_GAME.webp[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | 05_CORE_C_CONTINUITY.png[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | 05_CORE_C_CONTINUITY.webp[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | 05_CORE_C_GAME.png[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | 05_CORE_C_GAME.webp[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | 02_DECON_CORRIDOR_CONTINUITY.png[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | 02_DECON_CORRIDOR_CONTINUITY.webp[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | 02_DECON_CORRIDOR_GAME.png[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | 02_DECON_CORRIDOR_GAME.webp[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | 06_EMERGENCY_LIFT_CONTINUITY.png[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | 06_EMERGENCY_LIFT_CONTINUITY.webp[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | 06_EMERGENCY_LIFT_GAME.png[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | 06_EMERGENCY_LIFT_GAME.webp[39m[0m
+[  35% ] [90m[1m_update_scan_actions[22m | 07_EMERGENCY_STORES_CONTINUITY.png[39m[0m
+[  35% ] [90m[1m_update_scan_actions[22m | 07_EMERGENCY_STORES_CONTINUITY.webp[39m[0m
+[  35% ] [90m[1m_update_scan_actions[22m | 07_EMERGENCY_STORES_GAME.png[39m[0m
+[  35% ] [90m[1m_update_scan_actions[22m | 07_EMERGENCY_STORES_GAME.webp[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | barrier.png[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | cabinet.png[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | crate.png[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | generator.png[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | 01_OUTER_GATE_CONTINUITY.png[39m[0m
+[  37% ] [90m[1m_update_scan_actions[22m | 01_OUTER_GATE_CONTINUITY.webp[39m[0m
+[  37% ] [90m[1m_update_scan_actions[22m | 01_OUTER_GATE_GAME.png[39m[0m
+[  37% ] [90m[1m_update_scan_actions[22m | 01_OUTER_GATE_GAME.webp[39m[0m
+[  37% ] [90m[1m_update_scan_actions[22m | archive_data_stack.svg[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | core_anchor_console.svg[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | decon_purge_column.svg[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | gate_access_terminal.svg[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | junction_lockdown_pylon.svg[39m[0m
+[  39% ] [90m[1m_update_scan_actions[22m | lift_control_relay.svg[39m[0m
+[  39% ] [90m[1m_update_scan_actions[22m | signal_holo_analyzer.svg[39m[0m
+[  39% ] [90m[1m_update_scan_actions[22m | stores_med_crate.svg[39m[0m
+[  39% ] [90m[1m_update_scan_actions[22m | archive_annex.svg[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | containment_core_c.svg[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | containment_junction.svg[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | decon_corridor.svg[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | emergency_lift.svg[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | emergency_stores.svg[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | outer_gate.svg[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | signal_lab.svg[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | 08_SIGNAL_LAB_CONTINUITY.png[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | 08_SIGNAL_LAB_CONTINUITY.webp[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | 08_SIGNAL_LAB_GAME.png[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | 08_SIGNAL_LAB_GAME.webp[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | S02_10_MAINTENANCE_RELAY_ARCHIVE_CONTINUITY.png[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | S02_10_MAINTENANCE_RELAY_ARCHIVE_CONTINUITY.webp[39m[0m
+[  43% ] [90m[1m_update_scan_actions[22m | S02_10_MAINTENANCE_RELAY_ARCHIVE_GAME.png[39m[0m
+[  43% ] [90m[1m_update_scan_actions[22m | S02_10_MAINTENANCE_RELAY_ARCHIVE_GAME.webp[39m[0m
+[  43% ] [90m[1m_update_scan_actions[22m | S02_15_QUARANTINE_ECHO_RECORDER_CONTINUITY.png[39m[0m
+[  43% ] [90m[1m_update_scan_actions[22m | S02_15_QUARANTINE_ECHO_RECORDER_CONTINUITY.webp[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | S02_15_QUARANTINE_ECHO_RECORDER_GAME.png[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | S02_15_QUARANTINE_ECHO_RECORDER_GAME.webp[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | S02_12_QUARANTINE_SUBLEVEL_RELAY_CONTINUITY.png[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | S02_12_QUARANTINE_SUBLEVEL_RELAY_CONTINUITY.webp[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | S02_12_QUARANTINE_SUBLEVEL_RELAY_GAME.png[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | S02_12_QUARANTINE_SUBLEVEL_RELAY_GAME.webp[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | S02_09_REENTRY_MAINTENANCE_CONTINUITY.png[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | S02_09_REENTRY_MAINTENANCE_CONTINUITY.webp[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | S02_09_REENTRY_MAINTENANCE_GAME.png[39m[0m
+[  46% ] [90m[1m_update_scan_actions[22m | S02_09_REENTRY_MAINTENANCE_GAME.webp[39m[0m
+[  46% ] [90m[1m_update_scan_actions[22m | S02_14_RELAY_ARCHIVE_FIELD_CACHE_CONTINUITY.png[39m[0m
+[  46% ] [90m[1m_update_scan_actions[22m | S02_14_RELAY_ARCHIVE_FIELD_CACHE_CONTINUITY.webp[39m[0m
+[  46% ] [90m[1m_update_scan_actions[22m | S02_14_RELAY_ARCHIVE_FIELD_CACHE_GAME.png[39m[0m
+[  47% ] [90m[1m_update_scan_actions[22m | S02_14_RELAY_ARCHIVE_FIELD_CACHE_GAME.webp[39m[0m
+[  47% ] [90m[1m_update_scan_actions[22m | S02_11_RELAY_ARCHIVE_QUARANTINE_CONTINUITY.png[39m[0m
+[  47% ] [90m[1m_update_scan_actions[22m | S02_11_RELAY_ARCHIVE_QUARANTINE_CONTINUITY.webp[39m[0m
+[  47% ] [90m[1m_update_scan_actions[22m | S02_11_RELAY_ARCHIVE_QUARANTINE_GAME.png[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | S02_11_RELAY_ARCHIVE_QUARANTINE_GAME.webp[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | S02_13_SUBLEVEL_RELAY_SERVICE_LIFT_CONTINUITY.png[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | S02_13_SUBLEVEL_RELAY_SERVICE_LIFT_CONTINUITY.webp[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | S02_13_SUBLEVEL_RELAY_SERVICE_LIFT_GAME.png[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | S02_13_SUBLEVEL_RELAY_SERVICE_LIFT_GAME.webp[39m[0m
+[  49% ] [90m[1m_update_scan_actions[22m | S02_08_ECHO_RECORDER_CONTINUITY.png[39m[0m
+[  49% ] [90m[1m_update_scan_actions[22m | S02_08_ECHO_RECORDER_CONTINUITY.webp[39m[0m
+[  49% ] [90m[1m_update_scan_actions[22m | S02_08_ECHO_RECORDER_GAME.png[39m[0m
+[  49% ] [90m[1m_update_scan_actions[22m | S02_08_ECHO_RECORDER_GAME.webp[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | S02_02_FLOODED_MAINTENANCE_CONTINUITY.png[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | S02_02_FLOODED_MAINTENANCE_CONTINUITY.webp[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | S02_02_FLOODED_MAINTENANCE_GAME.png[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | S02_02_FLOODED_MAINTENANCE_GAME.webp[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | S02_04_QUARANTINE_CROSSING_CONTINUITY.png[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | S02_04_QUARANTINE_CROSSING_CONTINUITY.webp[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | S02_04_QUARANTINE_CROSSING_GAME.png[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | S02_04_QUARANTINE_CROSSING_GAME.webp[39m[0m
+[  52% ] [90m[1m_update_scan_actions[22m | S02_03_RELAY_ARCHIVE_CONTINUITY.png[39m[0m
+[  52% ] [90m[1m_update_scan_actions[22m | S02_03_RELAY_ARCHIVE_CONTINUITY.webp[39m[0m
+[  52% ] [90m[1m_update_scan_actions[22m | S02_03_RELAY_ARCHIVE_GAME.png[39m[0m
+[  52% ] [90m[1m_update_scan_actions[22m | S02_03_RELAY_ARCHIVE_GAME.webp[39m[0m
+[  52% ] [90m[1m_update_scan_actions[22m | S02_07_RESERVE_FIELD_CACHE_CONTINUITY.png[39m[0m
+[  53% ] [90m[1m_update_scan_actions[22m | S02_07_RESERVE_FIELD_CACHE_CONTINUITY.webp[39m[0m
+[  53% ] [90m[1m_update_scan_actions[22m | S02_07_RESERVE_FIELD_CACHE_GAME.png[39m[0m
+[  53% ] [90m[1m_update_scan_actions[22m | S02_07_RESERVE_FIELD_CACHE_GAME.webp[39m[0m
+[  53% ] [90m[1m_update_scan_actions[22m | S02_06_SERVICE_LIFT_CONTINUITY.png[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | S02_06_SERVICE_LIFT_CONTINUITY.webp[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | S02_06_SERVICE_LIFT_GAME.png[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | S02_06_SERVICE_LIFT_GAME.webp[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | S02_01_SERVICE_REENTRY_CONTINUITY.png[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | S02_01_SERVICE_REENTRY_CONTINUITY.webp[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | S02_01_SERVICE_REENTRY_GAME.png[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | S02_01_SERVICE_REENTRY_GAME.webp[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | S02_05_SUBLEVEL_RELAY_CONTINUITY.png[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | S02_05_SUBLEVEL_RELAY_CONTINUITY.webp[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | S02_05_SUBLEVEL_RELAY_GAME.png[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | S02_05_SUBLEVEL_RELAY_GAME.webp[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | S03_05_ANCHOR_REMNANT_CONTINUITY.png[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | S03_05_ANCHOR_REMNANT_CONTINUITY.webp[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | S03_05_ANCHOR_REMNANT_GAME.png[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | S03_05_ANCHOR_REMNANT_GAME.webp[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | S03_07_BREACHED_ARMORY_CONTINUITY.png[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | S03_07_BREACHED_ARMORY_CONTINUITY.webp[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | S03_07_BREACHED_ARMORY_GAME.png[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | S03_07_BREACHED_ARMORY_GAME.webp[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | S03_03_CARRIER_TRACE_CONTINUITY.png[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | S03_03_CARRIER_TRACE_CONTINUITY.webp[39m[0m
+[  59% ] [90m[1m_update_scan_actions[22m | S03_03_CARRIER_TRACE_GAME.png[39m[0m
+[  59% ] [90m[1m_update_scan_actions[22m | S03_03_CARRIER_TRACE_GAME.webp[39m[0m
+[  59% ] [90m[1m_update_scan_actions[22m | S03_04_COLLAPSED_BULKHEAD_CONTINUITY.png[39m[0m
+[  59% ] [90m[1m_update_scan_actions[22m | S03_04_COLLAPSED_BULKHEAD_CONTINUITY.webp[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | S03_04_COLLAPSED_BULKHEAD_GAME.png[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | S03_04_COLLAPSED_BULKHEAD_GAME.webp[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | S03_13_ANCHOR_EMERGENCY_SHAFT_CONTINUITY.png[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | S03_13_ANCHOR_EMERGENCY_SHAFT_CONTINUITY.webp[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | S03_13_ANCHOR_EMERGENCY_SHAFT_GAME.png[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | S03_13_ANCHOR_EMERGENCY_SHAFT_GAME.webp[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | S03_12_BULKHEAD_ANCHOR_REMNANT_CONTINUITY.png[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | S03_12_BULKHEAD_ANCHOR_REMNANT_CONTINUITY.webp[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | S03_12_BULKHEAD_ANCHOR_REMNANT_GAME.png[39m[0m
+[  62% ] [90m[1m_update_scan_actions[22m | S03_12_BULKHEAD_ANCHOR_REMNANT_GAME.webp[39m[0m
+[  62% ] [90m[1m_update_scan_actions[22m | S03_15_BULKHEAD_RESONANCE_CONTINUITY.png[39m[0m
+[  62% ] [90m[1m_update_scan_actions[22m | S03_15_BULKHEAD_RESONANCE_CONTINUITY.webp[39m[0m
+[  62% ] [90m[1m_update_scan_actions[22m | S03_15_BULKHEAD_RESONANCE_GAME.png[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | S03_15_BULKHEAD_RESONANCE_GAME.webp[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | S03_14_CARRIER_TRACE_ARMORY_CONTINUITY.png[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | S03_14_CARRIER_TRACE_ARMORY_CONTINUITY.webp[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | S03_14_CARRIER_TRACE_ARMORY_GAME.png[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | S03_14_CARRIER_TRACE_ARMORY_GAME.webp[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | S03_11_CARRIER_TRACE_BULKHEAD_CONTINUITY.png[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | S03_11_CARRIER_TRACE_BULKHEAD_CONTINUITY.webp[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | S03_11_CARRIER_TRACE_BULKHEAD_GAME.png[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | S03_11_CARRIER_TRACE_BULKHEAD_GAME.webp[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | S03_10_DEFENSE_CARRIER_TRACE_CONTINUITY.png[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | S03_10_DEFENSE_CARRIER_TRACE_CONTINUITY.webp[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | S03_10_DEFENSE_CARRIER_TRACE_GAME.png[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | S03_10_DEFENSE_CARRIER_TRACE_GAME.webp[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | S03_09_PRESSURE_DEFENSE_CONTINUITY.png[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | S03_09_PRESSURE_DEFENSE_CONTINUITY.webp[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | S03_09_PRESSURE_DEFENSE_GAME.png[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | S03_09_PRESSURE_DEFENSE_GAME.webp[39m[0m
+[  67% ] [90m[1m_update_scan_actions[22m | S03_06_EMERGENCY_SHAFT_CONTINUITY.png[39m[0m
+[  67% ] [90m[1m_update_scan_actions[22m | S03_06_EMERGENCY_SHAFT_CONTINUITY.webp[39m[0m
+[  67% ] [90m[1m_update_scan_actions[22m | S03_06_EMERGENCY_SHAFT_GAME.png[39m[0m
+[  67% ] [90m[1m_update_scan_actions[22m | S03_06_EMERGENCY_SHAFT_GAME.webp[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | S03_02_INNER_DEFENSE_LINE_CONTINUITY.png[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | S03_02_INNER_DEFENSE_LINE_CONTINUITY.webp[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | S03_02_INNER_DEFENSE_LINE_GAME.png[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | S03_02_INNER_DEFENSE_LINE_GAME.webp[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | S03_01_PRESSURE_BREACH_CONTINUITY.png[39m[0m
+[  69% ] [90m[1m_update_scan_actions[22m | S03_01_PRESSURE_BREACH_CONTINUITY.webp[39m[0m
+[  69% ] [90m[1m_update_scan_actions[22m | S03_01_PRESSURE_BREACH_GAME.png[39m[0m
+[  69% ] [90m[1m_update_scan_actions[22m | S03_01_PRESSURE_BREACH_GAME.webp[39m[0m
+[  69% ] [90m[1m_update_scan_actions[22m | S03_08_RESONANCE_CHAMBER_CONTINUITY.png[39m[0m
+[  70% ] [90m[1m_update_scan_actions[22m | S03_08_RESONANCE_CHAMBER_CONTINUITY.webp[39m[0m
+[  70% ] [90m[1m_update_scan_actions[22m | S03_08_RESONANCE_CHAMBER_GAME.png[39m[0m
+[  70% ] [90m[1m_update_scan_actions[22m | S03_08_RESONANCE_CHAMBER_GAME.webp[39m[0m
+[  70% ] [90m[1m_update_scan_actions[22m | NotoSansKR-Regular.otf[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | Rajdhani-Medium.ttf[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | aster_overclock.svg[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | aster_prism.svg[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | aster_vector_dash.svg[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | mica_pulse_scan.svg[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | mica_relay_step.svg[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | mica_sensor_bloom.svg[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | rook_breach_slam.svg[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | rook_bulwark.svg[39m[0m
+[  73% ] [90m[1m_update_scan_actions[22m | rook_scatter_cycle.svg[39m[0m
+[  73% ] [90m[1m_update_scan_actions[22m | aster_coil_rifle.svg[39m[0m
+[  73% ] [90m[1m_update_scan_actions[22m | mica_sensor_carbine.svg[39m[0m
+[  73% ] [90m[1m_update_scan_actions[22m | rook_scattergun.svg[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | ASTER_COIL_PROJECTILE_V6_RGBA.webp[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | E_idle.web.webp[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | E_idle.webp[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | E_walk.web.webp[39m[0m
+[  75% ] [90m[1m_update_scan_actions[22m | E_walk.webp[39m[0m
+[  75% ] [90m[1m_update_scan_actions[22m | NE_idle.web.webp[39m[0m
+[  75% ] [90m[1m_update_scan_actions[22m | NE_idle.webp[39m[0m
+[  75% ] [90m[1m_update_scan_actions[22m | NE_walk.web.webp[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | NE_walk.webp[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | NW_idle.web.webp[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | NW_idle.webp[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | NW_walk.web.webp[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | NW_walk.webp[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | N_idle.web.webp[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | N_idle.webp[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | N_walk.web.webp[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | N_walk.webp[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | portrait.png[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | SE_idle.web.webp[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | SE_idle.webp[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | SE_walk.web.webp[39m[0m
+[  79% ] [90m[1m_update_scan_actions[22m | SE_walk.webp[39m[0m
+[  79% ] [90m[1m_update_scan_actions[22m | SW_idle.web.webp[39m[0m
+[  79% ] [90m[1m_update_scan_actions[22m | SW_idle.webp[39m[0m
+[  79% ] [90m[1m_update_scan_actions[22m | SW_walk.web.webp[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | SW_walk.webp[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | S_idle.web.webp[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | S_idle.webp[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | S_walk.web.webp[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | S_walk.webp[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | W_idle.web.webp[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | W_idle.webp[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | W_walk.web.webp[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | W_walk.webp[39m[0m
+[  82% ] [90m[1m_update_scan_actions[22m | E_idle.web.webp[39m[0m
+[  82% ] [90m[1m_update_scan_actions[22m | E_idle.webp[39m[0m
+[  82% ] [90m[1m_update_scan_actions[22m | E_walk.web.webp[39m[0m
+[  82% ] [90m[1m_update_scan_actions[22m | E_walk.webp[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | NE_idle.web.webp[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | NE_idle.webp[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | NE_walk.web.webp[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | NE_walk.webp[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | NW_idle.web.webp[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | NW_idle.webp[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | NW_walk.web.webp[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | NW_walk.webp[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | N_idle.web.webp[39m[0m
+[  85% ] [90m[1m_update_scan_actions[22m | N_idle.webp[39m[0m
+[  85% ] [90m[1m_update_scan_actions[22m | N_walk.web.webp[39m[0m
+[  85% ] [90m[1m_update_scan_actions[22m | N_walk.webp[39m[0m
+[  85% ] [90m[1m_update_scan_actions[22m | portrait.png[39m[0m
+[  86% ] [90m[1m_update_scan_actions[22m | SE_idle.web.webp[39m[0m
+[  86% ] [90m[1m_update_scan_actions[22m | SE_idle.webp[39m[0m
+[  86% ] [90m[1m_update_scan_actions[22m | SE_walk.web.webp[39m[0m
+[  86% ] [90m[1m_update_scan_actions[22m | SE_walk.webp[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | SW_idle.web.webp[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | SW_idle.webp[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | SW_walk.web.webp[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | SW_walk.webp[39m[0m
+[  88% ] [90m[1m_update_scan_actions[22m | S_idle.web.webp[39m[0m
+[  88% ] [90m[1m_update_scan_actions[22m | S_idle.webp[39m[0m
+[  88% ] [90m[1m_update_scan_actions[22m | S_walk.web.webp[39m[0m
+[  88% ] [90m[1m_update_scan_actions[22m | S_walk.webp[39m[0m
+[  88% ] [90m[1m_update_scan_actions[22m | W_idle.web.webp[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | W_idle.webp[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | W_walk.web.webp[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | W_walk.webp[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | E_idle.web.webp[39m[0m
+[  90% ] [90m[1m_update_scan_actions[22m | E_idle.webp[39m[0m
+[  90% ] [90m[1m_update_scan_actions[22m | E_walk.web.webp[39m[0m
+[  90% ] [90m[1m_update_scan_actions[22m | E_walk.webp[39m[0m
+[  90% ] [90m[1m_update_scan_actions[22m | NE_idle.web.webp[39m[0m
+[  91% ] [90m[1m_update_scan_actions[22m | NE_idle.webp[39m[0m
+[  91% ] [90m[1m_update_scan_actions[22m | NE_walk.web.webp[39m[0m
+[  91% ] [90m[1m_update_scan_actions[22m | NE_walk.webp[39m[0m
+[  91% ] [90m[1m_update_scan_actions[22m | NW_idle.web.webp[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | NW_idle.webp[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | NW_walk.web.webp[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | NW_walk.webp[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | N_idle.web.webp[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | N_idle.webp[39m[0m
+[  93% ] [90m[1m_update_scan_actions[22m | N_walk.web.webp[39m[0m
+[  93% ] [90m[1m_update_scan_actions[22m | N_walk.webp[39m[0m
+[  93% ] [90m[1m_update_scan_actions[22m | portrait.png[39m[0m
+[  93% ] [90m[1m_update_scan_actions[22m | SE_idle.web.webp[39m[0m
+[  94% ] [90m[1m_update_scan_actions[22m | SE_idle.webp[39m[0m
+[  94% ] [90m[1m_update_scan_actions[22m | SE_walk.web.webp[39m[0m
+[  94% ] [90m[1m_update_scan_actions[22m | SE_walk.webp[39m[0m
+[  94% ] [90m[1m_update_scan_actions[22m | SW_idle.web.webp[39m[0m
+[  95% ] [90m[1m_update_scan_actions[22m | SW_idle.webp[39m[0m
+[  95% ] [90m[1m_update_scan_actions[22m | SW_walk.web.webp[39m[0m
+[  95% ] [90m[1m_update_scan_actions[22m | SW_walk.webp[39m[0m
+[  95% ] [90m[1m_update_scan_actions[22m | S_idle.web.webp[39m[0m
+[  96% ] [90m[1m_update_scan_actions[22m | S_idle.webp[39m[0m
+[  96% ] [90m[1m_update_scan_actions[22m | S_walk.web.webp[39m[0m
+[  96% ] [90m[1m_update_scan_actions[22m | S_walk.webp[39m[0m
+[  96% ] [90m[1m_update_scan_actions[22m | W_idle.web.webp[39m[0m
+[  96% ] [90m[1m_update_scan_actions[22m | W_idle.webp[39m[0m
+[  97% ] [90m[1m_update_scan_actions[22m | W_walk.web.webp[39m[0m
+[  97% ] [90m[1m_update_scan_actions[22m | W_walk.webp[39m[0m
+[  97% ] [90m[1m_update_scan_actions[22m | base.mp3[39m[0m
+[  97% ] [90m[1m_update_scan_actions[22m | boss.mp3[39m[0m
+[  98% ] [90m[1m_update_scan_actions[22m | results.mp3[39m[0m
+[  98% ] [90m[1m_update_scan_actions[22m | stage1.mp3[39m[0m
+[  98% ] [90m[1m_update_scan_actions[22m | stage2.mp3[39m[0m
+[  98% ] [90m[1m_update_scan_actions[22m | stage3.mp3[39m[0m
+[  99% ] [90m[1m_update_scan_actions[22m | stage4.mp3[39m[0m
+[  99% ] [90m[1m_update_scan_actions[22m | stage5.mp3[39m[0m
+[  99% ] [90m[1m_update_scan_actions[22m | title.mp3[39m[0m
+[92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started 애셋 (다시) 가져오는 중 (57 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[   1% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[   3% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[   5% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[   6% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[   8% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  10% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  12% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  13% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  15% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  17% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  18% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  20% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  22% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  24% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  25% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  27% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  29% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  31% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  32% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  34% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  36% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  37% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  39% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  41% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  43% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  44% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  46% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  48% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  50% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  51% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  53% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  55% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  56% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  58% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  60% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  62% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  63% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  65% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  67% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  68% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  70% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  72% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  74% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  75% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  77% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  79% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  81% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  82% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  84% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  86% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  87% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  89% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  91% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  93% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  94% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[  96% ] [90m[1mreimport[22m | 다시 가져올 파일을 준비 중...[39m[0m
+[   0% ] [90m[1mreimport[22m | 다시 가져오기 전 작업을 수행 중...[39m[0m
+[   0% ] [90m[1mreimport[22m | Rajdhani-Medium.ttf[39m[0m
+[   1% ] [90m[1mreimport[22m | NotoSansKR-Regular.otf[39m[0m
+[   3% ] [90m[1mreimport[22m | Rajdhani-Medium.ttf[39m[0m
+[   5% ] [90m[1mreimport[22m | NotoSansKR-Regular.otf[39m[0m
+[   6% ] [90m[1mreimport[22m | decon_purge_column.svg[39m[0m
+[   8% ] [90m[1mreimport[22m | gate_access_terminal.svg[39m[0m
+[  10% ] [90m[1mreimport[22m | junction_lockdown_pylon.svg[39m[0m
+[  12% ] [90m[1mreimport[22m | lift_control_relay.svg[39m[0m
+[  13% ] [90m[1mreimport[22m | signal_holo_analyzer.svg[39m[0m
+[  15% ] [90m[1mreimport[22m | stores_med_crate.svg[39m[0m
+[  17% ] [90m[1mreimport[22m | archive_annex.svg[39m[0m
+[  18% ] [90m[1mreimport[22m | containment_core_c.svg[39m[0m
+[  20% ] [90m[1mreimport[22m | containment_junction.svg[39m[0m
+[  22% ] [90m[1mreimport[22m | decon_corridor.svg[39m[0m
+[  24% ] [90m[1mreimport[22m | emergency_lift.svg[39m[0m
+[  25% ] [90m[1mreimport[22m | emergency_stores.svg[39m[0m
+[  27% ] [90m[1mreimport[22m | outer_gate.svg[39m[0m
+[  29% ] [90m[1mreimport[22m | signal_lab.svg[39m[0m
+[  31% ] [90m[1mreimport[22m | aster_overclock.svg[39m[0m
+[  32% ] [90m[1mreimport[22m | aster_prism.svg[39m[0m
+[  34% ] [90m[1mreimport[22m | aster_vector_dash.svg[39m[0m
+[  36% ] [90m[1mreimport[22m | mica_pulse_scan.svg[39m[0m
+[  37% ] [90m[1mreimport[22m | mica_relay_step.svg[39m[0m
+[  39% ] [90m[1mreimport[22m | mica_sensor_bloom.svg[39m[0m
+[  41% ] [90m[1mreimport[22m | rook_breach_slam.svg[39m[0m
+[  43% ] [90m[1mreimport[22m | rook_bulwark.svg[39m[0m
+[  44% ] [90m[1mreimport[22m | rook_scatter_cycle.svg[39m[0m
+[  46% ] [90m[1mreimport[22m | aster_coil_rifle.svg[39m[0m
+[  48% ] [90m[1mreimport[22m | mica_sensor_carbine.svg[39m[0m
+[  50% ] [90m[1mreimport[22m | rook_scattergun.svg[39m[0m
+[  51% ] [90m[1mreimport[22m | aster_detail_overlay.svg[39m[0m
+[  53% ] [90m[1mreimport[22m | aster_master.svg[39m[0m
+[  55% ] [90m[1mreimport[22m | aster_portrait.svg[39m[0m
+[  56% ] [90m[1mreimport[22m | aster_rig_sheet.svg[39m[0m
+[  58% ] [90m[1mreimport[22m | mica_detail_overlay.svg[39m[0m
+[  60% ] [90m[1mreimport[22m | mica_master.svg[39m[0m
+[  62% ] [90m[1mreimport[22m | mica_portrait.svg[39m[0m
+[  63% ] [90m[1mreimport[22m | mica_rig_sheet.svg[39m[0m
+[  65% ] [90m[1mreimport[22m | rook_detail_overlay.svg[39m[0m
+[  67% ] [90m[1mreimport[22m | rook_master.svg[39m[0m
+[  68% ] [90m[1mreimport[22m | rook_portrait.svg[39m[0m
+[  70% ] [90m[1mreimport[22m | rook_rig_sheet.svg[39m[0m
+[  72% ] [90m[1mreimport[22m | aberrant_melee_detail_overlay.svg[39m[0m
+[  74% ] [90m[1mreimport[22m | aberrant_melee_master.svg[39m[0m
+[  75% ] [90m[1mreimport[22m | aberrant_melee_rig_sheet.svg[39m[0m
+[  77% ] [90m[1mreimport[22m | recon_drone_detail_overlay.svg[39m[0m
+[  79% ] [90m[1mreimport[22m | recon_drone_master.svg[39m[0m
+[  81% ] [90m[1mreimport[22m | recon_drone_rig_sheet.svg[39m[0m
+[  82% ] [90m[1mreimport[22m | rifle_trooper_detail_overlay.svg[39m[0m
+[  84% ] [90m[1mreimport[22m | rifle_trooper_master.svg[39m[0m
+[  86% ] [90m[1mreimport[22m | rifle_trooper_rig_sheet.svg[39m[0m
+[  87% ] [90m[1mreimport[22m | shield_breacher_detail_overlay.svg[39m[0m
+[  89% ] [90m[1mreimport[22m | shield_breacher_master.svg[39m[0m
+[  91% ] [90m[1mreimport[22m | shield_breacher_rig_sheet.svg[39m[0m
+[  93% ] [90m[1mreimport[22m | signal_anchor_guardian_detail_overlay.svg[39m[0m
+[  94% ] [90m[1mreimport[22m | signal_anchor_guardian_master.svg[39m[0m
+[  96% ] [90m[1mreimport[22m | signal_anchor_guardian_rig_sheet.svg[39m[0m
+[  98% ] [90m[1mreimport[22m | 애셋 가져오기 마무리 중...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started 애셋 (다시) 가져오는 중 (57 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | 다시 가져오기 후 작업을 수행 중...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started 편집기를 불러오는 중 (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | 편집기 레이아웃을 불러오는 중...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | 독을 불러오는 중...[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m

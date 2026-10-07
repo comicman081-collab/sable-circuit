@@ -1,0 +1,30 @@
+{
+  "earlier_operation_rows_unchanged": {
+    "data/visual/site7_plate_floors.json": true,
+    "data/visual/site7_battle_art.json": true,
+    "data/visual/site7_battle_layouts.json": true,
+    "data/visual/site7_environment_props.json": true,
+    "data/visual/site7_mood.json": true,
+    "data/visual/site7_mood_lamps.json": true,
+    "data/visual/site7_void_masks.json": true,
+    "data/visual/site7_seam_light.json": true,
+    "data/visual/site7_world_layout.json": true
+  },
+  "protected_paths_equal_HEAD": [
+    "data/story/site7_campaign.json",
+    "data/missions/MIS_CH01_08.json",
+    "data/missions/MIS_CH01_09.json",
+    "data/missions/MIS_CH01_10.json",
+    "data/art_profiles/enemy_profiles.json"
+  ],
+  "Claude_owned": [
+    "AGENTS.md",
+    "docs/production",
+    "tests",
+    "tools/maintenance/run_regression_suite.py",
+    "tools/environment/audit_site7_plate_lighting.py",
+    "tools/environment/record_stage_battle_with_audio.py"
+  ],
+  "Codex_edited_tests": false,
+  "activation": false
+}

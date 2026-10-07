@@ -1,0 +1,13 @@
+# E neutral caller preflight R1
+
+Independent reviewer: `/root/tripo_intake_review`, Ponytail FULL. **HOLD for executing this exact caller/profile pair**, separately from the PASS source-intake review. No E builder or test was executed by this reviewer.
+
+Inspected caller `reviewed_rgba_surface_harness.py` SHA `cbe65065d2c68c4934a7d21f979c55693330c34193295244a0acc2e6758312ef`, helper `verify_existing_source.py` SHA `3f37f3d2292d243b8542d855b281feb6c6765810840203becdbe8ca468f74d70`, and `combat_E_r01/MICA_E_PROFILE_R1.json` SHA `ee9a0e652fa04c8f17141f9a94a6c33c67e6e66b10211f8346f026cfe9ce45b9`.
+
+1. **Definite execution failure:** every profile weight region uses `polygon`, while `surface_region_topology.compile_regions` requires `polygon_px`. The caller passes the profile directly, so compilation raises KeyError. Correct a fresh profile revision to the existing schema.
+2. **Project-output routing:** the parent `prepare` launches `checked_authority` before routing the child environment. That first helper inherits ambient TEMP/TMP/APPDATA/cache paths. Supply the existing output cache explicitly to both authority-verifier calls before launch; `-B` alone is not the full project-local routing requirement.
+3. **Consumed-code binding:** the child resolves declared dependency references but compares only the builder reference with the file it actually consumes. Also compare the declared verifier/intake/topology/generation-harness references to the actual fixed helper/module paths. A valid reference to another file is not proof of the executed helper's identity.
+
+The intended source-preserving route is appropriate for one neutral diagnostic: parent verifies actual source authority, copies the reviewed RGBA bytes including closed holes, child checks the same RGBA SHA and original visible RGB, and the existing source-UV topology remains visible art with transparent unknown closure. The 22 projected bone landmarks and anatomical regions are suitable inputs for an implementation probe, with inferred 2D semantics retained. The coherent upper/weapon region is assigned to spine_03; it does not yet prove recoil, grips or weapon sockets in motion. Forward yaw and weapon_binding metadata are not implemented movement/socket behavior.
+
+The old matte and polygon-point helpers in this new caller are unused; removing them is a nonblocking simplification that avoids implying a fallback re-keying route. Old reviewed builders must remain unchanged. The source PASS does not approve this unexecuted neutral result, lower-body retarget, firing or runtime. Render clarity remains a separate requirement and is not waived by battle scale.

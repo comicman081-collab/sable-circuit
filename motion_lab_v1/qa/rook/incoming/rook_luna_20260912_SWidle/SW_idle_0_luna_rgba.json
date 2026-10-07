@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "operation": "exact-green plus connected chroma-green transparency under chroma-green-excluded costume contract",
+  "input": "motion_lab_v1/qa/rook/normalized_candidates/SW_idle_0_luna_normalized.png",
+  "input_sha256": "3304498467b21bc06532d8f62d5ce475ede02b994efa98f7f57cc2a00556e776",
+  "output": "motion_lab_v1/qa/rook/incoming/rook_luna_20260912_SWidle/SW_idle_0_luna_rgba_candidate.png",
+  "output_sha256": "887e00c95bf37c94d01bb5bc8adbd71b67658106d455fae4f4f6b0cf7a94d6da",
+  "native_size": [
+    1024,
+    1536
+  ],
+  "transparent_pixels": 1029300,
+  "removed_strong_green_non_exact_pixels": 7957,
+  "visible_pixels": 543564,
+  "visible_rgb_byte_exact": true,
+  "visible_strong_green_residual_pixels": 10,
+  "visible_strong_green_alpha_boundary_residual_pixels": 0,
+  "quality_verdict": "HOLD_VISUAL_EDGE_REVIEW"
+}

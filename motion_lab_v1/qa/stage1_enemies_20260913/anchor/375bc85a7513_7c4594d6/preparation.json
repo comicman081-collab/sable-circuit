@@ -1,0 +1,41 @@
+{
+  "id": "anchor",
+  "status": "CANDIDATE_NOT_REVIEWED",
+  "source": "art\\site7_enemies_raw\\anchor_master.png",
+  "sourceSHA256": "375bc85a7513b20509b53e869578bb45d846732441ff92de6ce83613dd4c827e",
+  "toolResponse": {
+    "path": "qa\\stage1_enemies_20260913\\anchor_master_tool_response.json",
+    "sha256": "7224b548eb652e6f96679230ed0eeb7774c06baa7e7e8a8a0a552dfd9d651c39"
+  },
+  "sourceNative": [
+    1254,
+    1254
+  ],
+  "box": [
+    11,
+    0,
+    1238,
+    1247
+  ],
+  "candidate": "qa\\stage1_enemies_20260913\\anchor\\375bc85a7513_7c4594d6\\candidate_rgba.png",
+  "candidateSHA256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+  "candidateNative": [
+    1227,
+    1247
+  ],
+  "native_review": [
+    1920,
+    1080
+  ],
+  "operation": "existing key_image chroma/alpha separation then native crop only",
+  "preparationCodeSHA256": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a",
+  "matteCodeSHA256": "1395b21aa409e4605ce769479e9984968f0a88912adda648879b6869d2dd527f",
+  "implementationDependencies": {
+    "preparation": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a",
+    "matte": "1395b21aa409e4605ce769479e9984968f0a88912adda648879b6869d2dd527f",
+    "provenance": "37d78bc48061a439dbc1264e118dd987bb9ea0f4e497a446e17c8101da492bb7"
+  },
+  "resampling": false,
+  "anatomicalWarp": false,
+  "runtimePromotion": false
+}

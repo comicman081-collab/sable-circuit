@@ -1,0 +1,22 @@
+{
+  "status": "STANDING_MASTER_TEST_COMPLETE_MOTION_NOT_TESTED",
+  "tool": "image_gen.imagegen",
+  "native": [
+    1024,
+    1536
+  ],
+  "source_sha256": "6bc8b3e6f8c9cfebbb23b689bf669f2ebb065da72cb96566480ffd67094f1d5c",
+  "visual_review": "REVIEW_REQUIRED",
+  "observations": [
+    "Viewed original and native 1920x1080 light/dark upper and lower panels.",
+    "Hood, masked visor, silver plates, red stripes, right-only thigh holster, antenna and bullpup rifle remain recognizable.",
+    "Two continuous leg chains and two boots are visible; no third knee/shin branch observed.",
+    "Background separates cleanly on light/dark panels; original pixels and native alpha preserved.",
+    "Pose remains near-side aiming view; elevated game-camera alignment has not been established."
+  ],
+  "limitations": [
+    "One standing master only. No walking, multi-view, skinning, contact or runtime proof.",
+    "No production source replacement or humanoid enemy restoration."
+  ],
+  "runtimePromotion": false
+}

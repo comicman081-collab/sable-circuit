@@ -1,0 +1,74 @@
+{
+  "recordedAt": "2026-09-13T02:42:23.871860+00:00",
+  "character": "rook",
+  "status": "PASS_TECHNICAL_ONLY",
+  "package": {
+    "path": "dist/rook.package.json",
+    "sha256": "377893a0efcf6ec6932d85cb9312df40db06d43e1b073e9d12fca15017ab8765"
+  },
+  "inputSHA256": "fbe27d701e0a0297203f643ab33faf71894e41ff3d91093f21515f379e4d1fb1",
+  "checks": [
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "validate_character.py",
+        "--character",
+        "rook"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/rook/checks/20260913_114143_161403/0.log",
+        "sha256": "cec341e59dc0415696e4f97e967a90f0322f69369f8b9ce20b7703b59f0cd133"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests\\atlas-renderer.test.js",
+        "tests\\combat-aim.test.js",
+        "tests\\keyboard-input.test.js",
+        "tests\\simulation.test.js"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/rook/checks/20260913_114143_161403/1.log",
+        "sha256": "0f3a5771be8da7ee78c154b417f26078b30fd7b06f18ebfa390b46107dd4927d"
+      }
+    },
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/rook/checks/20260913_114143_161403/2.log",
+        "sha256": "58a523b1e560610f485b97ef6f23185caddce3a17aa1fd1b5e5c3f9b24e6c02f"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "verify_bundle.mjs",
+        "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\dist\\ROOK_Motion_Studio.html"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/rook/checks/20260913_114143_161403/3.log",
+        "sha256": "d48acfa04b8e79958d4263827d7c20ce1c919bf3d2ed60a8e8048868d443158d"
+      }
+    }
+  ],
+  "browser": null,
+  "locomotion": null,
+  "scope": "Input plus temporal selected-renderer checks when supplied; no automatic anatomy, foot-contact, visual approval or Luna generation claim"
+}

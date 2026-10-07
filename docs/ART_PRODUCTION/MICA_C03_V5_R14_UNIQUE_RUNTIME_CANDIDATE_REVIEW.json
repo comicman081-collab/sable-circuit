@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "role": "MICA C03 V5 R14 unique-frame runtime candidate review ledger",
+  "generated_at": "2026-09-05",
+  "actor_id": "CHR_PROTO_03",
+  "costume_id": "MICA_RECON_C03",
+  "candidate": "assets/units/operators/mica/fast_runtime_v1/candidate_r14_r8c_unique_move_qa",
+  "candidate_manifest": "assets/units/operators/mica/fast_runtime_v1/candidate_r14_r8c_unique_move_qa/MICA_C03_R14_R8C_UNIQUE_RUNTIME_CANDIDATE.json",
+  "candidate_manifest_sha256": "4febfdaa1e5424492ae160fc6d31a130b2b69b7fbc01355b6118fdd832d5b979",
+  "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+  "promotion": "HOLD_PENDING_PONYTAIL_FULL_AND_CHATGPT_WEB_REVIEW_AND_PACKAGE_GATE",
+  "source_art_modified": false,
+  "motion_source": "Blender + UAL R14 R8C source frames; deterministic atlas assembly only",
+  "frame_contract": {
+    "cell_size": 384,
+    "directions": ["E", "SE", "S", "SW", "W", "NW", "N", "NE"],
+    "unique_move_frames_per_direction": 24,
+    "root_motion_scale": 1.0,
+    "move_root_sync": "disabled for candidate; no duplicate raster hold samples",
+    "idle_and_fire": "copied unchanged from current runtime for QA isolation"
+  },
+  "local_runtime_evidence": {
+    "capture_script": "tests/render/mica_c03_v5_r14_candidate_runtime_capture.gd",
+    "evidence": "artifacts/mica_c03_v5_r14_candidate_runtime_capture/MICA_C03_V5_RUNTIME_UNIQUE_EVIDENCE_R14.json",
+    "evidence_sha256": "f4e6611e071c4c403011089ebddb0f4037e29169f2567ad9eaa3d229e5e90359",
+    "result": "PASS",
+    "native_resolution": [1920, 1080],
+    "fps": 24,
+    "frame_count": 192,
+    "active_frames_and_sector_match": "PASS",
+    "continuous_root_gate": "PASS; every transition advances; bounded scheduler cadence; root factor 1.0",
+    "collision_and_camera": "capture-only isolation; hidden squad/active actor collisions disabled; fixed world/no Camera2D lag",
+    "visual_promotion": "PONYTAIL_FULL_REVIEW_REQUIRED"
+  },
+  "video_evidence": {
+    "path": "artifacts/mica_c03_v5_r14_candidate_runtime_capture/MICA_C03_V5_R14_UNIQUE_MOVE_8DIR_NATIVE_1920X1080.mp4",
+    "sha256": "514b75df9d31b9b732c0c7d071b66390dd6805e766ce82b3cddc8d57b2b9a6e8",
+    "manifest": "artifacts/mica_c03_v5_r14_candidate_runtime_capture/MICA_C03_V5_R14_UNIQUE_MOVE_VIDEO_MANIFEST.json",
+    "manifest_sha256": "0e72c9c3f0790fb641afde320ea6d41dcb761ec7b22e0cc16612513027b3f0ad",
+    "native_dynamic_validation": "PASS",
+    "native_dynamic_validation_path": "artifacts/mica_c03_v5_r14_candidate_runtime_capture/MICA_C03_V5_R14_UNIQUE_MOVE_1080P_VALIDATION.json",
+    "native_dynamic_validation_sha256": "d792ebbcdd41b760e97d735fc2d7fc3333f60d18c97d59b9985f0080216fc5b7"
+  },
+  "contact_sheet_evidence": {
+    "path": "artifacts/mica_c03_v5_r14_candidate_runtime_capture/MICA_C03_V5_R14_UNIQUE_MOVE_CONTACT_1920X1080.png",
+    "sha256": "746f447fc4fbb912f7068585ae9b6e1aa9a942ce1ed4c0c2cfcbd1de6d03781f",
+    "container_validation": "PASS",
+    "validation_path": "artifacts/mica_c03_v5_r14_candidate_runtime_capture/MICA_C03_V5_R14_UNIQUE_MOVE_CONTACT_VALIDATION.json",
+    "validation_sha256": "5a31b2169a762b6c70be29413139bc53a295398d52c3b8016034f2702a1e8ccf"
+  },
+  "portable_html_preview": {
+    "path": "artifacts/mica_c03_v5_r14_candidate_preview/MICA_C03_INTERACTIVE_STRIDE_FIRE.html",
+    "sha256": "c1d3132c6979974dbd66c493f482efe1174568a6be6724d26fa2aef83fd55d50",
+    "bundle_manifest": "artifacts/mica_c03_v5_r14_candidate_preview/MICA_C03_INTERACTIVE_RUNTIME_BUNDLE.json",
+    "bundle_validation": "PASS_STATIC_RUNTIME_BUNDLE",
+    "bundle_validation_path": "artifacts/mica_c03_v5_r14_candidate_preview/MICA_C03_INTERACTIVE_BUNDLE_VALIDATION.json",
+    "bundle_validation_sha256": "481540f89f5563f6ae720a4880b93e595d547212f57694ae35a967d4924f692f",
+    "html_1080p_static_validation": "PASS_STATIC_CONFIG_ONLY",
+    "html_1080p_static_validation_path": "artifacts/mica_c03_v5_r14_candidate_preview/MICA_C03_INTERACTIVE_1080P_STATIC_VALIDATION.json",
+    "html_1080p_static_validation_sha256": "e1883586b8033a37cf6f5187f53c6653f7eadcb7124a31752025327531c4c675"
+  },
+  "prior_gate": {
+    "r13_ponytail_review": "docs/ART_PRODUCTION/MICA_C03_V5_RUNTIME_TEMPORAL_R13_RUNTIME_SYNC_REVIEW.json",
+    "r13_ponytail_review_sha256": "d14c83db9e5560f168194ed2aca476e27205d58d268fe166eec0a1f41146b16e",
+    "r13_result": "HOLD_STRICT_CADENCE_DUPLICATE_RASTER_PAIRS",
+    "r14_response": "unique 24/24 move cells per direction; root sync disabled; continuous-root gate re-run"
+  },
+  "review_gate": {
+    "ponytail_full": "PENDING_REVIEW",
+    "chatgpt_web_planning_conversation": "PENDING_ATTACHMENT_AND_REVIEW",
+    "runtime_and_pointer_promotion": "HOLD",
+    "do_not_delete_failed_or_held_assets": true,
+    "quarantine_policy": "retain all prior FAIL/HOLD candidates, derivatives, manifests, QA evidence, logs, and provenance until a completed replacement passes every required gate"
+  }
+}

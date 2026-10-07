@@ -1,0 +1,39 @@
+{
+  "captures": [
+    "res://qa/campaign_20260919/native_1789819435_529/base_initial.png",
+    "res://qa/campaign_20260919/native_1789819435_529/base_all_operations.png",
+    "res://qa/campaign_20260919/native_1789819435_529/stage2_briefing.png",
+    "res://qa/campaign_20260919/native_1789819435_529/stage2_encounter1.png",
+    "res://qa/campaign_20260919/native_1789819435_529/stage2_encounter3.png",
+    "res://qa/campaign_20260919/native_1789819435_529/stage2_encounter4.png",
+    "res://qa/campaign_20260919/native_1789819435_529/stage2_results.png",
+    "res://qa/campaign_20260919/native_1789819435_529/stage3_briefing.png",
+    "res://qa/campaign_20260919/native_1789819435_529/stage3_encounter1.png",
+    "res://qa/campaign_20260919/native_1789819435_529/stage3_encounter3.png",
+    "res://qa/campaign_20260919/native_1789819435_529/stage3_encounter4.png",
+    "res://qa/campaign_20260919/native_1789819435_529/stage3_results.png"
+  ],
+  "checks": 128,
+  "failures": [],
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "status": "PASS_TECHNICAL",
+  "synthetic_ui_unlocks": true,
+  "tested_sha256": {
+    "data/art_profiles/playable_profiles.json": "e7bfca32012dabc43a5c5764e1c601256f5949a42189da12f06e5a3bc1c7b7b9",
+    "data/story/site7_campaign.json": "c835483789b635b1b455382edce54048534d63eb29f9484690f93b52e2a1be36",
+    "data/visual/site7_battle_layouts.json": "132a426c7373fb8c36fb07bd91ff3eb5753c21fd9783b69b66b86e22ab572ad7",
+    "data/visual/site7_environment_props.json": "fc2927e0f2f4908ba2e9a7c28e10d91953a927fb90b9d60270ff7a28946be9c5",
+    "scripts/core/campaign_progression.gd": "2a71028d1816eb5405ac84a112b2f8a15a92132fac87ca51d18ada90f7a89cae",
+    "scripts/core/game_flow.gd": "0c4cb7b8ce0d168913e62c8afc62dc1b5a0d68ef7b97c9ab336145120f44ec87",
+    "scripts/core/site7_campaign.gd": "cd0cea8f2be51248bdedcbcf279b27ac63ce7b026688b314dca565f25aed63e6",
+    "scripts/missions/story_stage_01.gd": "ef29bb4402ecb99660ad66b0b68e6929f4f5c4ba38088d8f78490d1bd91f5977",
+    "scripts/ui/base_lobby.gd": "48a299bc7a9a26f7302bbe94271f031233a36a37d1c11733d9555edc2d9023de",
+    "scripts/ui/briefing_screen.gd": "d8503b5dbdf228b6a8aff323f651e725cd3ec809827d0aa0362c26f76390e915",
+    "scripts/ui/mission_results.gd": "8ea477eef152a0a35ec36ef1b0f21c1e8b29360ffbbae099e2103939ed02b15a",
+    "tests/render/site7_campaign_capture.gd": "62152730377a84e37683b8d0cdd2982382f8929dc8c6f942479eae7fa577d7e4"
+  },
+  "visual_approval": false
+}

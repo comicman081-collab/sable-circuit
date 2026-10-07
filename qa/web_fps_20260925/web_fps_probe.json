@@ -1,0 +1,177 @@
+{
+  "date": "2026-09-25",
+  "browser": "Microsoft Edge (visible window, GPU), DevTools-driven",
+  "url": "http://127.0.0.1:8765/",
+  "viewport_css": [
+    1920,
+    1080
+  ],
+  "device_scale_factor": 1,
+  "runs": [
+    {
+      "run": 1,
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "title_fps": {
+        "seconds": 4,
+        "fps": 42.8,
+        "frames": 170,
+        "p50_ms": 20,
+        "p95_ms": 30.1,
+        "p99_ms": 39.9,
+        "max_ms": 40.1,
+        "over_33ms": 2,
+        "lost": 0
+      },
+      "deploy_to_field_s_upper_bound": 8.3,
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 24.4,
+        "frames": 244,
+        "p50_ms": 40,
+        "p95_ms": 79.9,
+        "p99_ms": 100,
+        "max_ms": 100.1,
+        "over_33ms": 137,
+        "lost": 0
+      },
+      "js_heap_mb": 287,
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 30.1,
+        "frames": 179,
+        "p50_ms": 30,
+        "p95_ms": 50.1,
+        "p99_ms": 80,
+        "max_ms": 80.1,
+        "over_33ms": 66,
+        "lost": 0
+      },
+      "late_main_thread": {
+        "TaskDuration": 0.999,
+        "ScriptDuration": 0.992,
+        "LayoutDuration": 0.0,
+        "RecalcStyleDuration": 0.0,
+        "window_s": 6.03
+      },
+      "context_lost": 0,
+      "context_restored": 0,
+      "final_url": "http://127.0.0.1:8765/",
+      "stayed_on_build": true,
+      "wall_s": 69.8
+    },
+    {
+      "run": 2,
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "title_fps": {
+        "seconds": 4,
+        "fps": 61.9,
+        "frames": 246,
+        "p50_ms": 20,
+        "p95_ms": 20.1,
+        "p99_ms": 20.1,
+        "max_ms": 29.9,
+        "over_33ms": 0,
+        "lost": 0
+      },
+      "deploy_to_field_s_upper_bound": 8.3,
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 23.3,
+        "frames": 233,
+        "p50_ms": 40,
+        "p95_ms": 80,
+        "p99_ms": 110.1,
+        "max_ms": 130,
+        "over_33ms": 139,
+        "lost": 0
+      },
+      "js_heap_mb": 266,
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 27.3,
+        "frames": 163,
+        "p50_ms": 30.1,
+        "p95_ms": 70.1,
+        "p99_ms": 90.1,
+        "max_ms": 90.1,
+        "over_33ms": 72,
+        "lost": 0
+      },
+      "late_main_thread": {
+        "TaskDuration": 0.999,
+        "ScriptDuration": 0.992,
+        "LayoutDuration": 0.0,
+        "RecalcStyleDuration": 0.0,
+        "window_s": 6.02
+      },
+      "context_lost": 0,
+      "context_restored": 0,
+      "final_url": "http://127.0.0.1:8765/",
+      "stayed_on_build": true,
+      "wall_s": 66.5
+    },
+    {
+      "run": 3,
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "title_fps": {
+        "seconds": 4,
+        "fps": 61,
+        "frames": 243,
+        "p50_ms": 20,
+        "p95_ms": 20.1,
+        "p99_ms": 30,
+        "max_ms": 30.1,
+        "over_33ms": 0,
+        "lost": 0
+      },
+      "deploy_to_field_s_upper_bound": 8.3,
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 22.6,
+        "frames": 225,
+        "p50_ms": 40,
+        "p95_ms": 70.1,
+        "p99_ms": 130,
+        "max_ms": 200.1,
+        "over_33ms": 145,
+        "lost": 0
+      },
+      "js_heap_mb": 288,
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 17.1,
+        "frames": 102,
+        "p50_ms": 50.1,
+        "p95_ms": 129.9,
+        "p99_ms": 150.1,
+        "max_ms": 179.9,
+        "over_33ms": 92,
+        "lost": 0
+      },
+      "late_main_thread": {
+        "TaskDuration": 0.999,
+        "ScriptDuration": 0.994,
+        "LayoutDuration": 0.0,
+        "RecalcStyleDuration": 0.0,
+        "window_s": 6.03
+      },
+      "context_lost": 0,
+      "context_restored": 0,
+      "final_url": "http://127.0.0.1:8765/",
+      "stayed_on_build": true,
+      "wall_s": 67.3
+    }
+  ],
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0",
+  "gpu_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 SUPER (0x00002783) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "console_errors": []
+}

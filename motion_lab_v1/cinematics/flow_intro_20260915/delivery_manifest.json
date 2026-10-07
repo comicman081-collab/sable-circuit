@@ -1,0 +1,147 @@
+{
+  "status": "EXPORTED_DECODE_VERIFIED_NOT_ART_APPROVAL",
+  "method": "User-authorized 720p generation, Lanczos 1080p upscale, no audio; ordered hard cuts, no timing change",
+  "native_1080p_generation": false,
+  "generated_clips": 6,
+  "submission_attempts": 7,
+  "failed_attempts_reported_uncharged_by_flow": 1,
+  "retry": "Part 3 retried once with explicit user authorization",
+  "displayed_credits_per_success": 15,
+  "expected_total_credits": 90,
+  "billing_ledger_audited": false,
+  "clips": [
+    {
+      "file": "delivery_1080p\\01_outer_gate_1080p_SILENT.mp4",
+      "sha256": "51c8c5dd8ea84be7a3dfbae2bfdb595a93204b6b0d1e6ce9dcfcc49b36b47aba",
+      "frames": 240,
+      "fps": 24,
+      "duration_seconds": 10.0,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "audio_streams": 0,
+      "all_frames_decoded": true,
+      "source_file": "source_720p\\01_outer_gate.mp4",
+      "source_sha256": "649e0868eed17dfa21983818165f01ed82df6a002133f419520df49cd011e759",
+      "source_resolution": [
+        1280,
+        720
+      ],
+      "source_audio_streams_removed": 1
+    },
+    {
+      "file": "delivery_1080p\\02_decon_corridor_1080p_SILENT.mp4",
+      "sha256": "96a405cd8060a9c3bb73e30e52a580d68cd013955fd31724457f7276a65a7eb4",
+      "frames": 240,
+      "fps": 24,
+      "duration_seconds": 10.0,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "audio_streams": 0,
+      "all_frames_decoded": true,
+      "source_file": "source_720p\\02_decon_corridor.mp4",
+      "source_sha256": "8c19d861eee6b42bcdaf72f5962c2276a5d89b8623c86d61b5fef357050cb7b6",
+      "source_resolution": [
+        1280,
+        720
+      ],
+      "source_audio_streams_removed": 1
+    },
+    {
+      "file": "delivery_1080p\\03_archive_annex_1080p_SILENT.mp4",
+      "sha256": "79a48df8fa960ebbc1b17d520b3c41735c4b746ecf78cf85902284322c3e68bf",
+      "frames": 240,
+      "fps": 24,
+      "duration_seconds": 10.0,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "audio_streams": 0,
+      "all_frames_decoded": true,
+      "source_file": "source_720p\\03_archive_annex.mp4",
+      "source_sha256": "2ced43c6a4e8357a3ed1ef24e0700d8ed36d33eaf9ec187aa873bf662a4c4a97",
+      "source_resolution": [
+        1280,
+        720
+      ],
+      "source_audio_streams_removed": 1
+    },
+    {
+      "file": "delivery_1080p\\04_containment_junction_1080p_SILENT.mp4",
+      "sha256": "ccf20aa54dc3a60563d05237500e0cd8315e28fe024f201e66624542a8d4ae21",
+      "frames": 240,
+      "fps": 24,
+      "duration_seconds": 10.0,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "audio_streams": 0,
+      "all_frames_decoded": true,
+      "source_file": "source_720p\\04_containment_junction.mp4",
+      "source_sha256": "91e5b7eaf003b32be4ccf078e81ed6fb00267903d7c0726a0119c9d20762082b",
+      "source_resolution": [
+        1280,
+        720
+      ],
+      "source_audio_streams_removed": 1
+    },
+    {
+      "file": "delivery_1080p\\05_core_c_1080p_SILENT.mp4",
+      "sha256": "d40e3e9d0c048aec29e3b786ec3a6f1379332a38f01167b131e8cb31213e6cc0",
+      "frames": 240,
+      "fps": 24,
+      "duration_seconds": 10.0,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "audio_streams": 0,
+      "all_frames_decoded": true,
+      "source_file": "source_720p\\05_core_c.mp4",
+      "source_sha256": "bc25d255856d0356ceeaa615f964aa4496a2c1772d5372a53454640fffd5951c",
+      "source_resolution": [
+        1280,
+        720
+      ],
+      "source_audio_streams_removed": 1
+    },
+    {
+      "file": "delivery_1080p\\06_emergency_lift_1080p_SILENT.mp4",
+      "sha256": "e78f15acb07ff4c45b46bc70a5951d4f77fd0cf885127bde859c8ab1580a174a",
+      "frames": 240,
+      "fps": 24,
+      "duration_seconds": 10.0,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "audio_streams": 0,
+      "all_frames_decoded": true,
+      "source_file": "source_720p\\06_emergency_lift.mp4",
+      "source_sha256": "e245956200b4aac96036acfe1592f3aaefd714a220fc7ff9a480c51f60e033bb",
+      "source_resolution": [
+        1280,
+        720
+      ],
+      "source_audio_streams_removed": 1
+    }
+  ],
+  "master": {
+    "file": "delivery_1080p\\SABLE_CIRCUIT_INTRO_60s_1080p_SILENT.mp4",
+    "sha256": "e58c72b8591b3ea7f28f99c2e799f9a23f0c91a939e65ee26dc17e977923faa1",
+    "frames": 1440,
+    "fps": 24,
+    "duration_seconds": 60.0,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "audio_streams": 0,
+    "all_frames_decoded": true
+  }
+}

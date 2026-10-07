@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-13T08:17:24.535998+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\source_panels\\e186478b036e_3f539202\\full_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 468482,
+      "sha256": "db20c99e2f10be30d59eb4b809b8da10053f09716acb362c80ab8d205ed4cc9d"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\source_panels\\e186478b036e_3f539202\\native_lower_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 550072,
+      "sha256": "ab563728f52113c1a641a1eef6252b6ac91459c7fb79873983e34078f741cd95"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\source_panels\\e186478b036e_3f539202\\native_upper_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 755407,
+      "sha256": "68db2ef9f41a0aed37f6b1ce1e784d3a70caf96aeb7ab76cd4d1b3f7501fd228"
+    }
+  ]
+}

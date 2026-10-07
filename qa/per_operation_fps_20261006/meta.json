@@ -1,0 +1,98 @@
+{
+  "commit": "39176d13",
+  "dirty_files": 4,
+  "godot": "4.7.1-stable (official)",
+  "adapter": "NVIDIA GeForce RTX 4070 SUPER",
+  "renderer": "gl_compatibility",
+  "screen": 1,
+  "screen_count": 2,
+  "sample_seconds": 6.0,
+  "warmup_seconds": 3.0,
+  "steps": [
+    1,
+    3,
+    4
+  ],
+  "ops": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "rounds": 4,
+  "cpu_load_before_percent": [
+    15.0,
+    5.0,
+    26.0,
+    10.0
+  ],
+  "order_per_round": {
+    "1": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "2": [
+      3,
+      2,
+      1,
+      10,
+      9,
+      8,
+      7,
+      6,
+      5,
+      4
+    ],
+    "3": [
+      7,
+      8,
+      9,
+      10,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "4": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      10
+    ]
+  },
+  "wall_seconds_per_round": [
+    289.5,
+    289.6,
+    289.0,
+    289.9
+  ],
+  "engine_error_lines_per_round": [
+    44,
+    46,
+    46,
+    44
+  ],
+  "started": "20261006_213929"
+}

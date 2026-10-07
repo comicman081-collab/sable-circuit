@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-13T02:22:27.365760+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\dist\\ROOK_Motion_Studio.html",
+      "error": null,
+      "kind": "html",
+      "evidence_class": "static_config_only",
+      "canvas_resolutions": [
+        [
+          1920,
+          1080
+        ],
+        [
+          1920,
+          1080
+        ],
+        [
+          1920,
+          1080
+        ]
+      ],
+      "video_element_resolutions": [],
+      "decodable": true,
+      "native_1080p_container": true,
+      "dynamic_runtime_evidence": false,
+      "dynamic_capture_required_for_visual_gate": true,
+      "size_bytes": 13397872,
+      "sha256": "0724d389c9fa3a49936b0d7b2e8ec0743820e476f0b2c6e35798a6d147a6b25c"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook_motion_astra_20260913.webm",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 29.8016728917881,
+      "frames": 1134,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 283,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 567,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 850,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 1133,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 7861852,
+      "sha256": "6deb1d81fe017f879632e4100d342844e89cd23a983767a946ff5a262feae76f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\astra_repair_20260913\\runtime_samples\\runtime_native_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 400288,
+      "sha256": "96398f4d0dce1e1c7311379bba760c9720903c4869609b427ce9b8a8646a6a2b"
+    }
+  ]
+}

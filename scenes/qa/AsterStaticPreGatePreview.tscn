@@ -1,0 +1,79 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/qa/aster_static_pre_gate_preview.gd" id="1_preview"]
+[ext_resource type="Script" path="res://scripts/missions/site7_facility_architecture.gd" id="3_arch"]
+[ext_resource type="Script" path="res://scripts/missions/site7_depth_pass.gd" id="4_depth"]
+[ext_resource type="Script" path="res://scripts/missions/site7_surface_detail.gd" id="5_surface"]
+[ext_resource type="Script" path="res://scripts/missions/site7_room_art_layer.gd" id="6_room"]
+[ext_resource type="Script" path="res://scripts/missions/site7_prop_art_layer.gd" id="7_prop"]
+[ext_resource type="Script" path="res://scripts/missions/site7_lighting_rig.gd" id="8_light"]
+
+[node name="AsterStaticPreGatePreview" type="Node2D"]
+script = ExtResource("1_preview")
+
+[node name="WorldBackground" type="CanvasLayer" parent="."]
+layer = -100
+
+[node name="ClearColor" type="ColorRect" parent="WorldBackground"]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.006, 0.012, 0.018, 1)
+mouse_filter = 2
+
+[node name="FacilityArchitecture" type="Node2D" parent="."]
+script = ExtResource("3_arch")
+
+[node name="RoomArtLayer" type="Node2D" parent="."]
+script = ExtResource("6_room")
+
+[node name="PropArtLayer" type="Node2D" parent="."]
+script = ExtResource("7_prop")
+
+[node name="DepthPass" type="Node2D" parent="."]
+script = ExtResource("4_depth")
+
+[node name="SurfaceDetail" type="Node2D" parent="."]
+script = ExtResource("5_surface")
+
+[node name="LightingRig" type="Node2D" parent="."]
+script = ExtResource("8_light")
+
+[node name="PRE_GATE_NONPROMOTED_ASTER_STATIC_PREVIEW" type="Sprite2D" parent="."]
+position = Vector2(612, 398)
+scale = Vector2(0.08, 0.08)
+texture_filter = 4
+z_index = 5
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(690, 350)
+zoom = Vector2(1.46, 1.46)
+position_smoothing_enabled = false
+
+[node name="QAOverlay" type="CanvasLayer" parent="."]
+layer = 20
+
+[node name="StatusPanel" type="ColorRect" parent="QAOverlay"]
+offset_left = 24.0
+offset_top = 22.0
+offset_right = 538.0
+offset_bottom = 114.0
+color = Color(0.015, 0.035, 0.05, 0.92)
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="QAOverlay/StatusPanel"]
+offset_left = 16.0
+offset_top = 10.0
+offset_right = 496.0
+offset_bottom = 35.0
+theme_override_colors/font_color = Color(0.45, 0.9, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "ASTER // PRE-GATE STATIC PREVIEW"
+
+[node name="Status" type="Label" parent="QAOverlay/StatusPanel"]
+offset_left = 16.0
+offset_top = 43.0
+offset_right = 496.0
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(1, 0.78, 0.38, 1)
+theme_override_font_sizes/font_size = 14
+text = "NONPROMOTED // STATIC ONLY // NO ANIMATION // QA EVIDENCE"

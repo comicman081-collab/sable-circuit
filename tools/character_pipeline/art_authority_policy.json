@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "authority": "SABLE user correction 2026-09-07: ImageGen creates all visible character art; Blender and UAL implement motion only.",
+  "retired_paths": [
+    "tools/character_pipeline/build_mica_anatomical_candidate.py",
+    "tools/character_pipeline/run_mica_anatomical_candidate.py",
+    "tools/character_pipeline/build_mica_skinned_pilot.py",
+    "tools/character_pipeline/run_mica_skinned_pilot.py"
+  ],
+  "retired_content_sha256": [
+    "77a2f9d41c2288465eacbf179c3d5d1e65ac57e5556484fc577156230d08e902",
+    "e2f0fb7da2f47b7b5f260e74b32373ae73c510ba9a38e23df0b2701e0e6cfd31",
+    "b7e06e868db792fb3e425abcbc7c0d0e0ae12a460252c411af266e024549d07c",
+    "9523a207887d2ac9b5f128b2c88dc7346b9e6992f297321b65e18a9b8bb88afd",
+    "75c403c2458cde685c7ab264069d5ab25c058d0c9d001ad9326159b81fc23f4d"
+  ],
+  "approved_motion_adapters": [
+    {
+      "executable_closure": {
+        "tools/character_pipeline/pose_projected_source_probe.py": "961ad93863a5a52698d0ba905ce6d958a8a2ba8b7a6d9156941cc06913edf322",
+        "tools/character_pipeline/run_mica_E_first_contact_pose.py": "547bfd9855f659962b60ba961d7774cd593206643ab5a72de8f0bc809e745fda",
+        "tools/character_pipeline/generation_harness.py": "0e382f24bc33ba706f7a8b422689812485e50bceec0ca95bf6ca5dfcffb65450",
+        "tools/character_pipeline/generation_contract.json": "74ffec1ee847861009734debe047081d76de9778f4ad1b0cfd923438930b01e0",
+        "tools/character_pipeline/collect_generation_mesh_preflight.py": "797337e3ca610b53333e956ff369663115c2038f58d98ddb652195e44a555e09",
+        "tools/character_pipeline/source_surface_sampling.py": "742e81575fef2c65306daa3a9116912d41b46719211a02f9b49d5746a3dd5884",
+        "tools/character_pipeline/verify_mica_E_blender_child_handoff.py": "53ff2536d9e570a7808019907640d01f6a540b4add5ddadba7383135b457576b",
+        "tools/character_pipeline/historical_neutral_reuse_admission.py": "06e806b82a1587ad79f50fceff61e59ef8d1d07c7a69ab26796afdb26ed49e51",
+        "tools/character_pipeline/source_art_intake.py": "260fe27b4a8e6d99bfd37c41d5c9f956fb5154cd9b22c39aefd5d852a554b7a5",
+        "tools/character_pipeline/derive_chroma_runtime_rgba.py": "a72d94d664ccc536d2f84fa1c713c3cd91bc8cbc26e4283fc0450bd2fd74e603",
+        "tools/character_pipeline/capture_neutral_pixel_filter.py": "8636ef1eaa5c4830fb8dcc927c4655de43e5cd146245ae5a3eed86df4c3e1868",
+        "tools/character_pipeline/verify_existing_source.py": "3f37f3d2292d243b8542d855b281feb6c6765810840203becdbe8ca468f74d70",
+        "tools/blender/5.2.1/blender.exe": "8f7a131ad8bc148edc218b334f07d92a57f5a357fa66d913b290537fd8353c06",
+        "tools/character_pipeline/art_authority.py": "bc1a0b3eb0e2fb0d50606d1db2ec9f015b95c7cb3baf66b339f50e64913acbc0"
+      },
+      "neutral_evidence": {
+        "path": "art_src/characters/mica/source_skin_binding_r01/combat_E_r01/HISTORICAL_NEUTRAL_REUSE_ADMISSION_R3_CURRENT.json",
+        "sha256": "93007fe5146e633bd173459a253bd136fd3bfa578b567e84af44fc80253f466d"
+      },
+      "review_subject_sha256": "e93a67d158c15ea1828d9e577931949157b77e42c704062815d3fbf404a1b40a",
+      "review_bundle": {
+        "path": "art_src/characters/mica/first_pose_r01/ADAPTER_REVIEW_BUNDLE_R4_CURRENT.json",
+        "sha256": "c2d7b8f710f1e6269969d854efb275c9deedc6e63a20388be5d4d7ad3796b84f"
+      }
+    },
+    {
+      "executable_closure": {
+        "tools/character_pipeline/pose_projected_source_camera_plane_probe.py": "cf269ba7ec625159882d69aa13a898b41211c51345f88487169e9a826aeda782",
+        "tools/character_pipeline/run_mica_E_first_contact_camera_plane_pose.py": "e75d371025d46c103d315132883823f4533abd39224e990d0ef242e92ff9449b",
+        "tools/character_pipeline/generation_harness.py": "3ffa136ff48bff38541f60a5c2687fb79fcfb1296c501c5fbdfc9a182125cd14",
+        "tools/character_pipeline/generation_contract.json": "74ffec1ee847861009734debe047081d76de9778f4ad1b0cfd923438930b01e0",
+        "tools/character_pipeline/collect_generation_mesh_preflight.py": "d22067c2e62981948e9c48acae9b5d84959fabc5fa585b6861ba9e4f8f831cf0",
+        "tools/character_pipeline/source_surface_sampling.py": "742e81575fef2c65306daa3a9116912d41b46719211a02f9b49d5746a3dd5884",
+        "tools/character_pipeline/verify_mica_E_blender_child_handoff_camera_plane.py": "77ec47f2c8e76a324c6e5050fbcd8f5ba7c98e58b82820ff29fcc06a923dae6f",
+        "tools/character_pipeline/historical_neutral_reuse_admission.py": "06e806b82a1587ad79f50fceff61e59ef8d1d07c7a69ab26796afdb26ed49e51",
+        "tools/character_pipeline/source_art_intake.py": "260fe27b4a8e6d99bfd37c41d5c9f956fb5154cd9b22c39aefd5d852a554b7a5",
+        "tools/character_pipeline/derive_chroma_runtime_rgba.py": "a72d94d664ccc536d2f84fa1c713c3cd91bc8cbc26e4283fc0450bd2fd74e603",
+        "tools/character_pipeline/capture_neutral_pixel_filter.py": "8636ef1eaa5c4830fb8dcc927c4655de43e5cd146245ae5a3eed86df4c3e1868",
+        "tools/character_pipeline/verify_existing_source.py": "3f37f3d2292d243b8542d855b281feb6c6765810840203becdbe8ca468f74d70",
+        "tools/blender/5.2.1/blender.exe": "8f7a131ad8bc148edc218b334f07d92a57f5a357fa66d913b290537fd8353c06",
+        "tools/character_pipeline/art_authority.py": "756920920e02f19eb159cb789183cde7d144e2f64affb55be8527e324ecf504d"
+      },
+      "neutral_evidence": {
+        "path": "art_src/characters/mica/source_skin_binding_r01/combat_E_r01/HISTORICAL_NEUTRAL_REUSE_ADMISSION_R5_CURRENT.json",
+        "sha256": "faf8824b09ff3eb2a132343425242e7ff6aebe61c7a818a368c0a32b7c7480d4"
+      },
+      "review_subject_sha256": "3361bd8034bde7019fb071bb405ffd60a390469be742e3ead9c44d6b20f1a8ce",
+      "review_bundle": {
+        "path": "art_src/characters/mica/first_pose_r01/ADAPTER_REVIEW_BUNDLE_R7_CAMERA_PLANE_CURRENT.json",
+        "sha256": "4e388eee9c412df3598f4326087eeb0989a8b6830d4db8017cc74ef7b7681180"
+      }
+    }
+  ],
+  "registration_note": "Intentionally empty. No current MICA adapter has proved approved ImageGen appearance preservation. Registration requires exact builder/runner/dependency closure and independent implementation/Ponytail review of no visual reauthoring and actual neutral source-preservation evidence. Never whitelist an adapter merely to unblock a job.",
+  "allowed_local_operations": [
+    "rigging_of_approved_imagegen_art",
+    "skin_weights_without_visual_reconstruction",
+    "ual_retarget",
+    "pose_transfer_to_approved_imagegen_art",
+    "contact_calibration",
+    "pose_guide_export",
+    "deterministic_background_normalization",
+    "runtime_animation_packaging_of_approved_imagegen_frames"
+  ],
+  "forbidden_local_operations": [
+    "face_reconstruction",
+    "hair_reconstruction",
+    "costume_reconstruction",
+    "boot_reconstruction",
+    "weapon_visual_reconstruction",
+    "procedural_replacement_materials",
+    "source_pixel_restoration",
+    "generic_avatar_substitution",
+    "local_generation_of_visible_pose_pixels",
+    "rendered_generic_character_as_runtime_art"
+  ],
+  "diagnostic_exception": "Read-only or non-character control-rig diagnostics are not production appearance. A diagnostic label does not permit a retired character reconstruction route."
+}

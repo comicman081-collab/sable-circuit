@@ -1,0 +1,156 @@
+{
+  "schema": 1,
+  "reviewer": "Ponytail FULL r13_n_gate",
+  "review_date": "2026-09-04",
+  "candidate": "MICA_C03_V8_R14_EIGHTDIR_R8C_SUBPIXEL_WORLD_GRID",
+  "status": "PASS_CAPTURE_ONLY_A_TO_E_HOLD_F",
+  "scope": "All eight R8C world MP4s were decoded and reviewed at 120 frames per direction. This review covers capture evidence only; raster-cadence-lock and subpixel-root-translation are not yet proven in the Godot/runtime engine.",
+  "promotion": {
+    "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+    "all_directions": "HOLD",
+    "eight_direction_visual_runtime": "HOLD",
+    "production": "HOLD"
+  },
+  "evidence_reviewed": {
+    "frame_count_per_direction": 120,
+    "directions": {
+      "N": {
+        "world_video": "artifacts/mica_c03_v8_r14_n_shared_handoff_r8c_review/MICA_C03_V8_R14_N_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+        "runtime_track": "artifacts/mica_c03_v8_r14_n_shared_handoff_r8c_review/MICA_C03_V8_R14_N_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json"
+      },
+      "S": {
+        "world_video": "artifacts/mica_c03_v8_r14_s_shared_handoff_r8c_review/MICA_C03_V8_R14_S_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+        "runtime_track": "artifacts/mica_c03_v8_r14_s_shared_handoff_r8c_review/MICA_C03_V8_R14_S_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json"
+      },
+      "E": {
+        "world_video": "artifacts/mica_c03_v8_r14_e_shared_handoff_r8c_review/MICA_C03_V8_R14_E_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+        "runtime_track": "artifacts/mica_c03_v8_r14_e_shared_handoff_r8c_review/MICA_C03_V8_R14_E_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json"
+      },
+      "W": {
+        "world_video": "artifacts/mica_c03_v8_r14_w_shared_handoff_r8c_review/MICA_C03_V8_R14_W_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+        "runtime_track": "artifacts/mica_c03_v8_r14_w_shared_handoff_r8c_review/MICA_C03_V8_R14_W_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json"
+      },
+      "NE": {
+        "world_video": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r8_review/MICA_C03_V8_R14_NE_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+        "runtime_track": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r8_review/MICA_C03_V8_R14_NE_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json"
+      },
+      "NW": {
+        "world_video": "artifacts/mica_c03_v8_r14_nw_shared_handoff_r8_review/MICA_C03_V8_R14_NW_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+        "runtime_track": "artifacts/mica_c03_v8_r14_nw_shared_handoff_r8_review/MICA_C03_V8_R14_NW_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json"
+      },
+      "SE": {
+        "world_video": "artifacts/mica_c03_v8_r14_se_shared_handoff_r8c_review/MICA_C03_V8_R14_SE_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+        "runtime_track": "artifacts/mica_c03_v8_r14_se_shared_handoff_r8c_review/MICA_C03_V8_R14_SE_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json"
+      },
+      "SW": {
+        "world_video": "artifacts/mica_c03_v8_r14_sw_shared_handoff_r8c_review/MICA_C03_V8_R14_SW_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+        "runtime_track": "artifacts/mica_c03_v8_r14_sw_shared_handoff_r8c_review/MICA_C03_V8_R14_SW_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json"
+      }
+    }
+  },
+  "gates": {
+    "N": {
+      "A_gait_readability_and_alternation": "PASS",
+      "B_scale_volume_and_waist_stability": "PASS",
+      "C_ankle_boot_ground_and_no_skate": "PASS",
+      "D_sole_lock_handoff_and_cadence": "PASS_CAPTURE_EVIDENCE_ONLY",
+      "E_torso_hip_coat_weapon_composite_and_alpha": "PASS",
+      "F_production_and_runtime_integration": "HOLD"
+    },
+    "S": {
+      "A_gait_readability_and_alternation": "PASS",
+      "B_scale_volume_and_waist_stability": "PASS",
+      "C_ankle_boot_ground_and_no_skate": "PASS",
+      "D_sole_lock_handoff_and_cadence": "PASS_CAPTURE_EVIDENCE_ONLY",
+      "E_torso_hip_coat_weapon_composite_and_alpha": "PASS",
+      "F_production_and_runtime_integration": "HOLD"
+    },
+    "E": {
+      "A_gait_readability_and_alternation": "PASS",
+      "B_scale_volume_and_waist_stability": "PASS",
+      "C_ankle_boot_ground_and_no_skate": "PASS",
+      "D_sole_lock_handoff_and_cadence": "PASS_CAPTURE_EVIDENCE_ONLY",
+      "E_torso_hip_coat_weapon_composite_and_alpha": "PASS",
+      "F_production_and_runtime_integration": "HOLD"
+    },
+    "W": {
+      "A_gait_readability_and_alternation": "PASS",
+      "B_scale_volume_and_waist_stability": "PASS",
+      "C_ankle_boot_ground_and_no_skate": "PASS",
+      "D_sole_lock_handoff_and_cadence": "PASS_CAPTURE_EVIDENCE_ONLY",
+      "E_torso_hip_coat_weapon_composite_and_alpha": "PASS",
+      "F_production_and_runtime_integration": "HOLD"
+    },
+    "NE": {
+      "A_gait_readability_and_alternation": "PASS",
+      "B_scale_volume_and_waist_stability": "PASS",
+      "C_ankle_boot_ground_and_no_skate": "PASS",
+      "D_sole_lock_handoff_and_cadence": "PASS_CAPTURE_EVIDENCE_ONLY",
+      "E_torso_hip_coat_weapon_composite_and_alpha": "PASS",
+      "F_production_and_runtime_integration": "HOLD"
+    },
+    "NW": {
+      "A_gait_readability_and_alternation": "PASS",
+      "B_scale_volume_and_waist_stability": "PASS",
+      "C_ankle_boot_ground_and_no_skate": "PASS",
+      "D_sole_lock_handoff_and_cadence": "PASS_CAPTURE_EVIDENCE_ONLY",
+      "E_torso_hip_coat_weapon_composite_and_alpha": "PASS",
+      "F_production_and_runtime_integration": "HOLD"
+    },
+    "SE": {
+      "A_gait_readability_and_alternation": "PASS",
+      "B_scale_volume_and_waist_stability": "PASS",
+      "C_ankle_boot_ground_and_no_skate": "PASS",
+      "D_sole_lock_handoff_and_cadence": "PASS_CAPTURE_EVIDENCE_ONLY",
+      "E_torso_hip_coat_weapon_composite_and_alpha": "PASS",
+      "F_production_and_runtime_integration": "HOLD"
+    },
+    "SW": {
+      "A_gait_readability_and_alternation": "PASS",
+      "B_scale_volume_and_waist_stability": "PASS",
+      "C_ankle_boot_ground_and_no_skate": "PASS",
+      "D_sole_lock_handoff_and_cadence": "PASS_CAPTURE_EVIDENCE_ONLY",
+      "E_torso_hip_coat_weapon_composite_and_alpha": "PASS",
+      "F_production_and_runtime_integration": "HOLD"
+    }
+  },
+  "decoded_metrics": {
+    "raster_root_transition_px": {
+      "N": {"min": 1.000, "max": 2.000, "zero_step_count": 0, "support_axis_drift_px": {"left": 0.000, "right": 0.000}},
+      "S": {"min": 1.000, "max": 2.000, "zero_step_count": 0, "support_axis_drift_px": {"left": 0.000, "right": 0.000}},
+      "E": {"min": 1.000, "max": 2.000, "zero_step_count": 0, "support_axis_drift_px": {"left": 0.500, "right": 0.755}},
+      "W": {"min": 1.000, "max": 2.000, "zero_step_count": 0, "support_axis_drift_px": {"left": 0.746, "right": 0.763}},
+      "NE": {"min": 1.000, "max": 2.828, "zero_step_count": 0, "support_axis_drift_px": {"left": 0.530, "right": 0.568}},
+      "NW": {"min": 1.000, "max": 2.828, "zero_step_count": 0, "support_axis_drift_px": {"left": 0.828, "right": 0.584}},
+      "SE": {"min": 1.000, "max": 2.828, "zero_step_count": 0, "support_axis_drift_px": {"left": 0.630, "right": 0.589}},
+      "SW": {"min": 1.414, "max": 2.828, "zero_step_count": 0, "support_axis_drift_px": {"left": 0.812, "right": 0.514}}
+    },
+    "handoff_advance_px_range_all_directions": "10.777-13.223",
+    "subpixel_upper_body_better_frames": "120/120 all directions",
+    "subpixel_lower_body_better_frames": "117-120/120 by direction",
+    "green_pixels_in_actor_crop": 0
+  },
+  "specific_findings": {
+    "leg_crossing_recurrence": "NOT_OBSERVED",
+    "out_toed_recurrence": "NOT_OBSERVED",
+    "calf_balloon_or_rubber_leg": "NOT_OBSERVED",
+    "waist_or_torso_snap": "NOT_OBSERVED",
+    "boot_rotation_or_ankle_snap": "NOT_OBSERVED",
+    "support_handoff": "CONTINUOUS_F11_TO_F12_AND_F23_TO_F00_ALL_DIRECTIONS",
+    "raster_zero_step_or_large_catchup": "NOT_REPRODUCED_IN_DECODED_R8C_EVIDENCE",
+    "runtime_scope": "CAPTURE_ONLY_SUBPIXEL_DERIVATIVE_NOT_PRODUCTION_INTEGRATION",
+    "non_blocking_polish": [
+      "micro cadence modulation",
+      "subpixel edge sharpness variation",
+      "flat or restrained heel-to-toe roll",
+      "low pelvis counter-motion",
+      "direction-cycle advance synchronization"
+    ],
+    "blocking_scope": "F HOLD because the corrected raster cadence path has no Godot/runtime integration evidence"
+  },
+  "quarantine_policy": {
+    "prior_failed_and_held_assets": "PRESERVE_IN_QUARANTINE",
+    "delete_or_retire_now": false,
+    "retirement_manifest_required_before_disposal": true
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_C07/attempt02/S9_C07_GAME.png",
+  "luma": 0.1996375024318695,
+  "p10": 0.15618039667606354,
+  "p90": 0.25109022855758667,
+  "saturation": 0.03614595699262439,
+  "hue": 137.49554477116095,
+  "axis": 32.827501024181025,
+  "problems": [
+    "floor axis 32.8 deg outside (22.5, 31.5)",
+    "painted floor area below 25%",
+    "branch width exceeds +/-15%"
+  ],
+  "plate": "S9_C07",
+  "attempt": 2,
+  "native_size": [
+    1254,
+    1254
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      0,
+      64
+    ],
+    [
+      1254,
+      859
+    ],
+    [
+      1254,
+      1157
+    ],
+    [
+      0,
+      334
+    ]
+  ],
+  "doors_px": {},
+  "raw_sha256": "ac118fc4deeb1a279f4284cbefbadccde0780badc48d93f496fff42b62a75688",
+  "master_sha256": "ac118fc4deeb1a279f4284cbefbadccde0780badc48d93f496fff42b62a75688",
+  "game_sha256": "63bd98451e24f884fd4ebb114faef596ee6ac0a93bf0597e4a4cfdd0a39de3a8",
+  "game_exposure_factor_srgb": 0.7269,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-aaf42ca5-8b5b-43b1-b972-998c51496b14.png",
+  "inspection": "Actual wall base and outer painted lip traced at native scale. Left width270px below282.2; still steep. New offset console and repair cradle walls distinct from S3, floor clear; reject geometry.",
+  "floor_area_px2": 356136.0,
+  "floor_area_fraction": 0.22647527910685805,
+  "floor_bounds_px": [
+    0,
+    64,
+    1254,
+    1157
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1254,
+      1254
+    ],
+    "actual_size": [
+      1254,
+      1254
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "axis_acceptance": {
+    "minimum_deg": 22.5,
+    "maximum_deg": 32.5,
+    "source": "2026-10-01 explicit user decision; production audit/tool update owned by Claude"
+  },
+  "end_widths_px": [
+    270,
+    298
+  ],
+  "width_sections_px": [
+    [
+      0,
+      64,
+      334
+    ],
+    [
+      627,
+      462,
+      746
+    ],
+    [
+      1254,
+      859,
+      1157
+    ]
+  ],
+  "vertical_widths_px": [
+    270,
+    284,
+    298
+  ],
+  "width_measurement": "Vertical sections between actual wall base and outer painted deck lip; clipped image-corner fragments are not full cross-sections.",
+  "width_acceptance": {
+    "minimum_px": 220,
+    "prompt_target_px": 260,
+    "source": "2026-10-01 explicit user decision; branch +/-15% additionally retained"
+  },
+  "connector_apron_end_stats": [
+    {
+      "end": "image_left",
+      "luma": 0.2422318011522293,
+      "saturation": 0.06085614387642617,
+      "hue": 143.6458269386328,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    },
+    {
+      "end": "image_right",
+      "luma": 0.21958300471305847,
+      "saturation": 0.06138857344763898,
+      "hue": 142.7682884317302,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    }
+  ],
+  "preintegration_end_comparison": [
+    {
+      "end": "image_left",
+      "room": "S9_R03",
+      "door": "SE",
+      "deck_luma": 0.21948815882205963,
+      "deck_saturation": 0.042649594920988854,
+      "room_apron_luma": 0.21876537799835205,
+      "room_apron_saturation": 0.08465354552594435,
+      "step": -0.004360670747276522,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    },
+    {
+      "end": "image_right",
+      "room": "S9_O02",
+      "door": "NW",
+      "deck_luma": 0.20290516316890717,
+      "deck_saturation": 0.049510677913589374,
+      "room_apron_luma": 0.2249520868062973,
+      "room_apron_saturation": 0.06266677769295985,
+      "step": 0.13606954810498303,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    }
+  ]
+}

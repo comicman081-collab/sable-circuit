@@ -1,0 +1,55 @@
+{
+  "clips": [
+    {
+      "frames": 600,
+      "audio_samples_per_channel": 480000,
+      "audio_rms": 0.0378609587899688,
+      "audio_peak": 0.502593994140625,
+      "native_resolution": [
+        1920,
+        1080
+      ],
+      "fps": 60,
+      "duration_seconds": 10.0,
+      "source_start_frame": 8,
+      "audio": "Actual Godot MovieWriter stereo mix; synchronized trim, no added soundtrack",
+      "raw_sha256": "c938b9f842fe0593d5aca96955752451684ace018a7136ba07db1c6238c63aad",
+      "native_readback_sha256": "cbd17704d284fc11b7f36ff07c9e9787e913d76ab8c165620edae7f5ace0278f",
+      "video_sha256": "bf43d291095b68a84d4c6d5c85ba933c71e6dd3474d5ca8d0c139093c5aa88cc",
+      "mission": "MIS_CH01_01",
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\combat_density_20260924\\video_124149\\stage1\\stage1_combat_10s_sound_1080p.mp4",
+      "capture_sha256": "c8372a117f177a3b3d6f66c2f46274d7f3a00c5c4989543124d8bc19c05dcc9c"
+    },
+    {
+      "frames": 600,
+      "audio_samples_per_channel": 480000,
+      "audio_rms": 0.0432452574223143,
+      "audio_peak": 0.42718505859375,
+      "native_resolution": [
+        1920,
+        1080
+      ],
+      "fps": 60,
+      "duration_seconds": 10.0,
+      "source_start_frame": 8,
+      "audio": "Actual Godot MovieWriter stereo mix; synchronized trim, no added soundtrack",
+      "raw_sha256": "8d17168b70da9ebdf87814f3d64a109a58b838d5cfdf633fc06770008958693f",
+      "native_readback_sha256": "28a92dffaf54c672fabe195630af6c57abccabe9107f9d65000f34583392481e",
+      "video_sha256": "eb3c4052f94b1eba83a405a094bb8b8201113647d90af9f20676b52e4ad28740",
+      "mission": "MIS_CH01_05",
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\combat_density_20260924\\video_124149\\stage5\\stage5_combat_10s_sound_1080p.mp4",
+      "capture_sha256": "1662180d86e4bf94d95c162c892b8741c8a23b39f77f599dca2f8d0a66f2ee4c"
+    }
+  ],
+  "sha256": {
+    "scripts/combat/cover_navigation.gd": "aba718d3d0851797d7386ebb1ef89a10ec39376d1b37c7dbe5b3c8347939992f",
+    "scripts/combat/site7_enemy_tactics.gd": "fc986bad716cf17fbf052cd4b73b3ff349af0a036923d43ee5ca4f31b43128b1",
+    "scripts/animation/site7_machine_sprite.gd": "977a1ce6419c9cb8d56017e4ac0251293e6415be069dfdfaa9e8c6f7d8c0e585",
+    "scripts/actors/enemy_actor.gd": "fedc651c57e985f590112cc71d21941dbc541fb5e8113f4b64967a26c37cc134",
+    "tests/render/stage_battle_video_10s_capture.gd": "3788a43120f550f04ca5679667bd2470410a8c9bb6385ea42f75f72b8cf1c114",
+    "scripts/audio/combat_sfx_bank.gd": "729e9f4cd71462cf12b076d5b7c35c91bfb434599f7bd3d9e6c48f55316c61e7",
+    "data/art_profiles/enemy_profiles.json": "95cccae62708d95a585e28a6a70c3d51667f2132edffb49eadc8f8a8c8bc1971",
+    "data/visual/site7_environment_props.json": "6ce25fe3209a220c9c75bb581d22a421c5b88313e38952d70d9f80f51da9692b",
+    "tools/environment/record_stage_battle_with_audio.py": "503c6d68990b062abcb0f609481340de870ed4e2f5230c874a6bf58d4597c84e"
+  }
+}

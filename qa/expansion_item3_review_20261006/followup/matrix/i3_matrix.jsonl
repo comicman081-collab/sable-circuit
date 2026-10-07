@@ -1,0 +1,85 @@
+{"mutant": "base", "test": "intel_supply", "exit": "0", "wall_s": "4", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "INTEL_SUPPLY_SMOKE: PASS (83 checks)"}
+{"mutant": "base", "test": "module_expansion", "exit": "0", "wall_s": "5", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "MODULE_EXPANSION_SMOKE: PASS (86 checks)"}
+{"mutant": "base", "test": "weapon_expansion", "exit": "0", "wall_s": "5", "error_lines": "1", "script_errors": "0", "pass_lines": "0", "result": "WEAPON_EXPANSION_SMOKE: PASS (131 checks)"}
+{"mutant": "base", "test": "lab_geometry", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "LAB_GEOMETRY_SMOKE: PASS (4005 checks)"}
+{"mutant": "base", "test": "contract_save", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (175 checks)"}
+{"mutant": "base", "test": "m10_persistence", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "pass_lines": "27", "result": "M10_PERSISTENCE_SMOKE: PASS"}
+{"mutant": "base", "test": "m13_migration", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "pass_lines": "9", "result": "M13_WEAPON_BASE_MIGRATION_SMOKE: PASS"}
+{"mutant": "base", "test": "upgrade_economy", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "UPGRADE_ECONOMY: PASS (225 checks)"}
+{"mutant": "base", "test": "m10_base_ui", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "pass_lines": "10", "result": "M10_BASE_UI_ACTION_SMOKE: PASS"}
+{"mutant": "base", "test": "m10_intel", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "base", "test": "m13_loadout", "exit": "0", "wall_s": "7", "error_lines": "1", "script_errors": "0", "pass_lines": "53", "result": "M13_WEAPON_LOADOUT_SMOKE: PASS"}
+{"mutant": "base", "test": "campaign", "exit": "0", "wall_s": "31", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/base_campaign"}
+{"mutant": "base", "test": "lab_capture_geometry", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "EXPANSION_ITEM3_CAPTURE: PASS (5 checks)"}
+{"mutant": "base", "test": "m13_campaign", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "pass_lines": "16", "result": "M13_WEAPON_CAMPAIGN_SMOKE: PASS"}
+{"mutant": "base", "test": "hit_hurt_vfx", "exit": "0", "wall_s": "5", "error_lines": "1", "script_errors": "0", "pass_lines": "0", "result": "COMBAT_HIT_HURT_VFX_SMOKE: PASS (47 checks)"}
+{"mutant": "base", "test": "m13_runtime", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "pass_lines": "18", "result": "M13_WEAPON_RUNTIME_SMOKE: PASS"}
+{"mutant": "base", "test": "weapon_expansion", "exit": "0", "wall_s": "5", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "WEAPON_EXPANSION_SMOKE: PASS (131 checks)"}
+{"mutant": "base", "test": "m13_campaign", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "pass_lines": "16", "result": "M13_WEAPON_CAMPAIGN_SMOKE: PASS"}
+{"mutant": "base", "test": "m13_loadout", "exit": "0", "wall_s": "9", "error_lines": "0", "script_errors": "0", "pass_lines": "53", "result": "M13_WEAPON_LOADOUT_SMOKE: PASS"}
+{"mutant": "base", "test": "hit_hurt_vfx", "exit": "0", "wall_s": "5", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "COMBAT_HIT_HURT_VFX_SMOKE: PASS (47 checks)"}
+{"mutant": "key_generic_boss_first", "test": "intel_supply", "exit": "1", "wall_s": "4", "error_lines": "21", "script_errors": "0", "pass_lines": "0", "result": "INTEL_SUPPLY_SMOKE: FAIL (83 checks)"}
+{"mutant": "key_generic_boss_first", "test": "m10_intel", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "key_generic_boss_first", "test": "campaign", "exit": "0", "wall_s": "30", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/key_generic_boss_first_campaign"}
+{"mutant": "key_old_chain", "test": "intel_supply", "exit": "1", "wall_s": "3", "error_lines": "21", "script_errors": "0", "pass_lines": "0", "result": "INTEL_SUPPLY_SMOKE: FAIL (83 checks)"}
+{"mutant": "key_old_chain", "test": "m10_intel", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "key_old_chain", "test": "campaign", "exit": "0", "wall_s": "28", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/key_old_chain_campaign"}
+{"mutant": "lost_three_keys", "test": "intel_supply", "exit": "1", "wall_s": "3", "error_lines": "5", "script_errors": "0", "pass_lines": "0", "result": "INTEL_SUPPLY_SMOKE: FAIL (83 checks)"}
+{"mutant": "lost_three_keys", "test": "m10_intel", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "lost_three_keys", "test": "campaign", "exit": "0", "wall_s": "29", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/lost_three_keys_campaign"}
+{"mutant": "intel_keys_campaign_three", "test": "intel_supply", "exit": "1", "wall_s": "3", "error_lines": "6", "script_errors": "0", "pass_lines": "0", "result": "INTEL_SUPPLY_SMOKE: FAIL (83 checks)"}
+{"mutant": "intel_keys_campaign_three", "test": "m10_persistence", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "pass_lines": "27", "result": "M10_PERSISTENCE_SMOKE: PASS"}
+{"mutant": "intel_keys_campaign_three", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (175 checks)"}
+{"mutant": "intel_keys_campaign_three", "test": "m13_migration", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "pass_lines": "9", "result": "M13_WEAPON_BASE_MIGRATION_SMOKE: PASS"}
+{"mutant": "intel_keys_campaign_three", "test": "m10_intel", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "intel_keys_campaign_three", "test": "campaign", "exit": "0", "wall_s": "29", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/intel_keys_campaign_three_campaign"}
+{"mutant": "intel_keys_stage_three", "test": "intel_supply", "exit": "1", "wall_s": "4", "error_lines": "5", "script_errors": "0", "pass_lines": "0", "result": "INTEL_SUPPLY_SMOKE: FAIL (83 checks)"}
+{"mutant": "intel_keys_stage_three", "test": "m10_intel", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "intel_keys_stage_three", "test": "campaign", "exit": "0", "wall_s": "29", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/intel_keys_stage_three_campaign"}
+{"mutant": "sanitize_three_keys", "test": "intel_supply", "exit": "1", "wall_s": "3", "error_lines": "7", "script_errors": "0", "pass_lines": "0", "result": "INTEL_SUPPLY_SMOKE: FAIL (83 checks)"}
+{"mutant": "sanitize_three_keys", "test": "m10_persistence", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "pass_lines": "27", "result": "M10_PERSISTENCE_SMOKE: PASS"}
+{"mutant": "sanitize_three_keys", "test": "contract_save", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "RUN_CONTRACT_SAVE_SMOKE: PASS (175 checks)"}
+{"mutant": "sanitize_three_keys", "test": "m13_migration", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "pass_lines": "9", "result": "M13_WEAPON_BASE_MIGRATION_SMOKE: PASS"}
+{"mutant": "sanitize_three_keys", "test": "m10_intel", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "secured_skips_origin", "test": "intel_supply", "exit": "1", "wall_s": "3", "error_lines": "5", "script_errors": "0", "pass_lines": "0", "result": "INTEL_SUPPLY_SMOKE: FAIL (83 checks)"}
+{"mutant": "secured_skips_origin", "test": "m10_intel", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "secured_skips_origin", "test": "campaign", "exit": "0", "wall_s": "28", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/secured_skips_origin_campaign"}
+{"mutant": "weapon_hit_profile_not_overridden", "test": "weapon_expansion", "exit": "1", "wall_s": "5", "error_lines": "3", "script_errors": "0", "pass_lines": "0", "result": "WEAPON_EXPANSION_SMOKE: FAIL (131 checks)"}
+{"mutant": "weapon_hit_profile_not_overridden", "test": "hit_hurt_vfx", "exit": "0", "wall_s": "5", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "COMBAT_HIT_HURT_VFX_SMOKE: PASS (47 checks)"}
+{"mutant": "weapon_hit_profile_not_overridden", "test": "m13_campaign", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "pass_lines": "16", "result": "M13_WEAPON_CAMPAIGN_SMOKE: PASS"}
+{"mutant": "weapon_hit_profile_not_overridden", "test": "m13_runtime", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "pass_lines": "18", "result": "M13_WEAPON_RUNTIME_SMOKE: PASS"}
+{"mutant": "rail_damage_40", "test": "weapon_expansion", "exit": "1", "wall_s": "5", "error_lines": "3", "script_errors": "0", "pass_lines": "0", "result": "WEAPON_EXPANSION_SMOKE: FAIL (131 checks)"}
+{"mutant": "rail_damage_40", "test": "m13_loadout", "exit": "1", "wall_s": "7", "error_lines": "3", "script_errors": "0", "pass_lines": "50", "result": "M13_WEAPON_LOADOUT_SMOKE: FAIL (3)"}
+{"mutant": "rail_damage_40", "test": "m13_campaign", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "pass_lines": "16", "result": "M13_WEAPON_CAMPAIGN_SMOKE: PASS"}
+{"mutant": "rail_damage_40", "test": "upgrade_economy", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "UPGRADE_ECONOMY: PASS (225 checks)"}
+{"mutant": "rail_unlock_removed", "test": "weapon_expansion", "exit": "1", "wall_s": "5", "error_lines": "3", "script_errors": "0", "pass_lines": "0", "result": "WEAPON_EXPANSION_SMOKE: FAIL (131 checks)"}
+{"mutant": "rail_unlock_removed", "test": "m13_loadout", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "pass_lines": "53", "result": "M13_WEAPON_LOADOUT_SMOKE: PASS"}
+{"mutant": "rail_unlock_removed", "test": "m13_migration", "exit": "0", "wall_s": "1", "error_lines": "0", "script_errors": "0", "pass_lines": "9", "result": "M13_WEAPON_BASE_MIGRATION_SMOKE: PASS"}
+{"mutant": "null_unlock_removed", "test": "weapon_expansion", "exit": "1", "wall_s": "4", "error_lines": "2", "script_errors": "0", "pass_lines": "0", "result": "WEAPON_EXPANSION_SMOKE: FAIL (131 checks)"}
+{"mutant": "null_unlock_removed", "test": "m13_loadout", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "pass_lines": "53", "result": "M13_WEAPON_LOADOUT_SMOKE: PASS"}
+{"mutant": "null_unlock_removed", "test": "m13_migration", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "pass_lines": "9", "result": "M13_WEAPON_BASE_MIGRATION_SMOKE: PASS"}
+{"mutant": "research_plus_52", "test": "upgrade_economy", "exit": "0", "wall_s": "3", "error_lines": "0", "script_errors": "0", "pass_lines": "0", "result": "UPGRADE_ECONOMY: PASS (225 checks)"}
+{"mutant": "research_plus_52", "test": "m10_intel", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "research_plus_53", "test": "upgrade_economy", "exit": "1", "wall_s": "3", "error_lines": "1", "script_errors": "0", "pass_lines": "0", "result": "UPGRADE_ECONOMY: FAIL (225 checks)"}
+{"mutant": "research_plus_53", "test": "m10_intel", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "research_plus_60", "test": "upgrade_economy", "exit": "1", "wall_s": "3", "error_lines": "1", "script_errors": "0", "pass_lines": "0", "result": "UPGRADE_ECONOMY: FAIL (225 checks)"}
+{"mutant": "research_plus_60", "test": "m10_intel", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "mod_frost_lens_off", "test": "module_expansion", "exit": "1", "wall_s": "5", "error_lines": "1", "script_errors": "0", "pass_lines": "0", "result": "MODULE_EXPANSION_SMOKE: FAIL (86 checks)"}
+{"mutant": "mod_frost_lens_off", "test": "m10_intel", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "mod_rail_spool_cooldown_off", "test": "module_expansion", "exit": "1", "wall_s": "5", "error_lines": "1", "script_errors": "0", "pass_lines": "0", "result": "MODULE_EXPANSION_SMOKE: FAIL (86 checks)"}
+{"mutant": "mod_rail_spool_cooldown_off", "test": "m10_intel", "exit": "0", "wall_s": "8", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "mod_rail_spool_distance_off", "test": "module_expansion", "exit": "1", "wall_s": "5", "error_lines": "1", "script_errors": "0", "pass_lines": "0", "result": "MODULE_EXPANSION_SMOKE: FAIL (86 checks)"}
+{"mutant": "mod_rail_spool_distance_off", "test": "m10_intel", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "mod_spore_filter_off", "test": "module_expansion", "exit": "1", "wall_s": "5", "error_lines": "1", "script_errors": "0", "pass_lines": "0", "result": "MODULE_EXPANSION_SMOKE: FAIL (86 checks)"}
+{"mutant": "mod_spore_filter_off", "test": "m10_intel", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "mod_echo_relay_off", "test": "module_expansion", "exit": "1", "wall_s": "4", "error_lines": "1", "script_errors": "0", "pass_lines": "0", "result": "MODULE_EXPANSION_SMOKE: FAIL (86 checks)"}
+{"mutant": "mod_echo_relay_off", "test": "m10_intel", "exit": "0", "wall_s": "6", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "mod_null_anchor_off", "test": "module_expansion", "exit": "1", "wall_s": "5", "error_lines": "1", "script_errors": "0", "pass_lines": "0", "result": "MODULE_EXPANSION_SMOKE: FAIL (86 checks)"}
+{"mutant": "mod_null_anchor_off", "test": "m10_intel", "exit": "0", "wall_s": "7", "error_lines": "0", "script_errors": "0", "pass_lines": "39", "result": "M10_INTEL_LOADOUT_SMOKE: PASS"}
+{"mutant": "results_rail_old_position", "test": "lab_geometry", "exit": "1", "wall_s": "7", "error_lines": "2", "script_errors": "0", "pass_lines": "0", "result": "LAB_GEOMETRY_SMOKE: FAIL (4005 checks)"}
+{"mutant": "lab_effect_font_9", "test": "lab_geometry", "exit": "1", "wall_s": "7", "error_lines": "32", "script_errors": "0", "pass_lines": "0", "result": "LAB_GEOMETRY_SMOKE: FAIL (4005 checks)"}
+{"mutant": "lab_status_overlap", "test": "lab_geometry", "exit": "1", "wall_s": "8", "error_lines": "15", "script_errors": "0", "pass_lines": "0", "result": "LAB_GEOMETRY_SMOKE: FAIL (4005 checks)"}
+{"mutant": "lab_status_overlap", "test": "m10_base_ui", "exit": "0", "wall_s": "2", "error_lines": "0", "script_errors": "0", "pass_lines": "10", "result": "M10_BASE_UI_ACTION_SMOKE: PASS"}
+{"mutant": "cache_ignores_weapon_change", "test": "weapon_expansion", "exit": "1", "wall_s": "5", "error_lines": "6", "script_errors": "0", "pass_lines": "0", "result": "WEAPON_EXPANSION_SMOKE: FAIL (131 checks)"}
+{"mutant": "cache_ignores_art_replace", "test": "weapon_expansion", "exit": "1", "wall_s": "6", "error_lines": "3", "script_errors": "0", "pass_lines": "0", "result": "WEAPON_EXPANSION_SMOKE: FAIL (131 checks)"}
+{"mutant": "per_shot_copy_restored", "test": "weapon_expansion", "exit": "1", "wall_s": "4", "error_lines": "3", "script_errors": "0", "pass_lines": "0", "result": "WEAPON_EXPANSION_SMOKE: FAIL (131 checks)"}

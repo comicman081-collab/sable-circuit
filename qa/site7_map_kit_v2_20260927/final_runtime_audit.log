@@ -1,0 +1,30 @@
+PLATE FAIL 01_OUTER_GATE_CONTINUITY.png: luma 0.200 p10 0.058 p90 0.368 sat 0.26 hue 143 axis 23.1 | dark holes: p10 0.058 < 0.07; colour cast: saturation 0.26 > 0.15
+PLATE FAIL 02_DECON_CORRIDOR_CONTINUITY.png: luma 0.156 p10 0.077 p90 0.234 sat 0.30 hue -42 axis 30.9 | floor luminance 0.156 outside (0.17, 0.24); colour cast: saturation 0.30 > 0.15; floor axis 30.9 deg outside (22.5, 30.5)
+PLATE PASS 03_ARCHIVE_ANNEX_CONTINUITY.png: luma 0.222 p10 0.137 p90 0.320 sat 0.08 hue -53 axis 29.6
+PLATE FAIL 04_CONTAINMENT_JUNCTION_CONTINUITY.png: luma 0.147 p10 0.062 p90 0.250 sat 0.06 hue 82 axis 23.6 | floor luminance 0.147 outside (0.17, 0.24); dark holes: p10 0.062 < 0.07
+PLATE FAIL 05_CORE_C_CONTINUITY.png: luma 0.161 p10 0.111 p90 0.225 sat 0.07 hue 91 axis 30.5 | floor luminance 0.161 outside (0.17, 0.24)
+PLATE PASS 06_EMERGENCY_LIFT_CONTINUITY.png: luma 0.181 p10 0.084 p90 0.298 sat 0.06 hue -171 axis 30.3
+PLATE FAIL 07_EMERGENCY_STORES_CONTINUITY.png: luma 0.175 p10 0.108 p90 0.251 sat 0.23 hue 143 axis 31.3 | colour cast: saturation 0.23 > 0.15; floor axis 31.3 deg outside (22.5, 30.5)
+PLATE FAIL 08_SIGNAL_LAB_CONTINUITY.png: luma 0.224 p10 0.141 p90 0.327 sat 0.03 hue -62 axis 32.1 | floor axis 32.1 deg outside (22.5, 30.5)
+PLATE PASS 09_GATE_DECON_CONNECTOR_GAME.png: luma 0.203 p10 0.098 p90 0.316 sat 0.09 hue 161 axis 23.5
+PLATE FAIL 10_DECON_ARCHIVE_CONNECTOR_GAME.png: luma 0.204 p10 0.059 p90 0.358 sat 0.07 hue -105 axis 18.9 | dark holes: p10 0.059 < 0.07; floor axis 18.9 deg outside (22.5, 30.5)
+PLATE FAIL 11_ARCHIVE_CONTAINMENT_CONNECTOR_GAME.png: luma 0.159 p10 0.037 p90 0.280 sat 0.03 hue -27 axis 23.3 | floor luminance 0.159 outside (0.17, 0.24); dark holes: p10 0.037 < 0.07
+PLATE FAIL 12_CONTAINMENT_CORE_CONNECTOR_GAME.png: luma 0.166 p10 0.058 p90 0.262 sat 0.18 hue 32 axis 26.5 | floor luminance 0.166 outside (0.17, 0.24); dark holes: p10 0.058 < 0.07; colour cast: saturation 0.18 > 0.15
+PLATE PASS 13_CORE_LIFT_CONNECTOR_GAME.png: luma 0.211 p10 0.073 p90 0.356 sat 0.05 hue 54 axis 24.7
+PLATE FAIL 14_ARCHIVE_STORES_CONNECTOR_GAME.png: luma 0.212 p10 0.099 p90 0.323 sat 0.16 hue 150 axis 27.8 | colour cast: saturation 0.16 > 0.15
+PLATE FAIL 15_CONTAINMENT_SIGNAL_CONNECTOR_GAME.png: luma 0.208 p10 0.094 p90 0.358 sat 0.20 hue 137 axis 28.0 | colour cast: saturation 0.20 > 0.15
+SEAM FAIL MIS_CH01_01 C0 -> R01_ENTRY | brightness step -0.43 stops; saturation 0.42 vs 0.21
+SEAM FAIL MIS_CH01_01 C0 -> R02_CORRIDOR | brightness step -1.62 stops
+SEAM FAIL MIS_CH01_01 C1 -> R02_CORRIDOR | brightness step -1.62 stops
+SEAM FAIL MIS_CH01_01 C1 -> R03_ARCHIVE | saturation 0.09 vs 0.17
+SEAM FAIL MIS_CH01_01 C2 -> R03_ARCHIVE | brightness step +0.50 stops; saturation 0.57 vs 0.21
+SEAM FAIL MIS_CH01_01 C2 -> R04_CONTAINMENT | brightness step +0.43 stops; saturation 0.18 vs 0.08
+SEAM FAIL MIS_CH01_01 C3 -> R04_CONTAINMENT | brightness step -1.33 stops; saturation 0.62 vs 0.17; hue 121 vs -7 (128 deg)
+SEAM FAIL MIS_CH01_01 C3 -> R05_CORE | brightness step +0.90 stops; saturation 0.77 vs 0.11
+SEAM FAIL MIS_CH01_01 C4 -> R05_CORE | saturation 0.58 vs 0.10
+SEAM FAIL MIS_CH01_01 C4 -> R06_EXTRACTION | brightness step -0.48 stops; saturation 0.17 vs 0.07
+SEAM FAIL MIS_CH01_01 C5 -> R03_ARCHIVE | saturation 0.46 vs 0.18; hue 139 vs -57 (165 deg)
+SEAM FAIL MIS_CH01_01 C5 -> O01_SUPPLY | hue -62 vs 143 (156 deg)
+SEAM FAIL MIS_CH01_01 C6 -> R04_CONTAINMENT | brightness step -0.48 stops; saturation 0.20 vs 0.09
+SEAM FAIL MIS_CH01_01 C6 -> O02_RESEARCH | saturation 0.62 vs 0.15; hue 125 vs -47 (172 deg)
+SITE7_PLATE_LIGHTING FAIL (25 plates/seams off target)

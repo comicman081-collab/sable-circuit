@@ -1,0 +1,58 @@
+{
+  "captures": [],
+  "checks": 46,
+  "dependency_sha256": {
+    "data/visual/site7_environment_props.json": "e4017172cc6fb739c0f4698cbe293b048a101a3fc487a12ca7e8802bfccee37d",
+    "scripts/actors/enemy_actor.gd": "b885cb9a62e326a57eaa4ccbe498f0cc50a953dc678a6cb96111f16d53d76c68",
+    "scripts/actors/operator_actor.gd": "1fa689f977a0ae9a241ef48c3ea10efda928db3d620a38f768fa3188e3c2b6db",
+    "scripts/combat/cover_navigation.gd": "ecd4665444a1da298d1139890d7b1f6049f8fe3f64ce9d659650f26a6a4db832",
+    "scripts/combat/site7_enemy_tactics.gd": "0ab8c597eeb058fddc5347f78d5f37eec3bdbb5393e65a80b6ec9b0cd237ddb3",
+    "scripts/missions/site7_environment_prop.gd": "26f5fa6fc21bd3ab7bae3f92967d80b7f27594b0f30d8de35262e6e783722f27",
+    "tests/render/site7_cover_ai_check.gd": "462efdd3169d0ebc915ff686a531c29b91ae7daed35cf846342b83bf3399484b"
+  },
+  "failures": [],
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "observations": [
+    {
+      "end_distance": 15.049147605896,
+      "hz": 30,
+      "kind": "follower_path",
+      "side_travel": 52.3806762695313
+    },
+    {
+      "displacement": 204.215530395508,
+      "hz": 30,
+      "kind": "drone_flank",
+      "new_warning": true
+    },
+    {
+      "end_distance": 17.3594055175781,
+      "hz": 60,
+      "kind": "follower_path",
+      "side_travel": 49.6266479492188
+    },
+    {
+      "displacement": 200.298690795898,
+      "hz": 60,
+      "kind": "drone_flank",
+      "new_warning": true
+    },
+    {
+      "end_distance": 19.5940532684326,
+      "hz": 120,
+      "kind": "follower_path",
+      "side_travel": 48.5143127441406
+    },
+    {
+      "displacement": 199.588134765625,
+      "hz": 120,
+      "kind": "drone_flank",
+      "new_warning": true
+    }
+  ],
+  "status": "PASS_TECHNICAL_ONLY",
+  "visual_approval": false
+}

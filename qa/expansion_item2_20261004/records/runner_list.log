@@ -1,0 +1,83 @@
+combat_density       quick   300s tests/smoke/combat_density_smoke.gd
+cover_navigation     quick   300s tests/smoke/cover_navigation_smoke.gd
+floor_segment        quick   400s tests/smoke/floor_segment_smoke.gd
+combat_query_fastpath quick   400s tests/smoke/combat_query_fastpath_smoke.gd
+player_cover         quick   300s tests/smoke/site7_player_cover_collision_smoke.gd
+cover_alpha_clip     quick   300s tests/smoke/site7_cover_alpha_clip_smoke.gd
+cover_texture        quick   300s tests/smoke/cover_texture_reduction_smoke.gd
+battle_flow          quick   400s tests/smoke/site7_battle_flow_smoke.gd (solo)
+combat_entry         quick   400s tests/smoke/demo_combat_entry_regression.gd (solo)
+drone_app            quick   400s tests/smoke/site7_drone_app_smoke.gd
+anchor_app           quick   400s tests/smoke/site7_anchor_app_smoke.gd
+campaign_data        quick   300s tests/smoke/site7_campaign_data_smoke.gd
+upgrade_economy      quick   300s tests/smoke/upgrade_economy_smoke.gd
+boss_registry        quick   600s tests/smoke/site7_boss_registry_smoke.gd
+boss_pattern         quick   400s tests/smoke/site7_boss_pattern_smoke.gd
+boss_duel            quick   400s tests/smoke/site7_boss_duel_smoke.gd
+boss_room_fairness   quick   400s tests/smoke/site7_boss_room_fairness_smoke.gd
+robot_roster         quick   600s tests/smoke/site7_robot_roster_smoke.gd
+enemy_facing         quick   300s tests/smoke/site7_enemy_facing_smoke.gd
+machine_source       quick   300s tests/smoke/site7_machine_source_smoke.gd
+emission_owner       quick   600s tests/smoke/site7_emission_owner_smoke.gd
+m2_story             quick   400s tests/smoke/m2_story_flow_smoke.gd
+m9_skill             quick   300s tests/smoke/m9_operator_skill_synergy_smoke.gd
+m10_base_ui          quick   300s tests/smoke/m10_base_ui_action_smoke.gd
+m10_persistence      quick   300s tests/smoke/m10_persistence_smoke.gd
+run_contract         quick   300s tests/smoke/m11_run_contract_smoke.gd
+contract_offers      quick   120s tests/smoke/run_contract_offers_smoke.gd
+contract_ui          quick   300s tests/smoke/run_contract_ui_smoke.gd (solo)
+redline              quick   300s tests/smoke/redline_smoke.gd
+contract_save        quick   120s tests/smoke/run_contract_save_smoke.gd
+m12_revive           quick   300s tests/smoke/m12_squad_revive_smoke.gd
+play_log             quick   300s tests/smoke/play_session_log_smoke.gd
+hit_hurt_vfx         quick   300s tests/smoke/combat_hit_hurt_vfx_smoke.gd
+combat_vfx           quick   300s tests/smoke/combat_vfx_overhaul_smoke.gd
+elite_affix          quick   300s tests/smoke/elite_affix_smoke.gd
+elite_expansion      quick   300s tests/smoke/elite_expansion_smoke.gd
+zone_hazard          quick   400s tests/smoke/zone_hazard_smoke.gd
+hazard_expansion     quick   600s tests/smoke/hazard_expansion_smoke.gd (solo)
+firing_lane          quick   400s tests/smoke/firing_lane_search_smoke.gd
+platform_carry       quick   200s tests/smoke/actor_platform_carry_smoke.gd
+contact_carry        quick   300s tests/smoke/actor_contact_carry_smoke.gd
+world_layout         quick   300s tools/environment/build_site7_world_layout.py
+mood_light           quick   300s tools/environment/build_site7_mood_light.py
+walk_registration    quick   300s tools/character_pipeline/build_walk_torso_registration.py
+plate_axis           quick   120s tests/test_site7_plate_lighting_axis.py
+variety_placement    quick   120s tests/test_expansion_item1_placement.py
+seam_waiver          quick   300s tests/test_site7_plate_lighting_seam_waiver.py
+mood_contact         quick   120s tests/test_site7_mood_contact_compare.py
+deploy_warmer        quick   400s tests/smoke/deploy_warmer_smoke.gd
+m13_migration        quick   300s tests/smoke/m13_weapon_base_migration_smoke.gd
+m13_campaign         quick   300s tests/smoke/m13_weapon_campaign_smoke.gd
+m13_runtime          quick   300s tests/smoke/m13_weapon_runtime_smoke.gd
+full_op_01           full    900s tests/smoke/site7_full_operation_smoke.gd (solo)
+full_op_02           full    900s tests/smoke/site7_full_operation_smoke.gd (solo)
+full_op_03           full    900s tests/smoke/site7_full_operation_smoke.gd (solo)
+full_op_04           full    900s tests/smoke/site7_full_operation_smoke.gd (solo)
+full_op_05           full    900s tests/smoke/site7_full_operation_smoke.gd (solo)
+full_op_06           full    900s tests/smoke/site7_full_operation_smoke.gd (solo)
+full_op_07           full    900s tests/smoke/site7_full_operation_smoke.gd (solo)
+full_op_08           full    900s tests/smoke/site7_full_operation_smoke.gd (solo)
+full_op_09           full    900s tests/smoke/site7_full_operation_smoke.gd (solo)
+full_op_10           full    900s tests/smoke/site7_full_operation_smoke.gd (solo)
+traversal_audit      full   1200s tests/smoke/site7_traversal_audit_smoke.gd
+enemy_cover_nav      full    600s tests/render/enemy_cover_navigation_regression.gd
+cover_ai             full    400s tests/render/site7_cover_ai_check.gd
+boss_capture_geometry full    900s tests/render/site7_boss_pattern_capture.gd (solo)
+boss_lineup          full    300s tests/render/site7_boss_lineup_capture.gd
+variety_capture      full    300s tests/render/expansion_item1_capture.gd (solo)
+world_route          full    400s tests/smoke/site7_world_route_navigation_smoke.gd
+nav_pockets          full    400s tools/environment/audit_nav_pockets.gd (solo)
+connector_alignment  full   1800s tests/smoke/site7_connector_alignment_smoke.gd
+battle_geometry      full    900s tests/smoke/site7_battle_geometry_smoke.gd
+walk_graph_capture   full    900s tests/render/site7_walk_graph_capture.gd
+combat_sfx           full    400s tests/smoke/combat_sfx_r04_smoke.gd
+demo_integration     full    400s tests/render/demo_integration_check.gd
+m7_visual            full    400s tests/smoke/m7_authored_visual_smoke.gd
+m10_intel            full    300s tests/smoke/m10_intel_loadout_smoke.gd
+m13_loadout          full    300s tests/smoke/m13_weapon_loadout_smoke.gd
+campaign             full    600s tests/smoke/site7_campaign_progression_smoke.gd
+rook_app             full    400s tests/smoke/rook_motion_lab_app_smoke.gd
+motion_lab_runtime   full    400s tests/smoke/motion_lab_character_runtime_smoke.gd
+motion_lab_python    full   1200s python
+motion_lab_js        full    300s node

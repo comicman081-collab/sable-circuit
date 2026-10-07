@@ -1,0 +1,36 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+M7_RASTER_QUARANTINED identity=aster status=partial chunks=2 encoded=20000 present=15000 declared=94718
+FULL_OPERATION_TRACE {"ammo":24,"health":[96.0,138.0,112.0],"position":[410.0,390.0],"remaining":0,"step":0,"tick":0,"wave":0}
+FULL_OPERATION_TRACE {"ammo":24,"health":[96.0,138.0,112.0],"position":[318.021026611328,515.599975585938],"remaining":0,"step":1,"tick":31,"wave":0}
+FULL_OPERATION_TRACE {"ammo":15,"health":[62.0,102.0,94.0],"position":[610.404052734375,405.998870849609],"remaining":2,"step":1,"tick":600,"wave":0}
+FULL_OPERATION_TRACE {"ammo":0,"health":[62.0,102.0,94.0],"position":[722.458435058594,163.293716430664],"remaining":1,"step":1,"tick":1200,"wave":0}
+FULL_OPERATION_TRACE {"ammo":4,"health":[62.0,102.0,94.0],"position":[669.493591308594,372.126922607422],"remaining":1,"step":1,"tick":1800,"wave":0}
+FULL_OPERATION_TRACE {"ammo":14,"health":[62.0,102.0,94.0],"position":[667.016357421875,373.559234619141],"remaining":1,"step":1,"tick":2400,"wave":0}
+FULL_OPERATION_TRACE {"ammo":0,"health":[62.0,102.0,94.0],"position":[709.665344238281,170.086227416992],"remaining":1,"step":1,"tick":3000,"wave":0}
+FULL_OPERATION_TRACE {"ammo":3,"health":[62.0,84.0,94.0],"position":[723.006103515625,162.208358764648],"remaining":1,"step":1,"tick":3600,"wave":0}
+FULL_OPERATION_TRACE {"ammo":13,"health":[44.0,66.0,76.0],"position":[669.25048828125,372.313232421875],"remaining":1,"step":1,"tick":4200,"wave":0}
+FULL_OPERATION_TRACE {"ammo":9,"health":[0.0,66.0,58.0],"position":[600.189697265625,395.376586914063],"remaining":1,"step":1,"tick":4800,"wave":0}
+FULL_OPERATION_TRACE {"ammo":3,"health":[33.6,48.0,58.0],"position":[706.243713378906,172.159545898438],"remaining":1,"step":1,"tick":5400,"wave":0}
+FULL_OPERATION_TRACE {"ammo":4,"health":[33.6,30.0,40.0],"position":[721.876953125,163.534072875977],"remaining":1,"step":1,"tick":6000,"wave":0}
+FULL_OPERATION_TRACE {"ammo":6,"health":[33.6,30.0,40.0],"position":[665.067687988281,348.845825195313],"remaining":1,"step":1,"tick":6600,"wave":0}
+FULL_OPERATION_TRACE {"ammo":9,"health":[33.6,30.0,40.0],"position":[668.420837402344,372.742126464844],"remaining":0,"step":2,"tick":7145,"wave":0}
+FULL_OPERATION_TRACE {"ammo":9,"health":[33.6,30.0,40.0],"position":[791.73779296875,514.537292480469],"remaining":0,"step":2,"tick":7200,"wave":0}
+FULL_OPERATION_TRACE {"ammo":10,"health":[67.2,78.3,79.2],"position":[1019.10992431641,649.336303710938],"remaining":0,"step":3,"tick":7322,"wave":0}
+FULL_OPERATION_TRACE {"ammo":0,"health":[67.2,60.3,79.2],"position":[1207.18200683594,356.872344970703],"remaining":3,"step":3,"tick":7800,"wave":0}
+FULL_OPERATION_TRACE {"ammo":13,"health":[67.2,0.0,63.2],"position":[1013.96942138672,462.341156005859],"remaining":2,"step":3,"tick":8400,"wave":0}
+FULL_OPERATION_TRACE {"ammo":8,"health":[67.2,48.3,45.2],"position":[1512.41540527344,190.280334472656],"remaining":0,"step":4,"tick":8791,"wave":0}
+FULL_OPERATION_TRACE {"ammo":20,"health":[67.2,0.0,45.2],"position":[1777.79211425781,678.387451171875],"remaining":1,"step":4,"tick":9000,"wave":0}
+FULL_OPERATION_TRACE {"ammo":0,"health":[23.2,0.0,25.2],"position":[2062.70043945313,767.412048339844],"remaining":1,"step":4,"tick":9600,"wave":0}
+FULL_OPERATION_TRACE {"ammo":13,"health":[23.2,0.0,0.0],"position":[1786.90588378906,693.344177246094],"remaining":0,"step":5,"tick":9961,"wave":0}
+ERROR: Live combat and extraction succeed without cheats
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_full_operation_smoke.gd:64)
+       [1] run (res://tests/smoke/site7_full_operation_smoke.gd:149)
+ERROR: All six rooms reached; not early extraction
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_full_operation_smoke.gd:64)
+       [1] run (res://tests/smoke/site7_full_operation_smoke.gd:150)
+SITE7_FULL_OPERATION_SMOKE: FAIL

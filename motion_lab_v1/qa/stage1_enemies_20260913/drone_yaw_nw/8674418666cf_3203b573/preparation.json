@@ -1,0 +1,41 @@
+{
+  "id": "drone_yaw_nw",
+  "status": "CANDIDATE_NOT_REVIEWED",
+  "source": "art\\site7_enemies_raw\\drone_NW_v1.png",
+  "sourceSHA256": "8674418666cfe6d0b476b446f3cc1257e9c592ad1571956f3b840b3f50d1eac0",
+  "toolResponse": {
+    "path": "art\\site7_enemies_raw\\drone_NW_v1_tool_response.json",
+    "sha256": "07c8d3e545ca988bb11d2c0a17b3e50e5c1a46da5f050ab0db05c6ca65dfe0e3"
+  },
+  "sourceNative": [
+    1536,
+    1024
+  ],
+  "box": [
+    63,
+    36,
+    1489,
+    991
+  ],
+  "candidate": "qa\\stage1_enemies_20260913\\drone_yaw_nw\\8674418666cf_3203b573\\candidate_rgba.png",
+  "candidateSHA256": "81a941bb695ab9a037dfdd16a5ff0f80fe3998fc51bd5e0776e644b7089125d9",
+  "candidateNative": [
+    1426,
+    955
+  ],
+  "native_review": [
+    1920,
+    1080
+  ],
+  "operation": "existing key_image chroma/alpha separation then native crop only",
+  "preparationCodeSHA256": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a",
+  "matteCodeSHA256": "1395b21aa409e4605ce769479e9984968f0a88912adda648879b6869d2dd527f",
+  "implementationDependencies": {
+    "preparation": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a",
+    "matte": "1395b21aa409e4605ce769479e9984968f0a88912adda648879b6869d2dd527f",
+    "provenance": "d6da53bb5321ad08008e52a0e371e7b712e9eb72c762baa545083f008fe5256d"
+  },
+  "resampling": false,
+  "anatomicalWarp": false,
+  "runtimePromotion": false
+}

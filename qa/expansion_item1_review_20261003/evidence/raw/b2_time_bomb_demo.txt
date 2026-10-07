@@ -1,0 +1,9 @@
+B-2 demonstration (Claude, 2026-10-03). Scratch copy of a6eb1d35 (.cache/claude_scratch/proj_after), GIT_DIR pointed at the repository.
+Unmodified tree: python -m unittest tests.test_expansion_item1_placement -> Ran 5 tests, OK.
+Legitimate later edit: +1 `health` on the first authored robot row of data/missions/MIS_CH01_03.json (operation 3 is "protected" by the test).
+Result: exit 1
+  FAIL: test_deployed_missions_preserve_authored_combat_and_rewards (operation=3)
+  AssertionError: Lists differ: [] != ['protected operation changed', 'fields outside hazards/affix changed']
+  Ran 5 tests, FAILED (failures=1)
+File restored (byte-identical to the repository copy); rerun: exit 0.
+Meaning: any legitimate change to a mission file, or new art under assets/art_src/motion_lab_v1/data/visual, turns the quick suite red because the test compares today's tree with dca7ef20 forever.

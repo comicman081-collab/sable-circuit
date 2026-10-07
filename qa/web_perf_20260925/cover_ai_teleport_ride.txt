@@ -1,0 +1,32 @@
+cover_ai (tests/render/site7_cover_ai_check.gd) 60Hz follower failure: diagnosis and fixture fix, 2026-09-25
+
+Symptom (full suite 20260925_184616_full): "Follower bypasses cover and stops at hostile body at 60Hz (gap=212.49)".
+Normal timing: new scripts FAIL 3/3, HEAD scripts PASS 3/3 (coverai_bisect.py).
+With --fixed-fps 60 the CoverNavigation plan traces of new and HEAD are identical (2664/2664 lines) and BOTH fail
+with gap 201.18 (coverai_trace.py). The performance changes do not alter navigation; the test outcome depends on frame timing.
+
+Probe (tools/cover_ai_probe.gd, --fixed-fps 60, temporary prints around OperatorActor.move_and_slide, file restored):
+  hz=60 before the first follower tick:
+    on_wall=true on_floor=true motion_mode=0 (GROUNDED) last collider=EnemyActor (the drone)
+    drone body-state linear velocity = (8991.211, 9278.913)
+  first tick: velocity (80.3, -144.1), but move_and_slide moves (4008.2,541.1) -> (4159.4,693.4) with 0 slide
+  collisions; the floor clamp then gives (4181.0,653.0). The follower is stuck there for the rest of the loop.
+  hz=30 / hz=120: no stale contact; each tick moves velocity/hz as expected.
+
+Cause: the follower's last contact at the end of the previous phase is the drone, which the default GROUNDED
+CharacterBody2D records as a floor (moving platform). reset_positions() then teleports the drone back to its slot.
+The physics server reports a teleported kinematic body's jump as its velocity for one step (≈150 px per 1/60 s).
+If the follower moves in that step, it rides the drone's teleport as a moving floor.
+HEAD passed only when a slow frame ran two physics steps before the follower moved, so the drone's velocity had
+decayed to zero. With the faster scripts there is one physics step per frame, and the ride happens every run.
+
+Fixture fix (test only; no game script changed): reset_positions() waits three physics frames after teleporting
+(a wait resumes before its step, so three waits cover two whole steps: the jump, then rest). Call sites await it.
+
+After the fix (follower [hz, end_distance, side_travel]):
+  --fixed-fps 60: new PASS 46/46 [[30,34.9,59.0],[60,34.9,59.2],[120,34.9,59.2]]; HEAD scripts PASS 46/46, identical.
+  normal timing x3: new PASS 3/3, HEAD scripts PASS 3/3, all identical to the above.
+
+Not changed here: operators and enemies use the GROUNDED motion mode (no motion_mode set in scripts/scenes). In play,
+an operator touching a moving robot from the north can be carried by it the same way. That is a gameplay change, so
+it is left for a separate decision.

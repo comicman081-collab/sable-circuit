@@ -1,0 +1,367 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "mission_id": "MIS_CH01_04",
+  "chapter_id": "CH01",
+  "title": "FORGE DESCENT",
+  "zone": "Site-7 Thermal Fabrication Spine",
+  "objectives": [
+    {
+      "id": "OBJ_FORGE_ENTRY",
+      "kind": "PRIMARY",
+      "source_room": "R01_ENTRY",
+      "title": "Reach the thermal spine",
+      "prerequisites": [],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_FORGE_GATE",
+      "kind": "PRIMARY",
+      "source_room": "R02_GATE",
+      "title": "Break the forge gate",
+      "prerequisites": [
+        "OBJ_FORGE_ENTRY"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_FORGE_TRACE",
+      "kind": "PRIMARY",
+      "source_room": "R03_TRACE",
+      "title": "Recover the heat-map trace",
+      "prerequisites": [
+        "OBJ_FORGE_GATE"
+      ],
+      "required_for_extraction": true
+    },
+    {
+      "id": "OBJ_FORGE_LINE",
+      "kind": "DEEP",
+      "source_room": "R04_LINE",
+      "title": "Cross the cooling line",
+      "prerequisites": [
+        "OBJ_FORGE_TRACE"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_FORGE_WARDEN",
+      "kind": "BOSS",
+      "source_room": "R05_WARDEN",
+      "title": "Disable the Forge Warden",
+      "prerequisites": [
+        "OBJ_FORGE_LINE"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_FORGE_ESCAPE",
+      "kind": "PRIMARY",
+      "source_room": "R06_ESCAPE",
+      "title": "Extract through the service lock",
+      "prerequisites": [
+        "OBJ_FORGE_WARDEN"
+      ],
+      "required_for_extraction": false
+    }
+  ],
+  "main_route": [
+    {
+      "id": "R01_ENTRY",
+      "objective_id": "OBJ_FORGE_ENTRY",
+      "type": "EVENT",
+      "title": "Thermal Spine",
+      "x": 280,
+      "y": 560,
+      "objective": "Reach the thermal spine",
+      "story": "The lower fabrication route is still powered. Heat signatures move behind the sealed forge gate.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 26
+        }
+      ]
+    },
+    {
+      "id": "R02_GATE",
+      "objective_id": "OBJ_FORGE_GATE",
+      "encounter_id": "ENC_FORGE_GATE_01",
+      "type": "COMBAT",
+      "title": "Forge Gate",
+      "x": 660,
+      "y": 240,
+      "objective": "Break the forge gate",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 1
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 156,
+          "offset_x": 218,
+          "offset_y": 94
+        },
+        {
+          "enemy_id": "ENM_SITE7_BULWARK_01",
+          "affix": "SHIELDED",
+          "health": 268,
+          "offset_x": 292,
+          "offset_y": -18
+        },
+        {
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "health": 150,
+          "offset_x": 220,
+          "offset_y": -108
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 98,
+          "offset_x": 260,
+          "offset_y": 20
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 38
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 150
+          },
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 140
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 96
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R03_TRACE",
+      "objective_id": "OBJ_FORGE_TRACE",
+      "type": "RESEARCH",
+      "title": "Heat-map Trace",
+      "x": 1040,
+      "y": 560,
+      "objective": "Recover the heat-map trace",
+      "story": "The trace marks an industrial carrier route leading through the cooling line.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 46
+        },
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 22
+        }
+      ]
+    },
+    {
+      "id": "R04_LINE",
+      "objective_id": "OBJ_FORGE_LINE",
+      "encounter_id": "ENC_FORGE_LINE_01",
+      "type": "ELITE",
+      "title": "Cooling Line",
+      "x": 1420,
+      "y": 240,
+      "objective": "Cross the cooling line",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 2
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "affix": "OVERCHARGED",
+          "health": 178,
+          "offset_x": 212,
+          "offset_y": 64
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 178,
+          "offset_x": 302,
+          "offset_y": 90
+        },
+        {
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "health": 132,
+          "offset_x": 292,
+          "offset_y": -96
+        },
+        {
+          "enemy_id": "ENM_SITE7_BULWARK_01",
+          "health": 220,
+          "offset_x": 250,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 44
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 150
+          },
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 160
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "affix": "VOLATILE",
+            "health": 100
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R05_WARDEN",
+      "objective_id": "OBJ_FORGE_WARDEN",
+      "encounter_id": "ENC_FORGE_WARDEN_01",
+      "type": "BOSS",
+      "title": "Forge Warden",
+      "x": 1800,
+      "y": 560,
+      "objective": "Disable the Forge Warden",
+      "encounter": [
+        {
+          "enemy_id": "BOSS_SITE7_FORGE_01",
+          "health": 1120,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 150,
+          "offset_x": 240,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 100,
+          "offset_x": 240,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 88
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 140
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 100
+          }
+        ],
+        [
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 150
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 100
+          }
+        ]
+      ],
+      "reinforce_at": 1
+    },
+    {
+      "id": "R06_ESCAPE",
+      "objective_id": "OBJ_FORGE_ESCAPE",
+      "type": "EXTRACTION",
+      "title": "Service Lock",
+      "x": 2180,
+      "y": 240,
+      "objective": "Extract through the service lock",
+      "story": "The forge is cooling. Reach the service lock before the thermal spine re-pressurizes.",
+      "loot": []
+    }
+  ],
+  "optional_rooms": [
+    {
+      "id": "O01_SUPPLY",
+      "from": "R03_TRACE",
+      "objective_id": "OBJ_FORGE_SUPPLY",
+      "type": "SUPPLY",
+      "title": "Coolant Cache",
+      "x": 1040,
+      "y": 800,
+      "reward": "coolant_cells",
+      "story": "A sealed coolant cache can stabilize the squad before the warden fight.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 28
+        },
+        {
+          "loot_id": "LOT_SALVAGE_FIELD",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": "O02_RESEARCH",
+      "from": "R04_LINE",
+      "objective_id": "OBJ_FORGE_SIGNAL",
+      "type": "RESEARCH",
+      "title": "Thermal Observatory",
+      "x": 1420,
+      "y": 800,
+      "reward": "heat_map",
+      "story": "The observatory records the Warden's core cycling pattern.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 54
+        },
+        {
+          "loot_id": "LOT_SIGNAL_FRAGMENT",
+          "quantity": 2
+        },
+        {
+          "loot_id": "LOT_INTEL_MECHANICAL",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "extraction_offer_room_ids": [
+    "R03_TRACE",
+    "R04_LINE",
+    "R05_WARDEN"
+  ],
+  "enemy_roster_revision": 3,
+  "new_enemy_ids": [
+    "ENM_SITE7_PRISM_01",
+    "BOSS_SITE7_FORGE_01"
+  ]
+}

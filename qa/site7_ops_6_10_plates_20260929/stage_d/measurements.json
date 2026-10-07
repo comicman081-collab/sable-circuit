@@ -1,0 +1,689 @@
+{
+  "status": "HOLD",
+  "held_plate": "S9_R02",
+  "imagegen_calls": 4,
+  "candidates": [
+    {
+      "asset": ".cache/diag/site7_ops_d/candidates/S9_R01/attempt01/S9_R01_GAME.png",
+      "luma": 0.19999602437019348,
+      "p10": 0.15669412910938263,
+      "p90": 0.23124706745147705,
+      "saturation": 0.04266645599847821,
+      "hue": 139.279713972943,
+      "axis": 25.08575373840929,
+      "problems": [],
+      "plate": "S9_R01",
+      "attempt": 1,
+      "native_size": [
+        1672,
+        941
+      ],
+      "source_scale": 1.0,
+      "actual_floor_px": [
+        [
+          144,
+          496
+        ],
+        [
+          833,
+          215
+        ],
+        [
+          1535,
+          495
+        ],
+        [
+          835,
+          829
+        ],
+        [
+          540,
+          687
+        ],
+        [
+          364,
+          813
+        ],
+        [
+          139,
+          695
+        ],
+        [
+          329,
+          603
+        ]
+      ],
+      "doors_px": {
+        "SW": [
+          434,
+          645
+        ]
+      },
+      "raw_sha256": "730a850b2b5eeab8394a7974383ecede5ba4e0fd74419b38f73384a59928c71c",
+      "master_sha256": "730a850b2b5eeab8394a7974383ecede5ba4e0fd74419b38f73384a59928c71c",
+      "game_sha256": "1320d7a71a6ab9e35e413ab642cb90bf159db80c4401e401e77f61798f6b3d59",
+      "game_exposure_factor_srgb": 0.7329,
+      "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-3c0ef4e2-0dd8-4042-8a0a-c0e074ea49a4.png",
+      "inspection": "One SW rail gap and matching flat apron. NW and NE blind panel walls; SE continuous rail. Rectangular brass panel buttresses, no circular fans. Actual painted floor traced including SW apron; neutral open floor.",
+      "floor_area_px2": 472858.0,
+      "floor_area_fraction": 0.3005417732331989,
+      "floor_bounds_px": [
+        139,
+        215,
+        1535,
+        829
+      ],
+      "status": "SELECTED",
+      "reason": "",
+      "raw": "art_src/environments/site7_v2/stage09/S9_R01/S9_R01_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage09/S9_R01/S9_R01_MASTER.png",
+      "game": "assets/environments/site7_v2/stage09/S9_R01/S9_R01_GAME.png",
+      "manual_checks": {
+        "floor_margins_ltrb_fraction": [
+          0.08313397129186603,
+          0.22848034006376194,
+          0.0819377990430622,
+          0.11902231668437832
+        ],
+        "floor_margin_minimum": 0.08,
+        "floor_margin_pass": true,
+        "floor_area_25_percent_pass": true,
+        "required_doors": [
+          "SW"
+        ],
+        "visible_doors": [
+          "SW"
+        ],
+        "door_sides_pass": true,
+        "corridor_width": "NOT_APPLICABLE_ROOM",
+        "wall_silhouette": "new rectangular brass buttresses / blind panels",
+        "door_width_and_apron_runtime_alignment": "NOT_VALIDATED: no connected corridor exists",
+        "apron_samples": {
+          "SW": {
+            "painted_apron_polygon_px": [
+              [
+                329,
+                603
+              ],
+              [
+                540,
+                687
+              ],
+              [
+                364,
+                813
+              ],
+              [
+                139,
+                695
+              ]
+            ],
+            "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+            "luma": 0.21548166871070862,
+            "saturation": 0.05013132761993942,
+            "saturation_max": 0.1,
+            "saturation_pass": true
+          }
+        }
+      }
+    },
+    {
+      "asset": ".cache/diag/site7_ops_d/candidates/S9_R02/attempt01/S9_R02_GAME.png",
+      "luma": 0.200446218252182,
+      "p10": 0.15321962535381317,
+      "p90": 0.2524157166481018,
+      "saturation": 0.05766242308597157,
+      "hue": 145.95450034447603,
+      "axis": 24.658985596093622,
+      "problems": [],
+      "plate": "S9_R02",
+      "attempt": 1,
+      "native_size": [
+        1672,
+        941
+      ],
+      "source_scale": 1.0,
+      "actual_floor_px": [
+        [
+          80,
+          494
+        ],
+        [
+          835,
+          199
+        ],
+        [
+          1082,
+          278
+        ],
+        [
+          1255,
+          193
+        ],
+        [
+          1263,
+          351
+        ],
+        [
+          1598,
+          493
+        ],
+        [
+          1431,
+          611
+        ],
+        [
+          1597,
+          696
+        ],
+        [
+          1429,
+          798
+        ],
+        [
+          1262,
+          705
+        ],
+        [
+          835,
+          854
+        ],
+        [
+          414,
+          703
+        ],
+        [
+          243,
+          799
+        ],
+        [
+          65,
+          696
+        ],
+        [
+          237,
+          610
+        ]
+      ],
+      "doors_px": {
+        "SW": [
+          326,
+          657,
+          236
+        ],
+        "NE": [
+          1173,
+          307,
+          202
+        ],
+        "SE": [
+          1346,
+          658,
+          211
+        ]
+      },
+      "raw_sha256": "aa1e6f0b5e108f01123ddeb60d0886a3c23fdeb16096459846e00ae8b98bb11d",
+      "master_sha256": "aa1e6f0b5e108f01123ddeb60d0886a3c23fdeb16096459846e00ae8b98bb11d",
+      "game_sha256": "a71526915b9defbfc7fb6572dc072e3649f152cc5090438fbfe7e8f6df4c25ee",
+      "game_exposure_factor_srgb": 0.6741,
+      "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-64163cf4-ca25-4d41-91de-4a56dd31dfa4.png",
+      "inspection": "REJECT: unexpected SE rail gap and neutral apron copied from three-door reference. Actual floor includes all three painted aprons. Blade racks in wall arches differ from plain S3 panels.",
+      "floor_area_px2": 626314.0,
+      "floor_area_fraction": 0.3980762092653138,
+      "floor_bounds_px": [
+        65,
+        193,
+        1598,
+        854
+      ],
+      "status": "REJECTED",
+      "reason": "Unrequested SE doorway and apron; production order requires only NE and SW. Floor/aprons also approach image borders more closely than the requested 8% margin. No promotion.",
+      "raw": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt01/S9_R02_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt01/S9_R02_MASTER.png",
+      "game": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt01/S9_R02_GAME.png",
+      "manual_checks": {
+        "floor_margins_ltrb_fraction": [
+          0.038875598086124404,
+          0.2051009564293305,
+          0.04425837320574163,
+          0.0924548352816153
+        ],
+        "floor_margin_minimum": 0.08,
+        "floor_margin_pass": false,
+        "floor_area_25_percent_pass": true,
+        "required_doors": [
+          "NE",
+          "SW"
+        ],
+        "visible_doors": [
+          "SW",
+          "NE",
+          "SE"
+        ],
+        "door_sides_pass": false,
+        "corridor_width": "NOT_APPLICABLE_ROOM",
+        "wall_silhouette": "new slotted gold memory-blade rack panels; no S3 round fan",
+        "door_width_and_apron_runtime_alignment": "NOT_VALIDATED: no connected corridor exists",
+        "apron_samples": {
+          "SW": {
+            "painted_apron_polygon_px": [
+              [
+                237,
+                610
+              ],
+              [
+                414,
+                703
+              ],
+              [
+                243,
+                799
+              ],
+              [
+                65,
+                696
+              ]
+            ],
+            "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+            "luma": 0.23085945844650269,
+            "saturation": 0.05174006589617565,
+            "saturation_max": 0.1,
+            "saturation_pass": true
+          },
+          "NE": {
+            "painted_apron_polygon_px": [
+              [
+                1082,
+                278
+              ],
+              [
+                1255,
+                193
+              ],
+              [
+                1263,
+                351
+              ]
+            ],
+            "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+            "luma": 0.2278536856174469,
+            "saturation": 0.021197989929541868,
+            "saturation_max": 0.1,
+            "saturation_pass": true
+          },
+          "SE": {
+            "painted_apron_polygon_px": [
+              [
+                1431,
+                611
+              ],
+              [
+                1597,
+                696
+              ],
+              [
+                1429,
+                798
+              ],
+              [
+                1262,
+                705
+              ]
+            ],
+            "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+            "luma": 0.2399173527956009,
+            "saturation": 0.04949414282138185,
+            "saturation_max": 0.1,
+            "saturation_pass": true
+          }
+        }
+      }
+    },
+    {
+      "asset": ".cache/diag/site7_ops_d/candidates/S9_R02/attempt02/S9_R02_GAME.png",
+      "luma": 0.20019491016864777,
+      "p10": 0.15439216792583466,
+      "p90": 0.2568000257015228,
+      "saturation": 0.06489462505876165,
+      "hue": 146.83973920923148,
+      "axis": 24.797378258138895,
+      "problems": [],
+      "plate": "S9_R02",
+      "attempt": 2,
+      "native_size": [
+        1672,
+        941
+      ],
+      "source_scale": 1.0,
+      "actual_floor_px": [
+        [
+          82,
+          495
+        ],
+        [
+          833,
+          202
+        ],
+        [
+          1094,
+          296
+        ],
+        [
+          1129,
+          273
+        ],
+        [
+          1262,
+          197
+        ],
+        [
+          1268,
+          366
+        ],
+        [
+          1590,
+          497
+        ],
+        [
+          836,
+          868
+        ],
+        [
+          427,
+          695
+        ],
+        [
+          232,
+          798
+        ],
+        [
+          54,
+          697
+        ],
+        [
+          245,
+          604
+        ]
+      ],
+      "doors_px": {
+        "NE": [
+          1180,
+          336,
+          215
+        ],
+        "SW": [
+          335,
+          651,
+          238
+        ]
+      },
+      "raw_sha256": "329b3911a5725d23b344a673dad9950b174c3b89b4bf3feab45dfda75d402f2f",
+      "master_sha256": "329b3911a5725d23b344a673dad9950b174c3b89b4bf3feab45dfda75d402f2f",
+      "game_sha256": "bffb7c2322a681e44d92cae91dfa96df09a13e7f79e9eb998c8b18761006100e",
+      "game_exposure_factor_srgb": 0.7153,
+      "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-597c4d74-aa61-4b38-960e-0a50b8474a34.png",
+      "inspection": "NE/SW 두 문, SE 난간은 닫혔다. 그러나 실제 바닥+SW apron x=54..1590으로 8% 여백(133.76 px) 위반. NW/NE 벽은 새 슬롯형 골드 랙.",
+      "floor_area_px2": 569627.0,
+      "floor_area_fraction": 0.3620467638519543,
+      "floor_bounds_px": [
+        54,
+        197,
+        1590,
+        868
+      ],
+      "status": "REJECTED",
+      "reason": "8% 바닥 테두리 여백 위반: 실제 바닥+에이프런 x 최소 54(3.23%), 오른쪽 잔여 82(4.90%); SW 에이프런이 너무 왼쪽까지 돌출. NE/SW 문은 맞고 SE는 닫혔지만 여백 조건 불합격.",
+      "raw": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt02/S9_R02_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt02/S9_R02_MASTER.png",
+      "game": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt02/S9_R02_GAME.png",
+      "manual_checks": {
+        "floor_margins_ltrb_fraction": [
+          0.03229665071770335,
+          0.20935175345377258,
+          0.04904306220095694,
+          0.077577045696068
+        ],
+        "floor_margin_minimum": 0.08,
+        "floor_margin_pass": false,
+        "floor_area_25_percent_pass": true,
+        "required_doors": [
+          "NE",
+          "SW"
+        ],
+        "visible_doors": [
+          "NE",
+          "SW"
+        ],
+        "door_sides_pass": true,
+        "corridor_width": "NOT_APPLICABLE_ROOM",
+        "wall_silhouette": "new slotted gold memory-blade rack panels; no S3 round fan",
+        "door_width_and_apron_runtime_alignment": "NOT_VALIDATED: no connected corridor exists",
+        "apron_samples": {
+          "SW": {
+            "painted_apron_polygon_px": [
+              [
+                245,
+                604
+              ],
+              [
+                427,
+                695
+              ],
+              [
+                232,
+                798
+              ],
+              [
+                54,
+                697
+              ]
+            ],
+            "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+            "luma": 0.22866278886795044,
+            "saturation": 0.05304524760282035,
+            "saturation_max": 0.1,
+            "saturation_pass": true
+          },
+          "NE": {
+            "painted_apron_polygon_px": [
+              [
+                1094,
+                296
+              ],
+              [
+                1129,
+                273
+              ],
+              [
+                1262,
+                197
+              ],
+              [
+                1268,
+                366
+              ]
+            ],
+            "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+            "luma": 0.24221652746200562,
+            "saturation": 0.03321133833120116,
+            "saturation_max": 0.1,
+            "saturation_pass": true
+          }
+        }
+      }
+    },
+    {
+      "asset": ".cache/diag/site7_ops_d/candidates/S9_R02/attempt03/S9_R02_GAME.png",
+      "luma": 0.20008927583694458,
+      "p10": 0.16890588402748108,
+      "p90": 0.23977255821228027,
+      "saturation": 0.04280221692704314,
+      "hue": 148.39134588931557,
+      "axis": 23.89837168633437,
+      "problems": [],
+      "plate": "S9_R02",
+      "attempt": 3,
+      "native_size": [
+        1672,
+        941
+      ],
+      "source_scale": 1.0,
+      "actual_floor_px": [
+        [
+          131,
+          491
+        ],
+        [
+          836,
+          245
+        ],
+        [
+          1065,
+          320
+        ],
+        [
+          1075,
+          293
+        ],
+        [
+          1240,
+          221
+        ],
+        [
+          1254,
+          380
+        ],
+        [
+          1548,
+          492
+        ],
+        [
+          836,
+          856
+        ],
+        [
+          457,
+          690
+        ],
+        [
+          255,
+          785
+        ],
+        [
+          78,
+          684
+        ],
+        [
+          280,
+          593
+        ]
+      ],
+      "doors_px": {
+        "NE": [
+          1155,
+          359,
+          214
+        ],
+        "SW": [
+          369,
+          640,
+          230
+        ]
+      },
+      "raw_sha256": "43aab4e4ab15e9b716ce65240ddcdc58d9ef21cf1c18b69b19fcb31a57015c89",
+      "master_sha256": "43aab4e4ab15e9b716ce65240ddcdc58d9ef21cf1c18b69b19fcb31a57015c89",
+      "game_sha256": "92eb87d83a7cda89813393a91736d934afd2595f6078c8e8b27a4fae40cb5876",
+      "game_exposure_factor_srgb": 0.75,
+      "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-d032439b-5978-4730-8d8a-34f45039e2c1.png",
+      "inspection": "문은 NE/SW만 있고 SE 연속 난간. 실제 SW 에이프런 x=78으로 8% 바닥 여백 위반. 소스 자체의 도어 에이프런과 본 바닥 외곽을 추적했으며 표준 윤곽으로 대체하지 않았다.",
+      "floor_area_px2": 501624.0,
+      "floor_area_fraction": 0.318825030889464,
+      "floor_bounds_px": [
+        78,
+        221,
+        1548,
+        856
+      ],
+      "status": "REJECTED",
+      "reason": "8% 바닥 테두리 여백 위반: 실제 SW 에이프런 x 최소 78(4.67%), 오른쪽 바닥 잔여 124(7.42%); 필요 좌우 133.76 px 이상. 문은 NE/SW이며 SE는 닫혔다. ImageGen 3회 상한 도달: S9_R02 HOLD, 이후 판 제작과 연결 중단.",
+      "raw": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt03/S9_R02_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt03/S9_R02_MASTER.png",
+      "game": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt03/S9_R02_GAME.png",
+      "manual_checks": {
+        "floor_margins_ltrb_fraction": [
+          0.04665071770334928,
+          0.23485653560042508,
+          0.07416267942583732,
+          0.09032943676939426
+        ],
+        "floor_margin_minimum": 0.08,
+        "floor_margin_pass": false,
+        "floor_area_25_percent_pass": true,
+        "required_doors": [
+          "NE",
+          "SW"
+        ],
+        "visible_doors": [
+          "NE",
+          "SW"
+        ],
+        "door_sides_pass": true,
+        "corridor_width": "NOT_APPLICABLE_ROOM",
+        "wall_silhouette": "new slotted gold memory-blade rack panels; no S3 round fan",
+        "door_width_and_apron_runtime_alignment": "NOT_VALIDATED: no connected corridor exists",
+        "apron_samples": {
+          "SW": {
+            "painted_apron_polygon_px": [
+              [
+                280,
+                593
+              ],
+              [
+                457,
+                690
+              ],
+              [
+                255,
+                785
+              ],
+              [
+                78,
+                684
+              ]
+            ],
+            "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+            "luma": 0.22078195214271545,
+            "saturation": 0.037987724692334274,
+            "saturation_max": 0.1,
+            "saturation_pass": true
+          },
+          "NE": {
+            "painted_apron_polygon_px": [
+              [
+                1065,
+                320
+              ],
+              [
+                1075,
+                293
+              ],
+              [
+                1240,
+                221
+              ],
+              [
+                1254,
+                380
+              ]
+            ],
+            "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+            "luma": 0.22646714746952057,
+            "saturation": 0.012539277243649958,
+            "saturation_max": 0.1,
+            "saturation_pass": true
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS: ASTER weapon cycle button exists
+PASS: ASTER weapon cycle button enabled after Armory L1
+ERROR: FAIL: actual Base weapon button emits ASTER ID
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/smoke/m13_weapon_base_migration_smoke.gd:45)
+       [1] _run (res://tests/smoke/m13_weapon_base_migration_smoke.gd:21)
+       [2] _frames (res://tests/smoke/m13_weapon_base_migration_smoke.gd:42)
+PASS: Base receives six weapon specs
+PASS: v2 save migrates to current schema
+PASS: v2 ASTER safe default
+PASS: v2 ROOK safe default
+PASS: v2 MICA safe default
+PASS: v2 Armory L1 derives burst unlock
+M13_WEAPON_BASE_MIGRATION_SMOKE: FAIL (1)

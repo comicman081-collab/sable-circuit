@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "mission_id": "MIS_CH01_09",
+  "chapter_id": "CH01",
+  "title": "MEMORY VAULT",
+  "zone": "Sealed Memory Vault",
+  "objectives": [
+    {
+      "id": "OBJ_VAULT_ANTECHAMBER",
+      "kind": "PRIMARY",
+      "source_room": "R01_ANTECHAMBER",
+      "title": "Enter the memory vault",
+      "prerequisites": [],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_VAULT_NAVE",
+      "kind": "PRIMARY",
+      "source_room": "R02_NAVE",
+      "title": "Clear the index nave",
+      "prerequisites": [
+        "OBJ_VAULT_ANTECHAMBER"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_VAULT_CHAPEL",
+      "kind": "PRIMARY",
+      "source_room": "R03_CHAPEL",
+      "title": "Recover the vault index",
+      "prerequisites": [
+        "OBJ_VAULT_NAVE"
+      ],
+      "required_for_extraction": true
+    },
+    {
+      "id": "OBJ_VAULT_GALLERY",
+      "kind": "DEEP",
+      "source_room": "R04_GALLERY",
+      "title": "Break the echo gallery",
+      "prerequisites": [
+        "OBJ_VAULT_CHAPEL"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_VAULT_SPIRE",
+      "kind": "BOSS",
+      "source_room": "R05_STACKS",
+      "title": "Erase the index spire",
+      "prerequisites": [
+        "OBJ_VAULT_GALLERY"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_VAULT_EXIT",
+      "kind": "PRIMARY",
+      "source_room": "R06_LIFT",
+      "title": "Extract by the archive lift",
+      "prerequisites": [
+        "OBJ_VAULT_SPIRE"
+      ],
+      "required_for_extraction": false
+    }
+  ],
+  "main_route": [
+    {
+      "id": "R01_ANTECHAMBER",
+      "objective_id": "OBJ_VAULT_ANTECHAMBER",
+      "type": "EVENT",
+      "title": "Vault Antechamber",
+      "x": 280,
+      "y": 560,
+      "objective": "Enter the memory vault",
+      "story": "The vault door is older than the complex. It opens for the squad as if it had been waiting.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 38
+        }
+      ]
+    },
+    {
+      "id": "R02_NAVE",
+      "objective_id": "OBJ_VAULT_NAVE",
+      "encounter_id": "ENC_VAULT_NAVE_01",
+      "type": "COMBAT",
+      "title": "Index Nave",
+      "x": 660,
+      "y": 240,
+      "objective": "Clear the index nave",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 2
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 128,
+          "offset_x": 262,
+          "offset_y": 24
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 122,
+          "offset_x": 250,
+          "offset_y": -56
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 134,
+          "offset_x": 218,
+          "offset_y": 96
+        },
+        {
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "health": 246,
+          "offset_x": 298,
+          "offset_y": -20
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 218,
+          "offset_x": 222,
+          "offset_y": -108
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 50
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 128
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 128
+          },
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 190
+          },
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 218
+          }
+        ]
+      ],
+      "reinforce_at": 2,
+      "rule": {
+        "type": "OVERRUN",
+        "seconds": 45
+      }
+    },
+    {
+      "id": "R03_CHAPEL",
+      "objective_id": "OBJ_VAULT_CHAPEL",
+      "type": "RESEARCH",
+      "title": "Read-Out Chapel",
+      "x": 1040,
+      "y": 560,
+      "objective": "Recover the vault index",
+      "story": "The vault index lists every relay the carrier ever used, and one entry with no location: the origin.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 60
+        },
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": "R04_GALLERY",
+      "objective_id": "OBJ_VAULT_GALLERY",
+      "encounter_id": "ENC_VAULT_GALLERY_01",
+      "type": "ELITE",
+      "title": "Echo Gallery",
+      "x": 1420,
+      "y": 240,
+      "objective": "Break the echo gallery",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 2
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "affix": "BEACON",
+          "health": 246,
+          "offset_x": 212,
+          "offset_y": 64
+        },
+        {
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "health": 246,
+          "offset_x": 302,
+          "offset_y": 90
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "affix": "OVERCHARGED",
+          "health": 218,
+          "offset_x": 292,
+          "offset_y": -96
+        },
+        {
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "health": 164,
+          "offset_x": 250,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 58
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "affix": "VOLATILE",
+            "health": 128
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "affix": "VOLATILE",
+            "health": 128
+          },
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 190
+          },
+          {
+            "enemy_id": "ENM_SITE7_BULWARK_01",
+            "health": 284
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R05_STACKS",
+      "objective_id": "OBJ_VAULT_SPIRE",
+      "encounter_id": "ENC_VAULT_STACKS_01",
+      "type": "BOSS",
+      "title": "Core Stacks",
+      "x": 1800,
+      "y": 560,
+      "objective": "Erase the index spire",
+      "encounter": [
+        {
+          "enemy_id": "BOSS_SITE7_ARCHIVE_01",
+          "health": 2100,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 174,
+          "offset_x": 240,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 128,
+          "offset_x": 240,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 184
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 128
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 128
+          },
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 174
+          }
+        ],
+        [
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 190
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 118
+          }
+        ]
+      ],
+      "reinforce_at": 1
+    },
+    {
+      "id": "R06_LIFT",
+      "objective_id": "OBJ_VAULT_EXIT",
+      "type": "EXTRACTION",
+      "title": "Archive Lift",
+      "x": 2180,
+      "y": 240,
+      "objective": "Extract by the archive lift",
+      "story": "The spire is dark and the stacks are going quiet one by one. The archive lift still answers.",
+      "loot": []
+    }
+  ],
+  "optional_rooms": [
+    {
+      "id": "O01_BLADES",
+      "from": "R04_GALLERY",
+      "objective_id": "OBJ_VAULT_SUPPLY",
+      "type": "SUPPLY",
+      "title": "Spare Blades",
+      "x": 1420,
+      "y": 800,
+      "reward": "vault_supplies",
+      "story": "Racks of spare memory blades hold salvage enough to rearm the squad.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 40
+        },
+        {
+          "loot_id": "LOT_SALVAGE_FIELD",
+          "quantity": 8
+        }
+      ]
+    },
+    {
+      "id": "O02_RESTORE",
+      "from": "R03_CHAPEL",
+      "objective_id": "OBJ_VAULT_RESEARCH",
+      "type": "RESEARCH",
+      "title": "Restore Lab",
+      "x": 1040,
+      "y": 800,
+      "objective": "Read the restore log",
+      "reward": "restore_log",
+      "story": "The restore lab rebuilds damaged memory blades. It has been restoring the same one for years.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 80
+        },
+        {
+          "loot_id": "LOT_SIGNAL_FRAGMENT",
+          "quantity": 4
+        },
+        {
+          "loot_id": "LOT_INTEL_MECHANICAL",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "extraction_offer_room_ids": [
+    "R03_CHAPEL",
+    "R04_GALLERY",
+    "R05_STACKS"
+  ],
+  "enemy_roster_revision": 4,
+  "new_enemy_ids": [
+    "BOSS_SITE7_ARCHIVE_01"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "rook",
+  "name": "ROOK",
+  "source": "art/rook",
+  "heightMetres": 1.72,
+  "radius": 0.19,
+  "cell": [
+    768,
+    768
+  ],
+  "root": [
+    384,
+    716
+  ],
+  "spriteHeight": 656,
+  "clips": {
+    "walk": {
+      "frames": 6,
+      "phaseStarts": [0, 0.2, 0.33, 0.5, 0.7, 0.83]
+    },
+    "idle": {
+      "frames": 1
+    }
+  },
+  "locomotion": {
+    "walkSpeed": 1.35,
+    "runSpeed": 2.8,
+    "walkStride": 1.6,
+    "runStride": 1.95
+  },
+  "weapon": {
+    "magazine": 10,
+    "fireInterval": 0.42,
+    "reloadSeconds": 1.38,
+    "damage": 7,
+    "height": 1.23,
+    "pelletCount": 5,
+    "spreadRadians": 0.065,
+    "engagementRange": 300,
+    "projectileSpeed": 760,
+    "projectileLifetime": 0.58,
+    "ammoPerTrigger": 1
+  },
+  "gameplayContract": {
+    "actorProfile": "MOT_ROOK_01",
+    "weaponId": "WPN_SHOTGUN_MAG_01",
+    "walkSpeedPxPerSecond": 138,
+    "runSpeedPxPerSecond": 205,
+    "maxHealth": 138
+  },
+  "annotations": {
+    "S": {
+      "walk": {
+        "0": {"muzzle": [293.62, 180.91]},
+        "1": {"muzzle": [612.95, 299.17]},
+        "2": {"muzzle": [304.49, 178.54]},
+        "3": {"muzzle": [297.79, 184.41]},
+        "4": {"muzzle": [260.74, 187.92]},
+        "5": {"muzzle": [304.91, 180.81]}
+      },
+      "idle": {"0": {"muzzle": [619, 267]}}
+    },
+    "N": {
+      "walk": {
+        "0": {"muzzle": [763.3, 191.25]},
+        "1": {"muzzle": [737.09, 178.51]},
+        "2": {"muzzle": [753.54, 158.07]},
+        "3": {"muzzle": [359.44, 101.13]},
+        "4": {"muzzle": [747.67, 163.79]},
+        "5": {"muzzle": [768.8, 144.74]}
+      },
+      "idle": {"0": {"muzzle": [769, 196]}}
+    }
+  },
+  "workflowVersion": 1,
+  "identityReference": "art/rook/identity_reference.png",
+  "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+}

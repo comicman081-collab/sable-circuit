@@ -1,0 +1,127 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_C04/attempt03/S9_C04_GAME.png",
+  "luma": 0.1998642235994339,
+  "p10": 0.13103137910366058,
+  "p90": 0.2526000142097473,
+  "saturation": 0.05239708769247836,
+  "hue": 140.17197815722963,
+  "axis": 23.393596267449446,
+  "problems": [
+    "image_left connector apron saturation 0.157633 exceeds .10"
+  ],
+  "plate": "S9_C04",
+  "attempt": 3,
+  "native_size": [
+    1774,
+    887
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      0,
+      705
+    ],
+    [
+      1680,
+      0
+    ],
+    [
+      1774,
+      0
+    ],
+    [
+      1774,
+      244
+    ],
+    [
+      338,
+      887
+    ],
+    [
+      0,
+      887
+    ]
+  ],
+  "doors_px": {},
+  "raw_sha256": "14b20865bc083789d099536fd0887daae08e810acd49ad195e088ad4038e08c0",
+  "master_sha256": "14b20865bc083789d099536fd0887daae08e810acd49ad195e088ad4038e08c0",
+  "game_sha256": "4b0928cb2318ed302836eb7ffa9c26139a15a23c025d3dd194d6cd7afb64e8e2",
+  "game_exposure_factor_srgb": 0.693,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-d3294ebc-e084-4c7e-a560-21dee844e4ac.png",
+  "inspection": "Actual native wall base and deck lip traced. Full cross-sections stay above 260 px; right image-corner fragment is clipped by top border rather than narrowed. White-gold flat blade shafts to blue squared resonators, no S3 canisters or boss needle silhouette.",
+  "floor_area_px2": 519664.0,
+  "floor_area_fraction": 0.33025195451269684,
+  "floor_bounds_px": [
+    0,
+    0,
+    1774,
+    887
+  ],
+  "width_sections_px": [
+    [
+      1000,
+      285,
+      590
+    ],
+    [
+      1400,
+      117,
+      412
+    ],
+    [
+      1600,
+      34,
+      321
+    ]
+  ],
+  "vertical_widths_px": [
+    305,
+    295,
+    287
+  ],
+  "width_measurement": "Vertical sections between actual wall base and outer painted deck lip; clipped image-corner fragments are not full cross-sections.",
+  "preintegration_end_comparison": [
+    {
+      "end": "image_left",
+      "room": "S9_R05",
+      "door": "NE",
+      "deck_luma": 0.21603287756443024,
+      "deck_saturation": 0.12727933421475476,
+      "room_apron_luma": 0.23686879873275757,
+      "room_apron_saturation": 0.06807126710280727,
+      "step": 0.1220438300969371,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    },
+    {
+      "end": "image_right",
+      "room": "S9_R04",
+      "door": "SW",
+      "deck_luma": 0.2116500437259674,
+      "deck_saturation": 0.013496873299435467,
+      "room_apron_luma": 0.2357000708580017,
+      "room_apron_saturation": 0.006029038585175334,
+      "step": 0.14250560567773898,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    }
+  ],
+  "connector_apron_end_stats": [
+    {
+      "end": "image_left",
+      "luma": 0.23799178004264832,
+      "saturation": 0.1576330593940581,
+      "hue": 146.51395725050375,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    },
+    {
+      "end": "image_right",
+      "luma": 0.22313468158245087,
+      "saturation": 0.014884934244135046,
+      "hue": 82.2176747440608,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "aster",
+  "name": "ASTER",
+  "source": "art/aster",
+  "heightMetres": 1.72,
+  "radius": 0.19,
+  "cell": [
+    768,
+    768
+  ],
+  "root": [
+    384,
+    716
+  ],
+  "spriteHeight": 656,
+  "clips": {
+    "walk": {
+      "frames": 6,
+      "phaseStarts": [
+        0,
+        0.2,
+        0.33,
+        0.5,
+        0.7,
+        0.83
+      ]
+    },
+    "idle": {
+      "frames": 1
+    }
+  },
+  "locomotion": {
+    "walkSpeed": 1.35,
+    "runSpeed": 2.8,
+    "walkStride": 1.6,
+    "runStride": 1.95
+  },
+  "weapon": {
+    "magazine": 24,
+    "fireInterval": 0.11,
+    "reloadSeconds": 1.25,
+    "damage": 25,
+    "height": 1.23
+  },
+  "annotations": {
+    "S": {
+      "walk": {
+        "0": {"muzzle": [143, 256]},
+        "1": {"muzzle": [135, 245]},
+        "2": {"muzzle": [459, 381]},
+        "3": {"muzzle": [143, 257]},
+        "4": {"muzzle": [136, 246]},
+        "5": {"muzzle": [140, 260]}
+      },
+      "idle": {"0": {"muzzle": [459, 378]}}
+    }
+  },
+  "workflowVersion": 1,
+  "identityReference": "art/aster/identity_reference.png",
+  "referenceSHA256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7"
+}

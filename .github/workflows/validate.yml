@@ -1,0 +1,148 @@
+name: Validate SABLE CIRCUIT
+
+# Validation and screenshot output is intentionally runner-local. Do not add an
+# upload-artifact step here unless a deployment provider requires that artifact.
+
+on:
+  push:
+    branches: ["main", "feat/**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  GODOT_VERSION: "4.7.2"
+  GODOT_ARCHIVE: Godot_v4.7.2-stable_linux.x86_64.zip
+  GODOT_SHA256: cadd3204e728a35d3f13adb7fd0d7902636b79f6b95c40c265eb73b6c35329e4
+
+jobs:
+  repository-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Validate repository contract
+        run: python tools/validate_project.py
+      - name: Install motion-harness test dependencies
+        run: python -m pip install Pillow==12.1.1 numpy==2.4.2
+      - name: Motion harness negative regressions and promotion guard
+        run: |
+          python tests/test_generation_harness.py
+          python tests/test_vrm_intake.py
+          python tests/test_motion_harness.py
+          python tests/test_sable_character_pipeline.py
+      - name: Validate unique art identities
+        run: python tools/validate_unique_art.py
+      - name: Validate M5 production presentation
+        run: python tools/validate_m5_presentation.py
+      - name: Validate M6 authored visual assets
+        run: python tools/validate_m6_visual_assets.py
+      - name: Validate M7 staged raster payload integrity
+        run: python tools/validate_m7_raster_payloads.py
+      - name: Validate M9 operator skill contract
+        run: python tools/validate_m9_skill_contract.py
+      - name: Validate M10 intel and loadout contract
+        run: python tools/validate_m10_intel_contract.py
+      - name: Validate M11 run contract system
+        run: python tools/validate_m11_run_contract.py
+      - name: Validate M12 squad revive system
+        run: python tools/validate_m12_revive_contract.py
+      - name: Validate M13 weapon/loadout system
+        run: python tools/validate_m13_weapon_contract.py
+      - name: Validate Quaternius free Standard animation assets
+        run: python tools/validate_quaternius_assets.py
+
+  godot-headless:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Fetch pinned external assets
+        run: python tools/fetch_external_assets.py
+      - name: Download pinned Godot editor
+        shell: bash
+        run: |
+          set -euo pipefail
+          url="https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/${GODOT_ARCHIVE}"
+          curl -fL --retry 3 --retry-delay 2 "$url" -o "$RUNNER_TEMP/godot.zip"
+          echo "${GODOT_SHA256}  $RUNNER_TEMP/godot.zip" | sha256sum -c -
+          mkdir -p "$RUNNER_TEMP/godot"
+          unzip -q "$RUNNER_TEMP/godot.zip" -d "$RUNNER_TEMP/godot"
+          chmod +x "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64"
+      - name: Verify Godot version
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --version"
+      - name: Headless editor import and parse
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --editor --path $GITHUB_WORKSPACE --quit"
+      - name: Quaternius UAL Godot import smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/quaternius_ual_import_smoke.gd"
+      - name: Headless bootstrap smoke run
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --quit-after 2"
+      - name: Playable squad prototype smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/prototype_smoke.gd"
+      - name: M2 lobby and story flow smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m2_story_flow_smoke.gd"
+      - name: M3 unique art runtime smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m3_unique_art_smoke.gd"
+      - name: M4 premium motion and environment smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m4_premium_motion_environment_smoke.gd"
+      - name: M5 bundled HUD font smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m5_font_smoke.gd"
+      - name: M6 target-style diagonal movement smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m6_target_style_smoke.gd"
+      - name: M7 authored visual and boss arena smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m7_authored_visual_smoke.gd"
+      - name: M8 extraction and progression smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m8_extraction_progression_smoke.gd"
+      - name: M9 operator skill and synergy smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m9_operator_skill_synergy_smoke.gd"
+      - name: M10 intel analysis and loadout smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m10_intel_loadout_smoke.gd"
+      - name: M10 Base UI action smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m10_base_ui_action_smoke.gd"
+      - name: M10 persistence and migration smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m10_persistence_smoke.gd"
+      - name: M11 deterministic run contract smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m11_run_contract_smoke.gd"
+      - name: M12 squad revive smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m12_squad_revive_smoke.gd"
+      - name: M13 weapon/loadout smoke test
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --path $GITHUB_WORKSPACE --script res://tests/smoke/m13_weapon_loadout_smoke.gd"
+
+  runtime-capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Fetch pinned external assets
+        run: python tools/fetch_external_assets.py
+      - name: Download pinned Godot editor
+        shell: bash
+        run: |
+          set -euo pipefail
+          url="https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/${GODOT_ARCHIVE}"
+          curl -fL --retry 3 --retry-delay 2 "$url" -o "$RUNNER_TEMP/godot.zip"
+          echo "${GODOT_SHA256}  $RUNNER_TEMP/godot.zip" | sha256sum -c -
+          mkdir -p "$RUNNER_TEMP/godot"
+          unzip -q "$RUNNER_TEMP/godot.zip" -d "$RUNNER_TEMP/godot"
+          chmod +x "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64"
+      - name: Import assets for transient rendered regression
+        run: "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --editor --path $GITHUB_WORKSPACE --quit"
+      - name: Render transient runtime captures (no artifact upload)
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p artifacts/runtime_capture
+          xvfb-run -a -s "-screen 0 1280x720x24" "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64" --path "$GITHUB_WORKSPACE" --resolution 1280x720 --rendering-method gl_compatibility --script res://tests/render/runtime_capture.gd
+          xvfb-run -a -s "-screen 0 1280x720x24" "$RUNNER_TEMP/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64" --path "$GITHUB_WORKSPACE" --resolution 1280x720 --rendering-method gl_compatibility --script res://tests/render/m9_skill_capture.gd
+          test -f artifacts/runtime_capture/01_map_movement.png
+          test -f artifacts/runtime_capture/24_death_boss.png
+          test -f artifacts/runtime_capture/25_m8_extraction_window.png
+          test -f artifacts/runtime_capture/31_m9_ultimate_ready.png
+          count=$(find artifacts/runtime_capture -name '*.png' | wc -l)
+          test "$count" -eq 31

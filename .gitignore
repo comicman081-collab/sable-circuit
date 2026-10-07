@@ -1,0 +1,61 @@
+# Godot
+.godot/
+.import/
+export.cfg
+export_presets.cfg.tmp
+
+# Build outputs
+build/
+dist/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local source masters / caches
+source_assets_local/
+.cache/
+tools/models/
+tools/qwen_image_edit_2511/runtime/
+art_src/pilot_v2/logs/*.log
+art_src/pilot_v2/raw_generation/*
+!art_src/pilot_v2/raw_generation/.gitkeep
+art_src/pilot_v2/reference_renders/*
+!art_src/pilot_v2/reference_renders/.gitkeep
+__pycache__/
+*.pyc
+
+# Retired payloads awaiting the user's final deletion (2026-09-24 cleanup)
+_retired_20260924/
+# 2026-09-28 cleanup (tools/maintenance/retire_20260928.py)
+_retired_20260928/
+# 2026-10-02 cleanup (tools/maintenance/retire_20261002.py; purge_20261002.py is the user's final deletion)
+_retired_20261002/
+
+# Local tool install, nested Sites deployment repository, app worktrees
+tools/blender/
+web_demo/
+.claude/worktrees/
+.claude/settings.local.json
+
+# Motion Studio unit-test temp folders (tests create and leave them)
+motion_lab_v1/qa/technical_tests/
+
+# Regression runner output (tools/maintenance/run_regression_suite.py); add a run with -f to keep it as evidence
+qa/regression_runs/
+
+# Play-session records written by source runs (scripts/core/play_session_log.gd)
+playtest_logs/
+
+# Verification videos stay local (2026-09-24 cleanup: recordings are not kept in git); records keep their SHA-256
+qa/**/*.mp4
+qa/**/*.mkv
+qa/**/*.avi
+
+# QA captures and review sheets stay local too (2026-09-28 cleanup); records keep their SHA-256, add -f for one a doc cites
+qa/**/*.png
+qa/**/*.webp
+qa/**/*.jpg
+qa/**/*.jpeg

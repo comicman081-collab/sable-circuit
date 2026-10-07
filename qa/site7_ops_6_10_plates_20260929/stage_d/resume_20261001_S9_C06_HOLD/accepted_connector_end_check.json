@@ -1,0 +1,164 @@
+{
+  "gate": "PASS",
+  "scope": "actual end bands, provisional room apron comparison; NOT solved strict seam audit",
+  "rows": [
+    {
+      "plate": "S9_C04",
+      "attempt": 1,
+      "actual_floor_px": [
+        [
+          0,
+          754
+        ],
+        [
+          1774,
+          8
+        ],
+        [
+          1774,
+          252
+        ],
+        [
+          335,
+          887
+        ],
+        [
+          0,
+          887
+        ]
+      ],
+      "axis": 23.258826122268264,
+      "vertical_widths_px": [
+        258,
+        251,
+        244
+      ],
+      "connector_apron_end_stats": [
+        {
+          "end": "image_left",
+          "luma": 0.24369573593139648,
+          "saturation": 0.09109503500175882,
+          "hue": 146.00905599451806,
+          "sampling": "actual floor within image end 10%; no ideal outline replacement",
+          "saturation_limit": 0.1
+        },
+        {
+          "end": "image_right",
+          "luma": 0.19338814914226532,
+          "saturation": 0.012868291869585578,
+          "hue": 113.70892310504273,
+          "sampling": "actual floor within image end 10%; no ideal outline replacement",
+          "saturation_limit": 0.1
+        }
+      ],
+      "preintegration_end_comparison": [
+        {
+          "end": "image_left",
+          "room": "S9_R05",
+          "door": "NE",
+          "deck_luma": 0.22356489300727844,
+          "deck_saturation": 0.08075430096097796,
+          "room_apron_luma": 0.23686879873275757,
+          "room_apron_saturation": 0.06807126710280727,
+          "step": 0.07672545916677889,
+          "problems": [],
+          "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+        },
+        {
+          "end": "image_right",
+          "room": "S9_R04",
+          "door": "SW",
+          "deck_luma": 0.1947544515132904,
+          "deck_saturation": 0.012735272531981794,
+          "room_apron_luma": 0.2357000708580017,
+          "room_apron_saturation": 0.006029038585175334,
+          "step": 0.2517645239560247,
+          "problems": [],
+          "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+        }
+      ],
+      "problems": []
+    },
+    {
+      "plate": "S9_C05",
+      "attempt": 2,
+      "actual_floor_px": [
+        [
+          0,
+          797
+        ],
+        [
+          1721,
+          0
+        ],
+        [
+          1774,
+          0
+        ],
+        [
+          1774,
+          242
+        ],
+        [
+          476,
+          887
+        ],
+        [
+          0,
+          887
+        ]
+      ],
+      "axis": 25.531088356580288,
+      "vertical_widths_px": [
+        290,
+        273,
+        242
+      ],
+      "connector_apron_end_stats": [
+        {
+          "end": "image_left",
+          "luma": 0.2437545359134674,
+          "saturation": 0.04258582187082686,
+          "hue": 137.0063412789171,
+          "sampling": "actual floor within image end 10%; no ideal outline replacement",
+          "saturation_limit": 0.1
+        },
+        {
+          "end": "image_right",
+          "luma": 0.2433154284954071,
+          "saturation": 0.04660734844186417,
+          "hue": 138.77331602752176,
+          "sampling": "actual floor within image end 10%; no ideal outline replacement",
+          "saturation_limit": 0.1
+        }
+      ],
+      "preintegration_end_comparison": [
+        {
+          "end": "image_left",
+          "room": "S9_R06",
+          "door": "NE",
+          "deck_luma": 0.24424892663955688,
+          "deck_saturation": 0.043193269975700346,
+          "room_apron_luma": 0.2683047354221344,
+          "room_apron_saturation": 0.07190953261124633,
+          "step": 0.12569692188313752,
+          "problems": [],
+          "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+        },
+        {
+          "end": "image_right",
+          "room": "S9_R05",
+          "door": "SW",
+          "deck_luma": 0.2300977110862732,
+          "deck_saturation": 0.055709958737503146,
+          "room_apron_luma": 0.22251206636428833,
+          "room_apron_saturation": 0.07408878817965125,
+          "step": -0.044435322495018095,
+          "problems": [],
+          "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+        }
+      ],
+      "problems": []
+    }
+  ]
+}

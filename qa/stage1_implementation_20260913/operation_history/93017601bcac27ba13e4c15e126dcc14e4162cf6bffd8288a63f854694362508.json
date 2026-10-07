@@ -1,0 +1,210 @@
+{
+  "drive": "test bot -> real actor physics / weapon cooldown / projectile collisions / mission interactions",
+  "failures": [],
+  "recorded_utc": "2026-09-13T05:28:33",
+  "result": {
+    "active_run_boosts": [],
+    "cargo_before_resolution": {
+      "common_research": 135,
+      "fragments": 1,
+      "intel": {
+        "ABERRANT": 1,
+        "ANCHOR": 1,
+        "SECURITY": 3
+      },
+      "salvage": 2,
+      "unsecured_research": 85
+    },
+    "carrier_fragment": true,
+    "carrier_fragment_secured": true,
+    "chapter_id": "CH01",
+    "early_extraction": false,
+    "elapsed_seconds": 31.5499999999995,
+    "extraction_depth": 6,
+    "extraction_room": "",
+    "field_supplies": true,
+    "full_route_cleared": true,
+    "hostiles_defeated": 10,
+    "ledger_recovered": true,
+    "ledger_retained_on_wipe": false,
+    "lost_intel_samples": 0,
+    "lost_unsecured": 0,
+    "mission_id": "MIS_CH01_01",
+    "outcome": "EXTRACTED",
+    "research_multiplier": 1.0,
+    "run_contract": {},
+    "run_fragment_reward_multiplier": 1.0,
+    "run_id": "STAGE1-TECHNICAL-PLAYTHROUGH",
+    "run_only_boosts_expire_on_return": true,
+    "run_research_reward_multiplier": 1.0,
+    "run_salvage_reward_multiplier": 1.0,
+    "secured_fragments": 1,
+    "secured_intel": {
+      "ABERRANT": 1,
+      "ANCHOR": 1,
+      "SECURITY": 3
+    },
+    "secured_research": 220,
+    "secured_rewards": 220,
+    "secured_salvage": 2,
+    "transaction_id": "STAGE1-TECHNICAL-PLAYTHROUGH",
+    "wipe_policy": "50% COMMON RESEARCH/SALVAGE RETAINED; HIGH-VALUE RESEARCH + SIGNAL FRAGMENTS + INTEL SAMPLES LOST; RUN-ONLY BOOSTS EXPIRE; STORY LEDGER RETAINED"
+  },
+  "status": "PASS_TECHNICAL_PLAYTHROUGH",
+  "tested_code_sha256": {
+    "res://data/missions/MIS_CH01_01.json": "55e438587ab75e8184251bf3fed509ff487fd7b9e931638ba3d68b8356829d5f",
+    "res://scripts/actors/enemy_actor.gd": "a8eea76eec8317228154bf70a8ab9a44b3f2dcaec4ac6237423645173c714f94",
+    "res://scripts/animation/premium_enemy_presentation.gd": "de5c93ec94522564388209d4f7bdee73b30e6ef2369c39fd38c780af1aba02c2",
+    "res://scripts/combat/site7_attack_warning.gd": "a2b237db6016c2dd85ed0c346784723ae53a0bbd1cd81a463291df267a3b4f39",
+    "res://scripts/combat/site7_enemy_tactics.gd": "bff0483acbbb9792be7fe8d1c7a77d779776626b55d7334c5b21096fc1c947bb",
+    "res://scripts/missions/story_stage_01.gd": "18d2ddad6b6d9bc6e7af322767b61848f60bebdd8f3a6c5683734f3edc879907",
+    "res://tests/smoke/site7_full_operation_smoke.gd": "d4c604c7fa0436e3dd3e5be3839dd9713d1fd53e5b7bca37df0a46dd02e79755"
+  },
+  "trace": [
+    {
+      "ammo": 24,
+      "health": [
+        96.0,
+        138.0,
+        112.0
+      ],
+      "position": [
+        410.0,
+        390.0
+      ],
+      "remaining": 0,
+      "step": 0,
+      "tick": 0,
+      "wave": 0
+    },
+    {
+      "ammo": 24,
+      "health": [
+        96.0,
+        138.0,
+        112.0
+      ],
+      "position": [
+        321.285400390625,
+        444.593658447266
+      ],
+      "remaining": 0,
+      "step": 1,
+      "tick": 32,
+      "wave": 0
+    },
+    {
+      "ammo": 8,
+      "health": [
+        89.0,
+        138.0,
+        112.0
+      ],
+      "position": [
+        687.109436035156,
+        472.490966796875
+      ],
+      "remaining": 0,
+      "step": 2,
+      "tick": 493,
+      "wave": 1
+    },
+    {
+      "ammo": 8,
+      "health": [
+        73.0,
+        138.0,
+        112.0
+      ],
+      "position": [
+        1057.43212890625,
+        681.029174804688
+      ],
+      "remaining": 0,
+      "step": 2,
+      "tick": 600,
+      "wave": 1
+    },
+    {
+      "ammo": 24,
+      "health": [
+        96.0,
+        138.0,
+        112.0
+      ],
+      "position": [
+        1084.61962890625,
+        559.022338867188
+      ],
+      "remaining": 0,
+      "step": 3,
+      "tick": 634,
+      "wave": 1
+    },
+    {
+      "ammo": 19,
+      "health": [
+        72.0,
+        138.0,
+        112.0
+      ],
+      "position": [
+        1538.64123535156,
+        237.280288696289
+      ],
+      "remaining": 0,
+      "step": 4,
+      "tick": 1082,
+      "wave": 1
+    },
+    {
+      "ammo": 0,
+      "health": [
+        72.0,
+        130.0,
+        112.0
+      ],
+      "position": [
+        1895.97973632813,
+        331.018432617188
+      ],
+      "remaining": 1,
+      "step": 4,
+      "tick": 1200,
+      "wave": 0
+    },
+    {
+      "ammo": 3,
+      "health": [
+        4.0,
+        106.0,
+        88.0
+      ],
+      "position": [
+        1836.58935546875,
+        506.43798828125
+      ],
+      "remaining": 0,
+      "step": 5,
+      "tick": 1769,
+      "wave": 0
+    },
+    {
+      "ammo": 3,
+      "health": [
+        4.0,
+        106.0,
+        88.0
+      ],
+      "position": [
+        1959.71520996094,
+        467.400390625
+      ],
+      "remaining": 0,
+      "step": 5,
+      "tick": 1800,
+      "wave": 0
+    }
+  ],
+  "visual_approval": false
+}

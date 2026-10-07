@@ -1,0 +1,199 @@
+{
+  "app_registry_unchanged": true,
+  "art_approval": false,
+  "audio": false,
+  "clock": "Godot --fixed-fps 60; native rendered viewport readback, not a wall-clock performance measurement",
+  "duration_seconds": 10,
+  "fps": 60,
+  "frames": 600,
+  "initial_encounter_step": 1,
+  "input": "WASD / Shift / mouse aim / LMB / reload / F next encounter via Input.parse_input_event",
+  "mission": "MIS_CH01_01",
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "normal_ai_and_damage": true,
+  "observations": [
+    {
+      "ammo": 23,
+      "encounter_step": 1,
+      "frame": 0,
+      "health": 96.0,
+      "hostiles": 3,
+      "position": [
+        654.522827148438,
+        445.568023681641
+      ],
+      "squad_projectiles": 7,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01",
+        "ENM_SITE7_DRONE_01"
+      ]
+    },
+    {
+      "ammo": 15,
+      "encounter_step": 1,
+      "frame": 60,
+      "health": 96.0,
+      "hostiles": 3,
+      "position": [
+        819.522827148438,
+        445.568023681641
+      ],
+      "squad_projectiles": 30,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01",
+        "ENM_SITE7_DRONE_01"
+      ]
+    },
+    {
+      "ammo": 6,
+      "encounter_step": 1,
+      "frame": 120,
+      "health": 82.0,
+      "hostiles": 1,
+      "position": [
+        899.272827148438,
+        530.818054199219
+      ],
+      "squad_projectiles": 54,
+      "visible_enemy_ids": [
+        "ENM_SITE7_DRONE_01"
+      ]
+    },
+    {
+      "ammo": 17,
+      "encounter_step": 3,
+      "frame": 180,
+      "health": 96.0,
+      "hostiles": 2,
+      "position": [
+        1384.19958496094,
+        473.112030029297
+      ],
+      "squad_projectiles": 70,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01",
+        "ENM_SITE7_DRONE_01"
+      ]
+    },
+    {
+      "ammo": 13,
+      "encounter_step": 3,
+      "frame": 240,
+      "health": 96.0,
+      "hostiles": 2,
+      "position": [
+        1304.44958496094,
+        473.112030029297
+      ],
+      "squad_projectiles": 74,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01",
+        "ENM_SITE7_DRONE_01"
+      ]
+    },
+    {
+      "ammo": 23,
+      "encounter_step": 3,
+      "frame": 300,
+      "health": 96.0,
+      "hostiles": 2,
+      "position": [
+        1307.19958496094,
+        473.112030029297
+      ],
+      "squad_projectiles": 78,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01",
+        "ENM_SITE7_DRONE_01"
+      ]
+    },
+    {
+      "ammo": 15,
+      "encounter_step": 3,
+      "frame": 360,
+      "health": 96.0,
+      "hostiles": 2,
+      "position": [
+        1472.19958496094,
+        473.112030029297
+      ],
+      "squad_projectiles": 102,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01",
+        "ENM_SITE7_DRONE_01"
+      ]
+    },
+    {
+      "ammo": 6,
+      "encounter_step": 3,
+      "frame": 420,
+      "health": 96.0,
+      "hostiles": 1,
+      "position": [
+        1520.82971191406,
+        409.419403076172
+      ],
+      "squad_projectiles": 112,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01"
+      ]
+    },
+    {
+      "ammo": 0,
+      "encounter_step": 3,
+      "frame": 480,
+      "health": 96.0,
+      "hostiles": 1,
+      "position": [
+        1484.64672851563,
+        397.343719482422
+      ],
+      "squad_projectiles": 121,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01"
+      ]
+    },
+    {
+      "ammo": 21,
+      "encounter_step": 3,
+      "frame": 540,
+      "health": 96.0,
+      "hostiles": 1,
+      "position": [
+        1484.64672851563,
+        397.343719482422
+      ],
+      "squad_projectiles": 129,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01"
+      ]
+    },
+    {
+      "ammo": 13,
+      "encounter_step": 3,
+      "frame": 599,
+      "health": 96.0,
+      "hostiles": 1,
+      "position": [
+        1484.64672851563,
+        397.343719482422
+      ],
+      "squad_projectiles": 138,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01"
+      ]
+    }
+  ],
+  "render_content_scale": [
+    1280,
+    720
+  ],
+  "scene": "res://scenes/mission/StoryStage01.tscn",
+  "seen_enemy_ids": [
+    "ENM_SITE7_BULWARK_01",
+    "ENM_SITE7_DRONE_01"
+  ]
+}

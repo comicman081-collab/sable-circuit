@@ -1,0 +1,110 @@
+[
+  {
+    "recordedAt": "2026-09-12T03:45:49.296827+00:00",
+    "character": "rook",
+    "inputSHA256": "0e60cbe9e84dd9e8292b939f78beee322181112e70f83c53393a824bf6207335",
+    "evidence": {
+      "path": "qa/rook_runtime_still.png",
+      "sha256": "09a16f3af467fb3a7bc4b0555244c0d92dda814347ee3899b595930d08ee7f88"
+    },
+    "nativeDimensions": [
+      1920,
+      1080
+    ],
+    "decision": "approved",
+    "notes": "Native 1920x1080 active runtime review: all eight direction panels are full-body and grounded; shotgun remains raised at shoulder/eye line with coherent hand/weapon continuity and no green-screen spill. Captured motion spans walk/run, stop/resume, adjacent/opposite turns, speed changes and stationary fire; locomotion report passes 40 rows and combat report passes 17 rows. Video decodes at native 1920x1080 for 1143 frames at approximately 30fps.",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "locomotion": {
+      "path": "qa/rook_locomotion_browser.json",
+      "sha256": "0340d24c8a4590255b0c3716fe9545c85e8ea90eacb29210b46444adc4113d00"
+    },
+    "motionEvidence": {
+      "path": "qa/rook_motion_active.webm",
+      "sha256": "da1848a6e338b50089b202e787e42e783b8f3610c14079617f742cfe2b9147fb"
+    },
+    "motionCapture": {
+      "path": "qa/rook_motion_active.json",
+      "sha256": "35e5336f50fcc6b038188dfb7a40f7fd720ba8c79c31c920f9f396b8923d7b13"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T14:56:42.268935+00:00",
+    "character": "rook",
+    "inputSHA256": "0e60cbe9e84dd9e8292b939f78beee322181112e70f83c53393a824bf6207335",
+    "evidence": {
+      "path": "qa/rook/gait_audit_20260912/video_se/frame_002.400.png",
+      "sha256": "99df91846995eecf9d92aba82caff9ee15c3c8cb28cfdc2eaf20cd748ceaf8af"
+    },
+    "nativeDimensions": [
+      1920,
+      1080
+    ],
+    "decision": "repair",
+    "notes": "User rejected current ROOK gait. Current live build 0e60cbe9e84dd9e8292b939f78beee322181112e70f83c53393a824bf6207335 uses authored_frames with no legacy overrides. Native compiled SE and N cycles repeat the same leading/trailing leg arrangement at opposite-contact phases 0 and 3; sequential decoding of active video at 2.407s and 3.001s confirms SE lacks the expected support exchange while the ground moves. Six distinct lower-body hashes and 40 temporal rows did not establish natural gait. Prior visual completion is withdrawn. Audit and negative validator probes: qa/rook/gait_audit_20260912/AUDIT_KO.md. This records a visual rejection only, not an art or runtime repair.",
+    "reviewer": "codex-user-rejection-audit-2026-09-12"
+  },
+  {
+    "recordedAt": "2026-09-13T02:22:10.969163+00:00",
+    "character": "rook",
+    "inputSHA256": "334814808cdfadc038dfae55f0a1b87a967f8cc91eb737954798a7f96fa74a2b",
+    "evidence": {
+      "path": "qa/rook/astra_repair_20260913/runtime_samples/runtime_native_1080p.png",
+      "sha256": "96398f4d0dce1e1c7311379bba760c9720903c4869609b427ce9b8a8646a6a2b"
+    },
+    "nativeDimensions": [
+      1920,
+      1080
+    ],
+    "decision": "approved",
+    "notes": "Reviewed native 1080p runtime at 1x plus 400 sequential native crops, all eight walk and fast-walk directions and fire/turn/stop/resume transitions. Opposite anatomical support now exchanges, moving fire keeps the same gait, stopped fire settles to planted idle. Approved as the six-frame Motion Studio MVP, not separately authored sprint, continuous 3D contact, flawless source consistency, or a Luna reproduction. Short pose-hold sliding and small silhouette/trim changes remain explicitly documented in timed observations.",
+    "reviewer": "Astra actual native runtime and chronological video review",
+    "locomotion": {
+      "path": "qa/rook_astra_locomotion_browser.json",
+      "sha256": "589d0639d27e12b8730629ac9dc19d546b1ac8be79ab2c2041034a153028b750"
+    },
+    "motionEvidence": {
+      "path": "qa/rook_motion_astra_20260913.webm",
+      "sha256": "6deb1d81fe017f879632e4100d342844e89cd23a983767a946ff5a262feae76f"
+    },
+    "motionCapture": {
+      "path": "qa/rook_motion_astra_20260913.json",
+      "sha256": "e86d9642bdf2d6b8e9f12a9c43556a901c2350d52c502c51eeae98b888f80af0"
+    },
+    "observations": {
+      "path": "qa/rook/runtime_observations/20260913_111513_109547.json",
+      "sha256": "52bca46f3ddb6e8d52cea6325bcf6e800fe17b4035649fd2178b79a319c78899"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:51:05.004592+00:00",
+    "character": "rook",
+    "inputSHA256": "fbe27d701e0a0297203f643ab33faf71894e41ff3d91093f21515f379e4d1fb1",
+    "evidence": {
+      "path": "qa/rook/aim_response_20260913/full_frame/frame_031.523.png",
+      "sha256": "644a6fb6924583e82a09d44bcfb0c94b10f7a60f801c2e944eb2d16c4515c74d"
+    },
+    "nativeDimensions": [
+      1920,
+      1080
+    ],
+    "decision": "approved",
+    "notes": "User-accepted gait preserved: only combat-aim.js and studio.js changed in the runtime package. Reviewed new native recording and all 24 chronological segment sheets; alternating feet, moving fire, planted fire and transitions retain the accepted six-frame MVP. No new art or sprint claim. Immediate aim checks are in the current 33-case browser report.",
+    "reviewer": "Astra native chronological review of aim-only regression",
+    "locomotion": {
+      "path": "qa/rook_aim_locomotion_browser.json",
+      "sha256": "d89c34eef018e3bfbedd25658f0c5ed3cb6ac3b260fbad0498e38f086ce362b8"
+    },
+    "motionEvidence": {
+      "path": "qa/rook_aim_motion_20260913.webm",
+      "sha256": "4a975fa1b8e51f8bd237587d4c64d1bb229ae147effcbdd85617bae9026e3c21"
+    },
+    "motionCapture": {
+      "path": "qa/rook_aim_motion_20260913.json",
+      "sha256": "23935602b0974b8408b35d4d57fe91593b108e6bccc0a6809b59e2cc3757aa8c"
+    },
+    "observations": {
+      "path": "qa/rook/aim_response_20260913/runtime_observations.json",
+      "sha256": "c01b451b6b785e5f8280e0aa20b64abdef808e42d73952b3e942f6482f4bacd8"
+    }
+  }
+]

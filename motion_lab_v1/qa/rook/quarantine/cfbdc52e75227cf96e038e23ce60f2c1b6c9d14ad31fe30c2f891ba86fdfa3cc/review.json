@@ -1,0 +1,13 @@
+{
+  "recordedAt": "2026-09-12T01:48:37.150550+00:00",
+  "slot": "SW/walk/0",
+  "decision": "repair",
+  "reviewer": "codex-visual-review-2026-09-12",
+  "notes": "Source repair required: the three-quarter-left grounded contact pose, ROOK identity, connected legs and shoulder-seated scattergun are usable, but native RGBA inspection shows a visible green spill/rim along the hair and cape edge (38 strong-green residual pixels in the derivation report). Do not promote this source; regenerate the same SW contact phase with a clean non-green subject boundary.",
+  "sourceSHA256": "cfbdc52e75227cf96e038e23ce60f2c1b6c9d14ad31fe30c2f891ba86fdfa3cc",
+  "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+  "evidence": {
+    "path": "qa/rook/incoming/rook_luna_20260912_SWwalk0/SW_walk_0_luna_rgba_candidate.png",
+    "sha256": "5a8d02a8b183b87fe8e431f0bb6beb63f22ba4314bda69b4a0ebf5e5b8404065"
+  }
+}

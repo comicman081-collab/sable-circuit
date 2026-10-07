@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "role": "Ponytail FULL independent review of MICA C03 V5 R16 two-cycle runtime candidate",
+  "reviewed_at": "2026-09-05",
+  "reviewer": "Ponytail FULL independent audit",
+  "actor_id": "CHR_PROTO_03",
+  "candidate": "assets/units/operators/mica/fast_runtime_v1/candidate_r14_r8c_unique_move_qa",
+  "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+  "overall": "FAIL_NOT_PROMOTABLE",
+  "video": {
+    "path": "artifacts/mica_c03_v5_r16_candidate_runtime_capture/MICA_C03_V5_R16_TWO_CYCLE_UNIQUE_MOVE_8DIR_NATIVE_1920X1080.mp4",
+    "sha256": "fd30c888a0a9355d8eaaafbb7adfdcde9aab8b23ffbc888fe8881a16c55e6137",
+    "decoded_frames": 384,
+    "native_resolution": [1920, 1080],
+    "fps": 24,
+    "source_to_runtime_average_rgb_mae": 1.468,
+    "source_to_runtime_note": "H.264 differences only; review was based on decoded pixels and source-frame comparison"
+  },
+  "directions": {
+    "E": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "PASS", "F": "HOLD", "notes": "sole skate; shape is intact"},
+    "SE": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "PASS", "F": "HOLD", "notes": "sole skate; shape is intact"},
+    "S": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "PASS", "F": "HOLD", "notes": "sole skate; shape is intact"},
+    "SW": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "PASS", "F": "HOLD", "notes": "sole skate; shape is intact"},
+    "W": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "PASS", "F": "HOLD", "notes": "sole skate; shape is intact"},
+    "NW": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "PASS", "F": "HOLD", "notes": "sole skate; no-out-toe certification remains HOLD"},
+    "N": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "PASS", "F": "HOLD", "notes": "sole skate; no-out-toe certification remains HOLD"},
+    "NE": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "PASS", "F": "HOLD", "notes": "sole skate; no-out-toe certification remains HOLD"}
+  },
+  "pixel_findings": {
+    "move_frame_uniqueness": "PASS; 24 authored cells per direction are unique and 00..23 repeat twice",
+    "wrap_transition": "PASS; F23→F24 is approximately 5.066–5.067px in every direction",
+    "strict_cadence": "FAIL; root ledger alternates 7.600px and 5.066px, a repeating 2.534px speed modulation",
+    "support_sole_lock": "FAIL; neither tracked red sole remains within a 0–1px planted interval across 23 transitions in any direction",
+    "duplicate_body_or_scale": "PASS; no duplicate body, rubber-leg scaling, calf balloon, 90-degree ankle, green residual, alpha, or z-order break observed",
+    "sole_track_ranges_px_per_frame": {
+      "E": [[3.42, 9.35], [2.58, 10.71]],
+      "SE": [[3.54, 10.86], [3.39, 10.75]],
+      "S": [[3.31, 11.11], [3.34, 11.10]],
+      "SW": [[3.18, 11.13], [2.80, 11.18]],
+      "W": [[2.04, 10.26], [1.83, 11.59]],
+      "NW": [[3.27, 10.62], [3.27, 10.87]],
+      "N": [[3.48, 11.09], [3.46, 11.04]],
+      "NE": [[3.27, 11.02], [3.26, 10.66]]
+    }
+  },
+  "runtime_findings": {
+    "observed_path": "StoryStage01 → OperatorActor.debug_drive → FastCharacterRuntime → SABLE_MICA_DESCRIPTOR_OVERRIDE → candidate move atlas",
+    "production_registry": "HOLD; data/character_pipeline/mica_runtime.json still points to current atlas",
+    "capture_isolation": "capture-only; collisions disabled, other squad hidden, fixed camera, 2.6x evidence scale",
+    "required_before_promotion": [
+      "pose-specific planted-support root/sole lock",
+      "uniform 24fps root step without 7.600/5.066 cadence modulation",
+      "normal camera/collision/runtime evidence for all states",
+      "new Ponytail FULL and authorized ChatGPT web review against exact replacement hash"
+    ]
+  },
+  "disposition": {
+    "promotion": "HOLD",
+    "quarantine": "retain R16 and all prior FAIL/HOLD candidates, derivatives, manifests, evidence, logs, and provenance",
+    "deletion_performed": false,
+    "retirement_manifest_required_before_disposal": true
+  }
+}

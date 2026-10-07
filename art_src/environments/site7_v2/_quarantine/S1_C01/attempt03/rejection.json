@@ -1,0 +1,25 @@
+{
+  "plate": "S1_C01",
+  "attempt": 3,
+  "tool": "built-in ImageGen",
+  "status": "FAIL_NOT_PROMOTABLE",
+  "raw": "art_src/environments/site7_v2/_quarantine/S1_C01/attempt03/S1_C01_RAW_NATIVE.png",
+  "raw_sha256": "31d7caf894eba9cc339c569afb2b484038c7ec67716e3ed48c3c64e8328e716d",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_C01/attempt03/prompt.txt",
+  "prompt_sha256": "a17f7b4d2d18423a727375f6173d1c5a96db6ac7be96b940df4fe62f5cb186c2",
+  "references": [
+    {
+      "archived_path": "art_src/environments/site7_v2/references/S1_C01_geometry.png",
+      "sha256": "9a6d0bc5dfd087dba741c39104219a72df963b020fde355c5dfb08bce185b1e3"
+    },
+    {
+      "archived_path": "art_src/environments/site7_v2/_quarantine/S1_C01/attempt02/S1_C01_RAW_NATIVE.png",
+      "sha256": "38a6c1af9844673cd3826cd2688857ac70a9090bc045a56afc10463e7f0c1745"
+    }
+  ],
+  "reason": "Lower-left floor still clipped by the bottom edge."
+}

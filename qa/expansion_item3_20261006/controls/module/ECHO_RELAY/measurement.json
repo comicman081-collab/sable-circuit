@@ -1,0 +1,86 @@
+{
+  "checks": 86,
+  "failures": [
+    "MOD_ECHO_RELAY actual effect and debug authority agree exactly once"
+  ],
+  "measurements": [
+    {
+      "after": {
+        "reduction": 0.5,
+        "value": 6.0
+      },
+      "before": {
+        "reduction": 0.5,
+        "value": 5.0
+      },
+      "module": "MOD_SPORE_FILTER",
+      "removed": {
+        "reduction": 0.5,
+        "value": 5.0
+      }
+    },
+    {
+      "after": {
+        "damage": 26.0,
+        "value": 3.2
+      },
+      "before": {
+        "damage": 26.0,
+        "value": 4.0
+      },
+      "module": "MOD_FROST_LENS",
+      "removed": {
+        "damage": 26.0,
+        "value": 4.0
+      }
+    },
+    {
+      "after": {
+        "cooldown": 4.0,
+        "value": 200.0
+      },
+      "before": {
+        "cooldown": 5.0,
+        "value": 150.0
+      },
+      "module": "MOD_RAIL_SPOOL",
+      "removed": {
+        "cooldown": 5.0,
+        "value": 150.0
+      }
+    },
+    {
+      "after": {
+        "reduction": 0.2,
+        "value": 4.0
+      },
+      "before": {
+        "reduction": 0.2,
+        "value": 4.0
+      },
+      "module": "MOD_ECHO_RELAY",
+      "removed": {
+        "reduction": 0.2,
+        "value": 4.0
+      }
+    },
+    {
+      "after": {
+        "guard": 6.5,
+        "reduction": 0.5,
+        "value": 6.5
+      },
+      "before": {
+        "guard": 5.0,
+        "reduction": 0.5,
+        "value": 5.0
+      },
+      "module": "MOD_NULL_ANCHOR",
+      "removed": {
+        "guard": 5.0,
+        "reduction": 0.5,
+        "value": 5.0
+      }
+    }
+  ]
+}

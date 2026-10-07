@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "approved_by": "user",
+  "approved_on": "2026-10-02",
+  "words": "판·보스 그림까지 승인",
+  "answering": "the report of commit 312c18fb, which named operation 10's 15 plates and the ORIGIN CORE art as not yet approved (the user had just answered \"승인한다\" for the lit null void)",
+  "game_commit": "312c18fb",
+  "scope": [
+    "the 15 GAME plates of operation 10 (rooms R01-R06, O01, O02; connectors C01-C07), exactly these bytes",
+    "the art of the boss ORIGIN CORE (BOSS_SITE7_ORIGIN_01): ORIGIN_CORE.png, byte-identical to origin_core_master.png"
+  ],
+  "not_covered": [
+    "balance or play of operation 10",
+    "the cover props, the robots shared with other operations, the code-drawn effects",
+    "the mood rows (runtime data over the plates): seen as they were at game_commit",
+    "the first rooms of operations 1-7 and 9 (their void reads 0.028-0.046)",
+    "any other operation, plate or boss"
+  ],
+  "files": [
+    {
+      "kind": "plate_room",
+      "id": "S10_R01",
+      "path": "assets/environments/site7_v2/stage10/S10_R01/S10_R01_GAME.png",
+      "sha256": "e567a57d15a61df6f042a51c79ee4222f8bd807945bb2599e428b01e3d2569eb",
+      "bytes": 1513387,
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_room",
+      "id": "S10_R02",
+      "path": "assets/environments/site7_v2/stage10/S10_R02/S10_R02_GAME.png",
+      "sha256": "ac97f989f9516bfea70b114f1c5e55980d106150f4d036b3ea0e49fa9ab1c00a",
+      "bytes": 1559925,
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_room",
+      "id": "S10_R03",
+      "path": "assets/environments/site7_v2/stage10/S10_R03/S10_R03_GAME.png",
+      "sha256": "49f00392c28aeaac3bd3f060f4725c2078025bd3fd6e32832632d32af0bec2a4",
+      "bytes": 1606943,
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_room",
+      "id": "S10_R04",
+      "path": "assets/environments/site7_v2/stage10/S10_R04/S10_R04_GAME.png",
+      "sha256": "7277efe6504c0392d7283cf665369c71280219cd96e3a686d0cf6994b96aade9",
+      "bytes": 1613192,
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_room",
+      "id": "S10_R05",
+      "path": "assets/environments/site7_v2/stage10/S10_R05/S10_R05_GAME.png",
+      "sha256": "49cd7a027eda96db253555775111379d11214e7b4f26444610f77c9ac4050b57",
+      "bytes": 1585478,
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_room",
+      "id": "S10_R06",
+      "path": "assets/environments/site7_v2/stage10/S10_R06/S10_R06_GAME.png",
+      "sha256": "6a165077bb11d98e8e0d367dd65a1ed3e382d9c509a2943551230a5c98bd4ab0",
+      "bytes": 1838029,
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_room",
+      "id": "S10_O01",
+      "path": "assets/environments/site7_v2/stage10/S10_O01/S10_O01_GAME.png",
+      "sha256": "5184151da84bc3a51775cec8d605f3e63c6a267ba7c25203dbb392c4e014c5df",
+      "bytes": 1557514,
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_room",
+      "id": "S10_O02",
+      "path": "assets/environments/site7_v2/stage10/S10_O02/S10_O02_GAME.png",
+      "sha256": "afcbafa192ef8651004cf1df46f9e10f858d2863b907812d9d7113f5aa023d3e",
+      "bytes": 1627269,
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_connector",
+      "id": "S10_C01",
+      "path": "assets/environments/site7_v2/stage10/S10_C01/S10_C01_GAME.png",
+      "sha256": "b9743811e38ba02620a7cfb24e401661e2296908ec36e6d8a45c00dc485c9aaf",
+      "bytes": 1653396,
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_connector",
+      "id": "S10_C02",
+      "path": "assets/environments/site7_v2/stage10/S10_C02/S10_C02_GAME.png",
+      "sha256": "f2001c3177fb892af5704ab62ace2759ebf219fbff2c8f33fe92522f567fa347",
+      "bytes": 1699152,
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_connector",
+      "id": "S10_C03",
+      "path": "assets/environments/site7_v2/stage10/S10_C03/S10_C03_GAME.png",
+      "sha256": "054ce7ed67d07666045b0128c64c1e1626446c81d8baa0ecfb2a9ac0532b8d4a",
+      "bytes": 1803598,
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_connector",
+      "id": "S10_C04",
+      "path": "assets/environments/site7_v2/stage10/S10_C04/S10_C04_GAME.png",
+      "sha256": "bab4bbfc2b26392535f27aefa51387159a83273f58a8d5dc40c9077c16be0515",
+      "bytes": 1600882,
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_connector",
+      "id": "S10_C05",
+      "path": "assets/environments/site7_v2/stage10/S10_C05/S10_C05_GAME.png",
+      "sha256": "3bd354aa975e1b105cfc9b4b990f35435b9633dd9e26cac6ba5b40351880849f",
+      "bytes": 1702388,
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_connector",
+      "id": "S10_C06",
+      "path": "assets/environments/site7_v2/stage10/S10_C06/S10_C06_GAME.png",
+      "sha256": "72dc5e6af1107c0e49b994aa2eddefdaa7de17755ad2f22d752a693d0d92fc57",
+      "bytes": 1517055,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "plate_connector",
+      "id": "S10_C07",
+      "path": "assets/environments/site7_v2/stage10/S10_C07/S10_C07_GAME.png",
+      "sha256": "ab56d63b7b388855bf6bbbae4fafdfef34ee70f6455df1b268429c2a47ecbbf6",
+      "bytes": 1599637,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB"
+    },
+    {
+      "kind": "boss_runtime",
+      "id": "BOSS_SITE7_ORIGIN_01",
+      "path": "assets/enemies/stage10_origin_core/authored_core_v1/ORIGIN_CORE.png",
+      "sha256": "590b5df39b130b29daef48f093f3fc9c3781694e04eba376b421220414c70b11",
+      "bytes": 1238390,
+      "size": [
+        1190,
+        1322
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "kind": "boss_source_master",
+      "id": "BOSS_SITE7_ORIGIN_01",
+      "path": "motion_lab_v1/art/site7_enemies_raw/origin_core_master.png",
+      "sha256": "590b5df39b130b29daef48f093f3fc9c3781694e04eba376b421220414c70b11",
+      "bytes": 1238390,
+      "size": [
+        1190,
+        1322
+      ],
+      "mode": "RGBA"
+    }
+  ]
+}

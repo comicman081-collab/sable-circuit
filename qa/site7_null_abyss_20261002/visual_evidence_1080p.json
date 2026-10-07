@@ -1,0 +1,392 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-10-02T10:30:00.598153+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\before_after_sheet_1920x1684.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1684
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1811401,
+      "sha256": "21e64ea0f832a9f718c58f9c5cf15f4a0a5b3b47b82b705ec058d37724b7dd8f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\before_head\\S10_C03_abyss_only.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 84014,
+      "sha256": "b34033afa75b1af3a55bcad2a75a0b8289458d071495c7931c260e19f031a7cb"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\before_head\\S10_C03_native_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1755786,
+      "sha256": "31928d36934415aeaec0155ece48d910bf78d92ddb9ebcef651c40167dc64c90"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\before_head\\S10_C05_abyss_only.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 69254,
+      "sha256": "e918b3b3149873811834066bf4197f205c863903c1f64a5aa078e3ce3487deb3"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\before_head\\S10_C05_native_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1672240,
+      "sha256": "c3d8a0277c52972932dcfef72c219a658685eb3de805078173d600064586e0b3"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\before_head\\S10_C06_abyss_only.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 80538,
+      "sha256": "6f9dac7e865031e14850a036a87b5131258e3c9a08ef8f38d009aba07c0ea007"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\before_head\\S10_C06_native_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1533227,
+      "sha256": "d3b99a82a0a03405635ba74a5d8b13610f9b1bdb591c1cbcf7d361d8658200e3"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\before_head\\S10_O02_abyss_only.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 95111,
+      "sha256": "904a57ea944348b2fc3f52a384b5342d3eb2ba606cb25fe2e497f4b3adbf698f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\before_head\\S10_O02_native_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1939487,
+      "sha256": "98e705554e778ffca15740f686917bb36d988d0205822408e3e55dbb7ab4e12b"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\before_head\\S10_R01_abyss_only.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 65377,
+      "sha256": "a486053b6e7c627719e2b19b83d2fe78013b8003a4188365419be9f098216a43"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\before_head\\S10_R01_native_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1471621,
+      "sha256": "a11ac66ebbfe6380666f017701fa80e1943e8c39fd866babfe171de9818c4a4b"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\before_head\\S10_R05_abyss_only.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 90284,
+      "sha256": "bbe702dd45c9f5488d7139a2a40cbeb10b8b1847f0e2611635081063c6403a45"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\before_head\\S10_R05_native_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1639894,
+      "sha256": "10a76a0a1e07cc866e65e7b12718378ea1dc4e181bbb6d81eeb9af7eae64d296"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\after\\S10_C03_abyss_only.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 269181,
+      "sha256": "663754617d7c7192fd806412957981ab8ba66256ddda0dac49e49d49ba788288"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\after\\S10_C03_native_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1821540,
+      "sha256": "c60659cba8f844ab461a14bec32309a5a0f342bfebda174c93ec6646a7709f78"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\after\\S10_C05_abyss_only.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 245624,
+      "sha256": "14410088011602b1229bfaaa2baaea028f98b4bb6cbd5832a39aee9a9f09dd8f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\after\\S10_C05_native_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1699104,
+      "sha256": "701285de8202cc9143cb3d56944aa2c5a9105d43e41238645110faca1ff318d0"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\after\\S10_C06_abyss_only.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 271152,
+      "sha256": "6fe83e703b7f17b8fa8a68a5d97e8dee3e2e5d68e4430730431ff219e3b3c8d7"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\after\\S10_C06_native_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1608368,
+      "sha256": "2d9afac6ea4496811e8bd4d34b22f2d34e044f70adecfa5b924047040f595745"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\after\\S10_O02_abyss_only.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 308448,
+      "sha256": "3375cb3918e9126872f748104d2cddcd5d51f1f4f31f36ca9fa7171aadcaeec9"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\after\\S10_O02_native_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1963379,
+      "sha256": "47c5e8cee3b4ae0a7917ad64860940177dd99d9a80f7c27d3144b8b3b0098096"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\after\\S10_R01_abyss_only.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 223477,
+      "sha256": "f47cac6d92f7e16765cc9c38d0577bc2184cb427b17b4aebab8e5aab2134c126"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\after\\S10_R01_native_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1507986,
+      "sha256": "2440869b876c33202af363f0a9ea6c8ec4118c71aac1ba5d77354718b013fe07"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\after\\S10_R05_abyss_only.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 279273,
+      "sha256": "5f9736f6d38d4e65443dbb99d5fa9d8a504b4e9e59b072729e645b9c88212bfd"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_null_abyss_20261002\\frames\\after\\S10_R05_native_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1677803,
+      "sha256": "4f4b901dd58678bc1159e3278b408f5d00a5397b2bdfc07a433bbe0f67d81c3b"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "checks": 21,
+  "escape_margin_s": 0.25,
+  "failures": [],
+  "gap_limit_px": 180,
+  "grid_px": 25.0,
+  "rooms": [
+    {
+      "attacks_evaluated": 3720,
+      "boss": "BOSS_SITE7_AERATOR_01",
+      "cover_obstacles": 2,
+      "failing": 0,
+      "failing_examples": [],
+      "mission": "MIS_CH01_06",
+      "nearest_clear_floor_worst_at": "phase 2 attack 1, target at (11294, -3718), 775 px from the boss",
+      "nearest_clear_floor_worst_px": 90,
+      "spots": 620,
+      "tightest_escape_at": "phase 2 attack 1, target at (11294, -3718), 775 px from the boss (leave 90 px in 0.65 s of 1.70 s)",
+      "tightest_escape_margin_s": 1.05
+    },
+    {
+      "attacks_evaluated": 4680,
+      "boss": "BOSS_SITE7_CRYO_01",
+      "cover_obstacles": 0,
+      "failing": 0,
+      "failing_examples": [],
+      "mission": "MIS_CH01_07",
+      "nearest_clear_floor_worst_at": "phase 3 attack 1, target at (-8511, 4484), 316 px from the boss",
+      "nearest_clear_floor_worst_px": 120,
+      "spots": 780,
+      "tightest_escape_at": "phase 3 attack 1, target at (-8386, 4984), 301 px from the boss (leave 120 px in 0.87 s of 1.30 s)",
+      "tightest_escape_margin_s": 0.43
+    },
+    {
+      "attacks_evaluated": 5652,
+      "boss": "BOSS_SITE7_GANTRY_01",
+      "cover_obstacles": 0,
+      "failing": 0,
+      "failing_examples": [],
+      "mission": "MIS_CH01_08",
+      "nearest_clear_floor_worst_at": "phase 3 attack 1, target at (12198, -3640), 776 px from the boss",
+      "nearest_clear_floor_worst_px": 180,
+      "spots": 942,
+      "tightest_escape_at": "phase 3 attack 1, target at (12198, -3640), 776 px from the boss (leave 180 px in 1.30 s of 1.60 s)",
+      "tightest_escape_margin_s": 0.3
+    },
+    {
+      "attacks_evaluated": 4524,
+      "boss": "BOSS_SITE7_ARCHIVE_01",
+      "cover_obstacles": 0,
+      "failing": 0,
+      "failing_examples": [],
+      "mission": "MIS_CH01_09",
+      "nearest_clear_floor_worst_at": "phase 3 attack 2, target at (-9265, 4524), 460 px from the boss",
+      "nearest_clear_floor_worst_px": 120,
+      "spots": 754,
+      "tightest_escape_at": "phase 3 attack 2, target at (-9265, 4524), 460 px from the boss (leave 120 px in 0.87 s of 1.30 s)",
+      "tightest_escape_margin_s": 0.43
+    },
+    {
+      "attacks_evaluated": 5472,
+      "boss": "BOSS_SITE7_ORIGIN_01",
+      "cover_obstacles": 0,
+      "failing": 0,
+      "failing_examples": [],
+      "mission": "MIS_CH01_10",
+      "nearest_clear_floor_worst_at": "phase 3 attack 1, target at (11742, -3439), 776 px from the boss",
+      "nearest_clear_floor_worst_px": 120,
+      "spots": 912,
+      "tightest_escape_at": "phase 2 attack 2, target at (12492, -3539), 152 px from the boss (leave 120 px in 0.87 s of 1.20 s)",
+      "tightest_escape_margin_s": 0.33
+    }
+  ],
+  "slowest_walk_px_per_s": 138.0,
+  "status": "PASS",
+  "visual_approval": false
+}

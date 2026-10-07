@@ -1,0 +1,381 @@
+{
+  "kind": "sable-cycle-preview",
+  "cycleInputs": {
+    "character": "rook",
+    "direction": "NE",
+    "action": "walk",
+    "recipe": {
+      "path": "characters/rook.json",
+      "sha256": "2115ea2a3c3c3f27cd6d62d36a85352b0aa80b8c8c26a95d37d183440e174981"
+    },
+    "identity": {
+      "path": "art/rook/identity_reference.png",
+      "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+    },
+    "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+    "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+    "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+    "sources": [
+      {
+        "slot": "NE/walk/0",
+        "path": "art/rook/NE_walk_0_master.png",
+        "sha256": "4e3cc7ac9afd2355f12909d3b705f4512a271d34d0c026942529ae6381d36331"
+      },
+      {
+        "slot": "NE/walk/1",
+        "path": "art/rook/NE_walk_1_master.png",
+        "sha256": "8038a365ecf44e2c90cb632b9f22b573969dbab29956d49841b9e143b803f5e4"
+      },
+      {
+        "slot": "NE/walk/2",
+        "path": "art/rook/NE_walk_2_master.png",
+        "sha256": "b2d542efed9169b00d8d38ee57e40e21bad11e2c77b968d671bc0eb035360d3e"
+      },
+      {
+        "slot": "NE/walk/3",
+        "path": "art/rook/NE_walk_3_master.png",
+        "sha256": "5665c5dbabab6f4ad156a866a97babd38169dbac07820fe898d55e0f460e7476"
+      },
+      {
+        "slot": "NE/walk/4",
+        "path": "art/rook/NE_walk_4_master.png",
+        "sha256": "d5e5c9458964e03e177f9e614ae539e66df96310f0621870c0a8b98c6bd99efc"
+      },
+      {
+        "slot": "NE/walk/5",
+        "path": "art/rook/NE_walk_5_master.png",
+        "sha256": "f1180a97b4efbad0fd2a8199f6fe807a03ec4936e402bfdb9f064de67e3e1483"
+      }
+    ]
+  },
+  "clip": {
+    "image": "assets/atlas/rook/NE_walk.webp",
+    "cell": [
+      768,
+      768
+    ],
+    "columns": 3,
+    "frames": 6,
+    "root": [
+      384,
+      716
+    ],
+    "height": 656,
+    "authoredFrames": 6,
+    "muzzles": [
+      [
+        550.8101316094398,
+        104.7374919205904
+      ],
+      [
+        559.5684676766396,
+        106.72752419114113
+      ],
+      [
+        559.8706920146942,
+        103.33380049467087
+      ],
+      [
+        555.9188172221184,
+        104.98810178041458
+      ],
+      [
+        565.0273106694221,
+        116.01092648506165
+      ],
+      [
+        559.3998620510101,
+        107.85684767365456
+      ]
+    ],
+    "sources": [
+      {
+        "source": "art/rook/NE_walk_0_master.png",
+        "sha256": "4e3cc7ac9afd2355f12909d3b705f4512a271d34d0c026942529ae6381d36331",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          217,
+          25,
+          893,
+          1484
+        ],
+        "hipX": 519.0,
+        "scale": 0.44962302947224125,
+        "matrix": [
+          [
+            0.4496230185031891,
+            0.0,
+            150.64564514160156
+          ],
+          [
+            0.0,
+            0.4496230185031891,
+            48.75942611694336
+          ]
+        ],
+        "muzzle": [
+          550.8101316094398,
+          104.7374919205904
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            248.2138401567936,
+            60.00000157952309
+          ],
+          [
+            552.1590006649494,
+            715.999985575676
+          ]
+        ]
+      },
+      {
+        "source": "art/rook/NE_walk_1_master.png",
+        "sha256": "8038a365ecf44e2c90cb632b9f22b573969dbab29956d49841b9e143b803f5e4",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          259,
+          22,
+          917,
+          1468
+        ],
+        "hipX": 527.0,
+        "scale": 0.4536652835408022,
+        "matrix": [
+          [
+            0.45366528630256653,
+            0.0,
+            144.91839599609375
+          ],
+          [
+            0.0,
+            0.45366528630256653,
+            50.01936340332031
+          ]
+        ],
+        "muzzle": [
+          559.5684676766396,
+          106.72752419114113
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            262.4177051484585,
+            59.999999701976776
+          ],
+          [
+            560.9294635355473,
+            716.000003695488
+          ]
+        ]
+      },
+      {
+        "source": "art/rook/NE_walk_2_master.png",
+        "sha256": "b2d542efed9169b00d8d38ee57e40e21bad11e2c77b968d671bc0eb035360d3e",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          272,
+          41,
+          895,
+          1464
+        ],
+        "hipX": 510.5,
+        "scale": 0.46099789177793393,
+        "matrix": [
+          [
+            0.46099787950515747,
+            0.0,
+            148.66058349609375
+          ],
+          [
+            0.0,
+            0.46099787950515747,
+            41.09908676147461
+          ]
+        ],
+        "muzzle": [
+          559.8706920146942,
+          103.33380049467087
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            274.0520067214966,
+            59.999999821186066
+          ],
+          [
+            561.2536856532097,
+            715.9999823570251
+          ]
+        ]
+      },
+      {
+        "source": "art/rook/NE_walk_3_master.png",
+        "sha256": "5665c5dbabab6f4ad156a866a97babd38169dbac07820fe898d55e0f460e7476",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          180,
+          37,
+          900,
+          1466
+        ],
+        "hipX": 522.5,
+        "scale": 0.45906228131560534,
+        "matrix": [
+          [
+            0.45906227827072144,
+            0.0,
+            144.13995361328125
+          ],
+          [
+            0.0,
+            0.45906227827072144,
+            43.01469421386719
+          ]
+        ],
+        "muzzle": [
+          555.9188172221184,
+          104.98810178041458
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            226.7711637020111,
+            59.99999850988388
+          ],
+          [
+            557.2960040569305,
+            715.9999941587448
+          ]
+        ]
+      },
+      {
+        "source": "art/rook/NE_walk_4_master.png",
+        "sha256": "d5e5c9458964e03e177f9e614ae539e66df96310f0621870c0a8b98c6bd99efc",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          201,
+          27,
+          937,
+          1491
+        ],
+        "hipX": 530.0,
+        "scale": 0.44808743169398907,
+        "matrix": [
+          [
+            0.4480874240398407,
+            0.0,
+            146.51365661621094
+          ],
+          [
+            0.0,
+            0.4480874240398407,
+            47.90163803100586
+          ]
+        ],
+        "muzzle": [
+          565.0273106694221,
+          116.01092648506165
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            236.57922884821892,
+            59.99999848008156
+          ],
+          [
+            566.3715729415417,
+            715.9999872744083
+          ]
+        ]
+      },
+      {
+        "source": "art/rook/NE_walk_5_master.png",
+        "sha256": "f1180a97b4efbad0fd2a8199f6fe807a03ec4936e402bfdb9f064de67e3e1483",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          254,
+          27,
+          891,
+          1480
+        ],
+        "hipX": 499.5,
+        "scale": 0.45147969717825187,
+        "matrix": [
+          [
+            0.4514797031879425,
+            0.0,
+            158.4858856201172
+          ],
+          [
+            0.0,
+            0.4514797031879425,
+            47.8100471496582
+          ]
+        ],
+        "muzzle": [
+          559.3998620510101,
+          107.85684767365456
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            273.1617302298546,
+            59.99999913573265
+          ],
+          [
+            560.754301160574,
+            716.0000078678131
+          ]
+        ]
+      }
+    ],
+    "phaseStarts": [
+      0,
+      0.2,
+      0.33,
+      0.5,
+      0.7,
+      0.83
+    ]
+  },
+  "atlas": {
+    "path": "qa/rook/gait/b871bb8a65e36286_11fe9aec/public/assets/atlas/rook/NE_walk.webp",
+    "sha256": "fc6404868c784335c4e81cd4836f4c16e0c43181740e7012ca811bd9fbcd7200"
+  },
+  "contact": {
+    "path": "qa/rook/gait/b871bb8a65e36286_11fe9aec/reference/atlas/rook/NE_walk_keyframes.png",
+    "sha256": "94ce1d06de1e601954974e39de71b83fb209193739b0b0d0a657d00ff70d22ab"
+  },
+  "video": {
+    "path": "qa/rook/gait/b871bb8a65e36286_11fe9aec/NE_walk_cycle_1080p.webm",
+    "sha256": "1729ae08ad683e649f1076689b6be97170c8b1c9146790d2c2f2c8fbd5919a82"
+  },
+  "nativeVideo": [
+    1920,
+    1080
+  ],
+  "cycles": 3.009375,
+  "durationSeconds": 3.566666666666667,
+  "framesDecoded": 107,
+  "visualApproval": false,
+  "gameRuntimeApproval": false
+}

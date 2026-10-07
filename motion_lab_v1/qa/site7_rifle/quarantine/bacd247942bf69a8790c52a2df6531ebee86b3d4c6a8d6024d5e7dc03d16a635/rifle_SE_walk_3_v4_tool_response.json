@@ -1,0 +1,18 @@
+{
+  "tool": "image_gen.imagegen",
+  "returnedPath": "C:\\Users\\AAA\\.codex\\generated_images\\01a086a7-e4ef-7d23-99b9-7afc5fb60942\\exec-83fdeac0-4b27-4af8-a55b-6cd54f012cb8.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a086a7-e4ef-7d23-99b9-7afc5fb60942 as C:\\Users\\AAA\\.codex\\generated_images\\01a086a7-e4ef-7d23-99b9-7afc5fb60942\\exec-83fdeac0-4b27-4af8-a55b-6cd54f012cb8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "art/site7_enemies_raw/rifle_SE_walk_3_v4.png",
+  "projectCopySHA256": "7b469c4a1ed22edec5df24638b6dd710aad4907e73902ed5be8edc7f5a907de8",
+  "prompt": "Use case: identity-preserve. ONE full-body SABLE CIRCUIT SITE-7 rifle trooper source frame, southeast elevated three-quarter view, walk phase 3 (anatomical RIGHT contact). Portrait 1024x1536. Flat pure #00FF00 chroma backdrop, no floor, shadows, labels, motion blur or firing effects.\n\nReference 1 is ONLY the exact TWO-leg geometry and camera guide: brown foreground anatomical RIGHT thigh goes diagonally down-right to one knee, then one shin to the forward contact boot at bottom-right. Blue background LEFT calf goes down-left to the trailing left boot. Exactly two hip-knee-shin-ankle-boot chains, no extra knee branch or extra shin. Guide geometry is not visible costume.\n\nReference 2 is the COMPLETE UPPER appearance/projection authority: same hood and respirator, body proportions, silver/black/red armor, radio, shouldered two-hand grip, SHORT THICK FORESHORTENED BULLPUP gun, matching optic/receiver/red band/fore-end/barrel proportions and elevation. Keep upper view identical in character and perspective, not thinner or longer side-on gun.\n\nReference 3 is the EXACT KNEE/SHIN COSTUME construction authority (not its pose). Every knee has ONE compact silver pentagonal kneecap with red stripe, an articulated SMALL pointed silver plate directly BELOW it, a narrow black gap, then a SEPARATE long silver shin plate. The red stripe stays on the kneecap, NEVER on the long shin plate. Both legs have this same segmented design, not a big smooth cylinder, not a giant thigh-over-knee rectangle, not a plain black kneecap. Preserve the distinct silhouette of all three plates. Apply it to the pose from reference 1.\n\nSame realistic weathered premium game character illustration. Black tactical trousers, silver thigh armor, pistol holster on anatomical RIGHT foreground thigh ONLY, two matching black lace-up boots. Natural adult proportions matching reference2: do not lengthen thighs/shins, make head smaller or stretch the body. Full subject within generous margins; hood top around y110 and lowest sole around y1415 on 1024x1536, character about1305px tall. Standing contact weight through right leg, left toe trails; no running leap. This is a whole source candidate, not a claimed masked/pixel-local repair.",
+  "referenceOrder": [
+    "reference/ual_guides/SE_Walk_Loop_3.png",
+    "reference/site7_rifle/SE_upper_from_walk1.png",
+    "reference/site7_rifle/SE_knee_caps_from_walk1.png"
+  ],
+  "slot": "SE/walk/3",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "handoffPacket": "qa/site7_rifle/handoffs/20260913_193537_934310.json"
+}

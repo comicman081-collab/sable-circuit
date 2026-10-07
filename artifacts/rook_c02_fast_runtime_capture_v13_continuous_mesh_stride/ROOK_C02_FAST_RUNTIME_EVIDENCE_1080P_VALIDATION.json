@@ -1,0 +1,272 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-08-31T10:15:22.856400+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_8_DIRECTION_STAGE_CONTACT_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 534479,
+      "sha256": "fbab86b401150665b67f328560654a6e56277c31915ab8db017345bc70923135"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_E_MOVE_FIRE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 504913,
+      "sha256": "02d35f444717e424ea0313ce3bfaa14344253d7944ae68f0dae495318fcb786a"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_E_MOVE_STRIDE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 504449,
+      "sha256": "03ef8f39e1f73f123bc348635f56b486ebb50fcc77c15376893377d62a7ae63f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_N_MOVE_FIRE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 494641,
+      "sha256": "bfe7403a57084730902da5be350c28146e6dfa22150714dd441961c69a3e235d"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_N_MOVE_STRIDE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 494512,
+      "sha256": "0ce53eb96f67c2d2a861ad23bddb515684582e6eb59dd7b8aa402748258baede"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_NE_MOVE_FIRE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 499841,
+      "sha256": "b37f3429e89ce54b37c5c7840a052422fbdfa4f0dfdf744ccd1140f1efb14a8d"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_NE_MOVE_STRIDE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 498932,
+      "sha256": "ec049ec64f3b6062b4df42545845546ee0cdead2fdff7ab6cd70cbd16d8ecac9"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_NW_MOVE_FIRE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 504694,
+      "sha256": "dad50a2c7b3d6b7ed13b87a36b9227542748da6daa67b8500c2fe32327bdcf11"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_NW_MOVE_STRIDE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 502885,
+      "sha256": "bf98a2f6f7b60e91f84c9c8a062362631aee339fd345c4ee3a9be73113d6707e"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_S_MOVE_FIRE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 500875,
+      "sha256": "8a03fc43f0dc52b226ae77b353527a4f435335337c701aad4afa1f154d1af884"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_S_MOVE_STRIDE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 500572,
+      "sha256": "41e53c865e91eabf7c5b208fd48777d77650895e8c8b3c2325b95cf24dd8128e"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_SE_MOVE_FIRE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 502926,
+      "sha256": "d5766b2cade9c1922330728138473fde5ac8575e7548b9b48294324e33de1644"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_SE_MOVE_STRIDE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 501383,
+      "sha256": "dc8bf94a0b8c4feb504099c31d4fd0c4b463109f396877cf9e19ca5fe5caa30e"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_SW_MOVE_FIRE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 500687,
+      "sha256": "7cca6a2030d4f09601792c4ae8b24b627210ae2687fa0282899759d5a2d74632"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_SW_MOVE_STRIDE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 499891,
+      "sha256": "7c4ab6bfecab96c47e3421e5c4f7a564969c3caae54fb3ac2273cd43e5656bf8"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_W_MOVE_FIRE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 502555,
+      "sha256": "5f3ba2bfbe3b07d9eb7daedb9f3cae4a506fb151273cbc73af473da0ca7c80cc"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_fast_runtime_capture_v13_continuous_mesh_stride\\ROOK_C02_W_MOVE_STRIDE_1920X1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 501928,
+      "sha256": "c6d637b220da7256e28a13ad6e13a78a4adadecc87056ee0a7665cd564f6f774"
+    }
+  ]
+}

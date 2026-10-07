@@ -1,0 +1,175 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_R01/attempt02/S10_R01_GAME.png",
+  "luma": 0.19966302812099457,
+  "p10": 0.15439216792583466,
+  "p90": 0.23501569032669067,
+  "saturation": 0.03739251865474438,
+  "hue": 135.87887138065201,
+  "axis": 26.10605561505061,
+  "problems": [
+    "native size (1603, 981) outside +/-2 px of (1672, 941)"
+  ],
+  "plate": "S10_R01",
+  "attempt": 2,
+  "native_size": [
+    1603,
+    981
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      144,
+      505
+    ],
+    [
+      779,
+      250
+    ],
+    [
+      1062,
+      365
+    ],
+    [
+      1069,
+      354
+    ],
+    [
+      1270,
+      251
+    ],
+    [
+      1286,
+      383
+    ],
+    [
+      1300,
+      447
+    ],
+    [
+      1445,
+      505
+    ],
+    [
+      779,
+      864
+    ]
+  ],
+  "doors_px": {
+    "NE": [
+      1194,
+      425,
+      248
+    ]
+  },
+  "raw_sha256": "23467911c66c9a486e000261d6ec1f72d599129c5d2493b0f6177d4828829df2",
+  "master_sha256": "23467911c66c9a486e000261d6ec1f72d599129c5d2493b0f6177d4828829df2",
+  "game_sha256": "65aeb5b5065198a4d81d2fbe3e87c944fd01628cbe1f5e240139fd547472b8e7",
+  "game_exposure_factor_srgb": 0.7471,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-61238ce3-d9b5-471b-afcc-d66538d124d7.png",
+  "inspection": "새 긴 NW 밀폐 프레임과 NE 대형 패널로 팬 벽 배치가 바뀜. 그러나 실제 네이티브 크기 1602×982는 목표 1672×941의 ±2 px 밖.",
+  "floor_area_px2": 420578.5,
+  "floor_area_fraction": 0.2674511921136656,
+  "floor_bounds_px": [
+    144,
+    250,
+    1445,
+    864
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1672,
+      941
+    ],
+    "actual_size": [
+      1603,
+      981
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "NE": [
+        [
+          1062,
+          365
+        ],
+        [
+          1270,
+          251
+        ],
+        [
+          1286,
+          383
+        ],
+        [
+          1182,
+          449
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      144,
+      250,
+      1445,
+      864
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.08983156581409857,
+      0.254841997961264,
+      0.09856519026824703,
+      0.11926605504587157
+    ],
+    "whole_floor_bounds_px": [
+      144,
+      250,
+      1445,
+      864
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.08983156581409857,
+      0.254841997961264,
+      0.09856519026824703,
+      0.11926605504587157
+    ],
+    "main_floor_area_px2": 398125
+  },
+  "apron_stats": {
+    "NE": {
+      "luma": 0.22617660462856293,
+      "saturation": 0.0302223322299489,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  },
+  "status": "REJECTED",
+  "reason": "네이티브 크기 1603×981로 목표 1672×941 대비 -69/+40 px, ±2 px 범위 밖. 크롭/리사이즈 없이 거절. NE 벽 베이·중앙 코너 기둥 구조 반복도 남음.",
+  "raw": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt02/S10_R01_RAW_NATIVE.png",
+  "master": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt02/S10_R01_MASTER.png",
+  "game": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt02/S10_R01_GAME.png",
+  "record_correction": "초기 거절 문장의 1602×982는 표시 이미지를 보고 잘못 적은 값. PNG 디코딩값과 원래 measurements.json native_size [1603,981]가 정확함. 이미지 바이트 변경 없음.",
+  "manual_checks": {
+    "door_sides": [
+      "NE"
+    ],
+    "closed_sides": [
+      "NW",
+      "SW",
+      "SE"
+    ],
+    "central_floor_uncluttered": true,
+    "wall_identity": "FAIL / S3_R01 NE repeated bay and support silhouette",
+    "evidence_class": "authored candidate review, not gameplay",
+    "measurement_method": "manual tracing of visible painted floor; no standard contour substitution",
+    "registration_status": "NOT_REGISTERED: quarantine-only",
+    "alignment": "NOT_RUN: no accepted room/connector pair; 15-plate integration not started",
+    "native_size": "FAIL: 1603x981; target 1672x941 +/-2px"
+  },
+  "problems_manual": [
+    "네이티브 크기 1603×981로 목표 1672×941 대비 -69/+40 px, ±2 px 범위 밖. 크롭/리사이즈 없이 거절. NE 벽 베이·중앙 코너 기둥 구조 반복도 남음."
+  ]
+}

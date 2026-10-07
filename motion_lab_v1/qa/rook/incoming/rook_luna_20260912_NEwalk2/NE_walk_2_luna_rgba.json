@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "operation": "exact-green plus connected chroma-green transparency under chroma-green-excluded costume contract",
+  "input": "motion_lab_v1/qa/rook/normalized_candidates/NE_walk_2_luna_normalized.png",
+  "input_sha256": "461a480ebf92d3cd260cfddf4745e433ff4b93fb66512fdc54371c3fe9a4bfca",
+  "output": "motion_lab_v1/qa/rook/incoming/rook_luna_20260912_NEwalk2/NE_walk_2_luna_rgba_candidate.png",
+  "output_sha256": "f92f19fa51d09aab905affa69e6aa640b535c1f37f0561675249fb31fa511e6f",
+  "native_size": [
+    1024,
+    1536
+  ],
+  "transparent_pixels": 1172534,
+  "removed_strong_green_non_exact_pixels": 6539,
+  "visible_pixels": 400330,
+  "visible_rgb_byte_exact": true,
+  "visible_strong_green_residual_pixels": 18,
+  "visible_strong_green_alpha_boundary_residual_pixels": 0,
+  "quality_verdict": "HOLD_VISUAL_EDGE_REVIEW"
+}

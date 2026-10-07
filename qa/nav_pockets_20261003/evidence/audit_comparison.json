@@ -1,0 +1,67 @@
+{
+  "audits": {
+    "baseline12": {
+      "cell_px": 12.0,
+      "rooms": 30,
+      "walkable_cells": 105535,
+      "dead_cells": 70,
+      "dead_rooms": 4,
+      "sha256": "5350c371feab59e8de61053c7cdc8813f35fbdca2f6536887b45d938764b4edb",
+      "path": ".cache/diag/nav_pockets_20261003/baseline12.json"
+    },
+    "fixed12": {
+      "cell_px": 12.0,
+      "rooms": 30,
+      "walkable_cells": 105535,
+      "dead_cells": 0,
+      "dead_rooms": 0,
+      "sha256": "6e443aa8967a7e9d6c6ad8905c14a52c9c4ca73cb44ac9494ba5452e1c26b1e3",
+      "path": "qa/regression_runs/20261003_152407_custom/out/nav_pockets/nav_pockets.json"
+    },
+    "fixed8": {
+      "cell_px": 8.0,
+      "rooms": 30,
+      "walkable_cells": 237208,
+      "dead_cells": 0,
+      "dead_rooms": 0,
+      "sha256": "34b651c66448e272e5d8e8cf522ee4c348d322906a76935af80bf0df99226889",
+      "path": ".cache/diag/nav_pockets_20261003/fixed8.json"
+    },
+    "reverted12": {
+      "cell_px": 12.0,
+      "rooms": 30,
+      "walkable_cells": 105535,
+      "dead_cells": 70,
+      "dead_rooms": 4,
+      "sha256": "5350c371feab59e8de61053c7cdc8813f35fbdca2f6536887b45d938764b4edb",
+      "path": ".cache/diag/nav_pockets_20261003/reverted_project/.cache/reverted12.json"
+    }
+  },
+  "reverted_json_byte_identical_to_baseline": true,
+  "same_12px_sampled_floor_and_cover_counts": true,
+  "navigation_and_audit_script_sha256": {
+    "scripts/combat/cover_navigation.gd": {
+      "baseline": "cf73f545f4b7511e382c24c0ac73d83a335691d8869236a64a5b6c076e794960",
+      "fixed": "3d0c6a0c662df7be8f7298d6b9238d80d77a39d5c5ac800b0ed52dbfe4ea2031",
+      "reverted": "cf73f545f4b7511e382c24c0ac73d83a335691d8869236a64a5b6c076e794960"
+    },
+    "scripts/combat/site7_enemy_tactics.gd": {
+      "baseline": "eea21cbe0be02073304cae3b9be4b6cf7c3169ab3636ff81f0943e88bd0e0bc2",
+      "fixed": "de728e8d4129d7aa1bf522770ad260404b95b848b013adf33f44508f6798e7cb",
+      "reverted": "eea21cbe0be02073304cae3b9be4b6cf7c3169ab3636ff81f0943e88bd0e0bc2"
+    },
+    "tools/environment/audit_nav_pockets.gd": {
+      "baseline": "622f3edcc7cd7c6616b8dea439c6debb69a58246a62b607095fb08ec68ebf243",
+      "fixed": "622f3edcc7cd7c6616b8dea439c6debb69a58246a62b607095fb08ec68ebf243",
+      "reverted": "622f3edcc7cd7c6616b8dea439c6debb69a58246a62b607095fb08ec68ebf243"
+    }
+  },
+  "data_files_compared": 37,
+  "data_files_changed": [],
+  "runtime_12px": {
+    "before_seconds": 69.4929759,
+    "after_seconds": 77.8,
+    "ratio": 1.1195376078289374,
+    "limit_ratio": 1.25
+  }
+}

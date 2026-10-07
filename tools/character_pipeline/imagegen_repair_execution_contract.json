@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "stage": "imagegen_repair_execution_contract",
+  "purpose": "Prevent a reference-only ImageGen edit from being reserved as a pixel-local repair.",
+  "required_generator_capabilities": [
+    "consume_exact_binary_change_mask",
+    "keep_all_pixels_outside_mask_byte_immutable",
+    "produce_exactly_one_output_under_one_consumable_permit"
+  ],
+  "required_boundary_fields": [
+    "contract",
+    "generator",
+    "repair_target_subject_sha256",
+    "change_mask",
+    "capability_evidence",
+    "hard_edit_mask_supported",
+    "outside_mask_pixels_immutable",
+    "reviews",
+    "verdict"
+  ],
+  "required_review_roles": [
+    "implementation",
+    "Ponytail FULL"
+  ],
+  "boundary_review_checks": [
+    "actual_mask_parameter_exposed",
+    "generator_consumes_exact_binary_mask",
+    "outside_mask_pixels_byte_immutable",
+    "native_binary_mask_scope",
+    "one_output_permit_only"
+  ],
+  "minimum_change_mask_coverage": 0.0005,
+  "maximum_change_mask_coverage": 0.35,
+  "pass_verdict": "PASS_ONE_MASKED_IMAGEGEN_EDIT_ONLY",
+  "fail_closed_note": "A prompt, a reference mask image, or a visual similarity claim is not a hard edit mask capability."
+}

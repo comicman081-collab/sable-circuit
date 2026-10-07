@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "scope": "Unmodified runtime and exact source assets after cleanup; no new artistic/visual approval",
+  "checks": [
+    {
+      "name": "project_static",
+      "passed": true,
+      "exitCode": 0,
+      "log": "qa/asset_cleanup_20260911/project_static.log"
+    },
+    {
+      "name": "motion_lab_character_runtime_smoke",
+      "passed": true,
+      "exitCode": 0,
+      "log": "qa/asset_cleanup_20260911/motion_lab_character_runtime_smoke.log"
+    },
+    {
+      "name": "m7_authored_visual_smoke",
+      "passed": true,
+      "exitCode": 0,
+      "log": "qa/asset_cleanup_20260911/m7_authored_visual_smoke.log"
+    },
+    {
+      "name": "prototype_smoke",
+      "passed": true,
+      "exitCode": 0,
+      "log": "qa/asset_cleanup_20260911/prototype_smoke.log"
+    },
+    {
+      "name": "m2_story_flow_smoke",
+      "passed": true,
+      "exitCode": 0,
+      "log": "qa/asset_cleanup_20260911/m2_story_flow_smoke.log"
+    },
+    {
+      "name": "rook_c02_fast_runtime_smoke",
+      "passed": true,
+      "exitCode": 0,
+      "log": "qa/asset_cleanup_20260911/rook_c02_fast_runtime_smoke.log"
+    },
+    {
+      "name": "aster_asset_validation",
+      "passed": true,
+      "report": "motion_lab_v1/qa/cleanup_20260911/aster_asset_validation.json"
+    },
+    {
+      "name": "mica_asset_validation",
+      "passed": true,
+      "report": "motion_lab_v1/qa/cleanup_20260911/mica_asset_validation.json"
+    }
+  ]
+}

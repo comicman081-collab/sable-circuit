@@ -1,0 +1,62 @@
+{
+  "captures": [],
+  "checks": 46,
+  "dependency_sha256": {
+    "data/visual/site7_environment_props.json": "6ce25fe3209a220c9c75bb581d22a421c5b88313e38952d70d9f80f51da9692b",
+    "scripts/actors/enemy_actor.gd": "fedc651c57e985f590112cc71d21941dbc541fb5e8113f4b64967a26c37cc134",
+    "scripts/actors/operator_actor.gd": "373e8f20460b2a228d5062227af7b5d2b78167835397731e01ae26a8545bdc8a",
+    "scripts/animation/boss_phase_transition_guard.gd": "ef4da2e861c111dcb15b36df9544acb6b5f4f5dd156a02f4fcd478d0c893215b",
+    "scripts/combat/cover_navigation.gd": "aba718d3d0851797d7386ebb1ef89a10ec39376d1b37c7dbe5b3c8347939992f",
+    "scripts/combat/prototype_projectile.gd": "54b5dd05a41b23c0cd664e36e74f4855268177812e6ad6510f40fa99220d6bc2",
+    "scripts/combat/site7_enemy_tactics.gd": "fc986bad716cf17fbf052cd4b73b3ff349af0a036923d43ee5ca4f31b43128b1",
+    "scripts/missions/site7_environment_prop.gd": "0bec0d0c870676a21c8284c2f90d9b13b64d7b154be2a497df1e0d7dbc52ccf6",
+    "scripts/ui/battle_reticle.gd": "ff28b37ef5d84f648d08cc87babb3e98e77b9a111f3187ca9678502554f1b072",
+    "scripts/ui/story_stage_hud.gd": "a02ce228317a0a2d17dfba4daa118c6b1fe7d5b4a3ab1effd927b8a6ba67603b",
+    "tests/render/site7_cover_ai_check.gd": "c7a73e429f83205e5db4385321f1a19547b865bc07997858194a341e7d3d79f6"
+  },
+  "failures": [],
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "observations": [
+    {
+      "end_distance": 34.9222755432129,
+      "hz": 30,
+      "kind": "follower_path",
+      "side_travel": 58.9855346679688
+    },
+    {
+      "displacement": 188.950180053711,
+      "hz": 30,
+      "kind": "drone_flank",
+      "new_warning": true
+    },
+    {
+      "end_distance": 34.8970527648926,
+      "hz": 60,
+      "kind": "follower_path",
+      "side_travel": 59.1874694824219
+    },
+    {
+      "displacement": 213.929534912109,
+      "hz": 60,
+      "kind": "drone_flank",
+      "new_warning": true
+    },
+    {
+      "end_distance": 34.9000091552734,
+      "hz": 120,
+      "kind": "follower_path",
+      "side_travel": 59.1875
+    },
+    {
+      "displacement": 201.254577636719,
+      "hz": 120,
+      "kind": "drone_flank",
+      "new_warning": true
+    }
+  ],
+  "status": "PASS_TECHNICAL_ONLY",
+  "visual_approval": false
+}

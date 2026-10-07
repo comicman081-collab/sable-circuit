@@ -1,0 +1,34 @@
+{
+  "id": "aberrant",
+  "status": "CANDIDATE_NOT_REVIEWED",
+  "source": "art\\site7_enemies_raw\\aberrant_master.png",
+  "sourceSHA256": "14736771191201b09aa66b785d7a51886cd9310adc681edcc0cef4c3d0855818",
+  "toolResponse": {
+    "path": "qa\\stage1_enemies_20260913\\aberrant_master_tool_response.json",
+    "sha256": "679c234279da86c389a30202733f51badff4601e361b359e7bf72509e2613a41"
+  },
+  "sourceNative": [
+    1536,
+    1024
+  ],
+  "box": [
+    2,
+    62,
+    1534,
+    961
+  ],
+  "candidate": "qa\\stage1_enemies_20260913\\aberrant\\147367711912\\candidate_rgba.png",
+  "candidateSHA256": "918ed26cb8795194b61bd4979f4f36cb636274341c4539322d505c68bd44ec2e",
+  "candidateNative": [
+    1532,
+    899
+  ],
+  "native_review": [
+    1920,
+    1080
+  ],
+  "operation": "existing key_image chroma/alpha separation then native crop only",
+  "resampling": false,
+  "anatomicalWarp": false,
+  "runtimePromotion": false
+}

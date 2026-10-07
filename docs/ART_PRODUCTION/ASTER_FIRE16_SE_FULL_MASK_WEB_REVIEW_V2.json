@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "reviewed_at_utc": "2026-08-30T11:46:24.9107983Z",
+  "review_session": {
+    "title": "V6 독립 검수 판정",
+    "url": "https://chatgpt.com/c/6a93c84f-fb1c-83e8-9d88-959e708b2463",
+    "reused_existing_conversation": true,
+    "left_open_for_follow_up": true
+  },
+  "submitted_evidence": [
+    {
+      "path": "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_sse_semantic_masks_v1/manual_full_contract_v1/accepted_v1/ASTER_FIRE_SE_FULL_CONTRACT_V1_REVIEW_1920X1440.png",
+      "sha256": "b5607799b9225d030f481354ea991973a1760faf1ea3214fa4059593cd055c44"
+    },
+    {
+      "path": "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_sse_semantic_masks_v1/manual_full_contract_v1/independent_validation_v2/ASTER_FIRE_SE_FULL_CONTRACT_V1_INDEPENDENT_V2_REVIEW_1920X1440.png",
+      "sha256": "8ae6512505a91bee05052028ac64aa1ab5b1415e251ea1986b1841381c5014d3"
+    }
+  ],
+  "locked_input_manifests": [
+    {
+      "path": "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_sse_semantic_masks_v1/manual_full_contract_v1/accepted_v1/ASTER_FIRE_SE_FULL_CONTRACT_V1_MANIFEST.json",
+      "sha256": "1d7cbeeaf51f1b83fb296031ce3afb2b3471c3c1aae23f02fd483d72ada4c842"
+    },
+    {
+      "path": "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_sse_semantic_masks_v1/manual_full_contract_v1/independent_validation_v2/ASTER_FIRE_SE_FULL_CONTRACT_V1_INDEPENDENT_V2_MANIFEST.json",
+      "sha256": "0443ada5e13dccc3dcdeb9d3b850750c7557cc0b09d7699572947144e0403071"
+    }
+  ],
+  "delivery_recovery": {
+    "initial_analysis_completed_but_response_body_stalled": true,
+    "initial_generation_was_stopped_after_repeated_unchanged_checks": true,
+    "first_text_recovery_returned_internal_server_error": true,
+    "same_message_retry_succeeded": true,
+    "duplicate_review_chat_created": false
+  },
+  "verdict": "FIRE16_SSE_17ROLE_REVIEW: PASS_FULL_SE_SOURCE_MASK_CONTRACT_ONLY_HOLD",
+  "next_stage_verdict": "NEXT_STAGE: PASS_TO_DETERMINISTIC_BODY_COMPOSITE",
+  "scope": "Completed 17-role native SE source-mask contract and permission to begin a deterministic SSE body-composite attempt only",
+  "assessment": {
+    "A_identity_and_asymmetry_preservation": "PASS",
+    "B_proximal_forearm_seam_and_under_receiver_flap_ownership": "PASS_SOURCE_CONTRACT_SCOPE_ONLY",
+    "C_keep_as_authoritative_deterministic_composite_input": "PASS",
+    "D_web_review_blockers": "NONE_OBSERVED_IN_SUBMITTED_EVIDENCE",
+    "E_begin_sse_body_composite_stage": "PASS"
+  },
+  "web_review_non_blockers_to_recheck_on_composite": [
+    "visible seam-bridge thickness, protrusion, dark overlap line, or resampling gap",
+    "BODY_CORE under-receiver flap or strap z-order against the transformed rifle",
+    "face, front-hair, rifle, and white shoulder-plate intersection",
+    "support-hand and handguard occlusion preserving a two-hand grip",
+    "TARGET_OCCLUDE and TARGET_REVEAL fitness, including complete removal of the old SE arm and rifle",
+    "distal open-cage holes and green fringe after rotation resampling"
+  ],
+  "web_review_decision": {
+    "keep_accepted_v1_immutable": true,
+    "source_mask_contract_complete": true,
+    "source_mask_contract_pass_hold": true,
+    "preemptive_mask_rework_required": false,
+    "deterministic_body_composite_attempt_allowed": true,
+    "completed_character_visual_pass": false,
+    "runtime_promotion_allowed": false
+  },
+  "project_local_implementation_gate": {
+    "status": "HOLD_APPROVED_REVEAL_DONOR_AND_PIXEL_CORRESPONDENCE_NOT_ESTABLISHED",
+    "reason": "Moving the locked rigid cluster exposes 46016 TARGET_REVEAL pixels that the accepted masks cannot reconstruct. No commercially and visually approved hidden-body donor or deterministic SE-plus-S-to-SSE pixel correspondence is currently established.",
+    "prohibited_unapproved_donors": [
+      "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_segmented_sources_v1/body/ASTER_BODY_HANDS_CLEAN_SSE_GREEN.png",
+      "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_segmented_sources_v1/rifle/ASTER_RIFLE_ISOLATED_HORIZONTAL_GREEN.png"
+    ],
+    "donor_gate_evidence": "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_segmented_sources_v1/ASSET_RETENTION_MANIFEST.json",
+    "safe_next_action": "Define and independently validate an approved reveal-donor or correspondence rule in a new project-local, no-clobber body-composite builder before rendering a candidate."
+  },
+  "authority_note": "The ChatGPT web review is advisory and does not override the authoritative project package, costume and identity locks, model-license policy, source-mask hashes, visual HOLD, runtime HOLD, or the project-local donor gate."
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "reviewer": "Ponytail FULL",
+  "reviewed_at": "2026-09-05",
+  "candidate": "art_src/characters/mica/fast_pipeline/imagegen/direction_masters/candidate_mica_c03_direction_masters_r18_sw_fix_refined",
+  "walk_sources": "art_src/characters/mica/fast_pipeline/imagegen/walk_pose_masters/candidate_mica_c03_r18_sw_fix",
+  "overall": "FAIL_STATIC",
+  "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+  "direction": "SW",
+  "checks": {
+    "identity_costume_continuity": "PASS_STATIC",
+    "muzzle_axis_screen_space_southwest": "PASS_STATIC",
+    "leg_separation_no_cross": "PASS_STATIC",
+    "exact_green_contract": "PASS_STATIC",
+    "strict_no_toe_out": "FAIL_STATIC",
+    "ground_contact_temporal": "HOLD_NOT_PROVEN"
+  },
+  "findings": [
+    "The master and pose A rear/right boot turns toward screen lower-right, opposing the SW travel axis.",
+    "This creates a V-shaped/toe-out impression even though the legs are not crossed.",
+    "Pose B is comparatively acceptable but cannot compensate for the master/A failure.",
+    "Static 1024x1536 sources do not prove sole lock, cadence, or runtime translation."
+  ],
+  "required_next": [
+    "Generate a new SW master and reciprocal A/B frames with both boots aligned to the screen lower-left travel axis.",
+    "Keep the same identity/costume and exact-green contract.",
+    "Run Blender+UAL temporal render, native 1920x1080 capture, and muzzle/projectile review before promotion."
+  ],
+  "disposition": {
+    "render_or_promote": false,
+    "delete": false,
+    "quarantine": true,
+    "quarantine_reason": "FAIL_STATIC; retain source, derivatives, QA, provenance, and review evidence until a fully gated replacement exists."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "policy": "No deletion. Content rejection survives candidate rename. Roots retained in place until dependency-safe relocation; no promotion is permitted.",
+  "records": [
+    {
+      "id": "MICA_R4_R22_USER_REJECTED_SEGMENTED_COAT",
+      "status": "FAIL_NOT_PROMOTABLE",
+      "roots": [
+        "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_v9_neutral_r4_wide_step_segmented",
+        "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_r22_r4_wide_stride_sole_lock"
+      ],
+      "file_sha256": [
+        "7b6ed93da8f2b5aa36cb9c29eb6060456d312b45f5c6afc33e24da899eb77a30",
+        "af06ad3506eebf2c686f0205b62b5ededb1ed19e40bbc8efdd0e0c1994a4bb0e",
+        "df6df2466c2b0dd35641f4eeca97bd54d250cd389e3e4cd00fb447487afbc21b",
+        "c7976976abe98df3a6ac404ba8c1a580e09891cc9719cd96e7a1b9c733bc6e98"
+      ],
+      "reason": "User rejected detached rectangular coat panels, distorted legs. R22 copies the same R4 frames; a new root scalar cannot cure the image defect.",
+      "evidence": "C:/Users/AAA/AppData/Local/Temp/codex-clipboard-d25e6595-4033-47a0-96b8-eb18c5a82795.png",
+      "disposal": "BLOCKED_UNTIL_ALL_GATES_PASS_AND_RETIREMENT_MANIFEST"
+    },
+    {
+      "id": "MICA_ANATOMICAL_R4_ART_AUTHORITY_VIOLATION",
+      "status": "FAIL_NOT_PROMOTABLE",
+      "roots": [
+        "art_src/characters/mica/rigged_v2/model_r04",
+        "artifacts/quarantine/generation_diagnostics/mica_anatomical_model_r04"
+      ],
+      "file_sha256": [
+        "5eeee9dfa1cd66e83e9e2b37375394117141bd07633e6d1bcceb09650f337c94",
+        "4df59fc456194d9537c8de2ad74fb2383aacad92c324b8067dd703e58b2546d4"
+      ],
+      "reason": "User-confirmed boundary: Blender reauthored face/hair/costume/boots instead of implementing motion on approved ImageGen appearance. Actual native first pose visual FAIL. Technical construction completion is not visual or production approval.",
+      "evidence": "artifacts/quarantine/generation_diagnostics/mica_anatomical_model_r04/PONYTAIL_FIRST_POSE_R4_VISUAL.md",
+      "disposal": "BLOCKED_UNTIL_ALL_GATES_PASS_AND_RETIREMENT_MANIFEST"
+    },
+    {
+      "id": "MICA_ASTRA_E_FLIGHT_R_R1_WRONG_GUIDE_AND_MATTE",
+      "status": "FAIL_NOT_PROMOTABLE",
+      "roots": [
+        "artifacts/quarantine/generation_diagnostics/mica_astra_e_flight_r_r1_failed_review"
+      ],
+      "file_sha256": [
+        "6a306f970e46ed649ca1f09b80cc0961c392ac3db18e617422b6a14378d2bf50"
+      ],
+      "reason": "The visible candidate used a Walk/W pose guide for an E/run/flight_r request and left closed green background holes/fringe. It has no frame receipt.",
+      "evidence": "artifacts/generation_harness_audit/PONYTAIL_MICA_E_FLIGHT_R_REVIEW_R1.md",
+      "disposal": "BLOCKED_UNTIL_ALL_GATES_PASS_AND_RETIREMENT_MANIFEST"
+    },
+    {
+      "id": "MICA_ASTRA_E_FLIGHT_R_R2_LATERALITY_AND_DARK_HALO",
+      "status": "FAIL_NOT_PROMOTABLE",
+      "roots": [
+        "artifacts/quarantine/generation_diagnostics/mica_astra_e_flight_r_r2_failed_review"
+      ],
+      "file_sha256": [
+        "8eb42d673915860d222ad6b42f9679fde60bdf72e4f5961b46c1d477cc9b576c"
+      ],
+      "reason": "Anatomical right, identified by the approved beige thigh marker, leads although flight_r requires left leading; opaque low-luminance green edge pixels also remained below the old matting threshold.",
+      "evidence": "artifacts/generation_harness_audit/PONYTAIL_MICA_E_FLIGHT_R_REVIEW_R2.md",
+      "disposal": "BLOCKED_UNTIL_ALL_GATES_PASS_AND_RETIREMENT_MANIFEST"
+    },
+    {
+      "id": "MICA_ASTRA_E_FLIGHT_L_R1_LATERALITY",
+      "status": "FAIL_NOT_PROMOTABLE",
+      "roots": [
+        "artifacts/quarantine/generation_diagnostics/mica_astra_e_flight_l_r1_failed_laterality"
+      ],
+      "file_sha256": [
+        "548872ee7d748d738ca6deb0bebe0bb5f3b42e948d91c9bf78cb8535fed9d692"
+      ],
+      "reason": "The anatomical left leg leads although flight_l requires the anatomical right leg leading. Early matte revisions also either erased teal/cyan pixels or retained dark-green fringe; all revisions remain diagnostic evidence.",
+      "evidence": "artifacts/generation_harness_audit/PONYTAIL_MICA_E_FLIGHT_L_REVIEW_R1.md",
+      "disposal": "BLOCKED_UNTIL_ALL_GATES_PASS_AND_RETIREMENT_MANIFEST"
+    },
+    {
+      "id": "MICA_ASTRA_E_FLIGHT_L_REPAIR_R2_LATERALITY",
+      "status": "FAIL_NOT_PROMOTABLE",
+      "roots": [
+        "artifacts/quarantine/generation_diagnostics/mica_astra_e_flight_l_repair_r2_failed_laterality"
+      ],
+      "file_sha256": [
+        "f35c120e4ff1c63b03100eb9a0581ba674c5617e59d70788baa40e242d3bee17"
+      ],
+      "reason": "The explicit ImageGen repair still leaves the beige-plate anatomical right leg trailing, and the torso remains three-quarter rather than strict E.",
+      "evidence": "artifacts/generation_harness_audit/PONYTAIL_MICA_E_FLIGHT_L_REPAIR_REVIEW_R2.md",
+      "disposal": "BLOCKED_UNTIL_ALL_GATES_PASS_AND_RETIREMENT_MANIFEST"
+    },
+    {
+      "id": "MICA_ASTRA_E_FLIGHT_L_PROFILE_REPAIR_R3_DIRECTION_HOLD",
+      "status": "FAIL_NOT_PROMOTABLE",
+      "roots": [
+        "artifacts/quarantine/generation_diagnostics/mica_astra_e_flight_l_profile_repair_r3_hold"
+      ],
+      "file_sha256": [
+        "274d14d3e1fc45718b099447d087404063cdbea09eb3d3f4b1fccdb5857ff82c"
+      ],
+      "reason": "Right-leg-leading flight_l and broad stride are fixed, but the chest/pelvis remain three-quarter rather than strict E. The initial matte also dropped eight cyan edge pixels; the retained ratio-aware diagnostic fixes that mechanism only.",
+      "evidence": "artifacts/generation_harness_audit/PONYTAIL_MICA_C03_E_FLIGHT_L_PROFILE_REPAIR_R3_FRAME_REVIEW.md",
+      "disposal": "BLOCKED_UNTIL_ALL_GATES_PASS_AND_RETIREMENT_MANIFEST"
+    },
+    {
+      "id": "MICA_E_SOURCE_SURFACE_R2_BATCH_POSE_ASSIGNMENT",
+      "status": "FAIL_NOT_PROMOTABLE",
+      "roots": [
+        "art_src/characters/mica/first_pose_r01/build_E_contact_L"
+      ],
+      "file_sha256": [
+        "41bfadf5614c9a2f1f69940c898b2090776342bb72e9496e4a58362feeabf4a5"
+      ],
+      "reason": "The single R2 attempt was consumed before any render or Blend export because batch PoseBone.matrix assignment used stale parent transforms and failed the reviewed numeric pose equality gate. The new R3 plan has a separate output root and independently reviewed parent-to-child update repair.",
+      "evidence": "art_src/characters/mica/first_pose_r01/build_E_contact_L/FAILURE_R2_CURRENT.json",
+      "disposal": "BLOCKED_UNTIL_ALL_GATES_PASS_AND_RETIREMENT_MANIFEST"
+    }
+  ]
+}

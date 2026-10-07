@@ -1,0 +1,193 @@
+ M art_src/environments/site7_v2/SITE7_OP10_STAGE_E_MANIFEST.md
+ M art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/REJECTION.md
+ M art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/REJECTION.md
+ M art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/REJECTION.md
+ M art_src/environments/site7_v2/stage10/S10_R02/generation.json
+ M art_src/environments/site7_v2/stage10/S10_R03/generation.json
+ M art_src/environments/site7_v2/stage10/S10_R04/generation.json
+ M data/visual/site7_battle_art.json
+ M data/visual/site7_battle_layouts.json
+ M data/visual/site7_environment_props.json
+ M data/visual/site7_mood.json
+ M data/visual/site7_mood_lamps.json
+ M data/visual/site7_plate_floors.json
+ M data/visual/site7_seam_light.json
+ M data/visual/site7_void_masks.json
+ M data/visual/site7_world_layout.json
+ M scripts/missions/site7_abyss_backdrop.gd
+ M tests/render/site7_battle_capture.gd
+ M tests/render/stage_battle_video_10s_capture.gd
+ M tests/smoke/combat_density_smoke.gd
+ M tests/smoke/elite_affix_smoke.gd
+ M tests/smoke/firing_lane_search_smoke.gd
+ M tests/smoke/floor_segment_smoke.gd
+ M tests/smoke/site7_battle_geometry_smoke.gd
+ M tests/smoke/site7_branch_navigation_regression.gd
+ M tests/smoke/site7_connector_alignment_smoke.gd
+ M tests/smoke/site7_traversal_audit_smoke.gd
+ M tests/smoke/site7_world_route_navigation_smoke.gd
+ M tests/smoke/zone_hazard_smoke.gd
+ M tools/environment/record_stage_battle_with_audio.py
+ M tools/environment/settle_cover_on_floor.gd
+?? art_src/environments/site7_v2/_quarantine/S10_C02/attempt01/REJECTION.md
+?? art_src/environments/site7_v2/_quarantine/S10_C02/attempt01/S10_C02_GAME.png
+?? art_src/environments/site7_v2/_quarantine/S10_C02/attempt01/S10_C02_MASTER.png
+?? art_src/environments/site7_v2/_quarantine/S10_C02/attempt01/S10_C02_RAW_NATIVE.png
+?? art_src/environments/site7_v2/_quarantine/S10_C02/attempt01/measurements.json
+?? art_src/environments/site7_v2/_quarantine/S10_C02/attempt01/request.json
+?? art_src/environments/site7_v2/_quarantine/S10_C04/attempt01/REJECTION.md
+?? art_src/environments/site7_v2/_quarantine/S10_C04/attempt01/S10_C04_GAME.png
+?? art_src/environments/site7_v2/_quarantine/S10_C04/attempt01/S10_C04_MASTER.png
+?? art_src/environments/site7_v2/_quarantine/S10_C04/attempt01/S10_C04_RAW_NATIVE.png
+?? art_src/environments/site7_v2/_quarantine/S10_C04/attempt01/measurements.json
+?? art_src/environments/site7_v2/_quarantine/S10_C04/attempt01/request.json
+?? art_src/environments/site7_v2/_quarantine/S10_C05/attempt01/REJECTION.md
+?? art_src/environments/site7_v2/_quarantine/S10_C05/attempt01/S10_C05_GAME.png
+?? art_src/environments/site7_v2/_quarantine/S10_C05/attempt01/S10_C05_MASTER.png
+?? art_src/environments/site7_v2/_quarantine/S10_C05/attempt01/S10_C05_RAW_NATIVE.png
+?? art_src/environments/site7_v2/_quarantine/S10_C05/attempt01/measurements.json
+?? art_src/environments/site7_v2/_quarantine/S10_C05/attempt01/request.json
+?? art_src/environments/site7_v2/_quarantine/S10_C05/source_integrity_incident_20261001/RECORD_KO.md
+?? art_src/environments/site7_v2/_quarantine/S10_C05/source_integrity_incident_20261001/S10_C05_RAW_NATIVE_changed.png
+?? art_src/environments/site7_v2/_quarantine/S10_C05/source_integrity_incident_20261001/incident.json
+?? art_src/environments/site7_v2/stage10/S10_C01/S10_C01_MASTER.png
+?? art_src/environments/site7_v2/stage10/S10_C01/S10_C01_RAW_NATIVE.png
+?? art_src/environments/site7_v2/stage10/S10_C01/generation.json
+?? art_src/environments/site7_v2/stage10/S10_C01/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_C02/S10_C02_MASTER.png
+?? art_src/environments/site7_v2/stage10/S10_C02/S10_C02_RAW_NATIVE.png
+?? art_src/environments/site7_v2/stage10/S10_C02/generation.json
+?? art_src/environments/site7_v2/stage10/S10_C02/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_C03/S10_C03_MASTER.png
+?? art_src/environments/site7_v2/stage10/S10_C03/S10_C03_RAW_NATIVE.png
+?? art_src/environments/site7_v2/stage10/S10_C03/generation.json
+?? art_src/environments/site7_v2/stage10/S10_C03/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_C04/S10_C04_MASTER.png
+?? art_src/environments/site7_v2/stage10/S10_C04/S10_C04_RAW_NATIVE.png
+?? art_src/environments/site7_v2/stage10/S10_C04/generation.json
+?? art_src/environments/site7_v2/stage10/S10_C04/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_C05/S10_C05_MASTER.png
+?? art_src/environments/site7_v2/stage10/S10_C05/S10_C05_RAW_NATIVE.png
+?? art_src/environments/site7_v2/stage10/S10_C05/generation.json
+?? art_src/environments/site7_v2/stage10/S10_C05/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_C06/S10_C06_MASTER.png
+?? art_src/environments/site7_v2/stage10/S10_C06/S10_C06_RAW_NATIVE.png
+?? art_src/environments/site7_v2/stage10/S10_C06/generation.json
+?? art_src/environments/site7_v2/stage10/S10_C06/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_C07/S10_C07_MASTER.png
+?? art_src/environments/site7_v2/stage10/S10_C07/S10_C07_RAW_NATIVE.png
+?? art_src/environments/site7_v2/stage10/S10_C07/generation.json
+?? art_src/environments/site7_v2/stage10/S10_C07/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_O01/S10_O01_MASTER.png
+?? art_src/environments/site7_v2/stage10/S10_O01/S10_O01_RAW_NATIVE.png
+?? art_src/environments/site7_v2/stage10/S10_O01/generation.json
+?? art_src/environments/site7_v2/stage10/S10_O01/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_O02/S10_O02_MASTER.png
+?? art_src/environments/site7_v2/stage10/S10_O02/S10_O02_RAW_NATIVE.png
+?? art_src/environments/site7_v2/stage10/S10_O02/generation.json
+?? art_src/environments/site7_v2/stage10/S10_O02/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_R01/generation.json
+?? art_src/environments/site7_v2/stage10/S10_R01/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_R02/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_R03/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_R04/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_R05/S10_R05_MASTER.png
+?? art_src/environments/site7_v2/stage10/S10_R05/S10_R05_RAW_NATIVE.png
+?? art_src/environments/site7_v2/stage10/S10_R05/adoption.json
+?? art_src/environments/site7_v2/stage10/S10_R05/generation.json
+?? art_src/environments/site7_v2/stage10/S10_R05/measurements_historical.json
+?? art_src/environments/site7_v2/stage10/S10_R05/measurements_registered.json
+?? art_src/environments/site7_v2/stage10/S10_R06/S10_R06_MASTER.png
+?? art_src/environments/site7_v2/stage10/S10_R06/S10_R06_RAW_NATIVE.png
+?? art_src/environments/site7_v2/stage10/S10_R06/generation.json
+?? art_src/environments/site7_v2/stage10/S10_R06/measurements_registered.json
+?? assets/environments/site7_v2/stage10/S10_C01/S10_C01_GAME.png
+?? assets/environments/site7_v2/stage10/S10_C01/S10_C01_GAME.png.import
+?? assets/environments/site7_v2/stage10/S10_C02/S10_C02_GAME.png
+?? assets/environments/site7_v2/stage10/S10_C02/S10_C02_GAME.png.import
+?? assets/environments/site7_v2/stage10/S10_C03/S10_C03_GAME.png
+?? assets/environments/site7_v2/stage10/S10_C03/S10_C03_GAME.png.import
+?? assets/environments/site7_v2/stage10/S10_C04/S10_C04_GAME.png
+?? assets/environments/site7_v2/stage10/S10_C04/S10_C04_GAME.png.import
+?? assets/environments/site7_v2/stage10/S10_C05/S10_C05_GAME.png
+?? assets/environments/site7_v2/stage10/S10_C05/S10_C05_GAME.png.import
+?? assets/environments/site7_v2/stage10/S10_C06/S10_C06_GAME.png
+?? assets/environments/site7_v2/stage10/S10_C06/S10_C06_GAME.png.import
+?? assets/environments/site7_v2/stage10/S10_C07/S10_C07_GAME.png
+?? assets/environments/site7_v2/stage10/S10_C07/S10_C07_GAME.png.import
+?? assets/environments/site7_v2/stage10/S10_O01/S10_O01_GAME.png
+?? assets/environments/site7_v2/stage10/S10_O01/S10_O01_GAME.png.import
+?? assets/environments/site7_v2/stage10/S10_O02/S10_O02_GAME.png
+?? assets/environments/site7_v2/stage10/S10_O02/S10_O02_GAME.png.import
+?? assets/environments/site7_v2/stage10/S10_R05/S10_R05_GAME.png
+?? assets/environments/site7_v2/stage10/S10_R05/S10_R05_GAME.png.import
+?? assets/environments/site7_v2/stage10/S10_R06/S10_R06_GAME.png
+?? assets/environments/site7_v2/stage10/S10_R06/S10_R06_GAME.png.import
+?? qa/site7_ops_6_10_plates_20260929/stage_e/README_KO.md
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/README_KO.md
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/S10_R05_adoption.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/S10_R05_adoption_and_silhouette.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/activation_scope_guard.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/boss_silhouette_metadata.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/commit_scope.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/connector_initial_mission10.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/custom_SUMMARY_KO.md
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/custom_summary.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/existing_row_bytes.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/floor_traces.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/gameplay.err.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/gameplay.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/gameplay/capture_report.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/generation.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/godot_import.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/null_gameplay.err.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/null_gameplay.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/null_gameplay/capture_report.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/plate_edges.err.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/plate_edges.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/plate_edges/capture.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/qa_publication_guard.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/qa_visual_validation.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/quick_SUMMARY_KO.md
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/quick_summary.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/run_ids.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/runtime_capture.err.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/runtime_capture.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/settle_final_dry.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/settle_initial_dry.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/settle_write.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/source_integrity.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/source_integrity_incident_c05.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/strict_audit.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/texture_intake_check.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/texture_intake_check.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/tracked_changed_paths.txt
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/visual_evidence_1080p.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/visual_evidence_initial_input_error.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/visual_evidence_validation.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/walk_graph.err.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/finish_20261001/walk_graph.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_20261001/README_KO.md
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_20261001/evidence_paths.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_20261001/generation.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_20261001/measurements.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_20261001/runner_processes_before_report.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_20261001/source_integrity.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_20261001/visual_evidence_1080p.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/README_KO.md
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/commit_scope.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/generation.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/git_commit.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/git_show_stat.txt
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/godot_import.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/measurements.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/post_commit_verification.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/runner_processes_before_commit.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/runner_processes_before_report.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/selected.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/silhouette_measurements.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/source_integrity.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/texture_intake_check.gd
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/texture_intake_check.json
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/texture_intake_check.log
+?? qa/site7_ops_6_10_plates_20260929/stage_e/history/hold_r05_20261001/visual_evidence_1080p.json

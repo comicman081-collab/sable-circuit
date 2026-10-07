@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "reviewer": "Ponytail FULL r13_n_gate",
+  "review_date": "2026-09-05",
+  "candidate": "MICA_C03_V5_RUNTIME_TEMPORAL_R6",
+  "scope": "Historical audit record for the prior 8-direction runtime temporal capture.",
+  "evidence": {
+    "video": "artifacts/mica_c03_v5_runtime_temporal_capture/MICA_C03_V5_RUNTIME_TEMPORAL_8DIR_24FRAME_NATIVE_1920X1080_R6.mp4",
+    "video_sha256": "ef1a06d3dfe50e08fee3f7d00b78f99cf90f80f29ab96229b3d7d4c86df6c9e7",
+    "ledger": "artifacts/mica_c03_v5_runtime_temporal_capture/MICA_C03_V5_RUNTIME_TEMPORAL_EVIDENCE_R6.json",
+    "validator": "artifacts/mica_c03_v5_runtime_temporal_capture/MICA_C03_V5_RUNTIME_TEMPORAL_1080P_VALIDATION_R6.json",
+    "resolution": [1920, 1080],
+    "fps": 24,
+    "frames": 192,
+    "direction_order": ["E", "SE", "S", "SW", "W", "NW", "N", "NE"]
+  },
+  "gate_matrix": {
+    "A_gait_visual": "PASS",
+    "B_scale_volume_and_waist": "PASS",
+    "C_ankle_boot_visible": "PASS",
+    "D_runtime_sole_handoff_cadence": "FAIL",
+    "E_composite_stability": "PASS",
+    "F_directional_promotion": "FAIL"
+  },
+  "findings": [
+    "The legacy capture showed the authored 24-frame sequence, but the root advanced on a repeating long-short cadence (approximately 7.6px then 5.07px per frame).",
+    "The same-direction F23-to-F00 wrap was not captured in the one-pass-per-direction video.",
+    "The visible active-frame burn-in could not be independently verified in the MP4.",
+    "A second independently bobbing AuthoredRasterPresentation body was present beside the FastCharacterRuntime body, making the screen read as jitter even when the root ledger was consistent."
+  ],
+  "disposition": {
+    "status": "FAIL_NOT_PROMOTABLE",
+    "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+    "runtime_promotion": "HOLD",
+    "quarantine": "PRESERVE",
+    "deletion_performed": false,
+    "replacement_required": "R13 or newer capture must pass local technical gates and independent visual review before disposal is considered."
+  }
+}

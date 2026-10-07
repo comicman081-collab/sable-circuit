@@ -1,0 +1,36 @@
+{
+  "id": "drone",
+  "status": "CANDIDATE_NOT_REVIEWED",
+  "source": "art\\site7_enemies_raw\\drone_omni.png",
+  "sourceSHA256": "2eeab4a14906892fe10c39b4b56ec939dd00b7c6ea6b469ffb0fa120610739cf",
+  "toolResponse": {
+    "path": "qa\\stage1_enemies_20260913\\drone_omni_tool_response.json",
+    "sha256": "3025c4132f639c57d332925162ab6011db7f729df6987ff60d6fa9bad52d8136"
+  },
+  "sourceNative": [
+    1536,
+    1024
+  ],
+  "box": [
+    27,
+    20,
+    1517,
+    908
+  ],
+  "candidate": "qa\\stage1_enemies_20260913\\drone\\2eeab4a14906_16b24453\\candidate_rgba.png",
+  "candidateSHA256": "3eafb4bf8536f048f5e51b1c89ef498b5d8f9cbd9396e1f948316d5abc4be0a7",
+  "candidateNative": [
+    1490,
+    888
+  ],
+  "native_review": [
+    1920,
+    1080
+  ],
+  "operation": "existing key_image chroma/alpha separation then native crop only",
+  "preparationCodeSHA256": "16b244536edd99537d5a4d72eaf2c2905b875ab4cf695e2bda278fa79d1c07fb",
+  "matteCodeSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+  "resampling": false,
+  "anatomicalWarp": false,
+  "runtimePromotion": false
+}

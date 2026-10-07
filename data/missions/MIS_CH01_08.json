@@ -1,0 +1,388 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "mission_id": "MIS_CH01_08",
+  "chapter_id": "CH01",
+  "title": "SWITCHYARD",
+  "zone": "Site-7 Surface Maglev Yard",
+  "objectives": [
+    {
+      "id": "OBJ_YARD_GATE",
+      "kind": "PRIMARY",
+      "source_room": "R01_GATE",
+      "title": "Open the yard gate",
+      "prerequisites": [],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_YARD_MARSHALLING",
+      "kind": "PRIMARY",
+      "source_room": "R02_MARSHALLING",
+      "title": "Clear the marshalling track",
+      "prerequisites": [
+        "OBJ_YARD_GATE"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_YARD_TOWER",
+      "kind": "PRIMARY",
+      "source_room": "R03_TOWER",
+      "title": "Recover the dispatch orders",
+      "prerequisites": [
+        "OBJ_YARD_MARSHALLING"
+      ],
+      "required_for_extraction": true
+    },
+    {
+      "id": "OBJ_YARD_JUNCTION",
+      "kind": "DEEP",
+      "source_room": "R04_JUNCTION",
+      "title": "Break the switch junction",
+      "prerequisites": [
+        "OBJ_YARD_TOWER"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_YARD_GANTRY",
+      "kind": "BOSS",
+      "source_room": "R05_TERMINAL",
+      "title": "Bring down the signal gantry",
+      "prerequisites": [
+        "OBJ_YARD_JUNCTION"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_YARD_EXIT",
+      "kind": "PRIMARY",
+      "source_room": "R06_PLATFORM",
+      "title": "Board the departure capsule",
+      "prerequisites": [
+        "OBJ_YARD_GANTRY"
+      ],
+      "required_for_extraction": false
+    }
+  ],
+  "main_route": [
+    {
+      "id": "R01_GATE",
+      "objective_id": "OBJ_YARD_GATE",
+      "type": "EVENT",
+      "title": "Yard Gate",
+      "x": 280,
+      "y": 560,
+      "objective": "Open the yard gate",
+      "story": "The lift opens onto the surface. Dawn light rakes across the maglev yard, and every signal lamp still shows red.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 36
+        }
+      ]
+    },
+    {
+      "id": "R02_MARSHALLING",
+      "objective_id": "OBJ_YARD_MARSHALLING",
+      "encounter_id": "ENC_YARD_MARSHALLING_01",
+      "type": "COMBAT",
+      "title": "Marshalling Track",
+      "x": 660,
+      "y": 240,
+      "objective": "Clear the marshalling track",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 1
+        },
+        {
+          "type": "RAIL_LANE",
+          "count": 1
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 210,
+          "offset_x": 218,
+          "offset_y": 96
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 200,
+          "offset_x": 222,
+          "offset_y": -108
+        },
+        {
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "health": 160,
+          "offset_x": 298,
+          "offset_y": -20
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 124,
+          "offset_x": 262,
+          "offset_y": 24
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 48
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 210
+          },
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 184
+          },
+          {
+            "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+            "health": 238
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 124
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R03_TOWER",
+      "objective_id": "OBJ_YARD_TOWER",
+      "type": "RESEARCH",
+      "title": "Signal Tower",
+      "x": 1040,
+      "y": 560,
+      "objective": "Recover the dispatch orders",
+      "story": "Every dispatch order names the same destination: a sealed vault under the yard's northern cut.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 58
+        },
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 34
+        }
+      ]
+    },
+    {
+      "id": "R04_JUNCTION",
+      "objective_id": "OBJ_YARD_JUNCTION",
+      "encounter_id": "ENC_YARD_JUNCTION_01",
+      "type": "ELITE",
+      "title": "Switch Junction",
+      "x": 1420,
+      "y": 240,
+      "objective": "Break the switch junction",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 1
+        },
+        {
+          "type": "RAIL_LANE",
+          "count": 1
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "affix": "OVERCHARGED",
+          "health": 210,
+          "offset_x": 212,
+          "offset_y": 64
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 210,
+          "offset_x": 302,
+          "offset_y": 90
+        },
+        {
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "affix": "VOLATILE",
+          "health": 160,
+          "offset_x": 292,
+          "offset_y": -96
+        },
+        {
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "affix": "SHIELDED",
+          "health": 238,
+          "offset_x": 250,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 56
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 184
+          },
+          {
+            "enemy_id": "ENM_SITE7_BULWARK_01",
+            "health": 274
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "affix": "VOLATILE",
+            "health": 124
+          },
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 210
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R05_TERMINAL",
+      "objective_id": "OBJ_YARD_GANTRY",
+      "encounter_id": "ENC_YARD_TERMINAL_01",
+      "type": "BOSS",
+      "title": "Depot Terminal",
+      "x": 1800,
+      "y": 560,
+      "objective": "Bring down the signal gantry",
+      "encounter": [
+        {
+          "enemy_id": "BOSS_SITE7_GANTRY_01",
+          "health": 1920,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 168,
+          "offset_x": 240,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 124,
+          "offset_x": 240,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 166
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 210
+          },
+          {
+            "enemy_id": "ENM_SITE7_MORTAR_01",
+            "health": 160
+          }
+        ],
+        [
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 124
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 114
+          },
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 168
+          }
+        ]
+      ],
+      "reinforce_at": 1
+    },
+    {
+      "id": "R06_PLATFORM",
+      "objective_id": "OBJ_YARD_EXIT",
+      "type": "EXTRACTION",
+      "title": "Departure Platform",
+      "x": 2180,
+      "y": 240,
+      "objective": "Board the departure capsule",
+      "story": "The gantry is down and the yard is stirring awake. The departure capsule waits at the end of the platform.",
+      "loot": []
+    }
+  ],
+  "optional_rooms": [
+    {
+      "id": "O01_DEPOT",
+      "from": "R04_JUNCTION",
+      "objective_id": "OBJ_YARD_SUPPLY",
+      "type": "SUPPLY",
+      "title": "Parts Depot",
+      "x": 1420,
+      "y": 800,
+      "reward": "yard_supplies",
+      "story": "Spare-parts racks stand behind the junction. Someone stocked them for a long shutdown.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 38
+        },
+        {
+          "loot_id": "LOT_SALVAGE_FIELD",
+          "quantity": 7
+        }
+      ]
+    },
+    {
+      "id": "O02_DISPATCH",
+      "from": "R05_TERMINAL",
+      "objective_id": "OBJ_YARD_RESEARCH",
+      "type": "RESEARCH",
+      "title": "Dispatch Office",
+      "x": 1800,
+      "y": 800,
+      "objective": "Read the dispatch map",
+      "reward": "route_map",
+      "story": "The dispatch office keeps one live map. Every route on it ends at the vault.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 76
+        },
+        {
+          "loot_id": "LOT_SIGNAL_FRAGMENT",
+          "quantity": 4
+        },
+        {
+          "loot_id": "LOT_INTEL_MECHANICAL",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "extraction_offer_room_ids": [
+    "R03_TOWER",
+    "R04_JUNCTION",
+    "R05_TERMINAL"
+  ],
+  "enemy_roster_revision": 4,
+  "new_enemy_ids": [
+    "BOSS_SITE7_GANTRY_01"
+  ]
+}

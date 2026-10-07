@@ -1,0 +1,606 @@
+{
+  "analyzed_intel": [
+    "ANL_SECURITY_ARC_GAP"
+  ],
+  "armory_cost": {
+    "fragments": 0,
+    "research": 240,
+    "salvage": 2
+  },
+  "armory_level": 1,
+  "armory_max_level": 6,
+  "chapter_complete": false,
+  "cleared_missions": [
+    "MIS_CH01_01"
+  ],
+  "committed_run_ids": [
+    "FIXTURE-LEGACY-RUN"
+  ],
+  "completed_runs": 1,
+  "damage_multiplier": 1.08,
+  "discoveries": [
+    {
+      "analysis_id": "ANL_SECURITY_ARC_GAP",
+      "analyzed": true,
+      "can_analyze": false,
+      "effect_text": "ASTER gains an additional 15% damage against EXPOSED security targets.",
+      "module_id": "MOD_PRISM_FOCUS",
+      "module_name": "PRISM FOCUS",
+      "module_unlocked": true,
+      "operator_id": "CHR_PROTO_01",
+      "research_cost": 120.0,
+      "sample_cost": 2.0,
+      "sample_key": "SECURITY",
+      "title": "SECURITY ARC-GAP MAPPING",
+      "weakness_id": "SECURITY_ARC_GAP"
+    },
+    {
+      "analysis_id": "ANL_ABERRANT_JOINT_MAP",
+      "analyzed": false,
+      "can_analyze": true,
+      "effect_text": "ROOK Breach Slam gains +10 damage and +0.6s STAGGER when consuming EXPOSED.",
+      "module_id": "MOD_BREACH_LINER",
+      "module_name": "BREACH LINER",
+      "module_unlocked": false,
+      "operator_id": "CHR_PROTO_02",
+      "research_cost": 140.0,
+      "sample_cost": 1.0,
+      "sample_key": "ABERRANT",
+      "title": "ROBOT FRAME STRESS MAP",
+      "weakness_id": "ABERRANT_JOINT_MAP"
+    },
+    {
+      "analysis_id": "ANL_ANCHOR_SIGNAL_MODEL",
+      "analyzed": false,
+      "can_analyze": true,
+      "effect_text": "MICA Pulse Scan gains +80 range and +2s EXPOSED duration; Sensor Bloom gains +2s EXPOSED duration.",
+      "module_id": "MOD_SENSOR_ARRAY",
+      "module_name": "SENSOR ARRAY",
+      "module_unlocked": false,
+      "operator_id": "CHR_PROTO_03",
+      "research_cost": 180.0,
+      "sample_cost": 1.0,
+      "sample_key": "ANCHOR",
+      "title": "ANCHOR SIGNAL MODEL",
+      "weakness_id": "ANCHOR_SIGNAL_MODEL"
+    }
+  ],
+  "equipped_modules": {
+    "CHR_PROTO_01": "MOD_PRISM_FOCUS",
+    "CHR_PROTO_02": "",
+    "CHR_PROTO_03": ""
+  },
+  "equipped_weapons": {
+    "CHR_PROTO_01": "WPN_AR_BURST_02",
+    "CHR_PROTO_02": "WPN_SHOTGUN_MAG_01",
+    "CHR_PROTO_03": "WPN_SMG_SENSOR_01"
+  },
+  "extracted_runs": 1,
+  "intel_samples": {
+    "ABERRANT": 6,
+    "ANCHOR": 4,
+    "SECURITY": 6
+  },
+  "lab_cost": {
+    "fragments": 1,
+    "research": 220,
+    "salvage": 0
+  },
+  "lab_level": 1,
+  "lab_max_level": 6,
+  "max_upgrade_level": 6,
+  "missions": [
+    {
+      "cleared": true,
+      "deployable": true,
+      "evidence_label": "TEAM LEDGER",
+      "evidence_room": "R03_ARCHIVE",
+      "mission_id": "MIS_CH01_01",
+      "requires": "",
+      "story_path": "res://data/story/chapter_01.json",
+      "synopsis": "Recover the missing team ledger. Cross the containment sector, disable its anchor and extract through the emergency lift.",
+      "title": "BLACKOUT AT SITE-7",
+      "unlocked": true
+    },
+    {
+      "briefing": [
+        {
+          "speaker": "COMMAND",
+          "text": "The first anchor is offline, but its carrier did not stop. Re-enter through the service uplink and follow the lower relay chain."
+        },
+        {
+          "speaker": "MICA",
+          "text": "The flooded maintenance run still has active security sensors. I can trace their firing lanes; use the machinery as cover."
+        },
+        {
+          "speaker": "ROOK",
+          "text": "Recover the reserve cache before the quarantine crossing. The relay sentinel runs the sublevel shield cycle. Keep an escape lane open."
+        },
+        {
+          "speaker": "ASTER",
+          "text": "Routing log first, relay second. Extract early if the squad cannot continue. Full clearance opens the core approach."
+        }
+      ],
+      "cleared": false,
+      "deployable": true,
+      "evidence_label": "RELAY ROUTING LOG",
+      "evidence_room": "R03_RELAY_ARCHIVE",
+      "mission_id": "MIS_CH01_02",
+      "post_mission": [
+        {
+          "speaker": "MICA",
+          "text": "The routing log isolates the final carrier path. It runs beneath the bulkhead into the resonance core."
+        },
+        {
+          "speaker": "COMMAND",
+          "text": "Recovery sweep complete. Refit at base; Core Pressure is now available."
+        }
+      ],
+      "requires": "MIS_CH01_01",
+      "synopsis": "Follow the lower relay chain through flooded maintenance. Recover the routing log and disable the sublevel sentinel.",
+      "title": "RECOVERY SWEEP",
+      "unlocked": true
+    },
+    {
+      "briefing": [
+        {
+          "speaker": "COMMAND",
+          "text": "The relay is down. Its log exposes the core approach. Recover the carrier trace before entering the bulkhead."
+        },
+        {
+          "speaker": "ROOK",
+          "text": "More armored drones, no clear corridor. Use the barriers, reload behind machinery and move on the warning gaps."
+        },
+        {
+          "speaker": "MICA",
+          "text": "The final anchor's resonance core survived its broken mast. The arc fork on top is the emitter; the shield phase still blocks our shots."
+        },
+        {
+          "speaker": "ASTER",
+          "text": "Secure the resonance sample, disable the anchor, then reach the escape shaft. No one stays behind."
+        }
+      ],
+      "cleared": false,
+      "deployable": true,
+      "evidence_label": "CARRIER TRACE",
+      "evidence_room": "R03_TRACE",
+      "mission_id": "MIS_CH01_03",
+      "post_mission": [
+        {
+          "speaker": "MICA",
+          "text": "Site-7 is silent. The resonance sample still carries a trace toward the offshore network."
+        },
+        {
+          "speaker": "COMMAND",
+          "text": "Chapter 01 complete. All three operations remain available for recovery runs and upgrades. The offshore operation is not deployed yet."
+        }
+      ],
+      "requires": "MIS_CH01_02",
+      "synopsis": "Breach the inner defense, recover the carrier trace and shut down the resonance anchor. Return through the escape shaft.",
+      "title": "CORE PRESSURE",
+      "unlocked": false
+    },
+    {
+      "briefing": [
+        {
+          "speaker": "COMMAND",
+          "text": "The carrier trace enters the thermal fabrication spine. Heat is building behind every sealed gate."
+        },
+        {
+          "speaker": "ROOK",
+          "text": "The new prism skimmers are built for the narrow lanes. Use the barriers, then hit the Warden's exposed furnace."
+        },
+        {
+          "speaker": "MICA",
+          "text": "The heat-map should reveal its cycling window. Do not stand in front of the tracked fortress when the core opens."
+        },
+        {
+          "speaker": "ASTER",
+          "text": "Recover the trace, disable the Warden and leave before the service lock repressurizes."
+        }
+      ],
+      "cleared": false,
+      "deployable": true,
+      "evidence_label": "HEAT-MAP TRACE",
+      "evidence_room": "R03_TRACE",
+      "mission_id": "MIS_CH01_04",
+      "post_mission": [
+        {
+          "speaker": "MICA",
+          "text": "The Warden's trace points beyond Site-7. The offshore relay is carrying the carrier's null-space signature."
+        },
+        {
+          "speaker": "COMMAND",
+          "text": "Forge Descent complete. The offshore operation is unlocked."
+        }
+      ],
+      "requires": "MIS_CH01_03",
+      "synopsis": "Descend into Site-7's thermal fabrication spine, disable the Forge Warden and recover the heat-map trace.",
+      "title": "FORGE DESCENT",
+      "unlocked": false
+    },
+    {
+      "briefing": [
+        {
+          "speaker": "COMMAND",
+          "text": "The offshore relay is isolated but still broadcasting. This is the carrier's last stable aperture."
+        },
+        {
+          "speaker": "MICA",
+          "text": "Null pylons are suppressing the relay. Their lenses are fixed, but their warning circles will bypass cover."
+        },
+        {
+          "speaker": "ROOK",
+          "text": "Break the array, keep an escape lane open and do not let the carrier pin the squad against the deck."
+        },
+        {
+          "speaker": "ASTER",
+          "text": "Destroy Carrier Null. When the aperture collapses, extract immediately."
+        }
+      ],
+      "cleared": false,
+      "deployable": true,
+      "evidence_label": "NULL CARRIER TRACE",
+      "evidence_room": "R03_TRACE",
+      "mission_id": "MIS_CH01_05",
+      "post_mission": [
+        {
+          "speaker": "MICA",
+          "text": "Carrier Null is gone. The offshore trace ends, but something answered from beyond the relay."
+        },
+        {
+          "speaker": "COMMAND",
+          "text": "Offshore Null complete. The answer signal is tracing back into Site-7's sealed lower wings. Verdant Lock is now available."
+        }
+      ],
+      "requires": "MIS_CH01_04",
+      "synopsis": "Cross the offshore transit relay, collapse the jammer array and destroy Carrier Null before the route desynchronizes.",
+      "title": "OFFSHORE NULL",
+      "unlocked": false
+    },
+    {
+      "briefing": [
+        {
+          "speaker": "COMMAND",
+          "text": "The answer signal is coming back through Site-7's sealed lower wings. The hydroponic wing is the first relay, and its air handlers are broadcasting it."
+        },
+        {
+          "speaker": "MICA",
+          "text": "Null pylons and mortar nests sit behind the planter troughs. The troughs stop shots but not blasts; watch the landing circles."
+        },
+        {
+          "speaker": "ROOK",
+          "text": "Long galleries, few gaps. Hold the troughs, let them come to you and never stand still on a vent grate."
+        },
+        {
+          "speaker": "ASTER",
+          "text": "Recover the germination log, silence the aerator tower and lift out."
+        }
+      ],
+      "cleared": false,
+      "deployable": true,
+      "evidence_label": "GERMINATION LOG",
+      "evidence_room": "R03_LAB",
+      "mission_id": "MIS_CH01_06",
+      "post_mission": [
+        {
+          "speaker": "MICA",
+          "text": "The aerator tower is offline. The germination log points down to the cryo archive; the answer is being stored, not just relayed."
+        },
+        {
+          "speaker": "COMMAND",
+          "text": "Verdant Lock complete. Cold Storage is now available."
+        }
+      ],
+      "requires": "MIS_CH01_05",
+      "synopsis": "Cut through the sealed hydroponic wing, recover the germination log and silence the aerator tower that keeps the answer signal alive.",
+      "title": "VERDANT LOCK",
+      "unlocked": false
+    },
+    {
+      "briefing": [
+        {
+          "speaker": "COMMAND",
+          "text": "The germination log leads down to the cryo archive. Something is being stored there, and its compressors keep the answer from decaying."
+        },
+        {
+          "speaker": "ROOK",
+          "text": "Rams and shield crawlers will use the frozen aisles as lanes. Break their line with the vault racks and keep moving."
+        },
+        {
+          "speaker": "MICA",
+          "text": "The compressor stack cycles on a sweep. I can read its frost bars; do not stand where the next one is about to land."
+        },
+        {
+          "speaker": "ASTER",
+          "text": "Recover the thermal ledger, shut the compressor down and leave through the cargo lock."
+        }
+      ],
+      "cleared": false,
+      "deployable": true,
+      "evidence_label": "THERMAL LEDGER",
+      "evidence_room": "R03_LEDGER",
+      "mission_id": "MIS_CH01_07",
+      "post_mission": [
+        {
+          "speaker": "MICA",
+          "text": "The archive kept the answer on cold media. The dispatch orders in the ledger send it out along the maglev yard."
+        },
+        {
+          "speaker": "COMMAND",
+          "text": "Cold Storage complete. Switchyard is now available."
+        }
+      ],
+      "requires": "MIS_CH01_06",
+      "synopsis": "Descend into the cryo archive, recover the thermal ledger and shut down the compressor that keeps the answer from decaying.",
+      "title": "COLD STORAGE",
+      "unlocked": false
+    },
+    {
+      "briefing": [
+        {
+          "speaker": "COMMAND",
+          "text": "The dispatch orders route the answer through a surface maglev yard. It is open ground; expect fire from every lane."
+        },
+        {
+          "speaker": "MICA",
+          "text": "Prism skimmers hold the guideways and mortars sit on the switch platforms. Rail-lane warnings will cross the whole yard."
+        },
+        {
+          "speaker": "ROOK",
+          "text": "Wide lanes and thin cover. Use the depot racks, keep your squad off the rail lines and do not bunch up."
+        },
+        {
+          "speaker": "ASTER",
+          "text": "Recover the dispatch orders, bring down the signal gantry and board the departure capsule."
+        }
+      ],
+      "cleared": false,
+      "deployable": true,
+      "evidence_label": "DISPATCH ORDERS",
+      "evidence_room": "R03_TOWER",
+      "mission_id": "MIS_CH01_08",
+      "post_mission": [
+        {
+          "speaker": "MICA",
+          "text": "The gantry is down. The last dispatch order ends at a vault that is on no Site-7 map."
+        },
+        {
+          "speaker": "COMMAND",
+          "text": "Switchyard complete. Memory Vault is now available."
+        }
+      ],
+      "requires": "MIS_CH01_07",
+      "synopsis": "Cross the surface maglev yard at dawn, recover the dispatch orders and bring down the signal gantry before the route reroutes.",
+      "title": "SWITCHYARD",
+      "unlocked": false
+    },
+    {
+      "briefing": [
+        {
+          "speaker": "COMMAND",
+          "text": "The vault index gives the origin's address. Its stacks answer to a memory spire that remembers where you stood."
+        },
+        {
+          "speaker": "MICA",
+          "text": "The spire echoes: warnings will appear where you were a moment ago. Never stop, and never walk the same line twice."
+        },
+        {
+          "speaker": "ROOK",
+          "text": "Drones and pylons hold the nave. Fight from behind the racks and break their lens lines before you advance."
+        },
+        {
+          "speaker": "ASTER",
+          "text": "Recover the vault index, erase the spire and extract."
+        }
+      ],
+      "cleared": false,
+      "deployable": true,
+      "evidence_label": "VAULT INDEX",
+      "evidence_room": "R03_CHAPEL",
+      "mission_id": "MIS_CH01_09",
+      "post_mission": [
+        {
+          "speaker": "MICA",
+          "text": "The index is complete. The origin's address is a shaft beneath the vault, straight down."
+        },
+        {
+          "speaker": "COMMAND",
+          "text": "Memory Vault complete. Zero Point is now available."
+        }
+      ],
+      "requires": "MIS_CH01_08",
+      "synopsis": "Enter the sealed memory vault, recover the vault index and erase the spire that remembers every step.",
+      "title": "MEMORY VAULT",
+      "unlocked": false
+    },
+    {
+      "briefing": [
+        {
+          "speaker": "COMMAND",
+          "text": "This is the source of the answer: one core at the bottom of Site-7. Everything the carrier did was for it."
+        },
+        {
+          "speaker": "MICA",
+          "text": "The core adapts. Its warning lanes converge on you from every side; do not leave the gaps."
+        },
+        {
+          "speaker": "ROOK",
+          "text": "Everything we have met is down here. Ration your reloads, keep an escape lane open and hold every corner."
+        },
+        {
+          "speaker": "ASTER",
+          "text": "Recover the answer log, destroy the origin core and get out. No one stays behind."
+        }
+      ],
+      "cleared": false,
+      "deployable": true,
+      "evidence_label": "ANSWER LOG",
+      "evidence_room": "R03_LOG",
+      "mission_id": "MIS_CH01_10",
+      "post_mission": [
+        {
+          "speaker": "MICA",
+          "text": "The core is silent. The answer has stopped, and Site-7 is quiet for the first time since the blackout."
+        },
+        {
+          "speaker": "COMMAND",
+          "text": "Chapter 01 complete. All ten operations are available for recovery runs and upgrades."
+        }
+      ],
+      "requires": "MIS_CH01_09",
+      "synopsis": "Descend the origin shaft, recover the answer log and destroy the origin core. Then get out.",
+      "title": "ZERO POINT",
+      "unlocked": false
+    }
+  ],
+  "playable_complete": false,
+  "recommended_mission_id": "MIS_CH01_02",
+  "research_multiplier": 1.12,
+  "research_value": 1411,
+  "run_serial": 9,
+  "salvage": 18,
+  "schema_version": 4,
+  "signal_fragments": 11,
+  "unlocked_modules": [
+    "MOD_PRISM_FOCUS"
+  ],
+  "unlocked_weaknesses": [
+    "SECURITY_ARC_GAP"
+  ],
+  "unlocked_weapons": [
+    "WPN_AR_COIL_01",
+    "WPN_SHOTGUN_MAG_01",
+    "WPN_SMG_SENSOR_01",
+    "WPN_AR_BURST_02"
+  ],
+  "weapon_catalog": [
+    {
+      "ammo_per_trigger": 1.0,
+      "class": "AR",
+      "compatible_operators": [
+        "CHR_PROTO_01"
+      ],
+      "damage": 10.0,
+      "default_for": "CHR_PROTO_01",
+      "display_name": "COIL ASSAULT RIFLE",
+      "engagement_range": 520.0,
+      "fire_interval": 0.105,
+      "magazine_size": 24.0,
+      "pellet_count": 1.0,
+      "projectile_lifetime": 0.9,
+      "projectile_speed": 1040.0,
+      "reload_duration": 1.02,
+      "spread_radians": 0.0,
+      "unlock": "DEFAULT",
+      "unlocked": true,
+      "weapon_id": "WPN_AR_COIL_01"
+    },
+    {
+      "ammo_per_trigger": 3.0,
+      "class": "AR",
+      "compatible_operators": [
+        "CHR_PROTO_01",
+        "CHR_PROTO_03"
+      ],
+      "damage": 7.2,
+      "display_name": "TRI-COIL BURST RIFLE",
+      "engagement_range": 560.0,
+      "fire_interval": 0.235,
+      "magazine_size": 30.0,
+      "pellet_count": 3.0,
+      "projectile_lifetime": 0.88,
+      "projectile_speed": 1100.0,
+      "reload_duration": 1.18,
+      "spread_radians": 0.018,
+      "unlock": "ARMORY_1",
+      "unlocked": true,
+      "weapon_id": "WPN_AR_BURST_02"
+    },
+    {
+      "ammo_per_trigger": 1.0,
+      "class": "SMG",
+      "compatible_operators": [
+        "CHR_PROTO_03",
+        "CHR_PROTO_01"
+      ],
+      "damage": 8.0,
+      "default_for": "CHR_PROTO_03",
+      "display_name": "SENSOR NEEDLER SMG",
+      "engagement_range": 450.0,
+      "fire_interval": 0.17,
+      "magazine_size": 18.0,
+      "pellet_count": 1.0,
+      "projectile_lifetime": 1.05,
+      "projectile_speed": 720.0,
+      "reload_duration": 1.12,
+      "spread_radians": 0.0,
+      "unlock": "DEFAULT",
+      "unlocked": true,
+      "weapon_id": "WPN_SMG_SENSOR_01"
+    },
+    {
+      "ammo_per_trigger": 1.0,
+      "class": "SHOTGUN",
+      "compatible_operators": [
+        "CHR_PROTO_02"
+      ],
+      "damage": 7.0,
+      "default_for": "CHR_PROTO_02",
+      "display_name": "MAG SCATTERGUN",
+      "engagement_range": 300.0,
+      "fire_interval": 0.42,
+      "magazine_size": 10.0,
+      "pellet_count": 5.0,
+      "projectile_lifetime": 0.58,
+      "projectile_speed": 760.0,
+      "reload_duration": 1.38,
+      "spread_radians": 0.065,
+      "unlock": "DEFAULT",
+      "unlocked": true,
+      "weapon_id": "WPN_SHOTGUN_MAG_01"
+    },
+    {
+      "ammo_per_trigger": 1.0,
+      "class": "LMG",
+      "compatible_operators": [
+        "CHR_PROTO_01",
+        "CHR_PROTO_02"
+      ],
+      "damage": 8.8,
+      "display_name": "HELIX SUPPORT LMG",
+      "engagement_range": 540.0,
+      "fire_interval": 0.145,
+      "magazine_size": 48.0,
+      "pellet_count": 1.0,
+      "projectile_lifetime": 1.05,
+      "projectile_speed": 920.0,
+      "reload_duration": 1.85,
+      "spread_radians": 0.028,
+      "unlock": "ARMORY_2",
+      "unlocked": false,
+      "weapon_id": "WPN_LMG_HELIX_01"
+    },
+    {
+      "ammo_per_trigger": 1.0,
+      "class": "SPECIAL",
+      "compatible_operators": [
+        "CHR_PROTO_03"
+      ],
+      "damage": 28.0,
+      "display_name": "ARC LANCE LAUNCHER",
+      "engagement_range": 620.0,
+      "fire_interval": 0.72,
+      "magazine_size": 6.0,
+      "pellet_count": 1.0,
+      "projectile_lifetime": 1.55,
+      "projectile_speed": 520.0,
+      "reload_duration": 1.65,
+      "spread_radians": 0.0,
+      "unlock": "ANL_ANCHOR_SIGNAL_MODEL",
+      "unlocked": false,
+      "weapon_id": "WPN_SPECIAL_ARC_01"
+    }
+  ],
+  "wiped_runs": 0
+}

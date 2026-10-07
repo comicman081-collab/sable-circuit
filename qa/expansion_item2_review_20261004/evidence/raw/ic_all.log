@@ -1,0 +1,337 @@
+applied offers_random: offers: the alternative pair is chosen by randi() (not deterministic)
+[offers_random/contract_offers] exit=1 5s errors=413 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)
+[offers_random/contract_ui] exit=1 11s errors=1 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[offers_random/contract_save] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[offers_random/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[offers_random/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[offers_random/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/offers_random_p
+applied offers_default_last: offers: the shipped default is returned last, not first
+[offers_default_last/contract_offers] exit=1 6s errors=640 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)
+[offers_default_last/contract_ui] exit=1 10s errors=2 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[offers_default_last/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[offers_default_last/redline] exit=0 7s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[offers_default_last/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[offers_default_last/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/offers_default_last_p
+applied offers_dup_pair: offers: the third offer repeats the default pair
+[offers_dup_pair/contract_offers] exit=1 6s errors=640 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: FAIL (25654 checks)
+[offers_dup_pair/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[offers_dup_pair/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[offers_dup_pair/redline] exit=0 7s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[offers_dup_pair/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[offers_dup_pair/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/offers_dup_pair_p
+applied offers_reward_flat: offers: alternatives lose their hazard reward (risk no longer pays)
+[offers_reward_flat/contract_offers] exit=1 9s errors=1275 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)
+[offers_reward_flat/contract_ui] exit=0 13s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[offers_reward_flat/contract_save] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[offers_reward_flat/redline] exit=0 8s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[offers_reward_flat/run_contract] exit=0 10s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[offers_reward_flat/play_log] exit=0 12s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/offers_reward_flat_p
+applied offers_no_hazard_stats: offers: alternatives keep the default's enemy multipliers (only the label changes)
+[offers_no_hazard_stats/contract_offers] exit=0 5s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[offers_no_hazard_stats/contract_ui] exit=0 13s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[offers_no_hazard_stats/contract_save] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[offers_no_hazard_stats/redline] exit=0 7s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[offers_no_hazard_stats/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[offers_no_hazard_stats/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/offers_no_hazard_stats_p
+applied redline_reward_low: REDLINE reward 1.0 (not above the offers)
+[redline_reward_low/contract_offers] exit=1 10s errors=1350 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)
+[redline_reward_low/contract_ui] exit=1 12s errors=1 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[redline_reward_low/contract_save] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[redline_reward_low/redline] exit=1 7s errors=1 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[redline_reward_low/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[redline_reward_low/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_reward_low_p
+applied redline_reward_high: REDLINE hazard reward 1.70 (above the 1.6 proposal range)
+[redline_reward_high/contract_offers] exit=1 3s errors=1 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)
+[redline_reward_high/contract_ui] exit=1 11s errors=1 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[redline_reward_high/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[redline_reward_high/redline] exit=1 5s errors=1 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[redline_reward_high/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[redline_reward_high/play_log] exit=0 7s errors=2 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_reward_high_p
+applied redline_hp_high: REDLINE HP 1.60 (above the 1.5 proposal range)
+[redline_hp_high/contract_offers] exit=1 3s errors=1 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)
+[redline_hp_high/contract_ui] exit=0 11s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[redline_hp_high/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[redline_hp_high/redline] exit=1 7s errors=7 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[redline_hp_high/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[redline_hp_high/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_hp_high_p
+applied redline_interval_low: REDLINE attack interval 0.70 (below the 0.80 proposal range)
+[redline_interval_low/contract_offers] exit=1 3s errors=1 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)
+[redline_interval_low/contract_ui] exit=0 11s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[redline_interval_low/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[redline_interval_low/redline] exit=1 6s errors=6 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[redline_interval_low/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[redline_interval_low/play_log] exit=0 9s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_interval_low_p
+applied redline_speed_high: REDLINE speed 1.30 (above the 1.15 proposal range)
+[redline_speed_high/contract_offers] exit=1 4s errors=1 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)
+[redline_speed_high/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[redline_speed_high/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[redline_speed_high/redline] exit=1 7s errors=6 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[redline_speed_high/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[redline_speed_high/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_speed_high_p
+applied redline_dmg_high: REDLINE damage 1.60 (above the 1.35 proposal range)
+[redline_dmg_high/contract_offers] exit=1 3s errors=1 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: FAIL (26950 checks)
+[redline_dmg_high/contract_ui] exit=0 11s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[redline_dmg_high/contract_save] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[redline_dmg_high/redline] exit=1 7s errors=14 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[redline_dmg_high/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[redline_dmg_high/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_dmg_high_p
+applied redline_always_available: redline_available() is always true
+[redline_always_available/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[redline_always_available/contract_ui] exit=1 11s errors=1 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (490 checks)
+[redline_always_available/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[redline_always_available/redline] exit=1 6s errors=6 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[redline_always_available/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[redline_always_available/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_always_available_p
+applied redline_ignores_clear: redline_available() only needs the operation to be unlocked, not cleared
+[redline_ignores_clear/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[redline_ignores_clear/contract_ui] exit=1 11s errors=1 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (490 checks)
+[redline_ignores_clear/contract_save] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[redline_ignores_clear/redline] exit=1 7s errors=4 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[redline_ignores_clear/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[redline_ignores_clear/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_ignores_clear_p
+applied boss_not_exempt: bosses get REDLINE speed and attack interval too
+[boss_not_exempt/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[boss_not_exempt/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[boss_not_exempt/contract_save] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[boss_not_exempt/redline] exit=1 7s errors=2 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[boss_not_exempt/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[boss_not_exempt/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/boss_not_exempt_p
+[boss_not_exempt/boss_duel] exit=1 56s errors=61 scripterr=0  SITE7_BOSS_DUEL_SMOKE: FAIL (2184 checks) res://.cache/out/boss_not_exempt_b
+applied boss_hp_exempt: bosses get no REDLINE HP
+[boss_hp_exempt/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[boss_hp_exempt/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[boss_hp_exempt/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[boss_hp_exempt/redline] exit=1 6s errors=1 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[boss_hp_exempt/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[boss_hp_exempt/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/boss_hp_exempt_p
+[boss_hp_exempt/boss_duel] exit=1 57s errors=10 scripterr=0  SITE7_BOSS_DUEL_SMOKE: FAIL (2184 checks) res://.cache/out/boss_hp_exempt_b
+applied boss_dmg_exempt: bosses get no REDLINE damage
+[boss_dmg_exempt/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[boss_dmg_exempt/contract_ui] exit=0 11s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[boss_dmg_exempt/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[boss_dmg_exempt/redline] exit=1 7s errors=2 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[boss_dmg_exempt/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[boss_dmg_exempt/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/boss_dmg_exempt_p
+[boss_dmg_exempt/boss_duel] exit=1 57s errors=80 scripterr=0  SITE7_BOSS_DUEL_SMOKE: FAIL (2184 checks) res://.cache/out/boss_dmg_exempt_b
+applied boss_prefix_other: the boss test looks for an 'ENM_' prefix instead of 'BOSS_'
+[boss_prefix_other/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[boss_prefix_other/contract_ui] exit=0 11s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[boss_prefix_other/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[boss_prefix_other/redline] exit=1 6s errors=18 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[boss_prefix_other/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[boss_prefix_other/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/boss_prefix_other_p
+[boss_prefix_other/boss_duel] exit=1 55s errors=61 scripterr=0  SITE7_BOSS_DUEL_SMOKE: FAIL (2184 checks) res://.cache/out/boss_prefix_other_b
+applied double_apply: the modifiers are applied twice at every encounter spawn (Codex's own control)
+[double_apply/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[double_apply/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[double_apply/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[double_apply/redline] exit=1 6s errors=7 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[double_apply/run_contract] exit=1 8s errors=1 scripterr=0  M11_RUN_CONTRACT_SMOKE: FAIL (1)
+[double_apply/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/double_apply_p
+[double_apply/boss_duel] exit=0 57s errors=1 scripterr=0  SITE7_BOSS_DUEL_SMOKE: PASS (2184 checks) res://.cache/out/double_apply_b
+applied mode_ids_dropped: the stage forgets to pass hazard/opportunity ids, so REDLINE is never recognised per enemy
+[mode_ids_dropped/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[mode_ids_dropped/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[mode_ids_dropped/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[mode_ids_dropped/redline] exit=1 6s errors=2 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[mode_ids_dropped/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[mode_ids_dropped/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/mode_ids_dropped_p
+[mode_ids_dropped/boss_duel] exit=0 57s errors=1 scripterr=0  SITE7_BOSS_DUEL_SMOKE: PASS (2184 checks) res://.cache/out/mode_ids_dropped_b
+applied reward_research_skipped: the research reward multiplier is never applied
+[reward_research_skipped/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[reward_research_skipped/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[reward_research_skipped/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[reward_research_skipped/redline] exit=1 6s errors=2 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[reward_research_skipped/run_contract] exit=1 7s errors=1 scripterr=0  M11_RUN_CONTRACT_SMOKE: FAIL (1)
+[reward_research_skipped/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/reward_research_skipped_p
+applied reward_clamp_raised: the stage reward clamp is raised 4.0 -> 8.0 (a limit raised)
+[reward_clamp_raised/contract_offers] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[reward_clamp_raised/contract_ui] exit=0 11s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[reward_clamp_raised/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[reward_clamp_raised/redline] exit=1 6s errors=1 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[reward_clamp_raised/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[reward_clamp_raised/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/reward_clamp_raised_p
+applied deploy_off_by_one: deploy takes choice index+1 (the untouched default would not be the default)
+[deploy_off_by_one/contract_offers] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[deploy_off_by_one/contract_ui] exit=1 10s errors=2 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[deploy_off_by_one/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[deploy_off_by_one/redline] exit=0 5s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[deploy_off_by_one/run_contract] exit=0 7s errors=1 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[deploy_off_by_one/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/deploy_off_by_one_p
+applied deploy_redline_unvalidated: deploy_mission(id, 3) starts REDLINE even on an operation that is not cleared
+[deploy_redline_unvalidated/contract_offers] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[deploy_redline_unvalidated/contract_ui] exit=0 8s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[deploy_redline_unvalidated/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[deploy_redline_unvalidated/redline] exit=0 5s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[deploy_redline_unvalidated/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[deploy_redline_unvalidated/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/deploy_redline_unvalidated_p
+applied briefing_consumes_serial: opening a briefing consumes a run serial (issue_run_id instead of next_run_id)
+[briefing_consumes_serial/contract_offers] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[briefing_consumes_serial/contract_ui] exit=1 10s errors=3 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[briefing_consumes_serial/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[briefing_consumes_serial/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[briefing_consumes_serial/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[briefing_consumes_serial/play_log] exit=0 8s errors=2 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/briefing_consumes_serial_p
+applied briefing_redline_always: the briefing always offers REDLINE
+[briefing_redline_always/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[briefing_redline_always/contract_ui] exit=1 11s errors=1 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (490 checks)
+[briefing_redline_always/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[briefing_redline_always/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[briefing_redline_always/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[briefing_redline_always/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/briefing_redline_always_p
+applied mission_id_restored: FIX, not a mutant: restore the deleted `last_run_contract["mission_id"] = id` line
+[mission_id_restored/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[mission_id_restored/contract_ui] exit=1 12s errors=3 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[mission_id_restored/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[mission_id_restored/redline] exit=0 7s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[mission_id_restored/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[mission_id_restored/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/mission_id_restored_p
+[mission_id_restored/campaign] exit=0 27s errors=0 scripterr=0  SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/mission_id_restored_c
+applied schema_4: save schema stays 4
+[schema_4/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[schema_4/contract_ui] exit=0 11s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[schema_4/contract_save] exit=1 2s errors=1 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: FAIL (69 checks)
+[schema_4/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[schema_4/run_contract] exit=0 24s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[schema_4/play_log] exit=0 26s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/schema_4_p
+applied redline_on_wipe: a REDLINE record is written even when the run was not a clear
+[redline_on_wipe/contract_offers] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[redline_on_wipe/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[redline_on_wipe/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[redline_on_wipe/redline] exit=1 6s errors=2 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[redline_on_wipe/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[redline_on_wipe/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_on_wipe_p
+applied redline_on_early: a REDLINE record is written on an early extraction (full_route_cleared ignored)
+[redline_on_early/contract_offers] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[redline_on_early/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[redline_on_early/contract_save] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[redline_on_early/redline] exit=1 6s errors=1 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[redline_on_early/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[redline_on_early/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/redline_on_early_p
+applied commit_gate_off: a REDLINE summary on an uncleared operation is committed
+[commit_gate_off/contract_offers] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[commit_gate_off/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[commit_gate_off/contract_save] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[commit_gate_off/redline] exit=1 6s errors=2 scripterr=0  REDLINE_SMOKE: FAIL (77 checks)
+[commit_gate_off/run_contract] exit=0 8s errors=1 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[commit_gate_off/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/commit_gate_off_p
+applied sanitize_off: redline_cleared is read back without sanitising (unknown / uncleared ids are kept)
+[sanitize_off/contract_offers] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[sanitize_off/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[sanitize_off/contract_save] exit=1 2s errors=1 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: FAIL (69 checks)
+[sanitize_off/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[sanitize_off/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[sanitize_off/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/sanitize_off_p
+applied snapshot_no_redline: redline_cleared is left out of the saved snapshot
+[snapshot_no_redline/contract_offers] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[snapshot_no_redline/contract_ui] exit=1 10s errors=2 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[snapshot_no_redline/contract_save] exit=1 301s errors=0 scripterr=1
+[snapshot_no_redline/redline] exit=0 7s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[snapshot_no_redline/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[snapshot_no_redline/play_log] exit=0 7s errors=2 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/snapshot_no_redline_p
+applied contract_persisted: the campaign snapshot carries a run_contract
+[contract_persisted/contract_offers] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[contract_persisted/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[contract_persisted/contract_save] exit=1 1s errors=3 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: FAIL (69 checks)
+[contract_persisted/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[contract_persisted/run_contract] exit=1 7s errors=1 scripterr=0  M11_RUN_CONTRACT_SMOKE: FAIL (1)
+[contract_persisted/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/contract_persisted_p
+applied debug_reset_keeps: debug_reset forgets to clear redline_cleared
+[debug_reset_keeps/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[debug_reset_keeps/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[debug_reset_keeps/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[debug_reset_keeps/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[debug_reset_keeps/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[debug_reset_keeps/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/debug_reset_keeps_p
+applied playlog_no_id: play log record has no contract_id
+[playlog_no_id/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[playlog_no_id/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[playlog_no_id/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[playlog_no_id/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[playlog_no_id/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[playlog_no_id/play_log] exit=1 7s errors=4 scripterr=0
+applied playlog_no_redline: play log record has no redline flag
+[playlog_no_redline/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[playlog_no_redline/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[playlog_no_redline/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[playlog_no_redline/redline] exit=0 5s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[playlog_no_redline/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[playlog_no_redline/play_log] exit=1 7s errors=4 scripterr=0
+applied results_neutral: the results screen always shows the neutral contract
+[results_neutral/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[results_neutral/contract_ui] exit=1 10s errors=1 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[results_neutral/contract_save] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[results_neutral/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[results_neutral/run_contract] exit=0 7s errors=1 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[results_neutral/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/results_neutral_p
+applied lobby_no_mark: the lobby selector no longer marks REDLINE CLEARED
+[lobby_no_mark/contract_offers] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[lobby_no_mark/contract_ui] exit=1 10s errors=1 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[lobby_no_mark/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[lobby_no_mark/redline] exit=0 5s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[lobby_no_mark/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[lobby_no_mark/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/lobby_no_mark_p
+applied lobby_no_status: the lobby status line no longer says REDLINE CLEARED
+[lobby_no_status/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[lobby_no_status/contract_ui] exit=1 10s errors=1 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[lobby_no_status/contract_save] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[lobby_no_status/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[lobby_no_status/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[lobby_no_status/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/lobby_no_status_p
+applied ui_button_overlap: the contract button sits on top of BACK
+[ui_button_overlap/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[ui_button_overlap/contract_ui] exit=1 10s errors=24 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[ui_button_overlap/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[ui_button_overlap/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[ui_button_overlap/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[ui_button_overlap/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_button_overlap_p
+applied ui_choice_short: choice buttons are 40 px high instead of 72
+[ui_choice_short/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[ui_choice_short/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[ui_choice_short/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[ui_choice_short/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[ui_choice_short/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[ui_choice_short/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_choice_short_p
+applied ui_panel_wide: the contract panel is 900 px wide (leaves 1280x720)
+[ui_panel_wide/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[ui_panel_wide/contract_ui] exit=1 13s errors=12 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[ui_panel_wide/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[ui_panel_wide/redline] exit=0 7s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[ui_panel_wide/run_contract] exit=0 9s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[ui_panel_wide/play_log] exit=0 9s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_panel_wide_p
+applied ui_panel_over_route: the contract panel starts at x=300 (over the route panel)
+[ui_panel_over_route/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[ui_panel_over_route/contract_ui] exit=1 11s errors=24 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[ui_panel_over_route/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[ui_panel_over_route/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[ui_panel_over_route/run_contract] exit=0 11s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[ui_panel_over_route/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_panel_over_route_p
+applied ui_no_reveal: the contract panel is not shown when the dialogue ends
+[ui_no_reveal/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[ui_no_reveal/contract_ui] exit=1 10s errors=10 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[ui_no_reveal/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[ui_no_reveal/redline] exit=0 5s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[ui_no_reveal/run_contract] exit=0 7s errors=1 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[ui_no_reveal/play_log] exit=0 7s errors=2 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_no_reveal_p
+applied ui_choice_inert: clicking or pressing a choice does nothing
+[ui_choice_inert/contract_offers] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[ui_choice_inert/contract_ui] exit=1 9s errors=7 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[ui_choice_inert/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[ui_choice_inert/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[ui_choice_inert/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[ui_choice_inert/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_choice_inert_p
+applied ui_default_unpressed: the default choice is not shown as pressed
+[ui_default_unpressed/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[ui_default_unpressed/contract_ui] exit=0 10s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[ui_default_unpressed/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[ui_default_unpressed/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[ui_default_unpressed/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[ui_default_unpressed/play_log] exit=0 7s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_default_unpressed_p
+applied ui_no_effect_text: the choices show no effect text, only their names
+[ui_no_effect_text/contract_offers] exit=0 2s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[ui_no_effect_text/contract_ui] exit=0 9s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[ui_no_effect_text/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[ui_no_effect_text/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[ui_no_effect_text/run_contract] exit=0 7s errors=1 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[ui_no_effect_text/play_log] exit=0 6s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/ui_no_effect_text_p
+ALL_DONE

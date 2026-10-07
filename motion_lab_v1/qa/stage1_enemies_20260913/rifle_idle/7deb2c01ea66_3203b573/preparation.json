@@ -1,0 +1,41 @@
+{
+  "id": "rifle_idle",
+  "status": "CANDIDATE_NOT_REVIEWED",
+  "source": "art\\enemy_rifle\\reference\\rifle_master_v1.png",
+  "sourceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+  "toolResponse": {
+    "path": "qa\\stage1_enemies_20260913\\rifle_master_tool_response.json",
+    "sha256": "06ec7104ca4cea9f20d8d3b6c4ab96cc3ff1cc0c0b463cbdaaa629670b77cf73"
+  },
+  "sourceNative": [
+    1024,
+    1536
+  ],
+  "box": [
+    122,
+    49,
+    1015,
+    1501
+  ],
+  "candidate": "qa\\stage1_enemies_20260913\\rifle_idle\\7deb2c01ea66_3203b573\\candidate_rgba.png",
+  "candidateSHA256": "9cfaa751525ce494d28e52c0f96cde01f266a4bf3020f3e5541e253552ab3960",
+  "candidateNative": [
+    893,
+    1452
+  ],
+  "native_review": [
+    1920,
+    1080
+  ],
+  "operation": "existing key_image chroma/alpha separation then native crop only",
+  "preparationCodeSHA256": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a",
+  "matteCodeSHA256": "1395b21aa409e4605ce769479e9984968f0a88912adda648879b6869d2dd527f",
+  "implementationDependencies": {
+    "preparation": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a",
+    "matte": "1395b21aa409e4605ce769479e9984968f0a88912adda648879b6869d2dd527f",
+    "provenance": "d6da53bb5321ad08008e52a0e371e7b712e9eb72c762baa545083f008fe5256d"
+  },
+  "resampling": false,
+  "anatomicalWarp": false,
+  "runtimePromotion": false
+}

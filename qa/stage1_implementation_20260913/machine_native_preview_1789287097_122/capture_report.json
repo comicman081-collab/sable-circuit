@@ -1,0 +1,867 @@
+{
+  "app_registry": true,
+  "code_sha256": {
+    "res://assets/enemies/recon_drone/authored_yaw8_v1/spec.json": "0c716b309edfa5ecaa29cffef01642e23c855a3527a979a922002a9e8ad6b5ba",
+    "res://data/art_profiles/enemy_profiles.json": "69f0cb7904e321aeaf607ddb4cc3ac7eb24f8b6ba909984a397d358f5facbf3d",
+    "res://scripts/actors/enemy_actor.gd": "6960d7b99d0df3098399645cb389e4ed4fee4ae51397af8ebeb81560cf0e7b95",
+    "res://scripts/animation/site7_machine_sprite.gd": "986d9b4f34c33ee9c07d4737c286bad32c0acd84b78361e4b7f7a7fbcdc338c8",
+    "res://scripts/combat/site7_enemy_tactics.gd": "efacd6facda231852c947cb26572cc873ed022d62bb5ddf1ef55b2c8b260bd02",
+    "res://tests/render/site7_machine_candidate_capture.gd": "6cdb236c46f7f954fbb951f6a3317c221abba60eb1e3cd307d4e17dcfd17789e"
+  },
+  "failures": [],
+  "rows": [
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(923.3859, 391.1186)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-0.999792, 0.020414)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 0,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-1.0, 0.0)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 0.0,
+            "lunges": 0,
+            "phase": 1,
+            "role": "drone",
+            "shots": 0,
+            "state": "REPOSITION",
+            "state_left": 0.133333333333333
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_000.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 53,
+      "sample": 0,
+      "sha256": "5004c1d9ca0d021eee83b636a603c3829a6cf30aa7616ffd65e6741e1dd13968",
+      "wallMilliseconds": 5696
+    },
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(918.6868, 398.7651)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-1.0, -0.0)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 0,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-0.998895, -0.047004)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 151.2,
+            "lunges": 0,
+            "phase": 1,
+            "role": "drone",
+            "shots": 0,
+            "state": "WINDUP",
+            "state_left": 0.43
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_001.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 64,
+      "sample": 1,
+      "sha256": "c0bfbf5322dc3d95b15ff633f8c790b13abe7727dbc824ad6d6949d85c8fe26b",
+      "wallMilliseconds": 5994
+    },
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(918.6868, 397.7617)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-1.0, -0.0)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 0,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-0.998895, -0.047004)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 151.2,
+            "lunges": 0,
+            "phase": 1,
+            "role": "drone",
+            "shots": 0,
+            "state": "WINDUP",
+            "state_left": 0.263333333333333
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_002.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 74,
+      "sample": 2,
+      "sha256": "30282b566cdac2a46fb08b6e861f96de07f98873c16f4aa5c91e355793b2c32d",
+      "wallMilliseconds": 6313
+    },
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(918.6868, 396.3216)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-1.0, -0.0)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 0,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-0.998895, -0.047004)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 151.2,
+            "lunges": 0,
+            "phase": 1,
+            "role": "drone",
+            "shots": 0,
+            "state": "WINDUP",
+            "state_left": 0.0800000000000001
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_003.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 85,
+      "sample": 3,
+      "sha256": "6adb60f02ae376d8f4a415be0dde9e4c0edb42cdf3c387f4c78e491d76eaddf1",
+      "wallMilliseconds": 6644
+    },
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(918.2988, 399.1765)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-0.999999, 0.00166)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 1,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-0.998895, -0.047004)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 151.2,
+            "lunges": 0,
+            "phase": 1,
+            "role": "drone",
+            "shots": 1,
+            "state": "RECOVER",
+            "state_left": 0.783333333333333
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_004.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 95,
+      "sample": 4,
+      "sha256": "046f7b023c6476776f1a94f476404ce29ffa9b7ab36192aa382535231d38a5e7",
+      "wallMilliseconds": 6980
+    },
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(917.2412, 409.4033)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-0.999997, 0.00244)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 1,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-0.998895, -0.047004)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 151.2,
+            "lunges": 0,
+            "phase": 1,
+            "role": "drone",
+            "shots": 1,
+            "state": "RECOVER",
+            "state_left": 0.599999999999999
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_005.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 106,
+      "sample": 5,
+      "sha256": "cf4836fa47b44977b703bef76b0ec8bd7556f98fb90352b77b7585a77a1bf4e4",
+      "wallMilliseconds": 7325
+    },
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(915.8093, 420.2158)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-0.999995, 0.003219)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 1,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-0.998895, -0.047004)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 151.2,
+            "lunges": 0,
+            "phase": 1,
+            "role": "drone",
+            "shots": 1,
+            "state": "RECOVER",
+            "state_left": 0.416666666666666
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_006.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 117,
+      "sample": 6,
+      "sha256": "db539f1b44263a33a84724f6ca935f6b9e04870678c96eee6b9795c3493b2113",
+      "wallMilliseconds": 7663
+    },
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(913.8218, 432.8126)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-0.999992, 0.004063)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 1,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-0.998895, -0.047004)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 151.2,
+            "lunges": 0,
+            "phase": 1,
+            "role": "drone",
+            "shots": 1,
+            "state": "RECOVER",
+            "state_left": 0.216666666666666
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_007.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 129,
+      "sample": 7,
+      "sha256": "1ff0508b9097a1fa254f9879c724e9a60b7bd527639d703111a3513099f29096",
+      "wallMilliseconds": 7993
+    },
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(908.881, 441.4016)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-0.999989, 0.004657)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 1,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-0.998895, -0.047004)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 151.2,
+            "lunges": 0,
+            "phase": 1,
+            "role": "drone",
+            "shots": 1,
+            "state": "RECOVER",
+            "state_left": 0.049999999999999
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_008.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 139,
+      "sample": 8,
+      "sha256": "8dc01ce74ceeb89792ee4212f7dc1f326bd35196826a4a97c1a14632c7fea5c5",
+      "wallMilliseconds": 8318
+    },
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(896.2815, 454.6485)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-0.999766, 0.021629)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 1,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-0.998895, -0.047004)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 151.2,
+            "lunges": 0,
+            "phase": 1,
+            "role": "drone",
+            "shots": 1,
+            "state": "REPOSITION",
+            "state_left": 0.766666666666666
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_009.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 150,
+      "sample": 9,
+      "sha256": "6838a656aaca233d9bfd4298e4189f7fa0eb7df26346212051abc7e2b6907afc",
+      "wallMilliseconds": 8652
+    },
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(886.0766, 465.3931)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-0.999788, 0.020571)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 1,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-0.998895, -0.047004)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 151.2,
+            "lunges": 0,
+            "phase": 1,
+            "role": "drone",
+            "shots": 1,
+            "state": "REPOSITION",
+            "state_left": 0.616666666666666
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_010.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 159,
+      "sample": 10,
+      "sha256": "ea031ab04beb991c43c34456889ded61a51b195d44863b75f1ec41f5fcdcdcaf",
+      "wallMilliseconds": 8977
+    },
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(875.0717, 476.7221)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-0.999807, 0.019633)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 1,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-0.998895, -0.047004)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 151.2,
+            "lunges": 0,
+            "phase": 1,
+            "role": "drone",
+            "shots": 1,
+            "state": "REPOSITION",
+            "state_left": 0.449999999999999
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_011.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 169,
+      "sample": 11,
+      "sha256": "66e68dfe916fffe42787f6ef02736adbbcdfb750822c4a3c53df832766fa843f",
+      "wallMilliseconds": 9310
+    },
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(863.2965, 488.4373)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-0.999822, 0.018876)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 1,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-0.998895, -0.047004)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 151.2,
+            "lunges": 0,
+            "phase": 2,
+            "role": "drone",
+            "shots": 1,
+            "state": "REPOSITION",
+            "state_left": 0.266666666666666
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_012.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 180,
+      "sample": 12,
+      "sha256": "037979806c087fd2ec8e9bde07b780ab8a99faff8fabba0ad15290fa35c44829",
+      "wallMilliseconds": 9632
+    },
+    {
+      "actors": [
+        {
+          "contract": {
+            "art_warp": false,
+            "configured": true,
+            "display_height": 110.0,
+            "emitter_px": "(108.0, 644.0)",
+            "emitter_visible": true,
+            "emitter_world": "(852.8282, 498.2244)",
+            "facing": "W",
+            "gait_claim": false,
+            "heading_world": "(-0.99983, 0.018424)",
+            "kind": "hover_machine",
+            "mirrored": false,
+            "native_size": "(1456.0, 906.0)",
+            "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+            "view_count": 8
+          },
+          "id": "ENM_SITE7_DRONE_01",
+          "tactics": {
+            "attacks": 1,
+            "contract_is_intent_not_validation": true,
+            "locked_aim": "(-0.998895, -0.047004)",
+            "lunge_radius": 58.0,
+            "lunge_reach": 151.2,
+            "lunges": 0,
+            "phase": 2,
+            "role": "drone",
+            "shots": 1,
+            "state": "REPOSITION",
+            "state_left": 0.0999999999999989
+          }
+        }
+      ],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_013.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 190,
+      "sample": 13,
+      "sha256": "635951b27552a2a2a7f3fbb6149a892c3e693b986d913c079d75315f83310d51",
+      "wallMilliseconds": 9954
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_014.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 200,
+      "sample": 14,
+      "sha256": "2ca9127f30278dd1355f3ed9b5c8c0087fd6e75bf8f32eefce5da21da581e7f5",
+      "wallMilliseconds": 10283
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_015.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 209,
+      "sample": 15,
+      "sha256": "cb48eb8050de2b0df0a2a820745855eedfaf82e9b22ee4e3b977ef20fe65a12a",
+      "wallMilliseconds": 10608
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_016.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 218,
+      "sample": 16,
+      "sha256": "04c3a45f3db614b578bd91fd112e6191b0c6cf585cb83f2be3bca8109924ad0f",
+      "wallMilliseconds": 10936
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_017.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 227,
+      "sample": 17,
+      "sha256": "eb308b5a0ec60e504d195ddda206c4dc9ca8616e692cab5088a1cd7ca0510bb9",
+      "wallMilliseconds": 11230
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_018.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 237,
+      "sample": 18,
+      "sha256": "1817f409a28691c52d795d7cdd67bddfc8225d02c8f84567b850d35fe9c01b86",
+      "wallMilliseconds": 11506
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_019.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 246,
+      "sample": 19,
+      "sha256": "eb0881ac877d0eca787c0f29469409d87d227a4a35147bf614987502905153d1",
+      "wallMilliseconds": 11810
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_020.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 256,
+      "sample": 20,
+      "sha256": "5936ce7af4214a976c0a88b7bddded099b9f2865a16b45779280b4a15226aa18",
+      "wallMilliseconds": 12138
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_021.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 265,
+      "sample": 21,
+      "sha256": "6228427a544742aed5698cde833a51a3fed4baf08f657ef1d6f1d8ccb0d3873a",
+      "wallMilliseconds": 12476
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_022.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 274,
+      "sample": 22,
+      "sha256": "2f7ea881b995285cd40ece65cc6f5568d95d28bf9255d1ce751c8966ca83108a",
+      "wallMilliseconds": 12772
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_023.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 283,
+      "sample": 23,
+      "sha256": "ce9648b0f17345ba05e4628a16cf4e4e5b76b6e989d3f77a4537b85b7c234b54",
+      "wallMilliseconds": 13047
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_024.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 293,
+      "sample": 24,
+      "sha256": "347d8706d578926421a61614b3aa0f696da650aafd841fa7d4c4389ffc82bd7f",
+      "wallMilliseconds": 13310
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_025.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 302,
+      "sample": 25,
+      "sha256": "ff4a0c82545592a64a3f8d727aeabd6c36bd25421b2965d8aa7d3f928d763400",
+      "wallMilliseconds": 13578
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_026.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 312,
+      "sample": 26,
+      "sha256": "b0a8feebeab532b3798d3dce84faf70379c01320593b19b3603518c28f4e26ad",
+      "wallMilliseconds": 13864
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_027.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 322,
+      "sample": 27,
+      "sha256": "5bc07565dde7d67c78abc0727175e54c701f5fa08a0ba7d91dbdc6ed6fd38ad8",
+      "wallMilliseconds": 14129
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_028.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 332,
+      "sample": 28,
+      "sha256": "6308583b83a513e63cecde9745afd0603e0cd248f8e5bbc822f4127d3d1efabd",
+      "wallMilliseconds": 14393
+    },
+    {
+      "actors": [],
+      "encounter": 1,
+      "image": "res://qa/stage1_implementation_20260913/machine_native_preview_1789287097_122/encounter_1_sample_029.webp",
+      "native": [
+        1920,
+        1080
+      ],
+      "physicsTick": 341,
+      "sample": 29,
+      "sha256": "a1972ffa0a99fb1c18e4a3012da712d115234d0fef2ba2f3831f9c10e7a53d68",
+      "wallMilliseconds": 14653
+    }
+  ],
+  "status": "CAPTURED_APP_NOT_VISUAL_APPROVAL"
+}

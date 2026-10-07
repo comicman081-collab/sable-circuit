@@ -1,0 +1,282 @@
+{
+  "controlled_phase_fixture": true,
+  "failures": [],
+  "native_capture": true,
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "rows": [
+    {
+      "capture": "captures/mission6_boss_room.png",
+      "emitter_screen": "(738.4597, 245.4659)",
+      "enemy_id": "BOSS_SITE7_AERATOR_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 376.0,
+        "emitter_px": "(632.0, 324.0)",
+        "emitter_visible": true,
+        "emitter_world": "(12069.46, -3943.564)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1254.0, 1254.0)",
+        "texture_sha256": "1c8ce269316858657f5383cbc851811800c8939d46c4f78d9cc32f66a662c935",
+        "view_count": 1,
+        "visible_rect": "[P: (379.0, 240.0), S: (509.0, 754.0)]"
+      },
+      "texture_sha256": "5e32a9d0228392f69b1801790d4f173c2a0e867f4cbc3da46809b4d716aca681"
+    },
+    {
+      "capture": "captures/mission6_phase1a_warning.png",
+      "emitter_screen": "(858.0535, 154.107)",
+      "enemy_id": "BOSS_SITE7_AERATOR_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 376.0,
+        "emitter_px": "(632.0, 324.0)",
+        "emitter_visible": true,
+        "emitter_world": "(12069.46, -3943.564)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1254.0, 1254.0)",
+        "texture_sha256": "1c8ce269316858657f5383cbc851811800c8939d46c4f78d9cc32f66a662c935",
+        "view_count": 1,
+        "visible_rect": "[P: (379.0, 240.0), S: (509.0, 754.0)]"
+      },
+      "texture_sha256": "5e32a9d0228392f69b1801790d4f173c2a0e867f4cbc3da46809b4d716aca681"
+    },
+    {
+      "attack": "A",
+      "boss": "BOSS_SITE7_AERATOR_01",
+      "boss_to_target_px": 512.3,
+      "host_mission": "MIS_CH01_06",
+      "kinds": [
+        "circle",
+        "circle",
+        "circle",
+        "circle"
+      ],
+      "phase": 1,
+      "safe_floor_gap": true,
+      "shots": 0,
+      "test_bed": false,
+      "warnings": 4
+    },
+    {
+      "capture": "captures/mission6_phase1b_warning.png",
+      "emitter_screen": "(776.0037, 154.107)",
+      "enemy_id": "BOSS_SITE7_AERATOR_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 376.0,
+        "emitter_px": "(632.0, 324.0)",
+        "emitter_visible": true,
+        "emitter_world": "(12069.46, -3943.564)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1254.0, 1254.0)",
+        "texture_sha256": "1c8ce269316858657f5383cbc851811800c8939d46c4f78d9cc32f66a662c935",
+        "view_count": 1,
+        "visible_rect": "[P: (379.0, 240.0), S: (509.0, 754.0)]"
+      },
+      "texture_sha256": "5e32a9d0228392f69b1801790d4f173c2a0e867f4cbc3da46809b4d716aca681"
+    },
+    {
+      "attack": "B",
+      "boss": "BOSS_SITE7_AERATOR_01",
+      "boss_to_target_px": 380.0,
+      "host_mission": "MIS_CH01_06",
+      "kinds": [
+        "circle",
+        "circle",
+        "circle",
+        "circle"
+      ],
+      "phase": 1,
+      "safe_floor_gap": true,
+      "shots": 0,
+      "test_bed": false,
+      "warnings": 4
+    },
+    {
+      "capture": "captures/mission6_phase2a_warning.png",
+      "emitter_screen": "(693.9548, 154.107)",
+      "enemy_id": "BOSS_SITE7_AERATOR_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 376.0,
+        "emitter_px": "(632.0, 324.0)",
+        "emitter_visible": true,
+        "emitter_world": "(12069.46, -3943.564)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1254.0, 1254.0)",
+        "texture_sha256": "1c8ce269316858657f5383cbc851811800c8939d46c4f78d9cc32f66a662c935",
+        "view_count": 1,
+        "visible_rect": "[P: (379.0, 240.0), S: (509.0, 754.0)]"
+      },
+      "texture_sha256": "5e32a9d0228392f69b1801790d4f173c2a0e867f4cbc3da46809b4d716aca681"
+    },
+    {
+      "attack": "A",
+      "boss": "BOSS_SITE7_AERATOR_01",
+      "boss_to_target_px": 267.0,
+      "host_mission": "MIS_CH01_06",
+      "kinds": [
+        "circle",
+        "circle",
+        "circle",
+        "circle",
+        "circle",
+        "circle"
+      ],
+      "phase": 2,
+      "safe_floor_gap": true,
+      "shots": 0,
+      "test_bed": false,
+      "warnings": 6
+    },
+    {
+      "capture": "captures/mission6_phase2b_warning.png",
+      "emitter_screen": "(640.0007, 154.107)",
+      "enemy_id": "BOSS_SITE7_AERATOR_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 376.0,
+        "emitter_px": "(632.0, 324.0)",
+        "emitter_visible": true,
+        "emitter_world": "(12069.46, -3943.564)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1254.0, 1254.0)",
+        "texture_sha256": "1c8ce269316858657f5383cbc851811800c8939d46c4f78d9cc32f66a662c935",
+        "view_count": 1,
+        "visible_rect": "[P: (379.0, 240.0), S: (509.0, 754.0)]"
+      },
+      "texture_sha256": "5e32a9d0228392f69b1801790d4f173c2a0e867f4cbc3da46809b4d716aca681"
+    },
+    {
+      "attack": "B",
+      "boss": "BOSS_SITE7_AERATOR_01",
+      "boss_to_target_px": 207.9,
+      "host_mission": "MIS_CH01_06",
+      "kinds": [],
+      "phase": 2,
+      "safe_floor_gap": true,
+      "shots": 3,
+      "test_bed": false,
+      "warnings": 0
+    },
+    {
+      "capture": "captures/mission6_phase3a_warning.png",
+      "emitter_screen": "(693.9548, 154.107)",
+      "enemy_id": "BOSS_SITE7_AERATOR_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 376.0,
+        "emitter_px": "(632.0, 324.0)",
+        "emitter_visible": true,
+        "emitter_world": "(12069.46, -3943.564)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1254.0, 1254.0)",
+        "texture_sha256": "1c8ce269316858657f5383cbc851811800c8939d46c4f78d9cc32f66a662c935",
+        "view_count": 1,
+        "visible_rect": "[P: (379.0, 240.0), S: (509.0, 754.0)]"
+      },
+      "texture_sha256": "5e32a9d0228392f69b1801790d4f173c2a0e867f4cbc3da46809b4d716aca681"
+    },
+    {
+      "attack": "A",
+      "boss": "BOSS_SITE7_AERATOR_01",
+      "boss_to_target_px": 267.0,
+      "host_mission": "MIS_CH01_06",
+      "kinds": [
+        "circle",
+        "circle",
+        "circle",
+        "circle",
+        "circle",
+        "circle",
+        "circle"
+      ],
+      "phase": 3,
+      "safe_floor_gap": true,
+      "shots": 0,
+      "test_bed": false,
+      "warnings": 7
+    },
+    {
+      "capture": "captures/mission6_phase3b_warning.png",
+      "emitter_screen": "(640.0007, 154.107)",
+      "enemy_id": "BOSS_SITE7_AERATOR_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 376.0,
+        "emitter_px": "(632.0, 324.0)",
+        "emitter_visible": true,
+        "emitter_world": "(12069.46, -3943.564)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1254.0, 1254.0)",
+        "texture_sha256": "1c8ce269316858657f5383cbc851811800c8939d46c4f78d9cc32f66a662c935",
+        "view_count": 1,
+        "visible_rect": "[P: (379.0, 240.0), S: (509.0, 754.0)]"
+      },
+      "texture_sha256": "5e32a9d0228392f69b1801790d4f173c2a0e867f4cbc3da46809b4d716aca681"
+    },
+    {
+      "attack": "B",
+      "boss": "BOSS_SITE7_AERATOR_01",
+      "boss_to_target_px": 207.9,
+      "host_mission": "MIS_CH01_06",
+      "kinds": [
+        "circle",
+        "circle",
+        "circle",
+        "circle",
+        "circle",
+        "circle",
+        "circle"
+      ],
+      "phase": 3,
+      "safe_floor_gap": true,
+      "shots": 0,
+      "test_bed": false,
+      "warnings": 7
+    }
+  ],
+  "status": "PASS_TECHNICAL_ONLY",
+  "test_bed_note": "Operations 7-10 have no plates: their bosses are staged in the mission 3 boss hall (GANTRY in its second room, a corridor). Not their own rooms. Operations 1-6 are captured in their own boss rooms.",
+  "visual_approval": false,
+  "rows_omitted": 87,
+  "scope_note": "Trimmed to operation 6. The same run also shot the own-room frames of operations 1-5 and the test-bed frames of operations 7-10 (not kept here; see qa/site7_ops_6_10_boss_integration_20260929/)."
+}

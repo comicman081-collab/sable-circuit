@@ -1,0 +1,27 @@
+PROBE lobby samples: rect=[P: (46.0, 540.0), S: (570.0, 22.0)] fontsize=12 text=SAMPLES // SECURITY 03  ABERRANT 03  ANCHOR 03  AERATOR 03  CRYO 03  GANTRY 03  ARCHIVE 03  ORIGIN 03
+PROBE full-name samples sep=1 size=12 width=521.0 chars=94
+PROBE full-name samples sep=1 size=11 width=478.0 chars=94
+PROBE full-name samples sep=1 size=10 width=435.0 chars=94
+PROBE full-name samples sep=2 size=12 width=543.0 chars=101
+PROBE full-name samples sep=2 size=11 width=498.0 chars=101
+PROBE full-name samples sep=2 size=10 width=453.0 chars=101
+PROBE full-name samples sep=3 size=12 width=564.0 chars=108
+PROBE full-name samples sep=3 size=11 width=517.0 chars=108
+PROBE full-name samples sep=3 size=10 width=471.0 chars=108
+PROBE module label CHR_PROTO_01 rect=[P: (824.0, 577.0), S: (240.0, 24.0)] text=ASTER // LOCKED fontsize=12  | button rect=[P: (1072.0, 573.0), S: (154.0, 35.0)]
+PROBE   unlocked-names line CHR_PROTO_01 size=11 width=185.0 text=PRISM FOCUS / FROST LENS / RAIL SPOOL
+PROBE   unlocked-names line CHR_PROTO_01 size=10 width=169.0 text=PRISM FOCUS / FROST LENS / RAIL SPOOL
+PROBE module label CHR_PROTO_02 rect=[P: (824.0, 618.0), S: (240.0, 24.0)] text=ROOK // LOCKED fontsize=12  | button rect=[P: (1072.0, 614.0), S: (154.0, 35.0)]
+PROBE   unlocked-names line CHR_PROTO_02 size=11 width=206.0 text=BREACH LINER / SPORE FILTER / NULL ANCHOR
+PROBE   unlocked-names line CHR_PROTO_02 size=10 width=187.0 text=BREACH LINER / SPORE FILTER / NULL ANCHOR
+PROBE module label CHR_PROTO_03 rect=[P: (824.0, 659.0), S: (240.0, 24.0)] text=MICA // LOCKED fontsize=12  | button rect=[P: (1072.0, 655.0), S: (154.0, 35.0)]
+PROBE   unlocked-names line CHR_PROTO_03 size=11 width=132.0 text=SENSOR ARRAY / ECHO RELAY
+PROBE   unlocked-names line CHR_PROTO_03 size=10 width=120.0 text=SENSOR ARRAY / ECHO RELAY
+PROBE panel rect=[P: (28.0, 500.0), S: (1224.0, 202.0002)] samples label parent=@Panel@121
+PROBE hud intel: rect=[P: (924.0, 82.0), S: (332.0, 17.0)] fontsize=11 width=324.0 text=INTEL  SEC 12   ABR 12   ANC 12   AER 12   CRY 12   GAN 12   ARC 12   ORG 12
+PROBE hud transmission panel rect=[P: (360.0, 70.0), S: (560.0, 48.0)] visible=true
+PROBE hud _cargo_label rect=[P: (858.0, 66.0), S: (398.0, 17.0)] visible=true
+PROBE hud _status_label rect=[P: (958.0, 44.0), S: (298.0, 24.0)] visible=true
+PROBE hud _optional_label rect=[P: (858.0, 98.0), S: (398.0, 17.0)] visible=false
+PROBE_DONE
+ERROR: 2 resources still in use at exit (run with --verbose for details).

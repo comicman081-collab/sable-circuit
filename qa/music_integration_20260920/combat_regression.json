@@ -1,0 +1,7 @@
+{
+  "status": "ORIGINAL_OVERWRITTEN_2026-09-24",
+  "note": "The original 2026-09-20 report was accidentally overwritten on 2026-09-24 when tests/smoke/demo_combat_entry_regression.gd was re-run without --out (its default output is this path). The folder was untracked, so the original bytes are not recoverable. IMPLEMENTATION_REVIEW.md in this folder records that the original report had 20 passing checks with native input events, the normal mission path, actual movement physics, ammo consumption and ROOK/MICA follower firing.",
+  "original_summary_source": "qa/music_integration_20260920/IMPLEMENTATION_REVIEW.md",
+  "current_regression_evidence": "qa/combat_density_20260924/combat_entry_regression.json",
+  "visual_approval": false
+}

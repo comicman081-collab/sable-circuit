@@ -1,0 +1,146 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_C07/attempt01/S9_C07_GAME.png",
+  "luma": 0.19968600571155548,
+  "p10": 0.1536666750907898,
+  "p90": 0.24823138117790222,
+  "saturation": 0.05236885535045141,
+  "hue": 143.58243688529032,
+  "axis": 33.03670880046384,
+  "problems": [
+    "floor axis 33.0 deg outside (22.5, 31.5)",
+    "branch width exceeds +/-15%"
+  ],
+  "plate": "S9_C07",
+  "attempt": 1,
+  "native_size": [
+    1254,
+    1254
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      0,
+      62
+    ],
+    [
+      1254,
+      833
+    ],
+    [
+      1254,
+      1226
+    ],
+    [
+      0,
+      366
+    ]
+  ],
+  "doors_px": {},
+  "raw_sha256": "1708cb4efb5c08121916eb3e67f815e8940acf7679251e412836617d3b4a91ce",
+  "master_sha256": "1708cb4efb5c08121916eb3e67f815e8940acf7679251e412836617d3b4a91ce",
+  "game_sha256": "3c1295f51aa73f8ca7e43103a8b8cdab836f183ece5d5172267b11bc3ff40424",
+  "game_exposure_factor_srgb": 0.8145,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-eb9e1d8b-508c-4fa5-8b9d-5062e7ab2254.png",
+  "inspection": "Actual wall-base and outer painted floor lip traced natively. Right end fans wider than standard; regular riser bays with round pipes recur and brass rail has excessive posts. Reject geometry, no floor substitute.",
+  "floor_area_px2": 437019.0,
+  "floor_area_fraction": 0.27791068580542266,
+  "floor_bounds_px": [
+    0,
+    62,
+    1254,
+    1226
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1254,
+      1254
+    ],
+    "actual_size": [
+      1254,
+      1254
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "axis_acceptance": {
+    "minimum_deg": 22.5,
+    "maximum_deg": 32.5,
+    "source": "2026-10-01 explicit user decision; production audit/tool update owned by Claude"
+  },
+  "end_widths_px": [
+    304,
+    393
+  ],
+  "width_sections_px": [
+    [
+      0,
+      62,
+      366
+    ],
+    [
+      627,
+      447,
+      796
+    ],
+    [
+      1254,
+      833,
+      1226
+    ]
+  ],
+  "vertical_widths_px": [
+    304,
+    349,
+    393
+  ],
+  "width_measurement": "Vertical sections between actual wall base and outer painted deck lip; clipped image-corner fragments are not full cross-sections.",
+  "width_acceptance": {
+    "minimum_px": 220,
+    "prompt_target_px": 260,
+    "source": "2026-10-01 explicit user decision; branch +/-15% additionally retained"
+  },
+  "connector_apron_end_stats": [
+    {
+      "end": "image_left",
+      "luma": 0.2466246634721756,
+      "saturation": 0.05955188670237437,
+      "hue": 146.07258582279871,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    },
+    {
+      "end": "image_right",
+      "luma": 0.21766507625579834,
+      "saturation": 0.08723839853094184,
+      "hue": 145.76138118872876,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    }
+  ],
+  "preintegration_end_comparison": [
+    {
+      "end": "image_left",
+      "room": "S9_R03",
+      "door": "SE",
+      "deck_luma": 0.2245260626077652,
+      "deck_saturation": 0.04999664217540575,
+      "room_apron_luma": 0.21876537799835205,
+      "room_apron_saturation": 0.08465354552594435,
+      "step": -0.034394587014943974,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    },
+    {
+      "end": "image_right",
+      "room": "S9_O02",
+      "door": "NW",
+      "deck_luma": 0.20471832156181335,
+      "deck_saturation": 0.07166571371032478,
+      "room_apron_luma": 0.2249520868062973,
+      "room_apron_saturation": 0.06266677769295985,
+      "step": 0.12438182832391607,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "cargo": {
+    "ABERRANT": 1,
+    "AERATOR": 1,
+    "ANCHOR": 5,
+    "ARCHIVE": 1,
+    "CRYO": 1,
+    "GANTRY": 1,
+    "ORIGIN": 1,
+    "SECURITY": 3
+  },
+  "checks": 83,
+  "failures": [
+    "exact eight ordered keys",
+    "inventory and cargo initialize all eight keys",
+    "wipe loses and counts all eight keys",
+    "wipe loses and counts all eight keys",
+    "wipe loses and counts all eight keys",
+    "wipe loses and counts all eight keys",
+    "wipe loses and counts all eight keys",
+    "all keys sanitized without unknown or negative values"
+  ],
+  "mapping": [
+    {
+      "enemy": "BOSS_SITE7_ANCHOR_01",
+      "key": "ANCHOR"
+    },
+    {
+      "enemy": "BOSS_SITE7_RELAY_01",
+      "key": "ANCHOR"
+    },
+    {
+      "enemy": "BOSS_SITE7_REMNANT_01",
+      "key": "ANCHOR"
+    },
+    {
+      "enemy": "BOSS_SITE7_FORGE_01",
+      "key": "ANCHOR"
+    },
+    {
+      "enemy": "BOSS_SITE7_CARRIER_01",
+      "key": "ANCHOR"
+    },
+    {
+      "enemy": "BOSS_SITE7_AERATOR_01",
+      "key": "AERATOR"
+    },
+    {
+      "enemy": "BOSS_SITE7_CRYO_01",
+      "key": "CRYO"
+    },
+    {
+      "enemy": "BOSS_SITE7_GANTRY_01",
+      "key": "GANTRY"
+    },
+    {
+      "enemy": "BOSS_SITE7_ARCHIVE_01",
+      "key": "ARCHIVE"
+    },
+    {
+      "enemy": "BOSS_SITE7_ORIGIN_01",
+      "key": "ORIGIN"
+    }
+  ]
+}

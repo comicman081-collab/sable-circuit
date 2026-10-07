@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-12T03:37:25.459282+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook_mvp\\20260912_candidate\\rook_motion_candidate.webm",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 29.98713336659402,
+      "frames": 1143,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 285,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 571,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 857,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 1142,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 8159466,
+      "sha256": "5303c744adb425660a20eaae2d0630ad332a1d5dc143864f3c9578d56ed94353"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+M7_RASTER_QUARANTINED identity=aster status=partial chunks=2 encoded=20000 present=15000 declared=94718
+FULL_OPERATION_TRACE {"ammo":24,"health":[96.0,138.0,112.0],"hostiles":[],"position":[410.0,390.0],"remaining":0,"step":0,"tick":0,"wave":0}
+FULL_OPERATION_TRACE {"ammo":24,"health":[96.0,138.0,112.0],"hostiles":[],"position":[318.021026611328,515.599975585938],"remaining":0,"step":1,"tick":31,"wave":0}
+FULL_OPERATION_TRACE {"ammo":0,"health":[44.0,138.0,112.0],"hostiles":[],"position":[580.3876953125,248.063781738281],"remaining":0,"step":2,"tick":581,"wave":0}
+FULL_OPERATION_TRACE {"ammo":0,"health":[44.0,138.0,112.0],"hostiles":[],"position":[631.046997070313,308.899383544922],"remaining":0,"step":2,"tick":600,"wave":0}
+FULL_OPERATION_TRACE {"ammo":24,"health":[77.6,138.0,112.0],"hostiles":[],"position":[1028.08740234375,639.933227539063],"remaining":0,"step":3,"tick":782,"wave":0}
+FULL_OPERATION_TRACE {"ammo":0,"health":[37.6,138.0,112.0],"hostiles":[{"hp":57.0,"id":"ENM_SITE7_PRISM_01","position":"(1645.366, 172.9903)"}],"position":[1379.86315917969,234.592926025391],"remaining":1,"step":3,"tick":1200,"wave":0}
+FULL_OPERATION_TRACE {"ammo":24,"health":[27.6,138.0,112.0],"hostiles":[],"position":[1382.48156738281,285.041748046875],"remaining":0,"step":4,"tick":1231,"wave":0}
+FULL_OPERATION_TRACE {"ammo":3,"health":[0.0,108.0,72.0],"hostiles":[{"hp":363.0,"id":"BOSS_SITE7_FORGE_01","position":"(2034.08, 541.18)"}],"position":[1744.73962402344,486.953826904297],"remaining":1,"step":4,"tick":1800,"wave":0}
+FULL_OPERATION_TRACE {"ammo":9,"health":[33.6,98.0,62.0],"hostiles":[{"hp":79.0,"id":"BOSS_SITE7_FORGE_01","position":"(2034.08, 541.18)"}],"position":[1787.20129394531,693.744506835938],"remaining":1,"step":4,"tick":2400,"wave":0}
+FULL_OPERATION_TRACE {"ammo":8,"health":[33.6,78.0,62.0],"hostiles":[],"position":[1763.46887207031,646.036071777344],"remaining":0,"step":5,"tick":2431,"wave":0}
+SITE7_FULL_OPERATION_SMOKE: PASS
+WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 1 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

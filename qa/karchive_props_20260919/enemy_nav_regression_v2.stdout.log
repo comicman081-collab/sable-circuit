@@ -1,0 +1,8 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+M7_RASTER_QUARANTINED identity=aster status=partial chunks=2 encoded=20000 present=15000 declared=94718
+SCRIPT ERROR: Trying to cast a freed object.
+   at: run (res://tests/render/enemy_cover_navigation_regression.gd:31)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tests/render/enemy_cover_navigation_regression.gd:31)
+       [1] settle (res://tests/render/enemy_cover_navigation_regression.gd:11)

@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "candidate": "MICA_C03_R17_POSE_SWITCH",
+  "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+  "overall_gate": "FAIL_NOT_PROMOTABLE",
+  "source_contract": {
+    "original_art": "built_in_ImageGen",
+    "movement_rig_animation": ["Blender", "UAL"],
+    "runtime_target": "Godot",
+    "project_root": "D:/AI 종합 폴더/Games/Sable-circuit"
+  },
+  "evidence": {
+    "native_video": {
+      "path": "artifacts/mica_c03_r17_pose_switch_runtime_review_native_1920x1080.mp4",
+      "resolution": [1920, 1080],
+      "fps": 24,
+      "frames": 192,
+      "directions": ["E", "SE", "S", "SW", "W", "NW", "N", "NE"],
+      "native_cell_resolution": [384, 384],
+      "upscale": false,
+      "sha256": "cf462d5528f9e34639de9b8c52b2be200499286e9939e25737de64dd9de67091",
+      "container_decode_gate": "PASS",
+      "visual_quality_gate": "HOLD"
+    },
+    "interactive_html": {
+      "path": "artifacts/mica_c03_r17_pose_switch_interactive_preview/MICA_C03_INTERACTIVE_STRIDE_FIRE.html",
+      "sha256": "797f255c02986648bc4e8b771d1468223d5423fe0821dad49a12c10509c409c0",
+      "static_gate": "PASS_STATIC_CONFIG_ONLY",
+      "dynamic_gate": "NOT_PROVIDED",
+      "runtime_bundle": "artifacts/MICA_C03_R17_POSE_SWITCH_REVIEW_PACKET.zip"
+    },
+    "review_packet_zip": {
+      "path": "artifacts/MICA_C03_R17_POSE_SWITCH_REVIEW_PACKET.zip",
+      "sha256": "29BDE8BACE1F93AEACE61FE75C4755D808D27897DF7D29BCAD23D5184C197C9C"
+    }
+  },
+  "local_checks": {
+    "runtime_atlases": "PASS_STATIC_RUNTIME_BUNDLE",
+    "muzzle_descriptor_match": true,
+    "held_raster_guard": {
+      "report": "artifacts/mica_c03_r17_pose_switch_interactive_preview/MICA_C03_R17_POSE_SWITCH_TEMPORAL_GUARD.json",
+      "gate": "FAIL_NOT_PROMOTABLE",
+      "all_directions": "E,SE,S,SW,W,NW,N,NE",
+      "finding": "each direction has only 3 unique move rasters with max exact hold run 6"
+    },
+    "visual_evidence_1080p_video": "PASS_CONTAINER_AND_DECODE_ONLY",
+    "visual_evidence_1080p_html": "PASS_STATIC_CONFIG_ONLY",
+    "support_sole_visual_lock": "NOT_PROVEN",
+    "same_direction_wrap_visual": "NOT_PROVEN",
+    "sw_direction_weapon_alignment": "HOLD_MISMATCH_REQUIRES_REVIEW"
+  },
+  "ponytail_full": {
+    "r17_runtime_review": "FAIL_NOT_PROMOTABLE",
+    "r17_runtime_reason": "all eight directions contain only A/neutral/B three unique rasters held for six frames; no continuous sole/root proof; SW muzzle axis mismatch",
+    "r17_direction_gates": {
+      "A_gait_readability": "FAIL",
+      "B_volume_waist": "FAIL",
+      "C_foot_position_continuity": "FAIL",
+      "D_support_sole_lock_and_cadence": "FAIL",
+      "E_composite": "PASS_EXCEPT_SW_DIRECTIONAL_WEAPON",
+      "F_overall": "FAIL"
+    },
+    "r18_sw_attempt": "FAIL_STATIC",
+    "r18_sw_reason": "master_and_pose_A_rear_boot_toe_out_opposes_SW_axis",
+    "r18_disposition": "QUARANTINED_PRESERVE_NO_PROMOTION"
+  },
+  "web_review": {
+    "conversation": "https://chatgpt.com/c/6a93c84f-fb1c-83e8-9d88-959e708b2463",
+    "request_status": "SUBMITTED_WITH_R17_VIDEO_HTML_ZIP_AND_VALIDATORS",
+    "reply_status": "RECEIVED",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "direction_gates": {
+      "all_directions": {
+        "A_gait_and_no_skate": "FAIL",
+        "B_temporal_body_stability": "FAIL",
+        "C_foot_position_continuity": "FAIL",
+        "D_sole_lock_handoff_cadence": "FAIL",
+        "E_composite": "PASS_EXCEPT_SW_DIRECTIONAL_WEAPON",
+        "F": "FAIL"
+      }
+    },
+    "findings": [
+      "Visible move schedule is A6_NEUTRAL6_B6_NEUTRAL6, not 24 continuous gait poses.",
+      "Held pose changes create whole-body snap/slide pulses and support sole skating.",
+      "Native MP4 does not contain world translation, support markers, same-direction F23-to-F00, or two-cycle evidence.",
+      "SW weapon points screen lower-right and fails SW directional muzzle alignment."
+    ]
+  },
+  "promotion": {
+    "direction_promotion": "HOLD",
+    "eight_direction_promotion": "HOLD",
+    "runtime_pointer_update": "NOT_ALLOWED",
+    "failed_and_held_assets": "QUARANTINED_PRESERVE",
+    "delete_quarantined_assets": false
+  }
+}

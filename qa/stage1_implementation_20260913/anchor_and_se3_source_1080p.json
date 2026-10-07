@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-13T08:40:52.734402+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\source_panels\\9df8e882aa9f_3f539202\\native_lower_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 584956,
+      "sha256": "59294ff80ac2a4fbf9950ab6aec077e6f7abe92eef37983dd1842913a6f85a21"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\stage1_enemies_20260913\\anchor\\375bc85a7513_3203b573\\full_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1833833,
+      "sha256": "20f1faa9252a093850fd5ef47110756df0d4074d6ff8dfc06443db3d397479b7"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\stage1_enemies_20260913\\anchor\\375bc85a7513_3203b573\\native_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2583971,
+      "sha256": "c2a285ee7de0a5ae7e51395b2c7956f7589c05c32fc867ba2111c2a9fddcf401"
+    }
+  ]
+}

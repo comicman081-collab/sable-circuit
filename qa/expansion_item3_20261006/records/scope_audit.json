@@ -1,0 +1,30 @@
+{
+  "baseline": "453d20cb",
+  "head": "d609421199072d533abf0366225ae36d2f414471",
+  "protected_changes": [],
+  "unchanged_test_git_blob_sha256": {
+    "tests/smoke/upgrade_economy_smoke.gd": "0ab444b24a8c8b31ac2efd2186e40da16d16a986db8f0738cb7173b8ced3ec53",
+    "tests/smoke/m10_base_ui_action_smoke.gd": "0f54463d141611b49c15462323dff9cad90dc342f8192408bc4cea25e181b35d",
+    "tests/smoke/m10_intel_loadout_smoke.gd": "60697bac173f43a56a0eeaf1fd6d54f6d738c3e0b2eacf3ece9254e74aea21a0",
+    "tests/smoke/site7_campaign_progression_smoke.gd": "8834845b500cba033b334979b01445a6dc3a941e9f2916bb8e36f137b016ebec",
+    "tests/smoke/site7_boss_registry_smoke.gd": "4791d2a10547a59209feb3185fd6d7f5028b72f926cd3e3881b910bc4f914692",
+    "tests/smoke/site7_boss_pattern_smoke.gd": "4a49b5b99db0b270603d243500bd257c204f01b3cca0de36e7c7f27c024cd137",
+    "tests/smoke/site7_boss_duel_smoke.gd": "6dcdd3886b517922bdd08d8640c74ca349e938552fcb01319c3e6efb82e28e84",
+    "tests/smoke/site7_boss_room_fairness_smoke.gd": "30ce7dedebb305c991690bca14ad47a8ed87548272a8e43d7fad81cc7a92732f",
+    "tests/smoke/site7_robot_roster_smoke.gd": "811dc9bccbed934868c1a7cfd819098be7c9c59c447614a970788323157b3985"
+  },
+  "catalogs": {
+    "data/progression/intel_discoveries.json": {
+      "old_rows": 3,
+      "new_rows": 8,
+      "old_rows_exact": true
+    },
+    "data/progression/weapons.json": {
+      "old_rows": 6,
+      "new_rows": 8,
+      "old_rows_exact": true
+    }
+  },
+  "v5_writer_git_blob": "cbd6062f094bea3629e04a5b1648cf6b48985190",
+  "v5_fixture_sha256": "0531c6e4d64c99479105954001f9c2fe7c4d0c868bfd72f2b8339d56310e8002"
+}

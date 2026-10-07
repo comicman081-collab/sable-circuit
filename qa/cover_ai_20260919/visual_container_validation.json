@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-19T10:37:08.705562+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\cover_ai_20260919\\battle_193521\\site7_cover_combat_10s.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 60.00000000000001,
+      "frames": 600,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 150,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 300,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 450,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 599,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 13095792,
+      "sha256": "763246b1f918da9ddaf2d3ec26bee31a240b2ff2026a8dde27f1ecc665220a9c"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\cover_ai_20260919\\battle_193521\\frame_0030.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2884643,
+      "sha256": "e3e39294a607cb0784885210ddacf4609ea35a09c6102314b309ce1aee88610b"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\cover_ai_20260919\\battle_193521\\frame_0240.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2950099,
+      "sha256": "89c88e9968422ba8ff9e2288ed00e3edf9b1d1f9573b4be5c99dc487231f2a37"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\cover_ai_20260919\\battle_193521\\frame_0540.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 3100650,
+      "sha256": "b3a9fad7bea6d50713d9d08da5997470a73aa44d5fae561d773e8b1bdbd6cbe4"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\cover_ai_20260919\\run_1789814112_45\\01_cover_holds.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2960894,
+      "sha256": "ec1f57f06cab9cc41078f17f1a48669d174fab68fc2c113d9344bad6feac162b"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\cover_ai_20260919\\run_1789814112_45\\02_follower_bypass.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2956654,
+      "sha256": "b9c4e880b0583886d72fec1c8b415438873b730f1bb04e4271633a447116325e"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\cover_ai_20260919\\run_1789814112_45\\03_drone_new_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2949453,
+      "sha256": "024a19f0cb4f46795229bc0613741e236fbf522e84cc86ba677764b18b6ee51f"
+    }
+  ]
+}

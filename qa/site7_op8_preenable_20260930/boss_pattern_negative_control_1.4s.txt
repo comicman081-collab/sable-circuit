@@ -1,0 +1,8 @@
+Negative control 2026-09-30: scripts/combat/site7_enemy_tactics.gd GANTRY_LATE_WINDUP set to 1.4 (was 1.6), then
+godot --headless -s res://tests/smoke/site7_boss_pattern_smoke.gd. The constant was restored byte-exactly afterwards (git status clean).
+godot exit code: 1
+      1 ERROR: circle winds up 1.6 s, never under 1.56 s in GANTRY phase=3 serial=2
+      3 ERROR: lane winds up 1.6 s, never under 1.56 s in GANTRY phase=2 serial=1
+      4 ERROR: lane winds up 1.6 s, never under 1.56 s in GANTRY phase=3 serial=1
+      4 ERROR: lane winds up 1.6 s, never under 1.56 s in GANTRY phase=3 serial=2
+SITE7_BOSS_PATTERN_SMOKE: FAIL (959 checks) res://.cache/claude_scratch/negctl/pattern.json

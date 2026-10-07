@@ -1,0 +1,812 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-28T12:14:06.915167+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\art_review\\five_bosses_equal_height.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 436963,
+      "sha256": "f50476c8853754c7adacced888b2b85f5bf3134090db196bee693f7aeba051f6"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\art_review\\relay_sentinel_dark_native_crops.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1848267,
+      "sha256": "06aecf1fa84a576d31d2104daa26efed7f8a340ed20a9f6bc5ce32d0a0e94d2f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\art_review\\relay_sentinel_light_native_crops.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1882046,
+      "sha256": "f3e3dd9db8a5ca4e9cfa1c3c6d5baf3035c17f7b39554e1ef6855f9a36a37e1c"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\art_review\\resonance_remnant_dark_native_crops.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1194197,
+      "sha256": "2b6f942f2af005b94a0ada1db7abd773836664a9b8e59b10c94656ca6a4b7c63"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\art_review\\resonance_remnant_light_native_crops.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1214683,
+      "sha256": "aed3c5d09de8fe11f3196dcc37f1bc748f6c65a3e551cb15b93db87d259a20a5"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission1_boss_room.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2491286,
+      "sha256": "d5abd958787305e789aa8e64ca2b8179be2526481cca79ea7ec426245ad49454"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission1_phase1_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2505875,
+      "sha256": "b8a0b269477e4898af4009a34a03ce077aae2b1f53fa1939fbd81f7612f0e4b6"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission1_phase2_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2519039,
+      "sha256": "eaa22b0f19882f32b23aa5f1c367c02a8bd1109b99d1e27bdbd39c8683754728"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission1_phase3_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2561121,
+      "sha256": "938ba3c20f88694cf3c949ac9a96e07781acf4f1c963c47a3293cf59eca210af"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission2_boss_room.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2181283,
+      "sha256": "03d91acc14cf9eaba9dfb860e67df1b5aa85f0b42da2bbd8d685f8748e54a0d0"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission2_phase1_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2155700,
+      "sha256": "18752b305c33ff96e46a57c97b683df20f878ca71787f6fb43512bb7fa9fd9a0"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission2_phase2_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2195228,
+      "sha256": "2673103aaa232389e8cbf9873c519aa34b997ebd9ae89d6a0782ff58a3698581"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission2_phase3_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2227290,
+      "sha256": "95d0d67cc2b6d6aa553edc28da4c74cb1c2fde96235755244cffba2359af1c84"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission3_boss_room.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2295526,
+      "sha256": "7be7508309810751f5d1f3c89c8d140eb79373a0e924d9262d3ccbb2ef6d4ce4"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission3_phase1_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2380459,
+      "sha256": "aec2bb18477be2d07788d49041e73b31bd48093056a99edbe49e204b0c3ffc8d"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission3_phase2_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2341704,
+      "sha256": "4a7e3cda41f6da02b0f2fcd6da59677c5efdab17ab372082ce2a8307544d0ba1"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission3_phase3_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2405105,
+      "sha256": "63cd8d4feec7aabda5d81a4d3fe73abe8637b16c7456a36a51ca65ea6ab39556"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission4_boss_room.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2448904,
+      "sha256": "7cf878a3a80a4c35c78f8a628038d457b4e8799453de117c1c5cce551e599888"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission4_phase1_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2456725,
+      "sha256": "4959d6f46181c258bd79cf36b544dc461eaf067c8e86fc57698bac9e8b2e2835"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission4_phase2_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2479639,
+      "sha256": "61ac24b6d420698d3f68f9bd910abe47b146886d69f1553321b10e4ca8008be4"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission4_phase3_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2502787,
+      "sha256": "89d4982da4277d9a1c4bd4ee606f94eb052212f5c14f6b07e80f7215be69a9ee"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission5_boss_room.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1800628,
+      "sha256": "39172952f006cd2a886131762beccb399d48e3af29bab75869d36acac4697b8b"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission5_phase1_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1831273,
+      "sha256": "e3ad54f3f827ef680c96ba1356a60c7d86bf55414c765c3228fad23b9736107e"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission5_phase2_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1877655,
+      "sha256": "5409e7a2e5f2c169a9d093dd001abce244ef54ca4e1effe8a522c5f364483996"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\captures\\mission5_phase3_warning.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1886394,
+      "sha256": "ad6d3d60f5b55a9c49483bf4f51f84b3472eb94ff7598f09004f5d121ff0eea7"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage1\\frame_0030.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2488797,
+      "sha256": "7a70071bd4024e8cc51144c8bb8efba9ee26ab7a9fe166d8f4414d3014397e6b"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage1\\frame_0300.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2345127,
+      "sha256": "0ac452e03d921ee86d16bd294ece71b4dc30b5d34c63fbef7359b5b8ff63bd7f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage1\\frame_0540.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2331705,
+      "sha256": "13446f35ce2b11513308f0eabf1d7b18864fd38e7fbbc02a90f86d2babd01e1c"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage1\\stage1_combat_10s_sound_1080p.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "pyav",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 60.0,
+      "frames": 600,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 150,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 300,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 450,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 599,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 17406053,
+      "sha256": "d7a6d91216077d7bc8aece4eb1fe6177f2b16375ddd8c2463e0b95096475806d"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage2\\frame_0030.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2334100,
+      "sha256": "3c2f97631c5f343be0277b52debea1ce225fd2a4d93d9f065029d8f1253ce9f4"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage2\\frame_0300.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2189153,
+      "sha256": "59df636812fe38228c7a7e854b22f63edd56b5e8a20311142a3bbd994f4c2edd"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage2\\frame_0540.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2283351,
+      "sha256": "4007b41dc05148a494005aff0614913fce17336c129b46ad78010efee546467d"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage2\\stage2_combat_10s_sound_1080p.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "pyav",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 60.0,
+      "frames": 600,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 150,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 300,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 450,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 599,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 18768661,
+      "sha256": "b8e627d15176388219935ca4885b29c542e7a234a144dffff26bad5db49b31f0"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage3\\frame_0030.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2528053,
+      "sha256": "30e7f4802aaf5fd0f0bd3636510bce1f40aff8e26ebab2d76dae68c12c20707a"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage3\\frame_0300.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2414760,
+      "sha256": "1d01ebdedce54dd4c9ab365e151dac876a974fa96c1825c4bae544ade82792ea"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage3\\frame_0540.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2556610,
+      "sha256": "4420e227b937d42c567fd16fbf513d6a9e55fc5b112d00cc103853deac5e6285"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage3\\stage3_combat_10s_sound_1080p.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "pyav",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 60.0,
+      "frames": 600,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 150,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 300,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 450,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 599,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 17807321,
+      "sha256": "692d4ef7ddcac5749339a851d7d6adec8b8190f2a8ff836b4efc547af7e4f389"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage4\\frame_0030.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2685982,
+      "sha256": "18dda315cc48d402647db6bb1009bd685681077aeb102ad5d274072e742573d8"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage4\\frame_0300.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2598347,
+      "sha256": "88b33290221ee5d603dd66debb503ab21cec78c580df6ec6db0f1c0baac8fbac"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage4\\frame_0540.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2662728,
+      "sha256": "5f8596c54f156ce5bbacfc1fb547b1ac650a1d8bb0c9bf0b1ddee4186bb341fa"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage4\\stage4_combat_10s_sound_1080p.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "pyav",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 60.0,
+      "frames": 600,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 150,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 300,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 450,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 599,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 21059382,
+      "sha256": "5a68f7992ce070e65c158708eafa1707ea774d651f956618e4f201e56c6f2ab0"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage5\\frame_0030.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2011660,
+      "sha256": "ece91c66d3338fad8c9f5b88f5d9f17d0169f1f36d0d4be85f0afad296fd5257"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage5\\frame_0300.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1769456,
+      "sha256": "3d19014923b918a1d176b952bef31df2038650cb65359795bc92ec7b6df5ee53"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage5\\frame_0540.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1972025,
+      "sha256": "a47fc315eec89460143663245cd34fb55051f4fc73648968584bf848f336e952"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_boss_robots_20260928_final\\video_210940\\stage5\\stage5_combat_10s_sound_1080p.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "pyav",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 60.0,
+      "frames": 600,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 150,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 300,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 450,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 599,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 16820724,
+      "sha256": "185cb56820886e754a931ef98fbc073b9fd9de30f028f2ace83b465b7025536e"
+    }
+  ]
+}

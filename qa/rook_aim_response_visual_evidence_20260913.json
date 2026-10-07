@@ -1,0 +1,458 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-13T02:51:50.232038+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook_aim_motion_20260913.webm",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 29.9292533466586,
+      "frames": 1139,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 284,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 569,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 854,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 1138,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 8008284,
+      "sha256": "4a975fa1b8e51f8bd237587d4c64d1bb229ae147effcbdd85617bae9026e3c21"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\full_frame\\frame_031.523.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 405106,
+      "sha256": "644a6fb6924583e82a09d44bcfb0c94b10f7a60f801c2e944eb2d16c4515c74d"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\dist\\ROOK_Motion_Studio.html",
+      "error": null,
+      "kind": "html",
+      "evidence_class": "static_config_only",
+      "canvas_resolutions": [
+        [
+          1920,
+          1080
+        ],
+        [
+          1920,
+          1080
+        ],
+        [
+          1920,
+          1080
+        ]
+      ],
+      "video_element_resolutions": [],
+      "decodable": true,
+      "native_1080p_container": true,
+      "dynamic_runtime_evidence": false,
+      "dynamic_capture_required_for_visual_gate": true,
+      "size_bytes": 13398694,
+      "sha256": "aafc250018090533c0aa9de5050f37a590d8befc338c269bbd2a47ed8a969412"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_00.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 828395,
+      "sha256": "48d36af1f7a867ff6f76df57edb5c3e86ee76751a2a9906b14a8639be73c623a"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_01.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 734773,
+      "sha256": "071626f970d2e5f3c418ce68aa6641014cce5428a96eb39c4d6d050e0cb7d5a5"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_02.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 733874,
+      "sha256": "30a821dcaffb90e9782e9c30608324ca2f91605861e535fd5fbf1bd65c50cf7e"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_03.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 656768,
+      "sha256": "66afe41d0423028e713d91d0c89234c8e8bab07fea1bea22d7a8359aba82c6aa"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_04.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 629224,
+      "sha256": "35c2ed6f3f94e8c405330f728fce9c8f52e51967a6ffccecc55d06c787a4d665"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_05.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 656418,
+      "sha256": "53e738dd92bb2eac03473372fafa2933f125b692282cbbf154015d6701baa5f1"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_06.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 739098,
+      "sha256": "f6ed53f3e0407f58de8d3e8ceb01fc7133255e8ad8d36f800df6f597eabad872"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_07.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 759050,
+      "sha256": "4ac60f9ed4e8d8d8f18c7085fd362fc1b45d7ee8386b4c73201c07baaec90145"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_08.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 820150,
+      "sha256": "8ed0550c708c3540be3799b8250f2ac73df2519ef511faab6a248c8b56cef687"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_09.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 731332,
+      "sha256": "fe93edbd221f24aff1b1babc9a4503cc8baadc37559cd5e0f5a3c724c9d68c8a"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_10.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 707809,
+      "sha256": "078f90e41758f9c262690eff087c1a36043d6e1aed9a065b10ac4171db1908a4"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_11.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 641676,
+      "sha256": "9dcbbe746efb7e7b0e6f4271f12545badefd4a7f2508a8f530970748e6d72d74"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_12.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 643695,
+      "sha256": "1b6ddb004f0680f800018b6b9082b3fe3d08fb05b9aa1492083f0efaed9625ec"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_13.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 604800,
+      "sha256": "e609343118ebe781ff3e632bc665606ae9404c2e6147e9bd60988e7641c12683"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_14.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 738831,
+      "sha256": "c36dd121538e2352b9a973cb70bdcde7e6303815fd4af24362387191aff80cc9"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_15.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 784844,
+      "sha256": "99d301f059954c0381fd92f9328259940a229b268af69f50ac68981edaa14cbe"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_16.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 769137,
+      "sha256": "51411e3f5ba8fd9758e8d292b42265b623b9c9c31e02ec8b83ff12bd1e6abd86"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_17.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 720026,
+      "sha256": "bb99384a17dbfc8b29f35e406aecd026b2242f1dd226c7bb3fbffc8cf448c72e"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_18.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 727908,
+      "sha256": "785d2845569da6b079a38cbe8fdfc7f1a3ebea503b43b7db6cdd7a3b39f34e32"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_19.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 880075,
+      "sha256": "92f2e6a5e8b4fb6511e8f76de5bb44f6c5eee9bd7ec233d878f5daa030ea090e"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_20.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 931100,
+      "sha256": "88ac6ca072284a3ef28bce367e13ae2e20887937ee1b49ec6a26bbf096d5fd97"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_21.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 879679,
+      "sha256": "e9f65c791796cca02249d66c6575899e12307f6fd1f95323188fa6a7c3b16568"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_22.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 798728,
+      "sha256": "9c5dc7feb76eb92de2e37ba98d62980dc75959d96d1aa32c4ff2dc87366fa6b1"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\aim_response_20260913\\sequence_23.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1136
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 785433,
+      "sha256": "6dc7fec61ea9202c7b0b42e16905793059cd89ff9949c242b54202754f3d740f"
+    }
+  ]
+}

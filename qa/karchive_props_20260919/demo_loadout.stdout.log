@@ -1,0 +1,50 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS: Current campaign schema
+PASS: M13 starts with exactly three authored default weapons
+PASS: each operator starts with its authored default weapon
+PASS: locked special weapon cannot be equipped early
+PASS: Armory level 1 purchases
+PASS: Armory level 1 unlocks burst AR
+PASS: Rook cannot equip incompatible burst AR
+PASS: Aster equips burst AR
+PASS: Armory level 2 purchases
+PASS: Armory level 2 unlocks LMG
+PASS: Aster weapon cycle advances to the next unlocked compatible weapon
+PASS: Aster can directly equip unlocked LMG
+PASS: Aster returns to burst AR for firing audit
+PASS: Anchor analysis completes
+PASS: Anchor analysis unlocks Arc Lance special weapon
+PASS: Mica equips Arc Lance special weapon
+M7_RASTER_QUARANTINED identity=aster status=partial chunks=2 encoded=20000 present=15000 declared=94718
+PASS: M13 GameFlow deploys StoryStage01
+PASS: next deployment injects Aster burst AR
+PASS: next deployment keeps Rook scattergun
+PASS: next deployment injects Mica Arc Lance
+PASS: burst AR runtime spec owns 30-mag / 3-shot / 3-ammo transaction
+PASS: scattergun runtime spec owns five pellets for one shell
+PASS: Arc Lance runtime spec owns 6-mag / 28 base damage
+PASS: Aster burst trigger fires
+PASS: burst trigger consumes exactly three rounds
+PASS: burst trigger spawns exactly three projectiles
+PASS: burst projectile damage uses weapon spec times campaign multiplier
+PASS: burst projectile speed/lifetime use weapon spec
+PASS: burst projectile damage uses weapon spec times campaign multiplier
+PASS: burst projectile speed/lifetime use weapon spec
+PASS: burst projectile damage uses weapon spec times campaign multiplier
+PASS: burst projectile speed/lifetime use weapon spec
+PASS: Rook scattergun trigger fires
+PASS: scattergun trigger consumes exactly one shell
+PASS: scattergun trigger spawns exactly five pellets
+PASS: Mica Arc Lance trigger fires
+PASS: Arc Lance consumes one cell and spawns one projectile
+PASS: Arc Lance projectile uses special weapon damage/speed authority
+PASS: burst AR refuses trigger when fewer than three rounds remain
+PASS: insufficient burst ammo begins reload transaction
+PASS: Aster Base weapon cycle button is enabled when multiple compatible weapons are unlocked
+PASS: actual Base weapon button emits Aster operator ID exactly once
+PASS: Base receives all six weapon specs without new image assets
+PASS: v2 campaign migrates to current schema
+PASS: v2 save receives all three safe default weapons
+PASS: v2 Armory level 1 derives burst AR unlock during migration
+M13_WEAPON_LOADOUT_SMOKE: PASS

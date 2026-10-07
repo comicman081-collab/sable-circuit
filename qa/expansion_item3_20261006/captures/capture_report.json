@@ -1,0 +1,64 @@
+{
+  "balance_approval": false,
+  "captures": [
+    {
+      "capture": "res://qa/expansion_item3_20261006/captures/lab_page1.png",
+      "id": "lab_page1",
+      "note": "Three original analyses in original order; new samples are controlled fixture stock.",
+      "sha256": "44ffe63c5ca0fd38f5ce5930aac636add69294fefd8e33de95c196969834007f",
+      "source_capture": "res://.cache/diag/expansion_item3_20261006/native/lab_page1.png"
+    },
+    {
+      "capture": "res://qa/expansion_item3_20261006/captures/lab_page3.png",
+      "id": "lab_page3",
+      "note": "All eight analyses span 3+3+2 rows.",
+      "sha256": "239164b728975153f253fb29abaa7c7d9b7bdc8798bb8f60d10b62044091f97d",
+      "source_capture": "res://.cache/diag/expansion_item3_20261006/native/lab_page3.png"
+    },
+    {
+      "capture": "res://qa/expansion_item3_20261006/captures/lab_module_cycle.png",
+      "id": "lab_module_cycle",
+      "note": "Actual GameFlow module cycle: FROST LENS / SPORE FILTER / ECHO RELAY; one slot each.",
+      "sha256": "6a5c19f07f7296af71e4f29a41b1db98d6e09ae7d4927ce2dc98a05bf7342deb",
+      "source_capture": "res://.cache/diag/expansion_item3_20261006/native/lab_module_cycle.png"
+    },
+    {
+      "capture": "res://qa/expansion_item3_20261006/captures/field_intel8.png",
+      "id": "field_intel8",
+      "note": "Actual stage HUD, eight-key fixture cargo; gameplay paused, not a human play capture.",
+      "sha256": "680dbf1c94f31a5ad11311072202d27b27b41cdd13349ad3ab1e0d3f952101d3",
+      "source_capture": "res://.cache/diag/expansion_item3_20261006/native/field_intel8.png"
+    },
+    {
+      "capture": "res://qa/expansion_item3_20261006/captures/vfx_wpn_dmr_rail_01.png",
+      "id": "vfx_wpn_dmr_rail_01",
+      "note": "HELD VFX FIXTURE: real weapon trigger; projectile flight and impact positions staged. Not live collision or human play.",
+      "sha256": "6a406af0b278730b3219c17265194ee28cb718ac280584969ddd9636246c5765",
+      "source_capture": "res://.cache/diag/expansion_item3_20261006/native/vfx_wpn_dmr_rail_01.png"
+    },
+    {
+      "capture": "res://qa/expansion_item3_20261006/captures/vfx_wpn_shotgun_null_01.png",
+      "id": "vfx_wpn_shotgun_null_01",
+      "note": "HELD VFX FIXTURE: real weapon trigger; projectile flight and impact positions staged. Not live collision or human play.",
+      "sha256": "5ec7386985cdd2d4cc6cb8dcea78e245c0297e4dd5514b8d5da224f01aced37f",
+      "source_capture": "res://.cache/diag/expansion_item3_20261006/native/vfx_wpn_shotgun_null_01.png"
+    },
+    {
+      "capture": "res://qa/expansion_item3_20261006/captures/results_intel8.png",
+      "id": "results_intel8",
+      "note": "Actual GameFlow results commit includes all eight secured sample keys.",
+      "sha256": "5df7572da2bb796841c1dcb097d8af06e3c873d95a54324076a15c9e947733f3",
+      "source_capture": "res://.cache/diag/expansion_item3_20261006/native/results_intel8.png"
+    }
+  ],
+  "checks": 16,
+  "failures": [],
+  "human_play": false,
+  "native_capture": true,
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "resize": false,
+  "visual_approval": false
+}

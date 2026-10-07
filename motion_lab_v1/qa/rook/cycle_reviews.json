@@ -1,0 +1,985 @@
+[
+  {
+    "character": "rook",
+    "direction": "SE",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "SE",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "9317f084f4e3583b28e1ebf04bd06c3ee91cdca97effa11d304fec3e8f16091c"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "SE/walk/0",
+          "path": "art/rook/SE_walk_0_master.png",
+          "sha256": "2d7946176b66df9aa0d03d6eab8bb671f6d6891c89961b69f6577345f04507d0"
+        },
+        {
+          "slot": "SE/walk/1",
+          "path": "art/rook/SE_walk_1_master.png",
+          "sha256": "5138255013dc62834a5b31e114ac174d075df858ce4fb303843ead5dc4819c5c"
+        },
+        {
+          "slot": "SE/walk/2",
+          "path": "art/rook/SE_walk_2_master.png",
+          "sha256": "6693cacb04edcb81f643bbe4485211eee40902ca9510045be8e7969042007115"
+        },
+        {
+          "slot": "SE/walk/3",
+          "path": "art/rook/SE_walk_3_master.png",
+          "sha256": "6f15e9fad6b7bb3504cbd342f22065b2c0987b82bc662c2cbbef26fc19600551"
+        },
+        {
+          "slot": "SE/walk/4",
+          "path": "art/rook/SE_walk_4_master.png",
+          "sha256": "19c1129be2a76c3521ee42264c46ff55e2a0b73a5aa0c3766ec4807b95d567ee"
+        },
+        {
+          "slot": "SE/walk/5",
+          "path": "art/rook/SE_walk_5_master.png",
+          "sha256": "d0b5a01fdb55aa09ab3d2ea341864fc9ac701c7e40a373a4496d256bf976fdd0"
+        }
+      ]
+    },
+    "inputSHA256": "80be37cfa75a5adec9b116b03a7d0068432c57466b5b3fc9d229cd8e1e734701",
+    "recordedAt": "2026-09-12T15:23:27.973528+00:00",
+    "decision": "repair",
+    "notes": "Observed SE 0 and 3 retain the same ammunition-pouch-side leg forward; 1 and 4 repeat the other leg lifted behind. These are not opposite contact halves. Repair source pose order and leg continuity; do not approve unchanged pixels.",
+    "reviewer": "Codex actual source-sheet inspection 2026-09-13",
+    "evidence": {
+      "path": "qa/build_candidates/rook/c643f1ce2c9e4208a53222beea6a5eb6/reference/atlas/rook/SE_walk_keyframes.png",
+      "sha256": "ac5ba32076a6fed530573f894371b10a35d4c19ea49cb33d1ce53d2f3b7f2df8"
+    }
+  },
+  {
+    "character": "rook",
+    "direction": "N",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "N",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "9317f084f4e3583b28e1ebf04bd06c3ee91cdca97effa11d304fec3e8f16091c"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "N/walk/0",
+          "path": "art/rook/N_walk_0_master.png",
+          "sha256": "1e1db289162225026aba729fa8ace09dc13d2263a6def979d2030ecc9f1ca891"
+        },
+        {
+          "slot": "N/walk/1",
+          "path": "art/rook/N_walk_1_master.png",
+          "sha256": "4f6f5b082c1aeb37831b6b0ae6ec92ff40721fe278735bbf526650628e38fcc2"
+        },
+        {
+          "slot": "N/walk/2",
+          "path": "art/rook/N_walk_2_master.png",
+          "sha256": "ad5fe8932b8aefa01304c77c9957619d29abc0fa9d481c5b7c330a91c8d5c97e"
+        },
+        {
+          "slot": "N/walk/3",
+          "path": "art/rook/N_walk_3_master.png",
+          "sha256": "2f1680fe4033790339e8c0ad76938d782e0989a8b7a04ba56543e40380e11849"
+        },
+        {
+          "slot": "N/walk/4",
+          "path": "art/rook/N_walk_4_master.png",
+          "sha256": "fb84ba7a4014801a181112fc89ce28ddd2b6e60b73784234183994cee5b207f5"
+        },
+        {
+          "slot": "N/walk/5",
+          "path": "art/rook/N_walk_5_master.png",
+          "sha256": "be94fcd071f81ae46ce0e6393c48041c5cc887a760c2768428dd8e7d10780359"
+        }
+      ]
+    },
+    "inputSHA256": "3f47104351e25bc89dc77f3da45a303e75d0206c4ec21252e9dcca820a33f847",
+    "recordedAt": "2026-09-12T15:23:28.278653+00:00",
+    "decision": "repair",
+    "notes": "Observed N 0 and 3 keep the ammunition-pouch left leg closer to the camera and the other leg advanced away; 1 and 4 lift that same trailing left sole. The two halves do not exchange the support/advance roles.",
+    "reviewer": "Codex actual source-sheet inspection 2026-09-13",
+    "evidence": {
+      "path": "qa/build_candidates/rook/c643f1ce2c9e4208a53222beea6a5eb6/reference/atlas/rook/N_walk_keyframes.png",
+      "sha256": "99cd7ba4fda8344e0bf5136fd9150c3373b0712f338c3af07065f2506867b142"
+    }
+  },
+  {
+    "character": "rook",
+    "direction": "E",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "E",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "9317f084f4e3583b28e1ebf04bd06c3ee91cdca97effa11d304fec3e8f16091c"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "E/walk/0",
+          "path": "art/rook/E_walk_0_master.png",
+          "sha256": "6784b966c3f2eb44ecb45b964c38c0a31fe157ac7a44faccf9c7a0247347ee38"
+        },
+        {
+          "slot": "E/walk/1",
+          "path": "art/rook/E_walk_1_master.png",
+          "sha256": "c405edc9234ed939b62eba17ef22cfa9eec2d38b57dd64eb6c5cf64c22c69057"
+        },
+        {
+          "slot": "E/walk/2",
+          "path": "art/rook/E_walk_2_master.png",
+          "sha256": "2ed6088339b3bed4e24a8d03b15b3300816fffb7a524c7d6796acc6bea6c9534"
+        },
+        {
+          "slot": "E/walk/3",
+          "path": "art/rook/E_walk_3_master.png",
+          "sha256": "475e0c25df1d7e0211dc0e10f2f7cc2907dfb801f9b68bfac911f13ce32bce61"
+        },
+        {
+          "slot": "E/walk/4",
+          "path": "art/rook/E_walk_4_master.png",
+          "sha256": "8d1b3832b4acd59a21e172c2882cd3f260713bf68d97131888fc9e0a3124e843"
+        },
+        {
+          "slot": "E/walk/5",
+          "path": "art/rook/E_walk_5_master.png",
+          "sha256": "4408d8ee52069fba927e24004cfb45dd99f8b12b8f33f488db9274ba6ce165b4"
+        }
+      ]
+    },
+    "inputSHA256": "7ba380b55f9fd8717e9ca50ca705ca88dc8c7b62d49313c663bc9f3ce3175646",
+    "recordedAt": "2026-09-12T15:52:09.216546+00:00",
+    "decision": "repair",
+    "notes": "Native 1920x1080 cycle inspection at 0.000s, 1.500s, 3.000s and 3.300s plus pair panels found E0/E3 repeat the same screen-right support, E1/E4 repeat the same rear swing/support role, and E2/E5 repeat the same passing/support role. Opposite contact exchange and natural loop seam are absent; keep E unapproved and repair the source art.",
+    "reviewer": "Codex Luna E cycle visual review 2026-09-13",
+    "evidence": {
+      "path": "qa/rook/luna_repair_20260913/E_cycle_visual_repair_observations.md",
+      "sha256": "d7134a07e044b90965383ed2c46ce240c50aa4273005a5625bcd9cfda47a7c98"
+    }
+  },
+  {
+    "character": "rook",
+    "direction": "E",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "E",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "9317f084f4e3583b28e1ebf04bd06c3ee91cdca97effa11d304fec3e8f16091c"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "E/walk/0",
+          "path": "art/rook/E_walk_0_master.png",
+          "sha256": "6784b966c3f2eb44ecb45b964c38c0a31fe157ac7a44faccf9c7a0247347ee38"
+        },
+        {
+          "slot": "E/walk/1",
+          "path": "art/rook/E_walk_1_master.png",
+          "sha256": "c405edc9234ed939b62eba17ef22cfa9eec2d38b57dd64eb6c5cf64c22c69057"
+        },
+        {
+          "slot": "E/walk/2",
+          "path": "art/rook/E_walk_2_master.png",
+          "sha256": "2ed6088339b3bed4e24a8d03b15b3300816fffb7a524c7d6796acc6bea6c9534"
+        },
+        {
+          "slot": "E/walk/3",
+          "path": "art/rook/E_walk_3_master.png",
+          "sha256": "475e0c25df1d7e0211dc0e10f2f7cc2907dfb801f9b68bfac911f13ce32bce61"
+        },
+        {
+          "slot": "E/walk/4",
+          "path": "art/rook/E_walk_4_master.png",
+          "sha256": "8d1b3832b4acd59a21e172c2882cd3f260713bf68d97131888fc9e0a3124e843"
+        },
+        {
+          "slot": "E/walk/5",
+          "path": "art/rook/E_walk_5_master.png",
+          "sha256": "4408d8ee52069fba927e24004cfb45dd99f8b12b8f33f488db9274ba6ce165b4"
+        }
+      ]
+    },
+    "inputSHA256": "7ba380b55f9fd8717e9ca50ca705ca88dc8c7b62d49313c663bc9f3ce3175646",
+    "recordedAt": "2026-09-12T16:06:40.567032+00:00",
+    "decision": "repair",
+    "notes": "Second E-only Luna pair attempt: pair0, pair1 and pair2 all returned native 1536x1024 RGB near-green masters; deterministic matte normalization preserved subject pixels, but visual inspection found pair0 E0/E3 repeating screen-right support, pair1 E1/E4 repeating the same rear swing/support, and pair2 E2/E5 repeating the same passing/support. Opposite anatomical roles, stable cycle progression and promotable pair art are absent. Keep E unapproved and stop this generation batch.",
+    "reviewer": "Codex Luna E green fallback attempt 02 visual review 2026-09-13",
+    "evidence": {
+      "path": "qa/rook/luna_repair_20260913/green_attempt_02/E_cycle_green_attempt_02_visual_review.md",
+      "sha256": "44073bdd4a3198fb3f79eabdd1063483393a09040bac8bd6e2e292cdfe0a377b"
+    }
+  },
+  {
+    "character": "rook",
+    "direction": "E",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "E",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "9317f084f4e3583b28e1ebf04bd06c3ee91cdca97effa11d304fec3e8f16091c"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "E/walk/0",
+          "path": "art/rook/E_walk_0_master.png",
+          "sha256": "6784b966c3f2eb44ecb45b964c38c0a31fe157ac7a44faccf9c7a0247347ee38"
+        },
+        {
+          "slot": "E/walk/1",
+          "path": "art/rook/E_walk_1_master.png",
+          "sha256": "c405edc9234ed939b62eba17ef22cfa9eec2d38b57dd64eb6c5cf64c22c69057"
+        },
+        {
+          "slot": "E/walk/2",
+          "path": "art/rook/E_walk_2_master.png",
+          "sha256": "2ed6088339b3bed4e24a8d03b15b3300816fffb7a524c7d6796acc6bea6c9534"
+        },
+        {
+          "slot": "E/walk/3",
+          "path": "art/rook/E_walk_3_master.png",
+          "sha256": "475e0c25df1d7e0211dc0e10f2f7cc2907dfb801f9b68bfac911f13ce32bce61"
+        },
+        {
+          "slot": "E/walk/4",
+          "path": "art/rook/E_walk_4_master.png",
+          "sha256": "8d1b3832b4acd59a21e172c2882cd3f260713bf68d97131888fc9e0a3124e843"
+        },
+        {
+          "slot": "E/walk/5",
+          "path": "art/rook/E_walk_5_master.png",
+          "sha256": "4408d8ee52069fba927e24004cfb45dd99f8b12b8f33f488db9274ba6ce165b4"
+        }
+      ]
+    },
+    "inputSHA256": "7ba380b55f9fd8717e9ca50ca705ca88dc8c7b62d49313c663bc9f3ce3175646",
+    "recordedAt": "2026-09-12T16:26:10.298315+00:00",
+    "decision": "repair",
+    "notes": "Attempt 03 single-target E0/E3, E1/E4 and E2/E5 outputs did not visibly exchange their requested leg roles; all six returned RGB near-green gradients rather than flat #00FF00 and had no alpha. Preserve as quarantine-only evidence; no intake or source-slot change.",
+    "reviewer": "Codex Luna E single-target edit attempt 03 visual review 2026-09-13",
+    "evidence": {
+      "path": "qa/rook/luna_repair_20260913/edit_attempt_03/E_cycle_edit_attempt_03_visual_review.md",
+      "sha256": "ef5a0528098574e44ecbad3ec613fb0f1722dc4537cca82a138e593faaa14924"
+    }
+  },
+  {
+    "character": "rook",
+    "direction": "E",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "E",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "2115ea2a3c3c3f27cd6d62d36a85352b0aa80b8c8c26a95d37d183440e174981"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "E/walk/0",
+          "path": "art/rook/E_walk_0_master.png",
+          "sha256": "d32d44523076e15c8d27634d95a53bfdae7744bb2df02b69addb603ec3957ab2"
+        },
+        {
+          "slot": "E/walk/1",
+          "path": "art/rook/E_walk_1_master.png",
+          "sha256": "c405edc9234ed939b62eba17ef22cfa9eec2d38b57dd64eb6c5cf64c22c69057"
+        },
+        {
+          "slot": "E/walk/2",
+          "path": "art/rook/E_walk_2_master.png",
+          "sha256": "f7cb7aa596b3c4607b6a5cc4bca9e01c4efdc1b6f4f38a850631d114972de9b2"
+        },
+        {
+          "slot": "E/walk/3",
+          "path": "art/rook/E_walk_3_master.png",
+          "sha256": "475e0c25df1d7e0211dc0e10f2f7cc2907dfb801f9b68bfac911f13ce32bce61"
+        },
+        {
+          "slot": "E/walk/4",
+          "path": "art/rook/E_walk_4_master.png",
+          "sha256": "8d1b3832b4acd59a21e172c2882cd3f260713bf68d97131888fc9e0a3124e843"
+        },
+        {
+          "slot": "E/walk/5",
+          "path": "art/rook/E_walk_5_master.png",
+          "sha256": "2718c5741bec8847beaa5bc5b298a967399d198428076a66b18576c8f893a6c7"
+        }
+      ]
+    },
+    "inputSHA256": "9ed3bf7e4348919f33bd70d43f8d39babab8f80e7d97428e06b830cd1b3baf17",
+    "recordedAt": "2026-09-13T00:16:58.391021+00:00",
+    "decision": "approved",
+    "packet": {
+      "path": "qa/rook/gait/136415e57b315633_98b25de7/cycle-observations.json",
+      "sha256": "0705e72f70e46f72502e55b236d992c2ad163fc77a43075d15fc7eba49ea7074"
+    },
+    "reviewer": "Astra — direct source tracing, 1x browser playback and native sequential video samples"
+  },
+  {
+    "character": "rook",
+    "direction": "E",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "E",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "E/walk/0",
+          "path": "art/rook/E_walk_0_master.png",
+          "sha256": "d32d44523076e15c8d27634d95a53bfdae7744bb2df02b69addb603ec3957ab2"
+        },
+        {
+          "slot": "E/walk/1",
+          "path": "art/rook/E_walk_1_master.png",
+          "sha256": "c405edc9234ed939b62eba17ef22cfa9eec2d38b57dd64eb6c5cf64c22c69057"
+        },
+        {
+          "slot": "E/walk/2",
+          "path": "art/rook/E_walk_2_master.png",
+          "sha256": "f7cb7aa596b3c4607b6a5cc4bca9e01c4efdc1b6f4f38a850631d114972de9b2"
+        },
+        {
+          "slot": "E/walk/3",
+          "path": "art/rook/E_walk_3_master.png",
+          "sha256": "475e0c25df1d7e0211dc0e10f2f7cc2907dfb801f9b68bfac911f13ce32bce61"
+        },
+        {
+          "slot": "E/walk/4",
+          "path": "art/rook/E_walk_4_master.png",
+          "sha256": "8d1b3832b4acd59a21e172c2882cd3f260713bf68d97131888fc9e0a3124e843"
+        },
+        {
+          "slot": "E/walk/5",
+          "path": "art/rook/E_walk_5_master.png",
+          "sha256": "2718c5741bec8847beaa5bc5b298a967399d198428076a66b18576c8f893a6c7"
+        }
+      ]
+    },
+    "inputSHA256": "a8fbdf8fab62d5c1673f1ad017e0489a17affe9b8df7a9fe27d358c1981fd00e",
+    "recordedAt": "2026-09-13T01:39:19.943809+00:00",
+    "decision": "approved",
+    "packet": {
+      "path": "qa/rook/gait/136415e57b315633_ccb9c256/cycle-observations.json",
+      "sha256": "4f0157250aee50ef0a8862e7557eb085b736fa1504dcedcf009a56f371214559"
+    },
+    "reviewer": "Astra — direct source tracing, 1x browser playback and native sequential video samples"
+  },
+  {
+    "character": "rook",
+    "direction": "S",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "S",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "S/walk/0",
+          "path": "art/rook/S_walk_0_master.png",
+          "sha256": "9cc6a0e82949400e1327fadc549a644448e5371ed8e2c7648c9d780627525c12"
+        },
+        {
+          "slot": "S/walk/1",
+          "path": "art/rook/S_walk_1_master.png",
+          "sha256": "d2a10f9ee5b139a9b12606914ebc93f807479564b52b935b5e84bf36ab85481b"
+        },
+        {
+          "slot": "S/walk/2",
+          "path": "art/rook/S_walk_2_master.png",
+          "sha256": "c93b5bc72d2aea18fc29a19175529aaadc426ae593125a43f5bb393736442286"
+        },
+        {
+          "slot": "S/walk/3",
+          "path": "art/rook/S_walk_3_master.png",
+          "sha256": "6a5b1a89ddf49e1c2103c89d9e4c65b7b10a266c3486d42a8d8f228afdf08830"
+        },
+        {
+          "slot": "S/walk/4",
+          "path": "art/rook/S_walk_4_master.png",
+          "sha256": "a9501979e2df93cbe99cfc0edad0b577ba15c2990dce4e8b48d9f7f0befa411f"
+        },
+        {
+          "slot": "S/walk/5",
+          "path": "art/rook/S_walk_5_master.png",
+          "sha256": "054aff582114b85969fc0312d5ad1e14a665f9ebc4888f165faea1a58b42d87e"
+        }
+      ]
+    },
+    "inputSHA256": "9155dd477d040921af86677f65c7167199948b635843047274f8a81bf9defc18",
+    "recordedAt": "2026-09-13T01:43:20.751633+00:00",
+    "decision": "approved",
+    "packet": {
+      "path": "qa/rook/gait/0eb5071db470346b_ad179d51/cycle-observations.json",
+      "sha256": "35cffbf8063c18bec0eb2559b1531a6a96ea2f7d4e443a85cbd54c0925d1f384"
+    },
+    "reviewer": "Astra — native source trace, browser 1x playback and 35 sequential native video samples"
+  },
+  {
+    "character": "rook",
+    "direction": "SW",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "SW",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "SW/walk/0",
+          "path": "art/rook/SW_walk_0_master.png",
+          "sha256": "c19962022ae6bea448c07bf39f1bd03c3db016a9256d92604675dc0d19c3e350"
+        },
+        {
+          "slot": "SW/walk/1",
+          "path": "art/rook/SW_walk_1_master.png",
+          "sha256": "6871c8bb3e949edec3909888a4343cdd1fc2ebfaf43670d9570f190a6d04ac8b"
+        },
+        {
+          "slot": "SW/walk/2",
+          "path": "art/rook/SW_walk_2_master.png",
+          "sha256": "ceeb5ee0c6b47698cb3c86404e3ad059a95304478fb9e0d709758ae2d232bd71"
+        },
+        {
+          "slot": "SW/walk/3",
+          "path": "art/rook/SW_walk_3_master.png",
+          "sha256": "faa2b6ef5b9e7b6d8295638310ef239f79b9a6fc0fa29e4b5c1ab393a8735f89"
+        },
+        {
+          "slot": "SW/walk/4",
+          "path": "art/rook/SW_walk_4_master.png",
+          "sha256": "7572728c5f46b72c9f3685cd3237d25ca16f26b88102683df5053c59c9acf893"
+        },
+        {
+          "slot": "SW/walk/5",
+          "path": "art/rook/SW_walk_5_master.png",
+          "sha256": "09b5707b6e43914152d15eb57d7e506c5f0a81ad02ae7d70466add0d3ef7997d"
+        }
+      ]
+    },
+    "inputSHA256": "62df49a9c5d24552328be652d0327c9af4a45454d9e4f7d4b48105f13cde3387",
+    "recordedAt": "2026-09-13T01:51:41.327459+00:00",
+    "decision": "repair",
+    "notes": "Frame4 has paired canisters attached to screen-right anatomical left thigh; right support leg and left rear swing must preserve correct right-only equipment. Source replacement required; not approved.",
+    "reviewer": "Astra actual anatomical review",
+    "evidence": {
+      "path": "qa/rook/gait/30f5bfbdb161202c_086b218d/SW_walk_pair1_native_2128x1626.png",
+      "sha256": "fc61bfecb94b8ad0182b49dd556839b7d51f516d06f755c13ffe9099dd0165bd"
+    }
+  },
+  {
+    "character": "rook",
+    "direction": "SE",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "SE",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "SE/walk/0",
+          "path": "art/rook/SE_walk_0_master.png",
+          "sha256": "c3bb7f5d4dae25c62e6319f670d00bfd6395476896e83d49e001e8d861781468"
+        },
+        {
+          "slot": "SE/walk/1",
+          "path": "art/rook/SE_walk_1_master.png",
+          "sha256": "62b3df1143ce2fc7033ed935d5787a0ec96a7269d6189360c904a17a063f009f"
+        },
+        {
+          "slot": "SE/walk/2",
+          "path": "art/rook/SE_walk_2_master.png",
+          "sha256": "2ee1228011e8b5b34a92cda6c3d1ae33ed27f66a26389af7bcb39d1d2b40f336"
+        },
+        {
+          "slot": "SE/walk/3",
+          "path": "art/rook/SE_walk_3_master.png",
+          "sha256": "3a7f59bcd1780a661be074a08fd75f0178443f1061801ca155825e15dcd751fc"
+        },
+        {
+          "slot": "SE/walk/4",
+          "path": "art/rook/SE_walk_4_master.png",
+          "sha256": "3d6c5a5751b9855b500e991c012da322a07dea5a03bba5bc9d2c8bc2b04f0ac3"
+        },
+        {
+          "slot": "SE/walk/5",
+          "path": "art/rook/SE_walk_5_master.png",
+          "sha256": "876772a663afadfcfddfcf5586c0bf3e02f110b9a2fbcb0c2533fa33858c3ecc"
+        }
+      ]
+    },
+    "inputSHA256": "37dd397c41edac50e436833326567d29a86ff77365fbcdefc8bf3123942dfb03",
+    "recordedAt": "2026-09-13T01:53:28.157349+00:00",
+    "decision": "approved",
+    "packet": {
+      "path": "qa/rook/gait/b758e1f5cbea490d_d5575df6/cycle-observations.json",
+      "sha256": "3ae0eb287924c982f06275105198b924fa52af912ba80f2b12f98a5a2a4d8db4"
+    },
+    "reviewer": "Astra — direct native sheet tracing, live 1x playback and sequential decoded video"
+  },
+  {
+    "character": "rook",
+    "direction": "W",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "W",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "W/walk/0",
+          "path": "art/rook/W_walk_0_master.png",
+          "sha256": "828946f0e1e4a2d1f9146a39efde30ae7c293c87cc7080a406d0ae5402872900"
+        },
+        {
+          "slot": "W/walk/1",
+          "path": "art/rook/W_walk_1_master.png",
+          "sha256": "d20b930c7df41de96a37773b52e9c5ca549ff5257046acf3fc997cda36ac1f90"
+        },
+        {
+          "slot": "W/walk/2",
+          "path": "art/rook/W_walk_2_master.png",
+          "sha256": "0215d6b90f7492e9fc66c8d163616e150d8dbbe62b21bc118283fa3f728ceabf"
+        },
+        {
+          "slot": "W/walk/3",
+          "path": "art/rook/W_walk_3_master.png",
+          "sha256": "b88f49152cd6c66aac660ead2bfae3c379ba26b6b7cb3cddf8c95f7f2fb9fb96"
+        },
+        {
+          "slot": "W/walk/4",
+          "path": "art/rook/W_walk_4_master.png",
+          "sha256": "fd6e7f1dbdd06c17bd6fbdeddbdd59504085e095ad60bbd93888a6f179ed3aef"
+        },
+        {
+          "slot": "W/walk/5",
+          "path": "art/rook/W_walk_5_master.png",
+          "sha256": "441ae4e3c1a421c83a38ce9e00af8dbea9a3da43dd9211de268507cc6ff70623"
+        }
+      ]
+    },
+    "inputSHA256": "1e982c229713e269125cf204ccb13864026c74306390112175aa4442928c84e1",
+    "recordedAt": "2026-09-13T01:54:33.360271+00:00",
+    "decision": "repair",
+    "notes": "Frame2 raised far right passing leg is clean while the near left support thigh bears cylinders. Equipment laterality must be corrected in actual art, not relabeled as the right support leg.",
+    "reviewer": "Astra native anatomical review",
+    "evidence": {
+      "path": "qa/rook/gait/0cc04e4ec0860836_f9036c62/W_walk_pair2_native_2128x1626.png",
+      "sha256": "12945a3372d0f92a1a6713e942a25f36521051837b53720de22a042a6336bb28"
+    }
+  },
+  {
+    "character": "rook",
+    "direction": "SW",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "SW",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "SW/walk/0",
+          "path": "art/rook/SW_walk_0_master.png",
+          "sha256": "c19962022ae6bea448c07bf39f1bd03c3db016a9256d92604675dc0d19c3e350"
+        },
+        {
+          "slot": "SW/walk/1",
+          "path": "art/rook/SW_walk_1_master.png",
+          "sha256": "6871c8bb3e949edec3909888a4343cdd1fc2ebfaf43670d9570f190a6d04ac8b"
+        },
+        {
+          "slot": "SW/walk/2",
+          "path": "art/rook/SW_walk_2_master.png",
+          "sha256": "ceeb5ee0c6b47698cb3c86404e3ad059a95304478fb9e0d709758ae2d232bd71"
+        },
+        {
+          "slot": "SW/walk/3",
+          "path": "art/rook/SW_walk_3_master.png",
+          "sha256": "faa2b6ef5b9e7b6d8295638310ef239f79b9a6fc0fa29e4b5c1ab393a8735f89"
+        },
+        {
+          "slot": "SW/walk/4",
+          "path": "art/rook/SW_walk_4_master.png",
+          "sha256": "2a5472dfb35b10091055348436e15c092addf0c32f43ef8017aa8b4da49cc424"
+        },
+        {
+          "slot": "SW/walk/5",
+          "path": "art/rook/SW_walk_5_master.png",
+          "sha256": "09b5707b6e43914152d15eb57d7e506c5f0a81ad02ae7d70466add0d3ef7997d"
+        }
+      ]
+    },
+    "inputSHA256": "42c6634ca132fedc952d4599aefb7e624bad85f3f0a132b9f391503013df3651",
+    "recordedAt": "2026-09-13T01:58:37.172381+00:00",
+    "decision": "approved",
+    "packet": {
+      "path": "qa/rook/gait/88f9b26dcdbfbb21_1aeb9c07/cycle-observations.json",
+      "sha256": "6acbede26ffdc6fc20f956c7a9a9d2f9681b1722be9cb0125908a1b175c817c7"
+    },
+    "reviewer": "Astra direct native anatomy review, browser 1x and chronological decoded samples"
+  },
+  {
+    "character": "rook",
+    "direction": "W",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "W",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "W/walk/0",
+          "path": "art/rook/W_walk_0_master.png",
+          "sha256": "828946f0e1e4a2d1f9146a39efde30ae7c293c87cc7080a406d0ae5402872900"
+        },
+        {
+          "slot": "W/walk/1",
+          "path": "art/rook/W_walk_1_master.png",
+          "sha256": "d20b930c7df41de96a37773b52e9c5ca549ff5257046acf3fc997cda36ac1f90"
+        },
+        {
+          "slot": "W/walk/2",
+          "path": "art/rook/W_walk_2_master.png",
+          "sha256": "af2f6ddcfa9c34cc99a7b45e7eb7363395aae2e545f1a24bea30f6a9799cd858"
+        },
+        {
+          "slot": "W/walk/3",
+          "path": "art/rook/W_walk_3_master.png",
+          "sha256": "b88f49152cd6c66aac660ead2bfae3c379ba26b6b7cb3cddf8c95f7f2fb9fb96"
+        },
+        {
+          "slot": "W/walk/4",
+          "path": "art/rook/W_walk_4_master.png",
+          "sha256": "fd6e7f1dbdd06c17bd6fbdeddbdd59504085e095ad60bbd93888a6f179ed3aef"
+        },
+        {
+          "slot": "W/walk/5",
+          "path": "art/rook/W_walk_5_master.png",
+          "sha256": "441ae4e3c1a421c83a38ce9e00af8dbea9a3da43dd9211de268507cc6ff70623"
+        }
+      ]
+    },
+    "inputSHA256": "d89bbf2b88232fe87e82aed58efdd6d4ea4fc07ae3a7419449c22ed03522e462",
+    "recordedAt": "2026-09-13T02:00:20.865171+00:00",
+    "decision": "approved",
+    "packet": {
+      "path": "qa/rook/gait/41c04d610ae9df9e_ec020c11/cycle-observations.json",
+      "sha256": "a0f8a70d6adaa6cdf166b35871a2a3ffc01d4891f55f1a7b9585a3d76771c920"
+    },
+    "reviewer": "Astra direct native anatomy review, browser 1x and chronological decoded samples"
+  },
+  {
+    "character": "rook",
+    "direction": "NW",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "NW",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "NW/walk/0",
+          "path": "art/rook/NW_walk_0_master.png",
+          "sha256": "f97a8e4bd76d433a1735144dfa9bedd0795404cfd461a0b2b0f5f2a228472b7f"
+        },
+        {
+          "slot": "NW/walk/1",
+          "path": "art/rook/NW_walk_1_master.png",
+          "sha256": "5f0e879c750ddce62fe0310928f08cf4251a9380248517487b0414c9c572cdad"
+        },
+        {
+          "slot": "NW/walk/2",
+          "path": "art/rook/NW_walk_2_master.png",
+          "sha256": "80f469477653e4f42fb2637c59d6efc05797a0b66fd99fc02270c5ebbd9a6a50"
+        },
+        {
+          "slot": "NW/walk/3",
+          "path": "art/rook/NW_walk_3_master.png",
+          "sha256": "f41a7641d5c2de75cabd6bba2666c8ea6b67e9b271218fd194e081338ebcbe7f"
+        },
+        {
+          "slot": "NW/walk/4",
+          "path": "art/rook/NW_walk_4_master.png",
+          "sha256": "a2a9704062f30edf5b3097a6313bb53cb61400552a5a73e58e060630ffcf154d"
+        },
+        {
+          "slot": "NW/walk/5",
+          "path": "art/rook/NW_walk_5_master.png",
+          "sha256": "3744aab1565f8cd7cb49edd69af7921d9fce542d3e76636842a261d2beb1b4d6"
+        }
+      ]
+    },
+    "inputSHA256": "ca8c9f255021480c0e5350018b90dabb2cec8963308423ef1d311e893d6b4805",
+    "recordedAt": "2026-09-13T02:02:10.467777+00:00",
+    "decision": "approved",
+    "packet": {
+      "path": "qa/rook/gait/c6742475f0cf75b8_5ce241b4/cycle-observations.json",
+      "sha256": "0b1f19cdde5ede55c97b8b0d4e30356a69d8839227028f70e283e8269f3125e6"
+    },
+    "reviewer": "Astra direct native anatomy review, browser 1x and chronological decoded samples"
+  },
+  {
+    "character": "rook",
+    "direction": "N",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "N",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "N/walk/0",
+          "path": "art/rook/N_walk_0_master.png",
+          "sha256": "dc66009174a535b992c39e9011d35f2a526e8c843da067f9d74ba6f2e80f8a80"
+        },
+        {
+          "slot": "N/walk/1",
+          "path": "art/rook/N_walk_1_master.png",
+          "sha256": "ad985fa24393a869fe48ccd27f0a53ebd58bacf85739e608ff91b3e63e260dbb"
+        },
+        {
+          "slot": "N/walk/2",
+          "path": "art/rook/N_walk_2_master.png",
+          "sha256": "c402aba5c351e6cc7cf4f36cd788376b892d5d10b344cd04b7103cdfb9a0fe8a"
+        },
+        {
+          "slot": "N/walk/3",
+          "path": "art/rook/N_walk_3_master.png",
+          "sha256": "a3e373c08645e89038241cf0767864a76631407ac5edbb6848220d9b3dbd5daf"
+        },
+        {
+          "slot": "N/walk/4",
+          "path": "art/rook/N_walk_4_master.png",
+          "sha256": "9734d3074eaee4705af978258c4935f1b65aad012a1e7707fec35f1dd030d60a"
+        },
+        {
+          "slot": "N/walk/5",
+          "path": "art/rook/N_walk_5_master.png",
+          "sha256": "6bf16de0beb04e18e26503268e1ea76ec83ca90f3e88ff1d9c1a566774442cf6"
+        }
+      ]
+    },
+    "inputSHA256": "8827390d3d9d65eea7fa9bff0804852098b154c7974ac4f45139fb163d9ec94c",
+    "recordedAt": "2026-09-13T02:04:19.154226+00:00",
+    "decision": "approved",
+    "packet": {
+      "path": "qa/rook/gait/c0f50320f5ccd202_05893d25/cycle-observations.json",
+      "sha256": "7603e6356b6b3da43c1caddeee57a619be3a58866eca3ec0b25d3fc0b86b98de"
+    },
+    "reviewer": "Astra direct native anatomy review, browser 1x and chronological decoded samples"
+  },
+  {
+    "character": "rook",
+    "direction": "NE",
+    "action": "walk",
+    "inputs": {
+      "character": "rook",
+      "direction": "NE",
+      "action": "walk",
+      "recipe": {
+        "path": "characters/rook.json",
+        "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+      },
+      "identity": {
+        "path": "art/rook/identity_reference.png",
+        "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+      },
+      "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+      "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+      "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+      "sources": [
+        {
+          "slot": "NE/walk/0",
+          "path": "art/rook/NE_walk_0_master.png",
+          "sha256": "4e3cc7ac9afd2355f12909d3b705f4512a271d34d0c026942529ae6381d36331"
+        },
+        {
+          "slot": "NE/walk/1",
+          "path": "art/rook/NE_walk_1_master.png",
+          "sha256": "8038a365ecf44e2c90cb632b9f22b573969dbab29956d49841b9e143b803f5e4"
+        },
+        {
+          "slot": "NE/walk/2",
+          "path": "art/rook/NE_walk_2_master.png",
+          "sha256": "b2d542efed9169b00d8d38ee57e40e21bad11e2c77b968d671bc0eb035360d3e"
+        },
+        {
+          "slot": "NE/walk/3",
+          "path": "art/rook/NE_walk_3_master.png",
+          "sha256": "5665c5dbabab6f4ad156a866a97babd38169dbac07820fe898d55e0f460e7476"
+        },
+        {
+          "slot": "NE/walk/4",
+          "path": "art/rook/NE_walk_4_master.png",
+          "sha256": "d5e5c9458964e03e177f9e614ae539e66df96310f0621870c0a8b98c6bd99efc"
+        },
+        {
+          "slot": "NE/walk/5",
+          "path": "art/rook/NE_walk_5_master.png",
+          "sha256": "f1180a97b4efbad0fd2a8199f6fe807a03ec4936e402bfdb9f064de67e3e1483"
+        }
+      ]
+    },
+    "inputSHA256": "754cd6de43cc36b6bbe51cc716a70bcec371ad7403e007f837a5d5b276513a82",
+    "recordedAt": "2026-09-13T02:09:08.516935+00:00",
+    "decision": "approved",
+    "packet": {
+      "path": "qa/rook/gait/b871bb8a65e36286_30ecee6d/cycle-observations.json",
+      "sha256": "f4f6f596f604662182644ec25235298f4b63c86d36b43605d023062ed9bbac68"
+    },
+    "reviewer": "Astra direct native anatomy review, browser 1x and chronological decoded samples"
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "mission_id": "MIS_CH01_01",
+  "chapter_id": "CH01",
+  "title": "SITE-7: FIRST DESCENT",
+  "zone": "Abandoned Research Complex",
+  "extraction_offer_room_ids": ["R03_ARCHIVE", "R04_CONTAINMENT"],
+  "operation_version": 1,
+  "main_route": [
+    {"id":"R01_ENTRY","type":"EVENT","title":"Outer Gate","x":280,"y":470,"objective":"Inspect the silent access terminal","story":"The gate is powered, but every personnel badge was invalidated at the same second."},
+    {
+      "id":"R02_CORRIDOR","type":"COMBAT","title":"Decon Corridor","x":690,"y":350,"objective":"Clear the decontamination corridor",
+      "encounter":[
+        {"enemy_id":"ENM_SITE7_RIFLE_01","health":92,"offset_x":224,"offset_y":-112},
+        {"enemy_id":"ENM_SITE7_DRONE_01","health":68,"offset_x":296,"offset_y":-52},
+        {"enemy_id":"ENM_SITE7_ABERRANT_01","health":108,"offset_x":218,"offset_y":96}
+      ],
+      "reinforcements": [
+        [{"enemy_id":"ENM_SITE7_DRONE_01","health":72}, {"enemy_id":"ENM_SITE7_RIFLE_01","health":94}]
+      ]
+    },
+    {"id":"R03_ARCHIVE","type":"RESEARCH","title":"Archive Annex","x":1100,"y":490,"objective":"Recover the missing team ledger","story":"The archive log ends mid-sentence. The final entry repeatedly references Core C and an unknown carrier signal."},
+    {
+      "id":"R04_CONTAINMENT","type":"ELITE","title":"Containment Junction","x":1510,"y":350,"objective":"Break the containment guard line",
+      "encounter":[
+        {"enemy_id":"ENM_SITE7_SHIELD_01","health":230,"offset_x":218,"offset_y":62},
+        {"enemy_id":"ENM_SITE7_RIFLE_01","health":108,"offset_x":292,"offset_y":-102}
+      ],
+      "reinforcements": [
+        [{"enemy_id":"ENM_SITE7_ABERRANT_01","health":115}, {"enemy_id":"ENM_SITE7_RIFLE_01","health":110}]
+      ]
+    },
+    {
+      "id":"R05_CORE","type":"BOSS","title":"Containment Core C","x":1920,"y":490,"objective":"Destroy the signal anchor",
+      "encounter":[
+        {"enemy_id":"BOSS_SITE7_ANCHOR_01","health":620,"offset_x":0,"offset_y":0}
+      ]
+    },
+    {"id":"R06_EXTRACTION","type":"EXTRACTION","title":"Emergency Lift","x":2330,"y":350,"objective":"Extract with the recovered ledger","story":"The auxiliary reactor is failing. The team has one clean route back to the surface."}
+  ],
+  "optional_rooms": [
+    {"id":"O01_SUPPLY","type":"SUPPLY","title":"Emergency Stores","x":1100,"y":705,"reward":"field_supplies","story":"A sealed emergency locker still contains usable medical and ammunition packs."},
+    {"id":"O02_RESEARCH","type":"RESEARCH","title":"Signal Lab","x":1510,"y":705,"reward":"carrier_fragment","story":"A local recorder captured the carrier signal before the blackout. The waveform appears to respond to human movement."}
+  ]
+}

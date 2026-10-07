@@ -1,0 +1,372 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "mission_id": "MIS_CH01_05",
+  "chapter_id": "CH01",
+  "title": "OFFSHORE NULL",
+  "zone": "Offshore Transit Relay",
+  "objectives": [
+    {
+      "id": "OBJ_NULL_ENTRY",
+      "kind": "PRIMARY",
+      "source_room": "R01_ENTRY",
+      "title": "Enter the offshore relay",
+      "prerequisites": [],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_NULL_DEFENSE",
+      "kind": "PRIMARY",
+      "source_room": "R02_DEFENSE",
+      "title": "Silence the relay defense",
+      "prerequisites": [
+        "OBJ_NULL_ENTRY"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_NULL_TRACE",
+      "kind": "PRIMARY",
+      "source_room": "R03_TRACE",
+      "title": "Locate the null carrier",
+      "prerequisites": [
+        "OBJ_NULL_DEFENSE"
+      ],
+      "required_for_extraction": true
+    },
+    {
+      "id": "OBJ_NULL_ARRAY",
+      "kind": "DEEP",
+      "source_room": "R04_ARRAY",
+      "title": "Collapse the jammer array",
+      "prerequisites": [
+        "OBJ_NULL_TRACE"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_NULL_CARRIER",
+      "kind": "BOSS",
+      "source_room": "R05_CARRIER",
+      "title": "Destroy Carrier Null",
+      "prerequisites": [
+        "OBJ_NULL_ARRAY"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_NULL_ESCAPE",
+      "kind": "PRIMARY",
+      "source_room": "R06_ESCAPE",
+      "title": "Extract from the transit relay",
+      "prerequisites": [
+        "OBJ_NULL_CARRIER"
+      ],
+      "required_for_extraction": false
+    }
+  ],
+  "main_route": [
+    {
+      "id": "R01_ENTRY",
+      "objective_id": "OBJ_NULL_ENTRY",
+      "type": "EVENT",
+      "title": "Offshore Relay",
+      "x": 280,
+      "y": 560,
+      "objective": "Enter the offshore relay",
+      "story": "The carrier signal jumps across isolated relay plates. The squad has one route into the offshore array.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 30
+        }
+      ]
+    },
+    {
+      "id": "R02_DEFENSE",
+      "objective_id": "OBJ_NULL_DEFENSE",
+      "encounter_id": "ENC_NULL_DEFENSE_01",
+      "type": "COMBAT",
+      "title": "Relay Defense",
+      "x": 660,
+      "y": 240,
+      "objective": "Silence the relay defense",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 2
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 186,
+          "offset_x": 218,
+          "offset_y": 102
+        },
+        {
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "health": 142,
+          "offset_x": 292,
+          "offset_y": -18
+        },
+        {
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "health": 166,
+          "offset_x": 220,
+          "offset_y": -108
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 108,
+          "offset_x": 260,
+          "offset_y": 20
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 42
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 176
+          },
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 160
+          },
+          {
+            "enemy_id": "ENM_SITE7_BULWARK_01",
+            "health": 240
+          }
+        ]
+      ],
+      "reinforce_at": 2,
+      "rule": {
+        "type": "OVERRUN",
+        "seconds": 45
+      }
+    },
+    {
+      "id": "R03_TRACE",
+      "objective_id": "OBJ_NULL_TRACE",
+      "type": "RESEARCH",
+      "title": "Null Carrier Trace",
+      "x": 1040,
+      "y": 560,
+      "objective": "Locate the null carrier",
+      "story": "The relay trace resolves into a single offshore carrier aperture beyond the jammer array.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 52
+        },
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 28
+        }
+      ]
+    },
+    {
+      "id": "R04_ARRAY",
+      "objective_id": "OBJ_NULL_ARRAY",
+      "encounter_id": "ENC_NULL_ARRAY_01",
+      "type": "ELITE",
+      "title": "Jammer Array",
+      "x": 1420,
+      "y": 240,
+      "objective": "Collapse the jammer array",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 2
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "affix": "SHIELDED",
+          "health": 210,
+          "offset_x": 212,
+          "offset_y": 64
+        },
+        {
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "health": 210,
+          "offset_x": 302,
+          "offset_y": 90
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 186,
+          "offset_x": 292,
+          "offset_y": -96
+        },
+        {
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "affix": "OVERCHARGED",
+          "health": 160,
+          "offset_x": 250,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 50
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 180
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "affix": "VOLATILE",
+            "health": 110
+          },
+          {
+            "enemy_id": "ENM_SITE7_MORTAR_01",
+            "health": 140
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R05_CARRIER",
+      "objective_id": "OBJ_NULL_CARRIER",
+      "encounter_id": "ENC_NULL_CARRIER_01",
+      "type": "BOSS",
+      "title": "Carrier Null",
+      "x": 1800,
+      "y": 560,
+      "objective": "Destroy Carrier Null",
+      "encounter": [
+        {
+          "enemy_id": "BOSS_SITE7_CARRIER_01",
+          "health": 1380,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 150,
+          "offset_x": 240,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 110,
+          "offset_x": 240,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 112
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 160
+          },
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 150
+          }
+        ],
+        [
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 110
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 100
+          }
+        ]
+      ],
+      "reinforce_at": 1
+    },
+    {
+      "id": "R06_ESCAPE",
+      "objective_id": "OBJ_NULL_ESCAPE",
+      "type": "EXTRACTION",
+      "title": "Transit Escape",
+      "x": 2180,
+      "y": 240,
+      "objective": "Extract from the transit relay",
+      "story": "The carrier aperture is collapsing. Escape through the transit relay before the offshore plates desynchronize.",
+      "loot": []
+    }
+  ],
+  "optional_rooms": [
+    {
+      "id": "O01_SUPPLY",
+      "from": "R02_DEFENSE",
+      "objective_id": "OBJ_NULL_SUPPLY",
+      "type": "SUPPLY",
+      "title": "Transit Stores",
+      "x": 1040,
+      "y": 800,
+      "reward": "relay_supplies",
+      "story": "Emergency stores from the offshore crew are still sealed.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 32
+        },
+        {
+          "loot_id": "LOT_SALVAGE_FIELD",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "id": "O02_RESEARCH",
+      "from": "R04_ARRAY",
+      "objective_id": "OBJ_NULL_RESEARCH",
+      "type": "RESEARCH",
+      "title": "Signal Observatory",
+      "x": 1420,
+      "y": 800,
+      "objective": "Read the carrier aperture",
+      "reward": "null_map",
+      "story": "The observatory records a map of the carrier's null-space transitions.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 64
+        },
+        {
+          "loot_id": "LOT_SIGNAL_FRAGMENT",
+          "quantity": 3
+        },
+        {
+          "loot_id": "LOT_INTEL_MECHANICAL",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "extraction_offer_room_ids": [
+    "R03_TRACE",
+    "R04_ARRAY",
+    "R05_CARRIER"
+  ],
+  "enemy_roster_revision": 4,
+  "new_enemy_ids": [
+    "ENM_SITE7_NULL_PYLON_01",
+    "BOSS_SITE7_CARRIER_01"
+  ]
+}

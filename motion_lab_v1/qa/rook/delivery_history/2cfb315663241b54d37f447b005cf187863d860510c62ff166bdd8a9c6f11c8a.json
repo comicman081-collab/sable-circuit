@@ -1,0 +1,11 @@
+{
+  "recordedAt": "2026-09-12T14:56:42.290837+00:00",
+  "character": "rook",
+  "status": "HOLD_VISUAL_REPAIR",
+  "reason": "Runtime visual review requires repair: User rejected current ROOK gait. Current live build 0e60cbe9e84dd9e8292b939f78beee322181112e70f83c53393a824bf6207335 uses authored_frames with no legacy overrides. Native compiled SE and N cycles repeat the same leading/trailing leg arrangement at opposite-contact phases 0 and 3; sequential decoding of active video at 2.407s and 3.001s confirms SE lacks the expected support exchange while the ground moves. Six distinct lower-body hashes and 40 temporal rows did not establish natural gait. Prior visual completion is withdrawn. Audit and negative validator probes: qa/rook/gait_audit_20260912/AUDIT_KO.md. This records a visual rejection only, not an art or runtime repair.",
+  "package": {
+    "path": "dist/rook.package.json",
+    "sha256": "7890f205ee039a9fd7741c4104779d9e8125c65051fd66d3bf54e42ba7a48485"
+  },
+  "reviewedDelivery": false
+}

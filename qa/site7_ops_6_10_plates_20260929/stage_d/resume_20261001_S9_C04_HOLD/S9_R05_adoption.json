@@ -1,0 +1,223 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_R05/attempt03/S9_R05_GAME.png",
+  "luma": 0.200029656291008,
+  "p10": 0.16732940077781677,
+  "p90": 0.2374705970287323,
+  "saturation": 0.07495310618582804,
+  "hue": 143.86923246419042,
+  "axis": 25.75145167630377,
+  "problems": [],
+  "plate": "S9_R05",
+  "attempt": 3,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      108,
+      474
+    ],
+    [
+      800,
+      237
+    ],
+    [
+      1096,
+      304
+    ],
+    [
+      1110,
+      283
+    ],
+    [
+      1244,
+      192
+    ],
+    [
+      1288,
+      267
+    ],
+    [
+      1281,
+      390
+    ],
+    [
+      1567,
+      506
+    ],
+    [
+      844,
+      852
+    ],
+    [
+      388,
+      620
+    ],
+    [
+      234,
+      716
+    ],
+    [
+      86,
+      635
+    ],
+    [
+      206,
+      560
+    ]
+  ],
+  "doors_px": {
+    "NE": [
+      1189,
+      347,
+      218
+    ],
+    "SW": [
+      297,
+      590,
+      192
+    ]
+  },
+  "raw_sha256": "2c3d33e0be172d4d66af425fd70972c347f99901f3a4bff12e635975b774260a",
+  "master_sha256": "2c3d33e0be172d4d66af425fd70972c347f99901f3a4bff12e635975b774260a",
+  "game_sha256": "293e3b51ba0eff3e4f05f59c577cdd547522a8fe1cf526bf6e2845bb1a250e68",
+  "game_exposure_factor_srgb": 0.775,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-11d0b9d3-e3ee-4492-8e3e-1517780a2be6.png",
+  "inspection": "3차 역시 실제 주 바닥 양쪽이 테두리의 7% 안쪽으로 들어오지 않음. NE/SW 문, NW/SE 닫힘. 벽 부착 직사각 읽기 헤드와 메모리 랙, 중앙 열린 바닥. 사용자 승인 없는 기준 완화 없이 HOLD.",
+  "floor_area_px2": 510410.5,
+  "floor_area_fraction": 0.3244096044623199,
+  "floor_bounds_px": [
+    86,
+    192,
+    1567,
+    852
+  ],
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "NE": [
+        [
+          1096,
+          304
+        ],
+        [
+          1110,
+          283
+        ],
+        [
+          1244,
+          192
+        ],
+        [
+          1288,
+          267
+        ],
+        [
+          1281,
+          390
+        ]
+      ],
+      "SW": [
+        [
+          206,
+          560
+        ],
+        [
+          388,
+          620
+        ],
+        [
+          234,
+          716
+        ],
+        [
+          86,
+          635
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      108,
+      237,
+      1567,
+      852
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.0645933014354067,
+      0.2518597236981934,
+      0.06279904306220095,
+      0.09458023379383634
+    ],
+    "whole_floor_bounds_px": [
+      86,
+      192,
+      1567,
+      852
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.05143540669856459,
+      0.20403825717321997,
+      0.06279904306220095,
+      0.09458023379383634
+    ],
+    "main_floor_area_px2": 466650,
+    "source": "2026-10-01 latest explicit user decision; preceding 7% withdrawn"
+  },
+  "apron_stats": {
+    "NE": {
+      "luma": 0.23686879873275757,
+      "saturation": 0.06807126710280727,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "SW": {
+      "luma": 0.22251206636428833,
+      "saturation": 0.07408878817965125,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  },
+  "raw": "art_src/environments/site7_v2/stage09/S9_R05/S9_R05_RAW_NATIVE.png",
+  "master": "art_src/environments/site7_v2/stage09/S9_R05/S9_R05_MASTER.png",
+  "game": "assets/environments/site7_v2/stage09/S9_R05/S9_R05_GAME.png",
+  "historical_problems": [
+    "main floor border margin 6.280% below 7%",
+    "boss open main arena below 490000 px2"
+  ],
+  "status": "SELECTED_BY_USER_DECISION",
+  "selection_date": "2026-10-01",
+  "prompt": "GEOMETRY FIRST: exact 1672 x 941 landscape canvas. This final room has a clearly INSET FLOOR, visibly smaller within the canvas than Image 1, with EMPTY VOID strips at both left and right. Actual main floor hexagon vertices: (145,520), (686,200), (986,200), (1527,520), (986,840), (686,840). Broad flat back and front edges, parallel diagonal edges about 28 degrees. Main floor height 640 px, width 1382 px, area about 538000 px2. Do not enlarge it toward the borders. Keep floor and door aprons at least 8% from every image border. The main floor is spacious enough but must NOT touch the outer 135 px left/right canvas strips.\nEXACT DOORS: NE and SW only. CLOSED NW and SE, continuous walls/low rails with no other openings or extra aprons. Door aprons are modest and remain INSIDE the inset floor bounds; SW apron farthest tip x>=135 and NE apron farthest tip x<=1537. Do not copy the extra SE door of Image 1.\nCOLOUR: floor and both aprons are entirely neutral grey steel, lit by neutral white light, with no warm/gold colour spill whatsoever. Small white-gold wall lamps are mounted high, away from doorways, and cast colour only onto wall fixtures. Not onto the floor.\nNEW WALLS: tall rectangular memory-blade shafts, a BROAD BLUNT WALL-ATTACHED read-head housing, not a pointed spire or stepped ziggurat. No centre objects, no circular iris or portal.\nUse case: stylized-concept. ONE new finished opaque RGB room plate S9_R05, R05_STACKS. Image 1 is only fixed camera, scale, neutral standard deck, minimum floor size and doorway dimensions. Image 2 is only premium hard-surface material quality; ignore its actors, markings and UI.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nROOM PLATE. The walkable floor is a dimetric diamond or elongated hexagon whose sides face NW (upper-left), NE (upper-right), SE (lower-right) and SW (lower-left). Back walls rise only along the NW and NE sides; the SW and SE sides end in a low lip or railing with no wall so nothing hides the floor. Keep the floor at least 8% away from every image border.\nDOORS: open doorways exactly on these sides: NE, SW. Each doorway is an unobstructed opening about 2.3 adult-heights wide with a heavy steel frame (a framed opening in a back wall, or a gap in the lip railing on the SW/SE side); no door leaf, no shutter. The same standard deck and the same neutral-white overhead light continue through every doorway for about 1.5 adult-heights on both sides of the threshold.\nROOM TYPE: boss arena — walkable floor at least 1100 x 520 (long x short, in the scale above).\nIDENTITY: monumental memory-spire housing: slotted memory blades stacked in tall shafts along the back walls and a central read-head column; open central arena floor. No round iris, no concentric rings, no circular portal. Accent colour white-gold, on walls and fixtures only.\nExactly 2 usable opening(s), only NE, SW. All other sides (NW, SE) are continuous closed walls or continuous low foreground railings: no rail gaps, floor tongues, passages, apparent doorway recesses or shutters there. The central read-head column is a BROAD blunt rectangular reader assembly attached to the BACK WALL, never a thin needle, pointed spire or stepped ziggurat. Do not repeat INDEX SPIRE silhouette. All tall blade shafts are broad straight rectangular wall banks, not free-standing boss-shaped towers. No round iris, concentric rings or circular portal. No central obstacles. The boss is added by the game later and is not painted.\nCRITICAL NEW WALL SILHOUETTE: redraw the wall architecture and machinery from the IDENTITY above; do not copy Image 1 wall masses, fans, consoles or machine arrangement. This room must differ from other operation-9 rooms and all earlier operation plates. Wall accents and gold filaments stay on the architecture; include a few distinct small practical wall lamps in the required accent, with visible lamp cores and a restrained local wall glow. No lettering-like floor patterns, gold puddles, light bloom or coloured floor. The exposed outside remains uniform #07090D.",
+  "references": [
+    "assets/environments/site7_v2/stage03/S3_R05/S3_R05_GAME.png",
+    "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png"
+  ],
+  "reference_sha256": {
+    "assets/environments/site7_v2/stage03/S3_R05/S3_R05_GAME.png": "3e603b0782db23faed94e2214166cef4aba0e0e85b30cd1e5210f1fa920a2b63",
+    "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de"
+  },
+  "adoption": {
+    "reason": "User clarified main floor margin >=5%, whole floor >=4%; boss arena area/dimensions measured on whole painted floor including aprons. No main arena area/height floor. Prompt target remains >=8%.",
+    "previous_status": "HOLD under previous main-floor 7% and apron-excluded boss-area interpretation",
+    "imagegen_calls_for_plate": 3,
+    "new_imagegen_calls": 0,
+    "byte_identity_verified": true,
+    "quarantine_sha256_unchanged": {
+      "measurements.json": "31e4b28028c0fdeff3d17355a57bdd0ec436ec38abd533b5491ea6f6b35daa16",
+      "REJECTION.md": "babf5e72779f0a2293b2f671e24835b152df449b396e8079cf2bdf3f82131619",
+      "request.json": "e5334943b18b213437a95d18691d60b0a7f49eb11729f8514f7db1d64ef98280",
+      "S9_R05_GAME.png": "293e3b51ba0eff3e4f05f59c577cdd547522a8fe1cf526bf6e2845bb1a250e68",
+      "S9_R05_MASTER.png": "2c3d33e0be172d4d66af425fd70972c347f99901f3a4bff12e635975b774260a",
+      "S9_R05_RAW_NATIVE.png": "2c3d33e0be172d4d66af425fd70972c347f99901f3a4bff12e635975b774260a"
+    }
+  },
+  "boss_floor_measurement": {
+    "basis": "actual whole polygon including aprons",
+    "area_px2": 510410.5,
+    "width_px": 1481,
+    "height_px": 660,
+    "no_main_floor_area_or_height_minimum": true
+  }
+}

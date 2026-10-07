@@ -1,0 +1,30 @@
+[
+  {
+    "mutation": "affix_tints_visual_root",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 0,
+    "verdict": "MISSED",
+    "summary": "ELITE_EXPANSION_SMOKE: PASS (248 checks) || "
+  },
+  {
+    "mutation": "affix_tints_sprite_self_modulate",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (248 checks, 100 failures) || FAIL: SHIELDED keeps common sprite material/modulation at HighResVisualRoot/UniqueMasterSprite | "
+  },
+  {
+    "mutation": "affix_tints_actor_self_modulate",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 0,
+    "verdict": "MISSED",
+    "summary": "ELITE_EXPANSION_SMOKE: PASS (248 checks) || "
+  },
+  {
+    "mutation": "affix_clears_sprite_material",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (248 checks, 10 failures) || FAIL: SHIELDED keeps common sprite material/modulation at AuthoredMachine/AuthoredMachinePixels | "
+  }
+]

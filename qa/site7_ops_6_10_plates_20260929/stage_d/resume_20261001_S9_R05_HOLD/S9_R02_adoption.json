@@ -1,0 +1,254 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_R02/attempt03/S9_R02_GAME.png",
+  "luma": 0.20008927583694458,
+  "p10": 0.16890588402748108,
+  "p90": 0.23977255821228027,
+  "saturation": 0.04280221692704314,
+  "hue": 148.39134588931557,
+  "axis": 23.89837168633437,
+  "problems": [],
+  "plate": "S9_R02",
+  "attempt": 3,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      131,
+      491
+    ],
+    [
+      836,
+      245
+    ],
+    [
+      1065,
+      320
+    ],
+    [
+      1075,
+      293
+    ],
+    [
+      1240,
+      221
+    ],
+    [
+      1254,
+      380
+    ],
+    [
+      1548,
+      492
+    ],
+    [
+      836,
+      856
+    ],
+    [
+      457,
+      690
+    ],
+    [
+      255,
+      785
+    ],
+    [
+      78,
+      684
+    ],
+    [
+      280,
+      593
+    ]
+  ],
+  "doors_px": {
+    "NE": [
+      1155,
+      359,
+      214
+    ],
+    "SW": [
+      369,
+      640,
+      230
+    ]
+  },
+  "raw_sha256": "43aab4e4ab15e9b716ce65240ddcdc58d9ef21cf1c18b69b19fcb31a57015c89",
+  "master_sha256": "43aab4e4ab15e9b716ce65240ddcdc58d9ef21cf1c18b69b19fcb31a57015c89",
+  "game_sha256": "92eb87d83a7cda89813393a91736d934afd2595f6078c8e8b27a4fae40cb5876",
+  "game_exposure_factor_srgb": 0.75,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-d032439b-5978-4730-8d8a-34f45039e2c1.png",
+  "inspection": "문은 NE/SW만 있고 SE 연속 난간. 실제 SW 에이프런 x=78으로 8% 바닥 여백 위반. 소스 자체의 도어 에이프런과 본 바닥 외곽을 추적했으며 표준 윤곽으로 대체하지 않았다.",
+  "floor_area_px2": 501624.0,
+  "floor_area_fraction": 0.318825030889464,
+  "floor_bounds_px": [
+    78,
+    221,
+    1548,
+    856
+  ],
+  "status": "SELECTED_BY_USER_DECISION",
+  "reason": "8% 바닥 테두리 여백 위반: 실제 SW 에이프런 x 최소 78(4.67%), 오른쪽 바닥 잔여 124(7.42%); 필요 좌우 133.76 px 이상. 문은 NE/SW이며 SE는 닫혔다. ImageGen 3회 상한 도달: S9_R02 HOLD, 이후 판 제작과 연결 중단.",
+  "raw": "art_src/environments/site7_v2/stage09/S9_R02/S9_R02_RAW_NATIVE.png",
+  "master": "art_src/environments/site7_v2/stage09/S9_R02/S9_R02_MASTER.png",
+  "game": "assets/environments/site7_v2/stage09/S9_R02/S9_R02_GAME.png",
+  "manual_checks": {
+    "floor_margins_ltrb_fraction": [
+      0.04665071770334928,
+      0.23485653560042508,
+      0.07416267942583732,
+      0.09032943676939426
+    ],
+    "floor_margin_minimum": 0.08,
+    "floor_margin_pass": false,
+    "floor_area_25_percent_pass": true,
+    "required_doors": [
+      "NE",
+      "SW"
+    ],
+    "visible_doors": [
+      "NE",
+      "SW"
+    ],
+    "door_sides_pass": true,
+    "corridor_width": "NOT_APPLICABLE_ROOM",
+    "wall_silhouette": "new slotted gold memory-blade rack panels; no S3 round fan",
+    "door_width_and_apron_runtime_alignment": "NOT_VALIDATED: no connected corridor exists",
+    "apron_samples": {
+      "SW": {
+        "painted_apron_polygon_px": [
+          [
+            280,
+            593
+          ],
+          [
+            457,
+            690
+          ],
+          [
+            255,
+            785
+          ],
+          [
+            78,
+            684
+          ]
+        ],
+        "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+        "luma": 0.22078195214271545,
+        "saturation": 0.037987724692334274,
+        "saturation_max": 0.1,
+        "saturation_pass": true
+      },
+      "NE": {
+        "painted_apron_polygon_px": [
+          [
+            1065,
+            320
+          ],
+          [
+            1075,
+            293
+          ],
+          [
+            1240,
+            221
+          ],
+          [
+            1254,
+            380
+          ]
+        ],
+        "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+        "luma": 0.22646714746952057,
+        "saturation": 0.012539277243649958,
+        "saturation_max": 0.1,
+        "saturation_pass": true
+      }
+    }
+  },
+  "selection_date": "2026-10-01",
+  "prompt": "GEOMETRY FIRST — FINAL ATTEMPT: 1672 x 941 canvas. Show the COMPLETE architecture at a slightly smaller framing than Image 1. Main open floor diamond: LEFT (248,491), TOP (834,198), RIGHT (1420,491), BOTTOM (834,784). Opposite edges parallel, about 26.6 degrees; floor width 1172 and height 586. The walkable floor AND both doorway aprons MUST be completely inside x=140..1532 and y=80..861; leave visible flat #07090D void margins. Do not let an apron reach an image border. Place the SW opening midway along its edge, around (540,637), so its coplanar apron projects down-left inside the margins. Place the NE opening midway along its edge, around (1126,344), so its apron projects up-right inside the margins. EXACTLY TWO doors: NE and SW. The entire SE foreground edge is CLOSED by one continuous low lip and slim railing: no gap, no third door, no floor tongue. NW back wall closed. Image 1 has extra SE passage and insufficient border margins: neither is part of this new geometry. Keep 2:1 axes, native scale and broad uncluttered floor; use these coordinates rather than the reference footprint.\nUse case: stylized-concept. ONE new finished opaque RGB room plate S9_R02, R02_NAVE. Image 1 is only fixed camera, scale, neutral standard deck, minimum floor size and doorway dimensions. Image 2 is only premium hard-surface material quality; ignore its actors, markings and UI.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nROOM PLATE. The walkable floor is a dimetric diamond or elongated hexagon whose sides face NW (upper-left), NE (upper-right), SE (lower-right) and SW (lower-left). Back walls rise only along the NW and NE sides; the SW and SE sides end in a low lip or railing with no wall so nothing hides the floor. Keep the floor at least 8% away from every image border.\nDOORS: open doorways exactly on these sides: NE, SW. Each doorway is an unobstructed opening about 2.3 adult-heights wide with a heavy steel frame (a framed opening in a back wall, or a gap in the lip railing on the SW/SE side); no door leaf, no shutter. The same standard deck and the same neutral-white overhead light continue through every doorway for about 1.5 adult-heights on both sides of the threshold.\nROOM TYPE: combat room — walkable floor at least 1000 x 560 (long x short, in the scale above).\nIDENTITY: index nave: towering memory-blade racks in slotted arches along both back walls. Accent colour gold, on walls and fixtures only.\nExactly 2 usable opening(s), only NE, SW. All other sides (NW, SE) are continuous closed walls or continuous low foreground railings: no rail gaps, floor tongues, passages, apparent doorway recesses or shutters there.\nCRITICAL NEW WALL SILHOUETTE: redraw the wall architecture and machinery from the IDENTITY above; do not copy Image 1 wall masses, fans, consoles or machine arrangement. This room must differ from other operation-9 rooms and all earlier operation plates. Wall accents and gold filaments stay on the architecture; include a few distinct small practical wall lamps in the required accent, with visible lamp cores and a restrained local wall glow. No lettering-like floor patterns, gold puddles, light bloom or coloured floor. The exposed outside remains uniform #07090D.",
+  "references": [
+    "assets/environments/site7_v2/stage03/S3_R02/S3_R02_GAME.png",
+    "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png"
+  ],
+  "reference_sha256": {
+    "assets/environments/site7_v2/stage03/S3_R02/S3_R02_GAME.png": "6207f50270d9d5cd265ac55bcfbb995444aa506e162e7b33777f54fcd44813ca",
+    "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de"
+  },
+  "adoption": {
+    "reason": "2026-10-01 user clarified acceptance margins: main floor >=7%, drawn floor including aprons >=4%; prompt target remains >=8%. No new ImageGen call.",
+    "previous_status": "REJECTED under former 8% rule; preserved in quarantine and original HOLD QA",
+    "apron_polygons_px": {
+      "SW": [
+        [
+          280,
+          593
+        ],
+        [
+          457,
+          690
+        ],
+        [
+          255,
+          785
+        ],
+        [
+          78,
+          684
+        ]
+      ],
+      "NE": [
+        [
+          1065,
+          320
+        ],
+        [
+          1075,
+          293
+        ],
+        [
+          1240,
+          221
+        ],
+        [
+          1254,
+          380
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      131,
+      245,
+      1548,
+      856
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.07834928229665072,
+      0.2603613177470776,
+      0.07416267942583732,
+      0.09032943676939426
+    ],
+    "whole_floor_bounds_px": [
+      78,
+      221,
+      1548,
+      856
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.04665071770334928,
+      0.23485653560042508,
+      0.07416267942583732,
+      0.09032943676939426
+    ],
+    "main_floor_area_px2": 449137,
+    "main_margin_minimum": 0.07,
+    "whole_margin_minimum": 0.04,
+    "imagegen_calls_for_plate": 3,
+    "byte_identity_verified": true
+  }
+}

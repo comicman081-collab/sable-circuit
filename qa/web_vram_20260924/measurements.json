@@ -1,0 +1,32 @@
+{
+  "recorded": "2026-09-24",
+  "renderer": "Godot 4.7.1 Compatibility (OpenGL 3.3), NVIDIA RTX 4070 SUPER",
+  "metric": "Performance.RENDER_TEXTURE_MEM_USED after 30 frames of StoryStage01",
+  "native_project_mb": {
+    "before": {"MIS_CH01_01": 1546.3, "MIS_CH01_02": 1599.2, "MIS_CH01_03": 1554.6, "MIS_CH01_04": 1618.6, "MIS_CH01_05": 1618.6},
+    "after": {"MIS_CH01_01": 830.1, "MIS_CH01_02": 882.9, "MIS_CH01_03": 838.4, "MIS_CH01_04": 902.3, "MIS_CH01_05": 902.3}
+  },
+  "web_equivalent_mb": {
+    "method": "Web staging copy (.cache/sites_godot: half-size motion atlases, WebP plates, half-size machine views) run natively with OS.has_feature(\"web\") branches forced on. The retired ASTER V4 preview atlases are excluded from the web pack, so their measured 588 MB is subtracted from 'before'.",
+    "before": {"MIS_CH01_01": 493.8, "MIS_CH01_05": 448.1},
+    "after": {"MIS_CH01_01": 365.7, "MIS_CH01_05": 320.0}
+  },
+  "released_per_subsystem_mb_native_mission_01": {
+    "aster_v4_preview_superseded_by_motion_studio": 588.0,
+    "operator_vector_rig_and_detail_overlay_hidden": 127.9
+  },
+  "remaining_web_equivalent_mission_01_mb": {
+    "motion_studio_atlases_half_size": 126.0,
+    "room_and_connector_plates": 99.3,
+    "enemies": 50.7,
+    "kArchive_cover_props": 42.2,
+    "other_scene_sprites": 9.9,
+    "ui_fonts_misc_residual": 30.7
+  },
+  "browser_observations": [
+    "Public Site v11, in-app Chromium pane: WebGL context lost right after deploying Operation 1 (white page, CanvasShaderGLES3 compile failure); the pane then disabled WebGL2 for that origin.",
+    "Pre-fix local export: a second attempt deployed without context loss, so the failure is intermittent rather than deterministic.",
+    "Post-fix local export: title, briefing and Operation 1 deployment rendered; isContextLost() == false after combat start."
+  ],
+  "not_claimed": ["deployment", "physical-device or mobile GPU verification", "human playtest"]
+}

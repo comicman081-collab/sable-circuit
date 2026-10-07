@@ -1,0 +1,28 @@
+✔ A cursor between the character and illustrated muzzle cannot make a bullet fly behind the facing (1.9345ms)
+✔ Turning throughout held moving fire keeps every projectile and rendered facing on one aim at 30/60/120 Hz (19.5045ms)
+✔ A fresh movement chord can take aim during held mouse fire and the next mouse move can take it back (0.6949ms)
+✔ An exactly centred cursor retains the previous aim instead of forcing east (0.1644ms)
+✔ All four WASD diagonals work in either press order, with Korean/English/Shift/IME event values (5.4743ms)
+✔ Arrow key pairs drive all four diagonals through the same actor (0.2306ms)
+✔ Releasing one key returns to the remaining direction; opposite-key and alias chords do not stick (0.2263ms)
+✔ A new movement chord takes facing from an idle pointer, but key repeat does not cancel active mouse aim (0.1339ms)
+✔ Shift and Space continue to work with diagonal motion and independent mouse firing (0.3472ms)
+✔ Settings controls allow WASD without swallowing text editing or native slider/checkbox keys (0.2642ms)
+✔ Keyboard movement, reload, and fire all clear on focus loss (0.4137ms)
+✔ A click shorter than one render frame fires once without a held button (2.3898ms)
+✔ All eight movement directions and all eight independent firing facings, at three display rates (24.8516ms)
+✔ Diagonal keys do not create a speed advantage (0.5314ms)
+✔ Stop, resume and speed switch retain a valid continuous locomotion phase (0.6784ms)
+✔ Held fire consumes ammunition, automatically reloads, and remains rate independent (1.9841ms)
+✔ Reload prevents shots and restores the magazine only when complete (0.3383ms)
+✔ Obstacles and world bounds constrain actual position (1.9491ms)
+✔ Swept projectile collision catches thin targets between ticks (0.2112ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 128.3858
+

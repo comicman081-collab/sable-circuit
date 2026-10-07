@@ -1,0 +1,319 @@
+{
+  "kind": "sable-cycle-observation",
+  "character": "rook",
+  "direction": "N",
+  "action": "walk",
+  "inputs": {
+    "character": "rook",
+    "direction": "N",
+    "action": "walk",
+    "recipe": {
+      "path": "characters/rook.json",
+      "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+    },
+    "identity": {
+      "path": "art/rook/identity_reference.png",
+      "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+    },
+    "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+    "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+    "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+    "sources": [
+      {
+        "slot": "N/walk/0",
+        "path": "art/rook/N_walk_0_master.png",
+        "sha256": "dc66009174a535b992c39e9011d35f2a526e8c843da067f9d74ba6f2e80f8a80"
+      },
+      {
+        "slot": "N/walk/1",
+        "path": "art/rook/N_walk_1_master.png",
+        "sha256": "ad985fa24393a869fe48ccd27f0a53ebd58bacf85739e608ff91b3e63e260dbb"
+      },
+      {
+        "slot": "N/walk/2",
+        "path": "art/rook/N_walk_2_master.png",
+        "sha256": "c402aba5c351e6cc7cf4f36cd788376b892d5d10b344cd04b7103cdfb9a0fe8a"
+      },
+      {
+        "slot": "N/walk/3",
+        "path": "art/rook/N_walk_3_master.png",
+        "sha256": "a3e373c08645e89038241cf0767864a76631407ac5edbb6848220d9b3dbd5daf"
+      },
+      {
+        "slot": "N/walk/4",
+        "path": "art/rook/N_walk_4_master.png",
+        "sha256": "9734d3074eaee4705af978258c4935f1b65aad012a1e7707fec35f1dd030d60a"
+      },
+      {
+        "slot": "N/walk/5",
+        "path": "art/rook/N_walk_5_master.png",
+        "sha256": "6bf16de0beb04e18e26503268e1ea76ec83ca90f3e88ff1d9c1a566774442cf6"
+      }
+    ]
+  },
+  "preview": {
+    "path": "qa/rook/gait/c0f50320f5ccd202_05893d25/cycle-preview.json",
+    "sha256": "4ae9a846c633eefa57cc086022dbefc484ad9b6435900ab5c606029918e01250"
+  },
+  "decision": "approved",
+  "reviewer": "Astra direct native anatomy review, browser 1x and chronological decoded samples",
+  "legMarkers": {
+    "left": "Back view anatomical left is screen-left clean pocket leg, continuous from left buttock seam to heel.",
+    "right": "Back view screen-right anatomical right with paired cylinders, continuous from right hip to sole."
+  },
+  "frames": [
+    {
+      "index": 0,
+      "phase": "left_contact",
+      "support": "double",
+      "landmarks": {
+        "leftHip": [
+          353,
+          362
+        ],
+        "leftKnee": [
+          349,
+          426
+        ],
+        "leftSole": [
+          346,
+          661
+        ],
+        "rightHip": [
+          410,
+          362
+        ],
+        "rightKnee": [
+          422,
+          497
+        ],
+        "rightSole": [
+          425,
+          707
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "phase": "right_swing",
+      "support": "left",
+      "landmarks": {
+        "leftHip": [
+          350,
+          360
+        ],
+        "leftKnee": [
+          361,
+          497
+        ],
+        "leftSole": [
+          374,
+          708
+        ],
+        "rightHip": [
+          415,
+          360
+        ],
+        "rightKnee": [
+          426,
+          478
+        ],
+        "rightSole": [
+          432,
+          624
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "phase": "right_passing",
+      "support": "left",
+      "landmarks": {
+        "leftHip": [
+          348,
+          356
+        ],
+        "leftKnee": [
+          361,
+          499
+        ],
+        "leftSole": [
+          373,
+          707
+        ],
+        "rightHip": [
+          408,
+          361
+        ],
+        "rightKnee": [
+          413,
+          464
+        ],
+        "rightSole": [
+          426,
+          628
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "phase": "right_contact",
+      "support": "double",
+      "landmarks": {
+        "leftHip": [
+          352,
+          360
+        ],
+        "leftKnee": [
+          355,
+          482
+        ],
+        "leftSole": [
+          360,
+          707
+        ],
+        "rightHip": [
+          410,
+          353
+        ],
+        "rightKnee": [
+          414,
+          458
+        ],
+        "rightSole": [
+          420,
+          584
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "phase": "left_swing",
+      "support": "right",
+      "landmarks": {
+        "leftHip": [
+          349,
+          349
+        ],
+        "leftKnee": [
+          352,
+          482
+        ],
+        "leftSole": [
+          346,
+          644
+        ],
+        "rightHip": [
+          410,
+          359
+        ],
+        "rightKnee": [
+          407,
+          493
+        ],
+        "rightSole": [
+          401,
+          708
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "phase": "left_passing",
+      "support": "right",
+      "landmarks": {
+        "leftHip": [
+          352,
+          356
+        ],
+        "leftKnee": [
+          358,
+          492
+        ],
+        "leftSole": [
+          355,
+          688
+        ],
+        "rightHip": [
+          407,
+          364
+        ],
+        "rightKnee": [
+          407,
+          497
+        ],
+        "rightSole": [
+          412,
+          709
+        ]
+      }
+    }
+  ],
+  "observations": {
+    "oppositeContacts": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.68,
+        1.28,
+        1.88
+      ],
+      "notes": "Left heel is farther up-screen in contact0 and right sole trails; contact3 swaps with right heel up-screen and left sole trailing. Correct left/right exchange in depth."
+    },
+    "passingAndSwing": {
+      "decision": "pass",
+      "seconds": [
+        0.28,
+        0.48,
+        0.88,
+        1.08
+      ],
+      "notes": "Right rear swing1 shows broad underside; passing2 heel lowers and knee moves ahead. Left rear swing4 then left passing5 gives opposite foot contact sequence. Passing5 heel clearance is small rather than a high kick."
+    },
+    "loopSeam": {
+      "decision": "pass",
+      "seconds": [
+        1.08,
+        1.28,
+        2.28,
+        2.48
+      ],
+      "notes": "Left passing5 resumes left contact0 over three loops. No one-leg-only repeated step; visible differences between broad swing soles and low passing heels."
+    },
+    "footSliding": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.28,
+        0.48,
+        0.68
+      ],
+      "notes": "Support switches below pelvis and each foot advances/releases relative to moving grid. Discrete frame-hold sliding remains; six-frame illustration does not achieve continuous foot locking."
+    },
+    "bodyContinuity": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.48,
+        0.88,
+        1.08
+      ],
+      "notes": "Body and short hood cape remain connected without green residue. Contact0 has more visible gold boot/knee trim than the cloth-heavy passing frames; native costume-detail variation is documented."
+    },
+    "weaponContinuity": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.48,
+        0.88,
+        1.08
+      ],
+      "notes": "Shotgun held at shoulder throughout; newly measured muzzle is at visible foreshortened barrel end rather than back of head. Direction-art remains discretized and slightly off-center in this rear camera."
+    }
+  },
+  "annotationMethod": {
+    "coordinates": "Manual tracing on compiled cells, native pixel coordinates; costume plus hip-knee-boot continuity, not metadata as anatomy authority.",
+    "videoSamples": "qa/rook/astra_repair_20260913/N_final_cycle_samples/samples.json",
+    "scope": "Source cycle approval only. Actual game runtime still needs separate verification."
+  }
+}

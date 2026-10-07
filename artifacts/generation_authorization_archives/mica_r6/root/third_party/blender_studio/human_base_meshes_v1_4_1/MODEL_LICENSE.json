@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "reviewed_on": "2026-09-07",
+  "status": "LICENSE_CLEARED_BASE_GEOMETRY_ONLY_NOT_MICA_APPEARANCE",
+  "download_url": "https://download.blender.org/demo/asset-bundles/human-base-meshes/human-base-meshes-bundle-v1.4.1.zip",
+  "official_catalog": "https://www.blender.org/download/demo-files/",
+  "archive_sha256": "811f43accbb31a88266d932f8f5563b2d13586fca0ba2693aad1f5fe582b3515",
+  "source_blend": {
+    "path": "third_party/blender_studio/human_base_meshes_v1_4_1/human-base-meshes-bundle-v1.4.1/human_base_meshes_bundle.blend",
+    "sha256": "3c121505651140ceb4d69fd1d8923f7788ffadd81672f5be14845a5f2c75c137"
+  },
+  "selected_collection": "Body Female - Realistic",
+  "selected_objects": ["GEO-body_female_realistic", "GEO-body_female_realistic.eye.L", "GEO-body_female_realistic.eye.R"],
+  "author": "Dan Ulrich",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.en",
+  "bundled_evidence": {
+    "intake": "artifacts/quarantine/generation_diagnostics/blender_studio_base_intake_r1/intake.json",
+    "selected_collection_asset_license": "CC0",
+    "README_statement": "All provided assets are public domain under the CC0 license.",
+    "other_notice": "The bundle also retains a License text block referring to the Rain Rig under CC-BY-4.0. The Rain Rig and Rain-derived stylized collection are NOT selected or imported by this intake decision. Do not extend this scope to them."
+  },
+  "permitted_intended_use": "Project-local modification, rigging and rendering for a commercial game using the specifically selected base geometry.",
+  "original_immutable": true,
+  "outputs_project_local": true,
+  "limitations": [
+    "This is an unrigged anatomical base, not a finished MICA model.",
+    "MICA likeness, covered tactical costume, hair, sensor fins and weapon must follow approved ImageGen source art.",
+    "Do not use the bare anatomical base as a final player asset or imply it passed animation or visual review."
+  ]
+}

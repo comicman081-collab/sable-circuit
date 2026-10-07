@@ -1,0 +1,15 @@
+00:02.797  blend            | Read blend: "D:\AI 종합 폴더\Games\Sable-circuit\artifacts\quarantine\generation_diagnostics\mica_E_connected_surface_r01\SOURCE_SURFACE_NEUTRAL.blend"
+D:\AI 종합 폴더\Games\Sable-circuit\tools\character_pipeline\fit_projected_source_neutral.py:81: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if material and material.use_nodes:
+Traceback (most recent call last):
+  File "D:\AI 종합 폴더\Games\Sable-circuit\tools\character_pipeline\fit_projected_source_neutral.py", line 217, in <module>
+    child(args) if args.inside else run(args)
+    ~~~~~^^^^^^
+  File "D:\AI 종합 폴더\Games\Sable-circuit\tools\character_pipeline\fit_projected_source_neutral.py", line 130, in child
+    raise ValueError('NATIVE_REST_DOES_NOT_MATCH_NUMERIC_BINDING')
+ValueError: NATIVE_REST_DOES_NOT_MATCH_NUMERIC_BINDING
+
+Error: script failed, file: 'D:\AI 종합 폴더\Games\Sable-circuit\tools\character_pipeline\fit_projected_source_neutral.py', exiting.
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

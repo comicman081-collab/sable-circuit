@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "role": "fail-closed Blender+UAL pose-guide contact calibration; never visible character art",
+  "sample_count_including_wrap": 49,
+  "contact_clearance_max_m": 0.018,
+  "flight_clearance_min_m": 0.06,
+  "ground_penetration_max_m": 0.005,
+  "neutral_sole_side_delta_max_m": 0.008,
+  "minimum_support_samples": 2,
+  "maximum_foot_yaw_from_travel_degrees": 35.0,
+  "phase_semantics": {
+    "contact_l": "left sole descends through the fixed contact band while anatomical left leads",
+    "down_l": "left remains inside the fixed contact band at the following pelvis minimum",
+    "passing_l": "left remains inside the fixed contact band while right passes it in travel projection",
+    "flight_l": "after left toe-off, right leads and both soles exceed the flight band",
+    "contact_r": "right sole descends through the fixed contact band while anatomical right leads",
+    "down_r": "right remains inside the fixed contact band at the following pelvis minimum",
+    "passing_r": "right remains inside the fixed contact band while left passes it in travel projection",
+    "flight_r": "after right toe-off, left leads and both soles exceed the flight band"
+  },
+  "prohibitions": [
+    "No generator IK target, socket table, declared contact flag, or motion-derived global minimum may define the floor.",
+    "No per-frame root translation may be applied to manufacture contact.",
+    "No Blender or VRM appearance may enter ImageGen source art, an atlas, HTML, or runtime output.",
+    "A missing distinct contact, down, passing, or flight event is HOLD; never duplicate or relabel another phase."
+  ]
+}

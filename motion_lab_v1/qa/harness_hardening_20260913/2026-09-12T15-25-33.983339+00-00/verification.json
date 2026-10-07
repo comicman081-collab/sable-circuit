@@ -1,0 +1,713 @@
+{
+  "recordedAt": "2026-09-12T15:25:58.554905+00:00",
+  "status": "PASS_IMPLEMENTED_GUARDS_NOT_CHARACTER_APPROVAL",
+  "tests": [
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exitCode": 0,
+      "seconds": 15.671000000002095,
+      "log": {
+        "path": "qa/harness_hardening_20260913/2026-09-12T15-25-33.983339+00-00/test_0.log",
+        "sha256": "aaaf79374f6d54dc9f03f7b11e89b021ac1edb73aa4c24d97e9d5fc82bdd4a34"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\tests\\atlas-renderer.test.js",
+        "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\tests\\combat-aim.test.js",
+        "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\tests\\keyboard-input.test.js",
+        "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\tests\\simulation.test.js"
+      ],
+      "exitCode": 0,
+      "seconds": 0.20399999999790452,
+      "log": {
+        "path": "qa/harness_hardening_20260913/2026-09-12T15-25-33.983339+00-00/test_1.log",
+        "sha256": "6da8eff1bb270f5fffb66b4921fd028396e09832fc95f1c4d4ce9140c634ddc5"
+      }
+    },
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\AAA\\.codex\\skills\\.system\\skill-creator\\scripts\\quick_validate.py",
+        "D:\\AI 종합 폴더\\Games\\Sable-circuit\\.agents\\skills\\sable-character-studio"
+      ],
+      "exitCode": 0,
+      "seconds": 0.15599999998812564,
+      "log": {
+        "path": "qa/harness_hardening_20260913/2026-09-12T15-25-33.983339+00-00/test_2.log",
+        "sha256": "e0bd742bc839661b4b1f7f98231c236ccde57f619ff9cd0ecfb62a4bb1cabcbf"
+      }
+    }
+  ],
+  "negativeProbes": [
+    {
+      "name": "permuted chronology retaining six frame IDs",
+      "rejected": true,
+      "reason": "Chronological frame differs from authored phase"
+    },
+    {
+      "name": "frozen samples retaining travel summaries",
+      "rejected": true,
+      "reason": "Chronological frame differs from authored phase"
+    },
+    {
+      "name": "source-complete but unreviewed active build",
+      "rejected": true,
+      "reason": "Whole-cycle review required before active build: E/walk"
+    },
+    {
+      "name": "blank actual cycle observation approval",
+      "rejected": true,
+      "reason": "Record the actual reviewer"
+    },
+    {
+      "name": "non-E expansion before approved E cycle",
+      "rejected": true,
+      "reason": "E full-cycle review required before expanding source art; run prepare-cycle --character rook --direction E"
+    },
+    {
+      "name": "delivery of current rejected ROOK",
+      "rejected": true,
+      "reason": "Whole-cycle review required before active build: E/walk"
+    }
+  ],
+  "originalBrowserTechnicalReportAccepted": true,
+  "handoff": {
+    "status": "CURRENT_HANDOFF",
+    "character": "rook",
+    "inputSHA256": "13858b5fe9f66d09c0a7b7905933b410b427288224c6954f281c174a452de945",
+    "nextAction": "REPAIR_RUNTIME_VISUAL",
+    "reviewedDelivery": false,
+    "lunaGenerationTested": false
+  },
+  "handoffPacket": {
+    "path": "qa/harness_hardening_20260913/2026-09-12T15-25-33.983339+00-00/rook.handoff.json",
+    "sha256": "572ac9698105cf4517d12ebc3ae10576cfa7ff1a9027e62b32b5375abef095aa"
+  },
+  "sourceStatus": {
+    "character": "rook",
+    "mode": "source-authoring",
+    "ready": false,
+    "requiredFrames": 56,
+    "approvedFrames": 56,
+    "next": {
+      "kind": "cycle-review",
+      "direction": "E",
+      "action": "walk",
+      "state": "needs_cycle_review",
+      "inputSHA256": "7ba380b55f9fd8717e9ca50ca705ca88dc8c7b62d49313c663bc9f3ce3175646",
+      "command": "character_workflow.py prepare-cycle --character rook --direction E"
+    },
+    "errors": [],
+    "slots": [
+      {
+        "slot": "E/walk/0",
+        "path": "art/rook/E_walk_0_master.png",
+        "state": "approved",
+        "sha256": "6784b966c3f2eb44ecb45b964c38c0a31fe157ac7a44faccf9c7a0247347ee38"
+      },
+      {
+        "slot": "E/walk/1",
+        "path": "art/rook/E_walk_1_master.png",
+        "state": "approved",
+        "sha256": "c405edc9234ed939b62eba17ef22cfa9eec2d38b57dd64eb6c5cf64c22c69057"
+      },
+      {
+        "slot": "E/walk/2",
+        "path": "art/rook/E_walk_2_master.png",
+        "state": "approved",
+        "sha256": "2ed6088339b3bed4e24a8d03b15b3300816fffb7a524c7d6796acc6bea6c9534"
+      },
+      {
+        "slot": "E/walk/3",
+        "path": "art/rook/E_walk_3_master.png",
+        "state": "approved",
+        "sha256": "475e0c25df1d7e0211dc0e10f2f7cc2907dfb801f9b68bfac911f13ce32bce61"
+      },
+      {
+        "slot": "E/walk/4",
+        "path": "art/rook/E_walk_4_master.png",
+        "state": "approved",
+        "sha256": "8d1b3832b4acd59a21e172c2882cd3f260713bf68d97131888fc9e0a3124e843"
+      },
+      {
+        "slot": "E/walk/5",
+        "path": "art/rook/E_walk_5_master.png",
+        "state": "approved",
+        "sha256": "4408d8ee52069fba927e24004cfb45dd99f8b12b8f33f488db9274ba6ce165b4"
+      },
+      {
+        "slot": "E/idle/0",
+        "path": "art/rook/E_idle_0_master.png",
+        "state": "approved",
+        "sha256": "25a7b794ff66598e6b09634ee8f3b198dbed706afee42a6f971ee5b97f6b88ee"
+      },
+      {
+        "slot": "SE/walk/0",
+        "path": "art/rook/SE_walk_0_master.png",
+        "state": "approved",
+        "sha256": "2d7946176b66df9aa0d03d6eab8bb671f6d6891c89961b69f6577345f04507d0"
+      },
+      {
+        "slot": "SE/walk/1",
+        "path": "art/rook/SE_walk_1_master.png",
+        "state": "approved",
+        "sha256": "5138255013dc62834a5b31e114ac174d075df858ce4fb303843ead5dc4819c5c"
+      },
+      {
+        "slot": "SE/walk/2",
+        "path": "art/rook/SE_walk_2_master.png",
+        "state": "approved",
+        "sha256": "6693cacb04edcb81f643bbe4485211eee40902ca9510045be8e7969042007115"
+      },
+      {
+        "slot": "SE/walk/3",
+        "path": "art/rook/SE_walk_3_master.png",
+        "state": "approved",
+        "sha256": "6f15e9fad6b7bb3504cbd342f22065b2c0987b82bc662c2cbbef26fc19600551"
+      },
+      {
+        "slot": "SE/walk/4",
+        "path": "art/rook/SE_walk_4_master.png",
+        "state": "approved",
+        "sha256": "19c1129be2a76c3521ee42264c46ff55e2a0b73a5aa0c3766ec4807b95d567ee"
+      },
+      {
+        "slot": "SE/walk/5",
+        "path": "art/rook/SE_walk_5_master.png",
+        "state": "approved",
+        "sha256": "d0b5a01fdb55aa09ab3d2ea341864fc9ac701c7e40a373a4496d256bf976fdd0"
+      },
+      {
+        "slot": "SE/idle/0",
+        "path": "art/rook/SE_idle_0_master.png",
+        "state": "approved",
+        "sha256": "de1371effcd6da960950c4c726e0422ff952ee34b96fcf1af583765fd5215b6a"
+      },
+      {
+        "slot": "S/walk/0",
+        "path": "art/rook/S_walk_0_master.png",
+        "state": "approved",
+        "sha256": "580b0dc1c9ef7d984cd3da40d5a69c19610195aa88a6c7a0776cf2ff675a68b2"
+      },
+      {
+        "slot": "S/walk/1",
+        "path": "art/rook/S_walk_1_master.png",
+        "state": "approved",
+        "sha256": "aa9854dfc76d62101daec237ee5625f4328c7db7c637cad689c4e635692d80c4"
+      },
+      {
+        "slot": "S/walk/2",
+        "path": "art/rook/S_walk_2_master.png",
+        "state": "approved",
+        "sha256": "97f16aafee013e562648bb07004df4eb978bf180cde8c2c7909e485979becb03"
+      },
+      {
+        "slot": "S/walk/3",
+        "path": "art/rook/S_walk_3_master.png",
+        "state": "approved",
+        "sha256": "bd0b320d7be0abc6fb0e7bcf22caf7ccbaa73ba517a0633434098850d2f3dcc9"
+      },
+      {
+        "slot": "S/walk/4",
+        "path": "art/rook/S_walk_4_master.png",
+        "state": "approved",
+        "sha256": "2b398077c7424a811bd2a17b17c6aad29193ed19e0713d7a6003ec617cc61a7c"
+      },
+      {
+        "slot": "S/walk/5",
+        "path": "art/rook/S_walk_5_master.png",
+        "state": "approved",
+        "sha256": "f80ef405ce84c87dd9cb47a25be5ad3f4d1ad7be30d2a98d18d764b89b4dbaa0"
+      },
+      {
+        "slot": "S/idle/0",
+        "path": "art/rook/S_idle_0_master.png",
+        "state": "approved",
+        "sha256": "d9d15f0d901d9958a442c4c540ef3f24e6bce00a495e73e83bea9919c3da29a9"
+      },
+      {
+        "slot": "SW/walk/0",
+        "path": "art/rook/SW_walk_0_master.png",
+        "state": "approved",
+        "sha256": "9cce51f64728355e220ff4104f3e5c7d4aa22712ed668373d0cc3b5f91f0e9eb"
+      },
+      {
+        "slot": "SW/walk/1",
+        "path": "art/rook/SW_walk_1_master.png",
+        "state": "approved",
+        "sha256": "fcc5060e881a67bbe91a7917fc05932a247f126f7748f638c483810e072be100"
+      },
+      {
+        "slot": "SW/walk/2",
+        "path": "art/rook/SW_walk_2_master.png",
+        "state": "approved",
+        "sha256": "d9b6997f897fb62a2ad1f33069fcfe11086204f7153554f7cdd0052a37a33a45"
+      },
+      {
+        "slot": "SW/walk/3",
+        "path": "art/rook/SW_walk_3_master.png",
+        "state": "approved",
+        "sha256": "c3e0a39271f5ccf5d456badbdca4d0c74f95d620909aacc5c966dcbfb2933fa7"
+      },
+      {
+        "slot": "SW/walk/4",
+        "path": "art/rook/SW_walk_4_master.png",
+        "state": "approved",
+        "sha256": "befac6c62c283c219122d226fc3bd7f2e2f57d09b5cdccd3fa718318c23fe325"
+      },
+      {
+        "slot": "SW/walk/5",
+        "path": "art/rook/SW_walk_5_master.png",
+        "state": "approved",
+        "sha256": "aa6c47214d2cf79ea0243456bf02ed769e3ec4e63a29a0e230d850752510c2d1"
+      },
+      {
+        "slot": "SW/idle/0",
+        "path": "art/rook/SW_idle_0_master.png",
+        "state": "approved",
+        "sha256": "3304498467b21bc06532d8f62d5ce475ede02b994efa98f7f57cc2a00556e776"
+      },
+      {
+        "slot": "W/walk/0",
+        "path": "art/rook/W_walk_0_master.png",
+        "state": "approved",
+        "sha256": "e2deeb2da977f812cf2133e951907b4ccd777412d1bab2ff71010439705c139d"
+      },
+      {
+        "slot": "W/walk/1",
+        "path": "art/rook/W_walk_1_master.png",
+        "state": "approved",
+        "sha256": "d13a26e9bd22f774c8d6a1c336a2427cc2c0dd53b34ef78e0cebb11c15ef9c47"
+      },
+      {
+        "slot": "W/walk/2",
+        "path": "art/rook/W_walk_2_master.png",
+        "state": "approved",
+        "sha256": "58b4bfb42d01af28dca236c58164b44dd9b8dc6db53d79557716489c9f5e0fee"
+      },
+      {
+        "slot": "W/walk/3",
+        "path": "art/rook/W_walk_3_master.png",
+        "state": "approved",
+        "sha256": "6b14f3f58b9a86ed0074899787e2df74f0c3d679df7cfdd87f033f462be308d8"
+      },
+      {
+        "slot": "W/walk/4",
+        "path": "art/rook/W_walk_4_master.png",
+        "state": "approved",
+        "sha256": "cc80bc6c3a5915ff7084cfe74104de2a418cb066d0a1c5a7f29f5203edc527de"
+      },
+      {
+        "slot": "W/walk/5",
+        "path": "art/rook/W_walk_5_master.png",
+        "state": "approved",
+        "sha256": "f9b1ea920646b69175c1f5e27a60d9689e124985c1d62d42779e348744f6c07a"
+      },
+      {
+        "slot": "W/idle/0",
+        "path": "art/rook/W_idle_0_master.png",
+        "state": "approved",
+        "sha256": "eec695746327c4c78018d6e8fc8722e03cb54dab1e761576a8412c1af9cf47f2"
+      },
+      {
+        "slot": "NW/walk/0",
+        "path": "art/rook/NW_walk_0_master.png",
+        "state": "approved",
+        "sha256": "e32bf111c753f37bce398c47630a8b052eef9c322fa859365923a123ec41b831"
+      },
+      {
+        "slot": "NW/walk/1",
+        "path": "art/rook/NW_walk_1_master.png",
+        "state": "approved",
+        "sha256": "eeebb8a5391bfc6b44094b7f7f6da874692006f41777005dc711b433da2995e6"
+      },
+      {
+        "slot": "NW/walk/2",
+        "path": "art/rook/NW_walk_2_master.png",
+        "state": "approved",
+        "sha256": "b6c1747fb9330a327655d0e03f09a031f9379596ebfb79b424b1be90ecb836e0"
+      },
+      {
+        "slot": "NW/walk/3",
+        "path": "art/rook/NW_walk_3_master.png",
+        "state": "approved",
+        "sha256": "78bf709560d45a65eb88e5c720269c53efb95f56c40d95308019e6a0edf99cbf"
+      },
+      {
+        "slot": "NW/walk/4",
+        "path": "art/rook/NW_walk_4_master.png",
+        "state": "approved",
+        "sha256": "417d6b6ccb91e8a559410406377329a882601de8079533da5f64973ed6c1c1ea"
+      },
+      {
+        "slot": "NW/walk/5",
+        "path": "art/rook/NW_walk_5_master.png",
+        "state": "approved",
+        "sha256": "83df05b330d7027c353116c6949dac9b7b371d489cbb02a44cbd5e1fc7e1bd16"
+      },
+      {
+        "slot": "NW/idle/0",
+        "path": "art/rook/NW_idle_0_master.png",
+        "state": "approved",
+        "sha256": "b104d2e384d85efd4ab30532200828ec6db1116bef17208372550c612f7149aa"
+      },
+      {
+        "slot": "N/walk/0",
+        "path": "art/rook/N_walk_0_master.png",
+        "state": "approved",
+        "sha256": "1e1db289162225026aba729fa8ace09dc13d2263a6def979d2030ecc9f1ca891"
+      },
+      {
+        "slot": "N/walk/1",
+        "path": "art/rook/N_walk_1_master.png",
+        "state": "approved",
+        "sha256": "4f6f5b082c1aeb37831b6b0ae6ec92ff40721fe278735bbf526650628e38fcc2"
+      },
+      {
+        "slot": "N/walk/2",
+        "path": "art/rook/N_walk_2_master.png",
+        "state": "approved",
+        "sha256": "ad5fe8932b8aefa01304c77c9957619d29abc0fa9d481c5b7c330a91c8d5c97e"
+      },
+      {
+        "slot": "N/walk/3",
+        "path": "art/rook/N_walk_3_master.png",
+        "state": "approved",
+        "sha256": "2f1680fe4033790339e8c0ad76938d782e0989a8b7a04ba56543e40380e11849"
+      },
+      {
+        "slot": "N/walk/4",
+        "path": "art/rook/N_walk_4_master.png",
+        "state": "approved",
+        "sha256": "fb84ba7a4014801a181112fc89ce28ddd2b6e60b73784234183994cee5b207f5"
+      },
+      {
+        "slot": "N/walk/5",
+        "path": "art/rook/N_walk_5_master.png",
+        "state": "approved",
+        "sha256": "be94fcd071f81ae46ce0e6393c48041c5cc887a760c2768428dd8e7d10780359"
+      },
+      {
+        "slot": "N/idle/0",
+        "path": "art/rook/N_idle_0_master.png",
+        "state": "approved",
+        "sha256": "b8afe35660435577fc16444ac58ef7a45e99b68e1e14b0521f969c1bf2c80057"
+      },
+      {
+        "slot": "NE/walk/0",
+        "path": "art/rook/NE_walk_0_master.png",
+        "state": "approved",
+        "sha256": "f6b664ee812bdde68bdd1fbdfab981a777abe3cef8bfcdc6c261964c69d7ea1c"
+      },
+      {
+        "slot": "NE/walk/1",
+        "path": "art/rook/NE_walk_1_master.png",
+        "state": "approved",
+        "sha256": "587f5c24f9d1d4e21fc6ba9a22a0070ac23609ee07421db91e75d45821e30196"
+      },
+      {
+        "slot": "NE/walk/2",
+        "path": "art/rook/NE_walk_2_master.png",
+        "state": "approved",
+        "sha256": "461a480ebf92d3cd260cfddf4745e433ff4b93fb66512fdc54371c3fe9a4bfca"
+      },
+      {
+        "slot": "NE/walk/3",
+        "path": "art/rook/NE_walk_3_master.png",
+        "state": "approved",
+        "sha256": "dd5644014282f60bb80f206c1558b45a1e4b17005dbb40db7620e1fdbf64e326"
+      },
+      {
+        "slot": "NE/walk/4",
+        "path": "art/rook/NE_walk_4_master.png",
+        "state": "approved",
+        "sha256": "8fcb97a51c0e057ef1f0c930a6f5bae1540acfa1cbb663c4047b5791244fc4d5"
+      },
+      {
+        "slot": "NE/walk/5",
+        "path": "art/rook/NE_walk_5_master.png",
+        "state": "approved",
+        "sha256": "6bb4f58cbf295a9e30972de2d4d9a96850fde1263d25fc891dde6d2b8c124208"
+      },
+      {
+        "slot": "NE/idle/0",
+        "path": "art/rook/NE_idle_0_master.png",
+        "state": "approved",
+        "sha256": "5a130d483a515486cd6bbda16b3f0711137cbe673b7c172c058f805d311254ec"
+      }
+    ],
+    "sourcesReady": true,
+    "cycleStatus": {
+      "required": true,
+      "ready": false,
+      "cycles": [
+        {
+          "direction": "E",
+          "action": "walk",
+          "state": "needs_cycle_review",
+          "inputSHA256": "7ba380b55f9fd8717e9ca50ca705ca88dc8c7b62d49313c663bc9f3ce3175646"
+        },
+        {
+          "direction": "SE",
+          "action": "walk",
+          "state": "repair",
+          "inputSHA256": "80be37cfa75a5adec9b116b03a7d0068432c57466b5b3fc9d229cd8e1e734701"
+        },
+        {
+          "direction": "S",
+          "action": "walk",
+          "state": "needs_cycle_review",
+          "inputSHA256": "1352f39aa74e177b449300cd778cfa16d20711dda52f6309d28996747201079b"
+        },
+        {
+          "direction": "SW",
+          "action": "walk",
+          "state": "needs_cycle_review",
+          "inputSHA256": "bb171bc6939bed94da2a353b781d47d9cb4ad9b3897bd8fdc09141e9a6cd64c6"
+        },
+        {
+          "direction": "W",
+          "action": "walk",
+          "state": "needs_cycle_review",
+          "inputSHA256": "7c4887de6d3bd72d9482d49ce2ca21bdbfe53e085ca8b3ee8c7076b7b4347c17"
+        },
+        {
+          "direction": "NW",
+          "action": "walk",
+          "state": "needs_cycle_review",
+          "inputSHA256": "afa559f9e26e373051853340d3362c1a9275fe4714bea856ed5436af89881459"
+        },
+        {
+          "direction": "N",
+          "action": "walk",
+          "state": "repair",
+          "inputSHA256": "3f47104351e25bc89dc77f3da45a303e75d0206c4ec21252e9dcca820a33f847"
+        },
+        {
+          "direction": "NE",
+          "action": "walk",
+          "state": "needs_cycle_review",
+          "inputSHA256": "f8b109858904462791aa6f254616f8950fc33af3e855ac8dbbe075b67a2dd3ad"
+        }
+      ]
+    },
+    "runtimeRepairRequired": true,
+    "activeBuildReady": false,
+    "runtimeRejection": {
+      "recordedAt": "2026-09-12T14:56:42.268935+00:00",
+      "character": "rook",
+      "inputSHA256": "0e60cbe9e84dd9e8292b939f78beee322181112e70f83c53393a824bf6207335",
+      "evidence": {
+        "path": "qa/rook/gait_audit_20260912/video_se/frame_002.400.png",
+        "sha256": "99df91846995eecf9d92aba82caff9ee15c3c8cb28cfdc2eaf20cd748ceaf8af"
+      },
+      "nativeDimensions": [
+        1920,
+        1080
+      ],
+      "decision": "repair",
+      "notes": "User rejected current ROOK gait. Current live build 0e60cbe9e84dd9e8292b939f78beee322181112e70f83c53393a824bf6207335 uses authored_frames with no legacy overrides. Native compiled SE and N cycles repeat the same leading/trailing leg arrangement at opposite-contact phases 0 and 3; sequential decoding of active video at 2.407s and 3.001s confirms SE lacks the expected support exchange while the ground moves. Six distinct lower-body hashes and 40 temporal rows did not establish natural gait. Prior visual completion is withdrawn. Audit and negative validator probes: qa/rook/gait_audit_20260912/AUDIT_KO.md. This records a visual rejection only, not an art or runtime repair.",
+      "reviewer": "codex-user-rejection-audit-2026-09-12"
+    }
+  },
+  "activeAssetsAndRookSourcesUnchanged": true,
+  "beforeAndAfter": {
+    "dist/ROOK_Motion_Studio.html": "4fb1e5dcb147830b94bb029db3859afa3959185ff09d1754f72101683a22be7c",
+    "public/standalone/rook.html": "4fb1e5dcb147830b94bb029db3859afa3959185ff09d1754f72101683a22be7c",
+    "dist/rook.package.json": "7890f205ee039a9fd7741c4104779d9e8125c65051fd66d3bf54e42ba7a48485",
+    "public/assets/atlas/rook/E_idle.json": "4002fef01337aff896a67466038be8fb32ec960d6b0c4c5ceb4acb4b02df06cf",
+    "public/assets/atlas/rook/E_idle.webp": "a059a99c10b956d089d3eb29f236d6d5ed8fe01e7ea88a1bd7847ac5fa736a4e",
+    "public/assets/atlas/rook/E_walk.json": "8e13611ca1dfcda646c237bb2be8176175f063030f70cfa5781d73f2ae9b1348",
+    "public/assets/atlas/rook/E_walk.webp": "9693dc8e4a2d2feaebfb26769fc4656580cadcbd009124c348ebbad1436bce95",
+    "public/assets/atlas/rook/NE_idle.json": "203f25e15cf9520d5db84e47b1e9a88128580698bcc4c001e378d30c0eb7214a",
+    "public/assets/atlas/rook/NE_idle.webp": "33f902966dd3263e53f586dcb44c61b59b6ce8815478cf630bb8a93a3a5d1b11",
+    "public/assets/atlas/rook/NE_walk.json": "ff3583b08a49a98276045961120f4e16739073e41726db8fe0c95241219dc6f4",
+    "public/assets/atlas/rook/NE_walk.webp": "3c5f13ea110352c8dba01b7f8543cb40391e2d0d23510c08ed1a4aaeb5037c5d",
+    "public/assets/atlas/rook/NW_idle.json": "eb046af8979531b16787fce1387f5bcb72a5e63336f555737642c3061ca0302d",
+    "public/assets/atlas/rook/NW_idle.webp": "f738989a5531d1568b373ccb1dd4230047a905393fca1426ac05df79b852276e",
+    "public/assets/atlas/rook/NW_walk.json": "9969407bf40c10dd462fb6c691b068efe3dd7c30817ff56c10ff56b4ee0db719",
+    "public/assets/atlas/rook/NW_walk.webp": "39aaff61bd8eea31fea3d3062c25dac38d667bd2ad0feb82a2d157b2eb14a78a",
+    "public/assets/atlas/rook/N_idle.json": "f6bfb1e2317d5c635be4d5a113ce90abc024885e9310466231970a2da9c08267",
+    "public/assets/atlas/rook/N_idle.webp": "55c77b2f8cc62c1985ae14b9f5b631c2f349109c0f17eee973dd9cb458fd384f",
+    "public/assets/atlas/rook/N_walk.json": "024bebaddb6316ddaf2b1baa7e8655a8428fdee9965dad89989737b035bc4fd6",
+    "public/assets/atlas/rook/N_walk.webp": "d7ef81cd0d7f71f52a31bdc518ec4d6e271b690933edf87b6487d28e02f13eb1",
+    "public/assets/atlas/rook/portrait.png": "6b0965dc77249a976aa06dd89bc1809453246644fe5f70d06ccb1721e7d2ec13",
+    "public/assets/atlas/rook/profile.json": "b23895548200c68ab227c4be23956191e39312664cfdef448ff4cde256413218",
+    "public/assets/atlas/rook/SE_idle.json": "2fbd9566a94c1d90cb15b1f161501966c912645eab21b236c60557ab0fdb9a60",
+    "public/assets/atlas/rook/SE_idle.webp": "0da36c87951d5933bb54e38088e9bcf7a9a17cb5a2f894e967f5b96dac998a2f",
+    "public/assets/atlas/rook/SE_walk.json": "0069513531b73cbbec31879d56e866df445e09f793a728def925e2307f63356c",
+    "public/assets/atlas/rook/SE_walk.webp": "4ee9bf6b65d18bcb4d2e7a9bc2ff7ce1439d0937630467f01f9775f2e2edc5b7",
+    "public/assets/atlas/rook/SW_idle.json": "a92016d5c6529acfba85e8f7e1071b228e3b22b285a85c1e62ecb49c204f7059",
+    "public/assets/atlas/rook/SW_idle.webp": "d4caa31b26e4fb0d434a0d581b3a5dd960186691e8ea6e7f83394b3b4791dc80",
+    "public/assets/atlas/rook/SW_walk.json": "866b782e759e3a5573ea77d59ead323f076e4320e5e53867c3e89c49b9b35166",
+    "public/assets/atlas/rook/SW_walk.webp": "7278d7ef5c5ecafe6af108d9c97c113a98c50cbbe9f05413cee9b243ac9ca822",
+    "public/assets/atlas/rook/S_idle.json": "0da74690aaf11178b971b33ab295ac8c41e77589d62e37f4b2ad6eff540aa39c",
+    "public/assets/atlas/rook/S_idle.webp": "299e8136cbb09b99923ad0c21fdde496385f4d33945b0746641f7bc31276cec0",
+    "public/assets/atlas/rook/S_walk.json": "2346746c25cd65011e8c3f2c257878aee15ae0c299a5481dc8ea31792af4ba80",
+    "public/assets/atlas/rook/S_walk.webp": "3c28b5a8478fb110f40f22d90a3af327b7c5e00daab610b2004975b8daeedecf",
+    "public/assets/atlas/rook/W_idle.json": "d4ade474c473d0a525073a61a82fabea7f9fda0a085b287d356a3a6d2fc68b83",
+    "public/assets/atlas/rook/W_idle.webp": "d0918a74304d6a7c9f6fae37b0efd06a7280cd851a6a5dbb775b1839ed702689",
+    "public/assets/atlas/rook/W_walk.json": "dfc91b4fadbcc8caa1b33b9bb768f5e2cbde9899e5a929d43c9ebd3f696d3e53",
+    "public/assets/atlas/rook/W_walk.webp": "10461b855bb07e64afc833cca0855bc877114f1bc52876c88d1f27fa844b9259",
+    "dist/ASTER_Motion_Studio.html": "76b5760378ece0d868182297bf6fa879e89a57176db457bfee785fcc2c674275",
+    "public/standalone/aster.html": "76b5760378ece0d868182297bf6fa879e89a57176db457bfee785fcc2c674275",
+    "dist/aster.package.json": "84bebeb831f1760cac9b1c616d4a956e193142d3a07ee2a3140a92506fe1f1dd",
+    "public/assets/atlas/aster/E_idle.json": "514349aae0eeb756a3ffba848540f3514a87832f394befbe8a5fc38ada0a60ff",
+    "public/assets/atlas/aster/E_idle.webp": "30026d8272262c336f5d4b6770ac3bda07c1f4544ca81f3628b5ff6dd6ec649a",
+    "public/assets/atlas/aster/E_walk.json": "af4cdb4179b837326a4a8e113694e78230e7b3e51d1106bc87ee186f88d5fe9a",
+    "public/assets/atlas/aster/E_walk.webp": "a2aaa683beb030c802b8b986929a8bd172ca9ec027933a26cbbcdecfc0a4bff9",
+    "public/assets/atlas/aster/NE_idle.json": "65c0cfcdd52624476f0ad18f841ef9be2b918c863e152d345001303118f756dd",
+    "public/assets/atlas/aster/NE_idle.webp": "8b494514aaa0905ec8726c8aa7101cab870b62410f104844cc7f9bd1f27f1cdf",
+    "public/assets/atlas/aster/NE_walk.json": "5dd43a4dca5247c26b3b4fe57c2d20835c19ea8fd6eda59921dac7627e049421",
+    "public/assets/atlas/aster/NE_walk.webp": "2b383fcb39b0c10cd4cca5c09112143f7eed27cc1599e7c48024a126e566822f",
+    "public/assets/atlas/aster/NW_idle.json": "820672d33475e9951e511ea15606c566c54dab7ebbff73bdfadef90890cca430",
+    "public/assets/atlas/aster/NW_idle.webp": "df4419ad960afac2f68dde516477b24a59f9d2304c7edd2c6d610315d6e2feca",
+    "public/assets/atlas/aster/NW_walk.json": "1c9b45bb35bfd608c9794cf580d46654fad472c6d512e482518f2e3bce0d075c",
+    "public/assets/atlas/aster/NW_walk.webp": "cf3bf67df6efc8370d391e6243bd8d73351f985f7640e38f4313e168aebb4a8c",
+    "public/assets/atlas/aster/N_idle.json": "7e7687d1fa9ea67684a4e93df33966b161d99a00bab11a5b039021b8d74fa681",
+    "public/assets/atlas/aster/N_idle.webp": "38cca90e4c765137dbf6c9f9a910ca56f9a719bada70599735b83390e6bdc9da",
+    "public/assets/atlas/aster/N_walk.json": "37467182853291dc11f6544659ec6df7fbd620af379ae57cb4c4bcc02315d2f3",
+    "public/assets/atlas/aster/N_walk.webp": "31198fc1cd460848c3e53e7cd1ab483a2f8b8b0c09c76f2a559a3228521ba883",
+    "public/assets/atlas/aster/portrait.png": "7b1232ce8abb80549f62955c2ae066f2529753a6595a0bb36ac7792c2ecdf4d8",
+    "public/assets/atlas/aster/profile.json": "827db39f55f909eef9c9f71621e4a722d9e47363922a1838d78fcacbe01183b7",
+    "public/assets/atlas/aster/SE_idle.json": "33cab53ea071413dab2add9f07bf9c9eb78b743d275bb1c77738fabedcd5c6e9",
+    "public/assets/atlas/aster/SE_idle.webp": "4f135c1206ed87d023348ca11ddeb78a1296177e22ffbe72ac791dff1244a05e",
+    "public/assets/atlas/aster/SE_walk.json": "a76963a5263bc5127e2ebc604880381cc455aed115d511be92eb94d6aaf81d8b",
+    "public/assets/atlas/aster/SE_walk.webp": "3c06089bbe4f8db373904e3539ff3846fa2b8769a5d7c36002ba2f78e4b6fed3",
+    "public/assets/atlas/aster/SW_idle.json": "d00df8dc3c875793cc74abc5d91d9dded49324a6ece1eb27acf018fe3eeebd53",
+    "public/assets/atlas/aster/SW_idle.webp": "9111e7deb72b7dd5ebb9c9703c0442215f282fac9710c79c1a11794ce538d738",
+    "public/assets/atlas/aster/SW_walk.json": "62a986f2f6eadabad7d6931083bb91d62f72434d8b7d3daa0ff886ab82d8e379",
+    "public/assets/atlas/aster/SW_walk.webp": "82615dbd38a284b64304a15f5df5415160f8ce21a88bb2c045a5487d7162b686",
+    "public/assets/atlas/aster/S_idle.json": "dbbc009c7a6569fdd11c54352aa3c2766d72e6dd252a4accb04cbf7d6544acbb",
+    "public/assets/atlas/aster/S_idle.webp": "91a29d023cbe09162bb6221ede51fceccca74e981bd2bee8e225a5e443b2d49e",
+    "public/assets/atlas/aster/S_walk.json": "58cadf815147cb5c6409ebb1aec34393d85acc97a278455e49d63b896b3d26fd",
+    "public/assets/atlas/aster/S_walk.webp": "157ef9da593a0359b03b84cb28342703eaa7f569e280278774ec10225e0fbcf3",
+    "public/assets/atlas/aster/W_idle.json": "30337aacd99da64dddbe5ae30c934d306d2bfec66bc963af576313d02a9e385e",
+    "public/assets/atlas/aster/W_idle.webp": "8d157db91f476ef425a6f6ef2a92b9a30f563acd95df3e5d032cc5439b67c4e9",
+    "public/assets/atlas/aster/W_walk.json": "ad6f001dcf5942a38251a8244ddc44e64208b289f9249596b9befe7426511a53",
+    "public/assets/atlas/aster/W_walk.webp": "0124a0cb6bc65b9c99a681bf01e5f631828948ecc18fa56a2f1d82b43e384027",
+    "dist/MICA_Motion_Studio.html": "e7b85b31384e2231bc796265f3bc61bdf8b2bf1a92b01d6ddbf2640f245692b7",
+    "public/standalone/mica.html": "e7b85b31384e2231bc796265f3bc61bdf8b2bf1a92b01d6ddbf2640f245692b7",
+    "dist/mica.package.json": "ba3cece7ba380e81edd919995c9f9cb15d201fa87e326bc726bd9f4be030a4a3",
+    "public/assets/atlas/mica/E_idle.json": "a02cb320753dc8968b217339f5dbc7d32def624942a9abdebb7b1b5e9d1f657e",
+    "public/assets/atlas/mica/E_idle.webp": "3829ed9ea18051309c470384faae3fc0fa7a761bc3de45f9f708d82264e1d045",
+    "public/assets/atlas/mica/E_walk.json": "00655f41befef682b245be00c5c60f9011782f03cdddcddd06b5aefe3a20c51a",
+    "public/assets/atlas/mica/E_walk.webp": "b78732b08dbea537f295ca02c623f7323aa52ccbe183cfaf4ac6cfdc7a35ea34",
+    "public/assets/atlas/mica/NE_idle.json": "4d90745e22a524079224c49c35cc81718f105a404dfae9cdcd05209929e31987",
+    "public/assets/atlas/mica/NE_idle.webp": "0f69016d72524a8accc161e77c3d196ee9eb0ca3d3a238b44516f4b8cfaeb593",
+    "public/assets/atlas/mica/NE_walk.json": "43f0756f027f6ae015e5caacb7a975710dd75bb3cb6f25c68002aae150d4fd22",
+    "public/assets/atlas/mica/NE_walk.webp": "e80d7d76831d2eae58576fc894cddf3c7a7bc6a62b5d61c7f2ad85e55fdf28d4",
+    "public/assets/atlas/mica/NW_idle.json": "c79d12bfa841ed73c5813d39c5a78de25bc80bcd29b61d4f44a1fb25268c8f20",
+    "public/assets/atlas/mica/NW_idle.webp": "f6bd1cde8d78e966f071f8716f142392711dd9b6de33e8770a4d055fe4993ebc",
+    "public/assets/atlas/mica/NW_walk.json": "0e4331f14d09b784db7b34bee13a900315cd3ebabc4b227f6150b8e510618fde",
+    "public/assets/atlas/mica/NW_walk.webp": "c7e6f59e2b0f3ded3ff4d2749b4a3a47706c877f5dff2a9d392e3c57e8f424ef",
+    "public/assets/atlas/mica/N_idle.json": "2a5f8cf88b5b893dd4c8a261d3145ff37e4fa710225e239f8361792f3e737e4d",
+    "public/assets/atlas/mica/N_idle.webp": "573a010996f1ce9e05e5d12cc434803ebdb606175e4bfeaa0836ca2bfc5ae083",
+    "public/assets/atlas/mica/N_walk.json": "2ea22cde770b987fea37bb4b384592af1c732580564a81a2b1cb44a0f7bd5394",
+    "public/assets/atlas/mica/N_walk.webp": "0db817b2cfa26671b43de6c6ffd1f07cf1e6c547f8674868776855513bf06040",
+    "public/assets/atlas/mica/portrait.png": "3af5e327634d0110520840d0ef20c1f58c4c765cab56dd6e4bb319b6fcfb2fcd",
+    "public/assets/atlas/mica/profile.json": "b8067f8250451e002d5c52d67953dafa03ac061e3cb88781443d5f124d2efae0",
+    "public/assets/atlas/mica/SE_idle.json": "43dff00abc506f62d4d622fafd4e76f50f06506b6830bfd798ae291015365d9f",
+    "public/assets/atlas/mica/SE_idle.webp": "2ff09cb843e553c54314da335ccc5059e1eb1ef66448936846c07b0dc7788cd0",
+    "public/assets/atlas/mica/SE_walk.json": "e5fee62f240a9484515c0601e6953e6e4a7ff4993222d8ef19bb01afd8f15401",
+    "public/assets/atlas/mica/SE_walk.webp": "a4cbfa09bbf6ad43c3ffcf2f88fbba6100b2a1addb5b55163c9390ba3b0f1015",
+    "public/assets/atlas/mica/SW_idle.json": "51fa9c3c2f714e4b26507517b64d5265d822ed68d50a9ef20f54f3aeabb92dfe",
+    "public/assets/atlas/mica/SW_idle.webp": "61a548d9ecca6c5ff35d077f645944545d29d5aaf6a97b5c542977a91132b567",
+    "public/assets/atlas/mica/SW_walk.json": "3d6ebff2abf9e920185cf92aec237215016138efd1bdd012908f713ea3719b41",
+    "public/assets/atlas/mica/SW_walk.webp": "c3951dc806dd46aa24666b1ad352abb4fc9945eb95b77e581bcc4867097d2b3b",
+    "public/assets/atlas/mica/S_idle.json": "ee5cb6ec09af174b363483c27c4878846f7a8c560e83215b9693cf4d6cf9dc25",
+    "public/assets/atlas/mica/S_idle.webp": "2aa036fb35af700046dc834fae129dea3450f8cd0d4b0f36e38cbdfd7bae6f40",
+    "public/assets/atlas/mica/S_walk.json": "c515a41f981269b3dc71d0f12222df475df8be4ecc39ebc9d3d3c4f060d83697",
+    "public/assets/atlas/mica/S_walk.webp": "497436dd6b05e8e36a9a2e9cb5286f1150b7b6fbab50f85670b27914be924296",
+    "public/assets/atlas/mica/W_idle.json": "76c0add8778af2b82cf33fe68206b54e0eee4ff9ad42d97575f36773273e165a",
+    "public/assets/atlas/mica/W_idle.webp": "54214a49504316cb7f4c711962fecb5bc030ef62539e9c55f0cf17c677725536",
+    "public/assets/atlas/mica/W_walk.json": "c878ba564226b3d4b5071cf37489ea214295e335cd2b141678a606eb9965ce0d",
+    "public/assets/atlas/mica/W_walk.webp": "6b981e61451799b24a9186b0a181514e3903768768e98539363122a0707ea335",
+    "art/rook/E_walk_0_master.png": "6784b966c3f2eb44ecb45b964c38c0a31fe157ac7a44faccf9c7a0247347ee38",
+    "art/rook/E_walk_1_master.png": "c405edc9234ed939b62eba17ef22cfa9eec2d38b57dd64eb6c5cf64c22c69057",
+    "art/rook/E_walk_2_master.png": "2ed6088339b3bed4e24a8d03b15b3300816fffb7a524c7d6796acc6bea6c9534",
+    "art/rook/E_walk_3_master.png": "475e0c25df1d7e0211dc0e10f2f7cc2907dfb801f9b68bfac911f13ce32bce61",
+    "art/rook/E_walk_4_master.png": "8d1b3832b4acd59a21e172c2882cd3f260713bf68d97131888fc9e0a3124e843",
+    "art/rook/E_walk_5_master.png": "4408d8ee52069fba927e24004cfb45dd99f8b12b8f33f488db9274ba6ce165b4",
+    "art/rook/E_idle_0_master.png": "25a7b794ff66598e6b09634ee8f3b198dbed706afee42a6f971ee5b97f6b88ee",
+    "art/rook/SE_walk_0_master.png": "2d7946176b66df9aa0d03d6eab8bb671f6d6891c89961b69f6577345f04507d0",
+    "art/rook/SE_walk_1_master.png": "5138255013dc62834a5b31e114ac174d075df858ce4fb303843ead5dc4819c5c",
+    "art/rook/SE_walk_2_master.png": "6693cacb04edcb81f643bbe4485211eee40902ca9510045be8e7969042007115",
+    "art/rook/SE_walk_3_master.png": "6f15e9fad6b7bb3504cbd342f22065b2c0987b82bc662c2cbbef26fc19600551",
+    "art/rook/SE_walk_4_master.png": "19c1129be2a76c3521ee42264c46ff55e2a0b73a5aa0c3766ec4807b95d567ee",
+    "art/rook/SE_walk_5_master.png": "d0b5a01fdb55aa09ab3d2ea341864fc9ac701c7e40a373a4496d256bf976fdd0",
+    "art/rook/SE_idle_0_master.png": "de1371effcd6da960950c4c726e0422ff952ee34b96fcf1af583765fd5215b6a",
+    "art/rook/S_walk_0_master.png": "580b0dc1c9ef7d984cd3da40d5a69c19610195aa88a6c7a0776cf2ff675a68b2",
+    "art/rook/S_walk_1_master.png": "aa9854dfc76d62101daec237ee5625f4328c7db7c637cad689c4e635692d80c4",
+    "art/rook/S_walk_2_master.png": "97f16aafee013e562648bb07004df4eb978bf180cde8c2c7909e485979becb03",
+    "art/rook/S_walk_3_master.png": "bd0b320d7be0abc6fb0e7bcf22caf7ccbaa73ba517a0633434098850d2f3dcc9",
+    "art/rook/S_walk_4_master.png": "2b398077c7424a811bd2a17b17c6aad29193ed19e0713d7a6003ec617cc61a7c",
+    "art/rook/S_walk_5_master.png": "f80ef405ce84c87dd9cb47a25be5ad3f4d1ad7be30d2a98d18d764b89b4dbaa0",
+    "art/rook/S_idle_0_master.png": "d9d15f0d901d9958a442c4c540ef3f24e6bce00a495e73e83bea9919c3da29a9",
+    "art/rook/SW_walk_0_master.png": "9cce51f64728355e220ff4104f3e5c7d4aa22712ed668373d0cc3b5f91f0e9eb",
+    "art/rook/SW_walk_1_master.png": "fcc5060e881a67bbe91a7917fc05932a247f126f7748f638c483810e072be100",
+    "art/rook/SW_walk_2_master.png": "d9b6997f897fb62a2ad1f33069fcfe11086204f7153554f7cdd0052a37a33a45",
+    "art/rook/SW_walk_3_master.png": "c3e0a39271f5ccf5d456badbdca4d0c74f95d620909aacc5c966dcbfb2933fa7",
+    "art/rook/SW_walk_4_master.png": "befac6c62c283c219122d226fc3bd7f2e2f57d09b5cdccd3fa718318c23fe325",
+    "art/rook/SW_walk_5_master.png": "aa6c47214d2cf79ea0243456bf02ed769e3ec4e63a29a0e230d850752510c2d1",
+    "art/rook/SW_idle_0_master.png": "3304498467b21bc06532d8f62d5ce475ede02b994efa98f7f57cc2a00556e776",
+    "art/rook/W_walk_0_master.png": "e2deeb2da977f812cf2133e951907b4ccd777412d1bab2ff71010439705c139d",
+    "art/rook/W_walk_1_master.png": "d13a26e9bd22f774c8d6a1c336a2427cc2c0dd53b34ef78e0cebb11c15ef9c47",
+    "art/rook/W_walk_2_master.png": "58b4bfb42d01af28dca236c58164b44dd9b8dc6db53d79557716489c9f5e0fee",
+    "art/rook/W_walk_3_master.png": "6b14f3f58b9a86ed0074899787e2df74f0c3d679df7cfdd87f033f462be308d8",
+    "art/rook/W_walk_4_master.png": "cc80bc6c3a5915ff7084cfe74104de2a418cb066d0a1c5a7f29f5203edc527de",
+    "art/rook/W_walk_5_master.png": "f9b1ea920646b69175c1f5e27a60d9689e124985c1d62d42779e348744f6c07a",
+    "art/rook/W_idle_0_master.png": "eec695746327c4c78018d6e8fc8722e03cb54dab1e761576a8412c1af9cf47f2",
+    "art/rook/NW_walk_0_master.png": "e32bf111c753f37bce398c47630a8b052eef9c322fa859365923a123ec41b831",
+    "art/rook/NW_walk_1_master.png": "eeebb8a5391bfc6b44094b7f7f6da874692006f41777005dc711b433da2995e6",
+    "art/rook/NW_walk_2_master.png": "b6c1747fb9330a327655d0e03f09a031f9379596ebfb79b424b1be90ecb836e0",
+    "art/rook/NW_walk_3_master.png": "78bf709560d45a65eb88e5c720269c53efb95f56c40d95308019e6a0edf99cbf",
+    "art/rook/NW_walk_4_master.png": "417d6b6ccb91e8a559410406377329a882601de8079533da5f64973ed6c1c1ea",
+    "art/rook/NW_walk_5_master.png": "83df05b330d7027c353116c6949dac9b7b371d489cbb02a44cbd5e1fc7e1bd16",
+    "art/rook/NW_idle_0_master.png": "b104d2e384d85efd4ab30532200828ec6db1116bef17208372550c612f7149aa",
+    "art/rook/N_walk_0_master.png": "1e1db289162225026aba729fa8ace09dc13d2263a6def979d2030ecc9f1ca891",
+    "art/rook/N_walk_1_master.png": "4f6f5b082c1aeb37831b6b0ae6ec92ff40721fe278735bbf526650628e38fcc2",
+    "art/rook/N_walk_2_master.png": "ad5fe8932b8aefa01304c77c9957619d29abc0fa9d481c5b7c330a91c8d5c97e",
+    "art/rook/N_walk_3_master.png": "2f1680fe4033790339e8c0ad76938d782e0989a8b7a04ba56543e40380e11849",
+    "art/rook/N_walk_4_master.png": "fb84ba7a4014801a181112fc89ce28ddd2b6e60b73784234183994cee5b207f5",
+    "art/rook/N_walk_5_master.png": "be94fcd071f81ae46ce0e6393c48041c5cc887a760c2768428dd8e7d10780359",
+    "art/rook/N_idle_0_master.png": "b8afe35660435577fc16444ac58ef7a45e99b68e1e14b0521f969c1bf2c80057",
+    "art/rook/NE_walk_0_master.png": "f6b664ee812bdde68bdd1fbdfab981a777abe3cef8bfcdc6c261964c69d7ea1c",
+    "art/rook/NE_walk_1_master.png": "587f5c24f9d1d4e21fc6ba9a22a0070ac23609ee07421db91e75d45821e30196",
+    "art/rook/NE_walk_2_master.png": "461a480ebf92d3cd260cfddf4745e433ff4b93fb66512fdc54371c3fe9a4bfca",
+    "art/rook/NE_walk_3_master.png": "dd5644014282f60bb80f206c1558b45a1e4b17005dbb40db7620e1fdbf64e326",
+    "art/rook/NE_walk_4_master.png": "8fcb97a51c0e057ef1f0c930a6f5bae1540acfa1cbb663c4047b5791244fc4d5",
+    "art/rook/NE_walk_5_master.png": "6bb4f58cbf295a9e30972de2d4d9a96850fde1263d25fc891dde6d2b8c124208",
+    "art/rook/NE_idle_0_master.png": "5a130d483a515486cd6bbda16b3f0711137cbe673b7c172c058f805d311254ec"
+  },
+  "rookDelivery": {
+    "recordedAt": "2026-09-12T15:23:28.289654+00:00",
+    "character": "rook",
+    "status": "HOLD_VISUAL_REPAIR",
+    "reason": "Cycle rejected: N/walk; Observed N 0 and 3 keep the ammunition-pouch left leg closer to the camera and the other leg advanced away; 1 and 4 lift that same trailing left sole. The two halves do not exchange the support/advance roles.",
+    "package": {
+      "path": "dist/rook.package.json",
+      "sha256": "7890f205ee039a9fd7741c4104779d9e8125c65051fd66d3bf54e42ba7a48485"
+    },
+    "reviewedDelivery": false
+  },
+  "cycleKit": {
+    "path": "qa/rook/gait/e3fc6a5d99f82196_15c4461d/cycle-observations.json",
+    "sha256": "ea4a5a18baa1cfef8c4eeee4688c78ecca4ac3ede0b25be491785ce5361155c7"
+  },
+  "visualQualityApproved": false,
+  "lunaGenerationTested": false
+}

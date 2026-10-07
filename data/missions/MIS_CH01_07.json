@@ -1,0 +1,384 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "mission_id": "MIS_CH01_07",
+  "chapter_id": "CH01",
+  "title": "COLD STORAGE",
+  "zone": "Site-7 Cryo Archive",
+  "objectives": [
+    {
+      "id": "OBJ_COLD_INTAKE",
+      "kind": "PRIMARY",
+      "source_room": "R01_INTAKE",
+      "title": "Cross the cryo intake dock",
+      "prerequisites": [],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_COLD_FREEZE",
+      "kind": "PRIMARY",
+      "source_room": "R02_FREEZE",
+      "title": "Clear the deep freeze hall",
+      "prerequisites": [
+        "OBJ_COLD_INTAKE"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_COLD_LEDGER",
+      "kind": "PRIMARY",
+      "source_room": "R03_LEDGER",
+      "title": "Recover the thermal ledger",
+      "prerequisites": [
+        "OBJ_COLD_FREEZE"
+      ],
+      "required_for_extraction": true
+    },
+    {
+      "id": "OBJ_COLD_COMPRESSORS",
+      "kind": "DEEP",
+      "source_room": "R04_COMPRESSORS",
+      "title": "Break the compressor line",
+      "prerequisites": [
+        "OBJ_COLD_LEDGER"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_COLD_COMPRESSOR",
+      "kind": "BOSS",
+      "source_room": "R05_VAULT",
+      "title": "Shut down the cryo compressor",
+      "prerequisites": [
+        "OBJ_COLD_COMPRESSORS"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_COLD_EXIT",
+      "kind": "PRIMARY",
+      "source_room": "R06_LOCK",
+      "title": "Extract through the cargo lock",
+      "prerequisites": [
+        "OBJ_COLD_COMPRESSOR"
+      ],
+      "required_for_extraction": false
+    }
+  ],
+  "main_route": [
+    {
+      "id": "R01_INTAKE",
+      "objective_id": "OBJ_COLD_INTAKE",
+      "type": "EVENT",
+      "title": "Cryo Intake",
+      "x": 280,
+      "y": 560,
+      "objective": "Cross the cryo intake dock",
+      "story": "Frost has crept over the intake dock. The vacuum doors stand open, and the cold pulls at the squad's gear.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 34
+        }
+      ]
+    },
+    {
+      "id": "R02_FREEZE",
+      "objective_id": "OBJ_COLD_FREEZE",
+      "encounter_id": "ENC_COLD_FREEZE_01",
+      "type": "COMBAT",
+      "title": "Deep Freeze Hall",
+      "x": 660,
+      "y": 240,
+      "objective": "Clear the deep freeze hall",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 1
+        },
+        {
+          "type": "FROST_PLATE",
+          "count": 1
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "health": 178,
+          "offset_x": 218,
+          "offset_y": 102
+        },
+        {
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "health": 178,
+          "offset_x": 292,
+          "offset_y": -18
+        },
+        {
+          "enemy_id": "ENM_SITE7_BULWARK_01",
+          "health": 264,
+          "offset_x": 220,
+          "offset_y": -108
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 204,
+          "offset_x": 260,
+          "offset_y": 20
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 46
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 118
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 118
+          },
+          {
+            "enemy_id": "ENM_SITE7_MORTAR_01",
+            "health": 154
+          },
+          {
+            "enemy_id": "ENM_SITE7_BULWARK_01",
+            "health": 264
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R03_LEDGER",
+      "objective_id": "OBJ_COLD_LEDGER",
+      "type": "RESEARCH",
+      "title": "Thermal Ledger",
+      "x": 1040,
+      "y": 560,
+      "objective": "Recover the thermal ledger",
+      "story": "The thermal ledger logs every vault at one fixed temperature, the temperature that keeps the answer signal from decaying.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 56
+        },
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 32
+        }
+      ]
+    },
+    {
+      "id": "R04_COMPRESSORS",
+      "objective_id": "OBJ_COLD_COMPRESSORS",
+      "encounter_id": "ENC_COLD_COMPRESSORS_01",
+      "type": "ELITE",
+      "title": "Compressor Deck",
+      "x": 1420,
+      "y": 240,
+      "objective": "Break the compressor line",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 1
+        },
+        {
+          "type": "FROST_PLATE",
+          "count": 1
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_BULWARK_01",
+          "affix": "SHIELDED",
+          "health": 264,
+          "offset_x": 212,
+          "offset_y": 64
+        },
+        {
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "affix": "OVERCHARGED",
+          "health": 178,
+          "offset_x": 302,
+          "offset_y": 90
+        },
+        {
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "health": 178,
+          "offset_x": 292,
+          "offset_y": -96
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "affix": "OVERCHARGED",
+          "health": 204,
+          "offset_x": 250,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 54
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_MORTAR_01",
+            "health": 154
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "affix": "VOLATILE",
+            "health": 118
+          },
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 204
+          },
+          {
+            "enemy_id": "ENM_SITE7_BULWARK_01",
+            "health": 264
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R05_VAULT",
+      "objective_id": "OBJ_COLD_COMPRESSOR",
+      "encounter_id": "ENC_COLD_VAULT_01",
+      "type": "BOSS",
+      "title": "Cryo Vault",
+      "x": 1800,
+      "y": 560,
+      "objective": "Shut down the cryo compressor",
+      "encounter": [
+        {
+          "enemy_id": "BOSS_SITE7_CRYO_01",
+          "health": 1740,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_BULWARK_01",
+          "health": 238,
+          "offset_x": 240,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 162,
+          "offset_x": 240,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 148
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 178
+          },
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 178
+          }
+        ],
+        [
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 118
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 110
+          }
+        ]
+      ],
+      "reinforce_at": 1
+    },
+    {
+      "id": "R06_LOCK",
+      "objective_id": "OBJ_COLD_EXIT",
+      "type": "EXTRACTION",
+      "title": "Cargo Lock",
+      "x": 2180,
+      "y": 240,
+      "objective": "Extract through the cargo lock",
+      "story": "The compressor is silent and the frost is already thawing. The cargo lock is the only way back to the surface.",
+      "loot": []
+    }
+  ],
+  "optional_rooms": [
+    {
+      "id": "O01_REAGENTS",
+      "from": "R02_FREEZE",
+      "objective_id": "OBJ_COLD_SUPPLY",
+      "type": "SUPPLY",
+      "title": "Reagent Stores",
+      "x": 660,
+      "y": 800,
+      "reward": "reagent_supplies",
+      "story": "Sealed reagent canisters and coolant packs line the racks. Some can be salvaged for the squad.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 36
+        },
+        {
+          "loot_id": "LOT_SALVAGE_FIELD",
+          "quantity": 7
+        }
+      ]
+    },
+    {
+      "id": "O02_RECORDER",
+      "from": "R05_VAULT",
+      "objective_id": "OBJ_COLD_RESEARCH",
+      "type": "RESEARCH",
+      "title": "Cold Recorder",
+      "x": 1800,
+      "y": 800,
+      "objective": "Read the cold recorder",
+      "reward": "cold_signal_trace",
+      "story": "The recorder held the answer signal on frozen media. It repeats one short burst, over and over.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 72
+        },
+        {
+          "loot_id": "LOT_SIGNAL_FRAGMENT",
+          "quantity": 3
+        },
+        {
+          "loot_id": "LOT_INTEL_MECHANICAL",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "extraction_offer_room_ids": [
+    "R03_LEDGER",
+    "R04_COMPRESSORS",
+    "R05_VAULT"
+  ],
+  "enemy_roster_revision": 4,
+  "new_enemy_ids": [
+    "BOSS_SITE7_CRYO_01"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+ "MIS_CH01_01": {
+  "heading": "climbs up-right",
+  "walk_order_plates": [
+   "S1_R01",
+   "S1_R02",
+   "S1_R03",
+   "S1_R04",
+   "S1_R05",
+   "S1_R06"
+  ],
+  "branch_from_step": [
+   3,
+   4
+  ],
+  "combat_rooms": {
+   "R02_CORRIDOR": "room on S1_R02",
+   "R04_CONTAINMENT": "corridor on S1_R04",
+   "R05_CORE": "boss on S1_R05"
+  },
+  "route_length_px": 11951,
+  "extent_px": [
+   10851,
+   5003
+  ]
+ },
+ "MIS_CH01_02": {
+  "heading": "climbs up-right",
+  "walk_order_plates": [
+   "S2_R01",
+   "S2_R02",
+   "S2_R03",
+   "S2_R04",
+   "S2_R05",
+   "S2_R06"
+  ],
+  "branch_from_step": [
+   3,
+   4
+  ],
+  "combat_rooms": {
+   "R02_MAINTENANCE": "corridor on S2_R02",
+   "R04_QUARANTINE": "corridor on S2_R04",
+   "R05_RELAY": "boss on S2_R05"
+  },
+  "route_length_px": 12014,
+  "extent_px": [
+   10930,
+   4986
+  ]
+ },
+ "MIS_CH01_03": {
+  "heading": "climbs up-right",
+  "walk_order_plates": [
+   "S03_01_PRESSURE_BREACH",
+   "S03_02_INNER_DEFENSE_LINE",
+   "S03_03_CARRIER_TRACE",
+   "S03_04_COLLAPSED_BULKHEAD",
+   "S03_05_ANCHOR_REMNANT",
+   "S03_06_EMERGENCY_SHAFT"
+  ],
+  "branch_from_step": [
+   3,
+   5
+  ],
+  "combat_rooms": {
+   "R02_DEFENSE": "corridor on S03_02_INNER_DEFENSE_LINE",
+   "R04_BULKHEAD": "corridor on S03_04_COLLAPSED_BULKHEAD",
+   "R05_ANCHOR": "boss on S03_05_ANCHOR_REMNANT"
+  },
+  "route_length_px": 10507,
+  "extent_px": [
+   9893,
+   3528
+  ]
+ },
+ "MIS_CH01_04": {
+  "heading": "descends down-left",
+  "walk_order_plates": [
+   "S03_06_EMERGENCY_SHAFT",
+   "S03_04_COLLAPSED_BULKHEAD",
+   "S03_01_PRESSURE_BREACH",
+   "S03_02_INNER_DEFENSE_LINE",
+   "S03_05_ANCHOR_REMNANT",
+   "S03_03_CARRIER_TRACE"
+  ],
+  "branch_from_step": [
+   3,
+   4
+  ],
+  "combat_rooms": {
+   "R02_GATE": "corridor on S03_04_COLLAPSED_BULKHEAD",
+   "R04_LINE": "corridor on S03_02_INNER_DEFENSE_LINE",
+   "R05_WARDEN": "boss on S03_05_ANCHOR_REMNANT"
+  },
+  "route_length_px": 10727,
+  "extent_px": [
+   10080,
+   3659
+  ]
+ },
+ "MIS_CH01_05": {
+  "heading": "climbs up-right",
+  "walk_order_plates": [
+   "S03_01_PRESSURE_BREACH",
+   "S03_05_ANCHOR_REMNANT",
+   "S03_03_CARRIER_TRACE",
+   "S03_04_COLLAPSED_BULKHEAD",
+   "S03_02_INNER_DEFENSE_LINE",
+   "S03_06_EMERGENCY_SHAFT"
+  ],
+  "branch_from_step": [
+   2,
+   4
+  ],
+  "combat_rooms": {
+   "R02_DEFENSE": "room on S03_05_ANCHOR_REMNANT",
+   "R04_ARRAY": "corridor on S03_04_COLLAPSED_BULKHEAD",
+   "R05_CARRIER": "boss on S03_02_INNER_DEFENSE_LINE"
+  },
+  "route_length_px": 10625,
+  "extent_px": [
+   9978,
+   3610
+  ]
+ }
+}

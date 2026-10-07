@@ -1,0 +1,188 @@
+{
+  "adapter": "NVIDIA GeForce RTX 4070 SUPER",
+  "mission": "MIS_CH01_10",
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "renderer": "gl_compatibility",
+  "rounds": 5,
+  "runs": [
+    {
+      "fps": 213.4,
+      "frame_ms": 4.686,
+      "gpu_ms": 2.016,
+      "round": 1,
+      "variant": "old_head",
+      "view": "C05"
+    },
+    {
+      "fps": 219.3,
+      "frame_ms": 4.56,
+      "gpu_ms": 2.046,
+      "round": 1,
+      "variant": "new",
+      "view": "C05"
+    },
+    {
+      "fps": 214.7,
+      "frame_ms": 4.657,
+      "gpu_ms": 2.08,
+      "round": 1,
+      "variant": "new",
+      "view": "R05"
+    },
+    {
+      "fps": 202.8,
+      "frame_ms": 4.931,
+      "gpu_ms": 2.187,
+      "round": 1,
+      "variant": "old_head",
+      "view": "R05"
+    },
+    {
+      "fps": 210.0,
+      "frame_ms": 4.762,
+      "gpu_ms": 2.186,
+      "round": 2,
+      "variant": "new",
+      "view": "C05"
+    },
+    {
+      "fps": 222.6,
+      "frame_ms": 4.493,
+      "gpu_ms": 2.076,
+      "round": 2,
+      "variant": "old_head",
+      "view": "C05"
+    },
+    {
+      "fps": 223.3,
+      "frame_ms": 4.477,
+      "gpu_ms": 2.003,
+      "round": 2,
+      "variant": "old_head",
+      "view": "R05"
+    },
+    {
+      "fps": 207.5,
+      "frame_ms": 4.819,
+      "gpu_ms": 2.244,
+      "round": 2,
+      "variant": "new",
+      "view": "R05"
+    },
+    {
+      "fps": 229.8,
+      "frame_ms": 4.351,
+      "gpu_ms": 1.992,
+      "round": 3,
+      "variant": "old_head",
+      "view": "C05"
+    },
+    {
+      "fps": 216.8,
+      "frame_ms": 4.613,
+      "gpu_ms": 2.166,
+      "round": 3,
+      "variant": "new",
+      "view": "C05"
+    },
+    {
+      "fps": 220.7,
+      "frame_ms": 4.532,
+      "gpu_ms": 2.13,
+      "round": 3,
+      "variant": "new",
+      "view": "R05"
+    },
+    {
+      "fps": 224.9,
+      "frame_ms": 4.447,
+      "gpu_ms": 2.109,
+      "round": 3,
+      "variant": "old_head",
+      "view": "R05"
+    },
+    {
+      "fps": 229.2,
+      "frame_ms": 4.364,
+      "gpu_ms": 2.046,
+      "round": 4,
+      "variant": "new",
+      "view": "C05"
+    },
+    {
+      "fps": 227.9,
+      "frame_ms": 4.387,
+      "gpu_ms": 2.07,
+      "round": 4,
+      "variant": "old_head",
+      "view": "C05"
+    },
+    {
+      "fps": 216.9,
+      "frame_ms": 4.611,
+      "gpu_ms": 2.157,
+      "round": 4,
+      "variant": "old_head",
+      "view": "R05"
+    },
+    {
+      "fps": 222.1,
+      "frame_ms": 4.502,
+      "gpu_ms": 2.088,
+      "round": 4,
+      "variant": "new",
+      "view": "R05"
+    },
+    {
+      "fps": 221.4,
+      "frame_ms": 4.517,
+      "gpu_ms": 2.078,
+      "round": 5,
+      "variant": "old_head",
+      "view": "C05"
+    },
+    {
+      "fps": 227.3,
+      "frame_ms": 4.4,
+      "gpu_ms": 2.035,
+      "round": 5,
+      "variant": "new",
+      "view": "C05"
+    },
+    {
+      "fps": 180.7,
+      "frame_ms": 5.533,
+      "gpu_ms": 2.449,
+      "round": 5,
+      "variant": "new",
+      "view": "R05"
+    },
+    {
+      "fps": 148.4,
+      "frame_ms": 6.739,
+      "gpu_ms": 2.844,
+      "round": 5,
+      "variant": "old_head",
+      "view": "R05"
+    }
+  ],
+  "seconds_per_sample": 3.0,
+  "summary": {
+    "new": {
+      "mean_fps": 214.8,
+      "mean_frame_ms": 4.674,
+      "mean_gpu_ms": 2.147,
+      "samples": 10
+    },
+    "old_head": {
+      "mean_fps": 213.1,
+      "mean_frame_ms": 4.764,
+      "mean_gpu_ms": 2.153,
+      "samples": 10
+    }
+  },
+  "vsync": false
+}

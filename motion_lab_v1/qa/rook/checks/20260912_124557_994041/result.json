@@ -1,0 +1,80 @@
+{
+  "recordedAt": "2026-09-12T03:46:06.582220+00:00",
+  "character": "rook",
+  "status": "PASS_RUNTIME_CHECKS",
+  "package": {
+    "path": "dist/rook.package.json",
+    "sha256": "7890f205ee039a9fd7741c4104779d9e8125c65051fd66d3bf54e42ba7a48485"
+  },
+  "inputSHA256": "0e60cbe9e84dd9e8292b939f78beee322181112e70f83c53393a824bf6207335",
+  "checks": [
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "validate_character.py",
+        "--character",
+        "rook"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/rook/checks/20260912_124557_994041/0.log",
+        "sha256": "cec341e59dc0415696e4f97e967a90f0322f69369f8b9ce20b7703b59f0cd133"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests\\atlas-renderer.test.js",
+        "tests\\combat-aim.test.js",
+        "tests\\keyboard-input.test.js",
+        "tests\\simulation.test.js"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/rook/checks/20260912_124557_994041/1.log",
+        "sha256": "e75a10693312bca5d164fd0b4d57747747e14a602c7ed52812c068ff6e322944"
+      }
+    },
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/rook/checks/20260912_124557_994041/2.log",
+        "sha256": "c1c495bf378c15102a9f7eea938818be6ae335d628c9a2d8f2c165ea78e106df"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "verify_bundle.mjs",
+        "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\dist\\ROOK_Motion_Studio.html"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/rook/checks/20260912_124557_994041/3.log",
+        "sha256": "d48acfa04b8e79958d4263827d7c20ce1c919bf3d2ed60a8e8048868d443158d"
+      }
+    }
+  ],
+  "browser": {
+    "path": "qa/rook_combat_browser.json",
+    "sha256": "32230f838a657cce76f5c8f13463edcc07e44ca6c58fd1c2a6f29376a31bfc29"
+  },
+  "locomotion": {
+    "path": "qa/rook_locomotion_browser.json",
+    "sha256": "0340d24c8a4590255b0c3716fe9545c85e8ea90eacb29210b46444adc4113d00"
+  },
+  "scope": "Input plus temporal selected-renderer checks when supplied; no automatic anatomy, foot-contact, visual approval or Luna generation claim"
+}

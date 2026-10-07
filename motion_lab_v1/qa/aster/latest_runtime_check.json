@@ -1,0 +1,74 @@
+{
+  "recordedAt": "2026-09-11T08:46:14.593012+00:00",
+  "character": "aster",
+  "status": "PASS_TECHNICAL_ONLY",
+  "package": {
+    "path": "dist/aster.package.json",
+    "sha256": "84bebeb831f1760cac9b1c616d4a956e193142d3a07ee2a3140a92506fe1f1dd"
+  },
+  "inputSHA256": "ef2e9483cb30992c8a0c61a915ed67aa1281aec3964f267ce3d75e440dbce5bd",
+  "checks": [
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "validate_character.py",
+        "--character",
+        "aster"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/aster/checks/20260911_174608_777398/0.log",
+        "sha256": "e7c20d466b82ab5283f18cffe8f201c884e85f133bb04b794e520eaf02cc62ca"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests\\atlas-renderer.test.js",
+        "tests\\combat-aim.test.js",
+        "tests\\keyboard-input.test.js",
+        "tests\\simulation.test.js"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/aster/checks/20260911_174608_777398/1.log",
+        "sha256": "6791197cd36f7eb191be80aa99ed9768756a7040ab8ad0d7b556aa6b1ccad789"
+      }
+    },
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/aster/checks/20260911_174608_777398/2.log",
+        "sha256": "a31835345d4cc17e45bb1f3f09b57c312148abc2e7f64999ad474283bfe4ed6d"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "verify_bundle.mjs",
+        "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\dist\\ASTER_Motion_Studio.html"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/aster/checks/20260911_174608_777398/3.log",
+        "sha256": "d48acfa04b8e79958d4263827d7c20ce1c919bf3d2ed60a8e8048868d443158d"
+      }
+    }
+  ],
+  "browser": null,
+  "locomotion": null,
+  "scope": "Input plus temporal selected-renderer checks when supplied; no automatic anatomy, foot-contact, visual approval or Luna generation claim"
+}

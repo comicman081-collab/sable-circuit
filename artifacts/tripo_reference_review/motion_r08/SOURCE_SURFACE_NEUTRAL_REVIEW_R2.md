@@ -1,0 +1,17 @@
+# Independent Ponytail FULL — exact S neutral surface R2
+
+Reviewer: `/root/tripo_intake_review`. Verdict: **PASS for the exact existing S neutral source-preservation artifact only**. This is not adapter registration, motion, another direction, MICA shooting, or runtime approval.
+
+I directly opened the approved 1024×1536 source and the native 1920×1920 R2 Blender render. The face, eyes, braid, coat, trousers, boots, hands, and two rear devices retain the source appearance and spatial relationships. There is no separately reconstructed face, costume, boot, weapon, or generic body in this visible view. The render is a 1:1 source-scale view inside the larger canvas, not an enlarged source image.
+
+The independent read-only probe confirms exact original RGB in the RGBA derivative, including RGB beneath transparency. The alpha exactly matches the stated source-derived edge-connected-green rule. All 400,457 visible pixels survive at their original coordinates after removing the canvas padding; alpha matches byte-for-byte. Rendered opaque RGB differs by at most one 8-bit code value, with mean absolute channel difference 0.1647301292. R1 and R2 decoded renders are identical. The repository 1080p container validator passes the native R2 PNG; its result does not establish visual quality.
+
+The R1 closure defect was a corner where two grid-cell fans shared one front-to-back edge with four incident faces. R2 splits that vertex identity without changing any front triangle's coordinates or UVs. I recreated the source grid in memory and independently counted the resulting closed edges: 14,842 vertices, 28,468 faces, every edge incident to two faces. This verifies the construction and agrees with the bound producer report. I did not reopen the saved blend or launch Blender. Edge incidence alone does not prove absence of every self-intersection or establish anatomical volume.
+
+The closure has transparent material and supplies no hidden artwork. The visible front uses the full approved source texture and exact image coordinates. This is a source-carrying deformation surface, not permission to display the back of this one-view source as a new character direction. Spatial nearest-four bone weights and coat/leg ownership have not passed a motion review. The new source rig's REST differs from the generic motion pack, so its named bones cannot receive the pack as if the rest transforms were equal.
+
+The next appropriate independent diagnostic is the parent-proposed source-role/rest alignment and one small knee-joint deformation from the same S camera, using the exact reviewed source and preserving unknown closure invisibility. It must observe boot/calf shape, coat ownership, original texel correspondence, and actual skin deformation. This recommendation does not approve its future output or a full Run cycle.
+
+During review, the builder changed after R2 was produced to strengthen child input relationships. The existing R2 producer hash is retained in its report and differs from the current script. This document approves the directly examined existing artifact facts, not a fabricated current-code reproduction. Current registration still requires exact execution bindings and the separately reported source-to-matte relationship check. Existing R1 evidence is retained.
+
+Evidence: `EXACT_ARTIFACT_QA_R2_R3.json`, `NEUTRAL_CONTAINER_R2.json`, the R2 `SURFACE_REPORT.json`, `SURFACE_INPUTS.json`, source/derivative/render/blend references, and this review's JSON.

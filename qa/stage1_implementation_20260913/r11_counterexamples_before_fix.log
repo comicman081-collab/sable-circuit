@@ -1,0 +1,119 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+ERROR: R11-01 empty idle cell rejected
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] refuses (res://tests/smoke/site7_biped_bridge_smoke.gd:65)
+       [2] review_input_counterexamples (res://tests/smoke/site7_biped_bridge_smoke.gd:88)
+       [3] run (res://tests/smoke/site7_biped_bridge_smoke.gd:118)
+ERROR: Atomic rejection: R11-01 empty idle cell rejected
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] refuses (res://tests/smoke/site7_biped_bridge_smoke.gd:66)
+       [2] review_input_counterexamples (res://tests/smoke/site7_biped_bridge_smoke.gd:88)
+       [3] run (res://tests/smoke/site7_biped_bridge_smoke.gd:118)
+ERROR: R11-01 empty used walk cell rejected
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] refuses (res://tests/smoke/site7_biped_bridge_smoke.gd:65)
+       [2] review_input_counterexamples (res://tests/smoke/site7_biped_bridge_smoke.gd:93)
+       [3] run (res://tests/smoke/site7_biped_bridge_smoke.gd:118)
+ERROR: Atomic rejection: R11-01 empty used walk cell rejected
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] refuses (res://tests/smoke/site7_biped_bridge_smoke.gd:66)
+       [2] review_input_counterexamples (res://tests/smoke/site7_biped_bridge_smoke.gd:93)
+       [3] run (res://tests/smoke/site7_biped_bridge_smoke.gd:118)
+ERROR: R11-02 identical used cells repacked to two columns rejected
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] refuses (res://tests/smoke/site7_biped_bridge_smoke.gd:65)
+       [2] review_input_counterexamples (res://tests/smoke/site7_biped_bridge_smoke.gd:96)
+       [3] run (res://tests/smoke/site7_biped_bridge_smoke.gd:118)
+ERROR: Atomic rejection: R11-02 identical used cells repacked to two columns rejected
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] refuses (res://tests/smoke/site7_biped_bridge_smoke.gd:66)
+       [2] review_input_counterexamples (res://tests/smoke/site7_biped_bridge_smoke.gd:96)
+       [3] run (res://tests/smoke/site7_biped_bridge_smoke.gd:118)
+ERROR: R11-02 unused padding cannot disguise duplicate used sequence
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] refuses (res://tests/smoke/site7_biped_bridge_smoke.gd:65)
+       [2] review_input_counterexamples (res://tests/smoke/site7_biped_bridge_smoke.gd:102)
+       [3] run (res://tests/smoke/site7_biped_bridge_smoke.gd:118)
+ERROR: Atomic rejection: R11-02 unused padding cannot disguise duplicate used sequence
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] refuses (res://tests/smoke/site7_biped_bridge_smoke.gd:66)
+       [2] review_input_counterexamples (res://tests/smoke/site7_biped_bridge_smoke.gd:102)
+       [3] run (res://tests/smoke/site7_biped_bridge_smoke.gd:118)
+ERROR: R11-03 derived cycle distance overflow rejected
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] refuses (res://tests/smoke/site7_biped_bridge_smoke.gd:65)
+       [2] review_input_counterexamples (res://tests/smoke/site7_biped_bridge_smoke.gd:104)
+       [3] run (res://tests/smoke/site7_biped_bridge_smoke.gd:118)
+ERROR: Atomic rejection: R11-03 derived cycle distance overflow rejected
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] refuses (res://tests/smoke/site7_biped_bridge_smoke.gd:66)
+       [2] review_input_counterexamples (res://tests/smoke/site7_biped_bridge_smoke.gd:104)
+       [3] run (res://tests/smoke/site7_biped_bridge_smoke.gd:118)
+ERROR: R11-04 moved warning/burst is interrupted
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] run (res://tests/smoke/site7_biped_bridge_smoke.gd:234)
+ERROR: R11-04 moved warning/burst is interrupted
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] run (res://tests/smoke/site7_biped_bridge_smoke.gd:234)
+ERROR: R11-04 no continuation fire from unannounced corrected origin
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] run (res://tests/smoke/site7_biped_bridge_smoke.gd:237)
+ERROR: R11-04 moved warning/burst is interrupted
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] run (res://tests/smoke/site7_biped_bridge_smoke.gd:234)
+ERROR: R11-04 moved warning/burst is interrupted
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] run (res://tests/smoke/site7_biped_bridge_smoke.gd:234)
+ERROR: R11-04 no continuation fire from unannounced corrected origin
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] run (res://tests/smoke/site7_biped_bridge_smoke.gd:237)
+ERROR: R11-04 moved warning/burst is interrupted
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] run (res://tests/smoke/site7_biped_bridge_smoke.gd:234)
+ERROR: R11-04 moved warning/burst is interrupted
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] run (res://tests/smoke/site7_biped_bridge_smoke.gd:234)
+ERROR: R11-04 no continuation fire from unannounced corrected origin
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/smoke/site7_biped_bridge_smoke.gd:23)
+       [1] run (res://tests/smoke/site7_biped_bridge_smoke.gd:237)
+M7_RASTER_QUARANTINED identity=aster status=partial chunks=2 encoded=20000 present=15000 declared=94718
+SITE7_BIPED_BRIDGE: FAIL (871) res://qa/stage1_implementation_20260913/biped_bridge_1789298056_896

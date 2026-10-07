@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "actor_id": "CHR_PROTO_03",
+  "slug": "mica",
+  "display_name": "MICA",
+  "art_prefix": "MICA_C03",
+  "role": "SUPPORT_RECON",
+  "costume_id": "MICA_RECON_C03",
+  "identity_lock": {
+    "adult": true,
+    "faction": "SABLE CIRCUIT FIELD TEAM",
+    "body_type": "lean athletic adult support-recon operator with an upright center of gravity",
+    "face_read": "mature focused adult woman with ash-brown hair and a rounded side braid",
+    "weapon_class": "compact sensor carbine",
+    "combat_role": "mobile reconnaissance, pulse marking and ranged support"
+  },
+  "visual_lock": {
+    "source_author": "built-in ImageGen",
+    "generation_matte": "#00FF00",
+    "palette": ["#62D8C8", "#263B3F", "#D8C2AC", "#7CF4E7"],
+    "silhouette_modules": ["long split tech-coat", "twin rear sensor fins", "rounded ash-brown side braid", "compact circular-emitter carbine"],
+    "exposure_coverage": "full tactical combat coverage except face and hands",
+    "accessories": ["twin rear sensor fins", "compact hip utility pouches", "under-barrel scanner"],
+    "weapon_grip_zones": ["right trigger hand", "left forward support hand", "compact stock-to-shoulder contact"],
+    "forbidden_features": ["childlike proportions", "white or silver hair", "ponytail", "white shoulder armor", "heavy breacher mantle", "oversized gauntlet", "shotgun", "long sniper rifle", "mirrored or missing sensor fins", "merged coat tails"]
+  },
+  "runtime": {
+    "cell_size": 384,
+    "display_scale": 0.34,
+    "display_offset": [0.0, -49.0],
+    "states": {
+      "idle": {"frames": 4, "fps": 4.0},
+      "move": {"frames": 24, "fps": 24.0},
+      "fire": {"frames": 6, "fps": 12.0}
+    }
+  },
+  "paths": {
+    "work_root": "art_src/characters/mica/fast_pipeline",
+    "runtime_root": "assets/units/operators/mica/fast_runtime_v1",
+    "descriptor": "data/character_pipeline/mica_runtime.json"
+  },
+  "muzzle_hints": {},
+  "muzzle_tracking": {
+    "radius": 72.0,
+    "perpendicular_limit": 24.0,
+    "outside_offset": 3.0,
+    "cyan_radius": 34.0,
+    "foreshortened_directions": ["S", "SW"],
+    "anchors": {
+      "E": [279.0, 136.0],
+      "SE": [255.1, 167.1],
+      "S": [191.6, 154.7],
+      "SW": [211.0, 151.0],
+      "W": [102.0, 105.0],
+      "NW": [111.9, 91.9],
+      "N": [209.0, 43.0],
+      "NE": [258.1, 76.9]
+    },
+    "search_boxes": {
+      "E": [230.0, 105.0, 300.0, 175.0],
+      "SE": [180.0, 95.0, 280.0, 175.0],
+      "SW": [100.0, 95.0, 220.0, 175.0],
+      "W": [80.0, 95.0, 180.0, 175.0],
+      "NW": [85.0, 55.0, 185.0, 145.0],
+      "N": [165.0, 30.0, 235.0, 130.0],
+      "NE": [200.0, 35.0, 300.0, 140.0]
+    }
+  },
+  "muzzle_review": "MICA_C03_MUZZLE_SOCKET_V5_REVIEWED_1920X1080.png",
+  "gait_completion_gate": {
+    "required": true,
+    "required_reviewer": "Ponytail FULL",
+    "required_source_revision": "v7",
+    "review_filename": "MICA_C03_FULL_8_DIRECTION_GAIT_ACCEPTANCE.json",
+    "minimum_review_resolution": [1920, 1080]
+  },
+  "registration": {
+    "visual_profile": "VIS_MICA_01",
+    "master_asset": "assets/characters/playable/mica/mica_master.svg",
+    "portrait_asset": "assets/characters/playable/mica/mica_portrait.svg",
+    "rig_sheet": "assets/characters/playable/mica/mica_rig_sheet.svg",
+    "detail_overlay_asset": "assets/characters/playable/mica/mica_detail_overlay.svg",
+    "weapon_hud_asset": "assets/ui/weapons/mica_sensor_carbine.svg",
+    "hud_action_icon_assets": ["assets/ui/skills/mica_pulse_scan.svg", "assets/ui/skills/mica_relay_step.svg", "assets/ui/skills/mica_sensor_bloom.svg"],
+    "silhouette": "long split tech-coat, twin sensor fins, rounded side braid, compact floating-support carbine",
+    "palette": ["#62D8C8", "#263B3F", "#D8C2AC", "#7CF4E7"],
+    "weapon_signature": "sensor carbine with circular emitter and under-barrel scanner",
+    "motion_profile": "MOT_MICA_01",
+    "motion_signature": "upright glide-like steps, softer cadence, delayed coat and fin secondary motion, controlled recoil with sensor settle",
+    "projectile_profile": "PRJ_MICA_PULSE_01",
+    "projectile_signature": "mint concentric pulse bead with a hollow center and dotted telemetry trail",
+    "hit_vfx_profile": "HIT_MICA_SCANBURST_01",
+    "hit_vfx_signature": "mint hex scan bloom with two rotating arc fragments",
+    "fire_sfx_profile": "SFX_FIRE_MICA_PULSE_01",
+    "fire_sfx_signature": "soft electronic pop layered with descending sonar chirp",
+    "impact_sfx_profile": "SFX_HIT_MICA_SCAN_01",
+    "impact_sfx_signature": "clean digital tap followed by a brief filtered fizz"
+  }
+}

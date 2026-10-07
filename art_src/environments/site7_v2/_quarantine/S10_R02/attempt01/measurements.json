@@ -1,0 +1,233 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_R02/attempt01/S10_R02_GAME.png",
+  "luma": 0.20021405816078186,
+  "p10": 0.1580352932214737,
+  "p90": 0.23719216883182526,
+  "saturation": 0.021383043440928312,
+  "hue": 149.02448960745443,
+  "axis": 25.56364666071196,
+  "problems": [
+    "whole floor border margin 3.409% below 4%"
+  ],
+  "plate": "S10_R02",
+  "attempt": 1,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      99,
+      494
+    ],
+    [
+      833,
+      202
+    ],
+    [
+      1100,
+      301
+    ],
+    [
+      1238,
+      216
+    ],
+    [
+      1265,
+      230
+    ],
+    [
+      1265,
+      365
+    ],
+    [
+      1583,
+      496
+    ],
+    [
+      1447,
+      606
+    ],
+    [
+      1614,
+      700
+    ],
+    [
+      1429,
+      802
+    ],
+    [
+      1243,
+      702
+    ],
+    [
+      780,
+      853
+    ],
+    [
+      438,
+      696
+    ],
+    [
+      244,
+      802
+    ],
+    [
+      57,
+      698
+    ],
+    [
+      235,
+      610
+    ]
+  ],
+  "doors_px": {
+    "SW": [
+      340,
+      652,
+      232
+    ],
+    "NE": [
+      1183,
+      337,
+      228
+    ],
+    "SE": [
+      1345,
+      657,
+      232
+    ]
+  },
+  "raw_sha256": "1c52fdd2828df56ccadfa9cc33b04a818fbd40a79e884268a93ef47616623f72",
+  "master_sha256": "1c52fdd2828df56ccadfa9cc33b04a818fbd40a79e884268a93ef47616623f72",
+  "game_sha256": "d611c0c54439f08c28f60572d218476a4f0da58e4dc3028c7b6ff31ea81ccf6d",
+  "game_exposure_factor_srgb": 0.7329,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-f851181d-f92e-474c-90dd-098136c0deff.png",
+  "inspection": "새 릴레이 오벨리스크 베이 내용은 S3 및 R01와 다름. SW와 SE 에이프런이 실제 판 가장자리에 가깝다. 문 SW/NE/SE만 존재. 실제 바닥 추적, 원본 크기 검토.",
+  "floor_area_px2": 612594.0,
+  "floor_area_fraction": 0.38935597374268444,
+  "floor_bounds_px": [
+    57,
+    202,
+    1614,
+    853
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1672,
+      941
+    ],
+    "actual_size": [
+      1672,
+      941
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "SW": [
+        [
+          235,
+          610
+        ],
+        [
+          57,
+          698
+        ],
+        [
+          244,
+          802
+        ],
+        [
+          438,
+          696
+        ]
+      ],
+      "NE": [
+        [
+          1100,
+          301
+        ],
+        [
+          1238,
+          216
+        ],
+        [
+          1265,
+          230
+        ],
+        [
+          1265,
+          365
+        ]
+      ],
+      "SE": [
+        [
+          1447,
+          606
+        ],
+        [
+          1614,
+          700
+        ],
+        [
+          1429,
+          802
+        ],
+        [
+          1243,
+          702
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      99,
+      202,
+      1583,
+      853
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.05921052631578947,
+      0.2146652497343252,
+      0.053229665071770335,
+      0.09351753453772582
+    ],
+    "whole_floor_bounds_px": [
+      57,
+      202,
+      1614,
+      853
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.03409090909090909,
+      0.2146652497343252,
+      0.034688995215311005,
+      0.09351753453772582
+    ],
+    "main_floor_area_px2": 526827
+  },
+  "apron_stats": {
+    "SW": {
+      "luma": 0.22483021020889282,
+      "saturation": 0.023810014635647296,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "NE": {
+      "luma": 0.2052329033613205,
+      "saturation": 0.012841446909435382,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "SE": {
+      "luma": 0.23040005564689636,
+      "saturation": 0.02054340071973979,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  }
+}

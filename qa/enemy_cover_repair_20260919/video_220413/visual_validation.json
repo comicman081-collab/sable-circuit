@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-19T13:07:39.451498+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\enemy_cover_repair_20260919\\video_220413\\stage1\\stage1_combat_10s_sound_1080p.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "pyav",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 60.0,
+      "frames": 600,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 150,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 300,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 450,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 599,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 23156224,
+      "sha256": "c83d63728f75405b9e376659acd043dcb3924ba4e73d88242d9126c8f0dc066d"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\enemy_cover_repair_20260919\\video_220413\\stage2\\stage2_combat_10s_sound_1080p.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "pyav",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 60.0,
+      "frames": 600,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 150,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 300,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 450,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 599,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 24555530,
+      "sha256": "f9b0821e701ca8b1a7cea3fb24bbf5672a322e43e11a08930cf10d483a1fb803"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\enemy_cover_repair_20260919\\video_220413\\stage3\\stage3_combat_10s_sound_1080p.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "pyav",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 60.0,
+      "frames": 600,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 150,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 300,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 450,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 599,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 17842153,
+      "sha256": "e6a0d67a0cea449c909897a22afe62866fdb7ef3f74be12c7e189c42962917c7"
+    }
+  ]
+}

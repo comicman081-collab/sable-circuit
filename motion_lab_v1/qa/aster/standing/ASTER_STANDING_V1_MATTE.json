@@ -1,0 +1,44 @@
+{
+  "pass": true,
+  "unit": "aster",
+  "candidate": "D:/AI 종합 폴더/Games/Sable-circuit/motion_lab_v1/qa/aster/standing/ASTER_STANDING_V1_GREEN.png",
+  "mask": "D:/AI 종합 폴더/Games/Sable-circuit/motion_lab_v1/qa/aster/standing/ASTER_STANDING_V1_MASK.png",
+  "sha256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+  "exact_green_outside_ratio": 1.0,
+  "subject_coverage": 0.2816448211669922,
+  "mask_metrics": {
+    "coverage": 0.2816448211669922,
+    "largest_component_ratio": 0.9999774260760426,
+    "bbox_xywh": [
+      175,
+      16,
+      795,
+      1480
+    ],
+    "touches_frame": {
+      "left": false,
+      "top": false,
+      "right": false,
+      "bottom": false
+    }
+  },
+  "green_rgb": [
+    0,
+    255,
+    0
+  ],
+  "seed": 20260910,
+  "matte_method": "edge-chroma",
+  "matte_details": {
+    "method": "edge-median controlled chroma background extraction",
+    "edge_median_rgb": [
+      5,
+      248,
+      4
+    ],
+    "edge_green_dominance": 243,
+    "background_coverage": 0.7183551788330078
+  },
+  "segmenter": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\tools\\models\\auto-mask",
+  "network_used": false
+}

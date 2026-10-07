@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "purpose": "Production motion acceptance, not a promise of visual quality from numbers alone.",
+  "units": "Godot world pixels/second for runtime; metres and seconds for evaluated rig observations",
+  "directions": ["E", "SE", "S", "SW", "W", "NW", "N", "NE"],
+  "physics_hz": [30, 60, 120],
+  "actors": {
+    "CHR_PROTO_01": {"walk": 165.0, "run": 250.0},
+    "CHR_PROTO_02": {"walk": 138.0, "run": 205.0},
+    "CHR_PROTO_03": {"walk": 152.0, "run": 224.0}
+  },
+  "runtime": {
+    "presentation_stop_speed_pixels_per_second": 12.0,
+    "speed_relative_error_max": 0.08,
+    "direction_error_degrees_max": 3.0,
+    "muzzle_world_error_max": 0.5,
+    "socket_to_opaque_pixel_max": 8.0,
+    "moving_fire_static_leg_fraction_max": 0.05,
+    "frame_rate_relative_difference_max": 0.04,
+    "case_seconds": 2.1,
+    "timeout_seconds_per_process": 180
+  },
+  "gait": {
+    "calibration": "Initial humanoid tactical walk/run limits. Changes require a new contract hash and fresh reviews. Not calibrated from the rejected MICA outputs.",
+    "walk": {"stride_over_height_min": 0.25, "stride_over_height_max": 0.85, "lift_over_height_min": 0.01, "lift_over_height_max": 0.12, "flight_fraction_min": 0.0, "flight_fraction_max": 0.04},
+    "run": {"stride_over_height_min": 0.50, "stride_over_height_max": 1.40, "lift_over_height_min": 0.035, "lift_over_height_max": 0.24, "flight_fraction_min": 0.04, "flight_fraction_max": 0.40},
+    "contact_slip_over_height_max": 0.015,
+    "lateral_lane_cross_over_height_max": 0.015,
+    "calf_width_ratio_min": 0.85,
+    "calf_width_ratio_max": 1.15,
+    "ankle_reference_error_degrees_max": 35.0,
+    "toe_heading_error_degrees_max": 20.0,
+    "torso_bob_over_height_max": 0.07,
+    "cycle_seam_over_height_max": 0.04
+  },
+  "review_roles": ["visual", "Ponytail FULL", "ChatGPT web"],
+  "web_review_conversation": "https://chatgpt.com/c/6a93c84f-fb1c-83e8-9d88-959e708b2463",
+  "required_visual_checks": ["alternating_steps", "stride_and_speed", "foot_contact", "ankle_and_knee", "calf_volume", "coat_and_occlusion", "body_registration", "moving_fire", "visible_muzzle_and_barrel", "turns_and_stops", "game_scale_1080p"]
+}

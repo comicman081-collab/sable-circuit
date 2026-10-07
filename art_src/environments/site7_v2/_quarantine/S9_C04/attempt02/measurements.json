@@ -1,0 +1,105 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_C04/attempt02/S9_C04_GAME.png",
+  "luma": 0.2000398486852646,
+  "p10": 0.13663922250270844,
+  "p90": 0.25025489926338196,
+  "saturation": 0.05146590780244827,
+  "hue": 142.03692113939854,
+  "axis": 23.019834081690643,
+  "problems": [
+    "actual full deck section width below 260 px"
+  ],
+  "plate": "S9_C04",
+  "attempt": 2,
+  "native_size": [
+    1774,
+    887
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      0,
+      748
+    ],
+    [
+      1774,
+      16
+    ],
+    [
+      1774,
+      253
+    ],
+    [
+      333,
+      887
+    ],
+    [
+      0,
+      887
+    ]
+  ],
+  "doors_px": {},
+  "raw_sha256": "013404cd7aa9f2d70e9aeeb710aa0e7c874f434d506b297db100e7569380bd3a",
+  "master_sha256": "013404cd7aa9f2d70e9aeeb710aa0e7c874f434d506b297db100e7569380bd3a",
+  "game_sha256": "32a5f4fdde6129e87144bf07b976b77c3137a739238fa74a73c766ae1e85e0c5",
+  "game_exposure_factor_srgb": 0.7527,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-d4cb93ef-7c59-4d66-bc76-91d92068cc42.png",
+  "inspection": "Actual floor boundary traced at native scale. New squared blade shafts and blue resonator banks, but right end remains narrow; reject below 260 px.",
+  "floor_area_px2": 439073.0,
+  "floor_area_fraction": 0.2790355237687301,
+  "floor_bounds_px": [
+    0,
+    16,
+    1774,
+    887
+  ],
+  "width_sections_px": [
+    [
+      1000,
+      335,
+      590
+    ],
+    [
+      1400,
+      170,
+      415
+    ],
+    [
+      1774,
+      16,
+      253
+    ]
+  ],
+  "vertical_widths_px": [
+    255,
+    245,
+    237
+  ],
+  "width_measurement": "Vertical sections between actual wall base and outer painted deck lip; clipped image-corner fragments are not full cross-sections.",
+  "preintegration_end_comparison": [
+    {
+      "end": "image_left",
+      "room": "S9_R05",
+      "door": "NE",
+      "deck_luma": 0.22220638394355774,
+      "deck_saturation": 0.10454412451459917,
+      "room_apron_luma": 0.23686879873275757,
+      "room_apron_saturation": 0.06807126710280727,
+      "step": 0.08479476870292585,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    },
+    {
+      "end": "image_right",
+      "room": "S9_R04",
+      "door": "SW",
+      "deck_luma": 0.19629007577896118,
+      "deck_saturation": 0.017738035168999407,
+      "room_apron_luma": 0.2357000708580017,
+      "room_apron_saturation": 0.006029038585175334,
+      "step": 0.24148508995219684,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    }
+  ]
+}

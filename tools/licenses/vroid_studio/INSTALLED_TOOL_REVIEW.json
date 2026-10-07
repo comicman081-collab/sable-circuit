@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "checked_on": "2026-09-07",
+  "status": "INSTALLED_OPTIONAL_RIG_INLET_SEED_SAN_LICENSE_CHECKED_IMPORT_PENDING",
+  "application": {
+    "name": "VRoid Studio",
+    "version_from_uninstall_registry": "2.14.0",
+    "path_read_only": "C:/ai_asset/VRoidStudio/VRoidStudio.exe",
+    "sha256": "1b8d1b1a1c0cb7d91dd670e98898094f2b9d0d74292f2af63012533bbe738a12",
+    "bundled_third_party_notices_sha256": "fd704f488d5eeb04009cfddbda255b7cc9ae689b534144011e8e4b3977e95de4",
+    "bundled_notices_are_not_model_license": true,
+    "launched_by_this_audit": false
+  },
+  "blender_addon": {
+    "name": "VRM format",
+    "version": "4.6.0",
+    "manifest_read_only": "C:/Users/AAA/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/vrm/blender_manifest.toml",
+    "blender_version_min": "4.2.0",
+    "blender_version_max": "5.3.0",
+    "declared_licenses": ["SPDX:MIT", "SPDX:GPL-3.0-or-later"],
+    "compatible_version_range_only_not_import_test": true,
+    "modified_or_downloaded": false
+  },
+  "addon_execution_license": {
+    "chosen_option":"MIT",
+    "upstream_tag":"v4.6.0",
+    "main_license":{"path":"tools/licenses/vroid_studio/LICENSE_MAIN.txt","sha256":"3dbe3cd3576670bc2f698a44ec9905e5b7d80edab3c57fc6a5d587d3df9c2dd0"},
+    "license_text":{"path":"tools/licenses/vroid_studio/LICENSE_(OPTION1)_MIT.txt","sha256":"322a4e4b9b76091af6318701bdde6db97859397eec981f72b38802c534a4f6a9"},
+    "source":"https://github.com/saturday06/VRM-Addon-for-Blender/tree/v4.6.0",
+    "installed_init_spdx":"MIT OR GPL-3.0-or-later",
+    "use":"Read-only installed add-on execution for project-local VRM import; do not modify its installation."
+  },
+  "downloaded_model": {
+    "model":"third_party/vrm/seed_san/Seed-san.vrm",
+    "license_manifest":"third_party/vrm/seed_san/MODEL_LICENSE.json",
+    "intake_report":"third_party/vrm/seed_san/INTAKE_REPORT.json",
+    "purpose":"Humanoid rig compatibility reference, not MICA appearance approval",
+    "attribution_required":true
+  },
+  "official_evidence": [
+    {
+      "url": "https://vroid.pixiv.help/hc/en-us/articles/4405813333657-Can-I-use-the-models-created-with-VRoid-Studio-Stable-Ver-for-commercial-purposes",
+      "finding": "Created models may be used commercially; other creators' data and special item conditions require their own review."
+    },
+    {
+      "url": "https://vroid.com/en/studio/guidelines",
+      "finding": "Default base/preset content is not CC0. Where no special clause applies, commercial rendered game assets and editing exported models in other software are permitted. A public avatar-generator product has separate licensing constraints; this project is an internal production workflow, not such a product."
+    },
+    {
+      "url": "https://vrm-addon-for-blender.info/",
+      "finding": "Official VRM add-on provides Blender VRM import/export and humanoid/MToon support. Actual project import and UAL retarget remain unverified."
+    }
+  ],
+  "production_limitations": [
+    "Initial scoped search found no project-local model; subsequently downloaded official Seed-san after explicit user authorization.",
+    "Do not extract editor sample assets or reverse-engineer its application data as a shortcut.",
+    "A specific exported model and every included item need exact-file license evidence before production use.",
+    "VRoid is optional body/rig construction; it does not replace ImageGen source art or bypass generation/motion reviews.",
+    "No claim is made that MICA likeness, costume, UAL motion, or rendering already passes."
+  ]
+}

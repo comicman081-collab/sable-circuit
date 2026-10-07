@@ -1,0 +1,94 @@
+{
+  "checked_date": "2026-09-15",
+  "used": [
+    {
+      "id": "rifle_fire",
+      "file": "sources/rifle_fire.opus",
+      "origin_title": "The Free Firearm Sound Library",
+      "creators": [
+        "Ben Jaszczak",
+        "Brian Nelson",
+        "Kevin Heras",
+        "Matthew Nanney"
+      ],
+      "original_page": "https://opengameart.org/content/the-free-firearm-sound-library",
+      "license": "CC0-1.0",
+      "license_page": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_verification": "CC0 on original collection page and per-file mirror credits, checked 2026-09-15",
+      "mirror_repository": "https://github.com/DeathByDenim/openspades-free-pak",
+      "mirror_path": "Sounds/Weapons/Rifle/Fire1.opus",
+      "original_track_as_credited": "A_42P",
+      "git_blob_sha1": "34e131466344bb8b80cd9c5451176fa0d7e41adc",
+      "source_encoding": "Lossy Opus derivative from credited public mirror, NOT lossless field-recording master",
+      "processing": "Float decode avoiding integer clipping; filtering, repitch, time crop, attenuation; mixed with new mechanisms/gas/material DSP.",
+      "sha256": "12509a71c836375723240eb93aecc965b48883cb3041f0b95b20f6969c6872ae",
+      "bytes": 3935
+    },
+    {
+      "id": "metal_click",
+      "file": "sources/metal_click.opus",
+      "origin_title": "100 CC0 metal and wood SFX",
+      "creators": [
+        "rubberduck"
+      ],
+      "original_page": "https://opengameart.org/content/100-cc0-metal-and-wood-sfx",
+      "license": "CC0-1.0",
+      "license_page": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_verification": "CC0 on original collection page and per-file mirror credits, checked 2026-09-15",
+      "mirror_repository": "https://github.com/DeathByDenim/openspades-free-pak",
+      "mirror_path": "Sounds/Weapons/DryFire.opus",
+      "original_track_as_credited": "misc_17",
+      "git_blob_sha1": "bb81c4eb89a9b9eabcfa12708a4b6f60440c56ca",
+      "source_encoding": "Lossy Opus derivative from credited public mirror",
+      "processing": "Sliced contact/ratchet transients; repitched, filtered, damped; layered with new impacts, modal resonances and fragments.",
+      "sha256": "a312bcea417d215f6914a702a5745f1959029675bfd1613fc9ca6708a4f550cc",
+      "bytes": 3333
+    },
+    {
+      "id": "explode_large",
+      "file": "sources/explode_large.opus",
+      "origin_title": "2 High Quality Explosions",
+      "creators": [
+        "Michel Baradari"
+      ],
+      "original_page": "https://opengameart.org/content/2-high-quality-explosions",
+      "license": "CC-BY-3.0",
+      "license_page": "https://creativecommons.org/licenses/by/3.0/",
+      "license_verification": "Original collection license and per-file mirror credits checked on 2026-09-15. Attribution required.",
+      "mirror_repository": "https://github.com/DeathByDenim/openspades-free-pak",
+      "mirror_path": "Sounds/Weapons/Grenade/ExplodeStereo1.opus",
+      "original_track_as_credited": "explode",
+      "git_blob_sha1": "151e5ef229830524ead6de285c753f5b59f2f99c",
+      "source_encoding": "Lossy Opus derivative from credited public mirror; not a lossless field-recording master",
+      "processing": "Explosion source reused: fixed-rate layered pressure, density envelope, crossfaded source-tail grains and stereo diffusion. 12 mono files + 12 optional stereo files are new adaptations. Other 108 mono WAVs are copied unchanged from R03.",
+      "sha256": "9f8c7e27c5e68fce340894bfc14b5901a48d327cdb9375fd8ed075aaa8091e29",
+      "bytes": 13524
+    }
+  ],
+  "shared_mirror_revision_observed": "1e6b28721a2e5e51f84a572d101079bf186c66d5",
+  "credits_mapping_page": "https://github.com/DeathByDenim/openspades-free-pak/blob/main/License/Credits-pak001-Free.md",
+  "source_inputs_count": 3,
+  "source_pool_reuse": "Both CC0 source grains are shared; finished output waveforms are separately designed.",
+  "not_used": [
+    {
+      "name": "AFTER SIGNAL R03",
+      "reason": "Analyzed all 160 WAVs; no PCM is an input to this Sable bank."
+    },
+    {
+      "name": "Kenney Impact Sounds",
+      "reason": "CC0 page consulted; archive could not be downloaded. No audio used."
+    },
+    {
+      "name": "KonitaTutorials / Hit Sound Effects mirror, FleshLocal1.opus",
+      "reason": "Fetched for possible use but original license page could not be reconfirmed. EXCLUDED from delivered files and synthesis."
+    },
+    {
+      "name": "25 CC0 bang / firework SFX by rubberduck",
+      "reason": "License verified but archive download failed; NO audio used."
+    }
+  ],
+  "rights_note": "These entries record posted CC0 status and per-file provenance; not an exclusive-rights or third-party-rights guarantee.",
+  "r03_new_source_inputs": 1,
+  "r04_audio_inputs": "Same three bundled R03 sources. No additional external audio is used in R04.",
+  "r04_processing": "Explosion source reused: fixed-rate layered pressure, density envelope, crossfaded source-tail grains and stereo diffusion. 12 mono files + 12 optional stereo files are new adaptations. Other 108 mono WAVs are copied unchanged from R03."
+}

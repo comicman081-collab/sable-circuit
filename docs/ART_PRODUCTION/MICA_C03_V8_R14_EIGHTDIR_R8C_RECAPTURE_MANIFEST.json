@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "project": "SABLE CIRCUIT",
+  "artifact": "MICA C03 V8 R14 eight-direction R8C subpixel raster-cadence recapture",
+  "created_at_utc": "2026-09-04T14:08:27Z",
+  "purpose": "Apply the validated R8C capture-only root/cadence correction to all eight existing Blender+UAL direction candidates without changing source art or runtime assets.",
+  "candidate_status": "UNREVIEWED_DO_NOT_PROMOTE",
+  "source_art_modified": false,
+  "capture_only_derivative": true,
+  "movement_source": "Blender + UAL",
+  "source_integrity_check": {
+    "directions": ["N", "NE", "E", "SE", "S", "SW", "W", "NW"],
+    "frames_per_direction": 24,
+    "named_screen_left_components_per_direction": 24,
+    "named_screen_right_components_per_direction": 24,
+    "gate": "PASS_INPUT_COVERAGE"
+  },
+  "configuration": {
+    "renderer": "tools/art_pipeline/capture_mica_phase_plate_direction_video.py",
+    "flags": ["runtime-sole-lock", "raster-cadence-lock", "subpixel-root-translation"],
+    "continuous_root_step_px": 1.64,
+    "step_advance_px": 12.0,
+    "raster_zero_step_target": 0,
+    "raster_transition_max_px": 2.8284271247461903,
+    "support_axis_band_px": 1.0,
+    "source_art_repainted": false
+  },
+  "local_validation": {
+    "validator": "tools/art_pipeline/validate_visual_evidence_1080p.py",
+    "record": "artifacts/mica_c03_v8_r14_eightdir_r8c_visual_evidence_validation_rerun_20260904T144730Z.json",
+    "previous_record": "artifacts/mica_c03_v8_r14_eightdir_r8c_visual_evidence_validation.json",
+    "revalidated_at_utc": "2026-09-04T14:47:50.932228+00:00",
+    "html_review": "artifacts/mica_c03_v8_r14_r8c_eightdir_review/MICA_C03_V8_R14_R8C_EIGHTDIR_REVIEW.html",
+    "html_validation": "artifacts/mica_c03_v8_r14_r8c_eightdir_review/MICA_C03_V8_R14_R8C_EIGHTDIR_REVIEW_HTML_VALIDATION.json",
+    "gate": "PASS",
+    "dynamic_capture_gate": "PASS",
+    "video_resolution": [1920, 1080],
+    "fps": 24,
+    "frames_per_direction": 120,
+    "duration_seconds_per_direction": 5.0,
+    "quality_claim": false
+  },
+  "directions": {
+    "N": {
+      "source_candidate": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_v8_r13_n_segmented_ual",
+      "world_video": "artifacts/mica_c03_v8_r14_n_shared_handoff_r8c_review/MICA_C03_V8_R14_N_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+      "world_video_sha256": "62529f8f5de57402a95c27c8a907937e7c18d8f948b0be11d72f8e01de81c87b",
+      "runtime_track": "artifacts/mica_c03_v8_r14_n_shared_handoff_r8c_review/MICA_C03_V8_R14_N_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json",
+      "runtime_track_sha256": "6b68a09b685c4a26ec8da52b4e80e03a2f53735cb58e49a7b8278bea024079d8",
+      "contact_sheet": "artifacts/mica_c03_v8_r14_n_shared_handoff_r8c_review/MICA_C03_V8_R14_N_SHARED_R8C_SUBPIXEL_WORLD_CONTACT_1920X1080.png",
+      "contact_sheet_sha256": "4968bbd75133a7f7b0a2226bd279a544177cfec97f10207e034f478c6707f084",
+      "metrics": {"raster_transition_min_px": 1.0, "raster_transition_max_px": 2.0, "raster_zero_step_count": 0, "support_axis_drift_px": {"left": 0.0, "right": 0.0}, "subpixel_residual_max_px": 0.48},
+      "ponytail_full_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_EIGHTDIR_R8C_PONYTAIL_FULL_REVIEW.json",
+      "chatgpt_web_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_N_S_E_SE_SW_W_R8C_CHATGPT_WEB_REVIEW.json"
+    },
+    "NE": {
+      "source_candidate": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_v8_r14_ne_shared_handoff_r7_ual",
+      "world_video": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r8_review/MICA_C03_V8_R14_NE_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+      "world_video_sha256": "757929fce11c50a8a1a519622762ea67b7dc55f135b0b89bb177741c4a2dee98",
+      "runtime_track": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r8_review/MICA_C03_V8_R14_NE_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json",
+      "runtime_track_sha256": "75f1b61358abd4cd118acbcee820956f2335db45da015c75c8536ab8fab583ea",
+      "contact_sheet": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r8_review/MICA_C03_V8_R14_NE_SHARED_R8C_SUBPIXEL_WORLD_CONTACT_1920X1080.png",
+      "contact_sheet_sha256": "b848865e176005a00f8565de78ce600726201513895cf14f3c1de7a2ecc96962",
+      "metrics": {"raster_transition_min_px": 1.0, "raster_transition_max_px": 2.828427, "raster_zero_step_count": 0, "support_axis_drift_px": {"left": 0.530330, "right": 0.568441}, "subpixel_residual_max_px": 0.990183},
+      "ponytail_full_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_EIGHTDIR_R8C_PONYTAIL_FULL_REVIEW.json",
+      "chatgpt_web_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_NE_NW_SHARED_R8C_CHATGPT_WEB_REVIEW.json"
+    },
+    "E": {
+      "source_candidate": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_v8_r14_e_shared_handoff_r3_ual",
+      "world_video": "artifacts/mica_c03_v8_r14_e_shared_handoff_r8c_review/MICA_C03_V8_R14_E_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+      "world_video_sha256": "404e85052b72e745537f0c19bfe8a2f009469d287b21bb09c5dd5a86692f35aa",
+      "runtime_track": "artifacts/mica_c03_v8_r14_e_shared_handoff_r8c_review/MICA_C03_V8_R14_E_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json",
+      "runtime_track_sha256": "06aeaa4ca85e798c05660147756f8de0a298de4234f5cbd147eb4962b6af9ac4",
+      "contact_sheet": "artifacts/mica_c03_v8_r14_e_shared_handoff_r8c_review/MICA_C03_V8_R14_E_SHARED_R8C_SUBPIXEL_WORLD_CONTACT_1920X1080.png",
+      "contact_sheet_sha256": "ff52b03d2fce985c4f2f58e1b116170c583774d5ab0a46a02f473059dabd1bf5",
+      "metrics": {"raster_transition_min_px": 1.0, "raster_transition_max_px": 2.0, "raster_zero_step_count": 0, "support_axis_drift_px": {"left": 0.5, "right": 0.755319}, "subpixel_residual_max_px": 0.615319},
+      "ponytail_full_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_EIGHTDIR_R8C_PONYTAIL_FULL_REVIEW.json",
+      "chatgpt_web_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_N_S_E_SE_SW_W_R8C_CHATGPT_WEB_REVIEW.json"
+    },
+    "SE": {
+      "source_candidate": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_v8_r14_se_lateral_handoff_ual",
+      "world_video": "artifacts/mica_c03_v8_r14_se_shared_handoff_r8c_review/MICA_C03_V8_R14_SE_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+      "world_video_sha256": "11ffc7bccf99b05cd43872a990f8bb595381bcd5a2ff5129680f0e4d48a399e4",
+      "runtime_track": "artifacts/mica_c03_v8_r14_se_shared_handoff_r8c_review/MICA_C03_V8_R14_SE_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json",
+      "runtime_track_sha256": "f6ba3d90119404de56b4b85b029d5d924b82969ced48531c90593b71a39eb9c0",
+      "contact_sheet": "artifacts/mica_c03_v8_r14_se_shared_handoff_r8c_review/MICA_C03_V8_R14_SE_SHARED_R8C_SUBPIXEL_WORLD_CONTACT_1920X1080.png",
+      "contact_sheet_sha256": "2ad004b2ace39439a61c72870a22fae856dea816940781b8011f4c4f5c5d30b5",
+      "metrics": {"raster_transition_min_px": 1.0, "raster_transition_max_px": 2.828427, "raster_zero_step_count": 0, "support_axis_drift_px": {"left": 0.630247, "right": 0.589256}, "subpixel_residual_max_px": 0.743957},
+      "ponytail_full_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_EIGHTDIR_R8C_PONYTAIL_FULL_REVIEW.json",
+      "chatgpt_web_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_N_S_E_SE_SW_W_R8C_CHATGPT_WEB_REVIEW.json"
+    },
+    "S": {
+      "source_candidate": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_v8_r13_s_segmented_ual",
+      "world_video": "artifacts/mica_c03_v8_r14_s_shared_handoff_r8c_review/MICA_C03_V8_R14_S_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+      "world_video_sha256": "f1eed84b25553e7b6641c0a887daa308c8cb45811582aed65b2e767b5e054b39",
+      "runtime_track": "artifacts/mica_c03_v8_r14_s_shared_handoff_r8c_review/MICA_C03_V8_R14_S_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json",
+      "runtime_track_sha256": "f2d57966e5f499c602414a196c336ae9faf459d7ace96b52f60237c0ee6d540f",
+      "contact_sheet": "artifacts/mica_c03_v8_r14_s_shared_handoff_r8c_review/MICA_C03_V8_R14_S_SHARED_R8C_SUBPIXEL_WORLD_CONTACT_1920X1080.png",
+      "contact_sheet_sha256": "c030e9b48d410b50e4c65907624869b81c88db143bc876fd7ebac3d6053df51d",
+      "metrics": {"raster_transition_min_px": 1.0, "raster_transition_max_px": 2.0, "raster_zero_step_count": 0, "support_axis_drift_px": {"left": 0.0, "right": 0.0}, "subpixel_residual_max_px": 0.48},
+      "ponytail_full_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_EIGHTDIR_R8C_PONYTAIL_FULL_REVIEW.json",
+      "chatgpt_web_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_N_S_E_SE_SW_W_R8C_CHATGPT_WEB_REVIEW.json"
+    },
+    "SW": {
+      "source_candidate": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_v8_r14_sw_lateral_handoff_ual",
+      "world_video": "artifacts/mica_c03_v8_r14_sw_shared_handoff_r8c_review/MICA_C03_V8_R14_SW_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+      "world_video_sha256": "cb1c3f3980e89fe9b32e067165a20919e0ac8402f1cc33bbafb0aa3e1836ecc7",
+      "runtime_track": "artifacts/mica_c03_v8_r14_sw_shared_handoff_r8c_review/MICA_C03_V8_R14_SW_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json",
+      "runtime_track_sha256": "ce5e3a188fd8149796a7f3660cd7e24be904b23b4bdc41f2fb1f9400695f0897",
+      "contact_sheet": "artifacts/mica_c03_v8_r14_sw_shared_handoff_r8c_review/MICA_C03_V8_R14_SW_SHARED_R8C_SUBPIXEL_WORLD_CONTACT_1920X1080.png",
+      "contact_sheet_sha256": "fbeb1bcc42e15d86d119dd0de725e3915d2e3ca594a462350031f5b37f1e3bd8",
+      "metrics": {"raster_transition_min_px": 1.414214, "raster_transition_max_px": 2.828427, "raster_zero_step_count": 0, "support_axis_drift_px": {"left": 0.811989, "right": 0.514259}, "subpixel_residual_max_px": 0.555854},
+      "ponytail_full_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_EIGHTDIR_R8C_PONYTAIL_FULL_REVIEW.json",
+      "chatgpt_web_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_N_S_E_SE_SW_W_R8C_CHATGPT_WEB_REVIEW.json"
+    },
+    "W": {
+      "source_candidate": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_v8_r14_w_shared_handoff_r3_ual",
+      "world_video": "artifacts/mica_c03_v8_r14_w_shared_handoff_r8c_review/MICA_C03_V8_R14_W_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+      "world_video_sha256": "b3c32bf2a01312687e524204f5d1b308c4c639dd53bce303eadda3568865dc64",
+      "runtime_track": "artifacts/mica_c03_v8_r14_w_shared_handoff_r8c_review/MICA_C03_V8_R14_W_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json",
+      "runtime_track_sha256": "f60930be4a00f6ae8aa5a9bfc18207dc56cf9c81ce9b42cd5aebc391cddc266e",
+      "contact_sheet": "artifacts/mica_c03_v8_r14_w_shared_handoff_r8c_review/MICA_C03_V8_R14_W_SHARED_R8C_SUBPIXEL_WORLD_CONTACT_1920X1080.png",
+      "contact_sheet_sha256": "22b142f35d02eb81fbb9d32c81fcfc2eb2e289b0a4d7cc41471f56d5920bfb07",
+      "metrics": {"raster_transition_min_px": 1.0, "raster_transition_max_px": 2.0, "raster_zero_step_count": 0, "support_axis_drift_px": {"left": 0.745902, "right": 0.763158}, "subpixel_residual_max_px": 0.70887},
+      "ponytail_full_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_EIGHTDIR_R8C_PONYTAIL_FULL_REVIEW.json",
+      "chatgpt_web_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_N_S_E_SE_SW_W_R8C_CHATGPT_WEB_REVIEW.json"
+    },
+    "NW": {
+      "source_candidate": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_v8_r14_nw_shared_handoff_r7_ual",
+      "world_video": "artifacts/mica_c03_v8_r14_nw_shared_handoff_r8_review/MICA_C03_V8_R14_NW_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+      "world_video_sha256": "c961145bde3d45aae30767187e03c7bb0cfcf457338fb20e568e118699990ed2",
+      "runtime_track": "artifacts/mica_c03_v8_r14_nw_shared_handoff_r8_review/MICA_C03_V8_R14_NW_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json",
+      "runtime_track_sha256": "74c4e7bce47c35f6407c86cb724ae4ea03803744b3f2346d0dc7377f3843e683",
+      "contact_sheet": "artifacts/mica_c03_v8_r14_nw_shared_handoff_r8_review/MICA_C03_V8_R14_NW_SHARED_R8C_SUBPIXEL_WORLD_CONTACT_1920X1080.png",
+      "contact_sheet_sha256": "923063fc60c4848affaef33ac0da531eefe8dd902450dfaff8fb40c36f5fa1fd",
+      "metrics": {"raster_transition_min_px": 1.0, "raster_transition_max_px": 2.828427, "raster_zero_step_count": 0, "support_axis_drift_px": {"left": 0.827980, "right": 0.584132}, "subpixel_residual_max_px": 1.0},
+      "ponytail_full_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_EIGHTDIR_R8C_PONYTAIL_FULL_REVIEW.json",
+      "chatgpt_web_review": "docs/ART_PRODUCTION/MICA_C03_V8_R14_NE_NW_SHARED_R8C_CHATGPT_WEB_REVIEW.json"
+    }
+  },
+  "quarantine": {
+    "prior_r4_r8_and_r8b_candidates_preserved": true,
+    "deletion_performed": false,
+    "retirement_manifest_required_before_disposal": true
+  },
+  "promotion": {
+    "all_directions": "HOLD_PENDING_RUNTIME_INTEGRATION_AND_SECTOR_SWITCH_PACKAGE_GATE",
+    "eight_direction_production": "HOLD"
+  }
+}

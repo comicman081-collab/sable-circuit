@@ -1,0 +1,15 @@
+{
+  "character": "site7_rifle",
+  "slot": "S/walk/0",
+  "tool": "image_gen.imagegen",
+  "background": "transparent_alpha",
+  "reference": "art/site7_rifle/identity_reference.png",
+  "poseGuide": "reference/ual_guides/S_Walk_Loop_0.png",
+  "reference_order": [
+    "qa/site7_rifle/quarantine/688a3e6ab3962262b39b2e3cbdf6d81b2a8b5f9d6b6214251cb0787f355eaefc/S_walk_0_20260919_native_attempt.png",
+    "art/site7_rifle/identity_reference.png",
+    "reference/ual_guides/S_Walk_Loop_0.png"
+  ],
+  "approach_change": "Edit existing left-contact candidate instead of new pose transfer; explicitly foreshorten same rifle into visible front muzzle. No hard-mask or pixel-local guarantee.",
+  "prompt": "Use case: precise-object-edit.\nImage 1 is the EDIT TARGET. Correct only its upper-body aim: rotate the hooded head, shoulders, arms and the SAME rifle to face straight toward the viewer, matching the front view of image 3. Show the rifle strongly foreshortened, looking into its small circular muzzle opening, rather than the long side of its barrel. The stock is seated at the soldier's RIGHT shoulder, screen left; the right hand is on the trigger and the left hand supports the fore-end. The head looks straight down the sights toward the viewer. Do not turn the weapon sideways.\nKeep image 1's lower body, step, framing, scale, costume, armor details, radio, holster and realistic proportions. Its LEFT boot, screen RIGHT, is the forward heel-contact foot; the RIGHT holster-side leg, screen LEFT, trails. Exactly two continuous hip-knee-shin-boot chains. No extra knee or boot. Do not change to an idle stance.\nImage 2 is the canonical costume/weapon identity reference ONLY, not the aiming direction. Image 3 is the front-view pose diagram ONLY, not appearance or low-held weapon authority. Full-body premium realistic 3D game sprite; no redesign or mannequin geometry.\nBackground: transparent_alpha. Return one actual RGBA PNG at native portrait resolution with transparent background alpha 0, visible alpha 1..254, near-opaque interiors 254, no alpha 255. No matte, black/green background, checkerboard, shadow, glow, floor or text. Preserve genuine native alpha."
+}

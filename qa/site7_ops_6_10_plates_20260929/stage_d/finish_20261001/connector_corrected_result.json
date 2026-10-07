@@ -1,0 +1,24 @@
+{
+  "command": "Godot --headless -s res://tests/smoke/site7_connector_alignment_smoke.gd -- --mission=9",
+  "exit_code": 0,
+  "result": "PASS",
+  "checks": 106,
+  "connectors": 7,
+  "criteria_changed": false,
+  "test_file_edited_by_Codex": false,
+  "initial_custom": "20261001_135223_custom",
+  "initial_failure": "MIS_CH01_09/link_0 crossed back with WASD",
+  "source_pixels_changed": false,
+  "door_centre_correction_px": {
+    "before": [
+      1155,
+      359,
+      214
+    ],
+    "after": [
+      1170,
+      346,
+      214
+    ]
+  }
+}

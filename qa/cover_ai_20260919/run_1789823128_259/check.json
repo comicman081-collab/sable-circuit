@@ -1,0 +1,66 @@
+{
+  "captures": [
+    "res://qa/cover_ai_20260919/run_1789823128_259/01_cover_holds.png",
+    "res://qa/cover_ai_20260919/run_1789823128_259/02_follower_bypass.png",
+    "res://qa/cover_ai_20260919/run_1789823128_259/03_drone_new_warning.png"
+  ],
+  "checks": 52,
+  "dependency_sha256": {
+    "data/visual/site7_environment_props.json": "fc2927e0f2f4908ba2e9a7c28e10d91953a927fb90b9d60270ff7a28946be9c5",
+    "scripts/actors/enemy_actor.gd": "f094dca9ba6e334ccc3514f3260218de9e0229c831f0665ffdd9824660c92b22",
+    "scripts/actors/operator_actor.gd": "1fa689f977a0ae9a241ef48c3ea10efda928db3d620a38f768fa3188e3c2b6db",
+    "scripts/animation/boss_phase_transition_guard.gd": "ef4da2e861c111dcb15b36df9544acb6b5f4f5dd156a02f4fcd478d0c893215b",
+    "scripts/combat/cover_navigation.gd": "2de89d70c78f734065e61c8acb9f9a3a2dd350a332a7581146c97d19650b68f3",
+    "scripts/combat/prototype_projectile.gd": "47a4d384160d175917ada9e12c57dbc3900cc87624e1b0643198ddef14322f82",
+    "scripts/combat/site7_enemy_tactics.gd": "b2064197c6b27f1d958bbe9e025c68f1dd88054a017dc97b3e05911693fb60b8",
+    "scripts/missions/site7_environment_prop.gd": "26f5fa6fc21bd3ab7bae3f92967d80b7f27594b0f30d8de35262e6e783722f27",
+    "scripts/ui/battle_reticle.gd": "9e2126f2faa694446ffa0c7754773df61dbf361f3194ccd059db7d7b19e9dcf4",
+    "scripts/ui/story_stage_hud.gd": "51e4685f2f33a670bc0237b91b3f6cb9f1c3ac2d11177cb1d541438ee2e79fd9",
+    "tests/render/site7_cover_ai_check.gd": "f0220e1e13e473096e99724910551dd603c6735e6fd362db143fc8a14f55e432"
+  },
+  "failures": [],
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "observations": [
+    {
+      "end_distance": 16.1985836029053,
+      "hz": 30,
+      "kind": "follower_path",
+      "side_travel": 48.2027587890625
+    },
+    {
+      "displacement": 192.733428955078,
+      "hz": 30,
+      "kind": "drone_flank",
+      "new_warning": true
+    },
+    {
+      "end_distance": 18.5074825286865,
+      "hz": 60,
+      "kind": "follower_path",
+      "side_travel": 48.2008972167969
+    },
+    {
+      "displacement": 214.005569458008,
+      "hz": 60,
+      "kind": "drone_flank",
+      "new_warning": true
+    },
+    {
+      "end_distance": 19.476167678833,
+      "hz": 120,
+      "kind": "follower_path",
+      "side_travel": 48.1907958984375
+    },
+    {
+      "displacement": 196.663513183594,
+      "hz": 120,
+      "kind": "drone_flank",
+      "new_warning": true
+    }
+  ],
+  "status": "PASS_TECHNICAL_ONLY",
+  "visual_approval": false
+}

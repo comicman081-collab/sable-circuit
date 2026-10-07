@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "mission_id": "MIS_CH01_10",
+  "chapter_id": "CH01",
+  "title": "ZERO POINT",
+  "zone": "Site-7 Origin Shaft",
+  "objectives": [
+    {
+      "id": "OBJ_ZERO_DESCENT",
+      "kind": "PRIMARY",
+      "source_room": "R01_DESCENT",
+      "title": "Reach the shaft floor",
+      "prerequisites": [],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_ZERO_RELAY",
+      "kind": "PRIMARY",
+      "source_room": "R02_RELAY",
+      "title": "Clear the first relay",
+      "prerequisites": [
+        "OBJ_ZERO_DESCENT"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_ZERO_LOG",
+      "kind": "PRIMARY",
+      "source_room": "R03_LOG",
+      "title": "Recover the answer log",
+      "prerequisites": [
+        "OBJ_ZERO_RELAY"
+      ],
+      "required_for_extraction": true
+    },
+    {
+      "id": "OBJ_ZERO_GALLERY",
+      "kind": "DEEP",
+      "source_room": "R04_GALLERY",
+      "title": "Break the null gallery",
+      "prerequisites": [
+        "OBJ_ZERO_LOG"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_ZERO_CORE",
+      "kind": "BOSS",
+      "source_room": "R05_CORE",
+      "title": "Destroy the origin core",
+      "prerequisites": [
+        "OBJ_ZERO_GALLERY"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_ZERO_EXIT",
+      "kind": "PRIMARY",
+      "source_room": "R06_EXIT",
+      "title": "Leave the origin shaft",
+      "prerequisites": [
+        "OBJ_ZERO_CORE"
+      ],
+      "required_for_extraction": false
+    }
+  ],
+  "main_route": [
+    {
+      "id": "R01_DESCENT",
+      "objective_id": "OBJ_ZERO_DESCENT",
+      "type": "EVENT",
+      "title": "Sealed Descent",
+      "x": 280,
+      "y": 560,
+      "objective": "Reach the shaft floor",
+      "story": "The shaft floor is one sheet of black alloy. The squad's lights show a single thin seam, glowing faintly red.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "R02_RELAY",
+      "objective_id": "OBJ_ZERO_RELAY",
+      "encounter_id": "ENC_ZERO_RELAY_01",
+      "type": "COMBAT",
+      "title": "First Relay",
+      "x": 660,
+      "y": 240,
+      "objective": "Clear the first relay",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 2
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 230,
+          "offset_x": 218,
+          "offset_y": 96
+        },
+        {
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "health": 174,
+          "offset_x": 298,
+          "offset_y": -20
+        },
+        {
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "health": 200,
+          "offset_x": 222,
+          "offset_y": -108
+        },
+        {
+          "enemy_id": "ENM_SITE7_BULWARK_01",
+          "affix": "SHIELDED",
+          "health": 298,
+          "offset_x": 262,
+          "offset_y": 24
+        },
+        {
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "health": 258,
+          "offset_x": 250,
+          "offset_y": -56
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 52
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 134
+          },
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 230
+          },
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 200
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 134
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R03_LOG",
+      "objective_id": "OBJ_ZERO_LOG",
+      "type": "RESEARCH",
+      "title": "Answer Log",
+      "x": 1040,
+      "y": 560,
+      "objective": "Recover the answer log",
+      "story": "The answer log holds the message the carrier was built to receive, and the reply it has sent every hour since the blackout.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 62
+        },
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 38
+        }
+      ]
+    },
+    {
+      "id": "R04_GALLERY",
+      "objective_id": "OBJ_ZERO_GALLERY",
+      "encounter_id": "ENC_ZERO_GALLERY_01",
+      "type": "ELITE",
+      "title": "Null Gallery",
+      "x": 1420,
+      "y": 240,
+      "objective": "Break the null gallery",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 2
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "affix": "SHIELDED",
+          "health": 258,
+          "offset_x": 212,
+          "offset_y": 64
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "affix": "OVERCHARGED",
+          "health": 230,
+          "offset_x": 302,
+          "offset_y": 90
+        },
+        {
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "affix": "VOLATILE",
+          "health": 174,
+          "offset_x": 292,
+          "offset_y": -96
+        },
+        {
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "health": 200,
+          "offset_x": 250,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_BULWARK_01",
+          "health": 298,
+          "offset_x": 232,
+          "offset_y": -40
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 60
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 230
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "affix": "VOLATILE",
+            "health": 134
+          },
+          {
+            "enemy_id": "ENM_SITE7_MORTAR_01",
+            "health": 174
+          },
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 200
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R05_CORE",
+      "objective_id": "OBJ_ZERO_CORE",
+      "encounter_id": "ENC_ZERO_CORE_01",
+      "type": "BOSS",
+      "title": "Origin Core",
+      "x": 1800,
+      "y": 560,
+      "objective": "Destroy the origin core",
+      "encounter": [
+        {
+          "enemy_id": "BOSS_SITE7_ORIGIN_01",
+          "health": 2460,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 184,
+          "offset_x": 240,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 134,
+          "offset_x": 240,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 220
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 200
+          },
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 184
+          }
+        ],
+        [
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 134
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 124
+          },
+          {
+            "enemy_id": "ENM_SITE7_MORTAR_01",
+            "health": 174
+          }
+        ],
+        [
+          {
+            "enemy_id": "ENM_SITE7_BULWARK_01",
+            "health": 298
+          },
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 184
+          }
+        ]
+      ],
+      "reinforce_at": 1
+    },
+    {
+      "id": "R06_EXIT",
+      "objective_id": "OBJ_ZERO_EXIT",
+      "type": "EXTRACTION",
+      "title": "Way Out",
+      "x": 2180,
+      "y": 240,
+      "objective": "Leave the origin shaft",
+      "story": "The core is dark and the shaft is groaning. A service lift is waiting at the far end.",
+      "loot": []
+    }
+  ],
+  "optional_rooms": [
+    {
+      "id": "O01_VAULT",
+      "from": "R05_CORE",
+      "objective_id": "OBJ_ZERO_SUPPLY",
+      "type": "SUPPLY",
+      "title": "Reserve Vault",
+      "x": 1800,
+      "y": 800,
+      "reward": "reserve_supplies",
+      "story": "The reserve vault was sealed with the origin core. Everything the first team left behind is here.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 44
+        },
+        {
+          "loot_id": "LOT_SALVAGE_FIELD",
+          "quantity": 8
+        }
+      ]
+    },
+    {
+      "id": "O02_RECORDER",
+      "from": "R02_RELAY",
+      "objective_id": "OBJ_ZERO_RESEARCH",
+      "type": "RESEARCH",
+      "title": "First Recorder",
+      "x": 660,
+      "y": 800,
+      "objective": "Play the first recording",
+      "reward": "first_signal",
+      "story": "The first recorder holds the first message. It is short, and it is addressed to Site-7.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 90
+        },
+        {
+          "loot_id": "LOT_SIGNAL_FRAGMENT",
+          "quantity": 5
+        },
+        {
+          "loot_id": "LOT_INTEL_MECHANICAL",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "extraction_offer_room_ids": [
+    "R03_LOG",
+    "R04_GALLERY",
+    "R05_CORE"
+  ],
+  "enemy_roster_revision": 4,
+  "new_enemy_ids": [
+    "BOSS_SITE7_ORIGIN_01"
+  ]
+}

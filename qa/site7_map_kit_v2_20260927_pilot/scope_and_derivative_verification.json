@@ -1,0 +1,195 @@
+{
+  "technical_scope_gate": "PASS",
+  "checks": [
+    {
+      "pass": true,
+      "check": "site7_battle_art unchanged MIS_CH01_02"
+    },
+    {
+      "pass": true,
+      "check": "site7_battle_art unchanged MIS_CH01_03"
+    },
+    {
+      "pass": true,
+      "check": "site7_battle_art unchanged MIS_CH01_04"
+    },
+    {
+      "pass": true,
+      "check": "site7_battle_art unchanged MIS_CH01_05"
+    },
+    {
+      "pass": true,
+      "check": "site7_battle_layouts unchanged MIS_CH01_02"
+    },
+    {
+      "pass": true,
+      "check": "site7_battle_layouts unchanged MIS_CH01_03"
+    },
+    {
+      "pass": true,
+      "check": "site7_battle_layouts unchanged MIS_CH01_04"
+    },
+    {
+      "pass": true,
+      "check": "site7_battle_layouts unchanged MIS_CH01_05"
+    },
+    {
+      "pass": true,
+      "check": "site7_world_layout unchanged MIS_CH01_02"
+    },
+    {
+      "pass": true,
+      "check": "site7_world_layout unchanged MIS_CH01_03"
+    },
+    {
+      "pass": true,
+      "check": "site7_world_layout unchanged MIS_CH01_04"
+    },
+    {
+      "pass": true,
+      "check": "site7_world_layout unchanged MIS_CH01_05"
+    },
+    {
+      "pass": true,
+      "check": "site7_seam_light unchanged MIS_CH01_02"
+    },
+    {
+      "pass": true,
+      "check": "site7_seam_light unchanged MIS_CH01_03"
+    },
+    {
+      "pass": true,
+      "check": "site7_seam_light unchanged MIS_CH01_04"
+    },
+    {
+      "pass": true,
+      "check": "site7_seam_light unchanged MIS_CH01_05"
+    },
+    {
+      "pass": true,
+      "check": "exactly the three pilot art pointers changed"
+    },
+    {
+      "pass": true,
+      "check": "S1_R02 raw hash"
+    },
+    {
+      "pass": true,
+      "check": "S1_R02 master hash"
+    },
+    {
+      "pass": true,
+      "check": "S1_R02 game hash"
+    },
+    {
+      "pass": true,
+      "check": "S1_R02 uniform crop only; no source rescale or paint"
+    },
+    {
+      "pass": true,
+      "check": "S1_R02 one uniform whole-image exposure only"
+    },
+    {
+      "pass": true,
+      "check": "S1_C01 raw hash"
+    },
+    {
+      "pass": true,
+      "check": "S1_C01 master hash"
+    },
+    {
+      "pass": true,
+      "check": "S1_C01 game hash"
+    },
+    {
+      "pass": true,
+      "check": "S1_C01 uniform crop only; no source rescale or paint"
+    },
+    {
+      "pass": true,
+      "check": "S1_C01 one uniform whole-image exposure only"
+    },
+    {
+      "pass": true,
+      "check": "S1_C01 minimum traced deck width >=260 px"
+    },
+    {
+      "pass": true,
+      "check": "S1_C01 parallel deck width varies less than 1%"
+    },
+    {
+      "pass": true,
+      "check": "S1_C06 raw hash"
+    },
+    {
+      "pass": true,
+      "check": "S1_C06 master hash"
+    },
+    {
+      "pass": true,
+      "check": "S1_C06 game hash"
+    },
+    {
+      "pass": true,
+      "check": "S1_C06 uniform crop only; no source rescale or paint"
+    },
+    {
+      "pass": true,
+      "check": "S1_C06 one uniform whole-image exposure only"
+    },
+    {
+      "pass": true,
+      "check": "S1_C06 minimum traced deck width >=260 px"
+    },
+    {
+      "pass": true,
+      "check": "S1_C06 parallel deck width varies less than 1%"
+    }
+  ],
+  "geometry_manual_trace_measurements": {
+    "S1_R02": {
+      "floor_bbox": [
+        1277,
+        627
+      ],
+      "floor_area_fraction": 0.30411185799490514,
+      "door_widths_px": {
+        "SW": 315.41242841714404,
+        "NE": 295.16097302997224
+      }
+    },
+    "S1_C01": {
+      "floor_bbox": [
+        1402,
+        1034
+      ],
+      "floor_area_fraction": 0.27941176470588236,
+      "cut_end_widths_perpendicular": [
+        278.3897569877143,
+        279.27918113144506
+      ],
+      "centreline_length": 1576.300812027958,
+      "end_fade_fraction": 0.1,
+      "nominal_length_between_end_fades": 1261.0406496223666
+    },
+    "S1_C06": {
+      "floor_bbox": [
+        1254,
+        1020
+      ],
+      "floor_area_fraction": 0.2647527910685805,
+      "cut_end_widths_perpendicular": [
+        291.0701465711351,
+        291.0701465711351
+      ],
+      "centreline_length": 1430.335624949613,
+      "end_fade_fraction": 0.075,
+      "nominal_length_between_end_fades": 1215.785281207171
+    }
+  },
+  "visual_limitations": [
+    "NE R02 exterior apron is partly occluded by its frame; visible length is less than the nominal 195 px design target.",
+    "Mixed v1/v2 joins retain v1 wall/lighting discontinuities, especially old C02."
+  ],
+  "user_visual_approval": false
+}

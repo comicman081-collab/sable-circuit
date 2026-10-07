@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "reviewer": "existing ChatGPT web planning conversation",
+  "review_date": "2026-09-04",
+  "conversation": "https://chatgpt.com/c/6a93c84f-fb1c-83e8-9d88-959e708b2463",
+  "candidate": "MICA_C03_V8_R14_NE_NW_SHARED_R8C_SUBPIXEL_WORLD_GRID",
+  "status": "PASS_FOR_NE_NW_SINGLE_DIRECTION_PILOTS",
+  "valid_review": true,
+  "scope": "The latest R8C NE/NW world-grid captures were opened and reviewed frame-by-frame in the existing planning conversation. Earlier R7 static/fixed evidence was used only as a continuity reference. This is not an eight-direction or production promotion review.",
+  "promotion": {
+    "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+    "ne_direction": "HOLD",
+    "nw_direction": "HOLD",
+    "eight_direction_visual_runtime": "HOLD",
+    "production": "HOLD",
+    "remaining_gate": "Godot/runtime integration, eight-direction sector/package gate, and final promotion review"
+  },
+  "evidence_reviewed": [
+    "artifacts/mica_c03_v8_r14_ne_shared_handoff_r8c_review/MICA_C03_V8_R14_NE_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+    "artifacts/mica_c03_v8_r14_nw_shared_handoff_r8c_review/MICA_C03_V8_R14_NW_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+    "artifacts/mica_c03_v8_r14_ne_shared_handoff_r7_review/MICA_C03_V8_R14_NE_SHARED_R7_R7_SCREEN_SEPARATED_RUNTIME_SOLE_LOCK_NE_GAIT_REVIEW_2304X1080.png",
+    "artifacts/mica_c03_v8_r14_nw_shared_handoff_r7_review/MICA_C03_V8_R14_NW_SHARED_R7_R7_SCREEN_SEPARATED_RUNTIME_SOLE_LOCK_NW_GAIT_REVIEW_2304X1080.png",
+    "artifacts/mica_c03_v8_r14_ne_shared_handoff_r7_review/MICA_C03_V8_R14_NE_SHARED_R7_RECAPTURED_FIXED_GRID_5S_1920X1080.mp4",
+    "artifacts/mica_c03_v8_r14_nw_shared_handoff_r7_review/MICA_C03_V8_R14_NW_SHARED_R7_RECAPTURED_FIXED_GRID_5S_1920X1080.mp4"
+  ],
+  "capture_scope": {
+    "world_video_resolution": [1920, 1080],
+    "fps": 24,
+    "frames_per_direction": 120,
+    "duration_seconds": 5.0,
+    "review_mode": "actual_continuous_frame_playback"
+  },
+  "gates": {
+    "NE": {
+      "A_gait_readability_alternation_and_no_crossing_or_out_toe": "PASS",
+      "B_scale_volume_calf_and_waist_stability": "PASS",
+      "C_ankle_boot_ground_foot_snap_and_penetration": "PASS",
+      "D_support_sole_lock_handoff_stride_and_raster_stop_catchup": "PASS",
+      "E_torso_hip_coat_weapon_z_order_and_green_alpha": "PASS",
+      "F_single_direction_pilot_blocker": "PASS_NO_BLOCKER"
+    },
+    "NW": {
+      "A_gait_readability_alternation_and_no_crossing_or_out_toe": "PASS",
+      "B_scale_volume_calf_and_waist_stability": "PASS",
+      "C_ankle_boot_ground_foot_snap_and_penetration": "PASS",
+      "D_support_sole_lock_handoff_stride_and_raster_stop_catchup": "PASS",
+      "E_torso_hip_coat_weapon_z_order_and_green_alpha": "PASS",
+      "F_single_direction_pilot_blocker": "PASS_NO_BLOCKER"
+    }
+  },
+  "specific_findings": {
+    "gait": "NE/NW read as diagonal forward stance-swing walking with clear left/right alternation, not in-place tap dancing or blocking skate motion.",
+    "leg_separation": "R7 left/right separation remains; blocking leg crossing and persistent duck-foot/out-toed recurrence were not observed.",
+    "scale_and_volume": "No rubber-leg stretch, non-uniform pumping, barrel-calf expansion, or waist snap observed across 120 frames.",
+    "foot_and_ground": "No blocking 90-degree ankle, boot inversion, gross foot snap, visible ground penetration, or floating support sole observed.",
+    "sole_and_handoff": "Both support windows remain visually locked; F11->F12 and F23->F00 handoffs and stride balance remain continuous.",
+    "raster_cadence": "R7 complete stop and large catch-up pulse are resolved in R8C; no blocking stop-and-catch-up is visible. Small cadence modulation remains non-blocking.",
+    "composite": "Torso/hip/coat/weapon connection, front-back z-order, green/alpha seams, halo, and flicker remain stable.",
+    "non_blocking_polish": [
+      "Some phases read as a slightly wide, rigid tactical stride.",
+      "Heel-to-toe roll and pelvis counter-motion remain subtle; swing-foot clearance is restrained.",
+      "Subpixel residual causes very slight edge sharpness modulation.",
+      "NE and NW cycle advance is not numerically identical and must be compared under the final game-speed gate."
+    ],
+    "runtime_scope": "CAPTURE_ONLY_SUBPIXEL_DERIVATIVE_NOT_PRODUCTION_INTEGRATION",
+    "r8c_blockers": 0
+  },
+  "quarantine_policy": {
+    "prior_r4_to_r8_r8b_and_failed_held_assets": "PRESERVE_IN_QUARANTINE",
+    "delete_or_retire_now": false,
+    "retirement_manifest_required_before_disposal": true
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_C03/attempt01/S9_C03_GAME.png",
+  "luma": 0.2000701129436493,
+  "p10": 0.1289466768503189,
+  "p90": 0.24775688350200653,
+  "saturation": 0.029642511157033466,
+  "hue": 133.6874158420391,
+  "axis": 25.740708356250174,
+  "problems": [],
+  "plate": "S9_C03",
+  "attempt": 1,
+  "native_size": [
+    1774,
+    887
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      0,
+      800
+    ],
+    [
+      1660,
+      0
+    ],
+    [
+      1774,
+      0
+    ],
+    [
+      1774,
+      256
+    ],
+    [
+      466,
+      887
+    ],
+    [
+      0,
+      887
+    ]
+  ],
+  "doors_px": {},
+  "raw_sha256": "46ba921218579463f5f1169bf07e01da69570da96070f1bf382e8f82bdb2f202",
+  "master_sha256": "46ba921218579463f5f1169bf07e01da69570da96070f1bf382e8f82bdb2f202",
+  "game_sha256": "0e08fe76af9e96e18bfccadab6b59d3558ba89c32efc1f485694834d1c2eb7a0",
+  "game_exposure_factor_srgb": 0.7339,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-0fe00f7e-b365-41ac-9419-2908acdd5de3.png",
+  "inspection": "Actual floor traced. Rejected wall architecture: lower-left retains S3 periodic angled stanchion, upright cylindrical canister and flat vent-panel bays.",
+  "floor_area_px2": 496864.0,
+  "floor_area_fraction": 0.31576231397017424,
+  "floor_bounds_px": [
+    0,
+    0,
+    1774,
+    887
+  ],
+  "width_sections_px": [
+    [
+      1000,
+      318,
+      628
+    ],
+    [
+      1400,
+      125,
+      435
+    ]
+  ],
+  "vertical_widths_px": [
+    310,
+    310
+  ],
+  "width_measurement": "Vertical sections between actual wall base and outer painted deck lip; clipped image-corner fragments are not full cross-sections.",
+  "preintegration_end_comparison": [
+    {
+      "end": "image_left",
+      "room": "S9_R04",
+      "door": "NE",
+      "deck_luma": 0.2147338092327118,
+      "deck_saturation": 0.026658546562342303,
+      "room_apron_luma": 0.21952736377716064,
+      "room_apron_saturation": 0.006266930506288436,
+      "step": 0.029164828485486956,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    },
+    {
+      "end": "image_right",
+      "room": "S9_R03",
+      "door": "SW",
+      "deck_luma": 0.19008131325244904,
+      "deck_saturation": 0.04675940427993537,
+      "room_apron_luma": 0.22827714681625366,
+      "room_apron_saturation": 0.08838013921319027,
+      "step": 0.2410036318827476,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    }
+  ]
+}

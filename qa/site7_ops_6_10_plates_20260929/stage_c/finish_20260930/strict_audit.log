@@ -1,0 +1,30 @@
+PLATE PASS S8_R01_GAME.png: luma 0.199 p10 0.155 p90 0.239 sat 0.08 hue 145 axis 24.1
+PLATE PASS S8_R02_GAME.png: luma 0.203 p10 0.151 p90 0.252 sat 0.01 hue 133 axis 22.8
+PLATE PASS S8_R03_GAME.png: luma 0.195 p10 0.145 p90 0.239 sat 0.10 hue 141 axis 23.6
+PLATE PASS S8_R04_GAME.png: luma 0.204 p10 0.161 p90 0.254 sat 0.09 hue 135 axis 23.3
+PLATE PASS S8_R05_GAME.png: luma 0.212 p10 0.170 p90 0.269 sat 0.07 hue 147 axis 24.2
+PLATE PASS S8_R06_GAME.png: luma 0.200 p10 0.145 p90 0.257 sat 0.07 hue 147 axis 25.6
+PLATE PASS S8_O01_GAME.png: luma 0.209 p10 0.172 p90 0.255 sat 0.12 hue 140 axis 25.2
+PLATE PASS S8_O02_GAME.png: luma 0.180 p10 0.111 p90 0.241 sat 0.07 hue 142 axis 25.6
+PLATE PASS S8_C01_GAME.png: luma 0.204 p10 0.170 p90 0.243 sat 0.08 hue 148 axis 24.2
+PLATE PASS S8_C02_GAME.png: luma 0.195 p10 0.158 p90 0.246 sat 0.08 hue 144 axis 22.7
+PLATE PASS S8_C03_GAME.png: luma 0.206 p10 0.173 p90 0.243 sat 0.12 hue 146 axis 24.5
+PLATE PASS S8_C04_GAME.png: luma 0.220 p10 0.163 p90 0.289 sat 0.13 hue 138 axis 23.1
+PLATE PASS S8_C05_GAME.png: luma 0.197 p10 0.161 p90 0.243 sat 0.09 hue 151 axis 23.0
+PLATE PASS S8_C06_GAME.png: luma 0.196 p10 0.123 p90 0.245 sat 0.12 hue 146 axis 30.9
+PLATE PASS S8_C07_GAME.png: luma 0.199 p10 0.139 p90 0.238 sat 0.07 hue 146 axis 31.4
+SEAM WAIVED MIS_CH01_08 C0 -> R01_GATE | waived: saturation 0.07 vs 0.15 | with the seam light: step +0.04, saturation ratio 1.41
+SEAM PASS MIS_CH01_08 C0 -> R02_MARSHALLING
+SEAM PASS MIS_CH01_08 C1 -> R02_MARSHALLING
+SEAM PASS MIS_CH01_08 C1 -> R03_TOWER
+SEAM PASS MIS_CH01_08 C2 -> R03_TOWER
+SEAM WAIVED MIS_CH01_08 C2 -> R04_JUNCTION | waived: saturation 0.17 vs 0.07 | with the seam light: step -0.00, saturation ratio 1.28
+SEAM PASS MIS_CH01_08 C3 -> R04_JUNCTION
+SEAM PASS MIS_CH01_08 C3 -> R05_TERMINAL
+SEAM WAIVED MIS_CH01_08 C4 -> R05_TERMINAL | waived: brightness step -0.36 stops; saturation 0.21 vs 0.10 | with the seam light: step -0.01, saturation ratio 1.27
+SEAM PASS MIS_CH01_08 C4 -> R06_PLATFORM
+SEAM PASS MIS_CH01_08 C5 -> R04_JUNCTION
+SEAM PASS MIS_CH01_08 C5 -> O01_DEPOT
+SEAM PASS MIS_CH01_08 C6 -> R05_TERMINAL
+SEAM PASS MIS_CH01_08 C6 -> O02_DISPATCH
+SITE7_PLATE_LIGHTING PASS (0 plates/seams off target, 3 seams waived)

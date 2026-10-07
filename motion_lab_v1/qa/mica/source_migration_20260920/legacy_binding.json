@@ -1,0 +1,33 @@
+{
+  "recordedAt": "2026-09-20T00:00:00+09:00",
+  "character": "mica",
+  "purpose": "Attempted explicit source migration for a complete native-alpha whole-body gait rebuild. The historical package is retained and may not be relabeled as a modern reviewed source set.",
+  "outcome": "HOLD_SOURCE_ART: three current ImageGen E pair attempts were retained in quarantine. None may replace the legacy source art. The immediate repair is a runtime-package regeneration that removes the legacy mesh-warp renderer without changing source pixels.",
+  "legacyRecipe": {
+    "path": "characters/mica.json",
+    "sha256BeforeMigration": "608c7a23b9a2712658ec3e70d71cca7120afd5c31f232a40748e9e0add04767e",
+    "workflowVersion": null,
+    "status": "existing-runtime-only"
+  },
+  "legacyRuntimePackage": {
+    "profile": {
+      "path": "public/assets/atlas/mica/profile.json",
+      "sha256": "b8067f8250451e002d5c52d67953dafa03ac061e3cb88781443d5f124d2efae0"
+    },
+    "eastWalkAtlas": {
+      "path": "public/assets/atlas/mica/E_walk.webp",
+      "sha256": "b78732b08dbea537f295ca02c623f7323aa52ccbe183cfaf4ac6cfdc7a35ea34"
+    },
+    "southWalkAtlas": {
+      "path": "public/assets/atlas/mica/S_walk.webp",
+      "sha256": "497436dd6b05e8e36a9a2e9cb5286f1150b7b6fbab50f85670b27914be924296"
+    },
+    "retention": "Keep active until the modern replacement is complete and its source, cycle, runtime, visual, and app gates have passed."
+  },
+  "migrationConstraints": {
+    "sourceArt": "Codex built-in ImageGen only",
+    "background": "native RGBA alpha 0..254; no chroma-key or local matte derivation",
+    "motion": "six authored whole-body frames per direction: left contact, right swing, right passing, right contact, left swing, left passing",
+    "runtime": "distance-driven phase using actual post-collision displacement; no mesh warp, split upper/lower body, or cadence-only repair"
+  }
+}

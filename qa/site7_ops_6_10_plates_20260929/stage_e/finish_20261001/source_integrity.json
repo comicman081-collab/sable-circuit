@@ -1,0 +1,446 @@
+{
+  "status": "PASS",
+  "ImageGen_calls": 23,
+  "selected": 15,
+  "rejected_current": 8,
+  "working_images_retained": true,
+  "all_calls": [
+    {
+      "plate": "S10_R01",
+      "attempt": 1,
+      "status": "REJECTED",
+      "raw": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt01/S10_R01_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt01/S10_R01_MASTER.png",
+      "game": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt01/S10_R01_GAME.png",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_sha256": "ef3c182c060bf975fb5392a39415e6ee96919c46d0e95e179aaf6d6b9ed7bda0",
+      "master_sha256": "ef3c182c060bf975fb5392a39415e6ee96919c46d0e95e179aaf6d6b9ed7bda0",
+      "game_sha256": "396f012fc967dc02c0b92aafa48e8c46a2694a1657ad8a67d4ec99be3bb61ac5",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.8521,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_R01",
+      "attempt": 2,
+      "status": "REJECTED",
+      "raw": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt02/S10_R01_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt02/S10_R01_MASTER.png",
+      "game": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt02/S10_R01_GAME.png",
+      "native_size": [
+        1603,
+        981
+      ],
+      "raw_sha256": "23467911c66c9a486e000261d6ec1f72d599129c5d2493b0f6177d4828829df2",
+      "master_sha256": "23467911c66c9a486e000261d6ec1f72d599129c5d2493b0f6177d4828829df2",
+      "game_sha256": "65aeb5b5065198a4d81d2fbe3e87c944fd01628cbe1f5e240139fd547472b8e7",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7471,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_R01",
+      "attempt": 3,
+      "status": "SELECTED_BY_USER",
+      "raw": "art_src/environments/site7_v2/stage10/S10_R01/S10_R01_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_R01/S10_R01_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_R01/S10_R01_GAME.png",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_sha256": "b71b0135f06423c7da3202108e1ba442c6ce68c2526ee9ceb20277dda11f082d",
+      "master_sha256": "b71b0135f06423c7da3202108e1ba442c6ce68c2526ee9ceb20277dda11f082d",
+      "game_sha256": "e567a57d15a61df6f042a51c79ee4222f8bd807945bb2599e428b01e3d2569eb",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7388,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_R02",
+      "attempt": 1,
+      "status": "REJECTED",
+      "raw": "art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/S10_R02_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/S10_R02_MASTER.png",
+      "game": "art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/S10_R02_GAME.png",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_sha256": "1c52fdd2828df56ccadfa9cc33b04a818fbd40a79e884268a93ef47616623f72",
+      "master_sha256": "1c52fdd2828df56ccadfa9cc33b04a818fbd40a79e884268a93ef47616623f72",
+      "game_sha256": "d611c0c54439f08c28f60572d218476a4f0da58e4dc3028c7b6ff31ea81ccf6d",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7329,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_R02",
+      "attempt": 2,
+      "status": "SELECTED",
+      "raw": "art_src/environments/site7_v2/stage10/S10_R02/S10_R02_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_R02/S10_R02_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_R02/S10_R02_GAME.png",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_sha256": "787f34dbbd408c6bb232f7241d89eded7f71028ef3b242fce6e222e9bc18c2da",
+      "master_sha256": "787f34dbbd408c6bb232f7241d89eded7f71028ef3b242fce6e222e9bc18c2da",
+      "game_sha256": "ac97f989f9516bfea70b114f1c5e55980d106150f4d036b3ea0e49fa9ab1c00a",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.8279,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_R03",
+      "attempt": 1,
+      "status": "SELECTED",
+      "raw": "art_src/environments/site7_v2/stage10/S10_R03/S10_R03_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_R03/S10_R03_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_R03/S10_R03_GAME.png",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_sha256": "a3cf48345e106f571bf3f71fb77ef4ef742a7731603ca80e880930bf7d7722bf",
+      "master_sha256": "a3cf48345e106f571bf3f71fb77ef4ef742a7731603ca80e880930bf7d7722bf",
+      "game_sha256": "49f00392c28aeaac3bd3f060f4725c2078025bd3fd6e32832632d32af0bec2a4",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7712,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_R04",
+      "attempt": 1,
+      "status": "SELECTED",
+      "raw": "art_src/environments/site7_v2/stage10/S10_R04/S10_R04_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_R04/S10_R04_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_R04/S10_R04_GAME.png",
+      "native_size": [
+        1774,
+        887
+      ],
+      "raw_sha256": "10dae607a9624cf28555af3e67e4be3b301d92d1a479d2aeafa23beeb67e31f7",
+      "master_sha256": "10dae607a9624cf28555af3e67e4be3b301d92d1a479d2aeafa23beeb67e31f7",
+      "game_sha256": "7277efe6504c0392d7283cf665369c71280219cd96e3a686d0cf6994b96aade9",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.6446,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_R05",
+      "attempt": 1,
+      "status": "REJECTED",
+      "raw": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/S10_R05_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/S10_R05_MASTER.png",
+      "game": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/S10_R05_GAME.png",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_sha256": "e234a466b69e0d852ff4d0fbb3fd84781ebdb10048f115dd283d51be650b8c0a",
+      "master_sha256": "e234a466b69e0d852ff4d0fbb3fd84781ebdb10048f115dd283d51be650b8c0a",
+      "game_sha256": "bde37b723cf57c6694b8baa715eb0f80e804ee8a84e4b1f79c0cb96e8015d74e",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7095,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_R05",
+      "attempt": 2,
+      "status": "REJECTED",
+      "raw": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/S10_R05_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/S10_R05_MASTER.png",
+      "game": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/S10_R05_GAME.png",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_sha256": "1001a4748d0cdcda126436e7561915e5fd7afbd445e1af4c4023507e127bc367",
+      "master_sha256": "1001a4748d0cdcda126436e7561915e5fd7afbd445e1af4c4023507e127bc367",
+      "game_sha256": "c597b6e4fb608d2ffd08d22b639f3edff4db76e30a00a6b4c77f94b69e37680a",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7153,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_R05",
+      "attempt": 3,
+      "status": "SELECTED_BY_USER",
+      "raw": "art_src/environments/site7_v2/stage10/S10_R05/S10_R05_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_R05/S10_R05_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_R05/S10_R05_GAME.png",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_sha256": "6fd9b23af85998c3f083fdfeff1793d852359e9e11e2bed6c2bd5c40bfbf8c0a",
+      "master_sha256": "6fd9b23af85998c3f083fdfeff1793d852359e9e11e2bed6c2bd5c40bfbf8c0a",
+      "game_sha256": "49cd7a027eda96db253555775111379d11214e7b4f26444610f77c9ac4050b57",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.8125,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_R06",
+      "attempt": 1,
+      "status": "SELECTED",
+      "raw": "art_src/environments/site7_v2/stage10/S10_R06/S10_R06_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_R06/S10_R06_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_R06/S10_R06_GAME.png",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_sha256": "5bf2630a51c772319fe9adf71570c2cecf77a35d3df716314b4126bef9390d5a",
+      "master_sha256": "5bf2630a51c772319fe9adf71570c2cecf77a35d3df716314b4126bef9390d5a",
+      "game_sha256": "6a165077bb11d98e8e0d367dd65a1ed3e382d9c509a2943551230a5c98bd4ab0",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7687,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_O01",
+      "attempt": 1,
+      "status": "SELECTED",
+      "raw": "art_src/environments/site7_v2/stage10/S10_O01/S10_O01_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_O01/S10_O01_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_O01/S10_O01_GAME.png",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_sha256": "25f2c44eae0cd6012fb48b12f5398728b0c2ff4df3dcc2f95f7f74e27915848c",
+      "master_sha256": "25f2c44eae0cd6012fb48b12f5398728b0c2ff4df3dcc2f95f7f74e27915848c",
+      "game_sha256": "5184151da84bc3a51775cec8d605f3e63c6a267ba7c25203dbb392c4e014c5df",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.6912,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_O02",
+      "attempt": 1,
+      "status": "SELECTED",
+      "raw": "art_src/environments/site7_v2/stage10/S10_O02/S10_O02_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_O02/S10_O02_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_O02/S10_O02_GAME.png",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_sha256": "33f3bd42a8746115d5b4eb59cd5b1e32935fcef79cf67a9c915f19e59399d243",
+      "master_sha256": "33f3bd42a8746115d5b4eb59cd5b1e32935fcef79cf67a9c915f19e59399d243",
+      "game_sha256": "afcbafa192ef8651004cf1df46f9e10f858d2863b907812d9d7113f5aa023d3e",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7422,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_C01",
+      "attempt": 1,
+      "status": "SELECTED",
+      "raw": "art_src/environments/site7_v2/stage10/S10_C01/S10_C01_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_C01/S10_C01_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_C01/S10_C01_GAME.png",
+      "native_size": [
+        1774,
+        887
+      ],
+      "raw_sha256": "14c4b7d84e8e6243c61c6246822684fc97cb4a8fc11647981d2d27fdc285d7f5",
+      "master_sha256": "14c4b7d84e8e6243c61c6246822684fc97cb4a8fc11647981d2d27fdc285d7f5",
+      "game_sha256": "b9743811e38ba02620a7cfb24e401661e2296908ec36e6d8a45c00dc485c9aaf",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7891,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_C02",
+      "attempt": 1,
+      "status": "REJECTED",
+      "raw": "art_src/environments/site7_v2/_quarantine/S10_C02/attempt01/S10_C02_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/_quarantine/S10_C02/attempt01/S10_C02_MASTER.png",
+      "game": "art_src/environments/site7_v2/_quarantine/S10_C02/attempt01/S10_C02_GAME.png",
+      "native_size": [
+        1774,
+        887
+      ],
+      "raw_sha256": "0db7d9f1c465945a1eb8ca57ac99e491bc02b9eb39134d6bcd60f55936b03f36",
+      "master_sha256": "0db7d9f1c465945a1eb8ca57ac99e491bc02b9eb39134d6bcd60f55936b03f36",
+      "game_sha256": "ac0b56e1ead96eef1a03a98dfc08d3cf9e2305fdf9b0b80ea125bcd52fe31b6f",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.784,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_C02",
+      "attempt": 2,
+      "status": "SELECTED",
+      "raw": "art_src/environments/site7_v2/stage10/S10_C02/S10_C02_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_C02/S10_C02_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_C02/S10_C02_GAME.png",
+      "native_size": [
+        1774,
+        887
+      ],
+      "raw_sha256": "903568f8a74feaa5e489e293e0e944766a92e5f14571368d5cf83d9ae402c97e",
+      "master_sha256": "903568f8a74feaa5e489e293e0e944766a92e5f14571368d5cf83d9ae402c97e",
+      "game_sha256": "f2001c3177fb892af5704ab62ace2759ebf219fbff2c8f33fe92522f567fa347",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.8506,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_C03",
+      "attempt": 1,
+      "status": "SELECTED",
+      "raw": "art_src/environments/site7_v2/stage10/S10_C03/S10_C03_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_C03/S10_C03_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_C03/S10_C03_GAME.png",
+      "native_size": [
+        1774,
+        887
+      ],
+      "raw_sha256": "03847d21cf798108455c2edf8ada2fe04038f21416fc68d8431e651df5075a16",
+      "master_sha256": "03847d21cf798108455c2edf8ada2fe04038f21416fc68d8431e651df5075a16",
+      "game_sha256": "054ce7ed67d07666045b0128c64c1e1626446c81d8baa0ecfb2a9ac0532b8d4a",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.8263,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_C04",
+      "attempt": 1,
+      "status": "REJECTED",
+      "raw": "art_src/environments/site7_v2/_quarantine/S10_C04/attempt01/S10_C04_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/_quarantine/S10_C04/attempt01/S10_C04_MASTER.png",
+      "game": "art_src/environments/site7_v2/_quarantine/S10_C04/attempt01/S10_C04_GAME.png",
+      "native_size": [
+        1774,
+        887
+      ],
+      "raw_sha256": "a913710b30522e5ae5b337401e55e0b35b173797643b189f194619d60846c23f",
+      "master_sha256": "a913710b30522e5ae5b337401e55e0b35b173797643b189f194619d60846c23f",
+      "game_sha256": "d908a755c6fd570dcdb960ba3798588649a4f58ac5dede5c17f8430d5e9dd08c",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7132,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_C04",
+      "attempt": 2,
+      "status": "SELECTED",
+      "raw": "art_src/environments/site7_v2/stage10/S10_C04/S10_C04_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_C04/S10_C04_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_C04/S10_C04_GAME.png",
+      "native_size": [
+        1774,
+        887
+      ],
+      "raw_sha256": "020ca12a56ec37438d74808e81902e033f159bfb7166d7acd5ecf6252d39e0ac",
+      "master_sha256": "020ca12a56ec37438d74808e81902e033f159bfb7166d7acd5ecf6252d39e0ac",
+      "game_sha256": "bab4bbfc2b26392535f27aefa51387159a83273f58a8d5dc40c9077c16be0515",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7614,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_C05",
+      "attempt": 1,
+      "status": "REJECTED",
+      "raw": "art_src/environments/site7_v2/_quarantine/S10_C05/attempt01/S10_C05_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/_quarantine/S10_C05/attempt01/S10_C05_MASTER.png",
+      "game": "art_src/environments/site7_v2/_quarantine/S10_C05/attempt01/S10_C05_GAME.png",
+      "native_size": [
+        1774,
+        887
+      ],
+      "raw_sha256": "0fc01efe88462b716db70e172fdf2b744b7a53e74dcbadbc43061328c006f71b",
+      "master_sha256": "0fc01efe88462b716db70e172fdf2b744b7a53e74dcbadbc43061328c006f71b",
+      "game_sha256": "fa0f1f1314d188dd01f715d2cbd86ee0db387ab5aa43b3545aa21ff098e7435d",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.75,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_C05",
+      "attempt": 2,
+      "status": "SELECTED",
+      "raw": "art_src/environments/site7_v2/stage10/S10_C05/S10_C05_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_C05/S10_C05_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_C05/S10_C05_GAME.png",
+      "native_size": [
+        1774,
+        887
+      ],
+      "raw_sha256": "253f75a8244b3267dbe081a789193b23d2ce19820276edb20a6c9ab599b0cfa1",
+      "master_sha256": "253f75a8244b3267dbe081a789193b23d2ce19820276edb20a6c9ab599b0cfa1",
+      "game_sha256": "3bd354aa975e1b105cfc9b4b990f35435b9633dd9e26cac6ba5b40351880849f",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7537,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_C06",
+      "attempt": 1,
+      "status": "SELECTED",
+      "raw": "art_src/environments/site7_v2/stage10/S10_C06/S10_C06_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_C06/S10_C06_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_C06/S10_C06_GAME.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "raw_sha256": "04c40388c151e32906d98eca846c9676e102991bb87ed2b023bec067a3707cfb",
+      "master_sha256": "04c40388c151e32906d98eca846c9676e102991bb87ed2b023bec067a3707cfb",
+      "game_sha256": "72dc5e6af1107c0e49b994aa2eddefdaa7de17755ad2f22d752a693d0d92fc57",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7239,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    },
+    {
+      "plate": "S10_C07",
+      "attempt": 1,
+      "status": "SELECTED",
+      "raw": "art_src/environments/site7_v2/stage10/S10_C07/S10_C07_RAW_NATIVE.png",
+      "master": "art_src/environments/site7_v2/stage10/S10_C07/S10_C07_MASTER.png",
+      "game": "assets/environments/site7_v2/stage10/S10_C07/S10_C07_GAME.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "raw_sha256": "af893fd791bbeae5fc51584c99533a274a2632f0f372a6f0b88839e5650af84f",
+      "master_sha256": "af893fd791bbeae5fc51584c99533a274a2632f0f372a6f0b88839e5650af84f",
+      "game_sha256": "ab56d63b7b388855bf6bbbae4fafdfef34ee70f6455df1b268429c2a47ecbbf6",
+      "RAW_MASTER_bytes_equal": true,
+      "GAME_single_srgb_LUT_factor": 0.7214,
+      "rounding": "nearest, ties to even (Python round / numpy.rint)",
+      "GAME_LUT_pixels_equal": true
+    }
+  ]
+}

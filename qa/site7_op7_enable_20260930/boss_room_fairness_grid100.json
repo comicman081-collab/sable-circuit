@@ -1,0 +1,38 @@
+{
+  "checks": 9,
+  "escape_margin_s": 0.25,
+  "failures": [],
+  "gap_limit_px": 180,
+  "grid_px": 100.0,
+  "rooms": [
+    {
+      "attacks_evaluated": 228,
+      "boss": "BOSS_SITE7_AERATOR_01",
+      "cover_obstacles": 2,
+      "failing": 0,
+      "failing_examples": [],
+      "mission": "MIS_CH01_06",
+      "nearest_clear_floor_worst_at": "phase 2 attack 1, target at (11369, -3743), 700 px from the boss",
+      "nearest_clear_floor_worst_px": 90,
+      "spots": 38,
+      "tightest_escape_at": "phase 2 attack 1, target at (11369, -3743), 700 px from the boss (leave 90 px in 0.65 s of 1.70 s)",
+      "tightest_escape_margin_s": 1.05
+    },
+    {
+      "attacks_evaluated": 276,
+      "boss": "BOSS_SITE7_CRYO_01",
+      "cover_obstacles": 0,
+      "failing": 0,
+      "failing_examples": [],
+      "mission": "MIS_CH01_07",
+      "nearest_clear_floor_worst_at": "phase 3 attack 1, target at (-8511, 4484), 316 px from the boss",
+      "nearest_clear_floor_worst_px": 120,
+      "spots": 46,
+      "tightest_escape_at": "phase 3 attack 1, target at (-8411, 4984), 282 px from the boss (leave 90 px in 0.65 s of 1.30 s)",
+      "tightest_escape_margin_s": 0.65
+    }
+  ],
+  "slowest_walk_px_per_s": 138.0,
+  "status": "PASS",
+  "visual_approval": false
+}

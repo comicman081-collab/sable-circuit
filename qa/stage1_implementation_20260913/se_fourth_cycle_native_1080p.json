@@ -1,0 +1,249 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-13T11:34:30.958369+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\gait\\f6ea0a697b022450_e3405323\\observed_landmark_panels\\frame_0.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 317603,
+      "sha256": "a484d8260ba546057d03719d07d3ac73e5f9b0b7eea1b8ca94f32689af06fd3d"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\gait\\f6ea0a697b022450_e3405323\\observed_landmark_panels\\frame_1.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 298526,
+      "sha256": "3a49ff032968d22b67d51c145a9120f86770d10f4516c61abacc556279525500"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\gait\\f6ea0a697b022450_e3405323\\observed_landmark_panels\\frame_2.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 256740,
+      "sha256": "44760e06406285d8830465ac2a70398fd134ef66b4ed8888b8d8ff59cc9835ba"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\gait\\f6ea0a697b022450_e3405323\\observed_landmark_panels\\frame_3.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 271521,
+      "sha256": "57290e8bff319e95b1c838600486e2c9faa1005d7a4712aea2b28e49b0679c8f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\gait\\f6ea0a697b022450_e3405323\\observed_landmark_panels\\frame_4.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 261794,
+      "sha256": "1fcf5ac333b330628197f1688c961ec9f8c958e22a3c29b9fc3205680f088537"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\gait\\f6ea0a697b022450_e3405323\\observed_landmark_panels\\frame_5.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 288517,
+      "sha256": "bf734fdfec92779bd5dac8feb706f27781ad693d4b0ce972487ed8042f34b4e3"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\gait\\f6ea0a697b022450_e3405323\\SE_walk_pair0_native_2252x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2252,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1875979,
+      "sha256": "4aadcb30cd084f2cbc6f86817891e7ee0ee1e76c4b1c8cc0d544bc7c663ad821"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\gait\\f6ea0a697b022450_e3405323\\SE_walk_pair1_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1651883,
+      "sha256": "1bdba38efe1f336ac8c71cc08d9bf15620496c81806894a0711b0bc25ccb4c9e"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\gait\\f6ea0a697b022450_e3405323\\SE_walk_pair2_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1755685,
+      "sha256": "3188ae211c99fea2a8cbc2b0272c9128f3f95c673ead58413bcda9fe9930fe72"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\gait\\f6ea0a697b022450_e3405323\\SE_walk_cycle_1080p.webm",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 29.997115661955583,
+      "frames": 105,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 26,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 52,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 78,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 104,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2221801,
+      "sha256": "64512a6a5b1a0ba00402f61f135814ce67a1731424f30f054b64fe289d089c18"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\gait\\f6ea0a697b022450_e3405323\\cycle-review-fit.html",
+      "error": null,
+      "kind": "html",
+      "evidence_class": "static_config_only",
+      "canvas_resolutions": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "video_element_resolutions": [],
+      "decodable": true,
+      "native_1080p_container": true,
+      "dynamic_runtime_evidence": false,
+      "dynamic_capture_required_for_visual_gate": true,
+      "size_bytes": 909,
+      "sha256": "c44be2380f98a00faaa896168ef9a06cfd8b4539c5aa8288307cb09d72a0d4e4"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\stage1_enemies_20260913\\cycle_capture\\site7_rifle_se_live_1789298674195.webm",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 29.988465974625143,
+      "frames": 105,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 26,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 52,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 78,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 104,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2583084,
+      "sha256": "5d917b322ccec6a4989101d490ea896a7fec9fe960e611125e9b1673dd4cb8d2"
+    }
+  ]
+}

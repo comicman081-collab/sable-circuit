@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-13T09:23:16.996056+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\gait\\43a8fd788749c694_75694577\\cycle-review.html",
+      "error": null,
+      "kind": "html",
+      "evidence_class": "static_config_only",
+      "canvas_resolutions": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "video_element_resolutions": [],
+      "decodable": true,
+      "native_1080p_container": true,
+      "dynamic_runtime_evidence": false,
+      "dynamic_capture_required_for_visual_gate": true,
+      "size_bytes": 742,
+      "sha256": "6c5f35087d9e3d5800845a259c945643c8ef5a8efa00e7616aef08b4cef00d69"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\gait\\43a8fd788749c694_75694577\\SE_walk_pair0_native_2252x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2252,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1884753,
+      "sha256": "f0f4268306680781da79f8f54d46b0a8b175f4db9736aae4f2e1ff1163c3c6a8"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\stage1_enemies_20260913\\cycle_capture\\site7_rifle_se_live_1789290594880.webm",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 29.385574354407836,
+      "frames": 100,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 25,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 50,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 75,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 99,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2383457,
+      "sha256": "6a37d195e26f10effb764faca8f23c8a60ac6f831351fd025d2ebfd86d06b9db"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\stage1_enemies_20260913\\cycle_capture\\site7_rifle_se_live_1789290594880_samples_v2\\normal_speed_sequence.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2000,
+        1925
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1949369,
+      "sha256": "8600f3567392b6dfc77d982d99805712ce59db16f9ba71cb889b737c657f3973"
+    }
+  ]
+}

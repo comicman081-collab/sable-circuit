@@ -1,0 +1,41 @@
+{
+  "site7_void_masks.json": {
+    "status": "PASS",
+    "operations_1_7_rows": 105,
+    "byte_identical_rows": 105,
+    "changed": [],
+    "old_rows_sha256": "ff60415c05b8377218b583f7ee84f6da140846f68c5015b7302ffe4534db7e15",
+    "new_rows_sha256": "ff60415c05b8377218b583f7ee84f6da140846f68c5015b7302ffe4534db7e15",
+    "all_changed_rows": [
+      "assets/environments/site7_v2/stage08/S8_O02/S8_O02_GAME.png"
+    ]
+  },
+  "site7_mood_lamps.json": {
+    "status": "PASS",
+    "operations_1_7_rows": 105,
+    "byte_identical_rows": 105,
+    "changed": [],
+    "old_rows_sha256": "33b1a7c92cc5b2f51e0918cf67de31fed4638a99a6a590dd5f92ee650cb97db1",
+    "new_rows_sha256": "33b1a7c92cc5b2f51e0918cf67de31fed4638a99a6a590dd5f92ee650cb97db1",
+    "all_changed_rows": [
+      "assets/environments/site7_v2/stage08/S8_O02/S8_O02_GAME.png"
+    ]
+  },
+  "contact_scope": {
+    "status": "PASS",
+    "stage08_only": true,
+    "contact_fields": 15,
+    "other_mission_settings_unchanged": true,
+    "op8_grade_unchanged": true
+  },
+  "plate_shader_unchanged": true,
+  "protected": {
+    "data/story/site7_campaign.json": true,
+    "data/missions/MIS_CH01_07.json": true,
+    "data/missions/MIS_CH01_08.json": true,
+    "data/missions/MIS_CH01_09.json": true,
+    "data/missions/MIS_CH01_10.json": true,
+    "art_src/environments/site7_v2/stage08/S8_O02/S8_O02_RAW_NATIVE.png": true,
+    "art_src/environments/site7_v2/stage08/S8_O02/S8_O02_MASTER.png": true
+  }
+}

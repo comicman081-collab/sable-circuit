@@ -1,0 +1,21 @@
+{
+  "tool": "image_gen.imagegen",
+  "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-ebbdf3b5-e400-400f-be82-a78850068a8f.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c as C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c\\exec-ebbdf3b5-e400-400f-be82-a78850068a8f.png by default. If you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it. The generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "qa/rook/luna_repair_20260913/E_walk_pair1_luna_raw.png",
+  "projectCopySHA256": "47fd003bada3abdef3277c91f17988884fd29e98b9faf81e166edb70d91b9795",
+  "inputReferences": [
+    "reference/ual_guides/E_walk_pair1.png",
+    "art/rook/identity_reference.png"
+  ],
+  "promptSummary": "Native 1536x1024 ROOK E phase 1/4 pair with left-support/right-rear swing then right-support/left-rear swing; exact identity/weapon; clean alpha preferred and uniform green fallback requested.",
+  "inspection": {
+    "nativeSize": [1536, 1024],
+    "mode": "RGB",
+    "background": "near-uniform green, not alpha",
+    "decision": "FAIL_NOT_PROMOTABLE",
+    "notes": "Both figures retain the same screen-left rear/screen-right support arrangement; the left figure also has a brown guide-colored lower leg, so pose labels leaked into costume. Not imported."
+  }
+}

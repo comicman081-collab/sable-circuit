@@ -1,0 +1,260 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_R05/attempt03/S10_R05_GAME.png",
+  "luma": 0.20009921491146088,
+  "p10": 0.16530588269233704,
+  "p90": 0.2374705970287323,
+  "saturation": 0.07836452062978941,
+  "hue": 142.10062617806545,
+  "axis": 24.89583758636626,
+  "problems": [
+    "whole floor border margin 3.529% below 4%",
+    "floor bounds below (1410, 612) (boss includes aprons)"
+  ],
+  "plate": "S10_R05",
+  "attempt": 3,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      113,
+      467
+    ],
+    [
+      817,
+      234
+    ],
+    [
+      1084,
+      306
+    ],
+    [
+      1238,
+      273
+    ],
+    [
+      1340,
+      215
+    ],
+    [
+      1579,
+      323
+    ],
+    [
+      1484,
+      376
+    ],
+    [
+      1439,
+      395
+    ],
+    [
+      1547,
+      449
+    ],
+    [
+      1411,
+      557
+    ],
+    [
+      1606,
+      655
+    ],
+    [
+      1440,
+      762
+    ],
+    [
+      1223,
+      660
+    ],
+    [
+      1046,
+      746
+    ],
+    [
+      558,
+      745
+    ],
+    [
+      376,
+      643
+    ],
+    [
+      198,
+      726
+    ],
+    [
+      59,
+      630
+    ],
+    [
+      231,
+      554
+    ]
+  ],
+  "doors_px": {
+    "SW": [
+      304,
+      598,
+      177
+    ],
+    "NE": [
+      1339,
+      334,
+      235
+    ],
+    "SE": [
+      1317,
+      609,
+      214
+    ]
+  },
+  "raw_sha256": "6fd9b23af85998c3f083fdfeff1793d852359e9e11e2bed6c2bd5c40bfbf8c0a",
+  "master_sha256": "6fd9b23af85998c3f083fdfeff1793d852359e9e11e2bed6c2bd5c40bfbf8c0a",
+  "game_sha256": "49cd7a027eda96db253555775111379d11214e7b4f26444610f77c9ac4050b57",
+  "game_exposure_factor_srgb": 0.8125,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-b7c27ba1-7652-44a5-85fa-a7330c0d6bd5.png",
+  "inspection": "Blunt wall monolith and hairline red joints distinct from broken S3 anchor bay and all accepted Op10 wall contents; no boss crystal shapes. Main floor is a wide hexagon with short horizontal bottom edge; SW NE SE doors only. Actual apron extremes and whole-floor boss dimensions measured; no ideal target substitution.",
+  "floor_area_px2": 563547.0,
+  "floor_area_fraction": 0.3581824029206433,
+  "floor_bounds_px": [
+    59,
+    215,
+    1606,
+    762
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1672,
+      941
+    ],
+    "actual_size": [
+      1672,
+      941
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "SW": [
+        [
+          231,
+          554
+        ],
+        [
+          59,
+          630
+        ],
+        [
+          198,
+          726
+        ],
+        [
+          376,
+          643
+        ]
+      ],
+      "NE": [
+        [
+          1238,
+          273
+        ],
+        [
+          1340,
+          215
+        ],
+        [
+          1579,
+          323
+        ],
+        [
+          1484,
+          376
+        ],
+        [
+          1439,
+          395
+        ]
+      ],
+      "SE": [
+        [
+          1411,
+          557
+        ],
+        [
+          1606,
+          655
+        ],
+        [
+          1440,
+          762
+        ],
+        [
+          1223,
+          660
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      113,
+      234,
+      1547,
+      746
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.06758373205741627,
+      0.24867162592986186,
+      0.07476076555023924,
+      0.20722635494155153
+    ],
+    "whole_floor_bounds_px": [
+      59,
+      215,
+      1606,
+      762
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.035287081339712915,
+      0.22848034006376194,
+      0.039473684210526314,
+      0.1902231668437832
+    ],
+    "main_floor_area_px2": 468463
+  },
+  "boss_floor_measurement": {
+    "basis": "actual whole painted floor polygon including aprons",
+    "area_px2": 563547.0,
+    "width_px": 1547,
+    "height_px": 547,
+    "minimum_area_px2": 491287,
+    "minimum_width_px": 1410,
+    "minimum_height_px": 612,
+    "no_main_floor_area_or_height_minimum": true
+  },
+  "apron_stats": {
+    "SW": {
+      "luma": 0.23050403594970703,
+      "saturation": 0.07595554802421288,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "NE": {
+      "luma": 0.193653404712677,
+      "saturation": 0.09342588216128216,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "SE": {
+      "luma": 0.22930441796779633,
+      "saturation": 0.07508357048461886,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  }
+}

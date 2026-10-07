@@ -1,0 +1,100 @@
+{
+  "status": "LOCAL_NATIVE_DEMO_VERIFIED_NOT_DEPLOYED",
+  "source_hashes": {
+    "project.godot": "a84ff3fa23961009cf140cb52e8c7f1034f5bb5bd8ecb9205d4fe14c5801bbb7",
+    "scripts/core/game_flow.gd": "22b42d0906e63d8dae319476c11c906e30d8769fb09fcad5273e936d94df13cd",
+    "scripts/ui/title_screen.gd": "0b2e130a4dddf15f3860abb0b1b5c456341daab1fb54b11f72e07bbd6f055be5",
+    "scripts/ui/demo_theme.gd": "65000ef045ddd66c574dce7b8415ecb1f279ddfa34664aaf5b0e938c2fa4dcdb",
+    "scripts/ui/demo_input.gd": "a23e3c06bba0ff538c2d4491999fe42c3f9e1442a5318d35bf3333ec3bf180c5",
+    "scripts/ui/demo_controls.gd": "5ef6aa5d8d14f97050226ed701aabcfc96db486f6817f216f996a1ff5187313b",
+    "scripts/ui/demo_intro.gd": "d00b05f69a20eb79345fed9122773936eead924f8da068d3f7105f15c4aaf09b",
+    "scripts/ui/base_lobby.gd": "51e6799d6b8db1eb2dd177623ebce59a48a2c03c52299ec98f88125ff583a41a",
+    "scripts/ui/story_stage_hud.gd": "9c70a1cb367cf6b99a2782edc85472223533eb7fd49f9ff9903265940c17e15a",
+    "scripts/ui/battle_reticle.gd": "ff28b37ef5d84f648d08cc87babb3e98e77b9a111f3187ca9678502554f1b072",
+    "scripts/ui/briefing_screen.gd": "2cd6dfb4a1ba042c2b3b8ddcd108b50218ae6b6b079829adf8f54758e892ef29",
+    "scripts/ui/mission_results.gd": "dc746f8b632d65d23e9cf80aa26c0eb87c9aee4ec7b8266f78eb0216b9fb9505",
+    "scripts/actors/operator_actor.gd": "54d78e517d87867b8ba97fac1c4c91d65a5d79af7aa6c4e421463f63465a178c",
+    "scripts/actors/squad_controller.gd": "1d2f344f33476029b658b1333793629a68ae6228d36cb60ac49e1f914d97eadc",
+    "scripts/combat/operator_skill_controller.gd": "b54e0450c81a760686da00b4f41779e7b2dc4f187ee204b603fdec9ff3f4342d",
+    "scripts/missions/story_stage_01.gd": "73c1fa897a24eaaec628c5a07910fe2867aed948898a69e934d44f2526ccc612",
+    "tests/render/demo_integration_check.gd": "7deef0de5436906ace43e225136fa56422beeef9c0092853cb52cf38563989f3"
+  },
+  "intro": {
+    "codec": "theora",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "duration_seconds": 60.0,
+    "audio_streams": 0,
+    "frames_decoded": 1440,
+    "path": "assets/cinematics/sable_intro.ogv",
+    "sha256": "d384da8e0934d5a7a59458e11b55d7e617e570c04cb77f7ed41a06d02679b65c",
+    "source": "motion_lab_v1/cinematics/flow_intro_20260915/delivery_1080p/SABLE_CIRCUIT_INTRO_60s_1080p_SILENT.mp4",
+    "source_sha256": "e58c72b8591b3ea7f28f99c2e799f9a23f0c91a939e65ee26dc17e977923faa1",
+    "original_source_resolution": [
+      1280,
+      720
+    ],
+    "watermark": "retained",
+    "new_generation": false
+  },
+  "captures": {
+    "title.png": "cfb3b54433cbd4390eeedb540670107772f575ba82a69fd42e61e58950ce4a80",
+    "intro.png": "71e0fc88dda9372a6b5f1ad509b99a370f495aa45175f21ccbf952ca0ba397e4",
+    "operations.png": "fac55f08d2b4beae8227e6ba3624efcd991fb8bb1129891abf84f44ad899a7f7",
+    "touch_combat.png": "d750c48914b19360c0fbb25a1535d7d4a528e92212ac0ab82541009b3ccb1d20",
+    "manual.png": "5e07eb91aa6d931ab741179b17730f786f6d163a6812d04dd437a7982bdeab7e"
+  },
+  "checks": {
+    "demo_flow": {
+      "path": "qa/karchive_props_20260919/demo_flow.stdout.log",
+      "sha256": "bad30f04971b60abfd2498661c8e47d0583049d9f5291496e825d6976e202889",
+      "summary": "M2_STORY_FLOW_SMOKE: PASS"
+    },
+    "demo_progression": {
+      "path": "qa/karchive_props_20260919/demo_progression.stdout.log",
+      "sha256": "85ea40cc08dd8fcd4eb1755595939db00cc872b765a9ecafb1a07ccb5111a286",
+      "summary": "SITE7_CAMPAIGN_PROGRESSION: PASS (94 checks) res://qa/campaign_20260919/flow_1789881282_27"
+    },
+    "demo_sfx": {
+      "path": "qa/karchive_props_20260919/demo_sfx.stdout.log",
+      "sha256": "12b4645209c59299e2944ff20262f41cbeeca399034995dab6d89e7d64390c5b",
+      "summary": "COMBAT_SFX_R04: PASS / 195 checks"
+    },
+    "demo_stage45": {
+      "path": "qa/karchive_props_20260919/demo_stage45.stdout.log",
+      "sha256": "506f4360ea6569f01cd2e75c9966876eec84fbb4a03622ad95594e88c623f631",
+      "summary": "SITE7_STAGE45_REGISTRY: PASS / 170 checks"
+    },
+    "demo_persistence": {
+      "path": "qa/karchive_props_20260919/demo_persistence.stdout.log",
+      "sha256": "5fbea25728e81a79ae2efa2803bdf3fff4bffe78b1b4b4b8e6253ccd0e521d6a",
+      "summary": "M10_PERSISTENCE_SMOKE: PASS"
+    },
+    "demo_loadout": {
+      "path": "qa/karchive_props_20260919/demo_loadout.stdout.log",
+      "sha256": "757ae99ee4cf41593b9afd866d6d646e79f88aef1dc9f13c7a21ddc26b99ec8f",
+      "summary": "M13_WEAPON_LOADOUT_SMOKE: PASS"
+    },
+    "demo_intel": {
+      "path": "qa/karchive_props_20260919/demo_intel.stdout.log",
+      "sha256": "fc3baae9ab30a098e59ee895ca53f4ab6631dfb821d686b5a55b9d81812c1171",
+      "summary": "M10_INTEL_LOADOUT_SMOKE: PASS"
+    },
+    "demo_input_matrix": {
+      "path": "qa/karchive_props_20260919/demo_input_matrix.stdout.log",
+      "sha256": "13c5e6404a6775cac27ddd9fc7e1eb2d30f390382da5a402d0f6ab6954004b19",
+      "summary": "DEMO_INTEGRATION PASS / 32 checks"
+    },
+    "demo_intro_complete": {
+      "path": "qa/karchive_props_20260919/demo_intro_complete.stdout.log",
+      "sha256": "a122a7b27c0a19530a9a5c8dd0e59d536024dd4dd42fc666f425021151556e14",
+      "summary": "DEMO_INTEGRATION PASS / 29 checks"
+    }
+  },
+  "browser_qa": "NOT_RUN",
+  "physical_touch_device": "NOT_RUN",
+  "deployment": "NOT_PERFORMED",
+  "web_design_engineer": "SOFT_OFF_ROUTING_ONLY_NO_GLOBAL_CHANGE"
+}

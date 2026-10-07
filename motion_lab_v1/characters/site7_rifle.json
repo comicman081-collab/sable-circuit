@@ -1,0 +1,62 @@
+{
+  "id": "site7_rifle",
+  "productionRetired": true,
+  "retirementReason": "2026-09-19 user removed all humanoid enemies, including the rifle trooper. Retain provenance only; no further generation, repair, build or app promotion.",
+  "name": "SITE-7 RIFLE TROOPER",
+  "source": "art/site7_rifle",
+  "heightMetres": 1.72,
+  "radius": 0.19,
+  "cell": [
+    768,
+    768
+  ],
+  "root": [
+    384,
+    716
+  ],
+  "spriteHeight": 656,
+  "clips": {
+    "walk": {
+      "frames": 6,
+      "phaseStarts": [
+        0,
+        0.2,
+        0.33,
+        0.5,
+        0.7,
+        0.83
+      ]
+    },
+    "idle": {
+      "frames": 1
+    }
+  },
+  "locomotion": {
+    "walkSpeed": 1.141358024691358,
+    "runSpeed": 1.141358024691358,
+    "walkStride": 1.33,
+    "runStride": 1.33
+  },
+  "enemyIntegration": {
+    "enemyId": "ENM_SITE7_RIFLE_01",
+    "displayHeightPx": 129.6,
+    "existingMaximumMoveSpeedPx": 86.0,
+    "studioMetresToGamePixels": 75.34883720930233,
+    "cycleDistancePx": 100.2139534883721,
+    "sprintAuthored": false,
+    "gameplayAuthority": "scripts/combat/site7_enemy_tactics.gd",
+    "calibrationEvidence": "qa/stage1_enemies_20260913/rifle_e_stride_calibration.md"
+  },
+  "weapon": {
+    "magazine": 24,
+    "fireInterval": 0.11,
+    "reloadSeconds": 1.25,
+    "damage": 25,
+    "height": 1.23
+  },
+  "annotations": {},
+  "workflowVersion": 1,
+  "identityReference": "art/site7_rifle/identity_reference.png",
+  "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+  "gaitContractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192"
+}

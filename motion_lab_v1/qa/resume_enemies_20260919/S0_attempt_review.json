@@ -1,0 +1,47 @@
+{
+  "status": "HOLD_NOT_PROMOTED",
+  "slot": "S/walk/0",
+  "source": "qa/site7_rifle/quarantine/688a3e6ab3962262b39b2e3cbdf6d81b2a8b5f9d6b6214251cb0787f355eaefc/S_walk_0_20260919_native_attempt.png",
+  "sha256": "688a3e6ab3962262b39b2e3cbdf6d81b2a8b5f9d6b6214251cb0787f355eaefc",
+  "raw": {
+    "mode": "RGBA",
+    "native": [
+      1024,
+      1536
+    ],
+    "format": "PNG",
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "transparentPixels": 1083831
+  },
+  "alphaGate": {
+    "policy": "native_rgba_alpha_0_254_v1",
+    "status": "PASS_ALPHA_FORMAT_ONLY",
+    "sourceSHA256": "688a3e6ab3962262b39b2e3cbdf6d81b2a8b5f9d6b6214251cb0787f355eaefc",
+    "native": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "transparentPixels": 1083831,
+    "visiblePixels": 489033,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "nearOpaqueVisibleFraction": 0.9263976050695966,
+    "visualApproved": false
+  },
+  "sourcePixelsModified": false,
+  "visual_observations": [
+    "Anatomical left boot on image right leads and right-only holster stays on image left.",
+    "Rifle and head remain turned toward image right rather than the required straight-front S aim.",
+    "Native alpha 0..254 format passed. Original-scale upper/lower panels on light/dark backgrounds show a clean separated silhouette without a filled backdrop; this does not approve the incorrect S-facing pose."
+  ],
+  "active_source_and_runtime_unchanged": true,
+  "toolResponseSHA256": "4c761613e13791629499757179ddffc8879d4b55937393e6340031a120420753"
+}

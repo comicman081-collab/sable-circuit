@@ -1,0 +1,61 @@
+A = qa/regression_runs/20261003_170533_full/out/hazard_expansion/hazard_expansion.json: status FAIL, checks 438, hazards 28, standable spots 389, failed spots 0
+
+B = qa/regression_runs/20261004_150758_quick/out/hazard_expansion/hazard_expansion.json: status PASS; differing leaf values vs A: 6
+   /failures : ['MIS_CH01_07 R02_FREEZE negative control rejects a cover-blocked escape', 'MIS_CH01_07 R04_COMPRESSORS negative control rejects a cover-blocked escape'] -> []
+   /rooms[7]/hazard_escapes[1]/blocked_negative_rejected : False -> True
+   /rooms[7]/untimed/blocked_negative_rejected : 0 -> 1
+   /rooms[8]/hazard_escapes[1]/blocked_negative_rejected : False -> True
+   /rooms[8]/untimed/blocked_negative_rejected : 0 -> 1
+   /status : FAIL -> PASS
+
+B = .cache/claude_scratch/nav_recheck_logs/hz_noblocker.json: status FAIL; differing leaf values vs A: 1
+   /cycles[3]/elapsed_ms : 1 -> 0
+
+B = .cache/claude_scratch/nav_recheck_logs/hz_smallbox_noblocker.json: status FAIL; differing leaf values vs A: 42
+   /failures : ['MIS_CH01_07 R02_FREEZE negative control rejects a cover-blocked escape', 'MIS_CH01_07 R04_COMPRESSORS negative control rejects a cover-blocked escape'] -> ['MIS_CH01_03 R02_DEFENSE negative control rejects a cover-blocked escape', 'MIS_CH01_04 R02_GATE negative control rejects a cover-blocked escape', 'MIS_CH01_04 R04_LINE negative control rejects a cover-blocked escape', 'MIS_CH01_04 R04_LINE negative control rejects a cover-blocked escape', 'MIS_CH01_05 R02_DEFENSE negative control rejects a cover-blocked escape', 'MIS_CH01_05 R02_DEFENSE negative control rejects a cover-blocked escape', 'MIS_CH01_05 R04_ARRAY negative control rejects a cover-blocked escape', 'MIS_CH01_05 R04_ARRAY negative control rejects a cover-blocked escape', 'MIS_CH01_06 R02_GALLERY negative control rejects a cover-blocked escape', 'MIS_CH01_06 R02_GALLERY negative control rejects a cover-blocked escape', 'MIS_CH01_06 R04_PUMPS negative control rejects a cover-blocked escape', 'MIS_CH01_06 R04_PUMPS negative control rejects a cover-blocked escape', 'MIS_CH01_07 R02_FREEZE negative control rejects a cover-blocked escape', 'MIS_CH01_07 R02_FREEZE negative control rejects a cover-blocked escape', 'MIS_CH01_07 R04_COMPRESSORS negative control rejects a cover-blocked escape', 'MIS_CH01_07 R04_COMPRESSORS negative control rejects a cover-blocked escape', 'MIS_CH01_08 R02_MARSHALLING negative control rejects a cover-blocked escape', 'MIS_CH01_08 R02_MARSHALLING negative control rejects a cover-blocked escape', 'MIS_CH01_08 R04_JUNCTION negative control rejects a cover-blocked escape', 'MIS_CH01_08 R04_JUNCTION negative control rejects a cover-blocked escape', 'MIS_CH01_09 R02_NAVE negative control rejects a cover-blocked escape', 'MIS_CH01_09 R02_NAVE negative control rejects a cover-blocked escape', 'MIS_CH01_09 R04_GALLERY negative control rejects a cover-blocked escape', 'MIS_CH01_09 R04_GALLERY negative control rejects a cover-blocked escape', 'MIS_CH01_10 R02_RELAY negative control rejects a cover-blocked escape', 'MIS_CH01_10 R02_RELAY negative control rejects a cover-blocked escape', 'MIS_CH01_10 R04_GALLERY negative control rejects a cover-blocked escape', 'MIS_CH01_10 R04_GALLERY negative control rejects a cover-blocked escape']
+   /rooms[0]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[0]/timed/blocked_negative_rejected : 1 -> 0
+   /rooms[1]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[1]/timed/blocked_negative_rejected : 1 -> 0
+   /rooms[2]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[2]/hazard_escapes[1]/blocked_negative_rejected : True -> False
+   /rooms[2]/timed/blocked_negative_rejected : 2 -> 0
+   /rooms[3]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[3]/hazard_escapes[1]/blocked_negative_rejected : True -> False
+   /rooms[3]/timed/blocked_negative_rejected : 2 -> 0
+   /rooms[4]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[4]/hazard_escapes[1]/blocked_negative_rejected : True -> False
+   /rooms[4]/timed/blocked_negative_rejected : 2 -> 0
+   /rooms[5]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[5]/hazard_escapes[1]/blocked_negative_rejected : True -> False
+   /rooms[5]/timed/blocked_negative_rejected : 2 -> 0
+   /rooms[6]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[6]/hazard_escapes[1]/blocked_negative_rejected : True -> False
+   /rooms[6]/timed/blocked_negative_rejected : 2 -> 0
+   /rooms[7]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[7]/timed/blocked_negative_rejected : 1 -> 0
+   /rooms[8]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[8]/timed/blocked_negative_rejected : 1 -> 0
+   /rooms[9]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[9]/hazard_escapes[1]/blocked_negative_rejected : True -> False
+   /rooms[9]/timed/blocked_negative_rejected : 2 -> 0
+   /rooms[10]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[10]/hazard_escapes[1]/blocked_negative_rejected : True -> False
+   /rooms[10]/timed/blocked_negative_rejected : 2 -> 0
+   /rooms[11]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[11]/hazard_escapes[1]/blocked_negative_rejected : True -> False
+   /rooms[11]/timed/blocked_negative_rejected : 2 -> 0
+   /rooms[12]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[12]/hazard_escapes[1]/blocked_negative_rejected : True -> False
+   /rooms[12]/timed/blocked_negative_rejected : 2 -> 0
+   /rooms[13]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+   /rooms[13]/hazard_escapes[1]/blocked_negative_rejected : True -> False
+   /rooms[13]/timed/blocked_negative_rejected : 2 -> 0
+   /rooms[14]/hazard_escapes[0]/blocked_negative_rejected : True -> False
+
+search limit per hazard kind (px). A candidate point lies inside the 500 px box wherever the limit is below 500:
+   timed damage-escape  limit   117 px  hazards 22  inside the box -> the control never reaches _clear_ground
+   timed damage-escape  limit   131 px  hazards  2  inside the box -> the control never reaches _clear_ground
+   timed damage-escape  limit   159 px  hazards  2  inside the box -> the control never reaches _clear_ground
+   untimed slow-escape  limit  1538 px  hazards  1  reaches past the box -> the control exercises _clear_ground
+   untimed slow-escape  limit  1604 px  hazards  1  reaches past the box -> the control exercises _clear_ground

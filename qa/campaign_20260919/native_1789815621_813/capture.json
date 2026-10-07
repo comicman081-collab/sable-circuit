@@ -1,0 +1,38 @@
+{
+  "captures": [
+    "res://qa/campaign_20260919/native_1789815621_813/base_initial.png",
+    "res://qa/campaign_20260919/native_1789815621_813/base_all_operations.png",
+    "res://qa/campaign_20260919/native_1789815621_813/stage2_briefing.png",
+    "res://qa/campaign_20260919/native_1789815621_813/stage2_encounter1.png",
+    "res://qa/campaign_20260919/native_1789815621_813/stage2_encounter3.png",
+    "res://qa/campaign_20260919/native_1789815621_813/stage2_encounter4.png",
+    "res://qa/campaign_20260919/native_1789815621_813/stage2_results.png",
+    "res://qa/campaign_20260919/native_1789815621_813/stage3_briefing.png",
+    "res://qa/campaign_20260919/native_1789815621_813/stage3_encounter1.png",
+    "res://qa/campaign_20260919/native_1789815621_813/stage3_encounter3.png",
+    "res://qa/campaign_20260919/native_1789815621_813/stage3_encounter4.png",
+    "res://qa/campaign_20260919/native_1789815621_813/stage3_results.png"
+  ],
+  "checks": 114,
+  "failures": [
+    "Stage2 step1 squad spawn0 outside cover",
+    "Stage2 step1 squad spawn1 outside cover",
+    "Stage2 step1 squad spawn2 outside cover",
+    "Stage2 step3 squad spawn0 outside cover",
+    "Stage2 step3 squad spawn1 outside cover",
+    "Stage2 step4 squad spawn1 outside cover",
+    "Stage3 step1 squad spawn0 outside cover",
+    "Stage3 step1 squad spawn1 outside cover",
+    "Stage3 step1 enemy outside cover",
+    "Stage3 step3 squad spawn0 outside cover",
+    "Stage3 step3 enemy outside cover",
+    "Stage3 step4 squad spawn2 outside cover"
+  ],
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "status": "FAIL",
+  "synthetic_ui_unlocks": true,
+  "visual_approval": false
+}

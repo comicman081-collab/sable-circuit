@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "operation": "edge-connected green matte normalization only; no source-art redraw",
+  "source_author": "built-in ImageGen",
+  "input": "motion_lab_v1/qa/rook/incoming/rook_luna_20260912_SWidle/SW_idle_0_luna_raw.png",
+  "input_sha256": "a08747cc754d15a7f03456b22e7c457df277bdd174af415782512761383324d5",
+  "output": "motion_lab_v1/qa/rook/normalized_candidates/SW_idle_0_luna_normalized.png",
+  "output_sha256": "3304498467b21bc06532d8f62d5ce475ede02b994efa98f7f57cc2a00556e776",
+  "mask": "motion_lab_v1/qa/rook/normalized_candidates/SW_idle_0_luna_mask.png",
+  "mask_sha256": "e78452bc383fd2fad760624a6b80c8d9fa23452007b689c29fdd234f2df13ce8",
+  "input_resolution": [
+    1024,
+    1536
+  ],
+  "edge_median_rgb": [
+    6,
+    248,
+    4
+  ],
+  "exact_green_rgb": [
+    0,
+    255,
+    0
+  ],
+  "edge_connected_background_coverage": 0.6493523915608724,
+  "subject_pixels_byte_exact": true,
+  "alpha_ready": true
+}

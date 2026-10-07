@@ -1,0 +1,371 @@
+{
+ "targets": {
+  "floor_luma": [
+   0.17,
+   0.24
+  ],
+  "floor_p10_min": 0.07,
+  "floor_p90_max": 0.38,
+  "floor_saturation_max": 0.15,
+  "floor_axis": [
+   22.5,
+   30.5
+  ],
+  "seam_step_max": 0.35,
+  "seam_saturation_ratio": 1.5,
+  "seam_hue_max": 30.0,
+  "grey": 0.15
+ },
+ "plates": {
+  "assets/environments/site7_v2/stage01/S1_R01/S1_R01_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_R01/S1_R01_GAME.png",
+   "luma": 0.21001501381397247,
+   "p10": 0.16268235445022583,
+   "p90": 0.24531374871730804,
+   "saturation": 0.021068985757383273,
+   "hue": 144.92201817011554,
+   "axis": 25.92859764462346,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_R02/S1_R02_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_R02/S1_R02_GAME.png",
+   "luma": 0.21219150722026825,
+   "p10": 0.17489412426948547,
+   "p90": 0.24620786309242249,
+   "saturation": 0.010432564472990017,
+   "hue": 147.25232162266343,
+   "axis": 26.1126661955377,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_R03/S1_R03_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_R03/S1_R03_GAME.png",
+   "luma": 0.21027399599552155,
+   "p10": 0.1520470678806305,
+   "p90": 0.250980406999588,
+   "saturation": 0.028722774646229254,
+   "hue": 144.182555252356,
+   "axis": 26.239041734694162,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_R04/S1_R04_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_R04/S1_R04_GAME.png",
+   "luma": 0.2099132090806961,
+   "p10": 0.1677764654159546,
+   "p90": 0.24269020557403564,
+   "saturation": 0.02168427566150321,
+   "hue": 134.6812816788294,
+   "axis": 23.136262262431494,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_R05/S1_R05_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_R05/S1_R05_GAME.png",
+   "luma": 0.20988987386226654,
+   "p10": 0.15136471390724182,
+   "p90": 0.2422862946987152,
+   "saturation": 0.05054481973566543,
+   "hue": 135.08941539510602,
+   "axis": 24.235287836229396,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_R06/S1_R06_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_R06/S1_R06_GAME.png",
+   "luma": 0.20993171632289886,
+   "p10": 0.10503137111663818,
+   "p90": 0.26581570506095886,
+   "saturation": 0.024325042673295612,
+   "hue": 165.41377878461765,
+   "axis": 26.334442968639866,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_O01/S1_O01_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_O01/S1_O01_GAME.png",
+   "luma": 0.20994028449058533,
+   "p10": 0.16195686161518097,
+   "p90": 0.24548237025737762,
+   "saturation": 0.034397784691992075,
+   "hue": 136.74489207777492,
+   "axis": 24.72400819205741,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_O02/S1_O02_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_O02/S1_O02_GAME.png",
+   "luma": 0.20989260077476501,
+   "p10": 0.16150979697704315,
+   "p90": 0.2450353056192398,
+   "saturation": 0.029032444064217514,
+   "hue": 141.04400327107408,
+   "axis": 24.72400819205741,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_C01/S1_C01_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_C01/S1_C01_GAME.png",
+   "luma": 0.21009033918380737,
+   "p10": 0.1628509759902954,
+   "p90": 0.24474117159843445,
+   "saturation": 0.009565388680579674,
+   "hue": 143.7742952373234,
+   "axis": 27.199026065677078,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_C02/S1_C02_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_C02/S1_C02_GAME.png",
+   "luma": 0.20983490347862244,
+   "p10": 0.16470588743686676,
+   "p90": 0.24329021573066711,
+   "saturation": 0.009937475677276708,
+   "hue": 159.86318182870468,
+   "axis": 26.20429269265452,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_C03/S1_C03_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_C03/S1_C03_GAME.png",
+   "luma": 0.20979909598827362,
+   "p10": 0.15658432245254517,
+   "p90": 0.25349414348602295,
+   "saturation": 0.005655760376140258,
+   "hue": -24.027453550999137,
+   "axis": 26.20429269265452,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_C04/S1_C04_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_C04/S1_C04_GAME.png",
+   "luma": 0.2096676230430603,
+   "p10": 0.1580352932214737,
+   "p90": 0.24661177396774292,
+   "saturation": 0.030019230219971698,
+   "hue": 129.56926083464558,
+   "axis": 26.20429269265452,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_C05/S1_C05_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_C05/S1_C05_GAME.png",
+   "luma": 0.20933480560779572,
+   "p10": 0.16308628022670746,
+   "p90": 0.24548237025737762,
+   "saturation": 0.007395460687080512,
+   "hue": 131.07004674051205,
+   "axis": 26.20429269265452,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_C06/S1_C06_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_C06/S1_C06_GAME.png",
+   "luma": 0.20933853089809418,
+   "p10": 0.16163529455661774,
+   "p90": 0.24543923139572144,
+   "saturation": 0.003942327028075822,
+   "hue": 10.876574895687117,
+   "axis": 28.75112536839295,
+   "problems": []
+  },
+  "assets/environments/site7_v2/stage01/S1_C07/S1_C07_GAME.png": {
+   "asset": "assets/environments/site7_v2/stage01/S1_C07/S1_C07_GAME.png",
+   "luma": 0.209611177444458,
+   "p10": 0.17299607396125793,
+   "p90": 0.24156078696250916,
+   "saturation": 0.0071160750779443,
+   "hue": 130.0078855735561,
+   "axis": 28.115156469185944,
+   "problems": []
+  }
+ },
+ "missions": {
+  "MIS_CH01_01": [
+   {
+    "connector": "C0",
+    "asset": "assets/environments/site7_v2/stage01/S1_C01/S1_C01_GAME.png",
+    "room": "R01_ENTRY",
+    "mirror": false,
+    "cells": 57,
+    "step": -0.18124961592151775,
+    "deck_saturation": 0.030196335658001575,
+    "room_saturation": 0.06910824444102125,
+    "deck_hue": 144.75282337594885,
+    "room_hue": 143.7818784666652,
+    "hue_gap": 0.9709449092836451,
+    "problems": []
+   },
+   {
+    "connector": "C0",
+    "asset": "assets/environments/site7_v2/stage01/S1_C01/S1_C01_GAME.png",
+    "room": "R02_CORRIDOR",
+    "mirror": false,
+    "cells": 72,
+    "step": -0.11430490644316361,
+    "deck_saturation": 0.1021258549244786,
+    "room_saturation": 0.0184276841243213,
+    "deck_hue": -37.36197913044253,
+    "room_hue": 133.49934766296872,
+    "hue_gap": 170.86132679341125,
+    "problems": []
+   },
+   {
+    "connector": "C1",
+    "asset": "assets/environments/site7_v2/stage01/S1_C02/S1_C02_GAME.png",
+    "room": "R02_CORRIDOR",
+    "mirror": false,
+    "cells": 45,
+    "step": -0.07688380195813743,
+    "deck_saturation": 0.04357648248530788,
+    "room_saturation": 0.007422905467042697,
+    "deck_hue": 148.52319769743954,
+    "room_hue": 175.55356143234894,
+    "hue_gap": 27.0303637349094,
+    "problems": []
+   },
+   {
+    "connector": "C1",
+    "asset": "assets/environments/site7_v2/stage01/S1_C02/S1_C02_GAME.png",
+    "room": "R03_ARCHIVE",
+    "mirror": false,
+    "cells": 75,
+    "step": 0.039937311162920895,
+    "deck_saturation": 0.04461440945128968,
+    "room_saturation": 0.03672637768752227,
+    "deck_hue": -42.061632764823294,
+    "room_hue": 145.4261438357599,
+    "hue_gap": 172.51222339941683,
+    "problems": []
+   },
+   {
+    "connector": "C2",
+    "asset": "assets/environments/site7_v2/stage01/S1_C03/S1_C03_GAME.png",
+    "room": "R03_ARCHIVE",
+    "mirror": false,
+    "cells": 46,
+    "step": -0.08025745223467966,
+    "deck_saturation": 0.0356430085712434,
+    "room_saturation": 0.014429720011612863,
+    "deck_hue": -39.792872777556134,
+    "room_hue": 169.23090618106212,
+    "hue_gap": 150.97622104138173,
+    "problems": []
+   },
+   {
+    "connector": "C2",
+    "asset": "assets/environments/site7_v2/stage01/S1_C03/S1_C03_GAME.png",
+    "room": "R04_CONTAINMENT",
+    "mirror": false,
+    "cells": 65,
+    "step": -0.1443927904379747,
+    "deck_saturation": 0.005957924470917893,
+    "room_saturation": 0.018731140617688782,
+    "deck_hue": 100.84728698299519,
+    "room_hue": 131.51054827216646,
+    "hue_gap": 30.66326128917126,
+    "problems": []
+   },
+   {
+    "connector": "C3",
+    "asset": "assets/environments/site7_v2/stage01/S1_C04/S1_C04_GAME.png",
+    "room": "R04_CONTAINMENT",
+    "mirror": false,
+    "cells": 45,
+    "step": -0.10754302748620247,
+    "deck_saturation": 0.07049353668672062,
+    "room_saturation": 0.03844820284041341,
+    "deck_hue": 142.03688907803124,
+    "room_hue": 128.945267580505,
+    "hue_gap": 13.091621497526233,
+    "problems": []
+   },
+   {
+    "connector": "C3",
+    "asset": "assets/environments/site7_v2/stage01/S1_C04/S1_C04_GAME.png",
+    "room": "R05_CORE",
+    "mirror": false,
+    "cells": 79,
+    "step": -0.044818059399761905,
+    "deck_saturation": 0.08837162648555395,
+    "room_saturation": 0.059643765545689856,
+    "deck_hue": 5.53650860548054,
+    "room_hue": 142.75029296503578,
+    "hue_gap": 137.21378435955523,
+    "problems": []
+   },
+   {
+    "connector": "C4",
+    "asset": "assets/environments/site7_v2/stage01/S1_C05/S1_C05_GAME.png",
+    "room": "R05_CORE",
+    "mirror": false,
+    "cells": 48,
+    "step": -0.1575243279944749,
+    "deck_saturation": 0.01372713748675809,
+    "room_saturation": 0.03967002784081315,
+    "deck_hue": 125.3686747959413,
+    "room_hue": 109.11846207290198,
+    "hue_gap": 16.25021272303934,
+    "problems": []
+   },
+   {
+    "connector": "C4",
+    "asset": "assets/environments/site7_v2/stage01/S1_C05/S1_C05_GAME.png",
+    "room": "R06_EXTRACTION",
+    "mirror": false,
+    "cells": 80,
+    "step": 0.10282631038991807,
+    "deck_saturation": 0.0061031661430364795,
+    "room_saturation": 0.03302884710841435,
+    "deck_hue": -43.63401559812607,
+    "room_hue": 143.32551484963355,
+    "hue_gap": 173.04046955224038,
+    "problems": []
+   },
+   {
+    "connector": "C5",
+    "asset": "assets/environments/site7_v2/stage01/S1_C06/S1_C06_GAME.png",
+    "room": "R03_ARCHIVE",
+    "mirror": false,
+    "cells": 71,
+    "step": 0.002880524690275046,
+    "deck_saturation": 0.017947287560932283,
+    "room_saturation": 0.032703319364146416,
+    "deck_hue": -23.58439225626987,
+    "room_hue": 143.30822248592096,
+    "hue_gap": 166.89261474219083,
+    "problems": []
+   },
+   {
+    "connector": "C5",
+    "asset": "assets/environments/site7_v2/stage01/S1_C06/S1_C06_GAME.png",
+    "room": "O01_SUPPLY",
+    "mirror": false,
+    "cells": 32,
+    "step": -0.11257697166688946,
+    "deck_saturation": 0.011884136744902712,
+    "room_saturation": 0.03626943204551895,
+    "deck_hue": 133.2856972048172,
+    "room_hue": 136.18019582813,
+    "hue_gap": 2.894498623312785,
+    "problems": []
+   },
+   {
+    "connector": "C6",
+    "asset": "assets/environments/site7_v2/stage01/S1_C07/S1_C07_GAME.png",
+    "room": "R04_CONTAINMENT",
+    "mirror": false,
+    "cells": 58,
+    "step": -0.11498795041554058,
+    "deck_saturation": 0.006679923414528341,
+    "room_saturation": 0.021219968018846895,
+    "deck_hue": 127.29863027856524,
+    "room_hue": 130.19945367697468,
+    "hue_gap": 2.900823398409443,
+    "problems": []
+   },
+   {
+    "connector": "C6",
+    "asset": "assets/environments/site7_v2/stage01/S1_C07/S1_C07_GAME.png",
+    "room": "O02_RESEARCH",
+    "mirror": false,
+    "cells": 30,
+    "step": -0.08972471050619057,
+    "deck_saturation": 0.009958743810857564,
+    "room_saturation": 0.030920886888720314,
+    "deck_hue": 137.58318288231447,
+    "room_hue": 140.09569544722444,
+    "hue_gap": 2.5125125649099687,
+    "problems": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,30 @@
+[fp_base1] prod=none test=none (fp): exit=0 16s  COMBAT_QUERY_FASTPATH_SMOKE: PASS (34 checks)  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[fp_base2] prod=none test=none (fp): exit=0 14s  COMBAT_QUERY_FASTPATH_SMOKE: PASS (34 checks)  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[fp_base3] prod=none test=none (fp): exit=0 14s  COMBAT_QUERY_FASTPATH_SMOKE: PASS (34 checks)  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[fp_over] prod=over test=none (fp): exit=1 14s  COMBAT_QUERY_FASTPATH_SMOKE: FAIL (12 of 34 checks)  FAIL-lines=12 neg=0 plan=3 long=0 scripterr=0
+[fp_nophys] prod=nophys test=none (fp): exit=1 14s  COMBAT_QUERY_FASTPATH_SMOKE: FAIL (12 of 34 checks)  FAIL-lines=12 neg=0 plan=3 long=0 scripterr=0
+[fp_nonodes] prod=nonodes test=none (fp): exit=0 14s  COMBAT_QUERY_FASTPATH_SMOKE: PASS (34 checks)  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[fp_noswap] prod=noswap test=none (fp): exit=0 15s  COMBAT_QUERY_FASTPATH_SMOKE: PASS (34 checks)  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[fp_nomargin] prod=nomargin test=none (fp): exit=1 14s  COMBAT_QUERY_FASTPATH_SMOKE: FAIL (10 of 34 checks)  FAIL-lines=10 neg=0 plan=3 long=0 scripterr=0
+[fp_nowaypoints] prod=nowaypoints test=none (fp): exit=1 14s  COMBAT_QUERY_FASTPATH_SMOKE: FAIL (24 of 34 checks)  FAIL-lines=24 neg=0 plan=3 long=3 scripterr=0
+[fpx_over] prod=over test=noexact (fp): exit=0 14s  COMBAT_QUERY_FASTPATH_SMOKE: PASS (34 checks)  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[fpx_nophys] prod=nophys test=noexact (fp): exit=0 15s  COMBAT_QUERY_FASTPATH_SMOKE: PASS (34 checks)  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[fpx_nonodes] prod=nonodes test=noexact (fp): exit=0 18s  COMBAT_QUERY_FASTPATH_SMOKE: PASS (34 checks)  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[fpx_noswap] prod=noswap test=noexact (fp): exit=0 15s  COMBAT_QUERY_FASTPATH_SMOKE: PASS (34 checks)  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[fpx_nomargin] prod=nomargin test=noexact (fp): exit=0 15s  COMBAT_QUERY_FASTPATH_SMOKE: PASS (34 checks)  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[fpx_nowaypoints] prod=nowaypoints test=noexact (fp): exit=1 14s  COMBAT_QUERY_FASTPATH_SMOKE: FAIL (12 of 34 checks)  FAIL-lines=12 neg=0 plan=0 long=3 scripterr=0
+[fp_revert] prod=revert test=none (fp): exit=1 14s  COMBAT_QUERY_FASTPATH_SMOKE: FAIL (12 of 34 checks)  FAIL-lines=12 neg=0 plan=3 long=0 scripterr=0
+[fpx_revert] prod=revert test=noexact (fp): exit=0 13s  COMBAT_QUERY_FASTPATH_SMOKE: PASS (34 checks)  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[hz_base1] prod=none test=none (hz): exit=0 30s  HAZARD_EXPANSION_SMOKE: PASS (438 checks, 15 rooms) res://.cache/out/hz_hz_base1.json  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[hz_base2] prod=none test=none (hz): exit=0 30s  HAZARD_EXPANSION_SMOKE: PASS (438 checks, 15 rooms) res://.cache/out/hz_hz_base2.json  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[hz_base3] prod=none test=none (hz): exit=0 27s  HAZARD_EXPANSION_SMOKE: PASS (438 checks, 15 rooms) res://.cache/out/hz_hz_base3.json  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[hz_noblocker] prod=none test=noblocker (hz): exit=1 27s  HAZARD_EXPANSION_SMOKE: FAIL (438 checks, 15 rooms) res://.cache/out/hz_hz_noblocker.json  FAIL-lines=2 neg=2 plan=0 long=0 scripterr=0
+[hz_over] prod=over test=none (hz): exit=1 28s  HAZARD_EXPANSION_SMOKE: FAIL (438 checks, 15 rooms) res://.cache/out/hz_hz_over.json  FAIL-lines=2 neg=2 plan=0 long=0 scripterr=0
+[hz_nophys] prod=nophys test=none (hz): exit=0 30s  HAZARD_EXPANSION_SMOKE: PASS (438 checks, 15 rooms) res://.cache/out/hz_hz_nophys.json  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[hz_nonodes] prod=nonodes test=none (hz): exit=0 30s  HAZARD_EXPANSION_SMOKE: PASS (438 checks, 15 rooms) res://.cache/out/hz_hz_nonodes.json  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[hz_noswap] prod=noswap test=none (hz): exit=0 31s  HAZARD_EXPANSION_SMOKE: PASS (438 checks, 15 rooms) res://.cache/out/hz_hz_noswap.json  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[hz_nomargin] prod=nomargin test=none (hz): exit=0 30s  HAZARD_EXPANSION_SMOKE: PASS (438 checks, 15 rooms) res://.cache/out/hz_hz_nomargin.json  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[hz_nowaypoints] prod=nowaypoints test=none (hz): exit=0 31s  HAZARD_EXPANSION_SMOKE: PASS (438 checks, 15 rooms) res://.cache/out/hz_hz_nowaypoints.json  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[hz_revert] prod=revert test=none (hz): exit=0 34s  HAZARD_EXPANSION_SMOKE: PASS (438 checks, 15 rooms) res://.cache/out/hz_hz_revert.json  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[hz_smallbox] prod=none test=smallbox (hz): exit=0 29s  HAZARD_EXPANSION_SMOKE: PASS (438 checks, 15 rooms) res://.cache/out/hz_hz_smallbox.json  FAIL-lines=0 neg=0 plan=0 long=0 scripterr=0
+[hz_smallbox_noblocker] prod=none test=smallbox+noblocker (hz): exit=1 30s  HAZARD_EXPANSION_SMOKE: FAIL (438 checks, 15 rooms) res://.cache/out/hz_hz_smallbox_noblocker.json  FAIL-lines=28 neg=28 plan=0 long=0 scripterr=0

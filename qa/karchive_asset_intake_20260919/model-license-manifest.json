@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-19",
+  "scope": "kArchive source-library intake and inspection only",
+  "production_approval": false,
+  "user_authorized_download_root": "C:\\ai_asset\\karchive\\2026-09-19",
+  "attribution_required": "자료: kArchive\n출처: 쓰레드 dogfooter",
+  "commercial_use": "Permitted in personal and commercial projects by both the bundled LICENSE and current website",
+  "modification": "Permitted",
+  "raw_resale": "Prohibited by website terms",
+  "ai_training": "BLOCKED: bundled LICENSE prohibits it; current website permits it. No AI training performed.",
+  "license_conflict": "AI training permission differs between bundled LICENSE.txt and website. Ordinary commercial project use is consistent.",
+  "sources": [
+    {
+      "path": "qa\\karchive_asset_intake_20260919\\bundled_LICENSE.txt",
+      "sha256": "ae8594212c54a648c5134b8a2c43b85209d363e09f49fa349c58559a1fd5121b"
+    },
+    {
+      "url": "https://karchive.vibeline.co.kr/models",
+      "snapshot_path": "qa\\karchive_asset_intake_20260919\\models.html",
+      "sha256": "5e5e19146bf663fdde7a196edacf77c32b9bed1be20e5c2799bc03f6413277e9"
+    }
+  ],
+  "tooling": [
+    {
+      "tool": "Blender 5.2.1",
+      "license": "GPL-3.0-or-later",
+      "evidence": "tools/blender/5.2.1/license/license.md",
+      "mode": "Read-only installed runtime, project-local caches and QA renders"
+    }
+  ],
+  "sable_scope": "Environment/prop suitability study only. No character/enemy replacement, source-art promotion or runtime pointer change."
+}

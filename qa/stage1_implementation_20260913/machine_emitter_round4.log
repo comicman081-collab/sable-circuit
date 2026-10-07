@@ -1,0 +1,12 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+SCRIPT ERROR: Parse Error: Cannot infer the type of "origin" variable because the value doesn't have a set type.
+   at: GDScript::reload (res://scripts/actors/enemy_actor.gd:253)
+ERROR: Failed to load script "res://scripts/actors/enemy_actor.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+ERROR: res://scenes/actors/player/OperatorActor.tscn:62 - Parse Error: [ext_resource] referenced non-existent resource at: res://scripts/animation/premium_sprite_shading.gd.
+   at: _printerr (scene/resources/resource_format_text.cpp:41)
+SCRIPT ERROR: Invalid call. Nonexistent function 'configure' in base 'Nil'.
+   at: run (res://tests/smoke/site7_machine_source_smoke.gd:21)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tests/smoke/site7_machine_source_smoke.gd:21)

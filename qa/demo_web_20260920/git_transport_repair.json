@@ -1,0 +1,10 @@
+{
+  "scope": "New standalone web_demo Site checkout only; no parent game repository changes",
+  "object_id": "04d895c9be3d81bd095adf8c986b07331c465977",
+  "source": "web_demo/dist/index.pck.020.bin",
+  "failure": "Loose Git object zlib checksum mismatch during push",
+  "quarantined_object": "qa/demo_web_20260920/corrupt_git_object_04d895c9.zlib",
+  "quarantined_sha256": "c15a4ca3fb03dab0092cffbe02a9c5a532926246178fa735392d7adcb16a21a8",
+  "repair": "Preserved corrupt object, reconstructed identical Git object ID from validated unchanged delivery shard using git hash-object -w",
+  "verification": "git fsck --full --no-reflogs exited 0; only dangling interrupted transport commits remain"
+}

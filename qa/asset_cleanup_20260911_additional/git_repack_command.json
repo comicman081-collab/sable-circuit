@@ -1,0 +1,17 @@
+[
+  "git",
+  "-c",
+  "pack.threads=2",
+  "-c",
+  "gc.reflogExpire=never",
+  "-c",
+  "gc.reflogExpireUnreachable=never",
+  "repack",
+  "-a",
+  "-d",
+  "-m",
+  "--cruft",
+  "--cruft-expiration=now",
+  "--window-memory=128m",
+  "--expire-to=D:\\AI 종합 폴더\\Games\\Sable-circuit\\quarantine_cleanup\\asset_cleanup_20260911_additional\\git_cruft"
+]

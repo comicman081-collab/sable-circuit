@@ -1,0 +1,9 @@
+SAVE_PROBE old_v3 schema_code=5 snapshot_equal_after_save=true file_stable_after_second_save=true keys=31
+SAVE_PROBE new_v3 schema_code=6 snapshot_equal_after_save=true file_stable_after_second_save=true keys=31
+SAVE_PROBE old_v4 schema_code=5 snapshot_equal_after_save=true file_stable_after_second_save=true keys=31
+SAVE_PROBE new_v4 schema_code=6 snapshot_equal_after_save=true file_stable_after_second_save=true keys=31
+SAVE_PROBE old_v5 schema_code=5 snapshot_equal_after_save=true file_stable_after_second_save=true keys=31
+SAVE_PROBE new_v5 schema_code=6 snapshot_equal_after_save=true file_stable_after_second_save=true keys=31
+MAKE_RICH_V6 analysed=8 results=["EQUIPPED", "EQUIPPED", "EQUIPPED", "WEAPON_EQUIPPED", "WEAPON_EQUIPPED"] schema=6 samples={ "SECURITY": 0, "ABERRANT": 0, "ANCHOR": 0, "AERATOR": 2, "CRYO": 0, "GANTRY": 1, "ARCHIVE": 0, "ORIGIN": 3 }
+SAVE_PROBE old_rich6 schema_code=5 snapshot_equal_after_save=true file_stable_after_second_save=true keys=31
+SAVE_PROBE new_rich6 schema_code=6 snapshot_equal_after_save=true file_stable_after_second_save=true keys=31

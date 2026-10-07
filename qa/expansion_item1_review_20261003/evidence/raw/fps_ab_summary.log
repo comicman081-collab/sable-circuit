@@ -1,0 +1,54 @@
+probe sha256 ae500a2b2f152a3f15f36bcd80721a4effa8ba260ee6b60312bc37e0453c363f
+round01_base: exit 0 in 103s
+round01_after: exit 0 in 103s
+round02_after: exit 0 in 103s
+round02_base: exit 0 in 103s
+round03_base: exit 0 in 108s
+round03_after: exit 0 in 105s
+round04_after: exit 0 in 105s
+round04_base: exit 0 in 103s
+round05_base: exit 0 in 103s
+round05_after: exit 0 in 106s
+
+mission room            metric        base(mean¡¾sd)      after(mean¡¾sd)     delta%   draws base->after   hazards
+06 R02_GALLERY      fps           172.12¡¾30.16      172.06¡¾26.86     -0.0%   394->391   ['ARC_VENT', 'SPORE_CLOUD']
+06 R02_GALLERY      frame_ms        6.05¡¾ 1.36        5.99¡¾ 1.15     -0.9%
+06 R02_GALLERY      gpu_ms          2.21¡¾ 0.43        2.18¡¾ 0.37     -1.3%
+06 R02_GALLERY      process_ms      9.04¡¾ 0.95        9.10¡¾ 0.99     +0.6%
+06 R04_PUMPS        fps           176.83¡¾25.61      173.90¡¾18.87     -1.7%   405->420   ['ARC_VENT', 'SPORE_CLOUD']
+06 R04_PUMPS        frame_ms        5.80¡¾ 0.99        5.82¡¾ 0.65     +0.4%
+06 R04_PUMPS        gpu_ms          2.22¡¾ 0.36        2.18¡¾ 0.21     -1.8%
+06 R04_PUMPS        process_ms      9.30¡¾ 0.73        9.08¡¾ 0.54     -2.4%
+07 R02_FREEZE       fps           145.82¡¾21.43      187.76¡¾ 9.92    +28.8%   394->390   ['ARC_VENT', 'FROST_PLATE']
+07 R02_FREEZE       frame_ms        7.02¡¾ 1.10        5.34¡¾ 0.28    -23.9%
+07 R02_FREEZE       gpu_ms          2.47¡¾ 0.38        1.94¡¾ 0.08    -21.4%
+07 R02_FREEZE       process_ms     10.78¡¾ 1.09        8.48¡¾ 0.65    -21.3%
+07 R04_COMPRESSORS  fps           180.60¡¾30.29      220.59¡¾ 4.75    +22.1%   398->395   ['ARC_VENT', 'FROST_PLATE']
+07 R04_COMPRESSORS  frame_ms        5.71¡¾ 1.04        4.54¡¾ 0.10    -20.6%
+07 R04_COMPRESSORS  gpu_ms          2.31¡¾ 0.37        1.88¡¾ 0.03    -18.6%
+07 R04_COMPRESSORS  process_ms      8.46¡¾ 0.55        7.48¡¾ 0.39    -11.6%
+08 R02_MARSHALLING  fps           164.99¡¾21.07      172.15¡¾19.19     +4.3%   383->378   ['RAIL_LANE', 'ARC_VENT']
+08 R02_MARSHALLING  frame_ms        6.18¡¾ 0.95        5.89¡¾ 0.72     -4.8%
+08 R02_MARSHALLING  gpu_ms          2.19¡¾ 0.33        2.08¡¾ 0.21     -4.9%
+08 R02_MARSHALLING  process_ms      9.00¡¾ 0.37        8.81¡¾ 1.03     -2.0%
+08 R04_JUNCTION     fps           146.83¡¾20.78      161.06¡¾10.93     +9.7%   400->394   ['RAIL_LANE', 'ARC_VENT']
+08 R04_JUNCTION     frame_ms        6.96¡¾ 1.10        6.24¡¾ 0.42    -10.4%
+08 R04_JUNCTION     gpu_ms          2.37¡¾ 0.32        2.14¡¾ 0.13     -9.7%
+08 R04_JUNCTION     process_ms     10.08¡¾ 0.77        9.65¡¾ 0.44     -4.2%
+09 R02_NAVE         fps           127.96¡¾21.72      145.23¡¾14.42    +13.5%   423->424   ['ARC_VENT', 'ARC_VENT']
+09 R02_NAVE         frame_ms        8.06¡¾ 1.46        6.96¡¾ 0.77    -13.6%
+09 R02_NAVE         gpu_ms          2.60¡¾ 0.44        2.28¡¾ 0.21    -12.1%
+09 R02_NAVE         process_ms     11.69¡¾ 1.01       10.81¡¾ 0.56     -7.5%
+09 R04_GALLERY      fps           149.85¡¾21.80      169.98¡¾10.74    +13.4%   406->407   ['ARC_VENT', 'ARC_VENT']
+09 R04_GALLERY      frame_ms        6.85¡¾ 1.19        5.91¡¾ 0.36    -13.7%
+09 R04_GALLERY      gpu_ms          2.41¡¾ 0.33        2.13¡¾ 0.11    -11.5%
+09 R04_GALLERY      process_ms     10.13¡¾ 0.82        9.53¡¾ 0.66     -5.9%
+10 R02_RELAY        fps           128.93¡¾26.70      153.73¡¾22.28    +19.2%   406->407   ['ARC_VENT', 'ARC_VENT']
+10 R02_RELAY        frame_ms        8.19¡¾ 2.14        6.66¡¾ 1.09    -18.7%
+10 R02_RELAY        gpu_ms          2.85¡¾ 0.69        2.33¡¾ 0.29    -18.3%
+10 R02_RELAY        process_ms     12.32¡¾ 4.14        9.83¡¾ 0.51    -20.2%
+10 R04_GALLERY      fps           116.95¡¾29.96      144.94¡¾27.31    +23.9%   422->423   ['ARC_VENT', 'ARC_VENT']
+10 R04_GALLERY      frame_ms        9.09¡¾ 2.14        7.24¡¾ 1.81    -20.4%
+10 R04_GALLERY      gpu_ms          3.06¡¾ 0.66        2.50¡¾ 0.55    -18.4%
+10 R04_GALLERY      process_ms     11.92¡¾ 1.63       10.58¡¾ 0.80    -11.3%
+DONE exit=0

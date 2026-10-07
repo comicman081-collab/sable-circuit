@@ -1,0 +1,105 @@
+{
+  "schema": 2,
+  "created_utc": "2026-08-28T22:52:36.260075+00:00",
+  "purpose": "local production-art tool; weights are not game-distribution artifacts",
+  "network_download_authority": "official Hugging Face Qwen / Comfy-Org pinned revisions only",
+  "krea2_used": false,
+  "cloud_inference_used": false,
+  "paid_or_noncommercial_models_used": false,
+  "project_local_runtime": "tools/qwen_image_edit_2511/runtime",
+  "project_local_installation_present": false,
+  "apache_license_copy": {
+    "source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "file": "tools/licenses/qwen_image_edit_2511/APACHE-2.0.txt"
+  },
+  "weights": [
+    {
+      "model": "Qwen/Qwen-Image-Edit-2511",
+      "kind": "diffusion",
+      "filename": "qwen_image_edit_2511_int8_convrot.safetensors",
+      "source_repository": "Comfy-Org/Qwen-Image-Edit_ComfyUI",
+      "revision": "984166f60a9b1fcede5e9b9287b7a7aebc050010",
+      "remote_path": "split_files/diffusion_models/qwen_image_edit_2511_int8_convrot.safetensors",
+      "license": "apache-2.0",
+      "commercial_use": true,
+      "modification_allowed": true,
+      "local_inference_allowed": true,
+      "file_size": 20499083824,
+      "sha256": "11b5af5ac601821d73930c84846c9a158e67177356daf927ce1c8d10f3963829",
+      "destination": "tools/qwen_image_edit_2511/runtime/models/diffusion_models/qwen_image_edit_2511_int8_convrot.safetensors",
+      "safetensors": {
+        "tensor_count": 3614,
+        "first_tensor_keys": [
+          "__index_timestep_zero__",
+          "img_in.bias",
+          "img_in.weight",
+          "norm_out.linear.bias",
+          "norm_out.linear.weight",
+          "proj_out.bias",
+          "proj_out.weight",
+          "time_text_embed.timestep_embedder.linear_1.bias"
+        ],
+        "metadata": {}
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "kind": "text_encoder",
+      "filename": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "source_repository": "Comfy-Org/Qwen-Image_ComfyUI",
+      "revision": "7beb7b647f04469fbe64ba8adc2bb0d7e5e9f73f",
+      "remote_path": "split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "license": "apache-2.0",
+      "commercial_use": true,
+      "modification_allowed": true,
+      "local_inference_allowed": true,
+      "file_size": 9384670680,
+      "sha256": "cb5636d852a0ea6a9075ab1bef496c0db7aef13c02350571e388aea959c5c0b4",
+      "destination": "tools/qwen_image_edit_2511/runtime/models/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "safetensors": {
+        "tensor_count": 1446,
+        "first_tensor_keys": [
+          "lm_head.weight",
+          "model.embed_tokens.weight",
+          "model.layers.0.input_layernorm.weight",
+          "model.layers.0.mlp.down_proj.scale_input",
+          "model.layers.0.mlp.down_proj.scale_weight",
+          "model.layers.0.mlp.down_proj.weight",
+          "model.layers.0.mlp.gate_proj.scale_input",
+          "model.layers.0.mlp.gate_proj.scale_weight"
+        ],
+        "metadata": null
+      }
+    },
+    {
+      "model": "Qwen/Qwen-Image-Edit-2511",
+      "kind": "vae",
+      "filename": "qwen_image_vae.safetensors",
+      "source_repository": "Comfy-Org/Qwen-Image_ComfyUI",
+      "revision": "7beb7b647f04469fbe64ba8adc2bb0d7e5e9f73f",
+      "remote_path": "split_files/vae/qwen_image_vae.safetensors",
+      "license": "apache-2.0",
+      "commercial_use": true,
+      "modification_allowed": true,
+      "local_inference_allowed": true,
+      "file_size": 253806246,
+      "sha256": "a70580f0213e67967ee9c95f05bb400e8fb08307e017a924bf3441223e023d1f",
+      "destination": "tools/qwen_image_edit_2511/runtime/models/vae/qwen_image_vae.safetensors",
+      "safetensors": {
+        "tensor_count": 194,
+        "first_tensor_keys": [
+          "conv1.bias",
+          "conv1.weight",
+          "conv2.bias",
+          "conv2.weight",
+          "decoder.conv1.bias",
+          "decoder.conv1.weight",
+          "decoder.head.0.gamma",
+          "decoder.head.2.bias"
+        ],
+        "metadata": null
+      }
+    }
+  ]
+}

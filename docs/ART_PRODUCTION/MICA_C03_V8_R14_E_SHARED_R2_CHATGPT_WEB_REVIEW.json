@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "reviewed_at_utc": "2026-09-04T11:15:28.7224053Z",
+  "review_session": {
+    "title": "V6 독립 검수 판정",
+    "url": "https://chatgpt.com/c/6a93c84f-fb1c-83e8-9d88-959e708b2463",
+    "reused_existing_conversation": true,
+    "left_open_for_follow_up": true
+  },
+  "submitted_evidence": [
+    {
+      "path": "artifacts/mica_c03_v8_r14_e_shared_handoff_r2_review/MICA_C03_V8_R14_E_SHARED_R2_E_GAIT_REVIEW_2304X1080.png",
+      "sha256": "d87a8b6ed4fa6b52149973f4de070945cea57a1209bd4013ce569955268a0fa3"
+    },
+    {
+      "path": "artifacts/mica_c03_v8_r14_e_shared_handoff_r2_review/MICA_C03_V8_R14_E_SHARED_R2_FIXED_GRID_5S_1920X1080.mp4",
+      "sha256": "a0b7f665d173e7996f7e088f0c2f0711c3d07ee478b2616850c461e63ef7a107"
+    },
+    {
+      "path": "artifacts/mica_c03_v8_r14_e_shared_handoff_r2_review/MICA_C03_V8_R14_E_SHARED_R2_WORLD_GRID_5S_1920X1080.mp4",
+      "sha256": "afafd561fc1c7927ed2765445a2bbb36f4b7433b4fc095303fb056a2579bca80"
+    }
+  ],
+  "verdict": "E_R14_SHARED_R2_PILOT_REVIEW: PASS",
+  "next_stage_verdict": "W_DIRECTION_PILOT_EXPANSION: ALLOWED",
+  "scope": "Actual attached-pixel and continuous 120-frame E review; not production promotion",
+  "assessment": {
+    "A_gait_readability": "PASS",
+    "B_scale_and_rubber_leg_gate": "PASS",
+    "C_foot_artifact_gate": "PASS",
+    "D_sole_lock_and_handoff_continuity": "PASS",
+    "E_composite_stability": "PASS",
+    "F_w_expansion_blocker": "NONE_FOR_PILOT",
+    "handoff_balance": "PASS; R1 long-step/short-following-step pattern resolved; residual approximately 1-2px is non-blocking"
+  },
+  "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+  "promotion": {
+    "e_direction_production": "HOLD",
+    "eight_direction_visual_runtime": "HOLD"
+  },
+  "preservation": {
+    "r1_quarantined_preserve": true,
+    "failed_or_hold_assets_deleted": false
+  },
+  "authority_note": "This advisory web review does not override the authoritative project package, Ponytail FULL gate, runtime/promotion HOLD, or failed-asset quarantine rule."
+}

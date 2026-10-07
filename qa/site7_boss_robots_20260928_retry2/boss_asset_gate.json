@@ -1,0 +1,58 @@
+{
+  "batch": "site7_boss_robots_20260928_retry2",
+  "generator": "Codex built-in ImageGen",
+  "runtime_status": "HOLD",
+  "visual_approval": "NOT_GRANTED",
+  "source_alpha_policy": "native_rgba_alpha_0_254_v1",
+  "source_alpha_status": "FAIL",
+  "generated_candidates": [
+    {
+      "attempt": 4,
+      "batchAttempt": 1,
+      "tool": "image_gen.imagegen",
+      "returnedPath": "C:/Users/AAA/.codex/generated_images/01a0e05b-ff4b-7d40-953c-3c9973c59ddf/exec-f47b4372-f51a-4def-9b37-1f36ab851954.png",
+      "projectCopy": "motion_lab_v1/art/site7_enemies_raw/quarantine/relay_sentinel/attempt04.png",
+      "projectCopySHA256": "dd13595d0e559bd8c74306c3c3311d6fffa71c99213ff4c6d10d8ba17bd7ee3a",
+      "native": [1254, 1254],
+      "mode": "RGBA",
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alpha255Pixels": 496,
+      "status": "FAIL_NOT_PROMOTABLE",
+      "reason": "ALPHA_RANGE_0_254_REQUIRED: observed 0..255"
+    },
+    {
+      "attempt": 5,
+      "batchAttempt": 2,
+      "tool": "image_gen.imagegen",
+      "returnedPath": "C:/Users/AAA/.codex/generated_images/01a0e05b-ff4b-7d40-953c-3c9973c59ddf/exec-00a8af86-c026-439c-8cee-e33baf5edaa5.png",
+      "projectCopy": "motion_lab_v1/art/site7_enemies_raw/quarantine/relay_sentinel/attempt05.png",
+      "projectCopySHA256": "bb0f324f61f4d9f290d65a1deeea15df8aa583a6c9688973bfbc213bcf6648ad",
+      "native": [1254, 1254],
+      "mode": "RGBA",
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alpha255Pixels": 343,
+      "status": "FAIL_NOT_PROMOTABLE",
+      "reason": "ALPHA_RANGE_0_254_REQUIRED: observed 0..255; detached pixels outside silhouette"
+    },
+    {
+      "attempt": 6,
+      "batchAttempt": 3,
+      "tool": "image_gen.imagegen",
+      "returnedPath": "C:/Users/AAA/.codex/generated_images/01a0e05b-ff4b-7d40-953c-3c9973c59ddf/exec-a003f9af-3e96-4684-801e-c201dba7df84.png",
+      "projectCopy": "motion_lab_v1/art/site7_enemies_raw/quarantine/relay_sentinel/attempt06.png",
+      "projectCopySHA256": "63ccd369731ef6bf949377e9c3f55dfa5f8f453ded01021a7b46fe4c8b12ef10",
+      "native": [1254, 1254],
+      "mode": "RGBA",
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alpha255Pixels": 264,
+      "status": "FAIL_NOT_PROMOTABLE",
+      "reason": "ALPHA_RANGE_0_254_REQUIRED: observed 0..255"
+    }
+  ],
+  "remnant_status": "NOT_ATTEMPTED_STOP_ON_RELAY_HOLD",
+  "runtime_changes": "NONE",
+  "required_follow_up": "Stop at section 7 HOLD gate; do not promote candidates, clamp or key native alpha, or apply the Stage 4/5 exception."
+}

@@ -1,0 +1,27 @@
+{
+  "tool": "image_gen.imagegen",
+  "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-56e7aa8f-087b-4261-bd78-5fce45bfa3a2.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c as C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c\\exec-56e7aa8f-087b-4261-bd78-5fce45bfa3a2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "qa/rook/luna_repair_20260913/edit_attempt_03/E5_edit_raw.png",
+  "projectCopySHA256": "5afc5de053f5a781d6f9a40d86954442d27c19a88055b34348691ba074138397",
+  "inputReferences": [
+    "art/rook/identity_reference.png",
+    "reference/ual_guides/E_walk_pair2.png",
+    "art/rook/E_walk_5_master.png"
+  ],
+  "promptSummary": "Single-target E5 edit; identity is appearance/weapon authority, E-walk pair2 guide is pose/camera only, lower body requested as anatomical LEFT passing-forward with RIGHT support; uniform RGB #00FF00 requested.",
+  "inspection": {
+    "nativeSize": [1024, 1536],
+    "mode": "RGB",
+    "bands": ["R", "G", "B"],
+    "cornerRGB": [[20, 242, 14], [18, 241, 12], [20, 242, 18], [18, 244, 13]],
+    "edgeUniqueColors": 179,
+    "greenExactFraction": 0.0,
+    "alphaUnique": null,
+    "backgroundDecision": "NOT_FLAT_UNIFORM_GREEN",
+    "roleDecision": "FAIL: E5 reproduces E2's screen-left planted/screen-right forward-raised arrangement; requested opposite left/right passing/support exchange is not demonstrated."
+  },
+  "decision": "FAIL_NOT_PROMOTABLE"
+}

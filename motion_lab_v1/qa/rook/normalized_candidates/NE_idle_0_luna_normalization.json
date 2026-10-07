@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "operation": "edge-connected green matte normalization only; no source-art redraw",
+  "source_author": "built-in ImageGen",
+  "input": "motion_lab_v1/qa/rook/incoming/rook_luna_20260912_NEidle/NE_idle_0_luna_raw.png",
+  "input_sha256": "e215ebf3890b1c1b327a9ea077aa66ef894c8f346dd16e66cb05fb553b8e947b",
+  "output": "motion_lab_v1/qa/rook/normalized_candidates/NE_idle_0_luna_normalized.png",
+  "output_sha256": "5a130d483a515486cd6bbda16b3f0711137cbe673b7c172c058f805d311254ec",
+  "mask": "motion_lab_v1/qa/rook/normalized_candidates/NE_idle_0_luna_mask.png",
+  "mask_sha256": "60ba5a140a96294fe8158d0a91533ae7095464d3f903573bba8186e01d38ac38",
+  "input_resolution": [
+    1024,
+    1536
+  ],
+  "edge_median_rgb": [
+    5,
+    248,
+    4
+  ],
+  "exact_green_rgb": [
+    0,
+    255,
+    0
+  ],
+  "edge_connected_background_coverage": 0.7612247467041016,
+  "subject_pixels_byte_exact": true,
+  "alpha_ready": true
+}

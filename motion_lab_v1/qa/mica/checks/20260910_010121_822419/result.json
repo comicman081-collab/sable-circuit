@@ -1,0 +1,75 @@
+{
+  "recordedAt": "2026-09-09T16:01:27.145268+00:00",
+  "character": "mica",
+  "status": "PASS_RUNTIME_CHECKS",
+  "package": {
+    "path": "dist/mica.package.json",
+    "sha256": "ba3cece7ba380e81edd919995c9f9cb15d201fa87e326bc726bd9f4be030a4a3"
+  },
+  "inputSHA256": "c3f6ac47e2f720025f2552ffd4ca0173184a4fdc1c00cc11c2a2c9b0665ff99e",
+  "checks": [
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "validate_character.py",
+        "--character",
+        "mica"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/mica/checks/20260910_010121_822419/0.log",
+        "sha256": "5626f4ee536dd594bf6bca3b5a14a9be4add0f39d183a3fd63503736a3b3fb12"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests\\combat-aim.test.js",
+        "tests\\keyboard-input.test.js",
+        "tests\\simulation.test.js"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/mica/checks/20260910_010121_822419/1.log",
+        "sha256": "1988d2adc2e0cc048fcdba5f8f4b9e6cd9e10ab1c25505a67b6ebade0968029d"
+      }
+    },
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_character_workflow.py"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/mica/checks/20260910_010121_822419/2.log",
+        "sha256": "c56f4117a80efe0f4f0e265ac6df217187949d6a0ad76dc033434c41fac40f27"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "verify_bundle.mjs",
+        "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\dist\\MICA_Motion_Studio.html"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/mica/checks/20260910_010121_822419/3.log",
+        "sha256": "d48acfa04b8e79958d4263827d7c20ce1c919bf3d2ed60a8e8048868d443158d"
+      }
+    }
+  ],
+  "browser": {
+    "path": "qa/mica_combat_browser_20260910.json",
+    "sha256": "8e1c57fef839c7fc48b9410518fb59c57eb32f71ed725fbbde55f015929a3f91"
+  },
+  "scope": "Implemented runtime/asset checks; no automatic visual approval or Luna generation claim"
+}

@@ -1,0 +1,177 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_O02/attempt01/S9_O02_GAME.png",
+  "luma": 0.19989550113677979,
+  "p10": 0.16894902288913727,
+  "p90": 0.22578510642051697,
+  "saturation": 0.05277233824034393,
+  "hue": 132.98463674680355,
+  "axis": 25.880308803102878,
+  "problems": [
+    "native size (1671, 941) != (1672, 941)"
+  ],
+  "plate": "S9_O02",
+  "attempt": 1,
+  "native_size": [
+    1671,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      156,
+      467
+    ],
+    [
+      445,
+      338
+    ],
+    [
+      453,
+      270
+    ],
+    [
+      476,
+      199
+    ],
+    [
+      555,
+      244
+    ],
+    [
+      564,
+      283
+    ],
+    [
+      626,
+      253
+    ],
+    [
+      646,
+      274
+    ],
+    [
+      704,
+      254
+    ],
+    [
+      752,
+      233
+    ],
+    [
+      818,
+      191
+    ],
+    [
+      911,
+      238
+    ],
+    [
+      963,
+      251
+    ],
+    [
+      1092,
+      324
+    ],
+    [
+      1230,
+      389
+    ],
+    [
+      1363,
+      450
+    ],
+    [
+      1497,
+      477
+    ],
+    [
+      832,
+      816
+    ]
+  ],
+  "doors_px": {
+    "NW": [
+      505,
+      310,
+      130
+    ]
+  },
+  "raw_sha256": "2ad76f0bb08c62ef952a430d0b974b2ff806da00ce06c20f81608fb0eb50687c",
+  "master_sha256": "2ad76f0bb08c62ef952a430d0b974b2ff806da00ce06c20f81608fb0eb50687c",
+  "game_sha256": "79f9b04152e4154110c0c1f1c63cdaeeea7f66471ef2f9fe982564df75d65f28",
+  "game_exposure_factor_srgb": 0.7029,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-ab9dbc27-1c40-4048-839e-5df96f3eab56.png",
+  "inspection": "새 벽 부착 C형 클램프와 수리 리그, 작은 카트리지 진단 랙. S3_O02의 대형 파형 모니터와 유리 실린더 배치를 복사하지 않음. NW 문 하나, 나머지 닫힘. 설비 밑 제외 실제 바닥 추적.",
+  "floor_area_px2": 419831.0,
+  "floor_area_fraction": 0.2669982593609432,
+  "floor_bounds_px": [
+    156,
+    191,
+    1497,
+    816
+  ],
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "NW": [
+        [
+          445,
+          338
+        ],
+        [
+          453,
+          270
+        ],
+        [
+          476,
+          199
+        ],
+        [
+          555,
+          244
+        ],
+        [
+          564,
+          283
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      156,
+      191,
+      1497,
+      816
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.0933572710951526,
+      0.20297555791710944,
+      0.10412926391382406,
+      0.13283740701381508
+    ],
+    "whole_floor_bounds_px": [
+      156,
+      191,
+      1497,
+      816
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.0933572710951526,
+      0.20297555791710944,
+      0.10412926391382406,
+      0.13283740701381508
+    ],
+    "main_floor_area_px2": 411167
+  },
+  "apron_stats": {
+    "NW": {
+      "luma": 0.24165843427181244,
+      "saturation": 0.045145266654481694,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  }
+}

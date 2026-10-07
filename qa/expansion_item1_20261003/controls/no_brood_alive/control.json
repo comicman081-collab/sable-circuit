@@ -1,0 +1,9 @@
+{
+  "name": "no_brood_alive",
+  "path": "scripts/missions/story_stage_01.gd",
+  "before_sha256": "f078403bd2b8079fe201ba5eacea140232b1d17d08971cc6cc426332be3a1946",
+  "after_sha256": "c32eae63d17693dd853e547fd1564912cad3e3b8deacb4672530c2815169c81e",
+  "mutation": "    enemies_alive += children.size()",
+  "expected": "FAIL, not SCRIPT_ERROR",
+  "resources": "read-only junction inputs; no import command runs in this copy"
+}

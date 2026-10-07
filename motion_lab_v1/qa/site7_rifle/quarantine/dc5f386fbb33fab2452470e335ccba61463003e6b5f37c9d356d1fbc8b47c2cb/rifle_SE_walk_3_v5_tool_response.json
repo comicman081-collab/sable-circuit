@@ -1,0 +1,18 @@
+{
+  "tool": "image_gen.imagegen",
+  "returnedPath": "C:\\Users\\AAA\\.codex\\generated_images\\01a086a7-e4ef-7d23-99b9-7afc5fb60942\\exec-4f0f246e-3463-43a5-b136-e6cc7353e512.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a086a7-e4ef-7d23-99b9-7afc5fb60942 as C:\\Users\\AAA\\.codex\\generated_images\\01a086a7-e4ef-7d23-99b9-7afc5fb60942\\exec-4f0f246e-3463-43a5-b136-e6cc7353e512.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "art/site7_enemies_raw/rifle_SE_walk_3_v5.png",
+  "projectCopySHA256": "cc7e710589cfa3e4af189f371d7dec3ec3521d39d9059970d00720847f5ea0a8",
+  "prompt": "Use case: precise-object-edit / identity-preserve. Repair the FIRST image, a full-body SABLE CIRCUIT armored rifle trooper, for a consistent southeast walk-cycle frame. Keep its exact two-leg silhouette, leg positions and occlusion, pelvis, both boots, body proportions, camera, hood, arms, hands and shouldered short thick bullpup rifle. The FIRST image is the edit target. Do not pose it again from scratch.\n\nThe ONLY intended appearance change is the segmented silver knee/shin armor construction, using image TWO as the detail reference: ONE compact silver pentagonal knee cap with a red stripe, a smaller pointed silver articulated plate immediately below, a black joint gap, then a separate long plain SILVER shin plate without red stripe. The target's tall red rectangle above the foreground knee is not the proper knee-cap shape; replace the foreground knee armor with this exact compact two-piece construction and remove the red stripe on its long shin plate. The existing background leg stays largely occluded behind the foreground thigh exactly as in image ONE: do NOT expose another knee bulging to screen right; do NOT add another lower leg or change the crossing silhouette. Exactly TWO leg chains and TWO boots. Clothing change only, no leg re-pose.\n\nImage THREE is a pose-only sanity reference, confirming the already-correct two leg chains in image ONE. It is not an appearance or material reference. Retain image ONE's entire stable pose and image TWO's armor design. Preserve all unaffected identity details, proportions, lighting, scratched silver/black/dark-red materials, right-only thigh pistol holster and realistic game illustration fidelity. Keep the full character uncut on the same flat pure green chroma background, 1024x1536 or larger. No text, ground shadow, extra figure, transparency pattern, motion blur or firing effects.\n\nThis output is a new full image candidate to be visually re-reviewed; no hard-mask/pixel-immutable guarantee is claimed.",
+  "referenceOrder": [
+    "art/site7_enemies_raw/rifle_SE_walk_3_v3.png",
+    "reference/site7_rifle/SE_knee_caps_from_walk1.png",
+    "reference/ual_guides/SE_Walk_Loop_3.png"
+  ],
+  "slot": "SE/walk/3",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "handoffPacket": "qa/site7_rifle/handoffs/20260913_194542_060056.json"
+}

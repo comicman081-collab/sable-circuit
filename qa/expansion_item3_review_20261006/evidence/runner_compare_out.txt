@@ -1,0 +1,67 @@
+run 20261006_003832_quick: suite=quick head=d6094211 clean 494s overall=PASS guard={'changed': 0, 'removed': 0, 'added': 0}
+  tests: 56, not PASS: none
+  below an earlier PASS maximum: [('campaign_data', 292, 297)]
+  test                    checks   earlier  (max earlier PASS)
+  combat_density              67   67      
+  cover_navigation            43   43      
+  floor_segment               23   23      
+  combat_query_fastpath       34   34      
+  player_cover                 5   5       
+  cover_alpha_clip             5   5       
+  cover_texture               17   17      
+  battle_flow               None   None    
+  combat_entry              None   None    
+  drone_app                  171   171     
+  anchor_app                 271   271     
+  campaign_data              292   297       -5
+  upgrade_economy            225   225     
+  boss_registry              163   163     
+  boss_pattern               978   978     
+  boss_duel                 2184   2184    
+  boss_room_fairness          21   21      
+  robot_roster               302   302     
+  enemy_facing               224   224     
+  machine_source             436   436     
+  emission_owner            1293   1293    
+  m2_story                    27   27      
+  m9_skill                    44   44      
+  m10_base_ui                 10   10      
+  m10_persistence             27   27      
+  run_contract                34   34      
+  contract_offers          26950   26950   
+  contract_ui                484   484     
+  redline                     78   78      
+  contract_save              175   69        +106
+  intel_supply                83   None    
+  module_expansion            86   None    
+  weapon_expansion           122   None    
+  lab_geometry              3694   None    
+  m12_revive                  25   25      
+  play_log                    25   25      
+  hit_hurt_vfx                47   47      
+  combat_vfx                 195   189       +6
+  elite_affix                 71   71      
+  elite_expansion            438   438     
+  zone_hazard                366   366     
+  hazard_expansion           438   438     
+  firing_lane                325   325     
+  platform_carry               6   6       
+  contact_carry               27   27      
+  world_layout              None   None    
+  mood_light                None   None    
+  walk_registration         None   None    
+  plate_axis                   2   2       
+  variety_placement           10   10      
+  seam_waiver                 10   10      
+  mood_contact                13   13      
+  deploy_warmer               83   83      
+  m13_migration                9   9       
+  m13_campaign                16   16      
+  m13_runtime                 18   18      
+run 20261006_004731_custom: suite=custom head=d6094211 clean 42s overall=PASS guard={'changed': 0, 'removed': 0, 'added': 0}
+  tests: 3, not PASS: none
+  below an earlier PASS maximum: none
+  test                    checks   earlier  (max earlier PASS)
+  m10_intel                   39   39      
+  m13_loadout                 53   46        +7
+  campaign                   235   235     

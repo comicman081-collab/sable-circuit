@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-10-01T07:45:12.691394+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\art_src\\environments\\site7_v2\\_quarantine\\S10_R01\\S10_R01_HOLD_review_1920x1080.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 555556,
+      "sha256": "a987edd29bb85d1b0ceea71e2e87e75965c0669b8cd4840c5d87e04c8d6e296f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\art_src\\environments\\site7_v2\\_quarantine\\S10_R01\\attempt01\\S10_R01_attempt01_vs_S3_native_3840x1080.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        3840,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2292586,
+      "sha256": "a85011110eb7ed3f07e151b95a8d0ead88d5f6e6127bb24c562de5e08a72f36e"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\art_src\\environments\\site7_v2\\_quarantine\\S10_R01\\attempt02\\S10_R01_attempt02_vs_S3_native_3840x1080.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        3840,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2369022,
+      "sha256": "b225395c0490f9113419974a76b317dcda2828865aace9255e37466c318a51e1"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\art_src\\environments\\site7_v2\\_quarantine\\S10_R01\\attempt03\\S10_R01_attempt03_vs_S3_native_3840x1080.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        3840,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2270656,
+      "sha256": "f441d21e8ff9077f3f08607724a365d506c42f749474ead5ecde9e768a246a77"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\art_src\\environments\\site7_v2\\_quarantine\\S10_R01\\attempt01\\S10_R01_attempt01_floor_native_1920x1080.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1100814,
+      "sha256": "3947d37eabfba7068f16b88628b592a5b9ceb2bde8fa399ad128c4708ef20d52"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\art_src\\environments\\site7_v2\\_quarantine\\S10_R01\\attempt02\\S10_R01_attempt02_floor_native_1920x1080.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1178238,
+      "sha256": "b933da25e1e7668a758ffd57816cc39fd7add9bca99095cb78ddcf87de2f8a97"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\art_src\\environments\\site7_v2\\_quarantine\\S10_R01\\attempt03\\S10_R01_attempt03_floor_native_1920x1080.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1083434,
+      "sha256": "2c27919d748bed40325d4f5ccb9b12a8937f3b66748da60dacfe8de832ec44e1"
+    }
+  ]
+}

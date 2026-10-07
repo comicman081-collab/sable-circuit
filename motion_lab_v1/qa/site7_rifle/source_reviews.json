@@ -1,0 +1,390 @@
+[
+  {
+    "recordedAt": "2026-09-13T04:26:49.167484+00:00",
+    "slot": "E/walk/0",
+    "decision": "repair",
+    "reviewer": "Codex",
+    "notes": "Viewed actual source. Pose is opposite-leg contact as requested, but file is RGB with painted checkerboard, not actual alpha; source cannot be used. Preserve rejected bytes; green fallback is in progress.",
+    "sourceSHA256": "3b172e832cdf32f804cb4d69a2b16f96fe0fea31e426b3a192f248dc18b16ea6",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "art/site7_rifle/E_walk_0_master.png",
+      "sha256": "3b172e832cdf32f804cb4d69a2b16f96fe0fea31e426b3a192f248dc18b16ea6"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T07:28:01.866611+00:00",
+    "slot": "E/idle/0",
+    "decision": "approved",
+    "reviewer": "Codex main - observed native source review 2026-09-13",
+    "notes": "Observed dark hood, full mask, silver segmented armor with muted red trim and shoulder-held bullpup. The native light/dark composite has clean opaque machinery/fabric and genuinely separated edges; no visible green backdrop. This is source approval only, not motion/runtime approval.",
+    "sourceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "sourcePixelSHA256": "0162d00fa844d1b6e6ad9656b9fb8509dcfc7e063b3dbd7d0763f7ff8c974626",
+    "sourceReceiptSHA256": "fa69b4db50020e51448228b4106e25ef6f87d5d7e13196c458662b997092856a",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/stage1_enemies_20260913/rifle_idle/7deb2c01ea66_3203b573/full_1920x1080.png",
+      "sha256": "1406f7317e700827a4f4067b3a255b4a2a7047e9ac815217d763a0237cf5a50e"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T07:28:10.877123+00:00",
+    "slot": "E/walk/0",
+    "decision": "approved",
+    "reviewer": "Codex main - observed native source review 2026-09-13",
+    "notes": "Far unholstered left leg leads into contact; near holstered right leg trails. Connected waist/knees/boots, shoulder-held horizontal bullpup and masked hood identity retained. Source only; six-frame temporal limits and the actual cycle are reviewed separately.",
+    "sourceSHA256": "e10e98d4d9e3018b8e82cf34fbf6d5c2af4b1e9106444126f936537680f5b10e",
+    "sourcePixelSHA256": "2edd9f2cd8c744194f9551a37de1375663325331bccaa7fd99c41d8a07ef6bc8",
+    "sourceReceiptSHA256": "6f75a96da930aeb54c299a2d46ce87d5777d95e4f3a7c363203af8ddab7a22fa",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/stage1_enemies_20260913/rifle_e_annotation_review_v3/frame_0.png",
+      "sha256": "b68e5aed5c4c22270b100cdc8ab352dfd86019d64c26b0f605bce64295fa0545"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T07:28:19.202070+00:00",
+    "slot": "E/walk/1",
+    "decision": "approved",
+    "reviewer": "Codex main - observed native source review 2026-09-13",
+    "notes": "Near holstered right knee bends and its boot lifts behind; far unholstered left boot supports beneath the body. Original-scale tracing confirms the two separate chains, clean silhouette and same rifle. Source only; six-frame temporal limits and the actual cycle are reviewed separately.",
+    "sourceSHA256": "29834d6a27022e3362b3172c2f5da448c57df90b4465d76e2d9e3852510632e0",
+    "sourcePixelSHA256": "f91a6ba6d440d6b403617f68607450b4b0d567306c13cc11611653fcca95f29a",
+    "sourceReceiptSHA256": "49af045c7c89d776a25c5b2ac9f47eee3af09b704800b154510e94b0adeeb3a4",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/stage1_enemies_20260913/rifle_e_annotation_review_v3/frame_1.png",
+      "sha256": "f2af3743c8bb7236bf2f9518a663c8ab4b75449b09f48e4f996527e3b3aef128"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T07:28:27.829279+00:00",
+    "slot": "E/walk/2",
+    "decision": "approved",
+    "reviewer": "Codex main - observed native source review 2026-09-13",
+    "notes": "Near holstered right knee/boot pass ahead while far unholstered left foot supports. Gun remains shouldered, silhouette is complete and alpha edges are clean on the native review panel. Source only; six-frame temporal limits and the actual cycle are reviewed separately.",
+    "sourceSHA256": "92a1e1d1742798b42f8ec796edd331f71f8f80387ac8b6bdcabdd6f8364360cd",
+    "sourcePixelSHA256": "f660c413c35487f5f0631634b8d6d3a9c6920c75f161e75994e79dc40851212c",
+    "sourceReceiptSHA256": "1c7e03180416a47fbea15851fe44fae59a9b820e1f35d33ad29c9e8f7d7c358e",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/stage1_enemies_20260913/rifle_e_annotation_review_v3/frame_2.png",
+      "sha256": "b97b155033ef4290a988c6007b491bda55691d5a9e4ae19925f18bf559f99307"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T07:28:36.650957+00:00",
+    "slot": "E/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex main - observed native source review 2026-09-13",
+    "notes": "Near holstered right boot now leads into contact and far left leg trails; this is the opposite actual anatomical lead from frame0. Same armor/hood/weapon identity and connected body. Source only; six-frame temporal limits and the actual cycle are reviewed separately.",
+    "sourceSHA256": "3a0b16487aa4b7334f396598f230902529a38b880ddf43dca58272d5883299c8",
+    "sourcePixelSHA256": "b0c9964f2c618f73cfe96ca73a4e4f40711fb88f99f9d9bbaa9d238e37ec9fac",
+    "sourceReceiptSHA256": "91763eb6ef9adf8977ef67663d84319c57fc37b53e8bb4268832c75aaf0c00db",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/stage1_enemies_20260913/rifle_e_annotation_review_v3/frame_3.png",
+      "sha256": "cefab934547ed3727874b74adfcc346283938e15eb625b69bb870560036b9409"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T07:28:45.514463+00:00",
+    "slot": "E/walk/4",
+    "decision": "approved",
+    "reviewer": "Codex main - observed native source review 2026-09-13",
+    "notes": "Far unholstered left boot swings behind the planted near holstered right leg. Selected right figure from the retained pair, not the rejected left figure. Whole subject is unwarped and preserves the authored gun and armor. Source only; six-frame temporal limits and the actual cycle are reviewed separately.",
+    "sourceSHA256": "46276e65843a6fa80032139e785622ac67b6e10dbb3d9819a8690f95e1ed5755",
+    "sourcePixelSHA256": "1be74fd3d28eb51148d6eba8c250eedb00c00caf5fe23060cc81208eb752a44b",
+    "sourceReceiptSHA256": "50cb20deaeefc06f67b93e3dfcf75c0b226e1ebcadaf6338b8833eb6e2737931",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/stage1_enemies_20260913/rifle_e_annotation_review_v3/frame_4.png",
+      "sha256": "16ae3b01c026dc9e7ea395f3230da244c6bc189cf141786fa78791ad52d4b6c1"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T07:28:53.284083+00:00",
+    "slot": "E/walk/5",
+    "decision": "approved",
+    "reviewer": "Codex main - observed native source review 2026-09-13",
+    "notes": "Far left knee/boot pass forward; near holstered right boot stays the support. The earlier repeated-right-support pair was not reused for the opposite phase. Clean body/weapon connection and alpha observed. Source only; six-frame temporal limits and the actual cycle are reviewed separately.",
+    "sourceSHA256": "d9b98cb5d83f2b5929d8d5baf29d0e6f8db2c9f48fcb088317cca1ae4af29cca",
+    "sourcePixelSHA256": "6f0ae29a29b60735613c8e83ed2592753ddb26e44affce6fbb7d3a03ea7e43bc",
+    "sourceReceiptSHA256": "99a70eed6771a12a02e211a308c2577c248c8acb3e6e1165e975c291068735bd",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/stage1_enemies_20260913/rifle_e_annotation_review_v3/frame_5.png",
+      "sha256": "1543fb74c34bfd3ec83bd3ee07e06e56a77dd013928472a15f5e1e770ff77dbb"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T08:07:55.214969+00:00",
+    "slot": "SE/walk/0",
+    "decision": "approved",
+    "reviewer": "current main implementation agent",
+    "notes": "Viewed raw guide and identity, full source and native upper/lower light-dark panels. Front-right three-quarter view, rifle perspective points lower-right; black hood/visor, scratched silver dark-red armor and radio retained. Anatomical left unholstered leg leads; anatomical right holstered leg trails with raised heel; two complete connected legs. Stock shouldered, right grip and left support hand visible. Real keyed RGBA has no checkerboard/green at inspected hands, weapon, boots and cloth edges. Source-slot acceptance only; temporal gait and floor contacts require complete SE cycle observation.",
+    "sourceSHA256": "81f9195d21d7ac3624a16b7d8c0ad248f6cf7b46b015441085f0f467905bcb23",
+    "sourcePixelSHA256": "49094085708e5ddf72da613dc7af90fd8d4cd3a1ff27336f0d51c5bf69a437d5",
+    "sourceReceiptSHA256": "6b970a7c68a55778cec1e35209c163b01039856d7a606180567af33bdf3d6695",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/81f9195d21d7_8ad17e3b/native_lower_1920x1080.png",
+      "sha256": "24125414ab22eb7963e28d8bf6ae554752c802c8324cb1f74caf385b2213d81a"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T08:18:00.586100+00:00",
+    "slot": "SE/walk/1",
+    "decision": "approved",
+    "reviewer": "current main implementation agent",
+    "notes": "Observed guide, generated whole frame and native upper/lower panels on both mattes. Anatomical left unholstered leg supports under body; holstered right thigh leads into a knee folded backward and lifted boot, distinct from SE0 stretched contact. Two connected anatomical limbs, consistent black hood/mask, silver-red armor, radio, bullpup optic and hands. Entire boots and weapon remain inside source. No checkerboard or remaining green on inspected subject edges. Individual pose only; phase timing, actual support drift and pelvis motion remain subject to complete SE cycle review.",
+    "sourceSHA256": "e186478b036ecdcf630493d597472f44134bbc45786fbadac02f24dc6a3d1bd9",
+    "sourcePixelSHA256": "855740ddb476f6e7121d6f0ecb0018cadf6601be73fc2ffd7080476729796a94",
+    "sourceReceiptSHA256": "fc6768f96cfe63860d1962ff5a6e5e9d60fcf050c25a0c27cd4439de38349812",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/e186478b036e_3f539202/native_lower_1920x1080.png",
+      "sha256": "ab563728f52113c1a641a1eef6252b6ac91459c7fb79873983e34078f741cd95"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T08:27:03.468427+00:00",
+    "slot": "SE/walk/2",
+    "decision": "repair",
+    "reviewer": "current main implementation agent",
+    "notes": "Observed right-only holster connects to foreground leg whose shin extends down-forward and whose boot reads planted ahead. The unholstered left boot is raised behind. This reverses the requested left-support/right-forward-swing passing pose in SE_Walk_Loop_2 and would introduce an early support swap. REJECT pose, preserve original and derivatives; do not reinterpret prompt anatomy as observed anatomy.",
+    "sourceSHA256": "6a4a8e08bb8aedce33c84e2f9e5a813784fcbdf33473ccae76357f9dd5aa2fe4",
+    "sourcePixelSHA256": "97e572e48b995fdefe9fc96c0598eed5cb46817fbc855b34f7376035addc1687",
+    "sourceReceiptSHA256": "3188f3f228905a4d546db12c56a9adc33b84eea66120ff2ba8e2462a023547d3",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/6a4a8e08bb8a_3f539202/native_lower_1920x1080.png",
+      "sha256": "fbd0d9e0448aa3d3c764aee94d764a65ae8c7cc5f403ccbf1291d3c9de46646b"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T08:33:48.761971+00:00",
+    "slot": "SE/walk/2",
+    "decision": "approved",
+    "reviewer": "current main implementation agent",
+    "notes": "Observed original-scale upper/lower panels on light and dark. Foreground holstered RIGHT thigh leads to bent forward knee, shin returns down-left, boot lifted above the unholstered LEFT supporting boot. Left shin/boot visible behind; tight passing occlusion follows SE guide and differs from rejected v1 early right support. Hood, red/silver armor, radio, right-only holster, two-handed shouldered bullpup and clean alpha preserved. Source-pose approval only; compact boot overlap and temporal contact/slide must still be judged in the complete SE cycle, not from this static frame.",
+    "sourceSHA256": "3a7dc59adc9c0fedc9920fdcd1ae2740251e82075a333e6a7c6ec8f2592f980e",
+    "sourcePixelSHA256": "4352955a7c7ae04895dc39390c4ba19722035c6d88691a0536be3a7083f110f5",
+    "sourceReceiptSHA256": "0814f0ecb20c93b41fac4541b6656b1930d5d75f5628cfd5b5bb033e024bda95",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/3a7dc59adc9c_3f539202/native_lower_1920x1080.png",
+      "sha256": "d91a1df363b859b60c16441aa96131e1098f94ec1e2e4131da6925be9e598bb1"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T08:40:42.496987+00:00",
+    "slot": "SE/walk/3",
+    "decision": "repair",
+    "reviewer": "current main implementation agent",
+    "notes": "Observed native lower panel. Right holstered foreground leg reaches the front boot, but the left leg has an extra far-right knee/shin silhouette while a separate calf emerges toward the rear-left boot. I cannot trace one continuous left hip-knee-shin-boot chain compatible with the supplied guide. Reject ambiguous/branched leg geometry instead of approving two boots as proof of two connected legs. Next attempt removes the competing SE0 full-body posture reference and uses exact guide plus original identity only.",
+    "sourceSHA256": "9df8e882aa9ff1b074ab4a517a6b32f210c80408a94c9ee84507f2ed7cfc94be",
+    "sourcePixelSHA256": "845dd491dfd3ff57c294c11ff225c0f4b890fc5593c85308baebb5909ce05559",
+    "sourceReceiptSHA256": "74a0cad068b1f98e3842c59b779201b38f424e37e0f27baba9a8f1cf41643726",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/9df8e882aa9f_3f539202/native_lower_1920x1080.png",
+      "sha256": "59294ff80ac2a4fbf9950ab6aec077e6f7abe92eef37983dd1842913a6f85a21"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T08:49:16.946293+00:00",
+    "slot": "SE/walk/3",
+    "decision": "approved",
+    "reviewer": "current main implementation agent",
+    "notes": "Viewed actual new raw and native upper/lower light-dark panels. Exactly two leg chains: foreground right-only holster/thigh to one forward knee, shin and contacting right boot; occluded left thigh leads to one rear-left knee/calf and raised-heel left boot. The extra far-right knee/shin silhouette from user-rejected v1 is absent. No fused/third limb observed in either matte. Identity, hood, scratched silver/red armor, radio and two-hand shouldered bullpup maintained; muzzle holes/background cleanly keyed. Source-level replacement approval only, not user approval or complete-cycle/runtime approval; existing rejected bytes stay quarantined.",
+    "sourceSHA256": "a750392e7a26edb06f69cb5a4fd789302e96e2b7960e44f5bcc89d57dcb4cea5",
+    "sourcePixelSHA256": "2f46088db38b726d07dea3fd43c6421fe008548041b534c312dc9d983116ede3",
+    "sourceReceiptSHA256": "10056fd0f7e61de0c84bfd02ae5871ebb479080a915f43225d6aa491192479e3",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/a750392e7a26_3f539202/native_lower_1920x1080.png",
+      "sha256": "efe50d70821474a840528b8355cd3d825361121833ee983eecbcd6f789a148c5"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T08:59:57.728919+00:00",
+    "slot": "SE/walk/4",
+    "decision": "approved",
+    "reviewer": "current main implementation agent",
+    "notes": "Viewed native upper/lower on both light/dark and actual guide. Foreground holstered right thigh continues into one flexed knee, shin and supporting boot. Left thigh/knee are occluded behind this chain; one left calf folds back almost horizontally to the raised rear boot. No extra far-right knee/shin or third branch. Same hood, silver/red armor, shouldered two-hand rifle and right-only holster. Alpha clean including muzzle/trigger gaps. Source-pose approval only: stable upper-body scale, contact displacement and all temporal transitions still require complete SE cycle review.",
+    "sourceSHA256": "a062e70908d8ac200ea55af5acec879639de9b2d28f3b75b03b9fdc4686db512",
+    "sourcePixelSHA256": "fbbf1071a0995864fc03c221a9605c4d542f5177c98cd052450ae61d29ba635a",
+    "sourceReceiptSHA256": "4de69a475299e64d58fac49f71abbcea8ae9a1e1720a6e771959fb87fd7368fd",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/a062e70908d8_3f539202/native_lower_1920x1080.png",
+      "sha256": "f406ef670b7b8c986cfdc959cfd11b03caa1b177f156d607cb49fb473e7f8bd9"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T09:06:51.319522+00:00",
+    "slot": "SE/walk/5",
+    "decision": "approved",
+    "reviewer": "current main implementation agent",
+    "notes": "Viewed raw plus native upper/lower on both mattes against SE5 guide. Holstered anatomical right leg is supporting: vertical thigh, knee, down-left shin and planted boot. Unholstered left thigh leads diagonally screen right to flexed knee, shin returns down-left and boot is lifted clear ahead. Distinct two continuous chains, no extra knee/shin branch, both boots readable. Hood/visor, scratched silver-red armor, radio and shouldered two-hand bullpup preserved, no green edge remnant in inspected pixels. Source only; actual six-frame body/gun continuity and foot sliding remain complete-cycle review work.",
+    "sourceSHA256": "e3cc18e5eab411e8dc1d7c62f8f94a62be7d7edcf6c55ea647d99dac0b1b67d5",
+    "sourcePixelSHA256": "7135278d6fda846a05350024357ca1592998d45094e1cc9ed986fec2e80944e1",
+    "sourceReceiptSHA256": "dc83031f3557d3724aa085dce4d3660ed19c65d70c7e87ed124857d7f18f0f8a",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/e3cc18e5eab4_3f539202/native_lower_1920x1080.png",
+      "sha256": "d702a25058fd2dbf86076ffbdd95ce767ee04e4f66b1a713ce9aab69fb055be4"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T09:20:37.656689+00:00",
+    "slot": "SE/idle/0",
+    "decision": "approved",
+    "reviewer": "Codex-main",
+    "notes": "Observed actual native upper and lower 1920x1080 panels on light and dark backgrounds. Exactly two continuous leg chains: foreground right-only holstered thigh connects to the nearer knee, shin and boot; unholstered left thigh connects to the farther knee, shin and separate boot. Both soles are down in a mildly staggered planted stance; no duplicate knee/shin or detached foot. Hood, visor, silver-red armor, backpack and two-hand shouldered rifle remain readable; no large matte residue or broken outer edges. Single stopped source only: temporal idle-to-walk continuity, facing calibration and app integration are not approved.",
+    "sourceSHA256": "3d47bec7e002d2a90b04c21abc2d1453afb51b2532a168054597f526aa07f96d",
+    "sourcePixelSHA256": "0df2ee69d96f173f8ea40741e04fce5965c913e0fe164f3706220465571db9a5",
+    "sourceReceiptSHA256": "801333ca95a2489685040e0a0a3f72237b29cabab0eb5e5714d442739d4281ed",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/3d47bec7e002_3f539202/native_lower_1920x1080.png",
+      "sha256": "a17ea71201d3b87f1a21308b0a0da9f4940272e7bd31012d33d2e306f5e77b51"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T10:00:49.737501+00:00",
+    "slot": "SE/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra-main-observed",
+    "notes": "Inspected native upper and lower light/dark panels. Exactly two continuous visible chains: right holstered foreground thigh/knee/shin to forward boot; occluded left thigh into one trailing calf and boot. No third knee/shin/boot. Hood/visor, silver-red armor, backpack and both glove grips retained. Upper/gun now uses the same foreshortened thick fore-end view as SE1 rather than prior thin side profile. Keyed edges and silhouette gaps are clean over both mattes. Source-only acceptance; SE4/5 remain cycle-rejected and temporal/contact/weapon continuity must be re-observed in a fresh complete six-frame cycle. Not runtime approval.",
+    "sourceSHA256": "818568119a629197c56aedffb41d2bdc0d6a04871b64b80994f201ca72fe14ff",
+    "sourcePixelSHA256": "526f44030967c4c67d9b6d95df4848f71701a4c35a45993d5620724bc3e6f5a3",
+    "sourceReceiptSHA256": "8dfde75a5ade49e65b17a51a0d4e943afc3c8fa7b51a3bafa5f714f537d9757a",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/818568119a62_3f539202/native_lower_1920x1080.png",
+      "sha256": "bec68d67dc81aacea401241e38a266ac1c17d14950f32e9f45542c842cf14385"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T10:07:40.659748+00:00",
+    "slot": "SE/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra-main-observed",
+    "notes": "Observed native upper/lower panels on both mattes. Right holstered foreground thigh connects through one flexed knee and supporting shin to one boot. Left thigh runs behind it to one bent rear knee/calf and one lifted trailing boot: two chains, no third shin. Hood, masked visor, silver armor, right-only holster, two-handed short thick rifle projection retained. No green backdrop or edge halos on displayed mattes. Source anatomy/alpha acceptance only: cross-frame armor markings, weapon/torso continuity and actual planted-foot motion remain subject to fresh complete-cycle observation. SE5 remains cycle-rejected. No whole-cycle or runtime approval.",
+    "sourceSHA256": "dee503427137561a35474a1648aba211694476c2acf544e8ad8878201a29c8f4",
+    "sourcePixelSHA256": "8b125949d1a0be3b064af9de5953488ef04aaacef3b2ef1b744817692d9018a0",
+    "sourceReceiptSHA256": "195fe85f9b2dd59dddba8d430f1bc7ee11249a62d45ba503fabec249408caaa0",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/dee503427137_3f539202/native_lower_1920x1080.png",
+      "sha256": "548be7b3c736c2ac82ee4fa0e86d2b4c108a724922befcf099212a3131a4da29"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T10:17:48.958734+00:00",
+    "slot": "SE/walk/5",
+    "decision": "repair",
+    "reviewer": "Astra-main-observed",
+    "notes": "Native lower light/dark panels show exactly two connected leg chains and the intended left passing pose, but the supporting right knee loses its silver/red armored cap and becomes a bare black pad; the lifted knee also has a shortened shifted metal cap. Compared with current contact/down artwork this causes equipment-panel flicker, so this source is rejected for costume continuity, not extra-leg anatomy. Preserve source/provenance; redraw phase5 using explicit native knee/shin costume reference while keeping the proven upper view.",
+    "sourceSHA256": "a54f05dc1037779cad2ff18d75004fdbba67a329a9b283bca2f82756e939fa17",
+    "sourcePixelSHA256": "b6d7a0885a4903b9e46afdd16376f3e28cd1a5d531cb870fd0b62b521f735483",
+    "sourceReceiptSHA256": "43ef569cbabde2f3b1b95559b74f4875fb00c2bfd04296bde8b7c42b0e78a994",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/a54f05dc1037_3f539202/native_lower_1920x1080.png",
+      "sha256": "fbb70f92e1a8a3124609f5bde4a4309b4d0a6f80a514f448fd70ef7c78a4c272"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T10:27:00.635510+00:00",
+    "slot": "SE/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra-main-observed",
+    "notes": "Observed native upper/lower light/dark panels. Both actual knee centers now retain the large silver cap with dark-red marking and articulated plate below, replacing the rejected exposed black pads. Right holstered supporting leg runs down-left to planted boot; left unholstered thigh/knee lifts forward to screen right and one raised boot. Exactly two chains, no third knee/shin/boot. Hood and short thick shouldered rifle view retained. Alpha gaps/edges are clean on both mattes. Source-only approval; full six-frame body/armor/weapon continuity and foot exchange/sliding require a new temporal cycle review before expansion or runtime connection.",
+    "sourceSHA256": "17ae79dbeba283c35809ad84181dd2dbfbc62ceb0b6f8ec49a6e98bd35c06989",
+    "sourcePixelSHA256": "67caa2c225ba4bd95403c67059f17502ae70eac9527e0d5ad51b4f3dd089feff",
+    "sourceReceiptSHA256": "b56087441229af65205d64bcefb85e100f4d67306305f7932f198bab6c721e6e",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/17ae79dbeba2_3f539202/native_lower_1920x1080.png",
+      "sha256": "af8174f3291f622daf3cd979cafb55b04436fc2247cf5533b7723bf1786d7e7f"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T10:45:18.145403+00:00",
+    "slot": "SE/walk/3",
+    "decision": "repair",
+    "reviewer": "Codex main native light/dark lower-body inspection 2026-09-13",
+    "notes": "Metal knee design is restored but rear limb is ambiguous: a second bent knee protrudes at screen right while a crossing calf exits at screen left behind the foreground shin. Cannot trace that knee-to-ankle path confidently from visible occlusion, and it resembles the user-rejected extra-knee branch. Do not infer correctness from two boots or the prompt. Retain this candidate in quarantine. Next attempt should edit the previously unambiguous two-chain SE3v3 pose as the main target with only the segmented knee design as appearance reference; no claimed hard-mask preservation.",
+    "sourceSHA256": "bacd247942bf69a8790c52a2df6531ebee86b3d4c6a8d6024d5e7dc03d16a635",
+    "sourcePixelSHA256": "5b06d6e4bb72bfad4beefffc933bd4925dc7923387acf1437c33eae4e4cdab53",
+    "sourceReceiptSHA256": "f0e6da7e097a3690b9ddabcfd4a0a65bd49c855f5462a352e6775b0675136bd1",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/bacd247942bf_3f539202/native_lower_1920x1080.png",
+      "sha256": "8079843abdb84d882d080f0258e75a462c9c20fc78fa429e494a606b85eb868e"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T10:56:13.553318+00:00",
+    "slot": "SE/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex main native upper/lower light and dark panel review 2026-09-13",
+    "notes": "Source-only review: direct edit of the clear v3 pose retains right holster-thigh-to-knee-to-front-boot chain and one occluded rear left leg ending in its trailing boot. No extra exposed rear knee branch as in v4. Foreground knee now has silver/red pentagonal cap plus separate small below-knee plate; long shin is plain silver, no erroneous red stripe. Hood, two-hand shouldered short foreshortened rifle and proportions remain consistent with edit target. Clean alpha edges over both mattes; no green rectangle. Fresh whole-cycle review still required, especially cross-frame thigh plate detail and 2-to3 transition. Not app or user approval.",
+    "sourceSHA256": "dc5f386fbb33fab2452470e335ccba61463003e6b5f37c9d356d1fbc8b47c2cb",
+    "sourcePixelSHA256": "9ed9ae3ba806ae8b66e214d470422c357f7b998e03ecc1b636eed1436b5f4060",
+    "sourceReceiptSHA256": "e21a9c780dac6134c7d3bd0b43c6aeb953a3c394fd61205ecc4dbca8e2e57ec9",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/dc5f386fbb33_3f539202/native_lower_1920x1080.png",
+      "sha256": "cda3e5f3421c66eb096bf1b08c84e7762e3b0be9a02a268aa9b4a364912b3669"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T11:08:28.488302+00:00",
+    "slot": "SE/walk/4",
+    "decision": "approved",
+    "reviewer": "Codex main actual native upper/lower matte review 2026-09-13",
+    "notes": "Native upper and lower panels on light/dark backgrounds actually inspected. Foreground holstered right thigh connects to one supporting knee, shin and boot; the other knee is partly occluded behind it and its bent calf reaches the single lifted rear boot. No third limb chain. Compact silver/red cap, small pointed articulated plate and separate plain silver shin restored; rear calf red stripe removed. Shouldered short thick rifle, attached hands, hood and torso remain coherent. Clean keyed edges at native crop scale. Source-only approval; six-frame costume continuity, gait and loop remain unapproved until fresh cycle observation; no app promotion.",
+    "sourceSHA256": "1a7b133d11a6d6ca628eed239233c6effd5d6a9c003c26ba701343f5c6b9aacc",
+    "sourcePixelSHA256": "d26a40a074e8396e080f1a56b6f71427298b5d2e3709b410201e83f74261f5fe",
+    "sourceReceiptSHA256": "4233ca905b1f8b069b78ed5fcc74e69b92daae02c22b9a51b1b3af093f62098d",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/1a7b133d11a6_3f539202/native_lower_1920x1080.png",
+      "sha256": "d2b319f1b6eb4e828e69fbcf47393113deb3ac6acfa5f2e73e4c7df4bbee9e5b"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T11:20:27.651600+00:00",
+    "slot": "SE/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex main actual native matte observation 2026-09-13",
+    "notes": "Native upper/lower light and dark composites actually viewed. The noncanonical red thigh stripe is removed while correct red knee cap and articulated lower plate remain. Same two connected leg silhouettes, foreground supporting boot and rear trailing boot, same holster and shouldered thick bullpup with attached hands. No background green remains in inspected keyed edge regions. This approves only the edited source slot; new full six-frame cycle and normal1x observation still required, no runtime promotion.",
+    "sourceSHA256": "bfa49762a99176c7dac1c218ccf2974b4d7b882e7e216cfbaae74a816343af08",
+    "sourcePixelSHA256": "f8fcbf73bfe46cda3cacd77e4e6233b7c8c63828b93cbba4b3787f2166f4ea5f",
+    "sourceReceiptSHA256": "a2eb79df2382ca5f4ce126fa8047613af174f2cee08528f12c351cadaa852e18",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/bfa49762a991_3f539202/native_lower_1920x1080.png",
+      "sha256": "59ea1900fca61a5a5e4e89c00969706627c15d84d89b729a5bd6077bb12a2482"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T12:17:06.471653+00:00",
+    "slot": "S/walk/0",
+    "decision": "repair",
+    "reviewer": "Codex main observed native light/dark panels",
+    "notes": "Observed native upper/lower panels: two continuous leg chains and right-side holster, but rifle is carried muzzle-down along chest toward thigh; it is not shouldered forward toward S. Green RGB master and keyed derivative violate latest user requirement for native RGBA alpha 0..254. Preserve both Luna attempts; no source approval.",
+    "sourceSHA256": "0fc275ec6958d633f45f29e0f8a79049fa4c0bcd995bb252a7725297dbb376ac",
+    "sourcePixelSHA256": "233a6f378a6a1ccf3483e5cab9e7c44a0707c8f831ceed49695d8cebf769b211",
+    "sourceReceiptSHA256": "ed2f9a65b9fb8db9bdcef19e0e435e7d63268f694bfa5ad3954ecb1e213d12a9",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "evidence": {
+      "path": "qa/site7_rifle/source_panels/0fc275ec6958_3f539202/native_upper_1920x1080.png",
+      "sha256": "ce18b5c8ea1f5f10c0181a98cc5160a5dad1a06107f07c1590eee442064913e4"
+    }
+  }
+]

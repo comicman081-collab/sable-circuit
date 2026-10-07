@@ -1,0 +1,146 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_C07/attempt03/S9_C07_GAME.png",
+  "luma": 0.19991964101791382,
+  "p10": 0.14145492017269135,
+  "p90": 0.24111373722553253,
+  "saturation": 0.07481103655660354,
+  "hue": 144.8845224746826,
+  "axis": 30.102791402761426,
+  "problems": [
+    "image_right connector apron saturation 0.109283 exceeds .10"
+  ],
+  "plate": "S9_C07",
+  "attempt": 3,
+  "native_size": [
+    1254,
+    1254
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      0,
+      57
+    ],
+    [
+      1254,
+      780
+    ],
+    [
+      1254,
+      1107
+    ],
+    [
+      0,
+      376
+    ]
+  ],
+  "doors_px": {},
+  "raw_sha256": "f0036b1940074e592515e9bc1b807870f83b8ab3ff43eca3525d758addc9e3b9",
+  "master_sha256": "f0036b1940074e592515e9bc1b807870f83b8ab3ff43eca3525d758addc9e3b9",
+  "game_sha256": "71b95d61c89ca7059281d9474b89eb5ce06792935db469aee70cd0c9a57a7ed0",
+  "game_exposure_factor_srgb": 0.7281,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-e84b19fa-3e67-42a4-9e05-bc361dd80a22.png",
+  "inspection": "Actual native painted wall-base/outer floor lip; no standard-outline substitution. Offset low reader-console groups and horizontal repair cradle with uneven plain wall spans, no cylinders/grilles or S3 layouts. Violet/magenta practical wall lamps, clear neutral floor, no end doors.",
+  "floor_area_px2": 405042.0,
+  "floor_area_fraction": 0.25757575757575757,
+  "floor_bounds_px": [
+    0,
+    57,
+    1254,
+    1107
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1254,
+      1254
+    ],
+    "actual_size": [
+      1254,
+      1254
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "axis_acceptance": {
+    "minimum_deg": 22.5,
+    "maximum_deg": 32.5,
+    "source": "2026-10-01 explicit user decision; production audit/tool update owned by Claude"
+  },
+  "historical_tool_axis_problems": [],
+  "end_widths_px": [
+    319,
+    327
+  ],
+  "width_sections_px": [
+    [
+      0,
+      57,
+      376
+    ],
+    [
+      627,
+      419,
+      742
+    ],
+    [
+      1254,
+      780,
+      1107
+    ]
+  ],
+  "vertical_widths_px": [
+    319,
+    323,
+    327
+  ],
+  "width_measurement": "Vertical sections between actual wall base and outer painted deck lip; clipped image-corner fragments are not full cross-sections.",
+  "width_acceptance": {
+    "minimum_px": 220,
+    "prompt_target_px": 260,
+    "source": "2026-10-01 explicit user decision; branch +/-15% additionally retained"
+  },
+  "connector_apron_end_stats": [
+    {
+      "end": "image_left",
+      "luma": 0.23190425336360931,
+      "saturation": 0.09702058037255708,
+      "hue": 145.53979198490163,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    },
+    {
+      "end": "image_right",
+      "luma": 0.2199748456478119,
+      "saturation": 0.10928251949185189,
+      "hue": 145.34858168940875,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    }
+  ],
+  "preintegration_end_comparison": [
+    {
+      "end": "image_left",
+      "room": "S9_R03",
+      "door": "SE",
+      "deck_luma": 0.21684208512306213,
+      "deck_saturation": 0.08085734887033784,
+      "room_apron_luma": 0.21876537799835205,
+      "room_apron_saturation": 0.08465354552594435,
+      "step": 0.01166819460815786,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    },
+    {
+      "end": "image_right",
+      "room": "S9_O02",
+      "door": "NW",
+      "deck_luma": 0.20244595408439636,
+      "deck_saturation": 0.09198841910599792,
+      "room_apron_luma": 0.2249520868062973,
+      "room_apron_saturation": 0.06266677769295985,
+      "step": 0.1390447237723576,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    }
+  ]
+}

@@ -1,0 +1,1222 @@
+{
+ "suites": {
+  "head_full": {
+   "run": "20260925_212217_full",
+   "git_head": "95efd37ad0",
+   "git_dirty": 3,
+   "overall": "FAIL",
+   "seconds": 1775,
+   "guard": {
+    "changed": [],
+    "removed": [],
+    "added": []
+   },
+   "tests": {
+    "combat_density": {
+     "status": "PASS",
+     "checks": 37,
+     "seconds": 19.8
+    },
+    "cover_navigation": {
+     "status": "PASS",
+     "checks": 15,
+     "seconds": 1.0
+    },
+    "floor_segment": {
+     "status": "PASS",
+     "checks": 13,
+     "seconds": 30.1
+    },
+    "player_cover": {
+     "status": "PASS",
+     "checks": 5,
+     "seconds": 7.2
+    },
+    "cover_alpha_clip": {
+     "status": "PASS",
+     "checks": 5,
+     "seconds": 1.6
+    },
+    "cover_texture": {
+     "status": "PASS",
+     "checks": 17,
+     "seconds": 2.6
+    },
+    "battle_flow": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 12.0
+    },
+    "combat_entry": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 6.8
+    },
+    "drone_app": {
+     "status": "PASS",
+     "checks": 171,
+     "seconds": 2.4
+    },
+    "anchor_app": {
+     "status": "PASS",
+     "checks": 271,
+     "seconds": 1.6
+    },
+    "enemy_facing": {
+     "status": "PASS",
+     "checks": 224,
+     "seconds": 2.6
+    },
+    "machine_source": {
+     "status": "PASS",
+     "checks": 436,
+     "seconds": 2.4
+    },
+    "emission_owner": {
+     "status": "PASS",
+     "checks": 870,
+     "seconds": 6.6
+    },
+    "m2_story": {
+     "status": "PASS",
+     "checks": 27,
+     "seconds": 5.4
+    },
+    "m9_skill": {
+     "status": "PASS",
+     "checks": 44,
+     "seconds": 5.0
+    },
+    "m10_base_ui": {
+     "status": "PASS",
+     "checks": 10,
+     "seconds": 0.6
+    },
+    "m10_persistence": {
+     "status": "PASS",
+     "checks": 27,
+     "seconds": 0.4
+    },
+    "m12_revive": {
+     "status": "PASS",
+     "checks": 25,
+     "seconds": 5.0
+    },
+    "play_log": {
+     "status": "PASS",
+     "checks": 23,
+     "seconds": 7.8
+    },
+    "hit_hurt_vfx": {
+     "status": "PASS",
+     "checks": 47,
+     "seconds": 2.4
+    },
+    "elite_affix": {
+     "status": "PASS",
+     "checks": 43,
+     "seconds": 6.2
+    },
+    "zone_hazard": {
+     "status": "PASS",
+     "checks": 115,
+     "seconds": 25.8
+    },
+    "contact_carry": {
+     "status": "FAIL",
+     "checks": 27,
+     "seconds": 14.8
+    },
+    "m13_migration": {
+     "status": "PASS",
+     "checks": 9,
+     "seconds": 0.6
+    },
+    "m13_campaign": {
+     "status": "PASS",
+     "checks": 16,
+     "seconds": 0.4
+    },
+    "m13_runtime": {
+     "status": "PASS",
+     "checks": 18,
+     "seconds": 4.6
+    },
+    "full_op_01": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 124.0
+    },
+    "full_op_02": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 119.7
+    },
+    "full_op_03": {
+     "status": "FAIL",
+     "checks": null,
+     "seconds": 126.0
+    },
+    "full_op_04": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 138.5
+    },
+    "full_op_05": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 130.8
+    },
+    "traversal_audit": {
+     "status": "PASS",
+     "checks": 1253,
+     "seconds": 490.1
+    },
+    "enemy_cover_nav": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 58.9
+    },
+    "cover_ai": {
+     "status": "PASS",
+     "checks": 46,
+     "seconds": 38.5
+    },
+    "world_route": {
+     "status": "PASS",
+     "checks": 49,
+     "seconds": 16.3
+    },
+    "combat_sfx": {
+     "status": "PASS",
+     "checks": 558,
+     "seconds": 6.0
+    },
+    "demo_integration": {
+     "status": "PASS",
+     "checks": 26,
+     "seconds": 9.6
+    },
+    "m7_visual": {
+     "status": "PASS",
+     "checks": 84,
+     "seconds": 5.6
+    },
+    "m10_intel": {
+     "status": "PASS",
+     "checks": 39,
+     "seconds": 5.2
+    },
+    "m13_loadout": {
+     "status": "PASS",
+     "checks": 46,
+     "seconds": 5.2
+    },
+    "campaign": {
+     "status": "PASS",
+     "checks": 94,
+     "seconds": 18.0
+    },
+    "rook_app": {
+     "status": "PASS",
+     "checks": 1895,
+     "seconds": 97.8
+    },
+    "motion_lab_runtime": {
+     "status": "PASS",
+     "checks": 98,
+     "seconds": 11.8
+    },
+    "motion_lab_python": {
+     "status": "PASS",
+     "checks": 137,
+     "seconds": 187.9
+    },
+    "motion_lab_js": {
+     "status": "PASS",
+     "checks": 30,
+     "seconds": 0.4
+    }
+   }
+  },
+  "fix_full": {
+   "run": "20260925_205139_full",
+   "git_head": "95efd37ad0",
+   "git_dirty": 6,
+   "overall": "PASS",
+   "seconds": 1832,
+   "guard": {
+    "changed": [],
+    "removed": [],
+    "added": []
+   },
+   "tests": {
+    "combat_density": {
+     "status": "PASS",
+     "checks": 37,
+     "seconds": 19.4
+    },
+    "cover_navigation": {
+     "status": "PASS",
+     "checks": 15,
+     "seconds": 1.0
+    },
+    "floor_segment": {
+     "status": "PASS",
+     "checks": 13,
+     "seconds": 28.2
+    },
+    "player_cover": {
+     "status": "PASS",
+     "checks": 5,
+     "seconds": 7.2
+    },
+    "cover_alpha_clip": {
+     "status": "PASS",
+     "checks": 5,
+     "seconds": 1.0
+    },
+    "cover_texture": {
+     "status": "PASS",
+     "checks": 17,
+     "seconds": 1.8
+    },
+    "battle_flow": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 11.6
+    },
+    "combat_entry": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 7.0
+    },
+    "drone_app": {
+     "status": "PASS",
+     "checks": 171,
+     "seconds": 2.0
+    },
+    "anchor_app": {
+     "status": "PASS",
+     "checks": 271,
+     "seconds": 1.4
+    },
+    "enemy_facing": {
+     "status": "PASS",
+     "checks": 224,
+     "seconds": 2.6
+    },
+    "machine_source": {
+     "status": "PASS",
+     "checks": 436,
+     "seconds": 2.0
+    },
+    "emission_owner": {
+     "status": "PASS",
+     "checks": 870,
+     "seconds": 6.2
+    },
+    "m2_story": {
+     "status": "PASS",
+     "checks": 27,
+     "seconds": 5.2
+    },
+    "m9_skill": {
+     "status": "PASS",
+     "checks": 44,
+     "seconds": 6.2
+    },
+    "m10_base_ui": {
+     "status": "PASS",
+     "checks": 10,
+     "seconds": 1.2
+    },
+    "m10_persistence": {
+     "status": "PASS",
+     "checks": 27,
+     "seconds": 0.8
+    },
+    "m12_revive": {
+     "status": "PASS",
+     "checks": 25,
+     "seconds": 8.9
+    },
+    "play_log": {
+     "status": "PASS",
+     "checks": 23,
+     "seconds": 9.9
+    },
+    "hit_hurt_vfx": {
+     "status": "PASS",
+     "checks": 47,
+     "seconds": 2.4
+    },
+    "elite_affix": {
+     "status": "PASS",
+     "checks": 43,
+     "seconds": 5.4
+    },
+    "zone_hazard": {
+     "status": "PASS",
+     "checks": 115,
+     "seconds": 25.0
+    },
+    "contact_carry": {
+     "status": "PASS",
+     "checks": 27,
+     "seconds": 15.0
+    },
+    "m13_migration": {
+     "status": "PASS",
+     "checks": 9,
+     "seconds": 0.6
+    },
+    "m13_campaign": {
+     "status": "PASS",
+     "checks": 16,
+     "seconds": 0.4
+    },
+    "m13_runtime": {
+     "status": "PASS",
+     "checks": 18,
+     "seconds": 4.6
+    },
+    "full_op_01": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 128.8
+    },
+    "full_op_02": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 133.9
+    },
+    "full_op_03": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 147.2
+    },
+    "full_op_04": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 133.8
+    },
+    "full_op_05": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 130.6
+    },
+    "traversal_audit": {
+     "status": "PASS",
+     "checks": 1253,
+     "seconds": 488.2
+    },
+    "enemy_cover_nav": {
+     "status": "PASS",
+     "checks": null,
+     "seconds": 57.3
+    },
+    "cover_ai": {
+     "status": "PASS",
+     "checks": 46,
+     "seconds": 38.9
+    },
+    "world_route": {
+     "status": "PASS",
+     "checks": 49,
+     "seconds": 14.0
+    },
+    "combat_sfx": {
+     "status": "PASS",
+     "checks": 558,
+     "seconds": 5.4
+    },
+    "demo_integration": {
+     "status": "PASS",
+     "checks": 26,
+     "seconds": 8.6
+    },
+    "m7_visual": {
+     "status": "PASS",
+     "checks": 84,
+     "seconds": 5.0
+    },
+    "m10_intel": {
+     "status": "PASS",
+     "checks": 39,
+     "seconds": 4.8
+    },
+    "m13_loadout": {
+     "status": "PASS",
+     "checks": 46,
+     "seconds": 4.6
+    },
+    "campaign": {
+     "status": "PASS",
+     "checks": 94,
+     "seconds": 16.4
+    },
+    "rook_app": {
+     "status": "PASS",
+     "checks": 1895,
+     "seconds": 98.4
+    },
+    "motion_lab_runtime": {
+     "status": "PASS",
+     "checks": 98,
+     "seconds": 11.8
+    },
+    "motion_lab_python": {
+     "status": "PASS",
+     "checks": 137,
+     "seconds": 219.4
+    },
+    "motion_lab_js": {
+     "status": "PASS",
+     "checks": 30,
+     "seconds": 0.4
+    }
+   }
+  }
+ },
+ "playthroughs": {
+  "MIS_CH01_01": {
+   "head_full": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 119.4,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 320.6,
+    "attacks": 61,
+    "shots": 68,
+    "cover_flank_plans": 64,
+    "skill_casts": 15,
+    "last_trace_tick": 6600
+   },
+   "fix_full": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 124.6,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 398.7,
+    "attacks": 70,
+    "shots": 77,
+    "cover_flank_plans": 35,
+    "skill_casts": 15,
+    "last_trace_tick": 7200
+   },
+   "head_census": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 122.0,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 281.1,
+    "attacks": 67,
+    "shots": 73,
+    "cover_flank_plans": 46,
+    "skill_casts": 15,
+    "last_trace_tick": 6600
+   }
+  },
+  "MIS_CH01_02": {
+   "head_full": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 114.0,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 321.9,
+    "attacks": 51,
+    "shots": 60,
+    "cover_flank_plans": 47,
+    "skill_casts": 15,
+    "last_trace_tick": 6600
+   },
+   "fix_full": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 128.7,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 449.7,
+    "attacks": 63,
+    "shots": 78,
+    "cover_flank_plans": 31,
+    "skill_casts": 15,
+    "last_trace_tick": 7200
+   },
+   "head_census": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 128.3,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 386.3,
+    "attacks": 51,
+    "shots": 65,
+    "cover_flank_plans": 31,
+    "skill_casts": 14,
+    "last_trace_tick": 7200
+   }
+  },
+  "MIS_CH01_03": {
+   "head_full": {
+    "status": "FAIL",
+    "outcome": "WIPED",
+    "elapsed_s": 120.7,
+    "hostiles_defeated": 18,
+    "squad_damage_taken": 456.2,
+    "attacks": 57,
+    "shots": 64,
+    "cover_flank_plans": 44,
+    "skill_casts": 18,
+    "last_trace_tick": 6600
+   },
+   "fix_full": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 142.4,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 439.1,
+    "attacks": 63,
+    "shots": 70,
+    "cover_flank_plans": 45,
+    "skill_casts": 19,
+    "last_trace_tick": 7800
+   },
+   "head_census": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 132.2,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 373.4,
+    "attacks": 58,
+    "shots": 68,
+    "cover_flank_plans": 36,
+    "skill_casts": 18,
+    "last_trace_tick": 7200
+   }
+  },
+  "MIS_CH01_04": {
+   "head_full": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 131.6,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 319.9,
+    "attacks": 66,
+    "shots": 77,
+    "cover_flank_plans": 40,
+    "skill_casts": 17,
+    "last_trace_tick": 7200
+   },
+   "fix_full": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 127.9,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 384.6,
+    "attacks": 68,
+    "shots": 71,
+    "cover_flank_plans": 53,
+    "skill_casts": 19,
+    "last_trace_tick": 7200
+   },
+   "head_census": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 129.5,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 350.7,
+    "attacks": 67,
+    "shots": 71,
+    "cover_flank_plans": 45,
+    "skill_casts": 20,
+    "last_trace_tick": 7200
+   }
+  },
+  "MIS_CH01_05": {
+   "head_full": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 124.2,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 392.4,
+    "attacks": 67,
+    "shots": 70,
+    "cover_flank_plans": 94,
+    "skill_casts": 18,
+    "last_trace_tick": 6600
+   },
+   "fix_full": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 124.3,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 365.3,
+    "attacks": 66,
+    "shots": 68,
+    "cover_flank_plans": 66,
+    "skill_casts": 21,
+    "last_trace_tick": 7200
+   },
+   "head_census": {
+    "status": "PASS_TECHNICAL_PLAYTHROUGH",
+    "outcome": "EXTRACTED",
+    "elapsed_s": 133.8,
+    "hostiles_defeated": 21,
+    "squad_damage_taken": 399.0,
+    "attacks": 69,
+    "shots": 75,
+    "cover_flank_plans": 82,
+    "skill_casts": 19,
+    "last_trace_tick": 7200
+   }
+  }
+ },
+ "enemy_cover_nav": {
+  "head_full": {
+   "MIS_CH01_01 room1 ENM_SITE7_DRONE_01 spawn0": {
+    "end": "(4382.105, 378.6704)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_01 room1 ENM_SITE7_DRONE_01 spawn1": {
+    "end": "(4484.045, 407.3408)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_01 room1 ENM_SITE7_BULWARK_01 spawn2": {
+    "end": "(4280.167, 426.4544)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_01 room1 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(3732.243, 388.2272)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_01 room3 ENM_SITE7_BULWARK_01 spawn0": {
+    "end": "(9274.82, 402.5571)",
+    "path_length": 62.7305939905345,
+    "reached_attack_lane": true,
+    "seconds": 1.75,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0166666666666667
+   },
+   "MIS_CH01_01 room3 ENM_SITE7_DRONE_01 spawn1": {
+    "end": "(9424.953, 404.0672)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_01 room3 ENM_SITE7_DRONE_01 spawn2": {
+    "end": "(9208.685, 422.0896)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_01 room3 ENM_SITE7_BULWARK_01 spawn3": {
+    "end": "(8627.463, 467.1456)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room1 ENM_SITE7_DRONE_01 spawn0": {
+    "end": "(4247.953, 298.804)",
+    "path_length": 34.9850943610072,
+    "reached_attack_lane": true,
+    "seconds": 0.45,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room1 ENM_SITE7_BULWARK_01 spawn1": {
+    "end": "(4357.267, 289.6848)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room1 ENM_SITE7_RAM_01 spawn2": {
+    "end": "(4121.85, 306.2464)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room1 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(4262.054, 282.2219)",
+    "path_length": 327.049913085997,
+    "reached_attack_lane": true,
+    "seconds": 3.48333333333333,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room3 ENM_SITE7_BULWARK_01 spawn0": {
+    "end": "(8807.141, 316.6898)",
+    "path_length": 57.506851579994,
+    "reached_attack_lane": true,
+    "seconds": 1.1,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0166666666666667
+   },
+   "MIS_CH01_02 room3 ENM_SITE7_DRONE_01 spawn1": {
+    "end": "(8662.313, 324.7384)",
+    "path_length": 290.83362288028,
+    "reached_attack_lane": true,
+    "seconds": 3.23333333333333,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room3 ENM_SITE7_RAM_01 spawn2": {
+    "end": "(8681.85, 306.2464)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room3 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(8652.943, 316.5131)",
+    "path_length": 519.751404769719,
+    "reached_attack_lane": true,
+    "seconds": 6.05,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_03 room1 ENM_SITE7_RAM_01 spawn0": {
+    "end": "(4161.304, 278.4667)",
+    "path_length": 82.0300122871995,
+    "reached_attack_lane": true,
+    "seconds": 1.13333333333333,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_03 room1 ENM_SITE7_BULWARK_01 spawn1": {
+    "end": "(4357.267, 289.6848)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_03 room1 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(3489.165, 521.5472)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_03 room3 ENM_SITE7_BULWARK_01 spawn0": {
+    "end": "(8633.826, 190.3889)",
+    "path_length": 185.300693180412,
+    "reached_attack_lane": true,
+    "seconds": 3.26666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0166666666666667
+   },
+   "MIS_CH01_03 room3 ENM_SITE7_RAM_01 spawn1": {
+    "end": "(8495.779, 261.7176)",
+    "path_length": 427.182845927775,
+    "reached_attack_lane": true,
+    "seconds": 4.36666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.2
+   },
+   "MIS_CH01_03 room3 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(8049.165, 521.5472)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_04 room1 ENM_SITE7_BULWARK_01 spawn1": {
+    "end": "(4357.267, 289.6848)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_04 room1 ENM_SITE7_RAM_01 spawn2": {
+    "end": "(4121.85, 306.2464)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_04 room1 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(3721.712, 507.4277)",
+    "path_length": 188.934573046863,
+    "reached_attack_lane": true,
+    "seconds": 1.75,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_04 room3 ENM_SITE7_BULWARK_01 spawn3": {
+    "end": "(8828.782, 313.1162)",
+    "path_length": 365.822688750923,
+    "reached_attack_lane": true,
+    "seconds": 8.68333333333333,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0166666666666667
+   },
+   "MIS_CH01_05 room1 ENM_SITE7_RAM_01 spawn2": {
+    "end": "(4121.85, 306.2464)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_05 room1 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(4273.955, 296.5868)",
+    "path_length": 348.939839221537,
+    "reached_attack_lane": true,
+    "seconds": 3.48333333333333,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_05 room3 ENM_SITE7_RAM_01 spawn3": {
+    "end": "(8687.832, 309.8897)",
+    "path_length": 499.602897100151,
+    "reached_attack_lane": true,
+    "seconds": 5.25,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   }
+  },
+  "fix_full": {
+   "MIS_CH01_01 room1 ENM_SITE7_DRONE_01 spawn0": {
+    "end": "(4382.105, 378.6704)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_01 room1 ENM_SITE7_DRONE_01 spawn1": {
+    "end": "(4484.045, 407.3408)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_01 room1 ENM_SITE7_BULWARK_01 spawn2": {
+    "end": "(4280.167, 426.4544)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_01 room1 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(3732.243, 388.2272)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_01 room3 ENM_SITE7_BULWARK_01 spawn0": {
+    "end": "(9274.82, 402.5571)",
+    "path_length": 62.7305939905345,
+    "reached_attack_lane": true,
+    "seconds": 1.75,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0166666666666667
+   },
+   "MIS_CH01_01 room3 ENM_SITE7_DRONE_01 spawn1": {
+    "end": "(9424.953, 404.0672)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_01 room3 ENM_SITE7_DRONE_01 spawn2": {
+    "end": "(9208.685, 422.0896)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_01 room3 ENM_SITE7_BULWARK_01 spawn3": {
+    "end": "(8627.463, 467.1456)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room1 ENM_SITE7_DRONE_01 spawn0": {
+    "end": "(4247.953, 298.804)",
+    "path_length": 34.9850943610072,
+    "reached_attack_lane": true,
+    "seconds": 0.45,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room1 ENM_SITE7_BULWARK_01 spawn1": {
+    "end": "(4357.267, 289.6848)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room1 ENM_SITE7_RAM_01 spawn2": {
+    "end": "(4121.85, 306.2464)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room1 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(4262.054, 282.2219)",
+    "path_length": 327.049913085997,
+    "reached_attack_lane": true,
+    "seconds": 3.48333333333333,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room3 ENM_SITE7_BULWARK_01 spawn0": {
+    "end": "(8807.141, 316.6898)",
+    "path_length": 57.506851579994,
+    "reached_attack_lane": true,
+    "seconds": 1.1,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0166666666666667
+   },
+   "MIS_CH01_02 room3 ENM_SITE7_DRONE_01 spawn1": {
+    "end": "(8662.313, 324.7384)",
+    "path_length": 290.83362288028,
+    "reached_attack_lane": true,
+    "seconds": 3.23333333333333,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room3 ENM_SITE7_RAM_01 spawn2": {
+    "end": "(8681.85, 306.2464)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_02 room3 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(8652.943, 316.5131)",
+    "path_length": 519.751404769719,
+    "reached_attack_lane": true,
+    "seconds": 6.05,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_03 room1 ENM_SITE7_RAM_01 spawn0": {
+    "end": "(4161.304, 278.4667)",
+    "path_length": 82.0300122871995,
+    "reached_attack_lane": true,
+    "seconds": 1.13333333333333,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_03 room1 ENM_SITE7_BULWARK_01 spawn1": {
+    "end": "(4357.267, 289.6848)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_03 room1 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(3489.165, 521.5472)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_03 room3 ENM_SITE7_BULWARK_01 spawn0": {
+    "end": "(8633.826, 190.3889)",
+    "path_length": 185.300693180412,
+    "reached_attack_lane": true,
+    "seconds": 3.26666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0166666666666667
+   },
+   "MIS_CH01_03 room3 ENM_SITE7_RAM_01 spawn1": {
+    "end": "(8495.779, 261.7176)",
+    "path_length": 427.182845927775,
+    "reached_attack_lane": true,
+    "seconds": 4.36666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.2
+   },
+   "MIS_CH01_03 room3 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(8049.165, 521.5472)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_04 room1 ENM_SITE7_BULWARK_01 spawn1": {
+    "end": "(4357.267, 289.6848)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_04 room1 ENM_SITE7_RAM_01 spawn2": {
+    "end": "(4121.85, 306.2464)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_04 room1 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(3721.712, 507.4277)",
+    "path_length": 188.934573046863,
+    "reached_attack_lane": true,
+    "seconds": 1.75,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_04 room3 ENM_SITE7_BULWARK_01 spawn3": {
+    "end": "(8828.782, 313.1162)",
+    "path_length": 365.822688750923,
+    "reached_attack_lane": true,
+    "seconds": 8.68333333333333,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0166666666666667
+   },
+   "MIS_CH01_05 room1 ENM_SITE7_RAM_01 spawn2": {
+    "end": "(4121.85, 306.2464)",
+    "path_length": 0.0,
+    "reached_attack_lane": true,
+    "seconds": 0.0166666666666667,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_05 room1 ENM_SITE7_DRONE_01 spawn3": {
+    "end": "(4273.955, 296.5868)",
+    "path_length": 348.939839221537,
+    "reached_attack_lane": true,
+    "seconds": 3.48333333333333,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   },
+   "MIS_CH01_05 room3 ENM_SITE7_RAM_01 spawn3": {
+    "end": "(8687.832, 309.8897)",
+    "path_length": 499.602897100151,
+    "reached_attack_lane": true,
+    "seconds": 5.25,
+    "downed": false,
+    "longest_reposition_still_seconds": 0.0
+   }
+  }
+ },
+ "cover_ai": {
+  "head_full": [
+   {
+    "end_distance": 34.9222755432129,
+    "hz": 30,
+    "kind": "follower_path",
+    "side_travel": 58.9855346679688
+   },
+   {
+    "displacement": 189.693222045898,
+    "hz": 30,
+    "kind": "drone_flank",
+    "new_warning": true
+   },
+   {
+    "end_distance": 34.8970527648926,
+    "hz": 60,
+    "kind": "follower_path",
+    "side_travel": 59.1874694824219
+   },
+   {
+    "displacement": 214.498565673828,
+    "hz": 60,
+    "kind": "drone_flank",
+    "new_warning": true
+   },
+   {
+    "end_distance": 34.9000091552734,
+    "hz": 120,
+    "kind": "follower_path",
+    "side_travel": 59.1875
+   },
+   {
+    "displacement": 202.016754150391,
+    "hz": 120,
+    "kind": "drone_flank",
+    "new_warning": true
+   }
+  ],
+  "fix_full": [
+   {
+    "end_distance": 34.9222755432129,
+    "hz": 30,
+    "kind": "follower_path",
+    "side_travel": 58.9855346679688
+   },
+   {
+    "displacement": 221.170852661133,
+    "hz": 30,
+    "kind": "drone_flank",
+    "new_warning": true
+   },
+   {
+    "end_distance": 34.8970527648926,
+    "hz": 60,
+    "kind": "follower_path",
+    "side_travel": 59.1874694824219
+   },
+   {
+    "displacement": 214.498565673828,
+    "hz": 60,
+    "kind": "drone_flank",
+    "new_warning": true
+   },
+   {
+    "end_distance": 34.9000091552734,
+    "hz": 120,
+    "kind": "follower_path",
+    "side_travel": 59.1875
+   },
+   {
+    "displacement": 202.016754150391,
+    "hz": 120,
+    "kind": "drone_flank",
+    "new_warning": true
+   }
+  ]
+ }
+}

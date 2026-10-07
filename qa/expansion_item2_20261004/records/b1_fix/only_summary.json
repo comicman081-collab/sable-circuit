@@ -1,0 +1,109 @@
+{
+ "suite": "custom",
+ "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+ "started": "2026-10-04T21:56:58",
+ "git_head": "f2cbe1d653cae292e54a5f34a2c0ad9c6442c22b",
+ "git_dirty": 2,
+ "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+ "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+ "workers": 1,
+ "seconds": 86,
+ "overall": "PASS",
+ "guard": {
+  "changed": [],
+  "removed": [],
+  "added": []
+ },
+ "results": [
+  {
+   "test": "run_contract",
+   "status": "PASS",
+   "seconds": 6.4,
+   "exit_code": 0,
+   "checks": 34,
+   "status_line": "M11_RUN_CONTRACT_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "contract_offers",
+   "status": "PASS",
+   "seconds": 2.2,
+   "exit_code": 0,
+   "checks": 26950,
+   "status_line": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)",
+   "notes": []
+  },
+  {
+   "test": "contract_ui",
+   "status": "PASS",
+   "seconds": 8.2,
+   "exit_code": 0,
+   "checks": 484,
+   "status_line": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)",
+   "notes": []
+  },
+  {
+   "test": "redline",
+   "status": "PASS",
+   "seconds": 5.4,
+   "exit_code": 0,
+   "checks": 77,
+   "status_line": "REDLINE_SMOKE: PASS (77 checks)",
+   "notes": []
+  },
+  {
+   "test": "contract_save",
+   "status": "PASS",
+   "seconds": 0.6,
+   "exit_code": 0,
+   "checks": 69,
+   "status_line": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)",
+   "notes": []
+  },
+  {
+   "test": "play_log",
+   "status": "PASS",
+   "seconds": 6.2,
+   "exit_code": 0,
+   "checks": 25,
+   "status_line": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://qa/regression_runs/20261004_215548_custom/out/play_log",
+   "notes": []
+  },
+  {
+   "test": "demo_integration",
+   "status": "PASS",
+   "seconds": 8.0,
+   "exit_code": 0,
+   "checks": 26,
+   "status_line": "DEMO_INTEGRATION PASS / 26 checks",
+   "notes": []
+  },
+  {
+   "test": "m10_intel",
+   "status": "PASS",
+   "seconds": 4.8,
+   "exit_code": 0,
+   "checks": 39,
+   "status_line": "M10_INTEL_LOADOUT_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "m13_loadout",
+   "status": "PASS",
+   "seconds": 5.2,
+   "exit_code": 0,
+   "checks": 46,
+   "status_line": "M13_WEAPON_LOADOUT_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "campaign",
+   "status": "PASS",
+   "seconds": 23.3,
+   "exit_code": 0,
+   "checks": 235,
+   "status_line": "SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://qa/regression_runs/20261004_215548_custom/out/campaign",
+   "notes": []
+  }
+ ]
+}

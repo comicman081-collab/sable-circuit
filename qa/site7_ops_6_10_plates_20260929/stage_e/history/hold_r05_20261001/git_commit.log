@@ -1,0 +1,122 @@
+[integrate/site7-demo-20260924 87b7828f] Intake operation 10 R01-R04 and record R05 HOLD
+ 88 files changed, 10360 insertions(+)
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/REJECTION.md
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/S10_R02_GAME.png
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/S10_R02_MASTER.png
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/S10_R02_RAW_NATIVE.png
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/generation.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/measurements.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/request.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/README_KO.md
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/REJECTION.md
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/S10_R05_GAME.png
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/S10_R05_MASTER.png
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/S10_R05_RAW_NATIVE.png
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/generation.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/measurements.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/request.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/REJECTION.md
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/S10_R05_GAME.png
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/S10_R05_MASTER.png
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/S10_R05_RAW_NATIVE.png
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/generation.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/measurements.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/request.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/REJECTION.md
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/S10_R05_GAME.png
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/S10_R05_MASTER.png
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/S10_R05_RAW_NATIVE.png
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/generation.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/measurements.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/request.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R01_attempt03_floor_native_1920x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R01_attempt03_vs_S3_native_3840x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R02_attempt01_floor_native_1920x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R02_attempt01_vs_S3_native_3840x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R02_attempt02_floor_native_1920x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R02_attempt02_vs_S3_native_3840x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R03_attempt01_floor_native_1920x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R03_attempt01_vs_S3_native_3840x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R04_attempt01_floor_native_1920x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R04_attempt01_vs_S3_native_3840x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R05_HOLD_review_native_1920x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R05_attempt01_floor_native_1920x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R05_attempt01_origin_silhouette_COMPOSITE_native_1920x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R05_attempt01_vs_S3_native_3840x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R05_attempt02_floor_native_1920x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R05_attempt02_origin_silhouette_COMPOSITE_native_1920x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R05_attempt02_vs_S3_native_3840x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R05_attempt03_floor_native_1920x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R05_attempt03_origin_silhouette_COMPOSITE_native_1920x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_R05_attempt03_vs_S3_native_3840x1080.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/evidence/S10_selected_4_native_3840x2160.webp
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/generation.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/godot_import.log
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/measurements.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/runner_processes_before_commit.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/runner_processes_before_report.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/selected.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/silhouette_measurements.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/source_integrity.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/texture_intake_check.gd
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/texture_intake_check.json
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/texture_intake_check.log
+ create mode 100644 art_src/environments/site7_v2/_quarantine/S10_R05/visual_evidence_1080p.json
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R01/S10_R01_MASTER.png
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R01/S10_R01_RAW_NATIVE.png
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R01/adoption.json
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R02/S10_R02_MASTER.png
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R02/S10_R02_RAW_NATIVE.png
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R02/generation.json
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R02/measurements.json
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R03/S10_R03_MASTER.png
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R03/S10_R03_RAW_NATIVE.png
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R03/generation.json
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R03/measurements.json
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R04/S10_R04_MASTER.png
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R04/S10_R04_RAW_NATIVE.png
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R04/generation.json
+ create mode 100644 art_src/environments/site7_v2/stage10/S10_R04/measurements.json
+ create mode 100644 assets/environments/site7_v2/stage10/S10_R01/S10_R01_GAME.png
+ create mode 100644 assets/environments/site7_v2/stage10/S10_R01/S10_R01_GAME.png.import
+ create mode 100644 assets/environments/site7_v2/stage10/S10_R02/S10_R02_GAME.png
+ create mode 100644 assets/environments/site7_v2/stage10/S10_R02/S10_R02_GAME.png.import
+ create mode 100644 assets/environments/site7_v2/stage10/S10_R03/S10_R03_GAME.png
+ create mode 100644 assets/environments/site7_v2/stage10/S10_R03/S10_R03_GAME.png.import
+ create mode 100644 assets/environments/site7_v2/stage10/S10_R04/S10_R04_GAME.png
+ create mode 100644 assets/environments/site7_v2/stage10/S10_R04/S10_R04_GAME.png.import
+warning: in the working copy of 'art_src/environments/site7_v2/SITE7_OP10_STAGE_E_MANIFEST.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R01/README_KO.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R01/attempt03/REJECTION.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/REJECTION.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/generation.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/measurements.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R02/attempt01/request.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/README_KO.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/REJECTION.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/generation.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/measurements.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/request.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/REJECTION.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/generation.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/measurements.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/request.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/REJECTION.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/generation.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/measurements.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/request.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/generation.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/measurements.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/runner_processes_before_commit.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/runner_processes_before_report.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/selected.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/silhouette_measurements.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/source_integrity.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/_quarantine/S10_R05/visual_evidence_1080p.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/stage10/S10_R01/adoption.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/stage10/S10_R02/generation.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/stage10/S10_R02/measurements.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/stage10/S10_R03/generation.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/stage10/S10_R03/measurements.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/stage10/S10_R04/generation.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'art_src/environments/site7_v2/stage10/S10_R04/measurements.json', CRLF will be replaced by LF the next time Git touches it

@@ -1,0 +1,7 @@
+# E/contact_l geometry and anatomical annotation review
+
+PASS within the exact E/run/contact_l geometry-only scope. I directly inspected the original native frame_023 and new native 1920×1080 annotated render. The blue anatomical left foot is forward and approximately flat over the fixed floor; the orange anatomical right thigh stays behind it and its bent knee/raised foot form the trailing leg. Both full legs, feet, torso and head remain visible. The leader lines point to the corresponding evaluated knees. Color assignment reads the actual existing l/r deform groups; it does not infer laterality from apparent screen depth. No limb pose, sole vertex or floor coordinate changes between the fresh render and independent calibration.
+
+The source pack, retarget, anchored blend, all 49 original native captures and calibration remain the exact previously reviewed bytes. The current-gate change adds a separately reviewed semantic annotation inlet; it changes the base pose/contact review subjects, requiring these fresh receipts. Old subject reviews remain historical and must not be silently relabeled current. All numeric contact constraints still apply.
+
+This guide conveys lower-body movement only. The reference's bare body, rearward arms and label colors are excluded from SABLE visible pixels. MICA identity/costume/rifle remain ImageGen-authority inputs. No whole-cycle slip, visible animation, walking, firing art, runtime atlas or pointer approval is granted. R4/R5 artwork stays FAIL_NOT_PROMOTABLE.

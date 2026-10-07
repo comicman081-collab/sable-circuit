@@ -1,0 +1,55 @@
+{
+ "suite": "custom",
+ "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+ "started": "2026-09-30T16:17:03",
+ "git_head": "2d7a51a9a9a5b8c558d1cd3fe589ff00c55c9878",
+ "git_dirty": 12,
+ "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+ "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+ "workers": 1,
+ "seconds": 994,
+ "overall": "FAIL",
+ "guard": {
+  "changed": [],
+  "removed": [],
+  "added": []
+ },
+ "results": [
+  {
+   "test": "world_layout",
+   "status": "PASS",
+   "seconds": 10.0,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_WORLD_LAYOUT PASS 8 missions",
+   "notes": []
+  },
+  {
+   "test": "mood_light",
+   "status": "PASS",
+   "seconds": 54.3,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_MOOD_LIGHT PASS 120 plates 620 pools 120 void masks 15 contact shadows",
+   "notes": []
+  },
+  {
+   "test": "connector_alignment",
+   "status": "TIMEOUT",
+   "seconds": 900.3,
+   "exit_code": 1,
+   "checks": null,
+   "status_line": "",
+   "notes": []
+  },
+  {
+   "test": "battle_geometry",
+   "status": "PASS",
+   "seconds": 19.8,
+   "exit_code": 0,
+   "checks": 3988,
+   "status_line": "SITE7_BATTLE_GEOMETRY_SMOKE: PASS (3988 checks)",
+   "notes": []
+  }
+ ]
+}

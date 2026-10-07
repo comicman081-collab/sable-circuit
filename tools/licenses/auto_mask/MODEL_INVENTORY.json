@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "role": "read-only local matte-generation helper; never packaged with the game",
+  "commercial_use": true,
+  "modification_allowed": true,
+  "local_inference_allowed": true,
+  "models": [
+    {
+      "model": "CIDAS CLIPSeg RD64 refined",
+      "local_file": "C:/AI_MODELS/auto-mask/model.safetensors",
+      "source_repository": "https://huggingface.co/CIDAS/clipseg-rd64-refined",
+      "revision": "999e0328d9e10b484360c477313983f9afdd7050",
+      "license": "Apache-2.0",
+      "commercial_use": true,
+      "sha256": "d00ca85d6b859f9d07b7cfb8ef26fe9771cb275b34c9368f2ecf603139307f55",
+      "file_size": 603049496
+    },
+    {
+      "model": "Meta SAM 2.1 Hiera Tiny",
+      "local_file": "C:/AI_MODELS/auto-mask/sam2/model.safetensors",
+      "source_repository": "https://huggingface.co/facebook/sam2.1-hiera-small",
+      "revision": "7c218beaf0bb87874785f32b582f640134fc1c09",
+      "license": "Apache-2.0",
+      "commercial_use": true,
+      "sha256": "1449035ba6ba2ed524c646da989e5cb3a9b93b97f1c1b2d474e598c3b748d99f",
+      "file_size": 155841672
+    }
+  ],
+  "krea2_used": false,
+  "paid_or_noncommercial_models_used": false
+}

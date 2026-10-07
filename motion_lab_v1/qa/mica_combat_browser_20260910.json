@@ -1,0 +1,341 @@
+{
+  "schema": 1,
+  "kind": "motion-studio-combat-browser",
+  "recordedAt": "2026-09-09T16:00:30.813Z",
+  "character": "mica",
+  "build": {
+    "character": "mica",
+    "inputs": {
+      "public/assets/atlas/mica/profile.json": "b8067f8250451e002d5c52d67953dafa03ac061e3cb88781443d5f124d2efae0",
+      "characters/mica.json": "608c7a23b9a2712658ec3e70d71cca7120afd5c31f232a40748e9e0add04767e",
+      "public/assets/atlas/mica/portrait.png": "3af5e327634d0110520840d0ef20c1f58c4c765cab56dd6e4bb319b6fcfb2fcd",
+      "public/assets/Rajdhani-Medium.ttf": "12ff7dcfe4c206e3875ac53b1762eab57de6a2fa7f5a86c26b97b88d6591eac2",
+      "public/style.css": "e8adea55152fd2defd66edff9e41f34dfcc0eb8e4b77a76ee4fe66daf0c21d03",
+      "public/index.html": "541b64c8f8aa77ab079dfaaf2498f3bf71de22e60399dd93cd9b3343fbc6aefc",
+      "public/simulation.js": "e804d7314eafa77144ac75e46010019a290097caf9114612503d94df66cf548a",
+      "public/atlas-renderer.js": "8e14828ba336963cf2ed402ae4c42d3af3d9c0a26091c23d2507ce98a9366771",
+      "public/keyboard-input.js": "35900e2ff02bfb11efb67060119362be0dc04b05b1b196ce8520feeccedfe4e1",
+      "public/combat-aim.js": "e110d3971adc329cfa29f0b51fb6bc2c7a23d319b9fc810cd9f5e1b40e19bf39",
+      "public/studio.js": "cfe34aff0cd6b56a81e8f2afbdb2da91ab96f0b3c4fd7e8dbe72341c4a03f354",
+      "public/assets/atlas/mica/E_walk.webp": "b78732b08dbea537f295ca02c623f7323aa52ccbe183cfaf4ac6cfdc7a35ea34",
+      "public/assets/atlas/mica/E_idle.webp": "3829ed9ea18051309c470384faae3fc0fa7a761bc3de45f9f708d82264e1d045",
+      "public/assets/atlas/mica/SE_walk.webp": "a4cbfa09bbf6ad43c3ffcf2f88fbba6100b2a1addb5b55163c9390ba3b0f1015",
+      "public/assets/atlas/mica/SE_idle.webp": "2ff09cb843e553c54314da335ccc5059e1eb1ef66448936846c07b0dc7788cd0",
+      "public/assets/atlas/mica/S_walk.webp": "497436dd6b05e8e36a9a2e9cb5286f1150b7b6fbab50f85670b27914be924296",
+      "public/assets/atlas/mica/S_idle.webp": "2aa036fb35af700046dc834fae129dea3450f8cd0d4b0f36e38cbdfd7bae6f40",
+      "public/assets/atlas/mica/SW_walk.webp": "c3951dc806dd46aa24666b1ad352abb4fc9945eb95b77e581bcc4867097d2b3b",
+      "public/assets/atlas/mica/SW_idle.webp": "61a548d9ecca6c5ff35d077f645944545d29d5aaf6a97b5c542977a91132b567",
+      "public/assets/atlas/mica/W_walk.webp": "6b981e61451799b24a9186b0a181514e3903768768e98539363122a0707ea335",
+      "public/assets/atlas/mica/W_idle.webp": "54214a49504316cb7f4c711962fecb5bc030ef62539e9c55f0cf17c677725536",
+      "public/assets/atlas/mica/NW_walk.webp": "c7e6f59e2b0f3ded3ff4d2749b4a3a47706c877f5dff2a9d392e3c57e8f424ef",
+      "public/assets/atlas/mica/NW_idle.webp": "f6bd1cde8d78e966f071f8716f142392711dd9b6de33e8770a4d055fe4993ebc",
+      "public/assets/atlas/mica/N_walk.webp": "0db817b2cfa26671b43de6c6ffd1f07cf1e6c547f8674868776855513bf06040",
+      "public/assets/atlas/mica/N_idle.webp": "573a010996f1ce9e05e5d12cc434803ebdb606175e4bfeaa0836ca2bfc5ae083",
+      "public/assets/atlas/mica/NE_walk.webp": "e80d7d76831d2eae58576fc894cddf3c7a7bc6a62b5d61c7f2ad85e55fdf28d4",
+      "public/assets/atlas/mica/NE_idle.webp": "0f69016d72524a8accc161e77c3d196ee9eb0ca3d3a238b44516f4b8cfaeb593"
+    },
+    "inputSHA256": "c3f6ac47e2f720025f2552ffd4ca0173184a4fdc1c00cc11c2a2c9b0665ff99e"
+  },
+  "viewport": [
+    1920,
+    1080
+  ],
+  "input": "Real held mouse button; synthetic DOM movement/pointer events; actual fixed-step and WebGL renderer",
+  "results": [
+    {
+      "name": "mouse_E",
+      "expected": "E",
+      "direction": "E",
+      "spriteDirection": "E",
+      "shotCount": 2,
+      "travel": 0.20238385190926247,
+      "frames": [
+        0
+      ],
+      "maxFacingErrorDegrees": 9.377769685035478,
+      "maxCursorError": 0,
+      "convergedShots": 5,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "mouse_SE",
+      "expected": "SE",
+      "direction": "SE",
+      "spriteDirection": "SE",
+      "shotCount": 1,
+      "travel": 0.24567063257772767,
+      "frames": [
+        0,
+        1
+      ],
+      "maxFacingErrorDegrees": 9.343506877008222,
+      "maxCursorError": 0,
+      "convergedShots": 1,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "mouse_S",
+      "expected": "S",
+      "direction": "S",
+      "spriteDirection": "S",
+      "shotCount": 2,
+      "travel": 0.25868216721624093,
+      "frames": [
+        1,
+        2
+      ],
+      "maxFacingErrorDegrees": 0.3605989523196102,
+      "maxCursorError": 2.1684043449710089e-16,
+      "convergedShots": 7,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "mouse_SW",
+      "expected": "SW",
+      "direction": "SW",
+      "spriteDirection": "SW",
+      "shotCount": 2,
+      "travel": 0.2587478466051122,
+      "frames": [
+        3,
+        2
+      ],
+      "maxFacingErrorDegrees": 1.1171001890851873,
+      "maxCursorError": 0,
+      "convergedShots": 0,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "mouse_W",
+      "expected": "W",
+      "direction": "W",
+      "spriteDirection": "W",
+      "shotCount": 2,
+      "travel": 0.25874993163910887,
+      "frames": [
+        2,
+        1
+      ],
+      "maxFacingErrorDegrees": 10.013028363061947,
+      "maxCursorError": 3.3306690738754696e-16,
+      "convergedShots": 4,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "mouse_NW",
+      "expected": "NW",
+      "direction": "NW",
+      "spriteDirection": "NW",
+      "shotCount": 1,
+      "travel": 0.25874999782983954,
+      "frames": [
+        1,
+        0
+      ],
+      "maxFacingErrorDegrees": 10.013027816964957,
+      "maxCursorError": 5.551115123125783e-17,
+      "convergedShots": 3,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "mouse_N",
+      "expected": "N",
+      "direction": "N",
+      "spriteDirection": "N",
+      "shotCount": 2,
+      "travel": 0.24749999993147243,
+      "frames": [
+        5,
+        0
+      ],
+      "maxFacingErrorDegrees": 3.081625276331869,
+      "maxCursorError": 9.71445146547012e-17,
+      "convergedShots": 6,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "mouse_NE",
+      "expected": "NE",
+      "direction": "NE",
+      "spriteDirection": "NE",
+      "shotCount": 2,
+      "travel": 0.2587499999974592,
+      "frames": [
+        0,
+        1
+      ],
+      "maxFacingErrorDegrees": 1.1624240629575098,
+      "maxCursorError": 0,
+      "convergedShots": 0,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "keyboard_E",
+      "expected": "E",
+      "direction": "E",
+      "spriteDirection": "E",
+      "shotCount": 1,
+      "travel": 0.25874999999991943,
+      "frames": [
+        1,
+        2
+      ],
+      "maxFacingErrorDegrees": 1.1624240629575098,
+      "maxCursorError": 0,
+      "convergedShots": 0,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "keyboard_SE",
+      "expected": "SE",
+      "direction": "SE",
+      "spriteDirection": "SE",
+      "shotCount": 2,
+      "travel": 0.24372794381948426,
+      "frames": [
+        2,
+        3
+      ],
+      "maxFacingErrorDegrees": 0,
+      "maxCursorError": 0,
+      "convergedShots": 0,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "keyboard_S",
+      "expected": "S",
+      "direction": "S",
+      "spriteDirection": "S",
+      "shotCount": 2,
+      "travel": 0.24237003147356137,
+      "frames": [
+        3,
+        4
+      ],
+      "maxFacingErrorDegrees": 0,
+      "maxCursorError": 0,
+      "convergedShots": 0,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "keyboard_SW",
+      "expected": "SW",
+      "direction": "SW",
+      "spriteDirection": "SW",
+      "shotCount": 2,
+      "travel": 0.23136196931352987,
+      "frames": [
+        4,
+        5
+      ],
+      "maxFacingErrorDegrees": 0,
+      "maxCursorError": 0,
+      "convergedShots": 0,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "keyboard_W",
+      "expected": "W",
+      "direction": "W",
+      "spriteDirection": "W",
+      "shotCount": 1,
+      "travel": 0.24209031367725892,
+      "frames": [
+        5,
+        0
+      ],
+      "maxFacingErrorDegrees": 0,
+      "maxCursorError": 0,
+      "convergedShots": 0,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "keyboard_NW",
+      "expected": "NW",
+      "direction": "NW",
+      "spriteDirection": "NW",
+      "shotCount": 1,
+      "travel": 1.6999994828572658,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "maxFacingErrorDegrees": 1.4033418597069754e-14,
+      "maxCursorError": 0,
+      "convergedShots": 0,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "keyboard_N",
+      "expected": "N",
+      "direction": "N",
+      "spriteDirection": "N",
+      "shotCount": 1,
+      "travel": 0.2327557944736705,
+      "frames": [
+        0,
+        1
+      ],
+      "maxFacingErrorDegrees": 1.4033418597069754e-14,
+      "maxCursorError": 0,
+      "convergedShots": 0,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "keyboard_NE",
+      "expected": "NE",
+      "direction": "NE",
+      "spriteDirection": "NE",
+      "shotCount": 2,
+      "travel": 0.242150597237466,
+      "frames": [
+        1,
+        2
+      ],
+      "maxFacingErrorDegrees": 1.4033418597069754e-14,
+      "maxCursorError": 0,
+      "convergedShots": 0,
+      "heldMouse": true,
+      "pass": true
+    },
+    {
+      "name": "repeat_preserves_mouse",
+      "expected": "E",
+      "direction": "E",
+      "spriteDirection": "E",
+      "shotCount": 2,
+      "travel": 0.2440187759954606,
+      "frames": [
+        2,
+        3
+      ],
+      "maxFacingErrorDegrees": 10.014414999492514,
+      "maxCursorError": 0,
+      "convergedShots": 6,
+      "heldMouse": true,
+      "pass": true
+    }
+  ],
+  "pass": true,
+  "testScriptSHA256": "d7aca4584e7d1f0554972560e6607b25681f59847582a202e4b5a5bc7afa3f88",
+  "externalResources": []
+}

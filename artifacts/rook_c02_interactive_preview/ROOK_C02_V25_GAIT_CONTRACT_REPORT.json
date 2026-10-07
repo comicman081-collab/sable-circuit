@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "role": "ROOK C02 gait structural gate; not a visual-art approval",
+  "atlas_root": "assets/units/operators/rook/fast_runtime_v1/current",
+  "requirements": {
+    "move_lower_body_unique_frames_min": 6,
+    "move_max_consecutive_identical_lower_frames_max": 2,
+    "idle_lower_body_unique_frames_exact": 1,
+    "fire_lower_body_unique_frames_exact": 1
+  },
+  "directions": {
+    "E": {
+      "move_lower_body_unique_frames": 2,
+      "move_max_consecutive_identical_lower_frames": 12,
+      "idle_lower_body_unique_frames": 2,
+      "fire_lower_body_unique_frames": 4,
+      "pass": false
+    },
+    "SE": {
+      "move_lower_body_unique_frames": 2,
+      "move_max_consecutive_identical_lower_frames": 12,
+      "idle_lower_body_unique_frames": 2,
+      "fire_lower_body_unique_frames": 4,
+      "pass": false
+    },
+    "S": {
+      "move_lower_body_unique_frames": 2,
+      "move_max_consecutive_identical_lower_frames": 12,
+      "idle_lower_body_unique_frames": 2,
+      "fire_lower_body_unique_frames": 4,
+      "pass": false
+    },
+    "SW": {
+      "move_lower_body_unique_frames": 2,
+      "move_max_consecutive_identical_lower_frames": 12,
+      "idle_lower_body_unique_frames": 2,
+      "fire_lower_body_unique_frames": 4,
+      "pass": false
+    },
+    "W": {
+      "move_lower_body_unique_frames": 2,
+      "move_max_consecutive_identical_lower_frames": 12,
+      "idle_lower_body_unique_frames": 2,
+      "fire_lower_body_unique_frames": 4,
+      "pass": false
+    },
+    "NW": {
+      "move_lower_body_unique_frames": 2,
+      "move_max_consecutive_identical_lower_frames": 12,
+      "idle_lower_body_unique_frames": 2,
+      "fire_lower_body_unique_frames": 4,
+      "pass": false
+    },
+    "N": {
+      "move_lower_body_unique_frames": 2,
+      "move_max_consecutive_identical_lower_frames": 12,
+      "idle_lower_body_unique_frames": 2,
+      "fire_lower_body_unique_frames": 4,
+      "pass": false
+    },
+    "NE": {
+      "move_lower_body_unique_frames": 2,
+      "move_max_consecutive_identical_lower_frames": 12,
+      "idle_lower_body_unique_frames": 2,
+      "fire_lower_body_unique_frames": 4,
+      "pass": false
+    }
+  },
+  "pass": false,
+  "failures": [
+    "E",
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW",
+    "N",
+    "NE"
+  ],
+  "next_gate": "Ponytail Full temporal review plus 1920x1080 dynamic capture"
+}

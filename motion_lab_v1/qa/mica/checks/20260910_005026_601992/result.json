@@ -1,0 +1,72 @@
+{
+  "recordedAt": "2026-09-09T15:50:31.916888+00:00",
+  "character": "mica",
+  "status": "PASS_TECHNICAL_ONLY",
+  "package": {
+    "path": "dist/mica.package.json",
+    "sha256": "2288448a8f8321dfd2f2197c74ef9fe83a620968fef30c3d59c77d84c93ca842"
+  },
+  "inputSHA256": "5f5ebbf1ddfdf2d702a0d660d07e444cd3c1a02b908080d055269fd5ba72235f",
+  "checks": [
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "validate_character.py",
+        "--character",
+        "mica"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/mica/checks/20260910_005026_601992/0.log",
+        "sha256": "5626f4ee536dd594bf6bca3b5a14a9be4add0f39d183a3fd63503736a3b3fb12"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests\\combat-aim.test.js",
+        "tests\\keyboard-input.test.js",
+        "tests\\simulation.test.js"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/mica/checks/20260910_005026_601992/1.log",
+        "sha256": "58a5db34636c29305750021221a3b63a9b5b6b1986543b2a23d3b24d990491ca"
+      }
+    },
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_character_workflow.py"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/mica/checks/20260910_005026_601992/2.log",
+        "sha256": "5719b435cf91a293e5accbfdb605650ba11273c8ea99c518cd8764832c1cb654"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "verify_bundle.mjs",
+        "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\dist\\MICA_Motion_Studio.html"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/mica/checks/20260910_005026_601992/3.log",
+        "sha256": "d48acfa04b8e79958d4263827d7c20ce1c919bf3d2ed60a8e8048868d443158d"
+      }
+    }
+  ],
+  "browser": null,
+  "scope": "Implemented runtime/asset checks; no automatic visual approval or Luna generation claim"
+}

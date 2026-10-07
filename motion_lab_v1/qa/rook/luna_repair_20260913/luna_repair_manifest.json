@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "recordedAt": "2026-09-12T15:52:28.430667+00:00",
+  "character": "rook",
+  "direction": "E",
+  "action": "walk",
+  "attempt": "Luna production pass",
+  "status": "FAIL_NOT_PROMOTABLE",
+  "approved": false,
+  "imported": false,
+  "activeSourceSlotsChanged": false,
+  "imagegen": {
+    "provider": "Codex built-in ImageGen",
+    "attempts": [
+      {
+        "pair": "pair0",
+        "phases": [0, 3],
+        "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-93066cd6-a5ff-4c99-93ea-ec12f76ad1a1.png",
+        "toolResponseEnvelope": "qa/rook/luna_repair_20260913/E_walk_pair0_tool-response.json",
+        "toolResponseEnvelopeSHA256": "1013239b9febca3a6ea9ea65f3f391875ebbc39a7752548d51e6756a544ae72d",
+        "projectCopy": "qa/rook/luna_repair_20260913/E_walk_pair0_luna_raw.png",
+        "projectCopySHA256": "2f900e9b32bafc1e4f72673dfa51897c38c32cb3b2eab59fa2c3407a52a5ccac",
+        "decision": "FAIL_NOT_PROMOTABLE",
+        "reason": "RGB painted checkerboard/no alpha and repeated screen-left trailing/screen-right planted support role"
+      },
+      {
+        "pair": "pair1",
+        "phases": [1, 4],
+        "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-ebbdf3b5-e400-400f-be82-a78850068a8f.png",
+        "toolResponseEnvelope": "qa/rook/luna_repair_20260913/E_walk_pair1_tool-response.json",
+        "toolResponseEnvelopeSHA256": "13041131da726811e4818a0da8b6481daf20da8bd9ee8c6685cf00005f75f363",
+        "projectCopy": "qa/rook/luna_repair_20260913/E_walk_pair1_luna_raw.png",
+        "projectCopySHA256": "47fd003bada3abdef3277c91f17988884fd29e98b9faf81e166edb70d91b9795",
+        "decision": "FAIL_NOT_PROMOTABLE",
+        "reason": "RGB near-green/no alpha, repeated rear-swing/support role, and brown guide-colored leg leakage"
+      },
+      {
+        "pair": "pair2",
+        "phases": [2, 5],
+        "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-b4a27ae9-7f30-48a8-8326-3fb7607ce4c1.png",
+        "toolResponseEnvelope": "qa/rook/luna_repair_20260913/E_walk_pair2_tool-response.json",
+        "toolResponseEnvelopeSHA256": "f6f9fcfec0ed3c7438bb06683dd7b2f392fc128b9e7ed67c7d4507c65e4aa417",
+        "projectCopy": "qa/rook/luna_repair_20260913/E_walk_pair2_luna_raw.png",
+        "projectCopySHA256": "918141b846be13e92e10216dd31e8965df354d7afed35f91e696dd9fee61ff2e",
+        "decision": "FAIL_NOT_PROMOTABLE",
+        "reason": "RGB green gradient/no alpha and repeated screen-left support/screen-right lifted-forward role; no opposite phase-5 pass"
+      }
+    ]
+  },
+  "cyclePreparation": {
+    "command": "character_workflow.py prepare-cycle --character rook --direction E",
+    "sourceDigest": "e3fc6a5d99f82196603c4a147735809d1b3eb7add1d531d6e14931b383fdf389",
+    "inputSHA256": "7ba380b55f9fd8717e9ca50ca705ca88dc8c7b62d49313c663bc9f3ce3175646",
+    "kit": "qa/rook/luna_repair_20260913/cycle_kit/e3fc6a5d99f82196_237960ef",
+    "nativeVideo": [1920, 1080],
+    "framesDecoded": 107,
+    "cycles": 3,
+    "video": "qa/rook/luna_repair_20260913/cycle_kit/e3fc6a5d99f82196_237960ef/E_walk_cycle_1080p.mp4",
+    "videoSHA256": "b402f0ba05b4c3b9200c4a9a55534ccbda56902ef9f9a7941116ddf64f486cef",
+    "keyframes": "qa/rook/luna_repair_20260913/cycle_kit/e3fc6a5d99f82196_237960ef/reference/atlas/rook/E_walk_keyframes.png",
+    "keyframesSHA256": "7588eafd378a660e518217e4850acf8eb9cd38bdfe524a25d05679491ceaea44",
+    "videoSamples": "qa/rook/luna_repair_20260913/video_samples_0p30s/samples.json",
+    "videoSamplesSHA256": "68a6d49a45e0052556d2f28a1b9fd5c5c92d0e48cd29b26fd8af87731b6b7899"
+  },
+  "cycleReview": {
+    "command": "character_workflow.py review-cycle --character rook --direction E --action walk --decision repair --evidence qa/rook/luna_repair_20260913/edit_attempt_03/E_cycle_edit_attempt_03_visual_review.md --notes 'Attempt 03 single-target E0/E3, E1/E4 and E2/E5 outputs did not visibly exchange their requested leg roles; all six returned RGB near-green gradients rather than flat #00FF00 and had no alpha. Preserve as quarantine-only evidence; no intake or source-slot change.' --reviewer 'Codex Luna E single-target edit attempt 03 visual review 2026-09-13'",
+    "evidence": "qa/rook/luna_repair_20260913/edit_attempt_03/E_cycle_edit_attempt_03_visual_review.md",
+    "evidenceSHA256": "ef5a0528098574e44ecbad3ec613fb0f1722dc4537cca82a138e593faaa14924",
+    "decision": "repair",
+    "cycleReviewsLedger": "qa/rook/cycle_reviews.json",
+    "cycleReviewsLedgerSHA256": "6ab358d18f5f783e0e1b756300887149f9741e23679db3891aad7ea3195bf242",
+    "deliveryState": "HOLD_VISUAL_REPAIR",
+    "deliveryReceipt": "dist/rook.delivery.json",
+    "deliveryReceiptSHA256": "fcff9d2ac82f51eb22f19a48ded2cdc76d82f565370341c9014e8f65044886c6"
+  },
+  "visualEvidenceValidator": {
+    "command": "tools/art_pipeline/validate_visual_evidence_1080p.py --require-dynamic-capture",
+    "report": "qa/rook/luna_repair_20260913/visual_evidence_1080p.json",
+    "reportSHA256": "9c13ff82db0ee4dc62059aa8669ae3901bffed3db739fe4fd9700ce2509e41d5",
+    "gate": "PASS",
+    "scope": "review container resolution/decode only; not visual quality approval",
+    "qualityClaim": false
+  },
+  "handoff": {
+    "packet": "qa/rook/luna_repair_20260913/handoff_after_repair.json",
+    "packetSHA256": "8653a28fa568fd463be78baf6fec61829e1ea2885034b5cfbe8a5dbabeda6829",
+    "verifyCommand": "character_workflow.py verify-handoff --packet qa/rook/luna_repair_20260913/handoff_after_repair.json",
+    "verifyStatus": "CURRENT_HANDOFF",
+    "verifyInputSHA256": "9fc76c43c5ec4b871738679a0ff346e020340ad0fdf1a9c4240adacb0ba868c3",
+    "nextAction": "REPAIR_RUNTIME_VISUAL",
+    "reviewedDelivery": false,
+    "lunaGenerationTested": false
+  },
+  "greenAttempt02": {
+    "manifest": "qa/rook/luna_repair_20260913/green_attempt_02/green_attempt_02_manifest.json",
+    "manifestSHA256": "56cfe70460895628e52e157080cb2bb8f78a8dda154d96655439a1e8609c1b38",
+    "visualReview": "qa/rook/luna_repair_20260913/green_attempt_02/E_cycle_green_attempt_02_visual_review.md",
+    "visualReviewSHA256": "44073bdd4a3198fb3f79eabdd1063483393a09040bac8bd6e2e292cdfe0a377b",
+    "cycleReviewsLedgerSHA256AfterReview": "2a372dc134cc08f293b450b6d8b38a7f4b34c26f3c3b8934f231bee2efb13c40",
+    "deliveryReceiptSHA256AfterReview": "c1a61c6838937c3452c6a0264bb3865261a1322a8f293c92cf705eedebd79d00",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "approved": false,
+    "activeSourceSlotsChanged": false,
+    "additionalGenerationAuthorized": false
+  },
+  "editAttempt03": {
+    "manifest": "qa/rook/luna_repair_20260913/edit_attempt_03/edit_attempt_03_manifest.json",
+    "manifestSHA256": "b38f5dc0c95e0203e0d1c4bc090345d45162e01d0e0c5c216bc5c579caa35fbe",
+    "visualReview": "qa/rook/luna_repair_20260913/edit_attempt_03/E_cycle_edit_attempt_03_visual_review.md",
+    "visualReviewSHA256": "ef5a0528098574e44ecbad3ec613fb0f1722dc4537cca82a138e593faaa14924",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "approved": false,
+    "successfulImageGenCalls": 6,
+    "activeSourceSlotsChanged": false,
+    "intakeExecuted": false,
+    "prepareCycleExecuted": false,
+    "stagingCopiesRemovedAfterProjectHashVerification": true
+  },
+  "requiredNextRepair": "Author new E pair candidates with genuinely opposite contacts, rear swings, and forward passes; preserve clean native alpha or exact uniform green fallback, stable full-body framing, weapon continuity, and no guide-color leakage. Then repeat source review and prepare-cycle before any intake."
+}

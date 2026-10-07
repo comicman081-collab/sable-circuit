@@ -1,0 +1,64 @@
+{
+ "suite": "custom",
+ "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\.cache\\diag\\nav_pockets_20261003\\baseline_project",
+ "started": "2026-10-03T14:51:23",
+ "git_head": "753cf02957bb104ac30450918deca10139b427d9",
+ "git_dirty": 0,
+ "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+ "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+ "workers": 1,
+ "seconds": 145,
+ "overall": "PASS",
+ "guard": {
+  "changed": [],
+  "removed": [],
+  "added": []
+ },
+ "results": [
+  {
+   "test": "cover_navigation",
+   "status": "PASS",
+   "seconds": 2.4,
+   "exit_code": 0,
+   "checks": 15,
+   "status_line": "COVER_NAVIGATION_SMOKE: PASS / 15 checks",
+   "notes": []
+  },
+  {
+   "test": "firing_lane",
+   "status": "PASS",
+   "seconds": 30.5,
+   "exit_code": 0,
+   "checks": 325,
+   "status_line": "FIRING_LANE_SEARCH_SMOKE: PASS (325 checks)",
+   "notes": []
+  },
+  {
+   "test": "enemy_cover_nav",
+   "status": "PASS",
+   "seconds": 43.9,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "ENEMY_COVER_NAVIGATION PASS res://qa/regression_runs/20261003_145123_custom/out/enemy_cover_nav []",
+   "notes": []
+  },
+  {
+   "test": "cover_ai",
+   "status": "PASS",
+   "seconds": 39.9,
+   "exit_code": 0,
+   "checks": 46,
+   "status_line": "",
+   "notes": []
+  },
+  {
+   "test": "world_route",
+   "status": "PASS",
+   "seconds": 23.5,
+   "exit_code": 0,
+   "checks": 94,
+   "status_line": "SITE7_WORLD_ROUTE_NAVIGATION: PASS (94 checks)",
+   "notes": []
+  }
+ ]
+}

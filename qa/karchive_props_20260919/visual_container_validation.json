@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-19T10:12:59.798854+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\karchive_props_20260919\\run_1789812564_16\\stage1_step_1_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2822907,
+      "sha256": "b8b5aaa1090cf364c4ab498be375ec1ec86429c3a0435f7d3b86f18eb0f543e6"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\karchive_props_20260919\\run_1789812564_16\\stage1_step_3_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2892523,
+      "sha256": "e431c5f9d11858c99d15afc85149862bfa6dc40e62a706cd6d26c04dfbedc34b"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\karchive_props_20260919\\run_1789812564_16\\stage1_step_4_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 3006482,
+      "sha256": "ea15db9034f23849b68ce464e808a00337026b79ca5e6f2913b39958d72f7e2c"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\assets\\environments\\site7\\karchive_props_v1\\crate.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1235708,
+      "sha256": "f9394bae9ad5a3bf194b6e03c9fd155eb6690e52cb185c88b0b983f7761497fe"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\assets\\environments\\site7\\karchive_props_v1\\barrier.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1134446,
+      "sha256": "cc8087eddf26bfadf6e775205c1dd3896fb4c589fef316f4bc0e3d4dc05e441d"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\assets\\environments\\site7\\karchive_props_v1\\generator.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1188394,
+      "sha256": "e683a70d2cc0ab3e698bda6fc6a1d6670633d30627ba37c67c12824cc3889345"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\assets\\environments\\site7\\karchive_props_v1\\cabinet.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1189979,
+      "sha256": "919c2de8b9d30fe48f53b8e6445da2564920314ac6cce50193f0117d9a213d5c"
+    }
+  ]
+}

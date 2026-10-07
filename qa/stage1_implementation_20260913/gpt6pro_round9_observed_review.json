@@ -1,0 +1,30 @@
+{
+  "kind": "agent-summary-of-actual-observed-web-review-not-verbatim",
+  "conversation": "https://chatgpt.com/c/6aa629cc-15f0-83ee-996c-b42d58eefe91",
+  "modelObserved": "6 Pro",
+  "processingTimeObserved": "13m 53s",
+  "actualReplyObserved": true,
+  "closed": ["R8-01", "R8-02", "R8-03"],
+  "scope": "GPT reconstructed and hash-checked 16 supplied source/evidence blocks, ran actual Python harness functions with isolated controlled source/cycle fixtures, and decoded/hash-matched the two supplied native boss images. GPT did NOT rerun Godot or the complete 101-test Python suite.",
+  "routingObservations": "Seven positive conditions behaved as expected; three expected-result mismatches represented two concrete harness bugs.",
+  "findings": [
+    {
+      "id": "R9-H01",
+      "priority": "P1",
+      "file": "motion_lab_v1/character_workflow.py",
+      "issue": "E source approvals do not preserve E full-cycle review priority over non-E cycle repair",
+      "counterexamples": ["E seven sources approved + E needs_cycle_review + SE repair selects SE/walk/3", "E seven sources approved + E stale_cycle_review + SE repair selects SE/walk/3"],
+      "minimumFix": "Preserve explicit source repair and incomplete pilot source priorities; next handle E/walk pending/repair cycle in isolation before non-E followups. Keep approved-E positive SE repair behavior."
+    },
+    {
+      "id": "R9-H02",
+      "priority": "P2",
+      "file": "motion_lab_v1/character_handoff.py",
+      "issue": "Shared prepareCycleReview command drops the selected run action and CLI defaults to walk",
+      "counterexample": "Separate run recipe chooses SE/run with nextSource.command --action run, but commands.prepareCycleReview omits action; actual CLI parser passes walk to preview callback; faulty packet still verifies CURRENT_HANDOFF",
+      "minimumFix": "Carry selected action from cycle or slot, map idle to walk for gait review, emit explicit --action, and test actual CLI dispatch for walk and run."
+    }
+  ],
+  "imageObservations": "First image is phase2 warning with ASTER96/96; second is phase3 impact with ASTER56/96. GPT did not treat these as one attack before/after. Same-case HP changes were separately read in supplied reports.",
+  "notApproved": ["Whole gait", "All enemy art", "Human gameplay balance", "Complete MVP", "Luna end-to-end generation"]
+}

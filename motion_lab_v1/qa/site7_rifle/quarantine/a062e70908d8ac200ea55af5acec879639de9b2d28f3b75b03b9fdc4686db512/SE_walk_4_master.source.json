@@ -1,0 +1,33 @@
+{
+  "generator": "Codex built-in ImageGen",
+  "importedUTC": "2026-09-13T08:58:01.162607+00:00",
+  "sha256": "a062e70908d8ac200ea55af5acec879639de9b2d28f3b75b03b9fdc4686db512",
+  "native": [
+    1024,
+    1536
+  ],
+  "destination": "art/site7_rifle/SE_walk_4_master.png",
+  "toolResponse": {
+    "path": "art/site7_enemies_raw/rifle_SE_walk_4_v1_tool_response.json",
+    "sha256": "55ed592f821a546c931dbec33239c11045eaae18989523083e8389e752a17b76"
+  },
+  "sourceMaster": {
+    "path": "art/site7_enemies_raw/rifle_SE_walk_4_v1.png",
+    "sha256": "bcd4d4d5d1fee428ac92e078e68c4b671c9ce43b08b5bc06f44ec27837b78f29"
+  },
+  "derivation": {
+    "kind": "edge-connected green matte normalization only; no source-art redraw",
+    "normalization": {
+      "path": "art/site7_enemies_raw/rifle_SE_walk_4_v1_normalization.json",
+      "sha256": "86fc34ece2e55b4d13ee57dbb5d2c58cb0ca4fae947bfd55072737db8bc78d9c"
+    },
+    "mask": {
+      "path": "art/site7_enemies_raw/rifle_SE_walk_4_v1_mask.png",
+      "sha256": "7b7233a35cfa8b911a211458bae8a97889c0160e0f6e1e986dbdd99d49526cf9"
+    },
+    "resampling": false,
+    "anatomicalWarp": false,
+    "subjectPixelsByteExact": true,
+    "backgroundPixels": 1213999
+  }
+}

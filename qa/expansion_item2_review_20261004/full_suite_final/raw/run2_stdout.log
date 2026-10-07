@@ -1,0 +1,32 @@
+실행 폴더: qa/regression_runs/20261005_210052_custom | 테스트 30개
+[ 1/30] PASS         connector_alignment    1060   1437s  SITE7_CONNECTOR_ALIGNMENT PASS (1060 checks)
+[ 2/30] PASS         battle_geometry        5039     30s  SITE7_BATTLE_GEOMETRY_SMOKE: PASS (5039 checks)
+[ 3/30] PASS         walk_graph_capture        -      6s  SITE7_WALK_GRAPH_HEADLESS: PASS (15 plates)
+[ 4/30] PASS         combat_sfx              572      7s  COMBAT_SFX_R04: PASS / 572 checks
+[ 5/30] PASS         demo_integration         26      9s  DEMO_INTEGRATION PASS / 26 checks
+[ 6/30] PASS         m7_visual                84      5s  M7_AUTHORED_VISUAL_SMOKE: PASS
+[ 7/30] PASS         m10_intel                39      5s  M10_INTEL_LOADOUT_SMOKE: PASS
+[ 8/30] PASS         m13_loadout              46      6s  M13_WEAPON_LOADOUT_SMOKE: PASS
+[ 9/30] PASS         campaign                235     25s  SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://qa/regression_runs/20261005_210052_cus
+[10/30] PASS         rook_app               1895     98s  ROOK_MOTION_LAB_APP_SMOKE: PASS (1895 checks, 0 failures)
+[11/30] PASS         motion_lab_runtime      106     12s  MOTION_LAB_CHARACTER_RUNTIME_SMOKE: PASS
+[12/30] PASS         motion_lab_python       137    269s  OK
+[13/30] PASS         motion_lab_js            30      0s  
+[14/30] PASS         battle_flow               -     13s  SITE7_BATTLE_FLOW: PASS
+[15/30] PASS         combat_entry              -      8s  
+[16/30] PASS         contract_ui             484      9s  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[17/30] PASS         hazard_expansion        438     28s  HAZARD_EXPANSION_SMOKE: PASS (438 checks, 15 rooms) res://qa/regression_runs/20261005_2100
+[18/30] PASS         full_op_01                -    134s  SITE7_FULL_OPERATION_SMOKE: PASS
+[19/30] PASS         full_op_02                -    124s  SITE7_FULL_OPERATION_SMOKE: PASS
+[20/30] PASS         full_op_03                -    144s  SITE7_FULL_OPERATION_SMOKE: PASS
+[21/30] PASS         full_op_04                -    162s  SITE7_FULL_OPERATION_SMOKE: PASS
+[22/30] PASS         full_op_05                -    161s  SITE7_FULL_OPERATION_SMOKE: PASS
+[23/30] FAIL         full_op_06                -    165s  SITE7_FULL_OPERATION_SMOKE: FAIL
+[24/30] PASS         full_op_07                -    234s  SITE7_FULL_OPERATION_SMOKE: PASS
+[25/30] PASS         full_op_08                -    197s  SITE7_FULL_OPERATION_SMOKE: PASS
+[26/30] PASS         full_op_09                -    181s  SITE7_FULL_OPERATION_SMOKE: PASS
+[27/30] FAIL         full_op_10                -    176s  SITE7_FULL_OPERATION_SMOKE: FAIL
+[28/30] PASS         boss_capture_geometry      -     22s  SITE7_BOSS_PATTERN_CAPTURE: PASS res://qa/regression_runs/20261005_210052_custom/out/boss_
+[29/30] PASS         variety_capture          96     14s  EXPANSION_ITEM1_CAPTURE: PASS (96 checks) res://qa/regression_runs/20261005_210052_custom/
+[30/30] PASS         nav_pockets               -     71s  NAV_POCKET_AUDIT: PASS (0 dead-end cells in 0 of 30 rooms, cell 12 px)
+REGRESSION_SUITE: FAIL (28/30 PASS) -> qa/regression_runs/20261005_210052_custom/SUMMARY_KO.md

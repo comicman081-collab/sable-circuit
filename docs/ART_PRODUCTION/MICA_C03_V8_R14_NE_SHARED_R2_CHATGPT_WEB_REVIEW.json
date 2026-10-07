@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "project": "SABLE CIRCUIT",
+  "review_type": "existing_chatgpt_web_planning_review",
+  "conversation_url": "https://chatgpt.com/c/6a93c84f-fb1c-83e8-9d88-959e708b2463",
+  "reviewed_at_local": "2026-09-04",
+  "batch": "MICA C03 V8 R14 NE shared-center R2",
+  "evidence": [
+    {
+      "kind": "static_review_sheet",
+      "path": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r2_review/MICA_C03_V8_R14_NE_SHARED_R2_NE_GAIT_REVIEW_2304X1080.png",
+      "sha256": "47b3b222f89f3eae4f2ad6a505b90ebadc7a36746869779561b4c81e93201f2e"
+    },
+    {
+      "kind": "fixed_grid_video",
+      "path": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r2_review/MICA_C03_V8_R14_NE_SHARED_R2_RECAPTURED_FIXED_GRID_5S_1920X1080.mp4",
+      "sha256": "90682af3883c43ab74a079338958693fcbe29ab2a8a4e63a61472856d0d8bf93"
+    },
+    {
+      "kind": "world_grid_video",
+      "path": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r2_review/MICA_C03_V8_R14_NE_SHARED_R2_RECAPTURED_WORLD_GRID_5S_1920X1080.mp4",
+      "sha256": "ca53f708f7f083f05c36f23ed3da042243676f45c424b9c5771ca0abf412e08f"
+    }
+  ],
+  "request": "실제 정적 시트와 fixed/world MP4를 열어 연속 프레임을 확인하고 A~F를 보수적으로 텍스트 판정. 새 이미지·접촉시트·생성 금지. 후보 UNREVIEWED_DO_NOT_PROMOTE 및 NE/8방향 production HOLD 유지.",
+  "verdict": {
+    "overall": "PASS_FOR_NE_SINGLE_DIRECTION_PILOT",
+    "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+    "ne_direction_production_promotion": "HOLD",
+    "eight_direction_production_promotion": "HOLD",
+    "A_gait_readability": "PASS",
+    "B_scale_volume_waist": "PASS",
+    "C_ankle_boot_ground": "PASS",
+    "D_sole_lock_handoff_balance": "PASS",
+    "E_composite_stability": "PASS",
+    "F_ne_pilot_blocker": "PASS_NO_BLOCKER"
+  },
+  "observations": [
+    "실제 1920x1080 24fps 120프레임 fixed/world 영상을 디코드하고 F11→F12 및 F23→다음 F00 전환을 확인.",
+    "NE 대각선 전진과 좌우 stance/swing 교대가 성립하며 탭댄스·지지발 스케이트로 읽히지 않음.",
+    "전역 Y-scale/rubber-leg, 종아리 단독 펌핑, 허리 snap, 90도 발목·부츠 파손, gross foot snap, 지면 관통 및 합성 flicker 없음.",
+    "후면 대각선 투영에서 cross-step/catwalk 인상과 낮은 foot roll·clearance는 비차단 폴리시로 기록됨.",
+    "2D world-grid 접지 기준의 판정이며 원본 RGBA 수치 감사나 3D 충돌 검증으로 확대하지 않음."
+  ],
+  "disposition": "REVIEW_RECORDED_NO_PROMOTION",
+  "prior_evidence": "R14/R10 및 실패 자료는 삭제하지 않고 격리 보존"
+}

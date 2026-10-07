@@ -1,0 +1,40 @@
+{
+  "checks": 5,
+  "escape_margin_s": 0.25,
+  "failures": [
+    "MIS_CH01_08 (BOSS_SITE7_GANTRY_01): safe floor within 180 px, reachable in time, wherever the target stands on the room floor: 101 of 1410 attacks fail, e.g. phase 3 attack 1, target at (12223, -3490), 756 px from the boss (nearest clear floor 180 px)"
+  ],
+  "gap_limit_px": 180,
+  "grid_px": 50.0,
+  "rooms": [
+    {
+      "attacks_evaluated": 1410,
+      "boss": "BOSS_SITE7_GANTRY_01",
+      "cover_obstacles": 0,
+      "failing": 101,
+      "failing_examples": [
+        "phase 3 attack 1, target at (12223, -3490), 756 px from the boss (nearest clear floor 180 px)",
+        "phase 3 attack 2, target at (12223, -3490), 756 px from the boss (nearest clear floor 180 px)",
+        "phase 3 attack 1, target at (12273, -3490), 707 px from the boss (nearest clear floor 180 px)",
+        "phase 3 attack 2, target at (12273, -3490), 707 px from the boss (nearest clear floor 180 px)",
+        "phase 3 attack 1, target at (12323, -3490), 657 px from the boss (nearest clear floor 180 px)",
+        "phase 3 attack 2, target at (12323, -3490), 657 px from the boss (nearest clear floor 180 px)",
+        "phase 3 attack 1, target at (12373, -3440), 618 px from the boss (nearest clear floor 180 px)",
+        "phase 3 attack 2, target at (12373, -3440), 618 px from the boss (nearest clear floor 180 px)",
+        "phase 3 attack 1, target at (12423, -3390), 585 px from the boss (nearest clear floor 180 px)",
+        "phase 3 attack 2, target at (12423, -3390), 585 px from the boss (nearest clear floor 180 px)",
+        "phase 3 attack 1, target at (12423, -3340), 604 px from the boss (nearest clear floor 180 px)",
+        "phase 3 attack 2, target at (12423, -3340), 604 px from the boss (nearest clear floor 180 px)"
+      ],
+      "mission": "MIS_CH01_08",
+      "nearest_clear_floor_worst_at": "phase 3 attack 1, target at (12223, -3490), 756 px from the boss",
+      "nearest_clear_floor_worst_px": 180,
+      "spots": 235,
+      "tightest_escape_at": "phase 2 attack 1, target at (13173, -3740), 250 px from the boss (leave 180 px in 1.30 s of 1.40 s)",
+      "tightest_escape_margin_s": 0.1
+    }
+  ],
+  "slowest_walk_px_per_s": 138.0,
+  "status": "FAIL",
+  "visual_approval": false
+}

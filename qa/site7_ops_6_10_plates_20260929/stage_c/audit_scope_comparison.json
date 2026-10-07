@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "missions": 7,
+  "plates": 105,
+  "seams": 98,
+  "all_plate_metrics_and_problems_unchanged": true,
+  "all_seam_metrics_and_problems_unchanged": true,
+  "before": "audit_before_1_7.json",
+  "after": "audit_after_1_7.json",
+  "controls": "tests/test_site7_plate_lighting_axis.py; 31.4 branch PASS / 32.0 branch FAIL / 31.4 other plate FAIL"
+}

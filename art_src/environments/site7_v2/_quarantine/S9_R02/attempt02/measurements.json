@@ -1,0 +1,173 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_R02/attempt02/S9_R02_GAME.png",
+  "luma": 0.20019491016864777,
+  "p10": 0.15439216792583466,
+  "p90": 0.2568000257015228,
+  "saturation": 0.06489462505876165,
+  "hue": 146.83973920923148,
+  "axis": 24.797378258138895,
+  "problems": [],
+  "plate": "S9_R02",
+  "attempt": 2,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      82,
+      495
+    ],
+    [
+      833,
+      202
+    ],
+    [
+      1094,
+      296
+    ],
+    [
+      1129,
+      273
+    ],
+    [
+      1262,
+      197
+    ],
+    [
+      1268,
+      366
+    ],
+    [
+      1590,
+      497
+    ],
+    [
+      836,
+      868
+    ],
+    [
+      427,
+      695
+    ],
+    [
+      232,
+      798
+    ],
+    [
+      54,
+      697
+    ],
+    [
+      245,
+      604
+    ]
+  ],
+  "doors_px": {
+    "NE": [
+      1180,
+      336,
+      215
+    ],
+    "SW": [
+      335,
+      651,
+      238
+    ]
+  },
+  "raw_sha256": "329b3911a5725d23b344a673dad9950b174c3b89b4bf3feab45dfda75d402f2f",
+  "master_sha256": "329b3911a5725d23b344a673dad9950b174c3b89b4bf3feab45dfda75d402f2f",
+  "game_sha256": "bffb7c2322a681e44d92cae91dfa96df09a13e7f79e9eb998c8b18761006100e",
+  "game_exposure_factor_srgb": 0.7153,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-597c4d74-aa61-4b38-960e-0a50b8474a34.png",
+  "inspection": "NE/SW 두 문, SE 난간은 닫혔다. 그러나 실제 바닥+SW apron x=54..1590으로 8% 여백(133.76 px) 위반. NW/NE 벽은 새 슬롯형 골드 랙.",
+  "floor_area_px2": 569627.0,
+  "floor_area_fraction": 0.3620467638519543,
+  "floor_bounds_px": [
+    54,
+    197,
+    1590,
+    868
+  ],
+  "status": "REJECTED",
+  "reason": "8% 바닥 테두리 여백 위반: 실제 바닥+에이프런 x 최소 54(3.23%), 오른쪽 잔여 82(4.90%); SW 에이프런이 너무 왼쪽까지 돌출. NE/SW 문은 맞고 SE는 닫혔지만 여백 조건 불합격.",
+  "raw": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt02/S9_R02_RAW_NATIVE.png",
+  "master": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt02/S9_R02_MASTER.png",
+  "game": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt02/S9_R02_GAME.png",
+  "manual_checks": {
+    "floor_margins_ltrb_fraction": [
+      0.03229665071770335,
+      0.20935175345377258,
+      0.04904306220095694,
+      0.077577045696068
+    ],
+    "floor_margin_minimum": 0.08,
+    "floor_margin_pass": false,
+    "floor_area_25_percent_pass": true,
+    "required_doors": [
+      "NE",
+      "SW"
+    ],
+    "visible_doors": [
+      "NE",
+      "SW"
+    ],
+    "door_sides_pass": true,
+    "corridor_width": "NOT_APPLICABLE_ROOM",
+    "wall_silhouette": "new slotted gold memory-blade rack panels; no S3 round fan",
+    "door_width_and_apron_runtime_alignment": "NOT_VALIDATED: no connected corridor exists",
+    "apron_samples": {
+      "SW": {
+        "painted_apron_polygon_px": [
+          [
+            245,
+            604
+          ],
+          [
+            427,
+            695
+          ],
+          [
+            232,
+            798
+          ],
+          [
+            54,
+            697
+          ]
+        ],
+        "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+        "luma": 0.22866278886795044,
+        "saturation": 0.05304524760282035,
+        "saturation_max": 0.1,
+        "saturation_pass": true
+      },
+      "NE": {
+        "painted_apron_polygon_px": [
+          [
+            1094,
+            296
+          ],
+          [
+            1129,
+            273
+          ],
+          [
+            1262,
+            197
+          ],
+          [
+            1268,
+            366
+          ]
+        ],
+        "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+        "luma": 0.24221652746200562,
+        "saturation": 0.03321133833120116,
+        "saturation_max": 0.1,
+        "saturation_pass": true
+      }
+    }
+  }
+}

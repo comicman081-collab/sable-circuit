@@ -1,0 +1,182 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-27T12:53:00.641048+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_stage3_mission_light_20260927\\01_before_same_plates_R01-R04.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1773264,
+      "sha256": "ad62f8facea650d651d241e32700372497345158a643104dd609c6e259f0d5aa"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_stage3_mission_light_20260927\\02_before_same_plates_R05-O02.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1922914,
+      "sha256": "d56b8f336bfed6a803ba3ef6d34ca3cae37a4f2289c57c11a2695e1585162d08"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_stage3_mission_light_20260927\\03_after_same_plates_R01-R04.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1788996,
+      "sha256": "7d5fd834270382ea367662f090708d989e30ba4f1bdfdd072dce5909a48c7f0f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_stage3_mission_light_20260927\\04_after_same_plates_R05-O02.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1926978,
+      "sha256": "a7f08301c50d104734b0c6135f0f12c031fdff92055844cd5276794bb65c3c20"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_stage3_mission_light_20260927\\05_mission_styles.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1873850,
+      "sha256": "849d8c4e0af4e2b82823455f79227009d782476d8a11f26de892477d83a08bf2"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_stage3_mission_light_20260927\\06_mis_ch01_03_R01_BREACH_S3_R01.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1018002,
+      "sha256": "ce541d10c460861e5478ba4174216015178e52fa0850cbb66faf95cc6bce6512"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_stage3_mission_light_20260927\\07_mis_ch01_04_R03_TRACE_S3_R01.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1276080,
+      "sha256": "101fcc9c5dc37e8fc6fa315b074fd1c1c1d3c9cf59125e61741845d845260164"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_stage3_mission_light_20260927\\08_mis_ch01_05_R01_ENTRY_S3_R01.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 949138,
+      "sha256": "bd966a56d6edc72fbce0ae58c76629884dc584cf2abdc13b2dc545924fbbce65"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_stage3_mission_light_20260927\\09_mis_ch01_03_R05_ANCHOR_S3_R05.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1323912,
+      "sha256": "166b541bc98597dcdec8c3f8da55eec7d137b2adb4941c01eb66998b5b8253e4"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_stage3_mission_light_20260927\\10_mis_ch01_04_R05_WARDEN_S3_R05.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1531194,
+      "sha256": "5268a13dc619af0ea9611494bd611815227c5570df19b6baedece54475f62c90"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_stage3_mission_light_20260927\\11_mis_ch01_05_R02_DEFENSE_S3_R05.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1162052,
+      "sha256": "bc34103623d94a2221b9c2e2dca95915f730df611b8f719c0e1c4c69d6007721"
+    }
+  ]
+}

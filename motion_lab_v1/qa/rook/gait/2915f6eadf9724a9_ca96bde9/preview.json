@@ -1,0 +1,88 @@
+{
+  "sourceDigest": "2915f6eadf9724a91b924cd481b23d41a4ca8dbfd664c1416a1461a90bd1a1b6",
+  "sourceFrames": [
+    {
+      "path": "art\\rook\\W_idle_0_master.png",
+      "sha256": "d978f66c3b7c2401030ab8dbcfd4b6c6635f73189e3e0fc504a8a899ab6e9002"
+    }
+  ],
+  "nativeEvidence": [
+    [
+      2128,
+      1626
+    ]
+  ],
+  "pixelUpscaling": false,
+  "pairEvidence": [
+    "qa\\rook\\gait\\2915f6eadf9724a9_ca96bde9\\W_idle_pair0_native_2128x1626.png"
+  ],
+  "clip": {
+    "image": "assets/atlas/rook/W_idle.webp",
+    "cell": [
+      768,
+      768
+    ],
+    "columns": 1,
+    "frames": 1,
+    "root": [
+      384,
+      716
+    ],
+    "height": 656,
+    "authoredFrames": 1,
+    "muzzles": [
+      [
+        116.00831413269043,
+        184.1081027984619
+      ]
+    ],
+    "sources": [
+      {
+        "source": "art/rook/W_idle_0_master.png",
+        "sha256": "d978f66c3b7c2401030ab8dbcfd4b6c6635f73189e3e0fc504a8a899ab6e9002",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          18,
+          19,
+          942,
+          1462
+        ],
+        "hipX": 609.5,
+        "scale": 0.4546084546084546,
+        "matrix": [
+          [
+            0.4546084403991699,
+            0.0,
+            106.91614532470703
+          ],
+          [
+            0.0,
+            0.4546084403991699,
+            51.3624382019043
+          ]
+        ],
+        "muzzle": [
+          116.00831413269043,
+          184.1081027984619
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            115.09909725189209,
+            59.999998569488525
+          ],
+          [
+            535.1572961807251,
+            715.9999780654907
+          ]
+        ]
+      }
+    ]
+  },
+  "sequence": "qa\\rook\\gait\\2915f6eadf9724a9_ca96bde9\\reference\\atlas\\rook\\W_idle.gif",
+  "contact": "qa\\rook\\gait\\2915f6eadf9724a9_ca96bde9\\reference\\atlas\\rook\\W_idle_keyframes.png",
+  "visualApproval": false
+}

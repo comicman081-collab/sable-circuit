@@ -1,0 +1,88 @@
+{
+  "sourceDigest": "4d4ccacec6f90696a10d249cc22b62980643479b962e530518d37272efbf8070",
+  "sourceFrames": [
+    {
+      "path": "art\\rook\\NW_idle_0_master.png",
+      "sha256": "25648ad2ea24f2c8d18fa1817fdfd6a3521d5d2aa11c3d50dc73e90c7a1a49c6"
+    }
+  ],
+  "nativeEvidence": [
+    [
+      2128,
+      1626
+    ]
+  ],
+  "pixelUpscaling": false,
+  "pairEvidence": [
+    "qa\\rook\\gait\\4d4ccacec6f90696_0bf18ab4\\NW_idle_pair0_native_2128x1626.png"
+  ],
+  "clip": {
+    "image": "assets/atlas/rook/NW_idle.webp",
+    "cell": [
+      768,
+      768
+    ],
+    "columns": 1,
+    "frames": 1,
+    "root": [
+      384,
+      716
+    ],
+    "height": 656,
+    "authoredFrames": 1,
+    "muzzles": [
+      [
+        186.8575712442398,
+        106.96196937561035
+      ]
+    ],
+    "sources": [
+      {
+        "source": "art/rook/NW_idle_0_master.png",
+        "sha256": "25648ad2ea24f2c8d18fa1817fdfd6a3521d5d2aa11c3d50dc73e90c7a1a49c6",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          116,
+          64,
+          825,
+          1405
+        ],
+        "hipX": 521.0,
+        "scale": 0.4891871737509321,
+        "matrix": [
+          [
+            0.48918718099594116,
+            0.0,
+            129.13348388671875
+          ],
+          [
+            0.0,
+            0.48918718099594116,
+            28.692020416259766
+          ]
+        ],
+        "muzzle": [
+          186.8575712442398,
+          106.96196937561035
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            185.87919688224792,
+            60.0
+          ],
+          [
+            532.7129082083702,
+            716.0000097155571
+          ]
+        ]
+      }
+    ]
+  },
+  "sequence": "qa\\rook\\gait\\4d4ccacec6f90696_0bf18ab4\\reference\\atlas\\rook\\NW_idle.gif",
+  "contact": "qa\\rook\\gait\\4d4ccacec6f90696_0bf18ab4\\reference\\atlas\\rook\\NW_idle_keyframes.png",
+  "visualApproval": false
+}

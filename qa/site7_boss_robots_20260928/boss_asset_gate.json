@@ -1,0 +1,68 @@
+{
+  "batch": "site7_boss_robots_20260928",
+  "generator": "Codex built-in ImageGen",
+  "runtime_status": "HOLD",
+  "visual_approval": "NOT_GRANTED",
+  "source_alpha_policy": "native_rgba_alpha_0_254_v1",
+  "source_alpha_status": "FAIL",
+  "source_alpha_observation": "Three native RGBA relay sentinel candidates each contain alpha 255 pixels; the Stage 4/5 exception does not apply.",
+  "generated_candidates": [
+    {
+      "attempt": 1,
+      "tool": "image_gen.imagegen",
+      "returnedPath": "C:/Users/AAA/.codex/generated_images/01a0e05b-ff4b-7d40-953c-3c9973c59ddf/exec-30c83a53-32c2-4ea0-a2c1-3835c8f4e61c.png",
+      "projectCopy": "motion_lab_v1/art/site7_enemies_raw/quarantine/relay_sentinel/attempt01.png",
+      "projectCopySHA256": "f8dfa0ba37ef304eb981f4bf816d8e663d0c5ac7d0cd73e4708707ea0922fab1",
+      "native": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alpha255Pixels": 753,
+      "backgroundAlpha0Pixels": 691436,
+      "status": "FAIL_NOT_PROMOTABLE",
+      "reason": "ALPHA_RANGE_0_254_REQUIRED: observed 0..255; native alpha may not be clamped or keyed"
+    },
+    {
+      "attempt": 2,
+      "tool": "image_gen.imagegen",
+      "returnedPath": "C:/Users/AAA/.codex/generated_images/01a0e05b-ff4b-7d40-953c-3c9973c59ddf/exec-343ff629-dd55-4868-a2d3-e31cbf511077.png",
+      "projectCopy": "motion_lab_v1/art/site7_enemies_raw/quarantine/relay_sentinel/attempt02.png",
+      "projectCopySHA256": "b362ac89eb5da2d20b89156d6f3d210df5539aa2628af72d9df4ca132ac62b72",
+      "native": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alpha255Pixels": 699,
+      "backgroundAlpha0Pixels": 682359,
+      "status": "FAIL_NOT_PROMOTABLE",
+      "reason": "ALPHA_RANGE_0_254_REQUIRED: observed 0..255; native alpha may not be clamped or keyed"
+    },
+    {
+      "attempt": 3,
+      "tool": "image_gen.imagegen",
+      "returnedPath": "C:/Users/AAA/.codex/generated_images/01a0e05b-ff4b-7d40-953c-3c9973c59ddf/exec-8532b6ed-3602-4f4a-90f4-fcc8aa985c2a.png",
+      "projectCopy": "motion_lab_v1/art/site7_enemies_raw/quarantine/relay_sentinel/attempt03.png",
+      "projectCopySHA256": "5925160b4801d820d0d1149cfba9975b77a075de07f43cbd119c220ca50cd5ee",
+      "native": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "alpha255Pixels": 736,
+      "backgroundAlpha0Pixels": 833404,
+      "status": "FAIL_NOT_PROMOTABLE",
+      "reason": "ALPHA_RANGE_0_254_REQUIRED: observed 0..255; native alpha may not be clamped or keyed"
+    }
+  ],
+  "remnant_status": "NOT_ATTEMPTED_STOP_ON_RELAY_HOLD",
+  "runtime_changes": "NONE",
+  "required_follow_up": "Stop at the instruction section 7 HOLD gate and report. Do not promote these candidates, clamp/key their alpha, or apply the Stage 4/5 exception."
+}

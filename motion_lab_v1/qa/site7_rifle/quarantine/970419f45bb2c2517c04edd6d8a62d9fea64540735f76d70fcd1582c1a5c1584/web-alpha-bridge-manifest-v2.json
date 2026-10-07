@@ -1,0 +1,57 @@
+{
+  "kind": "sable-web-alpha-bridge",
+  "schema": 1,
+  "recordedAt": "2026-09-13T14:16:32.983882+00:00",
+  "character": "site7_rifle",
+  "slot": "S/walk/0",
+  "source": {
+    "path": "motion_lab_v1/qa/site7_rifle/quarantine/970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584/S_walk_0_master_luna_max_20260913_v6_green_bridge.png",
+    "sha256": "970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584",
+    "native": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "greenPixelFraction": 0.7581647237141927,
+    "exactGreenPixelFraction": 0.5597407023111979,
+    "cornerRGB": [
+      [
+        20,
+        241,
+        18
+      ],
+      [
+        19,
+        240,
+        14
+      ],
+      [
+        22,
+        240,
+        20
+      ],
+      [
+        17,
+        244,
+        13
+      ]
+    ],
+    "backgroundUniformity": "NEAR_GREEN_NON_UNIFORM",
+    "status": "GREEN_BRIDGE_INPUT_ONLY",
+    "directIntakeAllowed": false,
+    "localKeyingAllowed": false
+  },
+  "actualToolResponse": {
+    "path": "motion_lab_v1/qa/site7_rifle/quarantine/970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584/actual-tool-response-luna-max-v6-green.json",
+    "sha256": "7defc81c3d04c0da694ffab4315ce2a00637bdc8fcf654969188364959751dfd"
+  },
+  "referenceOrder": [
+    "motion_lab_v1/art/site7_rifle/identity_reference.png",
+    "motion_lab_v1/reference/ual_guides/S_Walk_Loop_0.png"
+  ],
+  "destination": "user-authorized GPT web chat alpha conversion",
+  "status": "WEB_ALPHA_BRIDGE_ONLY",
+  "directIntakeAllowed": false,
+  "nextGate": "source_alpha_policy.py on the returned web PNG",
+  "localKeyingAllowed": false
+}

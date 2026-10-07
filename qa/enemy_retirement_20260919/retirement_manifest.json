@@ -1,0 +1,25 @@
+{
+  "status": "REMOVED_FROM_RUNTIME_AND_PRODUCTION",
+  "user_instruction_date": "2026-09-19",
+  "humanoid_enemy_count": 0,
+  "active_enemies": ["ENM_SITE7_DRONE_01", "BOSS_SITE7_ANCHOR_01"],
+  "retired_enemy": "ENM_SITE7_RIFLE_01",
+  "disconnected_legacy_humanoid_placeholders": ["ENM_SITE7_SHIELD_01", "ENM_SITE7_ABERRANT_01"],
+  "encounter_entries_replaced_with_existing_drone": 16,
+  "preserved_encounter_fields": ["health", "counts", "offsets", "reinforcement waves", "room rewards"],
+  "retired_recipes": ["site7_rifle", "site7_shield"],
+  "prior_runtime_data": "qa/enemy_retirement_20260919/before",
+  "retained_source_roots": ["motion_lab_v1/art/site7_rifle", "motion_lab_v1/art/site7_shield", "motion_lab_v1/qa/site7_rifle"],
+  "retained_assets_deleted": false,
+  "latest_cancelled_return": {
+    "path": "motion_lab_v1/qa/resume_enemies_20260919/front_edit/retired_native_master.png",
+    "sha256": "5fd7edde2f90bcc9c0fec3638cde1ad7afc923798cd92ad1663e75e0c5f0888c",
+    "approval": false,
+    "request_and_actual_response_retained": true,
+    "verified_managed_staging_duplicate_removed": true
+  },
+  "quarantine_mode": "Preserve source/provenance paths; productionRetired recipe plus fail-closed authoring guard and absent runtime bindings prevent promotion.",
+  "new_enemy_generations_after_cancellation": 0,
+  "player_changes": false,
+  "remote_deployment": false
+}

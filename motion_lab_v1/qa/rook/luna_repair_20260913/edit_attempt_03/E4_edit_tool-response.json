@@ -1,0 +1,27 @@
+{
+  "tool": "image_gen.imagegen",
+  "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-f07e1e56-97f5-4873-9a01-7f1d23c79329.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c as C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c\\exec-f07e1e56-97f5-4873-9a01-7f1d23c79329.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "qa/rook/luna_repair_20260913/edit_attempt_03/E4_edit_raw.png",
+  "projectCopySHA256": "e428d07678b82cb49f72010b7db605523f5d5fac7b1dad773d551a06cd25f19c",
+  "inputReferences": [
+    "art/rook/identity_reference.png",
+    "reference/ual_guides/E_walk_pair1.png",
+    "art/rook/E_walk_4_master.png"
+  ],
+  "promptSummary": "Single-target E4 edit; identity is appearance/weapon authority, E-walk pair1 guide is pose/camera only, lower body requested as anatomical LEFT rear-swing with RIGHT support; uniform RGB #00FF00 requested.",
+  "inspection": {
+    "nativeSize": [1069, 1471],
+    "mode": "RGB",
+    "bands": ["R", "G", "B"],
+    "cornerRGB": [[19, 240, 16], [18, 240, 11], [18, 241, 16], [20, 243, 17]],
+    "edgeUniqueColors": 174,
+    "greenExactFraction": 0.000001907791356306109,
+    "alphaUnique": null,
+    "backgroundDecision": "NOT_FLAT_UNIFORM_GREEN",
+    "roleDecision": "FAIL: E4 repeats E1's screen-left lifted/rear and screen-right planted arrangement; requested opposite left/right rear-swing/support exchange is not demonstrated."
+  },
+  "decision": "FAIL_NOT_PROMOTABLE"
+}

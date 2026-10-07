@@ -1,0 +1,40 @@
+실행 폴더: qa/regression_runs/20261004_224242_quick | 테스트 52개
+[ 1/52] PASS         combat_density           67     19s  COMBAT_DENSITY_SMOKE PASS (67 checks) {"attacks_started":29,"drone_orbit_split":[2,2],"fra
+[ 2/52] PASS         cover_navigation         43     18s  COVER_NAVIGATION_SMOKE: PASS / 43 checks
+[ 3/52] PASS         floor_segment            23     41s  FLOOR_SEGMENT_SMOKE: PASS (23 checks)
+[ 4/52] PASS         combat_query_fastpath     34     13s  COMBAT_QUERY_FASTPATH_SMOKE: PASS (34 checks)
+[ 5/52] PASS         player_cover              5      8s  SITE7_PLAYER_COVER_COLLISION: PASS (5 checks)
+[ 6/52] PASS         cover_alpha_clip          5      2s  SITE7_COVER_ALPHA_CLIP: PASS / 5 checks
+[ 7/52] PASS         cover_texture            17      4s  COVER_TEXTURE_REDUCTION_SMOKE: PASS (17 checks) 63.3 MB -> 10.2 MB
+[ 8/52] PASS         drone_app               171      3s  SITE7_DRONE_APP_SMOKE: PASS (171 checks) res://qa/regression_runs/20261004_224242_quick/ou
+[ 9/52] PASS         anchor_app              271      2s  SITE7_ANCHOR_APP_SMOKE: PASS (271 checks) res://qa/regression_runs/20261004_224242_quick/o
+[10/52] PASS         campaign_data           292      1s  SITE7_CAMPAIGN_DATA: PASS (292 checks)
+[11/52] PASS         upgrade_economy         225      2s  UPGRADE_ECONOMY: PASS (225 checks)
+[12/52] PASS         boss_registry           163     16s  SITE7_BOSS_REGISTRY_SMOKE: PASS (163 checks)
+[13/52] PASS         boss_pattern            978      3s  SITE7_BOSS_PATTERN_SMOKE: PASS (978 checks) res://qa/regression_runs/20261004_224242_quick
+[14/52] PASS         boss_duel              2184     56s  SITE7_BOSS_DUEL_SMOKE: PASS (2184 checks) res://qa/regression_runs/20261004_224242_quick/o
+[15/52] PASS         boss_room_fairness       21     20s  SITE7_BOSS_ROOM_FAIRNESS: PASS (21 checks) res://qa/regression_runs/20261004_224242_quick/
+[16/52] PASS         robot_roster            302      9s  SITE7_ROBOT_ROSTER: PASS / 302 checks
+[17/52] PASS         enemy_facing            224      3s  SITE7_ENEMY_FACING_SMOKE: PASS (224 checks)
+[18/52] PASS         machine_source          436      2s  SITE7_MACHINE_SOURCE_SMOKE: PASS (436 checks)
+[19/52] PASS         emission_owner         1293      4s  SITE7_EMISSION_OWNER_SMOKE: PASS (1293 checks) res://qa/regression_runs/20261004_224242_qu
+[20/52] PASS         m2_story                 27      5s  M2_STORY_FLOW_SMOKE: PASS
+[21/52] PASS         m9_skill                 44      5s  M9_OPERATOR_SKILL_SYNERGY_SMOKE: PASS
+[22/52] PASS         m10_base_ui              10      1s  M10_BASE_UI_ACTION_SMOKE: PASS
+[23/52] PASS         m10_persistence          27      1s  M10_PERSISTENCE_SMOKE: PASS
+[24/52] PASS         run_contract             34      6s  M11_RUN_CONTRACT_SMOKE: PASS
+[25/52] PASS         contract_offers       26950      2s  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[26/52] PASS         redline                  78      5s  REDLINE_SMOKE: PASS (78 checks)
+[27/52] PASS         contract_save            69      1s  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[28/52] PASS         m12_revive               25      4s  M12_SQUAD_REVIVE_SMOKE: PASS
+[29/52] PASS         play_log                 25      6s  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://qa/regression_runs/20261004_224242_quick/ou
+[30/52] PASS         hit_hurt_vfx             47      3s  COMBAT_HIT_HURT_VFX_SMOKE: PASS (47 checks)
+[31/52] PASS         combat_vfx              189      3s  COMBAT_VFX_OVERHAUL_SMOKE: PASS (189 checks)
+[32/52] PASS         elite_affix              71      5s  ELITE_AFFIX_SMOKE: PASS (71 checks)
+[33/52] PASS         elite_expansion         438      7s  ELITE_EXPANSION_SMOKE: PASS (438 checks)
+[34/52] PASS         zone_hazard             366     49s  ZONE_HAZARD_SMOKE: PASS (366 checks, 15 rooms)
+[35/52] PASS         firing_lane             325     29s  FIRING_LANE_SEARCH_SMOKE: PASS (325 checks)
+[36/52] PASS         platform_carry            6      6s  ACTOR_PLATFORM_CARRY_SMOKE: PASS (6 checks)
+[37/52] PASS         contact_carry            27     14s  ACTOR_CONTACT_CARRY_SMOKE: PASS (27 checks)
+[38/52] PASS         world_layout              -     15s  SITE7_WORLD_LAYOUT PASS 10 missions
+exit=127

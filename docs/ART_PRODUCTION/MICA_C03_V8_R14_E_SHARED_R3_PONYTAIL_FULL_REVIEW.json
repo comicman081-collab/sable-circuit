@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "reviewer": "Ponytail FULL",
+  "project": "SABLE CIRCUIT",
+  "reviewed_at_utc": "2026-09-04",
+  "revision": "V8_R14_E_SHARED_R3_RECAPTURED",
+  "evidence": {
+    "static": {
+      "path": "artifacts/mica_c03_v8_r14_e_shared_handoff_r3_review/MICA_C03_V8_R14_E_SHARED_R3_E_GAIT_REVIEW_2304X1080.png",
+      "sha256": "e4590fc0d4d84c75db9dc262a14ef85a32365db216129b501278c0062cf615fd"
+    },
+    "fixed_video": {
+      "path": "artifacts/mica_c03_v8_r14_e_shared_handoff_r3_review/MICA_C03_V8_R14_E_SHARED_R3_RECAPTURED_FIXED_GRID_5S_1920X1080.mp4",
+      "sha256": "5ccbae39b869d4ae6870bbc982c1ee53f38060d8176e94abfdfd295407ca0afc"
+    },
+    "world_video": {
+      "path": "artifacts/mica_c03_v8_r14_e_shared_handoff_r3_review/MICA_C03_V8_R14_E_SHARED_R3_RECAPTURED_WORLD_GRID_5S_1920X1080.mp4",
+      "sha256": "ccb5ee34d2ff9dab282b69216771b99d99c017e3322d8bff24a1aaac757de214"
+    }
+  },
+  "verdict": {
+    "A_gait_readability": "PASS",
+    "B_scale_and_volume": "PASS",
+    "C_ankle_boot_ground": "PASS",
+    "D_sole_lock_and_handoffs": "PASS",
+    "E_composite_stability": "PASS",
+    "F_pilot_scope": "HOLD",
+    "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+    "e_direction_production_promotion": "HOLD",
+    "eight_direction_visual_runtime_promotion": "HOLD"
+  },
+  "notes": [
+    "Recaptured evidence used the contact-preserving Blender render manifest; the earlier invalid contact-overlay captures remain quarantined.",
+    "A–E passed on actual pixels and continuous frames. F remains HOLD because this is a single-direction pilot, not an eight-direction promotion gate."
+  ],
+  "preservation": {
+    "prior_invalid_captures": "QUARANTINED_PRESERVE",
+    "deletion_performed": false,
+    "retirement_manifest_required_before_disposal": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "generator": "Codex built-in ImageGen",
+  "importedUTC": "2026-09-13T00:23:00.475495+00:00",
+  "sha256": "3d6c5a5751b9855b500e991c012da322a07dea5a03bba5bc9d2c8bc2b04f0ac3",
+  "native": [
+    473,
+    985
+  ],
+  "destination": "art/rook/SE_walk_4_master.png",
+  "toolResponse": {
+    "path": "qa/rook/astra_repair_20260913/SE_pair1.tool-response.json",
+    "sha256": "d503f23936d902773075cbae13c07de4e4498a1a47e362b0402b736c307626d2"
+  },
+  "sourceMaster": {
+    "path": "art/rook/gait_v8/native_pairs/SE_walk_pair1_932dd937cd8e.png",
+    "sha256": "932dd937cd8ef1ec0b9a55e2558813d10dfe21162b9450971f96d31d6315151b"
+  },
+  "masterNative": [
+    1536,
+    1024
+  ],
+  "derivation": {
+    "kind": "chroma-key and connected-subject crop only",
+    "box": [
+      891,
+      16,
+      1364,
+      1001
+    ],
+    "resampling": false,
+    "anatomicalWarp": false
+  }
+}

@@ -1,0 +1,1402 @@
+{
+ "schema": 1,
+ "mission": "MIS_CH01_09",
+ "script": "tests/smoke/site7_full_operation_smoke.gd -- --mission=MIS_CH01_09",
+ "note": "Technical playthroughs of the held-back operation 9 (not in the runner). damage = damage the hostiles dealt to the squad, by main-route step: 1 R02_NAVE, 2 R03_CHAPEL, 3 R04_GALLERY, 4 R05_STACKS, 5 R06_LIFT (stats.ROOMS maps the step to a room name; the key names in dmg already are the rooms). Not a balance approval.",
+ "tested_code_sha256": {
+  "res://assets/enemies/recon_drone/authored_yaw8_v1/spec.json": "0c716b309edfa5ecaa29cffef01642e23c855a3527a979a922002a9e8ad6b5ba",
+  "res://assets/enemies/signal_anchor_guardian/authored_core_v1/spec.json": "c3f98d11fc537fd5e7d542e7114296cdc0c12b7f2f4877e71c1bd6fed194b763",
+  "res://assets/environments/site7/karchive_props_v1/spec.json": "785acaf2c1ba077892d565261455d736ef27c2ec15186ab40f277b7cdc05dbee",
+  "res://data/art_profiles/enemy_profiles.json": "eaa1c7b0ae8486b8175d22d2540340ba81a58ef62249770e1c330bdef0c91ecf",
+  "res://data/missions/MIS_CH01_01.json": "dde2821f8813bb0fa19843b62966cf2f81f908bbbc134b959befdb25375a3159",
+  "res://data/missions/MIS_CH01_09.json": "c8ee65e4e432ebf30b2cb7312a1687c0950df351e45405c522ac95615e7f0c01",
+  "res://data/visual/site7_environment_props.json": "bb51827af0825192b8818092dfed34a067294e6217c56bdcd9513a795bf6e1df",
+  "res://scenes/mission/StoryStage01.tscn": "b7a0253953bbe9b7782511a6f5f380a430b707914bdf6df18a19773b758db3f0",
+  "res://scripts/actors/enemy_actor.gd": "4d11244a5870783b5dec565f5ac1f62ec87305ad3e2cb9e2b3a039700bb58e67",
+  "res://scripts/actors/operator_actor.gd": "03b9fc36ea98c77179e2c029e903f4d3e04b2ace0c622939a8b105ada3bb9677",
+  "res://scripts/animation/boss_phase_transition_guard.gd": "ef4da2e861c111dcb15b36df9544acb6b5f4f5dd156a02f4fcd478d0c893215b",
+  "res://scripts/animation/premium_enemy_presentation.gd": "6e857ca973cedfdadfbb7d3d375fe25f7afe37232df9c0251a5bfe2fdfd51528",
+  "res://scripts/animation/site7_machine_sprite.gd": "d226ac72391434d8b20e98ad0480e5c00338a534a59e71c6338e6b44cd313efd",
+  "res://scripts/combat/cover_navigation.gd": "cf73f545f4b7511e382c24c0ac73d83a335691d8869236a64a5b6c076e794960",
+  "res://scripts/combat/prototype_projectile.gd": "b156dfa72e3313070adb3745e6f64cafb18fa7aa0e6e60a9d70d267194903537",
+  "res://scripts/combat/site7_attack_warning.gd": "932b85e1bf4b4f071b2cee5749e6fa1fc5f51dd8df32bc9ed9110ae603318e2e",
+  "res://scripts/combat/site7_enemy_tactics.gd": "c17e9589deb36b6806693d9a926b312f4d2537dca7f51e7d27a60340a9158a96",
+  "res://scripts/missions/site7_environment_prop.gd": "8ff2942ebe6ec530be19ee997a66ec5902c5d585e5f5c6142758fe4e9f7654f3",
+  "res://scripts/missions/site7_environment_props.gd": "7bc4d13fa693873b94608ae4ee617f8cda4b9518e99aaa08d89a41fb858b360d",
+  "res://scripts/missions/story_stage_01.gd": "0ce95f81b47bfe754f4f09f75075852a24eaeb25914002788affe9cd51dc3eab",
+  "res://scripts/ui/enemy_overhead_ui.gd": "17915f0be953eb54744602588302f7718b9a651a61311eb8e799f6633ae5243f",
+  "res://tests/smoke/site7_full_operation_smoke.gd": "a58b199bf50307b4096a052e2f011e2cf5c4642d14fa8f57eccacbba81720aae"
+ },
+ "runs": [
+  {
+   "status": "PASS_TECHNICAL_PLAYTHROUGH",
+   "outcome": "EXTRACTED",
+   "secs": 164.7,
+   "kills": 25,
+   "full_route_cleared": true,
+   "secured_research": 546,
+   "salvage": 8,
+   "fragments": 4,
+   "dmg": {
+    "R02_NAVE": 109.0,
+    "R03_CHAPEL": 7.0,
+    "R04_GALLERY": 80.0,
+    "R05_STACKS": 144.2
+   },
+   "dmg_total": 340.2,
+   "final_hp": [
+    26.6,
+    82.3,
+    85.2
+   ],
+   "down_seen": true,
+   "casts": 21,
+   "failures": [],
+   "run": 1,
+   "recorded_utc": "2026-10-01T06:40:04",
+   "skill_casts": {
+    "CHR_PROTO_01:Q": 5,
+    "CHR_PROTO_01:X": 2,
+    "CHR_PROTO_02:E": 6,
+    "CHR_PROTO_02:Q": 1,
+    "CHR_PROTO_02:X": 7
+   },
+   "trace_health": [
+    {
+     "tick": 0,
+     "step": 0,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 1,
+     "step": 1,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 600,
+     "step": 1,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 1200,
+     "step": 1,
+     "health": [
+      58.0,
+      120.0,
+      80.0
+     ]
+    },
+    {
+     "tick": 1553,
+     "step": 2,
+     "health": [
+      44.0,
+      120.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 1800,
+     "step": 2,
+     "health": [
+      44.0,
+      113.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 2222,
+     "step": 3,
+     "health": [
+      44.0,
+      113.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 2400,
+     "step": 3,
+     "health": [
+      44.0,
+      113.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 3000,
+     "step": 3,
+     "health": [
+      44.0,
+      113.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 3600,
+     "step": 3,
+     "health": [
+      44.0,
+      113.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 4200,
+     "step": 3,
+     "health": [
+      44.0,
+      113.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 4800,
+     "step": 3,
+     "health": [
+      0.0,
+      84.0,
+      66.0
+     ]
+    },
+    {
+     "tick": 5011,
+     "step": 4,
+     "health": [
+      0.0,
+      84.0,
+      66.0
+     ]
+    },
+    {
+     "tick": 5400,
+     "step": 4,
+     "health": [
+      33.6,
+      84.0,
+      66.0
+     ]
+    },
+    {
+     "tick": 6000,
+     "step": 4,
+     "health": [
+      67.2,
+      132.3,
+      105.2
+     ]
+    },
+    {
+     "tick": 6600,
+     "step": 4,
+     "health": [
+      67.2,
+      132.3,
+      105.2
+     ]
+    },
+    {
+     "tick": 7200,
+     "step": 4,
+     "health": [
+      67.2,
+      132.3,
+      105.2
+     ]
+    },
+    {
+     "tick": 7800,
+     "step": 4,
+     "health": [
+      50.2,
+      132.3,
+      105.2
+     ]
+    },
+    {
+     "tick": 8400,
+     "step": 4,
+     "health": [
+      10.2,
+      112.3,
+      105.2
+     ]
+    },
+    {
+     "tick": 8641,
+     "step": 5,
+     "health": [
+      26.6,
+      82.3,
+      85.2
+     ]
+    },
+    {
+     "tick": 9000,
+     "step": 5,
+     "health": [
+      26.6,
+      82.3,
+      85.2
+     ]
+    }
+   ],
+   "result": {
+    "active_run_boosts": [],
+    "battle_preview": false,
+    "cargo_before_resolution": {
+     "common_research": 246,
+     "fragments": 4,
+     "intel": {
+      "ABERRANT": 2,
+      "ANCHOR": 1,
+      "SECURITY": 3
+     },
+     "salvage": 8,
+     "unsecured_research": 300
+    },
+    "carrier_fragment": true,
+    "carrier_fragment_secured": true,
+    "chapter_id": "CH01",
+    "early_extraction": false,
+    "elapsed_seconds": 164.678860777787,
+    "evidence_label": "VAULT INDEX",
+    "extraction_depth": 6,
+    "extraction_room": "",
+    "field_supplies": true,
+    "full_route_cleared": true,
+    "hostiles_defeated": 25,
+    "ledger_recovered": true,
+    "ledger_retained_on_wipe": false,
+    "lost_intel_samples": 0,
+    "lost_unsecured": 0,
+    "mission_id": "MIS_CH01_09",
+    "outcome": "EXTRACTED",
+    "research_multiplier": 1.0,
+    "run_contract": {},
+    "run_fragment_reward_multiplier": 1.0,
+    "run_id": "MIS_CH01_09-TECHNICAL-PLAYTHROUGH",
+    "run_only_boosts_expire_on_return": true,
+    "run_research_reward_multiplier": 1.0,
+    "run_salvage_reward_multiplier": 1.0,
+    "secured_fragments": 4,
+    "secured_intel": {
+     "ABERRANT": 2,
+     "ANCHOR": 1,
+     "SECURITY": 3
+    },
+    "secured_research": 546,
+    "secured_rewards": 546,
+    "secured_salvage": 8,
+    "transaction_id": "MIS_CH01_09-TECHNICAL-PLAYTHROUGH",
+    "wipe_policy": "50% COMMON RESEARCH/SALVAGE RETAINED; HIGH-VALUE RESEARCH + SIGNAL FRAGMENTS + INTEL SAMPLES LOST; RUN-ONLY BOOSTS EXPIRE; STORY LEDGER RETAINED"
+   }
+  },
+  {
+   "status": "PASS_TECHNICAL_PLAYTHROUGH",
+   "outcome": "EXTRACTED",
+   "secs": 166.3,
+   "kills": 25,
+   "full_route_cleared": true,
+   "secured_research": 546,
+   "salvage": 8,
+   "fragments": 4,
+   "dmg": {
+    "R02_NAVE": 116.0,
+    "R04_GALLERY": 63.0,
+    "R05_STACKS": 131.6
+   },
+   "dmg_total": 310.6,
+   "final_hp": [
+    0.0,
+    98.0,
+    58.2
+   ],
+   "down_seen": true,
+   "casts": 24,
+   "failures": [],
+   "run": 2,
+   "recorded_utc": "2026-10-01T06:44:28",
+   "skill_casts": {
+    "CHR_PROTO_01:Q": 12,
+    "CHR_PROTO_01:X": 5,
+    "CHR_PROTO_02:E": 3,
+    "CHR_PROTO_02:Q": 1,
+    "CHR_PROTO_02:X": 3
+   },
+   "trace_health": [
+    {
+     "tick": 0,
+     "step": 0,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 1,
+     "step": 1,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 600,
+     "step": 1,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 1200,
+     "step": 1,
+     "health": [
+      58.0,
+      120.0,
+      80.0
+     ]
+    },
+    {
+     "tick": 1670,
+     "step": 2,
+     "health": [
+      44.0,
+      113.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 1800,
+     "step": 2,
+     "health": [
+      44.0,
+      113.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 2312,
+     "step": 3,
+     "health": [
+      44.0,
+      113.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 2400,
+     "step": 3,
+     "health": [
+      44.0,
+      113.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 3000,
+     "step": 3,
+     "health": [
+      44.0,
+      113.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 3600,
+     "step": 3,
+     "health": [
+      44.0,
+      113.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 4200,
+     "step": 3,
+     "health": [
+      44.0,
+      113.0,
+      73.0
+     ]
+    },
+    {
+     "tick": 4800,
+     "step": 3,
+     "health": [
+      18.0,
+      113.0,
+      59.0
+     ]
+    },
+    {
+     "tick": 5221,
+     "step": 4,
+     "health": [
+      18.0,
+      90.0,
+      59.0
+     ]
+    },
+    {
+     "tick": 5400,
+     "step": 4,
+     "health": [
+      18.0,
+      90.0,
+      59.0
+     ]
+    },
+    {
+     "tick": 6000,
+     "step": 4,
+     "health": [
+      51.6,
+      138.0,
+      98.2
+     ]
+    },
+    {
+     "tick": 6600,
+     "step": 4,
+     "health": [
+      51.6,
+      138.0,
+      98.2
+     ]
+    },
+    {
+     "tick": 7200,
+     "step": 4,
+     "health": [
+      21.6,
+      138.0,
+      98.2
+     ]
+    },
+    {
+     "tick": 7800,
+     "step": 4,
+     "health": [
+      0.0,
+      138.0,
+      98.2
+     ]
+    },
+    {
+     "tick": 8400,
+     "step": 4,
+     "health": [
+      0.0,
+      138.0,
+      58.2
+     ]
+    },
+    {
+     "tick": 8941,
+     "step": 5,
+     "health": [
+      0.0,
+      98.0,
+      58.2
+     ]
+    },
+    {
+     "tick": 9000,
+     "step": 5,
+     "health": [
+      0.0,
+      98.0,
+      58.2
+     ]
+    },
+    {
+     "tick": 9600,
+     "step": 5,
+     "health": [
+      0.0,
+      98.0,
+      58.2
+     ]
+    }
+   ],
+   "result": {
+    "active_run_boosts": [],
+    "battle_preview": false,
+    "cargo_before_resolution": {
+     "common_research": 246,
+     "fragments": 4,
+     "intel": {
+      "ABERRANT": 2,
+      "ANCHOR": 1,
+      "SECURITY": 3
+     },
+     "salvage": 8,
+     "unsecured_research": 300
+    },
+    "carrier_fragment": true,
+    "carrier_fragment_secured": true,
+    "chapter_id": "CH01",
+    "early_extraction": false,
+    "elapsed_seconds": 166.328787878794,
+    "evidence_label": "VAULT INDEX",
+    "extraction_depth": 6,
+    "extraction_room": "",
+    "field_supplies": true,
+    "full_route_cleared": true,
+    "hostiles_defeated": 25,
+    "ledger_recovered": true,
+    "ledger_retained_on_wipe": false,
+    "lost_intel_samples": 0,
+    "lost_unsecured": 0,
+    "mission_id": "MIS_CH01_09",
+    "outcome": "EXTRACTED",
+    "research_multiplier": 1.0,
+    "run_contract": {},
+    "run_fragment_reward_multiplier": 1.0,
+    "run_id": "MIS_CH01_09-TECHNICAL-PLAYTHROUGH",
+    "run_only_boosts_expire_on_return": true,
+    "run_research_reward_multiplier": 1.0,
+    "run_salvage_reward_multiplier": 1.0,
+    "secured_fragments": 4,
+    "secured_intel": {
+     "ABERRANT": 2,
+     "ANCHOR": 1,
+     "SECURITY": 3
+    },
+    "secured_research": 546,
+    "secured_rewards": 546,
+    "secured_salvage": 8,
+    "transaction_id": "MIS_CH01_09-TECHNICAL-PLAYTHROUGH",
+    "wipe_policy": "50% COMMON RESEARCH/SALVAGE RETAINED; HIGH-VALUE RESEARCH + SIGNAL FRAGMENTS + INTEL SAMPLES LOST; RUN-ONLY BOOSTS EXPIRE; STORY LEDGER RETAINED"
+   }
+  },
+  {
+   "status": "PASS_TECHNICAL_PLAYTHROUGH",
+   "outcome": "EXTRACTED",
+   "secs": 161.3,
+   "kills": 25,
+   "full_route_cleared": true,
+   "secured_research": 546,
+   "salvage": 8,
+   "fragments": 4,
+   "dmg": {
+    "R02_NAVE": 112.0,
+    "R04_GALLERY": 95.0,
+    "R05_STACKS": 20.6
+   },
+   "dmg_total": 227.6,
+   "final_hp": [
+    57.8,
+    96.2,
+    112.0
+   ],
+   "down_seen": true,
+   "casts": 20,
+   "failures": [],
+   "run": 3,
+   "recorded_utc": "2026-10-01T06:47:21",
+   "skill_casts": {
+    "CHR_PROTO_01:Q": 6,
+    "CHR_PROTO_01:X": 3,
+    "CHR_PROTO_02:E": 5,
+    "CHR_PROTO_02:Q": 1,
+    "CHR_PROTO_02:X": 5
+   },
+   "trace_health": [
+    {
+     "tick": 0,
+     "step": 0,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 1,
+     "step": 1,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 600,
+     "step": 1,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 1200,
+     "step": 1,
+     "health": [
+      51.0,
+      120.0,
+      87.0
+     ]
+    },
+    {
+     "tick": 1527,
+     "step": 2,
+     "health": [
+      51.0,
+      96.0,
+      87.0
+     ]
+    },
+    {
+     "tick": 1800,
+     "step": 2,
+     "health": [
+      51.0,
+      96.0,
+      87.0
+     ]
+    },
+    {
+     "tick": 2161,
+     "step": 3,
+     "health": [
+      51.0,
+      96.0,
+      87.0
+     ]
+    },
+    {
+     "tick": 2400,
+     "step": 3,
+     "health": [
+      51.0,
+      96.0,
+      87.0
+     ]
+    },
+    {
+     "tick": 3000,
+     "step": 3,
+     "health": [
+      51.0,
+      96.0,
+      87.0
+     ]
+    },
+    {
+     "tick": 3600,
+     "step": 3,
+     "health": [
+      51.0,
+      96.0,
+      87.0
+     ]
+    },
+    {
+     "tick": 4200,
+     "step": 3,
+     "health": [
+      51.0,
+      96.0,
+      87.0
+     ]
+    },
+    {
+     "tick": 4800,
+     "step": 3,
+     "health": [
+      0.0,
+      92.5,
+      87.0
+     ]
+    },
+    {
+     "tick": 5131,
+     "step": 4,
+     "health": [
+      24.1,
+      68.5,
+      80.0
+     ]
+    },
+    {
+     "tick": 5400,
+     "step": 4,
+     "health": [
+      24.1,
+      68.5,
+      80.0
+     ]
+    },
+    {
+     "tick": 6000,
+     "step": 4,
+     "health": [
+      57.8,
+      116.8,
+      112.0
+     ]
+    },
+    {
+     "tick": 6600,
+     "step": 4,
+     "health": [
+      57.8,
+      116.8,
+      112.0
+     ]
+    },
+    {
+     "tick": 7200,
+     "step": 4,
+     "health": [
+      57.8,
+      111.8,
+      112.0
+     ]
+    },
+    {
+     "tick": 7800,
+     "step": 4,
+     "health": [
+      57.8,
+      111.8,
+      112.0
+     ]
+    },
+    {
+     "tick": 8223,
+     "step": 5,
+     "health": [
+      57.8,
+      96.2,
+      112.0
+     ]
+    },
+    {
+     "tick": 8400,
+     "step": 5,
+     "health": [
+      57.8,
+      96.2,
+      112.0
+     ]
+    },
+    {
+     "tick": 9000,
+     "step": 5,
+     "health": [
+      57.8,
+      96.2,
+      112.0
+     ]
+    }
+   ],
+   "result": {
+    "active_run_boosts": [],
+    "battle_preview": false,
+    "cargo_before_resolution": {
+     "common_research": 246,
+     "fragments": 4,
+     "intel": {
+      "ABERRANT": 2,
+      "ANCHOR": 1,
+      "SECURITY": 3
+     },
+     "salvage": 8,
+     "unsecured_research": 300
+    },
+    "carrier_fragment": true,
+    "carrier_fragment_secured": true,
+    "chapter_id": "CH01",
+    "early_extraction": false,
+    "elapsed_seconds": 161.285112000012,
+    "evidence_label": "VAULT INDEX",
+    "extraction_depth": 6,
+    "extraction_room": "",
+    "field_supplies": true,
+    "full_route_cleared": true,
+    "hostiles_defeated": 25,
+    "ledger_recovered": true,
+    "ledger_retained_on_wipe": false,
+    "lost_intel_samples": 0,
+    "lost_unsecured": 0,
+    "mission_id": "MIS_CH01_09",
+    "outcome": "EXTRACTED",
+    "research_multiplier": 1.0,
+    "run_contract": {},
+    "run_fragment_reward_multiplier": 1.0,
+    "run_id": "MIS_CH01_09-TECHNICAL-PLAYTHROUGH",
+    "run_only_boosts_expire_on_return": true,
+    "run_research_reward_multiplier": 1.0,
+    "run_salvage_reward_multiplier": 1.0,
+    "secured_fragments": 4,
+    "secured_intel": {
+     "ABERRANT": 2,
+     "ANCHOR": 1,
+     "SECURITY": 3
+    },
+    "secured_research": 546,
+    "secured_rewards": 546,
+    "secured_salvage": 8,
+    "transaction_id": "MIS_CH01_09-TECHNICAL-PLAYTHROUGH",
+    "wipe_policy": "50% COMMON RESEARCH/SALVAGE RETAINED; HIGH-VALUE RESEARCH + SIGNAL FRAGMENTS + INTEL SAMPLES LOST; RUN-ONLY BOOSTS EXPIRE; STORY LEDGER RETAINED"
+   }
+  },
+  {
+   "status": "PASS_TECHNICAL_PLAYTHROUGH",
+   "outcome": "EXTRACTED",
+   "secs": 163.7,
+   "kills": 25,
+   "full_route_cleared": true,
+   "secured_research": 546,
+   "salvage": 8,
+   "fragments": 4,
+   "dmg": {
+    "R02_NAVE": 155.0,
+    "R04_GALLERY": 78.0,
+    "R05_STACKS": 145.6
+   },
+   "dmg_total": 378.6,
+   "final_hp": [
+    33.6,
+    30.3,
+    58.2
+   ],
+   "down_seen": false,
+   "casts": 22,
+   "failures": [],
+   "run": 4,
+   "recorded_utc": "2026-10-01T06:50:15",
+   "skill_casts": {
+    "CHR_PROTO_01:Q": 13,
+    "CHR_PROTO_01:X": 7,
+    "CHR_PROTO_02:E": 1,
+    "CHR_PROTO_02:X": 1
+   },
+   "trace_health": [
+    {
+     "tick": 0,
+     "step": 0,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 1,
+     "step": 1,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 600,
+     "step": 1,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 1200,
+     "step": 1,
+     "health": [
+      61.0,
+      120.0,
+      69.0
+     ]
+    },
+    {
+     "tick": 1385,
+     "step": 2,
+     "health": [
+      54.0,
+      75.0,
+      62.0
+     ]
+    },
+    {
+     "tick": 1800,
+     "step": 2,
+     "health": [
+      54.0,
+      75.0,
+      62.0
+     ]
+    },
+    {
+     "tick": 2072,
+     "step": 3,
+     "health": [
+      54.0,
+      75.0,
+      62.0
+     ]
+    },
+    {
+     "tick": 2400,
+     "step": 3,
+     "health": [
+      54.0,
+      75.0,
+      62.0
+     ]
+    },
+    {
+     "tick": 3000,
+     "step": 3,
+     "health": [
+      54.0,
+      75.0,
+      62.0
+     ]
+    },
+    {
+     "tick": 3600,
+     "step": 3,
+     "health": [
+      54.0,
+      75.0,
+      62.0
+     ]
+    },
+    {
+     "tick": 4200,
+     "step": 3,
+     "health": [
+      42.0,
+      75.0,
+      55.0
+     ]
+    },
+    {
+     "tick": 4591,
+     "step": 4,
+     "health": [
+      35.0,
+      59.0,
+      19.0
+     ]
+    },
+    {
+     "tick": 4800,
+     "step": 4,
+     "health": [
+      35.0,
+      59.0,
+      19.0
+     ]
+    },
+    {
+     "tick": 5400,
+     "step": 4,
+     "health": [
+      68.6,
+      107.3,
+      58.2
+     ]
+    },
+    {
+     "tick": 6000,
+     "step": 4,
+     "health": [
+      68.6,
+      107.3,
+      58.2
+     ]
+    },
+    {
+     "tick": 6600,
+     "step": 4,
+     "health": [
+      68.6,
+      107.3,
+      58.2
+     ]
+    },
+    {
+     "tick": 7200,
+     "step": 4,
+     "health": [
+      54.6,
+      90.3,
+      58.2
+     ]
+    },
+    {
+     "tick": 7800,
+     "step": 4,
+     "health": [
+      33.6,
+      30.3,
+      58.2
+     ]
+    },
+    {
+     "tick": 8011,
+     "step": 5,
+     "health": [
+      33.6,
+      30.3,
+      58.2
+     ]
+    },
+    {
+     "tick": 8400,
+     "step": 5,
+     "health": [
+      33.6,
+      30.3,
+      58.2
+     ]
+    }
+   ],
+   "result": {
+    "active_run_boosts": [],
+    "battle_preview": false,
+    "cargo_before_resolution": {
+     "common_research": 246,
+     "fragments": 4,
+     "intel": {
+      "ABERRANT": 2,
+      "ANCHOR": 1,
+      "SECURITY": 3
+     },
+     "salvage": 8,
+     "unsecured_research": 300
+    },
+    "carrier_fragment": true,
+    "carrier_fragment_secured": true,
+    "chapter_id": "CH01",
+    "early_extraction": false,
+    "elapsed_seconds": 163.654296666666,
+    "evidence_label": "VAULT INDEX",
+    "extraction_depth": 6,
+    "extraction_room": "",
+    "field_supplies": true,
+    "full_route_cleared": true,
+    "hostiles_defeated": 25,
+    "ledger_recovered": true,
+    "ledger_retained_on_wipe": false,
+    "lost_intel_samples": 0,
+    "lost_unsecured": 0,
+    "mission_id": "MIS_CH01_09",
+    "outcome": "EXTRACTED",
+    "research_multiplier": 1.0,
+    "run_contract": {},
+    "run_fragment_reward_multiplier": 1.0,
+    "run_id": "MIS_CH01_09-TECHNICAL-PLAYTHROUGH",
+    "run_only_boosts_expire_on_return": true,
+    "run_research_reward_multiplier": 1.0,
+    "run_salvage_reward_multiplier": 1.0,
+    "secured_fragments": 4,
+    "secured_intel": {
+     "ABERRANT": 2,
+     "ANCHOR": 1,
+     "SECURITY": 3
+    },
+    "secured_research": 546,
+    "secured_rewards": 546,
+    "secured_salvage": 8,
+    "transaction_id": "MIS_CH01_09-TECHNICAL-PLAYTHROUGH",
+    "wipe_policy": "50% COMMON RESEARCH/SALVAGE RETAINED; HIGH-VALUE RESEARCH + SIGNAL FRAGMENTS + INTEL SAMPLES LOST; RUN-ONLY BOOSTS EXPIRE; STORY LEDGER RETAINED"
+   }
+  },
+  {
+   "status": "PASS_TECHNICAL_PLAYTHROUGH",
+   "outcome": "EXTRACTED",
+   "secs": 165.0,
+   "kills": 25,
+   "full_route_cleared": true,
+   "secured_research": 546,
+   "salvage": 8,
+   "fragments": 4,
+   "dmg": {
+    "R02_NAVE": 116.0,
+    "R04_GALLERY": 91.5,
+    "R05_STACKS": 162.5
+   },
+   "dmg_total": 370.0,
+   "final_hp": [
+    27.2,
+    38.3,
+    65.2
+   ],
+   "down_seen": true,
+   "casts": 21,
+   "failures": [],
+   "run": 5,
+   "recorded_utc": "2026-10-01T06:53:17",
+   "skill_casts": {
+    "CHR_PROTO_01:Q": 6,
+    "CHR_PROTO_01:X": 2,
+    "CHR_PROTO_02:E": 5,
+    "CHR_PROTO_02:Q": 2,
+    "CHR_PROTO_02:X": 6
+   },
+   "trace_health": [
+    {
+     "tick": 0,
+     "step": 0,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 1,
+     "step": 1,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 600,
+     "step": 1,
+     "health": [
+      96.0,
+      138.0,
+      112.0
+     ]
+    },
+    {
+     "tick": 1200,
+     "step": 1,
+     "health": [
+      58.0,
+      113.0,
+      87.0
+     ]
+    },
+    {
+     "tick": 1561,
+     "step": 2,
+     "health": [
+      51.0,
+      99.0,
+      80.0
+     ]
+    },
+    {
+     "tick": 1800,
+     "step": 2,
+     "health": [
+      51.0,
+      99.0,
+      80.0
+     ]
+    },
+    {
+     "tick": 2222,
+     "step": 3,
+     "health": [
+      51.0,
+      99.0,
+      80.0
+     ]
+    },
+    {
+     "tick": 2400,
+     "step": 3,
+     "health": [
+      51.0,
+      99.0,
+      80.0
+     ]
+    },
+    {
+     "tick": 3000,
+     "step": 3,
+     "health": [
+      51.0,
+      99.0,
+      80.0
+     ]
+    },
+    {
+     "tick": 3600,
+     "step": 3,
+     "health": [
+      51.0,
+      99.0,
+      80.0
+     ]
+    },
+    {
+     "tick": 4200,
+     "step": 3,
+     "health": [
+      51.0,
+      99.0,
+      80.0
+     ]
+    },
+    {
+     "tick": 4800,
+     "step": 3,
+     "health": [
+      0.0,
+      88.5,
+      50.0
+     ]
+    },
+    {
+     "tick": 5011,
+     "step": 4,
+     "health": [
+      0.0,
+      88.5,
+      50.0
+     ]
+    },
+    {
+     "tick": 5400,
+     "step": 4,
+     "health": [
+      33.6,
+      88.5,
+      50.0
+     ]
+    },
+    {
+     "tick": 6000,
+     "step": 4,
+     "health": [
+      67.2,
+      136.8,
+      89.2
+     ]
+    },
+    {
+     "tick": 6600,
+     "step": 4,
+     "health": [
+      67.2,
+      136.8,
+      89.2
+     ]
+    },
+    {
+     "tick": 7200,
+     "step": 4,
+     "health": [
+      67.2,
+      136.8,
+      89.2
+     ]
+    },
+    {
+     "tick": 7800,
+     "step": 4,
+     "health": [
+      47.2,
+      98.3,
+      65.2
+     ]
+    },
+    {
+     "tick": 8400,
+     "step": 4,
+     "health": [
+      27.2,
+      38.3,
+      65.2
+     ]
+    },
+    {
+     "tick": 8431,
+     "step": 5,
+     "health": [
+      27.2,
+      38.3,
+      65.2
+     ]
+    },
+    {
+     "tick": 9000,
+     "step": 5,
+     "health": [
+      27.2,
+      38.3,
+      65.2
+     ]
+    }
+   ],
+   "result": {
+    "active_run_boosts": [],
+    "battle_preview": false,
+    "cargo_before_resolution": {
+     "common_research": 246,
+     "fragments": 4,
+     "intel": {
+      "ABERRANT": 2,
+      "ANCHOR": 1,
+      "SECURITY": 3
+     },
+     "salvage": 8,
+     "unsecured_research": 300
+    },
+    "carrier_fragment": true,
+    "carrier_fragment_secured": true,
+    "chapter_id": "CH01",
+    "early_extraction": false,
+    "elapsed_seconds": 165.04591577778,
+    "evidence_label": "VAULT INDEX",
+    "extraction_depth": 6,
+    "extraction_room": "",
+    "field_supplies": true,
+    "full_route_cleared": true,
+    "hostiles_defeated": 25,
+    "ledger_recovered": true,
+    "ledger_retained_on_wipe": false,
+    "lost_intel_samples": 0,
+    "lost_unsecured": 0,
+    "mission_id": "MIS_CH01_09",
+    "outcome": "EXTRACTED",
+    "research_multiplier": 1.0,
+    "run_contract": {},
+    "run_fragment_reward_multiplier": 1.0,
+    "run_id": "MIS_CH01_09-TECHNICAL-PLAYTHROUGH",
+    "run_only_boosts_expire_on_return": true,
+    "run_research_reward_multiplier": 1.0,
+    "run_salvage_reward_multiplier": 1.0,
+    "secured_fragments": 4,
+    "secured_intel": {
+     "ABERRANT": 2,
+     "ANCHOR": 1,
+     "SECURITY": 3
+    },
+    "secured_research": 546,
+    "secured_rewards": 546,
+    "secured_salvage": 8,
+    "transaction_id": "MIS_CH01_09-TECHNICAL-PLAYTHROUGH",
+    "wipe_policy": "50% COMMON RESEARCH/SALVAGE RETAINED; HIGH-VALUE RESEARCH + SIGNAL FRAGMENTS + INTEL SAMPLES LOST; RUN-ONLY BOOSTS EXPIRE; STORY LEDGER RETAINED"
+   }
+  }
+ ]
+}

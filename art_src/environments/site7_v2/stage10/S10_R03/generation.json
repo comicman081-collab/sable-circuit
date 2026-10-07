@@ -1,0 +1,203 @@
+[
+  {
+    "asset": ".cache/diag/site7_ops_e/candidates/S10_R03/attempt01/S10_R03_GAME.png",
+    "luma": 0.20006652176380157,
+    "p10": 0.15601177513599396,
+    "p90": 0.2353372722864151,
+    "saturation": 0.05640171957765785,
+    "hue": 134.851992453858,
+    "axis": 25.15208998365126,
+    "problems": [],
+    "plate": "S10_R03",
+    "attempt": 1,
+    "native_size": [
+      1672,
+      941
+    ],
+    "source_scale": 1.0,
+    "actual_floor_px": [
+      [
+        151,
+        493
+      ],
+      [
+        816,
+        211
+      ],
+      [
+        1156,
+        350
+      ],
+      [
+        1331,
+        257
+      ],
+      [
+        1374,
+        280
+      ],
+      [
+        1374,
+        427
+      ],
+      [
+        1546,
+        503
+      ],
+      [
+        845,
+        839
+      ],
+      [
+        500,
+        704
+      ],
+      [
+        347,
+        788
+      ],
+      [
+        136,
+        666
+      ],
+      [
+        299,
+        590
+      ]
+    ],
+    "doors_px": {
+      "SW": [
+        397,
+        646,
+        225
+      ],
+      "NE": [
+        1266,
+        393,
+        220
+      ]
+    },
+    "raw_sha256": "a3cf48345e106f571bf3f71fb77ef4ef742a7731603ca80e880930bf7d7722bf",
+    "master_sha256": "a3cf48345e106f571bf3f71fb77ef4ef742a7731603ca80e880930bf7d7722bf",
+    "game_sha256": "49f00392c28aeaac3bd3f060f4725c2078025bd3fd6e32832632d32af0bec2a4",
+    "game_exposure_factor_srgb": 0.7712,
+    "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-fc008c7e-78df-4fab-ae2e-596e890a41ee.png",
+    "inspection": "S3의 대형 모니터 베이 대신 겹친 메모리 카트리지·작은 경사 판독 콘솔. R01 해치/R02 흰면 오벨리스크와 베이 내용이 다름. 공통 기둥·문틀 골조는 허용. SW/NE만 열림, SE 연속 난간. 실제 바닥과 에이프런 추적.",
+    "floor_area_px2": 507763.5,
+    "floor_area_fraction": 0.3227272091687048,
+    "floor_bounds_px": [
+      136,
+      211,
+      1546,
+      839
+    ],
+    "native_size_acceptance": {
+      "target_size": [
+        1672,
+        941
+      ],
+      "actual_size": [
+        1672,
+        941
+      ],
+      "tolerance_each_axis_px": 2,
+      "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+    },
+    "margin_acceptance": {
+      "date": "2026-10-01",
+      "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+      "main_floor_minimum": 0.05,
+      "whole_floor_minimum": 0.04,
+      "prompt_target": 0.08,
+      "apron_polygons_px": {
+        "SW": [
+          [
+            299,
+            590
+          ],
+          [
+            136,
+            666
+          ],
+          [
+            347,
+            788
+          ],
+          [
+            500,
+            704
+          ]
+        ],
+        "NE": [
+          [
+            1156,
+            350
+          ],
+          [
+            1331,
+            257
+          ],
+          [
+            1374,
+            280
+          ],
+          [
+            1374,
+            427
+          ]
+        ]
+      },
+      "main_floor_bounds_px": [
+        151,
+        211,
+        1546,
+        839
+      ],
+      "main_floor_margins_ltrb_fraction": [
+        0.090311004784689,
+        0.22422954303931988,
+        0.07535885167464115,
+        0.10839532412327312
+      ],
+      "whole_floor_bounds_px": [
+        136,
+        211,
+        1546,
+        839
+      ],
+      "whole_floor_margins_ltrb_fraction": [
+        0.08133971291866028,
+        0.22422954303931988,
+        0.07535885167464115,
+        0.10839532412327312
+      ],
+      "main_floor_area_px2": 453041
+    },
+    "apron_stats": {
+      "SW": {
+        "luma": 0.2330666184425354,
+        "saturation": 0.05646415938484309,
+        "sampling": "actual apron polygon inset 10%"
+      },
+      "NE": {
+        "luma": 0.2211495339870453,
+        "saturation": 0.06516616372700322,
+        "sampling": "actual apron polygon inset 10%"
+      }
+    },
+    "prompt": "EXACT OPEN SIDES: SW, NE. CLOSED SIDES: NW, SE. Closed sides have continuous solid back walls or uninterrupted low foreground rails; NO other openings, aprons, floor tongues or doorway-like recesses. Do not copy the extra doors of Image 1. Exactly 2 open threshold(s).\nGEOMETRY FIRST: exact native 1672x941 RGB landscape, 16:9. Main floor diamond (210,476),(836,163),(1462,476),(836,789), broad neutral deck with parallel 26.6-degree edges. SW apron (356,549),(191,632),(459,766),(624,683). NE apron (1058,274),(1178,214),(1446,348),(1326,408). COMPLETE painted floor including apron tips: (210,476),(836,163),(1058,274),(1178,214),(1446,348),(1326,408),(1462,476),(836,789),(624,683),(459,766),(191,632),(356,549). ALL drawn floor and apron tips stay at least 8% inside the canvas. Do not reproduce the larger floor footprint of Image 1; its camera, scale, neutral material and doorway dimensions only are the reference. Apron outer ends must be oblique, parallel to the attached deck width, not vertical pockets. Exactly SW and NE openings, NW and SE are CLOSED, continuous unbroken wall or low rail.\nUse case: stylized-concept. ONE new finished opaque RGB room plate S10_R03, R03_LOG. Image 1 is only fixed camera, scale, neutral standard deck, minimum floor size and doorway dimensions. Image 2 is only premium hard-surface material quality; ignore its actors, markings and UI.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nROOM PLATE. The walkable floor is a dimetric diamond or elongated hexagon whose sides face NW (upper-left), NE (upper-right), SE (lower-right) and SW (lower-left). Back walls rise only along the NW and NE sides; the SW and SE sides end in a low lip or railing with no wall so nothing hides the floor. Keep the floor at least 8% away from every image border.\nDOORS: open doorways exactly on these sides: SW, NE. Each doorway is an unobstructed opening about 2.3 adult-heights wide with a heavy steel frame (a framed opening in a back wall, or a gap in the lip railing on the SW/SE side); no door leaf, no shutter. The same standard deck and the same neutral-white overhead light continue through every doorway for about 1.5 adult-heights on both sides of the threshold.\nROOM TYPE: non-combat room — walkable floor at least 850 x 450 (long x short, in the scale above).\nIDENTITY: answer-log reading room: dark-alloy record columns and slim reader consoles along the walls. Accent colour pale violet, on walls and fixtures only.\nExactly 2 usable opening(s), only SW, NE. All other sides (NW, SE) are continuous closed walls or continuous low foreground railings: no rail gaps, floor tongues, passages, apparent doorway recesses or shutters there.\nCRITICAL NEW WALL SILHOUETTE: redraw the wall architecture and machinery from the IDENTITY above; do not copy Image 1 wall masses, fans, consoles or machine arrangement. This room must differ from other operation-10 rooms and all earlier operation plates. Black alloy and red seams stay on the WALL architecture; include a few distinct small practical wall lamps in the required accent, with visible lamp cores and a restrained local wall glow. No lettering-like floor patterns, red light bloom, black floor or coloured floor. The floor is standard neutral gunmetal grey, mean sRGB luminance 0.17-0.24; doorway apron saturation at most 0.10. The exposed outside remains uniform #07090D.\nDoor apron outer edges are oblique and parallel to the attached deck; no vertical-cut pocket. All main floor AND apron tips must remain at least 8% inside each image border. Floor material and light are neutral, with no red wash or black alloy on the deck. Several clear perimeter lamp cores illuminate the wall only.\nWALL CONTENT CRITERION: the shared map-kit corner/end columns, wall bays, door gap and door-flanking columns may match Image 1. The equipment and panel configuration INSIDE each bay must be new and specific to this IDENTITY, different from the same-slot S3 plate and the other operation-10 plates. Do not reproduce the reference bay contents with only recolouring.\nSPECIFIC NEW BAY CONTENT: dark-alloy RECORD COLUMNS made of uneven-height stacks of thin sealed rectangular memory cartridges, inset along the back walls. One low, narrow sloping reader console attached to the wall at knee/waist height with a small pale-violet status face, not a tall monitor bank. Different-sized stacked cartridge faces and shallow reader ledges, NOT the large angled screens, rounded pipe tanks or same machine bay contents of S3_R03. No horizontal sealed hatch from R01, no white-faced vertical relay obelisks from R02. Several small violet practical lamp cores clearly tint only their immediate wall recess. All floor and both apron ends are neutral-grey gunmetal, no purple pools or white bloom.",
+    "references": [
+      "assets/environments/site7_v2/stage03/S3_R03/S3_R03_GAME.png",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png"
+    ],
+    "status": "SELECTED",
+    "reason": "",
+    "reference_sha256": {
+      "assets/environments/site7_v2/stage03/S3_R03/S3_R03_GAME.png": "d85f9608cee942d37bbeb9122d2869485f7c0da9b50861c190e875dac1a80c04",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de"
+    },
+    "raw": "art_src/environments/site7_v2/stage10/S10_R03/S10_R03_RAW_NATIVE.png",
+    "master": "art_src/environments/site7_v2/stage10/S10_R03/S10_R03_MASTER.png",
+    "game": "assets/environments/site7_v2/stage10/S10_R03/S10_R03_GAME.png"
+  }
+]

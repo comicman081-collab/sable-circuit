@@ -1,0 +1,17 @@
+{
+  "tool": "image_gen.imagegen",
+  "returnedPath": "C:\\Users\\AAA\\.codex\\generated_images\\01a086a7-e4ef-7d23-99b9-7afc5fb60942\\exec-0bf147c5-1c0d-40aa-a178-2d11883d6798.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a086a7-e4ef-7d23-99b9-7afc5fb60942 as C:\\Users\\AAA\\.codex\\generated_images\\01a086a7-e4ef-7d23-99b9-7afc5fb60942\\exec-0bf147c5-1c0d-40aa-a178-2d11883d6798.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "art/site7_enemies_raw/drone_turntable_v1.png",
+  "projectCopySHA256": "b3bea5b3f00eef838a3ec2db26d949d99d336b53e271c262e03d45dc436965ef",
+  "prompt": "Use case: stylized-concept. Asset type: a single eight-direction turntable sprite sheet for the existing SABLE CIRCUIT enemy hover drone, one coherent game asset. Input Image 1 is the exact APPEARANCE reference; preserve its scratched blue-gray steel crescent chassis, black paneling, cyan strips, asymmetrical three front sensor lenses (large magenta, medium cyan, small magenta), underside cables, twin cyan hover thrusters and separate small spherical magenta emitter. Do not redesign or mirror its asymmetric details. The previously used single front-three-quarter view cannot represent all target directions. Generate eight genuinely different yaw views of this SAME drone on a flat uniform chroma green #00FF00 background. Fixed game camera looking down at 35 degrees, orthographic perspective, fixed upright vertical axis, neutral consistent studio illumination. Large native 4096x2048 image, exact four columns by two rows, eight equal cells. Reading order: TOP ROW E (nose/sensors aim screen right), SE (front three-quarter nose down-right), S (front face toward bottom of screen/viewer), SW (front three-quarter nose down-left). BOTTOM ROW W (nose/sensors aim screen left), NW (rear three-quarter nose up-left), N (rear back facing viewer, sensors on hidden opposite side, nose away up-screen), NE (rear three-quarter nose up-right). The ground-plane headings correspond to 0,45,90,135,180,225,270,315 screen degrees; camera elevation stays identical across every cell, NO overhead or underside camera changes. Sensor cluster is on the FRONT, never on the rear. Each cell has exactly one complete floating drone at same world scale, centered with generous clear padding, no cut parts or cropped tips. No floor, no shadow, no bloom outside opaque machinery, no reflection onto green, no grid lines, no labels, no text, no UI. Crisp high-resolution realistic game illustration matching the provided reference, not vector, not sketch, not a collage of the same view. Whole source-preserving rigid machine, no feet or humanoid parts. This is an eight-view directional reference sheet, not a walking cycle.",
+  "referenceRoles": [
+    {
+      "path": "art/site7_enemies_raw/drone_omni.png",
+      "role": "appearance reference"
+    }
+  ],
+  "status": "UNREVIEWED_DIRECTIONAL_CANDIDATE"
+}

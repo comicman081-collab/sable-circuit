@@ -1,0 +1,75 @@
+{
+  "recordedAt": "2026-09-10T20:18:19.570106+00:00",
+  "character": "aster",
+  "status": "PASS_RUNTIME_CHECKS",
+  "package": {
+    "path": "dist/aster.package.json",
+    "sha256": "306643f856a6bf95de129bd7d4141ad02d3f525ccb97d6c1bcea122808b310f4"
+  },
+  "inputSHA256": "f209331bdf7e9226559001329df612a505a4e2ff6d5a7dcf3bece326f7c4b3de",
+  "checks": [
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "validate_character.py",
+        "--character",
+        "aster"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/aster/checks/20260911_051813_181164/0.log",
+        "sha256": "e7c20d466b82ab5283f18cffe8f201c884e85f133bb04b794e520eaf02cc62ca"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests\\combat-aim.test.js",
+        "tests\\keyboard-input.test.js",
+        "tests\\simulation.test.js"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/aster/checks/20260911_051813_181164/1.log",
+        "sha256": "3f992ad3d4789f2dbde9c712cde5ac1beb892525a98a7d902d2fbe00fdbc95dd"
+      }
+    },
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_character_workflow.py"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/aster/checks/20260911_051813_181164/2.log",
+        "sha256": "acd9f8cae0952ba37af46367e7d5b4fbd29407f686dfc7d2560270af546879d8"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "verify_bundle.mjs",
+        "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\dist\\ASTER_Motion_Studio.html"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/aster/checks/20260911_051813_181164/3.log",
+        "sha256": "d48acfa04b8e79958d4263827d7c20ce1c919bf3d2ed60a8e8048868d443158d"
+      }
+    }
+  ],
+  "browser": {
+    "path": "qa/aster_combat_browser.json",
+    "sha256": "903853c4c7cb9a7c30069bb2c854520fb2c2a7ecc145d901e701876313f5a91b"
+  },
+  "scope": "Implemented runtime/asset checks; no automatic visual approval or Luna generation claim"
+}

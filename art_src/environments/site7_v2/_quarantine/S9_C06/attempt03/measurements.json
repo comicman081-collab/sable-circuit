@@ -1,0 +1,122 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_C06/attempt03/S9_C06_GAME.png",
+  "luma": 0.200059175491333,
+  "p10": 0.12385490536689758,
+  "p90": 0.24689021706581116,
+  "saturation": 0.060056205228039894,
+  "hue": 146.03966621212044,
+  "axis": 32.259310055632575,
+  "problems": [
+    "floor axis 32.3 deg outside (22.5, 31.5)"
+  ],
+  "plate": "S9_C06",
+  "attempt": 3,
+  "native_size": [
+    1254,
+    1254
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      0,
+      64
+    ],
+    [
+      1254,
+      832
+    ],
+    [
+      1254,
+      1202
+    ],
+    [
+      0,
+      387
+    ]
+  ],
+  "doors_px": {},
+  "raw_sha256": "6ec901123478b69217010297367e7bc136193ce3db09d497d102053568e64269",
+  "master_sha256": "6ec901123478b69217010297367e7bc136193ce3db09d497d102053568e64269",
+  "game_sha256": "a23350dc5c3276888f0a45b665ec59530b11316e9585a2ecd0e6cdbe5b13cfac",
+  "game_exposure_factor_srgb": 0.7574,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-eec61f44-b31d-40c4-ae9e-3fb602ea2fa0.png",
+  "inspection": "New low rectangular shelf/recess wall groups, electric-blue upper-left and bronze inclined tray/dock lower-right. Actual wall base64->832 and outer painted lip387->1202 are steeper than standard; no ideal substitution or transform. Neutral apron, no glyph/puddle/end door.",
+  "floor_area_px2": 434511.0,
+  "floor_area_fraction": 0.27631578947368424,
+  "floor_bounds_px": [
+    0,
+    64,
+    1254,
+    1202
+  ],
+  "end_widths_px": [
+    323,
+    370
+  ],
+  "width_sections_px": [
+    [
+      0,
+      64,
+      387
+    ],
+    [
+      1254,
+      832,
+      1202
+    ]
+  ],
+  "vertical_widths_px": [
+    323,
+    370
+  ],
+  "width_measurement": "Vertical sections between actual wall base and outer painted deck lip; clipped image-corner fragments are not full cross-sections.",
+  "width_acceptance": {
+    "minimum_px": 220,
+    "prompt_target_px": 260,
+    "source": "2026-10-01 explicit user decision; branch +/-15% additionally retained"
+  },
+  "connector_apron_end_stats": [
+    {
+      "end": "image_left",
+      "luma": 0.23365405201911926,
+      "saturation": 0.04979746240707354,
+      "hue": 146.28198132196047,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    },
+    {
+      "end": "image_right",
+      "luma": 0.19239704310894012,
+      "saturation": 0.09861182973248032,
+      "hue": 146.4817552283578,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    }
+  ],
+  "preintegration_end_comparison": [
+    {
+      "end": "image_left",
+      "room": "S9_R04",
+      "door": "SE",
+      "deck_luma": 0.22234049439430237,
+      "deck_saturation": 0.04530028921093827,
+      "room_apron_luma": 0.23602432012557983,
+      "room_apron_saturation": 0.006033619129208468,
+      "step": 0.07924536535913243,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    },
+    {
+      "end": "image_right",
+      "room": "S9_O01",
+      "door": "NW",
+      "deck_luma": 0.19070127606391907,
+      "deck_saturation": 0.09354585745757493,
+      "room_apron_luma": 0.2442263662815094,
+      "room_apron_saturation": 0.028524308646541225,
+      "step": 0.32657538403595726,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    }
+  ]
+}

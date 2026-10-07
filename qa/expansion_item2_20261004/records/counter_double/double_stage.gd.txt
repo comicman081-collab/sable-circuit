@@ -1,0 +1,41 @@
+extends "res://scripts/missions/story_stage_01.gd"
+
+func _spawn_wave(node: Dictionary) -> void:
+    var center := Vector2(float(node.get("x", 0)), float(node.get("y", 0)))
+    var kind := str(node.get("type", "COMBAT"))
+    preload("res://scripts/audio/demo_music.gd").encounter(get_tree(), mission_id, kind == "BOSS")
+    var encounter: Array = _encounter_waves[_wave_index]
+    if encounter.is_empty(): push_error("StoryStage01 encounter missing for " + str(node.get("id", "?"))); return
+    var spawned_ids: Array = []
+    for row_variant in encounter:
+        if not (row_variant is Dictionary): continue
+        var row: Dictionary = row_variant
+        var identity := str(row.get("enemy_id", ""))
+        if ArtProfileRegistry.get_profile(identity).is_empty(): push_error("StoryStage01 unknown enemy profile: " + identity); continue
+        var enemy := ENEMY_SCENE.instantiate() as EnemyActor
+        if not enemy.configure(identity, float(row.get("health", 100.0))):
+            enemy.free()
+            continue
+        enemy.apply_run_modifiers(RunContract.enemy_modifiers(_enemy_run_modifiers_with_mode(), identity))
+        enemy.apply_run_modifiers(RunContract.enemy_modifiers(_enemy_run_modifiers_with_mode(), identity))
+        var affix := EliteAffix.apply(enemy, str(row.get("affix", "")))
+        if affix != null and not affix.affix_id in _active_affix_ids: _active_affix_ids.append(affix.affix_id)
+        enemy.position = center + Vector2(float(row.get("offset_x", 70.0)), float(row.get("offset_y", 0.0)))
+        if has_battle_floor():
+            if not battle_preview and mission_id == "MIS_CH01_01" and current_step == 1 and _wave_index == 0 and enemies_alive < 2:
+                enemy.position = battlefield.call("opening_patrol_spawn", enemies_alive)
+            else:
+                enemy.position = battlefield.call("enemy_spawn", _spawn_serial)
+        enemy.defeated.connect(_on_story_enemy_defeated); add_child(enemy)
+        # Alternate orbit direction per spawn so same-type robots fan out
+        # around the squad instead of circling as one stacked silhouette.
+        enemy._orbit_sign = -1.0 if _spawn_serial % 2 == 0 else 1.0
+        _spawn_serial += 1
+        enemies_alive += 1; _active_enemy_ids.append(identity); spawned_ids.append(identity)
+    wave_spawned.emit(node, _wave_index, spawned_ids)
+    hud.set_story(_combat_story(kind)); hud.set_combat_status(enemies_alive)
+    if _wave_index == 0 and not battle_preview: hud.show_transmission(_combat_story(kind), 7.0)
+    if _encounter_waves.size() > 1:
+        hud.set_objective("%s / WAVE %d-%d" % [str(node.get("objective", "Clear hostiles")), _wave_index + 1, _encounter_waves.size()], false)
+    queue_redraw()
+

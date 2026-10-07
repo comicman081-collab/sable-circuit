@@ -1,0 +1,235 @@
+{
+  "analyzed_intel": [
+    "ANL_SECURITY_ARC_GAP"
+  ],
+  "armory_cost": {
+    "fragments": 0,
+    "research": 240,
+    "salvage": 2
+  },
+  "armory_level": 1,
+  "armory_max_level": 6,
+  "committed_run_ids": [
+    "FIXTURE-LEGACY-RUN"
+  ],
+  "completed_runs": 1,
+  "damage_multiplier": 1.08,
+  "discoveries": [
+    {
+      "analysis_id": "ANL_SECURITY_ARC_GAP",
+      "analyzed": true,
+      "can_analyze": false,
+      "effect_text": "ASTER gains an additional 15% damage against EXPOSED security targets.",
+      "module_id": "MOD_PRISM_FOCUS",
+      "module_name": "PRISM FOCUS",
+      "module_unlocked": true,
+      "operator_id": "CHR_PROTO_01",
+      "research_cost": 120.0,
+      "sample_cost": 2.0,
+      "sample_key": "SECURITY",
+      "title": "SECURITY ARC-GAP MAPPING",
+      "weakness_id": "SECURITY_ARC_GAP"
+    },
+    {
+      "analysis_id": "ANL_ABERRANT_JOINT_MAP",
+      "analyzed": false,
+      "can_analyze": true,
+      "effect_text": "ROOK Breach Slam gains +10 damage and +0.6s STAGGER when consuming EXPOSED.",
+      "module_id": "MOD_BREACH_LINER",
+      "module_name": "BREACH LINER",
+      "module_unlocked": false,
+      "operator_id": "CHR_PROTO_02",
+      "research_cost": 140.0,
+      "sample_cost": 1.0,
+      "sample_key": "ABERRANT",
+      "title": "ROBOT FRAME STRESS MAP",
+      "weakness_id": "ABERRANT_JOINT_MAP"
+    },
+    {
+      "analysis_id": "ANL_ANCHOR_SIGNAL_MODEL",
+      "analyzed": false,
+      "can_analyze": true,
+      "effect_text": "MICA Pulse Scan gains +80 range and +2s EXPOSED duration; Sensor Bloom gains +2s EXPOSED duration.",
+      "module_id": "MOD_SENSOR_ARRAY",
+      "module_name": "SENSOR ARRAY",
+      "module_unlocked": false,
+      "operator_id": "CHR_PROTO_03",
+      "research_cost": 180.0,
+      "sample_cost": 1.0,
+      "sample_key": "ANCHOR",
+      "title": "ANCHOR SIGNAL MODEL",
+      "weakness_id": "ANCHOR_SIGNAL_MODEL"
+    }
+  ],
+  "equipped_modules": {
+    "CHR_PROTO_01": "MOD_PRISM_FOCUS",
+    "CHR_PROTO_02": "",
+    "CHR_PROTO_03": ""
+  },
+  "equipped_weapons": {
+    "CHR_PROTO_01": "WPN_AR_BURST_02",
+    "CHR_PROTO_02": "WPN_SHOTGUN_MAG_01",
+    "CHR_PROTO_03": "WPN_SMG_SENSOR_01"
+  },
+  "extracted_runs": 1,
+  "intel_samples": {
+    "ABERRANT": 6,
+    "ANCHOR": 4,
+    "SECURITY": 6
+  },
+  "lab_cost": {
+    "fragments": 1,
+    "research": 220,
+    "salvage": 0
+  },
+  "lab_level": 1,
+  "lab_max_level": 6,
+  "max_upgrade_level": 6,
+  "research_multiplier": 1.12,
+  "research_value": 1411,
+  "run_serial": 9,
+  "salvage": 18,
+  "schema_version": 3,
+  "signal_fragments": 11,
+  "unlocked_modules": [
+    "MOD_PRISM_FOCUS"
+  ],
+  "unlocked_weaknesses": [
+    "SECURITY_ARC_GAP"
+  ],
+  "unlocked_weapons": [
+    "WPN_AR_COIL_01",
+    "WPN_SHOTGUN_MAG_01",
+    "WPN_SMG_SENSOR_01",
+    "WPN_AR_BURST_02"
+  ],
+  "weapon_catalog": [
+    {
+      "ammo_per_trigger": 1.0,
+      "class": "AR",
+      "compatible_operators": [
+        "CHR_PROTO_01"
+      ],
+      "damage": 10.0,
+      "default_for": "CHR_PROTO_01",
+      "display_name": "COIL ASSAULT RIFLE",
+      "engagement_range": 520.0,
+      "fire_interval": 0.105,
+      "magazine_size": 24.0,
+      "pellet_count": 1.0,
+      "projectile_lifetime": 0.9,
+      "projectile_speed": 1040.0,
+      "reload_duration": 1.02,
+      "spread_radians": 0.0,
+      "unlock": "DEFAULT",
+      "unlocked": true,
+      "weapon_id": "WPN_AR_COIL_01"
+    },
+    {
+      "ammo_per_trigger": 3.0,
+      "class": "AR",
+      "compatible_operators": [
+        "CHR_PROTO_01",
+        "CHR_PROTO_03"
+      ],
+      "damage": 7.2,
+      "display_name": "TRI-COIL BURST RIFLE",
+      "engagement_range": 560.0,
+      "fire_interval": 0.235,
+      "magazine_size": 30.0,
+      "pellet_count": 3.0,
+      "projectile_lifetime": 0.88,
+      "projectile_speed": 1100.0,
+      "reload_duration": 1.18,
+      "spread_radians": 0.018,
+      "unlock": "ARMORY_1",
+      "unlocked": true,
+      "weapon_id": "WPN_AR_BURST_02"
+    },
+    {
+      "ammo_per_trigger": 1.0,
+      "class": "SMG",
+      "compatible_operators": [
+        "CHR_PROTO_03",
+        "CHR_PROTO_01"
+      ],
+      "damage": 8.0,
+      "default_for": "CHR_PROTO_03",
+      "display_name": "SENSOR NEEDLER SMG",
+      "engagement_range": 450.0,
+      "fire_interval": 0.17,
+      "magazine_size": 18.0,
+      "pellet_count": 1.0,
+      "projectile_lifetime": 1.05,
+      "projectile_speed": 720.0,
+      "reload_duration": 1.12,
+      "spread_radians": 0.0,
+      "unlock": "DEFAULT",
+      "unlocked": true,
+      "weapon_id": "WPN_SMG_SENSOR_01"
+    },
+    {
+      "ammo_per_trigger": 1.0,
+      "class": "SHOTGUN",
+      "compatible_operators": [
+        "CHR_PROTO_02"
+      ],
+      "damage": 7.0,
+      "default_for": "CHR_PROTO_02",
+      "display_name": "MAG SCATTERGUN",
+      "engagement_range": 300.0,
+      "fire_interval": 0.42,
+      "magazine_size": 10.0,
+      "pellet_count": 5.0,
+      "projectile_lifetime": 0.58,
+      "projectile_speed": 760.0,
+      "reload_duration": 1.38,
+      "spread_radians": 0.065,
+      "unlock": "DEFAULT",
+      "unlocked": true,
+      "weapon_id": "WPN_SHOTGUN_MAG_01"
+    },
+    {
+      "ammo_per_trigger": 1.0,
+      "class": "LMG",
+      "compatible_operators": [
+        "CHR_PROTO_01",
+        "CHR_PROTO_02"
+      ],
+      "damage": 8.8,
+      "display_name": "HELIX SUPPORT LMG",
+      "engagement_range": 540.0,
+      "fire_interval": 0.145,
+      "magazine_size": 48.0,
+      "pellet_count": 1.0,
+      "projectile_lifetime": 1.05,
+      "projectile_speed": 920.0,
+      "reload_duration": 1.85,
+      "spread_radians": 0.028,
+      "unlock": "ARMORY_2",
+      "unlocked": false,
+      "weapon_id": "WPN_LMG_HELIX_01"
+    },
+    {
+      "ammo_per_trigger": 1.0,
+      "class": "SPECIAL",
+      "compatible_operators": [
+        "CHR_PROTO_03"
+      ],
+      "damage": 28.0,
+      "display_name": "ARC LANCE LAUNCHER",
+      "engagement_range": 620.0,
+      "fire_interval": 0.72,
+      "magazine_size": 6.0,
+      "pellet_count": 1.0,
+      "projectile_lifetime": 1.55,
+      "projectile_speed": 520.0,
+      "reload_duration": 1.65,
+      "spread_radians": 0.0,
+      "unlock": "ANL_ANCHOR_SIGNAL_MODEL",
+      "unlocked": false,
+      "weapon_id": "WPN_SPECIAL_ARC_01"
+    }
+  ],
+  "wiped_runs": 0
+}

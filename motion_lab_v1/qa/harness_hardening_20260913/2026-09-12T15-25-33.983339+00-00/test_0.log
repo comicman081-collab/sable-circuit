@@ -1,0 +1,71 @@
+{"profile": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_48d7zsgf\\qa\\build_candidates\\fixture\\efff6050765d48b5851ca8cdbad153d0\\public\\assets\\atlas\\fixture\\profile.json", "candidateOnly": true, "missing": []}
+{"recipe": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_lm1csjj3\\characters\\newwalk.json", "requests": 56, "art": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_lm1csjj3\\art\\newwalk"}
+{"recipe": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_lm1csjj3\\characters\\newrun.json", "requests": 104, "art": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_lm1csjj3\\art\\newrun"}
+{"profile": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_123qfypb\\public\\assets\\atlas\\fixture\\profile.json", "reviewPreviews": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_123qfypb\\qa\\build_candidates\\fixture\\4f06b2c68f954218910d8afa9048ddda\\reference\\atlas\\fixture", "ready": ["E", "SE", "S", "SW", "W", "NW", "N", "NE"], "missing": []}
+
+test_alternate_recipe_cannot_bypass_active_build_gate (test_character_workflow.WorkflowTests) ... ok
+test_browser_receipt_checks_rows_not_only_pass_label (test_character_workflow.WorkflowTests) ... ok
+test_bundle_changes_cannot_reuse_a_previous_receipt (test_character_workflow.WorkflowTests) ... ok
+test_changed_tool_response_invalidates_provenance (test_character_workflow.WorkflowTests) ... ok
+test_complete_sources_do_not_bypass_whole_cycle_gate (test_character_workflow.WorkflowTests) ... ok
+test_duplicate_source_cannot_pass_as_a_distinct_phase (test_character_workflow.WorkflowTests) ... ok
+test_exact_reviewed_inputs_are_ready (test_character_workflow.WorkflowTests) ... ok
+test_failed_and_partial_builds_preserve_the_existing_character (test_character_workflow.WorkflowTests) ... ok
+test_incomplete_direction_set_cannot_be_packaged (test_character_workflow.WorkflowTests) ... ok
+test_missing_source_returns_concrete_pilot (test_character_workflow.WorkflowTests) ... ok
+test_new_recipe_never_overwrites_an_existing_art_folder (test_character_workflow.WorkflowTests) ... ok
+test_path_escape_and_identity_mismatch_fail (test_character_workflow.WorkflowTests) ... ok
+test_pilot_source_review_precedes_cycle_approval (test_character_workflow.WorkflowTests) ... ok
+test_reference_change_invalidates_readiness (test_character_workflow.WorkflowTests) ... ok
+test_rejected_source_is_retained_and_blocks_build (test_character_workflow.WorkflowTests) ... ok
+test_replacing_source_invalidates_previous_review (test_character_workflow.WorkflowTests) ... ok
+test_scaffold_requests_exact_character_slots_without_generation (test_character_workflow.WorkflowTests) ... ok
+test_single_frame_imports_produce_their_own_portrait (test_character_workflow.WorkflowTests) ... ok
+test_static_walk_cannot_replace_the_required_motion (test_character_workflow.WorkflowTests) ... ok
+test_background_landmarks_are_rejected (test_cycle_review.CycleGateTests) ... ok
+test_blank_approvals_wrong_phase_and_missing_video_binding_fail (test_cycle_review.CycleGateTests) ... ok
+test_changed_source_recipe_and_review_packet_invalidate_gate (test_cycle_review.CycleGateTests) ... ok
+test_declared_video_dimensions_cannot_hide_undecodable_bytes (test_cycle_review.CycleGateTests) ... ok
+test_explicit_complete_technical_packet_is_accepted (test_cycle_review.CycleGateTests) ... ok
+test_missing_pilot_blocks_non_e_intake_before_any_source_copy (test_cycle_review.CycleGateTests) ... ok
+test_rejected_pixels_cannot_be_reapproved_by_notes (test_cycle_review.CycleGateTests) ... ok
+test_renaming_rejected_sources_does_not_clear_rejection (test_cycle_review.CycleGateTests) ... ok
+test_same_leading_leg_at_opposite_contact_is_rejected (test_cycle_review.CycleGateTests) ... ok
+test_rejection_preserves_prior_receipt_and_removes_current_approval (test_delivery_invalidation.DeliveryInvalidationTests) ... ok
+test_audit_permuted_indices_cannot_pass_set_coverage (test_locomotion_review.TemporalReviewTests) ... ok
+test_complete_technical_fixture (test_locomotion_review.TemporalReviewTests) ... ok
+test_displacement_plus_six_unique_indices_but_identical_legs_is_rejected (test_locomotion_review.TemporalReviewTests) ... ok
+test_frozen_positions_and_times_do_not_inherit_travel_summary (test_locomotion_review.TemporalReviewTests) ... ok
+test_nonfinite_negative_and_mismatched_evidence_fails (test_locomotion_review.TemporalReviewTests) ... ok
+test_previous_failures_cannot_pass_via_a_true_label (test_locomotion_review.TemporalReviewTests) ... ok
+test_shot_timer_must_not_change_stationary_support_feet (test_locomotion_review.TemporalReviewTests) ... ok
+test_complete_capture_fixture (test_motion_evidence.MotionCaptureTests) ... ok
+test_old_video_still_and_missing_cycles_are_rejected (test_motion_evidence.MotionCaptureTests) ... ok
+test_reordered_phases_and_nonmonotonic_timestamps_fail (test_motion_evidence.MotionCaptureTests) ... ok
+test_changed_duration_or_order_or_offset_fails (test_reuse_improvements.AtlasTests) ... ok
+test_no_overwrite_or_output_escape (test_reuse_improvements.AtlasTests) ... ok
+test_preserves_all_slots_and_hidden_rgba (test_reuse_improvements.AtlasTests) ... ok
+test_resealed_pixel_corruption_still_fails_against_original (test_reuse_improvements.AtlasTests) ... ok
+test_rgb_without_real_alpha_is_not_silently_converted (test_reuse_improvements.AtlasTests) ... ok
+test_source_change_is_not_accepted_from_old_checks (test_reuse_improvements.AtlasTests) ... ok
+test_changed_claim_or_instruction_is_rejected (test_reuse_improvements.HandoffTests) ... ok
+test_code_change_invalidates_packet (test_reuse_improvements.HandoffTests) ... ok
+test_known_repair_precedes_missing_pilot_slot (test_reuse_improvements.HandoffTests) ... ok
+test_new_missing_source_invalidates_packet (test_reuse_improvements.HandoffTests) ... ok
+test_packet_has_real_next_slot_not_generation_success (test_reuse_improvements.HandoffTests) ... ok
+test_pose_guide_and_request_change_invalidate_handoff (test_reuse_improvements.HandoffTests) ... ok
+test_runtime_rejection_is_the_next_action_not_a_rebuild (test_reuse_improvements.HandoffTests) ... ok
+test_runtime_texture_change_invalidates_packet (test_reuse_improvements.HandoffTests) ... ok
+test_empty_and_stale_input_binding_fails (test_reuse_improvements.PerformanceTests) ... ok
+test_missing_repeat_invalid_number_and_population_fail (test_reuse_improvements.PerformanceTests) ... ok
+test_r3_relative_failure_cannot_be_rounded_to_pass (test_reuse_improvements.PerformanceTests) ... ok
+test_valid_within_budget_data_can_pass (test_reuse_improvements.PerformanceTests) ... ok
+test_complete_observation_schema_with_actual_segment_times (test_runtime_observations.RuntimeObservationTests) ... ok
+test_generic_notes_or_wrong_video_times_cannot_approve (test_runtime_observations.RuntimeObservationTests) ... ok
+test_video_page_is_config_only_and_small_or_missing_surface_fails (test_visual_evidence_html.HtmlEvidenceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 60 tests in 15.074s
+
+OK
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e41e7c1d40] moov atom not found

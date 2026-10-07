@@ -1,0 +1,139 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_O01/attempt01/S9_O01_GAME.png",
+  "luma": 0.19966864585876465,
+  "p10": 0.1666039228439331,
+  "p90": 0.22817647457122803,
+  "saturation": 0.05523857388967981,
+  "hue": 140.23904953476853,
+  "axis": 25.467606613590853,
+  "problems": [],
+  "plate": "S9_O01",
+  "attempt": 1,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      158,
+      478
+    ],
+    [
+      441,
+      357
+    ],
+    [
+      441,
+      277
+    ],
+    [
+      474,
+      195
+    ],
+    [
+      592,
+      250
+    ],
+    [
+      601,
+      272
+    ],
+    [
+      834,
+      190
+    ],
+    [
+      1487,
+      496
+    ],
+    [
+      819,
+      828
+    ]
+  ],
+  "doors_px": {
+    "NW": [
+      521,
+      315,
+      178
+    ]
+  },
+  "raw_sha256": "716f3328ab1de68ab0b6b499f9f3e0a943d65f0535f5bd15532cc16130c3dcd6",
+  "master_sha256": "716f3328ab1de68ab0b6b499f9f3e0a943d65f0535f5bd15532cc16130c3dcd6",
+  "game_sha256": "185b42dd0e8c70526ff79847091496915e85ed4ed6579baab06e53e05b68cedb",
+  "game_exposure_factor_srgb": 0.8145,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-6ec50b73-4c09-448e-b8a3-539bd27fd1a2.png",
+  "inspection": "NW 문 하나, NE/SW/SE 닫힘. 수평 블레이드 선반과 두 카트가 있으나 S3_O01의 등간격 벽 베이·설비 자리·NW 문 주위 구조가 거의 그대로 남아 새 벽 실루엣 요구 미충족.",
+  "floor_area_px2": 441502.5,
+  "floor_area_fraction": 0.28061266645988947,
+  "floor_bounds_px": [
+    158,
+    190,
+    1487,
+    828
+  ],
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "NW": [
+        [
+          441,
+          357
+        ],
+        [
+          441,
+          277
+        ],
+        [
+          474,
+          195
+        ],
+        [
+          592,
+          250
+        ],
+        [
+          601,
+          272
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      158,
+      190,
+      1487,
+      828
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.09449760765550239,
+      0.20191285866099895,
+      0.11064593301435406,
+      0.12008501594048884
+    ],
+    "whole_floor_bounds_px": [
+      158,
+      190,
+      1487,
+      828
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.09449760765550239,
+      0.20191285866099895,
+      0.11064593301435406,
+      0.12008501594048884
+    ],
+    "main_floor_area_px2": 428126
+  },
+  "apron_stats": {
+    "NW": {
+      "luma": 0.231049582362175,
+      "saturation": 0.03579483537794182,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  }
+}

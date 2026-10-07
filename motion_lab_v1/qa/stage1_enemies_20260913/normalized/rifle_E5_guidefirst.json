@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "operation": "edge-connected green matte normalization only; no source-art redraw",
+  "source_author": "built-in ImageGen",
+  "input": "motion_lab_v1/art/site7_enemies_raw/rifle_E5_guidefirst.png",
+  "input_sha256": "378f4288e2376b49618ba280b9872e3de45779b230543d8e92bee2c0fc8e1c20",
+  "output": "motion_lab_v1/qa/stage1_enemies_20260913/normalized/rifle_E5_guidefirst.png",
+  "output_sha256": "d9b98cb5d83f2b5929d8d5baf29d0e6f8db2c9f48fcb088317cca1ae4af29cca",
+  "mask": "motion_lab_v1/qa/stage1_enemies_20260913/normalized/rifle_E5_guidefirst.mask.png",
+  "mask_sha256": "900bfc781a15cf4efb68c80f3b6d2486f4a2e928da5280baef60bb08ec784c3f",
+  "input_resolution": [
+    1024,
+    1536
+  ],
+  "edge_median_rgb": [
+    6,
+    248,
+    8
+  ],
+  "exact_green_rgb": [
+    0,
+    255,
+    0
+  ],
+  "edge_connected_background_coverage": 0.6852277119954427,
+  "subject_pixels_byte_exact": true,
+  "alpha_ready": true
+}

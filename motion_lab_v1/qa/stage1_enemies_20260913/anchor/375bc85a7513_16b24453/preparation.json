@@ -1,0 +1,36 @@
+{
+  "id": "anchor",
+  "status": "CANDIDATE_NOT_REVIEWED",
+  "source": "art\\site7_enemies_raw\\anchor_master.png",
+  "sourceSHA256": "375bc85a7513b20509b53e869578bb45d846732441ff92de6ce83613dd4c827e",
+  "toolResponse": {
+    "path": "qa\\stage1_enemies_20260913\\anchor_master_tool_response.json",
+    "sha256": "7224b548eb652e6f96679230ed0eeb7774c06baa7e7e8a8a0a552dfd9d651c39"
+  },
+  "sourceNative": [
+    1254,
+    1254
+  ],
+  "box": [
+    11,
+    0,
+    1238,
+    1247
+  ],
+  "candidate": "qa\\stage1_enemies_20260913\\anchor\\375bc85a7513_16b24453\\candidate_rgba.png",
+  "candidateSHA256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+  "candidateNative": [
+    1227,
+    1247
+  ],
+  "native_review": [
+    1920,
+    1080
+  ],
+  "operation": "existing key_image chroma/alpha separation then native crop only",
+  "preparationCodeSHA256": "16b244536edd99537d5a4d72eaf2c2905b875ab4cf695e2bda278fa79d1c07fb",
+  "matteCodeSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+  "resampling": false,
+  "anatomicalWarp": false,
+  "runtimePromotion": false
+}

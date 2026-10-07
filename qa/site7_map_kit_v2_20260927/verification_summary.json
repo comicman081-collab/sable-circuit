@@ -1,0 +1,30 @@
+{
+  "artifact_integrity": "PASS",
+  "candidate_count": 3,
+  "native_1080p_captures": 26,
+  "visual_container_gate": "PASS",
+  "art_or_integration_gate": "HOLD",
+  "v1_before_after_audit": "same classifications, numeric values within 0.0001",
+  "float_differences": [
+    {
+      "field": "/plates/assets/environments/site7/connectors/archive_stores/14_ARCHIVE_STORES_CONNECTOR_GAME.png/luma",
+      "before": 0.2123025506734848,
+      "after": 0.2123025357723236,
+      "absolute_delta": 1.4901161193847656e-08
+    },
+    {
+      "field": "/plates/assets/environments/site7/connectors/archive_stores/14_ARCHIVE_STORES_CONNECTOR_GAME.png/saturation",
+      "before": 0.1555330963633896,
+      "after": 0.1555329871058383,
+      "absolute_delta": 1.0925755131174775e-07
+    },
+    {
+      "field": "/plates/assets/environments/site7/connectors/archive_stores/14_ARCHIVE_STORES_CONNECTOR_GAME.png/hue",
+      "before": 150.33405229890505,
+      "after": 150.33408166902535,
+      "absolute_delta": 2.937012030201913e-05
+    }
+  ],
+  "raw_pixels_transformed": false,
+  "runtime_promoted": false
+}

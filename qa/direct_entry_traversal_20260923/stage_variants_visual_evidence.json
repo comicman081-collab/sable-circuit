@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-23T14:00:35.921547+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\direct_entry_traversal_20260923\\open_connector_MIS_CH01_02_link1_native.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 3085472,
+      "sha256": "3c182a2860af45852fdeef6d6064cf70d774e2b35b3fb759bfb3ec095eaceb3c"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\direct_entry_traversal_20260923\\open_connector_MIS_CH01_05_link0_native.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2668926,
+      "sha256": "6e089a0ae8fa78d48ec66c8eb34e1ec0eb715dca8588dccd50860bedf4e315d6"
+    }
+  ]
+}

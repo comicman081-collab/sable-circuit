@@ -1,0 +1,25 @@
+{
+  "checks": 5,
+  "escape_margin_s": 0.25,
+  "failures": [],
+  "gap_limit_px": 180,
+  "grid_px": 10.0,
+  "rooms": [
+    {
+      "attacks_evaluated": 34458,
+      "boss": "BOSS_SITE7_ORIGIN_01",
+      "cover_obstacles": 0,
+      "failing": 0,
+      "failing_examples": [],
+      "mission": "MIS_CH01_10",
+      "nearest_clear_floor_worst_at": "phase 3 attack 2, target at (12497, -3559), 171 px from the boss",
+      "nearest_clear_floor_worst_px": 150,
+      "spots": 5743,
+      "tightest_escape_at": "phase 2 attack 2, target at (12477, -3539), 155 px from the boss (leave 120 px in 0.87 s of 1.20 s)",
+      "tightest_escape_margin_s": 0.33
+    }
+  ],
+  "slowest_walk_px_per_s": 138.0,
+  "status": "PASS",
+  "visual_approval": false
+}

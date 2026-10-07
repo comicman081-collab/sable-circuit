@@ -1,0 +1,33 @@
+{
+  "generator": "Codex built-in ImageGen",
+  "importedUTC": "2026-09-11T04:26:10.769850+00:00",
+  "sha256": "7c01a9e6381641e6014d45680bf081d4804e54e2bdb4aa5fc7d3e5fc84b9e955",
+  "native": [
+    756,
+    989
+  ],
+  "destination": "art/aster/W_walk_1_master.png",
+  "toolResponse": {
+    "path": "art/aster/gait_v8/W_pair1.tool.json",
+    "sha256": "733c5d0c435d6627de39897aa6b4466c618d8cf757ce282fc4fe3a2b6452a78e"
+  },
+  "sourceMaster": {
+    "path": "art/aster/gait_v8/native_pairs/W_walk_pair1_d9fd60a11472.png",
+    "sha256": "d9fd60a11472347cc74d8a63858c81d9def5c6adf712f2976317869345f53c02"
+  },
+  "masterNative": [
+    1536,
+    1024
+  ],
+  "derivation": {
+    "kind": "chroma-key and connected-subject crop only",
+    "box": [
+      9,
+      1,
+      765,
+      990
+    ],
+    "resampling": false,
+    "anatomicalWarp": false
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "kind": "sable-cycle-preview",
+  "cycleInputs": {
+    "character": "site7_rifle",
+    "direction": "SE",
+    "action": "walk",
+    "recipe": {
+      "path": "characters/site7_rifle.json",
+      "sha256": "f9815484085defae74507cbda8321625456ab637352745a002221056d9030f2d"
+    },
+    "identity": {
+      "path": "art/site7_rifle/identity_reference.png",
+      "sha256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096"
+    },
+    "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+    "compilerSHA256": "1395b21aa409e4605ce769479e9984968f0a88912adda648879b6869d2dd527f",
+    "previewCodeSHA256": "7ed3f1745edc1035bea4757dc38603a1129c93e531ea235d4f10fe060cdf9740",
+    "liveReviewCodeSHA256": "8af1ed5ce4fa56e1149762323ed318dcf3e84a6ebba68b77b8eb0f23bf8c37c2",
+    "recipeValues": {
+      "speed": 1.141358024691358,
+      "stride": 1.33,
+      "heightMetres": 1.72
+    },
+    "provenanceCodeSHA256": "d6da53bb5321ad08008e52a0e371e7b712e9eb72c762baa545083f008fe5256d",
+    "reviewCodeSHA256": "3982de4d57cb3d370efa94a537a2c921c661059043e1e4268e93f1367ec42d8d",
+    "sources": [
+      {
+        "slot": "SE/walk/0",
+        "pixelSHA256": "49094085708e5ddf72da613dc7af90fd8d4cd3a1ff27336f0d51c5bf69a437d5",
+        "path": "art/site7_rifle/SE_walk_0_master.png",
+        "sha256": "81f9195d21d7ac3624a16b7d8c0ad248f6cf7b46b015441085f0f467905bcb23"
+      },
+      {
+        "slot": "SE/walk/1",
+        "pixelSHA256": "855740ddb476f6e7121d6f0ecb0018cadf6601be73fc2ffd7080476729796a94",
+        "path": "art/site7_rifle/SE_walk_1_master.png",
+        "sha256": "e186478b036ecdcf630493d597472f44134bbc45786fbadac02f24dc6a3d1bd9"
+      },
+      {
+        "slot": "SE/walk/2",
+        "pixelSHA256": "4352955a7c7ae04895dc39390c4ba19722035c6d88691a0536be3a7083f110f5",
+        "path": "art/site7_rifle/SE_walk_2_master.png",
+        "sha256": "3a7dc59adc9c0fedc9920fdcd1ae2740251e82075a333e6a7c6ec8f2592f980e"
+      },
+      {
+        "slot": "SE/walk/3",
+        "pixelSHA256": "9ed9ae3ba806ae8b66e214d470422c357f7b998e03ecc1b636eed1436b5f4060",
+        "path": "art/site7_rifle/SE_walk_3_master.png",
+        "sha256": "dc5f386fbb33fab2452470e335ccba61463003e6b5f37c9d356d1fbc8b47c2cb"
+      },
+      {
+        "slot": "SE/walk/4",
+        "pixelSHA256": "d26a40a074e8396e080f1a56b6f71427298b5d2e3709b410201e83f74261f5fe",
+        "path": "art/site7_rifle/SE_walk_4_master.png",
+        "sha256": "1a7b133d11a6d6ca628eed239233c6effd5d6a9c003c26ba701343f5c6b9aacc"
+      },
+      {
+        "slot": "SE/walk/5",
+        "pixelSHA256": "67caa2c225ba4bd95403c67059f17502ae70eac9527e0d5ad51b4f3dd089feff",
+        "path": "art/site7_rifle/SE_walk_5_master.png",
+        "sha256": "17ae79dbeba283c35809ad84181dd2dbfbc62ceb0b6f8ec49a6e98bd35c06989"
+      }
+    ]
+  },
+  "clip": {
+    "image": "assets/atlas/site7_rifle/SE_walk.webp",
+    "cell": [
+      768,
+      768
+    ],
+    "columns": 3,
+    "frames": 6,
+    "root": [
+      384,
+      716
+    ],
+    "height": 656,
+    "authoredFrames": 6,
+    "muzzles": [
+      [
+        615.951681882143,
+        252.59169399738312
+      ],
+      [
+        614.9823482036591,
+        251.01914644241333
+      ],
+      [
+        609.4844096601009,
+        269.0220537483692
+      ],
+      [
+        601.1396636962891,
+        237.7430169582367
+      ],
+      [
+        609.4395364820957,
+        245.28614190220833
+      ],
+      [
+        605.775319904089,
+        234.00832106173038
+      ]
+    ],
+    "sources": [
+      {
+        "source": "art/site7_rifle/SE_walk_0_master.png",
+        "sha256": "81f9195d21d7ac3624a16b7d8c0ad248f6cf7b46b015441085f0f467905bcb23",
+        "native": [
+          1086,
+          1448
+        ],
+        "bounds": [
+          229,
+          63,
+          988,
+          1388
+        ],
+        "hipX": 516.5,
+        "scale": 0.4950943396226415,
+        "matrix": [
+          [
+            0.49509432911872864,
+            0.0,
+            128.2837677001953
+          ],
+          [
+            0.0,
+            0.49509432911872864,
+            28.809057235717773
+          ]
+        ],
+        "muzzle": [
+          615.951681882143,
+          252.59169399738312
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            241.66036906838417,
+            59.99999997019768
+          ],
+          [
+            617.4369648694992,
+            715.9999860525131
+          ]
+        ]
+      },
+      {
+        "source": "art/site7_rifle/SE_walk_1_master.png",
+        "sha256": "e186478b036ecdcf630493d597472f44134bbc45786fbadac02f24dc6a3d1bd9",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          162,
+          110,
+          958,
+          1415
+        ],
+        "hipX": 495.5,
+        "scale": 0.5026819923371647,
+        "matrix": [
+          [
+            0.5026819705963135,
+            0.0,
+            134.9210662841797
+          ],
+          [
+            0.0,
+            0.5026819705963135,
+            4.704980850219727
+          ]
+        ],
+        "muzzle": [
+          614.9823482036591,
+          251.01914644241333
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            216.35554552078247,
+            59.99999761581421
+          ],
+          [
+            616.490394115448,
+            715.9999692440033
+          ]
+        ]
+      },
+      {
+        "source": "art/site7_rifle/SE_walk_2_master.png",
+        "sha256": "3a7dc59adc9c0fedc9920fdcd1ae2740251e82075a333e6a7c6ec8f2592f980e",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          280,
+          82,
+          938,
+          1397
+        ],
+        "hipX": 483.0,
+        "scale": 0.4988593155893536,
+        "matrix": [
+          [
+            0.49885931611061096,
+            0.0,
+            143.0509490966797
+          ],
+          [
+            0.0,
+            0.49885931611061096,
+            19.093536376953125
+          ]
+        ],
+        "muzzle": [
+          609.4844096601009,
+          269.0220537483692
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            282.73155760765076,
+            60.000000298023224
+          ],
+          [
+            610.9809876084328,
+            716.0000009834766
+          ]
+        ]
+      },
+      {
+        "source": "art/site7_rifle/SE_walk_3_master.png",
+        "sha256": "dc5f386fbb33fab2452470e335ccba61463003e6b5f37c9d356d1fbc8b47c2cb",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          242,
+          55,
+          964,
+          1487
+        ],
+        "hipX": 486.0,
+        "scale": 0.4581005586592179,
+        "matrix": [
+          [
+            0.4581005573272705,
+            0.0,
+            161.36312866210938
+          ],
+          [
+            0.0,
+            0.4581005573272705,
+            34.80447006225586
+          ]
+        ],
+        "muzzle": [
+          601.1396636962891,
+          237.7430169582367
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            272.22346353530884,
+            60.00000071525574
+          ],
+          [
+            602.9720659255981,
+            715.9999988079071
+          ]
+        ]
+      },
+      {
+        "source": "art/site7_rifle/SE_walk_4_master.png",
+        "sha256": "1a7b133d11a6d6ca628eed239233c6effd5d6a9c003c26ba701343f5c6b9aacc",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          254,
+          88,
+          958,
+          1444
+        ],
+        "hipX": 489.0,
+        "scale": 0.4837758112094395,
+        "matrix": [
+          [
+            0.4837758243083954,
+            0.0,
+            147.43362426757812
+          ],
+          [
+            0.0,
+            0.4837758243083954,
+            17.4277286529541
+          ]
+        ],
+        "muzzle": [
+          609.4395364820957,
+          245.28614190220833
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            270.31268364191055,
+            60.000001192092896
+          ],
+          [
+            610.8908639550209,
+            716.000018954277
+          ]
+        ]
+      },
+      {
+        "source": "art/site7_rifle/SE_walk_5_master.png",
+        "sha256": "17ae79dbeba283c35809ad84181dd2dbfbc62ceb0b6f8ec49a6e98bd35c06989",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          223,
+          47,
+          940,
+          1489
+        ],
+        "hipX": 449.5,
+        "scale": 0.4549237170596394,
+        "matrix": [
+          [
+            0.45492371916770935,
+            0.0,
+            179.5117950439453
+          ],
+          [
+            0.0,
+            0.45492371916770935,
+            38.61858367919922
+          ]
+        ],
+        "muzzle": [
+          605.775319904089,
+          234.00832106173038
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            280.9597844183445,
+            59.99999848008156
+          ],
+          [
+            607.1400910615921,
+            716.0000015199184
+          ]
+        ]
+      }
+    ],
+    "phaseStarts": [
+      0,
+      0.2,
+      0.33,
+      0.5,
+      0.7,
+      0.83
+    ]
+  },
+  "atlas": {
+    "path": "qa/site7_rifle/gait/76a29e3ec249e919_2fa834b1/public/assets/atlas/site7_rifle/SE_walk.webp",
+    "sha256": "979df3113abccab9b08246b48d1e2229296d1ff04e2f94d481bb9cb47529ee9b"
+  },
+  "contact": {
+    "path": "qa/site7_rifle/gait/76a29e3ec249e919_2fa834b1/reference/atlas/site7_rifle/SE_walk_keyframes.png",
+    "sha256": "978da8bb265aedc57b61bb9d3e3f283b95efb4de79c7e25c86507e5d57e62fa1"
+  },
+  "video": {
+    "path": "qa/site7_rifle/gait/76a29e3ec249e919_2fa834b1/SE_walk_cycle_1080p.webm",
+    "sha256": "ff515c1c4cb58ac5223c641c340aad2e92648cfd377659b29afdbd3bc09741db"
+  },
+  "nativeVideo": [
+    1920,
+    1080
+  ],
+  "cycles": 3.003573749187784,
+  "durationSeconds": 3.5,
+  "framesDecoded": 105,
+  "visualApproval": false,
+  "gameRuntimeApproval": false
+}

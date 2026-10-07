@@ -1,0 +1,16 @@
+[base/intel_supply] exit=0 4s errors=0 scripterr=0 pass=0  INTEL_SUPPLY_SMOKE: PASS (83 checks)
+[base/module_expansion] exit=0 5s errors=0 scripterr=0 pass=0  MODULE_EXPANSION_SMOKE: PASS (86 checks)
+[base/weapon_expansion] exit=0 5s errors=1 scripterr=0 pass=0  WEAPON_EXPANSION_SMOKE: PASS (131 checks)
+[base/lab_geometry] exit=0 8s errors=0 scripterr=0 pass=0  LAB_GEOMETRY_SMOKE: PASS (4005 checks)
+[base/contract_save] exit=0 2s errors=0 scripterr=0 pass=0  RUN_CONTRACT_SAVE_SMOKE: PASS (175 checks)
+[base/m10_persistence] exit=0 2s errors=0 scripterr=0 pass=27  M10_PERSISTENCE_SMOKE: PASS
+[base/m13_migration] exit=0 2s errors=0 scripterr=0 pass=9  M13_WEAPON_BASE_MIGRATION_SMOKE: PASS
+[base/upgrade_economy] exit=0 2s errors=0 scripterr=0 pass=0  UPGRADE_ECONOMY: PASS (225 checks)
+[base/m10_base_ui] exit=0 1s errors=0 scripterr=0 pass=10  M10_BASE_UI_ACTION_SMOKE: PASS
+[base/m10_intel] exit=0 6s errors=0 scripterr=0 pass=39  M10_INTEL_LOADOUT_SMOKE: PASS
+[base/m13_loadout] exit=0 7s errors=1 scripterr=0 pass=53  M13_WEAPON_LOADOUT_SMOKE: PASS
+[base/campaign] exit=0 31s errors=0 scripterr=0 pass=0  SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/base_campaign
+[base/lab_capture_geometry] exit=0 8s errors=0 scripterr=0 pass=0  EXPANSION_ITEM3_CAPTURE: PASS (5 checks)
+[base/m13_campaign] exit=0 3s errors=0 scripterr=0 pass=16  M13_WEAPON_CAMPAIGN_SMOKE: PASS
+[base/hit_hurt_vfx] exit=0 5s errors=1 scripterr=0 pass=0  COMBAT_HIT_HURT_VFX_SMOKE: PASS (47 checks)
+[base/m13_runtime] exit=0 7s errors=0 scripterr=0 pass=18  M13_WEAPON_RUNTIME_SMOKE: PASS

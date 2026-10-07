@@ -1,0 +1,168 @@
+[
+  {
+    "asset": ".cache/diag/site7_ops_e/candidates/S10_O02/attempt01/S10_O02_GAME.png",
+    "luma": 0.19991186261177063,
+    "p10": 0.15556472539901733,
+    "p90": 0.2277725636959076,
+    "saturation": 0.06440689977471939,
+    "hue": 140.0612725862459,
+    "axis": 25.920441199304303,
+    "problems": [],
+    "plate": "S10_O02",
+    "attempt": 1,
+    "native_size": [
+      1672,
+      941
+    ],
+    "source_scale": 1.0,
+    "actual_floor_px": [
+      [
+        182,
+        476
+      ],
+      [
+        444,
+        350
+      ],
+      [
+        465,
+        200
+      ],
+      [
+        557,
+        247
+      ],
+      [
+        574,
+        275
+      ],
+      [
+        835,
+        184
+      ],
+      [
+        1496,
+        481
+      ],
+      [
+        834,
+        817
+      ]
+    ],
+    "doors_px": {
+      "NW": [
+        508,
+        313,
+        153
+      ]
+    },
+    "raw_sha256": "33f3bd42a8746115d5b4eb59cd5b1e32935fcef79cf67a9c915f19e59399d243",
+    "master_sha256": "33f3bd42a8746115d5b4eb59cd5b1e32935fcef79cf67a9c915f19e59399d243",
+    "game_sha256": "afcbafa192ef8651004cf1df46f9e10f858d2863b907812d9d7113f5aa023d3e",
+    "game_exposure_factor_srgb": 0.7422,
+    "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-886de772-f99b-4745-9e40-5115b18007d7.png",
+    "inspection": "NW 단일 문, 나머지 닫힘. S3_O02의 세로 발광 튜브·유체 탱크·여러 파형 화면 대신 수평 녹음 드럼과 콘솔 하나. 다른 S10 방과 베이 설비 다름. 바닥 중립 회색, 중앙 비움.",
+    "floor_area_px2": 432494.0,
+    "floor_area_fraction": 0.27488699286618634,
+    "floor_bounds_px": [
+      182,
+      184,
+      1496,
+      817
+    ],
+    "native_size_acceptance": {
+      "target_size": [
+        1672,
+        941
+      ],
+      "actual_size": [
+        1672,
+        941
+      ],
+      "tolerance_each_axis_px": 2,
+      "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+    },
+    "margin_acceptance": {
+      "date": "2026-10-01",
+      "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+      "main_floor_minimum": 0.05,
+      "whole_floor_minimum": 0.04,
+      "prompt_target": 0.08,
+      "apron_polygons_px": {
+        "NW": [
+          [
+            444,
+            350
+          ],
+          [
+            465,
+            200
+          ],
+          [
+            557,
+            247
+          ],
+          [
+            574,
+            275
+          ]
+        ]
+      },
+      "main_floor_bounds_px": [
+        182,
+        184,
+        1496,
+        817
+      ],
+      "main_floor_margins_ltrb_fraction": [
+        0.10885167464114832,
+        0.19553666312433582,
+        0.10526315789473684,
+        0.13177470775770456
+      ],
+      "whole_floor_bounds_px": [
+        182,
+        184,
+        1496,
+        817
+      ],
+      "whole_floor_margins_ltrb_fraction": [
+        0.10885167464114832,
+        0.19553666312433582,
+        0.10526315789473684,
+        0.13177470775770456
+      ],
+      "main_floor_area_px2": 423200,
+      "current_rule_20261001": {
+        "main_lr_minimum": 0.045,
+        "whole_lr_minimum": 0.035,
+        "main_tb_minimum": 0.05,
+        "whole_tb_minimum": 0.04,
+        "prompt_main_target": 0.05,
+        "prompt_whole_target": 0.04,
+        "scope": "remaining operation 10 rooms; explicit user decision"
+      }
+    },
+    "apron_stats": {
+      "NW": {
+        "luma": 0.22701123356819153,
+        "saturation": 0.06678967136552998,
+        "sampling": "actual apron polygon inset 10%"
+      }
+    },
+    "prompt": "EXACT OPEN SIDES: NW. CLOSED SIDES: NE, SW, SE. Closed sides have continuous solid back walls or uninterrupted low foreground rails; NO other openings, aprons, floor tongues or doorway-like recesses. Do not copy the extra doors of Image 1. Exactly 1 open threshold(s).\nGEOMETRY FIRST: exact native 1672x941 RGB landscape. Main floor diamond (185,480),(835,155),(1485,480),(835,805), opposing edges parallel at 2:1 slope 26.6 degrees. NW apron corners (446,350),(311,282),(515,180),(650,248). COMPLETE drawn floor polygon INCLUDING apron tips: (185,480),(446,350),(311,282),(515,180),(650,248),(835,155),(1485,480),(835,805). Main floor at least 5% inside every canvas border, complete floor including apron tips at least 4%. Preserve broad floor at least 850x450px and at least 25% of the canvas. NW is the ONLY open framed doorway, width about260px; apron continues diagonally up-left, far edge (311,282)-(515,180) diagonal, not vertical pocket. NE back wall and both SW/SE foreground rails CLOSED with no gaps, extra door recesses or floor tongues. NW apron is neutral grey, saturation <=0.10, no teal reflection or bright coloured puddle.\nUse case: stylized-concept. ONE new finished opaque RGB room plate S10_O02, O02_RECORDER. Image 1 is only fixed camera, scale, neutral standard deck, minimum floor size and doorway dimensions. Image 2 is only premium hard-surface material quality; ignore its actors, markings and UI.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nROOM PLATE. The walkable floor is a dimetric diamond or elongated hexagon whose sides face NW (upper-left), NE (upper-right), SE (lower-right) and SW (lower-left). Back walls rise only along the NW and NE sides; the SW and SE sides end in a low lip or railing with no wall so nothing hides the floor. Keep main floor at least5% from borders, whole floor including apron tips at least4%.\nDOORS: open doorways exactly on these sides: NW. Each doorway is an unobstructed opening about 2.3 adult-heights wide with a heavy steel frame (a framed opening in a back wall, or a gap in the lip railing on the SW/SE side); no door leaf, no shutter. The same standard deck and the same neutral-white overhead light continue through every doorway for about 1.5 adult-heights on both sides of the threshold.\nROOM TYPE: non-combat room — walkable floor at least 850 x 450 (long x short, in the scale above).\nIDENTITY: first-signal recorder: dark-alloy recording drums and a single lit console on the back wall. Accent colour teal, on walls and fixtures only.\nExactly 1 usable opening(s), only NW. All other sides (NE, SW, SE) are continuous closed walls or continuous low foreground railings: no rail gaps, floor tongues, passages, apparent doorway recesses or shutters there.\nCRITICAL NEW WALL SILHOUETTE: redraw the wall architecture and machinery from the IDENTITY above; do not copy Image 1 wall masses, fans, consoles or machine arrangement. This room must differ from other operation-10 rooms and all earlier operation plates. Black alloy and red seams stay on the WALL architecture; include a few distinct small practical wall lamps in the required accent, with visible lamp cores and a restrained local wall glow. No lettering-like floor patterns, red light bloom, black floor or coloured floor. The floor is standard neutral gunmetal grey, mean sRGB luminance 0.17-0.24; doorway apron saturation at most 0.10. The exposed outside remains uniform #07090D.\nDoor apron outer edges are oblique and parallel to the attached deck; no vertical-cut pocket. Main floor must remain at least5%, whole floor including apron tips at least4%, inside each image border. Floor material and light are neutral, with no red wash or black alloy on the deck. Several clear perimeter lamp cores illuminate the wall only.\nWALL CONTENT CRITERION: the shared map-kit corner/end columns, wall bays, door gap and door-flanking columns may match Image 1. The equipment and panel configuration INSIDE each bay must be new and specific to this IDENTITY, different from the same-slot S3 plate and the other operation-10 plates. Do not reproduce the reference bay contents with only recolouring.\nSPECIFIC NEW BAY CONTENT: FIRST-SIGNAL RECORDER, short very wide horizontal dark-alloy RECORDING DRUMS recessed in back-wall cradles, with stepped disk endcaps and closed horizontal tape-drive housings, axes parallel to each back wall. A SINGLE small angled lit console on NE wall, no other screens. NW wall holds plain low horizontal drum cassette banks, NE wall holds two bigger broad shallow spool-drive housings; hardware is contained within wall bays. Do NOT copy the S3_O02 repeated waveform monitors, vertical blue glowing tubes, tall cylindrical fluid reservoir or paired glowing glass cylinders. No multi-monitor setup, tall tanks or vertical luminous cylinders. Do not repeat S10_R03 upright record-cartridge columns, other S10 room machinery, R06 cage tracks or O01 lockers. Common structural posts and NW door frame allowed. Teal practical lamp cores only on the wall hardware, controlled wall-local glow. No symbols, waveforms, numbers or text on screens or floor. Deck and NW apron are neutral gunmetal grey, apron saturation <=0.10, no teal pool. EXACTLY NW doorway; NE/SW/SE closed.",
+    "references": [
+      "assets/environments/site7_v2/stage03/S3_O02/S3_O02_GAME.png",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png"
+    ],
+    "status": "SELECTED",
+    "reason": "",
+    "reference_sha256": {
+      "assets/environments/site7_v2/stage03/S3_O02/S3_O02_GAME.png": "59d3bdc8428390562032d7c0ff73b009a621a5f9f5ffcec44514de09bdb45a28",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de"
+    },
+    "raw": "art_src/environments/site7_v2/stage10/S10_O02/S10_O02_RAW_NATIVE.png",
+    "master": "art_src/environments/site7_v2/stage10/S10_O02/S10_O02_MASTER.png",
+    "game": "assets/environments/site7_v2/stage10/S10_O02/S10_O02_GAME.png"
+  }
+]

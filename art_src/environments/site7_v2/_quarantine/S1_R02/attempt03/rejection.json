@@ -1,0 +1,66 @@
+{
+  "id": "S1_R02",
+  "attempt": 3,
+  "status": "FAIL_NOT_PROMOTABLE",
+  "raw": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt03/S1_R02_RAW_NATIVE.png",
+  "raw_sha256": "a1be9d8c154495695e9cd13743834732d4bd3190821bba2895653061b14dfc76",
+  "native_size": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "master": null,
+  "game": null,
+  "transforms": [],
+  "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt03/prompt.txt",
+  "prompt_sha256": "87d0bfc88fc176dfd5fcd92aaa7aa6696821109f1f49e3ffa1ab95e6e95a7d66",
+  "references": [
+    {
+      "path": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt02/S1_R02_RAW_NATIVE.png",
+      "sha256": "a34711671b8994585e0bd490360e45965e17807499ac41aea26613c2ab2e3838"
+    }
+  ],
+  "audit_main_floor": {
+    "asset": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt03/S1_R02_RAW_NATIVE.png",
+    "luma": 0.26669150590896606,
+    "p10": 0.23876865208148956,
+    "p90": 0.2948431670665741,
+    "saturation": 0.00641997344155389,
+    "hue": 145.35296014955867,
+    "axis": 24.898418123933794,
+    "problems": [
+      "floor luminance 0.267 outside (0.17, 0.24)"
+    ],
+    "attempt": 3,
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "floor_trace_pixels": [
+      [
+        169,
+        493
+      ],
+      [
+        837,
+        197
+      ],
+      [
+        1494,
+        491
+      ],
+      [
+        836,
+        812
+      ]
+    ],
+    "scope": "Main floor only; door aprons and geometry reviewed separately; no runtime promotion"
+  },
+  "reasons": [
+    "Mean floor luma 0.267 exceeds 0.24.",
+    "SW clear width approximately 166 px (manual trace uncertainty about 15 px) versus approximately 300 px required at scale 1.0.",
+    "Native output is 1672x941 despite requesting 2048x1152; no enlargement was applied."
+  ],
+  "staging_copy_removed_after_sha256_verification": true
+}

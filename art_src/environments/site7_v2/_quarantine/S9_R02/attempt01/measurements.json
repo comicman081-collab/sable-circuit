@@ -1,0 +1,212 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_R02/attempt01/S9_R02_GAME.png",
+  "luma": 0.200446218252182,
+  "p10": 0.15321962535381317,
+  "p90": 0.2524157166481018,
+  "saturation": 0.05766242308597157,
+  "hue": 145.95450034447603,
+  "axis": 24.658985596093622,
+  "problems": [],
+  "plate": "S9_R02",
+  "attempt": 1,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      80,
+      494
+    ],
+    [
+      835,
+      199
+    ],
+    [
+      1082,
+      278
+    ],
+    [
+      1255,
+      193
+    ],
+    [
+      1263,
+      351
+    ],
+    [
+      1598,
+      493
+    ],
+    [
+      1431,
+      611
+    ],
+    [
+      1597,
+      696
+    ],
+    [
+      1429,
+      798
+    ],
+    [
+      1262,
+      705
+    ],
+    [
+      835,
+      854
+    ],
+    [
+      414,
+      703
+    ],
+    [
+      243,
+      799
+    ],
+    [
+      65,
+      696
+    ],
+    [
+      237,
+      610
+    ]
+  ],
+  "doors_px": {
+    "SW": [
+      326,
+      657,
+      236
+    ],
+    "NE": [
+      1173,
+      307,
+      202
+    ],
+    "SE": [
+      1346,
+      658,
+      211
+    ]
+  },
+  "raw_sha256": "aa1e6f0b5e108f01123ddeb60d0886a3c23fdeb16096459846e00ae8b98bb11d",
+  "master_sha256": "aa1e6f0b5e108f01123ddeb60d0886a3c23fdeb16096459846e00ae8b98bb11d",
+  "game_sha256": "a71526915b9defbfc7fb6572dc072e3649f152cc5090438fbfe7e8f6df4c25ee",
+  "game_exposure_factor_srgb": 0.6741,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-64163cf4-ca25-4d41-91de-4a56dd31dfa4.png",
+  "inspection": "REJECT: unexpected SE rail gap and neutral apron copied from three-door reference. Actual floor includes all three painted aprons. Blade racks in wall arches differ from plain S3 panels.",
+  "floor_area_px2": 626314.0,
+  "floor_area_fraction": 0.3980762092653138,
+  "floor_bounds_px": [
+    65,
+    193,
+    1598,
+    854
+  ],
+  "status": "REJECTED",
+  "reason": "Unrequested SE doorway and apron; production order requires only NE and SW. Floor/aprons also approach image borders more closely than the requested 8% margin. No promotion.",
+  "raw": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt01/S9_R02_RAW_NATIVE.png",
+  "master": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt01/S9_R02_MASTER.png",
+  "game": "art_src/environments/site7_v2/_quarantine/S9_R02/attempt01/S9_R02_GAME.png",
+  "manual_checks": {
+    "floor_margins_ltrb_fraction": [
+      0.038875598086124404,
+      0.2051009564293305,
+      0.04425837320574163,
+      0.0924548352816153
+    ],
+    "floor_margin_minimum": 0.08,
+    "floor_margin_pass": false,
+    "floor_area_25_percent_pass": true,
+    "required_doors": [
+      "NE",
+      "SW"
+    ],
+    "visible_doors": [
+      "SW",
+      "NE",
+      "SE"
+    ],
+    "door_sides_pass": false,
+    "corridor_width": "NOT_APPLICABLE_ROOM",
+    "wall_silhouette": "new slotted gold memory-blade rack panels; no S3 round fan",
+    "door_width_and_apron_runtime_alignment": "NOT_VALIDATED: no connected corridor exists",
+    "apron_samples": {
+      "SW": {
+        "painted_apron_polygon_px": [
+          [
+            237,
+            610
+          ],
+          [
+            414,
+            703
+          ],
+          [
+            243,
+            799
+          ],
+          [
+            65,
+            696
+          ]
+        ],
+        "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+        "luma": 0.23085945844650269,
+        "saturation": 0.05174006589617565,
+        "saturation_max": 0.1,
+        "saturation_pass": true
+      },
+      "NE": {
+        "painted_apron_polygon_px": [
+          [
+            1082,
+            278
+          ],
+          [
+            1255,
+            193
+          ],
+          [
+            1263,
+            351
+          ]
+        ],
+        "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+        "luma": 0.2278536856174469,
+        "saturation": 0.021197989929541868,
+        "saturation_max": 0.1,
+        "saturation_pass": true
+      },
+      "SE": {
+        "painted_apron_polygon_px": [
+          [
+            1431,
+            611
+          ],
+          [
+            1597,
+            696
+          ],
+          [
+            1429,
+            798
+          ],
+          [
+            1262,
+            705
+          ]
+        ],
+        "sampling": "polygon inset 10% toward centroid, source scale 1.0",
+        "luma": 0.2399173527956009,
+        "saturation": 0.04949414282138185,
+        "saturation_max": 0.1,
+        "saturation_pass": true
+      }
+    }
+  }
+}

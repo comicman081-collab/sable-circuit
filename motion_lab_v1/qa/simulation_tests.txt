@@ -1,0 +1,16 @@
+✔ A click shorter than one render frame fires once without a held button (3.7185ms)
+✔ All eight movement directions and all eight independent firing facings, at three display rates (19.7849ms)
+✔ Diagonal keys do not create a speed advantage (0.3513ms)
+✔ Stop, resume and speed switch retain a valid continuous locomotion phase (0.6086ms)
+✔ Held fire consumes ammunition, automatically reloads, and remains rate independent (2.7124ms)
+✔ Reload prevents shots and restores the magazine only when complete (0.315ms)
+✔ Obstacles and world bounds constrain actual position (2.5064ms)
+✔ Swept projectile collision catches thin targets between ticks (0.2826ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 131.2313

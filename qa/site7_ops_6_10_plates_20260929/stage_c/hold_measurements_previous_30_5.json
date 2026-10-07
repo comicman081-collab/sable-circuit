@@ -1,0 +1,374 @@
+{
+  "status": "HOLD",
+  "plate": "S8_C06",
+  "axis_min_deg": 22.5,
+  "axis_max_deg": 30.5,
+  "attempts": [
+    {
+      "attempt": 1,
+      "axis_deg": 32.11176712650798,
+      "contour_px": [
+        [
+          0,
+          65
+        ],
+        [
+          997,
+          673
+        ],
+        [
+          1011,
+          718
+        ],
+        [
+          1041,
+          747
+        ],
+        [
+          1089,
+          743
+        ],
+        [
+          1254,
+          842
+        ],
+        [
+          1254,
+          1176
+        ],
+        [
+          0,
+          377
+        ]
+      ],
+      "status": "FAIL_AXIS",
+      "raw_sha256": "e29d29e75d68c74adf4681a9ac76984c0db600338b6baf60a377e88b825e989a"
+    },
+    {
+      "attempt": 2,
+      "axis_deg": 33.51573923013594,
+      "contour_px": [
+        [
+          0,
+          65
+        ],
+        [
+          1254,
+          866
+        ],
+        [
+          1254,
+          1230
+        ],
+        [
+          0,
+          370
+        ]
+      ],
+      "status": "FAIL_AXIS",
+      "raw_sha256": "42f2f45545d3168d0607cde8adde78571ac72b7bdfb98ce46c744b23bb3e7e67"
+    },
+    {
+      "attempt": 3,
+      "axis_deg": 30.71449830500144,
+      "contour_px": [
+        [
+          0,
+          70
+        ],
+        [
+          1254,
+          784
+        ],
+        [
+          1254,
+          1166
+        ],
+        [
+          0,
+          390
+        ]
+      ],
+      "status": "FAIL_AXIS",
+      "raw_sha256": "a35721411727eca02750c2c374bda28a3e1b04e05d8b728f3581d13ae93f994e"
+    },
+    {
+      "attempt": 4,
+      "axis_deg": 30.866228905454573,
+      "contour_px": [
+        [
+          0,
+          65
+        ],
+        [
+          1254,
+          797
+        ],
+        [
+          1254,
+          1164
+        ],
+        [
+          0,
+          397
+        ]
+      ],
+      "left_width_px": 332,
+      "right_width_px": 367,
+      "axis_gate": "FAIL",
+      "width_gate": "PASS",
+      "status": "FAIL_AXIS",
+      "raw_sha256": "e385f2b4be19b7e81ed38baa5cff6224dd3f08302d2836de3eace1370aed3e41",
+      "overlay": ".cache/diag/site7_ops_c/retry_review/S8_C06_attempt04_standard_overlay_1920x1080.png",
+      "reason": "Authorized retry attempt04: actual floor_axis 30.866229 degrees exceeds unchanged 30.5 degree maximum. Actual left/right widths 332/367 px meet +/-15% standard width gate, but lower-right floor edge y=1164 exceeds standard y=1081."
+    },
+    {
+      "attempt": 5,
+      "axis_deg": 30.832552678255173,
+      "contour_px": [
+        [
+          0,
+          65
+        ],
+        [
+          1254,
+          798
+        ],
+        [
+          1254,
+          1161
+        ],
+        [
+          0,
+          397
+        ]
+      ],
+      "left_width_px": 332,
+      "right_width_px": 363,
+      "axis_gate": "FAIL",
+      "width_gate": "PASS",
+      "status": "FAIL_AXIS",
+      "raw_sha256": "034ae8d6fb8ddce6e7b3b42ea46db8066d718c9770c9425bc1d7e63a3c186ecc",
+      "overlay": ".cache/diag/site7_ops_c/retry_review/S8_C06_attempt05_standard_overlay_1920x1080.png",
+      "reason": "Authorized retry attempt05: actual floor_axis 30.832553 degrees exceeds unchanged 30.5 degree maximum. Actual left/right widths 332/363 px meet +/-15% standard width gate, but lower-right floor edge y=1161 exceeds standard y=1081. Required signal-red upper-left wall accent is also absent. Five-call C06 limit exhausted: HOLD. C07 extra calls not started."
+    }
+  ],
+  "selected_source_only": [
+    {
+      "plate": "S8_R01",
+      "luma": 0.19900737702846527,
+      "saturation": 0.07704457149220358,
+      "p10": 0.1562470644712448,
+      "p90": 0.23936864733695984,
+      "axis_deg": 24.14080516424433,
+      "floor_trace_status": "PROVISIONAL_SOURCE_ONLY_NOT_REGISTERED"
+    },
+    {
+      "plate": "S8_R03",
+      "luma": 0.19557508826255798,
+      "saturation": 0.10414334383724523,
+      "p10": 0.14525099098682404,
+      "p90": 0.23864315450191498,
+      "axis_deg": 23.555948022838347,
+      "floor_trace_status": "PROVISIONAL_SOURCE_ONLY_NOT_REGISTERED"
+    },
+    {
+      "plate": "S8_R02",
+      "luma": 0.20290157198905945,
+      "saturation": 0.006017275361430991,
+      "p10": 0.1526627540588379,
+      "p90": 0.25170591473579407,
+      "axis_deg": 22.839792044665487,
+      "floor_trace_status": "PROVISIONAL_SOURCE_ONLY_NOT_REGISTERED"
+    },
+    {
+      "plate": "S8_R04",
+      "luma": 0.2044794261455536,
+      "saturation": 0.08641637856730719,
+      "p10": 0.1606588214635849,
+      "p90": 0.2536039352416992,
+      "axis_deg": 23.339105782223086,
+      "floor_trace_status": "PROVISIONAL_SOURCE_ONLY_NOT_REGISTERED"
+    },
+    {
+      "plate": "S8_R05",
+      "luma": 0.2118501514196396,
+      "saturation": 0.0674104428572092,
+      "p10": 0.17007842659950256,
+      "p90": 0.26856473088264465,
+      "axis_deg": 24.193590955565984,
+      "floor_trace_status": "PROVISIONAL_SOURCE_ONLY_NOT_REGISTERED"
+    },
+    {
+      "plate": "S8_R06",
+      "luma": 0.2001163363456726,
+      "saturation": 0.07487681215947314,
+      "p10": 0.1449294239282608,
+      "p90": 0.25658825039863586,
+      "axis_deg": 25.55323605787169,
+      "floor_trace_status": "PROVISIONAL_SOURCE_ONLY_NOT_REGISTERED"
+    },
+    {
+      "plate": "S8_O01",
+      "luma": 0.20911210775375366,
+      "saturation": 0.12035293280921433,
+      "p10": 0.1719764620065689,
+      "p90": 0.25505492091178894,
+      "axis_deg": 25.17308990622583,
+      "floor_trace_status": "PROVISIONAL_SOURCE_ONLY_NOT_REGISTERED"
+    },
+    {
+      "plate": "S8_O02",
+      "luma": 0.16629669070243835,
+      "saturation": 0.07230799606742297,
+      "p10": 0.10228235274553299,
+      "p90": 0.22250981628894806,
+      "axis_deg": 25.55021214293612,
+      "floor_trace_status": "PROVISIONAL_SOURCE_ONLY_NOT_REGISTERED"
+    },
+    {
+      "plate": "S8_C01",
+      "luma": 0.2043154239654541,
+      "saturation": 0.08143793899446397,
+      "p10": 0.16963136196136475,
+      "p90": 0.24285884201526642,
+      "axis_deg": 24.155781577760145,
+      "floor_trace_status": "PROVISIONAL_SOURCE_ONLY_NOT_REGISTERED"
+    },
+    {
+      "plate": "S8_C02",
+      "luma": 0.19456718862056732,
+      "saturation": 0.07766831892730093,
+      "p10": 0.1580352932214737,
+      "p90": 0.2460392266511917,
+      "axis_deg": 22.654085242046342,
+      "floor_trace_status": "PROVISIONAL_SOURCE_ONLY_NOT_REGISTERED"
+    },
+    {
+      "plate": "S8_C03",
+      "luma": 0.2055286169052124,
+      "saturation": 0.11705123508074065,
+      "p10": 0.1725490242242813,
+      "p90": 0.2427607923746109,
+      "axis_deg": 24.48623545548124,
+      "floor_trace_status": "PROVISIONAL_SOURCE_ONLY_NOT_REGISTERED"
+    },
+    {
+      "plate": "S8_C04",
+      "luma": 0.22029468417167664,
+      "saturation": 0.13200119263302823,
+      "p10": 0.16263921558856964,
+      "p90": 0.2893294394016266,
+      "axis_deg": 23.11204425224051,
+      "floor_trace_status": "PROVISIONAL_SOURCE_ONLY_NOT_REGISTERED"
+    },
+    {
+      "plate": "S8_C05",
+      "luma": 0.19697798788547516,
+      "saturation": 0.09303485058465306,
+      "p10": 0.1606588214635849,
+      "p90": 0.24301178753376007,
+      "axis_deg": 23.01958786284839,
+      "floor_trace_status": "PROVISIONAL_SOURCE_ONLY_NOT_REGISTERED"
+    }
+  ],
+  "strict_mission_audit": "NOT_RUN_NO_MISSION_INTEGRATION",
+  "seams": "NOT_MEASURED",
+  "C07": "attempt01 rejected; authorized attempts02-03 not called because C06 reached renewed HOLD at attempt05",
+  "authorization": {
+    "C06_total_limit": 5,
+    "C07_total_limit": 3,
+    "extra_call_limit": 4,
+    "extra_calls_used": 2,
+    "C07_extra_calls_used": 0,
+    "scope": "one-time user authorization 2026-09-30",
+    "stopped_at": "C06 attempt05 HOLD"
+  },
+  "standard_contour_px": [
+    [
+      0,
+      67
+    ],
+    [
+      1254,
+      755
+    ],
+    [
+      1254,
+      1081
+    ],
+    [
+      0,
+      399
+    ]
+  ],
+  "standard_end_widths_px": [
+    332,
+    326
+  ],
+  "end_width_limits_px": [
+    [
+      282.2,
+      381.8
+    ],
+    [
+      277.1,
+      374.9
+    ]
+  ],
+  "retry_source_integrity": {
+    "gate": "PASS",
+    "new_candidate_count": 2,
+    "files_verified": 6,
+    "RAW_MASTER_byte_identical": true,
+    "managed_staging_retained": true,
+    "existing_13_selected_candidates_changed": false
+  },
+  "retry_visual_evidence": {
+    "schema": 1,
+    "generated_at_utc": "2026-09-30T03:15:12.573072+00:00",
+    "gate": "PASS",
+    "container_gate": "PASS",
+    "dynamic_capture_gate": "PASS",
+    "dynamic_capture_required": false,
+    "minimum_native_review_resolution": [
+      1920,
+      1080
+    ],
+    "scope": "review_container_resolution_and_decode_only",
+    "quality_claim": false,
+    "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+    "evidence": [
+      {
+        "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\.cache\\diag\\site7_ops_c\\retry_review\\S8_C06_attempt04_standard_overlay_1920x1080.png",
+        "error": null,
+        "kind": "image",
+        "evidence_class": "dynamic_or_authored_review_frame",
+        "resolution": [
+          1920,
+          1080
+        ],
+        "mode": "RGB",
+        "decodable": true,
+        "native_1080p_container": true,
+        "size_bytes": 1774408,
+        "sha256": "a8a6247c501f448de7dc6c2e179c75f06022f89eca8e98b9e6655af3c019cdce"
+      },
+      {
+        "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\.cache\\diag\\site7_ops_c\\retry_review\\S8_C06_attempt05_standard_overlay_1920x1080.png",
+        "error": null,
+        "kind": "image",
+        "evidence_class": "dynamic_or_authored_review_frame",
+        "resolution": [
+          1920,
+          1080
+        ],
+        "mode": "RGB",
+        "decodable": true,
+        "native_1080p_container": true,
+        "size_bytes": 1715066,
+        "sha256": "04e92c5c3ab7ce380ea080e2c2a20c04c0d3f7d38af77f56438323f39bee75f8"
+      }
+    ]
+  }
+}

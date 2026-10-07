@@ -1,0 +1,35 @@
+{
+  "clips": [
+    {
+      "frames": 600,
+      "audio_samples_per_channel": 480000,
+      "audio_rms": 0.03877071252225814,
+      "audio_peak": 0.558013916015625,
+      "native_resolution": [
+        1920,
+        1080
+      ],
+      "fps": 60,
+      "duration_seconds": 10.0,
+      "source_start_frame": 8,
+      "audio": "Actual Godot MovieWriter stereo mix; synchronized trim, no added soundtrack",
+      "raw_sha256": "ab2d95cc91b3d85322c36aed28618a014964cce5c8bb5bf97adc5479d275a259",
+      "native_readback_sha256": "d094b0996e545ceb83953a56b2bfec7a6b609e9c6aa1fa3672d9c35528c9e1a4",
+      "video_sha256": "bdb1c6c2fd125e9b6b64f14f24d07217bc8aad5c38d2d658d219a8409f870975",
+      "mission": "MIS_CH01_01",
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\combat_vfx_video_20260925\\video_112346\\stage1\\stage1_combat_10s_sound_1080p.mp4",
+      "capture_sha256": "5ad3af9d2adf0844886aa02234985ef3d324e691c17eecc35b9360c1c69ea966"
+    }
+  ],
+  "sha256": {
+    "scripts/combat/cover_navigation.gd": "aba718d3d0851797d7386ebb1ef89a10ec39376d1b37c7dbe5b3c8347939992f",
+    "scripts/combat/site7_enemy_tactics.gd": "f5dc52afc4e94eb08864604f0b2391ce4a09831dc928f72b119ac1a399e907c8",
+    "scripts/animation/site7_machine_sprite.gd": "977a1ce6419c9cb8d56017e4ac0251293e6415be069dfdfaa9e8c6f7d8c0e585",
+    "scripts/actors/enemy_actor.gd": "2e912e3d2d9ec67fbe05b441742b5e184d31818c447e6d9123e17f5fa959fb7e",
+    "tests/render/stage_battle_video_10s_capture.gd": "3788a43120f550f04ca5679667bd2470410a8c9bb6385ea42f75f72b8cf1c114",
+    "scripts/audio/combat_sfx_bank.gd": "729e9f4cd71462cf12b076d5b7c35c91bfb434599f7bd3d9e6c48f55316c61e7",
+    "data/art_profiles/enemy_profiles.json": "95cccae62708d95a585e28a6a70c3d51667f2132edffb49eadc8f8a8c8bc1971",
+    "data/visual/site7_environment_props.json": "6ce25fe3209a220c9c75bb581d22a421c5b88313e38952d70d9f80f51da9692b",
+    "tools/environment/record_stage_battle_with_audio.py": "503c6d68990b062abcb0f609481340de870ed4e2f5230c874a6bf58d4597c84e"
+  }
+}

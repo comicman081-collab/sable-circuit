@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-01T23:46:18.114646+00:00",
+  "gate": "PASS_STATIC_CONFIG_ONLY",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "NOT_PROVIDED",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\artifacts\\rook_c02_interactive_preview\\ROOK_C02_INTERACTIVE_STRIDE_FIRE.html",
+      "error": null,
+      "kind": "html",
+      "evidence_class": "static_config_only",
+      "canvas_resolutions": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "dynamic_runtime_evidence": false,
+      "dynamic_capture_required_for_visual_gate": true,
+      "size_bytes": 18573,
+      "sha256": "dab15deb89549fa89820981ebf3fa37368563f97bf971cdba8bb9d1671520455"
+    }
+  ]
+}

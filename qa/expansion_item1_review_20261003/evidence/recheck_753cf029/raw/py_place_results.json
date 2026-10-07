@@ -1,0 +1,175 @@
+[
+  {
+    "case": "baseline",
+    "expect": "OK",
+    "got": "OK",
+    "match": true,
+    "exit": 0,
+    "ran": 10,
+    "skipped": 0,
+    "failed_tests": [],
+    "skip_reason": ""
+  },
+  {
+    "case": "legit_op3_elite_health_plus1",
+    "expect": "OK",
+    "got": "OK",
+    "match": true,
+    "exit": 0,
+    "ran": 10,
+    "skipped": 0,
+    "failed_tests": [],
+    "skip_reason": ""
+  },
+  {
+    "case": "legit_op1_row_health_plus1",
+    "expect": "OK",
+    "got": "OK",
+    "match": true,
+    "exit": 0,
+    "ran": 10,
+    "skipped": 0,
+    "failed_tests": [],
+    "skip_reason": ""
+  },
+  {
+    "case": "legit_assets_and_art_src_added",
+    "expect": "OK",
+    "got": "OK",
+    "match": true,
+    "exit": 0,
+    "ran": 10,
+    "skipped": 0,
+    "failed_tests": [],
+    "skip_reason": ""
+  },
+  {
+    "case": "legit_op10_themed_hazard",
+    "expect": "OK",
+    "got": "OK",
+    "match": true,
+    "exit": 0,
+    "ran": 10,
+    "skipped": 0,
+    "failed_tests": [],
+    "skip_reason": ""
+  },
+  {
+    "case": "bad_current_boss_affix_on_disk",
+    "expect": "FAIL",
+    "got": "FAIL",
+    "match": true,
+    "exit": 1,
+    "ran": 10,
+    "skipped": 0,
+    "failed_tests": [
+      "test_current_missions_obey_runtime_invariants"
+    ],
+    "skip_reason": ""
+  },
+  {
+    "case": "bad_current_unknown_hazard_on_disk",
+    "expect": "FAIL",
+    "got": "FAIL",
+    "match": true,
+    "exit": 1,
+    "ran": 10,
+    "skipped": 0,
+    "failed_tests": [
+      "test_current_missions_obey_runtime_invariants"
+    ],
+    "skip_reason": ""
+  },
+  {
+    "case": "bad_current_boss_room_hazard_on_disk",
+    "expect": "FAIL",
+    "got": "FAIL",
+    "match": true,
+    "exit": 1,
+    "ran": 10,
+    "skipped": 0,
+    "failed_tests": [
+      "test_current_missions_obey_runtime_invariants"
+    ],
+    "skip_reason": ""
+  },
+  {
+    "case": "bad_current_zero_count_on_disk",
+    "expect": "FAIL",
+    "got": "FAIL",
+    "match": true,
+    "exit": 1,
+    "ran": 10,
+    "skipped": 0,
+    "failed_tests": [
+      "test_current_missions_obey_runtime_invariants"
+    ],
+    "skip_reason": ""
+  },
+  {
+    "case": "bad_current_unknown_affix_on_disk",
+    "expect": "FAIL",
+    "got": "FAIL",
+    "match": true,
+    "exit": 1,
+    "ran": 10,
+    "skipped": 0,
+    "failed_tests": [
+      "test_current_missions_obey_runtime_invariants"
+    ],
+    "skip_reason": ""
+  },
+  {
+    "case": "bad_pair_hazard_code_commit_50a9dc9b",
+    "expect": "FAIL",
+    "got": "FAIL",
+    "match": true,
+    "exit": 1,
+    "ran": 10,
+    "skipped": 0,
+    "failed_tests": [
+      "test_fixed_commit_has_the_recommended_replacements",
+      "test_protected_asset_and_visual_paths_are_unchanged"
+    ],
+    "skip_reason": ""
+  },
+  {
+    "case": "bad_pair_plates_commit_f2462d2e",
+    "expect": "FAIL",
+    "got": "FAIL",
+    "match": true,
+    "exit": 1,
+    "ran": 10,
+    "skipped": 0,
+    "failed_tests": [
+      "test_fixed_commit_has_the_recommended_replacements",
+      "test_protected_asset_and_visual_paths_are_unchanged"
+    ],
+    "skip_reason": ""
+  },
+  {
+    "case": "bad_pair_visual_commit_6b0e3eb2",
+    "expect": "FAIL",
+    "got": "FAIL",
+    "match": true,
+    "exit": 1,
+    "ran": 10,
+    "skipped": 0,
+    "failed_tests": [
+      "test_fixed_commit_has_the_recommended_replacements",
+      "test_protected_asset_and_visual_paths_are_unchanged"
+    ],
+    "skip_reason": ""
+  },
+  {
+    "case": "missing_history_skips_only_pair_class",
+    "expect": "OK+SKIP",
+    "got": "OK+SKIP",
+    "match": true,
+    "exit": 0,
+    "ran": 4,
+    "skipped": 1,
+    "failed_tests": [],
+    "skip_reason": ""
+  }
+]

@@ -1,0 +1,11 @@
+# Independent existing SE source intake review
+
+Verdict: **PASS for the exact existing SE ImageGen source, exact alpha derivative and 2D binding annotations only**. Subject `64107243908a9d2309ffa943fdcf77ffd6e155f2241ae88b82bdc4545a443e2d`.
+
+I read the current `source_art_intake.py`, independently reran its read-only audit, and obtained the saved R1 audit exactly: all ten content bindings match and errors are empty. The implementation binds historical ImageGen source evidence, the actual alpha implementation and its pixel relationship, actual review replies with distinct reviewer identities, UTC timestamps and exact subjects. This is existing-source admission; it neither invents a generation permit nor inherits a failed animation's approval.
+
+I directly inspected the native 1024×1536 original, native RGBA and original-scale light/dark panel. The brown side braid, face, two back devices, long coat, teal lining, cyan equipment, beige anatomical-right thigh plate and carbine remain present. The barrel and whole combat pose read southeast. The inner elbow and leg background gaps are transparent; there is no broad remaining chroma hole. Visible RGB is byte-identical to the original. The remaining muted green-family detail is source interior detail, not authority to delete cyan or recolor the costume. Original and failed masks remain intact.
+
+Anatomical RIGHT is the plated image-left leg, anatomical LEFT the bent image-right leg. The proposed hip/knee/ankle/heel/toe coordinates follow that ownership. Trigger/right grip (475,544), support/left grip (634,647), rear barrel (768,706) and tip (821,752) lie on the corresponding original subject; all four are opaque source pixels. The stance is already bent and foreshortened. Occluded heels and the image alignment point are explicitly estimates. The transparent ground point is appropriate for image alignment, not a measured mesh point. These annotations do not certify 3D neutral geometry, a physical floor or contact.
+
+No mesh, motion, retarget, firearm socket, runtime, eight-direction set, HTML or production output is approved by this source-only reply. In particular, this review does not grant approval to apply the E rotation-delta retarget to SE. The E contact HOLD remains independent and unchanged. No new generation, Blender job, Luna test or production mutation was performed.

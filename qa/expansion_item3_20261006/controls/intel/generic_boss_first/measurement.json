@@ -1,0 +1,78 @@
+{
+  "cargo": {
+    "ABERRANT": 1,
+    "AERATOR": 0,
+    "ANCHOR": 10,
+    "ARCHIVE": 0,
+    "CRYO": 0,
+    "GANTRY": 0,
+    "ORIGIN": 0,
+    "SECURITY": 3
+  },
+  "checks": 83,
+  "failures": [
+    "BOSS_SITE7_AERATOR_01 exact mapping before generic BOSS",
+    "BOSS_SITE7_AERATOR_01 one defeat adds one sample",
+    "BOSS_SITE7_CRYO_01 exact mapping before generic BOSS",
+    "BOSS_SITE7_CRYO_01 one defeat adds one sample",
+    "BOSS_SITE7_GANTRY_01 exact mapping before generic BOSS",
+    "BOSS_SITE7_GANTRY_01 one defeat adds one sample",
+    "BOSS_SITE7_ARCHIVE_01 exact mapping before generic BOSS",
+    "BOSS_SITE7_ARCHIVE_01 one defeat adds one sample",
+    "BOSS_SITE7_ORIGIN_01 exact mapping before generic BOSS",
+    "BOSS_SITE7_ORIGIN_01 one defeat adds one sample",
+    "ANL_AERATOR_SPORE_PROFILE affordable from ten boss defeats and legacy robots",
+    "ANL_CRYO_COMPRESSOR_MODEL affordable from ten boss defeats and legacy robots",
+    "ANL_GANTRY_RAIL_MODEL affordable from ten boss defeats and legacy robots",
+    "ANL_ARCHIVE_ECHO_MODEL affordable from ten boss defeats and legacy robots",
+    "ANL_ORIGIN_NULL_MODEL affordable from ten boss defeats and legacy robots",
+    "ANL_AERATOR_SPORE_PROFILE all analyses reachable",
+    "ANL_CRYO_COMPRESSOR_MODEL all analyses reachable",
+    "ANL_GANTRY_RAIL_MODEL all analyses reachable",
+    "ANL_ARCHIVE_ECHO_MODEL all analyses reachable",
+    "ANL_ORIGIN_NULL_MODEL all analyses reachable",
+    "all eight analyses completed"
+  ],
+  "mapping": [
+    {
+      "enemy": "BOSS_SITE7_ANCHOR_01",
+      "key": "ANCHOR"
+    },
+    {
+      "enemy": "BOSS_SITE7_RELAY_01",
+      "key": "ANCHOR"
+    },
+    {
+      "enemy": "BOSS_SITE7_REMNANT_01",
+      "key": "ANCHOR"
+    },
+    {
+      "enemy": "BOSS_SITE7_FORGE_01",
+      "key": "ANCHOR"
+    },
+    {
+      "enemy": "BOSS_SITE7_CARRIER_01",
+      "key": "ANCHOR"
+    },
+    {
+      "enemy": "BOSS_SITE7_AERATOR_01",
+      "key": "AERATOR"
+    },
+    {
+      "enemy": "BOSS_SITE7_CRYO_01",
+      "key": "CRYO"
+    },
+    {
+      "enemy": "BOSS_SITE7_GANTRY_01",
+      "key": "GANTRY"
+    },
+    {
+      "enemy": "BOSS_SITE7_ARCHIVE_01",
+      "key": "ARCHIVE"
+    },
+    {
+      "enemy": "BOSS_SITE7_ORIGIN_01",
+      "key": "ORIGIN"
+    }
+  ]
+}

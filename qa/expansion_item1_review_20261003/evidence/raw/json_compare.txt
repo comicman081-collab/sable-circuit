@@ -1,0 +1,20 @@
+--- MIS_CH01_01: changed paths 0, outside hazards/affix: 0; hazards 0 -> 0; affix rows 1 -> 1
+--- MIS_CH01_02: changed paths 0, outside hazards/affix: 0; hazards 0 -> 0; affix rows 1 -> 1
+--- MIS_CH01_03: changed paths 0, outside hazards/affix: 0; hazards 1 -> 1; affix rows 2 -> 2
+--- MIS_CH01_04: changed paths 0, outside hazards/affix: 0; hazards 3 -> 3; affix rows 3 -> 3
+--- MIS_CH01_05: changed paths 0, outside hazards/affix: 0; hazards 4 -> 4; affix rows 3 -> 3
+--- MIS_CH01_06: changed paths 5, outside hazards/affix: 0; hazards 4 -> 4; affix rows 4 -> 4
+   R02_GALLERY hazards: [(None, 2)] -> [(None, 1), (None, 1)]
+   R04_PUMPS hazards: [(None, 2)] -> [(None, 1), (None, 1)]
+   affix before: [('R04_PUMPS', 'encounter', 0, 0, 'ENM_SITE7_NULL_PYLON_01', 'SHIELDED'), ('R04_PUMPS', 'encounter', 0, 2, 'ENM_SITE7_MORTAR_01', 'VOLATILE'), ('R04_PUMPS', 'encounter', 0, 3, 'ENM_SITE7_RAM_01', 'OVERCHARGED'), ('R04_PUMPS', 'reinforcements', 0, 1, 'ENM_SITE7_DRONE_01', 'VOLATILE')]
+   affix after:  [('R04_PUMPS', 'encounter', 0, 0, 'ENM_SITE7_NULL_PYLON_01', 'SHIELDED'), ('R04_PUMPS', 'encounter', 0, 2, 'ENM_SITE7_MORTAR_01', 'BROODING'), ('R04_PUMPS', 'encounter', 0, 3, 'ENM_SITE7_RAM_01', 'OVERCHARGED'), ('R04_PUMPS', 'reinforcements', 0, 1, 'ENM_SITE7_DRONE_01', 'VOLATILE')]
+--- MIS_CH01_07: changed paths 4, outside hazards/affix: 0; hazards 4 -> 4; affix rows 4 -> 4
+   R02_FREEZE hazards: [(None, 2)] -> [(None, 1), (None, 1)]
+   R04_COMPRESSORS hazards: [(None, 2)] -> [(None, 1), (None, 1)]
+--- MIS_CH01_08: changed paths 4, outside hazards/affix: 0; hazards 4 -> 4; affix rows 4 -> 4
+   R02_MARSHALLING hazards: [(None, 2)] -> [(None, 1), (None, 1)]
+   R04_JUNCTION hazards: [(None, 2)] -> [(None, 1), (None, 1)]
+--- MIS_CH01_09: changed paths 1, outside hazards/affix: 0; hazards 4 -> 4; affix rows 4 -> 4
+   affix before: [('R04_GALLERY', 'encounter', 0, 0, 'ENM_SITE7_NULL_PYLON_01', 'SHIELDED'), ('R04_GALLERY', 'encounter', 0, 2, 'ENM_SITE7_PRISM_01', 'OVERCHARGED'), ('R04_GALLERY', 'reinforcements', 0, 0, 'ENM_SITE7_DRONE_01', 'VOLATILE'), ('R04_GALLERY', 'reinforcements', 0, 1, 'ENM_SITE7_DRONE_01', 'VOLATILE')]
+   affix after:  [('R04_GALLERY', 'encounter', 0, 0, 'ENM_SITE7_NULL_PYLON_01', 'BEACON'), ('R04_GALLERY', 'encounter', 0, 2, 'ENM_SITE7_PRISM_01', 'OVERCHARGED'), ('R04_GALLERY', 'reinforcements', 0, 0, 'ENM_SITE7_DRONE_01', 'VOLATILE'), ('R04_GALLERY', 'reinforcements', 0, 1, 'ENM_SITE7_DRONE_01', 'VOLATILE')]
+--- MIS_CH01_10: changed paths 0, outside hazards/affix: 0; hazards 4 -> 4; affix rows 5 -> 5

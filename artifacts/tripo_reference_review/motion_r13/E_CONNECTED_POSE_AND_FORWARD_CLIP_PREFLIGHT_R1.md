@@ -1,0 +1,13 @@
+# Repaired E pose and bounded forward clip review
+
+**PASS for one bounded E forward-cycle diagnostic**, exact subject `9d2f2ca0afd9fcaff8361490d52c96f84de7012a1319a9e528129bf8e8a99308`. The repaired attachment passes for the actual sample-23 result. This Ponytail FULL review by `/root/tripo_intake_review` does not approve an unseen full cycle, physical contact, firing or runtime.
+
+I opened the actual native repaired pose and the neutral light/dark panels. The horizontal waist gap and right-side wedge are closed, and the long stretched outer coat arc is gone. The face, braid, hands, rifle, original costume and boots remain continuous with the source. A small trim remnant near the calf remains; it does not warrant blocking this diagnostic. The source is still a right-aim three-quarter illustration.
+
+I also ran one owned read-only Blender audit, with no rendering or scene save. The reopened posed mesh has 46018 vertices and agrees exactly with the recorded evaluated vertices. Among187 groups with exactly equal stored source UV and neutral XYZ in source y540–740, maximum posed separation is0m. This establishes the actual waist seam repair for these samples. It does not establish every edge or the full cycle. The audit script, scene references, complete group data and log are preserved under `connected_pose_seam_audit_r01`.
+
+The reviewed exporter preserves actual49-sample evaluation before key creation, then bakes local transforms and checks five native frame_set samples. It retains the .625-second source timing, with endpoint key48 and loop frames0–47. The original source image, visible front triangles and normalized skin weights are exported without appearance reconstruction. The exact source-authority, scene, texture and consumed implementation references are checked.
+
+The socket helper finds the actual UV triangle at each opaque source pixel center and requires all its vertices to have weapon-bone weight1. It returns rest-space points matching the Godot consumer's pose/inverse-rest transformation. This is a sound geometric binding mechanism; actual visible barrel accuracy and firing remain separate checks. The earlier technical socket result does not prove E combat.
+
+Proceed with one owned E forward run diagnostic using capture enabled. Preserve16 native1080p battle-scale captures and the original-scale1920-square samples0,12,24,36, all at64samples. Then inspect the actual temporal frames, loop, baked playback, source continuity and socket data before expanding scope. Whole-mesh minimum height is not a sole-contact measure, and leg-ratio-scaled distance is not actual actor-speed validation. Other directions, walk, strafe/backward, independent aim/fire, runtime rates and HTML remain unapproved.

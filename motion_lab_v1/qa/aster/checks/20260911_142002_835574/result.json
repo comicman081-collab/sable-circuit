@@ -1,0 +1,80 @@
+{
+  "recordedAt": "2026-09-11T05:20:10.113116+00:00",
+  "character": "aster",
+  "status": "PASS_RUNTIME_CHECKS",
+  "package": {
+    "path": "dist/aster.package.json",
+    "sha256": "f7fdac7d0793b80556ca611393e434dd561f51555e1891b98ef0de8ef66fd2af"
+  },
+  "inputSHA256": "1115270a9f3564e3fffc813058971a1592df9a33515336c1fb5412c940f61ac0",
+  "checks": [
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "validate_character.py",
+        "--character",
+        "aster"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/aster/checks/20260911_142002_835574/0.log",
+        "sha256": "e7c20d466b82ab5283f18cffe8f201c884e85f133bb04b794e520eaf02cc62ca"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests\\atlas-renderer.test.js",
+        "tests\\combat-aim.test.js",
+        "tests\\keyboard-input.test.js",
+        "tests\\simulation.test.js"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/aster/checks/20260911_142002_835574/1.log",
+        "sha256": "a86861f97e4fa88da16bd80764f4d9f1ab1da5efa48a81f4e4a1074be0c83f3c"
+      }
+    },
+    {
+      "command": [
+        "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/aster/checks/20260911_142002_835574/2.log",
+        "sha256": "c8d50dbb9c77f10b2ae63e7e5194c0bc98af2aa6b6c3abcbe9007c0fa5ccc6d6"
+      }
+    },
+    {
+      "command": [
+        "node",
+        "verify_bundle.mjs",
+        "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\dist\\ASTER_Motion_Studio.html"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "qa/aster/checks/20260911_142002_835574/3.log",
+        "sha256": "d48acfa04b8e79958d4263827d7c20ce1c919bf3d2ed60a8e8048868d443158d"
+      }
+    }
+  ],
+  "browser": {
+    "path": "qa/aster_combat_v8_browser.json",
+    "sha256": "bb5e3e03a59a31c2de16619bda86508a82e0a3ab6687e676e1745cab55f25f7d"
+  },
+  "locomotion": {
+    "path": "qa/aster_locomotion_v8_browser.json",
+    "sha256": "057922f9e861de62ffc8998671d38e0db288ffb34e86267ede741e284fab6a77"
+  },
+  "scope": "Input plus temporal selected-renderer checks when supplied; no automatic anatomy, foot-contact, visual approval or Luna generation claim"
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "reviewer": "Ponytail FULL",
+  "review_date": "2026-09-04",
+  "candidate": "MICA_C03_V8_R14_NE_NW_SHARED_R7_SCREEN_SEPARATED_RUNTIME_SOLE_LOCK",
+  "status": "HOLD",
+  "promotion": "DO_NOT_PROMOTE",
+  "evidence": {
+    "ne_world_video": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r7_review/MICA_C03_V8_R14_NE_SHARED_R7_RECAPTURED_WORLD_GRID_5S_1920X1080.mp4",
+    "nw_world_video": "artifacts/mica_c03_v8_r14_nw_shared_handoff_r7_review/MICA_C03_V8_R14_NW_SHARED_R7_RECAPTURED_WORLD_GRID_5S_1920X1080.mp4",
+    "native_video": "1920x1080, 24fps, 120 frames, 5 seconds"
+  },
+  "gates": {
+    "A_alternating_gait_and_no_cross_or_out_toed": {
+      "ne": "PASS",
+      "nw": "PASS",
+      "notes": "Named sole screen-X gaps remained positive for all frames; NE 30.748–61.648px, NW 30.290–59.535px. No crossed legs or out-toed/팔자 recurrence."
+    },
+    "B_leg_volume_and_waist_stability": {
+      "ne": "PASS",
+      "nw": "PASS",
+      "notes": "Uniform scale 1.0; no calf ballooning, rubber-leg stretch, or waist snap."
+    },
+    "C_ankle_boot_and_grounding": {
+      "ne": "PASS",
+      "nw": "PASS",
+      "notes": "Boot rotation 0 degrees; no 90-degree ankle, gross foot snap, or boot inversion."
+    },
+    "D_support_sole_lock_root_continuity_and_handoff": {
+      "ne": "HOLD",
+      "nw": "HOLD",
+      "notes": "Support sole is locked, but decoded MP4 raster root introduces cadence pulses: NE 8 zero-step transitions and NW 12 zero-step transitions out of 119, with maximum catch-up 4.243px. Raw float metrics alone are insufficient."
+    },
+    "E_torso_weapon_alpha_and_z_order": {
+      "ne": "PASS",
+      "nw": "PASS",
+      "notes": "Upper-body/weapon registration stable; no visible green/alpha seam or z-order pop."
+    },
+    "F_eight_direction_completeness": {
+      "ne": "HOLD",
+      "nw": "HOLD",
+      "notes": "Only NE/NW diagonal pilot is under review; full eight-direction set is not complete."
+    }
+  },
+  "measured_runtime": {
+    "ne": {
+      "support_sole_axis_span_px": {"left": 0.000001286, "right": 0.000001002},
+      "decoded_marker_axis_span_max_px": 0.707,
+      "handoff_advance_px": {"left": 20.034, "right": 19.760},
+      "raw_root_transition_px": {"min": 0.690628, "max": 3.176960},
+      "raw_root_zero_steps": 0,
+      "raster_root_zero_steps": 8,
+      "raster_root_catch_up_max_px": 4.243
+    },
+    "nw": {
+      "support_sole_axis_span_px": {"left": 0.000001311, "right": 0.000001291},
+      "decoded_marker_axis_span_max_px": 0.707,
+      "handoff_advance_px": {"left": 20.319, "right": 18.783},
+      "raw_root_transition_px": {"min": 0.586234, "max": 3.582340},
+      "raw_root_zero_steps": 0,
+      "raster_root_zero_steps": 12,
+      "raster_root_catch_up_max_px": 4.243
+    }
+  },
+  "required_next_fix": "Quantize or schedule the continuous root in a cadence-aware way so decoded raster frames have no zero-step/catch-up pulse, then recapture both NE and NW world videos and rerun all gates.",
+  "quarantine": {
+    "failed_and_held_candidates_preserved": true,
+    "disposal_allowed": false,
+    "retirement_manifest_required": true
+  }
+}

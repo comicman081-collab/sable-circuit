@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "note": "Elite variants of existing robots. Marked with a code-drawn ring and overhead label only; robot art pixels are never tinted or altered. An encounter row opts in with \"affix\": \"<ID>\".",
+  "affixes": {
+    "SHIELDED": {
+      "title": "SHIELDED",
+      "color": "6fe3ff",
+      "tip": "SHIELDED: the cyan barrier soaks hits and recharges after 4.5 s without damage; burst it down.",
+      "barrier_ratio": 0.3,
+      "barrier_regen_delay": 4.5,
+      "barrier_regen_per_second": 0.2
+    },
+    "OVERCHARGED": {
+      "title": "OVERCHARGED",
+      "color": "ff7a45",
+      "tip": "OVERCHARGED: hits harder and attacks sooner; break line of sight between its shots.",
+      "damage_multiplier": 1.2,
+      "attack_interval_multiplier": 0.9,
+      "speed_multiplier": 1.05
+    },
+    "VOLATILE": {
+      "title": "VOLATILE",
+      "color": "ffcf4a",
+      "tip": "VOLATILE: bursts when destroyed; leave the yellow circle. The blast ignores cover.",
+      "death_blast_radius": 140.0,
+      "death_blast_damage": 18.0,
+      "death_blast_windup": 1.0
+    },
+    "BROODING": {
+      "title": "BROODING",
+      "color": "9bda67",
+      "tip": "BROODING: destroying it hatches two plain drones; the green rings mark their 0.6 s hatch before they attack.",
+      "brood_count": 2,
+      "brood_health_ratio": 0.25,
+      "brood_hatch_windup": 0.6
+    },
+    "BEACON": {
+      "title": "BEACON",
+      "color": "c0a4ff",
+      "tip": "BEACON: violet links reduce nearby robots' incoming damage by 25%; destroy the beacon to release them.",
+      "beacon_radius": 360.0,
+      "beacon_reduction": 0.25,
+      "beacon_max_links": 6
+    }
+  }
+}

@@ -1,0 +1,59 @@
+diff --git a/AGENTS.md b/AGENTS.md
+index 06f397ec0..076a787e1 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -39,6 +39,13 @@
+   AI followers route through `ZoneHazard.steer` so they never park on a vent
+   and step off one before it discharges; the controlled operator is the
+   player's to move.
++- Operators and robots are `CharacterBody2D`s in Godot's default grounded
++  mode, so a body touched on its north side counts as floor. Both set
++  `platform_floor_layers = 0` and `PLATFORM_ON_LEAVE_DO_NOTHING` in `_ready`
++  so neither is carried by the other's velocity
++  (`tests/smoke/actor_contact_carry_smoke.gd`, `qa/actor_contact_carry_20260925/`).
++  Keep grounded mode and its 1 px floor snap: floating mode or a zero snap
++  changed cover sliding in 161 and 23 of 242 measured approaches.
+ 
+ ## Explicit project cleanup — user instruction 2026-09-24
+ 
+diff --git a/scripts/actors/enemy_actor.gd b/scripts/actors/enemy_actor.gd
+index 7cecd3eca..7b6159ff8 100644
+--- a/scripts/actors/enemy_actor.gd
++++ b/scripts/actors/enemy_actor.gd
+@@ -59,6 +59,9 @@ func _ready() -> void:
+         return
+     add_to_group("prototype_targets")
+     add_to_group("m3_enemies")
++    # Top-down: an operator touched on its north side is not a moving floor (see OperatorActor._ready).
++    platform_floor_layers = 0
++    platform_on_leave = PLATFORM_ON_LEAVE_DO_NOTHING
+     art_profile = ArtProfileRegistry.get_profile(enemy_id)
+     health = max_health
+     home_position = global_position
+diff --git a/scripts/actors/operator_actor.gd b/scripts/actors/operator_actor.gd
+index 267038702..b91ea2aec 100644
+--- a/scripts/actors/operator_actor.gd
++++ b/scripts/actors/operator_actor.gd
+@@ -71,6 +71,10 @@ var _scatter_cycle_left := 0.0
+ 
+ func _ready() -> void:
+     add_to_group("operators")
++    # Top-down: no body is a moving floor. In the default grounded mode a robot touched on
++    # its north side counts as floor, and move_and_slide would carry the operator with it.
++    platform_floor_layers = 0
++    platform_on_leave = PLATFORM_ON_LEAVE_DO_NOTHING
+     _visual = $VisualRoot as OperatorVisual
+     ammo = magazine_size
+     health = max_health
+diff --git a/tools/maintenance/run_regression_suite.py b/tools/maintenance/run_regression_suite.py
+index 525fd8169..d8a4c38be 100644
+--- a/tools/maintenance/run_regression_suite.py
++++ b/tools/maintenance/run_regression_suite.py
+@@ -106,6 +106,7 @@ TESTS = [
+     Test('hit_hurt_vfx', 'tests/smoke/combat_hit_hurt_vfx_smoke.gd', 300, quick=True),
+     Test('elite_affix', 'tests/smoke/elite_affix_smoke.gd', 300, quick=True),
+     Test('zone_hazard', 'tests/smoke/zone_hazard_smoke.gd', 400, quick=True),
++    Test('contact_carry', 'tests/smoke/actor_contact_carry_smoke.gd', 300, quick=True, out='contact_carry.json'),
+     Test('m13_migration', 'tests/smoke/m13_weapon_base_migration_smoke.gd', 300, quick=True, out='save.json'),
+     Test('m13_campaign', 'tests/smoke/m13_weapon_campaign_smoke.gd', 300, quick=True),
+     Test('m13_runtime', 'tests/smoke/m13_weapon_runtime_smoke.gd', 300, quick=True),

@@ -1,0 +1,30 @@
+; SABLE CIRCUIT playable squad prototype
+; Godot 4.7.2 stable baseline
+config_version=5
+
+[application]
+config/name="SABLE CIRCUIT"
+run/main_scene="res://scenes/bootstrap/Bootstrap.tscn"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[physics]
+common/physics_ticks_per_second=60
+
+[sable_visuals]
+aster_v4_locomotion_preview=true
+motion_lab_character_runtime=true
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.006, 0.012, 0.018, 1)
+
+[filesystem]
+
+import/blender/enabled=false

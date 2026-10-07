@@ -1,0 +1,1101 @@
+[
+  {
+    "asset": ".cache/diag/site7_ops_e/candidates/S10_R05/attempt01/S10_R05_GAME.png",
+    "luma": 0.20023849606513977,
+    "p10": 0.16183137893676758,
+    "p90": 0.23080000281333923,
+    "saturation": 0.08062654753079324,
+    "hue": 144.31023222851164,
+    "axis": 24.663517359597183,
+    "problems": [
+      "main floor border margin 4.785% below 5%"
+    ],
+    "plate": "S10_R05",
+    "attempt": 1,
+    "native_size": [
+      1672,
+      941
+    ],
+    "source_scale": 1.0,
+    "actual_floor_px": [
+      [
+        94,
+        487
+      ],
+      [
+        815,
+        231
+      ],
+      [
+        1084,
+        287
+      ],
+      [
+        1240,
+        195
+      ],
+      [
+        1283,
+        211
+      ],
+      [
+        1283,
+        364
+      ],
+      [
+        1592,
+        501
+      ],
+      [
+        1401,
+        611
+      ],
+      [
+        1514,
+        678
+      ],
+      [
+        1357,
+        767
+      ],
+      [
+        1219,
+        703
+      ],
+      [
+        813,
+        870
+      ],
+      [
+        419,
+        676
+      ],
+      [
+        302,
+        758
+      ],
+      [
+        136,
+        658
+      ],
+      [
+        268,
+        592
+      ]
+    ],
+    "doors_px": {
+      "SW": [
+        344,
+        634,
+        176
+      ],
+      "NE": [
+        1184,
+        326,
+        224
+      ],
+      "SE": [
+        1310,
+        657,
+        204
+      ]
+    },
+    "raw_sha256": "e234a466b69e0d852ff4d0fbb3fd84781ebdb10048f115dd283d51be650b8c0a",
+    "master_sha256": "e234a466b69e0d852ff4d0fbb3fd84781ebdb10048f115dd283d51be650b8c0a",
+    "game_sha256": "bde37b723cf57c6694b8baa715eb0f80e804ee8a84e4b1f79c0cb96e8015d74e",
+    "game_exposure_factor_srgb": 0.7095,
+    "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-b7395e86-0039-4206-9aa2-8caf3d065b9d.png",
+    "inspection": "Bay content: broad blunt rectangular monolith in back wall, heavy ribs, hairline red joints; distinct from S3_R05 broken anchor machinery and R01-R04 hatch/obelisk/cartridge/null-emitter contents. SW,NE,SE only; centre completely open, no cover. Actual floor trace and boss silhouette composite review required before intake.",
+    "floor_area_px2": 576423.5,
+    "floor_area_fraction": 0.36636652192262126,
+    "floor_bounds_px": [
+      94,
+      195,
+      1592,
+      870
+    ],
+    "native_size_acceptance": {
+      "target_size": [
+        1672,
+        941
+      ],
+      "actual_size": [
+        1672,
+        941
+      ],
+      "tolerance_each_axis_px": 2,
+      "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+    },
+    "margin_acceptance": {
+      "date": "2026-10-01",
+      "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+      "main_floor_minimum": 0.05,
+      "whole_floor_minimum": 0.04,
+      "prompt_target": 0.08,
+      "apron_polygons_px": {
+        "SW": [
+          [
+            268,
+            592
+          ],
+          [
+            136,
+            658
+          ],
+          [
+            302,
+            758
+          ],
+          [
+            419,
+            676
+          ]
+        ],
+        "NE": [
+          [
+            1084,
+            287
+          ],
+          [
+            1240,
+            195
+          ],
+          [
+            1283,
+            211
+          ],
+          [
+            1283,
+            364
+          ]
+        ],
+        "SE": [
+          [
+            1401,
+            611
+          ],
+          [
+            1514,
+            678
+          ],
+          [
+            1357,
+            767
+          ],
+          [
+            1219,
+            703
+          ]
+        ]
+      },
+      "main_floor_bounds_px": [
+        94,
+        231,
+        1592,
+        870
+      ],
+      "main_floor_margins_ltrb_fraction": [
+        0.056220095693779906,
+        0.2454835281615303,
+        0.04784688995215311,
+        0.07545164718384698
+      ],
+      "whole_floor_bounds_px": [
+        94,
+        195,
+        1592,
+        870
+      ],
+      "whole_floor_margins_ltrb_fraction": [
+        0.056220095693779906,
+        0.20722635494155153,
+        0.04784688995215311,
+        0.07545164718384698
+      ],
+      "main_floor_area_px2": 512715
+    },
+    "boss_floor_measurement": {
+      "basis": "actual whole painted floor polygon including aprons",
+      "area_px2": 576423.5,
+      "width_px": 1498,
+      "height_px": 675,
+      "minimum_area_px2": 491287,
+      "minimum_width_px": 1410,
+      "minimum_height_px": 612,
+      "no_main_floor_area_or_height_minimum": true
+    },
+    "apron_stats": {
+      "SW": {
+        "luma": 0.23596252501010895,
+        "saturation": 0.07881680853801587,
+        "sampling": "actual apron polygon inset 10%"
+      },
+      "NE": {
+        "luma": 0.2262452244758606,
+        "saturation": 0.07752979370751258,
+        "sampling": "actual apron polygon inset 10%"
+      },
+      "SE": {
+        "luma": 0.22406356036663055,
+        "saturation": 0.07788164164824098,
+        "sampling": "actual apron polygon inset 10%"
+      }
+    },
+    "prompt": "EXACT OPEN SIDES: SW, NE, SE. CLOSED SIDES: NW. Closed sides have continuous solid back walls or uninterrupted low foreground rails; NO other openings, aprons, floor tongues or doorway-like recesses. Do not copy the extra doors of Image 1. Exactly 3 open threshold(s).\nGEOMETRY FIRST: exact native 1672x941 RGB, 16:9 landscape. Broad open arena HEXAGON: main floor vertices (126,480),(726,180),(946,180),(1546,480),(946,780),(726,780). Its four oblique edges have exactly 2:1 slope, 26.6 degrees. SW apron (350,592),(170,682),(442,818),(622,728). NE apron (1092,263),(1192,213),(1464,350),(1364,400). SE apron (1322,592),(1502,682),(1230,818),(1050,728). COMPLETE drawn floor polygon INCLUDING apron tips: (126,480),(726,180),(946,180),(1092,263),(1192,213),(1464,350),(1364,400),(1546,480),(1322,592),(1502,682),(1230,818),(1050,728),(946,780),(726,780),(622,728),(442,818),(170,682),(350,592). Keep ALL floor INCLUDING outer apron tips at least 8% inside canvas as the target. Painted floor area at least 550000 square pixels, whole bounding width >=1410 and whole bounding height >=650 pixels; make the floor broad rather than cramped. Central floor and all walking routes are completely EMPTY. No small ledges or narrowed mouths near the arena centre. Exactly SW entrance, NE exit and SE branch; NW closed. Apron outer end edges are diagonal, parallel to the attached deck width, not vertical pockets. Door floor and the whole grey deck are neutral, mean luminance 0.17-0.24, saturation <=0.10 at all three apron ends.\nUse case: stylized-concept. ONE new finished opaque RGB room plate S10_R05, R05_CORE. Image 1 is only fixed camera, scale, neutral standard deck, minimum floor size and doorway dimensions. Image 2 is only premium hard-surface material quality; ignore its actors, markings and UI.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nROOM PLATE. The walkable floor is a dimetric diamond or elongated hexagon whose sides face NW (upper-left), NE (upper-right), SE (lower-right) and SW (lower-left). Back walls rise only along the NW and NE sides; the SW and SE sides end in a low lip or railing with no wall so nothing hides the floor. Keep the floor at least 8% away from every image border.\nDOORS: open doorways exactly on these sides: SW, NE, SE. Each doorway is an unobstructed opening about 2.3 adult-heights wide with a heavy steel frame (a framed opening in a back wall, or a gap in the lip railing on the SW/SE side); no door leaf, no shutter. The same standard deck and the same neutral-white overhead light continue through every doorway for about 1.5 adult-heights on both sides of the threshold.\nROOM TYPE: boss arena — walkable floor at least 1100 x 520 (long x short, in the scale above).\nIDENTITY: monolithic origin-core housing: a vast black-alloy monolith bracketed into the back walls with hairline red seams and heavy structural ribs; open central arena floor. No round iris, no concentric rings, no circular portal. Accent colour white-red, on walls and fixtures only.\nExactly 3 usable opening(s), only SW, NE, SE. All other sides (NW) are continuous closed walls or continuous low foreground railings: no rail gaps, floor tongues, passages, apparent doorway recesses or shutters there.\nCRITICAL NEW WALL SILHOUETTE: redraw the wall architecture and machinery from the IDENTITY above; do not copy Image 1 wall masses, fans, consoles or machine arrangement. This room must differ from other operation-10 rooms and all earlier operation plates. Black alloy and red seams stay on the WALL architecture; include a few distinct small practical wall lamps in the required accent, with visible lamp cores and a restrained local wall glow. No lettering-like floor patterns, red light bloom, black floor or coloured floor. The floor is standard neutral gunmetal grey, mean sRGB luminance 0.17-0.24; doorway apron saturation at most 0.10. The exposed outside remains uniform #07090D.\nDoor apron outer edges are oblique and parallel to the attached deck; no vertical-cut pocket. All main floor AND apron tips must remain at least 8% inside each image border. Floor material and light are neutral, with no red wash or black alloy on the deck. Several clear perimeter lamp cores illuminate the wall only.\nWALL CONTENT CRITERION: the shared map-kit corner/end columns, wall bays, door gap and door-flanking columns may match Image 1. The equipment and panel configuration INSIDE each bay must be new and specific to this IDENTITY, different from the same-slot S3 plate and the other operation-10 plates. Do not reproduce the reference bay contents with only recolouring.\nSPECIFIC NEW BAY CONTENT / BOSS SILHOUETTE SEPARATION: one VERY BROAD, BLUNT RECTANGULAR black-alloy MONOLITH built into the back-wall housing and flanked by heavy structural ribs. Its silhouette is low and flat across the top with large smooth rectangular panels and thin red seam lines, NOT the shattered anchor housings, exposed severed cables or clamp machinery of S3_R05. No pointed crystal forms, crystal bundle, white crystalline tower, tapered crown, split sharp shards or star-shaped wall assembly: ORIGIN CORE has a white pointed crystal-cluster silhouette and is added later by the game, do NOT paint the boss. Black monolithic rectangular wall equipment must contrast the bright white boss. R01 uses a long sealed hatch, R02 obelisks, R03 record cartridges, R04 twin null emitters: do not repeat those bay contents here. No circular iris, concentric rings, circular portal. Floor stays standard neutral grey, never black alloy. Several small white-red practical lights are confined to wall recesses, with no red/white wash on floor. Leave the whole middle empty, no props or cover objects.",
+    "references": [
+      "assets/environments/site7_v2/stage03/S3_R05/S3_R05_GAME.png",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png"
+    ],
+    "status": "REJECTED",
+    "reason": "Main-floor right border margin 4.784689% (80 px) is below 5%; actual whole-floor width1498 height675 area576423.5, axis24.663517,luma0.200238,apron saturation0.0775-0.0788 otherwise pass. Bay content distinct; no boss crystal silhouette in wall. Actual painted-floor trace retained; no polygon shrink to hide failure.",
+    "reference_sha256": {
+      "assets/environments/site7_v2/stage03/S3_R05/S3_R05_GAME.png": "3e603b0782db23faed94e2214166cef4aba0e0e85b30cd1e5210f1fa920a2b63",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de"
+    },
+    "raw": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/S10_R05_RAW_NATIVE.png",
+    "master": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/S10_R05_MASTER.png",
+    "game": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt01/S10_R05_GAME.png",
+    "supplemental_rejection_20261001": "사용자 재검토: S3_R05 좌우 벽 베이 설비·패널 구성을 색·조명만 바꿔 반복하므로 거절 유지.",
+    "rejection_addendum_20261001": "사용자 재검토: S3_R05 좌우 벽 베이 장비·패널 구성을 색·조명만 바꾼 반복으로도 거절. 기존 사유와 측정은 보존."
+  },
+  {
+    "asset": ".cache/diag/site7_ops_e/candidates/S10_R05/attempt02/S10_R05_GAME.png",
+    "luma": 0.20017294585704803,
+    "p10": 0.16688235104084015,
+    "p90": 0.2303529530763626,
+    "saturation": 0.07919712834601003,
+    "hue": 144.34817206732035,
+    "axis": 24.748862460249924,
+    "problems": [
+      "main floor border margin 4.725% below 5%"
+    ],
+    "plate": "S10_R05",
+    "attempt": 2,
+    "native_size": [
+      1672,
+      941
+    ],
+    "source_scale": 1.0,
+    "actual_floor_px": [
+      [
+        94,
+        486
+      ],
+      [
+        815,
+        219
+      ],
+      [
+        1091,
+        283
+      ],
+      [
+        1238,
+        193
+      ],
+      [
+        1283,
+        207
+      ],
+      [
+        1283,
+        364
+      ],
+      [
+        1593,
+        503
+      ],
+      [
+        1393,
+        601
+      ],
+      [
+        1518,
+        666
+      ],
+      [
+        1361,
+        757
+      ],
+      [
+        1214,
+        692
+      ],
+      [
+        811,
+        869
+      ],
+      [
+        422,
+        673
+      ],
+      [
+        304,
+        757
+      ],
+      [
+        136,
+        658
+      ],
+      [
+        270,
+        591
+      ]
+    ],
+    "doors_px": {
+      "SW": [
+        346,
+        632,
+        175
+      ],
+      "NE": [
+        1187,
+        324,
+        209
+      ],
+      "SE": [
+        1303,
+        647,
+        203
+      ]
+    },
+    "raw_sha256": "1001a4748d0cdcda126436e7561915e5fd7afbd445e1af4c4023507e127bc367",
+    "master_sha256": "1001a4748d0cdcda126436e7561915e5fd7afbd445e1af4c4023507e127bc367",
+    "game_sha256": "c597b6e4fb608d2ffd08d22b639f3edff4db76e30a00a6b4c77f94b69e37680a",
+    "game_exposure_factor_srgb": 0.7153,
+    "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-084f5ec3-9445-40a7-a82d-737af6c93382.png",
+    "inspection": "New broad rectangular flat monolith bay, two red vertical seam plates with simple peripheral technical panels, no broken S3_R05 clamp layout or pointed boss crystal; SW/NE/SE only and open centre. Measured actual trace; right main floor again too close to border.",
+    "floor_area_px2": 576403.5,
+    "floor_area_fraction": 0.3663538102090314,
+    "floor_bounds_px": [
+      94,
+      193,
+      1593,
+      869
+    ],
+    "native_size_acceptance": {
+      "target_size": [
+        1672,
+        941
+      ],
+      "actual_size": [
+        1672,
+        941
+      ],
+      "tolerance_each_axis_px": 2,
+      "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+    },
+    "margin_acceptance": {
+      "date": "2026-10-01",
+      "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+      "main_floor_minimum": 0.05,
+      "whole_floor_minimum": 0.04,
+      "prompt_target": 0.08,
+      "apron_polygons_px": {
+        "SW": [
+          [
+            270,
+            591
+          ],
+          [
+            136,
+            658
+          ],
+          [
+            304,
+            757
+          ],
+          [
+            422,
+            673
+          ]
+        ],
+        "NE": [
+          [
+            1091,
+            283
+          ],
+          [
+            1238,
+            193
+          ],
+          [
+            1283,
+            207
+          ],
+          [
+            1283,
+            364
+          ]
+        ],
+        "SE": [
+          [
+            1393,
+            601
+          ],
+          [
+            1518,
+            666
+          ],
+          [
+            1361,
+            757
+          ],
+          [
+            1214,
+            692
+          ]
+        ]
+      },
+      "main_floor_bounds_px": [
+        94,
+        219,
+        1593,
+        869
+      ],
+      "main_floor_margins_ltrb_fraction": [
+        0.056220095693779906,
+        0.23273113708820403,
+        0.04724880382775119,
+        0.0765143464399575
+      ],
+      "whole_floor_bounds_px": [
+        94,
+        193,
+        1593,
+        869
+      ],
+      "whole_floor_margins_ltrb_fraction": [
+        0.056220095693779906,
+        0.2051009564293305,
+        0.04724880382775119,
+        0.0765143464399575
+      ],
+      "main_floor_area_px2": 511890
+    },
+    "boss_floor_measurement": {
+      "basis": "actual whole painted floor polygon including aprons",
+      "area_px2": 576403.5,
+      "width_px": 1499,
+      "height_px": 676,
+      "minimum_area_px2": 491287,
+      "minimum_width_px": 1410,
+      "minimum_height_px": 612,
+      "no_main_floor_area_or_height_minimum": true
+    },
+    "apron_stats": {
+      "SW": {
+        "luma": 0.22550183534622192,
+        "saturation": 0.08055701331547008,
+        "sampling": "actual apron polygon inset 10%"
+      },
+      "NE": {
+        "luma": 0.23032933473587036,
+        "saturation": 0.07869010860317782,
+        "sampling": "actual apron polygon inset 10%"
+      },
+      "SE": {
+        "luma": 0.22004491090774536,
+        "saturation": 0.07897659737323041,
+        "sampling": "actual apron polygon inset 10%"
+      }
+    },
+    "prompt": "GEOMETRY CORRECTION FOR ATTEMPT 2, HIGHEST PRIORITY: exact native1672x941. The previous arena spilled too far right, its actual corner x1592 leaves only80 pixels. That fails. MOVE THE WHOLE ARENA INWARD AND KEEP THE RIGHTMOST FLOOR AT x1545 OR LESS, LEFTMOST x127 OR MORE. Aim at least8% inset for floor AND all apron tips. Main broad hexagon vertices(148,478),(716,194),(956,194),(1524,478),(956,762),(716,762). SW apron outer tip(128,652), lower tip(345,793), internal endpoints(293,570),(510,710). NE apron outer points(1210,208),(1360,287), internal endpoints(1053,322),(1220,408). SE apron outer tip(1542,652), lower tip(1325,793), internal endpoints(1379,570),(1162,710). Whole floor including apron extremes must be1410px wide or more and612px tall or more, and >=510000 square pixels. Make the arena broad and open while keeping every floor extreme away from the canvas edge, no narrow central neck. Exactly SW, NE, SE doors; NW closed. NE outer edge diagonal and parallel to attached ascending deck, do not create a vertical pocket. SW/SE outer edges diagonal too. Plain neutral grey deck and aprons with saturation<=0.10 and mean luma0.20. Blunt rectangular wall monolith, no pointed crystal silhouette, no iris. Keep all floor free of props/cover.\nEXACT OPEN SIDES: SW, NE, SE. CLOSED SIDES: NW. Closed sides have continuous solid back walls or uninterrupted low foreground rails; NO other openings, aprons, floor tongues or doorway-like recesses. Do not copy the extra doors of Image 1. Exactly 3 open threshold(s).\nUse case: stylized-concept. ONE new finished opaque RGB room plate S10_R05, R05_CORE. Image 1 is only fixed camera, scale, neutral standard deck, minimum floor size and doorway dimensions. Image 2 is only premium hard-surface material quality; ignore its actors, markings and UI.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nROOM PLATE. The walkable floor is a dimetric diamond or elongated hexagon whose sides face NW (upper-left), NE (upper-right), SE (lower-right) and SW (lower-left). Back walls rise only along the NW and NE sides; the SW and SE sides end in a low lip or railing with no wall so nothing hides the floor. Keep the floor at least 8% away from every image border.\nDOORS: open doorways exactly on these sides: SW, NE, SE. Each doorway is an unobstructed opening about 2.3 adult-heights wide with a heavy steel frame (a framed opening in a back wall, or a gap in the lip railing on the SW/SE side); no door leaf, no shutter. The same standard deck and the same neutral-white overhead light continue through every doorway for about 1.5 adult-heights on both sides of the threshold.\nROOM TYPE: boss arena — walkable floor at least 1100 x 520 (long x short, in the scale above).\nIDENTITY: monolithic origin-core housing: a vast black-alloy monolith bracketed into the back walls with hairline red seams and heavy structural ribs; open central arena floor. No round iris, no concentric rings, no circular portal. Accent colour white-red, on walls and fixtures only.\nExactly 3 usable opening(s), only SW, NE, SE. All other sides (NW) are continuous closed walls or continuous low foreground railings: no rail gaps, floor tongues, passages, apparent doorway recesses or shutters there.\nCRITICAL NEW WALL SILHOUETTE: redraw the wall architecture and machinery from the IDENTITY above; do not copy Image 1 wall masses, fans, consoles or machine arrangement. This room must differ from other operation-10 rooms and all earlier operation plates. Black alloy and red seams stay on the WALL architecture; include a few distinct small practical wall lamps in the required accent, with visible lamp cores and a restrained local wall glow. No lettering-like floor patterns, red light bloom, black floor or coloured floor. The floor is standard neutral gunmetal grey, mean sRGB luminance 0.17-0.24; doorway apron saturation at most 0.10. The exposed outside remains uniform #07090D.\nDoor apron outer edges are oblique and parallel to the attached deck; no vertical-cut pocket. All main floor AND apron tips must remain at least 8% inside each image border. Floor material and light are neutral, with no red wash or black alloy on the deck. Several clear perimeter lamp cores illuminate the wall only.\nWALL CONTENT CRITERION: the shared map-kit corner/end columns, wall bays, door gap and door-flanking columns may match Image 1. The equipment and panel configuration INSIDE each bay must be new and specific to this IDENTITY, different from the same-slot S3 plate and the other operation-10 plates. Do not reproduce the reference bay contents with only recolouring.\nSPECIFIC NEW BAY CONTENT / BOSS SILHOUETTE SEPARATION: one VERY BROAD, BLUNT RECTANGULAR black-alloy MONOLITH built into the back-wall housing and flanked by heavy structural ribs. Its silhouette is low and flat across the top with large smooth rectangular panels and thin red seam lines, NOT the shattered anchor housings, exposed severed cables or clamp machinery of S3_R05. No pointed crystal forms, crystal bundle, white crystalline tower, tapered crown, split sharp shards or star-shaped wall assembly: ORIGIN CORE has a white pointed crystal-cluster silhouette and is added later by the game, do NOT paint the boss. Black monolithic rectangular wall equipment must contrast the bright white boss. R01 uses a long sealed hatch, R02 obelisks, R03 record cartridges, R04 twin null emitters: do not repeat those bay contents here. No circular iris, concentric rings, circular portal. Floor stays standard neutral grey, never black alloy. Several small white-red practical lights are confined to wall recesses, with no red/white wash on floor. Leave the whole middle empty, no props or cover objects.",
+    "references": [
+      "assets/environments/site7_v2/stage03/S3_R05/S3_R05_GAME.png",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png"
+    ],
+    "status": "REJECTED",
+    "reason": "Actual main-floor right border margin 4.724880% (79 px) below5%; whole-floor area576403.5 width1499 height676, axis24.748862,luma0.200173,apr on saturations0.07869-0.08056 otherwise pass. The generated boundary remained almost unchanged despite inset request. Keep actual trace, no shrinking registration.",
+    "reference_sha256": {
+      "assets/environments/site7_v2/stage03/S3_R05/S3_R05_GAME.png": "3e603b0782db23faed94e2214166cef4aba0e0e85b30cd1e5210f1fa920a2b63",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de"
+    },
+    "raw": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/S10_R05_RAW_NATIVE.png",
+    "master": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/S10_R05_MASTER.png",
+    "game": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt02/S10_R05_GAME.png",
+    "supplemental_rejection_20261001": "사용자 재검토: S3_R05 좌우 벽 베이 설비·패널 구성을 색·조명만 바꿔 반복하므로 거절 유지.",
+    "rejection_addendum_20261001": "사용자 재검토: S3_R05 좌우 벽 베이 장비·패널 구성을 색·조명만 바꾼 반복으로도 거절. 기존 사유와 측정은 보존."
+  },
+  {
+    "asset": ".cache/diag/site7_ops_e/candidates/S10_R05/attempt03/S10_R05_GAME.png",
+    "luma": 0.20009921491146088,
+    "p10": 0.16530588269233704,
+    "p90": 0.2374705970287323,
+    "saturation": 0.07836452062978941,
+    "hue": 142.10062617806545,
+    "axis": 24.89583758636626,
+    "problems": [],
+    "plate": "S10_R05",
+    "attempt": 3,
+    "native_size": [
+      1672,
+      941
+    ],
+    "source_scale": 1.0,
+    "actual_floor_px": [
+      [
+        113,
+        467
+      ],
+      [
+        817,
+        234
+      ],
+      [
+        1084,
+        306
+      ],
+      [
+        1238,
+        273
+      ],
+      [
+        1340,
+        215
+      ],
+      [
+        1579,
+        323
+      ],
+      [
+        1484,
+        376
+      ],
+      [
+        1439,
+        395
+      ],
+      [
+        1547,
+        449
+      ],
+      [
+        1411,
+        557
+      ],
+      [
+        1606,
+        655
+      ],
+      [
+        1440,
+        762
+      ],
+      [
+        1223,
+        660
+      ],
+      [
+        1046,
+        746
+      ],
+      [
+        558,
+        745
+      ],
+      [
+        376,
+        643
+      ],
+      [
+        198,
+        726
+      ],
+      [
+        59,
+        630
+      ],
+      [
+        231,
+        554
+      ]
+    ],
+    "doors_px": {
+      "SW": [
+        304,
+        598,
+        177
+      ],
+      "NE": [
+        1339,
+        334,
+        235
+      ],
+      "SE": [
+        1317,
+        609,
+        214
+      ]
+    },
+    "raw_sha256": "6fd9b23af85998c3f083fdfeff1793d852359e9e11e2bed6c2bd5c40bfbf8c0a",
+    "master_sha256": "6fd9b23af85998c3f083fdfeff1793d852359e9e11e2bed6c2bd5c40bfbf8c0a",
+    "game_sha256": "49cd7a027eda96db253555775111379d11214e7b4f26444610f77c9ac4050b57",
+    "game_exposure_factor_srgb": 0.8125,
+    "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-b7c27ba1-7652-44a5-85fa-a7330c0d6bd5.png",
+    "inspection": "Blunt wall monolith and hairline red joints distinct from broken S3 anchor bay and all accepted Op10 wall contents; no boss crystal shapes. Main floor is a wide hexagon with short horizontal bottom edge; SW NE SE doors only. Actual apron extremes and whole-floor boss dimensions measured; no ideal target substitution.",
+    "floor_area_px2": 563547.0,
+    "floor_area_fraction": 0.3581824029206433,
+    "floor_bounds_px": [
+      59,
+      215,
+      1606,
+      762
+    ],
+    "native_size_acceptance": {
+      "target_size": [
+        1672,
+        941
+      ],
+      "actual_size": [
+        1672,
+        941
+      ],
+      "tolerance_each_axis_px": 2,
+      "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+    },
+    "margin_acceptance": {
+      "date": "2026-10-01",
+      "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+      "main_floor_minimum": 0.05,
+      "whole_floor_minimum": 0.04,
+      "prompt_target": 0.08,
+      "apron_polygons_px": {
+        "SW": [
+          [
+            231,
+            554
+          ],
+          [
+            59,
+            630
+          ],
+          [
+            198,
+            726
+          ],
+          [
+            376,
+            643
+          ]
+        ],
+        "NE": [
+          [
+            1238,
+            273
+          ],
+          [
+            1340,
+            215
+          ],
+          [
+            1579,
+            323
+          ],
+          [
+            1484,
+            376
+          ],
+          [
+            1439,
+            395
+          ]
+        ],
+        "SE": [
+          [
+            1411,
+            557
+          ],
+          [
+            1606,
+            655
+          ],
+          [
+            1440,
+            762
+          ],
+          [
+            1223,
+            660
+          ]
+        ]
+      },
+      "main_floor_bounds_px": [
+        113,
+        234,
+        1547,
+        746
+      ],
+      "main_floor_margins_ltrb_fraction": [
+        0.06758373205741627,
+        0.24867162592986186,
+        0.07476076555023924,
+        0.20722635494155153
+      ],
+      "whole_floor_bounds_px": [
+        59,
+        215,
+        1606,
+        762
+      ],
+      "whole_floor_margins_ltrb_fraction": [
+        0.035287081339712915,
+        0.22848034006376194,
+        0.039473684210526314,
+        0.1902231668437832
+      ],
+      "main_floor_area_px2": 468463,
+      "adoption_rule": {
+        "main_lr_minimum": 0.045,
+        "whole_lr_minimum": 0.035,
+        "main_tb_minimum": 0.05,
+        "whole_tb_minimum": 0.04,
+        "prompt_main_target": 0.05,
+        "prompt_whole_target": 0.04
+      }
+    },
+    "boss_floor_measurement": {
+      "basis": "actual whole painted floor polygon including aprons",
+      "area_px2": 563547.0,
+      "width_px": 1547,
+      "height_px": 547,
+      "minimum_area_px2": 491287,
+      "minimum_width_px": 1410,
+      "minimum_height_px": 612,
+      "no_main_floor_area_or_height_minimum": true
+    },
+    "apron_stats": {
+      "SW": {
+        "luma": 0.23050403594970703,
+        "saturation": 0.07595554802421288,
+        "sampling": "actual apron polygon inset 10%"
+      },
+      "NE": {
+        "luma": 0.193653404712677,
+        "saturation": 0.09342588216128216,
+        "sampling": "actual apron polygon inset 10%"
+      },
+      "SE": {
+        "luma": 0.22930441796779633,
+        "saturation": 0.07508357048461886,
+        "sampling": "actual apron polygon inset 10%"
+      }
+    },
+    "prompt": "GEOMETRY FIRST — FINAL ATTEMPT3, NEW FRAMING: draw a new native1672x941 arena, camera slightly farther back than Image1, architecture with visibly more empty void around it. DO NOT copy the reference floor's almost-full-width rhombus. Draw a BROAD ELONGATED HEXAGON with short flat top/bottom edges and roomy diagonal sides. Main walking-floor corners: (170,470),(700,205),(972,205),(1502,470),(972,735),(700,735). Each oblique edge slope2:1 (26.565 degrees). Add THREE broad neutral aprons: SW vertices(360,565),(130,680),(384,807),(614,692); NE vertices(1105,272),(1269,190),(1523,317),(1359,399); SE vertices(1312,565),(1542,680),(1288,807),(1058,692). Complete whole-floor perimeter including all apron tips: (170,470),(700,205),(972,205),(1105,272),(1269,190),(1523,317),(1359,399),(1502,470),(1312,565),(1542,680),(1288,807),(1058,692),(972,735),(700,735),(614,692),(384,807),(130,680),(360,565). The rightmost FLOOR corner is1542 or less, NOT1593. Architecture should fit comfortably within the canvas; target >=8% inset for ALL floor including apron tips. Whole painted floor must stay >=510000 square pixels, >=1410 wide, >=612 tall INCLUDING aprons. No tapered centre or central obstacle, no tiny ledge by boss. EXACT native1672x941, no rescale/crop, no text. Grey deck and all aprons mean luma0.20 and saturation<=.10; red and black alloy are WALL only. Exactly SW entry NE exit SE branch, NW sealed. Apron far edges diagonal and parallel to attached decks, not vertical pockets.\nEXACT OPEN SIDES: SW, NE, SE. CLOSED SIDES: NW. Closed sides have continuous solid back walls or uninterrupted low foreground rails; NO other openings, aprons, floor tongues or doorway-like recesses. Do not copy the extra doors of Image 1. Exactly 3 open threshold(s).\nUse case: stylized-concept. ONE new finished opaque RGB room plate S10_R05, R05_CORE. Image 1 is only fixed camera, scale, neutral standard deck, minimum floor size and doorway dimensions. Image 2 is only premium hard-surface material quality; ignore its actors, markings and UI.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nROOM PLATE. The walkable floor is a dimetric diamond or elongated hexagon whose sides face NW (upper-left), NE (upper-right), SE (lower-right) and SW (lower-left). Back walls rise only along the NW and NE sides; the SW and SE sides end in a low lip or railing with no wall so nothing hides the floor. Keep the floor at least 8% away from every image border.\nDOORS: open doorways exactly on these sides: SW, NE, SE. Each doorway is an unobstructed opening about 2.3 adult-heights wide with a heavy steel frame (a framed opening in a back wall, or a gap in the lip railing on the SW/SE side); no door leaf, no shutter. The same standard deck and the same neutral-white overhead light continue through every doorway for about 1.5 adult-heights on both sides of the threshold.\nROOM TYPE: boss arena — walkable floor at least 1100 x 520 (long x short, in the scale above).\nIDENTITY: monolithic origin-core housing: a vast black-alloy monolith bracketed into the back walls with hairline red seams and heavy structural ribs; open central arena floor. No round iris, no concentric rings, no circular portal. Accent colour white-red, on walls and fixtures only.\nExactly 3 usable opening(s), only SW, NE, SE. All other sides (NW) are continuous closed walls or continuous low foreground railings: no rail gaps, floor tongues, passages, apparent doorway recesses or shutters there.\nCRITICAL NEW WALL SILHOUETTE: redraw the wall architecture and machinery from the IDENTITY above; do not copy Image 1 wall masses, fans, consoles or machine arrangement. This room must differ from other operation-10 rooms and all earlier operation plates. Black alloy and red seams stay on the WALL architecture; include a few distinct small practical wall lamps in the required accent, with visible lamp cores and a restrained local wall glow. No lettering-like floor patterns, red light bloom, black floor or coloured floor. The floor is standard neutral gunmetal grey, mean sRGB luminance 0.17-0.24; doorway apron saturation at most 0.10. The exposed outside remains uniform #07090D.\nDoor apron outer edges are oblique and parallel to the attached deck; no vertical-cut pocket. All main floor AND apron tips must remain at least 8% inside each image border. Floor material and light are neutral, with no red wash or black alloy on the deck. Several clear perimeter lamp cores illuminate the wall only.\nWALL CONTENT CRITERION: the shared map-kit corner/end columns, wall bays, door gap and door-flanking columns may match Image 1. The equipment and panel configuration INSIDE each bay must be new and specific to this IDENTITY, different from the same-slot S3 plate and the other operation-10 plates. Do not reproduce the reference bay contents with only recolouring.\nSPECIFIC NEW BAY CONTENT / BOSS SILHOUETTE SEPARATION: one VERY BROAD, BLUNT RECTANGULAR black-alloy MONOLITH built into the back-wall housing and flanked by heavy structural ribs. Its silhouette is low and flat across the top with large smooth rectangular panels and thin red seam lines, NOT the shattered anchor housings, exposed severed cables or clamp machinery of S3_R05. No pointed crystal forms, crystal bundle, white crystalline tower, tapered crown, split sharp shards or star-shaped wall assembly: ORIGIN CORE has a white pointed crystal-cluster silhouette and is added later by the game, do NOT paint the boss. Black monolithic rectangular wall equipment must contrast the bright white boss. R01 uses a long sealed hatch, R02 obelisks, R03 record cartridges, R04 twin null emitters: do not repeat those bay contents here. No circular iris, concentric rings, circular portal. Floor stays standard neutral grey, never black alloy. Several small white-red practical lights are confined to wall recesses, with no red/white wash on floor. Leave the whole middle empty, no props or cover objects.",
+    "references": [
+      "assets/environments/site7_v2/stage03/S3_R05/S3_R05_GAME.png",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png"
+    ],
+    "status": "SELECTED_BY_USER",
+    "reason": "2026-10-01 사용자 결정: S10_R05 3차 채택. 베이 안의 설비·패널 구성은 S3_R05와 다름. 남은 방의 좌우 여백 허용은 주 바닥 4.5%, 전체 3.5%. S10_R05에만 전체 바닥 짧은 변 547px를 이름 지정 면제(기준 612–733px). 면적 563547px², 축·휘도·에이프런 채도·네이티브 크기는 통과. 추가 ImageGen 0회, 판당 3회로 마감. 그림·플레이·균형 승인 아님, 작전10 켜지 않음.",
+    "reference_sha256": {
+      "assets/environments/site7_v2/stage03/S3_R05/S3_R05_GAME.png": "3e603b0782db23faed94e2214166cef4aba0e0e85b30cd1e5210f1fa920a2b63",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de"
+    },
+    "raw": "art_src/environments/site7_v2/stage10/S10_R05/S10_R05_RAW_NATIVE.png",
+    "master": "art_src/environments/site7_v2/stage10/S10_R05/S10_R05_MASTER.png",
+    "game": "assets/environments/site7_v2/stage10/S10_R05/S10_R05_GAME.png",
+    "previous_status": "REJECTED",
+    "historical_problems": [
+      "whole floor border margin 3.529% below 4%",
+      "floor bounds below (1410, 612) (boss includes aprons)"
+    ],
+    "named_waivers": [
+      {
+        "plate": "S10_R05",
+        "metric": "whole_floor_short_dimension_px",
+        "actual": 547,
+        "normal_minimum": 612,
+        "authority": "explicit user decision 2026-10-01",
+        "scope": "S10_R05 attempt03 only"
+      }
+    ],
+    "adoption": {
+      "decision": "2026-10-01 사용자 결정: S10_R05 3차 채택. 베이 안의 설비·패널 구성은 S3_R05와 다름. 남은 방의 좌우 여백 허용은 주 바닥 4.5%, 전체 3.5%. S10_R05에만 전체 바닥 짧은 변 547px를 이름 지정 면제(기준 612–733px). 면적 563547px², 축·휘도·에이프런 채도·네이티브 크기는 통과. 추가 ImageGen 0회, 판당 3회로 마감. 그림·플레이·균형 승인 아님, 작전10 켜지 않음.",
+      "new_generation_calls": 0,
+      "bytes_unchanged": true,
+      "quarantine_preserved": true,
+      "date": "2026-10-01"
+    },
+    "status_history": [
+      {
+        "asset": ".cache/diag/site7_ops_e/candidates/S10_R05/attempt03/S10_R05_GAME.png",
+        "luma": 0.20009921491146088,
+        "p10": 0.16530588269233704,
+        "p90": 0.2374705970287323,
+        "saturation": 0.07836452062978941,
+        "hue": 142.10062617806545,
+        "axis": 24.89583758636626,
+        "problems": [
+          "whole floor border margin 3.529% below 4%",
+          "floor bounds below (1410, 612) (boss includes aprons)"
+        ],
+        "plate": "S10_R05",
+        "attempt": 3,
+        "native_size": [
+          1672,
+          941
+        ],
+        "source_scale": 1.0,
+        "actual_floor_px": [
+          [
+            113,
+            467
+          ],
+          [
+            817,
+            234
+          ],
+          [
+            1084,
+            306
+          ],
+          [
+            1238,
+            273
+          ],
+          [
+            1340,
+            215
+          ],
+          [
+            1579,
+            323
+          ],
+          [
+            1484,
+            376
+          ],
+          [
+            1439,
+            395
+          ],
+          [
+            1547,
+            449
+          ],
+          [
+            1411,
+            557
+          ],
+          [
+            1606,
+            655
+          ],
+          [
+            1440,
+            762
+          ],
+          [
+            1223,
+            660
+          ],
+          [
+            1046,
+            746
+          ],
+          [
+            558,
+            745
+          ],
+          [
+            376,
+            643
+          ],
+          [
+            198,
+            726
+          ],
+          [
+            59,
+            630
+          ],
+          [
+            231,
+            554
+          ]
+        ],
+        "doors_px": {
+          "SW": [
+            304,
+            598,
+            177
+          ],
+          "NE": [
+            1339,
+            334,
+            235
+          ],
+          "SE": [
+            1317,
+            609,
+            214
+          ]
+        },
+        "raw_sha256": "6fd9b23af85998c3f083fdfeff1793d852359e9e11e2bed6c2bd5c40bfbf8c0a",
+        "master_sha256": "6fd9b23af85998c3f083fdfeff1793d852359e9e11e2bed6c2bd5c40bfbf8c0a",
+        "game_sha256": "49cd7a027eda96db253555775111379d11214e7b4f26444610f77c9ac4050b57",
+        "game_exposure_factor_srgb": 0.8125,
+        "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-b7c27ba1-7652-44a5-85fa-a7330c0d6bd5.png",
+        "inspection": "Blunt wall monolith and hairline red joints distinct from broken S3 anchor bay and all accepted Op10 wall contents; no boss crystal shapes. Main floor is a wide hexagon with short horizontal bottom edge; SW NE SE doors only. Actual apron extremes and whole-floor boss dimensions measured; no ideal target substitution.",
+        "floor_area_px2": 563547.0,
+        "floor_area_fraction": 0.3581824029206433,
+        "floor_bounds_px": [
+          59,
+          215,
+          1606,
+          762
+        ],
+        "native_size_acceptance": {
+          "target_size": [
+            1672,
+            941
+          ],
+          "actual_size": [
+            1672,
+            941
+          ],
+          "tolerance_each_axis_px": 2,
+          "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+        },
+        "margin_acceptance": {
+          "date": "2026-10-01",
+          "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+          "main_floor_minimum": 0.05,
+          "whole_floor_minimum": 0.04,
+          "prompt_target": 0.08,
+          "apron_polygons_px": {
+            "SW": [
+              [
+                231,
+                554
+              ],
+              [
+                59,
+                630
+              ],
+              [
+                198,
+                726
+              ],
+              [
+                376,
+                643
+              ]
+            ],
+            "NE": [
+              [
+                1238,
+                273
+              ],
+              [
+                1340,
+                215
+              ],
+              [
+                1579,
+                323
+              ],
+              [
+                1484,
+                376
+              ],
+              [
+                1439,
+                395
+              ]
+            ],
+            "SE": [
+              [
+                1411,
+                557
+              ],
+              [
+                1606,
+                655
+              ],
+              [
+                1440,
+                762
+              ],
+              [
+                1223,
+                660
+              ]
+            ]
+          },
+          "main_floor_bounds_px": [
+            113,
+            234,
+            1547,
+            746
+          ],
+          "main_floor_margins_ltrb_fraction": [
+            0.06758373205741627,
+            0.24867162592986186,
+            0.07476076555023924,
+            0.20722635494155153
+          ],
+          "whole_floor_bounds_px": [
+            59,
+            215,
+            1606,
+            762
+          ],
+          "whole_floor_margins_ltrb_fraction": [
+            0.035287081339712915,
+            0.22848034006376194,
+            0.039473684210526314,
+            0.1902231668437832
+          ],
+          "main_floor_area_px2": 468463
+        },
+        "boss_floor_measurement": {
+          "basis": "actual whole painted floor polygon including aprons",
+          "area_px2": 563547.0,
+          "width_px": 1547,
+          "height_px": 547,
+          "minimum_area_px2": 491287,
+          "minimum_width_px": 1410,
+          "minimum_height_px": 612,
+          "no_main_floor_area_or_height_minimum": true
+        },
+        "apron_stats": {
+          "SW": {
+            "luma": 0.23050403594970703,
+            "saturation": 0.07595554802421288,
+            "sampling": "actual apron polygon inset 10%"
+          },
+          "NE": {
+            "luma": 0.193653404712677,
+            "saturation": 0.09342588216128216,
+            "sampling": "actual apron polygon inset 10%"
+          },
+          "SE": {
+            "luma": 0.22930441796779633,
+            "saturation": 0.07508357048461886,
+            "sampling": "actual apron polygon inset 10%"
+          }
+        },
+        "prompt": "GEOMETRY FIRST — FINAL ATTEMPT3, NEW FRAMING: draw a new native1672x941 arena, camera slightly farther back than Image1, architecture with visibly more empty void around it. DO NOT copy the reference floor's almost-full-width rhombus. Draw a BROAD ELONGATED HEXAGON with short flat top/bottom edges and roomy diagonal sides. Main walking-floor corners: (170,470),(700,205),(972,205),(1502,470),(972,735),(700,735). Each oblique edge slope2:1 (26.565 degrees). Add THREE broad neutral aprons: SW vertices(360,565),(130,680),(384,807),(614,692); NE vertices(1105,272),(1269,190),(1523,317),(1359,399); SE vertices(1312,565),(1542,680),(1288,807),(1058,692). Complete whole-floor perimeter including all apron tips: (170,470),(700,205),(972,205),(1105,272),(1269,190),(1523,317),(1359,399),(1502,470),(1312,565),(1542,680),(1288,807),(1058,692),(972,735),(700,735),(614,692),(384,807),(130,680),(360,565). The rightmost FLOOR corner is1542 or less, NOT1593. Architecture should fit comfortably within the canvas; target >=8% inset for ALL floor including apron tips. Whole painted floor must stay >=510000 square pixels, >=1410 wide, >=612 tall INCLUDING aprons. No tapered centre or central obstacle, no tiny ledge by boss. EXACT native1672x941, no rescale/crop, no text. Grey deck and all aprons mean luma0.20 and saturation<=.10; red and black alloy are WALL only. Exactly SW entry NE exit SE branch, NW sealed. Apron far edges diagonal and parallel to attached decks, not vertical pockets.\nEXACT OPEN SIDES: SW, NE, SE. CLOSED SIDES: NW. Closed sides have continuous solid back walls or uninterrupted low foreground rails; NO other openings, aprons, floor tongues or doorway-like recesses. Do not copy the extra doors of Image 1. Exactly 3 open threshold(s).\nUse case: stylized-concept. ONE new finished opaque RGB room plate S10_R05, R05_CORE. Image 1 is only fixed camera, scale, neutral standard deck, minimum floor size and doorway dimensions. Image 2 is only premium hard-surface material quality; ignore its actors, markings and UI.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nROOM PLATE. The walkable floor is a dimetric diamond or elongated hexagon whose sides face NW (upper-left), NE (upper-right), SE (lower-right) and SW (lower-left). Back walls rise only along the NW and NE sides; the SW and SE sides end in a low lip or railing with no wall so nothing hides the floor. Keep the floor at least 8% away from every image border.\nDOORS: open doorways exactly on these sides: SW, NE, SE. Each doorway is an unobstructed opening about 2.3 adult-heights wide with a heavy steel frame (a framed opening in a back wall, or a gap in the lip railing on the SW/SE side); no door leaf, no shutter. The same standard deck and the same neutral-white overhead light continue through every doorway for about 1.5 adult-heights on both sides of the threshold.\nROOM TYPE: boss arena — walkable floor at least 1100 x 520 (long x short, in the scale above).\nIDENTITY: monolithic origin-core housing: a vast black-alloy monolith bracketed into the back walls with hairline red seams and heavy structural ribs; open central arena floor. No round iris, no concentric rings, no circular portal. Accent colour white-red, on walls and fixtures only.\nExactly 3 usable opening(s), only SW, NE, SE. All other sides (NW) are continuous closed walls or continuous low foreground railings: no rail gaps, floor tongues, passages, apparent doorway recesses or shutters there.\nCRITICAL NEW WALL SILHOUETTE: redraw the wall architecture and machinery from the IDENTITY above; do not copy Image 1 wall masses, fans, consoles or machine arrangement. This room must differ from other operation-10 rooms and all earlier operation plates. Black alloy and red seams stay on the WALL architecture; include a few distinct small practical wall lamps in the required accent, with visible lamp cores and a restrained local wall glow. No lettering-like floor patterns, red light bloom, black floor or coloured floor. The floor is standard neutral gunmetal grey, mean sRGB luminance 0.17-0.24; doorway apron saturation at most 0.10. The exposed outside remains uniform #07090D.\nDoor apron outer edges are oblique and parallel to the attached deck; no vertical-cut pocket. All main floor AND apron tips must remain at least 8% inside each image border. Floor material and light are neutral, with no red wash or black alloy on the deck. Several clear perimeter lamp cores illuminate the wall only.\nWALL CONTENT CRITERION: the shared map-kit corner/end columns, wall bays, door gap and door-flanking columns may match Image 1. The equipment and panel configuration INSIDE each bay must be new and specific to this IDENTITY, different from the same-slot S3 plate and the other operation-10 plates. Do not reproduce the reference bay contents with only recolouring.\nSPECIFIC NEW BAY CONTENT / BOSS SILHOUETTE SEPARATION: one VERY BROAD, BLUNT RECTANGULAR black-alloy MONOLITH built into the back-wall housing and flanked by heavy structural ribs. Its silhouette is low and flat across the top with large smooth rectangular panels and thin red seam lines, NOT the shattered anchor housings, exposed severed cables or clamp machinery of S3_R05. No pointed crystal forms, crystal bundle, white crystalline tower, tapered crown, split sharp shards or star-shaped wall assembly: ORIGIN CORE has a white pointed crystal-cluster silhouette and is added later by the game, do NOT paint the boss. Black monolithic rectangular wall equipment must contrast the bright white boss. R01 uses a long sealed hatch, R02 obelisks, R03 record cartridges, R04 twin null emitters: do not repeat those bay contents here. No circular iris, concentric rings, circular portal. Floor stays standard neutral grey, never black alloy. Several small white-red practical lights are confined to wall recesses, with no red/white wash on floor. Leave the whole middle empty, no props or cover objects.",
+        "references": [
+          "assets/environments/site7_v2/stage03/S3_R05/S3_R05_GAME.png",
+          "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png"
+        ],
+        "status": "REJECTED",
+        "reason": "Whole painted floor including apron tips has left3.528708% and right3.947368% margins, below4%; boss whole-floor bounds1547x547 px, height547 below612. Main-floor margins6.758373% or more pass. Whole area563547 px2,axis24.895838,luma0.200099,apr on saturation0.07508-0.09343 pass. Bay-content and boss crystal separation pass visual source inspection. HOLD after3/3; no extra ImageGen/no later plate.",
+        "reference_sha256": {
+          "assets/environments/site7_v2/stage03/S3_R05/S3_R05_GAME.png": "3e603b0782db23faed94e2214166cef4aba0e0e85b30cd1e5210f1fa920a2b63",
+          "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de"
+        },
+        "raw": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/S10_R05_RAW_NATIVE.png",
+        "master": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/S10_R05_MASTER.png",
+        "game": "art_src/environments/site7_v2/_quarantine/S10_R05/attempt03/S10_R05_GAME.png"
+      },
+      {
+        "status": "SELECTED_BY_USER",
+        "decision": "2026-10-01 사용자 결정: S10_R05 3차 채택. 베이 안의 설비·패널 구성은 S3_R05와 다름. 남은 방의 좌우 여백 허용은 주 바닥 4.5%, 전체 3.5%. S10_R05에만 전체 바닥 짧은 변 547px를 이름 지정 면제(기준 612–733px). 면적 563547px², 축·휘도·에이프런 채도·네이티브 크기는 통과. 추가 ImageGen 0회, 판당 3회로 마감. 그림·플레이·균형 승인 아님, 작전10 켜지 않음."
+      }
+    ]
+  }
+]

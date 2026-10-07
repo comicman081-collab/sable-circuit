@@ -1,0 +1,763 @@
+{
+  "checks": 438,
+  "cycles": [
+    {
+      "enemy_damage": 24.0,
+      "enemy_events": 1,
+      "first_delay_s": 2.4,
+      "hazard": "ARC_VENT",
+      "operator_damage": 14.0,
+      "operator_events": 1,
+      "warning_s": 1.1
+    },
+    {
+      "enemy_damage": 23.9999999999995,
+      "enemy_events": 61,
+      "first_delay_s": 2.4,
+      "hazard": "SPORE_CLOUD",
+      "operator_damage": 11.9999999999998,
+      "operator_events": 61,
+      "warning_s": 1.2
+    },
+    {
+      "enemy_damage": 24.0,
+      "enemy_events": 1,
+      "first_delay_s": 2.4,
+      "hazard": "RAIL_LANE",
+      "operator_damage": 14.0,
+      "operator_events": 1,
+      "warning_s": 1.4
+    },
+    {
+      "actual_damage": 8.0,
+      "elapsed_ms": 0,
+      "hazard": "SPORE_CLOUD",
+      "min_flinch_interval_ms": 90,
+      "rapid_ticks": 120,
+      "spore_flinch_effects": 1
+    }
+  ],
+  "escape_margin_s": 0.25,
+  "failures": [],
+  "grid_px": 25.0,
+  "rooms": [
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_03 R02_DEFENSE",
+      "room_search_span_px": 1537.36987304688,
+      "standable_spots": 15,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 1,
+        "blocked_negative_rejected": 1,
+        "failed_spots": 0,
+        "standable_spots": 15,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 0,
+        "blocked_negative_rejected": 0,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 0,
+        "worst_walk_px": 0.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_04 R02_GATE",
+      "room_search_span_px": 1600.91101074219,
+      "standable_spots": 15,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 1,
+        "blocked_negative_rejected": 1,
+        "failed_spots": 0,
+        "standable_spots": 15,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 0,
+        "blocked_negative_rejected": 0,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 0,
+        "worst_walk_px": 0.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        },
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_04 R04_LINE",
+      "room_search_span_px": 1536.59704589844,
+      "standable_spots": 30,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 2,
+        "blocked_negative_rejected": 2,
+        "failed_spots": 0,
+        "standable_spots": 30,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 0,
+        "blocked_negative_rejected": 0,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 0,
+        "worst_walk_px": 0.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 11,
+          "worst_walk_px": 40.0
+        },
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_05 R02_DEFENSE",
+      "room_search_span_px": 1538.28637695313,
+      "standable_spots": 26,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 2,
+        "blocked_negative_rejected": 2,
+        "failed_spots": 0,
+        "standable_spots": 26,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 0,
+        "blocked_negative_rejected": 0,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 0,
+        "worst_walk_px": 0.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        },
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_05 R04_ARRAY",
+      "room_search_span_px": 1534.18371582031,
+      "standable_spots": 30,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 2,
+        "blocked_negative_rejected": 2,
+        "failed_spots": 0,
+        "standable_spots": 30,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 0,
+        "blocked_negative_rejected": 0,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 0,
+        "worst_walk_px": 0.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 11,
+          "worst_walk_px": 40.0
+        },
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "SPORE_CLOUD",
+          "search_span_px": 131.1,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "ARC_VENT",
+        "SPORE_CLOUD"
+      ],
+      "room": "MIS_CH01_06 R02_GALLERY",
+      "room_search_span_px": 1538.28637695313,
+      "standable_spots": 26,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 2,
+        "blocked_negative_rejected": 2,
+        "failed_spots": 0,
+        "standable_spots": 26,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 0,
+        "blocked_negative_rejected": 0,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 0,
+        "worst_walk_px": 0.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        },
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "SPORE_CLOUD",
+          "search_span_px": 131.1,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "ARC_VENT",
+        "SPORE_CLOUD"
+      ],
+      "room": "MIS_CH01_06 R04_PUMPS",
+      "room_search_span_px": 1538.28637695313,
+      "standable_spots": 30,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 2,
+        "blocked_negative_rejected": 2,
+        "failed_spots": 0,
+        "standable_spots": 30,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 0,
+        "blocked_negative_rejected": 0,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 0,
+        "worst_walk_px": 0.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        },
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "untimed slow-escape",
+          "failed_spots": 0,
+          "hazard": "FROST_PLATE",
+          "search_span_px": 1538.28637695313,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "ARC_VENT",
+        "FROST_PLATE"
+      ],
+      "room": "MIS_CH01_07 R02_FREEZE",
+      "room_search_span_px": 1538.28637695313,
+      "standable_spots": 30,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 1,
+        "blocked_negative_rejected": 1,
+        "failed_spots": 0,
+        "standable_spots": 15,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 1,
+        "blocked_negative_rejected": 1,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 15,
+        "worst_walk_px": 40.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 13,
+          "worst_walk_px": 40.0
+        },
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "untimed slow-escape",
+          "failed_spots": 0,
+          "hazard": "FROST_PLATE",
+          "search_span_px": 1604.40856933594,
+          "standable_spots": 9,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "ARC_VENT",
+        "FROST_PLATE"
+      ],
+      "room": "MIS_CH01_07 R04_COMPRESSORS",
+      "room_search_span_px": 1604.40856933594,
+      "standable_spots": 22,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 1,
+        "blocked_negative_rejected": 1,
+        "failed_spots": 0,
+        "standable_spots": 13,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 1,
+        "blocked_negative_rejected": 1,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 9,
+        "worst_walk_px": 40.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "RAIL_LANE",
+          "search_span_px": 158.7,
+          "standable_spots": 17,
+          "worst_walk_px": 30.0
+        },
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "RAIL_LANE",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_08 R02_MARSHALLING",
+      "room_search_span_px": 1724.72021484375,
+      "standable_spots": 32,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 2,
+        "blocked_negative_rejected": 2,
+        "failed_spots": 0,
+        "standable_spots": 32,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 0,
+        "blocked_negative_rejected": 0,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 0,
+        "worst_walk_px": 0.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "RAIL_LANE",
+          "search_span_px": 158.7,
+          "standable_spots": 17,
+          "worst_walk_px": 30.0
+        },
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "RAIL_LANE",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_08 R04_JUNCTION",
+      "room_search_span_px": 1689.73400878906,
+      "standable_spots": 32,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 2,
+        "blocked_negative_rejected": 2,
+        "failed_spots": 0,
+        "standable_spots": 32,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 0,
+        "blocked_negative_rejected": 0,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 0,
+        "worst_walk_px": 0.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        },
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 14,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_09 R02_NAVE",
+      "room_search_span_px": 1601.28857421875,
+      "standable_spots": 29,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 2,
+        "blocked_negative_rejected": 2,
+        "failed_spots": 0,
+        "standable_spots": 29,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 0,
+        "blocked_negative_rejected": 0,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 0,
+        "worst_walk_px": 0.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 9,
+          "worst_walk_px": 40.0
+        },
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_09 R04_GALLERY",
+      "room_search_span_px": 1603.44909667969,
+      "standable_spots": 24,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 2,
+        "blocked_negative_rejected": 2,
+        "failed_spots": 0,
+        "standable_spots": 24,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 0,
+        "blocked_negative_rejected": 0,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 0,
+        "worst_walk_px": 0.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        },
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        }
+      ],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_10 R02_RELAY",
+      "room_search_span_px": 1505.17944335938,
+      "standable_spots": 30,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 2,
+        "blocked_negative_rejected": 2,
+        "failed_spots": 0,
+        "standable_spots": 30,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 0,
+        "blocked_negative_rejected": 0,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 0,
+        "worst_walk_px": 0.0
+      },
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazard_escapes": [
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 15,
+          "worst_walk_px": 40.0
+        },
+        {
+          "blocked_negative_rejected": true,
+          "escape_kind": "timed damage-escape",
+          "failed_spots": 0,
+          "hazard": "ARC_VENT",
+          "search_span_px": 117.3,
+          "standable_spots": 3,
+          "worst_walk_px": 25.0
+        }
+      ],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_10 R04_GALLERY",
+      "room_search_span_px": 1667.18200683594,
+      "standable_spots": 18,
+      "tightest_margin_s": 0.810144927536232,
+      "timed": {
+        "blocked_negative_checks": 2,
+        "blocked_negative_rejected": 2,
+        "failed_spots": 0,
+        "standable_spots": 18,
+        "tightest_margin_s": 0.810144927536232,
+        "worst_walk_px": 40.0
+      },
+      "untimed": {
+        "blocked_negative_checks": 0,
+        "blocked_negative_rejected": 0,
+        "failed_spots": 0,
+        "kind": "untimed slow-escape",
+        "standable_spots": 0,
+        "worst_walk_px": 0.0
+      },
+      "worst_walk_px": 40.0
+    }
+  ],
+  "slowest_walk_px_per_s": 138.0,
+  "status": "PASS",
+  "visual_approval": false
+}

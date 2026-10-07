@@ -1,0 +1,440 @@
+{
+ "targets": {
+  "floor_luma": [
+   0.17,
+   0.24
+  ],
+  "floor_p10_min": 0.07,
+  "floor_p90_max": 0.38,
+  "floor_saturation_max": 0.15,
+  "floor_axis": [
+   22.5,
+   30.5
+  ],
+  "seam_step_max": 0.35,
+  "seam_saturation_ratio": 1.5,
+  "seam_hue_max": 30.0,
+  "grey": 0.15
+ },
+ "plates": {
+  "assets/environments/site7/outer_gate/01_OUTER_GATE_CONTINUITY.png": {
+   "asset": "assets/environments/site7/outer_gate/01_OUTER_GATE_CONTINUITY.png",
+   "luma": 0.20026719570159912,
+   "p10": 0.058266669511795044,
+   "p90": 0.3677999973297119,
+   "saturation": 0.2622728014607617,
+   "hue": 143.35854208731087,
+   "axis": 23.08888392045063,
+   "problems": [
+    "dark holes: p10 0.058 < 0.07",
+    "colour cast: saturation 0.26 > 0.15"
+   ]
+  },
+  "assets/environments/site7/decon_corridor/02_DECON_CORRIDOR_CONTINUITY.png": {
+   "asset": "assets/environments/site7/decon_corridor/02_DECON_CORRIDOR_CONTINUITY.png",
+   "luma": 0.15582337975502014,
+   "p10": 0.07718823850154877,
+   "p90": 0.23377256095409393,
+   "saturation": 0.29623034374637347,
+   "hue": -42.47762309357584,
+   "axis": 30.89677994029473,
+   "problems": [
+    "floor luminance 0.156 outside (0.17, 0.24)",
+    "colour cast: saturation 0.30 > 0.15",
+    "floor axis 30.9 deg outside (22.5, 30.5)"
+   ]
+  },
+  "assets/environments/site7/archive_annex/03_ARCHIVE_ANNEX_CONTINUITY.png": {
+   "asset": "assets/environments/site7/archive_annex/03_ARCHIVE_ANNEX_CONTINUITY.png",
+   "luma": 0.22177353501319885,
+   "p10": 0.1369764804840088,
+   "p90": 0.32014986872673035,
+   "saturation": 0.07682263810012792,
+   "hue": -52.64967876161718,
+   "axis": 29.57412374753039,
+   "problems": []
+  },
+  "assets/environments/site7/containment_junction/04_CONTAINMENT_JUNCTION_CONTINUITY.png": {
+   "asset": "assets/environments/site7/containment_junction/04_CONTAINMENT_JUNCTION_CONTINUITY.png",
+   "luma": 0.1466822624206543,
+   "p10": 0.06246666982769966,
+   "p90": 0.25004708766937256,
+   "saturation": 0.06065280636269005,
+   "hue": 82.06092805472134,
+   "axis": 23.551809075320538,
+   "problems": [
+    "floor luminance 0.147 outside (0.17, 0.24)",
+    "dark holes: p10 0.062 < 0.07"
+   ]
+  },
+  "assets/environments/site7/core_c/05_CORE_C_CONTINUITY.png": {
+   "asset": "assets/environments/site7/core_c/05_CORE_C_CONTINUITY.png",
+   "luma": 0.16100971400737762,
+   "p10": 0.11101961135864258,
+   "p90": 0.22459682822227478,
+   "saturation": 0.06840578162920415,
+   "hue": 90.592309846803,
+   "axis": 30.46918160281917,
+   "problems": [
+    "floor luminance 0.161 outside (0.17, 0.24)"
+   ]
+  },
+  "assets/environments/site7/emergency_lift/06_EMERGENCY_LIFT_CONTINUITY.png": {
+   "asset": "assets/environments/site7/emergency_lift/06_EMERGENCY_LIFT_CONTINUITY.png",
+   "luma": 0.18124908208847046,
+   "p10": 0.08373333513736725,
+   "p90": 0.2981216013431549,
+   "saturation": 0.05810240207002087,
+   "hue": -171.17171234439496,
+   "axis": 30.25733757095468,
+   "problems": []
+  },
+  "assets/environments/site7/emergency_stores/07_EMERGENCY_STORES_CONTINUITY.png": {
+   "asset": "assets/environments/site7/emergency_stores/07_EMERGENCY_STORES_CONTINUITY.png",
+   "luma": 0.17516456544399261,
+   "p10": 0.10816863179206848,
+   "p90": 0.2513137459754944,
+   "saturation": 0.22884056494580707,
+   "hue": 142.7470312647918,
+   "axis": 31.31215844812683,
+   "problems": [
+    "colour cast: saturation 0.23 > 0.15",
+    "floor axis 31.3 deg outside (22.5, 30.5)"
+   ]
+  },
+  "assets/environments/site7/signal_lab/08_SIGNAL_LAB_CONTINUITY.png": {
+   "asset": "assets/environments/site7/signal_lab/08_SIGNAL_LAB_CONTINUITY.png",
+   "luma": 0.22367215156555176,
+   "p10": 0.14089804887771606,
+   "p90": 0.3272196352481842,
+   "saturation": 0.027847591504268212,
+   "hue": -62.28131336573458,
+   "axis": 32.10431605767376,
+   "problems": [
+    "floor axis 32.1 deg outside (22.5, 30.5)"
+   ]
+  },
+  "assets/environments/site7/connectors/gate_decon/09_GATE_DECON_CONNECTOR_GAME.png": {
+   "asset": "assets/environments/site7/connectors/gate_decon/09_GATE_DECON_CONNECTOR_GAME.png",
+   "luma": 0.20294654369354248,
+   "p10": 0.09759216010570526,
+   "p90": 0.3164588510990143,
+   "saturation": 0.0897216040722175,
+   "hue": 161.1154939901818,
+   "axis": 23.48562719774406,
+   "problems": []
+  },
+  "assets/environments/site7/connectors/decon_archive/10_DECON_ARCHIVE_CONNECTOR_GAME.png": {
+   "asset": "assets/environments/site7/connectors/decon_archive/10_DECON_ARCHIVE_CONNECTOR_GAME.png",
+   "luma": 0.20442727208137512,
+   "p10": 0.059348225593566895,
+   "p90": 0.35825207829475403,
+   "saturation": 0.069452829101928,
+   "hue": -104.97531660918563,
+   "axis": 18.910582409756035,
+   "problems": [
+    "dark holes: p10 0.059 < 0.07",
+    "floor axis 18.9 deg outside (22.5, 30.5)"
+   ]
+  },
+  "assets/environments/site7/connectors/archive_containment/11_ARCHIVE_CONTAINMENT_CONNECTOR_GAME.png": {
+   "asset": "assets/environments/site7/connectors/archive_containment/11_ARCHIVE_CONTAINMENT_CONNECTOR_GAME.png",
+   "luma": 0.15863224864006042,
+   "p10": 0.03731765225529671,
+   "p90": 0.2797568738460541,
+   "saturation": 0.025824531355714424,
+   "hue": -27.21703323864409,
+   "axis": 23.326016393716678,
+   "problems": [
+    "floor luminance 0.159 outside (0.17, 0.24)",
+    "dark holes: p10 0.037 < 0.07"
+   ]
+  },
+  "assets/environments/site7/connectors/containment_core/12_CONTAINMENT_CORE_CONNECTOR_GAME.png": {
+   "asset": "assets/environments/site7/connectors/containment_core/12_CONTAINMENT_CORE_CONNECTOR_GAME.png",
+   "luma": 0.1657259464263916,
+   "p10": 0.05841176584362984,
+   "p90": 0.2619803845882416,
+   "saturation": 0.18461582790730238,
+   "hue": 32.400647976609925,
+   "axis": 26.481354085002266,
+   "problems": [
+    "floor luminance 0.166 outside (0.17, 0.24)",
+    "dark holes: p10 0.058 < 0.07",
+    "colour cast: saturation 0.18 > 0.15"
+   ]
+  },
+  "assets/environments/site7/connectors/core_lift/13_CORE_LIFT_CONNECTOR_GAME.png": {
+   "asset": "assets/environments/site7/connectors/core_lift/13_CORE_LIFT_CONNECTOR_GAME.png",
+   "luma": 0.2107652723789215,
+   "p10": 0.07267843186855316,
+   "p90": 0.35554900765419006,
+   "saturation": 0.04740088147251334,
+   "hue": 53.85522786071147,
+   "axis": 24.65090462795029,
+   "problems": []
+  },
+  "assets/environments/site7/connectors/archive_stores/14_ARCHIVE_STORES_CONNECTOR_GAME.png": {
+   "asset": "assets/environments/site7/connectors/archive_stores/14_ARCHIVE_STORES_CONNECTOR_GAME.png",
+   "luma": 0.2123025506734848,
+   "p10": 0.09897255897521973,
+   "p90": 0.32338041067123413,
+   "saturation": 0.1555330963633896,
+   "hue": 150.33405229890505,
+   "axis": 27.832105799059452,
+   "problems": [
+    "colour cast: saturation 0.16 > 0.15"
+   ]
+  },
+  "assets/environments/site7/connectors/containment_signal/15_CONTAINMENT_SIGNAL_CONNECTOR_GAME.png": {
+   "asset": "assets/environments/site7/connectors/containment_signal/15_CONTAINMENT_SIGNAL_CONNECTOR_GAME.png",
+   "luma": 0.20840498805046082,
+   "p10": 0.09375686198472977,
+   "p90": 0.3582705855369568,
+   "saturation": 0.19623732582067696,
+   "hue": 136.5592747981526,
+   "axis": 27.953740753859453,
+   "problems": [
+    "colour cast: saturation 0.20 > 0.15"
+   ]
+  }
+ },
+ "missions": {
+  "MIS_CH01_01": [
+   {
+    "connector": "C0",
+    "asset": "assets/environments/site7/connectors/gate_decon/09_GATE_DECON_CONNECTOR_GAME.png",
+    "room": "R01_ENTRY",
+    "mirror": false,
+    "cells": 183,
+    "step": -0.4274977225965862,
+    "deck_saturation": 0.41905549680615156,
+    "room_saturation": 0.21345058761008454,
+    "deck_hue": 143.04444252458612,
+    "room_hue": 141.76329594645827,
+    "hue_gap": 1.2811465781278457,
+    "problems": [
+     "brightness step -0.43 stops",
+     "saturation 0.42 vs 0.21"
+    ]
+   },
+   {
+    "connector": "C0",
+    "asset": "assets/environments/site7/connectors/gate_decon/09_GATE_DECON_CONNECTOR_GAME.png",
+    "room": "R02_CORRIDOR",
+    "mirror": false,
+    "cells": 60,
+    "step": -1.617726941501232,
+    "deck_saturation": 0.5106984944124401,
+    "room_saturation": 0.3867454649638524,
+    "deck_hue": -53.19340670166888,
+    "room_hue": -43.90784521000868,
+    "hue_gap": 9.28556149166019,
+    "problems": [
+     "brightness step -1.62 stops"
+    ]
+   },
+   {
+    "connector": "C1",
+    "asset": "assets/environments/site7/connectors/decon_archive/10_DECON_ARCHIVE_CONNECTOR_GAME.png",
+    "room": "R02_CORRIDOR",
+    "mirror": false,
+    "cells": 54,
+    "step": -1.6246167759347685,
+    "deck_saturation": 0.6326677559745264,
+    "room_saturation": 0.47660994782883437,
+    "deck_hue": -51.312242275127744,
+    "room_hue": -46.00999836942283,
+    "hue_gap": 5.302243905704927,
+    "problems": [
+     "brightness step -1.62 stops"
+    ]
+   },
+   {
+    "connector": "C1",
+    "asset": "assets/environments/site7/connectors/decon_archive/10_DECON_ARCHIVE_CONNECTOR_GAME.png",
+    "room": "R03_ARCHIVE",
+    "mirror": false,
+    "cells": 47,
+    "step": 0.18253840867548504,
+    "deck_saturation": 0.08925853136375618,
+    "room_saturation": 0.1719970392161922,
+    "deck_hue": -100.20372996379096,
+    "room_hue": -44.42928317107783,
+    "hue_gap": 55.774446792713135,
+    "problems": [
+     "saturation 0.09 vs 0.17"
+    ]
+   },
+   {
+    "connector": "C2",
+    "asset": "assets/environments/site7/connectors/archive_containment/11_ARCHIVE_CONTAINMENT_CONNECTOR_GAME.png",
+    "room": "R03_ARCHIVE",
+    "mirror": false,
+    "cells": 98,
+    "step": 0.5000595329973875,
+    "deck_saturation": 0.5693022347872454,
+    "room_saturation": 0.2141819332571838,
+    "deck_hue": -48.775093778086294,
+    "room_hue": -53.69715562896181,
+    "hue_gap": 4.922061850875508,
+    "problems": [
+     "brightness step +0.50 stops",
+     "saturation 0.57 vs 0.21"
+    ]
+   },
+   {
+    "connector": "C2",
+    "asset": "assets/environments/site7/connectors/archive_containment/11_ARCHIVE_CONTAINMENT_CONNECTOR_GAME.png",
+    "room": "R04_CONTAINMENT",
+    "mirror": false,
+    "cells": 26,
+    "step": 0.4302882080921286,
+    "deck_saturation": 0.18403945941699465,
+    "room_saturation": 0.08334321640099875,
+    "deck_hue": 90.77967581007096,
+    "room_hue": 65.4191883651022,
+    "hue_gap": 25.360487444968754,
+    "problems": [
+     "brightness step +0.43 stops",
+     "saturation 0.18 vs 0.08"
+    ]
+   },
+   {
+    "connector": "C3",
+    "asset": "assets/environments/site7/connectors/containment_core/12_CONTAINMENT_CORE_CONNECTOR_GAME.png",
+    "room": "R04_CONTAINMENT",
+    "mirror": false,
+    "cells": 19,
+    "step": -1.3315842837082257,
+    "deck_saturation": 0.6183474756793168,
+    "room_saturation": 0.1690480770507792,
+    "deck_hue": 120.73254166169151,
+    "room_hue": -6.856422609439889,
+    "hue_gap": 127.58896427113143,
+    "problems": [
+     "brightness step -1.33 stops",
+     "saturation 0.62 vs 0.17",
+     "hue 121 vs -7 (128 deg)"
+    ]
+   },
+   {
+    "connector": "C3",
+    "asset": "assets/environments/site7/connectors/containment_core/12_CONTAINMENT_CORE_CONNECTOR_GAME.png",
+    "room": "R05_CORE",
+    "mirror": false,
+    "cells": 19,
+    "step": 0.8972538992260836,
+    "deck_saturation": 0.7706624142712322,
+    "room_saturation": 0.10720417014257591,
+    "deck_hue": -1.7963714104203519,
+    "room_hue": 31.924176704781566,
+    "hue_gap": 33.72054811520192,
+    "problems": [
+     "brightness step +0.90 stops",
+     "saturation 0.77 vs 0.11"
+    ]
+   },
+   {
+    "connector": "C4",
+    "asset": "assets/environments/site7/connectors/core_lift/13_CORE_LIFT_CONNECTOR_GAME.png",
+    "room": "R05_CORE",
+    "mirror": false,
+    "cells": 34,
+    "step": 0.0009217094562525893,
+    "deck_saturation": 0.5817449296077528,
+    "room_saturation": 0.10135107532386792,
+    "deck_hue": 5.4604730514217765,
+    "room_hue": 40.29743726510735,
+    "hue_gap": 34.836964213685576,
+    "problems": [
+     "saturation 0.58 vs 0.10"
+    ]
+   },
+   {
+    "connector": "C4",
+    "asset": "assets/environments/site7/connectors/core_lift/13_CORE_LIFT_CONNECTOR_GAME.png",
+    "room": "R06_EXTRACTION",
+    "mirror": false,
+    "cells": 14,
+    "step": -0.47766844750186743,
+    "deck_saturation": 0.16941683159966525,
+    "room_saturation": 0.07250740953153655,
+    "deck_hue": -161.5308150154378,
+    "room_hue": -173.9022286848308,
+    "hue_gap": 12.371413669392979,
+    "problems": [
+     "brightness step -0.48 stops",
+     "saturation 0.17 vs 0.07"
+    ]
+   },
+   {
+    "connector": "C5",
+    "asset": "assets/environments/site7/connectors/archive_stores/14_ARCHIVE_STORES_CONNECTOR_GAME.png",
+    "room": "R03_ARCHIVE",
+    "mirror": true,
+    "cells": 65,
+    "step": -0.12601051715510536,
+    "deck_saturation": 0.46343583547998296,
+    "room_saturation": 0.18471144170215648,
+    "deck_hue": 138.595609977013,
+    "room_hue": -56.88065653916698,
+    "hue_gap": 164.52373348382002,
+    "problems": [
+     "saturation 0.46 vs 0.18",
+     "hue 139 vs -57 (165 deg)"
+    ]
+   },
+   {
+    "connector": "C5",
+    "asset": "assets/environments/site7/connectors/archive_stores/14_ARCHIVE_STORES_CONNECTOR_GAME.png",
+    "room": "O01_SUPPLY",
+    "mirror": true,
+    "cells": 18,
+    "step": 0.18379418456366922,
+    "deck_saturation": 0.2663176890364492,
+    "room_saturation": 0.3121695885548792,
+    "deck_hue": -61.65396394734484,
+    "room_hue": 142.5652516479331,
+    "hue_gap": 155.78078440472206,
+    "problems": [
+     "hue -62 vs 143 (156 deg)"
+    ]
+   },
+   {
+    "connector": "C6",
+    "asset": "assets/environments/site7/connectors/containment_signal/15_CONTAINMENT_SIGNAL_CONNECTOR_GAME.png",
+    "room": "R04_CONTAINMENT",
+    "mirror": true,
+    "cells": 74,
+    "step": -0.48386528352373487,
+    "deck_saturation": 0.1956829924289271,
+    "room_saturation": 0.08688322803237258,
+    "deck_hue": -57.911502057429544,
+    "room_hue": 0.7620603972559251,
+    "hue_gap": 58.67356245468547,
+    "problems": [
+     "brightness step -0.48 stops",
+     "saturation 0.20 vs 0.09"
+    ]
+   },
+   {
+    "connector": "C6",
+    "asset": "assets/environments/site7/connectors/containment_signal/15_CONTAINMENT_SIGNAL_CONNECTOR_GAME.png",
+    "room": "O02_RESEARCH",
+    "mirror": true,
+    "cells": 34,
+    "step": -0.14992660173506162,
+    "deck_saturation": 0.6192292465145365,
+    "room_saturation": 0.1517983858961794,
+    "deck_hue": 124.54573987626016,
+    "room_hue": -47.026116980831254,
+    "hue_gap": 171.5718568570914,
+    "problems": [
+     "saturation 0.62 vs 0.15",
+     "hue 125 vs -47 (172 deg)"
+    ]
+   }
+  ]
+ }
+}

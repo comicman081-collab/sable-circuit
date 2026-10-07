@@ -1,0 +1,139 @@
+{
+  "method": "same-session rotated A/B, 3 rounds, 30 s op 1 R02 battle preview each, first 5 s dropped; HEAD 41e396259 vs working tree (scripts/, data/ swapped)",
+  "native_resolution": "1920x1080 windowed, vsync off, RTX 4070 SUPER, OpenGL Compatibility",
+  "rounds": 3,
+  "changed_files": [
+    "data/art_profiles/enemy_profiles.json",
+    "scripts/actors/enemy_actor.gd",
+    "scripts/animation/operator_visual.gd",
+    "scripts/combat/combat_feedback.gd",
+    "scripts/combat/elite_volatile_blast.gd",
+    "scripts/combat/operator_skill_controller.gd",
+    "scripts/combat/prototype_projectile.gd",
+    "scripts/combat/site7_attack_warning.gd",
+    "scripts/combat/site7_enemy_tactics.gd",
+    "scripts/combat/site7_mortar_shell.gd",
+    "scripts/vfx/combat_hit_vfx.gd",
+    "scripts/vfx/operator_skill_vfx.gd"
+  ],
+  "runs": [
+    {
+      "version": "head",
+      "round": 1,
+      "fps": [
+        144.3,
+        165.7,
+        181.9,
+        108.9
+      ],
+      "vfx_avg": [
+        9.3,
+        7.2,
+        5.2,
+        9.3
+      ],
+      "vfx_max": 20
+    },
+    {
+      "version": "overhaul",
+      "round": 1,
+      "fps": [
+        149.5,
+        147.8,
+        168.4,
+        144.9
+      ],
+      "vfx_avg": [
+        14.2,
+        10.8,
+        9.7,
+        13.5
+      ],
+      "vfx_max": 25
+    },
+    {
+      "version": "overhaul",
+      "round": 2,
+      "fps": [
+        154.0,
+        159.6,
+        164.2,
+        132.1
+      ],
+      "vfx_avg": [
+        12.6,
+        11.7,
+        10.9,
+        14.8
+      ],
+      "vfx_max": 26
+    },
+    {
+      "version": "head",
+      "round": 2,
+      "fps": [
+        146.0,
+        140.1,
+        179.6,
+        168.4
+      ],
+      "vfx_avg": [
+        9.2,
+        7.3,
+        5.8,
+        8.8
+      ],
+      "vfx_max": 22
+    },
+    {
+      "version": "head",
+      "round": 3,
+      "fps": [
+        117.6,
+        168.6,
+        170.6,
+        121.0
+      ],
+      "vfx_avg": [
+        9.4,
+        6.3,
+        6.6,
+        8.9
+      ],
+      "vfx_max": 21
+    },
+    {
+      "version": "overhaul",
+      "round": 3,
+      "fps": [
+        83.4,
+        103.9,
+        106.1,
+        93.5
+      ],
+      "vfx_avg": [
+        12.9,
+        10.4,
+        10.3,
+        15.9
+      ],
+      "vfx_max": 27
+    }
+  ],
+  "summary": {
+    "head": {
+      "samples": 12,
+      "fps_median": 155.85,
+      "fps_min": 108.9,
+      "fps_max": 181.9,
+      "live_vfx_avg_median": 8.05
+    },
+    "overhaul": {
+      "samples": 12,
+      "fps_median": 146.35000000000002,
+      "fps_min": 83.4,
+      "fps_max": 168.4,
+      "live_vfx_avg_median": 12.149999999999999
+    }
+  }
+}

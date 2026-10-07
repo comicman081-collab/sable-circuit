@@ -1,0 +1,505 @@
+{
+ "suite": "full",
+ "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+ "started": "2026-09-27T12:48:09",
+ "git_head": "492311f603f2fc2eeda5fbdb03d4c6aee53aed92",
+ "git_dirty": 31,
+ "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+ "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+ "workers": 1,
+ "seconds": 1964,
+ "overall": "PASS",
+ "guard": {
+  "changed": [],
+  "removed": [],
+  "added": []
+ },
+ "results": [
+  {
+   "test": "combat_density",
+   "status": "PASS",
+   "seconds": 17.7,
+   "exit_code": 0,
+   "checks": 37,
+   "status_line": "COMBAT_DENSITY_SMOKE PASS (37 checks) {\"attacks_started\":41,\"drone_orbit_split\":[2,2],\"frames_with_two_or_more_attackers\":505,\"hostiles\":7,\"max_concurrent_attackers\":3,\"mission\":\"MIS_CH01_02\",\"operato",
+   "notes": []
+  },
+  {
+   "test": "cover_navigation",
+   "status": "PASS",
+   "seconds": 1.3,
+   "exit_code": 0,
+   "checks": 15,
+   "status_line": "COVER_NAVIGATION_SMOKE: PASS / 15 checks",
+   "notes": []
+  },
+  {
+   "test": "floor_segment",
+   "status": "PASS",
+   "seconds": 22.1,
+   "exit_code": 0,
+   "checks": 13,
+   "status_line": "FLOOR_SEGMENT_SMOKE: PASS (13 checks)",
+   "notes": []
+  },
+  {
+   "test": "combat_query_fastpath",
+   "status": "PASS",
+   "seconds": 8.6,
+   "exit_code": 0,
+   "checks": 31,
+   "status_line": "COMBAT_QUERY_FASTPATH_SMOKE: PASS (31 checks)",
+   "notes": []
+  },
+  {
+   "test": "player_cover",
+   "status": "PASS",
+   "seconds": 6.1,
+   "exit_code": 0,
+   "checks": 5,
+   "status_line": "SITE7_PLAYER_COVER_COLLISION: PASS (5 checks)",
+   "notes": []
+  },
+  {
+   "test": "cover_alpha_clip",
+   "status": "PASS",
+   "seconds": 1.1,
+   "exit_code": 0,
+   "checks": 5,
+   "status_line": "SITE7_COVER_ALPHA_CLIP: PASS / 5 checks",
+   "notes": []
+  },
+  {
+   "test": "cover_texture",
+   "status": "PASS",
+   "seconds": 1.9,
+   "exit_code": 0,
+   "checks": 17,
+   "status_line": "COVER_TEXTURE_REDUCTION_SMOKE: PASS (17 checks) 63.3 MB -> 10.2 MB",
+   "notes": []
+  },
+  {
+   "test": "battle_flow",
+   "status": "PASS",
+   "seconds": 6.7,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_BATTLE_FLOW: PASS",
+   "notes": []
+  },
+  {
+   "test": "combat_entry",
+   "status": "PASS",
+   "seconds": 5.9,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "",
+   "notes": []
+  },
+  {
+   "test": "drone_app",
+   "status": "PASS",
+   "seconds": 1.7,
+   "exit_code": 0,
+   "checks": 171,
+   "status_line": "SITE7_DRONE_APP_SMOKE: PASS (171 checks) res://qa/regression_runs/20260927_124809_full/out/drone_app/drone_app.json",
+   "notes": []
+  },
+  {
+   "test": "anchor_app",
+   "status": "PASS",
+   "seconds": 1.3,
+   "exit_code": 0,
+   "checks": 271,
+   "status_line": "SITE7_ANCHOR_APP_SMOKE: PASS (271 checks) res://qa/regression_runs/20260927_124809_full/out/anchor_app/anchor_app.json",
+   "notes": []
+  },
+  {
+   "test": "enemy_facing",
+   "status": "PASS",
+   "seconds": 2.1,
+   "exit_code": 0,
+   "checks": 224,
+   "status_line": "SITE7_ENEMY_FACING_SMOKE: PASS (224 checks)",
+   "notes": []
+  },
+  {
+   "test": "machine_source",
+   "status": "PASS",
+   "seconds": 1.7,
+   "exit_code": 0,
+   "checks": 436,
+   "status_line": "SITE7_MACHINE_SOURCE_SMOKE: PASS (436 checks)",
+   "notes": []
+  },
+  {
+   "test": "emission_owner",
+   "status": "PASS",
+   "seconds": 3.2,
+   "exit_code": 0,
+   "checks": 870,
+   "status_line": "SITE7_EMISSION_OWNER_SMOKE: PASS (870 checks) res://qa/regression_runs/20260927_124809_full/out/emission_owner",
+   "notes": []
+  },
+  {
+   "test": "m2_story",
+   "status": "PASS",
+   "seconds": 4.2,
+   "exit_code": 0,
+   "checks": 27,
+   "status_line": "M2_STORY_FLOW_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "m9_skill",
+   "status": "PASS",
+   "seconds": 3.4,
+   "exit_code": 0,
+   "checks": 44,
+   "status_line": "M9_OPERATOR_SKILL_SYNERGY_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "m10_base_ui",
+   "status": "PASS",
+   "seconds": 0.7,
+   "exit_code": 0,
+   "checks": 10,
+   "status_line": "M10_BASE_UI_ACTION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "m10_persistence",
+   "status": "PASS",
+   "seconds": 0.4,
+   "exit_code": 0,
+   "checks": 27,
+   "status_line": "M10_PERSISTENCE_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "m12_revive",
+   "status": "PASS",
+   "seconds": 3.4,
+   "exit_code": 0,
+   "checks": 25,
+   "status_line": "M12_SQUAD_REVIVE_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "play_log",
+   "status": "PASS",
+   "seconds": 4.2,
+   "exit_code": 0,
+   "checks": 23,
+   "status_line": "PLAY_SESSION_LOG_SMOKE: PASS (23 checks) res://qa/regression_runs/20260927_124809_full/out/play_log",
+   "notes": []
+  },
+  {
+   "test": "hit_hurt_vfx",
+   "status": "PASS",
+   "seconds": 1.9,
+   "exit_code": 0,
+   "checks": 47,
+   "status_line": "COMBAT_HIT_HURT_VFX_SMOKE: PASS (47 checks)",
+   "notes": []
+  },
+  {
+   "test": "combat_vfx",
+   "status": "PASS",
+   "seconds": 2.1,
+   "exit_code": 0,
+   "checks": 154,
+   "status_line": "COMBAT_VFX_OVERHAUL_SMOKE: PASS (154 checks)",
+   "notes": []
+  },
+  {
+   "test": "elite_affix",
+   "status": "PASS",
+   "seconds": 4.0,
+   "exit_code": 0,
+   "checks": 43,
+   "status_line": "ELITE_AFFIX_SMOKE: PASS (43 checks)",
+   "notes": []
+  },
+  {
+   "test": "zone_hazard",
+   "status": "PASS",
+   "seconds": 19.2,
+   "exit_code": 0,
+   "checks": 115,
+   "status_line": "ZONE_HAZARD_SMOKE: PASS (115 checks, 5 rooms)",
+   "notes": []
+  },
+  {
+   "test": "firing_lane",
+   "status": "PASS",
+   "seconds": 10.7,
+   "exit_code": 0,
+   "checks": 163,
+   "status_line": "FIRING_LANE_SEARCH_SMOKE: PASS (163 checks)",
+   "notes": []
+  },
+  {
+   "test": "platform_carry",
+   "status": "PASS",
+   "seconds": 4.9,
+   "exit_code": 0,
+   "checks": 6,
+   "status_line": "ACTOR_PLATFORM_CARRY_SMOKE: PASS (6 checks)",
+   "notes": []
+  },
+  {
+   "test": "contact_carry",
+   "status": "PASS",
+   "seconds": 13.3,
+   "exit_code": 0,
+   "checks": 27,
+   "status_line": "ACTOR_CONTACT_CARRY_SMOKE: PASS (27 checks)",
+   "notes": []
+  },
+  {
+   "test": "world_layout",
+   "status": "PASS",
+   "seconds": 4.6,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_WORLD_LAYOUT PASS 5 missions",
+   "notes": []
+  },
+  {
+   "test": "walk_registration",
+   "status": "PASS",
+   "seconds": 0.8,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "WALK_TORSO_REGISTRATION PASS",
+   "notes": []
+  },
+  {
+   "test": "deploy_warmer",
+   "status": "PASS",
+   "seconds": 5.2,
+   "exit_code": 0,
+   "checks": 76,
+   "status_line": "DEPLOY_WARMER_SMOKE: PASS (76 checks)",
+   "notes": []
+  },
+  {
+   "test": "m13_migration",
+   "status": "PASS",
+   "seconds": 0.7,
+   "exit_code": 0,
+   "checks": 9,
+   "status_line": "M13_WEAPON_BASE_MIGRATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "m13_campaign",
+   "status": "PASS",
+   "seconds": 0.4,
+   "exit_code": 0,
+   "checks": 16,
+   "status_line": "M13_WEAPON_CAMPAIGN_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "m13_runtime",
+   "status": "PASS",
+   "seconds": 3.4,
+   "exit_code": 0,
+   "checks": 18,
+   "status_line": "M13_WEAPON_RUNTIME_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_01",
+   "status": "PASS",
+   "seconds": 131.2,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_02",
+   "status": "PASS",
+   "seconds": 115.3,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_03",
+   "status": "PASS",
+   "seconds": 114.2,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_04",
+   "status": "PASS",
+   "seconds": 125.2,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_05",
+   "status": "PASS",
+   "seconds": 117.6,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "traversal_audit",
+   "status": "PASS",
+   "seconds": 360.4,
+   "exit_code": 0,
+   "checks": 1253,
+   "status_line": "SITE7_TRAVERSAL_AUDIT: PASS (1253 checks, 0 failures)",
+   "notes": []
+  },
+  {
+   "test": "enemy_cover_nav",
+   "status": "PASS",
+   "seconds": 60.1,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "ENEMY_COVER_NAVIGATION PASS res://qa/regression_runs/20260927_124809_full/out/enemy_cover_nav []",
+   "notes": []
+  },
+  {
+   "test": "cover_ai",
+   "status": "PASS",
+   "seconds": 37.2,
+   "exit_code": 0,
+   "checks": 46,
+   "status_line": "",
+   "notes": []
+  },
+  {
+   "test": "world_route",
+   "status": "PASS",
+   "seconds": 9.7,
+   "exit_code": 0,
+   "checks": 49,
+   "status_line": "SITE7_WORLD_ROUTE_NAVIGATION: PASS (49 checks)",
+   "notes": []
+  },
+  {
+   "test": "connector_alignment",
+   "status": "PASS",
+   "seconds": 400.9,
+   "exit_code": 0,
+   "checks": 355,
+   "status_line": "SITE7_CONNECTOR_ALIGNMENT PASS (355 checks)",
+   "notes": []
+  },
+  {
+   "test": "battle_geometry",
+   "status": "PASS",
+   "seconds": 13.1,
+   "exit_code": 0,
+   "checks": 2134,
+   "status_line": "SITE7_BATTLE_GEOMETRY_SMOKE: PASS (2134 checks)",
+   "notes": []
+  },
+  {
+   "test": "combat_sfx",
+   "status": "PASS",
+   "seconds": 4.2,
+   "exit_code": 0,
+   "checks": 558,
+   "status_line": "COMBAT_SFX_R04: PASS / 558 checks",
+   "notes": []
+  },
+  {
+   "test": "demo_integration",
+   "status": "PASS",
+   "seconds": 6.3,
+   "exit_code": 0,
+   "checks": 26,
+   "status_line": "DEMO_INTEGRATION PASS / 26 checks",
+   "notes": []
+  },
+  {
+   "test": "m7_visual",
+   "status": "PASS",
+   "seconds": 3.8,
+   "exit_code": 0,
+   "checks": 84,
+   "status_line": "M7_AUTHORED_VISUAL_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "m10_intel",
+   "status": "PASS",
+   "seconds": 3.4,
+   "exit_code": 0,
+   "checks": 39,
+   "status_line": "M10_INTEL_LOADOUT_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "m13_loadout",
+   "status": "PASS",
+   "seconds": 3.6,
+   "exit_code": 0,
+   "checks": 46,
+   "status_line": "M13_WEAPON_LOADOUT_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "campaign",
+   "status": "PASS",
+   "seconds": 9.7,
+   "exit_code": 0,
+   "checks": 94,
+   "status_line": "SITE7_CAMPAIGN_PROGRESSION: PASS (94 checks) res://qa/regression_runs/20260927_124809_full/out/campaign",
+   "notes": []
+  },
+  {
+   "test": "rook_app",
+   "status": "PASS",
+   "seconds": 97.5,
+   "exit_code": 0,
+   "checks": 1895,
+   "status_line": "ROOK_MOTION_LAB_APP_SMOKE: PASS (1895 checks, 0 failures)",
+   "notes": []
+  },
+  {
+   "test": "motion_lab_runtime",
+   "status": "PASS",
+   "seconds": 10.4,
+   "exit_code": 0,
+   "checks": 106,
+   "status_line": "MOTION_LAB_CHARACTER_RUNTIME_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "motion_lab_python",
+   "status": "PASS",
+   "seconds": 165.1,
+   "exit_code": 0,
+   "checks": 137,
+   "status_line": "OK",
+   "notes": []
+  },
+  {
+   "test": "motion_lab_js",
+   "status": "PASS",
+   "seconds": 0.4,
+   "exit_code": 0,
+   "checks": 30,
+   "status_line": "",
+   "notes": []
+  }
+ ]
+}

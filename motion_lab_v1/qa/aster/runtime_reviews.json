@@ -1,0 +1,34 @@
+[
+  {
+    "recordedAt": "2026-09-10T10:26:01.137350+00:00",
+    "character": "aster",
+    "inputSHA256": "4bf7d7a1b0868f96c48e4d241edc8c075a2544b75be983969f3dbbb7fa4c03a8",
+    "evidence": {
+      "path": "qa/aster_runtime_20260910_1080p.png",
+      "sha256": "7a6e88c8e77659f16ced0e0164666309d9e3ac3ba3b7635f74f755106de68642"
+    },
+    "nativeDimensions": [
+      1920,
+      1080
+    ],
+    "decision": "approved",
+    "notes": "Native 1920x1080 ASTER combat capture inspected: character remains fully visible with complete silver-white ponytail, navy suit, armored boots and coil rifle; floor ring, muzzle direction and projectiles are readable, no missing textures or cropped feet. Browser run used the packaged ASTER page at 1920x1080 and showed movement-facing plus held-fire behavior.",
+    "reviewer": "Codex runtime visual QA 2026-09-10"
+  },
+  {
+    "recordedAt": "2026-09-11T05:26:44.559298+00:00",
+    "character": "aster",
+    "inputSHA256": "1115270a9f3564e3fffc813058971a1592df9a33515336c1fb5412c940f61ac0",
+    "evidence": {
+      "path": "qa/aster_runtime_v8_native.png",
+      "sha256": "454036db17b0c95cba36ee6a8d6c027e2ad3f052a56689ea931426e24a65a856"
+    },
+    "nativeDimensions": [
+      1920,
+      1080
+    ],
+    "decision": "repair",
+    "notes": "Compared user recording 6.0-6.9s fixed walk and 1.0-2.2s old fire leg deformation with native v8 runtime sequential samples across all eight directions, run, stationary fire and turn/speed transitions. Frozen-frame and old-bundle defects are corrected, stationary fire feet fixed. However E passing frames1/4 change torso camera and rifle length, NW2 silhouette differs from adjacent sources; six-frame discrete stepping and moving-fire body continuity do not yet justify a natural-gait completion claim. HOLD visual delivery. Later E camera and NW proportion attempts repeated contact/rear-lift phases and were quarantined, not imported.",
+    "reviewer": "Astra actual temporal review"
+  }
+]

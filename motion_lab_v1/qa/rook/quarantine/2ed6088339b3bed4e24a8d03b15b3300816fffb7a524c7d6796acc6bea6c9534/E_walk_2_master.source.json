@@ -1,0 +1,33 @@
+{
+  "generator": "Codex built-in ImageGen",
+  "importedUTC": "2026-09-11T13:45:44.630419+00:00",
+  "sha256": "2ed6088339b3bed4e24a8d03b15b3300816fffb7a524c7d6796acc6bea6c9534",
+  "native": [
+    600,
+    937
+  ],
+  "destination": "art/rook/E_walk_2_master.png",
+  "toolResponse": {
+    "path": "pilots/rook_completion_v3/E_pair2_attempt1.tool.json",
+    "sha256": "731b9b46072418dbeb992223ad39ee5895a56880f2e3b87b091c115011670000"
+  },
+  "sourceMaster": {
+    "path": "art/rook/gait_v8/native_pairs/E_walk_pair2_6ad81cb63cc2.png",
+    "sha256": "6ad81cb63cc2c7c0cf6e87d3c0e681877a7a575cf0c2be3c6f9e42cfa664f7cb"
+  },
+  "masterNative": [
+    1536,
+    1024
+  ],
+  "derivation": {
+    "kind": "chroma-key and connected-subject crop only",
+    "box": [
+      171,
+      23,
+      771,
+      960
+    ],
+    "resampling": false,
+    "anatomicalWarp": false
+  }
+}

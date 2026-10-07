@@ -1,0 +1,155 @@
+{
+  "app_registry_unchanged": true,
+  "art_approval": false,
+  "clock": "Godot --fixed-fps 60; native rendered viewport readback, not performance footage",
+  "duration_seconds": 10,
+  "fps": 60,
+  "frames": 600,
+  "initial_encounter_step": 1,
+  "input": "WASD / Shift / mouse aim / LMB / reload / F next encounter via Input.parse_input_event",
+  "mission": "MIS_CH01_01",
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "normal_ai_and_damage": true,
+  "observations": [
+    {
+      "ammo": 23,
+      "encounter_step": 1,
+      "frame": 0,
+      "health": 96.0,
+      "hostiles": 3,
+      "position": [
+        654.522827148438,
+        445.568023681641
+      ],
+      "squad_projectiles": 7
+    },
+    {
+      "ammo": 15,
+      "encounter_step": 1,
+      "frame": 60,
+      "health": 96.0,
+      "hostiles": 2,
+      "position": [
+        819.522827148438,
+        445.568023681641
+      ],
+      "squad_projectiles": 30
+    },
+    {
+      "ammo": 20,
+      "encounter_step": 3,
+      "frame": 120,
+      "health": 96.0,
+      "hostiles": 2,
+      "position": [
+        1463.20617675781,
+        502.3212890625
+      ],
+      "squad_projectiles": 48
+    },
+    {
+      "ammo": 11,
+      "encounter_step": 3,
+      "frame": 180,
+      "health": 96.0,
+      "hostiles": 2,
+      "position": [
+        1350.13269042969,
+        516.174438476563
+      ],
+      "squad_projectiles": 57
+    },
+    {
+      "ammo": 7,
+      "encounter_step": 3,
+      "frame": 240,
+      "health": 96.0,
+      "hostiles": 2,
+      "position": [
+        1270.38269042969,
+        516.174438476563
+      ],
+      "squad_projectiles": 64
+    },
+    {
+      "ammo": 23,
+      "encounter_step": 3,
+      "frame": 300,
+      "health": 96.0,
+      "hostiles": 2,
+      "position": [
+        1273.13269042969,
+        516.174438476563
+      ],
+      "squad_projectiles": 85
+    },
+    {
+      "ammo": 15,
+      "encounter_step": 3,
+      "frame": 360,
+      "health": 89.0,
+      "hostiles": 1,
+      "position": [
+        1437.72875976563,
+        515.006469726563
+      ],
+      "squad_projectiles": 109
+    },
+    {
+      "ammo": 17,
+      "encounter_step": 4,
+      "frame": 420,
+      "health": 96.0,
+      "hostiles": 1,
+      "position": [
+        1862.64001464844,
+        502.012786865234
+      ],
+      "squad_projectiles": 139
+    },
+    {
+      "ammo": 8,
+      "encounter_step": 4,
+      "frame": 480,
+      "health": 96.0,
+      "hostiles": 1,
+      "position": [
+        1862.64001464844,
+        381.179748535156
+      ],
+      "squad_projectiles": 168
+    },
+    {
+      "ammo": 0,
+      "encounter_step": 4,
+      "frame": 540,
+      "health": 72.0,
+      "hostiles": 1,
+      "position": [
+        1862.64001464844,
+        381.179748535156
+      ],
+      "squad_projectiles": 177
+    },
+    {
+      "ammo": 23,
+      "encounter_step": 4,
+      "frame": 599,
+      "health": 72.0,
+      "hostiles": 1,
+      "position": [
+        1862.64001464844,
+        381.179748535156
+      ],
+      "squad_projectiles": 178
+    }
+  ],
+  "render_content_scale": [
+    1280,
+    720
+  ],
+  "scene": "res://scenes/mission/StoryStage01.tscn"
+}

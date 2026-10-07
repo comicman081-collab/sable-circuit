@@ -1,0 +1,314 @@
+[
+  {
+    "plate": "S1_R01",
+    "attempt": 1,
+    "outcome": "selected",
+    "rejection_reason": null,
+    "prompt_verbatim": "Use case: stylized-concept. Asset: one opaque RGB environment room plate for the SITE-7 tactical game. Create a new S1_R01 Outer Gate room using image 1 as the approved production camera, floor material, lighting, wall/railing quality and scale reference, and image 2 solely for the outer security gate identity. Do not copy the decontamination room identity from image 1 or the lighting/geometry from image 2. Fixed near-orthographic 3/4 top-down dimetric view, both floor diagonal axes 2:1 (26.6 degrees), no perspective convergence. A large open dimetric floor footprint at least 1000 by 560 pixels with neutral dark gunmetal steel deck, uniformly lit by neutral white ceiling lighting, same apparent floor brightness and fine square seams as image 1. Back walls only on NW and NE edges, foreground SW and SE edges low railing/lip. Exactly ONE doorway: a broad OPEN heavy-frame threshold in the NE upper-right back wall, ~300px wide, no door leaf. Extend full-width unobstructed flat grey deck apron 195px beyond the NE threshold under the doorway at same level, uniform width and brightness. No doorway or gap anywhere else. Identity: massive reinforced security gateway, blast-door ribs and access terminal structures built into the rear walls, restrained amber wall lamps; all amber color stays off the neutral grey walking floor, especially at the doorway. Floor occupies at least 30% of image, remains at least 8% from border. Flat near-black #07090D outside architecture. Premium crisp painterly hard-surface realism. No letters, signs, digits, symbols, characters, robots, props on floor, UI, haze, vignette, glowing floor pools, dark floor holes, black frame. Preserve room scale and art style of image 1. This image must be a standalone room plate, not a corridor or composite. No text.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_R02/S1_R02_MASTER.png",
+        "sha256": "f27502ae170c7b04ff9ed91cc785231099676c5f68bb048c60f350bd4374e5ca"
+      },
+      {
+        "path": "assets/environments/site7/outer_gate/01_OUTER_GATE_CONTINUITY.png",
+        "sha256": "2b78b71625223a2feaed85f72b6522372a341068ca01a85fa1d5d0cd146fa78b"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_R01/S1_R01_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "242053dde48cab9462277bc71269c1e166c00d5d03ad776066096dd60fcee6d4",
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB"
+  },
+  {
+    "plate": "S1_R01",
+    "attempt": 2,
+    "outcome": "rejected",
+    "rejection_reason": "NE apron is shorter and less clearly coplanar than attempt 01; less even floor illumination",
+    "prompt_verbatim": "Use case: stylized-concept. Make one opaque RGB game environment plate: S1_R01 Outer Gate. Reference image 1 is the exact style, camera, neutral floor material, and scale to match; reference 2 supplies the original security gateway identity only. Create a distinct outer security entry room with monumental reinforced gate ribs and access terminals on the back walls, restrained amber wall lamps. Fixed near-orthographic three-quarter top-down dimetric 2:1 floor diagonals (~26.6 degrees). Open neutral dark gunmetal steel floor ~1200x600 native pixels, 30% or more of image, even neutral white overhead illumination, no colored floor spill, no holes/hotspots/fog. Back walls along NW and NE edges only. Foreground SW and SE edges are low lip/railing. Exactly one open doorway: a ~300px unobstructed heavy-frame opening in NE upper-right wall, continuing as a full-width coplanar steel floor apron ~195px long beyond threshold. No other doorway, gap or closure. Structure 8% inward from all image borders. Outside flat #07090D. Premium painterly hard-surface steel with crisp bevels and fine 2:1 panel seams, same authored SITE-7 kit language as reference 1. No actors, robots, weapons, floor props, characters, UI, text, signs, numbers, logos, arrows, vignette, colored glowing floor, perspective convergence, translucent geometry, black frame. One standalone room image.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_R02/S1_R02_MASTER.png",
+        "sha256": "f27502ae170c7b04ff9ed91cc785231099676c5f68bb048c60f350bd4374e5ca"
+      },
+      {
+        "path": "assets/environments/site7/outer_gate/01_OUTER_GATE_CONTINUITY.png",
+        "sha256": "2b78b71625223a2feaed85f72b6522372a341068ca01a85fa1d5d0cd146fa78b"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_R01/S1_R01_attempt02_RAW_NATIVE.png",
+    "candidate_sha256": "398a422f7d10e5fea5c6f852a449816ef8618ccf286bfd3e5735c5f2ca925d14",
+    "native_size": [
+      1671,
+      941
+    ],
+    "mode": "RGB"
+  },
+  {
+    "plate": "S1_R03",
+    "attempt": 1,
+    "outcome": "selected",
+    "rejection_reason": null,
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB SITE-7 game room plate, S1_R03 Archive Annex. Reference image 1 defines the exact approved 3/4 top-down dimetric camera, scale, hard-surface quality, neutral dark steel floor and even lighting. Reference image 2 supplies ONLY archive room identity. Make an expansive physical archive chamber, with tall secure data shelving and scanner fixtures built against the NW and NE back walls, restrained teal lamps on walls only. Same neutral gunmetal deck and neutral white lighting as image 1, not teal on the floor. Floor is open and walkable, >1000x560 native pixels, at least 30% of canvas; seams trace both diagonal 2:1 axes (26.6 degrees), no perspective convergence. Exactly THREE unobstructed doorways: SW foreground low railing gap, NE upper-right heavy-frame open wall portal, and SE foreground/right low railing gap. No fourth opening. Each gap is roughly 300px wide, with same coplanar full-width steel deck apron extending ~195px through the threshold at the same brightness, especially NE portal. Back walls only NW and NE; SW and SE low lip/railing, no walls hiding floor. Put architecture at least 8% inside image borders, flat near-black #07090D void outside. Maintain crisp premium painterly metal materials, no floor props, boxes, clutter, characters, machines in walking area, lettering, signage, numbers, logos, UI, smoke, vignette, black border, bright or dark floor spots. One standalone room plate.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_R02/S1_R02_MASTER.png",
+        "sha256": "f27502ae170c7b04ff9ed91cc785231099676c5f68bb048c60f350bd4374e5ca"
+      },
+      {
+        "path": "assets/environments/site7/archive_annex/03_ARCHIVE_ANNEX_CONTINUITY.png",
+        "sha256": "8bc9ddf916deea6a2f30074d9e2d263af024f67d74aaf3376d638fe46ff8be27"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_R03/S1_R03_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "e2a5c58bb5292c2b2b5726598c97bd3d6c26f0114be74de55952039e231d1b5c",
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB"
+  },
+  {
+    "plate": "S1_R04",
+    "attempt": 1,
+    "outcome": "selected",
+    "rejection_reason": null,
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB SITE-7 game room plate, S1_R04 Containment Junction, a broad combat hallway. Match reference image 1's exact fixed near-orthographic 3/4 top-down 2:1 dimetric camera, neutral steel floor texture, white floor lighting, scale and premium hard-surface render. Reference image 2 is ONLY containment identity. Create reinforced emergency bulkheads, controlled damage and breach barriers built into the perimeter back walls, orange-red alarm beacons on the walls; absolutely no orange/red light spill onto neutral dark gunmetal walkable floor. Floor is long and broad, at least 1300px long by 380px short, open with no central props, at least 30% canvas, 2:1 diagonal seams at 26.6 degrees, no convergence. Exactly THREE accessible doorway aprons: SW front-left railing gap, NE upper-right open steel wall frame, SE front-right railing gap. Every opening about 300px wide and extends 195px in a coplanar full-width steel floor apron beyond threshold. Doorways are open and unobstructed, no leaf, no shutter, no steps. Back walls only NW and NE, no tall wall in SW/SE foreground. Room outline 8% inward from image borders and flat #07090D outside. Same neutral floor brightness all over and through each apron, no hot spots, dark holes, haze, vignette, reflected alarm color or clutter. Crisp painterly architectural details. No text, numerals, logos, signs, characters, enemies, weapons, UI, props on floor or black frame. One standalone room image.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_R02/S1_R02_MASTER.png",
+        "sha256": "f27502ae170c7b04ff9ed91cc785231099676c5f68bb048c60f350bd4374e5ca"
+      },
+      {
+        "path": "assets/environments/site7/containment_junction/04_CONTAINMENT_JUNCTION_CONTINUITY.png",
+        "sha256": "1112f618a91bc99fa142addde2fee183ccadf61182a6d579090137d5798270cb"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_R04/S1_R04_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "c49ac9abb79dbd2b2da74637dc02b59146a6943d4b70d795b78754902dd85352",
+    "native_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB"
+  },
+  {
+    "plate": "S1_R05",
+    "attempt": 1,
+    "outcome": "selected",
+    "rejection_reason": null,
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB SITE-7 game room plate, S1_R05 Core C boss arena. Match reference image 1's fixed near-orthographic three-quarter top-down dimetric 2:1 camera, precise diagonal panel seams (26.6 degrees), realistic hard-surface authored style, floor scale and neutral white lighting. Reference image 2 is ONLY for the monumental iris reactor identity. Build a spacious open arena floor at least 1100x520 native pixels and 30% canvas, matte dark neutral gunmetal steel, uniformly lit (same tone as image 1); no equipment, iris or platform in the walking floor. Monumental violet reactor iris, thick energy housings and concentric outer rim are mounted HIGH on the NW back wall at the upper perimeter, leaving the entire center open. Restrained violet accent on walls only; no violet cast on floor or door aprons. Back walls only NW and NE; foreground SW and SE low waist-high railings/lips. Exactly TWO open doorways: SW foreground left railing gap and NE upper-right heavy-frame wall opening, each about 300px clear with 195px coplanar full-width steel deck apron beyond the threshold. No other opening, no shutter, door leaf, steps or obstruction. Architecture remains 8% inward from image borders, outside is flat #07090D. No perspective convergence, hot/cold floor spots, dark holes, floor glow, fog, vignette, text, signs, numbers, logos, humans, robots, weapons, props in the arena, UI or black frame. Crisp premium painterly metal detail. One standalone boss-room image.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_R02/S1_R02_MASTER.png",
+        "sha256": "f27502ae170c7b04ff9ed91cc785231099676c5f68bb048c60f350bd4374e5ca"
+      },
+      {
+        "path": "assets/environments/site7/core_c/05_CORE_C_CONTINUITY.png",
+        "sha256": "6c6b71ae22e82c23689022ea7df7ff8774890ebf48007cb82d7ea216e52d202f"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_R05/S1_R05_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "7b19e7a66f91558eb2c6483f0c84717a44aedde4c8e45b85ea21fca17ec297c2",
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB"
+  },
+  {
+    "plate": "S1_R06",
+    "attempt": 1,
+    "outcome": "selected",
+    "rejection_reason": null,
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB SITE-7 game room plate, S1_R06 Emergency Lift extraction terminal. Reference image 1 is the production camera, neutral dark steel deck, wall/railing quality, floor lighting and size standard. Reference image 2 is solely the vertical lift terminal identity. Fixed near-orthographic 3/4 top-down dimetric view, 2:1 floor axes at 26.6 degrees, no perspective convergence. Large open walkable gunmetal steel floor >850x450px and >=30% image, same neutral white even lighting and floor color as reference 1. Rear NW and NE back walls carry deep vertical guide rails, shaft machinery and restrained green practical lamps; no green color on floor. Exactly one doorway: broad SW lower-left foreground gap in low steel railing, ~300px wide and continuing in a full-width 195px coplanar floor apron beyond threshold. No NE or SE door, no other gap. Back walls NW and NE only, SW and SE low waist-high railing. Floor and architecture 8% from image edge, outside flat near-black #07090D. No shutters, door leaf, step, lift platform raised above walkable floor, central props, people, robots, weapons, text, numbers, signs, logos, UI, haze, vignette, hot/dark floor spots, colored floor reflections or black frame. Premium crisp painterly hard-surface metal detail. Standalone room image.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_R02/S1_R02_MASTER.png",
+        "sha256": "f27502ae170c7b04ff9ed91cc785231099676c5f68bb048c60f350bd4374e5ca"
+      },
+      {
+        "path": "assets/environments/site7/emergency_lift/06_EMERGENCY_LIFT_CONTINUITY.png",
+        "sha256": "858571506541cf4c31381d0b5612dd8f736f685fc3eee9674c1b00148f6ed617"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_R06/S1_R06_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "ff89515898ae085ab01068e43183d2750daba5a3d7e49991f4b73165957d67e0",
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB"
+  },
+  {
+    "plate": "S1_O01",
+    "attempt": 1,
+    "outcome": "rejected",
+    "rejection_reason": "unrequested SW foreground opening in addition to the required NW door",
+    "prompt_verbatim": "Use case: stylized-concept. One opaque RGB SITE-7 tactical game room plate, S1_O01 Emergency Stores. Reference 1 is the exact approved camera, neutral floor lighting, scale, 2:1 architecture and hard-surface quality. Reference 2 supplies ONLY the secure logistics room identity. Create an open archive supply chamber whose armoured supply cases, racks and lockers are BUILT INTO the perimeter back walls, with restrained amber lamps only on walls. Leave entire floor empty, flat, neutral dark gunmetal steel with fine dimetric panel seams and even neutral white lighting, no amber cast. Near-orthographic three-quarter top-down camera, 26.6-degree diagonal floor edges both directions. Floor >=850x450px and >=30% image, >=8% margin to image border. Exactly ONE unobstructed doorway on the NW UPPER-LEFT BACK WALL, not on NE: a heavy framed opening ~300px clear width, with same full-width coplanar floor extending 195px behind the threshold, neutral and not darkened. No doors/gaps in NE, SW or SE. NW and NE back walls; SW and SE low front railing only. Flat #07090D void beyond building. No floor props, crates or shelving in walkable space, characters, enemies, weapons, UI, text, numbers, logos, signs, haze, vignette, dark holes, highlights, black frame or perspective convergence. Premium crisp painted steel architecture. Standalone room image.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_R02/S1_R02_MASTER.png",
+        "sha256": "f27502ae170c7b04ff9ed91cc785231099676c5f68bb048c60f350bd4374e5ca"
+      },
+      {
+        "path": "assets/environments/site7/emergency_stores/07_EMERGENCY_STORES_CONTINUITY.png",
+        "sha256": "3261ac8b12c978e4e1a8be9fe40237db60b4885634fb6d77fb7a77a3d6e56f94"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_O01/S1_O01_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "c0e09956c616a14adaf2e1efaf3a35e93b9fb4da3e7dd5f2b77c1f9aa5bb90fc",
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB"
+  },
+  {
+    "plate": "S1_O01",
+    "attempt": 2,
+    "outcome": "selected",
+    "rejection_reason": null,
+    "prompt_verbatim": "Precise-object-edit of this S1_O01 supply room plate. The NW upper-left back-wall doorway is correct and must remain fully open with its matching floor apron. CLOSE AND REMOVE ONLY the unwanted SW lower-left foreground gap and its large outside floor extension. Continue the same waist-high metal railing/lip seamlessly across the entire SW front-left edge, matching all neighboring railing posts and perspective. Replace the outside apron area with the same flat near-black void #07090D as the background. Preserve every other pixel conceptually: exact NW doorway, shelf units, room walls, same dimetric camera and floor outline, neutral steel floor panel seams and even lighting, scale, palette, right railing, no text or characters. No additional entrances. One opaque RGB room image.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_O01/S1_O01_attempt01_RAW_NATIVE.png",
+        "sha256": "c0e09956c616a14adaf2e1efaf3a35e93b9fb4da3e7dd5f2b77c1f9aa5bb90fc"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_O01/S1_O01_attempt02_RAW_NATIVE.png",
+    "candidate_sha256": "b61a83322a26e515fe0a7eb952185db1766b98295d9f949ae8b9a2c19b696185",
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB"
+  },
+  {
+    "plate": "S1_O02",
+    "attempt": 1,
+    "outcome": "selected",
+    "rejection_reason": null,
+    "prompt_verbatim": "Use case: precise-object-edit. Transform image 1's S1_O01 supply room into the distinct S1_O02 Signal Lab room, taking only signal-analysis identity from image 2. Keep the EXACT fixed near-orthographic 3/4 top-down 2:1 dimetric camera, same open NW upper-left back-wall doorway and its full-width level neutral floor apron, same perimeter, NO other doors, same low foreground railing, same image proportions, same evenly lit neutral dark gunmetal floor color and fine panel seams. Replace all storage cases/racks in the back walls with built-in sensor arrays, scanning equipment, oscillation instrument housings and signal-analysis consoles. Change small amber wall practical lamps to restrained teal-cyan lamps. Keep their colored light entirely on the walls; the walkable floor and NW door apron remain exactly neutral dark grey, white-lit, no colored spill. Floor remains >850x450px, clear of equipment/props and at least 30% image. Premium hard-surface painterly architectural quality, flat near-black exterior. No text, numerals, symbols, labels, people, robots, weapons, UI, fog, vignette, floor hotspots/dark patches, black frame. Opaque RGB standalone plate. Preserve door geometry and floor continuity exactly.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_O01/S1_O01_attempt02_RAW_NATIVE.png",
+        "sha256": "b61a83322a26e515fe0a7eb952185db1766b98295d9f949ae8b9a2c19b696185"
+      },
+      {
+        "path": "assets/environments/site7/signal_lab/08_SIGNAL_LAB_CONTINUITY.png",
+        "sha256": "fa00960565c90a84e3ad4a7b5e582fd75432a64a6bdadff7e0dd17af91f23f95"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_O02/S1_O02_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "559e8f355c357842a1914fd24a9a46b69a93eb935b9dc9473ef51076cfae6f62",
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB"
+  },
+  {
+    "plate": "S1_C02",
+    "attempt": 1,
+    "outcome": "selected",
+    "rejection_reason": null,
+    "prompt_verbatim": "Use case: precise-object-edit. Create the distinct S1_C02 decontamination-to-archive connector from this approved S1_C01 ascending corridor plate. Preserve the exact long NE-ascending 2:1 diagonal geometry, constant ~280px floor width, both full-width open floor cuts through LEFT and RIGHT image borders, NO end wall/cap/door/fade, empty neutral dark gunmetal deck, 26.6-degree dimetric panel seams, neutral even floor lighting, premium hard-surface texture, upper-left steel back wall, lower-right waist-high railing, flat near-black void and image proportions. Change ONLY wall-side fixtures and wall lighting: cold cyan decontamination spray manifolds and wet steel wall panels at the lower-left start gradually become teal secure archive shelves/scanner housings at the upper-right end. Accents remain only on wall, no cyan/teal spill onto the floor. Both endpoint deck sections must match the reference floor brightness and color identically. No perspective convergence, taper, bulges, platforms, floor props, writing, signs, digits, characters, enemies, UI, fog, vignette, dark or bright floor patches, black frame. Opaque RGB standalone corridor plate, not room.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_C01/S1_C01_MASTER.png",
+        "sha256": "6caaf7fab42c6a589e4b36064710eab4c10e184bf14c72e854fe682f3272229b"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_C02/S1_C02_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "c7069e8aa0a6b04bf6af8c6279e412ea7dcdc8f495ad92b0363533926f3ab2ef",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "mode": "RGB"
+  },
+  {
+    "plate": "S1_C03",
+    "attempt": 1,
+    "outcome": "selected",
+    "rejection_reason": null,
+    "prompt_verbatim": "Use case: precise-object-edit. Produce S1_C03 Archive Annex to Containment Junction connector from this approved ascending SITE-7 corridor. Preserve exact camera and floor footprint: straight lower-left to upper-right 2:1 diagonal with constant ~280px deck width and BOTH full-width open cuts at left and right image borders, no end walls, doors, caps, fades or narrowed ends. Floor remains clear neutral dark gunmetal steel, fine 26.6-degree dimetric seams, evenly neutral-white lit at both ends, no colored cast or stains. Upper-left back wall and lower-right waist-high railing remain continuous and same scale. Change wall-side architecture from secure archive shelf/scanner modules with restrained teal practicals at LEFT lower end to reinforced containment bulkhead ribs, breach barrier housings and orange-red warning beacons at RIGHT upper end; transition in middle. The orange/red light must remain on walls only and not spill onto deck. Flat near-black void outside. Premium crisp painterly hard-surface realism. No people, robots, props on deck, text, symbols, signs, numbers, logos, UI, fog, vignette, floor holes/hotspots, black frame or perspective taper. One standalone opaque RGB corridor plate.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_C01/S1_C01_MASTER.png",
+        "sha256": "6caaf7fab42c6a589e4b36064710eab4c10e184bf14c72e854fe682f3272229b"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_C03/S1_C03_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "e1ae9520bc7b91d6e280bd7cbaab456b28c02eb336286ef2c7aa88e3a25977a4",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "mode": "RGB"
+  },
+  {
+    "plate": "S1_C04",
+    "attempt": 1,
+    "outcome": "selected",
+    "rejection_reason": null,
+    "prompt_verbatim": "Use case: precise-object-edit. Produce S1_C04 Containment Junction to Core C connector from this approved SITE-7 ascending corridor. Preserve exact fixed near-orthographic 3/4 top-down 2:1 camera, straight lower-left to upper-right 26.6-degree axis, same constant ~280px wide uninterrupted deck, both full-width floor ends crossing LEFT and RIGHT image edges at full brightness, no end caps, doors or fades. Preserve the even neutral-white light and matte dark neutral-grey gunmetal floor with fine seams, no red/violet cast, no floor objects or dark holes. Change wall-side architecture only: heavy containment bulkheads, controlled breached steel and small orange-red alarm wall lamps at lower-left; gradually transition to monumental reactor energy housings, large concentric casing details and small violet practical lamps at upper-right. All colored accents remain on back wall and structural fixtures, never illuminate deck. Continue upper-left back wall and lower-right waist-high metal railing at unchanged scale; outside flat #07090D void. Premium crisp hard-surface painted game asset. No perspective convergence, taper, widened end, platform, obstruction, text, signs, digits, logos, actors, robots, weapons, UI, fog, vignette, black border. Opaque RGB single corridor plate.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_C01/S1_C01_MASTER.png",
+        "sha256": "6caaf7fab42c6a589e4b36064710eab4c10e184bf14c72e854fe682f3272229b"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_C04/S1_C04_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "5a3e36835d878958de941934958ec00182582efb0c5978ceb9f109d12cabc7e0",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "mode": "RGB"
+  },
+  {
+    "plate": "S1_C05",
+    "attempt": 1,
+    "outcome": "selected",
+    "rejection_reason": null,
+    "prompt_verbatim": "Use case: precise-object-edit. Produce S1_C05 Core C to Emergency Lift connector from this approved ascending SITE-7 corridor plate. Preserve exact fixed orthographic-like 3/4 top-down dimetric 2:1 projection, lower-left to upper-right straight diagonal at 26.6 degrees, identical constant ~280px width of open neutral dark steel deck, full-width bright floor cuts through LEFT and RIGHT edges, no door/cap/endwall/fade at either end, same even neutral-white floor lighting and fine floor panel seams. Upper-left back wall and lower-right waist-high railing continue across whole image at unchanged scale, outside flat near-black void. Change ONLY back-wall equipment and small lamps: reactor conduit rings and restrained violet fixtures near lower-left transition to industrial lift guide rails/shaft machinery with restrained green fixtures near upper-right. The walking deck at both ends and middle stays neutral dark grey, with no violet/green light spill or reflection. Rich crisp painterly steel construction, no taper or perspective convergence, floor obstacles, props, humans, robots, UI, writing, signs, numbers, logos, smoke, vignette, floor hotspots/black holes or black border. One opaque RGB standalone corridor image.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_C01/S1_C01_MASTER.png",
+        "sha256": "6caaf7fab42c6a589e4b36064710eab4c10e184bf14c72e854fe682f3272229b"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_C05/S1_C05_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "ad4944ab2de20d288311c5fddec1a8de7d61f8981261fce818884911415ef46e",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "mode": "RGB"
+  },
+  {
+    "plate": "S1_C07",
+    "attempt": 1,
+    "outcome": "selected",
+    "rejection_reason": null,
+    "prompt_verbatim": "Use case: precise-object-edit. Produce S1_C07 Containment Junction to Signal Lab descending branch corridor from this approved S1_C06 descending corridor. Preserve EXACT camera, native square proportions, floor footprint, 2:1 diagonal descending UPPER LEFT to LOWER RIGHT at 26.6 degrees, constant ~290px deck width and both FULL-WIDTH open cuts through left and right image borders; no end wall, end cap, door, fade, narrowing, taper or mirrored image. Preserve the same even neutral-white-lit dark neutral gunmetal steel floor at both ends, fine dimetric panel seams, continuous upper-right back wall and lower-left waist-high railing. Change wall features only: reinforced containment bulkhead ribs with small orange-red alarm wall lamps near UPPER-LEFT start transition to built-in signal-analysis arrays, antenna/scanner housings and small teal-cyan wall lamps near LOWER-RIGHT finish. Colored lamps stay on wall; no red or cyan tint/glow on floor. Empty floor, flat near-black exterior, premium crisp painterly hard-surface realism, unchanged scale. No perspective convergence, bulging, floor props, text, symbols, signage, digits, logo, people, robots, weapons, UI, haze, vignette, floor hotspots/holes, black frame. One opaque RGB standalone corridor plate.",
+    "reference_images": [
+      {
+        "path": "art_src/environments/site7_v2/stage01/S1_C06/S1_C06_MASTER.png",
+        "sha256": "6d3f8eebc0d22e9d91f1498691f690e312b250f3409f5a23d72759e1be34cba5"
+      }
+    ],
+    "candidate_path": "art_src/environments/site7_v2/stage01/S1_C07/S1_C07_attempt01_RAW_NATIVE.png",
+    "candidate_sha256": "941ce2715bacf23e180d39a02f62ae0592d68548d2e3cce5693054068ea5b865",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB"
+  }
+]

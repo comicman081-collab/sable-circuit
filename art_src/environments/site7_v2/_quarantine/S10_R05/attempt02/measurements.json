@@ -1,0 +1,243 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_R05/attempt02/S10_R05_GAME.png",
+  "luma": 0.20017294585704803,
+  "p10": 0.16688235104084015,
+  "p90": 0.2303529530763626,
+  "saturation": 0.07919712834601003,
+  "hue": 144.34817206732035,
+  "axis": 24.748862460249924,
+  "problems": [
+    "main floor border margin 4.725% below 5%"
+  ],
+  "plate": "S10_R05",
+  "attempt": 2,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      94,
+      486
+    ],
+    [
+      815,
+      219
+    ],
+    [
+      1091,
+      283
+    ],
+    [
+      1238,
+      193
+    ],
+    [
+      1283,
+      207
+    ],
+    [
+      1283,
+      364
+    ],
+    [
+      1593,
+      503
+    ],
+    [
+      1393,
+      601
+    ],
+    [
+      1518,
+      666
+    ],
+    [
+      1361,
+      757
+    ],
+    [
+      1214,
+      692
+    ],
+    [
+      811,
+      869
+    ],
+    [
+      422,
+      673
+    ],
+    [
+      304,
+      757
+    ],
+    [
+      136,
+      658
+    ],
+    [
+      270,
+      591
+    ]
+  ],
+  "doors_px": {
+    "SW": [
+      346,
+      632,
+      175
+    ],
+    "NE": [
+      1187,
+      324,
+      209
+    ],
+    "SE": [
+      1303,
+      647,
+      203
+    ]
+  },
+  "raw_sha256": "1001a4748d0cdcda126436e7561915e5fd7afbd445e1af4c4023507e127bc367",
+  "master_sha256": "1001a4748d0cdcda126436e7561915e5fd7afbd445e1af4c4023507e127bc367",
+  "game_sha256": "c597b6e4fb608d2ffd08d22b639f3edff4db76e30a00a6b4c77f94b69e37680a",
+  "game_exposure_factor_srgb": 0.7153,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-084f5ec3-9445-40a7-a82d-737af6c93382.png",
+  "inspection": "New broad rectangular flat monolith bay, two red vertical seam plates with simple peripheral technical panels, no broken S3_R05 clamp layout or pointed boss crystal; SW/NE/SE only and open centre. Measured actual trace; right main floor again too close to border.",
+  "floor_area_px2": 576403.5,
+  "floor_area_fraction": 0.3663538102090314,
+  "floor_bounds_px": [
+    94,
+    193,
+    1593,
+    869
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1672,
+      941
+    ],
+    "actual_size": [
+      1672,
+      941
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "SW": [
+        [
+          270,
+          591
+        ],
+        [
+          136,
+          658
+        ],
+        [
+          304,
+          757
+        ],
+        [
+          422,
+          673
+        ]
+      ],
+      "NE": [
+        [
+          1091,
+          283
+        ],
+        [
+          1238,
+          193
+        ],
+        [
+          1283,
+          207
+        ],
+        [
+          1283,
+          364
+        ]
+      ],
+      "SE": [
+        [
+          1393,
+          601
+        ],
+        [
+          1518,
+          666
+        ],
+        [
+          1361,
+          757
+        ],
+        [
+          1214,
+          692
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      94,
+      219,
+      1593,
+      869
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.056220095693779906,
+      0.23273113708820403,
+      0.04724880382775119,
+      0.0765143464399575
+    ],
+    "whole_floor_bounds_px": [
+      94,
+      193,
+      1593,
+      869
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.056220095693779906,
+      0.2051009564293305,
+      0.04724880382775119,
+      0.0765143464399575
+    ],
+    "main_floor_area_px2": 511890
+  },
+  "boss_floor_measurement": {
+    "basis": "actual whole painted floor polygon including aprons",
+    "area_px2": 576403.5,
+    "width_px": 1499,
+    "height_px": 676,
+    "minimum_area_px2": 491287,
+    "minimum_width_px": 1410,
+    "minimum_height_px": 612,
+    "no_main_floor_area_or_height_minimum": true
+  },
+  "apron_stats": {
+    "SW": {
+      "luma": 0.22550183534622192,
+      "saturation": 0.08055701331547008,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "NE": {
+      "luma": 0.23032933473587036,
+      "saturation": 0.07869010860317782,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "SE": {
+      "luma": 0.22004491090774536,
+      "saturation": 0.07897659737323041,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  }
+}

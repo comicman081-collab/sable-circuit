@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "role": "ASTER Fire16 SE full-mask independent-validation V2 exact-code provenance",
+  "run_id_utc": "2026-08-30T11:15:42.328362+00:00",
+  "result": "PASS_FULL_SE_SOURCE_MASK_CONTRACT_ONLY_HOLD",
+  "candidate_status": "HOLD",
+  "contract_scope": "native 1254x1254 SE source-mask contract only",
+  "contract_complete": true,
+  "promotion_ready": false,
+  "runtime_asset": false,
+  "visual_pass_claimed": false,
+  "validator": {
+    "path": "tools/art_pipeline/validate_aster_fire16_se_full_contract_v1.py",
+    "revision": 2,
+    "sha256": "542feb9ef8e28b3839c31742b0a6c029c6c0d1328c6f281333ef0faf81113c73"
+  },
+  "accepted_input_manifest": {
+    "path": "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_sse_semantic_masks_v1/manual_full_contract_v1/accepted_v1/ASTER_FIRE_SE_FULL_CONTRACT_V1_MANIFEST.json",
+    "sha256": "1d7cbeeaf51f1b83fb296031ce3afb2b3471c3c1aae23f02fd483d72ada4c842",
+    "accepted_file_count_before": 21,
+    "accepted_file_count_after": 21,
+    "accepted_hash_changes": 0
+  },
+  "independent_outputs": {
+    "manifest": {
+      "path": "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_sse_semantic_masks_v1/manual_full_contract_v1/independent_validation_v2/ASTER_FIRE_SE_FULL_CONTRACT_V1_INDEPENDENT_V2_MANIFEST.json",
+      "sha256": "0443ada5e13dccc3dcdeb9d3b850750c7557cc0b09d7699572947144e0403071"
+    },
+    "qa": {
+      "path": "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_sse_semantic_masks_v1/manual_full_contract_v1/independent_validation_v2/ASTER_FIRE_SE_FULL_CONTRACT_V1_INDEPENDENT_V2_QA.json",
+      "sha256": "70849d788dc251e67e9873bb0d32cc40de3118a9434b8a72632ad8e1fa2c5f2d"
+    },
+    "review": {
+      "path": "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_sse_semantic_masks_v1/manual_full_contract_v1/independent_validation_v2/ASTER_FIRE_SE_FULL_CONTRACT_V1_INDEPENDENT_V2_REVIEW_1920X1440.png",
+      "sha256": "8ae6512505a91bee05052028ac64aa1ab5b1415e251ea1986b1841381c5014d3",
+      "resolution": [
+        1920,
+        1440
+      ]
+    },
+    "evidence_1080p": {
+      "path": "art_src/pilot_v2/aster_v2/animation_360/fire_upper_16_sse_semantic_masks_v1/manual_full_contract_v1/independent_validation_v2/ASTER_FIRE_SE_FULL_CONTRACT_V1_INDEPENDENT_V2_EVIDENCE_1080P_QA.json",
+      "sha256": "d7f0dd448c11b47c48e1f8ecf500a6a1d1b1e0332290a680ae988a57034cdd80",
+      "gate": "PASS",
+      "quality_claim": false
+    }
+  },
+  "seam_semantics": {
+    "native_dilation_radius_each_side_pixels": 6,
+    "nominal_full_boundary_band_pixels": 12,
+    "exact_rederived_union_xor_pixels": 0,
+    "maximum_distance_to_either_source_role_pixels": 6.324555397033691,
+    "maximum_allowed_with_raster_tolerance_pixels": 6.5,
+    "distance_transform_width_max_pixels": 15.18139934539795,
+    "distance_transform_width_max_is_diagnostic_only": true,
+    "diagnostic_note": "Curved junction caps can exceed the nominal 12px span in raster-space thickness; acceptance is locked to exact 6px-per-side rederivation and source-role distance."
+  },
+  "scope_limits": [
+    "This gate validates the locked native SE source-mask contract only.",
+    "TARGET_OCCLUDE and TARGET_REVEAL are checked for accepted-manifest and guide lineage, containment, size, and mutual non-overlap; they are not independently rederived pixel-for-pixel from the Blender guide.",
+    "This record does not approve a body composite, runtime asset, target-direction frame, or visual quality."
+  ],
+  "retention": {
+    "current": "independent_validation_v2",
+    "immediate_previous": "independent_validation_v1",
+    "older_validation_candidates": 0
+  }
+}

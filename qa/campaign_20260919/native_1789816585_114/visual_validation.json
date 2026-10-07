@@ -1,0 +1,197 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-19T11:17:14.174180+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\campaign_20260919\\native_1789816585_114\\base_all_operations.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 440968,
+      "sha256": "28018e3e6be8a59e63e79db6e3dd22281ace820476220f5a7c1e0673a4554a0c"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\campaign_20260919\\native_1789816585_114\\base_initial.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 446294,
+      "sha256": "0dd84c8862851fae4dc99ab8fc5d51c7ce6baf2a878b2fea23a3b0945e16d02d"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\campaign_20260919\\native_1789816585_114\\stage2_briefing.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 194261,
+      "sha256": "93faa7b90051c74fa79cd42d88cdb23480b82bae5c49d547a459ddb21261bb2a"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\campaign_20260919\\native_1789816585_114\\stage2_encounter1.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 3305580,
+      "sha256": "d207564a098783d1ffe8e02e36bd3bbdd890df231394177145e20108ab7f0e74"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\campaign_20260919\\native_1789816585_114\\stage2_encounter3.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 3042182,
+      "sha256": "fa14d1606a1f044960e2ec88d4cb21a8cae82634e5aaa3b6ff62ce758126b075"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\campaign_20260919\\native_1789816585_114\\stage2_encounter4.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 3026037,
+      "sha256": "e6fd6ddaf42997d1e7ec609f2798ff5ad51de8ea7871a021a2dc7020ef7f629a"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\campaign_20260919\\native_1789816585_114\\stage2_results.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 205133,
+      "sha256": "6b59338c1070fee4773bcc32334ad4fd4e5ed753ae8cf7b063ec86e087a8bd03"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\campaign_20260919\\native_1789816585_114\\stage3_briefing.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 194037,
+      "sha256": "997b2a6616882fe3cc7ce048725f2cbce060a8e66c43c6395cf81d8073c48300"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\campaign_20260919\\native_1789816585_114\\stage3_encounter1.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2607825,
+      "sha256": "c90572e13fe04b06973f0d0c0b0e4af5a146a9ac08e9badfead5a713198f6440"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\campaign_20260919\\native_1789816585_114\\stage3_encounter3.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2716758,
+      "sha256": "81bdf94306109c000d1503de1415c37df56b39b7c788a4d035403d49b384aaa5"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\campaign_20260919\\native_1789816585_114\\stage3_encounter4.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2678809,
+      "sha256": "08be1e336988d3cbb1f80ddf80e020c361e0dd8fb8794805b488b28a1667e481"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\campaign_20260919\\native_1789816585_114\\stage3_results.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 211502,
+      "sha256": "e5c86c6962ae800a4a52a5825c4c8c65e44b9d42f4c8794e16a5d8bcdc55579c"
+    }
+  ]
+}

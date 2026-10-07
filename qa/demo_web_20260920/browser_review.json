@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-20",
+  "origin": "http://127.0.0.1:14835/",
+  "browser": "Codex in-app Chromium browser",
+  "native_viewport": [1920, 1080],
+  "final_optimized_export": {
+    "background_plate_count": 90,
+    "background_dimensions_unchanged": true,
+    "background_alpha_unchanged": true,
+    "webp_quality": 95,
+    "archive_bytes": 217032608,
+    "source_commit": "33e443d02e9c4bf87cf1d9e2f1362150f77fa9da",
+    "title_and_stage1_actual_web_render_after_room_path_fix": "PASS",
+    "console_errors_after_final_reload": [],
+    "evidence": ["title_web_optimized.png", "stage1_web_optimized.png"]
+  },
+  "observations": {
+    "title": "PASS",
+    "intro_playback_and_skip_to_operations": "PASS",
+    "operations_growth_and_loadout_surface": "PASS",
+    "mission_01_briefing_and_normal_deploy": "PASS",
+    "keyboard_movement_and_mouse_fire_ammo_consumption": "PASS",
+    "training_01_04_05_real_render_and_robot_combat": "PASS",
+    "help_pause_resume_and_leave_training": "PASS",
+    "touch_pad_and_action_buttons_visible": "PASS",
+    "korean_symbol_font_fallback": "PASS_AFTER_FIX",
+    "console_errors_and_warnings": [],
+    "browser_indexeddb_save": {
+      "database": "/userfs",
+      "schema_version": 4,
+      "run_serial_before_reload": 1,
+      "run_serial_after_reload": 1,
+      "completed_runs": 0
+    },
+    "webmcp_get_demo_status": {
+      "registration": "PASS",
+      "valid_empty_input": "ready",
+      "invalid_input": "Rejected with Expected an empty object"
+    }
+  },
+  "limits": [
+    "Not a complete manual playthrough of all five missions.",
+    "Multitouch event injection is unsupported by this in-app browser controller; no physical mobile-device multitouch approval is claimed. Native input matrix evidence remains separate.",
+    "No new audio listening or recorded waveform review was performed in the web browser. The existing audio bank is included unchanged; native SFX tests are separate.",
+    "Title and stage 4/5 captures precede the last packaging-only exclusion of unused legacy units; stage1_final.png checks the final smaller export. Active art bytes and logic remain unchanged.",
+    "These are local browser observations, not a production-URL browser playtest. Sites deployment requires its own terminal success receipt."
+  ]
+}

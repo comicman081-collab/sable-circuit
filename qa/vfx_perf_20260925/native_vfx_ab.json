@@ -1,0 +1,181 @@
+{
+  "rounds": 3,
+  "runs": [
+    {
+      "version": "pershape_82a1642",
+      "round": 1,
+      "fps": [
+        45.6,
+        32.6,
+        37.8,
+        26.7
+      ],
+      "vfx_avg": [
+        4.8,
+        7.8,
+        7.0,
+        6.7
+      ],
+      "vfx_max": 24
+    },
+    {
+      "version": "batched_ce265d2",
+      "round": 1,
+      "fps": [
+        69.8,
+        93.4,
+        65.5,
+        62.5
+      ],
+      "vfx_avg": [
+        8.7,
+        3.9,
+        8.9,
+        8.8
+      ],
+      "vfx_max": 24
+    },
+    {
+      "version": "batched_setup_once",
+      "round": 1,
+      "fps": [
+        73.0,
+        66.7,
+        62.6,
+        79.4
+      ],
+      "vfx_avg": [
+        7.2,
+        8.7,
+        10.2,
+        8.8
+      ],
+      "vfx_max": 23
+    },
+    {
+      "version": "batched_ce265d2",
+      "round": 2,
+      "fps": [
+        48.0,
+        62.3,
+        72.2,
+        66.7
+      ],
+      "vfx_avg": [
+        6.5,
+        9.3,
+        5.6,
+        7.5
+      ],
+      "vfx_max": 22
+    },
+    {
+      "version": "batched_setup_once",
+      "round": 2,
+      "fps": [
+        70.4,
+        69.0,
+        69.4,
+        78.7
+      ],
+      "vfx_avg": [
+        9.3,
+        4.2,
+        8.3,
+        9.4
+      ],
+      "vfx_max": 23
+    },
+    {
+      "version": "pershape_82a1642",
+      "round": 2,
+      "fps": [
+        47.3,
+        81.8,
+        37.4,
+        44.7
+      ],
+      "vfx_avg": [
+        7.5,
+        3.3,
+        8.8,
+        8.1
+      ],
+      "vfx_max": 25
+    },
+    {
+      "version": "batched_setup_once",
+      "round": 3,
+      "fps": [
+        72.2,
+        68.4,
+        53.3,
+        71.6
+      ],
+      "vfx_avg": [
+        7.6,
+        9.0,
+        10.0,
+        8.3
+      ],
+      "vfx_max": 23
+    },
+    {
+      "version": "pershape_82a1642",
+      "round": 3,
+      "fps": [
+        40.1,
+        46.9,
+        38.8,
+        31.6
+      ],
+      "vfx_avg": [
+        6.5,
+        8.0,
+        8.2,
+        6.2
+      ],
+      "vfx_max": 25
+    },
+    {
+      "version": "batched_ce265d2",
+      "round": 3,
+      "fps": [
+        78.4,
+        84.7,
+        114.8,
+        72.0
+      ],
+      "vfx_avg": [
+        7.3,
+        9.2,
+        5.8,
+        6.9
+      ],
+      "vfx_max": 21
+    }
+  ],
+  "summary": {
+    "pershape_82a1642": {
+      "samples": 12,
+      "fps_median": 39.45,
+      "fps_min": 26.7,
+      "fps_max": 81.8,
+      "live_vfx_avg_median": 7.25
+    },
+    "batched_ce265d2": {
+      "samples": 12,
+      "fps_median": 70.9,
+      "fps_min": 48.0,
+      "fps_max": 114.8,
+      "live_vfx_avg_median": 7.4
+    },
+    "batched_setup_once": {
+      "samples": 12,
+      "fps_median": 69.9,
+      "fps_min": 53.3,
+      "fps_max": 79.4,
+      "live_vfx_avg_median": 8.75
+    }
+  }
+}

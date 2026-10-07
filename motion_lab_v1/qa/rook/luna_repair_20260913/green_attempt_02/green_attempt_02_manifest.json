@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "character": "rook",
+  "direction": "E",
+  "action": "walk",
+  "attempt": "Luna green fallback attempt 02",
+  "status": "FAIL_NOT_PROMOTABLE",
+  "approved": false,
+  "activeSourceSlotsChanged": false,
+  "generation": {
+    "provider": "Codex built-in ImageGen",
+    "nativeRequested": [1536, 1024],
+    "backgroundRequested": "flat_uniform_green",
+    "inputOrder": [
+      "reference/ual_guides/E_walk_pairN.png (pose/camera only)",
+      "art/rook/identity_reference.png (appearance/weapon authority)"
+    ],
+    "attempts": [
+      {
+        "pair": 0,
+        "phases": [0, 3],
+        "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-b4babb6d-e211-41db-b0d8-534ed8b8c631.png",
+        "raw": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair0_luna_raw.png",
+        "rawSHA256": "91ac57827c484d70891c9786d324e01dd3abdc8676f16c5f135f0d3e0e80d6e5",
+        "toolResponse": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair0_tool-response.json",
+        "toolResponseSHA256": "33cdb15b71ce09badaac53dfdd5f35214cbff3a1ee734c175961e086b635f8e4",
+        "inspection": {
+          "size": [1536, 1024],
+          "mode": "RGB",
+          "cornerRGB": [18, 241, 13],
+          "edgeUniqueColors": 159,
+          "greenExactFraction": 0.0000057220458984375,
+          "background": "gradient; not flat_uniform_green",
+          "roles": "FAIL: E0/E3 repeat the same screen-right planted and screen-left trailing arrangement"
+        },
+        "normalization": {
+          "command": "tools/character_pipeline/normalize_imagegen_chroma.py --input .../E_walk_pair0_luna_raw.png --output .../E_walk_pair0_normalized.png --mask .../E_walk_pair0_mask.png --qa .../E_walk_pair0_normalization.json",
+          "report": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair0_normalization.json",
+          "reportSHA256": "18626d7c28efcffdcf70ef1a34b20444c69a819d5d36bb853620a7ba78ae3255",
+          "output": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair0_normalized.png",
+          "outputSHA256": "c8505bbc89a68e109847faeb13d6436cbd792c91662237590ec19c921e95b2c7",
+          "mask": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair0_mask.png",
+          "maskSHA256": "815f95f4a7caaa3e9a76eff041d0c0060ac94d9ea5c1af22c23ce536467934ce",
+          "coverage": 0.6850897471110026,
+          "subjectPixelsByteExact": true,
+          "alphaReady": true
+        },
+        "decision": "FAIL_NOT_PROMOTABLE"
+      },
+      {
+        "pair": 1,
+        "phases": [1, 4],
+        "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-c2e4fedb-e753-4c8b-85ed-c8871ce73d93.png",
+        "raw": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair1_luna_raw.png",
+        "rawSHA256": "f10c343f160629aa20fd7a0e81cdd021b3a1e595b7f7c9c9ccd98ef0b95d5a88",
+        "toolResponse": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair1_tool-response.json",
+        "toolResponseSHA256": "da55436b266d40ea1e7fa5af98b5ac4d2c1a22a223721ec13c2b032db519d444",
+        "inspection": {
+          "size": [1536, 1024],
+          "mode": "RGB",
+          "cornerRGB": [18, 241, 14],
+          "edgeUniqueColors": 132,
+          "greenExactFraction": 0.0000025431315104166665,
+          "background": "gradient; not flat_uniform_green",
+          "roles": "FAIL: E1/E4 repeat the same rear-swing/support arrangement"
+        },
+        "normalization": {
+          "command": "tools/character_pipeline/normalize_imagegen_chroma.py --input .../E_walk_pair1_luna_raw.png --output .../E_walk_pair1_normalized.png --mask .../E_walk_pair1_mask.png --qa .../E_walk_pair1_normalization.json",
+          "report": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair1_normalization.json",
+          "reportSHA256": "21ac700437ab3716c1f4cae0edc70cbf6e8f8c94bfa754f73f8a37955442ab42",
+          "output": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair1_normalized.png",
+          "outputSHA256": "9f4fb21906cb6f580847cbd17a52c4aab851798d8141c96ec350248b52fffd65",
+          "mask": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair1_mask.png",
+          "maskSHA256": "9843548ed66a9524691a640f58850f99f3c27e63b9e8e6423f2c39df52e2d658",
+          "coverage": 0.6966431935628256,
+          "subjectPixelsByteExact": true,
+          "alphaReady": true
+        },
+        "decision": "FAIL_NOT_PROMOTABLE"
+      },
+      {
+        "pair": 2,
+        "phases": [2, 5],
+        "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-38ee210c-12b7-4cea-b6f1-0f593bc49a17.png",
+        "raw": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair2_luna_raw.png",
+        "rawSHA256": "d784cb68d71d5e115032572042ddb4a408f53351f7be28bc2288931e6020694c",
+        "toolResponse": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair2_tool-response.json",
+        "toolResponseSHA256": "67949b9e989bf71000617e7f3649447f0fda7d16103d8976d88f0123ad88007c",
+        "inspection": {
+          "size": [1536, 1024],
+          "mode": "RGB",
+          "cornerRGB": [19, 241, 14],
+          "edgeUniqueColors": 147,
+          "greenExactFraction": 0.0000025431315104166665,
+          "background": "gradient; not flat_uniform_green",
+          "roles": "FAIL: E2/E5 repeat the same passing/support arrangement"
+        },
+        "normalization": {
+          "command": "tools/character_pipeline/normalize_imagegen_chroma.py --input .../E_walk_pair2_luna_raw.png --output .../E_walk_pair2_normalized.png --mask .../E_walk_pair2_mask.png --qa .../E_walk_pair2_normalization.json",
+          "report": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair2_normalization.json",
+          "reportSHA256": "f121bc735b62828f93ac93da82f5f29aad4e61e23c9f36fc1916b6af8c8ec651",
+          "output": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair2_normalized.png",
+          "outputSHA256": "a374d41586331d6c09c9629c94caecc93da977c427aa8fd9637c97326aed9f42",
+          "mask": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair2_mask.png",
+          "maskSHA256": "d9aa0383bbbc0b1c33ac11f53e1c19fba97cf864e77b7aee3a6e122fc1aed6d0",
+          "coverage": 0.686553955078125,
+          "subjectPixelsByteExact": true,
+          "alphaReady": true
+        },
+        "decision": "FAIL_NOT_PROMOTABLE"
+      }
+    ]
+  },
+  "intake": {
+    "intakeDerivedFrameExecuted": false,
+    "reason": "These are two-figure pair masters and all three failed opposite-role visual review; importing a pair as a single frame would be invalid. Current E cycle is repair, so the existing importer pilot gate would also refuse active E replacement. No source slot or pointer was changed."
+  },
+  "commands": [
+    "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe -B tools/character_pipeline/normalize_imagegen_chroma.py --input motion_lab_v1/qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair0_luna_raw.png --output motion_lab_v1/qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair0_normalized.png --mask motion_lab_v1/qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair0_mask.png --qa motion_lab_v1/qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair0_normalization.json",
+    "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe -B tools/character_pipeline/normalize_imagegen_chroma.py --input motion_lab_v1/qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair1_luna_raw.png --output motion_lab_v1/qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair1_normalized.png --mask motion_lab_v1/qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair1_mask.png --qa motion_lab_v1/qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair1_normalization.json",
+    "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe -B tools/character_pipeline/normalize_imagegen_chroma.py --input motion_lab_v1/qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair2_luna_raw.png --output motion_lab_v1/qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair2_normalized.png --mask motion_lab_v1/qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair2_mask.png --qa motion_lab_v1/qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair2_normalization.json",
+    "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe -B character_workflow.py review-cycle --character rook --direction E --action walk --decision repair --evidence qa/rook/luna_repair_20260913/green_attempt_02/E_cycle_green_attempt_02_visual_review.md --reviewer 'Codex Luna E green fallback attempt 02 visual review 2026-09-13'",
+    "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe -B character_workflow.py status --character rook"
+  ],
+  "workflowStatusAfterReview": {
+    "ready": false,
+    "sourcesReady": true,
+    "approvedFrames": 56,
+    "requiredFrames": 56,
+    "activeBuildReady": false,
+    "EWalkState": "repair",
+    "runtimeRepairRequired": true
+  },
+  "visualReview": {
+    "evidence": "qa/rook/luna_repair_20260913/green_attempt_02/E_cycle_green_attempt_02_visual_review.md",
+    "evidenceSHA256": "44073bdd4a3198fb3f79eabdd1063483393a09040bac8bd6e2e292cdfe0a377b",
+    "cycleReviewDecision": "repair"
+  },
+  "nextRepair": "Change the generation mechanism so each pair visibly exchanges the anatomical support/rear-swing/passing leg while retaining ROOK identity and weapon; require a truly flat #00FF00 master or a valid deterministic normalization, then use the pair-specific intake path only after the visual pair passes. Stop further generation attempts in this batch."
+}

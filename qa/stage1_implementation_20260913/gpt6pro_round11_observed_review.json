@@ -1,0 +1,20 @@
+{
+  "status": "ACTUAL_REPLY_OBSERVED_FIXES_REQUIRED",
+  "observedAt": "2026-09-13T11:12:00+00:00",
+  "conversation": "https://chatgpt.com/c/6aa629cc-15f0-83ee-996c-b42d58eefe91",
+  "modelObserved": "6 Pro",
+  "reportedThinkingDuration": "15m 10s",
+  "packageSHA256": "b1fec9b71a9c6befce4e6294378a69395776f8b64ad731f14e52464904516f80",
+  "recordKind": "Agent summary of actually read final web response, not a verbatim transcript",
+  "reviewerExecuted": ["All ten attached file hashes and five runtime/test report bindings matched", "Synthetic PNG visible-pixel comparisons", "Floating-point distance and emitter formula calculations"],
+  "reviewerDidNotExecute": ["Godot/GDScript", "824-check smoke", "Other Godot regressions", "Art/video visual review", "Luna reproduction"],
+  "issues": [
+    {"id":"R11-01","priority":"P1","finding":"Each used idle/walk cell needs visible-alpha validation; a valid full atlas can contain an entirely transparent used cell."},
+    {"id":"R11-02","priority":"P1","finding":"Duplicate direction detection must hash canonical used cells in frame order, independent of columns and unused padding; page hashes can be bypassed by repacking identical frames."},
+    {"id":"R11-03","priority":"P2","finding":"Finite positive stride/metres inputs can produce infinite or zero derived cycle distance; validate derived scale/distance before publishing."},
+    {"id":"R11-04","priority":"P1","finding":"Actual nonzero post-warning stage/collision position correction can reactivate walk/muzzle during locked WINDUP/BURST. Cancel the announced attack if its origin moves, retaining actual displacement accounting."}
+  ],
+  "scopeLimit": "New candidate-only biped bridge; no production biped binding present. Prior H01/H02 and R8 closure remains closed.",
+  "localFixesVerified": false,
+  "visualApproval": false
+}

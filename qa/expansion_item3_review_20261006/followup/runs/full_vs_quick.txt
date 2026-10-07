@@ -1,0 +1,45 @@
+full run: suite=full tests=88 PASS=87 not-PASS=['full_op_08'] overall=FAIL
+  git_head=ccfaa96e git_dirty=0 seconds=5268 guard={'changed': [], 'removed': [], 'added': []}
+rerun   : suite=custom tests=['full_op_08 FAIL'] git_head=ccfaa96e guard={'changed': [], 'removed': [], 'added': []} seconds=161
+
+quick tests: 56 in the quick run, 56 of them also in the full run; check counts that differ: 0
+  quick tests missing from the full run: []
+  quick run not-PASS: []
+
+four-test run vs full run (checks): lab_capture_geometry 5/5, m10_intel 39/39, m13_loadout 53/53, campaign 235/235
+
+full-only tests: 32; PASS 31; seconds 4638.3
+playthroughs (runner seconds, status):
+  full_op_01: 135.5 s PASS
+  full_op_02: 124.8 s PASS
+  full_op_03: 142.0 s PASS
+  full_op_04: 166.4 s PASS
+  full_op_05: 158.1 s PASS
+  full_op_06: 181.8 s PASS
+  full_op_07: 226.5 s PASS
+  full_op_08: 135.4 s FAIL
+  full_op_09: 167.6 s PASS
+  full_op_10: 207.7 s PASS
+other full-only (checks, seconds):
+  traversal_audit: checks 2394 891.1 s PASS
+  enemy_cover_nav: checks None 40.1 s PASS
+  cover_ai: checks 46 37.9 s PASS
+  boss_capture_geometry: checks None 22.9 s PASS
+  lab_capture_geometry: checks 5 7.6 s PASS
+  boss_lineup: checks None 2.6 s PASS
+  variety_capture: checks 96 14.6 s PASS
+  world_route: checks 94 18.4 s PASS
+  nav_pockets: checks None 72.3 s PASS
+  connector_alignment: checks 1060 1435.3 s PASS
+  battle_geometry: checks 5039 27.9 s PASS
+  walk_graph_capture: checks None 6.0 s PASS
+  combat_sfx: checks 572 6.8 s PASS
+  demo_integration: checks 26 8.6 s PASS
+  m7_visual: checks 84 5.6 s PASS
+  m10_intel: checks 39 5.0 s PASS
+  m13_loadout: checks 53 5.2 s PASS
+  campaign: checks 235 26.1 s PASS
+  rook_app: checks 1895 98.4 s PASS
+  motion_lab_runtime: checks 106 12.2 s PASS
+  motion_lab_python: checks 137 247.5 s PASS
+  motion_lab_js: checks 30 0.4 s PASS

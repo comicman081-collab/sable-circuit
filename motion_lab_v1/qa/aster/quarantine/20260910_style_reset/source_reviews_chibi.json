@@ -1,0 +1,28 @@
+[
+  {
+    "recordedAt": "2026-09-10T08:13:53.232939+00:00",
+    "slot": "E/idle/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review: complete adult ASTER silhouette is inside the native canvas; silver ponytail, face, two hands on the precision rifle, triangular muzzle cage, both boots and both planted soles are visible. Both shoulders read as continuous dark navy fabric with established seams and no white armor or shoulder hardware. Green backdrop is source-separated by the controlled edge-chroma path for runtime; raw ImageGen pixels and tool-response envelope are retained. One E idle frame only; no claim about the remaining directions or motion continuity.",
+    "sourceSHA256": "624b81c933a1976c3678dd1d5d7d10fe9c6902d302a9bf7e0b3cea156e0feda4",
+    "referenceSHA256": "6abbb39d7890882ad317c5cd55bee01b5e2e075e90b75a486a0806b342c968a8",
+    "evidence": {
+      "path": "art/aster/E_idle_0_master.png",
+      "sha256": "624b81c933a1976c3678dd1d5d7d10fe9c6902d302a9bf7e0b3cea156e0feda4"
+    }
+  },
+  {
+    "recordedAt": "2026-09-10T08:16:18.325989+00:00",
+    "slot": "E/walk/0",
+    "decision": "approved",
+    "reviewer": "Codex source visual QA 2026-09-10",
+    "notes": "Original-scale review: ASTER identity, silver ponytail, navy tactical jacket, cyan piping, dark trousers, boots, two-handed rifle and triangular muzzle cage remain coherent with E/idle/0. E walk phase 0 has a clear right-side profile, a distinct trailing leg and forward contact leg with both sole shapes visible and connected to the floor; no duplicated or floating limbs. Both shoulders remain dark navy fabric without the retired white armor or shoulder hardware. The generated source is native 1254x1254 RGB with green-dominant backdrop; runtime keying remains deterministic and raw/tool-response provenance is retained. One pilot walk frame only; no claim about the remaining five phases or other directions.",
+    "sourceSHA256": "da269bffda4114cdf73c0295f8067049d4e2db5d72cf22823cc9b1b41c981c6b",
+    "referenceSHA256": "6abbb39d7890882ad317c5cd55bee01b5e2e075e90b75a486a0806b342c968a8",
+    "evidence": {
+      "path": "art/aster/E_walk_0_master.png",
+      "sha256": "da269bffda4114cdf73c0295f8067049d4e2db5d72cf22823cc9b1b41c981c6b"
+    }
+  }
+]

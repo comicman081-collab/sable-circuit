@@ -1,0 +1,31 @@
+{
+  "id": "appgdep_6aaf86fbec3081919d1d49319f407192",
+  "project_id": "appgprj_6aaf6f1d69608191adb8549f7568b146",
+  "title": "SABLE CIRCUIT — Playable Demo",
+  "version_id": "appgprj_6aaf6f1d69608191adb8549f7568b146~appgver_786cbbcefeb081918fe61e5efe807606",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://sable-circuit-demo.comicman081.chatgpt.site",
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6aaf6f1d69608191adb8549f7568b146",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-09-20T07:11:35.842934+00:00",
+  "access_mode": "public",
+  "source_commit": "00f6f64cfe47ef10e0467020dc9b5b514aeac546",
+  "version_number": 3,
+  "archive_bytes": 234804405,
+  "expanded_archive_bytes": 268431360,
+  "archive_sha256": "58950dbf6c80a9c91de12485a00a640d7ea225385b3a447de466fb202f3a95f7",
+  "scoped_checks": {
+    "combat": 20,
+    "music": 51,
+    "intro_integration": 27,
+    "packed_projectile": true
+  },
+  "previous_live_version": "appgprj_6aaf6f1d69608191adb8549f7568b146~appgver_dd28f80968c08191a169a6f4411e05e3",
+  "source_retirement": "source_retirement.json",
+  "verification": "Sites terminal deployment succeeded. Public URL reloaded: music toggle visible, three robots spawned in training, key 2 selected ROOK, portrait selected MICA, shots consumed ammo and displayed the proper weapon, authored ASTER projectile visibly rendered. No error/warning entries after the deployment reload. Native controlled tests and normal-route local Web verification are scoped in IMPLEMENTATION_REVIEW.md.",
+  "public_browser_evidence": ["public_rook_combat.png", "public_mica_control.png"],
+  "public_browser_scope": "Native 1920x1080 in-app browser; training fight, controls, weapon HUD, projectiles and console. Not a full five-operation human playtest."
+}

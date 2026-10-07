@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "purpose": "Fail-closed source, mesh and first-pose gates BEFORE animation generation. Numeric checks are not visual approval.",
+  "source_author": "built_in_ImageGen",
+  "max_unreviewed_outputs_per_request": 1,
+  "source": {
+    "min_subject_pixels": 1024,
+    "alpha_clear_border_pixels": 4,
+    "green_mask_contamination_fraction_max": 0.001,
+    "foreground_touching_panel_edge_max": 0,
+    "profile_hip_width_over_height_max": 0.12,
+    "profile_shoulder_width_over_height_max": 0.14,
+    "profile_toe_axis_error_degrees_max": 20,
+    "registered_height_relative_error_max": 0.03
+  },
+  "mesh": {
+    "unweighted_vertices_max": 0,
+    "degenerate_faces_max": 0,
+    "invalid_source_uv_samples_max": 0,
+    "weight_sum_tolerance": 0.001,
+    "volume_depth_over_height_min": 0.015,
+    "attachment_gap_over_height_max": 0.012,
+    "outward_normal_errors_max": 0
+  },
+  "pose": {
+    "native_min_width": 1920,
+    "native_min_height": 1080,
+    "opaque_chroma_fraction_max": 0.0001,
+    "transparent_border_pixels": 4
+  },
+  "source_review_checks": ["identity_and_costume", "true_body_facing", "shared_scale_and_ground", "unoccluded_texture_regions", "no_foreign_parts_in_uv_masks", "native_source_resolution", "clean_subject_separation"],
+  "pose_review_checks": ["likeness", "waist_attachment", "no_ghost_hands_or_duplicate_parts", "coat_outer_and_lining", "calf_and_ankle_shape", "correct_direction", "visible_muzzle", "no_chroma_or_alpha_holes"],
+  "build_review_checks": ["source_and_identity_scope", "imagegen_art_preservation", "builder_dependency_closure", "licensed_readonly_inputs", "anatomical_mesh_and_semantic_uv", "bounded_project_local_execution"],
+  "build_review_roles": ["implementation", "Ponytail FULL"],
+  "independent_review_roles": ["visual", "Ponytail FULL"],
+  "diagnostic_root": "artifacts/quarantine/generation_diagnostics"
+}

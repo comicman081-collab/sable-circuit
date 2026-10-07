@@ -1,0 +1,29 @@
+{
+  "checks": 5,
+  "escape_margin_s": 0.25,
+  "failures": [
+    "MIS_CH01_09 (BOSS_SITE7_ARCHIVE_01): safe floor within 180 px, reachable in time, wherever the target stands on the room floor: 1 of 3156 attacks fail, e.g. phase 3 attack 2, target at (-9250, 4521), 458 px from the boss (nearest clear floor 120 px)"
+  ],
+  "gap_limit_px": 180,
+  "grid_px": 30.0,
+  "rooms": [
+    {
+      "attacks_evaluated": 3156,
+      "boss": "BOSS_SITE7_ARCHIVE_01",
+      "cover_obstacles": 0,
+      "failing": 1,
+      "failing_examples": [
+        "phase 3 attack 2, target at (-9250, 4521), 458 px from the boss (nearest clear floor 120 px)"
+      ],
+      "mission": "MIS_CH01_09",
+      "nearest_clear_floor_worst_at": "phase 3 attack 2, target at (-9250, 4521), 458 px from the boss",
+      "nearest_clear_floor_worst_px": 120,
+      "spots": 526,
+      "tightest_escape_at": "phase 3 attack 2, target at (-9250, 4521), 458 px from the boss (leave 120 px in 0.87 s of 1.00 s)",
+      "tightest_escape_margin_s": 0.13
+    }
+  ],
+  "slowest_walk_px_per_s": 138.0,
+  "status": "FAIL",
+  "visual_approval": false
+}

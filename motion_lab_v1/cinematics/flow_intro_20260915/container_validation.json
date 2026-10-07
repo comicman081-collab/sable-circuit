@@ -1,0 +1,380 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-14T15:24:14.130834+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\cinematics\\flow_intro_20260915\\delivery_1080p\\01_outer_gate_1080p_SILENT.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 24.000000000000004,
+      "frames": 240,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 60,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 120,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 180,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 239,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 11021508,
+      "sha256": "51c8c5dd8ea84be7a3dfbae2bfdb595a93204b6b0d1e6ce9dcfcc49b36b47aba"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\cinematics\\flow_intro_20260915\\delivery_1080p\\02_decon_corridor_1080p_SILENT.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 24.000000000000004,
+      "frames": 240,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 60,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 120,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 180,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 239,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 9782204,
+      "sha256": "96a405cd8060a9c3bb73e30e52a580d68cd013955fd31724457f7276a65a7eb4"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\cinematics\\flow_intro_20260915\\delivery_1080p\\03_archive_annex_1080p_SILENT.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 24.000000000000004,
+      "frames": 240,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 60,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 120,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 180,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 239,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 7961964,
+      "sha256": "79a48df8fa960ebbc1b17d520b3c41735c4b746ecf78cf85902284322c3e68bf"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\cinematics\\flow_intro_20260915\\delivery_1080p\\04_containment_junction_1080p_SILENT.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 24.000000000000004,
+      "frames": 240,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 60,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 120,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 180,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 239,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 6466580,
+      "sha256": "ccf20aa54dc3a60563d05237500e0cd8315e28fe024f201e66624542a8d4ae21"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\cinematics\\flow_intro_20260915\\delivery_1080p\\05_core_c_1080p_SILENT.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 24.000000000000004,
+      "frames": 240,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 60,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 120,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 180,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 239,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 9016493,
+      "sha256": "d40e3e9d0c048aec29e3b786ec3a6f1379332a38f01167b131e8cb31213e6cc0"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\cinematics\\flow_intro_20260915\\delivery_1080p\\06_emergency_lift_1080p_SILENT.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 24.000000000000004,
+      "frames": 240,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 60,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 120,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 180,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 239,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 8018629,
+      "sha256": "e78f15acb07ff4c45b46bc70a5951d4f77fd0cf885127bde859c8ab1580a174a"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\cinematics\\flow_intro_20260915\\delivery_1080p\\SABLE_CIRCUIT_INTRO_60s_1080p_SILENT.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 24.000000000000004,
+      "frames": 1440,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 360,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 720,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 1080,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 1439,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 52352038,
+      "sha256": "e58c72b8591b3ea7f28f99c2e799f9a23f0c91a939e65ee26dc17e977923faa1"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\cinematics\\flow_intro_20260915\\review\\01_outer_gate_samples.jpg",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 436273,
+      "sha256": "d332a6cdf84718309855f5295bd88189f45775e489a33c4565cb62744ae9a7b8"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\cinematics\\flow_intro_20260915\\review\\02_decon_corridor_samples.jpg",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 403022,
+      "sha256": "3e1ad2adb8a22219ef0d17d7f9bd94313460c2ba2458178dd8ab7e77eefa79db"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\cinematics\\flow_intro_20260915\\review\\03_archive_annex_samples.jpg",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 372587,
+      "sha256": "41820d3f2da644ed98b87399a62fb22657cf2ca2c3047e08a33d7041dfb5e0e4"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\cinematics\\flow_intro_20260915\\review\\04_containment_junction_samples.jpg",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 307583,
+      "sha256": "ba33bf52d546afbd50d4f08a6ee737029fd505eb4ab48660e48c9c2b284cf02b"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\cinematics\\flow_intro_20260915\\review\\05_core_c_samples.jpg",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 363819,
+      "sha256": "7869a5d71c54a030d7e88662b088be36c81ac1477a3b1bea867031e46c21710d"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\cinematics\\flow_intro_20260915\\review\\06_emergency_lift_samples.jpg",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 403140,
+      "sha256": "774c771d68a132c4888e8b938ad6969bd8cab6ae5b65e70e9c706026d2a62f4d"
+    }
+  ]
+}

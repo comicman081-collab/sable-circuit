@@ -1,0 +1,30 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS: M10 persistence seed run commits
+PASS: M10 persistence analyzes SECURITY
+PASS: M10 persistence analyzes ABERRANT
+PASS: M10 persistence analyzes ANCHOR
+PASS: M10 persistence equips ASTER
+PASS: M10 persistence equips ROOK
+PASS: M10 persistence equips MICA
+PASS: campaign schema remains compatible with M10 persistence fields
+PASS: research inventory survives CampaignProgression recreation
+PASS: salvage inventory survives CampaignProgression recreation
+PASS: signal inventory survives CampaignProgression recreation
+PASS: intel sample inventory survives CampaignProgression recreation
+PASS: analysis completion survives CampaignProgression recreation
+PASS: module unlocks survive CampaignProgression recreation
+PASS: weakness knowledge survives CampaignProgression recreation
+PASS: three-operator loadout survives CampaignProgression recreation
+PASS: persisted run-ID ledger still blocks duplicate rewards after recreation
+PASS: legacy campaign inventory migrates without reset
+PASS: legacy facility levels migrate without reset
+PASS: legacy save initializes M10 intel inventory safely
+PASS: legacy save initializes analysis ledger empty
+PASS: legacy save initializes module unlocks empty
+PASS: legacy save initializes all operator module loadouts empty
+PASS: legacy committed-run ledger still blocks duplicate rewards after migration
+PASS: valid unlocked module survives save sanitation
+PASS: cross-operator module assignment is removed on load
+PASS: locked module assignment is removed on load
+M10_PERSISTENCE_SMOKE: PASS

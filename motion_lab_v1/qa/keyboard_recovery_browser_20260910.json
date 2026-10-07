@@ -1,0 +1,1663 @@
+{
+  "recordedAt": "2026-09-09T15:17:03.935Z",
+  "scope": "Recovered MICA standalone keyboard integration; no new art or motion authoring",
+  "url": "http://127.0.0.1:14821/standalone.html",
+  "htmlSha256": "1a1cc0996df17832d5b75fdcc8ef8582402d2ad1ab6deeb4a98db87b917a9444",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "nodeTests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "trustedKeyChords": [
+    {
+      "chord": "w+a",
+      "events": [
+        {
+          "code": "KeyW",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": -1
+          },
+          "key": "w",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyA",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": -1,
+            "y": -1
+          },
+          "key": "a",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyA",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": -1
+          },
+          "key": "a",
+          "trusted": true,
+          "type": "keyup"
+        },
+        {
+          "code": "KeyW",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 0
+          },
+          "key": "w",
+          "trusted": true,
+          "type": "keyup"
+        }
+      ],
+      "input": {
+        "fire": false,
+        "reload": false,
+        "run": false,
+        "x": 0,
+        "y": 0
+      },
+      "pass": true
+    },
+    {
+      "chord": "a+w",
+      "events": [
+        {
+          "code": "KeyA",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": -1,
+            "y": 0
+          },
+          "key": "a",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyW",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": -1,
+            "y": -1
+          },
+          "key": "w",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyW",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": -1,
+            "y": 0
+          },
+          "key": "w",
+          "trusted": true,
+          "type": "keyup"
+        },
+        {
+          "code": "KeyA",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 0
+          },
+          "key": "a",
+          "trusted": true,
+          "type": "keyup"
+        }
+      ],
+      "input": {
+        "fire": false,
+        "reload": false,
+        "run": false,
+        "x": 0,
+        "y": 0
+      },
+      "pass": true
+    },
+    {
+      "chord": "w+d",
+      "events": [
+        {
+          "code": "KeyW",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": -1
+          },
+          "key": "w",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyD",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 1,
+            "y": -1
+          },
+          "key": "d",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyD",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": -1
+          },
+          "key": "d",
+          "trusted": true,
+          "type": "keyup"
+        },
+        {
+          "code": "KeyW",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 0
+          },
+          "key": "w",
+          "trusted": true,
+          "type": "keyup"
+        }
+      ],
+      "input": {
+        "fire": false,
+        "reload": false,
+        "run": false,
+        "x": 0,
+        "y": 0
+      },
+      "pass": true
+    },
+    {
+      "chord": "d+w",
+      "events": [
+        {
+          "code": "KeyD",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 1,
+            "y": 0
+          },
+          "key": "d",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyW",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 1,
+            "y": -1
+          },
+          "key": "w",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyW",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 1,
+            "y": 0
+          },
+          "key": "w",
+          "trusted": true,
+          "type": "keyup"
+        },
+        {
+          "code": "KeyD",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 0
+          },
+          "key": "d",
+          "trusted": true,
+          "type": "keyup"
+        }
+      ],
+      "input": {
+        "fire": false,
+        "reload": false,
+        "run": false,
+        "x": 0,
+        "y": 0
+      },
+      "pass": true
+    },
+    {
+      "chord": "s+a",
+      "events": [
+        {
+          "code": "KeyS",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 1
+          },
+          "key": "s",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyA",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": -1,
+            "y": 1
+          },
+          "key": "a",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyA",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 1
+          },
+          "key": "a",
+          "trusted": true,
+          "type": "keyup"
+        },
+        {
+          "code": "KeyS",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 0
+          },
+          "key": "s",
+          "trusted": true,
+          "type": "keyup"
+        }
+      ],
+      "input": {
+        "fire": false,
+        "reload": false,
+        "run": false,
+        "x": 0,
+        "y": 0
+      },
+      "pass": true
+    },
+    {
+      "chord": "a+s",
+      "events": [
+        {
+          "code": "KeyA",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": -1,
+            "y": 0
+          },
+          "key": "a",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyS",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": -1,
+            "y": 1
+          },
+          "key": "s",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyS",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": -1,
+            "y": 0
+          },
+          "key": "s",
+          "trusted": true,
+          "type": "keyup"
+        },
+        {
+          "code": "KeyA",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 0
+          },
+          "key": "a",
+          "trusted": true,
+          "type": "keyup"
+        }
+      ],
+      "input": {
+        "fire": false,
+        "reload": false,
+        "run": false,
+        "x": 0,
+        "y": 0
+      },
+      "pass": true
+    },
+    {
+      "chord": "s+d",
+      "events": [
+        {
+          "code": "KeyS",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 1
+          },
+          "key": "s",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyD",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 1,
+            "y": 1
+          },
+          "key": "d",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyD",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 1
+          },
+          "key": "d",
+          "trusted": true,
+          "type": "keyup"
+        },
+        {
+          "code": "KeyS",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 0
+          },
+          "key": "s",
+          "trusted": true,
+          "type": "keyup"
+        }
+      ],
+      "input": {
+        "fire": false,
+        "reload": false,
+        "run": false,
+        "x": 0,
+        "y": 0
+      },
+      "pass": true
+    },
+    {
+      "chord": "d+s",
+      "events": [
+        {
+          "code": "KeyD",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 1,
+            "y": 0
+          },
+          "key": "d",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyS",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 1,
+            "y": 1
+          },
+          "key": "s",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "KeyS",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 1,
+            "y": 0
+          },
+          "key": "s",
+          "trusted": true,
+          "type": "keyup"
+        },
+        {
+          "code": "KeyD",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 0
+          },
+          "key": "d",
+          "trusted": true,
+          "type": "keyup"
+        }
+      ],
+      "input": {
+        "fire": false,
+        "reload": false,
+        "run": false,
+        "x": 0,
+        "y": 0
+      },
+      "pass": true
+    },
+    {
+      "chord": "Up+Left",
+      "events": [
+        {
+          "code": "ArrowUp",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": -1
+          },
+          "key": "ArrowUp",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "ArrowLeft",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": -1,
+            "y": -1
+          },
+          "key": "ArrowLeft",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "ArrowLeft",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": -1
+          },
+          "key": "ArrowLeft",
+          "trusted": true,
+          "type": "keyup"
+        },
+        {
+          "code": "ArrowUp",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 0
+          },
+          "key": "ArrowUp",
+          "trusted": true,
+          "type": "keyup"
+        }
+      ],
+      "input": {
+        "fire": false,
+        "reload": false,
+        "run": false,
+        "x": 0,
+        "y": 0
+      },
+      "pass": true
+    },
+    {
+      "chord": "Up+Right",
+      "events": [
+        {
+          "code": "ArrowUp",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": -1
+          },
+          "key": "ArrowUp",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "ArrowRight",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 1,
+            "y": -1
+          },
+          "key": "ArrowRight",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "ArrowRight",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": -1
+          },
+          "key": "ArrowRight",
+          "trusted": true,
+          "type": "keyup"
+        },
+        {
+          "code": "ArrowUp",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 0
+          },
+          "key": "ArrowUp",
+          "trusted": true,
+          "type": "keyup"
+        }
+      ],
+      "input": {
+        "fire": false,
+        "reload": false,
+        "run": false,
+        "x": 0,
+        "y": 0
+      },
+      "pass": true
+    },
+    {
+      "chord": "Down+Left",
+      "events": [
+        {
+          "code": "ArrowDown",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 1
+          },
+          "key": "ArrowDown",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "ArrowLeft",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": -1,
+            "y": 1
+          },
+          "key": "ArrowLeft",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "ArrowLeft",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 1
+          },
+          "key": "ArrowLeft",
+          "trusted": true,
+          "type": "keyup"
+        },
+        {
+          "code": "ArrowDown",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 0
+          },
+          "key": "ArrowDown",
+          "trusted": true,
+          "type": "keyup"
+        }
+      ],
+      "input": {
+        "fire": false,
+        "reload": false,
+        "run": false,
+        "x": 0,
+        "y": 0
+      },
+      "pass": true
+    },
+    {
+      "chord": "Down+Right",
+      "events": [
+        {
+          "code": "ArrowDown",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 1
+          },
+          "key": "ArrowDown",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "ArrowRight",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 1,
+            "y": 1
+          },
+          "key": "ArrowRight",
+          "trusted": true,
+          "type": "keydown"
+        },
+        {
+          "code": "ArrowRight",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 1
+          },
+          "key": "ArrowRight",
+          "trusted": true,
+          "type": "keyup"
+        },
+        {
+          "code": "ArrowDown",
+          "input": {
+            "fire": false,
+            "reload": false,
+            "run": false,
+            "x": 0,
+            "y": 0
+          },
+          "key": "ArrowDown",
+          "trusted": true,
+          "type": "keyup"
+        }
+      ],
+      "input": {
+        "fire": false,
+        "reload": false,
+        "run": false,
+        "x": 0,
+        "y": 0
+      },
+      "pass": true
+    }
+  ],
+  "initialShortObservation": {
+    "sampleMs": 220,
+    "result": {
+      "done": true,
+      "results": [
+        {
+          "expected": "NW",
+          "codes": [
+            "KeyW",
+            "KeyA"
+          ],
+          "moving": {
+            "direction": "NW",
+            "position": [
+              -0.1743208100741253,
+              -0.1743208100741253
+            ],
+            "phase": 0.15407928363168277,
+            "frames": [
+              0
+            ],
+            "input": {
+              "x": -1,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "N",
+            "position": [
+              -0.2176354347584295,
+              -0.32419674987931685
+            ],
+            "phase": 0.2532849482411013,
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "x": 0,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": false
+        },
+        {
+          "expected": "NW",
+          "codes": [
+            "KeyA",
+            "KeyW"
+          ],
+          "moving": {
+            "direction": "NW",
+            "position": [
+              -0.1743208100741253,
+              -0.1743208100741253
+            ],
+            "phase": 0.15407928363168277,
+            "frames": [
+              0
+            ],
+            "input": {
+              "x": -1,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "W",
+            "position": [
+              -0.32419674987931685,
+              -0.2176354347584295
+            ],
+            "phase": 0.2532849482411013,
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "x": -1,
+              "y": 0,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": false
+        },
+        {
+          "expected": "NE",
+          "codes": [
+            "KeyW",
+            "KeyD"
+          ],
+          "moving": {
+            "direction": "NE",
+            "position": [
+              0.16648514786892424,
+              -0.16648514786892424
+            ],
+            "phase": 0.14715347128120176,
+            "frames": [
+              0
+            ],
+            "input": {
+              "x": 1,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "N",
+            "position": [
+              0.21040214036947683,
+              -0.3271928785158583
+            ],
+            "phase": 0.2531242850490235,
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "x": 0,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": false
+        },
+        {
+          "expected": "NE",
+          "codes": [
+            "KeyD",
+            "KeyW"
+          ],
+          "moving": {
+            "direction": "NE",
+            "position": [
+              0.16648514786892424,
+              -0.16648514786892424
+            ],
+            "phase": 0.14715347128120176,
+            "frames": [
+              0
+            ],
+            "input": {
+              "x": 1,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "E",
+            "position": [
+              0.3271928785158583,
+              -0.21040214036947683
+            ],
+            "phase": 0.2531242850490235,
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "x": 1,
+              "y": 0,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": false
+        },
+        {
+          "expected": "SW",
+          "codes": [
+            "KeyS",
+            "KeyA"
+          ],
+          "moving": {
+            "direction": "SW",
+            "position": [
+              -0.1743208100741253,
+              0.1743208100741253
+            ],
+            "phase": 0.15407928363168277,
+            "frames": [
+              0
+            ],
+            "input": {
+              "x": -1,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "S",
+            "position": [
+              -0.21834626999635254,
+              0.335137008142734
+            ],
+            "phase": 0.26013702757895507,
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "x": 0,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": false
+        },
+        {
+          "expected": "SW",
+          "codes": [
+            "KeyA",
+            "KeyS"
+          ],
+          "moving": {
+            "direction": "SW",
+            "position": [
+              -0.1743208100741253,
+              0.1743208100741253
+            ],
+            "phase": 0.15407928363168277,
+            "frames": [
+              0
+            ],
+            "input": {
+              "x": -1,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "W",
+            "position": [
+              -0.32419674987931685,
+              0.2176354347584295
+            ],
+            "phase": 0.2532849482411013,
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "x": -1,
+              "y": 0,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": false
+        },
+        {
+          "expected": "SE",
+          "codes": [
+            "KeyS",
+            "KeyD"
+          ],
+          "moving": {
+            "direction": "SE",
+            "position": [
+              0.1743208100741253,
+              0.1743208100741253
+            ],
+            "phase": 0.15407928363168277,
+            "frames": [
+              0
+            ],
+            "input": {
+              "x": 1,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "S",
+            "position": [
+              0.2176354347584295,
+              0.32419674987931685
+            ],
+            "phase": 0.2532849482411013,
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "x": 0,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": false
+        },
+        {
+          "expected": "SE",
+          "codes": [
+            "KeyD",
+            "KeyS"
+          ],
+          "moving": {
+            "direction": "SE",
+            "position": [
+              0.16648514786892424,
+              0.16648514786892424
+            ],
+            "phase": 0.14715347128120176,
+            "frames": [
+              0
+            ],
+            "input": {
+              "x": 1,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "E",
+            "position": [
+              0.3271928785158583,
+              0.21040214036947683
+            ],
+            "phase": 0.2531242850490235,
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "x": 1,
+              "y": 0,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": false
+        },
+        {
+          "expected": "NW",
+          "codes": [
+            "ArrowUp",
+            "ArrowLeft"
+          ],
+          "moving": {
+            "direction": "NW",
+            "position": [
+              -0.16648514786892424,
+              -0.16648514786892424
+            ],
+            "phase": 0.14715347128120176,
+            "frames": [
+              0
+            ],
+            "input": {
+              "x": -1,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "N",
+            "position": [
+              -0.21040214036947683,
+              -0.3271928785158583
+            ],
+            "phase": 0.2531242850490235,
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "x": 0,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": false
+        },
+        {
+          "expected": "NE",
+          "codes": [
+            "ArrowUp",
+            "ArrowRight"
+          ],
+          "moving": {
+            "direction": "NE",
+            "position": [
+              0.1743208100741253,
+              -0.1743208100741253
+            ],
+            "phase": 0.15407928363168277,
+            "frames": [
+              0
+            ],
+            "input": {
+              "x": 1,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "N",
+            "position": [
+              0.21834626999635254,
+              -0.335137008142734
+            ],
+            "phase": 0.26013702757895507,
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "x": 0,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": false
+        },
+        {
+          "expected": "SW",
+          "codes": [
+            "ArrowDown",
+            "ArrowLeft"
+          ],
+          "moving": {
+            "direction": "SW",
+            "position": [
+              -0.1743208100741253,
+              0.1743208100741253
+            ],
+            "phase": 0.15407928363168277,
+            "frames": [
+              0
+            ],
+            "input": {
+              "x": -1,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "S",
+            "position": [
+              -0.2176354347584295,
+              0.32419674987931685
+            ],
+            "phase": 0.2532849482411013,
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "x": 0,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": false
+        },
+        {
+          "expected": "SE",
+          "codes": [
+            "ArrowDown",
+            "ArrowRight"
+          ],
+          "moving": {
+            "direction": "SE",
+            "position": [
+              0.1743208100741253,
+              0.1743208100741253
+            ],
+            "phase": 0.15407928363168277,
+            "frames": [
+              0
+            ],
+            "input": {
+              "x": 1,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "S",
+            "position": [
+              0.2176354347584295,
+              0.32419674987931685
+            ],
+            "phase": 0.2532849482411013,
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "x": 0,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": false
+        }
+      ]
+    },
+    "interpretation": "Direction, position signs and key releases were correct; animation criterion was unmet because the observation ended before the first 1/6-cycle frame boundary."
+  },
+  "finalRuntimeObservation": {
+    "sampleMs": 750,
+    "inputMethod": "Synthetic KeyboardEvent objects with Korean key values; live requestAnimationFrame simulation and rendering",
+    "result": {
+      "done": true,
+      "results": [
+        {
+          "expected": "NW",
+          "codes": [
+            "KeyW",
+            "KeyA"
+          ],
+          "moving": {
+            "direction": "NW",
+            "position": [
+              -0.5099091336944537,
+              -0.6747456926752716
+            ],
+            "phase": 0.5532453929625891,
+            "frames": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "input": {
+              "x": -1,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "N",
+            "position": [
+              -0.5099091336944537,
+              -0.8362320757714242
+            ],
+            "phase": 0.6541743823976848,
+            "frames": [
+              3
+            ],
+            "input": {
+              "x": 0,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": true
+        },
+        {
+          "expected": "NE",
+          "codes": [
+            "KeyW",
+            "KeyD"
+          ],
+          "moving": {
+            "direction": "NE",
+            "position": [
+              0.6827006358843214,
+              -0.6827006358843214
+            ],
+            "phase": 0.6034278114427145,
+            "frames": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "input": {
+              "x": 1,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "N",
+            "position": [
+              0.7266746320139957,
+              -0.8332359471348827
+            ],
+            "phase": 0.7031637071796886,
+            "frames": [
+              3,
+              4
+            ],
+            "input": {
+              "x": 0,
+              "y": -1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": true
+        },
+        {
+          "expected": "SW",
+          "codes": [
+            "KeyS",
+            "KeyA"
+          ],
+          "moving": {
+            "direction": "SW",
+            "position": [
+              -0.6747456926752716,
+              0.6747456926752716
+            ],
+            "phase": 0.5963965685838734,
+            "frames": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "input": {
+              "x": -1,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "S",
+            "position": [
+              -0.719441337625043,
+              0.8362320757714242
+            ],
+            "phase": 0.7029917280187936,
+            "frames": [
+              3,
+              4
+            ],
+            "input": {
+              "x": 0,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": true
+        },
+        {
+          "expected": "SE",
+          "codes": [
+            "KeyS",
+            "KeyD"
+          ],
+          "moving": {
+            "direction": "SE",
+            "position": [
+              0.6747456926752716,
+              0.6747456926752716
+            ],
+            "phase": 0.5963965685838734,
+            "frames": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "input": {
+              "x": 1,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "single": {
+            "direction": "S",
+            "position": [
+              0.719441337625043,
+              0.8362320757714242
+            ],
+            "phase": 0.7029917280187936,
+            "frames": [
+              3,
+              4
+            ],
+            "input": {
+              "x": 0,
+              "y": 1,
+              "run": false,
+              "fire": false,
+              "reload": false
+            }
+          },
+          "stoppedInput": {
+            "x": 0,
+            "y": 0,
+            "run": false,
+            "fire": false,
+            "reload": false
+          },
+          "pass": true
+        }
+      ]
+    }
+  },
+  "newRuntimeCodeChanges": false,
+  "limitations": [
+    "No physical Windows IME switching was performed.",
+    "file:// navigation was blocked; identical packaged bytes were served from the project public folder.",
+    "This is keyboard integration evidence, not new visual-art or production-motion approval."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "tool": "image_gen.imagegen",
+  "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-582543ed-d874-4201-9b49-b491c9e98bc1.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c as C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c\\exec-582543ed-d874-4201-9b49-b491c9e98bc1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "qa/rook/luna_repair_20260913/edit_attempt_03/E0_edit_raw.png",
+  "projectCopySHA256": "b270124d0c20adbfe870fc2d79da99059acfbe6c93c1374f357ee89f8cc04468",
+  "inputReferences": [
+    "art/rook/identity_reference.png",
+    "reference/ual_guides/E_walk_pair0.png",
+    "art/rook/E_walk_0_master.png"
+  ],
+  "promptSummary": "Single-target E0 edit; identity is appearance/weapon authority, E-walk pair0 guide is pose/camera only, lower body requested as anatomical LEFT forward-left planted contact with RIGHT trailing; uniform RGB #00FF00 requested.",
+  "inspection": {
+    "nativeSize": [1024, 1536],
+    "mode": "RGB",
+    "bands": ["R", "G", "B"],
+    "cornerRGB": [[18, 241, 14], [18, 242, 14], [17, 242, 15], [19, 243, 15]],
+    "edgeUniqueColors": 163,
+    "greenExactFraction": 0.0,
+    "alphaUnique": null,
+    "backgroundDecision": "NOT_FLAT_UNIFORM_GREEN",
+    "roleDecision": "FAIL: E0 visibly repeats the screen-left trailing/rear and screen-right planted/forward arrangement also produced for E3; requested anatomical contact exchange is not demonstrated."
+  },
+  "decision": "FAIL_NOT_PROMOTABLE"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "S1_R02",
+  "attempt": 1,
+  "status": "FAIL_NOT_PROMOTABLE",
+  "raw": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt01/S1_R02_RAW_NATIVE.png",
+  "raw_sha256": "1dc5e656362777e7d015562c96e5c5d4f6984ce1c624cff328f7b618f3f18031",
+  "native_size": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "master": null,
+  "game": null,
+  "transforms": [],
+  "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt01/prompt.txt",
+  "prompt_sha256": "ebfbb8fa567133d4c5b5969501e91bedbda6cfa572f1e857e41e2f45074b4910",
+  "references": [
+    {
+      "path": "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png",
+      "sha256": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de"
+    },
+    {
+      "path": "qa/map_gait_20260925/MIS_CH01_01_start.png",
+      "sha256": "68b3cab67ce68b08409982bd2c043029db2d44bc8e2d35085accd6239085c02b"
+    },
+    {
+      "path": "assets/environments/site7/decon_corridor/02_DECON_CORRIDOR_CONTINUITY.png",
+      "sha256": "5799a43bb237c709003db6943f89adbe343f56dbb03638e32fcf6db7726d2600"
+    }
+  ],
+  "audit_main_floor": {
+    "asset": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt01/S1_R02_RAW_NATIVE.png",
+    "luma": 0.2540549039840698,
+    "p10": 0.1926039159297943,
+    "p90": 0.32807058095932007,
+    "saturation": 0.009732291749321005,
+    "hue": 172.40671042446002,
+    "axis": 27.578294061094912,
+    "problems": [
+      "floor luminance 0.254 outside (0.17, 0.24)"
+    ],
+    "attempt": 1,
+    "native_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "floor_trace_pixels": [
+      [
+        110,
+        470
+      ],
+      [
+        835,
+        137
+      ],
+      [
+        1567,
+        477
+      ],
+      [
+        839,
+        898
+      ]
+    ],
+    "scope": "Main floor only; door aprons and geometry reviewed separately; no runtime promotion"
+  },
+  "reasons": [
+    "Mean floor luma 0.254 exceeds 0.24.",
+    "Floor reaches inside the mandatory 8 percent canvas inset.",
+    "Door aprons are incomplete."
+  ],
+  "staging_copy_removed_after_sha256_verification": true
+}

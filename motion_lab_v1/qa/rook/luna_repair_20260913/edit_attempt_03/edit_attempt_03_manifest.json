@@ -1,0 +1,248 @@
+{
+  "schema": 1,
+  "character": "rook",
+  "direction": "E",
+  "action": "walk",
+  "attempt": "Luna single-target edit attempt 03",
+  "recordedDate": "2026-09-13",
+  "status": "FAIL_NOT_PROMOTABLE",
+  "approved": false,
+  "activeSourceSlotsChanged": false,
+  "generation": {
+    "provider": "Codex built-in ImageGen",
+    "nativeRequested": [1536, 1024],
+    "backgroundRequested": "flat_uniform_green #00FF00",
+    "inputOrder": [
+      "art/rook/identity_reference.png (appearance and weapon authority)",
+      "reference/ual_guides/E_walk_pairN.png (pose and camera only)",
+      "art/rook/E_walk_N_master.png (single-target edit target)"
+    ],
+    "successfulImageGenCalls": 6,
+    "retryPolicy": "Exactly one successful edit per phase; no repeated edit after a returned result; no pair regeneration in this attempt.",
+    "preflightErrors": [
+      {
+        "phase": "E2",
+        "envelope": "qa/rook/luna_repair_20260913/edit_attempt_03/E2_reference_guard_error.json",
+        "error": "The first E2 request was rejected before generation because of an operator typo in the UAL guide path. The path was corrected, then exactly one successful E2 ImageGen edit was executed.",
+        "generatedOutput": null
+      }
+    ],
+    "attempts": [
+      {
+        "phase": "E0",
+        "requestedRole": "left-contact: anatomical left forward-left planted, right trailing",
+        "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-582543ed-d874-4201-9b49-b491c9e98bc1.png",
+        "raw": "qa/rook/luna_repair_20260913/edit_attempt_03/E0_edit_raw.png",
+        "rawSHA256": "b270124d0c20adbfe870fc2d79da99059acfbe6c93c1374f357ee89f8cc04468",
+        "toolResponse": "qa/rook/luna_repair_20260913/edit_attempt_03/E0_edit_tool-response.json",
+        "toolResponseSHA256": "e48ab5dcd98ad27b40ba996b13c10ff198d79400d75fb05369e43c47bab866be",
+        "inputReferences": ["art/rook/identity_reference.png", "reference/ual_guides/E_walk_pair0.png", "art/rook/E_walk_0_master.png"],
+        "inspection": {
+          "size": [1024, 1536],
+          "mode": "RGB",
+          "bands": ["R", "G", "B"],
+          "cornerRGB": [[18, 241, 14], [18, 242, 14], [17, 242, 15], [19, 243, 15]],
+          "edgeUniqueColors": 163,
+          "greenExactFraction": 0.0,
+          "alphaUnique": null,
+          "background": "NOT_FLAT_UNIFORM_GREEN",
+          "role": "FAIL: same screen-left trailing/rear and screen-right planted/forward arrangement as E3; opposite contact role is not visually demonstrated"
+        },
+        "decision": "FAIL_NOT_PROMOTABLE"
+      },
+      {
+        "phase": "E3",
+        "requestedRole": "right-contact: anatomical right forward-right planted, left trailing",
+        "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-db9817e0-a344-4847-a68e-c77d86061e95.png",
+        "raw": "qa/rook/luna_repair_20260913/edit_attempt_03/E3_edit_raw.png",
+        "rawSHA256": "2eea12c84c002edb25f0ba338ff44b9d358a5f1395e0b5b357e2c607bad66991",
+        "toolResponse": "qa/rook/luna_repair_20260913/edit_attempt_03/E3_edit_tool-response.json",
+        "toolResponseSHA256": "3bbdb14f9cc40b8bca25371a1b27616fe197832116538e34372020440caebda7",
+        "inputReferences": ["art/rook/identity_reference.png", "reference/ual_guides/E_walk_pair0.png", "art/rook/E_walk_3_master.png"],
+        "inspection": {
+          "size": [1024, 1536],
+          "mode": "RGB",
+          "bands": ["R", "G", "B"],
+          "cornerRGB": [[19, 240, 15], [17, 240, 10], [20, 242, 16], [16, 243, 12]],
+          "edgeUniqueColors": 180,
+          "greenExactFraction": 0.0,
+          "alphaUnique": null,
+          "background": "NOT_FLAT_UNIFORM_GREEN",
+          "role": "FAIL: same screen-left trailing/rear and screen-right planted/forward arrangement as E0; opposite contact role is not visually demonstrated"
+        },
+        "decision": "FAIL_NOT_PROMOTABLE"
+      },
+      {
+        "phase": "E1",
+        "requestedRole": "right rear-swing with left support",
+        "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-4898c181-8508-4875-8ac0-b299979dfd43.png",
+        "raw": "qa/rook/luna_repair_20260913/edit_attempt_03/E1_edit_raw.png",
+        "rawSHA256": "de4bf7195a1d423e8b7f89b5e50d2fa575b8d46e39f2d14b6b4afb511aaf994c",
+        "toolResponse": "qa/rook/luna_repair_20260913/edit_attempt_03/E1_edit_tool-response.json",
+        "toolResponseSHA256": "f198ff4959c5f143b09f7dba56e344de8081f66ad362c7769c96a2049422abde",
+        "inputReferences": ["art/rook/identity_reference.png", "reference/ual_guides/E_walk_pair1.png", "art/rook/E_walk_1_master.png"],
+        "inspection": {
+          "size": [1100, 1430],
+          "mode": "RGB",
+          "bands": ["R", "G", "B"],
+          "cornerRGB": [[18, 240, 13], [16, 240, 10], [17, 242, 14], [19, 243, 15]],
+          "edgeUniqueColors": 155,
+          "greenExactFraction": 0.000006993006993006994,
+          "alphaUnique": null,
+          "background": "NOT_FLAT_UNIFORM_GREEN",
+          "role": "FAIL: rear-swing/support silhouette is not independently verified for anatomical right/left assignment and matches E4's screen-left lifted/rear, screen-right planted arrangement"
+        },
+        "decision": "FAIL_NOT_PROMOTABLE"
+      },
+      {
+        "phase": "E4",
+        "requestedRole": "left rear-swing with right support",
+        "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-f07e1e56-97f5-4873-9a01-7f1d23c79329.png",
+        "raw": "qa/rook/luna_repair_20260913/edit_attempt_03/E4_edit_raw.png",
+        "rawSHA256": "e428d07678b82cb49f72010b7db605523f5d5fac7b1dad773d551a06cd25f19c",
+        "toolResponse": "qa/rook/luna_repair_20260913/edit_attempt_03/E4_edit_tool-response.json",
+        "toolResponseSHA256": "365d3c6c830770c57428b9672f6c1462fed9617e90bf209826b02fdd2d1087dc",
+        "inputReferences": ["art/rook/identity_reference.png", "reference/ual_guides/E_walk_pair1.png", "art/rook/E_walk_4_master.png"],
+        "inspection": {
+          "size": [1069, 1471],
+          "mode": "RGB",
+          "bands": ["R", "G", "B"],
+          "cornerRGB": [[19, 240, 16], [18, 240, 11], [18, 241, 16], [20, 243, 17]],
+          "edgeUniqueColors": 174,
+          "greenExactFraction": 0.000001907791356306109,
+          "alphaUnique": null,
+          "background": "NOT_FLAT_UNIFORM_GREEN",
+          "role": "FAIL: same screen-left lifted/rear and screen-right planted arrangement as E1; opposite rear-swing/support role is not visually demonstrated"
+        },
+        "decision": "FAIL_NOT_PROMOTABLE"
+      },
+      {
+        "phase": "E2",
+        "requestedRole": "right passing-forward with left support",
+        "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-3f736f72-d302-4b54-9db5-56dacde7f9b1.png",
+        "raw": "qa/rook/luna_repair_20260913/edit_attempt_03/E2_edit_raw.png",
+        "rawSHA256": "c5314fb48167832f94fb37e25ea44e0c1296b54c392ad051b8e33b71dacaf802",
+        "toolResponse": "qa/rook/luna_repair_20260913/edit_attempt_03/E2_edit_tool-response.json",
+        "toolResponseSHA256": "29bdc843a590a450bb08fafa84e8cce5194c721bdaeb91520a17a5838a58d0ac",
+        "inputReferences": ["art/rook/identity_reference.png", "reference/ual_guides/E_walk_pair2.png", "art/rook/E_walk_2_master.png"],
+        "inspection": {
+          "size": [1024, 1536],
+          "mode": "RGB",
+          "bands": ["R", "G", "B"],
+          "cornerRGB": [[18, 240, 16], [17, 242, 14], [19, 241, 19], [16, 243, 14]],
+          "edgeUniqueColors": 165,
+          "greenExactFraction": 0.0,
+          "alphaUnique": null,
+          "background": "NOT_FLAT_UNIFORM_GREEN",
+          "role": "FAIL: one planted and one forward-raised leg are visible, but the arrangement matches E5's screen-left planted/screen-right forward-raised layout; opposite passing/support role is not demonstrated"
+        },
+        "decision": "FAIL_NOT_PROMOTABLE"
+      },
+      {
+        "phase": "E5",
+        "requestedRole": "left passing-forward with right support",
+        "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-56e7aa8f-087b-4261-bd78-5fce45bfa3a2.png",
+        "raw": "qa/rook/luna_repair_20260913/edit_attempt_03/E5_edit_raw.png",
+        "rawSHA256": "5afc5de053f5a781d6f9a40d86954442d27c19a88055b34348691ba074138397",
+        "toolResponse": "qa/rook/luna_repair_20260913/edit_attempt_03/E5_edit_tool-response.json",
+        "toolResponseSHA256": "1d5c29ffdba1a0d0e449520b84558ca6c6e73ba158ae313e637f007929ccbc35",
+        "inputReferences": ["art/rook/identity_reference.png", "reference/ual_guides/E_walk_pair2.png", "art/rook/E_walk_5_master.png"],
+        "inspection": {
+          "size": [1024, 1536],
+          "mode": "RGB",
+          "bands": ["R", "G", "B"],
+          "cornerRGB": [[20, 242, 14], [18, 241, 12], [20, 242, 18], [18, 244, 13]],
+          "edgeUniqueColors": 179,
+          "greenExactFraction": 0.0,
+          "alphaUnique": null,
+          "background": "NOT_FLAT_UNIFORM_GREEN",
+          "role": "FAIL: same screen-left planted and screen-right forward-raised arrangement as E2; opposite passing/support role is not visually demonstrated"
+        },
+        "decision": "FAIL_NOT_PROMOTABLE"
+      }
+    ]
+  },
+  "inspectionSummary": {
+    "allSixRGB": true,
+    "allSixHaveRealAlpha": false,
+    "allSixFlatUniformGreen": false,
+    "allSixWholeCharacterAndWeaponRecognizable": true,
+    "pair0OppositeContactRoles": false,
+    "pair1OppositeSwingSupportRoles": false,
+    "pair2OppositePassingSupportRoles": false,
+    "visualReview": "qa/rook/luna_repair_20260913/edit_attempt_03/E_cycle_edit_attempt_03_visual_review.md",
+    "visualReviewSHA256": "ef5a0528098574e44ecbad3ec613fb0f1722dc4537cca82a138e593faaa14924"
+  },
+  "stagingCleanup": {
+    "managedStagingDirectory": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c",
+    "removedAfterProjectCopyHashVerification": true,
+    "projectCopiesRetained": true,
+    "removedFiles": [
+      {"path": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-582543ed-d874-4201-9b49-b491c9e98bc1.png", "sha256": "b270124d0c20adbfe870fc2d79da99059acfbe6c93c1374f357ee89f8cc04468"},
+      {"path": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-db9817e0-a344-4847-a68e-c77d86061e95.png", "sha256": "2eea12c84c002edb25f0ba338ff44b9d358a5f1395e0b5b357e2c607bad66991"},
+      {"path": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-4898c181-8508-4875-8ac0-b299979dfd43.png", "sha256": "de4bf7195a1d423e8b7f89b5e50d2fa575b8d46e39f2d14b6b4afb511aaf994c"},
+      {"path": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-f07e1e56-97f5-4873-9a01-7f1d23c79329.png", "sha256": "e428d07678b82cb49f72010b7db605523f5d5fac7b1dad773d551a06cd25f19c"},
+      {"path": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-3f736f72-d302-4b54-9db5-56dacde7f9b1.png", "sha256": "c5314fb48167832f94fb37e25ea44e0c1296b54c392ad051b8e33b71dacaf802"},
+      {"path": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-56e7aa8f-087b-4261-bd78-5fce45bfa3a2.png", "sha256": "5afc5de053f5a781d6f9a40d86954442d27c19a88055b34348691ba074138397"}
+    ]
+  },
+  "intake": {
+    "normalizeImagegenChromaExecuted": false,
+    "intakeDerivedFrameExecuted": false,
+    "pairCanvasComposed": false,
+    "sourceReviewExecuted": false,
+    "prepareCycleExecuted": false,
+    "reason": "All three phase pairs failed the independent opposite-role visual gate. The raw outputs also failed the requested flat-green source condition and have no alpha. No candidate was eligible for normalization, intake, source review, or prepare-cycle."
+  },
+  "sourceInputs": {
+    "identity": {
+      "path": "art/rook/identity_reference.png",
+      "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+    },
+    "ualGuides": {
+      "pair0": {"path": "reference/ual_guides/E_walk_pair0.png", "sha256": "dbadc2d565e9f444cfdcf1187d3aea7d3797032e3500ef18f9c4752a601e52d3"},
+      "pair1": {"path": "reference/ual_guides/E_walk_pair1.png", "sha256": "a6e02de5c67227cf653b03a5452876a05d85167eb7fc62c5cc30a9ae3e8378ae"},
+      "pair2": {"path": "reference/ual_guides/E_walk_pair2.png", "sha256": "5df5bbdbe4956149f0fd8119acccc29019d479586401a617fc65a2c1912fcc79"}
+    },
+    "activeEWalkInputSHA256": "7ba380b55f9fd8717e9ca50ca705ca88dc8c7b62d49313c663bc9f3ce3175646",
+    "activeSlots": {
+      "E/walk/0": "6784b966c3f2eb44ecb45b964c38c0a31fe157ac7a44faccf9c7a0247347ee38",
+      "E/walk/1": "c405edc9234ed939b62eba17ef22cfa9eec2d38b57dd64eb6c5cf64c22c69057",
+      "E/walk/2": "2ed6088339b3bed4e24a8d03b15b3300816fffb7a524c7d6796acc6bea6c9534",
+      "E/walk/3": "475e0c25df1d7e0211dc0e10f2f7cc2907dfb801f9b68bfac911f13ce32bce61",
+      "E/walk/4": "8d1b3832b4acd59a21e172c2882cd3f260713bf68d97131888fc9e0a3124e843",
+      "E/walk/5": "4408d8ee52069bfa927e24004cfb45dd99f8b12b8f33f488db9274ba6ce165b4",
+      "E/idle/0": "25a7b794ff66598e6b09634ee8f3b198dbed706afee42a6f971ee5b97f6b88ee"
+    }
+  },
+  "workflow": {
+    "reviewCycleCommand": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe -B motion_lab_v1/character_workflow.py review-cycle --character rook --direction E --action walk --decision repair --evidence qa/rook/luna_repair_20260913/edit_attempt_03/E_cycle_edit_attempt_03_visual_review.md --notes 'Attempt 03 single-target E0/E3, E1/E4 and E2/E5 outputs did not visibly exchange their requested leg roles; all six returned RGB near-green gradients rather than flat #00FF00 and had no alpha. Preserve as quarantine-only evidence; no intake or source-slot change.' --reviewer 'Codex Luna E single-target edit attempt 03 visual review 2026-09-13'",
+    "reviewCycleResult": "repair",
+    "cycleReviewsSHA256": "6ab358d18f5f783e0e1b756300887149f9741e23679db3891aad7ea3195bf242",
+    "deliverySHA256": "fcff9d2ac82f51eb22f19a48ded2cdc76d82f565370341c9014e8f65044886c6",
+    "statusCommand": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe -B motion_lab_v1/character_workflow.py status --character rook",
+    "statusAfter": {
+      "ready": false,
+      "requiredFrames": 56,
+      "approvedFrames": 56,
+      "sourcesReady": true,
+      "activeBuildReady": false,
+      "EWalkState": "repair",
+      "runtimeRepairRequired": true,
+      "activeSourceSlotsChanged": false
+    }
+  },
+  "commands": [
+    "Codex built-in ImageGen single-target edit E0 with identity_reference.png, E_walk_pair0.png and E_walk_0_master.png",
+    "Codex built-in ImageGen single-target edit E3 with identity_reference.png, E_walk_pair0.png and E_walk_3_master.png",
+    "Codex built-in ImageGen single-target edit E1 with identity_reference.png, E_walk_pair1.png and E_walk_1_master.png",
+    "Codex built-in ImageGen single-target edit E4 with identity_reference.png, E_walk_pair1.png and E_walk_4_master.png",
+    "Codex built-in ImageGen preflight for E2 failed on a mistyped UAL guide path; no output was generated (see E2_reference_guard_error.json)",
+    "Codex built-in ImageGen single-target edit E2 with identity_reference.png, E_walk_pair2.png and E_walk_2_master.png",
+    "Codex built-in ImageGen single-target edit E5 with identity_reference.png, E_walk_pair2.png and E_walk_5_master.png",
+    "Copy each returned result into its project-local edit_attempt_03 raw path and inspect dimensions, mode, edge colors, exact green, near-green and alpha presence",
+    "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe -B motion_lab_v1/character_workflow.py review-cycle --character rook --direction E --action walk --decision repair --evidence qa/rook/luna_repair_20260913/edit_attempt_03/E_cycle_edit_attempt_03_visual_review.md --notes 'Attempt 03 single-target E0/E3, E1/E4 and E2/E5 outputs did not visibly exchange their requested leg roles; all six returned RGB near-green gradients rather than flat #00FF00 and had no alpha. Preserve as quarantine-only evidence; no intake or source-slot change.' --reviewer 'Codex Luna E single-target edit attempt 03 visual review 2026-09-13'",
+    "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe -B motion_lab_v1/character_workflow.py status --character rook"
+  ],
+  "nextRepair": "Use a generation/edit mechanism that makes semantic left/right leg attachment independently legible in each single-target frame, while preserving ROOK identity and weapon. Require a true flat #00FF00 master (or verified native alpha) and repeat visual pair review only in a later authorized batch. Do not use these outputs as runtime frames or normalize them as a substitute for the failed role gate."
+}

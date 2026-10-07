@@ -1,0 +1,368 @@
+[
+  {
+    "plate": "S1_R02",
+    "attempt": 4,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt04/S1_R02_RAW_NATIVE.png",
+    "raw_sha256": "eecb3d484e68eaac0208e28cde31376fa44d7d3a622f768622e41ef17994a4f3",
+    "native_size": [
+      1672,
+      941
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt04/prompt.txt",
+    "prompt_sha256": "6c627738fab1622c1b43917ef57648ba4c4282ed0d74bdbbed5edd17f01bb34d",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt03/S1_R02_RAW_NATIVE.png",
+        "sha256": "a1be9d8c154495695e9cd13743834732d4bd3190821bba2895653061b14dfc76"
+      }
+    ],
+    "reason": "Exterior aprons reached inside the 8% canvas margin."
+  },
+  {
+    "plate": "S1_R02",
+    "attempt": 5,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt05/S1_R02_RAW_NATIVE.png",
+    "raw_sha256": "ab2856cc5e493f13a813eaa5a84001116e72f23a989af4e6121d68a00f750594",
+    "native_size": [
+      1672,
+      941
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt05/prompt.txt",
+    "prompt_sha256": "92502cbfbf1db529b849846993020b8b08b4b17311d8f2b93f53f7d9ccdf6062",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt04/S1_R02_RAW_NATIVE.png",
+        "sha256": "eecb3d484e68eaac0208e28cde31376fa44d7d3a622f768622e41ef17994a4f3"
+      }
+    ],
+    "reason": "NE apron read as a raised narrow shelf instead of a coplanar floor."
+  },
+  {
+    "plate": "S1_R02",
+    "attempt": 6,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt06/S1_R02_RAW_NATIVE.png",
+    "raw_sha256": "ef2e8d2e09e271288f127b5acbe484fc104307cf163f03fa644f72166147b580",
+    "native_size": [
+      1602,
+      981
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt06/prompt.txt",
+    "prompt_sha256": "8a171901222213f2a150a36853867c494475c1e774dc2240bab4a87ab849d780",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/references/S1_R02_geometry.png",
+        "sha256": "dda150799fdfb55484994ccb328ff464a4168ae561c5fb436b99943f5e5a0779"
+      },
+      {
+        "archived_path": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt05/S1_R02_RAW_NATIVE.png",
+        "sha256": "ab2856cc5e493f13a813eaa5a84001116e72f23a989af4e6121d68a00f750594"
+      }
+    ],
+    "reason": "Apron framing and coplanarity remained incorrect."
+  },
+  {
+    "plate": "S1_R02",
+    "attempt": 7,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt07/S1_R02_RAW_NATIVE.png",
+    "raw_sha256": "2ef71f7a6899a776110ee66034abf334bbd4ce507962360b48ceee9ad1daf1d2",
+    "native_size": [
+      1672,
+      941
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt07/prompt.txt",
+    "prompt_sha256": "8b4233a4b6674884f314f5238950a8f26fbeadd98ab830b6eabad548642cc184",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/references/S1_R02_geometry.png",
+        "sha256": "dda150799fdfb55484994ccb328ff464a4168ae561c5fb436b99943f5e5a0779"
+      }
+    ],
+    "reason": "NE door frame was beside the apron, creating the wrong opening."
+  },
+  {
+    "plate": "S1_R02",
+    "attempt": 8,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt08/S1_R02_RAW_NATIVE.png",
+    "raw_sha256": "4cfecbf426566f101003d6a499877d37e541d95094a516ee9bf9cff25c7cdc3d",
+    "native_size": [
+      1672,
+      941
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt08/prompt.txt",
+    "prompt_sha256": "1757335f5e20538a051e915b8a79ed18c5e3c179d571d8cf5ffe8367ba098eba",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt07/S1_R02_RAW_NATIVE.png",
+        "sha256": "2ef71f7a6899a776110ee66034abf334bbd4ce507962360b48ceee9ad1daf1d2"
+      }
+    ],
+    "reason": "NE doorway still narrower than the SW opening."
+  },
+  {
+    "plate": "S1_R02",
+    "attempt": 9,
+    "tool": "built-in ImageGen",
+    "status": "SELECTED_STAGE0_REVIEW_CANDIDATE",
+    "raw": "art_src/environments/site7_v2/stage01/S1_R02/S1_R02_RAW_NATIVE.png",
+    "raw_sha256": "f27502ae170c7b04ff9ed91cc785231099676c5f68bb048c60f350bd4374e5ca",
+    "native_size": [
+      1672,
+      941
+    ],
+    "prompt_file": "art_src/environments/site7_v2/stage01/S1_R02/prompt.txt",
+    "prompt_sha256": "478fea29ce6a4c557352aa3acda86ce8ca742c46c005670ac7eed4c8ee29ff63",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/_quarantine/S1_R02/attempt08/S1_R02_RAW_NATIVE.png",
+        "sha256": "4cfecbf426566f101003d6a499877d37e541d95094a516ee9bf9cff25c7cdc3d"
+      }
+    ]
+  },
+  {
+    "plate": "S1_C01",
+    "attempt": 1,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_C01/attempt01/S1_C01_RAW_NATIVE.png",
+    "raw_sha256": "c897486f8c401ac51e2a31b09ce8b3cac30561c465d459d3f2cea0395e6070b6",
+    "native_size": [
+      1672,
+      941
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_C01/attempt01/prompt.txt",
+    "prompt_sha256": "16a60ba490b390e4138963407b490045e6b650b7a3c7b838b884e31619b5350c",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/stage01/S1_R02/S1_R02_RAW_NATIVE.png",
+        "sha256": "f27502ae170c7b04ff9ed91cc785231099676c5f68bb048c60f350bd4374e5ca"
+      }
+    ],
+    "reason": "Lower-left deck cross-section clipped by the bottom canvas edge."
+  },
+  {
+    "plate": "S1_C01",
+    "attempt": 2,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_C01/attempt02/S1_C01_RAW_NATIVE.png",
+    "raw_sha256": "38a6c1af9844673cd3826cd2688857ac70a9090bc045a56afc10463e7f0c1745",
+    "native_size": [
+      1448,
+      1086
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_C01/attempt02/prompt.txt",
+    "prompt_sha256": "3bb3efe214e4a4346deda0208bc032bc4ff547a8ac5d1be61f6c426b32391bf2",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/_quarantine/S1_C01/attempt01/S1_C01_RAW_NATIVE.png",
+        "sha256": "c897486f8c401ac51e2a31b09ce8b3cac30561c465d459d3f2cea0395e6070b6"
+      }
+    ],
+    "reason": "Lower-left floor clipped and clear width below 260 px."
+  },
+  {
+    "plate": "S1_C01",
+    "attempt": 3,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_C01/attempt03/S1_C01_RAW_NATIVE.png",
+    "raw_sha256": "31d7caf894eba9cc339c569afb2b484038c7ec67716e3ed48c3c64e8328e716d",
+    "native_size": [
+      1448,
+      1086
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_C01/attempt03/prompt.txt",
+    "prompt_sha256": "a17f7b4d2d18423a727375f6173d1c5a96db6ac7be96b940df4fe62f5cb186c2",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/references/S1_C01_geometry.png",
+        "sha256": "9a6d0bc5dfd087dba741c39104219a72df963b020fde355c5dfb08bce185b1e3"
+      },
+      {
+        "archived_path": "art_src/environments/site7_v2/_quarantine/S1_C01/attempt02/S1_C01_RAW_NATIVE.png",
+        "sha256": "38a6c1af9844673cd3826cd2688857ac70a9090bc045a56afc10463e7f0c1745"
+      }
+    ],
+    "reason": "Lower-left floor still clipped by the bottom edge."
+  },
+  {
+    "plate": "S1_C01",
+    "attempt": 4,
+    "tool": "built-in ImageGen",
+    "status": "SELECTED_STAGE0_REVIEW_CANDIDATE",
+    "raw": "art_src/environments/site7_v2/stage01/S1_C01/S1_C01_RAW_NATIVE.png",
+    "raw_sha256": "6caaf7fab42c6a589e4b36064710eab4c10e184bf14c72e854fe682f3272229b",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "prompt_file": "art_src/environments/site7_v2/stage01/S1_C01/prompt.txt",
+    "prompt_sha256": "3e378508e864cc83e6cae6ab51dc5a780095b2641a798e0d4092ce0011fbfd0b",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/references/S1_C01_geometry_v2.png",
+        "sha256": "7531ea5fd8159929e54917c961b4a5903da21b5bbfdcf558ac1c6576ff07b310"
+      }
+    ]
+  },
+  {
+    "plate": "S1_C06",
+    "attempt": 1,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt01/S1_C06_RAW_NATIVE.png",
+    "raw_sha256": "ed7558a7e53f2e57535b79f2b8178e4e19a93a987528073386424f59e2f212d2",
+    "native_size": [
+      1467,
+      1072
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt01/prompt.txt",
+    "prompt_sha256": "0dca4ab7671e787d4e6c91f8e9df70508452e98580bf697817b40e77f95c4563",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/references/S1_C06_geometry_v2.png",
+        "sha256": "ffc5f1fd6d6fcc9aed3ba456a404309a5840f8d8cb26a53bb7eea443c666f427"
+      },
+      {
+        "archived_path": "art_src/environments/site7_v2/stage01/S1_C01/S1_C01_RAW_NATIVE.png",
+        "sha256": "6caaf7fab42c6a589e4b36064710eab4c10e184bf14c72e854fe682f3272229b"
+      }
+    ],
+    "reason": "Right floor end clipped; insufficient clear width."
+  },
+  {
+    "plate": "S1_C06",
+    "attempt": 2,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt02/S1_C06_RAW_NATIVE.png",
+    "raw_sha256": "f843dedcb79df4c5e6e61441f87ab779167b07637f69adb4d3d0785a6f03268c",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt02/prompt.txt",
+    "prompt_sha256": "3b57e5edd24d49e0f7e8118acf9644d738fbb053853cf881877691ecc96e110d",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/references/S1_C06_geometry_v2.png",
+        "sha256": "ffc5f1fd6d6fcc9aed3ba456a404309a5840f8d8cb26a53bb7eea443c666f427"
+      }
+    ],
+    "reason": "Clear width below 260 px."
+  },
+  {
+    "plate": "S1_C06",
+    "attempt": 3,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt03/S1_C06_RAW_NATIVE.png",
+    "raw_sha256": "5597a7ffbeaa2f060ea3f8512289434c8e37795f0ee653a6ae0ec0491f8bc1b6",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt03/prompt.txt",
+    "prompt_sha256": "333d5349e08fc48956cf64c7ced9320e26db78a3fc08cd9c3322f60a3e8d1788",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt02/S1_C06_RAW_NATIVE.png",
+        "sha256": "f843dedcb79df4c5e6e61441f87ab779167b07637f69adb4d3d0785a6f03268c"
+      }
+    ],
+    "reason": "Right floor end clipped by the bottom edge."
+  },
+  {
+    "plate": "S1_C06",
+    "attempt": 4,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt04/S1_C06_RAW_NATIVE.png",
+    "raw_sha256": "617101a94e3921eed3706d4eddb584b52c0dd348685f9b920615c7c980ad97ac",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt04/prompt.txt",
+    "prompt_sha256": "480050fbaf43e96e071c9e31bae66eb5ea31c6498f37718c9429a600397aa0b6",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt03/S1_C06_RAW_NATIVE.png",
+        "sha256": "5597a7ffbeaa2f060ea3f8512289434c8e37795f0ee653a6ae0ec0491f8bc1b6"
+      }
+    ],
+    "reason": "Right end drawn as a terminating platform instead of a continuous connector."
+  },
+  {
+    "plate": "S1_C06",
+    "attempt": 5,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt05/S1_C06_RAW_NATIVE.png",
+    "raw_sha256": "7875dcf10f33400d6993c6ce55e153786f84c25f71e81d88c6e62c58df832a25",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt05/prompt.txt",
+    "prompt_sha256": "14707aa62674288a036e95871d6550dc80ebbc1e18d1fcc8a0e8a89c33ea6307",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt04/S1_C06_RAW_NATIVE.png",
+        "sha256": "617101a94e3921eed3706d4eddb584b52c0dd348685f9b920615c7c980ad97ac"
+      }
+    ],
+    "reason": "Floor width tapered from approximately 289 to 349 px; replaced by constant-width attempt07."
+  },
+  {
+    "plate": "S1_C06",
+    "attempt": 6,
+    "tool": "built-in ImageGen",
+    "status": "FAIL_NOT_PROMOTABLE",
+    "raw": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt06/S1_C06_RAW_NATIVE.png",
+    "raw_sha256": "2fd5dc95b85b2dd6a8f884a427ca322e42c962687dc9ca868067e8da37beced2",
+    "native_size": [
+      1402,
+      1122
+    ],
+    "prompt_file": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt06/prompt.txt",
+    "prompt_sha256": "01ec357fc995bca8503f195d8cbfb2c4697f678470efa4b57c8859ba7ee42395",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/_quarantine/S1_C06/attempt05/S1_C06_RAW_NATIVE.png",
+        "sha256": "7875dcf10f33400d6993c6ce55e153786f84c25f71e81d88c6e62c58df832a25"
+      }
+    ],
+    "reason": "Taper and incomplete right cut persisted."
+  },
+  {
+    "plate": "S1_C06",
+    "attempt": 7,
+    "tool": "built-in ImageGen",
+    "status": "SELECTED_STAGE0_REVIEW_CANDIDATE",
+    "raw": "art_src/environments/site7_v2/stage01/S1_C06/S1_C06_RAW_NATIVE.png",
+    "raw_sha256": "6d3f8eebc0d22e9d91f1498691f690e312b250f3409f5a23d72759e1be34cba5",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "prompt_file": "art_src/environments/site7_v2/stage01/S1_C06/prompt.txt",
+    "prompt_sha256": "886e0c23c932140c7069b92780c40755a8eda3d50df98cd42b74ee6029e4b7cd",
+    "references": [
+      {
+        "archived_path": "art_src/environments/site7_v2/references/S1_C06_square.png",
+        "sha256": "0abb1991b32c1ae701a0ffd97284f87e243c2e8633792b48b34078088d280c83"
+      }
+    ]
+  }
+]

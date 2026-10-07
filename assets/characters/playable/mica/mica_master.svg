@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+<defs>
+ <linearGradient id="coat" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#526268"/><stop offset=".52" stop-color="#303d42"/><stop offset="1" stop-color="#1b2529"/></linearGradient>
+ <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c9b49f"/><stop offset=".52" stop-color="#9b806d"/><stop offset="1" stop-color="#645348"/></linearGradient>
+ <radialGradient id="sensor"><stop stop-color="#effffb"/><stop offset=".38" stop-color="#68ddcf"/><stop offset="1" stop-color="#1a5b58"/></radialGradient>
+</defs>
+<ellipse cx="500" cy="1392" rx="250" ry="56" fill="#06100f" opacity=".50"/>
+<!-- long split coat tails -->
+<path d="M366 794 L474 824 L438 1268 L354 1370 L314 1316 L344 1110Z" fill="#27363a" stroke="#08100f" stroke-width="13"/>
+<path d="M510 824 L622 792 L690 1112 L704 1320 L646 1370 L564 1260Z" fill="#35474b" stroke="#08100f" stroke-width="13"/>
+<path d="M426 814 L500 836 L496 1288 L450 1344 L418 1266Z" fill="#65d9cc" opacity=".22"/>
+<path d="M357 1014 L431 1052" stroke="#62d9cc" stroke-width="8" opacity=".65"/>
+<!-- legs under coat -->
+<path d="M398 934 L476 934 L454 1268 L404 1374 L352 1350 L390 1244Z" fill="#202d31" stroke="#08100f" stroke-width="12"/>
+<path d="M514 934 L592 946 L624 1248 L680 1344 L630 1380 L558 1270 L526 1080Z" fill="#263438" stroke="#08100f" stroke-width="12"/>
+<path d="M348 1344 L414 1360 L392 1416 L302 1416 Q304 1374 348 1344" fill="#131c20" stroke="#08100f" stroke-width="12"/>
+<path d="M626 1360 L690 1334 Q734 1374 726 1416 L616 1416Z" fill="#131c20" stroke="#08100f" stroke-width="12"/>
+<!-- pelvis / torso -->
+<path d="M354 686 Q486 630 610 690 L636 942 Q506 996 350 936Z" fill="url(#coat)" stroke="#08100f" stroke-width="14"/>
+<path d="M366 548 Q486 496 600 552 L626 744 Q496 806 352 734Z" fill="#35464a" stroke="#08100f" stroke-width="14"/>
+<path d="M400 570 L558 540 L586 676 L410 704Z" fill="#e9f0ec" opacity=".10"/>
+<path d="M400 652 L562 628" stroke="#66dacc" stroke-width="9" opacity=".85"/>
+<!-- sensor fins unique -->
+<path d="M378 536 L314 430 L352 402 L422 520Z" fill="#5bd7ca" stroke="#08100f" stroke-width="10"/>
+<path d="M584 536 L650 424 L688 454 L624 550Z" fill="#79a99f" stroke="#08100f" stroke-width="10"/>
+<path d="M328 430 L350 416 L382 468" stroke="#edf8f5" stroke-width="9" fill="none"/>
+<path d="M652 438 L674 454 L640 500" stroke="#edf8f5" stroke-width="9" fill="none"/>
+<!-- arms -->
+<path d="M352 586 L286 648 L304 816 L358 804 L382 660Z" fill="#3a4b4f" stroke="#08100f" stroke-width="12"/>
+<path d="M304 790 L360 786 L402 864 L356 900Z" fill="#edd2bf" stroke="#08100f" stroke-width="10"/>
+<path d="M608 592 L684 644 L670 802 L612 792 L584 660Z" fill="#334348" stroke="#08100f" stroke-width="12"/>
+<path d="M610 780 L668 796 L720 842 L682 886 L610 838Z" fill="#edd2bf" stroke="#08100f" stroke-width="10"/>
+<!-- head -->
+<ellipse cx="488" cy="408" rx="116" ry="126" fill="#efd2bf" stroke="#08100f" stroke-width="13"/>
+<!-- ash brown rounded side braid hair -->
+<path d="M370 414 Q352 276 484 252 Q614 266 612 402 Q572 332 520 318 Q438 338 370 414Z" fill="url(#hair)" stroke="#08100f" stroke-width="12"/>
+<path d="M392 302 Q448 246 526 270 L470 430 L404 456Z" fill="#c6ad96"/>
+<path d="M576 350 C666 398 674 520 612 596 C588 626 568 654 572 706 C528 658 524 594 558 548 C594 500 602 440 576 350Z" fill="#765f50" stroke="#08100f" stroke-width="11"/>
+<circle cx="600" cy="616" r="38" fill="#a48973" stroke="#08100f" stroke-width="10"/>
+<circle cx="612" cy="688" r="30" fill="#766052" stroke="#08100f" stroke-width="9"/>
+<path d="M588 584 Q632 611 601 644 Q574 618 588 584Z" fill="#c5ab94"/>
+<path d="M598 650 Q632 674 610 701" stroke="#62d9cb" stroke-width="8" fill="none"/>
+<!-- eyes -->
+<path d="M420 424 Q448 402 472 428 Q448 444 420 424" fill="#315a58"/>
+<path d="M510 424 Q540 402 562 426 Q540 444 510 424" fill="#315a58"/>
+<circle cx="447" cy="425" r="5" fill="#70e4d7"/><circle cx="538" cy="424" r="5" fill="#70e4d7"/>
+<path d="M464 490 Q490 504 516 488" stroke="#ba766c" stroke-width="8" fill="none" stroke-linecap="round"/>
+<!-- circular emitter carbine -->
+<g transform="rotate(-3 650 790)">
+ <path d="M454 760 L780 750 L862 786 L804 834 L590 830 L544 884 L466 874 L500 824 L438 808Z" fill="#293c3f" stroke="#08100f" stroke-width="12"/>
+ <circle cx="746" cy="790" r="54" fill="url(#sensor)" stroke="#eaf7f3" stroke-width="10"/>
+ <circle cx="746" cy="790" r="24" fill="#153b38"/>
+ <path d="M770 756 L862 774 L894 804 L842 830 L770 824Z" fill="#61d8cb"/>
+ <path d="M548 820 L612 816 L596 894 L542 898Z" fill="#26373a"/>
+ <rect x="636" y="844" width="110" height="14" rx="7" fill="#79a99f" opacity=".85"/>
+ <path d="M505 784 L690 778" stroke="#cbd8d4" stroke-width="7"/>
+</g>
+<!-- scanner telemetry -->
+<circle cx="744" cy="790" r="92" fill="none" stroke="#68ddcf" stroke-width="8" opacity=".30" stroke-dasharray="18 20"/>
+</svg>

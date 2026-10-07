@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "operation": "edge-connected green matte normalization only; no source-art redraw",
+  "source_author": "built-in ImageGen",
+  "input": "motion_lab_v1/art/site7_enemies_raw/rifle_E3.png",
+  "input_sha256": "aa4e6b9ddc2d547b7f8304d35185d8dc4c32afe6f1def9ac7bb752537333b846",
+  "output": "motion_lab_v1/qa/stage1_enemies_20260913/normalized/rifle_E3.png",
+  "output_sha256": "3a0b16487aa4b7334f396598f230902529a38b880ddf43dca58272d5883299c8",
+  "mask": "motion_lab_v1/qa/stage1_enemies_20260913/normalized/rifle_E3.mask.png",
+  "mask_sha256": "9810de8eb0be871e271908490b1183a27583ef95c25ed499652d8203dfad342e",
+  "input_resolution": [
+    1024,
+    1536
+  ],
+  "edge_median_rgb": [
+    6,
+    248,
+    6
+  ],
+  "exact_green_rgb": [
+    0,
+    255,
+    0
+  ],
+  "edge_connected_background_coverage": 0.7044328053792318,
+  "subject_pixels_byte_exact": true,
+  "alpha_ready": true
+}

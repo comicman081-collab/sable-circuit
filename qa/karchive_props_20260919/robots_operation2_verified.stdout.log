@@ -1,0 +1,18 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+M7_RASTER_QUARANTINED identity=aster status=partial chunks=2 encoded=20000 present=15000 declared=94718
+FULL_OPERATION_TRACE {"ammo":24,"health":[96.0,138.0,112.0],"hostiles":[],"position":[410.0,390.0],"remaining":0,"step":0,"tick":0,"wave":0}
+FULL_OPERATION_TRACE {"ammo":24,"health":[96.0,138.0,112.0],"hostiles":[],"position":[329.0068359375,495.9140625],"remaining":0,"step":1,"tick":32,"wave":0}
+FULL_OPERATION_TRACE {"ammo":24,"health":[96.0,138.0,112.0],"hostiles":[{"hp":83.0,"id":"ENM_SITE7_BULWARK_01","position":"(920.2678, 157.3894)"}],"position":[716.744384765625,218.143371582031],"remaining":1,"step":1,"tick":600,"wave":0}
+FULL_OPERATION_TRACE {"ammo":0,"health":[96.0,138.0,112.0],"hostiles":[],"position":[738.591918945313,197.10758972168],"remaining":0,"step":2,"tick":880,"wave":0}
+FULL_OPERATION_TRACE {"ammo":24,"health":[96.0,138.0,112.0],"hostiles":[],"position":[1001.45147705078,726.096435546875],"remaining":0,"step":3,"tick":1024,"wave":0}
+FULL_OPERATION_TRACE {"ammo":24,"health":[96.0,138.0,112.0],"hostiles":[],"position":[1392.33740234375,554.313232421875],"remaining":0,"step":3,"tick":1200,"wave":0}
+FULL_OPERATION_TRACE {"ammo":0,"health":[66.0,138.0,112.0],"hostiles":[],"position":[1575.67517089844,268.057159423828],"remaining":0,"step":4,"tick":1712,"wave":0}
+FULL_OPERATION_TRACE {"ammo":18,"health":[66.0,138.0,112.0],"hostiles":[{"hp":609.0,"id":"BOSS_SITE7_ANCHOR_01","position":"(2034.08, 541.18)"}],"position":[1743.31762695313,585.041931152344],"remaining":1,"step":4,"tick":1800,"wave":0}
+FULL_OPERATION_TRACE {"ammo":9,"health":[0.0,138.0,112.0],"hostiles":[{"hp":226.0,"id":"BOSS_SITE7_ANCHOR_01","position":"(2034.08, 541.18)"}],"position":[1756.2373046875,684.451232910156],"remaining":1,"step":4,"tick":2400,"wave":0}
+FULL_OPERATION_TRACE {"ammo":4,"health":[33.6,138.0,112.0],"hostiles":[],"position":[1794.31005859375,466.38037109375],"remaining":0,"step":5,"tick":2672,"wave":0}
+SITE7_FULL_OPERATION_SMOKE: PASS
+WARNING: 16 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 8 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

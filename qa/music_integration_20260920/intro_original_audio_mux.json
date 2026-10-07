@@ -1,0 +1,65 @@
+{
+  "status": "PASS_ORIGINAL_VIDEO_AUDIO_BOUND",
+  "method": "Existing 1080p Theora video packets remuxed unchanged; six original AAC tracks encoded to Vorbis in timeline order.",
+  "source_video": {
+    "path": "assets/cinematics/sable_intro.ogv",
+    "sha256": "d384da8e0934d5a7a59458e11b55d7e617e570c04cb77f7ed41a06d02679b65c",
+    "packet_count": 1440,
+    "packet_payload_sha256": "3a354cfb6bfafb0049596d506dd928295bdbf399df2c404566558b96bb10f7b6"
+  },
+  "source_audio": [
+    {
+      "path": "motion_lab_v1/cinematics/flow_intro_20260915/source_720p/01_outer_gate.mp4",
+      "sha256": "649e0868eed17dfa21983818165f01ed82df6a002133f419520df49cd011e759",
+      "codec": "aac",
+      "duration_seconds": 10.005
+    },
+    {
+      "path": "motion_lab_v1/cinematics/flow_intro_20260915/source_720p/02_decon_corridor.mp4",
+      "sha256": "8c19d861eee6b42bcdaf72f5962c2276a5d89b8623c86d61b5fef357050cb7b6",
+      "codec": "aac",
+      "duration_seconds": 10.005
+    },
+    {
+      "path": "motion_lab_v1/cinematics/flow_intro_20260915/source_720p/03_archive_annex.mp4",
+      "sha256": "2ced43c6a4e8357a3ed1ef24e0700d8ed36d33eaf9ec187aa873bf662a4c4a97",
+      "codec": "aac",
+      "duration_seconds": 10.005
+    },
+    {
+      "path": "motion_lab_v1/cinematics/flow_intro_20260915/source_720p/04_containment_junction.mp4",
+      "sha256": "91e5b7eaf003b32be4ccf078e81ed6fb00267903d7c0726a0119c9d20762082b",
+      "codec": "aac",
+      "duration_seconds": 10.005
+    },
+    {
+      "path": "motion_lab_v1/cinematics/flow_intro_20260915/source_720p/05_core_c.mp4",
+      "sha256": "bc25d255856d0356ceeaa615f964aa4496a2c1772d5372a53454640fffd5951c",
+      "codec": "aac",
+      "duration_seconds": 10.005
+    },
+    {
+      "path": "motion_lab_v1/cinematics/flow_intro_20260915/source_720p/06_emergency_lift.mp4",
+      "sha256": "e245956200b4aac96036acfe1592f3aaefd714a220fc7ff9a480c51f60e033bb",
+      "codec": "aac",
+      "duration_seconds": 10.005
+    }
+  ],
+  "output": {
+    "path": "assets/cinematics/sable_intro_original_bgm.ogv",
+    "sha256": "c0225f8f9518a8101076bc16a259f5387faef2b66c0afe0779fd46bfcad37522",
+    "packet_count": 1440,
+    "packet_payload_sha256": "3a354cfb6bfafb0049596d506dd928295bdbf399df2c404566558b96bb10f7b6",
+    "video_codec": "theora",
+    "audio_codec": "vorbis",
+    "video_resolution": [
+      1920,
+      1080
+    ],
+    "video_frames": 1440,
+    "audio_samples": 5759616,
+    "audio_rms": 0.05839921533253564
+  },
+  "no_new_generation": true,
+  "no_visual_reencode": true
+}

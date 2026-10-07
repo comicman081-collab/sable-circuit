@@ -1,0 +1,674 @@
+{
+  "schema": 1,
+  "cues": [
+    {
+      "id": "aster_fire",
+      "label_ko": "ASTER · 선명한 카빈 단발",
+      "variants": [
+        "audio/wav/01_fire/SC_R01_aster_fire_v01.wav",
+        "audio/wav/01_fire/SC_R01_aster_fire_v02.wav",
+        "audio/wav/01_fire/SC_R01_aster_fire_v03.wav",
+        "audio/wav/01_fire/SC_R01_aster_fire_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -2,
+      "cooldown_ms_per_emitter": 45,
+      "voice_limit_per_emitter": 4,
+      "priority": 80,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "rook_fire",
+      "label_ko": "ROOK · 중량 소총 단발",
+      "variants": [
+        "audio/wav/01_fire/SC_R01_rook_fire_v01.wav",
+        "audio/wav/01_fire/SC_R01_rook_fire_v02.wav",
+        "audio/wav/01_fire/SC_R01_rook_fire_v03.wav",
+        "audio/wav/01_fire/SC_R01_rook_fire_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -3,
+      "cooldown_ms_per_emitter": 60,
+      "voice_limit_per_emitter": 4,
+      "priority": 78,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "mica_fire",
+      "label_ko": "MICA · 짧은 PDW 단발",
+      "variants": [
+        "audio/wav/01_fire/SC_R01_mica_fire_v01.wav",
+        "audio/wav/01_fire/SC_R01_mica_fire_v02.wav",
+        "audio/wav/01_fire/SC_R01_mica_fire_v03.wav",
+        "audio/wav/01_fire/SC_R01_mica_fire_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -3,
+      "cooldown_ms_per_emitter": 35,
+      "voice_limit_per_emitter": 4,
+      "priority": 76,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "enemy_fire",
+      "label_ko": "적 보병 · 건조한 소총 단발",
+      "variants": [
+        "audio/wav/01_fire/SC_R01_enemy_fire_v01.wav",
+        "audio/wav/01_fire/SC_R01_enemy_fire_v02.wav",
+        "audio/wav/01_fire/SC_R01_enemy_fire_v03.wav",
+        "audio/wav/01_fire/SC_R01_enemy_fire_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -5,
+      "cooldown_ms_per_emitter": 55,
+      "voice_limit_per_emitter": 6,
+      "priority": 55,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "turret_fire",
+      "label_ko": "고정 포탑 · 중구경 단발",
+      "variants": [
+        "audio/wav/01_fire/SC_R01_turret_fire_v01.wav",
+        "audio/wav/01_fire/SC_R01_turret_fire_v02.wav",
+        "audio/wav/01_fire/SC_R01_turret_fire_v03.wav",
+        "audio/wav/01_fire/SC_R01_turret_fire_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -4,
+      "cooldown_ms_per_emitter": 100,
+      "voice_limit_per_emitter": 3,
+      "priority": 60,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "aster_reload",
+      "label_ko": "ASTER · 탄창 교환과 약실",
+      "variants": [
+        "audio/wav/02_weapon/SC_R01_aster_reload_v01.wav",
+        "audio/wav/02_weapon/SC_R01_aster_reload_v02.wav",
+        "audio/wav/02_weapon/SC_R01_aster_reload_v03.wav",
+        "audio/wav/02_weapon/SC_R01_aster_reload_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": 0,
+      "cooldown_ms_per_emitter": 180,
+      "voice_limit_per_emitter": 1,
+      "priority": 65,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "rook_reload",
+      "label_ko": "ROOK · 무거운 탄창과 볼트",
+      "variants": [
+        "audio/wav/02_weapon/SC_R01_rook_reload_v01.wav",
+        "audio/wav/02_weapon/SC_R01_rook_reload_v02.wav",
+        "audio/wav/02_weapon/SC_R01_rook_reload_v03.wav",
+        "audio/wav/02_weapon/SC_R01_rook_reload_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": 0,
+      "cooldown_ms_per_emitter": 180,
+      "voice_limit_per_emitter": 1,
+      "priority": 65,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "mica_reload",
+      "label_ko": "MICA · 소형 탄창과 래치",
+      "variants": [
+        "audio/wav/02_weapon/SC_R01_mica_reload_v01.wav",
+        "audio/wav/02_weapon/SC_R01_mica_reload_v02.wav",
+        "audio/wav/02_weapon/SC_R01_mica_reload_v03.wav",
+        "audio/wav/02_weapon/SC_R01_mica_reload_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": 0,
+      "cooldown_ms_per_emitter": 180,
+      "voice_limit_per_emitter": 1,
+      "priority": 65,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "dry_fire",
+      "label_ko": "빈 탄창 · 노리쇠 클릭",
+      "variants": [
+        "audio/wav/02_weapon/SC_R01_dry_fire_v01.wav",
+        "audio/wav/02_weapon/SC_R01_dry_fire_v02.wav",
+        "audio/wav/02_weapon/SC_R01_dry_fire_v03.wav",
+        "audio/wav/02_weapon/SC_R01_dry_fire_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": 0,
+      "cooldown_ms_per_emitter": 100,
+      "voice_limit_per_emitter": 1,
+      "priority": 65,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "casing_drop",
+      "label_ko": "탄피 · 금속 바닥 두 번 튐",
+      "variants": [
+        "audio/wav/02_weapon/SC_R01_casing_drop_v01.wav",
+        "audio/wav/02_weapon/SC_R01_casing_drop_v02.wav",
+        "audio/wav/02_weapon/SC_R01_casing_drop_v03.wav",
+        "audio/wav/02_weapon/SC_R01_casing_drop_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -3,
+      "cooldown_ms_per_emitter": 80,
+      "voice_limit_per_emitter": 4,
+      "priority": 18,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "impact_steel_light",
+      "label_ko": "탄착 · 얇은 철판",
+      "variants": [
+        "audio/wav/03_impact/SC_R01_impact_steel_light_v01.wav",
+        "audio/wav/03_impact/SC_R01_impact_steel_light_v02.wav",
+        "audio/wav/03_impact/SC_R01_impact_steel_light_v03.wav",
+        "audio/wav/03_impact/SC_R01_impact_steel_light_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -2,
+      "cooldown_ms_per_emitter": 45,
+      "voice_limit_per_emitter": 6,
+      "priority": 48,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "impact_steel_heavy",
+      "label_ko": "탄착 · 두꺼운 장갑",
+      "variants": [
+        "audio/wav/03_impact/SC_R01_impact_steel_heavy_v01.wav",
+        "audio/wav/03_impact/SC_R01_impact_steel_heavy_v02.wav",
+        "audio/wav/03_impact/SC_R01_impact_steel_heavy_v03.wav",
+        "audio/wav/03_impact/SC_R01_impact_steel_heavy_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -2,
+      "cooldown_ms_per_emitter": 50,
+      "voice_limit_per_emitter": 6,
+      "priority": 52,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "impact_concrete",
+      "label_ko": "탄착 · 콘크리트와 작은 파편",
+      "variants": [
+        "audio/wav/03_impact/SC_R01_impact_concrete_v01.wav",
+        "audio/wav/03_impact/SC_R01_impact_concrete_v02.wav",
+        "audio/wav/03_impact/SC_R01_impact_concrete_v03.wav",
+        "audio/wav/03_impact/SC_R01_impact_concrete_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -2,
+      "cooldown_ms_per_emitter": 50,
+      "voice_limit_per_emitter": 5,
+      "priority": 44,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "impact_body",
+      "label_ko": "탄착 · 방탄복과 본체 둔탁음",
+      "variants": [
+        "audio/wav/03_impact/SC_R01_impact_body_v01.wav",
+        "audio/wav/03_impact/SC_R01_impact_body_v02.wav",
+        "audio/wav/03_impact/SC_R01_impact_body_v03.wav",
+        "audio/wav/03_impact/SC_R01_impact_body_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -1,
+      "cooldown_ms_per_emitter": 55,
+      "voice_limit_per_emitter": 4,
+      "priority": 57,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "melee_body",
+      "label_ko": "근접 타격 · 둔중한 몸체 충격",
+      "variants": [
+        "audio/wav/03_impact/SC_R01_melee_body_v01.wav",
+        "audio/wav/03_impact/SC_R01_melee_body_v02.wav",
+        "audio/wav/03_impact/SC_R01_melee_body_v03.wav",
+        "audio/wav/03_impact/SC_R01_melee_body_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -1,
+      "cooldown_ms_per_emitter": 90,
+      "voice_limit_per_emitter": 3,
+      "priority": 64,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "armor_break",
+      "label_ko": "장갑 파열 · 균열과 금속 파편",
+      "variants": [
+        "audio/wav/03_impact/SC_R01_armor_break_v01.wav",
+        "audio/wav/03_impact/SC_R01_armor_break_v02.wav",
+        "audio/wav/03_impact/SC_R01_armor_break_v03.wav",
+        "audio/wav/03_impact/SC_R01_armor_break_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -1,
+      "cooldown_ms_per_emitter": 120,
+      "voice_limit_per_emitter": 3,
+      "priority": 72,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "ricochet",
+      "label_ko": "도탄 · 짧은 비낌과 금속 회전",
+      "variants": [
+        "audio/wav/03_impact/SC_R01_ricochet_v01.wav",
+        "audio/wav/03_impact/SC_R01_ricochet_v02.wav",
+        "audio/wav/03_impact/SC_R01_ricochet_v03.wav",
+        "audio/wav/03_impact/SC_R01_ricochet_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -2,
+      "cooldown_ms_per_emitter": 100,
+      "voice_limit_per_emitter": 3,
+      "priority": 30,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "robot_hit",
+      "label_ko": "기계 피격 · 외장과 서보 걸림",
+      "variants": [
+        "audio/wav/03_impact/SC_R01_robot_hit_v01.wav",
+        "audio/wav/03_impact/SC_R01_robot_hit_v02.wav",
+        "audio/wav/03_impact/SC_R01_robot_hit_v03.wav",
+        "audio/wav/03_impact/SC_R01_robot_hit_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -2,
+      "cooldown_ms_per_emitter": 60,
+      "voice_limit_per_emitter": 5,
+      "priority": 50,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "aster_hurt",
+      "label_ko": "ASTER · 본체 피격과 천 마찰",
+      "variants": [
+        "audio/wav/04_player/SC_R01_aster_hurt_v01.wav",
+        "audio/wav/04_player/SC_R01_aster_hurt_v02.wav",
+        "audio/wav/04_player/SC_R01_aster_hurt_v03.wav",
+        "audio/wav/04_player/SC_R01_aster_hurt_v04.wav"
+      ],
+      "bus": "PlayerDamage",
+      "gain_db_start": 0,
+      "cooldown_ms_per_emitter": 110,
+      "voice_limit_per_emitter": 2,
+      "priority": 90,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "rook_hurt",
+      "label_ko": "ROOK · 중장갑 피격과 버클",
+      "variants": [
+        "audio/wav/04_player/SC_R01_rook_hurt_v01.wav",
+        "audio/wav/04_player/SC_R01_rook_hurt_v02.wav",
+        "audio/wav/04_player/SC_R01_rook_hurt_v03.wav",
+        "audio/wav/04_player/SC_R01_rook_hurt_v04.wav"
+      ],
+      "bus": "PlayerDamage",
+      "gain_db_start": 0,
+      "cooldown_ms_per_emitter": 110,
+      "voice_limit_per_emitter": 2,
+      "priority": 90,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "mica_hurt",
+      "label_ko": "MICA · 경장갑 피격과 장비 흔들림",
+      "variants": [
+        "audio/wav/04_player/SC_R01_mica_hurt_v01.wav",
+        "audio/wav/04_player/SC_R01_mica_hurt_v02.wav",
+        "audio/wav/04_player/SC_R01_mica_hurt_v03.wav",
+        "audio/wav/04_player/SC_R01_mica_hurt_v04.wav"
+      ],
+      "bus": "PlayerDamage",
+      "gain_db_start": 0,
+      "cooldown_ms_per_emitter": 110,
+      "voice_limit_per_emitter": 2,
+      "priority": 90,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "shield_hit",
+      "label_ko": "보호막 피격 · 건조한 압착과 장비 접촉",
+      "variants": [
+        "audio/wav/04_player/SC_R01_shield_hit_v01.wav",
+        "audio/wav/04_player/SC_R01_shield_hit_v02.wav",
+        "audio/wav/04_player/SC_R01_shield_hit_v03.wav",
+        "audio/wav/04_player/SC_R01_shield_hit_v04.wav"
+      ],
+      "bus": "PlayerDamage",
+      "gain_db_start": -1,
+      "cooldown_ms_per_emitter": 80,
+      "voice_limit_per_emitter": 3,
+      "priority": 75,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "shield_break",
+      "label_ko": "보호막 붕괴 · 짧은 균열과 장비 파편",
+      "variants": [
+        "audio/wav/04_player/SC_R01_shield_break_v01.wav",
+        "audio/wav/04_player/SC_R01_shield_break_v02.wav",
+        "audio/wav/04_player/SC_R01_shield_break_v03.wav",
+        "audio/wav/04_player/SC_R01_shield_break_v04.wav"
+      ],
+      "bus": "PlayerDamage",
+      "gain_db_start": 0,
+      "cooldown_ms_per_emitter": 220,
+      "voice_limit_per_emitter": 1,
+      "priority": 95,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "boss_core_hit",
+      "label_ko": "보스 코어 · 관통 충격과 공명",
+      "variants": [
+        "audio/wav/05_boss/SC_R01_boss_core_hit_v01.wav",
+        "audio/wav/05_boss/SC_R01_boss_core_hit_v02.wav",
+        "audio/wav/05_boss/SC_R01_boss_core_hit_v03.wav",
+        "audio/wav/05_boss/SC_R01_boss_core_hit_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -1,
+      "cooldown_ms_per_emitter": 100,
+      "voice_limit_per_emitter": 3,
+      "priority": 75,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "boss_charge",
+      "label_ko": "보스 · 낮게 깔리는 압력 진동 / 클릭·전자음 없음",
+      "variants": [
+        "audio/wav/05_boss/SC_R01_boss_charge_v01.wav",
+        "audio/wav/05_boss/SC_R01_boss_charge_v02.wav",
+        "audio/wav/05_boss/SC_R01_boss_charge_v03.wav",
+        "audio/wav/05_boss/SC_R01_boss_charge_v04.wav"
+      ],
+      "bus": "Telegraph",
+      "gain_db_start": 0,
+      "cooldown_ms_per_emitter": 500,
+      "voice_limit_per_emitter": 1,
+      "priority": 96,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        1.0,
+        1.0
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED",
+      "tail_policy": "Do not truncate tail when attack animation ends. Use overlap voice budget.",
+      "license": "CC-BY-3.0 attribution required"
+    },
+    {
+      "id": "boss_cross_beam",
+      "label_ko": "보스 스킬 · 초대형 폭압 / 넓게 구르는 잔향",
+      "variants": [
+        "audio/wav/05_boss/SC_R01_boss_cross_beam_v01.wav",
+        "audio/wav/05_boss/SC_R01_boss_cross_beam_v02.wav",
+        "audio/wav/05_boss/SC_R01_boss_cross_beam_v03.wav",
+        "audio/wav/05_boss/SC_R01_boss_cross_beam_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": 0,
+      "cooldown_ms_per_emitter": 300,
+      "voice_limit_per_emitter": 2,
+      "priority": 97,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        1.0,
+        1.0
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED",
+      "tail_policy": "Let decay continue after attack animation. Do not stop/retrigger same voice on pose changes.",
+      "license": "CC-BY-3.0 attribution required"
+    },
+    {
+      "id": "boss_stomp",
+      "label_ko": "보스 착지 · 거대한 지면 충격 / 구조물 진동",
+      "variants": [
+        "audio/wav/05_boss/SC_R01_boss_stomp_v01.wav",
+        "audio/wav/05_boss/SC_R01_boss_stomp_v02.wav",
+        "audio/wav/05_boss/SC_R01_boss_stomp_v03.wav",
+        "audio/wav/05_boss/SC_R01_boss_stomp_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": 0,
+      "cooldown_ms_per_emitter": 220,
+      "voice_limit_per_emitter": 2,
+      "priority": 87,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        1.0,
+        1.0
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED",
+      "tail_policy": "Let decay continue after attack animation. Do not stop/retrigger same voice on pose changes.",
+      "license": "CC-BY-3.0 attribution required"
+    },
+    {
+      "id": "boss_destroy",
+      "label_ko": "보스 붕괴 · 대형 연쇄 붕괴 / 두꺼운 폭압",
+      "variants": [
+        "audio/wav/05_boss/SC_R01_boss_destroy_v01.wav",
+        "audio/wav/05_boss/SC_R01_boss_destroy_v02.wav",
+        "audio/wav/05_boss/SC_R01_boss_destroy_v03.wav",
+        "audio/wav/05_boss/SC_R01_boss_destroy_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": 0,
+      "cooldown_ms_per_emitter": 1200,
+      "voice_limit_per_emitter": 1,
+      "priority": 99,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        1.0,
+        1.0
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED",
+      "tail_policy": "Let decay continue after attack animation. Do not stop/retrigger same voice on pose changes.",
+      "license": "CC-BY-3.0 attribution required"
+    },
+    {
+      "id": "footstep_metal",
+      "label_ko": "이동 · 금속 바닥 부츠",
+      "variants": [
+        "audio/wav/06_movement/SC_R01_footstep_metal_v01.wav",
+        "audio/wav/06_movement/SC_R01_footstep_metal_v02.wav",
+        "audio/wav/06_movement/SC_R01_footstep_metal_v03.wav",
+        "audio/wav/06_movement/SC_R01_footstep_metal_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -2,
+      "cooldown_ms_per_emitter": 110,
+      "voice_limit_per_emitter": 4,
+      "priority": 20,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    },
+    {
+      "id": "footstep_concrete",
+      "label_ko": "이동 · 콘크리트 바닥 부츠",
+      "variants": [
+        "audio/wav/06_movement/SC_R01_footstep_concrete_v01.wav",
+        "audio/wav/06_movement/SC_R01_footstep_concrete_v02.wav",
+        "audio/wav/06_movement/SC_R01_footstep_concrete_v03.wav",
+        "audio/wav/06_movement/SC_R01_footstep_concrete_v04.wav"
+      ],
+      "bus": "SFX",
+      "gain_db_start": -2,
+      "cooldown_ms_per_emitter": 110,
+      "voice_limit_per_emitter": 4,
+      "priority": 20,
+      "randomization": "shuffle_bag_no_immediate_repeat",
+      "runtime_pitch_range": [
+        0.985,
+        1.015
+      ],
+      "spatialization": "mono_source_world_position",
+      "bank_status": "AUDITION_CANDIDATE_NOT_INTEGRATED"
+    }
+  ],
+  "bank_revision": "R04_COLOSSAL"
+}

@@ -1,0 +1,1255 @@
+{
+  "app_registry": false,
+  "failures": [],
+  "hashes": {
+    "res://data/art_profiles/enemy_profiles.json": "69f0cb7904e321aeaf607ddb4cc3ac7eb24f8b6ba909984a397d358f5facbf3d",
+    "res://motion_lab_v1/qa/stage1_enemies_20260913/anchor/candidate_spec_v1.json": "33c941e9509386f3b6eec54b69c945175d6755da5e570feee4068e93bf0bb5c3",
+    "res://scripts/actors/enemy_actor.gd": "6960d7b99d0df3098399645cb389e4ed4fee4ae51397af8ebeb81560cf0e7b95",
+    "res://scripts/animation/site7_machine_sprite.gd": "986d9b4f34c33ee9c07d4737c286bad32c0acd84b78361e4b7f7a7fbcdc338c8",
+    "res://scripts/combat/site7_attack_warning.gd": "a2b237db6016c2dd85ed0c346784723ae53a0bbd1cd81a463291df267a3b4f39",
+    "res://scripts/combat/site7_enemy_tactics.gd": "efacd6facda231852c947cb26572cc873ed022d62bb5ddf1ef55b2c8b260bd02",
+    "res://tests/render/site7_anchor_candidate_capture.gd": "ef3d4b2e34766e9828ba48c25349ce4bba188219bcd4d57a7984d6afc70f248c"
+  },
+  "phase_health_and_serial_fixtures": true,
+  "rows": [
+    {
+      "emissions": [],
+      "health_fixture": 589.0,
+      "iris_canvas": "(792.6568, 381.1292)",
+      "label": "phase1_attack1_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase1_attack1_windup_start.webp",
+      "physics_tick": 30,
+      "sha256": "bb9821373a7b23127fa58ec83ee9be1a42517a929cdcd535017284d047d89d85",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "boss",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.95
+      },
+      "wall_ms": 3716
+    },
+    {
+      "emissions": [],
+      "health_fixture": 546.0,
+      "iris_canvas": "(792.6568, 381.1292)",
+      "label": "phase1_attack1_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase1_attack1_windup_mid.webp",
+      "physics_tick": 67,
+      "sha256": "3d2c4487d59d42eb93f246ba09fe618d8d6160fa14fa6c71cfabd54c2e146173",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "boss",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.466666666666665
+      },
+      "wall_ms": 4386
+    },
+    {
+      "emissions": [
+        {
+          "actor_id": 77644957485,
+          "attack_serial": 1,
+          "direction": [
+            -0.935166716575623,
+            0.354207783937454
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 0,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 78769030847,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 101,
+          "projectile_id": 83651200615
+        },
+        {
+          "actor_id": 77644957485,
+          "attack_serial": 1,
+          "direction": [
+            -0.989925444126129,
+            0.141589388251305
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 1,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 78769030847,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 101,
+          "projectile_id": 83751863899
+        },
+        {
+          "actor_id": 77644957485,
+          "attack_serial": 1,
+          "direction": [
+            -0.996964693069458,
+            -0.077854335308075
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 2,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 78769030847,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 101,
+          "projectile_id": 83852527185
+        }
+      ],
+      "health_fixture": 546.0,
+      "iris_canvas": "(792.6568, 381.1292)",
+      "label": "phase1_attack1_attack",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase1_attack1_attack.webp",
+      "physics_tick": 102,
+      "sha256": "9a966e63780c791c6b432a5fe1dcbfa76ae73b788e3e3aeffc194ec3c0e03adc",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "boss",
+        "shots": 3,
+        "state": "RECOVER",
+        "state_left": 1.6
+      },
+      "wall_ms": 5037
+    },
+    {
+      "emissions": [],
+      "health_fixture": 589.0,
+      "iris_canvas": "(784.1422, 379.9507)",
+      "label": "phase1_attack2_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase1_attack2_windup_start.webp",
+      "physics_tick": 132,
+      "sha256": "6b2d2fb8527c54322f56918375e74686c105a438db1c5bae118447ef42310812",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "boss",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.95
+      },
+      "wall_ms": 7370
+    },
+    {
+      "emissions": [],
+      "health_fixture": 546.0,
+      "iris_canvas": "(784.1422, 379.9507)",
+      "label": "phase1_attack2_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase1_attack2_windup_mid.webp",
+      "physics_tick": 168,
+      "sha256": "c7424d5f62ed04c966107ea95c8fb5a5b858e51a4d5cee82748b15715def632a",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "boss",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.466666666666665
+      },
+      "wall_ms": 8036
+    },
+    {
+      "emissions": [
+        {
+          "actor_id": 113783080552,
+          "attack_serial": 2,
+          "direction": [
+            -0.935166716575623,
+            0.354207783937454
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 0,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 114907154654,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 202,
+          "projectile_id": 119755770038
+        },
+        {
+          "actor_id": 113783080552,
+          "attack_serial": 2,
+          "direction": [
+            -0.989925444126129,
+            0.141589388251305
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 1,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 114907154654,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 202,
+          "projectile_id": 119856432694
+        },
+        {
+          "actor_id": 113783080552,
+          "attack_serial": 2,
+          "direction": [
+            -0.996964693069458,
+            -0.077854335308075
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 2,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 114907154654,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 202,
+          "projectile_id": 119957096634
+        }
+      ],
+      "health_fixture": 546.0,
+      "iris_canvas": "(784.1422, 379.9507)",
+      "label": "phase1_attack2_attack",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase1_attack2_attack.webp",
+      "physics_tick": 203,
+      "sha256": "5fe74fc191e9d33d686d197001e97e42a9aaf5660309c59a773a2e343fdbdee9",
+      "tactics": {
+        "attacks": 2,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "boss",
+        "shots": 3,
+        "state": "RECOVER",
+        "state_left": 1.6
+      },
+      "wall_ms": 8691
+    },
+    {
+      "emissions": [],
+      "health_fixture": 310.0,
+      "iris_canvas": "(792.4367, 381.0988)",
+      "label": "phase2_attack1_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase2_attack1_windup_start.webp",
+      "physics_tick": 230,
+      "sha256": "79a0950e7c838bda35f5077b23246ea22cea0b3063197ecad80864faf720d0a0",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 2,
+        "role": "boss",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.95
+      },
+      "wall_ms": 10968
+    },
+    {
+      "emissions": [],
+      "health_fixture": 267.0,
+      "iris_canvas": "(792.4367, 381.0988)",
+      "label": "phase2_attack1_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase2_attack1_windup_mid.webp",
+      "physics_tick": 266,
+      "sha256": "2a22f24bfdb50b74aa5f63b0e5ca55697355841824eafd5515da65d019c2b6bb",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 2,
+        "role": "boss",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.466666666666665
+      },
+      "wall_ms": 11641
+    },
+    {
+      "emissions": [
+        {
+          "actor_id": 149887649904,
+          "attack_serial": 1,
+          "direction": [
+            -0.835328161716461,
+            0.54975152015686
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 0,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 151011723274,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 300,
+          "projectile_id": 155860338658
+        },
+        {
+          "actor_id": 149887649904,
+          "attack_serial": 1,
+          "direction": [
+            -0.935166716575623,
+            0.354207783937454
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 1,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 151011723274,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 300,
+          "projectile_id": 155961001506
+        },
+        {
+          "actor_id": 149887649904,
+          "attack_serial": 1,
+          "direction": [
+            -0.989925444126129,
+            0.141589388251305
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 2,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 151011723274,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 300,
+          "projectile_id": 156061665240
+        },
+        {
+          "actor_id": 149887649904,
+          "attack_serial": 1,
+          "direction": [
+            -0.996964693069458,
+            -0.077854335308075
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 3,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 151011723274,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 300,
+          "projectile_id": 156162328481
+        },
+        {
+          "actor_id": 149887649904,
+          "attack_serial": 1,
+          "direction": [
+            -0.955945193767548,
+            -0.293545097112656
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 4,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 151011723274,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 300,
+          "projectile_id": 156262991981
+        }
+      ],
+      "health_fixture": 267.0,
+      "iris_canvas": "(792.4367, 381.0988)",
+      "label": "phase2_attack1_attack",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase2_attack1_attack.webp",
+      "physics_tick": 302,
+      "sha256": "64d84d0c115a46c04c40f7b176aa05b35106ddeec3f254963c84c2b4655d31ec",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 2,
+        "role": "boss",
+        "shots": 5,
+        "state": "RECOVER",
+        "state_left": 1.4
+      },
+      "wall_ms": 12319
+    },
+    {
+      "emissions": [],
+      "health_fixture": 310.0,
+      "iris_canvas": "(792.6133, 381.1233)",
+      "label": "phase2_attack2_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase2_attack2_windup_start.webp",
+      "physics_tick": 328,
+      "sha256": "819fbb27b102071749a694292cb4fa33a15e478b0706b949aa158e95e7118b2c",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 2,
+        "role": "boss",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.95
+      },
+      "wall_ms": 14585
+    },
+    {
+      "emissions": [],
+      "health_fixture": 267.0,
+      "iris_canvas": "(792.6133, 381.1233)",
+      "label": "phase2_attack2_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase2_attack2_windup_mid.webp",
+      "physics_tick": 364,
+      "sha256": "b60cb3a00733348082f9c13dd518221ab38b4d00df8fc45bdaf7f97e1e18fa95",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 2,
+        "role": "boss",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.466666666666665
+      },
+      "wall_ms": 15239
+    },
+    {
+      "emissions": [],
+      "health_fixture": 267.0,
+      "iris_canvas": "(792.6133, 381.1233)",
+      "label": "phase2_attack2_attack",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase2_attack2_attack.webp",
+      "physics_tick": 399,
+      "sha256": "0e29f551ad3ff5cc8c71a3c3252a0271ba277eb95b95cdc9dba0d842a1638bac",
+      "tactics": {
+        "attacks": 2,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 2,
+        "role": "boss",
+        "shots": 0,
+        "state": "RECOVER",
+        "state_left": 1.4
+      },
+      "wall_ms": 15884
+    },
+    {
+      "emissions": [],
+      "health_fixture": 267.0,
+      "iris_canvas": "(792.6133, 381.1233)",
+      "label": "phase2_attack2_ground_warning",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase2_attack2_ground_warning.webp",
+      "physics_tick": 452,
+      "sha256": "e4d5c32df53770b9e90839c51bdbe6dcaf7c85f527303a63e3e256f3bed56378",
+      "tactics": {
+        "attacks": 2,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 2,
+        "role": "boss",
+        "shots": 0,
+        "state": "RECOVER",
+        "state_left": 1.4
+      },
+      "wall_ms": 16820
+    },
+    {
+      "emissions": [],
+      "health_fixture": 267.0,
+      "iris_canvas": "(792.6133, 381.1233)",
+      "label": "phase2_attack2_ground_impact",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase2_attack2_ground_impact.webp",
+      "physics_tick": 504,
+      "sha256": "adc875cc8bc03911ee0710bd0098ba2b18b0415e04b1d02bea6e2d868367cc29",
+      "tactics": {
+        "attacks": 2,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 2,
+        "role": "boss",
+        "shots": 0,
+        "state": "RECOVER",
+        "state_left": 1.4
+      },
+      "wall_ms": 17739
+    },
+    {
+      "emissions": [],
+      "health_fixture": 155.0,
+      "iris_canvas": "(792.6133, 381.1233)",
+      "label": "phase3_attack1_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase3_attack1_windup_start.webp",
+      "physics_tick": 531,
+      "sha256": "a5cf8aae3b062d8cf360c0a8bfb958e8fa29f9ed4feff9cb81a85114faf3e720",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 3,
+        "role": "boss",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.95
+      },
+      "wall_ms": 20011
+    },
+    {
+      "emissions": [],
+      "health_fixture": 155.0,
+      "iris_canvas": "(792.6133, 381.1233)",
+      "label": "phase3_attack1_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase3_attack1_windup_mid.webp",
+      "physics_tick": 567,
+      "sha256": "187a3327487bff67d431fc0f39de4a6e796429bf85ef7d4318f3376b1d0f2bdc",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 3,
+        "role": "boss",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.466666666666665
+      },
+      "wall_ms": 20664
+    },
+    {
+      "emissions": [
+        {
+          "actor_id": 225301235915,
+          "attack_serial": 1,
+          "direction": [
+            -0.835328161716461,
+            0.54975152015686
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 0,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 226425308681,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 602,
+          "projectile_id": 230669945062
+        },
+        {
+          "actor_id": 225301235915,
+          "attack_serial": 1,
+          "direction": [
+            -0.935166716575623,
+            0.354207783937454
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 1,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 226425308681,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 602,
+          "projectile_id": 230770607873
+        },
+        {
+          "actor_id": 225301235915,
+          "attack_serial": 1,
+          "direction": [
+            -0.989925444126129,
+            0.141589388251305
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 2,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 226425308681,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 602,
+          "projectile_id": 230871271725
+        },
+        {
+          "actor_id": 225301235915,
+          "attack_serial": 1,
+          "direction": [
+            -0.996964693069458,
+            -0.077854335308075
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 3,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 226425308681,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 602,
+          "projectile_id": 230971934405
+        },
+        {
+          "actor_id": 225301235915,
+          "attack_serial": 1,
+          "direction": [
+            -0.955945193767548,
+            -0.293545097112656
+          ],
+          "enemy_id": "BOSS_SITE7_ANCHOR_01",
+          "ordinal": 4,
+          "origin": [
+            2128.13305664063,
+            334.254333496094
+          ],
+          "owner_id": 226425308681,
+          "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+          "physics_tick": 602,
+          "projectile_id": 231072598047
+        }
+      ],
+      "health_fixture": 155.0,
+      "iris_canvas": "(792.6133, 381.1233)",
+      "label": "phase3_attack1_attack",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase3_attack1_attack.webp",
+      "physics_tick": 604,
+      "sha256": "4f7f84cdac9cf55ae55006da012a7493b89fade50b160af5775c2fa9b59dc3a1",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 3,
+        "role": "boss",
+        "shots": 5,
+        "state": "RECOVER",
+        "state_left": 1.2
+      },
+      "wall_ms": 21353
+    },
+    {
+      "emissions": [],
+      "health_fixture": 155.0,
+      "iris_canvas": "(791.5746, 380.9795)",
+      "label": "phase3_attack2_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase3_attack2_windup_start.webp",
+      "physics_tick": 632,
+      "sha256": "6fe1dd34969e0b3f6471633293087318ca00863d5ce19b775e3024268b227aa9",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 3,
+        "role": "boss",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.95
+      },
+      "wall_ms": 23728
+    },
+    {
+      "emissions": [],
+      "health_fixture": 155.0,
+      "iris_canvas": "(791.5746, 380.9795)",
+      "label": "phase3_attack2_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase3_attack2_windup_mid.webp",
+      "physics_tick": 668,
+      "sha256": "24e69171b148ffcfd3ec8fe7553085d064385af0a5ea265d974a95576765d44f",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 3,
+        "role": "boss",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.466666666666665
+      },
+      "wall_ms": 24381
+    },
+    {
+      "emissions": [],
+      "health_fixture": 155.0,
+      "iris_canvas": "(791.5746, 380.9795)",
+      "label": "phase3_attack2_attack",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase3_attack2_attack.webp",
+      "physics_tick": 704,
+      "sha256": "3099e9ba2eaf080b4bfd7e395544ef2f08a5f6b530dc93071661c317b2409ef4",
+      "tactics": {
+        "attacks": 2,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 3,
+        "role": "boss",
+        "shots": 0,
+        "state": "RECOVER",
+        "state_left": 1.2
+      },
+      "wall_ms": 25039
+    },
+    {
+      "emissions": [],
+      "health_fixture": 155.0,
+      "iris_canvas": "(791.5746, 380.9795)",
+      "label": "phase3_attack2_ground_warning",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase3_attack2_ground_warning.webp",
+      "physics_tick": 756,
+      "sha256": "65fa5de92d3e909a7bd1d48d0c2b0c28c65de17203170ba55b043107378c10aa",
+      "tactics": {
+        "attacks": 2,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 3,
+        "role": "boss",
+        "shots": 0,
+        "state": "RECOVER",
+        "state_left": 1.2
+      },
+      "wall_ms": 25959
+    },
+    {
+      "emissions": [],
+      "health_fixture": 155.0,
+      "iris_canvas": "(791.5746, 380.9795)",
+      "label": "phase3_attack2_ground_impact",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 270.0,
+        "emitter_px": "(638.0, 616.0)",
+        "emitter_visible": true,
+        "emitter_world": "(2128.133, 334.2543)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1227.0, 1247.0)",
+        "texture_sha256": "c47ca7b363a07548e0316b84ce331643f8ff3bd79ce725db74878890ce95b4f4",
+        "view_count": 1
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "path": "res://qa/stage1_implementation_20260913/anchor_native_1789288672_48/phase3_attack2_ground_impact.webp",
+      "physics_tick": 808,
+      "sha256": "195c52a7bb0be0680d6016f861f09ebdc258ddd6cc6b7bf24ec19470f830efae",
+      "tactics": {
+        "attacks": 2,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.989925, 0.141589)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 3,
+        "role": "boss",
+        "shots": 0,
+        "state": "RECOVER",
+        "state_left": 1.2
+      },
+      "wall_ms": 26881
+    }
+  ],
+  "status": "CAPTURED_CONTROLLED_PHASES_NOT_VISUAL_APPROVAL"
+}

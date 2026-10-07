@@ -1,0 +1,15 @@
+{
+  "character": "site7_rifle",
+  "slot": "S/walk/0",
+  "background": "transparent_alpha",
+  "tool": "image_gen.imagegen",
+  "reference": "art/site7_rifle/identity_reference.png",
+  "poseGuide": "reference/ual_guides/S_Walk_Loop_0.png",
+  "reference_order": [
+    "reference/ual_guides/S_Walk_Loop_0.png",
+    "art/site7_rifle/identity_reference.png"
+  ],
+  "prior_failure_observed": "v3 is RGB painted checkerboard and right-holster-side leg leads. Do not reference the failed v3 as art authority.",
+  "approach_change": "Single pose transfer from guide + canonical identity, concise explicit screen-side holster/left-foot distinction; no failed-frame edit or shared previous conversation images.",
+  "prompt": "Use case: identity-preserve\nAsset: SABLE CIRCUIT SITE-7 rifle trooper, one replacement authored motion frame, S/walk/0 (left contact). Create a full-body transparent PNG sprite, not a screenshot of a sprite on a transparency checkerboard.\nReference 1 is a POSE DIAGRAM ONLY: use its front-view lower-body stance. Ignore all mannequin arms, weapon and materials. Reference 2 is the sole CHARACTER APPEARANCE AUTHORITY: match its mature realistic proportions, black hood and visor, worn silver armor with muted red stripe markings, black gloves and boots, radio antenna, thigh holster on the character's RIGHT thigh ONLY, and the same bullpup rifle. No chibi, redesign or new equipment.\nCritical correction: from this front camera, the character's LEFT boot is on IMAGE RIGHT and extends toward the camera to contact the invisible ground. The character's RIGHT boot, on IMAGE LEFT directly below the holster, stays behind. This is the opposite of a right-foot-forward step. Keep the hip-to-knee-to-ankle-to-boot chain continuous on each of exactly two legs. A modest natural stride; no extra shin, knee, third foot, crossing or duplicated leg.\nThe soldier is aiming and ready to fire while stepping. Buttstock seated into the character's RIGHT shoulder (image left), right hand grips trigger, left hand supports the fore-end. Rifle is shoulder-height, horizontally forward in world space toward the camera, with a short foreshortened barrel and visible muzzle opening. Do NOT copy the diagram's low vertical weapon and do NOT hold the rifle at waist level. Head looks along the sights.\nFraming: entire antenna, hood, rifle, hands and both boot soles visible; single centered figure with generous transparent margins. Premium realistic 3D-game illustration consistent with reference 2. Native portrait resolution at least 1536x2048, detailed subject at least 1300px tall.\nOutput background: transparent_alpha. Deliver actual PNG RGBA data with transparent background alpha=0, antialiased visible edges alpha=1..254, solid-looking subject interior alpha=254; no alpha=255. Do not paint a checkerboard, matte or scenery to symbolize transparency. No green background, no floor, shadow, glow, colored rim spill, text, frame or watermark. Preserve the actual generated native alpha; do not substitute local keying/clamping. One image only."
+}

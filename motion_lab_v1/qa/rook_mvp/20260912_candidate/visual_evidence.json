@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-12T03:29:10.741101+00:00",
+  "gate": "FAIL",
+  "container_gate": "FAIL",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook_mvp\\20260912_candidate\\ROOK_Motion_Studio.html",
+      "error": null,
+      "kind": "html",
+      "evidence_class": "static_config_only",
+      "canvas_resolutions": [],
+      "decodable": false,
+      "native_1080p_container": false,
+      "dynamic_runtime_evidence": false,
+      "dynamic_capture_required_for_visual_gate": true,
+      "size_bytes": 14967837,
+      "sha256": "f853dd5dc72dbfa4f4afab4aab0ebff2c62387283757e086cd17d73569bab0a6"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook_mvp\\20260912_candidate\\rook_motion_candidate.webm",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 30.00683167796521,
+      "frames": 1143,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 285,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 571,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 857,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 1142,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 8209353,
+      "sha256": "e6a8ef73a36df9a87edec15ebf94884288f06ae03970721921e378f9ede23dfe"
+    }
+  ]
+}

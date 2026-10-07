@@ -1,0 +1,25 @@
+{
+  "checks": 5,
+  "escape_margin_s": 0.25,
+  "failures": [],
+  "gap_limit_px": 180,
+  "grid_px": 100.0,
+  "rooms": [
+    {
+      "attacks_evaluated": 258,
+      "boss": "BOSS_SITE7_ARCHIVE_01",
+      "cover_obstacles": 0,
+      "failing": 0,
+      "failing_examples": [],
+      "mission": "MIS_CH01_09",
+      "nearest_clear_floor_worst_at": "phase 1 attack 1, target at (-9500, 4811), 728 px from the boss",
+      "nearest_clear_floor_worst_px": 90,
+      "spots": 43,
+      "tightest_escape_at": "phase 1 attack 2, target at (-9500, 4811), 728 px from the boss (leave 90 px in 0.65 s of 1.30 s)",
+      "tightest_escape_margin_s": 0.65
+    }
+  ],
+  "slowest_walk_px_per_s": 138.0,
+  "status": "PASS",
+  "visual_approval": false
+}

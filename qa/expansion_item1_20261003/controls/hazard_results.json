@@ -1,0 +1,33 @@
+[
+  {
+    "name": "no_spore_damage_v2",
+    "status": "FAIL",
+    "code": 1,
+    "failures": [
+      "FAIL: SPORE_CLOUD deals exactly 4/8 HP over one second",
+      "FAIL: SPORE_CLOUD hits real operator and robot with exactly its complete discharge",
+      "FAIL: SPORE_CLOUD attributes all operator damage",
+      "FAIL: SPORE_CLOUD attributes all robot damage",
+      "FAIL: SPORE_CLOUD source events report actual health lost"
+    ],
+    "summary": [
+      "HAZARD_EXPANSION_SMOKE: FAIL (380 checks, 15 rooms) res://control_report.json"
+    ]
+  },
+  {
+    "name": "no_frost_release_v2",
+    "status": "FAIL",
+    "code": 1,
+    "failures": [
+      "FAIL: removing one frost leaves the other contribution intact",
+      "FAIL: leaving frost exactly restores independent speed factors",
+      "FAIL: re-entering frost slows again",
+      "FAIL: hazard cleanup releases both actor factors immediately while occupied",
+      "FAIL: actual enemy movement is fully restored when frost is cleared",
+      "FAIL: room cleanup removes frost and its factor in the same stack"
+    ],
+    "summary": [
+      "HAZARD_EXPANSION_SMOKE: FAIL (380 checks, 15 rooms) res://control_report.json"
+    ]
+  }
+]

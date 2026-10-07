@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-29T03:57:18.846856+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_ops_6_10_bosses_20260929\\art_review\\bosses_01_10_equal_size_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 924242,
+      "sha256": "bcad719a7332160a8c89466f5d2b33ee8bcbab33b0a07478b461d6c0c80ba4ea"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_ops_6_10_bosses_20260929\\art_review\\aerator_tower_light_dark_1to1.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        3200,
+        1500
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 976116,
+      "sha256": "2e1884ed27d3fcc0285732fd24c1b0f7350d7f807cf5f42751aa2a4ec3778b22"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_ops_6_10_bosses_20260929\\art_review\\cryo_compressor_light_dark_1to1.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        3200,
+        1500
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2566726,
+      "sha256": "4e90737f31cad9883cbbe4f833696aa9902280c86bcfdde26be7752ca6a51481"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_ops_6_10_bosses_20260929\\art_review\\signal_gantry_light_dark_1to1.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        3200,
+        1500
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1844042,
+      "sha256": "34ce7f24ab32266a9542314ec6db3d1c3c0cfc431e7032c677f834a3d45b0fc9"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_ops_6_10_bosses_20260929\\art_review\\index_spire_light_dark_1to1.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        3200,
+        1500
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1317920,
+      "sha256": "5b14d4e85eb411ebd02a3f6bf0dde2686a3e28dd2d5c25dc59f2716fdb5b4057"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\site7_ops_6_10_bosses_20260929\\art_review\\origin_core_light_dark_1to1.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        3200,
+        1500
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1683059,
+      "sha256": "91962d40b489386368b48c63c8f70dd6a0f5c5843f31edd5b30c786f7f0db6af"
+    }
+  ]
+}

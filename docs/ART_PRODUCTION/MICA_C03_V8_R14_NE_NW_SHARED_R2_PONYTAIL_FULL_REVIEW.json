@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "reviewer": "Ponytail FULL",
+  "project": "SABLE CIRCUIT",
+  "reviewed_at_utc": "2026-09-04",
+  "revision": "V8_R14_NE_NW_SHARED_R2",
+  "evidence": [
+    {
+      "direction": "NE",
+      "static": {
+        "path": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r2_review/MICA_C03_V8_R14_NE_SHARED_R2_NE_GAIT_REVIEW_2304X1080.png",
+        "sha256": "47b3b222f89f3eae4f2ad6a505b90ebadc7a36746869779561b4c81e93201f2e"
+      },
+      "fixed_video": {
+        "path": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r2_review/MICA_C03_V8_R14_NE_SHARED_R2_RECAPTURED_FIXED_GRID_5S_1920X1080.mp4",
+        "sha256": "90682af3883c43ab74a079338958693fcbe29ab2a8a4e63a61472856d0d8bf93"
+      },
+      "world_video": {
+        "path": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r2_review/MICA_C03_V8_R14_NE_SHARED_R2_RECAPTURED_WORLD_GRID_5S_1920X1080.mp4",
+        "sha256": "ca53f708f7f083f05c36f23ed3da042243676f45c424b9c5771ca0abf412e08f"
+      },
+      "metrics": {
+        "support_drift_left_px": 1.36,
+        "support_drift_right_px": 1.48,
+        "handoff_span_units": [18.38, 19.80],
+        "result": "HOLD"
+      }
+    },
+    {
+      "direction": "NW",
+      "static": {
+        "path": "artifacts/mica_c03_v8_r14_nw_shared_handoff_r2_review/MICA_C03_V8_R14_NW_SHARED_R2_NW_GAIT_REVIEW_2304X1080.png",
+        "sha256": "4c7dd10d6c7e4832b3bee46fa4207eebcd1b4fa1ca60ab81be6be5337687aa5e"
+      },
+      "fixed_video": {
+        "path": "artifacts/mica_c03_v8_r14_nw_shared_handoff_r2_review/MICA_C03_V8_R14_NW_SHARED_R2_RECAPTURED_FIXED_GRID_5S_1920X1080.mp4",
+        "sha256": "f810249a90e187a1558c29036fd0edd53c2d70a11b6aeb8218c906fa058408e2"
+      },
+      "world_video": {
+        "path": "artifacts/mica_c03_v8_r14_nw_shared_handoff_r2_review/MICA_C03_V8_R14_NW_SHARED_R2_RECAPTURED_WORLD_GRID_5S_1920X1080.mp4",
+        "sha256": "7fb98c0f7c3b4efe9dba118f42902b2a3cde6733082373274afb4328214b61ab"
+      },
+      "metrics": {
+        "support_drift_left_px": 1.68,
+        "support_drift_right_px": 1.61,
+        "handoff_span_units": [17.68, 19.09],
+        "result": "HOLD"
+      }
+    }
+  ],
+  "verdict": {
+    "A_gait_readability": "PASS",
+    "B_scale_and_volume": "PASS",
+    "C_ankle_boot_ground": "PASS",
+    "D_sole_lock_and_handoffs": "HOLD",
+    "E_composite_stability": "PASS",
+    "F_pilot_scope": "HOLD",
+    "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+    "ne_nw_direction_production_promotion": "HOLD",
+    "eight_direction_visual_runtime_promotion": "HOLD"
+  },
+  "notes": [
+    "NE and NW handoffs are structurally continuous and do not show leg scale pumping, ankle breakage, or z-order/alpha contamination.",
+    "Strict sole-lock gate remains HOLD because the support foot drifts forward by 1.36–1.68px during the support windows; this is a blocking micro-skate under the current gate."
+  ],
+  "preservation": {
+    "prior_r14_r10_and_failed_evidence": "QUARANTINED_PRESERVE",
+    "deletion_performed": false,
+    "retirement_manifest_required_before_disposal": true
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_R03/attempt01/S10_R03_GAME.png",
+  "luma": 0.20006652176380157,
+  "p10": 0.15601177513599396,
+  "p90": 0.2353372722864151,
+  "saturation": 0.05640171957765785,
+  "hue": 134.851992453858,
+  "axis": 25.15208998365126,
+  "problems": [],
+  "plate": "S10_R03",
+  "attempt": 1,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      151,
+      493
+    ],
+    [
+      816,
+      211
+    ],
+    [
+      1156,
+      350
+    ],
+    [
+      1331,
+      257
+    ],
+    [
+      1374,
+      280
+    ],
+    [
+      1374,
+      427
+    ],
+    [
+      1546,
+      503
+    ],
+    [
+      845,
+      839
+    ],
+    [
+      500,
+      704
+    ],
+    [
+      347,
+      788
+    ],
+    [
+      136,
+      666
+    ],
+    [
+      299,
+      590
+    ]
+  ],
+  "doors_px": {
+    "SW": [
+      397,
+      646,
+      225
+    ],
+    "NE": [
+      1266,
+      393,
+      220
+    ]
+  },
+  "raw_sha256": "a3cf48345e106f571bf3f71fb77ef4ef742a7731603ca80e880930bf7d7722bf",
+  "master_sha256": "a3cf48345e106f571bf3f71fb77ef4ef742a7731603ca80e880930bf7d7722bf",
+  "game_sha256": "49f00392c28aeaac3bd3f060f4725c2078025bd3fd6e32832632d32af0bec2a4",
+  "game_exposure_factor_srgb": 0.7712,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-fc008c7e-78df-4fab-ae2e-596e890a41ee.png",
+  "inspection": "S3의 대형 모니터 베이 대신 겹친 메모리 카트리지·작은 경사 판독 콘솔. R01 해치/R02 흰면 오벨리스크와 베이 내용이 다름. 공통 기둥·문틀 골조는 허용. SW/NE만 열림, SE 연속 난간. 실제 바닥과 에이프런 추적.",
+  "floor_area_px2": 507763.5,
+  "floor_area_fraction": 0.3227272091687048,
+  "floor_bounds_px": [
+    136,
+    211,
+    1546,
+    839
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1672,
+      941
+    ],
+    "actual_size": [
+      1672,
+      941
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "SW": [
+        [
+          299,
+          590
+        ],
+        [
+          136,
+          666
+        ],
+        [
+          347,
+          788
+        ],
+        [
+          500,
+          704
+        ]
+      ],
+      "NE": [
+        [
+          1156,
+          350
+        ],
+        [
+          1331,
+          257
+        ],
+        [
+          1374,
+          280
+        ],
+        [
+          1374,
+          427
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      151,
+      211,
+      1546,
+      839
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.090311004784689,
+      0.22422954303931988,
+      0.07535885167464115,
+      0.10839532412327312
+    ],
+    "whole_floor_bounds_px": [
+      136,
+      211,
+      1546,
+      839
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.08133971291866028,
+      0.22422954303931988,
+      0.07535885167464115,
+      0.10839532412327312
+    ],
+    "main_floor_area_px2": 453041
+  },
+  "apron_stats": {
+    "SW": {
+      "luma": 0.2330666184425354,
+      "saturation": 0.05646415938484309,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "NE": {
+      "luma": 0.2211495339870453,
+      "saturation": 0.06516616372700322,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  }
+}

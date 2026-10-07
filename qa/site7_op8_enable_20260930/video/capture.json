@@ -1,0 +1,2581 @@
+{
+  "app_registry_unchanged": true,
+  "art_approval": false,
+  "audio": true,
+  "audio_events": {
+    "duck_left": 0.349999999999999,
+    "events": [
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 10,
+        "gain_db": -6.26365476846695,
+        "pitch": 1.0091837644577,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 10,
+        "gain_db": -6.26900112628937,
+        "pitch": 0.999061286449432,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 17,
+        "gain_db": -5.98892891407013,
+        "pitch": 1.02543675899506,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "impact_steel_light",
+        "emitter": 86369109698,
+        "frame": 17,
+        "gain_db": -9.02665770053864,
+        "pitch": 0.971478164196014,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_light_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 21,
+        "gain_db": -5.34868371486664,
+        "pitch": 0.981190860271454,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "rook_fire",
+        "emitter": 88667588404,
+        "frame": 23,
+        "gain_db": -4.05524885654449,
+        "pitch": 0.992647290229797,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 24,
+        "gain_db": -5.7541743516922,
+        "pitch": 0.994091987609863,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_light",
+        "emitter": 86369109698,
+        "frame": 24,
+        "gain_db": -9.88086819648743,
+        "pitch": 0.990902185440063,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_light_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 31,
+        "gain_db": -5.36271369457245,
+        "pitch": 1.00730741024017,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 32,
+        "gain_db": -6.88693797588348,
+        "pitch": 0.984203636646271,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 34,
+        "gain_db": -9.11830985546112,
+        "pitch": 1.03654789924622,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_light",
+        "emitter": 86369109698,
+        "frame": 34,
+        "gain_db": -9.37829279899597,
+        "pitch": 0.965701460838318,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_light_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 38,
+        "gain_db": -6.41104245185852,
+        "pitch": 0.978556990623474,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 40,
+        "gain_db": -8.5979608297348,
+        "pitch": 1.02568817138672,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_light",
+        "emitter": 86369109698,
+        "frame": 40,
+        "gain_db": -9.76842975616455,
+        "pitch": 0.986963272094727,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_light_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 43,
+        "gain_db": -5.83001482486725,
+        "pitch": 0.990132987499237,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 45,
+        "gain_db": -5.25868308544159,
+        "pitch": 1.00838458538055,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 45,
+        "gain_db": -10.4606438875198,
+        "pitch": 1.04228544235229,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 45,
+        "gain_db": -9.17377507686615,
+        "pitch": 1.03088331222534,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "impact_steel_light",
+        "emitter": 86369109698,
+        "frame": 46,
+        "gain_db": -9.28837335109711,
+        "pitch": 0.990927517414093,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_light_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "rook_fire",
+        "emitter": 88667588404,
+        "frame": 49,
+        "gain_db": -4.14221739768982,
+        "pitch": 1.02507960796356,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 52,
+        "gain_db": -6.38643795251846,
+        "pitch": 0.998848915100098,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_light",
+        "emitter": 86369109698,
+        "frame": 52,
+        "gain_db": -9.4879914522171,
+        "pitch": 0.965647220611572,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_light_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 54,
+        "gain_db": -6.24094390869141,
+        "pitch": 0.978182733058929,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 55,
+        "gain_db": -9.21038591861725,
+        "pitch": 0.986243605613709,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "impact_steel_light",
+        "emitter": 86369109698,
+        "frame": 58,
+        "gain_db": -10.9003155231476,
+        "pitch": 0.980729341506958,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_light_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 59,
+        "gain_db": -5.86252510547638,
+        "pitch": 0.973687708377838,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 64,
+        "gain_db": -10.2519724965096,
+        "pitch": 1.02287125587463,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_light",
+        "emitter": 86369109698,
+        "frame": 64,
+        "gain_db": -10.254506111145,
+        "pitch": 0.956988453865051,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_light_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 65,
+        "gain_db": -6.25495654344559,
+        "pitch": 0.990099728107452,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 65,
+        "gain_db": -9.44414949417114,
+        "pitch": 0.98572051525116,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 66,
+        "gain_db": -6.53712004423141,
+        "pitch": 0.989121556282043,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 66,
+        "gain_db": -8.1413106918335,
+        "pitch": 1.0462943315506,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_light",
+        "emitter": 86369109698,
+        "frame": 70,
+        "gain_db": -9.68964374065399,
+        "pitch": 0.99340683221817,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_light_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 73,
+        "gain_db": -6.06634116172791,
+        "pitch": 0.99063503742218,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 74,
+        "gain_db": -10.5643451213837,
+        "pitch": 0.967232167720795,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "rook_fire",
+        "emitter": 88667588404,
+        "frame": 75,
+        "gain_db": -5.71884322166443,
+        "pitch": 1.02512121200562,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 76,
+        "gain_db": -6.60936725139618,
+        "pitch": 0.983096122741699,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_light",
+        "emitter": 86369109698,
+        "frame": 76,
+        "gain_db": -10.8333426713943,
+        "pitch": 0.95901882648468,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_light_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 80,
+        "gain_db": -6.08729010820389,
+        "pitch": 1.00328230857849,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "enemy_fire",
+        "emitter": 123228653512,
+        "frame": 81,
+        "gain_db": -9.92580562829971,
+        "pitch": 1.04188871383667,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/enemy_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "enemy_fire",
+        "emitter": 123530643271,
+        "frame": 81,
+        "gain_db": -8.92717015743256,
+        "pitch": 0.962382614612579,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/enemy_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 82,
+        "gain_db": -9.10908424854279,
+        "pitch": 0.995367288589478,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "impact_steel_light",
+        "emitter": 86369109698,
+        "frame": 82,
+        "gain_db": -10.2629202604294,
+        "pitch": 0.999661564826965,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_light_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_body",
+        "emitter": 86369109698,
+        "frame": 82,
+        "gain_db": -8.91514074802399,
+        "pitch": 0.972677052021027,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_body_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_hurt",
+        "emitter": 86369109698,
+        "frame": 82,
+        "gain_db": -6.73993992805481,
+        "pitch": 1.00356161594391,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_hurt_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 123228653512,
+        "frame": 82,
+        "gain_db": -10.5137420892715,
+        "pitch": 0.951186656951904,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "impact_body",
+        "emitter": 86369109698,
+        "frame": 85,
+        "gain_db": -8.20594465732574,
+        "pitch": 1.00570523738861,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_body_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_hurt",
+        "emitter": 86369109698,
+        "frame": 85,
+        "gain_db": -7.50464677810669,
+        "pitch": 1.01585674285889,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_hurt_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 123530643271,
+        "frame": 85,
+        "gain_db": -9.40674602985382,
+        "pitch": 0.986700534820557,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 87,
+        "gain_db": -6.9373687505722,
+        "pitch": 0.993947267532349,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 87,
+        "gain_db": -6.47607588768005,
+        "pitch": 0.974143028259277,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_light",
+        "emitter": 86369109698,
+        "frame": 88,
+        "gain_db": -9.04232037067413,
+        "pitch": 1.04990077018738,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_light_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 91,
+        "gain_db": -10.018012046814,
+        "pitch": 0.975970923900604,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 92,
+        "gain_db": -9.82290261983871,
+        "pitch": 1.03528332710266,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 93,
+        "gain_db": -8.07919025421143,
+        "pitch": 1.01523852348328,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 94,
+        "gain_db": -5.61411893367767,
+        "pitch": 1.02169597148895,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "armor_break",
+        "emitter": 123228653512,
+        "frame": 96,
+        "gain_db": -4.87140619754791,
+        "pitch": 1.02032697200775,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/armor_break_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 96,
+        "gain_db": -8.77627611160278,
+        "pitch": 1.03709924221039,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 98,
+        "gain_db": -5.73187589645386,
+        "pitch": 0.99780410528183,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 101,
+        "gain_db": -5.19517707824707,
+        "pitch": 1.02559328079224,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "rook_fire",
+        "emitter": 88667588404,
+        "frame": 106,
+        "gain_db": -4.41537415981293,
+        "pitch": 0.994670212268829,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 108,
+        "gain_db": -6.64988875389099,
+        "pitch": 0.973635137081146,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 109,
+        "gain_db": -5.35886764526367,
+        "pitch": 0.997555792331696,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 110,
+        "gain_db": -9.25158214569092,
+        "pitch": 1.00239765644073,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 115,
+        "gain_db": -5.69364583492279,
+        "pitch": 0.985391974449158,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "boss_charge",
+        "emitter": 122859555167,
+        "frame": 117,
+        "gain_db": -8.0,
+        "pitch": 1.0,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/boss_charge_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 118,
+        "gain_db": -9.48020327091217,
+        "pitch": 1.02157425880432,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "armor_break",
+        "emitter": 123530643271,
+        "frame": 119,
+        "gain_db": -5.6545262336731,
+        "pitch": 1.01257514953613,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/armor_break_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 119,
+        "gain_db": -8.28879344463348,
+        "pitch": 1.04303741455078,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 122,
+        "gain_db": -5.85205376148224,
+        "pitch": 1.02283024787903,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 129,
+        "gain_db": -6.50841724872589,
+        "pitch": 1.02071499824524,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 136,
+        "gain_db": -5.26198959350586,
+        "pitch": 0.981113135814667,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 143,
+        "gain_db": -5.67970168590546,
+        "pitch": 0.982155323028564,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 150,
+        "gain_db": -5.68150043487549,
+        "pitch": 0.971183836460114,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 157,
+        "gain_db": -5.76928889751434,
+        "pitch": 0.97638601064682,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 164,
+        "gain_db": -5.92363619804382,
+        "pitch": 0.979734718799591,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 171,
+        "gain_db": -5.88071668148041,
+        "pitch": 0.994193732738495,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_reload",
+        "emitter": 86369109698,
+        "frame": 172,
+        "gain_db": -12.358736872673,
+        "pitch": 0.991655230522156,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_reload_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 189,
+        "gain_db": -6.84966522455215,
+        "pitch": 1.0102447271347,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 200,
+        "gain_db": -6.59199017286301,
+        "pitch": 1.02062547206879,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "boss_cross_beam",
+        "emitter": 122859555167,
+        "frame": 201,
+        "gain_db": -7.0,
+        "pitch": 1.0,
+        "spatial": false,
+        "stream": "res://assets/audio/combat_r04/boss_cross_beam_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 211,
+        "gain_db": -5.65339601039886,
+        "pitch": 0.980152010917664,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 212,
+        "gain_db": -10.8404989242554,
+        "pitch": 0.959616482257843,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 221,
+        "gain_db": -10.036463201046,
+        "pitch": 0.953800082206726,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 222,
+        "gain_db": -6.15191870927811,
+        "pitch": 1.00949966907501,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 229,
+        "gain_db": -9.12780022621155,
+        "pitch": 1.00815165042877,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 233,
+        "gain_db": -5.26278424263,
+        "pitch": 0.992911040782928,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 239,
+        "gain_db": -10.5881929397583,
+        "pitch": 1.02190351486206,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 244,
+        "gain_db": -6.51349049806595,
+        "pitch": 0.983784437179565,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 250,
+        "gain_db": -10.6296345591545,
+        "pitch": 1.03465807437897,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 255,
+        "gain_db": -5.54013991355896,
+        "pitch": 0.988913893699646,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 261,
+        "gain_db": -9.83914685249329,
+        "pitch": 0.962895154953003,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 266,
+        "gain_db": -5.34216070175171,
+        "pitch": 0.975352168083191,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "mica_reload",
+        "emitter": 90815072166,
+        "frame": 267,
+        "gain_db": -12.6027879714966,
+        "pitch": 1.00340795516968,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_reload_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 272,
+        "gain_db": -10.5981649160385,
+        "pitch": 1.01694869995117,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 283,
+        "gain_db": -10.7261718511581,
+        "pitch": 0.973399341106415,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "boss_charge",
+        "emitter": 122859555167,
+        "frame": 308,
+        "gain_db": -8.0,
+        "pitch": 1.0,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/boss_charge_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 310,
+        "gain_db": -5.57475078105927,
+        "pitch": 1.01108384132385,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 317,
+        "gain_db": -5.27611315250397,
+        "pitch": 0.988646864891052,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 324,
+        "gain_db": -5.69585490226746,
+        "pitch": 1.00504815578461,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 331,
+        "gain_db": -6.91539126634598,
+        "pitch": 1.01766204833984,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 335,
+        "gain_db": -5.44998800754547,
+        "pitch": 1.0176020860672,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 338,
+        "gain_db": -5.9709335565567,
+        "pitch": 1.00672888755798,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 345,
+        "gain_db": -6.6538342833519,
+        "pitch": 0.986388981342316,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 346,
+        "gain_db": -5.80409228801727,
+        "pitch": 0.976754069328308,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 352,
+        "gain_db": -6.70315700769424,
+        "pitch": 0.996789336204529,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "rook_fire",
+        "emitter": 88667588404,
+        "frame": 354,
+        "gain_db": -4.22826075553894,
+        "pitch": 1.02151596546173,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 354,
+        "gain_db": -9.86461317539215,
+        "pitch": 0.99321460723877,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 357,
+        "gain_db": -5.67742311954498,
+        "pitch": 1.01549172401428,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 359,
+        "gain_db": -5.31970763206482,
+        "pitch": 0.995581090450287,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 364,
+        "gain_db": -9.81382203102112,
+        "pitch": 1.00294864177704,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 365,
+        "gain_db": -10.6285971403122,
+        "pitch": 0.993832886219025,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 365,
+        "gain_db": -9.38220030069351,
+        "pitch": 1.02006328105927,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 366,
+        "gain_db": -5.63574719429016,
+        "pitch": 1.00496566295624,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 367,
+        "gain_db": -8.63823854923248,
+        "pitch": 0.975642025470734,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 368,
+        "gain_db": -6.9288637638092,
+        "pitch": 1.01902627944946,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 373,
+        "gain_db": -5.33160996437073,
+        "pitch": 0.971698224544525,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 375,
+        "gain_db": -9.89776420593262,
+        "pitch": 0.957854628562927,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 379,
+        "gain_db": -6.66349816322327,
+        "pitch": 1.00361824035645,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 380,
+        "gain_db": -5.9250670671463,
+        "pitch": 1.00776183605194,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "rook_fire",
+        "emitter": 88667588404,
+        "frame": 380,
+        "gain_db": -4.07956385612488,
+        "pitch": 1.02284419536591,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "boss_stomp",
+        "emitter": 122859555167,
+        "frame": 380,
+        "gain_db": -8.81177413463593,
+        "pitch": 1.0,
+        "spatial": false,
+        "stream": "res://assets/audio/combat_r04/boss_stomp_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 387,
+        "gain_db": -5.36343443393707,
+        "pitch": 1.02773582935333,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 387,
+        "gain_db": -10.9742467403412,
+        "pitch": 0.95136696100235,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 389,
+        "gain_db": -9.28858906030655,
+        "pitch": 1.04575908184052,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 390,
+        "gain_db": -6.7774965763092,
+        "pitch": 0.997649967670441,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 390,
+        "gain_db": -9.8146538734436,
+        "pitch": 1.04230666160584,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 391,
+        "gain_db": -8.12917292118073,
+        "pitch": 0.991030037403107,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 392,
+        "gain_db": -8.91760265827179,
+        "pitch": 0.972442328929901,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 394,
+        "gain_db": -6.01031559705734,
+        "pitch": 0.998075485229492,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 398,
+        "gain_db": -9.41598165035248,
+        "pitch": 1.04124712944031,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 401,
+        "gain_db": -5.82485234737396,
+        "pitch": 0.976486682891846,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 401,
+        "gain_db": -6.21123671531677,
+        "pitch": 1.01860284805298,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "rook_fire",
+        "emitter": 88667588404,
+        "frame": 406,
+        "gain_db": -4.41589653491974,
+        "pitch": 0.99403178691864,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 408,
+        "gain_db": -6.92027878761292,
+        "pitch": 1.02405440807343,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 409,
+        "gain_db": -10.7525878548622,
+        "pitch": 1.01102840900421,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 412,
+        "gain_db": -5.61867308616638,
+        "pitch": 1.02997171878815,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 415,
+        "gain_db": -5.22260236740112,
+        "pitch": 0.991210341453552,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 415,
+        "gain_db": -8.26642155647278,
+        "pitch": 1.01036667823792,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 416,
+        "gain_db": -8.19267690181732,
+        "pitch": 1.00229930877686,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 417,
+        "gain_db": -9.92040801048279,
+        "pitch": 0.961423754692078,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 418,
+        "gain_db": -8.79157316684723,
+        "pitch": 0.986961841583252,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 420,
+        "gain_db": -9.35823225975037,
+        "pitch": 1.04394686222076,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 422,
+        "gain_db": -6.4274845123291,
+        "pitch": 1.01612102985382,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 423,
+        "gain_db": -6.30262899398804,
+        "pitch": 1.02787578105927,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 429,
+        "gain_db": -5.32758665084839,
+        "pitch": 1.01731431484222,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 430,
+        "gain_db": -9.2459579706192,
+        "pitch": 1.03832161426544,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "rook_fire",
+        "emitter": 88667588404,
+        "frame": 432,
+        "gain_db": -5.72997349500656,
+        "pitch": 1.01822626590729,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 434,
+        "gain_db": -6.02090448141098,
+        "pitch": 1.01620852947235,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 436,
+        "gain_db": -6.99903136491776,
+        "pitch": 1.02890801429749,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 441,
+        "gain_db": -9.18155467510223,
+        "pitch": 1.03505563735962,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 441,
+        "gain_db": -9.232557117939,
+        "pitch": 1.03903543949127,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 442,
+        "gain_db": -8.19030046463013,
+        "pitch": 0.959200203418732,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 443,
+        "gain_db": -6.54915845394135,
+        "pitch": 0.983368694782257,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 443,
+        "gain_db": -9.83231258392334,
+        "pitch": 1.0076287984848,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 444,
+        "gain_db": -9.25171095132828,
+        "pitch": 0.951522171497345,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 445,
+        "gain_db": -6.35296958684921,
+        "pitch": 0.994276821613312,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 450,
+        "gain_db": -5.74429214000702,
+        "pitch": 1.00884401798248,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 453,
+        "gain_db": -9.96608591079712,
+        "pitch": 1.02058362960815,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 456,
+        "gain_db": -6.07940089702606,
+        "pitch": 0.996480464935303,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 457,
+        "gain_db": -5.99266576766968,
+        "pitch": 1.02239072322845,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "rook_fire",
+        "emitter": 88667588404,
+        "frame": 458,
+        "gain_db": -4.9392923116684,
+        "pitch": 0.979493021965027,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 463,
+        "gain_db": -10.3905195593834,
+        "pitch": 1.03426051139832,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 464,
+        "gain_db": -6.30345904827118,
+        "pitch": 0.991272211074829,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 467,
+        "gain_db": -6.82636713981628,
+        "pitch": 1.02620387077332,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 467,
+        "gain_db": -8.24649131298065,
+        "pitch": 1.00079607963562,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 468,
+        "gain_db": -9.76946711540222,
+        "pitch": 1.00784885883331,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 469,
+        "gain_db": -9.97310221195221,
+        "pitch": 0.974823176860809,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 470,
+        "gain_db": -9.75999426841736,
+        "pitch": 1.02507555484772,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 471,
+        "gain_db": -6.9244013428688,
+        "pitch": 1.00621831417084,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_reload",
+        "emitter": 86369109698,
+        "frame": 472,
+        "gain_db": -11.0638620853424,
+        "pitch": 0.995055198669434,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_reload_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 474,
+        "gain_db": -9.12904906272888,
+        "pitch": 1.03130352497101,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 478,
+        "gain_db": -6.11407744884491,
+        "pitch": 1.02845752239227,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "rook_fire",
+        "emitter": 88667588404,
+        "frame": 484,
+        "gain_db": -5.34770661592484,
+        "pitch": 1.02671158313751,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "rook_reload",
+        "emitter": 88667588404,
+        "frame": 485,
+        "gain_db": -11.4835424423218,
+        "pitch": 1.00392425060272,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_reload_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 485,
+        "gain_db": -9.03890717029572,
+        "pitch": 1.00321400165558,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 489,
+        "gain_db": -6.46580862998962,
+        "pitch": 1.02711272239685,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 493,
+        "gain_db": -9.67775195837021,
+        "pitch": 1.02922093868256,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 494,
+        "gain_db": -8.14025664329529,
+        "pitch": 0.952196896076202,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 495,
+        "gain_db": -8.24129343032837,
+        "pitch": 0.998182892799377,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 496,
+        "gain_db": -10.1398521661758,
+        "pitch": 1.0499666929245,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 496,
+        "gain_db": -9.6394310593605,
+        "pitch": 0.981289803981781,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "boss_charge",
+        "emitter": 122859555167,
+        "frame": 499,
+        "gain_db": -8.0,
+        "pitch": 1.0,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/boss_charge_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 500,
+        "gain_db": -5.30283141136169,
+        "pitch": 0.977084815502167,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 507,
+        "gain_db": -9.06165719032288,
+        "pitch": 0.955595254898071,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 511,
+        "gain_db": -5.35625553131104,
+        "pitch": 0.985528945922852,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 519,
+        "gain_db": -9.56711399555206,
+        "pitch": 0.957674980163574,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 522,
+        "gain_db": -6.78315168619156,
+        "pitch": 0.978309214115143,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_reload",
+        "emitter": 90815072166,
+        "frame": 523,
+        "gain_db": -12.1278893947601,
+        "pitch": 1.00948929786682,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_reload_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 530,
+        "gain_db": -9.94376289844513,
+        "pitch": 0.95868444442749,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 534,
+        "gain_db": -5.66809678077698,
+        "pitch": 1.01310276985168,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 539,
+        "gain_db": -10.5959793329239,
+        "pitch": 1.0075546503067,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 541,
+        "gain_db": -6.81427532434464,
+        "pitch": 0.973172605037689,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 548,
+        "gain_db": -6.35685312747955,
+        "pitch": 0.985313832759857,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 555,
+        "gain_db": -5.27676022052765,
+        "pitch": 0.971540033817291,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 562,
+        "gain_db": -6.72872233390808,
+        "pitch": 1.0133353471756,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "rook_fire",
+        "emitter": 88667588404,
+        "frame": 568,
+        "gain_db": -4.39256715774536,
+        "pitch": 0.991872787475586,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 569,
+        "gain_db": -5.67895364761353,
+        "pitch": 1.0294623374939,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 576,
+        "gain_db": -6.74301290512085,
+        "pitch": 1.02810704708099,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 577,
+        "gain_db": -9.72607642412186,
+        "pitch": 0.989936292171478,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 578,
+        "gain_db": -8.14242494106293,
+        "pitch": 1.01302850246429,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 579,
+        "gain_db": -8.68443536758423,
+        "pitch": 0.979698419570923,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 580,
+        "gain_db": -9.25047725439072,
+        "pitch": 0.96683531999588,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 583,
+        "gain_db": -6.95071220397949,
+        "pitch": 1.00294160842896,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "boss_cross_beam",
+        "emitter": 122859555167,
+        "frame": 583,
+        "gain_db": -7.0,
+        "pitch": 1.0,
+        "spatial": false,
+        "stream": "res://assets/audio/combat_r04/boss_cross_beam_v03.res",
+        "variant": 1
+      },
+      {
+        "cue": "impact_body",
+        "emitter": 88667588404,
+        "frame": 583,
+        "gain_db": -7.89909422397614,
+        "pitch": 1.03703093528748,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_body_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "rook_hurt",
+        "emitter": 88667588404,
+        "frame": 583,
+        "gain_db": -7.76539444923401,
+        "pitch": 0.987984240055084,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_hurt_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 590,
+        "gain_db": -5.39656043052673,
+        "pitch": 1.01438617706299,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 591,
+        "gain_db": -6.94453483819962,
+        "pitch": 0.985010325908661,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "rook_fire",
+        "emitter": 88667588404,
+        "frame": 594,
+        "gain_db": -4.07563364505768,
+        "pitch": 0.979670345783234,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/rook_fire_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 597,
+        "gain_db": -6.45705318450928,
+        "pitch": 1.00726711750031,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "mica_fire",
+        "emitter": 90815072166,
+        "frame": 602,
+        "gain_db": -6.85922610759735,
+        "pitch": 1.02635717391968,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/mica_fire_v01.res",
+        "variant": 0
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 603,
+        "gain_db": -8.99026548862457,
+        "pitch": 1.03793299198151,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v02.res",
+        "variant": 1
+      },
+      {
+        "cue": "aster_fire",
+        "emitter": 86369109698,
+        "frame": 604,
+        "gain_db": -5.12984991073608,
+        "pitch": 0.987807035446167,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/aster_fire_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 604,
+        "gain_db": -9.28069233894348,
+        "pitch": 0.963431179523468,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 605,
+        "gain_db": -8.38850176334381,
+        "pitch": 0.985564768314362,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v04.res",
+        "variant": 3
+      },
+      {
+        "cue": "impact_steel_heavy",
+        "emitter": 88667588404,
+        "frame": 606,
+        "gain_db": -9.51837980747223,
+        "pitch": 1.0029878616333,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/impact_steel_heavy_v03.res",
+        "variant": 2
+      },
+      {
+        "cue": "robot_hit",
+        "emitter": 90815072166,
+        "frame": 608,
+        "gain_db": -10.9954060316086,
+        "pitch": 0.98885452747345,
+        "spatial": true,
+        "stream": "res://assets/audio/combat_r04/robot_hit_v01.res",
+        "variant": 0
+      }
+    ],
+    "peak_voices": 21,
+    "played": 219,
+    "suppressed": 23,
+    "voices": 11
+  },
+  "capture_end_render_frame": 608,
+  "capture_start_render_frame": 8,
+  "clock": "Godot --fixed-fps 60; native rendered viewport readback, not a wall-clock performance measurement",
+  "duration_seconds": 10,
+  "enemy_observations": [
+    {
+      "enemy": "BOSS_SITE7_GANTRY_01",
+      "frame": 0,
+      "instance": 122859555167,
+      "lunges": 0,
+      "position": [
+        12973.759765625,
+        -3590.76000976563
+      ],
+      "shots": 0,
+      "state": "REPOSITION"
+    },
+    {
+      "enemy": "ENM_SITE7_PRISM_01",
+      "frame": 0,
+      "instance": 123228653512,
+      "lunges": 0,
+      "position": [
+        12459.357421875,
+        -3519.69848632813
+      ],
+      "shots": 0,
+      "state": "REPOSITION"
+    },
+    {
+      "enemy": "ENM_SITE7_DRONE_01",
+      "frame": 0,
+      "instance": 123530643271,
+      "lunges": 0,
+      "position": [
+        12565.703125,
+        -3466.69067382813
+      ],
+      "shots": 0,
+      "state": "REPOSITION"
+    },
+    {
+      "enemy": "BOSS_SITE7_GANTRY_01",
+      "frame": 60,
+      "instance": 122859555167,
+      "lunges": 0,
+      "position": [
+        12973.759765625,
+        -3590.76000976563
+      ],
+      "shots": 0,
+      "state": "WINDUP"
+    },
+    {
+      "enemy": "ENM_SITE7_PRISM_01",
+      "frame": 60,
+      "instance": 123228653512,
+      "lunges": 0,
+      "position": [
+        12492.52734375,
+        -3475.33203125
+      ],
+      "shots": 0,
+      "state": "WINDUP"
+    },
+    {
+      "enemy": "ENM_SITE7_DRONE_01",
+      "frame": 60,
+      "instance": 123530643271,
+      "lunges": 0,
+      "position": [
+        12578.3271484375,
+        -3517.390625
+      ],
+      "shots": 0,
+      "state": "WINDUP"
+    },
+    {
+      "enemy": "BOSS_SITE7_GANTRY_01",
+      "frame": 120,
+      "instance": 122859555167,
+      "lunges": 0,
+      "position": [
+        12973.759765625,
+        -3590.76000976563
+      ],
+      "shots": 0,
+      "state": "RECOVER"
+    },
+    {
+      "enemy": "BOSS_SITE7_GANTRY_01",
+      "frame": 180,
+      "instance": 122859555167,
+      "lunges": 0,
+      "position": [
+        12973.759765625,
+        -3590.76000976563
+      ],
+      "shots": 0,
+      "state": "RECOVER"
+    },
+    {
+      "enemy": "BOSS_SITE7_GANTRY_01",
+      "frame": 240,
+      "instance": 122859555167,
+      "lunges": 0,
+      "position": [
+        12973.759765625,
+        -3590.76000976563
+      ],
+      "shots": 0,
+      "state": "WINDUP"
+    },
+    {
+      "enemy": "BOSS_SITE7_GANTRY_01",
+      "frame": 300,
+      "instance": 122859555167,
+      "lunges": 0,
+      "position": [
+        12973.759765625,
+        -3590.76000976563
+      ],
+      "shots": 0,
+      "state": "RECOVER"
+    },
+    {
+      "enemy": "BOSS_SITE7_GANTRY_01",
+      "frame": 360,
+      "instance": 122859555167,
+      "lunges": 0,
+      "position": [
+        12973.759765625,
+        -3590.76000976563
+      ],
+      "shots": 0,
+      "state": "RECOVER"
+    },
+    {
+      "enemy": "BOSS_SITE7_GANTRY_01",
+      "frame": 420,
+      "instance": 122859555167,
+      "lunges": 0,
+      "position": [
+        12973.759765625,
+        -3590.76000976563
+      ],
+      "shots": 0,
+      "state": "REPOSITION"
+    },
+    {
+      "enemy": "BOSS_SITE7_GANTRY_01",
+      "frame": 480,
+      "instance": 122859555167,
+      "lunges": 0,
+      "position": [
+        12973.759765625,
+        -3590.76000976563
+      ],
+      "shots": 0,
+      "state": "WINDUP"
+    },
+    {
+      "enemy": "BOSS_SITE7_GANTRY_01",
+      "frame": 540,
+      "instance": 122859555167,
+      "lunges": 0,
+      "position": [
+        12973.759765625,
+        -3590.76000976563
+      ],
+      "shots": 0,
+      "state": "RECOVER"
+    },
+    {
+      "enemy": "BOSS_SITE7_GANTRY_01",
+      "frame": 599,
+      "instance": 122859555167,
+      "lunges": 0,
+      "position": [
+        12973.759765625,
+        -3590.76000976563
+      ],
+      "shots": 0,
+      "state": "REPOSITION"
+    }
+  ],
+  "fps": 60,
+  "frames": 600,
+  "initial_encounter_step": 4,
+  "input": "WASD / Shift / mouse aim / LMB / reload / F next encounter via Input.parse_input_event",
+  "mission": "MIS_CH01_08",
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "normal_ai_and_damage": true,
+  "observations": [
+    {
+      "ammo": 23,
+      "encounter_step": 4,
+      "frame": 0,
+      "health": 96.0,
+      "hostiles": 3,
+      "position": [
+        12231.4306640625,
+        -3475.44995117188
+      ],
+      "squad_projectiles": 2,
+      "visible_enemy_ids": [
+        "BOSS_SITE7_GANTRY_01",
+        "ENM_SITE7_DRONE_01",
+        "ENM_SITE7_PRISM_01"
+      ]
+    },
+    {
+      "ammo": 15,
+      "encounter_step": 4,
+      "frame": 60,
+      "health": 96.0,
+      "hostiles": 3,
+      "position": [
+        12396.4306640625,
+        -3475.44995117188
+      ],
+      "squad_projectiles": 25,
+      "visible_enemy_ids": [
+        "BOSS_SITE7_GANTRY_01",
+        "ENM_SITE7_DRONE_01",
+        "ENM_SITE7_PRISM_01"
+      ]
+    },
+    {
+      "ammo": 6,
+      "encounter_step": 4,
+      "frame": 120,
+      "health": 79.0,
+      "hostiles": 1,
+      "position": [
+        12456.4970703125,
+        -3390.53295898438
+      ],
+      "squad_projectiles": 48,
+      "visible_enemy_ids": [
+        "BOSS_SITE7_GANTRY_01"
+      ]
+    },
+    {
+      "ammo": 0,
+      "encounter_step": 4,
+      "frame": 180,
+      "health": 79.0,
+      "hostiles": 1,
+      "position": [
+        12380.455078125,
+        -3336.67822265625
+      ],
+      "squad_projectiles": 55,
+      "visible_enemy_ids": [
+        "BOSS_SITE7_GANTRY_01"
+      ]
+    },
+    {
+      "ammo": 24,
+      "encounter_step": 4,
+      "frame": 240,
+      "health": 79.0,
+      "hostiles": 1,
+      "position": [
+        12309.962890625,
+        -3362.71118164063
+      ],
+      "squad_projectiles": 60,
+      "visible_enemy_ids": [
+        "BOSS_SITE7_GANTRY_01"
+      ]
+    },
+    {
+      "ammo": 23,
+      "encounter_step": 4,
+      "frame": 300,
+      "health": 79.0,
+      "hostiles": 1,
+      "position": [
+        12312.712890625,
+        -3362.71118164063
+      ],
+      "squad_projectiles": 63,
+      "visible_enemy_ids": [
+        "BOSS_SITE7_GANTRY_01"
+      ]
+    },
+    {
+      "ammo": 15,
+      "encounter_step": 4,
+      "frame": 360,
+      "health": 79.0,
+      "hostiles": 1,
+      "position": [
+        12477.712890625,
+        -3362.71118164063
+      ],
+      "squad_projectiles": 80,
+      "visible_enemy_ids": [
+        "BOSS_SITE7_GANTRY_01"
+      ]
+    },
+    {
+      "ammo": 6,
+      "encounter_step": 4,
+      "frame": 420,
+      "health": 79.0,
+      "hostiles": 1,
+      "position": [
+        12557.462890625,
+        -3491.88037109375
+      ],
+      "squad_projectiles": 104,
+      "visible_enemy_ids": [
+        "BOSS_SITE7_GANTRY_01"
+      ]
+    },
+    {
+      "ammo": 0,
+      "encounter_step": 4,
+      "frame": 480,
+      "health": 79.0,
+      "hostiles": 1,
+      "position": [
+        12557.462890625,
+        -3612.71606445313
+      ],
+      "squad_projectiles": 131,
+      "visible_enemy_ids": [
+        "BOSS_SITE7_GANTRY_01"
+      ]
+    },
+    {
+      "ammo": 21,
+      "encounter_step": 4,
+      "frame": 540,
+      "health": 79.0,
+      "hostiles": 1,
+      "position": [
+        12557.462890625,
+        -3612.71606445313
+      ],
+      "squad_projectiles": 137,
+      "visible_enemy_ids": [
+        "BOSS_SITE7_GANTRY_01"
+      ]
+    },
+    {
+      "ammo": 13,
+      "encounter_step": 4,
+      "frame": 599,
+      "health": 79.0,
+      "hostiles": 1,
+      "position": [
+        12557.462890625,
+        -3612.71606445313
+      ],
+      "squad_projectiles": 157,
+      "visible_enemy_ids": [
+        "BOSS_SITE7_GANTRY_01"
+      ]
+    }
+  ],
+  "render_content_scale": [
+    1280,
+    720
+  ],
+  "scene": "res://scenes/mission/StoryStage01.tscn",
+  "seen_enemy_ids": [
+    "BOSS_SITE7_GANTRY_01",
+    "ENM_SITE7_DRONE_01",
+    "ENM_SITE7_PRISM_01"
+  ]
+}

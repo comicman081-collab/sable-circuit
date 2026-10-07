@@ -1,0 +1,249 @@
+{
+  "schema": 1,
+  "project": "SABLE CIRCUIT",
+  "artifact": "MICA C03 V8 R14 diagonal shared-center gait recapture batch",
+  "created_at_utc": "2026-09-04T12:02:04.2717613Z",
+  "purpose": "Track the corrected NE/NW R2 and SE/SW recaptured evidence while preserving all superseded or failed evidence under the quarantine policy.",
+  "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+  "promotion": {
+    "ne_direction_production": "HOLD",
+    "nw_direction_production": "HOLD",
+    "se_direction_production": "HOLD",
+    "sw_direction_production": "HOLD",
+    "eight_direction_visual_runtime": "HOLD"
+  },
+  "capture_mapping_fix": {
+    "implementation": "tools/art_pipeline/capture_mica_phase_plate_direction_video.py",
+    "status": "APPLIED_AND_PYCOMPILE_VERIFIED",
+    "details": [
+      "Prefer isolated logical left/right leg component images for sole-point detection in every direction.",
+      "Use the stable bottom-minus-one raster row for sole-point sampling.",
+      "Do not infer logical ownership from merged screen ordering when component images exist."
+    ],
+    "reason": "The previous diagonal capture could confuse logical screen_left/screen_right ownership when legs crossed, which could pin the wrong foot."
+  },
+  "local_validation": {
+    "validator": "tools/art_pipeline/validate_visual_evidence_1080p.py",
+    "record": "artifacts/mica_c03_v8_r14_diagonal_shared_recapture_visual_evidence_validation.json",
+    "gate": "PASS",
+    "container_gate": "PASS",
+    "dynamic_capture_gate": "PASS",
+    "native_review_resolution": [
+      2304,
+      1080
+    ],
+    "dynamic_capture_resolution": [
+      1920,
+      1080
+    ],
+    "fps": 24,
+    "frames": 120,
+    "quality_claim": false
+  },
+  "directions": [
+    {
+      "direction": "NE",
+      "revision": "V8_R14_NE_SHARED_R2",
+      "candidate": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_v8_r14_ne_shared_handoff_r2_ual",
+      "spec": "art_src/characters/mica/fast_pipeline/motion_profiles/candidate_mica_c03_v8_r14_ne_shared_handoff_r2/MICA_C03_NE_SHARED_HANDOFF_RIG_V8_R14_R2.json",
+      "configuration": {
+        "forward_axis_xy": [
+          0.707106781,
+          0.707106781
+        ],
+        "foot_center_mode": "shared",
+        "depth_offset_units": 0,
+        "screen_right_offset_units": 0.0189,
+        "continuous_root_step_px": 1.69,
+        "lower_uniform_scale": 1,
+        "boot_rotation_degrees": 0,
+        "cross_leg_weighting": false
+      },
+      "local_metrics": {
+        "left_span_units": -17.353,
+        "right_span_units": -17.035,
+        "handoff_units": 17.128,
+        "wrap_units": 17.260,
+        "balance_gap_px": 0.132
+      },
+      "evidence": [
+        {
+          "kind": "static_review_sheet",
+          "path": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r2_review/MICA_C03_V8_R14_NE_SHARED_R2_NE_GAIT_REVIEW_2304X1080.png",
+          "sha256": "47b3b222f89f3eae4f2ad6a505b90ebadc7a36746869779561b4c81e93201f2e"
+        },
+        {
+          "kind": "fixed_grid_video",
+          "path": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r2_review/MICA_C03_V8_R14_NE_SHARED_R2_RECAPTURED_FIXED_GRID_5S_1920X1080.mp4",
+          "sha256": "90682af3883c43ab74a079338958693fcbe29ab2a8a4e63a61472856d0d8bf93"
+        },
+        {
+          "kind": "world_grid_video",
+          "path": "artifacts/mica_c03_v8_r14_ne_shared_handoff_r2_review/MICA_C03_V8_R14_NE_SHARED_R2_RECAPTURED_WORLD_GRID_5S_1920X1080.mp4",
+          "sha256": "ca53f708f7f083f05c36f23ed3da042243676f45c424b9c5771ca0abf412e08f"
+        }
+      ],
+      "external_chatgpt_review": "PENDING",
+      "ponytail_full_review": "HOLD_DUE_TO_SUPPORT_DRIFT_1.36_1.48PX"
+    },
+    {
+      "direction": "NW",
+      "revision": "V8_R14_NW_SHARED_R2",
+      "candidate": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_v8_r14_nw_shared_handoff_r2_ual",
+      "spec": "art_src/characters/mica/fast_pipeline/motion_profiles/candidate_mica_c03_v8_r14_nw_shared_handoff_r2/MICA_C03_NW_SHARED_HANDOFF_RIG_V8_R14_R2.json",
+      "configuration": {
+        "forward_axis_xy": [
+          -0.707106781,
+          0.707106781
+        ],
+        "foot_center_mode": "shared",
+        "depth_offset_units": 0,
+        "screen_right_offset_units": 0.042,
+        "continuous_root_step_px": 1.69,
+        "lower_uniform_scale": 1,
+        "boot_rotation_degrees": 0,
+        "cross_leg_weighting": false
+      },
+      "local_metrics": {
+        "left_span_units": -16.818,
+        "right_span_units": -16.948,
+        "handoff_units": 16.963,
+        "wrap_units": 16.804,
+        "balance_gap_px": 0.159
+      },
+      "evidence": [
+        {
+          "kind": "static_review_sheet",
+          "path": "artifacts/mica_c03_v8_r14_nw_shared_handoff_r2_review/MICA_C03_V8_R14_NW_SHARED_R2_NW_GAIT_REVIEW_2304X1080.png",
+          "sha256": "4c7dd10d6c7e4832b3bee46fa4207eebcd1b4fa1ca60ab81be6be5337687aa5e"
+        },
+        {
+          "kind": "fixed_grid_video",
+          "path": "artifacts/mica_c03_v8_r14_nw_shared_handoff_r2_review/MICA_C03_V8_R14_NW_SHARED_R2_RECAPTURED_FIXED_GRID_5S_1920X1080.mp4",
+          "sha256": "f810249a90e187a1558c29036fd0edd53c2d70a11b6aeb8218c906fa058408e2"
+        },
+        {
+          "kind": "world_grid_video",
+          "path": "artifacts/mica_c03_v8_r14_nw_shared_handoff_r2_review/MICA_C03_V8_R14_NW_SHARED_R2_RECAPTURED_WORLD_GRID_5S_1920X1080.mp4",
+          "sha256": "7fb98c0f7c3b4efe9dba118f42902b2a3cde6733082373274afb4328214b61ab"
+        }
+      ],
+      "external_chatgpt_review": "PENDING",
+      "ponytail_full_review": "HOLD_DUE_TO_SUPPORT_DRIFT_1.68_1.61PX"
+    },
+    {
+      "direction": "SE",
+      "revision": "V8_R14_SE_R1_RECAPTURED",
+      "candidate": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_v8_r14_se_lateral_handoff_ual",
+      "spec": "art_src/characters/mica/fast_pipeline/motion_profiles/candidate_mica_c03_v8_r14_se_lateral_handoff_ual/MICA_C03_SE_LATERAL_HANDOFF_RIG_V8_R14.json",
+      "local_metrics": {
+        "left_span_units": -18.738,
+        "right_span_units": -18.301,
+        "handoff_units": 18.140,
+        "wrap_units": 18.899,
+        "balance_gap_px": 0.759
+      },
+      "evidence": [
+        {
+          "kind": "static_review_sheet",
+          "path": "artifacts/mica_c03_v8_r14_se_lateral_handoff_review_r1/MICA_C03_V8_R14_SE_R1_SE_GAIT_REVIEW_2304X1080.png",
+          "sha256": "f8138b9bad184c3c2b1c74490c7d1309286b5abc2f7edd9fe8a7222e5e312ce9"
+        },
+        {
+          "kind": "fixed_grid_video",
+          "path": "artifacts/mica_c03_v8_r14_se_lateral_handoff_review_r1/MICA_C03_V8_R14_SE_R1_RECAPTURED_FIXED_GRID_5S_1920X1080.mp4",
+          "sha256": "82571caf39326a7eb0a3725f74925d02ba617e7cd69db2b7eea6803dddf70262"
+        },
+        {
+          "kind": "world_grid_video",
+          "path": "artifacts/mica_c03_v8_r14_se_lateral_handoff_review_r1/MICA_C03_V8_R14_SE_R1_RECAPTURED_WORLD_GRID_5S_1920X1080.mp4",
+          "sha256": "6567072b79784d63f420a6c3cd6c2b09f5484033b075de7089baefa957a549f8"
+        },
+        {
+          "kind": "world_selected_frames",
+          "path": "artifacts/mica_c03_v8_r14_se_lateral_handoff_review_r1/MICA_C03_V8_R14_SE_R1_RECAPTURED_WORLD_SELECTED_FRAMES_1920X1080.png"
+        }
+      ],
+      "external_chatgpt_review": "PENDING",
+      "ponytail_full_review": "PENDING"
+    },
+    {
+      "direction": "SW",
+      "revision": "V8_R14_SW_R2_RECAPTURED",
+      "candidate": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_v8_r14_sw_lateral_handoff_ual",
+      "spec": "art_src/characters/mica/fast_pipeline/motion_profiles/candidate_mica_c03_v8_r14_sw_lateral_handoff_ual/MICA_C03_SW_LATERAL_HANDOFF_RIG_V8_R14.json",
+      "local_metrics": {
+        "left_span_units": -19.243,
+        "right_span_units": -18.512,
+        "handoff_units": 18.931,
+        "wrap_units": 18.824,
+        "balance_gap_px": 0.107
+      },
+      "evidence": [
+        {
+          "kind": "static_review_sheet",
+          "path": "artifacts/mica_c03_v8_r14_sw_lateral_handoff_review_r2/MICA_C03_V8_R14_SW_R2_SW_GAIT_REVIEW_2304X1080.png",
+          "sha256": "4b885a0b7cc3533c535401275b3315bef7530eb8bad4ebb160f6654553f6bbb5"
+        },
+        {
+          "kind": "fixed_grid_video",
+          "path": "artifacts/mica_c03_v8_r14_sw_lateral_handoff_review_r2/MICA_C03_V8_R14_SW_R2_RECAPTURED_FIXED_GRID_5S_1920X1080.mp4",
+          "sha256": "1086e119439e63a0240af6bc277b52e764c70ce3cf842772005e87ab96fb557d"
+        },
+        {
+          "kind": "world_grid_video",
+          "path": "artifacts/mica_c03_v8_r14_sw_lateral_handoff_review_r2/MICA_C03_V8_R14_SW_R2_RECAPTURED_WORLD_GRID_5S_1920X1080.mp4",
+          "sha256": "856155516d024660dd9effa69f449075572c5a645748b5eff9c5109d24a03450"
+        },
+        {
+          "kind": "world_selected_frames",
+          "path": "artifacts/mica_c03_v8_r14_sw_lateral_handoff_review_r2/MICA_C03_V8_R14_SW_R2_RECAPTURED_WORLD_SELECTED_FRAMES_1920X1080.png"
+        }
+      ],
+      "external_chatgpt_review": "PENDING",
+      "ponytail_full_review": "PENDING"
+    }
+  ],
+  "quarantine": {
+    "deletion_performed": false,
+    "retirement_manifest_required_before_disposal": true,
+    "preserved_records": [
+      {
+        "path": "artifacts/mica_c03_v8_r14_ne_shared_handoff_review",
+        "reason": "Superseded initial diagonal capture before logical component mapping fix; preserve for provenance and failure analysis.",
+        "disposal": "NOT_ALLOWED_WHILE_PROMOTION_HOLD"
+      },
+      {
+        "path": "artifacts/mica_c03_v8_r14_nw_shared_handoff_review",
+        "reason": "Superseded initial diagonal capture before logical component mapping fix; preserve for provenance and failure analysis.",
+        "disposal": "NOT_ALLOWED_WHILE_PROMOTION_HOLD"
+      },
+      {
+        "path": "artifacts/mica_c03_v8_r14_se_lateral_handoff_review_r1/MICA_C03_V8_R14_SE_R1_FIXED_GRID_5S_1920X1080.mp4",
+        "reason": "Pre-recapture SE evidence retained beside corrected recapture.",
+        "disposal": "NOT_ALLOWED_WHILE_PROMOTION_HOLD"
+      },
+      {
+        "path": "artifacts/mica_c03_v8_r14_se_lateral_handoff_review_r1/MICA_C03_V8_R14_SE_R1_WORLD_GRID_5S_1920X1080.mp4",
+        "reason": "Pre-recapture SE evidence retained beside corrected recapture.",
+        "disposal": "NOT_ALLOWED_WHILE_PROMOTION_HOLD"
+      },
+      {
+        "path": "artifacts/mica_c03_v8_r14_sw_lateral_handoff_review_r2/MICA_C03_V8_R14_SW_R2_FIXED_GRID_5S_1920X1080.mp4",
+        "reason": "Pre-recapture SW evidence retained beside corrected recapture.",
+        "disposal": "NOT_ALLOWED_WHILE_PROMOTION_HOLD"
+      },
+      {
+        "path": "artifacts/mica_c03_v8_r14_sw_lateral_handoff_review_r2/MICA_C03_V8_R14_SW_R2_WORLD_GRID_5S_1920X1080.mp4",
+        "reason": "Pre-recapture SW evidence retained beside corrected recapture.",
+        "disposal": "NOT_ALLOWED_WHILE_PROMOTION_HOLD"
+      }
+    ]
+  },
+  "review_gate": {
+    "existing_chatgpt_conversation": "https://chatgpt.com/c/6a93c84f-fb1c-83e8-9d88-959e708b2463",
+    "chatgpt_web_review_status": "NE_SINGLE_DIRECTION_REQUEST_IN_PROGRESS",
+    "ponytail_full_status": "REQUESTED_FOR_NE_NW_R2",
+    "promotion_rule": "Do not promote until every direction has visual, Ponytail FULL, runtime, technical, and pointer gates."
+  }
+}

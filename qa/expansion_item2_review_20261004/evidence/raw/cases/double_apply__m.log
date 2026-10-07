@@ -1,0 +1,232 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS: same run ID produces identical M11 contract
+PASS: M11 contract preserves authoritative run ID
+PASS: M11 contract always selects one hazard and one opportunity
+PASS: different run IDs produce more than one hazard
+PASS: different run IDs produce more than one opportunity
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/E.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/SE.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/S.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/SW.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/W.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/NW.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/N.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/NE.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/E.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/SE.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/S.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/SW.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/W.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/NW.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/N.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/NE.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/signal_anchor_guardian/authored_core_v1/anchor.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m11_run_contract_smoke.gd:28)
+M7_RASTER_QUARANTINED identity=aster status=partial chunks=2 encoded=20000 present=15000 declared=94718
+PASS: StoryStage owns the issued run contract
+PASS: M11 smoke resolves current authored drone hostile
+PASS: enemy receives run health multiplier
+PASS: enemy receives run damage multiplier
+PASS: enemy receives run speed multiplier
+PASS: enemy receives run attack interval multiplier
+ERROR: FAIL: authored drone HP is multiplied exactly once by run contract
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/smoke/m11_run_contract_smoke.gd:142)
+       [1] _run (res://tests/smoke/m11_run_contract_smoke.gd:49)
+       [2] _frames (res://tests/smoke/m11_run_contract_smoke.gd:138)
+PASS: run contract multiplies secured research reward
+PASS: run contract multiplies secured salvage reward
+PASS: run contract multiplies secured signal reward
+PASS: O01 activates FIELD STIM run-only boost
+PASS: FIELD STIM grants +10 percent operator speed
+PASS: FIELD STIM grants 10 percent incoming damage reduction
+PASS: FIELD STIM changes actual incoming damage authority
+PASS: same optional-room boost cannot stack twice
+PASS: repeated boost attempt leaves speed multiplier unchanged
+PASS: O02 activates OVERCHARGE CELL run-only boost
+PASS: OVERCHARGE CELL grants primary damage multiplier
+PASS: OVERCHARGE CELL grants +20 percent actual squad energy gain
+PASS: stage records active run-only boosts in activation order
+PASS: mission summary explicitly marks run-only boost expiration
+PASS: mission summary audits active run-only boosts
+PASS: M11 summary still commits through normal campaign transaction
+PASS: CampaignProgression never persists run contract or run-only boost list
+PASS: CampaignProgression never persists tactical run multipliers
+M7_RASTER_QUARANTINED identity=aster status=partial chunks=2 encoded=20000 present=15000 declared=94718
+PASS: new deployment does not inherit prior FIELD STIM
+PASS: new deployment does not inherit prior OVERCHARGE CELL
+PASS: new deployment resets run energy multiplier
+PASS: legacy/neutral configure path preserves authored enemy HP
+M11_RUN_CONTRACT_SMOKE: FAIL (1)
+ - authored drone HP is multiplied exactly once by run contract

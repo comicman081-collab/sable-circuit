@@ -1,0 +1,221 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_R04/attempt01/S9_R04_GAME.png",
+  "luma": 0.2004479318857193,
+  "p10": 0.14974510669708252,
+  "p90": 0.2549019753932953,
+  "saturation": 0.02557702785013555,
+  "hue": 148.8372722758374,
+  "axis": 25.500531495016432,
+  "problems": [
+    "main floor border margin 4.904% below 7%",
+    "whole floor border margin 3.230% below 4%"
+  ],
+  "plate": "S9_R04",
+  "attempt": 1,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      83,
+      494
+    ],
+    [
+      836,
+      203
+    ],
+    [
+      1093,
+      308
+    ],
+    [
+      1140,
+      264
+    ],
+    [
+      1263,
+      203
+    ],
+    [
+      1268,
+      371
+    ],
+    [
+      1590,
+      494
+    ],
+    [
+      1434,
+      596
+    ],
+    [
+      1614,
+      691
+    ],
+    [
+      1430,
+      794
+    ],
+    [
+      1260,
+      691
+    ],
+    [
+      833,
+      870
+    ],
+    [
+      418,
+      694
+    ],
+    [
+      242,
+      794
+    ],
+    [
+      54,
+      691
+    ],
+    [
+      238,
+      600
+    ]
+  ],
+  "doors_px": {
+    "NE": [
+      1180,
+      339,
+      220
+    ],
+    "SW": [
+      328,
+      647,
+      220
+    ],
+    "SE": [
+      1347,
+      643,
+      220
+    ]
+  },
+  "raw_sha256": "0c9a7ff303c18fddb3b1505601a6ecbd57a1c61267f86a0d9332a57b56bd7f1a",
+  "master_sha256": "0c9a7ff303c18fddb3b1505601a6ecbd57a1c61267f86a0d9332a57b56bd7f1a",
+  "game_sha256": "32be77090f1d9a2b6b60a448609cc329d3ccc2e58131020423d5573e75f140b9",
+  "game_exposure_factor_srgb": 0.7652,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-4043f012-145b-4d07-a634-621846ddfe1d.png",
+  "inspection": "새 횡방향 공명 카트리지와 둔한 빗살 브래킷 벽, NE/SW/SE 문. 하지만 주 바닥과 두 전면 에이프런이 테두리에 너무 가까워 새 여백 기준 실패.",
+  "floor_area_px2": 615439.0,
+  "floor_area_fraction": 0.391164215000839,
+  "floor_bounds_px": [
+    54,
+    203,
+    1614,
+    870
+  ],
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "main_floor_minimum": 0.07,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "SW": [
+        [
+          238,
+          600
+        ],
+        [
+          418,
+          694
+        ],
+        [
+          242,
+          794
+        ],
+        [
+          54,
+          691
+        ]
+      ],
+      "SE": [
+        [
+          1434,
+          596
+        ],
+        [
+          1614,
+          691
+        ],
+        [
+          1430,
+          794
+        ],
+        [
+          1260,
+          691
+        ]
+      ],
+      "NE": [
+        [
+          1093,
+          308
+        ],
+        [
+          1140,
+          264
+        ],
+        [
+          1263,
+          203
+        ],
+        [
+          1268,
+          371
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      83,
+      203,
+      1590,
+      870
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.049641148325358854,
+      0.2157279489904357,
+      0.04904306220095694,
+      0.07545164718384698
+    ],
+    "whole_floor_bounds_px": [
+      54,
+      203,
+      1614,
+      870
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.03229665071770335,
+      0.2157279489904357,
+      0.034688995215311005,
+      0.07545164718384698
+    ],
+    "main_floor_area_px2": 529688
+  },
+  "apron_stats": {
+    "SW": {
+      "luma": 0.23960331082344055,
+      "saturation": 0.033212568302536466,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "SE": {
+      "luma": 0.24174097180366516,
+      "saturation": 0.03062019780953955,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "NE": {
+      "luma": 0.23895470798015594,
+      "saturation": 0.0246886044664388,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  }
+}

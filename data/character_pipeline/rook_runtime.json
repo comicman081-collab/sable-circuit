@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "actor_id": "CHR_PROTO_02",
+  "display_name": "ROOK",
+  "costume_id": "ROOK_BREACH_C02",
+  "candidate": "current",
+  "cell_size": 384,
+  "display_scale": 0.441,
+  "display_offset": [
+    0.0,
+    -63.54
+  ],
+  "states": {
+    "idle": {
+      "frames": 4,
+      "fps": 4.0
+    },
+    "move": {
+      "frames": 24,
+      "fps": 24.0
+    },
+    "fire": {
+      "frames": 6,
+      "fps": 12.0
+    }
+  },
+  "directions": {
+    "E": {
+      "idle_atlas": "assets/units/operators/rook/fast_runtime_v1/current/E/idle.png",
+      "move_atlas": "assets/units/operators/rook/fast_runtime_v1/current/E/move.png",
+      "fire_atlas": "assets/units/operators/rook/fast_runtime_v1/current/E/fire.png",
+      "muzzle_xy": [
+        313.0,
+        113.0
+      ],
+      "muzzle_source": "manual_v27_fire_frame_02",
+      "muzzle_review": "art_src/characters/rook/fast_pipeline/motion/current/ROOK_C02_MUZZLE_V27_MANUAL_FRAME_02.json"
+    },
+    "SE": {
+      "idle_atlas": "assets/units/operators/rook/fast_runtime_v1/current/SE/idle.png",
+      "move_atlas": "assets/units/operators/rook/fast_runtime_v1/current/SE/move.png",
+      "fire_atlas": "assets/units/operators/rook/fast_runtime_v1/current/SE/fire.png",
+      "muzzle_xy": [
+        294.0,
+        188.0
+      ],
+      "muzzle_source": "manual_v27_fire_frame_02",
+      "muzzle_review": "art_src/characters/rook/fast_pipeline/motion/current/ROOK_C02_MUZZLE_V27_MANUAL_FRAME_02.json"
+    },
+    "S": {
+      "idle_atlas": "assets/units/operators/rook/fast_runtime_v1/current/S/idle.png",
+      "move_atlas": "assets/units/operators/rook/fast_runtime_v1/current/S/move.png",
+      "fire_atlas": "assets/units/operators/rook/fast_runtime_v1/current/S/fire.png",
+      "muzzle_xy": [
+        192.0,
+        278.0
+      ],
+      "muzzle_source": "manual_v27_fire_frame_02",
+      "muzzle_review": "art_src/characters/rook/fast_pipeline/motion/current/ROOK_C02_MUZZLE_V27_MANUAL_FRAME_02.json"
+    },
+    "SW": {
+      "idle_atlas": "assets/units/operators/rook/fast_runtime_v1/current/SW/idle.png",
+      "move_atlas": "assets/units/operators/rook/fast_runtime_v1/current/SW/move.png",
+      "fire_atlas": "assets/units/operators/rook/fast_runtime_v1/current/SW/fire.png",
+      "muzzle_xy": [
+        121.0,
+        192.0
+      ],
+      "muzzle_source": "manual_v27_fire_frame_02",
+      "muzzle_review": "art_src/characters/rook/fast_pipeline/motion/current/ROOK_C02_MUZZLE_V27_MANUAL_FRAME_02.json"
+    },
+    "W": {
+      "idle_atlas": "assets/units/operators/rook/fast_runtime_v1/current/W/idle.png",
+      "move_atlas": "assets/units/operators/rook/fast_runtime_v1/current/W/move.png",
+      "fire_atlas": "assets/units/operators/rook/fast_runtime_v1/current/W/fire.png",
+      "muzzle_xy": [
+        70.0,
+        114.0
+      ],
+      "muzzle_source": "manual_v27_fire_frame_02",
+      "muzzle_review": "art_src/characters/rook/fast_pipeline/motion/current/ROOK_C02_MUZZLE_V27_MANUAL_FRAME_02.json"
+    },
+    "NW": {
+      "idle_atlas": "assets/units/operators/rook/fast_runtime_v1/current/NW/idle.png",
+      "move_atlas": "assets/units/operators/rook/fast_runtime_v1/current/NW/move.png",
+      "fire_atlas": "assets/units/operators/rook/fast_runtime_v1/current/NW/fire.png",
+      "muzzle_xy": [
+        130.0,
+        76.0
+      ],
+      "muzzle_source": "manual_v27_fire_frame_02",
+      "muzzle_review": "art_src/characters/rook/fast_pipeline/motion/current/ROOK_C02_MUZZLE_V27_MANUAL_FRAME_02.json"
+    },
+    "N": {
+      "idle_atlas": "assets/units/operators/rook/fast_runtime_v1/current/N/idle.png",
+      "move_atlas": "assets/units/operators/rook/fast_runtime_v1/current/N/move.png",
+      "fire_atlas": "assets/units/operators/rook/fast_runtime_v1/current/N/fire.png",
+      "muzzle_xy": [
+        176.0,
+        54.0
+      ],
+      "muzzle_source": "manual_v27_fire_frame_02",
+      "muzzle_review": "art_src/characters/rook/fast_pipeline/motion/current/ROOK_C02_MUZZLE_V27_MANUAL_FRAME_02.json"
+    },
+    "NE": {
+      "idle_atlas": "assets/units/operators/rook/fast_runtime_v1/current/NE/idle.png",
+      "move_atlas": "assets/units/operators/rook/fast_runtime_v1/current/NE/move.png",
+      "fire_atlas": "assets/units/operators/rook/fast_runtime_v1/current/NE/fire.png",
+      "muzzle_xy": [
+        270.0,
+        56.0
+      ],
+      "muzzle_source": "manual_v27_fire_frame_02",
+      "muzzle_review": "art_src/characters/rook/fast_pipeline/motion/current/ROOK_C02_MUZZLE_V27_MANUAL_FRAME_02.json"
+    }
+  },
+  "source_contract": {
+    "imagegen_author": "built-in ImageGen",
+    "motion_authoring": "Blender+UAL",
+    "costume_continuity": "PASS",
+    "provenance": "art_src/characters/rook/fast_pipeline/motion/current/SOURCE_PROVENANCE.json"
+  }
+}

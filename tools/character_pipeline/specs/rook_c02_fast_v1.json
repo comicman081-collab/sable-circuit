@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "actor_id": "CHR_PROTO_02",
+  "slug": "rook",
+  "display_name": "ROOK",
+  "role": "BREACH",
+  "costume_id": "ROOK_BREACH_C02",
+  "identity_lock": {
+    "adult": true,
+    "faction": "SABLE CIRCUIT FIELD TEAM",
+    "body_type": "broad-shouldered athletic adult breacher with a low center of gravity",
+    "face_read": "mature focused adult woman with a blunt white bob haircut",
+    "weapon_class": "box-frame magnetic scattergun",
+    "combat_role": "close-range breach and stagger"
+  },
+  "visual_lock": {
+    "source_author": "built-in ImageGen",
+    "generation_matte": "#00FF00",
+    "palette": ["#2D3338", "#D39A58", "#F0EDE7", "#E3BC75"],
+    "silhouette_modules": ["broad cropped mantle", "oversized left breach gauntlet", "compact blunt white bob", "rectangular scattergun"],
+    "exposure_coverage": "full tactical combat coverage except face and hands",
+    "accessories": ["small amber hair-side data tag", "central amber belt buckle"],
+    "weapon_grip_zones": ["right trigger hand", "left heavy-gauntlet forward support", "short shoulder stock contact"],
+    "forbidden_features": ["childlike proportions", "dot eyes", "diaper-like silhouette", "toy-like flat geometry", "long hair", "slender assault-rifle silhouette", "cyan ASTER markings", "white ASTER shoulder armor", "mirrored gauntlet asymmetry"]
+  },
+  "runtime": {
+    "cell_size": 384,
+    "display_scale": 0.34,
+    "display_offset": [0.0, -49.0],
+    "states": {
+      "idle": {"frames": 4, "fps": 4.0},
+      "move": {"frames": 24, "fps": 24.0},
+      "fire": {"frames": 6, "fps": 12.0}
+    }
+  },
+  "paths": {
+    "work_root": "art_src/characters/rook/fast_pipeline",
+    "runtime_root": "assets/units/operators/rook/fast_runtime_v1",
+    "descriptor": "data/character_pipeline/rook_runtime.json"
+  },
+  "muzzle_hints": {
+    "E": [313.0, 113.0],
+    "SE": [294.0, 188.0],
+    "S": [192.0, 278.0],
+    "SW": [121.0, 192.0],
+    "W": [70.0, 114.0],
+    "NW": [130.0, 76.0],
+    "N": [176.0, 54.0],
+    "NE": [270.0, 56.0]
+  },
+  "muzzle_hint_source": "manual_v27_fire_frame_02",
+  "muzzle_review": "art_src/characters/rook/fast_pipeline/motion/current/ROOK_C02_MUZZLE_V27_MANUAL_FRAME_02.json",
+  "registration": {
+    "visual_profile": "VIS_ROOK_02",
+    "master_asset": "assets/characters/playable/rook/rook_master.svg",
+    "portrait_asset": "assets/characters/playable/rook/rook_portrait.svg",
+    "rig_sheet": "assets/characters/playable/rook/rook_rig_sheet.svg",
+    "detail_overlay_asset": "assets/characters/playable/rook/rook_detail_overlay.svg",
+    "weapon_hud_asset": "assets/ui/weapons/rook_scattergun.svg",
+    "hud_action_icon_assets": ["assets/ui/skills/rook_breach_slam.svg", "assets/ui/skills/rook_bulwark.svg", "assets/ui/skills/rook_scatter_cycle.svg"],
+    "silhouette": "broad cropped mantle, heavy left gauntlet, compact blunt white bob, oversized rectangular shotgun",
+    "palette": ["#D39A58", "#2D3338", "#F0EDE7", "#E3BC75"],
+    "weapon_signature": "box-frame magnetic scattergun with vented fore-end",
+    "motion_profile": "MOT_ROOK_01",
+    "motion_signature": "lower center of gravity, deliberate heel-heavy stride, strong shoulder counter-rotation, deep recoil compression",
+    "projectile_profile": "PRJ_ROOK_SCATTER_01",
+    "projectile_signature": "five hot amber shards with widening fan and thick ember tails",
+    "hit_vfx_profile": "HIT_ROOK_CRUSH_01",
+    "hit_vfx_signature": "wide orange pressure ring, chunky dark debris and square sparks",
+    "fire_sfx_profile": "SFX_FIRE_ROOK_BREACH_01",
+    "fire_sfx_signature": "deep chamber thump, metal clack and short sub-bass punch",
+    "impact_sfx_profile": "SFX_HIT_ROOK_CRUSH_01",
+    "impact_sfx_signature": "dense plate slam with gravel-like fragments"
+  }
+}

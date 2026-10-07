@@ -1,0 +1,1536 @@
+{
+  "checks": 3694,
+  "failures": [],
+  "geometry": [
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 03 ABR 03 ANC 03 AER 03 CRY 03 GAN 03 ARC 03 ORG 03"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 23.0)]",
+          "text": ""
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "1/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_SECURITY_ARC_GAP",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "SECURITY ARC-GAP MAPPING\nSECURITY x2 + 120R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_SECURITY_ARC_GAP",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "PRISM FOCUS // ASTER gains an additional 15% damage against EXPOSED security targets."
+        },
+        {
+          "name": "Analyze_ANL_SECURITY_ARC_GAP",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZE"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ABERRANT_JOINT_MAP",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ROBOT FRAME STRESS MAP\nABERRANT x1 + 140R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ABERRANT_JOINT_MAP",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "BREACH LINER // ROOK Breach Slam gains +10 damage and +0.6s STAGGER when consuming EXPOSED."
+        },
+        {
+          "name": "Analyze_ANL_ABERRANT_JOINT_MAP",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZE"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ANCHOR_SIGNAL_MODEL",
+          "rect": "[P: (46.0, 652.0), S: (284.0, 39.0)]",
+          "text": "ANCHOR SIGNAL MODEL\nANCHOR x1 + 180R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ANCHOR_SIGNAL_MODEL",
+          "rect": "[P: (340.0, 652.0), S: (306.0, 38.0)]",
+          "text": "SENSOR ARRAY // MICA Pulse Scan gains +80 range and +2s EXPOSED duration; Sensor Bloom gains +2s EXPOSED duration."
+        },
+        {
+          "name": "Analyze_ANL_ANCHOR_SIGNAL_MODEL",
+          "rect": "[P: (658.0, 655.0), S: (140.0, 35.0)]",
+          "text": "ANALYZE"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // LOCKED"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "LOCKED"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // LOCKED"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "LOCKED"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // LOCKED"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "LOCKED"
+        }
+      ],
+      "scene": "page1"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 03 CRY 03 GAN 03 ARC 03 ORG 03"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "LAB COMPLETE // MOD_SENSOR_ARRAY UNLOCKED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "2/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_AERATOR_SPORE_PROFILE",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "AERATOR TOWER SPORE PROFILE\nAERATOR x1 + 140R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_AERATOR_SPORE_PROFILE",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "SPORE FILTER // ROOK Bulwark defense lasts 6.0s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_AERATOR_SPORE_PROFILE",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZE"
+        },
+        {
+          "name": "AnalysisTitle_ANL_CRYO_COMPRESSOR_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "CRYO COMPRESSOR MODEL\nCRYO x1 + 160R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_CRYO_COMPRESSOR_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "FROST LENS // ASTER Prism cooldown is 3.2s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_CRYO_COMPRESSOR_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZE"
+        },
+        {
+          "name": "AnalysisTitle_ANL_GANTRY_RAIL_MODEL",
+          "rect": "[P: (46.0, 652.0), S: (284.0, 39.0)]",
+          "text": "SIGNAL GANTRY RAIL MODEL\nGANTRY x1 + 180R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_GANTRY_RAIL_MODEL",
+          "rect": "[P: (340.0, 652.0), S: (306.0, 38.0)]",
+          "text": "RAIL SPOOL // ASTER Vector Dash travels 200px with a 4.0s cooldown instead of 150px / 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_GANTRY_RAIL_MODEL",
+          "rect": "[P: (658.0, 655.0), S: (140.0, 35.0)]",
+          "text": "ANALYZE"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        }
+      ],
+      "scene": "page2"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 02 CRY 02 GAN 02 ARC 03 ORG 03"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "LAB COMPLETE // MOD_RAIL_SPOOL UNLOCKED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "3/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "INDEX SPIRE ECHO MODEL\nARCHIVE x1 + 200R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "ECHO RELAY // MICA Relay Step squad defense lasts 6.0s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZE"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ORIGIN CORE NULL MODEL\nORIGIN x1 + 220R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "NULL ANCHOR // ROOK Scatter Cycle duration and defense last 6.5s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZE"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        }
+      ],
+      "scene": "page3"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 02 CRY 02 GAN 02 ARC 02 ORG 02"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "LAB COMPLETE // MOD_NULL_ANCHOR UNLOCKED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "3/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "INDEX SPIRE ECHO MODEL\nARCHIVE x1 + 200R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "ECHO RELAY // MICA Relay Step squad defense lasts 6.0s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ORIGIN CORE NULL MODEL\nORIGIN x1 + 220R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "NULL ANCHOR // ROOK Scatter Cycle duration and defense last 6.5s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        }
+      ],
+      "scene": "last_page_status"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 02 CRY 02 GAN 02 ARC 02 ORG 02"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "ARMORY MODULE // MOD_PRISM_FOCUS EQUIPPED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "3/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "INDEX SPIRE ECHO MODEL\nARCHIVE x1 + 200R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "ECHO RELAY // MICA Relay Step squad defense lasts 6.0s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ORIGIN CORE NULL MODEL\nORIGIN x1 + 220R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "NULL ANCHOR // ROOK Scatter Cycle duration and defense last 6.5s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // PRISM FOCUS"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "NEXT MOD"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        }
+      ],
+      "scene": "CHR_PROTO_01_cycle0"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 02 CRY 02 GAN 02 ARC 02 ORG 02"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "ARMORY MODULE // MOD_FROST_LENS EQUIPPED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "3/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "INDEX SPIRE ECHO MODEL\nARCHIVE x1 + 200R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "ECHO RELAY // MICA Relay Step squad defense lasts 6.0s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ORIGIN CORE NULL MODEL\nORIGIN x1 + 220R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "NULL ANCHOR // ROOK Scatter Cycle duration and defense last 6.5s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // FROST LENS"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "NEXT MOD"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        }
+      ],
+      "scene": "CHR_PROTO_01_cycle1"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 02 CRY 02 GAN 02 ARC 02 ORG 02"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "ARMORY MODULE // MOD_RAIL_SPOOL EQUIPPED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "3/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "INDEX SPIRE ECHO MODEL\nARCHIVE x1 + 200R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "ECHO RELAY // MICA Relay Step squad defense lasts 6.0s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ORIGIN CORE NULL MODEL\nORIGIN x1 + 220R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "NULL ANCHOR // ROOK Scatter Cycle duration and defense last 6.5s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // RAIL SPOOL"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "UNEQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        }
+      ],
+      "scene": "CHR_PROTO_01_cycle2"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 02 CRY 02 GAN 02 ARC 02 ORG 02"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "ARMORY MODULE // REMOVED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "3/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "INDEX SPIRE ECHO MODEL\nARCHIVE x1 + 200R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "ECHO RELAY // MICA Relay Step squad defense lasts 6.0s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ORIGIN CORE NULL MODEL\nORIGIN x1 + 220R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "NULL ANCHOR // ROOK Scatter Cycle duration and defense last 6.5s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        }
+      ],
+      "scene": "CHR_PROTO_01_cycle3"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 02 CRY 02 GAN 02 ARC 02 ORG 02"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "ARMORY MODULE // MOD_BREACH_LINER EQUIPPED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "3/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "INDEX SPIRE ECHO MODEL\nARCHIVE x1 + 200R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "ECHO RELAY // MICA Relay Step squad defense lasts 6.0s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ORIGIN CORE NULL MODEL\nORIGIN x1 + 220R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "NULL ANCHOR // ROOK Scatter Cycle duration and defense last 6.5s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // BREACH LINER"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "NEXT MOD"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        }
+      ],
+      "scene": "CHR_PROTO_02_cycle0"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 02 CRY 02 GAN 02 ARC 02 ORG 02"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "ARMORY MODULE // MOD_SPORE_FILTER EQUIPPED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "3/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "INDEX SPIRE ECHO MODEL\nARCHIVE x1 + 200R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "ECHO RELAY // MICA Relay Step squad defense lasts 6.0s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ORIGIN CORE NULL MODEL\nORIGIN x1 + 220R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "NULL ANCHOR // ROOK Scatter Cycle duration and defense last 6.5s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // SPORE FILTER"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "NEXT MOD"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        }
+      ],
+      "scene": "CHR_PROTO_02_cycle1"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 02 CRY 02 GAN 02 ARC 02 ORG 02"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "ARMORY MODULE // MOD_NULL_ANCHOR EQUIPPED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "3/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "INDEX SPIRE ECHO MODEL\nARCHIVE x1 + 200R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "ECHO RELAY // MICA Relay Step squad defense lasts 6.0s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ORIGIN CORE NULL MODEL\nORIGIN x1 + 220R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "NULL ANCHOR // ROOK Scatter Cycle duration and defense last 6.5s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // NULL ANCHOR"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "UNEQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        }
+      ],
+      "scene": "CHR_PROTO_02_cycle2"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 02 CRY 02 GAN 02 ARC 02 ORG 02"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "ARMORY MODULE // REMOVED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "3/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "INDEX SPIRE ECHO MODEL\nARCHIVE x1 + 200R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "ECHO RELAY // MICA Relay Step squad defense lasts 6.0s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ORIGIN CORE NULL MODEL\nORIGIN x1 + 220R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "NULL ANCHOR // ROOK Scatter Cycle duration and defense last 6.5s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        }
+      ],
+      "scene": "CHR_PROTO_02_cycle3"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 02 CRY 02 GAN 02 ARC 02 ORG 02"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "ARMORY MODULE // MOD_SENSOR_ARRAY EQUIPPED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "3/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "INDEX SPIRE ECHO MODEL\nARCHIVE x1 + 200R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "ECHO RELAY // MICA Relay Step squad defense lasts 6.0s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ORIGIN CORE NULL MODEL\nORIGIN x1 + 220R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "NULL ANCHOR // ROOK Scatter Cycle duration and defense last 6.5s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // SENSOR ARRAY"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "NEXT MOD"
+        }
+      ],
+      "scene": "CHR_PROTO_03_cycle0"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 02 CRY 02 GAN 02 ARC 02 ORG 02"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "ARMORY MODULE // MOD_ECHO_RELAY EQUIPPED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "3/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "INDEX SPIRE ECHO MODEL\nARCHIVE x1 + 200R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "ECHO RELAY // MICA Relay Step squad defense lasts 6.0s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ORIGIN CORE NULL MODEL\nORIGIN x1 + 220R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "NULL ANCHOR // ROOK Scatter Cycle duration and defense last 6.5s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // ECHO RELAY"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "UNEQUIP"
+        }
+      ],
+      "scene": "CHR_PROTO_03_cycle1"
+    },
+    {
+      "boxes": [
+        {
+          "name": "LabHeader",
+          "rect": "[P: (60.0, 516.0), S: (617.0, 21.0)]",
+          "text": "DISCOVERY PIPELINE  //  FIELD INTEL  →  LAB ANALYSIS  →  ARMORY LOADOUT"
+        },
+        {
+          "name": "LabSamples",
+          "rect": "[P: (46.0, 540.0), S: (570.0, 22.0)]",
+          "text": "SAMPLES // SEC 01 ABR 02 ANC 02 AER 02 CRY 02 GAN 02 ARC 02 ORG 02"
+        },
+        {
+          "name": "LabStatus",
+          "rect": "[P: (852.0, 514.0), S: (382.0, 22.0)]",
+          "text": "ARMORY MODULE // REMOVED"
+        },
+        {
+          "name": "AnalysisPrevious",
+          "rect": "[P: (628.0, 538.0), S: (42.0, 31.0)]",
+          "text": "<"
+        },
+        {
+          "name": "AnalysisPage",
+          "rect": "[P: (676.0, 538.0), S: (40.0, 24.0)]",
+          "text": "3/3"
+        },
+        {
+          "name": "AnalysisNext",
+          "rect": "[P: (722.0, 538.0), S: (42.0, 31.0)]",
+          "text": ">"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (46.0, 570.0), S: (284.0, 39.0)]",
+          "text": "INDEX SPIRE ECHO MODEL\nARCHIVE x1 + 200R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (340.0, 570.0), S: (306.0, 38.0)]",
+          "text": "ECHO RELAY // MICA Relay Step squad defense lasts 6.0s instead of 4.0s."
+        },
+        {
+          "name": "Analyze_ANL_ARCHIVE_ECHO_MODEL",
+          "rect": "[P: (658.0, 573.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "AnalysisTitle_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (46.0, 611.0), S: (284.0, 39.0)]",
+          "text": "ORIGIN CORE NULL MODEL\nORIGIN x1 + 220R"
+        },
+        {
+          "name": "AnalysisEffect_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (340.0, 611.0), S: (306.0, 38.0)]",
+          "text": "NULL ANCHOR // ROOK Scatter Cycle duration and defense last 6.5s instead of 5.0s."
+        },
+        {
+          "name": "Analyze_ANL_ORIGIN_NULL_MODEL",
+          "rect": "[P: (658.0, 614.0), S: (140.0, 35.0)]",
+          "text": "ANALYZED"
+        },
+        {
+          "name": "ModuleHeader",
+          "rect": "[P: (824.0, 546.0), S: (410.0, 23.0)]",
+          "text": "OPERATOR MODULES"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_01",
+          "rect": "[P: (824.0, 577.0), S: (240.0, 24.0)]",
+          "text": "ASTER // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_01",
+          "rect": "[P: (1072.0, 573.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_02",
+          "rect": "[P: (824.0, 618.0), S: (240.0, 24.0)]",
+          "text": "ROOK // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_02",
+          "rect": "[P: (1072.0, 614.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        },
+        {
+          "name": "ModuleLabel_CHR_PROTO_03",
+          "rect": "[P: (824.0, 659.0), S: (240.0, 24.0)]",
+          "text": "MICA // NO MODULE"
+        },
+        {
+          "name": "ModuleCycle_CHR_PROTO_03",
+          "rect": "[P: (1072.0, 655.0), S: (154.0, 35.0)]",
+          "text": "EQUIP"
+        }
+      ],
+      "scene": "CHR_PROTO_03_cycle2"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-24T01:50:27.204898+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\traversal_audit_20260924\\walk_graph\\01_overview.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 561994,
+      "sha256": "6336788bd0847ba8f27504fc333470965fb32a2a8d68b061e6c0cb72026703c7"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\traversal_audit_20260924\\walk_graph\\02_overview.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 615848,
+      "sha256": "5617efcea21f5500e2c163de7281ad19d8e37406edd2ee3b69f05b6934a69d18"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\traversal_audit_20260924\\walk_graph\\03_overview.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 607034,
+      "sha256": "edaa8c8f19b7c9bab22f0de753418d65162ec931e1384e4ea650b7f477a4bf5f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\traversal_audit_20260924\\walk_graph\\04_overview.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 606410,
+      "sha256": "ef219aeab1de48846f4bdbe42b68bd2d38e5cc4e3fed39d4376f18bd2bb08b73"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\traversal_audit_20260924\\walk_graph\\05_overview.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 607010,
+      "sha256": "ae29c795a90f928add3b06d98c0ca026cf238f9d06b813eead342b6807174e57"
+    }
+  ]
+}

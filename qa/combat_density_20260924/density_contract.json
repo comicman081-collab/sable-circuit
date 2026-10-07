@@ -1,0 +1,137 @@
+{
+  "checks": 37,
+  "failures": [],
+  "fixture": {
+    "attacks_started": 37,
+    "drone_orbit_split": [
+      2,
+      2
+    ],
+    "frames_with_two_or_more_attackers": 373,
+    "hostiles": 7,
+    "max_concurrent_attackers": 3,
+    "mission": "MIS_CH01_02",
+    "operator_health_raised_for_fixture": true,
+    "room": "R02_MAINTENANCE",
+    "stacked_pair_ratio": 0.00288600288600289
+  },
+  "missions": {
+    "MIS_CH01_01": {
+      "hostiles": 21,
+      "rooms": {
+        "R02_CORRIDOR": {
+          "peak_simultaneous": 5,
+          "reinforce_at": 2,
+          "type": "COMBAT",
+          "waves": 2
+        },
+        "R04_CONTAINMENT": {
+          "peak_simultaneous": 5,
+          "reinforce_at": 2,
+          "type": "ELITE",
+          "waves": 2
+        },
+        "R05_CORE": {
+          "peak_simultaneous": 3,
+          "reinforce_at": 1,
+          "type": "BOSS",
+          "waves": 3
+        }
+      }
+    },
+    "MIS_CH01_02": {
+      "hostiles": 21,
+      "rooms": {
+        "R02_MAINTENANCE": {
+          "peak_simultaneous": 5,
+          "reinforce_at": 2,
+          "type": "COMBAT",
+          "waves": 2
+        },
+        "R04_QUARANTINE": {
+          "peak_simultaneous": 5,
+          "reinforce_at": 2,
+          "type": "ELITE",
+          "waves": 2
+        },
+        "R05_RELAY": {
+          "peak_simultaneous": 3,
+          "reinforce_at": 1,
+          "type": "BOSS",
+          "waves": 3
+        }
+      }
+    },
+    "MIS_CH01_03": {
+      "hostiles": 21,
+      "rooms": {
+        "R02_DEFENSE": {
+          "peak_simultaneous": 5,
+          "reinforce_at": 2,
+          "type": "COMBAT",
+          "waves": 2
+        },
+        "R04_BULKHEAD": {
+          "peak_simultaneous": 5,
+          "reinforce_at": 2,
+          "type": "ELITE",
+          "waves": 2
+        },
+        "R05_ANCHOR": {
+          "peak_simultaneous": 3,
+          "reinforce_at": 1,
+          "type": "BOSS",
+          "waves": 3
+        }
+      }
+    },
+    "MIS_CH01_04": {
+      "hostiles": 21,
+      "rooms": {
+        "R02_GATE": {
+          "peak_simultaneous": 5,
+          "reinforce_at": 2,
+          "type": "COMBAT",
+          "waves": 2
+        },
+        "R04_LINE": {
+          "peak_simultaneous": 5,
+          "reinforce_at": 2,
+          "type": "ELITE",
+          "waves": 2
+        },
+        "R05_WARDEN": {
+          "peak_simultaneous": 3,
+          "reinforce_at": 1,
+          "type": "BOSS",
+          "waves": 3
+        }
+      }
+    },
+    "MIS_CH01_05": {
+      "hostiles": 21,
+      "rooms": {
+        "R02_DEFENSE": {
+          "peak_simultaneous": 5,
+          "reinforce_at": 2,
+          "type": "COMBAT",
+          "waves": 2
+        },
+        "R04_ARRAY": {
+          "peak_simultaneous": 5,
+          "reinforce_at": 2,
+          "type": "ELITE",
+          "waves": 2
+        },
+        "R05_CARRIER": {
+          "peak_simultaneous": 3,
+          "reinforce_at": 1,
+          "type": "BOSS",
+          "waves": 3
+        }
+      }
+    }
+  },
+  "recorded_utc": "2026-09-24T03:41:24",
+  "status": "PASS"
+}

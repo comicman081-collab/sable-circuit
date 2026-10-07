@@ -1,0 +1,47 @@
+{
+  "character": "mica",
+  "scope": "local Motion Studio locomotion repair and Godot runtime binding verification",
+  "rootCause": "The MICA standalone preview contained the retired CharacterRenderer limb-mesh path, which warps lower-body geometry and can present a skated gait even when the authored atlas has six distinct whole-body frames.",
+  "activeRuntime": {
+    "standalone": "motion_lab_v1/public/standalone/mica.html",
+    "package": "motion_lab_v1/dist/MICA_Motion_Studio.html",
+    "inputSHA256": "602cb82ece6a70f3896d9877da3e6a7b44951466eae88f247a9b068f4f52197e",
+    "requiredMarker": "class AtlasRenderer",
+    "retiredMarkersAbsent": [
+      "class CharacterRenderer",
+      "function deformPoint"
+    ]
+  },
+  "godotBinding": {
+    "runtime": "scripts/animation/motion_lab_character_runtime.gd",
+    "profile": "res://motion_lab_v1/public/assets/atlas/mica/profile.json",
+    "profileRecipeSHA256": "5bd6f0af6f5314a230e9d11950552ed3a6adac70a2289d9dc73f5442aa86c260",
+    "smoke": "tests/smoke/motion_lab_character_runtime_smoke.gd",
+    "result": "PASS (Godot 4.7.1 console headless exit code 0)"
+  },
+  "browserEvidence": {
+    "locomotion": "motion_lab_v1/qa/mica_gait_repair_20260920/mica_locomotion_browser.json",
+    "combat": "motion_lab_v1/qa/mica_gait_repair_20260920/mica_combat_browser.json",
+    "nativeViewport": [1920, 1080],
+    "locomotionPass": true,
+    "combatPass": true
+  },
+  "regressionGuard": {
+    "packager": "motion_lab_v1/package_standalone.py",
+    "test": "motion_lab_v1/tests/test_character_workflow.py::WorkflowTests.test_standalone_package_rejects_the_retired_limb_mesh_runtime",
+    "result": "PASS (31 Python tests; 30 JavaScript tests)"
+  },
+  "collisionAndRouteRepair": {
+    "skillDash": "scripts/actors/operator_actor.gd now sweeps the real CharacterBody2D instead of assigning global_position directly.",
+    "paintedWallClearance": "scripts/missions/site7_battlefield.gd constrains actors to a stable contracted walk envelope rather than allowing the root to sit on the raw art boundary.",
+    "playerCollisionSmoke": "tests/smoke/site7_player_cover_collision_smoke.gd: PASS (5 checks, including MICA walk and skill dash against an active live barrier).",
+    "battleGeometrySmoke": "tests/smoke/site7_battle_geometry_smoke.gd: PASS (1908 checks across operations 1-5).",
+    "environmentProps": "tests/render/site7_environment_props_check.gd: PASS_TECHNICAL_ONLY (125 checks).",
+    "fullRoute": {
+      "stage1": "qa/mica_gait_repair_20260920/site7_full_route/full_operation.json: PASS_TECHNICAL_PLAYTHROUGH, EXTRACTED, full route true, 10 hostiles defeated.",
+      "stage4": "qa/mica_gait_repair_20260920/stage4_full_route/full_operation.json: PASS_TECHNICAL_PLAYTHROUGH, EXTRACTED, full route true, 7 hostiles defeated.",
+      "stage5": "qa/mica_gait_repair_20260920/stage5_full_route/full_operation.json: PASS_TECHNICAL_PLAYTHROUGH, EXTRACTED, full route true, 7 hostiles defeated."
+    }
+  },
+  "sourceArtStatus": "No new source art was promoted. Three native-alpha source attempts did not meet isolation, contact-pose, or MICA continuity requirements and remain quarantined. The repair therefore re-packages the existing verified full-body MICA atlas rather than concealing the failed source attempts."
+}

@@ -1,0 +1,24 @@
+### same_contacts controls (10)
+ok  identical: same_contacts = True (expected True)
+ok  same pixels, different PNG bytes (re-encoded with another zlib level): same_contacts = True (expected True)
+ok  one pixel differs by 1 step: same_contacts = True (expected True)
+ok  one pixel differs by 2 steps: same_contacts = False (expected False)
+ok  one plate missing: same_contacts = False (expected False)
+ok  extra plate: same_contacts = False (expected False)
+ok  padding_px changed: same_contacts = False (expected False)
+ok  scale changed: same_contacts = False (expected False)
+ok  mask shape changed: same_contacts = False (expected False)
+ok  top-level schema changed: same_contacts = False (expected False)
+SAME_CONTACTS_CONTROLS PASS 10 controls
+
+### unittest tests/test_site7_mood_contact_compare.py
+----------------------------------------------------------------------
+Ran 5 tests in 0.113s
+
+OK
+
+### mutants of same_contacts against the unittest
+exact equality (the old lambda)      -> CAUGHT (2 failures, 0 errors)
+always true                          -> CAUGHT (3 failures, 0 errors)
+tolerance of 3 steps                 -> CAUGHT (2 failures, 0 errors)
+real comparator -> passes

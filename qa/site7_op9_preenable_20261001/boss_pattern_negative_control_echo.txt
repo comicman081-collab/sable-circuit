@@ -1,0 +1,23 @@
+Negative control (2026-10-01, earlier session): ECHO_WINDUP in scripts/combat/site7_enemy_tactics.gd was put back to its old value (1.0 s)
+temporarily and `site7_boss_pattern_smoke.gd` was run directly: it FAILS, as it must. The constant was then restored; the file equals the
+committed one (checked with a diff against the saved copy). Lines below are the ERROR lines and the summary line of that run.
+
+ERROR: ARCHIVE attack 1 (phase 1, serial 1): the target's own ground winds up 1.6 s, after the echoes
+ERROR: ARCHIVE attack 2 (phase 1, serial 2) echo 1 winds up 1.3 s, never under 1.12 s
+ERROR: ARCHIVE attack 2 (phase 1, serial 2): the target's own ground winds up 1.6 s, after the echoes
+ERROR: ARCHIVE attack 3 (phase 2, serial 1) echo 1 winds up 1.3 s, never under 1.12 s
+ERROR: ARCHIVE attack 3 (phase 2, serial 1) echo 2 winds up 1.4 s, never under 1.12 s
+ERROR: ARCHIVE attack 3 (phase 2, serial 1): the target's own ground winds up 1.6 s, after the echoes
+ERROR: ARCHIVE attack 4 (phase 2, serial 2) echo 1 winds up 1.3 s, never under 1.12 s
+ERROR: ARCHIVE attack 4 (phase 2, serial 2) echo 2 winds up 1.4 s, never under 1.12 s
+ERROR: ARCHIVE attack 4 (phase 2, serial 2): the target's own ground winds up 1.6 s, after the echoes
+ERROR: ARCHIVE attack 5 (phase 3, serial 1) echo 1 winds up 1.3 s, never under 1.12 s
+ERROR: ARCHIVE attack 5 (phase 3, serial 1) echo 2 winds up 1.4 s, never under 1.12 s
+ERROR: ARCHIVE attack 5 (phase 3, serial 1) echo 3 winds up 1.5 s, never under 1.12 s
+ERROR: ARCHIVE attack 5 (phase 3, serial 1): the target's own ground winds up 1.6 s, after the echoes
+ERROR: ARCHIVE attack 6 (phase 3, serial 2) echo 1 winds up 1.3 s, never under 1.12 s
+ERROR: ARCHIVE attack 6 (phase 3, serial 2) echo 2 winds up 1.4 s, never under 1.12 s
+ERROR: ARCHIVE attack 6 (phase 3, serial 2) echo 3 winds up 1.5 s, never under 1.12 s
+ERROR: ARCHIVE attack 6 (phase 3, serial 2): the target's own ground winds up 1.6 s, after the echoes
+ERROR: ARCHIVE attack 6 (phase 3, serial 2) lane winds up 1.7 s, after the target's own ground
+SITE7_BOSS_PATTERN_SMOKE: FAIL (977 checks) res://.cache/claude_scratch/op9_boss/negctl_pattern.json

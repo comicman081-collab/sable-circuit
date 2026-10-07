@@ -1,0 +1,1034 @@
+{
+  "note": "Summaries of the runs the README cites. The runner folders under qa/regression_runs/ are git-ignored; these rows are the tracked copy.",
+  "runs": [
+    {
+      "label": "gates_and_fairness_fail",
+      "run_folder": "qa/regression_runs/20260930_011528_custom",
+      "suite": "custom",
+      "started": "2026-09-30T01:16:37",
+      "overall": "FAIL",
+      "seconds": 43,
+      "git_head": "abed2972c9ebc88bc7f08b2a87f6919acd7bbc1e",
+      "git_dirty_paths": 6,
+      "guard": {
+        "changed": [],
+        "removed": [],
+        "added": []
+      },
+      "results": [
+        {
+          "test": "campaign_data",
+          "status": "PASS",
+          "seconds": 0.4,
+          "exit_code": 0,
+          "checks": 279,
+          "status_line": "SITE7_CAMPAIGN_DATA: PASS (279 checks)"
+        },
+        {
+          "test": "boss_registry",
+          "status": "PASS",
+          "seconds": 8.0,
+          "exit_code": 0,
+          "checks": 160,
+          "status_line": "SITE7_BOSS_REGISTRY_SMOKE: PASS (160 checks)"
+        },
+        {
+          "test": "boss_room_fairness",
+          "status": "FAIL",
+          "seconds": 6.4,
+          "exit_code": 1,
+          "checks": 9,
+          "status_line": "SITE7_BOSS_ROOM_FAIRNESS: FAIL (9 checks) res://qa/regression_runs/20260930_011528_custom/out/boss_room_fairness/room_fairness.json"
+        },
+        {
+          "test": "demo_integration",
+          "status": "PASS",
+          "seconds": 6.4,
+          "exit_code": 0,
+          "checks": 26,
+          "status_line": "DEMO_INTEGRATION PASS / 26 checks"
+        },
+        {
+          "test": "campaign",
+          "status": "PASS",
+          "seconds": 13.6,
+          "exit_code": 0,
+          "checks": 179,
+          "status_line": "SITE7_CAMPAIGN_PROGRESSION: PASS (179 checks) res://qa/regression_runs/20260930_011528_custom/out/campaign"
+        }
+      ]
+    },
+    {
+      "label": "boss_tests_after_fix",
+      "run_folder": "qa/regression_runs/20260930_013004_custom",
+      "suite": "custom",
+      "started": "2026-09-30T01:31:12",
+      "overall": "PASS",
+      "seconds": 63,
+      "git_head": "abed2972c9ebc88bc7f08b2a87f6919acd7bbc1e",
+      "git_dirty_paths": 8,
+      "guard": {
+        "changed": [],
+        "removed": [],
+        "added": []
+      },
+      "results": [
+        {
+          "test": "boss_registry",
+          "status": "PASS",
+          "seconds": 8.8,
+          "exit_code": 0,
+          "checks": 160,
+          "status_line": "SITE7_BOSS_REGISTRY_SMOKE: PASS (160 checks)"
+        },
+        {
+          "test": "boss_pattern",
+          "status": "PASS",
+          "seconds": 2.8,
+          "exit_code": 0,
+          "checks": 946,
+          "status_line": "SITE7_BOSS_PATTERN_SMOKE: PASS (946 checks) res://qa/regression_runs/20260930_013004_custom/out/boss_pattern/pattern.json"
+        },
+        {
+          "test": "boss_duel",
+          "status": "PASS",
+          "seconds": 36.3,
+          "exit_code": 0,
+          "checks": 1124,
+          "status_line": "SITE7_BOSS_DUEL_SMOKE: PASS (1124 checks) res://qa/regression_runs/20260930_013004_custom/out/boss_duel/duel.json"
+        },
+        {
+          "test": "boss_room_fairness",
+          "status": "PASS",
+          "seconds": 6.6,
+          "exit_code": 0,
+          "checks": 9,
+          "status_line": "SITE7_BOSS_ROOM_FAIRNESS: PASS (9 checks) res://qa/regression_runs/20260930_013004_custom/out/boss_room_fairness/room_fairness.json"
+        }
+      ]
+    },
+    {
+      "label": "full_op_07_first",
+      "run_folder": "qa/regression_runs/20260930_013244_custom",
+      "suite": "custom",
+      "started": "2026-09-30T01:32:44",
+      "overall": "PASS",
+      "seconds": 234,
+      "git_head": "abed2972c9ebc88bc7f08b2a87f6919acd7bbc1e",
+      "git_dirty_paths": 8,
+      "guard": {
+        "changed": [],
+        "removed": [],
+        "added": []
+      },
+      "results": [
+        {
+          "test": "full_op_07",
+          "status": "PASS",
+          "seconds": 224.6,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS"
+        }
+      ]
+    },
+    {
+      "label": "quick_tip",
+      "run_folder": "qa/regression_runs/20260930_014627_quick",
+      "suite": "quick",
+      "started": "2026-09-30T01:46:27",
+      "overall": "PASS",
+      "seconds": 294,
+      "git_head": "a602501a2e2fcce71a37d3cfae0f7a0fb36629b6",
+      "git_dirty_paths": 0,
+      "guard": {
+        "changed": [],
+        "removed": [],
+        "added": []
+      },
+      "results": [
+        {
+          "test": "combat_density",
+          "status": "PASS",
+          "seconds": 17.6,
+          "exit_code": 0,
+          "checks": 49,
+          "status_line": "COMBAT_DENSITY_SMOKE PASS (49 checks) {\"attacks_started\":32,\"drone_orbit_split\":[2,2],\"frames_with_two_or_more_attackers\":345,\"hostiles\":7,\"max_concurrent_attackers\":3,\"mission\":\"MIS_CH01_02\",\"operato"
+        },
+        {
+          "test": "cover_navigation",
+          "status": "PASS",
+          "seconds": 1.2,
+          "exit_code": 0,
+          "checks": 15,
+          "status_line": "COVER_NAVIGATION_SMOKE: PASS / 15 checks"
+        },
+        {
+          "test": "floor_segment",
+          "status": "PASS",
+          "seconds": 29.2,
+          "exit_code": 0,
+          "checks": 17,
+          "status_line": "FLOOR_SEGMENT_SMOKE: PASS (17 checks)"
+        },
+        {
+          "test": "combat_query_fastpath",
+          "status": "PASS",
+          "seconds": 8.2,
+          "exit_code": 0,
+          "checks": 31,
+          "status_line": "COMBAT_QUERY_FASTPATH_SMOKE: PASS (31 checks)"
+        },
+        {
+          "test": "player_cover",
+          "status": "PASS",
+          "seconds": 6.2,
+          "exit_code": 0,
+          "checks": 5,
+          "status_line": "SITE7_PLAYER_COVER_COLLISION: PASS (5 checks)"
+        },
+        {
+          "test": "cover_alpha_clip",
+          "status": "PASS",
+          "seconds": 1.2,
+          "exit_code": 0,
+          "checks": 5,
+          "status_line": "SITE7_COVER_ALPHA_CLIP: PASS / 5 checks"
+        },
+        {
+          "test": "cover_texture",
+          "status": "PASS",
+          "seconds": 2.0,
+          "exit_code": 0,
+          "checks": 17,
+          "status_line": "COVER_TEXTURE_REDUCTION_SMOKE: PASS (17 checks) 63.3 MB -> 10.2 MB"
+        },
+        {
+          "test": "battle_flow",
+          "status": "PASS",
+          "seconds": 6.8,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_BATTLE_FLOW: PASS"
+        },
+        {
+          "test": "combat_entry",
+          "status": "PASS",
+          "seconds": 5.8,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": ""
+        },
+        {
+          "test": "drone_app",
+          "status": "PASS",
+          "seconds": 1.8,
+          "exit_code": 0,
+          "checks": 171,
+          "status_line": "SITE7_DRONE_APP_SMOKE: PASS (171 checks) res://qa/regression_runs/20260930_014627_quick/out/drone_app/drone_app.json"
+        },
+        {
+          "test": "anchor_app",
+          "status": "PASS",
+          "seconds": 1.4,
+          "exit_code": 0,
+          "checks": 271,
+          "status_line": "SITE7_ANCHOR_APP_SMOKE: PASS (271 checks) res://qa/regression_runs/20260930_014627_quick/out/anchor_app/anchor_app.json"
+        },
+        {
+          "test": "campaign_data",
+          "status": "PASS",
+          "seconds": 0.4,
+          "exit_code": 0,
+          "checks": 279,
+          "status_line": "SITE7_CAMPAIGN_DATA: PASS (279 checks)"
+        },
+        {
+          "test": "upgrade_economy",
+          "status": "PASS",
+          "seconds": 1.2,
+          "exit_code": 0,
+          "checks": 225,
+          "status_line": "UPGRADE_ECONOMY: PASS (225 checks)"
+        },
+        {
+          "test": "boss_registry",
+          "status": "PASS",
+          "seconds": 8.0,
+          "exit_code": 0,
+          "checks": 160,
+          "status_line": "SITE7_BOSS_REGISTRY_SMOKE: PASS (160 checks)"
+        },
+        {
+          "test": "boss_pattern",
+          "status": "PASS",
+          "seconds": 2.4,
+          "exit_code": 0,
+          "checks": 946,
+          "status_line": "SITE7_BOSS_PATTERN_SMOKE: PASS (946 checks) res://qa/regression_runs/20260930_014627_quick/out/boss_pattern/pattern.json"
+        },
+        {
+          "test": "boss_duel",
+          "status": "PASS",
+          "seconds": 36.1,
+          "exit_code": 0,
+          "checks": 1124,
+          "status_line": "SITE7_BOSS_DUEL_SMOKE: PASS (1124 checks) res://qa/regression_runs/20260930_014627_quick/out/boss_duel/duel.json"
+        },
+        {
+          "test": "boss_room_fairness",
+          "status": "PASS",
+          "seconds": 6.6,
+          "exit_code": 0,
+          "checks": 9,
+          "status_line": "SITE7_BOSS_ROOM_FAIRNESS: PASS (9 checks) res://qa/regression_runs/20260930_014627_quick/out/boss_room_fairness/room_fairness.json"
+        },
+        {
+          "test": "robot_roster",
+          "status": "PASS",
+          "seconds": 6.4,
+          "exit_code": 0,
+          "checks": 302,
+          "status_line": "SITE7_ROBOT_ROSTER: PASS / 302 checks"
+        },
+        {
+          "test": "enemy_facing",
+          "status": "PASS",
+          "seconds": 2.0,
+          "exit_code": 0,
+          "checks": 224,
+          "status_line": "SITE7_ENEMY_FACING_SMOKE: PASS (224 checks)"
+        },
+        {
+          "test": "machine_source",
+          "status": "PASS",
+          "seconds": 1.6,
+          "exit_code": 0,
+          "checks": 436,
+          "status_line": "SITE7_MACHINE_SOURCE_SMOKE: PASS (436 checks)"
+        },
+        {
+          "test": "emission_owner",
+          "status": "PASS",
+          "seconds": 3.6,
+          "exit_code": 0,
+          "checks": 1293,
+          "status_line": "SITE7_EMISSION_OWNER_SMOKE: PASS (1293 checks) res://qa/regression_runs/20260930_014627_quick/out/emission_owner"
+        },
+        {
+          "test": "m2_story",
+          "status": "PASS",
+          "seconds": 3.8,
+          "exit_code": 0,
+          "checks": 27,
+          "status_line": "M2_STORY_FLOW_SMOKE: PASS"
+        },
+        {
+          "test": "m9_skill",
+          "status": "PASS",
+          "seconds": 3.6,
+          "exit_code": 0,
+          "checks": 44,
+          "status_line": "M9_OPERATOR_SKILL_SYNERGY_SMOKE: PASS"
+        },
+        {
+          "test": "m10_base_ui",
+          "status": "PASS",
+          "seconds": 0.6,
+          "exit_code": 0,
+          "checks": 10,
+          "status_line": "M10_BASE_UI_ACTION_SMOKE: PASS"
+        },
+        {
+          "test": "m10_persistence",
+          "status": "PASS",
+          "seconds": 0.4,
+          "exit_code": 0,
+          "checks": 27,
+          "status_line": "M10_PERSISTENCE_SMOKE: PASS"
+        },
+        {
+          "test": "m12_revive",
+          "status": "PASS",
+          "seconds": 3.4,
+          "exit_code": 0,
+          "checks": 25,
+          "status_line": "M12_SQUAD_REVIVE_SMOKE: PASS"
+        },
+        {
+          "test": "play_log",
+          "status": "PASS",
+          "seconds": 4.4,
+          "exit_code": 0,
+          "checks": 23,
+          "status_line": "PLAY_SESSION_LOG_SMOKE: PASS (23 checks) res://qa/regression_runs/20260930_014627_quick/out/play_log"
+        },
+        {
+          "test": "hit_hurt_vfx",
+          "status": "PASS",
+          "seconds": 2.0,
+          "exit_code": 0,
+          "checks": 47,
+          "status_line": "COMBAT_HIT_HURT_VFX_SMOKE: PASS (47 checks)"
+        },
+        {
+          "test": "combat_vfx",
+          "status": "PASS",
+          "seconds": 2.2,
+          "exit_code": 0,
+          "checks": 189,
+          "status_line": "COMBAT_VFX_OVERHAUL_SMOKE: PASS (189 checks)"
+        },
+        {
+          "test": "elite_affix",
+          "status": "PASS",
+          "seconds": 3.8,
+          "exit_code": 0,
+          "checks": 53,
+          "status_line": "ELITE_AFFIX_SMOKE: PASS (53 checks)"
+        },
+        {
+          "test": "zone_hazard",
+          "status": "PASS",
+          "seconds": 29.3,
+          "exit_code": 0,
+          "checks": 207,
+          "status_line": "ZONE_HAZARD_SMOKE: PASS (207 checks, 9 rooms)"
+        },
+        {
+          "test": "firing_lane",
+          "status": "PASS",
+          "seconds": 14.6,
+          "exit_code": 0,
+          "checks": 223,
+          "status_line": "FIRING_LANE_SEARCH_SMOKE: PASS (223 checks)"
+        },
+        {
+          "test": "platform_carry",
+          "status": "PASS",
+          "seconds": 4.8,
+          "exit_code": 0,
+          "checks": 6,
+          "status_line": "ACTOR_PLATFORM_CARRY_SMOKE: PASS (6 checks)"
+        },
+        {
+          "test": "contact_carry",
+          "status": "PASS",
+          "seconds": 13.4,
+          "exit_code": 0,
+          "checks": 27,
+          "status_line": "ACTOR_CONTACT_CARRY_SMOKE: PASS (27 checks)"
+        },
+        {
+          "test": "world_layout",
+          "status": "PASS",
+          "seconds": 7.6,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_WORLD_LAYOUT PASS 7 missions"
+        },
+        {
+          "test": "mood_light",
+          "status": "PASS",
+          "seconds": 31.5,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_MOOD_LIGHT PASS 105 plates 530 pools 105 void masks"
+        },
+        {
+          "test": "walk_registration",
+          "status": "PASS",
+          "seconds": 0.8,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "WALK_TORSO_REGISTRATION PASS"
+        },
+        {
+          "test": "deploy_warmer",
+          "status": "PASS",
+          "seconds": 5.2,
+          "exit_code": 0,
+          "checks": 83,
+          "status_line": "DEPLOY_WARMER_SMOKE: PASS (83 checks)"
+        },
+        {
+          "test": "m13_migration",
+          "status": "PASS",
+          "seconds": 0.6,
+          "exit_code": 0,
+          "checks": 9,
+          "status_line": "M13_WEAPON_BASE_MIGRATION_SMOKE: PASS"
+        },
+        {
+          "test": "m13_campaign",
+          "status": "PASS",
+          "seconds": 0.4,
+          "exit_code": 0,
+          "checks": 16,
+          "status_line": "M13_WEAPON_CAMPAIGN_SMOKE: PASS"
+        },
+        {
+          "test": "m13_runtime",
+          "status": "PASS",
+          "seconds": 3.4,
+          "exit_code": 0,
+          "checks": 18,
+          "status_line": "M13_WEAPON_RUNTIME_SMOKE: PASS"
+        }
+      ]
+    },
+    {
+      "label": "full_tip",
+      "run_folder": "qa/regression_runs/20260930_015157_full",
+      "suite": "full",
+      "started": "2026-09-30T01:51:57",
+      "overall": "PASS",
+      "seconds": 3252,
+      "git_head": "a602501a2e2fcce71a37d3cfae0f7a0fb36629b6",
+      "git_dirty_paths": 0,
+      "guard": {
+        "changed": [],
+        "removed": [],
+        "added": []
+      },
+      "results": [
+        {
+          "test": "combat_density",
+          "status": "PASS",
+          "seconds": 17.8,
+          "exit_code": 0,
+          "checks": 49,
+          "status_line": "COMBAT_DENSITY_SMOKE PASS (49 checks) {\"attacks_started\":32,\"drone_orbit_split\":[2,2],\"frames_with_two_or_more_attackers\":345,\"hostiles\":7,\"max_concurrent_attackers\":3,\"mission\":\"MIS_CH01_02\",\"operato"
+        },
+        {
+          "test": "cover_navigation",
+          "status": "PASS",
+          "seconds": 1.4,
+          "exit_code": 0,
+          "checks": 15,
+          "status_line": "COVER_NAVIGATION_SMOKE: PASS / 15 checks"
+        },
+        {
+          "test": "floor_segment",
+          "status": "PASS",
+          "seconds": 30.7,
+          "exit_code": 0,
+          "checks": 17,
+          "status_line": "FLOOR_SEGMENT_SMOKE: PASS (17 checks)"
+        },
+        {
+          "test": "combat_query_fastpath",
+          "status": "PASS",
+          "seconds": 9.2,
+          "exit_code": 0,
+          "checks": 31,
+          "status_line": "COMBAT_QUERY_FASTPATH_SMOKE: PASS (31 checks)"
+        },
+        {
+          "test": "player_cover",
+          "status": "PASS",
+          "seconds": 6.6,
+          "exit_code": 0,
+          "checks": 5,
+          "status_line": "SITE7_PLAYER_COVER_COLLISION: PASS (5 checks)"
+        },
+        {
+          "test": "cover_alpha_clip",
+          "status": "PASS",
+          "seconds": 1.4,
+          "exit_code": 0,
+          "checks": 5,
+          "status_line": "SITE7_COVER_ALPHA_CLIP: PASS / 5 checks"
+        },
+        {
+          "test": "cover_texture",
+          "status": "PASS",
+          "seconds": 2.2,
+          "exit_code": 0,
+          "checks": 17,
+          "status_line": "COVER_TEXTURE_REDUCTION_SMOKE: PASS (17 checks) 63.3 MB -> 10.2 MB"
+        },
+        {
+          "test": "battle_flow",
+          "status": "PASS",
+          "seconds": 6.6,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_BATTLE_FLOW: PASS"
+        },
+        {
+          "test": "combat_entry",
+          "status": "PASS",
+          "seconds": 5.8,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": ""
+        },
+        {
+          "test": "drone_app",
+          "status": "PASS",
+          "seconds": 2.2,
+          "exit_code": 0,
+          "checks": 171,
+          "status_line": "SITE7_DRONE_APP_SMOKE: PASS (171 checks) res://qa/regression_runs/20260930_015157_full/out/drone_app/drone_app.json"
+        },
+        {
+          "test": "anchor_app",
+          "status": "PASS",
+          "seconds": 1.4,
+          "exit_code": 0,
+          "checks": 271,
+          "status_line": "SITE7_ANCHOR_APP_SMOKE: PASS (271 checks) res://qa/regression_runs/20260930_015157_full/out/anchor_app/anchor_app.json"
+        },
+        {
+          "test": "campaign_data",
+          "status": "PASS",
+          "seconds": 0.4,
+          "exit_code": 0,
+          "checks": 279,
+          "status_line": "SITE7_CAMPAIGN_DATA: PASS (279 checks)"
+        },
+        {
+          "test": "upgrade_economy",
+          "status": "PASS",
+          "seconds": 1.2,
+          "exit_code": 0,
+          "checks": 225,
+          "status_line": "UPGRADE_ECONOMY: PASS (225 checks)"
+        },
+        {
+          "test": "boss_registry",
+          "status": "PASS",
+          "seconds": 8.2,
+          "exit_code": 0,
+          "checks": 160,
+          "status_line": "SITE7_BOSS_REGISTRY_SMOKE: PASS (160 checks)"
+        },
+        {
+          "test": "boss_pattern",
+          "status": "PASS",
+          "seconds": 2.4,
+          "exit_code": 0,
+          "checks": 946,
+          "status_line": "SITE7_BOSS_PATTERN_SMOKE: PASS (946 checks) res://qa/regression_runs/20260930_015157_full/out/boss_pattern/pattern.json"
+        },
+        {
+          "test": "boss_duel",
+          "status": "PASS",
+          "seconds": 36.5,
+          "exit_code": 0,
+          "checks": 1124,
+          "status_line": "SITE7_BOSS_DUEL_SMOKE: PASS (1124 checks) res://qa/regression_runs/20260930_015157_full/out/boss_duel/duel.json"
+        },
+        {
+          "test": "boss_room_fairness",
+          "status": "PASS",
+          "seconds": 9.6,
+          "exit_code": 0,
+          "checks": 9,
+          "status_line": "SITE7_BOSS_ROOM_FAIRNESS: PASS (9 checks) res://qa/regression_runs/20260930_015157_full/out/boss_room_fairness/room_fairness.json"
+        },
+        {
+          "test": "robot_roster",
+          "status": "PASS",
+          "seconds": 9.2,
+          "exit_code": 0,
+          "checks": 302,
+          "status_line": "SITE7_ROBOT_ROSTER: PASS / 302 checks"
+        },
+        {
+          "test": "enemy_facing",
+          "status": "PASS",
+          "seconds": 2.8,
+          "exit_code": 0,
+          "checks": 224,
+          "status_line": "SITE7_ENEMY_FACING_SMOKE: PASS (224 checks)"
+        },
+        {
+          "test": "machine_source",
+          "status": "PASS",
+          "seconds": 2.4,
+          "exit_code": 0,
+          "checks": 436,
+          "status_line": "SITE7_MACHINE_SOURCE_SMOKE: PASS (436 checks)"
+        },
+        {
+          "test": "emission_owner",
+          "status": "PASS",
+          "seconds": 5.2,
+          "exit_code": 0,
+          "checks": 1293,
+          "status_line": "SITE7_EMISSION_OWNER_SMOKE: PASS (1293 checks) res://qa/regression_runs/20260930_015157_full/out/emission_owner"
+        },
+        {
+          "test": "m2_story",
+          "status": "PASS",
+          "seconds": 5.6,
+          "exit_code": 0,
+          "checks": 27,
+          "status_line": "M2_STORY_FLOW_SMOKE: PASS"
+        },
+        {
+          "test": "m9_skill",
+          "status": "PASS",
+          "seconds": 5.2,
+          "exit_code": 0,
+          "checks": 44,
+          "status_line": "M9_OPERATOR_SKILL_SYNERGY_SMOKE: PASS"
+        },
+        {
+          "test": "m10_base_ui",
+          "status": "PASS",
+          "seconds": 1.0,
+          "exit_code": 0,
+          "checks": 10,
+          "status_line": "M10_BASE_UI_ACTION_SMOKE: PASS"
+        },
+        {
+          "test": "m10_persistence",
+          "status": "PASS",
+          "seconds": 0.6,
+          "exit_code": 0,
+          "checks": 27,
+          "status_line": "M10_PERSISTENCE_SMOKE: PASS"
+        },
+        {
+          "test": "m12_revive",
+          "status": "PASS",
+          "seconds": 5.0,
+          "exit_code": 0,
+          "checks": 25,
+          "status_line": "M12_SQUAD_REVIVE_SMOKE: PASS"
+        },
+        {
+          "test": "play_log",
+          "status": "PASS",
+          "seconds": 6.2,
+          "exit_code": 0,
+          "checks": 23,
+          "status_line": "PLAY_SESSION_LOG_SMOKE: PASS (23 checks) res://qa/regression_runs/20260930_015157_full/out/play_log"
+        },
+        {
+          "test": "hit_hurt_vfx",
+          "status": "PASS",
+          "seconds": 2.6,
+          "exit_code": 0,
+          "checks": 47,
+          "status_line": "COMBAT_HIT_HURT_VFX_SMOKE: PASS (47 checks)"
+        },
+        {
+          "test": "combat_vfx",
+          "status": "PASS",
+          "seconds": 3.0,
+          "exit_code": 0,
+          "checks": 189,
+          "status_line": "COMBAT_VFX_OVERHAUL_SMOKE: PASS (189 checks)"
+        },
+        {
+          "test": "elite_affix",
+          "status": "PASS",
+          "seconds": 4.8,
+          "exit_code": 0,
+          "checks": 53,
+          "status_line": "ELITE_AFFIX_SMOKE: PASS (53 checks)"
+        },
+        {
+          "test": "zone_hazard",
+          "status": "PASS",
+          "seconds": 32.9,
+          "exit_code": 0,
+          "checks": 207,
+          "status_line": "ZONE_HAZARD_SMOKE: PASS (207 checks, 9 rooms)"
+        },
+        {
+          "test": "firing_lane",
+          "status": "PASS",
+          "seconds": 19.6,
+          "exit_code": 0,
+          "checks": 223,
+          "status_line": "FIRING_LANE_SEARCH_SMOKE: PASS (223 checks)"
+        },
+        {
+          "test": "platform_carry",
+          "status": "PASS",
+          "seconds": 6.4,
+          "exit_code": 0,
+          "checks": 6,
+          "status_line": "ACTOR_PLATFORM_CARRY_SMOKE: PASS (6 checks)"
+        },
+        {
+          "test": "contact_carry",
+          "status": "PASS",
+          "seconds": 15.0,
+          "exit_code": 0,
+          "checks": 27,
+          "status_line": "ACTOR_CONTACT_CARRY_SMOKE: PASS (27 checks)"
+        },
+        {
+          "test": "world_layout",
+          "status": "PASS",
+          "seconds": 11.6,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_WORLD_LAYOUT PASS 7 missions"
+        },
+        {
+          "test": "mood_light",
+          "status": "PASS",
+          "seconds": 44.7,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_MOOD_LIGHT PASS 105 plates 530 pools 105 void masks"
+        },
+        {
+          "test": "walk_registration",
+          "status": "PASS",
+          "seconds": 1.2,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "WALK_TORSO_REGISTRATION PASS"
+        },
+        {
+          "test": "deploy_warmer",
+          "status": "PASS",
+          "seconds": 7.4,
+          "exit_code": 0,
+          "checks": 83,
+          "status_line": "DEPLOY_WARMER_SMOKE: PASS (83 checks)"
+        },
+        {
+          "test": "m13_migration",
+          "status": "PASS",
+          "seconds": 0.8,
+          "exit_code": 0,
+          "checks": 9,
+          "status_line": "M13_WEAPON_BASE_MIGRATION_SMOKE: PASS"
+        },
+        {
+          "test": "m13_campaign",
+          "status": "PASS",
+          "seconds": 0.6,
+          "exit_code": 0,
+          "checks": 16,
+          "status_line": "M13_WEAPON_CAMPAIGN_SMOKE: PASS"
+        },
+        {
+          "test": "m13_runtime",
+          "status": "PASS",
+          "seconds": 4.8,
+          "exit_code": 0,
+          "checks": 18,
+          "status_line": "M13_WEAPON_RUNTIME_SMOKE: PASS"
+        },
+        {
+          "test": "full_op_01",
+          "status": "PASS",
+          "seconds": 126.0,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS"
+        },
+        {
+          "test": "full_op_02",
+          "status": "PASS",
+          "seconds": 126.0,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS"
+        },
+        {
+          "test": "full_op_03",
+          "status": "PASS",
+          "seconds": 146.6,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS"
+        },
+        {
+          "test": "full_op_04",
+          "status": "PASS",
+          "seconds": 153.6,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS"
+        },
+        {
+          "test": "full_op_05",
+          "status": "PASS",
+          "seconds": 159.6,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS"
+        },
+        {
+          "test": "full_op_06",
+          "status": "PASS",
+          "seconds": 187.7,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS"
+        },
+        {
+          "test": "full_op_07",
+          "status": "PASS",
+          "seconds": 223.1,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS"
+        },
+        {
+          "test": "traversal_audit",
+          "status": "PASS",
+          "seconds": 606.5,
+          "exit_code": 0,
+          "checks": 1687,
+          "status_line": "SITE7_TRAVERSAL_AUDIT: PASS (1687 checks, 0 failures)"
+        },
+        {
+          "test": "enemy_cover_nav",
+          "status": "PASS",
+          "seconds": 39.1,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "ENEMY_COVER_NAVIGATION PASS res://qa/regression_runs/20260930_015157_full/out/enemy_cover_nav []"
+        },
+        {
+          "test": "cover_ai",
+          "status": "PASS",
+          "seconds": 37.5,
+          "exit_code": 0,
+          "checks": 46,
+          "status_line": ""
+        },
+        {
+          "test": "boss_capture_geometry",
+          "status": "PASS",
+          "seconds": 16.4,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_BOSS_PATTERN_CAPTURE: PASS res://qa/regression_runs/20260930_015157_full/out/boss_capture_geometry"
+        },
+        {
+          "test": "boss_lineup",
+          "status": "PASS",
+          "seconds": 2.0,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_BOSS_LINEUP_CAPTURE: PASS res://qa/regression_runs/20260930_015157_full/out/boss_lineup"
+        },
+        {
+          "test": "world_route",
+          "status": "PASS",
+          "seconds": 12.2,
+          "exit_code": 0,
+          "checks": 67,
+          "status_line": "SITE7_WORLD_ROUTE_NAVIGATION: PASS (67 checks)"
+        },
+        {
+          "test": "connector_alignment",
+          "status": "PASS",
+          "seconds": 737.3,
+          "exit_code": 0,
+          "checks": 742,
+          "status_line": "SITE7_CONNECTOR_ALIGNMENT PASS (742 checks)"
+        },
+        {
+          "test": "battle_geometry",
+          "status": "PASS",
+          "seconds": 17.0,
+          "exit_code": 0,
+          "checks": 3491,
+          "status_line": "SITE7_BATTLE_GEOMETRY_SMOKE: PASS (3491 checks)"
+        },
+        {
+          "test": "walk_graph_capture",
+          "status": "PASS",
+          "seconds": 4.4,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_WALK_GRAPH_HEADLESS: PASS (15 plates)"
+        },
+        {
+          "test": "combat_sfx",
+          "status": "PASS",
+          "seconds": 4.8,
+          "exit_code": 0,
+          "checks": 572,
+          "status_line": "COMBAT_SFX_R04: PASS / 572 checks"
+        },
+        {
+          "test": "demo_integration",
+          "status": "PASS",
+          "seconds": 6.6,
+          "exit_code": 0,
+          "checks": 26,
+          "status_line": "DEMO_INTEGRATION PASS / 26 checks"
+        },
+        {
+          "test": "m7_visual",
+          "status": "PASS",
+          "seconds": 4.0,
+          "exit_code": 0,
+          "checks": 84,
+          "status_line": "M7_AUTHORED_VISUAL_SMOKE: PASS"
+        },
+        {
+          "test": "m10_intel",
+          "status": "PASS",
+          "seconds": 4.6,
+          "exit_code": 0,
+          "checks": 39,
+          "status_line": "M10_INTEL_LOADOUT_SMOKE: PASS"
+        },
+        {
+          "test": "m13_loadout",
+          "status": "PASS",
+          "seconds": 4.6,
+          "exit_code": 0,
+          "checks": 46,
+          "status_line": "M13_WEAPON_LOADOUT_SMOKE: PASS"
+        },
+        {
+          "test": "campaign",
+          "status": "PASS",
+          "seconds": 14.6,
+          "exit_code": 0,
+          "checks": 179,
+          "status_line": "SITE7_CAMPAIGN_PROGRESSION: PASS (179 checks) res://qa/regression_runs/20260930_015157_full/out/campaign"
+        },
+        {
+          "test": "rook_app",
+          "status": "PASS",
+          "seconds": 97.5,
+          "exit_code": 0,
+          "checks": 1895,
+          "status_line": "ROOK_MOTION_LAB_APP_SMOKE: PASS (1895 checks, 0 failures)"
+        },
+        {
+          "test": "motion_lab_runtime",
+          "status": "PASS",
+          "seconds": 10.6,
+          "exit_code": 0,
+          "checks": 106,
+          "status_line": "MOTION_LAB_CHARACTER_RUNTIME_SMOKE: PASS"
+        },
+        {
+          "test": "motion_lab_python",
+          "status": "PASS",
+          "seconds": 158.5,
+          "exit_code": 0,
+          "checks": 137,
+          "status_line": "OK"
+        },
+        {
+          "test": "motion_lab_js",
+          "status": "PASS",
+          "seconds": 0.2,
+          "exit_code": 0,
+          "checks": 30,
+          "status_line": ""
+        }
+      ]
+    }
+  ]
+}

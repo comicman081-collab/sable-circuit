@@ -1,0 +1,104 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+M7_RASTER_QUARANTINED identity=aster status=partial chunks=2 encoded=20000 present=15000 declared=94718
+PASS: ASTER exists in the real StoryStage squad
+PASS: ASTER owns the shared Motion Studio runtime bridge
+MOTION_LAB_RUNTIME_CONTRACT ASTER: { "active": true, "status": "active", "character_id": "aster", "profile_path": "res://motion_lab_v1/public/assets/atlas/aster/profile.json", "directions": 8, "display_height_px": 129.6, "display_scale": 0.19756097560976, "ground_anchor_local": (0.0, 0.0), "action": "idle", "sector": 5, "direction": "NW", "frame": 0, "phase": 0.0, "walk_cycle_distance": 160.0, "run_cycle_distance": 195.0, "muzzle_global": (354.8386, 263.3866), "whole_body_fire_policy": "shared_walk_or_idle_frame", "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911" }
+PASS: ASTER current Motion Studio package activates
+PASS: ASTER reads its exact current package profile
+PASS: ASTER profile resolves inside the project Motion Studio package
+PASS: ASTER loads every authored direction
+PASS: ASTER uses the user-requested 129.6px map-operator height
+PASS: ASTER source root is grounded on the actor map position
+PASS: ASTER displays authored Motion Studio raster pixels
+PASS: ASTER suppresses the old vector body without changing gameplay sockets
+PASS: ASTER has no competing legacy fast-raster body
+PASS: ASTER Motion Studio body suppresses the retired V4 preview
+PASS: ASTER direction E selects its matching authored atlas
+PASS: ASTER direction E keeps a drawable atlas
+PASS: ASTER direction SE selects its matching authored atlas
+PASS: ASTER direction SE keeps a drawable atlas
+PASS: ASTER direction S selects its matching authored atlas
+PASS: ASTER direction S keeps a drawable atlas
+PASS: ASTER direction SW selects its matching authored atlas
+PASS: ASTER direction SW keeps a drawable atlas
+PASS: ASTER direction W selects its matching authored atlas
+PASS: ASTER direction W keeps a drawable atlas
+PASS: ASTER direction NW selects its matching authored atlas
+PASS: ASTER direction NW keeps a drawable atlas
+PASS: ASTER direction N selects its matching authored atlas
+PASS: ASTER direction N keeps a drawable atlas
+PASS: ASTER direction NE selects its matching authored atlas
+PASS: ASTER direction NE keeps a drawable atlas
+PASS: ASTER advances across the actual map while walking
+PASS: ASTER distance-driven walk visits all six approved gait frames
+PASS: ASTER projectile source follows the visible authored muzzle
+PASS: ASTER accepts a gameplay fire request
+PASS: ASTER spawned projectile uses the same current whole-body frame muzzle
+PASS: ROOK exists in the real StoryStage squad
+PASS: ROOK owns the shared Motion Studio runtime bridge
+MOTION_LAB_RUNTIME_CONTRACT ROOK: { "active": true, "status": "active", "character_id": "rook", "profile_path": "res://motion_lab_v1/public/assets/atlas/rook/profile.json", "directions": 8, "display_height_px": 129.6, "display_scale": 0.19756097560976, "ground_anchor_local": (0.0, 0.0), "action": "walk", "sector": 0, "direction": "E", "frame": 0, "phase": 0.10549132218584, "walk_cycle_distance": 160.0, "run_cycle_distance": 195.0, "muzzle_global": (522.2426, 353.9015), "whole_body_fire_policy": "shared_walk_or_idle_frame", "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911" }
+PASS: ROOK current Motion Studio package activates
+PASS: ROOK reads its exact current package profile
+PASS: ROOK profile resolves inside the project Motion Studio package
+PASS: ROOK loads every authored direction
+PASS: ROOK uses the user-requested 129.6px map-operator height
+PASS: ROOK source root is grounded on the actor map position
+PASS: ROOK displays authored Motion Studio raster pixels
+PASS: ROOK suppresses the old vector body without changing gameplay sockets
+PASS: ROOK has no competing legacy fast-raster body
+PASS: ROOK direction E selects its matching authored atlas
+PASS: ROOK direction E keeps a drawable atlas
+PASS: ROOK direction SE selects its matching authored atlas
+PASS: ROOK direction SE keeps a drawable atlas
+PASS: ROOK direction S selects its matching authored atlas
+PASS: ROOK direction S keeps a drawable atlas
+PASS: ROOK direction SW selects its matching authored atlas
+PASS: ROOK direction SW keeps a drawable atlas
+PASS: ROOK direction W selects its matching authored atlas
+PASS: ROOK direction W keeps a drawable atlas
+PASS: ROOK direction NW selects its matching authored atlas
+PASS: ROOK direction NW keeps a drawable atlas
+PASS: ROOK direction N selects its matching authored atlas
+PASS: ROOK direction N keeps a drawable atlas
+PASS: ROOK direction NE selects its matching authored atlas
+PASS: ROOK direction NE keeps a drawable atlas
+PASS: ROOK advances across the actual map while walking
+PASS: ROOK distance-driven walk visits all six approved gait frames
+PASS: ROOK projectile source follows the visible authored muzzle
+PASS: ROOK accepts a gameplay fire request
+PASS: ROOK spawned projectile uses the same current whole-body frame muzzle
+PASS: MICA exists in the real StoryStage squad
+PASS: MICA owns the shared Motion Studio runtime bridge
+MOTION_LAB_RUNTIME_CONTRACT MICA: { "active": true, "status": "active", "character_id": "mica", "profile_path": "res://motion_lab_v1/public/assets/atlas/mica/profile.json", "directions": 8, "display_height_px": 129.6, "display_scale": 0.19756097560976, "ground_anchor_local": (0.0, 0.0), "action": "walk", "sector": 0, "direction": "E", "frame": 2, "phase": 0.47693269923329, "walk_cycle_distance": 160.0, "run_cycle_distance": 195.0, "muzzle_global": (528.5323, 347.8654), "whole_body_fire_policy": "shared_walk_or_idle_frame", "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911" }
+PASS: MICA current Motion Studio package activates
+PASS: MICA reads its exact current package profile
+PASS: MICA profile resolves inside the project Motion Studio package
+PASS: MICA loads every authored direction
+PASS: MICA uses the user-requested 129.6px map-operator height
+PASS: MICA source root is grounded on the actor map position
+PASS: MICA displays authored Motion Studio raster pixels
+PASS: MICA suppresses the old vector body without changing gameplay sockets
+PASS: MICA has no competing legacy fast-raster body
+PASS: MICA direction E selects its matching authored atlas
+PASS: MICA direction E keeps a drawable atlas
+PASS: MICA direction SE selects its matching authored atlas
+PASS: MICA direction SE keeps a drawable atlas
+PASS: MICA direction S selects its matching authored atlas
+PASS: MICA direction S keeps a drawable atlas
+PASS: MICA direction SW selects its matching authored atlas
+PASS: MICA direction SW keeps a drawable atlas
+PASS: MICA direction W selects its matching authored atlas
+PASS: MICA direction W keeps a drawable atlas
+PASS: MICA direction NW selects its matching authored atlas
+PASS: MICA direction NW keeps a drawable atlas
+PASS: MICA direction N selects its matching authored atlas
+PASS: MICA direction N keeps a drawable atlas
+PASS: MICA direction NE selects its matching authored atlas
+PASS: MICA direction NE keeps a drawable atlas
+PASS: MICA advances across the actual map while walking
+PASS: MICA distance-driven walk visits all six approved gait frames
+PASS: MICA projectile source follows the visible authored muzzle
+PASS: MICA accepts a gameplay fire request
+PASS: MICA spawned projectile uses the same current whole-body frame muzzle
+MOTION_LAB_CHARACTER_RUNTIME_SMOKE: PASS

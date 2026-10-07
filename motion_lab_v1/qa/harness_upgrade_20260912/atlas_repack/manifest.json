@@ -1,0 +1,2771 @@
+{
+  "cell_size": 384,
+  "display_scale": 0.441,
+  "display_offset": [
+    0.0,
+    -63.54
+  ],
+  "states": {
+    "idle": {
+      "frames": 4,
+      "fps": 4.0
+    },
+    "move": {
+      "frames": 24,
+      "fps": 24.0
+    },
+    "fire": {
+      "frames": 6,
+      "fps": 12.0
+    }
+  },
+  "schema": 1,
+  "kind": "lossless_explicit_cells",
+  "production_approved": false,
+  "source_descriptor": {
+    "path": "data/character_pipeline/rook_runtime.json",
+    "sha256": "5588b8aa421c4d476c3139457e43d03897cf9d5e8709fab5f47679fe68020700"
+  },
+  "directions": {
+    "E": {
+      "texture": "motion_lab_v1/qa/harness_upgrade_20260912/atlas_repack/E.png",
+      "sha256": "9ae4d3bd114a2a07398bfa105b81555732a1ab4d3261ae3c0f1682dfea44e4fa",
+      "size": [
+        1536,
+        1920
+      ],
+      "unique_cells": 18,
+      "states": {
+        "idle": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 0,
+            "rgba_sha256": "8febe1a300ddd060c58b8878377269f43244215d3c0ba0b47a5fa99df3c43c77"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 1,
+            "rgba_sha256": "8febe1a300ddd060c58b8878377269f43244215d3c0ba0b47a5fa99df3c43c77"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 2,
+            "rgba_sha256": "8febe1a300ddd060c58b8878377269f43244215d3c0ba0b47a5fa99df3c43c77"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 3,
+            "rgba_sha256": "8febe1a300ddd060c58b8878377269f43244215d3c0ba0b47a5fa99df3c43c77"
+          }
+        ],
+        "move": [
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 0,
+            "rgba_sha256": "fc2c6ee50d87746a0620afae41d47fac19a333f695b8245f971292a45cd8cc2f"
+          },
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 1,
+            "rgba_sha256": "fc2c6ee50d87746a0620afae41d47fac19a333f695b8245f971292a45cd8cc2f"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 2,
+            "rgba_sha256": "4ba396285be492b8659bd1516eabcba7903c8c181aba2fa1385fc20261abb350"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 3,
+            "rgba_sha256": "4ba396285be492b8659bd1516eabcba7903c8c181aba2fa1385fc20261abb350"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 4,
+            "rgba_sha256": "3c64cab702c6061cb7e08be9b3d2756f26c8e4e18c104d7d83c0f59ea9438a5e"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 5,
+            "rgba_sha256": "3c64cab702c6061cb7e08be9b3d2756f26c8e4e18c104d7d83c0f59ea9438a5e"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 6,
+            "rgba_sha256": "adf771b497c80696ddc16626ddf3bfd75799fc2495392a658990da43cb8c6f0c"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 7,
+            "rgba_sha256": "adf771b497c80696ddc16626ddf3bfd75799fc2495392a658990da43cb8c6f0c"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 8,
+            "rgba_sha256": "3e059a4dc96f9a460df418b5071117947eed77934200c7b6e6d79d72399ff839"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 9,
+            "rgba_sha256": "3e059a4dc96f9a460df418b5071117947eed77934200c7b6e6d79d72399ff839"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 10,
+            "rgba_sha256": "2f59fda1c46947b42e04e63da002dfc61f0a75168f4ebf82933bb55876976528"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 11,
+            "rgba_sha256": "2f59fda1c46947b42e04e63da002dfc61f0a75168f4ebf82933bb55876976528"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 12,
+            "rgba_sha256": "61f142cbf0d588860e5c00d87b7d21b6ef4e5b75a4f30c2b7ee71a86a476533a"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 13,
+            "rgba_sha256": "61f142cbf0d588860e5c00d87b7d21b6ef4e5b75a4f30c2b7ee71a86a476533a"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 14,
+            "rgba_sha256": "30b52c14dcffcf7618bd902dca3f135a124bfa76a85cb7cba30f7ad12953443c"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 15,
+            "rgba_sha256": "30b52c14dcffcf7618bd902dca3f135a124bfa76a85cb7cba30f7ad12953443c"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 16,
+            "rgba_sha256": "e5fa07afe82d79271072faebec6eeb52babd1f2e93cc19b720b012a48388a76b"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 17,
+            "rgba_sha256": "e5fa07afe82d79271072faebec6eeb52babd1f2e93cc19b720b012a48388a76b"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 18,
+            "rgba_sha256": "d0b4d4622ac6e6a5e6df1169f6ad49d8f937afc62892bb54f295058c6efc6b67"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 19,
+            "rgba_sha256": "d0b4d4622ac6e6a5e6df1169f6ad49d8f937afc62892bb54f295058c6efc6b67"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 20,
+            "rgba_sha256": "8febe1a300ddd060c58b8878377269f43244215d3c0ba0b47a5fa99df3c43c77"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 21,
+            "rgba_sha256": "8febe1a300ddd060c58b8878377269f43244215d3c0ba0b47a5fa99df3c43c77"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 22,
+            "rgba_sha256": "f7c55ad45f08686c88659f0a863923bb84ea99a463e30e6e881b0c00d86b170c"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 23,
+            "rgba_sha256": "f7c55ad45f08686c88659f0a863923bb84ea99a463e30e6e881b0c00d86b170c"
+          }
+        ],
+        "fire": [
+          {
+            "x": 0,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 0,
+            "rgba_sha256": "5a8c10ac18ea2cab95cd56653ebac3f0cdd422b1f36c4c496e2d8ebfb340974f"
+          },
+          {
+            "x": 384,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 1,
+            "rgba_sha256": "6e48309341bd7b96ff080f55b8e8d36ae9cdda268f77c536cb31644d6e9d4031"
+          },
+          {
+            "x": 768,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 2,
+            "rgba_sha256": "cdb959a7f9fe6a9b6fc657048ebed872fdd965cbb7838d5276f87c9be62feb55"
+          },
+          {
+            "x": 1152,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 3,
+            "rgba_sha256": "6ef1664bbfa694194c909bd29f8b4444a87df323e4156316375cd92db53c1612"
+          },
+          {
+            "x": 0,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 4,
+            "rgba_sha256": "cc86e486793b576fa06a9fe55fb761f16e20048afd3e45ce4db21b2dcb822cfc"
+          },
+          {
+            "x": 384,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 5,
+            "rgba_sha256": "0d3f7d34aebbd4129d993abad49cfd6de5eb34b686da9013f0f02dae25fdd237"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/E/idle.png",
+          "sha256": "a60964199216a6265041cc737665fcd3ca347dadf946508ed60b8ec5a599ba10"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/E/move.png",
+          "sha256": "a8ec664935fd7836bd610e6ccd76eee1b1308f6a1dbc6debbefd757be98f9e55"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/E/fire.png",
+          "sha256": "3174113f96dfdff1a9360483da5609dca3ea8d97afefbfd9d5c4fb426bbfcaa4"
+        }
+      ],
+      "muzzle_xy": [
+        313.0,
+        113.0
+      ]
+    },
+    "SE": {
+      "texture": "motion_lab_v1/qa/harness_upgrade_20260912/atlas_repack/SE.png",
+      "sha256": "ae80badabc4162e7f662b4260883c97484fc27d123126821125e86b4bc57d3bc",
+      "size": [
+        1536,
+        1920
+      ],
+      "unique_cells": 18,
+      "states": {
+        "idle": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 0,
+            "rgba_sha256": "5ce0ccd22e8e2edf60064f34b2c45b2066ebc3ff07a2c8032be9c347c9786de3"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 1,
+            "rgba_sha256": "5ce0ccd22e8e2edf60064f34b2c45b2066ebc3ff07a2c8032be9c347c9786de3"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 2,
+            "rgba_sha256": "5ce0ccd22e8e2edf60064f34b2c45b2066ebc3ff07a2c8032be9c347c9786de3"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 3,
+            "rgba_sha256": "5ce0ccd22e8e2edf60064f34b2c45b2066ebc3ff07a2c8032be9c347c9786de3"
+          }
+        ],
+        "move": [
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 0,
+            "rgba_sha256": "7cb0cf58916bcd93e93a0ab6f4abc204427171c7dd72318e073c69bfcbd9fb78"
+          },
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 1,
+            "rgba_sha256": "7cb0cf58916bcd93e93a0ab6f4abc204427171c7dd72318e073c69bfcbd9fb78"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 2,
+            "rgba_sha256": "d4440e0086e30498924854a8722b7847f345f18441c4cedefb9db4efb4a32e1d"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 3,
+            "rgba_sha256": "d4440e0086e30498924854a8722b7847f345f18441c4cedefb9db4efb4a32e1d"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 4,
+            "rgba_sha256": "da989d0c81581c8dc9ad7a283f1850c026aa3b4a47a66169a7ebca570dd64736"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 5,
+            "rgba_sha256": "da989d0c81581c8dc9ad7a283f1850c026aa3b4a47a66169a7ebca570dd64736"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 6,
+            "rgba_sha256": "a99cb920deb133c210a416936c7a62305fe4c6af8a68430e4cce624320cece4a"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 7,
+            "rgba_sha256": "a99cb920deb133c210a416936c7a62305fe4c6af8a68430e4cce624320cece4a"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 8,
+            "rgba_sha256": "af911628552c69c69636367b83b430460afb54f4fccebde435105101dc88f13d"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 9,
+            "rgba_sha256": "af911628552c69c69636367b83b430460afb54f4fccebde435105101dc88f13d"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 10,
+            "rgba_sha256": "a4c807020be08e62102a8ec69be4bdd043c6997a55623a4a6a0edffeda118cb2"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 11,
+            "rgba_sha256": "a4c807020be08e62102a8ec69be4bdd043c6997a55623a4a6a0edffeda118cb2"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 12,
+            "rgba_sha256": "6a1a2478838ea18efc41a3f720a963f88db43dde896a14d1c24ff5ef7b0103b8"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 13,
+            "rgba_sha256": "6a1a2478838ea18efc41a3f720a963f88db43dde896a14d1c24ff5ef7b0103b8"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 14,
+            "rgba_sha256": "2662c333e3abba16bbb5c0f70f257f0c5f4b2ed5abbd26d2a3fbcfb2db03f1b0"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 15,
+            "rgba_sha256": "2662c333e3abba16bbb5c0f70f257f0c5f4b2ed5abbd26d2a3fbcfb2db03f1b0"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 16,
+            "rgba_sha256": "8109e31262646cb9549aac8e2241d37d786ac300d03f2e4347196478abea8564"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 17,
+            "rgba_sha256": "8109e31262646cb9549aac8e2241d37d786ac300d03f2e4347196478abea8564"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 18,
+            "rgba_sha256": "1ca57d6a9cb5ff7cace5d4a7c7260ab9b9a9e9d810e37d7d4540db1677289e85"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 19,
+            "rgba_sha256": "1ca57d6a9cb5ff7cace5d4a7c7260ab9b9a9e9d810e37d7d4540db1677289e85"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 20,
+            "rgba_sha256": "5ce0ccd22e8e2edf60064f34b2c45b2066ebc3ff07a2c8032be9c347c9786de3"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 21,
+            "rgba_sha256": "5ce0ccd22e8e2edf60064f34b2c45b2066ebc3ff07a2c8032be9c347c9786de3"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 22,
+            "rgba_sha256": "cff74d81c7952f232838502f079980ff3a52bb44c5c6ce118df097771da72918"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 23,
+            "rgba_sha256": "cff74d81c7952f232838502f079980ff3a52bb44c5c6ce118df097771da72918"
+          }
+        ],
+        "fire": [
+          {
+            "x": 0,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 0,
+            "rgba_sha256": "06ccef0db9832399eb39ae34374c714c0275318fdada103ed82609bb7eb3373c"
+          },
+          {
+            "x": 384,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 1,
+            "rgba_sha256": "1317ac237290e8b14563b0a44a71f18e7a64ab0d37a63ee37b9a0ca63f68ee3c"
+          },
+          {
+            "x": 768,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 2,
+            "rgba_sha256": "b30275cfa8f45778571232c74e810a48d88caca6b1efa4dc8889b423145de2f3"
+          },
+          {
+            "x": 1152,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 3,
+            "rgba_sha256": "18fd1a829e888e1c0a950abaad93b44caf04568498eb4a352eb49bd5bc729e33"
+          },
+          {
+            "x": 0,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 4,
+            "rgba_sha256": "5923df33a96d467d7a335bca12c349cdbe549c4c63922542433daae9f33ebb05"
+          },
+          {
+            "x": 384,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 5,
+            "rgba_sha256": "f787061d30f3cb2667980e2f764688f7d7a82606bf38ba29fa8dc225097dd919"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/SE/idle.png",
+          "sha256": "c016a14c2e0c96c506cbf51220324b7f011e7c6c3b800fea77d9d0d9a947ec60"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/SE/move.png",
+          "sha256": "7395c9b9db4be6f558b0768562865ebe35005e628d608f6b07784caa5fb3e014"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/SE/fire.png",
+          "sha256": "0464b1e51b0ce759a3e07a8e4e0e8f6b8ae5865a587dc8e0acf6d02afbf0039b"
+        }
+      ],
+      "muzzle_xy": [
+        294.0,
+        188.0
+      ]
+    },
+    "S": {
+      "texture": "motion_lab_v1/qa/harness_upgrade_20260912/atlas_repack/S.png",
+      "sha256": "7b49263968ba486dba065c45ff60a3267cb5a2b49324549c1ab9e6e384a47b98",
+      "size": [
+        1536,
+        1920
+      ],
+      "unique_cells": 18,
+      "states": {
+        "idle": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 0,
+            "rgba_sha256": "75af7513ff1ad3dc9e6cc99fdb38da11ca1e7c7be497ca3e986307973e5e8317"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 1,
+            "rgba_sha256": "75af7513ff1ad3dc9e6cc99fdb38da11ca1e7c7be497ca3e986307973e5e8317"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 2,
+            "rgba_sha256": "75af7513ff1ad3dc9e6cc99fdb38da11ca1e7c7be497ca3e986307973e5e8317"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 3,
+            "rgba_sha256": "75af7513ff1ad3dc9e6cc99fdb38da11ca1e7c7be497ca3e986307973e5e8317"
+          }
+        ],
+        "move": [
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 0,
+            "rgba_sha256": "74f8b1ce3af364b05506307b1f441d23c0d6ee219786798c679bb5b58838dcb1"
+          },
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 1,
+            "rgba_sha256": "74f8b1ce3af364b05506307b1f441d23c0d6ee219786798c679bb5b58838dcb1"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 2,
+            "rgba_sha256": "8207a7df566a4fa3d75e1bc34414a7b2217cb43d6df2b28422ab60f510f9c62d"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 3,
+            "rgba_sha256": "8207a7df566a4fa3d75e1bc34414a7b2217cb43d6df2b28422ab60f510f9c62d"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 4,
+            "rgba_sha256": "59d318614555b481aa0849ba2dbdb8a1a072a557b853847e99ecd0c6746bc85e"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 5,
+            "rgba_sha256": "59d318614555b481aa0849ba2dbdb8a1a072a557b853847e99ecd0c6746bc85e"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 6,
+            "rgba_sha256": "40a9945cffbfde68fffab57cdb28a319c8fb87ba99452974345b5d104035ec54"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 7,
+            "rgba_sha256": "40a9945cffbfde68fffab57cdb28a319c8fb87ba99452974345b5d104035ec54"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 8,
+            "rgba_sha256": "8d19a5ee050af8e51a3233a53ffc38f32521832be2d0af3fe7db3472ad9ce974"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 9,
+            "rgba_sha256": "8d19a5ee050af8e51a3233a53ffc38f32521832be2d0af3fe7db3472ad9ce974"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 10,
+            "rgba_sha256": "ba71da67788cb15f745266c7420d8afd3049b01ed4f2fdcd664b8c8beb28db4a"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 11,
+            "rgba_sha256": "ba71da67788cb15f745266c7420d8afd3049b01ed4f2fdcd664b8c8beb28db4a"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 12,
+            "rgba_sha256": "70578a570b7317dc2e734922d3280ccc084416d35d86ba85086cc2c3749092bf"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 13,
+            "rgba_sha256": "70578a570b7317dc2e734922d3280ccc084416d35d86ba85086cc2c3749092bf"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 14,
+            "rgba_sha256": "e39ac4a0521e465ddd889ac3c76202e6d961b77ac235e48ba3f9d1205b4cea2f"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 15,
+            "rgba_sha256": "e39ac4a0521e465ddd889ac3c76202e6d961b77ac235e48ba3f9d1205b4cea2f"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 16,
+            "rgba_sha256": "a4419a267346a688324bbaa973477368fd61c4412fcf6c57814812dea5b917ed"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 17,
+            "rgba_sha256": "a4419a267346a688324bbaa973477368fd61c4412fcf6c57814812dea5b917ed"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 18,
+            "rgba_sha256": "ca05312fcae05b947f9eff306a0452eced4491423a1e6209ac091c31afcf859b"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 19,
+            "rgba_sha256": "ca05312fcae05b947f9eff306a0452eced4491423a1e6209ac091c31afcf859b"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 20,
+            "rgba_sha256": "75af7513ff1ad3dc9e6cc99fdb38da11ca1e7c7be497ca3e986307973e5e8317"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 21,
+            "rgba_sha256": "75af7513ff1ad3dc9e6cc99fdb38da11ca1e7c7be497ca3e986307973e5e8317"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 22,
+            "rgba_sha256": "b2b6ca9194e5ef89e760a9146b809bbfc6b3ecd472c2d0780127161e15a2cc37"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 23,
+            "rgba_sha256": "b2b6ca9194e5ef89e760a9146b809bbfc6b3ecd472c2d0780127161e15a2cc37"
+          }
+        ],
+        "fire": [
+          {
+            "x": 0,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 0,
+            "rgba_sha256": "5b0cebc49c5a4e579cefc53c85cc08fdffbc9dd13d4297f43ade3a0bbb71a079"
+          },
+          {
+            "x": 384,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 1,
+            "rgba_sha256": "3e876b21f5f4f43baddde67b054d2b86683c6a59a3b18a43b7f4355161a6515d"
+          },
+          {
+            "x": 768,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 2,
+            "rgba_sha256": "dd856be9ee9031342c804c0b7afa30fbf6fba9f1bd80dfcdcf4dcd97a77272e1"
+          },
+          {
+            "x": 1152,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 3,
+            "rgba_sha256": "16b6b0f91c9d37196d3df7cf920169f60fdd33ba4eb91a6cb9601a4061ba3bc8"
+          },
+          {
+            "x": 0,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 4,
+            "rgba_sha256": "d22470daff14c390a254f9f63af8f7c4f5af3c848e980cfdedc3cb72da85efa6"
+          },
+          {
+            "x": 384,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 5,
+            "rgba_sha256": "6d47f512d5aa44dea72eae942a5b4d766b59070d8eb1e7429bcc9bab514c25bf"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/S/idle.png",
+          "sha256": "97b38234ca507d4057824d4e46421ea38993c762ba4893bded2f6450a8d599b8"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/S/move.png",
+          "sha256": "5a9f105cb577e244e4b784351d28b40d27aa1b88990338a2c8921bb647b7e415"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/S/fire.png",
+          "sha256": "4716317564b6e4d3a5da0d16e2af2c371aae8bc8fee1e64ab7e2685d12eba6fa"
+        }
+      ],
+      "muzzle_xy": [
+        192.0,
+        278.0
+      ]
+    },
+    "SW": {
+      "texture": "motion_lab_v1/qa/harness_upgrade_20260912/atlas_repack/SW.png",
+      "sha256": "828c94227cb96160192071416aee2343f4f981ea14de168e7f8e3424e1628a52",
+      "size": [
+        1536,
+        1920
+      ],
+      "unique_cells": 18,
+      "states": {
+        "idle": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 0,
+            "rgba_sha256": "3270864b6bc32ba79aca7294a2c5b86b94bdf16cc1aa0566f07fb36515a62e9c"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 1,
+            "rgba_sha256": "3270864b6bc32ba79aca7294a2c5b86b94bdf16cc1aa0566f07fb36515a62e9c"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 2,
+            "rgba_sha256": "3270864b6bc32ba79aca7294a2c5b86b94bdf16cc1aa0566f07fb36515a62e9c"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 3,
+            "rgba_sha256": "3270864b6bc32ba79aca7294a2c5b86b94bdf16cc1aa0566f07fb36515a62e9c"
+          }
+        ],
+        "move": [
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 0,
+            "rgba_sha256": "bb8fea3f42223ab6dddc23063640ef0a4ee038a20b4e93559bc2f3d32432e416"
+          },
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 1,
+            "rgba_sha256": "bb8fea3f42223ab6dddc23063640ef0a4ee038a20b4e93559bc2f3d32432e416"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 2,
+            "rgba_sha256": "35c23f0738018a8279d8d4206f8bee20e9b5e9279f6acf5c86622dfeae729d17"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 3,
+            "rgba_sha256": "35c23f0738018a8279d8d4206f8bee20e9b5e9279f6acf5c86622dfeae729d17"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 4,
+            "rgba_sha256": "f44070d7d4baf4233a75a718b340d45e6eec37d0475ce86c0b97c968cf164a78"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 5,
+            "rgba_sha256": "f44070d7d4baf4233a75a718b340d45e6eec37d0475ce86c0b97c968cf164a78"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 6,
+            "rgba_sha256": "91c16b8a4423b2e026bfd7a9f1530212b53fd944080a7debb1c5082332a0646c"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 7,
+            "rgba_sha256": "91c16b8a4423b2e026bfd7a9f1530212b53fd944080a7debb1c5082332a0646c"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 8,
+            "rgba_sha256": "b7b3f8bd7fa4ee451ec3e98139272f4668de14aae7dd75650f571e84d8b06adc"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 9,
+            "rgba_sha256": "b7b3f8bd7fa4ee451ec3e98139272f4668de14aae7dd75650f571e84d8b06adc"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 10,
+            "rgba_sha256": "168754982c1d8d978fb02115dfd87e6b1de7382fb084fe3a3a16071ab7d67127"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 11,
+            "rgba_sha256": "168754982c1d8d978fb02115dfd87e6b1de7382fb084fe3a3a16071ab7d67127"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 12,
+            "rgba_sha256": "3838fcd6e43d15d0ec5610e03d08b978178c4d4eb1720f1dff790f80dfd48963"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 13,
+            "rgba_sha256": "3838fcd6e43d15d0ec5610e03d08b978178c4d4eb1720f1dff790f80dfd48963"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 14,
+            "rgba_sha256": "cee359db5ba0e690ce02f71d2b091c281bfe3f25e9b03082dfa910ccd4146d57"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 15,
+            "rgba_sha256": "cee359db5ba0e690ce02f71d2b091c281bfe3f25e9b03082dfa910ccd4146d57"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 16,
+            "rgba_sha256": "3515dfe0978bd0b5d2ae966e85215a3ac801233d5a7d3e03bbe59ef1ccd65d1f"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 17,
+            "rgba_sha256": "3515dfe0978bd0b5d2ae966e85215a3ac801233d5a7d3e03bbe59ef1ccd65d1f"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 18,
+            "rgba_sha256": "5aa356e728f67ab71b197f04b0f913d19b615ececb2ef67c0f2ef5cab37cbabc"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 19,
+            "rgba_sha256": "5aa356e728f67ab71b197f04b0f913d19b615ececb2ef67c0f2ef5cab37cbabc"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 20,
+            "rgba_sha256": "3270864b6bc32ba79aca7294a2c5b86b94bdf16cc1aa0566f07fb36515a62e9c"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 21,
+            "rgba_sha256": "3270864b6bc32ba79aca7294a2c5b86b94bdf16cc1aa0566f07fb36515a62e9c"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 22,
+            "rgba_sha256": "0b308a32e9b4df0819c70fa4065124d33f1b0855ceecc1c01dc50c789311c056"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 23,
+            "rgba_sha256": "0b308a32e9b4df0819c70fa4065124d33f1b0855ceecc1c01dc50c789311c056"
+          }
+        ],
+        "fire": [
+          {
+            "x": 0,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 0,
+            "rgba_sha256": "3936c3c2675efbbd6659550e6119ebbd9773be918cf8169665d9e79f4b7f3325"
+          },
+          {
+            "x": 384,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 1,
+            "rgba_sha256": "47f588d6b5b3154b1d32ce09091b1ba7c0313360bc547fafcbe0f234fe487aeb"
+          },
+          {
+            "x": 768,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 2,
+            "rgba_sha256": "eaa795f343ecac3c1990cac442bbbec84299de0f9fa44355bc9eac6bfc66ba27"
+          },
+          {
+            "x": 1152,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 3,
+            "rgba_sha256": "834c71f6e55058b82d57d6b6f4451f90f5c385c1dfc58b2929791bb543d331e8"
+          },
+          {
+            "x": 0,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 4,
+            "rgba_sha256": "6f82cf05b790f79eedc5521eedb2c74f147d3b3d6b8f2316291266b1bf8ff639"
+          },
+          {
+            "x": 384,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 5,
+            "rgba_sha256": "a3fed8ee4a1193e7eb1a6bc81f8e4cdf0363b8cd845525b5fc3abe319d0f517d"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/SW/idle.png",
+          "sha256": "0e3f089bdff8ca13b212b59cbafad6b4053c7f2f0beaee644e6fdcc6be97b330"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/SW/move.png",
+          "sha256": "c95161f7eba187aa5c54c451632688b94eeffe7bf81b8fc137d742d0f35d4025"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/SW/fire.png",
+          "sha256": "701316d4daa44796d3c7579817c37d9ef6e3d50cf847b35c2c400f64d3937536"
+        }
+      ],
+      "muzzle_xy": [
+        121.0,
+        192.0
+      ]
+    },
+    "W": {
+      "texture": "motion_lab_v1/qa/harness_upgrade_20260912/atlas_repack/W.png",
+      "sha256": "6064accb4cf9b4cde44aaf0ac221fe36c2ce6e87734c75acef36c4746e7ef55a",
+      "size": [
+        1536,
+        1920
+      ],
+      "unique_cells": 18,
+      "states": {
+        "idle": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 0,
+            "rgba_sha256": "22fd79a3cdf5f70cda59cd3542259eeeb5fcb04cf2c9b9c2836e2524c9a8de11"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 1,
+            "rgba_sha256": "22fd79a3cdf5f70cda59cd3542259eeeb5fcb04cf2c9b9c2836e2524c9a8de11"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 2,
+            "rgba_sha256": "22fd79a3cdf5f70cda59cd3542259eeeb5fcb04cf2c9b9c2836e2524c9a8de11"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 3,
+            "rgba_sha256": "22fd79a3cdf5f70cda59cd3542259eeeb5fcb04cf2c9b9c2836e2524c9a8de11"
+          }
+        ],
+        "move": [
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 0,
+            "rgba_sha256": "91ccbc7434b84748fce9efd920c684ef9da5ee51df0543eba9082f44ce94f02d"
+          },
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 1,
+            "rgba_sha256": "91ccbc7434b84748fce9efd920c684ef9da5ee51df0543eba9082f44ce94f02d"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 2,
+            "rgba_sha256": "404367b42fda4e5ea8fed15f1a05e52aafd23ccdfac25a334a3881fbcc50de12"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 3,
+            "rgba_sha256": "404367b42fda4e5ea8fed15f1a05e52aafd23ccdfac25a334a3881fbcc50de12"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 4,
+            "rgba_sha256": "fc1a98562301bfced616f98e7a4d649b9718af5278e6672a45d39b9ae46a00b7"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 5,
+            "rgba_sha256": "fc1a98562301bfced616f98e7a4d649b9718af5278e6672a45d39b9ae46a00b7"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 6,
+            "rgba_sha256": "67dc5413e9aebe17869034f20c0234b784c39f7126970e8a980aef6b8d1d087d"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 7,
+            "rgba_sha256": "67dc5413e9aebe17869034f20c0234b784c39f7126970e8a980aef6b8d1d087d"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 8,
+            "rgba_sha256": "ee7f4f84658642fc2cea36d03409e167668fff9c219087fe0031ec827169a6da"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 9,
+            "rgba_sha256": "ee7f4f84658642fc2cea36d03409e167668fff9c219087fe0031ec827169a6da"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 10,
+            "rgba_sha256": "f87e31d53537332d591c46b13f03a1784a9484d1cdbe9bc187cf707a9a8c6293"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 11,
+            "rgba_sha256": "f87e31d53537332d591c46b13f03a1784a9484d1cdbe9bc187cf707a9a8c6293"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 12,
+            "rgba_sha256": "bf08d9d882b40774f8b850ee68ba4d6713508e58db105d8a7a3ebef248cfb791"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 13,
+            "rgba_sha256": "bf08d9d882b40774f8b850ee68ba4d6713508e58db105d8a7a3ebef248cfb791"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 14,
+            "rgba_sha256": "b8276e8add77abfef2ec7cf95da680e503129537f55b5335b6d29cf7ccb1dc17"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 15,
+            "rgba_sha256": "b8276e8add77abfef2ec7cf95da680e503129537f55b5335b6d29cf7ccb1dc17"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 16,
+            "rgba_sha256": "edecbbd0dec6366bcc6642537531cef21a39eccd500cba476cd37e6db2d36fc2"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 17,
+            "rgba_sha256": "edecbbd0dec6366bcc6642537531cef21a39eccd500cba476cd37e6db2d36fc2"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 18,
+            "rgba_sha256": "ec44f63d533223bf92b868d724ea8dd766143aca478c1ccad46d11e7ed37650c"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 19,
+            "rgba_sha256": "ec44f63d533223bf92b868d724ea8dd766143aca478c1ccad46d11e7ed37650c"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 20,
+            "rgba_sha256": "22fd79a3cdf5f70cda59cd3542259eeeb5fcb04cf2c9b9c2836e2524c9a8de11"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 21,
+            "rgba_sha256": "22fd79a3cdf5f70cda59cd3542259eeeb5fcb04cf2c9b9c2836e2524c9a8de11"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 22,
+            "rgba_sha256": "1119473bd8752493237e3388a6eb273e9c65ff226261ba4e08a416269f243510"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 23,
+            "rgba_sha256": "1119473bd8752493237e3388a6eb273e9c65ff226261ba4e08a416269f243510"
+          }
+        ],
+        "fire": [
+          {
+            "x": 0,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 0,
+            "rgba_sha256": "84147dfb15d289d1f5af568fe1fc107d2b75594dd6a7a64dd5e907df619d53e2"
+          },
+          {
+            "x": 384,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 1,
+            "rgba_sha256": "9c2a14fef2fe7fab304a92c8b5dc27a855c4cb9e3141929f39043f1136739a4c"
+          },
+          {
+            "x": 768,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 2,
+            "rgba_sha256": "f2ec9b70fb17e21e076a2268c82ffcccf8c03097f274a17bfdcfe0e2b42d84df"
+          },
+          {
+            "x": 1152,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 3,
+            "rgba_sha256": "9fb99d3626e67de4e2257a3f69123b0c67fc569e5b9dd9f3d04995012704b5a3"
+          },
+          {
+            "x": 0,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 4,
+            "rgba_sha256": "3f05cecce1b5dbcdd8c8fffeb9cbfc8590dc5e0820eb93a6d09cf6f98a01989d"
+          },
+          {
+            "x": 384,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 5,
+            "rgba_sha256": "149aa9015c961920ff07923430c4dfd43fccc428b014438df21e494f1547481a"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/W/idle.png",
+          "sha256": "cd507b4b302014fbbd8504646978bc0199ecbcdea551ac9b4a84b1f8931c93c8"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/W/move.png",
+          "sha256": "5a40295451660b2212ff7d5b1a882b0633b411fc1dc5e1df877a2684f1c6e2cc"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/W/fire.png",
+          "sha256": "c39e67f6fb15fc059affc261e0dbf75f9d6cf0f37a3c84931455763b3f7d5a0d"
+        }
+      ],
+      "muzzle_xy": [
+        70.0,
+        114.0
+      ]
+    },
+    "NW": {
+      "texture": "motion_lab_v1/qa/harness_upgrade_20260912/atlas_repack/NW.png",
+      "sha256": "392448f850c7e16a97f2f0e31974f7771b4673a511e123d177836422825155dd",
+      "size": [
+        1536,
+        1920
+      ],
+      "unique_cells": 18,
+      "states": {
+        "idle": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 0,
+            "rgba_sha256": "3ff32865f38fc530c1240e10f35205afbbf6fc22c2d5a6b5b3e68cb17c7e9f70"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 1,
+            "rgba_sha256": "3ff32865f38fc530c1240e10f35205afbbf6fc22c2d5a6b5b3e68cb17c7e9f70"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 2,
+            "rgba_sha256": "3ff32865f38fc530c1240e10f35205afbbf6fc22c2d5a6b5b3e68cb17c7e9f70"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 3,
+            "rgba_sha256": "3ff32865f38fc530c1240e10f35205afbbf6fc22c2d5a6b5b3e68cb17c7e9f70"
+          }
+        ],
+        "move": [
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 0,
+            "rgba_sha256": "a25f1a074a1348f84c64e48b397be467e570b97902fa1c58a0382f3c2b7281fa"
+          },
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 1,
+            "rgba_sha256": "a25f1a074a1348f84c64e48b397be467e570b97902fa1c58a0382f3c2b7281fa"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 2,
+            "rgba_sha256": "b80de2a0c8495e1c7e9ab80eb39e22cd6b233bf50b441c94665200496924505f"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 3,
+            "rgba_sha256": "b80de2a0c8495e1c7e9ab80eb39e22cd6b233bf50b441c94665200496924505f"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 4,
+            "rgba_sha256": "ba992727497b5170612009d7b5c0745d82400b2a809cf646c726f76d99cae42a"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 5,
+            "rgba_sha256": "ba992727497b5170612009d7b5c0745d82400b2a809cf646c726f76d99cae42a"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 6,
+            "rgba_sha256": "c2b47e423709a41f4db09fdc100d1ab79a0fc83d2a9c75fd01c37d5fc55575e6"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 7,
+            "rgba_sha256": "c2b47e423709a41f4db09fdc100d1ab79a0fc83d2a9c75fd01c37d5fc55575e6"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 8,
+            "rgba_sha256": "da7215b169405eeb853016de0bcd0dd19fadf935089d66abad44d843b564d25d"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 9,
+            "rgba_sha256": "da7215b169405eeb853016de0bcd0dd19fadf935089d66abad44d843b564d25d"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 10,
+            "rgba_sha256": "4d7110f788ca4d03c7d948e192cbd2f888a4c44322142b2e525c358fd049d014"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 11,
+            "rgba_sha256": "4d7110f788ca4d03c7d948e192cbd2f888a4c44322142b2e525c358fd049d014"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 12,
+            "rgba_sha256": "9f31f1b8a8bb116339631c9098fcf9d18fedb7802da9004a572cd51c9e4d00d4"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 13,
+            "rgba_sha256": "9f31f1b8a8bb116339631c9098fcf9d18fedb7802da9004a572cd51c9e4d00d4"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 14,
+            "rgba_sha256": "c141da64c2363c199b926703222702e1efd3bf423e2dfaf429bd1c2b7b9bc203"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 15,
+            "rgba_sha256": "c141da64c2363c199b926703222702e1efd3bf423e2dfaf429bd1c2b7b9bc203"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 16,
+            "rgba_sha256": "9ac2c427ec9ae8beb6269f34a7c741d6efa45f32b2ff2fa43af305d35f0ce8e6"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 17,
+            "rgba_sha256": "9ac2c427ec9ae8beb6269f34a7c741d6efa45f32b2ff2fa43af305d35f0ce8e6"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 18,
+            "rgba_sha256": "3ba69e72f5986c2b7fc942bc126e0293cfecf8cdd14ecc14990c454b6773b460"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 19,
+            "rgba_sha256": "3ba69e72f5986c2b7fc942bc126e0293cfecf8cdd14ecc14990c454b6773b460"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 20,
+            "rgba_sha256": "3ff32865f38fc530c1240e10f35205afbbf6fc22c2d5a6b5b3e68cb17c7e9f70"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 21,
+            "rgba_sha256": "3ff32865f38fc530c1240e10f35205afbbf6fc22c2d5a6b5b3e68cb17c7e9f70"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 22,
+            "rgba_sha256": "2bbea3a04a6972ba3342cd5de159270b43696fb2fcf2f899c36c832f21f9fd33"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 23,
+            "rgba_sha256": "2bbea3a04a6972ba3342cd5de159270b43696fb2fcf2f899c36c832f21f9fd33"
+          }
+        ],
+        "fire": [
+          {
+            "x": 0,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 0,
+            "rgba_sha256": "a4c3f899025f70f6e6c7ae583581a76873011f2a11fce397ff9f0e57e5ebe020"
+          },
+          {
+            "x": 384,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 1,
+            "rgba_sha256": "0841afbea60a507bb8f312254c85660e60ad167f3d4b4099e974b388b72e2a2b"
+          },
+          {
+            "x": 768,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 2,
+            "rgba_sha256": "c27a06701c2987a6fc39ce3e27cdb7d8e1302215015a670100edc197cda2a045"
+          },
+          {
+            "x": 1152,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 3,
+            "rgba_sha256": "b55c75a144d3487c301fc370f6136ad53cbe35ee2745306381b4169c82c25adc"
+          },
+          {
+            "x": 0,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 4,
+            "rgba_sha256": "119a83b76791a1a4a395a273f12885d890ee6fac9a3906c3412018357f940265"
+          },
+          {
+            "x": 384,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 5,
+            "rgba_sha256": "6b56eff4b5dbbe6143432f5b2a72484959d12517e282b5dda6053abd2ed618a1"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/NW/idle.png",
+          "sha256": "1ba260ef5a945dbfb93f2bce5047fdc5a6890f492b99032e617fe10763c1c22d"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/NW/move.png",
+          "sha256": "653eddd2cf2be8d46c94b8c33db9b38d5f3f7266a3114e3a08088865ad781d31"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/NW/fire.png",
+          "sha256": "6d3a0c11bd3dd2e0f39a3d3b85edd3428447248e5c77db875179ed6cd0cae940"
+        }
+      ],
+      "muzzle_xy": [
+        130.0,
+        76.0
+      ]
+    },
+    "N": {
+      "texture": "motion_lab_v1/qa/harness_upgrade_20260912/atlas_repack/N.png",
+      "sha256": "9f4d4a8d26a040b296aba89abdbab0e825ee58690b5b417d24de4599c3b81036",
+      "size": [
+        1536,
+        1920
+      ],
+      "unique_cells": 18,
+      "states": {
+        "idle": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 0,
+            "rgba_sha256": "8a5d65707b42720422328dc383e53680013128c14701a97fd3752c17083b8c3d"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 1,
+            "rgba_sha256": "8a5d65707b42720422328dc383e53680013128c14701a97fd3752c17083b8c3d"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 2,
+            "rgba_sha256": "8a5d65707b42720422328dc383e53680013128c14701a97fd3752c17083b8c3d"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 3,
+            "rgba_sha256": "8a5d65707b42720422328dc383e53680013128c14701a97fd3752c17083b8c3d"
+          }
+        ],
+        "move": [
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 0,
+            "rgba_sha256": "d1de117cb5a6455a00099679f45aae3877aeba81707abf2ff243592725cfc27f"
+          },
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 1,
+            "rgba_sha256": "d1de117cb5a6455a00099679f45aae3877aeba81707abf2ff243592725cfc27f"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 2,
+            "rgba_sha256": "f09f5643e5ad89339045ebe23e11fbebb401b167ad5a91564f10ca9f6f80871d"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 3,
+            "rgba_sha256": "f09f5643e5ad89339045ebe23e11fbebb401b167ad5a91564f10ca9f6f80871d"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 4,
+            "rgba_sha256": "d582937fd3de52d68fa01be1c0f8a5370178f3840e0b8b10d43dedf328a9a624"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 5,
+            "rgba_sha256": "d582937fd3de52d68fa01be1c0f8a5370178f3840e0b8b10d43dedf328a9a624"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 6,
+            "rgba_sha256": "b5f2495d1312266499bae695cf5ab105e9c949034823b2fea9da38f39b7b44bc"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 7,
+            "rgba_sha256": "b5f2495d1312266499bae695cf5ab105e9c949034823b2fea9da38f39b7b44bc"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 8,
+            "rgba_sha256": "babe71a315770e30227cf29eca7094015e934dbba0d5d28ffc37298c1a60c26c"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 9,
+            "rgba_sha256": "babe71a315770e30227cf29eca7094015e934dbba0d5d28ffc37298c1a60c26c"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 10,
+            "rgba_sha256": "2e9452c04728714276a273a016f5923676b41050c4a6928d9d9ce4c683808ed6"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 11,
+            "rgba_sha256": "2e9452c04728714276a273a016f5923676b41050c4a6928d9d9ce4c683808ed6"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 12,
+            "rgba_sha256": "04ec21709cc24e77e22db247a7173954089369594da43db7520fbea74d702508"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 13,
+            "rgba_sha256": "04ec21709cc24e77e22db247a7173954089369594da43db7520fbea74d702508"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 14,
+            "rgba_sha256": "651e9aac9bf6870c7029162411cb3f9a172acdfd84f6ced0cbb3f8dcd934f719"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 15,
+            "rgba_sha256": "651e9aac9bf6870c7029162411cb3f9a172acdfd84f6ced0cbb3f8dcd934f719"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 16,
+            "rgba_sha256": "57547c98f54a0dec847b2f6f0d49a0838bf341abee013dc6dc86894092aa31aa"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 17,
+            "rgba_sha256": "57547c98f54a0dec847b2f6f0d49a0838bf341abee013dc6dc86894092aa31aa"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 18,
+            "rgba_sha256": "cec3d9418f78b3430993e47509d15e0544c7b830d68cab60ff08631da860599b"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 19,
+            "rgba_sha256": "cec3d9418f78b3430993e47509d15e0544c7b830d68cab60ff08631da860599b"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 20,
+            "rgba_sha256": "8a5d65707b42720422328dc383e53680013128c14701a97fd3752c17083b8c3d"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 21,
+            "rgba_sha256": "8a5d65707b42720422328dc383e53680013128c14701a97fd3752c17083b8c3d"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 22,
+            "rgba_sha256": "ce52f449ce8b39e465bd76c57e75e25b77941edb3c9858b07dbf11d0a053142d"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 23,
+            "rgba_sha256": "ce52f449ce8b39e465bd76c57e75e25b77941edb3c9858b07dbf11d0a053142d"
+          }
+        ],
+        "fire": [
+          {
+            "x": 0,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 0,
+            "rgba_sha256": "2ec35907ca6ed1ff925d34266c3ccf4846dce2c4b86350d083190fde6df08b7d"
+          },
+          {
+            "x": 384,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 1,
+            "rgba_sha256": "e91a591bcc2383305dc54a9fe6e327db86422d453871f8043ea330fd72757f41"
+          },
+          {
+            "x": 768,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 2,
+            "rgba_sha256": "d78eb5171d2d13671776584d0c9a15d0e98af0400374af7181e4ab42611a068b"
+          },
+          {
+            "x": 1152,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 3,
+            "rgba_sha256": "feca52e333a8f5d0a5ae0fd9929a16a8d45d74227b468ac95d54a72d1fef34ff"
+          },
+          {
+            "x": 0,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 4,
+            "rgba_sha256": "9bdd8fc1aced38c5a5e32c71694a02ea428732c0abfd3af6ac652a5d1b108582"
+          },
+          {
+            "x": 384,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 5,
+            "rgba_sha256": "c70800b09e4e9b751e5202c1187b715a93992251e4f6d3c702b795dd6e2806c4"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/N/idle.png",
+          "sha256": "2b613ee9402f6af7885ee4fd2b1883d56b69923eb3035e5ef9d2812eb0ce7ccc"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/N/move.png",
+          "sha256": "03f77753e063af95a9232365d32eb60825b076197654b37b3cf9b558aa64d3be"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/N/fire.png",
+          "sha256": "e45adca355b13df61f43b924bff82261f4019de521a1e99fd051c4d893e03088"
+        }
+      ],
+      "muzzle_xy": [
+        176.0,
+        54.0
+      ]
+    },
+    "NE": {
+      "texture": "motion_lab_v1/qa/harness_upgrade_20260912/atlas_repack/NE.png",
+      "sha256": "63a9d1012cc4d703fb519dbf30074efaa5506a359ff3fc1649b5dc54916bd204",
+      "size": [
+        1536,
+        1920
+      ],
+      "unique_cells": 18,
+      "states": {
+        "idle": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 0,
+            "rgba_sha256": "97aec0172f0d9af7da999e889ae39abd8863889ddfc82a13d82abdd5bf65f5c5"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 1,
+            "rgba_sha256": "97aec0172f0d9af7da999e889ae39abd8863889ddfc82a13d82abdd5bf65f5c5"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 2,
+            "rgba_sha256": "97aec0172f0d9af7da999e889ae39abd8863889ddfc82a13d82abdd5bf65f5c5"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.25,
+            "source_frame": 3,
+            "rgba_sha256": "97aec0172f0d9af7da999e889ae39abd8863889ddfc82a13d82abdd5bf65f5c5"
+          }
+        ],
+        "move": [
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 0,
+            "rgba_sha256": "8e5c34f73cd638bb40f79cf0289d2545f93290eaca0502c119149aade9f6a9c1"
+          },
+          {
+            "x": 384,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 1,
+            "rgba_sha256": "8e5c34f73cd638bb40f79cf0289d2545f93290eaca0502c119149aade9f6a9c1"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 2,
+            "rgba_sha256": "0e7aa1f1bd009734db093164661f57ca2070f08b43630fb5f46e8402f8e7001f"
+          },
+          {
+            "x": 768,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 3,
+            "rgba_sha256": "0e7aa1f1bd009734db093164661f57ca2070f08b43630fb5f46e8402f8e7001f"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 4,
+            "rgba_sha256": "afb1c49226fe0889f64df85711f06406fdab4cf591f605e3117c9751c7a0b2c3"
+          },
+          {
+            "x": 1152,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 5,
+            "rgba_sha256": "afb1c49226fe0889f64df85711f06406fdab4cf591f605e3117c9751c7a0b2c3"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 6,
+            "rgba_sha256": "5c6f198aad7091b5ca14e12d948ffd2bc3fabd131463a6250e7182c14f5e5882"
+          },
+          {
+            "x": 0,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 7,
+            "rgba_sha256": "5c6f198aad7091b5ca14e12d948ffd2bc3fabd131463a6250e7182c14f5e5882"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 8,
+            "rgba_sha256": "72f25f4db24134ece385a02ce48b19e62efca961e191eecf29b962d6611a24b4"
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 9,
+            "rgba_sha256": "72f25f4db24134ece385a02ce48b19e62efca961e191eecf29b962d6611a24b4"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 10,
+            "rgba_sha256": "08c15e80cb0a0dc292a5f743c2dd4733fb5299c8cbbd59b8df9b56570d09a2a5"
+          },
+          {
+            "x": 768,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 11,
+            "rgba_sha256": "08c15e80cb0a0dc292a5f743c2dd4733fb5299c8cbbd59b8df9b56570d09a2a5"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 12,
+            "rgba_sha256": "e1730823c8d1b6abff21956ddbbd2cc894cd01a361afebbbaa0166c41e6c52d0"
+          },
+          {
+            "x": 1152,
+            "y": 384,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 13,
+            "rgba_sha256": "e1730823c8d1b6abff21956ddbbd2cc894cd01a361afebbbaa0166c41e6c52d0"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 14,
+            "rgba_sha256": "41f4546c10277de62dba7d8ac59d596d99f1215c549da013d132922397b15b03"
+          },
+          {
+            "x": 0,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 15,
+            "rgba_sha256": "41f4546c10277de62dba7d8ac59d596d99f1215c549da013d132922397b15b03"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 16,
+            "rgba_sha256": "73e5e7fe9d6733e4285de3706ed68d7479e12b76dd83339d1d8daf589951e9aa"
+          },
+          {
+            "x": 384,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 17,
+            "rgba_sha256": "73e5e7fe9d6733e4285de3706ed68d7479e12b76dd83339d1d8daf589951e9aa"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 18,
+            "rgba_sha256": "48a2c729b702f7262e54b23a7bc4889a3fd2c1d0c2c6acd3f6dcaed5a0d22e51"
+          },
+          {
+            "x": 768,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 19,
+            "rgba_sha256": "48a2c729b702f7262e54b23a7bc4889a3fd2c1d0c2c6acd3f6dcaed5a0d22e51"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 20,
+            "rgba_sha256": "97aec0172f0d9af7da999e889ae39abd8863889ddfc82a13d82abdd5bf65f5c5"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 21,
+            "rgba_sha256": "97aec0172f0d9af7da999e889ae39abd8863889ddfc82a13d82abdd5bf65f5c5"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 22,
+            "rgba_sha256": "4b65d3536549d295c828651e215d2c74111765123a74de072584545ee77557da"
+          },
+          {
+            "x": 1152,
+            "y": 768,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.041666666666666664,
+            "source_frame": 23,
+            "rgba_sha256": "4b65d3536549d295c828651e215d2c74111765123a74de072584545ee77557da"
+          }
+        ],
+        "fire": [
+          {
+            "x": 0,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 0,
+            "rgba_sha256": "5aa22c1fa4da0289fac1948bfdbb1145122f8072801b1895a88b41fb5f9c920c"
+          },
+          {
+            "x": 384,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 1,
+            "rgba_sha256": "43b119d3f55650f90c57a6fe797f05996a686e74e50f219c6235abc5bfb1f13e"
+          },
+          {
+            "x": 768,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 2,
+            "rgba_sha256": "23ff4802b05d31842416b30599a77cce66613ebbacd4998e5554b2ec89f11760"
+          },
+          {
+            "x": 1152,
+            "y": 1152,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 3,
+            "rgba_sha256": "880252d3fec08c746a766595d6d1293ab272ca16e693141593a07f4aa9bb647d"
+          },
+          {
+            "x": 0,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 4,
+            "rgba_sha256": "4e59172d19e57fe227ff340539a164b8ab8f27d710d8b74a13244feae3cf3698"
+          },
+          {
+            "x": 384,
+            "y": 1536,
+            "w": 384,
+            "h": 384,
+            "duration_seconds": 0.08333333333333333,
+            "source_frame": 5,
+            "rgba_sha256": "49712b21d67aec6fe4ca646c0197706745b9843f4c2ce89227dae32d0ebe2251"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/NE/idle.png",
+          "sha256": "30a8c2e81c2d9abe1ef38105a48543924e087823eef02155024a3bf339d2009f"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/NE/move.png",
+          "sha256": "0e9f265f4b83d1da8a677b37760b1b5fa8102ef1b8ff6accd59b0165d22e6a5b"
+        },
+        {
+          "path": "assets/units/operators/rook/fast_runtime_v1/current/NE/fire.png",
+          "sha256": "e72da136b5147022973947d466d27f037ca719c6b7eb65ee4d38cd1961c566ed"
+        }
+      ],
+      "muzzle_xy": [
+        270.0,
+        56.0
+      ]
+    }
+  },
+  "checks": {
+    "rgba_exact_timing_cells": 272,
+    "timing_unchanged": true,
+    "resampled": false,
+    "source_rgba_base_bytes": 160432128,
+    "candidate_rgba_base_bytes": 94371840,
+    "source_png_bytes": 12753602,
+    "candidate_png_bytes": 6026112,
+    "max_texture_edge": 1920,
+    "scope": "PIXEL_AND_TIMING_ONLY",
+    "production_approved": false
+  }
+}

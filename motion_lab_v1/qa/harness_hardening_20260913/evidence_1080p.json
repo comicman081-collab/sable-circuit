@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-12T15:24:26.855573+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\gait\\e3fc6a5d99f82196_15c4461d\\cycle-review.html",
+      "error": null,
+      "kind": "html",
+      "evidence_class": "static_config_only",
+      "canvas_resolutions": [],
+      "video_element_resolutions": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "dynamic_runtime_evidence": false,
+      "dynamic_capture_required_for_visual_gate": true,
+      "size_bytes": 534,
+      "sha256": "b0dd851def714834f8d4886d290541467c425d51dd3ba406b9640307611378b5"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\gait\\e3fc6a5d99f82196_15c4461d\\E_walk_cycle_1080p.mp4",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 30.000000000000004,
+      "frames": 107,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 26,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 53,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 80,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 106,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 3742467,
+      "sha256": "b402f0ba05b4c3b9200c4a9a55534ccbda56902ef9f9a7941116ddf64f486cef"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\gait\\e3fc6a5d99f82196_15c4461d\\reference\\atlas\\rook\\E_walk_keyframes.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2304,
+        1536
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1567486,
+      "sha256": "7588eafd378a660e518217e4850acf8eb9cd38bdfe524a25d05679491ceaea44"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\gait\\e3fc6a5d99f82196_15c4461d\\E_walk_pair0_native_2128x1626.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2128,
+        1626
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1449334,
+      "sha256": "cb5af2e27ab05a4c812f081866ca8b30b7231963d9520e815e55ee8e57196c86"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\gait\\e3fc6a5d99f82196_15c4461d\\E_walk_pair1_native_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 907481,
+      "sha256": "52150f0e02230045d166be76dd1d2fe0c184590b4e9c08738071cfd191d1bb99"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\rook\\gait\\e3fc6a5d99f82196_15c4461d\\E_walk_pair2_native_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 950651,
+      "sha256": "39dcee713822c8d31c5a84aded708aa144d4e28adb27b26e49aa79acb1f18ee5"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\build_candidates\\rook\\c643f1ce2c9e4208a53222beea6a5eb6\\reference\\atlas\\rook\\SE_walk_keyframes.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2304,
+        1536
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1631149,
+      "sha256": "ac5ba32076a6fed530573f894371b10a35d4c19ea49cb33d1ce53d2f3b7f2df8"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\build_candidates\\rook\\c643f1ce2c9e4208a53222beea6a5eb6\\reference\\atlas\\rook\\N_walk_keyframes.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        2304,
+        1536
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1074991,
+      "sha256": "99cd7ba4fda8344e0bf5136fd9150c3373b0712f338c3af07065f2506867b142"
+    }
+  ]
+}

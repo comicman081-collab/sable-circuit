@@ -1,0 +1,167 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_R01/attempt01/S10_R01_GAME.png",
+  "luma": 0.1998571902513504,
+  "p10": 0.1481686383485794,
+  "p90": 0.2352941334247589,
+  "saturation": 0.052738259354274133,
+  "hue": 138.1048075388009,
+  "axis": 23.819964307848306,
+  "problems": [],
+  "plate": "S10_R01",
+  "attempt": 1,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      141,
+      483
+    ],
+    [
+      818,
+      233
+    ],
+    [
+      1126,
+      342
+    ],
+    [
+      1150,
+      327
+    ],
+    [
+      1348,
+      240
+    ],
+    [
+      1368,
+      398
+    ],
+    [
+      1535,
+      487
+    ],
+    [
+      823,
+      821
+    ]
+  ],
+  "doors_px": {
+    "NE": [
+      1248,
+      351,
+      245
+    ]
+  },
+  "raw_sha256": "ef3c182c060bf975fb5392a39415e6ee96919c46d0e95e179aaf6d6b9ed7bda0",
+  "master_sha256": "ef3c182c060bf975fb5392a39415e6ee96919c46d0e95e179aaf6d6b9ed7bda0",
+  "game_sha256": "396f012fc967dc02c0b92aafa48e8c46a2694a1657ad8a67d4ec99be3bb61ac5",
+  "game_exposure_factor_srgb": 0.8521,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-6e7fc67a-ddfd-490b-845b-1965af00cdf9.png",
+  "inspection": "S3와 비교: 팬 원판은 없어졌으나 같은 중앙 코너 기둥과 반복 리브 간격, 동일 벽 베이 배치가 남음. 실제 윤곽은 수동 추적 후 원본 크기 검토.",
+  "floor_area_px2": 434957.5,
+  "floor_area_fraction": 0.2764527581876147,
+  "floor_bounds_px": [
+    141,
+    233,
+    1535,
+    821
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1672,
+      941
+    ],
+    "actual_size": [
+      1672,
+      941
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "NE": [
+        [
+          1126,
+          342
+        ],
+        [
+          1348,
+          240
+        ],
+        [
+          1373,
+          390
+        ],
+        [
+          1241,
+          457
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      141,
+      233,
+      1535,
+      821
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.08433014354066985,
+      0.24760892667375134,
+      0.0819377990430622,
+      0.1275239107332625
+    ],
+    "whole_floor_bounds_px": [
+      141,
+      233,
+      1535,
+      821
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.08433014354066985,
+      0.24760892667375134,
+      0.0819377990430622,
+      0.1275239107332625
+    ],
+    "main_floor_area_px2": 406522
+  },
+  "apron_stats": {
+    "NE": {
+      "luma": 0.22570264339447021,
+      "saturation": 0.05366503049431764,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  },
+  "status": "REJECTED",
+  "reason": "S3_R01의 중앙 코너 기둥과 반복 리브 간격·동일 벽 베이 배치가 남았다. 원형 팬 제거와 색 변경만으로 새 벽 구조가 되지 않아 거절. 축 23.820°, 휘도 0.199857, 채도 0.052738, 문 NE 하나·여백·크기는 통과.",
+  "raw": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt01/S10_R01_RAW_NATIVE.png",
+  "master": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt01/S10_R01_MASTER.png",
+  "game": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt01/S10_R01_GAME.png",
+  "manual_checks": {
+    "door_sides": [
+      "NE"
+    ],
+    "closed_sides": [
+      "NW",
+      "SW",
+      "SE"
+    ],
+    "central_floor_uncluttered": true,
+    "wall_identity": "FAIL / S3_R01 NE repeated bay and support silhouette",
+    "evidence_class": "authored candidate review, not gameplay",
+    "measurement_method": "manual tracing of visible painted floor; no standard contour substitution",
+    "registration_status": "NOT_REGISTERED: quarantine-only",
+    "alignment": "NOT_RUN: no accepted room/connector pair; 15-plate integration not started"
+  },
+  "problems_manual": [
+    "S3_R01의 중앙 코너 기둥과 반복 리브 간격·동일 벽 베이 배치가 남았다. 원형 팬 제거와 색 변경만으로 새 벽 구조가 되지 않아 거절. 축 23.820°, 휘도 0.199857, 채도 0.052738, 문 NE 하나·여백·크기는 통과."
+  ]
+}

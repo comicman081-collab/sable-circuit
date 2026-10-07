@@ -1,0 +1,176 @@
+{
+  "kind": "sable-cycle-observation",
+  "character": "rook",
+  "direction": "S",
+  "action": "walk",
+  "inputs": {
+    "character": "rook",
+    "direction": "S",
+    "action": "walk",
+    "recipe": {
+      "path": "characters/rook.json",
+      "sha256": "2115ea2a3c3c3f27cd6d62d36a85352b0aa80b8c8c26a95d37d183440e174981"
+    },
+    "identity": {
+      "path": "art/rook/identity_reference.png",
+      "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+    },
+    "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+    "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+    "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+    "sources": [
+      {
+        "slot": "S/walk/0",
+        "path": "art/rook/S_walk_0_master.png",
+        "sha256": "9cc6a0e82949400e1327fadc549a644448e5371ed8e2c7648c9d780627525c12"
+      },
+      {
+        "slot": "S/walk/1",
+        "path": "art/rook/S_walk_1_master.png",
+        "sha256": "d2a10f9ee5b139a9b12606914ebc93f807479564b52b935b5e84bf36ab85481b"
+      },
+      {
+        "slot": "S/walk/2",
+        "path": "art/rook/S_walk_2_master.png",
+        "sha256": "c93b5bc72d2aea18fc29a19175529aaadc426ae593125a43f5bb393736442286"
+      },
+      {
+        "slot": "S/walk/3",
+        "path": "art/rook/S_walk_3_master.png",
+        "sha256": "6a5b1a89ddf49e1c2103c89d9e4c65b7b10a266c3486d42a8d8f228afdf08830"
+      },
+      {
+        "slot": "S/walk/4",
+        "path": "art/rook/S_walk_4_master.png",
+        "sha256": "a9501979e2df93cbe99cfc0edad0b577ba15c2990dce4e8b48d9f7f0befa411f"
+      },
+      {
+        "slot": "S/walk/5",
+        "path": "art/rook/S_walk_5_master.png",
+        "sha256": "054aff582114b85969fc0312d5ad1e14a665f9ebc4888f165faea1a58b42d87e"
+      }
+    ]
+  },
+  "preview": {
+    "path": "qa/rook/gait/0eb5071db470346b_701ed12f/cycle-preview.json",
+    "sha256": "597cdf2d9d7ac4145b2bccc026d4758d2480433e571c10774d0328f93b88311d"
+  },
+  "decision": "unreviewed",
+  "reviewer": "",
+  "legMarkers": {
+    "left": "",
+    "right": ""
+  },
+  "frames": [
+    {
+      "index": 0,
+      "phase": "left_contact",
+      "support": null,
+      "landmarks": {
+        "leftHip": null,
+        "leftKnee": null,
+        "leftSole": null,
+        "rightHip": null,
+        "rightKnee": null,
+        "rightSole": null
+      }
+    },
+    {
+      "index": 1,
+      "phase": "right_swing",
+      "support": null,
+      "landmarks": {
+        "leftHip": null,
+        "leftKnee": null,
+        "leftSole": null,
+        "rightHip": null,
+        "rightKnee": null,
+        "rightSole": null
+      }
+    },
+    {
+      "index": 2,
+      "phase": "right_passing",
+      "support": null,
+      "landmarks": {
+        "leftHip": null,
+        "leftKnee": null,
+        "leftSole": null,
+        "rightHip": null,
+        "rightKnee": null,
+        "rightSole": null
+      }
+    },
+    {
+      "index": 3,
+      "phase": "right_contact",
+      "support": null,
+      "landmarks": {
+        "leftHip": null,
+        "leftKnee": null,
+        "leftSole": null,
+        "rightHip": null,
+        "rightKnee": null,
+        "rightSole": null
+      }
+    },
+    {
+      "index": 4,
+      "phase": "left_swing",
+      "support": null,
+      "landmarks": {
+        "leftHip": null,
+        "leftKnee": null,
+        "leftSole": null,
+        "rightHip": null,
+        "rightKnee": null,
+        "rightSole": null
+      }
+    },
+    {
+      "index": 5,
+      "phase": "left_passing",
+      "support": null,
+      "landmarks": {
+        "leftHip": null,
+        "leftKnee": null,
+        "leftSole": null,
+        "rightHip": null,
+        "rightKnee": null,
+        "rightSole": null
+      }
+    }
+  ],
+  "observations": {
+    "oppositeContacts": {
+      "decision": "unreviewed",
+      "seconds": [],
+      "notes": ""
+    },
+    "passingAndSwing": {
+      "decision": "unreviewed",
+      "seconds": [],
+      "notes": ""
+    },
+    "loopSeam": {
+      "decision": "unreviewed",
+      "seconds": [],
+      "notes": ""
+    },
+    "footSliding": {
+      "decision": "unreviewed",
+      "seconds": [],
+      "notes": ""
+    },
+    "bodyContinuity": {
+      "decision": "unreviewed",
+      "seconds": [],
+      "notes": ""
+    },
+    "weaponContinuity": {
+      "decision": "unreviewed",
+      "seconds": [],
+      "notes": ""
+    }
+  }
+}

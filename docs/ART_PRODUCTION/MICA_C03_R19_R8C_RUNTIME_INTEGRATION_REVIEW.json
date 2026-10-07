@@ -1,0 +1,158 @@
+{
+  "schema": 1,
+  "role": "MICA C03 R19 R8C runtime integration review ledger",
+  "generated_at": "2026-09-05",
+  "actor_id": "CHR_PROTO_03",
+  "costume_id": "MICA_RECON_C03",
+  "candidate": "MICA_C03_R19_R8C_RUNTIME_INTEGRATION",
+  "candidate_root": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_r19_r8c_runtime",
+  "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+  "promotion": "HOLD_PENDING_PONYTAIL_FULL_CHATGPT_WEB_VISUAL_GATE_AND_POINTER_PACKAGE_GATE",
+  "source_art_modified": false,
+  "motion_source": "Previously reviewed Blender + UAL R8C unique move cells; deterministic Godot runtime integration capture",
+  "source_review_line": {
+    "source_motion": "MICA C03 V8 R14 R8C Blender+UAL capture pilot",
+    "source_visual_status": "capture_pilot_pass; runtime_integration_pending",
+    "source_art_authority": "Codex-authored MICA C03 source art remains unchanged",
+    "new_generation_used": false
+  },
+  "frame_contract": {
+    "cell_size": 384,
+    "directions": ["E", "SE", "S", "SW", "W", "NW", "N", "NE"],
+    "unique_move_frames_per_direction": 24,
+    "captured_move_frames_per_direction": 48,
+    "cycles_per_direction": 2,
+    "root_motion_scale": 1.0,
+    "move_root_sync": "disabled; every captured sample uses one unique authored cell and continuous root factor 1.0",
+    "idle_and_fire": "copied unchanged from current runtime for QA isolation",
+    "temporal_guard": "no exact raster hold run longer than two frames"
+  },
+  "candidate_files": {
+    "runtime_descriptor": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_r19_r8c_runtime/runtime_descriptor.json",
+    "runtime_descriptor_sha256": "87e8ca13302155127e2c867cf7d7518886484eefa2d38bb603ea4f590b871f95",
+    "source_candidate_manifest": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_r19_r8c_runtime/MICA_C03_R14_R8C_UNIQUE_RUNTIME_CANDIDATE.json",
+    "source_candidate_manifest_sha256": "7a4b77311b598900925a6b3136c8fd2451bd4f4f844d617b53aeeaff517d848c"
+  },
+  "local_runtime_evidence": {
+    "capture_script": "tests/render/mica_c03_v5_r16_candidate_runtime_capture.gd",
+    "evidence": "artifacts/mica_c03_r19_r8c_runtime_capture/MICA_C03_R19_RUNTIME_UNIQUE_EVIDENCE.json",
+    "evidence_sha256": "0ef997915e8336dc7b820ab0517bfe3c27b7331d645c9112df75d67db352a442",
+    "result": "PASS",
+    "native_resolution": [1920, 1080],
+    "fps": 24,
+    "frame_count": 384,
+    "active_frames_and_sector_match": "PASS; each direction visits 00..23 twice",
+    "continuous_root_gate": "PASS; every transition advances; root factor 1.0",
+    "root_step_range_px": [5.066, 7.601],
+    "descriptor_load_and_activation": "PASS",
+    "direction_vector_and_sector_match": "PASS",
+    "two_cycle_cadence": "PASS",
+    "godot_stderr": "empty",
+    "process_after_capture": "none",
+    "visual_promotion": "BLOCKED_PONYTAIL_FULL_FAIL_NOT_PROMOTABLE_CHATGPT_WEB_PENDING"
+  },
+  "video_evidence": {
+    "path": "artifacts/mica_c03_r19_r8c_runtime_capture/MICA_C03_R19_R8C_TWO_CYCLE_RUNTIME_8DIR_NATIVE_1920X1080.mp4",
+    "sha256": "289461efe328c5d94981018fca9fe377f1b766e5ca185b0fcf503e8961cb2791",
+    "manifest": "artifacts/mica_c03_r19_r8c_runtime_capture/MICA_C03_R19_R8C_TWO_CYCLE_RUNTIME_VIDEO_MANIFEST.json",
+    "manifest_sha256": "bf543104de85e0655b872bb209622c2a37b4b9bbb53ac431f8a8bfb8051f95b6",
+    "native_dynamic_validation": "PASS",
+    "native_dynamic_validation_path": "artifacts/mica_c03_r19_r8c_runtime_capture/MICA_C03_R19_R8C_TWO_CYCLE_RUNTIME_1080P_VALIDATION.json",
+    "native_dynamic_validation_sha256": "abf36938510b46fb66be3147a3dae8fd558f9f7ac7fead7a0c040dfbdea4e554",
+    "native_resolution": [1920, 1080],
+    "fps": 24,
+    "frames": 384,
+    "duration_seconds": 16.0,
+    "evidence_scope": "technical container/decode and runtime ledger; visual quality still requires review"
+  },
+  "html_fallback_evidence": {
+    "preview_root": "artifacts/mica_c03_r19_r8c_interactive_preview",
+    "html": "artifacts/mica_c03_r19_r8c_interactive_preview/MICA_C03_INTERACTIVE_STRIDE_FIRE.html",
+    "html_sha256": "e0ecd1aea76913fae071365bbc513111a3dec7eb0b2fc5af2e8aa769593ef2cb",
+    "descriptor": "artifacts/mica_c03_r19_r8c_interactive_preview/MICA_C03_RUNTIME_DESCRIPTOR.json",
+    "bundle_validation": "artifacts/mica_c03_r19_r8c_interactive_preview/MICA_C03_INTERACTIVE_RUNTIME_BUNDLE_VALIDATION.json",
+    "bundle_validation_sha256": "13fca2bcd5cc74c83335a08b31fabd76927d2cdb352b5afb0e999cdc4bde8f14",
+    "temporal_guard": "artifacts/mica_c03_r19_r8c_interactive_preview/MICA_C03_R19_R8C_TEMPORAL_GUARD.json",
+    "temporal_guard_sha256": "bf182d4d2a429777157c505842447479d5e63f4fc496646f045590228ae50b62",
+    "static_gate": "PASS_STATIC_RUNTIME_BUNDLE_AND_PASS_STATIC_CONFIG_ONLY",
+    "dynamic_visual_gate": "NOT_CLAIMED; Godot MP4 is the dynamic evidence"
+  },
+  "gate_status": {
+    "technical_runtime": "PASS",
+    "temporal_unique_frames": "PASS",
+    "native_1080p_dynamic_container": "PASS",
+    "interactive_html_static_bundle": "PASS",
+    "ponytail_full_visual_gate": "FAIL_NOT_PROMOTABLE",
+    "chatgpt_web_visual_gate": "FAIL_NOT_PROMOTABLE",
+    "runtime_pointer_promotion": "HOLD",
+    "overall": "FAIL_NOT_PROMOTABLE_DO_NOT_PROMOTE"
+  },
+  "quarantine": {
+    "retain_failed_assets": true,
+    "r17": {
+      "path": "artifacts/mica_c03_r17_pose_switch_interactive_preview",
+      "status": "FAIL_NOT_PROMOTABLE",
+      "reason": "Only A/neutral/B held rasters per direction; SW weapon direction mismatch"
+    },
+    "r18": {
+      "path": "artifacts/mica_c03_r18_sw_fix_interactive_preview",
+      "status": "FAIL_STATIC",
+      "reason": "SW replacement retained toe-out/backward boot spread; not used by R19"
+    },
+    "disposal": "not_allowed_until_completed_replacement_passes_all_visual, Ponytail FULL, runtime, technical, and pointer gates and retirement manifest records hashes"
+  },
+  "review_gate": {
+    "ponytail_full": {
+      "status": "FAIL_NOT_PROMOTABLE",
+      "reviewed_candidate": "MICA_C03_R19_R8C_RUNTIME_INTEGRATION",
+      "reviewed_video_sha256": "289461efe328c5d94981018fca9fe377f1b766e5ca185b0fcf503e8961cb2791",
+      "direction_gates": {
+        "E": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "HOLD", "F": "FAIL"},
+        "SE": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "HOLD", "F": "FAIL"},
+        "S": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "HOLD", "F": "FAIL"},
+        "SW": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "FAIL", "F": "FAIL"},
+        "W": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "HOLD", "F": "FAIL"},
+        "NW": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "HOLD", "F": "FAIL"},
+        "N": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "HOLD", "F": "FAIL"},
+        "NE": {"A": "FAIL", "B": "PASS", "C": "FAIL", "D": "FAIL", "E": "HOLD", "F": "FAIL"}
+      },
+      "blockers": [
+        "all directions: planted sole pixels move with root; support-foot lock/skating fails",
+        "all directions: alternating 7.600/5.066 px root cadence is visible and does not repair skating",
+        "SW: visual weapon axis points screen-right/lower-right while SW root/projectile axis is down-left",
+        "fire/projectile contact is not captured in the submitted native video"
+      ],
+      "non_blockers": [
+        "24 unique move cells per direction and two-cycle wrap are present",
+        "no categorical ankle 90-degree break, calf balloon, whole-leg scale pulse, duplicate body, green spill, or alpha halo"
+      ],
+      "asset_action": "retain_candidate_hold; no pointer change; preserve R17/R18 and all failed assets"
+    },
+    "chatgpt_web_planning_conversation": {
+      "status": "FAIL_THIS_REVIEW",
+      "conversation": "https://chatgpt.com/c/6a93c84f-fb1c-83e8-9d88-959e708b2463",
+      "direction_gates": {
+        "E": {"A": "FAIL", "B": "PASS", "C": "HOLD", "D": "FAIL", "E": "FAIL", "F": "FAIL"},
+        "SE": {"A": "FAIL", "B": "PASS", "C": "HOLD", "D": "FAIL", "E": "FAIL", "F": "FAIL"},
+        "S": {"A": "FAIL", "B": "PASS", "C": "HOLD", "D": "FAIL", "E": "FAIL", "F": "FAIL"},
+        "SW": {"A": "FAIL", "B": "PASS", "C": "HOLD", "D": "FAIL", "E": "FAIL", "F": "FAIL"},
+        "W": {"A": "FAIL", "B": "PASS", "C": "HOLD", "D": "FAIL", "E": "FAIL", "F": "FAIL"},
+        "NW": {"A": "FAIL", "B": "PASS", "C": "HOLD", "D": "FAIL", "E": "FAIL", "F": "FAIL"},
+        "N": {"A": "FAIL", "B": "PASS", "C": "HOLD", "D": "FAIL", "E": "FAIL", "F": "FAIL"},
+        "NE": {"A": "FAIL", "B": "PASS", "C": "HOLD", "D": "FAIL", "E": "FAIL", "F": "FAIL"}
+      },
+      "blockers": [
+        "all directions: support sole slides with root; planted-foot lock fails",
+        "all directions: 5.066/7.601px fast-slow root cadence pulse",
+        "all directions: move muzzle socket does not match visible barrel/contact",
+        "SW: visible barrel points down-right while projectile points down-left",
+        "moving-fire visual evidence is absent",
+        "active-frame label is one cell out of phase with the visible atlas row",
+        "N/NE late-cycle framing is partly occluded by the QA overlay"
+      ],
+      "reviewed_video_sha256": "289461efe328c5d94981018fca9fe377f1b766e5ca185b0fcf503e8961cb2791"
+    },
+    "review_scope": "Actual MP4 playback plus HTML/descriptor/ledger; evaluate all eight directions E/SE/S/SW/W/NW/N/NE for alternating planted steps, no skating, body stability, weapon/muzzle direction, two cycles",
+    "do_not_promote_before_both_reviews": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "checks": 871,
+  "failures": [
+    "R11-01 empty idle cell rejected",
+    "Atomic rejection: R11-01 empty idle cell rejected",
+    "R11-01 empty used walk cell rejected",
+    "Atomic rejection: R11-01 empty used walk cell rejected",
+    "R11-02 identical used cells repacked to two columns rejected",
+    "Atomic rejection: R11-02 identical used cells repacked to two columns rejected",
+    "R11-02 unused padding cannot disguise duplicate used sequence",
+    "Atomic rejection: R11-02 unused padding cannot disguise duplicate used sequence",
+    "R11-03 derived cycle distance overflow rejected",
+    "Atomic rejection: R11-03 derived cycle distance overflow rejected",
+    "R11-04 moved warning/burst is interrupted",
+    "R11-04 moved warning/burst is interrupted",
+    "R11-04 no continuation fire from unannounced corrected origin",
+    "R11-04 moved warning/burst is interrupted",
+    "R11-04 moved warning/burst is interrupted",
+    "R11-04 no continuation fire from unannounced corrected origin",
+    "R11-04 moved warning/burst is interrupted",
+    "R11-04 moved warning/burst is interrupted",
+    "R11-04 no continuation fire from unannounced corrected origin"
+  ],
+  "production_registry_changed": false,
+  "sha256": {
+    "scripts/actors/enemy_actor.gd": "f9c8000073867c15d7c8337249ca2c98ba29d80c950aa60ce5a2910b4b2ccaa0",
+    "scripts/animation/site7_biped_sprite.gd": "6e0ed61e1eaa97d99bf3d4155002deb5d6252f64e8fb9c43222fcd94a13ad929",
+    "scripts/combat/site7_enemy_tactics.gd": "efacd6facda231852c947cb26572cc873ed022d62bb5ddf1ef55b2c8b260bd02",
+    "scripts/ui/enemy_overhead_ui.gd": "b46c788c0b07945790653bbafe0656fe1fa99361f5806de4438cff1f06367b22",
+    "tests/smoke/site7_biped_bridge_smoke.gd": "329e49f371bb97387eabd8ff59b398c67222e48403050a58ac2f6b590c5545b9"
+  },
+  "status": "FAIL",
+  "synthetic_fixtures_only": true,
+  "visual_approval": false
+}

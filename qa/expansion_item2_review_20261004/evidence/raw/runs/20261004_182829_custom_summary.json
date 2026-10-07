@@ -1,0 +1,46 @@
+{
+ "suite": "custom",
+ "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+ "started": "2026-10-04T18:28:29",
+ "git_head": "b4aa2ae030464dca53a035de7e3cbde8889e5c98",
+ "git_dirty": 0,
+ "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+ "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+ "workers": 1,
+ "seconds": 60,
+ "overall": "PASS",
+ "guard": {
+  "changed": [],
+  "removed": [],
+  "added": []
+ },
+ "results": [
+  {
+   "test": "demo_integration",
+   "status": "PASS",
+   "seconds": 7.8,
+   "exit_code": 0,
+   "checks": 26,
+   "status_line": "DEMO_INTEGRATION PASS / 26 checks",
+   "notes": []
+  },
+  {
+   "test": "m10_intel",
+   "status": "PASS",
+   "seconds": 7.4,
+   "exit_code": 0,
+   "checks": 39,
+   "status_line": "M10_INTEL_LOADOUT_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "m13_loadout",
+   "status": "PASS",
+   "seconds": 5.0,
+   "exit_code": 0,
+   "checks": 46,
+   "status_line": "M13_WEAPON_LOADOUT_SMOKE: PASS",
+   "notes": []
+  }
+ ]
+}

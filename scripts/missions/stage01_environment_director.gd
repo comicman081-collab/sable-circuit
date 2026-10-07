@@ -1,0 +1,145 @@
+extends Node2D
+class_name Stage01EnvironmentDirector
+
+var _phase: float = 0.0
+var _stage: StoryStage01
+var _room_signatures: Array[String] = [
+    "GATE_RIBS_AMBER_TERMINAL",
+    "DECON_CYAN_MIST",
+    "ARCHIVE_SHELVES_HOLOGRAM",
+    "CONTAINMENT_RED_BARRICADE",
+    "CORE_VIOLET_IRIS",
+    "LIFT_GREEN_RAILS",
+    "SUPPLY_AMBER_CRATES",
+    "SIGNAL_TEAL_WAVEFORM"
+]
+
+const GATE := Vector2(280,470)
+const DECON := Vector2(690,350)
+const ARCHIVE := Vector2(1100,490)
+const JUNCTION := Vector2(1510,350)
+const CORE := Vector2(1920,490)
+const LIFT := Vector2(2330,350)
+const STORES := Vector2(1100,705)
+const SIGNAL := Vector2(1510,705)
+
+func _ready() -> void:
+    _stage = get_parent() as StoryStage01
+    z_index = -1
+    queue_redraw()
+
+func _process(delta: float) -> void:
+    _phase += delta
+    queue_redraw()
+
+func _draw() -> void:
+    _draw_global_floor_detail()
+    _draw_outer_gate(GATE)
+    _draw_decon(DECON)
+    _draw_archive(ARCHIVE)
+    _draw_containment(JUNCTION)
+    _draw_core(CORE)
+    _draw_lift(LIFT)
+    _draw_supply(STORES)
+    _draw_signal_lab(SIGNAL)
+    _draw_ambient_particles()
+
+func _draw_global_floor_detail() -> void:
+    var route: Array[Vector2] = [GATE,DECON,ARCHIVE,JUNCTION,CORE,LIFT]
+    for i in range(route.size()-1):
+        var a: Vector2 = route[i]
+        var b: Vector2 = route[i+1]
+        var dir: Vector2 = (b-a).normalized()
+        var normal: Vector2 = Vector2(-dir.y,dir.x)
+        for j in range(4):
+            var p: Vector2 = a.lerp(b,(float(j)+0.5)/4.0)
+            draw_line(p-normal*34.0,p+normal*34.0,Color(0.42,0.61,0.68,0.040),1.2)
+
+func _glow(center: Vector2, color: Color, radius: float, energy: float = 1.0) -> void:
+    for i in range(6,0,-1):
+        var f: float = float(i)/6.0
+        var alpha: float = 0.009*energy*float(7-i)
+        draw_circle(center,radius*f,Color(color.r,color.g,color.b,alpha))
+
+func _draw_outer_gate(c: Vector2) -> void:
+    var pulse: float = 0.55+sin(_phase*2.4)*0.22
+    draw_arc(c+Vector2(92,-69),17.0,0.0,TAU,28,Color(1.0,0.66,0.25,0.52*pulse),2.2)
+    _glow(c+Vector2(92,-69),Color("ff9d3b"),52.0,pulse)
+
+func _draw_decon(c: Vector2) -> void:
+    for i in range(9):
+        var drift: float = fposmod(_phase*23.0+float(i)*43.0,260.0)
+        var p: Vector2 = c+Vector2(-130.0+drift,12.0+sin(_phase*1.25+float(i))*55.0)
+        draw_circle(p,13.0+float(i%3)*5.0,Color(0.55,0.94,1.0,0.020))
+    _glow(c+Vector2(0,-38),Color("62dff1"),105.0,0.34)
+
+func _draw_archive(c: Vector2) -> void:
+    var scan: float = fposmod(_phase*39.0,54.0)
+    draw_line(c+Vector2(-51,-20+scan),c+Vector2(51,-20+scan),Color(0.48,1.0,0.92,0.48),1.8)
+    draw_arc(c+Vector2(0,1),48.0,-1.1,1.1,24,Color(0.38,0.92,0.84,0.18),1.8)
+
+func _draw_containment(c: Vector2) -> void:
+    var alarm: float = 0.20+0.80*maxf(0.0,sin(_phase*4.1))
+    draw_arc(c+Vector2(-92,-74),15.0,0.0,TAU,20,Color(1.0,0.32,0.27,0.46*alarm),2.0)
+    draw_arc(c+Vector2(92,-74),15.0,0.0,TAU,20,Color(1.0,0.32,0.27,0.46*alarm),2.0)
+    _glow(c+Vector2(0,-65),Color("ff5145"),94.0,alarm*0.50)
+
+func _draw_core(c: Vector2) -> void:
+    var boss_alive: bool = false
+    for node in get_tree().get_nodes_in_group("m3_enemies"):
+        if node is EnemyActor and ("BOSS" in node.enemy_id or "ANCHOR" in node.enemy_id):
+            boss_alive = true
+    var intensity: float = 1.0 if boss_alive else 0.38
+    # The authored Core C SVG already owns the large iris. Dynamic overlay stays
+    # deliberately sparse so Phase 3 reads as a boss, not a stack of circles.
+    for i in range(2):
+        var r: float = 56.0+float(i)*28.0+sin(_phase*(0.72+float(i)*0.08)+float(i))*2.0
+        var start: float = _phase*(0.08+float(i)*0.018)
+        draw_arc(c,r,start,TAU+start,48,Color(0.56,0.39,1.0,0.065*intensity),1.8)
+    _glow(c,Color("946aff"),108.0,0.32*intensity)
+
+func _draw_lift(c: Vector2) -> void:
+    var offset: float = fposmod(_phase*17.0,24.0)
+    for side_value in [-1.0,1.0]:
+        var side: float = float(side_value)
+        var x: float = c.x+side*82.0
+        for j in range(6):
+            var y: float = c.y-66.0+float(j)*24.0+offset
+            draw_line(Vector2(x-4,y),Vector2(x+7,y-1),Color(0.42,0.94,0.59,0.52),2.4)
+
+func _draw_supply(c: Vector2) -> void:
+    var pulse: float = 0.45+sin(_phase*2.1)*0.18
+    var points: Array[Vector2] = [c+Vector2(-72,34),c+Vector2(62,40),c+Vector2(0,-18)]
+    for p in points:
+        draw_circle(p,4.0,Color(0.90,0.64,0.28,0.48*pulse))
+        draw_circle(p,16.0,Color(0.90,0.55,0.18,0.018*pulse))
+
+func _draw_signal_lab(c: Vector2) -> void:
+    var points := PackedVector2Array()
+    for i in range(45):
+        var x: float = -92.0+float(i)*4.2
+        var y: float = sin(float(i)*0.58+_phase*3.2)*15.0+sin(float(i)*0.17-_phase)*6.0
+        points.append(c+Vector2(x,8+y))
+    draw_polyline(points,Color(0.38,0.98,0.89,0.62),2.0)
+    for i in range(2):
+        var r: float = 34.0+float(i)*20.0
+        draw_arc(c+Vector2(0,8),r,-_phase*(0.44+float(i)*0.10),1.45*PI-_phase*(0.44+float(i)*0.10),30,Color(0.35,0.91,0.84,0.16),1.8)
+
+func _draw_ambient_particles() -> void:
+    for i in range(24):
+        var seed: float = float((i*137)%997)
+        var x: float = 72.0+fposmod(seed*2.15+_phase*(3.5+float(i%4)),2400.0)
+        var y: float = 220.0+fposmod(seed*0.47+sin(_phase*0.24+float(i))*26.0,520.0)
+        draw_circle(Vector2(x,y),1.0+float(i%2),Color(0.44,0.73,0.78,0.065+0.035*float(i%3)))
+
+func debug_room_style_count() -> int:
+    return _room_signatures.size()
+
+func debug_room_signatures() -> Array[String]:
+    return _room_signatures.duplicate()
+
+func debug_dynamic_overlay_only() -> bool:
+    return true
+
+func debug_core_overlay_clarity() -> bool:
+    return true

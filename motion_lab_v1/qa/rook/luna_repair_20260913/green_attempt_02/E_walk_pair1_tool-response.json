@@ -1,0 +1,34 @@
+{
+  "tool": "image_gen.imagegen",
+  "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-c2e4fedb-e753-4c8b-85ed-c8871ce73d93.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c as C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c\\exec-c2e4fedb-e753-4c8b-85ed-c8871ce73d93.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair1_luna_raw.png",
+  "projectCopySHA256": "f10c343f160629aa20fd7a0e81cdd021b3a1e595b7f7c9c9ccd98ef0b95d5a88",
+  "inputReferences": [
+    "reference/ual_guides/E_walk_pair1.png",
+    "art/rook/identity_reference.png"
+  ],
+  "promptSummary": "Native 1536x1024 ROOK E pair1 with explicit opposite roles: left E1 anatomical RIGHT rear-swing with LEFT support and right E4 anatomical LEFT rear-swing with RIGHT support; flat_uniform_green requested; identity reference is sole appearance/weapon authority and UAL guide is pose/camera only.",
+  "inspection": {
+    "nativeSize": [1536, 1024],
+    "mode": "RGB",
+    "cornerRGB": [18, 241, 14],
+    "edgeUniqueColors": 132,
+    "greenExactFraction": 0.0000025431315104166665,
+    "backgroundDecision": "NOT_FLAT_UNIFORM_GREEN",
+    "normalization": {
+      "report": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair1_normalization.json",
+      "output": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair1_normalized.png",
+      "outputSHA256": "9f4fb21906cb6f580847cbd17a52c4aab851798d8141c96ec350248b52fffd65",
+      "mask": "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair1_mask.png",
+      "maskSHA256": "9843548ed66a9524691a640f58850f99f3c27e63b9e8e6423f2c39df52e2d658",
+      "coverage": 0.6966431935628256,
+      "subjectPixelsByteExact": true,
+      "alphaReady": true
+    },
+    "decision": "FAIL_NOT_PROMOTABLE",
+    "notes": "Both figures visibly repeat the same rear-swing/support arrangement; the required E1 right rear-swing versus E4 left rear-swing exchange is absent. Normalization only replaced edge-connected near-green pixels and did not repair anatomy. Not imported."
+  }
+}

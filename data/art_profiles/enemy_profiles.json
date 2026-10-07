@@ -1,0 +1,399 @@
+{
+  "schema_version": 1,
+  "profiles": [
+    {
+      "enemy_id": "ENM_SITE7_DRONE_01",
+      "name": "SITE-7 RECON DRONE",
+      "tier": "NORMAL",
+      "visual_profile": "VIS_ENM_DRONE_01",
+      "machine_asset": {
+        "spec": "res://assets/enemies/recon_drone/authored_yaw8_v1/spec.json",
+        "sha256": "0c716b309edfa5ecaa29cffef01642e23c855a3527a979a922002a9e8ad6b5ba"
+      },
+      "master_asset": "assets/enemies/recon_drone/recon_drone_master.svg",
+      "rig_sheet": "assets/enemies/recon_drone/recon_drone_rig_sheet.svg",
+      "silhouette": "flat crescent chassis, three uneven sensor eyes, dangling micro-thruster, no humanoid limbs",
+      "palette": [
+        "#9DBAC7",
+        "#1D2A31",
+        "#D9577D",
+        "#65E1E8"
+      ],
+      "motion_profile": "MOT_ENM_DRONE_01",
+      "motion_signature": "constant hover micro-orbit, asymmetric banking, scan pause, sudden lateral dart, rotational death tumble",
+      "projectile_profile": "PRJ_ENM_DRONE_BEAMLET_01",
+      "projectile_signature": "magenta dotted beamlet packets with cyan sensor ghost",
+      "hit_vfx_profile": "HIT_ENM_DRONE_ARC_01",
+      "hit_vfx_signature": "thin electric crescent arcs and falling pixel sparks",
+      "fire_sfx_profile": "SFX_FIRE_ENM_DRONE_01",
+      "fire_sfx_signature": "high servo chirp followed by clipped laser zip",
+      "impact_sfx_profile": "SFX_HIT_ENM_DRONE_01",
+      "impact_sfx_signature": "glass-electronic tick with unstable electrical sputter",
+      "body_plan": "robot",
+      "runtime_enabled": true
+    },
+    {
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "name": "SIGNAL ANCHOR GUARDIAN",
+      "tier": "BOSS",
+      "visual_profile": "VIS_BOSS_ANCHOR_01",
+      "machine_asset": {
+        "spec": "res://assets/enemies/signal_anchor_guardian/authored_core_v1/spec.json",
+        "sha256": "c3f98d11fc537fd5e7d542e7114296cdc0c12b7f2f4877e71c1bd6fed194b763"
+      },
+      "master_asset": "assets/enemies/signal_anchor_guardian/signal_anchor_guardian_master.svg",
+      "rig_sheet": "assets/enemies/signal_anchor_guardian/signal_anchor_guardian_rig_sheet.svg",
+      "silhouette": "massive suspended ring body, offset armored pylons, four articulated emitter arms, exposed inner signal iris",
+      "palette": [
+        "#2A313B",
+        "#8572FF",
+        "#F0529D",
+        "#E7E0FF"
+      ],
+      "motion_profile": "MOT_BOSS_ANCHOR_01",
+      "motion_signature": "slow orbital idle, pylon breathing, arm-by-arm charge choreography, phase-transition ring inversion, heavy camera-readable attacks",
+      "projectile_profile": "PRJ_BOSS_ANCHOR_LANCE_01",
+      "projectile_signature": "wide violet-magenta lance segment with rotating black notches and lingering distortion ribs",
+      "hit_vfx_profile": "HIT_BOSS_ANCHOR_RIFT_01",
+      "hit_vfx_signature": "large iris-shaped rupture, violet radial shards and inward-pulling black streaks",
+      "fire_sfx_profile": "SFX_FIRE_BOSS_ANCHOR_01",
+      "fire_sfx_signature": "layered resonant charge chord collapsing into a hard spatial crack",
+      "impact_sfx_profile": "SFX_HIT_BOSS_ANCHOR_01",
+      "impact_sfx_signature": "low structural boom plus reversed crystalline suction",
+      "boss_pattern": "anchor_iris",
+      "boss_brief": "Central iris active. Evade the announced fan and floor blast; reposition while CORE SHIELDED is active.",
+      "body_plan": "robot",
+      "runtime_enabled": true
+    },
+    {
+      "enemy_id": "BOSS_SITE7_RELAY_01",
+      "name": "RELAY SENTINEL",
+      "tier": "BOSS",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_BOSS_RELAY_01",
+      "projectile_profile": "PRJ_BOSS_RELAY_BOLT_01",
+      "hit_vfx_profile": "HIT_BOSS_RELAY_SURGE_01",
+      "fire_sfx_profile": "SFX_FIRE_BOSS_ANCHOR_01",
+      "impact_sfx_profile": "SFX_HIT_BOSS_ANCHOR_01",
+      "palette": ["#252a2e", "#d8283c", "#ff9ca6"],
+      "silhouette": "Squat square relay plinth with four unequal transformer coil towers and one caged top spark",
+      "master_asset": "motion_lab_v1/art/site7_enemies_raw/relay_sentinel_master.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/stage2_relay_sentinel/authored_core_v1/spec.json",
+        "sha256": "4b662d2b3ab99ae7c5855045a6c380aded69d6a380d798d423a6b00c1dae4ffe"
+      },
+      "introduced_in": "MIS_CH01_02",
+      "boss_pattern": "relay_chain",
+      "boss_brief": "Relay chain ripples outward from the sentinel. Cross the chain sideways; shots are blocked while CORE SHIELDED."
+    },
+    {
+      "enemy_id": "BOSS_SITE7_REMNANT_01",
+      "name": "RESONANCE REMNANT",
+      "tier": "BOSS",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_BOSS_REMNANT_01",
+      "projectile_profile": "PRJ_BOSS_REMNANT_ARC_01",
+      "hit_vfx_profile": "HIT_BOSS_REMNANT_ARC_01",
+      "fire_sfx_profile": "SFX_FIRE_BOSS_ANCHOR_01",
+      "impact_sfx_profile": "SFX_HIT_BOSS_ANCHOR_01",
+      "palette": ["#252c35", "#bfe8ff", "#f1fbff"],
+      "silhouette": "Tall fractured resonance mast braced in a clamp cradle with one upward arc fork",
+      "master_asset": "motion_lab_v1/art/site7_enemies_raw/resonance_remnant_master.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/stage3_resonance_remnant/authored_core_v1/spec.json",
+        "sha256": "5a2a4cb1705562ae4275590e45154a3c3abfc2817503da2c5f8de39d5402b591"
+      },
+      "introduced_in": "MIS_CH01_03",
+      "boss_pattern": "resonance_lanes",
+      "boss_brief": "Resonance lanes fan from the broken mast. Step between the lanes and do not hug the core; it bursts at close range."
+    },
+    {
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "name": "BULWARK / SHIELD CRAWLER",
+      "tier": "NORMAL",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_BULWARK",
+      "projectile_profile": "PRJ_ENM_SHIELD_01",
+      "hit_vfx_profile": "HIT_ENM_BULWARK_SLUG_01",
+      "fire_sfx_profile": "SFX_FIRE_ENM_SHIELD_01",
+      "impact_sfx_profile": "SFX_HIT_ENM_SHIELD_01",
+      "palette": [
+        "#b69c62",
+        "#262a2d",
+        "#f4b350"
+      ],
+      "silhouette": "Low sand-yellow front blast shield, two tracks and rear radiator; no limbs",
+      "master_asset": "motion_lab_v1/art/stage_enemies_20260919/bulwark_master_v1.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/bulwark/authored_yaw8_v1/spec.json",
+        "sha256": "0147539b5c2000aad54b43028c8be50cfb421382c648f370859ea69d2eeb76dd"
+      },
+      "introduced_in": "MIS_CH01_01"
+    },
+    {
+      "enemy_id": "ENM_SITE7_RAM_01",
+      "name": "CINDER / IMPACT ROBOT",
+      "tier": "NORMAL",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_RAM",
+      "projectile_profile": "PRJ_ENM_ABERRANT_01",
+      "hit_vfx_profile": "HIT_ENM_RAM_SLAM_01",
+      "fire_sfx_profile": "SFX_FIRE_ENM_SHIELD_01",
+      "impact_sfx_profile": "SFX_HIT_ENM_SHIELD_01",
+      "palette": [
+        "#b35b37",
+        "#272b2f",
+        "#ee9d40"
+      ],
+      "silhouette": "Copper wedge, two integrated repulsors, one rear turbine; collision nose, not gun",
+      "master_asset": "motion_lab_v1/art/stage_enemies_20260919/ram_master_v1.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/cinder_ram/authored_yaw8_v1/spec.json",
+        "sha256": "94e7ef701406cf96ff6506a838a2c780b37647bdb627ccc5614ad32d5d975605"
+      },
+      "introduced_in": "MIS_CH01_02"
+    },
+    {
+      "enemy_id": "ENM_SITE7_MORTAR_01",
+      "name": "VESPER / SIEGE MORTAR",
+      "tier": "NORMAL",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_MORTAR",
+      "projectile_profile": "PRJ_ENM_MORTAR_01",
+      "hit_vfx_profile": "HIT_ENM_MORTAR_BLAST_01",
+      "fire_sfx_profile": "SFX_FIRE_ENM_SHIELD_01",
+      "impact_sfx_profile": "SFX_HIT_ENM_SHIELD_01",
+      "palette": [
+        "#5b4878",
+        "#292f35",
+        "#caa7ff"
+      ],
+      "silhouette": "Stationary hexagonal foundation, vertical center muzzle and violet capacitors; no yaw or legs",
+      "master_asset": "motion_lab_v1/art/stage_enemies_20260919/mortar_master_v1.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/vesper_mortar/authored_core_v1/spec.json",
+        "sha256": "990c78d12575816b594f6470daa14b9f76fabbd561e6fe3d3fe54876ffefd832"
+      },
+      "introduced_in": "MIS_CH01_03"
+    },
+    {
+      "enemy_id": "ENM_SITE7_PRISM_01",
+      "name": "PRISM / SKIMMER",
+      "tier": "NORMAL",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_PRISM_SKIMMER",
+      "projectile_profile": "PRJ_ENM_PRISM_BEAM_01",
+      "hit_vfx_profile": "HIT_ENM_PRISM_REFRACT_01",
+      "fire_sfx_profile": "SFX_FIRE_ENM_DRONE_01",
+      "impact_sfx_profile": "SFX_HIT_ENM_DRONE_01",
+      "palette": ["#1d2d50", "#6f62da", "#65e1e8"],
+      "silhouette": "Triangular hovering prism chassis with rear ion ring and side pulse emitter; no limbs",
+      "master_asset": "assets/enemies/prism_skimmer/authored_yaw8_v1/E.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/prism_skimmer/authored_yaw8_v1/spec.json",
+        "sha256": "cb2a2bfa911115d92e0e87c321fe0319aeecc00eb9b61c8ae0a7b880d05ecd3a"
+      },
+      "introduced_in": "MIS_CH01_04"
+    },
+    {
+      "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+      "name": "NULL / PYLON",
+      "tier": "NORMAL",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_NULL_PYLON",
+      "projectile_profile": "PRJ_ENM_MORTAR_01",
+      "hit_vfx_profile": "HIT_ENM_MORTAR_BLAST_01",
+      "fire_sfx_profile": "SFX_FIRE_ENM_SHIELD_01",
+      "impact_sfx_profile": "SFX_HIT_ENM_SHIELD_01",
+      "palette": ["#24223a", "#8b5de5", "#62e5f1"],
+      "silhouette": "Anchored hexagonal jammer pylon with central lens and violet fins; no limbs",
+      "master_asset": "assets/enemies/null_pylon/authored_core_v1/NULL_PYLON.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/null_pylon/authored_core_v1/spec.json",
+        "sha256": "37f7eb9e3f742f9af9bc65291fdca9fedbc0fe674b08dd914898393e840c4dba"
+      },
+      "introduced_in": "MIS_CH01_05"
+    },
+    {
+      "enemy_id": "BOSS_SITE7_FORGE_01",
+      "name": "FORGE WARDEN",
+      "tier": "BOSS",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_BOSS_FORGE",
+      "projectile_profile": "PRJ_BOSS_FORGE_LANCE_01",
+      "hit_vfx_profile": "HIT_BOSS_FORGE_MELT_01",
+      "fire_sfx_profile": "SFX_FIRE_BOSS_ANCHOR_01",
+      "impact_sfx_profile": "SFX_HIT_BOSS_ANCHOR_01",
+      "palette": ["#252a2e", "#b97b4b", "#4ce9ef"],
+      "silhouette": "Broad tracked reactor fortress with central cyan furnace iris and asymmetrical clamps",
+      "master_asset": "assets/enemies/stage4_forge_warden/authored_core_v1/FORGE_WARDEN.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/stage4_forge_warden/authored_core_v1/spec.json",
+        "sha256": "c73887c43a151cae9e28552277d6d1fe657c1c8f2f365beed5d6a2cd6824cfe1"
+      },
+      "introduced_in": "MIS_CH01_04",
+      "boss_pattern": "forge_press",
+      "boss_brief": "The press slams where you stand. Keep moving and keep your distance from the furnace front."
+    },
+    {
+      "enemy_id": "BOSS_SITE7_CARRIER_01",
+      "name": "CARRIER NULL",
+      "tier": "BOSS",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_BOSS_CARRIER",
+      "projectile_profile": "PRJ_BOSS_CARRIER_LANCE_01",
+      "hit_vfx_profile": "HIT_BOSS_CARRIER_NULL_01",
+      "fire_sfx_profile": "SFX_FIRE_BOSS_ANCHOR_01",
+      "impact_sfx_profile": "SFX_HIT_BOSS_ANCHOR_01",
+      "palette": ["#191d2d", "#8d65ef", "#62c9eb"],
+      "silhouette": "Wide levitating offshore carrier with central null aperture and a single lance emitter",
+      "master_asset": "assets/enemies/stage5_carrier_null/authored_core_v1/CARRIER_NULL.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/stage5_carrier_null/authored_core_v1/spec.json",
+        "sha256": "1073f78439084382c536ae7c87fce54427ed5a9c66153188cf07055163ca7cd9"
+      },
+      "introduced_in": "MIS_CH01_05",
+      "boss_pattern": "carrier_null",
+      "arena_accent": "#62c9eb",
+      "boss_brief": "Null lanes run the length of the corridor. Slip into the gap between lanes and move along it."
+    },
+    {
+      "enemy_id": "BOSS_SITE7_AERATOR_01",
+      "name": "AERATOR TOWER",
+      "tier": "BOSS",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_BOSS_AERATOR_01",
+      "projectile_profile": "PRJ_BOSS_AERATOR_SPORE_01",
+      "hit_vfx_profile": "HIT_BOSS_AERATOR_BLOOM_01",
+      "fire_sfx_profile": "SFX_FIRE_BOSS_ANCHOR_01",
+      "impact_sfx_profile": "SFX_HIT_BOSS_ANCHOR_01",
+      "palette": ["#1f2a1e", "#8fdc4a", "#d6ff9a"],
+      "silhouette": "Bulbous hydroponic air-handler: a fat armoured cap on a short pedestal, five petal louvres round one lime spore-bloom node",
+      "master_asset": "motion_lab_v1/art/site7_enemies_raw/aerator_tower_master.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/stage6_aerator_tower/authored_core_v1/spec.json",
+        "sha256": "5e32a9d0228392f69b1801790d4f173c2a0e867f4cbc3da46809b4d716aca681"
+      },
+      "introduced_in": "MIS_CH01_06",
+      "boss_pattern": "bloom_field",
+      "arena_accent": "#8fdc4a",
+      "boss_brief": "Spore rings close in around you. Leave the middle before it blooms and slip out through a gap; shots are blocked while CORE SHIELDED."
+    },
+    {
+      "enemy_id": "BOSS_SITE7_CRYO_01",
+      "name": "CRYO COMPRESSOR",
+      "tier": "BOSS",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_BOSS_CRYO_01",
+      "projectile_profile": "PRJ_BOSS_CRYO_SHARD_01",
+      "hit_vfx_profile": "HIT_BOSS_CRYO_SHATTER_01",
+      "fire_sfx_profile": "SFX_FIRE_BOSS_ANCHOR_01",
+      "impact_sfx_profile": "SFX_HIT_BOSS_ANCHOR_01",
+      "palette": ["#252a30", "#ff7fc8", "#ffe1f2"],
+      "silhouette": "Low refrigeration compressor block with one tall radiator wall and a lattice mast carrying a hot-pink beacon",
+      "master_asset": "motion_lab_v1/art/site7_enemies_raw/cryo_compressor_master.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/stage7_cryo_compressor/authored_core_v1/spec.json",
+        "sha256": "b22ac72fda084f303e6154c7b2c65ce56c69b69dac107bb5b804f5bdea4b8b61"
+      },
+      "introduced_in": "MIS_CH01_07",
+      "boss_pattern": "frost_sweep",
+      "arena_accent": "#ff7fc8",
+      "boss_brief": "The compressor sends frost bars outward in waves. Step into the gap a bar has just cleared and do not hug the stack; shots are blocked while CORE SHIELDED."
+    },
+    {
+      "enemy_id": "BOSS_SITE7_GANTRY_01",
+      "name": "SIGNAL GANTRY",
+      "tier": "BOSS",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_BOSS_GANTRY_01",
+      "projectile_profile": "PRJ_BOSS_GANTRY_RAIL_01",
+      "hit_vfx_profile": "HIT_BOSS_GANTRY_ARC_01",
+      "fire_sfx_profile": "SFX_FIRE_BOSS_ANCHOR_01",
+      "impact_sfx_profile": "SFX_HIT_BOSS_ANCHOR_01",
+      "palette": ["#2a2a26", "#ffd84a", "#fff4b0"],
+      "silhouette": "T-shaped signal gantry: a central mast, a wide cross-beam of signal lamps and one yellow lens cluster",
+      "master_asset": "motion_lab_v1/art/site7_enemies_raw/signal_gantry_master.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/stage8_signal_gantry/authored_core_v1/spec.json",
+        "sha256": "b898177e24a6f1fe097464c19852eaebc0702bb39aec162c62c0240bf59e6c82"
+      },
+      "introduced_in": "MIS_CH01_08",
+      "boss_pattern": "rail_charge",
+      "arena_accent": "#ffd84a",
+      "boss_brief": "Rail lines cross where you stand. Leave the crossing and keep off the rails; shots are blocked while CORE SHIELDED."
+    },
+    {
+      "enemy_id": "BOSS_SITE7_ARCHIVE_01",
+      "name": "INDEX SPIRE",
+      "tier": "BOSS",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_BOSS_ARCHIVE_01",
+      "projectile_profile": "PRJ_BOSS_ARCHIVE_ECHO_01",
+      "hit_vfx_profile": "HIT_BOSS_ARCHIVE_GLYPH_01",
+      "fire_sfx_profile": "SFX_FIRE_BOSS_ANCHOR_01",
+      "impact_sfx_profile": "SFX_HIT_BOSS_ANCHOR_01",
+      "palette": ["#1c2432", "#2fe0b4", "#c8fff0"],
+      "silhouette": "Stepped memory-stack ziggurat with a needle read-head and a turquoise tip node",
+      "master_asset": "motion_lab_v1/art/site7_enemies_raw/index_spire_master.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/stage9_index_spire/authored_core_v1/spec.json",
+        "sha256": "490247f80ecac9c05549dcd09850008e14f414b2116fd5db118c60dbfbfe5e50"
+      },
+      "introduced_in": "MIS_CH01_09",
+      "boss_pattern": "echo_copy",
+      "arena_accent": "#2fe0b4",
+      "boss_brief": "The spire echoes where you stood a moment ago. Never stop and never walk the same line twice; shots are blocked while CORE SHIELDED."
+    },
+    {
+      "enemy_id": "BOSS_SITE7_ORIGIN_01",
+      "name": "ORIGIN CORE",
+      "tier": "BOSS",
+      "body_plan": "robot",
+      "runtime_enabled": true,
+      "motion_profile": "MOT_BOSS_ORIGIN_01",
+      "projectile_profile": "PRJ_BOSS_ORIGIN_NULL_01",
+      "hit_vfx_profile": "HIT_BOSS_ORIGIN_FRACTURE_01",
+      "fire_sfx_profile": "SFX_FIRE_BOSS_ANCHOR_01",
+      "impact_sfx_profile": "SFX_HIT_BOSS_ANCHOR_01",
+      "palette": ["#17171a", "#f4efe8", "#ffffff"],
+      "silhouette": "Three interlocking black-alloy prisms with hairline white seams and one white peak node",
+      "master_asset": "motion_lab_v1/art/site7_enemies_raw/origin_core_master.png",
+      "rig_sheet": "",
+      "machine_asset": {
+        "spec": "res://assets/enemies/stage10_origin_core/authored_core_v1/spec.json",
+        "sha256": "8de7562250bebe3129ee270216c4be5198e29dd82e5622970b1556b05f5dec1c"
+      },
+      "introduced_in": "MIS_CH01_10",
+      "boss_pattern": "null_convergence",
+      "arena_accent": "#f4efe8",
+      "boss_brief": "Warning lanes converge on you from every side. Stay in the gaps between them and keep away from the core; shots are blocked while CORE SHIELDED."
+    }
+  ]
+}

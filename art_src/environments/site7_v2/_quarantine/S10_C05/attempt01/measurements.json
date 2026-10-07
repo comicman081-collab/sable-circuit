@@ -1,0 +1,142 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_C05/attempt01/S10_C05_GAME.png",
+  "luma": 0.19969512522220612,
+  "p10": 0.13478432595729828,
+  "p90": 0.24661177396774292,
+  "saturation": 0.016096778357328066,
+  "hue": 149.76592857605635,
+  "axis": 25.861169410435398,
+  "problems": [],
+  "plate": "S10_C05",
+  "attempt": 1,
+  "native_size": [
+    1774,
+    887
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      0,
+      789
+    ],
+    [
+      1645,
+      0
+    ],
+    [
+      1774,
+      0
+    ],
+    [
+      1774,
+      231
+    ],
+    [
+      438,
+      887
+    ],
+    [
+      0,
+      887
+    ]
+  ],
+  "doors_px": {},
+  "raw_sha256": "0fc01efe88462b716db70e172fdf2b744b7a53e74dcbadbc43061328c006f71b",
+  "master_sha256": "0fc01efe88462b716db70e172fdf2b744b7a53e74dcbadbc43061328c006f71b",
+  "game_sha256": "fa0f1f1314d188dd01f715d2cbd86ee0db387ab5aa43b3545aa21ff098e7435d",
+  "game_exposure_factor_srgb": 0.75,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-3bbe0cbf-108a-4b76-8b1c-a353b85069fa.png",
+  "inspection": "Actual wall-base and outer deck lip traced; new slab brackets/linear lift guides replace S3 cylinders and wall panels.",
+  "floor_area_px2": 486377.5,
+  "floor_area_fraction": 0.309098032586439,
+  "floor_bounds_px": [
+    0,
+    0,
+    1774,
+    887
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1774,
+      887
+    ],
+    "actual_size": [
+      1774,
+      887
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "width_sections_px": [
+    [
+      600,
+      501,
+      806
+    ],
+    [
+      1000,
+      309,
+      609
+    ],
+    [
+      1400,
+      117,
+      413
+    ]
+  ],
+  "vertical_widths_px": [
+    305,
+    300,
+    296
+  ],
+  "width_measurement": "Vertical sections between actual wall base and outer painted deck lip; clipped image-corner fragments are not full cross-sections.",
+  "width_acceptance": {
+    "minimum_px": 220,
+    "prompt_target_px": 260,
+    "source": "2026-10-01 explicit user decision; branch +/-15% additionally retained"
+  },
+  "connector_apron_end_stats": [
+    {
+      "end": "image_left",
+      "luma": 0.22937239706516266,
+      "saturation": 0.050099759453128244,
+      "hue": 135.15168252504847,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    },
+    {
+      "end": "image_right",
+      "luma": 0.19804991781711578,
+      "saturation": 0.010619095966456552,
+      "hue": 159.851822442307,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    }
+  ],
+  "preintegration_end_comparison": [
+    {
+      "end": "image_left",
+      "room": "S10_R05",
+      "door": "NE",
+      "deck_luma": 0.20954836905002594,
+      "deck_saturation": 0.03187989351089783,
+      "room_apron_luma": 0.193653404712677,
+      "room_apron_saturation": 0.09342588216128216,
+      "step": -0.10352587415170256,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    },
+    {
+      "end": "image_right",
+      "room": "S10_R06",
+      "door": "SW",
+      "deck_luma": 0.19661638140678406,
+      "deck_saturation": 0.013248591921676621,
+      "room_apron_luma": 0.24947157502174377,
+      "room_apron_saturation": 0.07200923341441598,
+      "step": 0.314990750047784,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    }
+  ]
+}

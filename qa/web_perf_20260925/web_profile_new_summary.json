@@ -1,0 +1,217 @@
+{
+  "url": "http://127.0.0.1:8804/index.html",
+  "final_url": "http://127.0.0.1:8804/index.html",
+  "fps_10s": {
+    "seconds": 10,
+    "fps": 81.8,
+    "frames": 817,
+    "p50_ms": 10,
+    "p95_ms": 20.1,
+    "max_ms": 50,
+    "over_33ms": 3,
+    "lost": 0
+  },
+  "profiled_ms": 16505.5,
+  "top_self": [
+    {
+      "function": "wasm-function[2238] @096bb00e",
+      "self_ms": 3036.6,
+      "share": 0.184
+    },
+    {
+      "function": "(idle)",
+      "self_ms": 2848.9,
+      "share": 0.1726
+    },
+    {
+      "function": "(program)",
+      "self_ms": 428.9,
+      "share": 0.026
+    },
+    {
+      "function": "checkFramebufferStatus",
+      "self_ms": 428.5,
+      "share": 0.026
+    },
+    {
+      "function": "deleteVertexArray",
+      "self_ms": 380.9,
+      "share": 0.0231
+    },
+    {
+      "function": "createVertexArray",
+      "self_ms": 259.3,
+      "share": 0.0157
+    },
+    {
+      "function": "bufferData",
+      "self_ms": 243.5,
+      "share": 0.0148
+    },
+    {
+      "function": "wasm-to-js",
+      "self_ms": 242.3,
+      "share": 0.0147
+    },
+    {
+      "function": "bindVertexArray",
+      "self_ms": 238.3,
+      "share": 0.0144
+    },
+    {
+      "function": "wasm-function[551] @096bb00e",
+      "self_ms": 235.4,
+      "share": 0.0143
+    },
+    {
+      "function": "createBuffer",
+      "self_ms": 195.4,
+      "share": 0.0118
+    },
+    {
+      "function": "enableVertexAttribArray",
+      "self_ms": 173.0,
+      "share": 0.0105
+    },
+    {
+      "function": "wasm-function[430] @096bb00e",
+      "self_ms": 169.4,
+      "share": 0.0103
+    },
+    {
+      "function": "wasm-function[8838] @096bb00e",
+      "self_ms": 158.8,
+      "share": 0.0096
+    },
+    {
+      "function": "wasm-function[10509] @096bb00e",
+      "self_ms": 156.6,
+      "share": 0.0095
+    },
+    {
+      "function": "wasm-function[420] @096bb00e",
+      "self_ms": 150.3,
+      "share": 0.0091
+    },
+    {
+      "function": "vertexAttribPointer",
+      "self_ms": 144.4,
+      "share": 0.0087
+    },
+    {
+      "function": "wasm-function[24732] @096bb00e",
+      "self_ms": 143.8,
+      "share": 0.0087
+    },
+    {
+      "function": "bindBuffer",
+      "self_ms": 143.2,
+      "share": 0.0087
+    },
+    {
+      "function": "wasm-function[403] @096bb00e",
+      "self_ms": 132.7,
+      "share": 0.008
+    },
+    {
+      "function": "_emscripten_glGenBuffers @index.js",
+      "self_ms": 116.5,
+      "share": 0.0071
+    },
+    {
+      "function": "deleteBuffer",
+      "self_ms": 111.3,
+      "share": 0.0067
+    },
+    {
+      "function": "wasm-function[12810] @096bb00e",
+      "self_ms": 110.6,
+      "share": 0.0067
+    },
+    {
+      "function": "vertexAttribDivisor",
+      "self_ms": 108.0,
+      "share": 0.0065
+    },
+    {
+      "function": "wasm-function[19194] @096bb00e",
+      "self_ms": 105.7,
+      "share": 0.0064
+    },
+    {
+      "function": "wasm-function[11474] @096bb00e",
+      "self_ms": 105.0,
+      "share": 0.0064
+    },
+    {
+      "function": "wasm-function[408] @096bb00e",
+      "self_ms": 100.8,
+      "share": 0.0061
+    },
+    {
+      "function": "send @index.js",
+      "self_ms": 92.4,
+      "share": 0.0056
+    },
+    {
+      "function": "wasm-function[337] @096bb00e",
+      "self_ms": 81.8,
+      "share": 0.005
+    },
+    {
+      "function": "wasm-function[340] @096bb00e",
+      "self_ms": 79.3,
+      "share": 0.0048
+    },
+    {
+      "function": "wasm-function[9335] @096bb00e",
+      "self_ms": 78.0,
+      "share": 0.0047
+    },
+    {
+      "function": "vertexAttribIPointer",
+      "self_ms": 76.8,
+      "share": 0.0047
+    },
+    {
+      "function": "wasm-function[67307] @096bb00e",
+      "self_ms": 73.5,
+      "share": 0.0045
+    },
+    {
+      "function": "wasm-function[799] @096bb00e",
+      "self_ms": 71.8,
+      "share": 0.0043
+    },
+    {
+      "function": "wasm-function[65926] @096bb00e",
+      "self_ms": 67.9,
+      "share": 0.0041
+    },
+    {
+      "function": "(garbage collector)",
+      "self_ms": 67.7,
+      "share": 0.0041
+    },
+    {
+      "function": "postMessage",
+      "self_ms": 65.8,
+      "share": 0.004
+    },
+    {
+      "function": "wasm-function[963] @096bb00e",
+      "self_ms": 64.8,
+      "share": 0.0039
+    },
+    {
+      "function": "wasm-function[11473] @096bb00e",
+      "self_ms": 63.6,
+      "share": 0.0039
+    },
+    {
+      "function": "_emscripten_glVertexAttribDivisor @index.js",
+      "self_ms": 63.1,
+      "share": 0.0038
+    }
+  ]
+}

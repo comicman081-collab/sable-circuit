@@ -1,0 +1,167 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_R01/attempt03/S10_R01_GAME.png",
+  "luma": 0.19966340065002441,
+  "p10": 0.1677764654159546,
+  "p90": 0.2320980429649353,
+  "saturation": 0.04760959175525673,
+  "hue": 138.15120661162507,
+  "axis": 24.024208943905453,
+  "problems": [],
+  "plate": "S10_R01",
+  "attempt": 3,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      157,
+      486
+    ],
+    [
+      829,
+      225
+    ],
+    [
+      1134,
+      343
+    ],
+    [
+      1322,
+      249
+    ],
+    [
+      1366,
+      272
+    ],
+    [
+      1366,
+      422
+    ],
+    [
+      1530,
+      486
+    ],
+    [
+      834,
+      818
+    ]
+  ],
+  "doors_px": {
+    "NE": [
+      1250,
+      384,
+      244
+    ]
+  },
+  "raw_sha256": "b71b0135f06423c7da3202108e1ba442c6ce68c2526ee9ceb20277dda11f082d",
+  "master_sha256": "b71b0135f06423c7da3202108e1ba442c6ce68c2526ee9ceb20277dda11f082d",
+  "game_sha256": "e567a57d15a61df6f042a51c79ee4222f8bd807945bb2599e428b01e3d2569eb",
+  "game_exposure_factor_srgb": 0.7388,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-d9fb59b7-186c-43da-9c5a-579d33ef0afe.png",
+  "inspection": "1672×941 정상. NW 긴 밀폐 해치 프레임은 바뀌었지만 NE 벽의 문 양옆 베이·보강기둥과 중앙 코너 기둥은 같은 자리 S3_R01의 구조를 반복함. 에이프런 바깥 끝은 그림에서 대각선 짧은 변과 문기둥 안쪽 세로 경계를 함께 갖는다. 추적은 실제 보이는 바닥을 따름.",
+  "floor_area_px2": 428114.0,
+  "floor_area_fraction": 0.27210312759001165,
+  "floor_bounds_px": [
+    157,
+    225,
+    1530,
+    818
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1672,
+      941
+    ],
+    "actual_size": [
+      1672,
+      941
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "NE": [
+        [
+          1134,
+          343
+        ],
+        [
+          1322,
+          249
+        ],
+        [
+          1366,
+          272
+        ],
+        [
+          1366,
+          422
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      157,
+      225,
+      1530,
+      818
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.09389952153110048,
+      0.23910733262486716,
+      0.08492822966507177,
+      0.13071200850159406
+    ],
+    "whole_floor_bounds_px": [
+      157,
+      225,
+      1530,
+      818
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.09389952153110048,
+      0.23910733262486716,
+      0.08492822966507177,
+      0.13071200850159406
+    ],
+    "main_floor_area_px2": 406995
+  },
+  "apron_stats": {
+    "NE": {
+      "luma": 0.22735720872879028,
+      "saturation": 0.038085024743159765,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  },
+  "status": "REJECTED",
+  "reason": "NW의 긴 밀폐 해치 프레임은 바뀌었으나 NE 벽의 반복 베이·보강기둥과 중앙 코너 기둥의 구조 및 배치가 S3_R01에 남았다. 문 위치/문 규격의 공유 자체를 거절 사유로 삼지 않음: 벽의 리브·베이 실루엣 반복이 사유. 동일 골조에서 원형 설비만 평판으로 바꾼 결과이므로 4.7절 새 벽 구조 기준 FAIL. 수치 검사(크기·축·밝기·채도·여백)는 PASS. 3/3회로 HOLD, 추가 생성 없음.",
+  "raw": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt03/S10_R01_RAW_NATIVE.png",
+  "master": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt03/S10_R01_MASTER.png",
+  "game": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt03/S10_R01_GAME.png",
+  "manual_checks": {
+    "door_sides": [
+      "NE"
+    ],
+    "closed_sides": [
+      "NW",
+      "SW",
+      "SE"
+    ],
+    "central_floor_uncluttered": true,
+    "wall_identity": "FAIL / S3_R01 NE repeated bay and support silhouette",
+    "evidence_class": "authored candidate review, not gameplay",
+    "measurement_method": "manual tracing of visible painted floor; no standard contour substitution",
+    "registration_status": "NOT_REGISTERED: quarantine-only",
+    "alignment": "NOT_RUN: no accepted room/connector pair; 15-plate integration not started"
+  },
+  "problems_manual": [
+    "NW의 긴 밀폐 해치 프레임은 바뀌었으나 NE 벽의 반복 베이·보강기둥과 중앙 코너 기둥의 구조 및 배치가 S3_R01에 남았다. 문 위치/문 규격의 공유 자체를 거절 사유로 삼지 않음: 벽의 리브·베이 실루엣 반복이 사유. 동일 골조에서 원형 설비만 평판으로 바꾼 결과이므로 4.7절 새 벽 구조 기준 FAIL. 수치 검사(크기·축·밝기·채도·여백)는 PASS. 3/3회로 HOLD, 추가 생성 없음."
+  ]
+}

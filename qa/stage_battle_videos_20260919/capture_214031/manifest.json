@@ -1,0 +1,71 @@
+{
+  "status": "PASS_TECHNICAL_NATIVE_STAGE_COMBAT_CAPTURE",
+  "recorded_utc": "2026-09-19T12:41:57.995887+00:00",
+  "scope": "Controlled app input and real Stage 01 combat. Silent capture; not a human playtest or performance benchmark.",
+  "clips": [
+    {
+      "stage": "stage1_bulwark",
+      "mission_id": "MIS_CH01_01",
+      "expected_enemy": "ENM_SITE7_BULWARK_01",
+      "seen_enemy_ids": [
+        "ENM_SITE7_BULWARK_01",
+        "ENM_SITE7_DRONE_01"
+      ],
+      "frames": 600,
+      "fps": 60,
+      "duration_seconds": 10.0,
+      "native_resolution": [
+        1920,
+        1080
+      ],
+      "audio": false,
+      "video": "qa/stage_battle_videos_20260919/capture_214031/stage1_bulwark/stage1_bulwark_10s_1080p.mp4",
+      "video_sha256": "c5576bc1c974cae8390b21140e23813f6e864343770b2e3e91bfd39a8b98a7e5",
+      "capture_sha256": "8025c40332c4f43e82b6fcef050fbda366fd006ac1df36a376f0f7ac90571ad7"
+    },
+    {
+      "stage": "stage2_cinder",
+      "mission_id": "MIS_CH01_02",
+      "expected_enemy": "ENM_SITE7_RAM_01",
+      "seen_enemy_ids": [
+        "ENM_SITE7_BULWARK_01",
+        "ENM_SITE7_DRONE_01",
+        "ENM_SITE7_RAM_01"
+      ],
+      "frames": 600,
+      "fps": 60,
+      "duration_seconds": 10.0,
+      "native_resolution": [
+        1920,
+        1080
+      ],
+      "audio": false,
+      "video": "qa/stage_battle_videos_20260919/capture_214031/stage2_cinder/stage2_cinder_10s_1080p.mp4",
+      "video_sha256": "e85d7157038c770f665b56ff47fc7311a38ca635a30e442f83af72a0b7634558",
+      "capture_sha256": "06662b759b230cd56f5e911320f9f20ba6a274da40ef7d0e00a01ce5f4062488"
+    },
+    {
+      "stage": "stage3_vesper",
+      "mission_id": "MIS_CH01_03",
+      "expected_enemy": "ENM_SITE7_MORTAR_01",
+      "seen_enemy_ids": [
+        "ENM_SITE7_BULWARK_01",
+        "ENM_SITE7_MORTAR_01",
+        "ENM_SITE7_RAM_01"
+      ],
+      "frames": 600,
+      "fps": 60,
+      "duration_seconds": 10.0,
+      "native_resolution": [
+        1920,
+        1080
+      ],
+      "audio": false,
+      "video": "qa/stage_battle_videos_20260919/capture_214031/stage3_vesper/stage3_vesper_10s_1080p.mp4",
+      "video_sha256": "4f23835d8ff3b952e58e91f00f9d7bd86aa8570ae3b3e521b559e098526c45a2",
+      "capture_sha256": "740eb04fb9d7467df51d3def66650973f3ee10ace3cc867fce1c2f34e8b41477"
+    }
+  ],
+  "capture_script_sha256": "3e5d12fccf91e53466bf23dfc923c65400c2f83a3ee4a326bbacb93744b899f6",
+  "recorder_sha256": "733641e840c3daf97043a7880aacf745d1507bd060575fd5b51f17a62a2069cd"
+}

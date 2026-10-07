@@ -1,0 +1,232 @@
+{
+  "checks": 380,
+  "cycles": [
+    {
+      "enemy_damage": 24.0,
+      "enemy_events": 1,
+      "first_delay_s": 2.4,
+      "hazard": "ARC_VENT",
+      "operator_damage": 14.0,
+      "operator_events": 1,
+      "warning_s": 1.1
+    },
+    {
+      "enemy_damage": 0.0,
+      "enemy_events": 0,
+      "first_delay_s": 2.4,
+      "hazard": "SPORE_CLOUD",
+      "operator_damage": 0.0,
+      "operator_events": 0,
+      "warning_s": 1.2
+    },
+    {
+      "enemy_damage": 24.0,
+      "enemy_events": 1,
+      "first_delay_s": 2.4,
+      "hazard": "RAIL_LANE",
+      "operator_damage": 14.0,
+      "operator_events": 1,
+      "warning_s": 1.4
+    },
+    {
+      "actual_damage": 8.0,
+      "elapsed_ms": 0,
+      "hazard": "SPORE_CLOUD",
+      "min_flinch_interval_ms": 90,
+      "rapid_ticks": 120,
+      "spore_flinch_effects": 1
+    }
+  ],
+  "escape_margin_s": 0.25,
+  "failures": [
+    "SPORE_CLOUD deals exactly 4/8 HP over one second",
+    "SPORE_CLOUD hits real operator and robot with exactly its complete discharge",
+    "SPORE_CLOUD attributes all operator damage",
+    "SPORE_CLOUD attributes all robot damage",
+    "SPORE_CLOUD source events report actual health lost"
+  ],
+  "grid_px": 25.0,
+  "rooms": [
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_03 R02_DEFENSE",
+      "standable_spots": 15,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_04 R02_GATE",
+      "standable_spots": 15,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_04 R04_LINE",
+      "standable_spots": 30,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_05 R02_DEFENSE",
+      "standable_spots": 26,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_05 R04_ARRAY",
+      "standable_spots": 30,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_06 R02_GALLERY",
+      "standable_spots": 26,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_06 R04_PUMPS",
+      "standable_spots": 30,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_07 R02_FREEZE",
+      "standable_spots": 30,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_07 R04_COMPRESSORS",
+      "standable_spots": 22,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_08 R02_MARSHALLING",
+      "standable_spots": 25,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_08 R04_JUNCTION",
+      "standable_spots": 30,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_09 R02_NAVE",
+      "standable_spots": 29,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_09 R04_GALLERY",
+      "standable_spots": 24,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_10 R02_RELAY",
+      "standable_spots": 30,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    },
+    {
+      "failed_spots": 0,
+      "failing_examples": [],
+      "hazards": [
+        "ARC_VENT",
+        "ARC_VENT"
+      ],
+      "room": "MIS_CH01_10 R04_GALLERY",
+      "standable_spots": 18,
+      "tightest_margin_s": 0.810144927536232,
+      "worst_walk_px": 40.0
+    }
+  ],
+  "slowest_walk_px_per_s": 138.0,
+  "status": "FAIL",
+  "visual_approval": false
+}

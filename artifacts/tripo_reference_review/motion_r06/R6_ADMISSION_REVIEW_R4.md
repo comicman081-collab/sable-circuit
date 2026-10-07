@@ -1,0 +1,13 @@
+# R6 one-frame admission — final current-gate delta review
+
+Reviewer `/root/tripo_intake_review`, Ponytail FULL. **PASS** for exact admission subject `2134ba698e4e0640e1250789d2617042f9199d24f65b80df6375f016d5c714c3` only.
+
+I independently reran the actual current CLI frame audit on the unchanged admission manifest; there are no errors and its recomputed subject equals the value above. The preserved raw, 82-pixel mask, corrected RGBA and historical archive are unchanged from the detailed R2 review under `motion_r05`. All twelve original-frame/admission check judgments therefore remain applicable to these exact pixels and evidence, with the current code delta inspected again.
+
+The current gate now supports a separate phase-aware newly generated frame schema. R6 retains its explicit existing-frame admission and original single-attempt history; it does not borrow a new permit or the new frame schema. The mixed-schema defect identified during review is corrected: an admission with `frame_validation_contract` is explicitly rejected, and the seal's dispatch order preserves all five extra admission checks. The unchanged actual R6 manifest contains no such mixed field. Recursive verify/sequence callers still recompute the exact admission seal. Current consumed verifier/helper/contract hashes and the historical archive remain bound.
+
+Executed current verification includes 13 admission tests, 5 phase-aware tests, 11 frozen-frame tests and 5 contact tests, all passing. The implementation delta and logs are in this same directory. The original raw RGB and corrected RGBA hashes were checked again; only the prior exact 82 opaque knee inset pixels differ from the retained bad derivative. Current code changes do not change the face, costume, two back devices, anatomical LEFT support/RIGHT plated trailing leg, hands/rifle/muzzle, or clean matte judgments directly inspected in the previous review.
+
+All seven frame checks and all five admission checks are PASS for this exact one-frame subject. The detailed check basis remains `motion_r05/PONYTAIL_FULL_REVIEW_R2.md`, with current implementation details in `PHASE_VALIDATOR_IMPLEMENTATION_REVIEW.md`. Their hashes are bound as supporting evidence in the accompanying new review JSON.
+
+This does not approve the user-rejected static HTML package, a complete animation, other directions, firing, runtime or production pointers. The user's rejection of a static presentation is preserved separately and is not reinterpreted as approval of animation or as a rejection of unrelated source pixels. R6 is one reviewed source frame only. No production code, source, derivative, mask, manifest or prior review was modified by this reviewer.

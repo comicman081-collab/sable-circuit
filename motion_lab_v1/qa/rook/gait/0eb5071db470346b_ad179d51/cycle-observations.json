@@ -1,0 +1,320 @@
+{
+  "kind": "sable-cycle-observation",
+  "character": "rook",
+  "direction": "S",
+  "action": "walk",
+  "inputs": {
+    "character": "rook",
+    "direction": "S",
+    "action": "walk",
+    "recipe": {
+      "path": "characters/rook.json",
+      "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+    },
+    "identity": {
+      "path": "art/rook/identity_reference.png",
+      "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+    },
+    "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+    "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+    "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+    "sources": [
+      {
+        "slot": "S/walk/0",
+        "path": "art/rook/S_walk_0_master.png",
+        "sha256": "9cc6a0e82949400e1327fadc549a644448e5371ed8e2c7648c9d780627525c12"
+      },
+      {
+        "slot": "S/walk/1",
+        "path": "art/rook/S_walk_1_master.png",
+        "sha256": "d2a10f9ee5b139a9b12606914ebc93f807479564b52b935b5e84bf36ab85481b"
+      },
+      {
+        "slot": "S/walk/2",
+        "path": "art/rook/S_walk_2_master.png",
+        "sha256": "c93b5bc72d2aea18fc29a19175529aaadc426ae593125a43f5bb393736442286"
+      },
+      {
+        "slot": "S/walk/3",
+        "path": "art/rook/S_walk_3_master.png",
+        "sha256": "6a5b1a89ddf49e1c2103c89d9e4c65b7b10a266c3486d42a8d8f228afdf08830"
+      },
+      {
+        "slot": "S/walk/4",
+        "path": "art/rook/S_walk_4_master.png",
+        "sha256": "a9501979e2df93cbe99cfc0edad0b577ba15c2990dce4e8b48d9f7f0befa411f"
+      },
+      {
+        "slot": "S/walk/5",
+        "path": "art/rook/S_walk_5_master.png",
+        "sha256": "054aff582114b85969fc0312d5ad1e14a665f9ebc4888f165faea1a58b42d87e"
+      }
+    ]
+  },
+  "preview": {
+    "path": "qa/rook/gait/0eb5071db470346b_ad179d51/cycle-preview.json",
+    "sha256": "7c200ec64fdbb9688fa45a81c883f770888b87c1215aaa5e89fb87db952123c4"
+  },
+  "decision": "approved",
+  "reviewer": "Astra — native source trace, browser 1x playback and 35 sequential native video samples",
+  "legMarkers": {
+    "left": "Front camera: clean anatomical LEFT thigh on screen right; trace plain trouser to corresponding knee and boot.",
+    "right": "Front camera: anatomical RIGHT thigh on screen left carries the paired gold-ended cylinders in all six sources."
+  },
+  "frames": [
+    {
+      "index": 0,
+      "phase": "left_contact",
+      "support": "double",
+      "landmarks": {
+        "leftHip": [
+          426,
+          369.6
+        ],
+        "leftKnee": [
+          418.8,
+          476.4
+        ],
+        "leftSole": [
+          405.6,
+          708
+        ],
+        "rightHip": [
+          351.6,
+          362.4
+        ],
+        "rightKnee": [
+          351.6,
+          490.8
+        ],
+        "rightSole": [
+          350.4,
+          612
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "phase": "right_swing",
+      "support": "left",
+      "landmarks": {
+        "leftHip": [
+          416.4,
+          358.8
+        ],
+        "leftKnee": [
+          418.8,
+          487.2
+        ],
+        "leftSole": [
+          412.8,
+          708
+        ],
+        "rightHip": [
+          364.8,
+          357.6
+        ],
+        "rightKnee": [
+          368.4,
+          452.4
+        ],
+        "rightSole": [
+          346.8,
+          526.8
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "phase": "right_passing",
+      "support": "left",
+      "landmarks": {
+        "leftHip": [
+          421.2,
+          374.4
+        ],
+        "leftKnee": [
+          420,
+          496.8
+        ],
+        "leftSole": [
+          402,
+          708
+        ],
+        "rightHip": [
+          366,
+          368.4
+        ],
+        "rightKnee": [
+          362.4,
+          487.2
+        ],
+        "rightSole": [
+          352.8,
+          638.4
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "phase": "right_contact",
+      "support": "double",
+      "landmarks": {
+        "leftHip": [
+          418.8,
+          370.8
+        ],
+        "leftKnee": [
+          417.6,
+          483.6
+        ],
+        "leftSole": [
+          414,
+          607.2
+        ],
+        "rightHip": [
+          358.8,
+          373.2
+        ],
+        "rightKnee": [
+          356.4,
+          487.2
+        ],
+        "rightSole": [
+          348,
+          708
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "phase": "left_swing",
+      "support": "right",
+      "landmarks": {
+        "leftHip": [
+          424.8,
+          384
+        ],
+        "leftKnee": [
+          415.2,
+          492
+        ],
+        "leftSole": [
+          409.2,
+          564
+        ],
+        "rightHip": [
+          367.2,
+          381.6
+        ],
+        "rightKnee": [
+          368.4,
+          486
+        ],
+        "rightSole": [
+          362.4,
+          708
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "phase": "left_passing",
+      "support": "right",
+      "landmarks": {
+        "leftHip": [
+          422.4,
+          373.2
+        ],
+        "leftKnee": [
+          421.2,
+          490.8
+        ],
+        "leftSole": [
+          415.2,
+          640.8
+        ],
+        "rightHip": [
+          366,
+          376.8
+        ],
+        "rightKnee": [
+          364.8,
+          493.2
+        ],
+        "rightSole": [
+          370.8,
+          708
+        ]
+      }
+    }
+  ],
+  "observations": {
+    "oppositeContacts": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.68,
+        1.28,
+        1.88
+      ],
+      "notes": "Clean left boot advances toward viewer in contact0; cylinder-marked right boot advances in contact3. Traced through each thigh/knee, not a duplicated lead-foot silhouette."
+    },
+    "passingAndSwing": {
+      "decision": "pass",
+      "seconds": [
+        0.28,
+        0.48,
+        0.88,
+        1.08
+      ],
+      "notes": "Right rear-swing boot rises behind the knee in frame1, then passes lower beside the opposite shin in frame2. Frame4/5 repeat this on the clean left leg; not two front kicks."
+    },
+    "loopSeam": {
+      "decision": "pass",
+      "seconds": [
+        1.08,
+        1.28,
+        2.28,
+        2.48
+      ],
+      "notes": "Left passing flows into left forward contact when the six-frame sequence wraps. No repeated wrong support foot at wrap; illustrated frame stepping remains visible."
+    },
+    "footSliding": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.28,
+        0.48,
+        0.68
+      ],
+      "notes": "Foot depth and support role change through stance against vertically moving ground. The prior locked-leg skating pattern is absent. Six authored holds still have within-frame grid drift; not continuous IK contact."
+    },
+    "bodyContinuity": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.28,
+        0.48,
+        0.88,
+        1.08
+      ],
+      "notes": "Full-body silhouettes stay connected without a waist seam or bent-raster limbs. Rear-swing frames1/4 are slightly narrower and knee plate details vary; accepted as limited six-frame illustrated MVP variation at 270px, not identical mesh continuity."
+    },
+    "weaponContinuity": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.48,
+        0.68,
+        1.08
+      ],
+      "notes": "Foreshortened two-barrel gun remains raised with both hands in every frame. Explicit per-source muzzle now lies on upper visible barrel rather than the former chest heuristic."
+    }
+  },
+  "annotationMethod": {
+    "coordinates": "Manually traced compiled sheet displayed at 1920x1280; local displayed coordinates multiplied by 1.2 to native 768px cells.",
+    "videoSamples": "qa/rook/astra_repair_20260913/S_final_cycle_samples/samples.json",
+    "scope": "Source-cycle MVP review only; actual runtime approval still required."
+  }
+}

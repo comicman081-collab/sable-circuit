@@ -1,0 +1,273 @@
+{
+  "controlled_phase_fixture": true,
+  "failures": [],
+  "native_capture": true,
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "rows": [
+    {
+      "capture": "captures/mission9_boss_room.png",
+      "emitter_screen": "(740.124, 199.1404)",
+      "enemy_id": "BOSS_SITE7_ARCHIVE_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 276.0,
+        "emitter_px": "(701.0, 86.0)",
+        "emitter_visible": true,
+        "emitter_world": "(-8815.66, 4384.626)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1402.0, 1122.0)",
+        "texture_sha256": "bae31e3cdbd5a3616eefa465c8dcc58548be906ec9f7e9cc4a559c8dc1866c8a",
+        "view_count": 1,
+        "visible_rect": "[P: (200.0, 64.0), S: (1003.0, 999.0)]"
+      },
+      "texture_sha256": "490247f80ecac9c05549dcd09850008e14f414b2116fd5db118c60dbfbfe5e50"
+    },
+    {
+      "capture": "captures/mission9_phase1a_warning.png",
+      "emitter_screen": "(325.7871, 249.1858)",
+      "enemy_id": "BOSS_SITE7_ARCHIVE_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 276.0,
+        "emitter_px": "(701.0, 86.0)",
+        "emitter_visible": true,
+        "emitter_world": "(-8815.66, 4384.626)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1402.0, 1122.0)",
+        "texture_sha256": "bae31e3cdbd5a3616eefa465c8dcc58548be906ec9f7e9cc4a559c8dc1866c8a",
+        "view_count": 1,
+        "visible_rect": "[P: (200.0, 64.0), S: (1003.0, 999.0)]"
+      },
+      "texture_sha256": "490247f80ecac9c05549dcd09850008e14f414b2116fd5db118c60dbfbfe5e50"
+    },
+    {
+      "attack": "A",
+      "boss": "BOSS_SITE7_ARCHIVE_01",
+      "boss_to_target_px": 654.7,
+      "host_mission": "MIS_CH01_09",
+      "kinds": [
+        "circle"
+      ],
+      "phase": 1,
+      "safe_floor_gap": true,
+      "shots": 1,
+      "test_bed": false,
+      "warnings": 1
+    },
+    {
+      "capture": "captures/mission9_phase1b_warning.png",
+      "emitter_screen": "(409.2246, 249.1858)",
+      "enemy_id": "BOSS_SITE7_ARCHIVE_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 276.0,
+        "emitter_px": "(701.0, 86.0)",
+        "emitter_visible": true,
+        "emitter_world": "(-8815.66, 4384.626)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1402.0, 1122.0)",
+        "texture_sha256": "bae31e3cdbd5a3616eefa465c8dcc58548be906ec9f7e9cc4a559c8dc1866c8a",
+        "view_count": 1,
+        "visible_rect": "[P: (200.0, 64.0), S: (1003.0, 999.0)]"
+      },
+      "texture_sha256": "490247f80ecac9c05549dcd09850008e14f414b2116fd5db118c60dbfbfe5e50"
+    },
+    {
+      "attack": "B",
+      "boss": "BOSS_SITE7_ARCHIVE_01",
+      "boss_to_target_px": 510.6,
+      "host_mission": "MIS_CH01_09",
+      "kinds": [
+        "circle",
+        "circle"
+      ],
+      "phase": 1,
+      "safe_floor_gap": true,
+      "shots": 0,
+      "test_bed": false,
+      "warnings": 2
+    },
+    {
+      "capture": "captures/mission9_phase2a_warning.png",
+      "emitter_screen": "(325.7871, 249.1858)",
+      "enemy_id": "BOSS_SITE7_ARCHIVE_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 276.0,
+        "emitter_px": "(701.0, 86.0)",
+        "emitter_visible": true,
+        "emitter_world": "(-8815.66, 4384.626)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1402.0, 1122.0)",
+        "texture_sha256": "bae31e3cdbd5a3616eefa465c8dcc58548be906ec9f7e9cc4a559c8dc1866c8a",
+        "view_count": 1,
+        "visible_rect": "[P: (200.0, 64.0), S: (1003.0, 999.0)]"
+      },
+      "texture_sha256": "490247f80ecac9c05549dcd09850008e14f414b2116fd5db118c60dbfbfe5e50"
+    },
+    {
+      "attack": "A",
+      "boss": "BOSS_SITE7_ARCHIVE_01",
+      "boss_to_target_px": 654.7,
+      "host_mission": "MIS_CH01_09",
+      "kinds": [
+        "circle",
+        "circle",
+        "circle"
+      ],
+      "phase": 2,
+      "safe_floor_gap": true,
+      "shots": 0,
+      "test_bed": false,
+      "warnings": 3
+    },
+    {
+      "capture": "captures/mission9_phase2b_warning.png",
+      "emitter_screen": "(409.2246, 249.1858)",
+      "enemy_id": "BOSS_SITE7_ARCHIVE_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 276.0,
+        "emitter_px": "(701.0, 86.0)",
+        "emitter_visible": true,
+        "emitter_world": "(-8815.66, 4384.626)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1402.0, 1122.0)",
+        "texture_sha256": "bae31e3cdbd5a3616eefa465c8dcc58548be906ec9f7e9cc4a559c8dc1866c8a",
+        "view_count": 1,
+        "visible_rect": "[P: (200.0, 64.0), S: (1003.0, 999.0)]"
+      },
+      "texture_sha256": "490247f80ecac9c05549dcd09850008e14f414b2116fd5db118c60dbfbfe5e50"
+    },
+    {
+      "attack": "B",
+      "boss": "BOSS_SITE7_ARCHIVE_01",
+      "boss_to_target_px": 510.6,
+      "host_mission": "MIS_CH01_09",
+      "kinds": [
+        "circle",
+        "circle",
+        "circle"
+      ],
+      "phase": 2,
+      "safe_floor_gap": true,
+      "shots": 0,
+      "test_bed": false,
+      "warnings": 3
+    },
+    {
+      "capture": "captures/mission9_phase3a_warning.png",
+      "emitter_screen": "(325.7871, 249.1858)",
+      "enemy_id": "BOSS_SITE7_ARCHIVE_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 276.0,
+        "emitter_px": "(701.0, 86.0)",
+        "emitter_visible": true,
+        "emitter_world": "(-8815.66, 4384.626)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1402.0, 1122.0)",
+        "texture_sha256": "bae31e3cdbd5a3616eefa465c8dcc58548be906ec9f7e9cc4a559c8dc1866c8a",
+        "view_count": 1,
+        "visible_rect": "[P: (200.0, 64.0), S: (1003.0, 999.0)]"
+      },
+      "texture_sha256": "490247f80ecac9c05549dcd09850008e14f414b2116fd5db118c60dbfbfe5e50"
+    },
+    {
+      "attack": "A",
+      "boss": "BOSS_SITE7_ARCHIVE_01",
+      "boss_to_target_px": 654.7,
+      "host_mission": "MIS_CH01_09",
+      "kinds": [
+        "circle",
+        "circle",
+        "circle",
+        "circle"
+      ],
+      "phase": 3,
+      "safe_floor_gap": true,
+      "shots": 0,
+      "test_bed": false,
+      "warnings": 4
+    },
+    {
+      "capture": "captures/mission9_phase3b_warning.png",
+      "emitter_screen": "(409.2246, 249.1858)",
+      "enemy_id": "BOSS_SITE7_ARCHIVE_01",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 276.0,
+        "emitter_px": "(701.0, 86.0)",
+        "emitter_visible": true,
+        "emitter_world": "(-8815.66, 4384.626)",
+        "facing": "ANCHORED",
+        "gait_claim": false,
+        "heading_world": "(0.0, 0.0)",
+        "kind": "anchored_machine",
+        "mirrored": false,
+        "native_size": "(1402.0, 1122.0)",
+        "texture_sha256": "bae31e3cdbd5a3616eefa465c8dcc58548be906ec9f7e9cc4a559c8dc1866c8a",
+        "view_count": 1,
+        "visible_rect": "[P: (200.0, 64.0), S: (1003.0, 999.0)]"
+      },
+      "texture_sha256": "490247f80ecac9c05549dcd09850008e14f414b2116fd5db118c60dbfbfe5e50"
+    },
+    {
+      "attack": "B",
+      "boss": "BOSS_SITE7_ARCHIVE_01",
+      "boss_to_target_px": 510.6,
+      "host_mission": "MIS_CH01_09",
+      "kinds": [
+        "circle",
+        "circle",
+        "circle",
+        "circle",
+        "lane"
+      ],
+      "phase": 3,
+      "safe_floor_gap": true,
+      "shots": 0,
+      "test_bed": false,
+      "warnings": 5
+    }
+  ],
+  "status": "PASS_TECHNICAL_ONLY",
+  "test_bed_note": "Operation 10 has no plates: its boss is staged in the mission 3 boss hall. Not its own room. Operations 1-9 are captured in their own boss rooms.",
+  "visual_approval": false,
+  "rows_omitted": 87,
+  "scope_note": "Trimmed to operation 9. The same run also shot the own-room frames of operations 1-8 and the test-bed frame of operation 10 (not kept here; see qa/site7_ops_6_10_boss_integration_20260929/, qa/site7_op6_enable_20260929/, qa/site7_op7_enable_20260930/ and qa/site7_op8_enable_20260930/)."
+}

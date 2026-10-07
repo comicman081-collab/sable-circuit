@@ -1,0 +1,13 @@
+{
+  "decision": "repair",
+  "status": "FAIL_NOT_PROMOTABLE",
+  "scope": "source-art",
+  "reviewer": "Codex visual inspection",
+  "observed": [
+    "The returned PNG is RGBA 1536x1024 and passed the numeric alpha range check, but the render visibly retains a dark atmospheric backdrop around both figures.",
+    "The two figures are near-duplicate firing stances rather than a distinct left-contact and right-contact walk pair.",
+    "The candidate also drifts from MICA's approved appearance, including a different coat silhouette and bright white shoulder treatment."
+  ],
+  "requiredReplacement": "Do not promote this pair. A future source request must use two visibly different contact poses, an unambiguous planted sole for each named phase, native transparent isolation with no backdrop, and the approved MICA appearance reference.",
+  "sourceSHA256": "07f70b314825917f2c5540387f54c32ca0d7bc25ef9b55b21cdd31c2031dad65"
+}

@@ -1,0 +1,38 @@
+{
+  "bulwark": {
+    "id":"ENM_SITE7_BULWARK_01", "name":"BULWARK / SHIELD CRAWLER", "kind":"tracked_machine", "native_scale":0.098,
+    "projectile":"PRJ_ENM_SHIELD_01", "palette":["#b69c62","#262a2d","#f4b350"],
+    "design":"Low sand-yellow front blast shield, two tracks and rear radiator; no limbs",
+    "views": {
+      "E":{"file":"bulwark_E_v2","emitter":[1474,426]},
+      "SE":{"file":"bulwark_SE_v1","emitter":[1353,523]},
+      "S":{"file":"bulwark_S_v1","emitter":[768,603]},
+      "SW":{"file":"bulwark_SW_v1","emitter":[217,530]},
+      "W":{"file":"bulwark_W_v2","emitter":[62,443]},
+      "NW":{"file":"bulwark_NW_v1","emitter":[174,210]},
+      "N":{"file":"bulwark_N_v1","emitter":[768,80],"visible":false},
+      "NE":{"file":"bulwark_NE_v1","emitter":[1366,224]}
+    }
+  },
+  "ram": {
+    "id":"ENM_SITE7_RAM_01", "name":"CINDER / IMPACT ROBOT", "kind":"hover_machine", "native_scale":0.09,
+    "projectile":"PRJ_ENM_ABERRANT_01", "palette":["#b35b37","#272b2f","#ee9d40"],
+    "design":"Copper wedge, two integrated repulsors, one rear turbine; collision nose, not gun",
+    "views": {
+      "E":{"file":"ram_E_v2","emitter":[1455,605]},
+      "SE":{"file":"ram_SE_v1","emitter":[1365,744]},
+      "S":{"file":"ram_S_v1","emitter":[770,817]},
+      "SW":{"file":"ram_SW_v1","emitter":[157,675]},
+      "W":{"file":"ram_W_v2","emitter":[80,605]},
+      "NW":{"file":"ram_NW_v1","emitter":[90,250],"visible":false},
+      "N":{"file":"ram_N_v1","emitter":[768,110],"visible":false},
+      "NE":{"file":"ram_NE_v1","emitter":[1455,322]}
+    }
+  },
+  "mortar": {
+    "id":"ENM_SITE7_MORTAR_01", "name":"VESPER / SIEGE MORTAR", "kind":"anchored_machine", "native_scale":0.108,
+    "projectile":"PRJ_ENM_MORTAR_01", "palette":["#5b4878","#292f35","#caa7ff"],
+    "design":"Stationary hexagonal foundation, vertical center muzzle and violet capacitors; no yaw or legs",
+    "views":{"ANCHORED":{"file":"mortar_master_v1","emitter":[777,78],"root":[768,880]}}
+  }
+}

@@ -1,0 +1,14 @@
+[base/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[base/contract_ui] exit=0 11s errors=0 scripterr=0  RUN_CONTRACT_UI_SMOKE: PASS (484 checks)
+[base/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[base/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[base/run_contract] exit=0 7s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[base/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/base_p
+applied mission_id_restored: FIX, not a mutant: restore the deleted `last_run_contract["mission_id"] = id` line
+[mission_id_restored/contract_offers] exit=0 3s errors=0 scripterr=0  RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)
+[mission_id_restored/contract_ui] exit=1 11s errors=3 scripterr=0  RUN_CONTRACT_UI_SMOKE: FAIL (484 checks)
+[mission_id_restored/contract_save] exit=0 1s errors=0 scripterr=0  RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)
+[mission_id_restored/redline] exit=0 6s errors=0 scripterr=0  REDLINE_SMOKE: PASS (77 checks)
+[mission_id_restored/run_contract] exit=0 8s errors=0 scripterr=0  M11_RUN_CONTRACT_SMOKE: PASS
+[mission_id_restored/play_log] exit=0 8s errors=1 scripterr=0  PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://.cache/out/mission_id_restored_p
+[mission_id_restored/campaign] exit=0 28s errors=0 scripterr=0  SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://.cache/out/mission_id_restored_c

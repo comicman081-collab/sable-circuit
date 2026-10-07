@@ -1,0 +1,15 @@
+{
+  "head": "7b26a15201c76238e6b06518c9b496dccf1e393d",
+  "build_body_unchanged": true,
+  "build_sha256": "7e7b41b36c730cd666d9074f9622c906e415a61fd55071ec93afbe4096491b7e",
+  "redline_bot_probe": {
+    "source": "tests/smoke/site7_full_operation_smoke.gd",
+    "source_sha256": "60985861bfec359f277768ab4d70ea622e490c179680b8b983edf43324082dfa",
+    "probe_sha256": "8a318cdbf9abe1b208f0a9640820c2a8d6a13bfb29821f3c592a764945410523",
+    "only_change": "Replace the neutral configure argument with REDLINE. Retain every original assertion and all real physics/input/combat. A WIPED result is not a PASS and is a proposal balance measurement; this is not the full suite."
+  },
+  "golden": {
+    "count": 64,
+    "sha256": "93b94e22fa31b4936fdd0aab0914be0ea1d7bb472bb799e0b17f24ac43a6507c"
+  }
+}

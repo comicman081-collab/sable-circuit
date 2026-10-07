@@ -1,0 +1,1177 @@
+{
+  "attacks": [
+    {
+      "actor_id": 130895840892,
+      "attack_serial": 1,
+      "enemy_id": "ENM_SITE7_MORTAR_01",
+      "owner_id": 131399157403,
+      "phase": 2
+    },
+    {
+      "actor_id": 129302005487,
+      "attack_serial": 1,
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "owner_id": 130862286606,
+      "phase": 1
+    },
+    {
+      "actor_id": 129302005487,
+      "attack_serial": 2,
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "owner_id": 130862286606,
+      "phase": 1
+    },
+    {
+      "actor_id": 129302005487,
+      "attack_serial": 3,
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "owner_id": 130862286606,
+      "phase": 3
+    },
+    {
+      "actor_id": 321619232609,
+      "attack_serial": 1,
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "owner_id": 322911078153,
+      "phase": 1
+    },
+    {
+      "actor_id": 324270033592,
+      "attack_serial": 1,
+      "enemy_id": "ENM_SITE7_MORTAR_01",
+      "owner_id": 324739794564,
+      "phase": 2
+    },
+    {
+      "actor_id": 322944632583,
+      "attack_serial": 1,
+      "enemy_id": "ENM_SITE7_RAM_01",
+      "owner_id": 324236478081,
+      "phase": 1
+    },
+    {
+      "actor_id": 321619232609,
+      "attack_serial": 2,
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "owner_id": 322911078153,
+      "phase": 1
+    },
+    {
+      "actor_id": 321619232609,
+      "attack_serial": 3,
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "owner_id": 322911078153,
+      "phase": 1
+    },
+    {
+      "actor_id": 321619232609,
+      "attack_serial": 4,
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "owner_id": 322911078153,
+      "phase": 2
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 1,
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "owner_id": 489726936839,
+      "phase": 1
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 2,
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "owner_id": 489726936839,
+      "phase": 1
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 3,
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "owner_id": 489726936839,
+      "phase": 2
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 4,
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "owner_id": 489726936839,
+      "phase": 3
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 5,
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "owner_id": 489726936839,
+      "phase": 3
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 6,
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "owner_id": 489726936839,
+      "phase": 3
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 7,
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "owner_id": 489726936839,
+      "phase": 3
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 8,
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "owner_id": 489726936839,
+      "phase": 3
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 9,
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "owner_id": 489726936839,
+      "phase": 3
+    }
+  ],
+  "cover_flank_plans": 176,
+  "drive": "test bot -> real actor physics / weapon cooldown / projectile collisions / mission interactions",
+  "emissions": [
+    {
+      "actor_id": 129302005487,
+      "attack_serial": 1,
+      "direction": [
+        -0.927830815315247,
+        -0.373001158237457
+      ],
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "ordinal": 0,
+      "origin": [
+        4148.6494140625,
+        249.984756469727
+      ],
+      "owner_id": 130862286606,
+      "owner_path": "/root/StoryStage01/@CharacterBody2D@109/Tactics",
+      "physics_tick": 730,
+      "projectile_id": 151213050564
+    },
+    {
+      "actor_id": 129302005487,
+      "attack_serial": 2,
+      "direction": [
+        -0.939259767532349,
+        0.343207091093063
+      ],
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "ordinal": 0,
+      "origin": [
+        4092.302734375,
+        264.532836914063
+      ],
+      "owner_id": 130862286606,
+      "owner_path": "/root/StoryStage01/@CharacterBody2D@109/Tactics",
+      "physics_tick": 911,
+      "projectile_id": 168929789822
+    },
+    {
+      "actor_id": 129302005487,
+      "attack_serial": 3,
+      "direction": [
+        -0.775429248809814,
+        -0.631434440612793
+      ],
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "ordinal": 0,
+      "origin": [
+        4057.56005859375,
+        238.19172668457
+      ],
+      "owner_id": 130862286606,
+      "owner_path": "/root/StoryStage01/@CharacterBody2D@109/Tactics",
+      "physics_tick": 1092,
+      "projectile_id": 188559132287
+    },
+    {
+      "actor_id": 321619232609,
+      "attack_serial": 1,
+      "direction": [
+        -0.947278499603271,
+        -0.320411264896393
+      ],
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "ordinal": 0,
+      "origin": [
+        8696.51171875,
+        212.996688842773
+      ],
+      "owner_id": 322911078153,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 3092,
+      "projectile_id": 330863478666
+    },
+    {
+      "actor_id": 321619232609,
+      "attack_serial": 2,
+      "direction": [
+        -0.902687549591064,
+        0.430296570062637
+      ],
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "ordinal": 0,
+      "origin": [
+        8583.2470703125,
+        172.456726074219
+      ],
+      "owner_id": 322911078153,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 3364,
+      "projectile_id": 355643427489
+    },
+    {
+      "actor_id": 321619232609,
+      "attack_serial": 3,
+      "direction": [
+        -0.967459559440613,
+        -0.253025680780411
+      ],
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "ordinal": 0,
+      "origin": [
+        8521.8740234375,
+        160.357788085938
+      ],
+      "owner_id": 322911078153,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 3545,
+      "projectile_id": 372487752379
+    },
+    {
+      "actor_id": 321619232609,
+      "attack_serial": 4,
+      "direction": [
+        -0.997868657112122,
+        0.0652541443705559
+      ],
+      "enemy_id": "ENM_SITE7_BULWARK_01",
+      "ordinal": 0,
+      "origin": [
+        8475.5869140625,
+        156.947540283203
+      ],
+      "owner_id": 322911078153,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 3726,
+      "projectile_id": 391815105226
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 1,
+      "direction": [
+        -0.933280527591705,
+        0.359148293733597
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 0,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5170,
+      "projectile_id": 498283317096
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 1,
+      "direction": [
+        -0.989162921905518,
+        0.146822452545166
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 1,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5170,
+      "projectile_id": 498300094333
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 1,
+      "direction": [
+        -0.997362554073334,
+        -0.0725809931755066
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 2,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5170,
+      "projectile_id": 498316872345
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 2,
+      "direction": [
+        -0.00324529409408569,
+        0.999994695186615
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 0,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5352,
+      "projectile_id": 515765177006
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 2,
+      "direction": [
+        -0.221395537257195,
+        0.975184082984924
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 1,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5352,
+      "projectile_id": 515781953384
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 2,
+      "direction": [
+        -0.428873389959335,
+        0.903364598751068
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 2,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5352,
+      "projectile_id": 515798730385
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 3,
+      "direction": [
+        -0.45271235704422,
+        0.891656637191772
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 0,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5534,
+      "projectile_id": 532978599551
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 3,
+      "direction": [
+        -0.636386752128601,
+        0.77137017250061
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 1,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5534,
+      "projectile_id": 532995377010
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 3,
+      "direction": [
+        -0.789384007453918,
+        0.613899767398834
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 2,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5534,
+      "projectile_id": 533012155081
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 3,
+      "direction": [
+        -0.904328942298889,
+        0.426836252212524
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 3,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5534,
+      "projectile_id": 533028932283
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 3,
+      "direction": [
+        -0.975680649280548,
+        0.219197034835815
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 4,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5534,
+      "projectile_id": 533045709508
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 5,
+      "direction": [
+        0.249572977423668,
+        0.96835595369339
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 0,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5860,
+      "projectile_id": 565190854284
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 5,
+      "direction": [
+        0.0322336554527283,
+        0.999480366706848
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 1,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5860,
+      "projectile_id": 565207632581
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 5,
+      "direction": [
+        -0.1866594851017,
+        0.982424676418304
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 2,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5860,
+      "projectile_id": 565224408702
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 5,
+      "direction": [
+        -0.396554678678513,
+        0.918011069297791
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 3,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5860,
+      "projectile_id": 565241186164
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 5,
+      "direction": [
+        -0.587333917617798,
+        0.809344708919525
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 4,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 5860,
+      "projectile_id": 565257964209
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 7,
+      "direction": [
+        -0.754111707210541,
+        0.65674614906311
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 0,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 6174,
+      "projectile_id": 589937248947
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 7,
+      "direction": [
+        -0.879257202148438,
+        0.476347327232361
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 1,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 6174,
+      "projectile_id": 589954026179
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 7,
+      "direction": [
+        -0.962017953395844,
+        0.272986173629761
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 2,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 6174,
+      "projectile_id": 589970803371
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 7,
+      "direction": [
+        -0.998404502868652,
+        0.0564656853675842
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 3,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 6174,
+      "projectile_id": 589987580588
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 7,
+      "direction": [
+        -0.986662924289703,
+        -0.162776738405228
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 4,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 6174,
+      "projectile_id": 590004356744
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 9,
+      "direction": [
+        -0.758691906929016,
+        0.65144956111908
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 0,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 6488,
+      "projectile_id": 615958710963
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 9,
+      "direction": [
+        -0.882571041584015,
+        0.4701789021492
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 1,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 6488,
+      "projectile_id": 615975487336
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 9,
+      "direction": [
+        -0.963905811309814,
+        0.266243249177933
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 2,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 6488,
+      "projectile_id": 615992264562
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 9,
+      "direction": [
+        -0.99877542257309,
+        0.04947330057621
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 3,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 6488,
+      "projectile_id": 616009042612
+    },
+    {
+      "actor_id": 488317650699,
+      "attack_serial": 9,
+      "direction": [
+        -0.985498905181885,
+        -0.169681504368782
+      ],
+      "enemy_id": "BOSS_SITE7_ANCHOR_01",
+      "ordinal": 4,
+      "origin": [
+        11039.4931640625,
+        407.154357910156
+      ],
+      "owner_id": 489726936839,
+      "owner_path": "/root/StoryStage01/EnemyActor/Tactics",
+      "physics_tick": 6488,
+      "projectile_id": 616025818862
+    }
+  ],
+  "failures": [],
+  "recorded_utc": "2026-09-23T10:27:00",
+  "result": {
+    "active_run_boosts": [],
+    "battle_preview": false,
+    "cargo_before_resolution": {
+      "common_research": 150,
+      "fragments": 2,
+      "intel": {
+        "ABERRANT": 2,
+        "ANCHOR": 1,
+        "SECURITY": 2
+      },
+      "salvage": 4,
+      "unsecured_research": 138
+    },
+    "carrier_fragment": true,
+    "carrier_fragment_secured": true,
+    "chapter_id": "CH01",
+    "early_extraction": false,
+    "elapsed_seconds": 123.143070444418,
+    "evidence_label": "CARRIER TRACE",
+    "extraction_depth": 6,
+    "extraction_room": "",
+    "field_supplies": true,
+    "full_route_cleared": true,
+    "hostiles_defeated": 7,
+    "ledger_recovered": true,
+    "ledger_retained_on_wipe": false,
+    "lost_intel_samples": 0,
+    "lost_unsecured": 0,
+    "mission_id": "MIS_CH01_03",
+    "outcome": "EXTRACTED",
+    "research_multiplier": 1.0,
+    "run_contract": {},
+    "run_fragment_reward_multiplier": 1.0,
+    "run_id": "MIS_CH01_03-TECHNICAL-PLAYTHROUGH",
+    "run_only_boosts_expire_on_return": true,
+    "run_research_reward_multiplier": 1.0,
+    "run_salvage_reward_multiplier": 1.0,
+    "secured_fragments": 2,
+    "secured_intel": {
+      "ABERRANT": 2,
+      "ANCHOR": 1,
+      "SECURITY": 2
+    },
+    "secured_research": 288,
+    "secured_rewards": 288,
+    "secured_salvage": 4,
+    "transaction_id": "MIS_CH01_03-TECHNICAL-PLAYTHROUGH",
+    "wipe_policy": "50% COMMON RESEARCH/SALVAGE RETAINED; HIGH-VALUE RESEARCH + SIGNAL FRAGMENTS + INTEL SAMPLES LOST; RUN-ONLY BOOSTS EXPIRE; STORY LEDGER RETAINED"
+  },
+  "status": "PASS_TECHNICAL_PLAYTHROUGH",
+  "tested_code_sha256": {
+    "res://assets/enemies/recon_drone/authored_yaw8_v1/spec.json": "0c716b309edfa5ecaa29cffef01642e23c855a3527a979a922002a9e8ad6b5ba",
+    "res://assets/enemies/signal_anchor_guardian/authored_core_v1/spec.json": "c3f98d11fc537fd5e7d542e7114296cdc0c12b7f2f4877e71c1bd6fed194b763",
+    "res://assets/environments/site7/karchive_props_v1/spec.json": "785acaf2c1ba077892d565261455d736ef27c2ec15186ab40f277b7cdc05dbee",
+    "res://data/art_profiles/enemy_profiles.json": "95cccae62708d95a585e28a6a70c3d51667f2132edffb49eadc8f8a8c8bc1971",
+    "res://data/missions/MIS_CH01_01.json": "591ce3099eec909eddd81f74d00996a795d0309ef99dc52d75af23aeabba6cc4",
+    "res://data/missions/MIS_CH01_03.json": "4b3ea6ee89813380957f5c10f658980042bf1d5630bc58debdc7366db6963c5a",
+    "res://data/visual/site7_environment_props.json": "a85d4f016be4585b21f8ff2f6ce438411b657518b09fce21a9cf0842c0506f31",
+    "res://scenes/mission/StoryStage01.tscn": "b7a0253953bbe9b7782511a6f5f380a430b707914bdf6df18a19773b758db3f0",
+    "res://scripts/actors/enemy_actor.gd": "c925eccf7fbe9e742f2c777dd3a87b6967e47a7743dbdc952525e7270b7095e3",
+    "res://scripts/actors/operator_actor.gd": "ca84f18076f62bbd5786e22f0af623d1166c0a986af7cfa58e82e453f3be291e",
+    "res://scripts/animation/boss_phase_transition_guard.gd": "ef4da2e861c111dcb15b36df9544acb6b5f4f5dd156a02f4fcd478d0c893215b",
+    "res://scripts/animation/premium_enemy_presentation.gd": "6e857ca973cedfdadfbb7d3d375fe25f7afe37232df9c0251a5bfe2fdfd51528",
+    "res://scripts/animation/site7_machine_sprite.gd": "deefbd7c05b03c0b65fd81ae627df3f46e7d53053ea6ae13d7c32a8e6ac3deec",
+    "res://scripts/combat/cover_navigation.gd": "1c35e1ed0e66b4cbc3354fa62d7a36ba7decf681128c3411f05cadaa234ee0db",
+    "res://scripts/combat/prototype_projectile.gd": "ad50867cd4aa196dfa641566086cd4f3760fdf6e3d7ddc4f126b23267e9d1632",
+    "res://scripts/combat/site7_attack_warning.gd": "fc432c4d36669c4236c43d56ee6f404060d2d2a98e00a5b1268385b222667f4f",
+    "res://scripts/combat/site7_enemy_tactics.gd": "3b60647d1714caede0ab5f5f915231c8c19dba7dd28e57cb8bc9a08a9dcad491",
+    "res://scripts/missions/site7_environment_prop.gd": "26f5fa6fc21bd3ab7bae3f92967d80b7f27594b0f30d8de35262e6e783722f27",
+    "res://scripts/missions/site7_environment_props.gd": "f6651b9fd2ca6ddc8407be482cc6cdf38d141c4ea8e67c1eb6c006c1ff314186",
+    "res://scripts/missions/story_stage_01.gd": "c75e7559e549a14a4c0c798454d7205bb250cbc9165e24fc53d5c81755a304cc",
+    "res://scripts/ui/enemy_overhead_ui.gd": "2556e42a5690e7696124e7af9511d10c04d53d1bc18f9d9fea2136259ec2a66e",
+    "res://tests/smoke/site7_full_operation_smoke.gd": "de7560e53b7c9806885d00e2d73e79184725924715fadaa8cd1c5709aa5b5ccf"
+  },
+  "trace": [
+    {
+      "ammo": 24,
+      "health": [
+        96.0,
+        138.0,
+        112.0
+      ],
+      "hostiles": [],
+      "position": [
+        1680.0,
+        560.0
+      ],
+      "remaining": 0,
+      "step": 0,
+      "tick": 0,
+      "wave": 0
+    },
+    {
+      "ammo": 24,
+      "health": [
+        96.0,
+        138.0,
+        112.0
+      ],
+      "hostiles": [],
+      "position": [
+        1680.0,
+        560.0
+      ],
+      "remaining": 0,
+      "step": 1,
+      "tick": 2,
+      "wave": 0
+    },
+    {
+      "ammo": 12,
+      "health": [
+        96.0,
+        138.0,
+        112.0
+      ],
+      "hostiles": [
+        {
+          "hp": 94.0,
+          "id": "ENM_SITE7_RAM_01",
+          "position": "(4072.284, 277.3121)"
+        },
+        {
+          "hp": 242.0,
+          "id": "ENM_SITE7_BULWARK_01",
+          "position": "(4266.494, 304.56)"
+        },
+        {
+          "hp": 46.0,
+          "id": "ENM_SITE7_MORTAR_01",
+          "position": "(4121.85, 306.2464)"
+        }
+      ],
+      "position": [
+        3840.83154296875,
+        207.634460449219
+      ],
+      "remaining": 3,
+      "step": 1,
+      "tick": 600,
+      "wave": 0
+    },
+    {
+      "ammo": 0,
+      "health": [
+        64.0,
+        122.0,
+        112.0
+      ],
+      "hostiles": [
+        {
+          "hp": 6.4499999999999,
+          "id": "ENM_SITE7_BULWARK_01",
+          "position": "(4086.36, 299.7958)"
+        }
+      ],
+      "position": [
+        3882.01196289063,
+        163.727737426758
+      ],
+      "remaining": 1,
+      "step": 1,
+      "tick": 1200,
+      "wave": 0
+    },
+    {
+      "ammo": 22,
+      "health": [
+        64.0,
+        122.0,
+        112.0
+      ],
+      "hostiles": [],
+      "position": [
+        3845.509765625,
+        191.588165283203
+      ],
+      "remaining": 0,
+      "step": 2,
+      "tick": 1219,
+      "wave": 0
+    },
+    {
+      "ammo": 22,
+      "health": [
+        64.0,
+        122.0,
+        112.0
+      ],
+      "hostiles": [],
+      "position": [
+        6122.87255859375,
+        537.93603515625
+      ],
+      "remaining": 0,
+      "step": 3,
+      "tick": 1772,
+      "wave": 0
+    },
+    {
+      "ammo": 22,
+      "health": [
+        64.0,
+        122.0,
+        112.0
+      ],
+      "hostiles": [],
+      "position": [
+        6131.28076171875,
+        654.299072265625
+      ],
+      "remaining": 0,
+      "step": 3,
+      "tick": 1800,
+      "wave": 0
+    },
+    {
+      "ammo": 24,
+      "health": [
+        96.0,
+        138.0,
+        112.0
+      ],
+      "hostiles": [],
+      "position": [
+        6237.8603515625,
+        921.548767089844
+      ],
+      "remaining": 0,
+      "step": 3,
+      "tick": 2400,
+      "wave": 0
+    },
+    {
+      "ammo": 24,
+      "health": [
+        96.0,
+        138.0,
+        112.0
+      ],
+      "hostiles": [
+        {
+          "hp": 272.0,
+          "id": "ENM_SITE7_BULWARK_01",
+          "position": "(8766.707, 261.2465)"
+        },
+        {
+          "hp": 142.0,
+          "id": "ENM_SITE7_RAM_01",
+          "position": "(8857.212, 281.6103)"
+        },
+        {
+          "hp": 96.0,
+          "id": "ENM_SITE7_MORTAR_01",
+          "position": "(8681.85, 306.2464)"
+        }
+      ],
+      "position": [
+        8427.203125,
+        186.480819702148
+      ],
+      "remaining": 3,
+      "step": 3,
+      "tick": 3000,
+      "wave": 0
+    },
+    {
+      "ammo": 7,
+      "health": [
+        64.0,
+        138.0,
+        112.0
+      ],
+      "hostiles": [
+        {
+          "hp": 139.0,
+          "id": "ENM_SITE7_BULWARK_01",
+          "position": "(8571.583, 205.5803)"
+        }
+      ],
+      "position": [
+        8306.4306640625,
+        169.731185913086
+      ],
+      "remaining": 1,
+      "step": 3,
+      "tick": 3600,
+      "wave": 0
+    },
+    {
+      "ammo": 7,
+      "health": [
+        64.0,
+        122.0,
+        112.0
+      ],
+      "hostiles": [],
+      "position": [
+        8507.70703125,
+        511.24267578125
+      ],
+      "remaining": 0,
+      "step": 4,
+      "tick": 3841,
+      "wave": 0
+    },
+    {
+      "ammo": 7,
+      "health": [
+        64.0,
+        122.0,
+        112.0
+      ],
+      "hostiles": [],
+      "position": [
+        8519.3857421875,
+        1515.36291503906
+      ],
+      "remaining": 0,
+      "step": 4,
+      "tick": 4200,
+      "wave": 0
+    },
+    {
+      "ammo": 7,
+      "health": [
+        64.0,
+        122.0,
+        112.0
+      ],
+      "hostiles": [],
+      "position": [
+        9740.2705078125,
+        417.827239990234
+      ],
+      "remaining": 0,
+      "step": 4,
+      "tick": 4800,
+      "wave": 0
+    },
+    {
+      "ammo": 21,
+      "health": [
+        40.0,
+        122.0,
+        112.0
+      ],
+      "hostiles": [
+        {
+          "hp": 490.0,
+          "id": "BOSS_SITE7_ANCHOR_01",
+          "position": "(11034.08, 541.18)"
+        }
+      ],
+      "position": [
+        10790.369140625,
+        695.742980957031
+      ],
+      "remaining": 1,
+      "step": 4,
+      "tick": 5400,
+      "wave": 0
+    },
+    {
+      "ammo": 3,
+      "health": [
+        0.0,
+        122.0,
+        112.0
+      ],
+      "hostiles": [
+        {
+          "hp": 268.0,
+          "id": "BOSS_SITE7_ANCHOR_01",
+          "position": "(11034.08, 541.18)"
+        }
+      ],
+      "position": [
+        9702.72265625,
+        305.540893554688
+      ],
+      "remaining": 1,
+      "step": 4,
+      "tick": 6000,
+      "wave": 0
+    },
+    {
+      "ammo": 9,
+      "health": [
+        0.0,
+        98.0,
+        0.0
+      ],
+      "hostiles": [],
+      "position": [
+        10663.5400390625,
+        442.039428710938
+      ],
+      "remaining": 0,
+      "step": 5,
+      "tick": 6482,
+      "wave": 0
+    },
+    {
+      "ammo": 9,
+      "health": [
+        0.0,
+        98.0,
+        0.0
+      ],
+      "hostiles": [],
+      "position": [
+        10660.9208984375,
+        448.3505859375
+      ],
+      "remaining": 0,
+      "step": 5,
+      "tick": 6600,
+      "wave": 0
+    },
+    {
+      "ammo": 9,
+      "health": [
+        0.0,
+        98.0,
+        39.2
+      ],
+      "hostiles": [],
+      "position": [
+        12576.6474609375,
+        286.507690429688
+      ],
+      "remaining": 0,
+      "step": 5,
+      "tick": 7200,
+      "wave": 0
+    }
+  ],
+  "visual_approval": false
+}

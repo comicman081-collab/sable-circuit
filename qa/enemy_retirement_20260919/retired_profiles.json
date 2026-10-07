@@ -1,0 +1,87 @@
+{
+  "status": "RETIRED_RUNTIME_BINDINGS",
+  "reason": "User cancelled all humanoid enemies; shield and aberrant old body artwork are not robot replacements.",
+  "profiles": [
+    {
+      "enemy_id": "ENM_SITE7_RIFLE_01",
+      "name": "SITE-7 RIFLE TROOPER",
+      "tier": "NORMAL",
+      "visual_profile": "VIS_ENM_RIFLE_01",
+      "master_asset": "assets/enemies/rifle_trooper/rifle_trooper_master.svg",
+      "rig_sheet": "assets/enemies/rifle_trooper/rifle_trooper_rig_sheet.svg",
+      "silhouette": "narrow hazard hood, offset radio mast, split knee armor, long bullpup rifle",
+      "palette": [
+        "#D9E1E7",
+        "#43525C",
+        "#B83B45",
+        "#78A9B7"
+      ],
+      "motion_profile": "MOT_ENM_RIFLE_01",
+      "motion_signature": "cautious shoulder-led patrol, quick alert snap, short lateral burst steps, disciplined three-round recoil",
+      "projectile_profile": "PRJ_ENM_RIFLE_TRACER_01",
+      "projectile_signature": "red-white narrow tracer with intermittent dash gaps",
+      "hit_vfx_profile": "HIT_ENM_RIFLE_METAL_01",
+      "hit_vfx_signature": "small pale spark fork with red paint flecks",
+      "fire_sfx_profile": "SFX_FIRE_ENM_RIFLE_01",
+      "fire_sfx_signature": "dry suppressed mechanical crack with radio-like tail",
+      "impact_sfx_profile": "SFX_HIT_ENM_RIFLE_01",
+      "impact_sfx_signature": "thin plate ping and fabric thud"
+    },
+    {
+      "enemy_id": "ENM_SITE7_SHIELD_01",
+      "name": "SITE-7 SHIELD CRAWLER",
+      "tier": "ELITE",
+      "visual_profile": "VIS_ENM_SHIELD_01",
+      "body_plan": "robot",
+      "planned_locomotion": "tracked",
+      "replacement_status": "source_design_pending",
+      "master_asset": "assets/enemies/shield_breacher/shield_breacher_master.svg",
+      "rig_sheet": "assets/enemies/shield_breacher/shield_breacher_rig_sheet.svg",
+      "silhouette": "low unmanned tracked chassis, broad bolted front shield, inset amber slit, short ram-shot cannon; no limbs",
+      "palette": [
+        "#C7D0D5",
+        "#2D3942",
+        "#E2A94E",
+        "#7D342E"
+      ],
+      "motion_profile": "MOT_ENM_SHIELD_01",
+      "motion_signature": "slow tracked shield-first advance, planted chassis during warning/fire, short cannon recoil; no human stomp or gait",
+      "projectile_profile": "PRJ_ENM_SHIELD_RAMSHOT_01",
+      "projectile_signature": "short fat brass plasma slug with rectangular shock wake",
+      "hit_vfx_profile": "HIT_ENM_SHIELD_PLATE_01",
+      "hit_vfx_signature": "broad angled spark sheet with shield-edge scrape streak",
+      "fire_sfx_profile": "SFX_FIRE_ENM_SHIELD_01",
+      "fire_sfx_signature": "compressed piston bark with shield resonance",
+      "impact_sfx_profile": "SFX_HIT_ENM_SHIELD_01",
+      "impact_sfx_signature": "thick steel gong with hydraulic rattle"
+    },
+    {
+      "enemy_id": "ENM_SITE7_ABERRANT_01",
+      "name": "SITE-7 IMPACT DRONE",
+      "tier": "NORMAL",
+      "visual_profile": "VIS_ENM_ABERRANT_01",
+      "body_plan": "robot",
+      "planned_locomotion": "hover_charge",
+      "replacement_status": "source_design_pending",
+      "master_asset": "assets/enemies/aberrant_melee/aberrant_melee_master.svg",
+      "rig_sheet": "assets/enemies/aberrant_melee/aberrant_melee_rig_sheet.svg",
+      "silhouette": "compact legless impact chassis, armored ram nose, violet charge core and enclosed levitation units; no organic limbs",
+      "palette": [
+        "#C9C5BA",
+        "#302D32",
+        "#7F3FA4",
+        "#DA6B83"
+      ],
+      "motion_profile": "MOT_ENM_ABERRANT_01",
+      "motion_signature": "rigid low hover approach, visible charge hold, straight telegraphed boost ram and braking recovery; no foot cycle",
+      "projectile_profile": "PRJ_ENM_ABERRANT_SPIT_01",
+      "projectile_signature": "legacy projectile key retained; violet mechanical energy pulse",
+      "hit_vfx_profile": "HIT_ENM_ABERRANT_BIO_01",
+      "hit_vfx_signature": "metallic shell sparks with violet electrical discharge",
+      "fire_sfx_profile": "SFX_FIRE_ENM_ABERRANT_01",
+      "fire_sfx_signature": "servo charge rising into a boost impact",
+      "impact_sfx_profile": "SFX_HIT_ENM_ABERRANT_01",
+      "impact_sfx_signature": "armored impact and electrical crackle"
+    }
+  ]
+}

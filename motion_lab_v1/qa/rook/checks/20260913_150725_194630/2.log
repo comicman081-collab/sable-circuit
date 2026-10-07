@@ -1,0 +1,212 @@
+{"profile": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_0v7cvpuo\\qa\\build_candidates\\fixture\\0c15d960490f41e49fc40f594641bed0\\public\\assets\\atlas\\fixture\\profile.json", "candidateOnly": true, "missing": []}
+{"recipe": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_psbi80_e\\characters\\newwalk.json", "requests": 56, "art": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_psbi80_e\\art\\newwalk"}
+{"recipe": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_psbi80_e\\characters\\newrun.json", "requests": 104, "art": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_psbi80_e\\art\\newrun"}
+{"profile": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_u7_brlrd\\public\\assets\\atlas\\fixture\\profile.json", "reviewPreviews": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_u7_brlrd\\qa\\build_candidates\\fixture\\4f4ac92b0f4b4435b03805f591e3d65b\\reference\\atlas\\fixture", "ready": ["E", "SE", "S", "SW", "W", "NW", "N", "NE"], "missing": []}
+{"id": "fixture", "status": "CANDIDATE_NOT_REVIEWED", "source": "master.png", "sourceSHA256": "e1f6e4466e8b2b2a8fc06c56e1910114810686c16bc9c3d24acbe70a6747e905", "toolResponse": {"path": "response.json", "sha256": "3d9b322536c57a284b8db60e68b0108442e44366ebe80b279411c121d8359412"}, "sourceNative": [1024, 1024], "box": [0, 0, 1024, 1024], "candidate": "qa\\stage1_enemies_20260913\\fixture\\e1f6e4466e8b_de58129d\\candidate_rgba.png", "candidateSHA256": "e1f6e4466e8b2b2a8fc06c56e1910114810686c16bc9c3d24acbe70a6747e905", "candidateNative": [1024, 1024], "native_review": [1920, 1080], "operation": "existing key_image chroma/alpha separation then native crop only", "preparationCodeSHA256": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a", "matteCodeSHA256": "cf559b57001cd7da39244d9053fe50a29e9186f1e6ab2059ded70fcb816d6c08", "implementationDependencies": {"preparation": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a", "matte": "cf559b57001cd7da39244d9053fe50a29e9186f1e6ab2059ded70fcb816d6c08", "provenance": "7fd3a5b0a1c7fbf57413837480263ca4a0aaadee79fdf90525f95fd182a358e8"}, "resampling": false, "anatomicalWarp": false, "runtimePromotion": false}
+{"id": "fixture", "status": "CANDIDATE_NOT_REVIEWED", "source": "master.png", "sourceSHA256": "e1f6e4466e8b2b2a8fc06c56e1910114810686c16bc9c3d24acbe70a6747e905", "toolResponse": {"path": "response.json", "sha256": "3d9b322536c57a284b8db60e68b0108442e44366ebe80b279411c121d8359412"}, "sourceNative": [1024, 1024], "box": [0, 0, 1024, 1024], "candidate": "qa\\stage1_enemies_20260913\\fixture\\e1f6e4466e8b_4b69898f\\candidate_rgba.png", "candidateSHA256": "e1f6e4466e8b2b2a8fc06c56e1910114810686c16bc9c3d24acbe70a6747e905", "candidateNative": [1024, 1024], "native_review": [1920, 1080], "operation": "existing key_image chroma/alpha separation then native crop only", "preparationCodeSHA256": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a", "matteCodeSHA256": "094a7ba51d324668eb9a02645872e8263fdd31f15ddab05aa66e0f23ca8f5f49", "implementationDependencies": {"preparation": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a", "matte": "094a7ba51d324668eb9a02645872e8263fdd31f15ddab05aa66e0f23ca8f5f49", "provenance": "7fd3a5b0a1c7fbf57413837480263ca4a0aaadee79fdf90525f95fd182a358e8"}, "resampling": false, "anatomicalWarp": false, "runtimePromotion": false}
+
+...........................................................................EEEEEEEEE.......
+======================================================================
+ERROR: test_aim_latency_instruction_change_invalidates_packet (test_reuse_improvements.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 210, in test_aim_latency_instruction_change_invalidates_packet
+    self.packet()
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 185, in packet
+    packet = handoff.make('fixture')
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_handoff.py", line 31, in make
+    status = workflow.workflow_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_workflow.py", line 131, in workflow_status
+    cycles=cycle_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in status
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in <listcomp>
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 69, in current
+    expected = inputs(character, direction, action)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 32, in inputs
+    'recipeValues': {'speed':c['locomotion'][action+'Speed'], 'stride':c['locomotion'][action+'Stride'], 'heightMetres':c['heightMetres']},
+KeyError: 'locomotion'
+
+======================================================================
+ERROR: test_changed_claim_or_instruction_is_rejected (test_reuse_improvements.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 228, in test_changed_claim_or_instruction_is_rejected
+    original = self.packet()
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 185, in packet
+    packet = handoff.make('fixture')
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_handoff.py", line 31, in make
+    status = workflow.workflow_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_workflow.py", line 131, in workflow_status
+    cycles=cycle_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in status
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in <listcomp>
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 69, in current
+    expected = inputs(character, direction, action)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 32, in inputs
+    'recipeValues': {'speed':c['locomotion'][action+'Speed'], 'stride':c['locomotion'][action+'Stride'], 'heightMetres':c['heightMetres']},
+KeyError: 'locomotion'
+
+======================================================================
+ERROR: test_code_change_invalidates_packet (test_reuse_improvements.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 198, in test_code_change_invalidates_packet
+    self.packet()
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 185, in packet
+    packet = handoff.make('fixture')
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_handoff.py", line 31, in make
+    status = workflow.workflow_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_workflow.py", line 131, in workflow_status
+    cycles=cycle_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in status
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in <listcomp>
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 69, in current
+    expected = inputs(character, direction, action)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 32, in inputs
+    'recipeValues': {'speed':c['locomotion'][action+'Speed'], 'stride':c['locomotion'][action+'Stride'], 'heightMetres':c['heightMetres']},
+KeyError: 'locomotion'
+
+======================================================================
+ERROR: test_known_repair_precedes_missing_pilot_slot (test_reuse_improvements.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 247, in test_known_repair_precedes_missing_pilot_slot
+    packet = self.packet()
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 185, in packet
+    packet = handoff.make('fixture')
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_handoff.py", line 31, in make
+    status = workflow.workflow_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_workflow.py", line 131, in workflow_status
+    cycles=cycle_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in status
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in <listcomp>
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 69, in current
+    expected = inputs(character, direction, action)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 32, in inputs
+    'recipeValues': {'speed':c['locomotion'][action+'Speed'], 'stride':c['locomotion'][action+'Stride'], 'heightMetres':c['heightMetres']},
+KeyError: 'locomotion'
+
+======================================================================
+ERROR: test_new_missing_source_invalidates_packet (test_reuse_improvements.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 204, in test_new_missing_source_invalidates_packet
+    self.packet()
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 185, in packet
+    packet = handoff.make('fixture')
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_handoff.py", line 31, in make
+    status = workflow.workflow_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_workflow.py", line 131, in workflow_status
+    cycles=cycle_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in status
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in <listcomp>
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 69, in current
+    expected = inputs(character, direction, action)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 32, in inputs
+    'recipeValues': {'speed':c['locomotion'][action+'Speed'], 'stride':c['locomotion'][action+'Stride'], 'heightMetres':c['heightMetres']},
+KeyError: 'locomotion'
+
+======================================================================
+ERROR: test_packet_has_real_next_slot_not_generation_success (test_reuse_improvements.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 190, in test_packet_has_real_next_slot_not_generation_success
+    packet = self.packet()
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 185, in packet
+    packet = handoff.make('fixture')
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_handoff.py", line 31, in make
+    status = workflow.workflow_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_workflow.py", line 131, in workflow_status
+    cycles=cycle_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in status
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in <listcomp>
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 69, in current
+    expected = inputs(character, direction, action)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 32, in inputs
+    'recipeValues': {'speed':c['locomotion'][action+'Speed'], 'stride':c['locomotion'][action+'Stride'], 'heightMetres':c['heightMetres']},
+KeyError: 'locomotion'
+
+======================================================================
+ERROR: test_pose_guide_and_request_change_invalidate_handoff (test_reuse_improvements.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 261, in test_pose_guide_and_request_change_invalidate_handoff
+    self.packet();guide.write_bytes(b'changed guide fixture')
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 185, in packet
+    packet = handoff.make('fixture')
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_handoff.py", line 31, in make
+    status = workflow.workflow_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_workflow.py", line 131, in workflow_status
+    cycles=cycle_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in status
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in <listcomp>
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 69, in current
+    expected = inputs(character, direction, action)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 32, in inputs
+    'recipeValues': {'speed':c['locomotion'][action+'Speed'], 'stride':c['locomotion'][action+'Stride'], 'heightMetres':c['heightMetres']},
+KeyError: 'locomotion'
+
+======================================================================
+ERROR: test_runtime_rejection_is_the_next_action_not_a_rebuild (test_reuse_improvements.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 253, in test_runtime_rejection_is_the_next_action_not_a_rebuild
+    packet=self.packet()
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 185, in packet
+    packet = handoff.make('fixture')
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_handoff.py", line 31, in make
+    status = workflow.workflow_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_workflow.py", line 131, in workflow_status
+    cycles=cycle_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in status
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in <listcomp>
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 69, in current
+    expected = inputs(character, direction, action)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 32, in inputs
+    'recipeValues': {'speed':c['locomotion'][action+'Speed'], 'stride':c['locomotion'][action+'Stride'], 'heightMetres':c['heightMetres']},
+KeyError: 'locomotion'
+
+======================================================================
+ERROR: test_runtime_texture_change_invalidates_packet (test_reuse_improvements.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 222, in test_runtime_texture_change_invalidates_packet
+    self.packet()
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 185, in packet
+    packet = handoff.make('fixture')
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_handoff.py", line 31, in make
+    status = workflow.workflow_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_workflow.py", line 131, in workflow_status
+    cycles=cycle_status(character)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in status
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 93, in <listcomp>
+    rows = [current(character, d, a) for a in c['clips'] if a != 'idle' for d in w.DIRECTIONS]
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 69, in current
+    expected = inputs(character, direction, action)
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\cycle_review.py", line 32, in inputs
+    'recipeValues': {'speed':c['locomotion'][action+'Speed'], 'stride':c['locomotion'][action+'Stride'], 'heightMetres':c['heightMetres']},
+KeyError: 'locomotion'
+
+----------------------------------------------------------------------
+Ran 91 tests in 99.479s
+
+FAILED (errors=9)
+OpenCV: FFMPEG: tag 0x30385056/'VP80' is not supported with codec id 139 and format 'webm / WebM'
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0000018a48765a80] moov atom not found

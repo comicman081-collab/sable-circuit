@@ -1,0 +1,29 @@
+{
+  "status": "PASS_TECHNICAL_ONLY",
+  "duration_s": 10,
+  "rate": 48000,
+  "channels": 2,
+  "peak_dbfs": -7.9981197385499705,
+  "estimated_true_peak_4x_dbfs": -7.939647018990922,
+  "rms_dbfs": -28.596978101878708,
+  "fullscale_samples": 0,
+  "actual_engine_events": {
+    "aster_fire": 47,
+    "rook_fire": 6,
+    "mica_fire": 13,
+    "impact_steel_light": 16,
+    "impact_steel_heavy": 19,
+    "robot_hit": 11,
+    "turret_fire": 2,
+    "boss_core_hit": 5,
+    "boss_stomp": 1,
+    "boss_cross_beam": 1
+  },
+  "peak_voices": 16,
+  "wav_sha256": "fb6881efbe8dc95242ee6b9da6762932cc93e180193752e12c5f9e001707f0c8",
+  "mp3_sha256": "dd1daa5b6737e9421a4e10049a7de1f8a5e8021cce219881a3617a7bff459ed3",
+  "capture_source": "Godot MovieWriter actual AudioServer stereo mix",
+  "post_added_sfx": false,
+  "subjective_listening_approval": false,
+  "video_intermediate": "battle_native.avi uses default MovieWriter 1280x720; audio-only source, not eligible visual evidence. Native viewport stills are 1920x1080."
+}

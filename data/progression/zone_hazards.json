@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "note": "Room hazards drawn in code on the floor. A mission room opts in with \"hazards\": [{\"type\": \"<ID>\", \"count\": n}]; the battlefield places them on open floor away from spawns and cover. They hit robots as well as operators and ignore cover.",
+  "hazards": {
+    "ARC_VENT": {
+      "title": "ARC VENT",
+      "color": "66e6ff",
+      "tip": "ARC VENT: a grate crackles for a second before it discharges; step off it. Robots standing on it take the hit too.",
+      "radius": 70.0,
+      "first_delay": 2.4,
+      "idle": 3.0,
+      "telegraph": 1.1,
+      "discharge": 0.3,
+      "phase_step": 1.35,
+      "operator_damage": 14.0,
+      "enemy_damage": 24.0
+    },
+    "SPORE_CLOUD": {
+      "title": "SPORE CLOUD",
+      "color": "b1e86d",
+      "tip": "SPORE CLOUD: spores gather before a lingering cloud hurts operators and robots; leave the green floor ring.",
+      "mode": "continuous",
+      "radius": 70.0,
+      "first_delay": 2.4,
+      "idle": 3.0,
+      "telegraph": 1.2,
+      "discharge": 3.0,
+      "phase_step": 1.35,
+      "operator_damage": 0.0,
+      "enemy_damage": 0.0,
+      "operator_dps": 4.0,
+      "enemy_dps": 8.0
+    },
+    "FROST_PLATE": {
+      "title": "FROST PLATE",
+      "color": "b4d9ff",
+      "tip": "FROST PLATE: this pale floor slows operators and robots without damaging them; keep your route off the frost.",
+      "mode": "slow",
+      "radius": 70.0,
+      "first_delay": 2.4,
+      "phase_step": 1.35,
+      "operator_damage": 0.0,
+      "enemy_damage": 0.0,
+      "slow_multiplier": 0.7
+    },
+    "RAIL_LANE": {
+      "title": "RAIL LANE",
+      "color": "ffd84a",
+      "tip": "RAIL LANE: the long rail lights up before it discharges; sidestep the narrow band. Robots are hit too.",
+      "mode": "burst",
+      "shape": "band",
+      "half_length": 90.0,
+      "half_width": 24.0,
+      "angle_degrees": -26.565051177,
+      "radius": 93.145048178,
+      "first_delay": 2.4,
+      "idle": 3.0,
+      "telegraph": 1.4,
+      "discharge": 0.3,
+      "phase_step": 1.35,
+      "operator_damage": 14.0,
+      "enemy_damage": 24.0
+    }
+  }
+}

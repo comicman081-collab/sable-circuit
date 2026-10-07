@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "mission_id": "MIS_CH01_02",
+  "chapter_id": "CH01",
+  "title": "SITE-7: RECOVERY SWEEP",
+  "zone": "Abandoned Research Complex",
+  "objectives": [
+    {"id":"OBJ_SWEEP_REENTRY","kind":"PRIMARY","source_room":"R01_REENTRY","title":"Re-establish the Site-7 uplink","prerequisites":[],"required_for_extraction":false},
+    {"id":"OBJ_SWEEP_MAINTENANCE","kind":"PRIMARY","source_room":"R02_MAINTENANCE","title":"Secure the flooded maintenance run","prerequisites":["OBJ_SWEEP_REENTRY"],"required_for_extraction":false},
+    {"id":"OBJ_SWEEP_RELAY_LOG","kind":"PRIMARY","source_room":"R03_RELAY_ARCHIVE","title":"Recover the relay routing log","prerequisites":["OBJ_SWEEP_MAINTENANCE"],"required_for_extraction":true},
+    {"id":"OBJ_SWEEP_FIELD_CACHE","kind":"OPTIONAL","source_room":"O01_SUPPLY","title":"Recover the reserve field cache","prerequisites":["OBJ_SWEEP_MAINTENANCE"],"required_for_extraction":false},
+    {"id":"OBJ_SWEEP_ECHO","kind":"OPTIONAL","source_room":"O02_RESEARCH","title":"Trace the surviving carrier echo","prerequisites":["OBJ_SWEEP_RELAY_LOG"],"required_for_extraction":false},
+    {"id":"OBJ_SWEEP_QUARANTINE","kind":"DEEP","source_room":"R04_QUARANTINE","title":"Break the quarantine guard line","prerequisites":["OBJ_SWEEP_RELAY_LOG"],"required_for_extraction":false},
+    {"id":"OBJ_SWEEP_RELAY","kind":"DEEP","source_room":"R05_RELAY","title":"Disable the relay sentinel","prerequisites":["OBJ_SWEEP_QUARANTINE"],"required_for_extraction":false},
+    {"id":"OBJ_SWEEP_EVAC","kind":"PRIMARY","source_room":"R06_EVAC","title":"Extract through the service lift","prerequisites":["OBJ_SWEEP_RELAY"],"required_for_extraction":false}
+  ],
+  "branches": [
+    {"id":"BR_SWEEP_FIELD_CACHE","kind":"OPTIONAL","from_room":"R03_RELAY_ARCHIVE","target_room":"O01_SUPPLY","target_objective":"OBJ_SWEEP_FIELD_CACHE","prerequisites":["OBJ_SWEEP_MAINTENANCE"]},
+    {"id":"BR_SWEEP_ECHO","kind":"OPTIONAL","from_room":"R04_QUARANTINE","target_room":"O02_RESEARCH","target_objective":"OBJ_SWEEP_ECHO","prerequisites":["OBJ_SWEEP_RELAY_LOG"]},
+    {"id":"BR_SWEEP_RELAY","kind":"DEEP","from_room":"R03_RELAY_ARCHIVE","target_room":"R04_QUARANTINE","target_objective":"OBJ_SWEEP_QUARANTINE","prerequisites":["OBJ_SWEEP_RELAY_LOG"]}
+  ],
+  "main_route": [
+    {"id":"R01_REENTRY","objective_id":"OBJ_SWEEP_REENTRY","type":"EVENT","title":"Service Re-entry","x":280,"y":560,"objective":"Re-establish the Site-7 uplink","story":"The auxiliary network answers in fragments. A second transmission is moving through the lower relay chain.","loot":[{"loot_id":"LOT_RESEARCH_COMMON","quantity":14}]},
+    {"id":"R02_MAINTENANCE","objective_id":"OBJ_SWEEP_MAINTENANCE","encounter_id":"ENC_SWEEP_MAINTENANCE_01","type":"COMBAT","title":"Flooded Maintenance","x":660,"y":240,"objective":"Secure the flooded maintenance run","encounter":[{"enemy_id":"ENM_SITE7_DRONE_01","health":82,"offset_x":222,"offset_y":-104},{"enemy_id":"ENM_SITE7_RIFLE_01","health":104,"offset_x":302,"offset_y":-34},{"enemy_id":"ENM_SITE7_ABERRANT_01","health":120,"offset_x":218,"offset_y":98}],"loot":[{"loot_id":"LOT_RESEARCH_COMMON","quantity":28}]},
+    {"id":"R03_RELAY_ARCHIVE","objective_id":"OBJ_SWEEP_RELAY_LOG","type":"RESEARCH","title":"Relay Archive","x":1040,"y":560,"objective":"Recover the relay routing log","story":"The routing log marks an active carrier path beyond the original containment sector.","loot":[{"loot_id":"LOT_RESEARCH_COMMON","quantity":38},{"loot_id":"LOT_RESEARCH_HIGH_VALUE","quantity":18}]},
+    {"id":"R04_QUARANTINE","objective_id":"OBJ_SWEEP_QUARANTINE","encounter_id":"ENC_SWEEP_QUARANTINE_01","type":"ELITE","title":"Quarantine Crossing","x":1420,"y":240,"objective":"Break the quarantine guard line","encounter":[{"enemy_id":"ENM_SITE7_SHIELD_01","health":252,"offset_x":214,"offset_y":60},{"enemy_id":"ENM_SITE7_DRONE_01","health":86,"offset_x":294,"offset_y":-94},{"enemy_id":"ENM_SITE7_RIFLE_01","health":118,"offset_x":300,"offset_y":86}],"loot":[{"loot_id":"LOT_RESEARCH_COMMON","quantity":34}]},
+    {"id":"R05_RELAY","objective_id":"OBJ_SWEEP_RELAY","encounter_id":"ENC_SWEEP_RELAY_01","type":"BOSS","title":"Sublevel Relay","x":1800,"y":560,"objective":"Disable the relay sentinel","encounter":[{"enemy_id":"BOSS_SITE7_ANCHOR_01","health":710,"offset_x":0,"offset_y":0}],"loot":[{"loot_id":"LOT_RESEARCH_HIGH_VALUE","quantity":54}]},
+    {"id":"R06_EVAC","objective_id":"OBJ_SWEEP_EVAC","type":"EXTRACTION","title":"Service Lift","x":2180,"y":240,"objective":"Extract with the routing log","story":"The route is compromised, but the service lift can still reach the surface before the relay restarts.","loot":[]}
+  ],
+  "optional_rooms": [
+    {"id":"O01_SUPPLY","objective_id":"OBJ_SWEEP_FIELD_CACHE","type":"SUPPLY","title":"Reserve Field Cache","x":1040,"y":800,"reward":"field_supplies","story":"A sealed response cache holds intact stabilizers and ammunition packs.","loot":[{"loot_id":"LOT_RESEARCH_COMMON","quantity":18},{"loot_id":"LOT_SALVAGE_FIELD","quantity":3}]},
+    {"id":"O02_RESEARCH","objective_id":"OBJ_SWEEP_ECHO","type":"RESEARCH","title":"Echo Recorder","x":1420,"y":800,"reward":"carrier_fragment","story":"The carrier echo resolves into a navigable sequence, then points beyond Site-7.","loot":[{"loot_id":"LOT_RESEARCH_HIGH_VALUE","quantity":34},{"loot_id":"LOT_SIGNAL_FRAGMENT","quantity":1}]}
+  ],
+  "extraction_offer_room_ids": ["R03_RELAY_ARCHIVE","R04_QUARANTINE","R05_RELAY"]
+}

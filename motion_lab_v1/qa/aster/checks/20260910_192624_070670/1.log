@@ -1,0 +1,30 @@
+✔ A cursor between the character and illustrated muzzle cannot make a bullet fly behind the facing (3.2483ms)
+✔ Turning throughout held moving fire keeps every projectile and rendered facing on one aim at 30/60/120 Hz (23.5088ms)
+✔ A fresh movement chord can take aim during held mouse fire and the next mouse move can take it back (0.6412ms)
+✔ An exactly centred cursor retains the previous aim instead of forcing east (0.1247ms)
+✔ One muzzle-aware solution preserves actual cursor hits and body/shot alignment throughout a turn (2.4942ms)
+✔ A target inside weapon reach cannot turn only the bullet backwards (0.1949ms)
+✔ All four WASD diagonals work in either press order, with Korean/English/Shift/IME event values (6.3108ms)
+✔ Arrow key pairs drive all four diagonals through the same actor (0.2694ms)
+✔ Releasing one key returns to the remaining direction; opposite-key and alias chords do not stick (0.2368ms)
+✔ A new movement chord takes facing from an idle pointer, but key repeat does not cancel active mouse aim (0.1817ms)
+✔ Shift and Space continue to work with diagonal motion and independent mouse firing (0.4451ms)
+✔ Settings controls allow WASD without swallowing text editing or native slider/checkbox keys (0.5878ms)
+✔ Keyboard movement, reload, and fire all clear on focus loss (0.1835ms)
+✔ A click shorter than one render frame fires once without a held button (2.0737ms)
+✔ All eight movement directions and all eight independent firing facings, at three display rates (21.8398ms)
+✔ Diagonal keys do not create a speed advantage (0.3303ms)
+✔ Stop, resume and speed switch retain a valid continuous locomotion phase (0.6408ms)
+✔ Held fire consumes ammunition, automatically reloads, and remains rate independent (3.637ms)
+✔ Reload prevents shots and restores the magazine only when complete (0.2578ms)
+✔ Obstacles and world bounds constrain actual position (1.6069ms)
+✔ Swept projectile collision catches thin targets between ticks (0.3181ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 140.2105
+

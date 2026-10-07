@@ -1,0 +1,10 @@
+{
+  "status": "QUARANTINED_AFTER_COMPLETED_REPLACEMENT",
+  "retired_runtime_path": "sound/music/runtime/intro.mp3",
+  "quarantine_path": "sound/music/quarantine/intro_replaced_by_original_cinematic_audio.mp3",
+  "sha256": "1a8c02f7421856ee07ba5972a0b37aa3bbe9fae539e6afe92e94bbd165a33e41",
+  "reason": "User requested the original embedded BGM from the six Flow source clips instead of a separately selected intro cue.",
+  "replacement": "assets/cinematics/sable_intro_original_bgm.ogv",
+  "replacement_validation": "qa/music_integration_20260920/intro_original_audio_mux.json",
+  "disposition": "Preserved in project quarantine; never exported or referenced by the runtime."
+}

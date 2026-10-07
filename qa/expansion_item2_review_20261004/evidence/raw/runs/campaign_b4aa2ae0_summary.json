@@ -1,0 +1,30 @@
+{
+ "suite": "custom",
+ "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+ "started": "2026-10-04T17:33:28",
+ "git_head": "b4aa2ae030464dca53a035de7e3cbde8889e5c98",
+ "git_dirty": 0,
+ "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+ "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+ "workers": 1,
+ "seconds": 25,
+ "overall": "FAIL",
+ "guard": {
+  "changed": [],
+  "removed": [],
+  "added": []
+ },
+ "results": [
+  {
+   "test": "campaign",
+   "status": "SCRIPT_ERROR",
+   "seconds": 9.6,
+   "exit_code": 1,
+   "checks": null,
+   "status_line": "",
+   "notes": [
+    "SCRIPT ERROR: Invalid access to property or key 'mission_id' on a base object of type 'Dictionary'."
+   ]
+  }
+ ]
+}

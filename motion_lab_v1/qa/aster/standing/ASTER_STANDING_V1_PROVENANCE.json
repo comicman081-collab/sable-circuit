@@ -1,0 +1,57 @@
+{
+  "character": "aster",
+  "candidate": "ASTER_STANDING_V1",
+  "status": "STYLE_RESET_ACTIVE_CANDIDATE",
+  "createdUTC": "2026-09-10T08:27:00Z",
+  "generator": "Codex built-in ImageGen",
+  "raw": {
+    "path": "qa/aster/standing/ASTER_STANDING_V1_RAW.png",
+    "native": [1024, 1536],
+    "sha256": "a03877149d5a61c29d665678600cc65dbf8252e512eec38780984d71717ebd65"
+  },
+  "runtimeSource": {
+    "path": "art/aster/identity_reference.png",
+    "native": [1024, 1536],
+    "sha256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "matte": "qa/aster/standing/ASTER_STANDING_V1_MATTE.json"
+  },
+  "greenDerivative": {
+    "path": "qa/aster/standing/ASTER_STANDING_V1_GREEN.png",
+    "mask": "qa/aster/standing/ASTER_STANDING_V1_MASK.png",
+    "sha256": "db53f3b8fae52d2a09c047b3a0b4b51e56947adf69cc8671669b8fefa499bcf7",
+    "method": "edge-chroma",
+    "networkUsed": false
+  },
+  "styleReference": {
+    "path": "qa/aster/style_reference_previous_character.png",
+    "sha256": "b512d06a498dfedd8d05351d78f4bb9af4f0353345edf6e34d74a9cee5d0f0d3",
+    "role": "rendering style, material detail and framing only; not ASTER identity"
+  },
+  "stagingArchive": {
+    "path": "qa/aster/provenance/staging_archive/20260910",
+    "count": 0,
+    "reason": "Managed ImageGen staging copies were hash-verified against the project copies and removed; original project sources and tool-response envelopes remain"
+  },
+  "stagingCleanup": {
+    "removedCount": 19,
+    "removedUTC": "2026-09-10T09:12:00Z",
+    "scope": "exact generated-image staging files for this ASTER reset and its superseded pre-reset candidates only"
+  },
+  "identityLock": [
+    "silver-white high ponytail",
+    "dark navy tactical jacket and black armored trousers",
+    "triangular precision coil rifle",
+    "plain dark navy shoulders with established seams",
+    "no white shoulder armor or pauldron",
+    "no cyan shoulder stripe or gold shoulder hardware",
+    "no brown braid, long split coat or rear sensor rods from the style reference"
+  ],
+  "reviewEvidence": {
+    "contactSheet": "qa/aster/standing/ASTER_STANDING_V1_REVIEW_1080P.png",
+    "contactSheetNative": [1920, 1080],
+    "contactSheetSHA256": "292fa93b88039f5972d19ae5d1ab75c083224783607bb730a014d57956bdf5b1",
+    "validator": "qa/aster/standing/ASTER_STANDING_V1_REVIEW_1080P_VALIDATION.json",
+    "validatorGate": "PASS"
+  },
+  "reviewState": "candidate awaiting user visual acceptance; source slots are reviewed independently"
+}

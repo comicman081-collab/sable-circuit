@@ -1,0 +1,9 @@
+{
+  "name": "no_frost_release_v2",
+  "path": "scripts/combat/zone_hazard.gd",
+  "before_sha256": "e4da9515baa27cfb4150ee84d1adac8e936f1141d70e9774381b99308893450e",
+  "after_sha256": "3d1c1912df8215de01c545f5ea7c17b9a70a78585b2879dc1edf5ef7ce323529",
+  "mutation": "func release_effects() -> void:\n    for id in _slowed:",
+  "expected": "FAIL, not SCRIPT_ERROR",
+  "resources": "read-only junction inputs; no import command runs in this copy"
+}

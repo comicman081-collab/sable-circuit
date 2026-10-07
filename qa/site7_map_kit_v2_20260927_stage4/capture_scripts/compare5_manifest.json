@@ -1,0 +1,91 @@
+{
+  "mission": "MIS_CH01_05",
+  "mode": "actual game fixture; identical camera and actor positions per pair",
+  "native_capture": [
+    1920,
+    1080
+  ],
+  "rooms": [
+    {
+      "S3_reference_asset": "res://assets/environments/site7_v2/stage03/S3_R01/S3_R01_GAME.png",
+      "camera_position": [
+        1680.0,
+        470.0
+      ],
+      "camera_zoom": 1.0,
+      "dedicated_asset": "assets/environments/site7_v2/stage05/S5_R01/S5_R01_GAME.png",
+      "room": "R01_ENTRY"
+    },
+    {
+      "S3_reference_asset": "res://assets/environments/site7_v2/stage03/S3_R05/S3_R05_GAME.png",
+      "camera_position": [
+        4269.0,
+        -567.0
+      ],
+      "camera_zoom": 1.0,
+      "dedicated_asset": "assets/environments/site7_v2/stage05/S5_R02/S5_R02_GAME.png",
+      "room": "R02_DEFENSE"
+    },
+    {
+      "S3_reference_asset": "res://assets/environments/site7_v2/stage03/S3_R03/S3_R03_GAME.png",
+      "camera_position": [
+        6778.0,
+        -1634.0
+      ],
+      "camera_zoom": 1.0,
+      "dedicated_asset": "assets/environments/site7_v2/stage05/S5_R03/S5_R03_GAME.png",
+      "room": "R03_TRACE"
+    },
+    {
+      "S3_reference_asset": "res://assets/environments/site7_v2/stage03/S3_R04/S3_R04_GAME.png",
+      "camera_position": [
+        9366.599609375,
+        -2670.69995117188
+      ],
+      "camera_zoom": 1.0,
+      "dedicated_asset": "assets/environments/site7_v2/stage05/S5_R04/S5_R04_GAME.png",
+      "room": "R04_ARRAY"
+    },
+    {
+      "S3_reference_asset": "res://assets/environments/site7_v2/stage03/S3_R02/S3_R02_GAME.png",
+      "camera_position": [
+        12149.2001953125,
+        -3766.60009765625
+      ],
+      "camera_zoom": 1.0,
+      "dedicated_asset": "assets/environments/site7_v2/stage05/S5_R05/S5_R05_GAME.png",
+      "room": "R05_CARRIER"
+    },
+    {
+      "S3_reference_asset": "res://assets/environments/site7_v2/stage03/S3_R06/S3_R06_GAME.png",
+      "camera_position": [
+        14963.900390625,
+        -4963.39990234375
+      ],
+      "camera_zoom": 1.0,
+      "dedicated_asset": "assets/environments/site7_v2/stage05/S5_R06/S5_R06_GAME.png",
+      "room": "R06_ESCAPE"
+    },
+    {
+      "S3_reference_asset": "res://assets/environments/site7_v2/stage03/S3_O01/S3_O01_GAME.png",
+      "camera_position": [
+        6253.0,
+        458.0
+      ],
+      "camera_zoom": 1.0,
+      "dedicated_asset": "assets/environments/site7_v2/stage05/S5_O01/S5_O01_GAME.png",
+      "room": "O01_SUPPLY"
+    },
+    {
+      "S3_reference_asset": "res://assets/environments/site7_v2/stage03/S3_O02/S3_O02_GAME.png",
+      "camera_position": [
+        11350.2998046875,
+        -1659.0
+      ],
+      "camera_zoom": 1.0,
+      "dedicated_asset": "assets/environments/site7_v2/stage05/S5_O02/S5_O02_GAME.png",
+      "room": "O02_RESEARCH"
+    }
+  ],
+  "scene": "StoryStage01"
+}

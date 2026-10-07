@@ -1,0 +1,56 @@
+{
+  "kind": "sable-web-alpha-conversion-attempts",
+  "schema": 1,
+  "character": "site7_rifle",
+  "slot": "S/walk/0",
+  "conversationUrl": "https://chatgpt.com/c/6aa629cc-15f0-83ee-996c-b42d58eefe91",
+  "input": {
+    "path": "motion_lab_v1/qa/site7_rifle/quarantine/970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584/S_walk_0_master_luna_max_20260913_v6_green_bridge.png",
+    "sha256": "970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584",
+    "native": [1024, 1536],
+    "status": "GREEN_BRIDGE_INPUT_ONLY"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "assetId": "0a6d8a3022776b04",
+      "filename": "generated-image",
+      "projectCopy": "motion_lab_v1/qa/site7_rifle/qa/web_alpha_returns/S_walk_0_master_gpt_web_alpha_20260913.png",
+      "projectCopySHA256": "c1b7dee0fb4c4b99d413dc88ae91a6819a6cc012ac2a2298853e8aa4f470cf44",
+      "native": [1024, 1536],
+      "mode": "RGBA",
+      "alpha": {
+        "min": 0,
+        "max": 254,
+        "transparentPixels": 1179019,
+        "visiblePixels": 393845,
+        "partialAlphaPixels": 393845,
+        "cornerAlpha": [0, 0, 0, 0]
+      },
+      "gate": "FAIL_VISUAL_IDENTITY_REGENERATED",
+      "reason": "Web result was a different front-facing armored soldier and did not preserve the attached Rook pixels/pose; kept outside runtime and intake."
+    },
+    {
+      "attempt": 2,
+      "assetId": "7214fd5b32084610",
+      "filename": "S_walk_0_RGBA.png",
+      "projectCopy": "motion_lab_v1/qa/site7_rifle/qa/web_alpha_returns/S_walk_0_master_gpt_web_alpha_20260913_retry.png",
+      "projectCopySHA256": "d24481c094994df4cbcc49aad1013227687d86b5307d2af07175a80d8f62125f",
+      "native": [1024, 1536],
+      "mode": "RGBA",
+      "alpha": {
+        "min": 255,
+        "max": 255,
+        "unique": 1,
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      },
+      "gate": "FAIL_NATIVE_ALPHA_REQUIRED",
+      "reason": "The returned image retained an opaque bright-green matte and was not a transparent conversion; kept outside runtime and intake."
+    }
+  ],
+  "intake": "FORBIDDEN",
+  "runtimePromotion": "FORBIDDEN",
+  "status": "WEB_ALPHA_CONVERSION_FAILED_HOLD",
+  "nextAction": "Keep the Luna green bridge quarantined; repair S/walk/0 through an actual native-alpha source attempt before any source review or runtime promotion."
+}

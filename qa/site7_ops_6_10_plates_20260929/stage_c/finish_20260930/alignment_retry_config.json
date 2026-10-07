@@ -1,0 +1,12 @@
+{
+  "test": "connector_alignment",
+  "target": "tests/smoke/site7_connector_alignment_smoke.gd",
+  "original_wall_deadline_seconds": 900,
+  "retry_wall_deadline_seconds": 1800,
+  "mission_filter": null,
+  "test_args": [],
+  "runner_source_sha256_before": "0046bb683e27b7a1cb7aa1fd21e979a1ef1272a965ba888f7a4cf299750c511a",
+  "test_script_unchanged": true,
+  "test_assertions_unchanged": true,
+  "reason": "Initial default deadline ended after completed missions 1-6; no connector assertion failed before timeout."
+}

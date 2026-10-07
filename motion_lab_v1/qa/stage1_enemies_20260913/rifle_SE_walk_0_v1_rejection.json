@@ -1,0 +1,15 @@
+{
+  "decision": "FAIL_NOT_PROMOTABLE",
+  "slot": "site7_rifle/SE/walk/0",
+  "source": "art/site7_enemies_raw/rifle_SE_walk_0_v1.png",
+  "sourceSHA256": "f567a62196178df9cfecb7b24837cfe7dc6b448e886b06a6229b890316f45cd2",
+  "reviewer": "Codex main, actual returned image and decoded mode inspection 2026-09-13",
+  "observations": [
+    "Decoded RGB, no alpha channel; gray-white checkerboard is painted in the image.",
+    "Barrel and torso remain close to the E side-view instead of the supplied SE guide projection.",
+    "Anatomical unholstered left leg is forward and holstered right leg trails, but correct foot ordering does not repair background or yaw."
+  ],
+  "nextMechanism": "Retain this failure; use a flat-green source fallback with guide first and identity second, omitting the E side-view as a competing camera reference.",
+  "runtimePromotion": false,
+  "disposal": "Forbidden until completed replacement and required final disposal gates"
+}

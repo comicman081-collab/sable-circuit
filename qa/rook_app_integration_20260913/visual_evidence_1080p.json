@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-13T03:23:45.166887+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\rook_app_integration_20260913\\final_capture\\battle_stage_01_rook_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2699706,
+      "sha256": "b22ee431da66a00090396aeb0ef58d6becee32757b66051f21450678beefab2f"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\rook_app_integration_20260913\\final_capture\\battle_stage_02_rook_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 3210503,
+      "sha256": "69ad3e75ab71eb6944607450e56031fe4e9753513b1f73f8e6c877c44b3f6b92"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\rook_app_integration_20260913\\final_capture\\battle_stage_03_rook_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2374858,
+      "sha256": "ad068777310377d6aff7d05a91f86c7bd14c073f0717ec6f3f88e2bdca710ae5"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\rook_app_integration_20260913\\final_capture\\lobby_rook_portrait_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 328336,
+      "sha256": "9cad6eee97a9c605f8ea51225eec58cb9197f7b6ad52d16c90d02d39a84d4a17"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\rook_app_integration_20260913\\final_capture\\rook_run_00_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2754545,
+      "sha256": "11974e0678516ed0320745ecdd7fbf225b939b5af1c801e8d8f033f6b6ca76a3"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\rook_app_integration_20260913\\final_capture\\rook_run_01_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2746820,
+      "sha256": "d8fbf02c55c7c2c77c94f4b4bb3bf79537bbabd5cc514b53e137d73bca6e5f2e"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\rook_app_integration_20260913\\final_capture\\rook_run_02_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2748317,
+      "sha256": "7a4c89e9949c51f507095f8119830b1e18ec20454a800783ba2f9a8a89d40645"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\rook_app_integration_20260913\\final_capture\\rook_run_03_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2751549,
+      "sha256": "3956ce362412c61531c54a3edba03783b77f974b79877cf967b6d6338c0b54ce"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\rook_app_integration_20260913\\final_capture\\rook_run_04_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2755724,
+      "sha256": "437c12daefbfc5f863d39ad806ef998106b7d6620e5c4a5a93ed3879097e0ad6"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\rook_app_integration_20260913\\final_capture\\rook_run_05_1920x1080.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2771528,
+      "sha256": "4cf7c6dcaf79a6c67bd3d522b16f1755a56af2316ccc0bb47ebba0c58891b4f8"
+    }
+  ]
+}

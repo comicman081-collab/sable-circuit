@@ -1,0 +1,13 @@
+{
+  "decision": "repair",
+  "status": "FAIL_NOT_PROMOTABLE",
+  "scope": "source-art",
+  "reviewer": "Codex visual inspection",
+  "observed": [
+    "The returned PNG passes native-alpha format inspection: RGBA 1536x1024, alpha 0..254, transparent corners.",
+    "The actual rendered result retains a visible smoky/dark atmospheric matte around the two figures instead of a clean isolated transparent source pair.",
+    "The intended left-contact/right-contact distinction is not sufficiently unambiguous for a full cycle source admission."
+  ],
+  "requiredReplacement": "Request a clean two-figure native-alpha pair with no glow, floor shadow, atmospheric matte, panel, or duplicate pose; make each named support/contact pose visually unmistakable.",
+  "sourceSHA256": "d58ee1ad5656a5b5c8734abd33bfef3273e0b46e93f46d0617675c6c30fa1625"
+}

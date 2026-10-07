@@ -1,0 +1,117 @@
+{
+  "recordedAt": "2026-09-13T03:23:45.386503+00:00",
+  "status": "PASS_APP_INTEGRATION",
+  "character": "rook",
+  "remoteDeployment": false,
+  "approvedStudioBuild": "fbe27d701e0a0297203f643ab33faf71894e41ff3d91093f21515f379e4d1fb1",
+  "studioInputsUnchanged": {
+    "public/assets/atlas/rook/profile.json": "50e626635182d4677721a8eaddfe2a76a7d3938a4df0a93fa6fa6234efe70366",
+    "characters/rook.json": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9",
+    "public/assets/atlas/rook/portrait.png": "ba6bf8cfdbbb1fc947e54ac25422ec28f4b11c73743cbc01fff8412bc2552ea9",
+    "public/assets/Rajdhani-Medium.ttf": "12ff7dcfe4c206e3875ac53b1762eab57de6a2fa7f5a86c26b97b88d6591eac2",
+    "public/style.css": "e8adea55152fd2defd66edff9e41f34dfcc0eb8e4b77a76ee4fe66daf0c21d03",
+    "public/index.html": "0d961331cbd4a9e1b264f3acb4eea1f81702b26962021f7df3bccfeed354ebe1",
+    "public/simulation.js": "0eab50fb0f34686bead88589a7d554e34fb704f980d2d5391cbaa8fb53a5b50b",
+    "public/atlas-renderer.js": "fef4991277a4f85fa30b2e8db8b98d1803e607593fb3c7e96d33e7705637a3e8",
+    "public/keyboard-input.js": "03f0a7149b70515eb29d3ba9d72843de5fe4165e7060fc2df34c89ebdb324a41",
+    "public/combat-aim.js": "054597f908218d99e823045dda8ebcb3d67adedee7b93da585a86ed31a6cb707",
+    "public/studio.js": "b33e7367d0cb7ab5061b1d8aae39f94acfb7c987cea5b0155358c589939b0b98",
+    "public/assets/atlas/rook/E_walk.webp": "1453a929995d24b06d85924179ae0006430ca546282d4c98040db24ce0355b52",
+    "public/assets/atlas/rook/E_idle.webp": "a059a99c10b956d089d3eb29f236d6d5ed8fe01e7ea88a1bd7847ac5fa736a4e",
+    "public/assets/atlas/rook/SE_walk.webp": "f990aec2b8c90e3f78f9d273c7cf91a6e75ed3e3c6e57727c7cb66750e9f7307",
+    "public/assets/atlas/rook/SE_idle.webp": "fcd76b9a62338d098f40b5eb5d749ee581bf1748d7e1629a312cb869101c0533",
+    "public/assets/atlas/rook/S_walk.webp": "4033f0213ad34710c59985abf716ba85c5cc2a981efb3f6115053e7990275e17",
+    "public/assets/atlas/rook/S_idle.webp": "ba4fc9a94162eff002bf4ee134af47218a012d47c4cd4457ad79e978985a37ed",
+    "public/assets/atlas/rook/SW_walk.webp": "9b8acc935223f9206cd40d747211187dc4ce374e194bd342163a6f01549712ed",
+    "public/assets/atlas/rook/SW_idle.webp": "208c6ed6be39beaaa91919447892b314c325acc5978a76ed12eec206c588a64e",
+    "public/assets/atlas/rook/W_walk.webp": "f15be7f79afb54db651d710f10f70793daa1044bddb4a17442dd8574f8597b19",
+    "public/assets/atlas/rook/W_idle.webp": "8665ffabe546fcec2c70561d4533a6ab12a88b83e7dc1b4ddb5c77eaf1123373",
+    "public/assets/atlas/rook/NW_walk.webp": "73417aac01030a8597e43a5652a2084c93344d346fd3ecb9f1a787d17ea671c7",
+    "public/assets/atlas/rook/NW_idle.webp": "de7c25bf7ebdcb497d1f2421b03c1daceca3bc67bf87ea291daaa521faeac616",
+    "public/assets/atlas/rook/N_walk.webp": "9a575694a83f1574f9ccaa52d72375d8fb21fba6dd8aefc1aaeed29af5273c31",
+    "public/assets/atlas/rook/N_idle.webp": "57ed1a86f8887410fdbe25c254a84aa9392104f4f19a13cc3074836956be425c",
+    "public/assets/atlas/rook/NE_walk.webp": "fc6404868c784335c4e81cd4836f4c16e0c43181740e7012ca811bd9fbcd7200",
+    "public/assets/atlas/rook/NE_idle.webp": "33681eb28dcdd2333c74c6f4fb1892d55bd1367f12f9449d09c87119cb96f5ae"
+  },
+  "appChecks": [
+    {
+      "log": "rook_smoke.log",
+      "pass": true,
+      "sha256": "400a4f119c0822cceca17ff2fa5cbe017b62040d7a3cd31f1c85e81a5cd085d9",
+      "warnings": []
+    },
+    {
+      "log": "motion_lab_smoke_final.log",
+      "pass": true,
+      "sha256": "9c884de729ed74a47fc38aa18264e88852eafc45cf7a6855a6d1d92af827092c",
+      "warnings": []
+    },
+    {
+      "log": "site7_battle_flow.log",
+      "pass": true,
+      "sha256": "7a87f214fd7fe84f8d3f5285a8f44e6b80191d8b089f15abe4142316178beb07",
+      "warnings": []
+    },
+    {
+      "log": "site7_battle_geometry_smoke.log",
+      "pass": true,
+      "sha256": "d63c44e210db57abdc6aed36732c2224da2661e4f4af8b7ee42d26d7d10cda5a",
+      "warnings": []
+    },
+    {
+      "log": "prototype_smoke.log",
+      "pass": true,
+      "sha256": "9905464074d629d144f847ee42674eb124f6b04a15a38403c0dafe48084d0593",
+      "warnings": []
+    },
+    {
+      "log": "m3_unique_art_smoke.log",
+      "pass": true,
+      "sha256": "4735a0d2511b0b10bbe1aa71dfaf891895e42bb6fc880f8901b0d8164919e178",
+      "warnings": []
+    },
+    {
+      "log": "m7_authored_visual_smoke.log",
+      "pass": true,
+      "sha256": "908c8d761071fe62681893ebcd8a3c47d8816a2bac6b788d574c2d440b27b8c0",
+      "warnings": []
+    },
+    {
+      "log": "final_capture.stdout.log",
+      "pass": true,
+      "sha256": "bb99801492d6674c7ae336696421b2f114312ca05ffa448197bc1300f56207b7",
+      "warnings": []
+    }
+  ],
+  "appImplementation": {
+    "AGENTS.md": "eb785ec341a4ea2dcd5ad4e682f4680f1356cf534cd582f23a511873925357ce",
+    "data/art_profiles/playable_profiles.json": "f94407df337ccd718088c6982ed17271b5c854f3a9ebcfc2d35057ecc8bc6466",
+    "scripts/animation/motion_lab_character_runtime.gd": "b560c154257e8eca819d41bb5303a0049f3df277aeb381a011c113df01734351",
+    "scripts/actors/operator_actor.gd": "43b974ea390b8580c54c7454772e72cd9240baaf71031f7adb8b116af6a9fbca",
+    "scripts/core/battle_texture_library.gd": "54cccfea375535425e8700d7b89c0e56f58c697049de46b92b85aa68b1211315",
+    "scripts/ui/story_stage_hud.gd": "eb48b59dec82da02ceedbb5117898168575dcdbbf518931d70f17a8f8aca304f",
+    "scripts/ui/base_lobby.gd": "c2230b8be3f8fb0238831d862a111d96e9e6f458672149f845248fffc86af140",
+    "scripts/ui/title_screen.gd": "0a7630452f706fffcec7c874d109f59dfad04a36265e6efe45df03fc609c81d6",
+    "tests/smoke/motion_lab_character_runtime_smoke.gd": "200b782b21415a716020e432096e59aaf3f18e3572ba2cf8b01acda377d0e816",
+    "tests/smoke/rook_motion_lab_app_smoke.gd": "d9c5b8f9bc5d946cc27a89f806d3e06ef3e4658078ed2a06f3bb484c2f8e3438",
+    "tests/render/rook_motion_lab_app_capture.gd": "def0e2eb60cb9eb2f2e011c4efe75e78522c66ee9a6f6c619643d452fdd7458c",
+    "tools/maintenance/validate_site7_battle.py": "2fcde00abdf7a1eea6f73ddf541f80f969c29ddb65e761564ee57e6c67b22c3e",
+    "tools/maintenance/seal_rook_app_integration.py": "90879cd90939421c9db7a02aee11de815ad5cedafcdaafe56bdc40758c867b24"
+  },
+  "evidence": {
+    "qa/rook_app_integration_20260913/final_capture/battle_stage_01_rook_1920x1080.png": "b22ee431da66a00090396aeb0ef58d6becee32757b66051f21450678beefab2f",
+    "qa/rook_app_integration_20260913/final_capture/battle_stage_02_rook_1920x1080.png": "69ad3e75ab71eb6944607450e56031fe4e9753513b1f73f8e6c877c44b3f6b92",
+    "qa/rook_app_integration_20260913/final_capture/battle_stage_03_rook_1920x1080.png": "ad068777310377d6aff7d05a91f86c7bd14c073f0717ec6f3f88e2bdca710ae5",
+    "qa/rook_app_integration_20260913/final_capture/lobby_rook_portrait_1920x1080.png": "9cad6eee97a9c605f8ea51225eec58cb9197f7b6ad52d16c90d02d39a84d4a17",
+    "qa/rook_app_integration_20260913/final_capture/rook_run_00_1920x1080.png": "11974e0678516ed0320745ecdd7fbf225b939b5af1c801e8d8f033f6b6ca76a3",
+    "qa/rook_app_integration_20260913/final_capture/rook_run_01_1920x1080.png": "d8fbf02c55c7c2c77c94f4b4bb3bf79537bbabd5cc514b53e137d73bca6e5f2e",
+    "qa/rook_app_integration_20260913/final_capture/rook_run_02_1920x1080.png": "7a4c89e9949c51f507095f8119830b1e18ec20454a800783ba2f9a8a89d40645",
+    "qa/rook_app_integration_20260913/final_capture/rook_run_03_1920x1080.png": "3956ce362412c61531c54a3edba03783b77f974b79877cf967b6d6338c0b54ce",
+    "qa/rook_app_integration_20260913/final_capture/rook_run_04_1920x1080.png": "437c12daefbfc5f863d39ad806ef998106b7d6620e5c4a5a93ed3879097e0ad6",
+    "qa/rook_app_integration_20260913/final_capture/rook_run_05_1920x1080.png": "4cf7c6dcaf79a6c67bd3d522b16f1755a56af2316ccc0bb47ebba0c58891b4f8",
+    "qa/rook_app_integration_20260913/final_capture/capture_report.json": "3d704bdacbcbae2adca8a2a4fadc668486eac365163c2be6ba524b5ff4ae3151",
+    "qa/rook_app_integration_20260913/visual_evidence_1080p.json": "bc26813bd855dd048d1a33141cb6e9ffce128836c1ce5c5594f90a5a31f7c52b",
+    "qa/rook_app_integration_20260913/RESULT_KO.md": "d4c342d5104ffc2cf9c3d36a6358fffaf9eb41d3fdc4642eb7c58a7de0fd2e63"
+  },
+  "scope": "Current accepted source reused in Godot; no new source/gait or Luna approval"
+}

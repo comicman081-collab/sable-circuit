@@ -1,0 +1,15 @@
+{
+  "recordedAt": "2026-09-13T08:27:03.468427+00:00",
+  "slot": "SE/walk/2",
+  "decision": "repair",
+  "reviewer": "current main implementation agent",
+  "notes": "Observed right-only holster connects to foreground leg whose shin extends down-forward and whose boot reads planted ahead. The unholstered left boot is raised behind. This reverses the requested left-support/right-forward-swing passing pose in SE_Walk_Loop_2 and would introduce an early support swap. REJECT pose, preserve original and derivatives; do not reinterpret prompt anatomy as observed anatomy.",
+  "sourceSHA256": "6a4a8e08bb8aedce33c84e2f9e5a813784fcbdf33473ccae76357f9dd5aa2fe4",
+  "sourcePixelSHA256": "97e572e48b995fdefe9fc96c0598eed5cb46817fbc855b34f7376035addc1687",
+  "sourceReceiptSHA256": "3188f3f228905a4d546db12c56a9adc33b84eea66120ff2ba8e2462a023547d3",
+  "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+  "evidence": {
+    "path": "qa/site7_rifle/source_panels/6a4a8e08bb8a_3f539202/native_lower_1920x1080.png",
+    "sha256": "fbd0d9e0448aa3d3c764aee94d764a65ae8c7cc5f403ccbf1291d3c9de46646b"
+  }
+}

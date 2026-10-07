@@ -1,0 +1,580 @@
+{
+ "run": "20261005_200721_full",
+ "finished_pass_by_log": [
+  "combat_density",
+  "cover_navigation",
+  "floor_segment",
+  "combat_query_fastpath",
+  "player_cover",
+  "cover_alpha_clip",
+  "cover_texture",
+  "drone_app",
+  "anchor_app",
+  "campaign_data",
+  "upgrade_economy",
+  "boss_registry",
+  "boss_pattern",
+  "boss_duel",
+  "boss_room_fairness",
+  "robot_roster",
+  "enemy_facing",
+  "machine_source",
+  "emission_owner",
+  "m2_story",
+  "m9_skill",
+  "m10_base_ui",
+  "m10_persistence",
+  "run_contract",
+  "contract_offers",
+  "redline",
+  "contract_save",
+  "m12_revive",
+  "play_log",
+  "hit_hurt_vfx",
+  "combat_vfx",
+  "elite_affix",
+  "elite_expansion",
+  "zone_hazard",
+  "firing_lane",
+  "platform_carry",
+  "contact_carry",
+  "world_layout",
+  "mood_light",
+  "walk_registration",
+  "plate_axis",
+  "variety_placement",
+  "seam_waiver",
+  "mood_contact",
+  "deploy_warmer",
+  "m13_migration",
+  "m13_campaign",
+  "m13_runtime",
+  "traversal_audit",
+  "enemy_cover_nav",
+  "cover_ai",
+  "boss_lineup",
+  "world_route"
+ ],
+ "started_not_finished": [
+  "connector_alignment"
+ ],
+ "never_started": [
+  "battle_flow",
+  "combat_entry",
+  "contract_ui",
+  "hazard_expansion",
+  "full_op_01",
+  "full_op_02",
+  "full_op_03",
+  "full_op_04",
+  "full_op_05",
+  "full_op_06",
+  "full_op_07",
+  "full_op_08",
+  "full_op_09",
+  "full_op_10",
+  "boss_capture_geometry",
+  "variety_capture",
+  "nav_pockets",
+  "battle_geometry",
+  "walk_graph_capture",
+  "combat_sfx",
+  "demo_integration",
+  "m7_visual",
+  "m10_intel",
+  "m13_loadout",
+  "campaign",
+  "rook_app",
+  "motion_lab_runtime",
+  "motion_lab_python",
+  "motion_lab_js"
+ ],
+ "rows": [
+  {
+   "test": "combat_density",
+   "suite": "quick",
+   "checks": 67,
+   "result_line": "COMBAT_DENSITY_SMOKE PASS (67 checks) {\"attacks_started\":29,\"drone_orbit_split\":[2,2],\"frames_with_two_or_more_attackers\":292,\"hostiles\":7,\"max_concurrent_attackers\":3,\"mission\":\"MIS_CH01_02\",\"operato",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "cover_navigation",
+   "suite": "quick",
+   "checks": 43,
+   "result_line": "COVER_NAVIGATION_SMOKE: PASS / 43 checks",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "floor_segment",
+   "suite": "quick",
+   "checks": 23,
+   "result_line": "FLOOR_SEGMENT_SMOKE: PASS (23 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "combat_query_fastpath",
+   "suite": "quick",
+   "checks": 34,
+   "result_line": "COMBAT_QUERY_FASTPATH_SMOKE: PASS (34 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "player_cover",
+   "suite": "quick",
+   "checks": 5,
+   "result_line": "SITE7_PLAYER_COVER_COLLISION: PASS (5 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "cover_alpha_clip",
+   "suite": "quick",
+   "checks": 5,
+   "result_line": "SITE7_COVER_ALPHA_CLIP: PASS / 5 checks",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "cover_texture",
+   "suite": "quick",
+   "checks": 17,
+   "result_line": "COVER_TEXTURE_REDUCTION_SMOKE: PASS (17 checks) 63.3 MB -> 10.2 MB",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "drone_app",
+   "suite": "quick",
+   "checks": 171,
+   "result_line": "SITE7_DRONE_APP_SMOKE: PASS (171 checks) res://qa/regression_runs/20261005_200721_full/out/drone_app/drone_app.json",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "anchor_app",
+   "suite": "quick",
+   "checks": 271,
+   "result_line": "SITE7_ANCHOR_APP_SMOKE: PASS (271 checks) res://qa/regression_runs/20261005_200721_full/out/anchor_app/anchor_app.json",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "campaign_data",
+   "suite": "quick",
+   "checks": 292,
+   "result_line": "SITE7_CAMPAIGN_DATA: PASS (292 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "upgrade_economy",
+   "suite": "quick",
+   "checks": 225,
+   "result_line": "UPGRADE_ECONOMY: PASS (225 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "boss_registry",
+   "suite": "quick",
+   "checks": 163,
+   "result_line": "SITE7_BOSS_REGISTRY_SMOKE: PASS (163 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "boss_pattern",
+   "suite": "quick",
+   "checks": 978,
+   "result_line": "SITE7_BOSS_PATTERN_SMOKE: PASS (978 checks) res://qa/regression_runs/20261005_200721_full/out/boss_pattern/pattern.json",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "boss_duel",
+   "suite": "quick",
+   "checks": 2184,
+   "result_line": "SITE7_BOSS_DUEL_SMOKE: PASS (2184 checks) res://qa/regression_runs/20261005_200721_full/out/boss_duel/duel.json",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "boss_room_fairness",
+   "suite": "quick",
+   "checks": 21,
+   "result_line": "SITE7_BOSS_ROOM_FAIRNESS: PASS (21 checks) res://qa/regression_runs/20261005_200721_full/out/boss_room_fairness/room_fairness.json",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "robot_roster",
+   "suite": "quick",
+   "checks": 302,
+   "result_line": "SITE7_ROBOT_ROSTER: PASS / 302 checks",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "enemy_facing",
+   "suite": "quick",
+   "checks": 224,
+   "result_line": "SITE7_ENEMY_FACING_SMOKE: PASS (224 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "machine_source",
+   "suite": "quick",
+   "checks": 436,
+   "result_line": "SITE7_MACHINE_SOURCE_SMOKE: PASS (436 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "emission_owner",
+   "suite": "quick",
+   "checks": 1293,
+   "result_line": "SITE7_EMISSION_OWNER_SMOKE: PASS (1293 checks) res://qa/regression_runs/20261005_200721_full/out/emission_owner",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "m2_story",
+   "suite": "quick",
+   "checks": 27,
+   "result_line": "M2_STORY_FLOW_SMOKE: PASS",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "m9_skill",
+   "suite": "quick",
+   "checks": 44,
+   "result_line": "M9_OPERATOR_SKILL_SYNERGY_SMOKE: PASS",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "m10_base_ui",
+   "suite": "quick",
+   "checks": 10,
+   "result_line": "M10_BASE_UI_ACTION_SMOKE: PASS",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "m10_persistence",
+   "suite": "quick",
+   "checks": 27,
+   "result_line": "M10_PERSISTENCE_SMOKE: PASS",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "run_contract",
+   "suite": "quick",
+   "checks": 34,
+   "result_line": "M11_RUN_CONTRACT_SMOKE: PASS",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "contract_offers",
+   "suite": "quick",
+   "checks": 26950,
+   "result_line": "RUN_CONTRACT_OFFERS_SMOKE: PASS (26950 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "redline",
+   "suite": "quick",
+   "checks": 78,
+   "result_line": "REDLINE_SMOKE: PASS (78 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "contract_save",
+   "suite": "quick",
+   "checks": 69,
+   "result_line": "RUN_CONTRACT_SAVE_SMOKE: PASS (69 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "m12_revive",
+   "suite": "quick",
+   "checks": 25,
+   "result_line": "M12_SQUAD_REVIVE_SMOKE: PASS",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "play_log",
+   "suite": "quick",
+   "checks": 25,
+   "result_line": "PLAY_SESSION_LOG_SMOKE: PASS (25 checks) res://qa/regression_runs/20261005_200721_full/out/play_log",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "hit_hurt_vfx",
+   "suite": "quick",
+   "checks": 47,
+   "result_line": "COMBAT_HIT_HURT_VFX_SMOKE: PASS (47 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "combat_vfx",
+   "suite": "quick",
+   "checks": 189,
+   "result_line": "COMBAT_VFX_OVERHAUL_SMOKE: PASS (189 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "elite_affix",
+   "suite": "quick",
+   "checks": 71,
+   "result_line": "ELITE_AFFIX_SMOKE: PASS (71 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "elite_expansion",
+   "suite": "quick",
+   "checks": 438,
+   "result_line": "ELITE_EXPANSION_SMOKE: PASS (438 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "zone_hazard",
+   "suite": "quick",
+   "checks": 366,
+   "result_line": "ZONE_HAZARD_SMOKE: PASS (366 checks, 15 rooms)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "firing_lane",
+   "suite": "quick",
+   "checks": 325,
+   "result_line": "FIRING_LANE_SEARCH_SMOKE: PASS (325 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "platform_carry",
+   "suite": "quick",
+   "checks": 6,
+   "result_line": "ACTOR_PLATFORM_CARRY_SMOKE: PASS (6 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "contact_carry",
+   "suite": "quick",
+   "checks": 27,
+   "result_line": "ACTOR_CONTACT_CARRY_SMOKE: PASS (27 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "world_layout",
+   "suite": "quick",
+   "checks": null,
+   "result_line": "SITE7_WORLD_LAYOUT PASS 10 missions",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "mood_light",
+   "suite": "quick",
+   "checks": null,
+   "result_line": "SITE7_MOOD_LIGHT PASS 150 plates 788 pools 150 void masks 15 contact shadows",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "walk_registration",
+   "suite": "quick",
+   "checks": null,
+   "result_line": "WALK_TORSO_REGISTRATION PASS",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "plate_axis",
+   "suite": "quick",
+   "checks": 2,
+   "result_line": "OK",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "variety_placement",
+   "suite": "quick",
+   "checks": 10,
+   "result_line": "OK",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "seam_waiver",
+   "suite": "quick",
+   "checks": 10,
+   "result_line": "OK",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "mood_contact",
+   "suite": "quick",
+   "checks": 13,
+   "result_line": "OK",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "deploy_warmer",
+   "suite": "quick",
+   "checks": 83,
+   "result_line": "DEPLOY_WARMER_SMOKE: PASS (83 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "m13_migration",
+   "suite": "quick",
+   "checks": 9,
+   "result_line": "M13_WEAPON_BASE_MIGRATION_SMOKE: PASS",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "m13_campaign",
+   "suite": "quick",
+   "checks": 16,
+   "result_line": "M13_WEAPON_CAMPAIGN_SMOKE: PASS",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "m13_runtime",
+   "suite": "quick",
+   "checks": 18,
+   "result_line": "M13_WEAPON_RUNTIME_SMOKE: PASS",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "traversal_audit",
+   "suite": "full",
+   "checks": 2394,
+   "result_line": "SITE7_TRAVERSAL_AUDIT: PASS (2394 checks, 0 failures)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "enemy_cover_nav",
+   "suite": "full",
+   "checks": null,
+   "result_line": "ENEMY_COVER_NAVIGATION PASS res://qa/regression_runs/20261005_200721_full/out/enemy_cover_nav []",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "cover_ai",
+   "suite": "full",
+   "checks": 46,
+   "result_line": "SITE7_COVER_AI: PASS_TECHNICAL_ONLY / 46 checks",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "boss_lineup",
+   "suite": "full",
+   "checks": null,
+   "result_line": "SITE7_BOSS_LINEUP_CAPTURE: PASS res://qa/regression_runs/20261005_200721_full/out/boss_lineup",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "world_route",
+   "suite": "full",
+   "checks": 94,
+   "result_line": "SITE7_WORLD_ROUTE_NAVIGATION: PASS (94 checks)",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  },
+  {
+   "test": "connector_alignment",
+   "suite": "full",
+   "checks": null,
+   "result_line": "",
+   "script_error": false,
+   "fail_lines": [],
+   "missing": []
+  }
+ ]
+}

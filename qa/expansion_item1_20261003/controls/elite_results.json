@@ -1,0 +1,29 @@
+[
+  {
+    "name": "no_beacon_damage",
+    "status": "FAIL",
+    "exit_code": 1,
+    "failures": [
+      "FAIL: beacon reduces actual peer damage by its 25 percent",
+      "FAIL: overlapping beacons use the strongest once, not multiplied",
+      "FAIL: the remaining weaker source takes over immediately",
+      "FAIL: reduction happens before shield absorption: 40 becomes 30, exactly the barrier",
+      "FAIL: after the barrier breaks the reduced damage reaches health",
+      "FAIL: the line display budget does not remove the seventh peer's protection"
+    ]
+  },
+  {
+    "name": "no_brood_alive",
+    "status": "FAIL",
+    "exit_code": 1,
+    "failures": [
+      "FAIL: both hatchlings are counted before the parent decrements",
+      "FAIL: two live hatchlings keep the last parent's room locked",
+      "FAIL: a repeated defeat hook cannot hatch twice",
+      "FAIL: hatchling's collider is on nearby painted floor outside cover",
+      "FAIL: hatchling's collider is on nearby painted floor outside cover",
+      "FAIL: first hatchling death keeps the room locked",
+      "FAIL: final hatchling death opens the room exactly once"
+    ]
+  }
+]

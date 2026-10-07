@@ -1,0 +1,27 @@
+{"profile": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_t3yolv38\\qa\\build_candidates\\fixture\\b1366b7c8b0244b691e321a03dd66dec\\public\\assets\\atlas\\fixture\\profile.json", "candidateOnly": true, "missing": []}
+{"recipe": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_ouq77rtz\\characters\\newwalk.json", "requests": 56, "art": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_ouq77rtz\\art\\newwalk"}
+{"recipe": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_ouq77rtz\\characters\\newrun.json", "requests": 104, "art": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_ouq77rtz\\art\\newrun"}
+{"profile": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_diryxf_2\\public\\assets\\atlas\\fixture\\profile.json", "reviewPreviews": "D:\\AI \uc885\ud569 \ud3f4\ub354\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\workflow_diryxf_2\\qa\\build_candidates\\fixture\\79e835544e9c45be911dd6e45582da5b\\reference\\atlas\\fixture", "ready": ["E", "SE", "S", "SW", "W", "NW", "N", "NE"], "missing": []}
+.............................................................................E............
+{"id": "fixture", "status": "CANDIDATE_NOT_REVIEWED", "source": "master.png", "sourceSHA256": "e1f6e4466e8b2b2a8fc06c56e1910114810686c16bc9c3d24acbe70a6747e905", "toolResponse": {"path": "response.json", "sha256": "146d71d9d45b8b67da7782c66c990ebecf5156dc248a31ff20dfeb52061eaf7e"}, "sourceNative": [1024, 1024], "box": [0, 0, 1024, 1024], "candidate": "qa\\stage1_enemies_20260913\\fixture\\e1f6e4466e8b_de58129d\\candidate_rgba.png", "candidateSHA256": "e1f6e4466e8b2b2a8fc06c56e1910114810686c16bc9c3d24acbe70a6747e905", "candidateNative": [1024, 1024], "native_review": [1920, 1080], "operation": "existing key_image chroma/alpha separation then native crop only", "preparationCodeSHA256": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a", "matteCodeSHA256": "cf559b57001cd7da39244d9053fe50a29e9186f1e6ab2059ded70fcb816d6c08", "implementationDependencies": {"preparation": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a", "matte": "cf559b57001cd7da39244d9053fe50a29e9186f1e6ab2059ded70fcb816d6c08", "provenance": "7fd3a5b0a1c7fbf57413837480263ca4a0aaadee79fdf90525f95fd182a358e8"}, "resampling": false, "anatomicalWarp": false, "runtimePromotion": false}
+{"id": "fixture", "status": "CANDIDATE_NOT_REVIEWED", "source": "master.png", "sourceSHA256": "e1f6e4466e8b2b2a8fc06c56e1910114810686c16bc9c3d24acbe70a6747e905", "toolResponse": {"path": "response.json", "sha256": "146d71d9d45b8b67da7782c66c990ebecf5156dc248a31ff20dfeb52061eaf7e"}, "sourceNative": [1024, 1024], "box": [0, 0, 1024, 1024], "candidate": "qa\\stage1_enemies_20260913\\fixture\\e1f6e4466e8b_4b69898f\\candidate_rgba.png", "candidateSHA256": "e1f6e4466e8b2b2a8fc06c56e1910114810686c16bc9c3d24acbe70a6747e905", "candidateNative": [1024, 1024], "native_review": [1920, 1080], "operation": "existing key_image chroma/alpha separation then native crop only", "preparationCodeSHA256": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a", "matteCodeSHA256": "094a7ba51d324668eb9a02645872e8263fdd31f15ddab05aa66e0f23ca8f5f49", "implementationDependencies": {"preparation": "d63a443ba1e9704e158a6bd4830f4471ca8b61ab1ddbf4f58d51e1ae2ee4237a", "matte": "094a7ba51d324668eb9a02645872e8263fdd31f15ddab05aa66e0f23ca8f5f49", "provenance": "7fd3a5b0a1c7fbf57413837480263ca4a0aaadee79fdf90525f95fd182a358e8"}, "resampling": false, "anatomicalWarp": false, "runtimePromotion": false}
+======================================================================
+ERROR: test_known_repair_precedes_missing_pilot_slot (test_reuse_improvements.HandoffTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\tests\test_reuse_improvements.py", line 243, in test_known_repair_precedes_missing_pilot_slot
+    workflow.review_source('fixture', 'E/walk/0', 'repair', str(source),
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\character_workflow.py", line 116, in review_source
+    row={'recordedAt':stamp(),'slot':slot,'decision':decision,'reviewer':reviewer,'notes':notes,'sourceSHA256':sha(path),'sourcePixelSHA256':pixels(path),'sourceReceiptSHA256':sha(path.with_suffix('.source.json')) if path.with_suffix('.source.json').exists() else None,'referenceSHA256':c['referenceSHA256'],'evidence':binding(proof)}
+  File "D:\AI ���� ����\Games\Sable-circuit\motion_lab_v1\source_provenance.py", line 33, in pixels
+    with Image.open(path) as im:
+  File "C:\AI_ENVS\pair_pipeline_env\lib\site-packages\PIL\Image.py", line 3711, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file 'D:\\AI ���� ����\\Games\\Sable-circuit\\motion_lab_v1\\qa\\technical_tests\\handoff__pr95_d2\\motion_lab_v1\\art\\fixture\\E_walk_0_master.png'
+
+----------------------------------------------------------------------
+Ran 90 tests in 102.920s
+
+FAILED (errors=1)
+OpenCV: FFMPEG: tag 0x30385056/'VP80' is not supported with codec id 139 and format 'webm / WebM'
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000002176495ed00] moov atom not found

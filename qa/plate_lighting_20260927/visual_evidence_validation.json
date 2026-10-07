@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-26T16:09:24.880721+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\plate_lighting_20260927\\01_room_R02_a_after.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1517568,
+      "sha256": "78e6de0602a36e47d4f8ce7f01f7ff4efd6cf4d72c2c36b7f40d790d5a9e4460"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\plate_lighting_20260927\\01_room_R02_a_before.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1586464,
+      "sha256": "c81088bd83ddae3c6f4f10f7b25297ec6f717ce2e205cc351dcce5cee08812ff"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\plate_lighting_20260927\\02_connector_C0_after.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1693766,
+      "sha256": "0d3fcab83689b70e599a35238d0e38353489d6be301b7bc51f48e7b6fc87f8ec"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\plate_lighting_20260927\\02_connector_C0_before.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1807036,
+      "sha256": "8141a934e49f728d12317a644ada1dd7130f96e4f8c0eb064f91ff93dc2ee017"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\plate_lighting_20260927\\03_room_R04_b_after.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1780148,
+      "sha256": "d955a471f03d22090125d312bd02fd3625bce2553292841be906e98b5ec305ab"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\plate_lighting_20260927\\03_room_R04_b_before.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1862404,
+      "sha256": "bc95474b3f731067981ef1e2afe6ba0523150b9963916aa846cc88b48d08a091"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\plate_lighting_20260927\\04_op3_room_R03_TRACE_b_after.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1878454,
+      "sha256": "24fcb32b0261559420f3b90a697f8b58102385cc44a6f6591715c563973a64bb"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\qa\\plate_lighting_20260927\\04_op3_room_R03_TRACE_b_before.webp",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 1887226,
+      "sha256": "89762f085422bfb577b41b3036f8011fa4876f575124678eecabab6486d83cdb"
+    }
+  ]
+}

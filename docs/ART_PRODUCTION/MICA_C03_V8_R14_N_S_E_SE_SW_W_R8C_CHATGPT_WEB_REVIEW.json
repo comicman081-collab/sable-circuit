@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "reviewer": "existing ChatGPT web planning conversation",
+  "review_date": "2026-09-05",
+  "reviewed_at_utc": "2026-09-04T15:28:18.6541102Z",
+  "conversation": "https://chatgpt.com/c/6a93c84f-fb1c-83e8-9d88-959e708b2463",
+  "candidate": "MICA_C03_V8_R14_N_S_E_SE_SW_W_SHARED_R8C_SUBPIXEL_WORLD_GRID",
+  "status": "PASS_FOR_SIX_DIRECTION_CAPTURE_PILOTS",
+  "valid_review": true,
+  "scope": "The six latest R8C N/S/E/SE/SW/W world MP4 files were opened and reviewed as actual continuous playback in the existing planning conversation. Each file was decoded across 120 frames, 24 fps, 5 seconds, including five cycles, both support windows, F11->F12 and F23->next F00 boundaries. This is capture-only evidence and is not an eight-direction package or production-promotion review.",
+  "promotion": {
+    "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+    "six_direction_pilots": "PASS_CAPTURE_ONLY",
+    "godot_runtime_integration": "HOLD_NOT_PROVEN",
+    "eight_direction_sector_switch_and_package": "HOLD_NOT_PROVEN",
+    "production": "HOLD",
+    "remaining_gate": "Godot runtime integration, eight-direction sector/package gate, and independent Ponytail FULL gate"
+  },
+  "evidence_reviewed": [
+    "artifacts/mica_c03_v8_r14_n_shared_handoff_r8c_review/MICA_C03_V8_R14_N_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+    "artifacts/mica_c03_v8_r14_s_shared_handoff_r8c_review/MICA_C03_V8_R14_S_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+    "artifacts/mica_c03_v8_r14_e_shared_handoff_r8c_review/MICA_C03_V8_R14_E_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+    "artifacts/mica_c03_v8_r14_se_shared_handoff_r8c_review/MICA_C03_V8_R14_SE_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+    "artifacts/mica_c03_v8_r14_sw_shared_handoff_r8c_review/MICA_C03_V8_R14_SW_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+    "artifacts/mica_c03_v8_r14_w_shared_handoff_r8c_review/MICA_C03_V8_R14_W_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4"
+  ],
+  "capture_scope": {
+    "world_video_resolution": [1920, 1080],
+    "fps": 24,
+    "frames_per_direction": 120,
+    "duration_seconds": 5.0,
+    "review_mode": "actual_continuous_frame_playback",
+    "cycles_reviewed": 5,
+    "support_windows_reviewed": 2,
+    "handoff_boundaries_reviewed": ["F11->F12", "F23->next F00"]
+  },
+  "gates": {
+    "N": {
+      "A_gait_readability_forward_alternation_no_tap_or_skate": "PASS",
+      "B_leg_volume_calf_waist_stability": "PASS",
+      "C_ankle_boot_ground_foot_snap": "PASS",
+      "D_support_sole_lock_handoff_stride_root_cadence": "PASS",
+      "E_composite_z_order_green_alpha": "PASS",
+      "F_capture_pilot_blocker": "PASS_NO_BLOCKER"
+    },
+    "S": {
+      "A_gait_readability_forward_alternation_no_tap_or_skate": "PASS",
+      "B_leg_volume_calf_waist_stability": "PASS",
+      "C_ankle_boot_ground_foot_snap": "PASS",
+      "D_support_sole_lock_handoff_stride_root_cadence": "PASS",
+      "E_composite_z_order_green_alpha": "PASS",
+      "F_capture_pilot_blocker": "PASS_NO_BLOCKER"
+    },
+    "E": {
+      "A_gait_readability_forward_alternation_no_tap_or_skate": "PASS",
+      "B_leg_volume_calf_waist_stability": "PASS",
+      "C_ankle_boot_ground_foot_snap": "PASS",
+      "D_support_sole_lock_handoff_stride_root_cadence": "PASS",
+      "E_composite_z_order_green_alpha": "PASS",
+      "F_capture_pilot_blocker": "PASS_NO_BLOCKER"
+    },
+    "SE": {
+      "A_gait_readability_forward_alternation_no_tap_or_skate": "PASS",
+      "B_leg_volume_calf_waist_stability": "PASS",
+      "C_ankle_boot_ground_foot_snap": "PASS",
+      "D_support_sole_lock_handoff_stride_root_cadence": "PASS",
+      "E_composite_z_order_green_alpha": "PASS",
+      "F_capture_pilot_blocker": "PASS_NO_BLOCKER"
+    },
+    "SW": {
+      "A_gait_readability_forward_alternation_no_tap_or_skate": "PASS",
+      "B_leg_volume_calf_waist_stability": "PASS",
+      "C_ankle_boot_ground_foot_snap": "PASS",
+      "D_support_sole_lock_handoff_stride_root_cadence": "PASS",
+      "E_composite_z_order_green_alpha": "PASS",
+      "F_capture_pilot_blocker": "PASS_NO_BLOCKER"
+    },
+    "W": {
+      "A_gait_readability_forward_alternation_no_tap_or_skate": "PASS",
+      "B_leg_volume_calf_waist_stability": "PASS",
+      "C_ankle_boot_ground_foot_snap": "PASS",
+      "D_support_sole_lock_handoff_stride_root_cadence": "PASS",
+      "E_composite_z_order_green_alpha": "PASS",
+      "F_capture_pilot_blocker": "PASS_NO_BLOCKER"
+    }
+  },
+  "specific_findings": {
+    "gait": "All six directions read as actual directional forward walking with stance-swing alternation; no in-place tap dance, root-only skate, central leg crossing, or persistent duck-foot/out-toed gait was observed.",
+    "scale_and_volume": "Leg length and width remain stable across the full clips; no rubber-leg stretch, non-uniform pumping, barrel-calf expansion, or waist snap was observed.",
+    "foot_and_ground": "No blocking 90-degree ankle break, boot inversion, gross foot snap, visible ground penetration, or floating support sole was observed.",
+    "sole_and_handoff": "Both support windows remain visibly locked; F11->F12 and F23->F00 handoffs are continuous, with no root reset, marker reversal, or long-step/short-catch-up repetition.",
+    "raster_cadence": "The R7 stop-and-catch-up defect is not visible in R8C. Small 1px/2px raster micro-cadence remains non-blocking; SE/SW have slightly more visible diagonal modulation.",
+    "composite": "Torso, pelvis, coat, weapon, leg ordering, seams, green/alpha edges, and silhouette remain stable; no flicker, green wedge/pinhole, halo, or z-order pop was observed.",
+    "direction_notes": {
+      "N": "Rear view reads as forward travel with alternating support; low heel/toe roll and small counter-motion are non-blocking.",
+      "S": "Front view reads as forward travel; depth separation of the feet is weaker in some phases, but there is no crossing or persistent out-toe.",
+      "E": "Side view reads as forward travel; leg overlap and low swing-foot clearance create a mild flat shuffle impression without a blocker.",
+      "SE": "Diagonal forward travel and alternation are clear; mild diagonal cadence modulation and depth ambiguity are non-blocking.",
+      "SW": "Diagonal forward travel and alternation are clear; stance is slightly wide and foot roll is restrained, both non-blocking.",
+      "W": "Side view reads as forward travel; leg overlap, low swing-foot clearance, and small foot roll are non-blocking."
+    },
+    "non_blocking_polish": [
+      "Low heel-to-toe roll and restrained swing-foot clearance.",
+      "Small pelvis/torso counter-motion; a somewhat rigid tactical or marching read.",
+      "N/S 1px-to-2px raster micro-cadence and SE/SW diagonal speed modulation.",
+      "E/W side-view leg overlap and flat shuffle impression.",
+      "Subpixel translation causing approximately 1px edge softness variation."
+    ],
+    "runtime_scope": "CAPTURE_ONLY_SUBPIXEL_DERIVATIVE_NOT_PRODUCTION_INTEGRATION",
+    "r8c_additional_six_direction_visual_blockers": 0
+  },
+  "quarantine_policy": {
+    "prior_r4_to_r8_r8b_and_failed_held_assets": "PRESERVE_IN_QUARANTINE",
+    "delete_or_retire_now": false,
+    "retirement_manifest_required_before_disposal": true
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "date": "2026-09-25",
+  "rounds": 4,
+  "builds": {
+    "base": "http://127.0.0.1:8801/index.html",
+    "new2": "http://127.0.0.1:8805/index.html",
+    "final": "http://127.0.0.1:8806/index.html"
+  },
+  "devtools_port": 8043,
+  "runs": [
+    {
+      "build": "base",
+      "url": "http://127.0.0.1:8801/index.html",
+      "tag": "r1",
+      "ready_s": 8.3,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 45.4,
+        "frames": 109,
+        "p50_ms": 20,
+        "p95_ms": 30.1,
+        "max_ms": 50,
+        "over_33ms": 1,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 14,
+        "frames": 138,
+        "p50_ms": 60,
+        "p95_ms": 150,
+        "max_ms": 189.9,
+        "over_33ms": 109,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 12.2,
+        "frames": 74,
+        "p50_ms": 70,
+        "p95_ms": 169.9,
+        "max_ms": 200.1,
+        "over_33ms": 66,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8801/index.html",
+      "field_region_mad": 1.62,
+      "valid": true
+    },
+    {
+      "build": "new2",
+      "url": "http://127.0.0.1:8805/index.html",
+      "tag": "r1",
+      "ready_s": 8.3,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 41.5,
+        "frames": 166,
+        "p50_ms": 20.1,
+        "p95_ms": 30.1,
+        "max_ms": 40,
+        "over_33ms": 1,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 65.2,
+        "frames": 652,
+        "p50_ms": 10.1,
+        "p95_ms": 20.4,
+        "max_ms": 90,
+        "over_33ms": 14,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 96.3,
+        "frames": 577,
+        "p50_ms": 10,
+        "p95_ms": 10.1,
+        "max_ms": 50.1,
+        "over_33ms": 4,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8805/index.html",
+      "field_region_mad": 0.79,
+      "valid": true
+    },
+    {
+      "build": "final",
+      "url": "http://127.0.0.1:8806/index.html",
+      "tag": "r1",
+      "ready_s": 8.2,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 54,
+        "frames": 216,
+        "p50_ms": 20,
+        "p95_ms": 29.9,
+        "max_ms": 30.1,
+        "over_33ms": 0,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 80.8,
+        "frames": 808,
+        "p50_ms": 10,
+        "p95_ms": 20.1,
+        "max_ms": 80,
+        "over_33ms": 2,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 96,
+        "frames": 576,
+        "p50_ms": 10,
+        "p95_ms": 10.1,
+        "max_ms": 59.9,
+        "over_33ms": 4,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8806/index.html",
+      "field_region_mad": 0.39,
+      "valid": true
+    },
+    {
+      "build": "new2",
+      "url": "http://127.0.0.1:8805/index.html",
+      "tag": "r2",
+      "ready_s": 8.2,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 45.4,
+        "frames": 182,
+        "p50_ms": 20,
+        "p95_ms": 30.1,
+        "max_ms": 40.1,
+        "over_33ms": 1,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 65.8,
+        "frames": 658,
+        "p50_ms": 10.1,
+        "p95_ms": 29.9,
+        "max_ms": 80.1,
+        "over_33ms": 11,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 91.6,
+        "frames": 549,
+        "p50_ms": 10,
+        "p95_ms": 19.9,
+        "max_ms": 60.1,
+        "over_33ms": 4,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8805/index.html",
+      "field_region_mad": 0.86,
+      "valid": true
+    },
+    {
+      "build": "final",
+      "url": "http://127.0.0.1:8806/index.html",
+      "tag": "r2",
+      "ready_s": 8.2,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 35.3,
+        "frames": 142,
+        "p50_ms": 30,
+        "p95_ms": 39.9,
+        "max_ms": 40.1,
+        "over_33ms": 8,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 75.5,
+        "frames": 755,
+        "p50_ms": 10,
+        "p95_ms": 20.1,
+        "max_ms": 89.9,
+        "over_33ms": 5,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 94,
+        "frames": 564,
+        "p50_ms": 10,
+        "p95_ms": 10.2,
+        "max_ms": 60,
+        "over_33ms": 4,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8806/index.html",
+      "field_region_mad": 0.79,
+      "valid": true
+    },
+    {
+      "build": "base",
+      "url": "http://127.0.0.1:8801/index.html",
+      "tag": "r2",
+      "ready_s": 8.2,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 48.7,
+        "frames": 194,
+        "p50_ms": 20,
+        "p95_ms": 30,
+        "max_ms": 30.1,
+        "over_33ms": 0,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 13,
+        "frames": 129,
+        "p50_ms": 60.1,
+        "p95_ms": 179.9,
+        "max_ms": 200,
+        "over_33ms": 104,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 13.7,
+        "frames": 81,
+        "p50_ms": 59.9,
+        "p95_ms": 160.1,
+        "max_ms": 230,
+        "over_33ms": 50,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8801/index.html",
+      "field_region_mad": 1.72,
+      "valid": true
+    },
+    {
+      "build": "final",
+      "url": "http://127.0.0.1:8806/index.html",
+      "tag": "r3",
+      "ready_s": 8.3,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 43.5,
+        "frames": 174,
+        "p50_ms": 20,
+        "p95_ms": 30.1,
+        "max_ms": 60.1,
+        "over_33ms": 2,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 69.2,
+        "frames": 692,
+        "p50_ms": 10.1,
+        "p95_ms": 20.1,
+        "max_ms": 90.1,
+        "over_33ms": 3,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 93.8,
+        "frames": 563,
+        "p50_ms": 10,
+        "p95_ms": 10.3,
+        "max_ms": 50.1,
+        "over_33ms": 4,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8806/index.html",
+      "field_region_mad": 0.97,
+      "valid": true
+    },
+    {
+      "build": "base",
+      "url": "http://127.0.0.1:8801/index.html",
+      "tag": "r3",
+      "ready_s": 8.3,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 34.8,
+        "frames": 138,
+        "p50_ms": 30,
+        "p95_ms": 39.9,
+        "max_ms": 60.1,
+        "over_33ms": 10,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 21.8,
+        "frames": 216,
+        "p50_ms": 40,
+        "p95_ms": 80,
+        "max_ms": 170,
+        "over_33ms": 144,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 24.8,
+        "frames": 148,
+        "p50_ms": 30.1,
+        "p95_ms": 80.1,
+        "max_ms": 120.1,
+        "over_33ms": 68,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8801/index.html",
+      "field_region_mad": 0.98,
+      "valid": true
+    },
+    {
+      "build": "new2",
+      "url": "http://127.0.0.1:8805/index.html",
+      "tag": "r3",
+      "ready_s": 8.3,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 49.9,
+        "frames": 199,
+        "p50_ms": 20,
+        "p95_ms": 30,
+        "max_ms": 40,
+        "over_33ms": 1,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 77,
+        "frames": 770,
+        "p50_ms": 10,
+        "p95_ms": 20.1,
+        "max_ms": 70.1,
+        "over_33ms": 7,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 97.8,
+        "frames": 587,
+        "p50_ms": 10,
+        "p95_ms": 10.1,
+        "max_ms": 40,
+        "over_33ms": 3,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8805/index.html",
+      "field_region_mad": 0.43,
+      "valid": true
+    },
+    {
+      "build": "base",
+      "url": "http://127.0.0.1:8801/index.html",
+      "tag": "r4",
+      "ready_s": 8.2,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 46,
+        "frames": 183,
+        "p50_ms": 20,
+        "p95_ms": 30,
+        "max_ms": 40,
+        "over_33ms": 3,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 14.2,
+        "frames": 140,
+        "p50_ms": 69.9,
+        "p95_ms": 119.9,
+        "max_ms": 139.9,
+        "over_33ms": 131,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 20.7,
+        "frames": 123,
+        "p50_ms": 39.9,
+        "p95_ms": 120.1,
+        "max_ms": 140.1,
+        "over_33ms": 69,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8801/index.html",
+      "field_region_mad": 1.7,
+      "valid": true
+    },
+    {
+      "build": "new2",
+      "url": "http://127.0.0.1:8805/index.html",
+      "tag": "r4",
+      "ready_s": 8.2,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 53.5,
+        "frames": 214,
+        "p50_ms": 20,
+        "p95_ms": 29.9,
+        "max_ms": 30.1,
+        "over_33ms": 0,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 81.9,
+        "frames": 818,
+        "p50_ms": 10,
+        "p95_ms": 20.1,
+        "max_ms": 110,
+        "over_33ms": 8,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 96.7,
+        "frames": 580,
+        "p50_ms": 10,
+        "p95_ms": 10.1,
+        "max_ms": 50.1,
+        "over_33ms": 5,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8805/index.html",
+      "field_region_mad": 0.76,
+      "valid": true
+    },
+    {
+      "build": "final",
+      "url": "http://127.0.0.1:8806/index.html",
+      "tag": "r4",
+      "ready_s": 8.1,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 53.1,
+        "frames": 212,
+        "p50_ms": 20,
+        "p95_ms": 30,
+        "max_ms": 30.1,
+        "over_33ms": 0,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 85.4,
+        "frames": 853,
+        "p50_ms": 10,
+        "p95_ms": 20,
+        "max_ms": 70,
+        "over_33ms": 1,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 90.3,
+        "frames": 542,
+        "p50_ms": 10,
+        "p95_ms": 20,
+        "max_ms": 60.1,
+        "over_33ms": 5,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8806/index.html",
+      "field_region_mad": 0.39,
+      "valid": true
+    }
+  ],
+  "gpu_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 SUPER (0x00002783) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "summary": {
+    "base": {
+      "valid_runs": 4,
+      "title_median": 45.7,
+      "field10_median": 14.1,
+      "late6_median": 17.2,
+      "field10_all": [
+        14,
+        13,
+        21.8,
+        14.2
+      ],
+      "late6_all": [
+        12.2,
+        13.7,
+        24.8,
+        20.7
+      ]
+    },
+    "new2": {
+      "valid_runs": 4,
+      "title_median": 47.65,
+      "field10_median": 71.4,
+      "late6_median": 96.5,
+      "field10_all": [
+        65.2,
+        65.8,
+        77,
+        81.9
+      ],
+      "late6_all": [
+        96.3,
+        91.6,
+        97.8,
+        96.7
+      ]
+    },
+    "final": {
+      "valid_runs": 4,
+      "title_median": 48.3,
+      "field10_median": 78.15,
+      "late6_median": 93.9,
+      "field10_all": [
+        80.8,
+        75.5,
+        69.2,
+        85.4
+      ],
+      "late6_all": [
+        96,
+        94,
+        93.8,
+        90.3
+      ]
+    }
+  }
+}

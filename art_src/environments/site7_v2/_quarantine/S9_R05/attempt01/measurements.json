@@ -1,0 +1,185 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_R05/attempt01/S9_R05_GAME.png",
+  "luma": 0.20011360943317413,
+  "p10": 0.17270196974277496,
+  "p90": 0.23730197548866272,
+  "saturation": 0.1089765841674839,
+  "hue": 144.34069784198326,
+  "axis": 24.121365137801753,
+  "problems": [
+    "main floor border margin 4.665% below 7%",
+    "SW apron saturation 0.110023 exceeds .10"
+  ],
+  "plate": "S9_R05",
+  "attempt": 1,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      78,
+      486
+    ],
+    [
+      843,
+      212
+    ],
+    [
+      1093,
+      288
+    ],
+    [
+      1106,
+      267
+    ],
+    [
+      1264,
+      199
+    ],
+    [
+      1300,
+      270
+    ],
+    [
+      1302,
+      384
+    ],
+    [
+      1588,
+      512
+    ],
+    [
+      813,
+      862
+    ],
+    [
+      431,
+      676
+    ],
+    [
+      304,
+      758
+    ],
+    [
+      134,
+      658
+    ],
+    [
+      271,
+      585
+    ]
+  ],
+  "doors_px": {
+    "NE": [
+      1197,
+      334,
+      235
+    ],
+    "SW": [
+      351,
+      631,
+      181
+    ]
+  },
+  "raw_sha256": "6fd826b28dd015d9c13c64d8b60699b8618dae0f44d89ede18341abedbfd18d1",
+  "master_sha256": "6fd826b28dd015d9c13c64d8b60699b8618dae0f44d89ede18341abedbfd18d1",
+  "game_sha256": "58e8ba44966299fbac250624b85e6b5faed9f5a8700b5586c57fcc6f3b3847bd",
+  "game_exposure_factor_srgb": 0.8357,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-64dad7d3-9979-400a-bb3e-88efe89d183c.png",
+  "inspection": "NE/SW만 열리고 SE는 연속 난간. 새 흰금 메모리 블레이드 벽과 넓고 둔한 읽기 헤드가 보스 지구라트/바늘과 구별됨. 실제 바닥은 양 옆 테두리에 너무 가까움.",
+  "floor_area_px2": 548677.5,
+  "floor_area_fraction": 0.3487315616594379,
+  "floor_bounds_px": [
+    78,
+    199,
+    1588,
+    862
+  ],
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "main_floor_minimum": 0.07,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "NE": [
+        [
+          1093,
+          288
+        ],
+        [
+          1106,
+          267
+        ],
+        [
+          1264,
+          199
+        ],
+        [
+          1300,
+          270
+        ],
+        [
+          1302,
+          384
+        ]
+      ],
+      "SW": [
+        [
+          271,
+          585
+        ],
+        [
+          431,
+          676
+        ],
+        [
+          304,
+          758
+        ],
+        [
+          134,
+          658
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      78,
+      212,
+      1588,
+      862
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.04665071770334928,
+      0.2252922422954304,
+      0.050239234449760764,
+      0.08395324123273114
+    ],
+    "whole_floor_bounds_px": [
+      78,
+      199,
+      1588,
+      862
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.04665071770334928,
+      0.21147715196599362,
+      0.050239234449760764,
+      0.08395324123273114
+    ],
+    "main_floor_area_px2": 503029
+  },
+  "apron_stats": {
+    "NE": {
+      "luma": 0.2259301394224167,
+      "saturation": 0.09817579667418566,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "SW": {
+      "luma": 0.24313168227672577,
+      "saturation": 0.1100233233486257,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  }
+}

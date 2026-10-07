@@ -1,0 +1,511 @@
+{
+  "method": "op 1 battle preview, rooms 1->3->4 cycled, 12 spawns per run through debug_spawn_encounter_for_step; frame_ms is the whole frame that contains the spawn; native 1920x1080 window, vsync off; rotated order per round",
+  "probe": ".cache/diag/perf_spawn.gd (not committed)",
+  "files_swapped": [
+    "scripts/animation/site7_machine_sprite.gd",
+    "scripts/actors/enemy_actor.gd",
+    "scripts/missions/story_stage_01.gd",
+    "scripts/combat/site7_enemy_tactics.gd",
+    "scripts/animation/enemy_detail_overlay_presentation.gd"
+  ],
+  "summary": {
+    "before_HEAD_95efd37": {
+      "runs": 3,
+      "stage_load_ms_median": 87,
+      "first_spawn_frame_ms_median": 290.7,
+      "later_spawn_frame_ms_median": 291.7,
+      "later_spawn_frame_ms_max": 436.5,
+      "ordinary_frame_ms_median": 6.6
+    },
+    "after_working": {
+      "runs": 3,
+      "stage_load_ms_median": 1018,
+      "first_spawn_frame_ms_median": 25.3,
+      "later_spawn_frame_ms_median": 21.3,
+      "later_spawn_frame_ms_max": 110.1,
+      "ordinary_frame_ms_median": 7.1
+    }
+  },
+  "runs": [
+    {
+      "version": "before_HEAD_95efd37",
+      "round": 1,
+      "stage_load_ms": 91,
+      "median_frame_ms": 8.0,
+      "spawns": [
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 266.6,
+          "frame_ms": 323.5
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 268.1,
+          "frame_ms": 409.4
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 245.7,
+          "frame_ms": 282.7
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 285.7,
+          "frame_ms": 397.4
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 306.6,
+          "frame_ms": 436.3
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 141.2,
+          "frame_ms": 177.6
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 210.7,
+          "frame_ms": 291.7
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 245.7,
+          "frame_ms": 358.6
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 160.0,
+          "frame_ms": 200.6
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 271.4,
+          "frame_ms": 365.5
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 298.4,
+          "frame_ms": 436.5
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 206.7,
+          "frame_ms": 257.0
+        }
+      ]
+    },
+    {
+      "version": "after_working",
+      "round": 1,
+      "stage_load_ms": 1018,
+      "median_frame_ms": 7.9,
+      "spawns": [
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 7.8,
+          "frame_ms": 25.3
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 17.4,
+          "frame_ms": 110.1
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 9.4,
+          "frame_ms": 22.7
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 7.2,
+          "frame_ms": 24.3
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 9.7,
+          "frame_ms": 16.9
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 7.2,
+          "frame_ms": 15.1
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 7.5,
+          "frame_ms": 23.6
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 8.2,
+          "frame_ms": 34.1
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 4.9,
+          "frame_ms": 12.6
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 11.6,
+          "frame_ms": 42.2
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 11.6,
+          "frame_ms": 43.2
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 8.5,
+          "frame_ms": 22.8
+        }
+      ]
+    },
+    {
+      "version": "after_working",
+      "round": 2,
+      "stage_load_ms": 1029,
+      "median_frame_ms": 7.1,
+      "spawns": [
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 8.9,
+          "frame_ms": 25.6
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 14.6,
+          "frame_ms": 79.8
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 8.1,
+          "frame_ms": 18.6
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 8.7,
+          "frame_ms": 26.9
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 8.0,
+          "frame_ms": 39.7
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 5.0,
+          "frame_ms": 11.4
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 6.9,
+          "frame_ms": 21.3
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 8.3,
+          "frame_ms": 15.8
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 6.5,
+          "frame_ms": 15.8
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 7.6,
+          "frame_ms": 23.3
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 12.8,
+          "frame_ms": 21.8
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 5.9,
+          "frame_ms": 14.4
+        }
+      ]
+    },
+    {
+      "version": "before_HEAD_95efd37",
+      "round": 2,
+      "stage_load_ms": 85,
+      "median_frame_ms": 6.3,
+      "spawns": [
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 244.6,
+          "frame_ms": 290.7
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 240.3,
+          "frame_ms": 373.8
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 248.8,
+          "frame_ms": 290.0
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 207.7,
+          "frame_ms": 280.7
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 232.9,
+          "frame_ms": 334.7
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 137.5,
+          "frame_ms": 172.5
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 205.7,
+          "frame_ms": 282.1
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 232.6,
+          "frame_ms": 338.4
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 136.7,
+          "frame_ms": 171.1
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 208.1,
+          "frame_ms": 284.3
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 248.5,
+          "frame_ms": 363.7
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 209.4,
+          "frame_ms": 250.6
+        }
+      ]
+    },
+    {
+      "version": "before_HEAD_95efd37",
+      "round": 3,
+      "stage_load_ms": 87,
+      "median_frame_ms": 6.6,
+      "spawns": [
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 208.3,
+          "frame_ms": 248.6
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 230.3,
+          "frame_ms": 365.7
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 237.6,
+          "frame_ms": 278.2
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 216.6,
+          "frame_ms": 294.2
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 231.5,
+          "frame_ms": 340.6
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 142.5,
+          "frame_ms": 182.2
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 219.5,
+          "frame_ms": 299.2
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 227.5,
+          "frame_ms": 332.4
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 132.9,
+          "frame_ms": 170.0
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 202.8,
+          "frame_ms": 274.4
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 219.0,
+          "frame_ms": 319.6
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 159.1,
+          "frame_ms": 198.1
+        }
+      ]
+    },
+    {
+      "version": "after_working",
+      "round": 3,
+      "stage_load_ms": 990,
+      "median_frame_ms": 6.2,
+      "spawns": [
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 6.6,
+          "frame_ms": 19.9
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 11.8,
+          "frame_ms": 19.4
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 7.4,
+          "frame_ms": 14.2
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 7.2,
+          "frame_ms": 21.5
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 8.3,
+          "frame_ms": 14.9
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 5.0,
+          "frame_ms": 12.3
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 6.9,
+          "frame_ms": 21.2
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 8.7,
+          "frame_ms": 18.0
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 5.9,
+          "frame_ms": 13.3
+        },
+        {
+          "step": 1,
+          "robots": 4,
+          "call_ms": 8.2,
+          "frame_ms": 26.8
+        },
+        {
+          "step": 3,
+          "robots": 4,
+          "call_ms": 9.8,
+          "frame_ms": 35.7
+        },
+        {
+          "step": 4,
+          "robots": 3,
+          "call_ms": 5.0,
+          "frame_ms": 11.3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-10T10:15:56.174508+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": false,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\SableCircuit\\motion_lab_v1\\qa\\aster\\walk\\ASTER_S_WALK_REVIEW_1080P.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 435961,
+      "sha256": "bcc09c961ed7781d85ba3b70dfc8f923277a953c3715ce260d7825572d8e96ef"
+    }
+  ]
+}

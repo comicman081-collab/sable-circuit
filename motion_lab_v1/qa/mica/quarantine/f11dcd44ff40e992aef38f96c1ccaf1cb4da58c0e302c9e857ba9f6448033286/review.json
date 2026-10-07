@@ -1,0 +1,12 @@
+{
+  "decision": "repair",
+  "status": "FAIL_NOT_PROMOTABLE",
+  "scope": "source-alpha",
+  "reviewer": "Codex source gate",
+  "observed": [
+    "The generated source failed the required alpha gate: transparent canvas corners were non-zero.",
+    "Visual inspection also shows a retained dark atmospheric backdrop and does not show the requested opposite contact poses unambiguously."
+  ],
+  "requiredReplacement": "Native transparent RGBA source only, with four alpha-zero corners and no atmospheric matte; left/right contact poses must be distinct.",
+  "sourceSHA256": "f11dcd44ff40e992aef38f96c1ccaf1cb4da58c0e302c9e857ba9f6448033286"
+}

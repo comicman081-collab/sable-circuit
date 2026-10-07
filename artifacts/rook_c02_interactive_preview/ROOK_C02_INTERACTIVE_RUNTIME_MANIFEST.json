@@ -1,0 +1,259 @@
+{
+  "schema": 1,
+  "role": "portable ROOK interactive-preview runtime bundle",
+  "html": "artifacts/rook_c02_interactive_preview/ROOK_C02_INTERACTIVE_STRIDE_FIRE.html",
+  "runtime_root": "artifacts/rook_c02_interactive_preview/runtime",
+  "source_runtime_root": "assets/units/operators/rook/fast_runtime_v1/current",
+  "directions": [
+    "E",
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW",
+    "N",
+    "NE"
+  ],
+  "entries": [
+    {
+      "direction": "E",
+      "state": "idle",
+      "frames": 4,
+      "fps": 4.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/E/idle.png",
+      "source_sha256": "a60964199216a6265041cc737665fcd3ca347dadf946508ed60b8ec5a599ba10",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/E/idle.png",
+      "preview_sha256": "a60964199216a6265041cc737665fcd3ca347dadf946508ed60b8ec5a599ba10"
+    },
+    {
+      "direction": "E",
+      "state": "move",
+      "frames": 24,
+      "fps": 24.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/E/move.png",
+      "source_sha256": "a8ec664935fd7836bd610e6ccd76eee1b1308f6a1dbc6debbefd757be98f9e55",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/E/move.png",
+      "preview_sha256": "a8ec664935fd7836bd610e6ccd76eee1b1308f6a1dbc6debbefd757be98f9e55"
+    },
+    {
+      "direction": "E",
+      "state": "fire",
+      "frames": 6,
+      "fps": 12.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/E/fire.png",
+      "source_sha256": "3174113f96dfdff1a9360483da5609dca3ea8d97afefbfd9d5c4fb426bbfcaa4",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/E/fire.png",
+      "preview_sha256": "3174113f96dfdff1a9360483da5609dca3ea8d97afefbfd9d5c4fb426bbfcaa4"
+    },
+    {
+      "direction": "SE",
+      "state": "idle",
+      "frames": 4,
+      "fps": 4.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/SE/idle.png",
+      "source_sha256": "c016a14c2e0c96c506cbf51220324b7f011e7c6c3b800fea77d9d0d9a947ec60",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/SE/idle.png",
+      "preview_sha256": "c016a14c2e0c96c506cbf51220324b7f011e7c6c3b800fea77d9d0d9a947ec60"
+    },
+    {
+      "direction": "SE",
+      "state": "move",
+      "frames": 24,
+      "fps": 24.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/SE/move.png",
+      "source_sha256": "7395c9b9db4be6f558b0768562865ebe35005e628d608f6b07784caa5fb3e014",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/SE/move.png",
+      "preview_sha256": "7395c9b9db4be6f558b0768562865ebe35005e628d608f6b07784caa5fb3e014"
+    },
+    {
+      "direction": "SE",
+      "state": "fire",
+      "frames": 6,
+      "fps": 12.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/SE/fire.png",
+      "source_sha256": "0464b1e51b0ce759a3e07a8e4e0e8f6b8ae5865a587dc8e0acf6d02afbf0039b",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/SE/fire.png",
+      "preview_sha256": "0464b1e51b0ce759a3e07a8e4e0e8f6b8ae5865a587dc8e0acf6d02afbf0039b"
+    },
+    {
+      "direction": "S",
+      "state": "idle",
+      "frames": 4,
+      "fps": 4.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/S/idle.png",
+      "source_sha256": "97b38234ca507d4057824d4e46421ea38993c762ba4893bded2f6450a8d599b8",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/S/idle.png",
+      "preview_sha256": "97b38234ca507d4057824d4e46421ea38993c762ba4893bded2f6450a8d599b8"
+    },
+    {
+      "direction": "S",
+      "state": "move",
+      "frames": 24,
+      "fps": 24.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/S/move.png",
+      "source_sha256": "5a9f105cb577e244e4b784351d28b40d27aa1b88990338a2c8921bb647b7e415",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/S/move.png",
+      "preview_sha256": "5a9f105cb577e244e4b784351d28b40d27aa1b88990338a2c8921bb647b7e415"
+    },
+    {
+      "direction": "S",
+      "state": "fire",
+      "frames": 6,
+      "fps": 12.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/S/fire.png",
+      "source_sha256": "4716317564b6e4d3a5da0d16e2af2c371aae8bc8fee1e64ab7e2685d12eba6fa",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/S/fire.png",
+      "preview_sha256": "4716317564b6e4d3a5da0d16e2af2c371aae8bc8fee1e64ab7e2685d12eba6fa"
+    },
+    {
+      "direction": "SW",
+      "state": "idle",
+      "frames": 4,
+      "fps": 4.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/SW/idle.png",
+      "source_sha256": "0e3f089bdff8ca13b212b59cbafad6b4053c7f2f0beaee644e6fdcc6be97b330",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/SW/idle.png",
+      "preview_sha256": "0e3f089bdff8ca13b212b59cbafad6b4053c7f2f0beaee644e6fdcc6be97b330"
+    },
+    {
+      "direction": "SW",
+      "state": "move",
+      "frames": 24,
+      "fps": 24.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/SW/move.png",
+      "source_sha256": "c95161f7eba187aa5c54c451632688b94eeffe7bf81b8fc137d742d0f35d4025",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/SW/move.png",
+      "preview_sha256": "c95161f7eba187aa5c54c451632688b94eeffe7bf81b8fc137d742d0f35d4025"
+    },
+    {
+      "direction": "SW",
+      "state": "fire",
+      "frames": 6,
+      "fps": 12.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/SW/fire.png",
+      "source_sha256": "701316d4daa44796d3c7579817c37d9ef6e3d50cf847b35c2c400f64d3937536",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/SW/fire.png",
+      "preview_sha256": "701316d4daa44796d3c7579817c37d9ef6e3d50cf847b35c2c400f64d3937536"
+    },
+    {
+      "direction": "W",
+      "state": "idle",
+      "frames": 4,
+      "fps": 4.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/W/idle.png",
+      "source_sha256": "cd507b4b302014fbbd8504646978bc0199ecbcdea551ac9b4a84b1f8931c93c8",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/W/idle.png",
+      "preview_sha256": "cd507b4b302014fbbd8504646978bc0199ecbcdea551ac9b4a84b1f8931c93c8"
+    },
+    {
+      "direction": "W",
+      "state": "move",
+      "frames": 24,
+      "fps": 24.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/W/move.png",
+      "source_sha256": "5a40295451660b2212ff7d5b1a882b0633b411fc1dc5e1df877a2684f1c6e2cc",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/W/move.png",
+      "preview_sha256": "5a40295451660b2212ff7d5b1a882b0633b411fc1dc5e1df877a2684f1c6e2cc"
+    },
+    {
+      "direction": "W",
+      "state": "fire",
+      "frames": 6,
+      "fps": 12.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/W/fire.png",
+      "source_sha256": "c39e67f6fb15fc059affc261e0dbf75f9d6cf0f37a3c84931455763b3f7d5a0d",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/W/fire.png",
+      "preview_sha256": "c39e67f6fb15fc059affc261e0dbf75f9d6cf0f37a3c84931455763b3f7d5a0d"
+    },
+    {
+      "direction": "NW",
+      "state": "idle",
+      "frames": 4,
+      "fps": 4.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/NW/idle.png",
+      "source_sha256": "1ba260ef5a945dbfb93f2bce5047fdc5a6890f492b99032e617fe10763c1c22d",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/NW/idle.png",
+      "preview_sha256": "1ba260ef5a945dbfb93f2bce5047fdc5a6890f492b99032e617fe10763c1c22d"
+    },
+    {
+      "direction": "NW",
+      "state": "move",
+      "frames": 24,
+      "fps": 24.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/NW/move.png",
+      "source_sha256": "653eddd2cf2be8d46c94b8c33db9b38d5f3f7266a3114e3a08088865ad781d31",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/NW/move.png",
+      "preview_sha256": "653eddd2cf2be8d46c94b8c33db9b38d5f3f7266a3114e3a08088865ad781d31"
+    },
+    {
+      "direction": "NW",
+      "state": "fire",
+      "frames": 6,
+      "fps": 12.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/NW/fire.png",
+      "source_sha256": "6d3a0c11bd3dd2e0f39a3d3b85edd3428447248e5c77db875179ed6cd0cae940",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/NW/fire.png",
+      "preview_sha256": "6d3a0c11bd3dd2e0f39a3d3b85edd3428447248e5c77db875179ed6cd0cae940"
+    },
+    {
+      "direction": "N",
+      "state": "idle",
+      "frames": 4,
+      "fps": 4.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/N/idle.png",
+      "source_sha256": "2b613ee9402f6af7885ee4fd2b1883d56b69923eb3035e5ef9d2812eb0ce7ccc",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/N/idle.png",
+      "preview_sha256": "2b613ee9402f6af7885ee4fd2b1883d56b69923eb3035e5ef9d2812eb0ce7ccc"
+    },
+    {
+      "direction": "N",
+      "state": "move",
+      "frames": 24,
+      "fps": 24.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/N/move.png",
+      "source_sha256": "03f77753e063af95a9232365d32eb60825b076197654b37b3cf9b558aa64d3be",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/N/move.png",
+      "preview_sha256": "03f77753e063af95a9232365d32eb60825b076197654b37b3cf9b558aa64d3be"
+    },
+    {
+      "direction": "N",
+      "state": "fire",
+      "frames": 6,
+      "fps": 12.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/N/fire.png",
+      "source_sha256": "e45adca355b13df61f43b924bff82261f4019de521a1e99fd051c4d893e03088",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/N/fire.png",
+      "preview_sha256": "e45adca355b13df61f43b924bff82261f4019de521a1e99fd051c4d893e03088"
+    },
+    {
+      "direction": "NE",
+      "state": "idle",
+      "frames": 4,
+      "fps": 4.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/NE/idle.png",
+      "source_sha256": "30a8c2e81c2d9abe1ef38105a48543924e087823eef02155024a3bf339d2009f",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/NE/idle.png",
+      "preview_sha256": "30a8c2e81c2d9abe1ef38105a48543924e087823eef02155024a3bf339d2009f"
+    },
+    {
+      "direction": "NE",
+      "state": "move",
+      "frames": 24,
+      "fps": 24.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/NE/move.png",
+      "source_sha256": "0e9f265f4b83d1da8a677b37760b1b5fa8102ef1b8ff6accd59b0165d22e6a5b",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/NE/move.png",
+      "preview_sha256": "0e9f265f4b83d1da8a677b37760b1b5fa8102ef1b8ff6accd59b0165d22e6a5b"
+    },
+    {
+      "direction": "NE",
+      "state": "fire",
+      "frames": 6,
+      "fps": 12.0,
+      "source": "assets/units/operators/rook/fast_runtime_v1/current/NE/fire.png",
+      "source_sha256": "e72da136b5147022973947d466d27f037ca719c6b7eb65ee4d38cd1961c566ed",
+      "preview": "artifacts/rook_c02_interactive_preview/runtime/NE/fire.png",
+      "preview_sha256": "e72da136b5147022973947d466d27f037ca719c6b7eb65ee4d38cd1961c566ed"
+    }
+  ]
+}

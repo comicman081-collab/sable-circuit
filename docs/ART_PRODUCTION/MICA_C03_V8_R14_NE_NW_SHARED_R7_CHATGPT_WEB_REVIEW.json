@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "reviewer": "ChatGPT web planning conversation",
+  "conversation": "https://chatgpt.com/c/6a93c84f-fb1c-83e8-9d88-959e708b2463",
+  "review_date": "2026-09-04",
+  "candidate": "MICA_C03_V8_R14_NE_NW_SHARED_R7_SCREEN_SEPARATED_RUNTIME_SOLE_LOCK",
+  "status": "PASS_FOR_NE_NW_SINGLE_DIRECTION_PILOTS",
+  "promotion": {
+    "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+    "ne_direction": "HOLD",
+    "nw_direction": "HOLD",
+    "eight_direction_visual_runtime": "HOLD"
+  },
+  "evidence_reviewed": [
+    "artifacts/mica_c03_v8_r14_ne_shared_handoff_r7_review/MICA_C03_V8_R14_NE_SHARED_R7_R7_SCREEN_SEPARATED_RUNTIME_SOLE_LOCK_NE_GAIT_REVIEW_2304X1080.png",
+    "artifacts/mica_c03_v8_r14_nw_shared_handoff_r7_review/MICA_C03_V8_R14_NW_SHARED_R7_R7_SCREEN_SEPARATED_RUNTIME_SOLE_LOCK_NW_GAIT_REVIEW_2304X1080.png",
+    "artifacts/mica_c03_v8_r14_ne_shared_handoff_r7_review/MICA_C03_V8_R14_NE_SHARED_R7_RECAPTURED_FIXED_GRID_5S_1920X1080.mp4",
+    "artifacts/mica_c03_v8_r14_ne_shared_handoff_r7_review/MICA_C03_V8_R14_NE_SHARED_R7_RECAPTURED_WORLD_GRID_5S_1920X1080.mp4",
+    "artifacts/mica_c03_v8_r14_nw_shared_handoff_r7_review/MICA_C03_V8_R14_NW_SHARED_R7_RECAPTURED_FIXED_GRID_5S_1920X1080.mp4",
+    "artifacts/mica_c03_v8_r14_nw_shared_handoff_r7_review/MICA_C03_V8_R14_NW_SHARED_R7_RECAPTURED_WORLD_GRID_5S_1920X1080.mp4"
+  ],
+  "gates": {
+    "A_gait_readability_and_alternation": "PASS",
+    "B_scale_volume_and_waist_stability": "PASS",
+    "C_ankle_boot_ground_and_no_skate": "PASS",
+    "D_sole_lock_handoff_and_stride_balance": "PASS",
+    "E_torso_hip_coat_composite_z_order_and_visible_alpha": "PASS",
+    "F_ne_nw_pilot_blocker": "PASS_NO_BLOCKER"
+  },
+  "specific_findings": {
+    "screen_left_right_separation": "PASS",
+    "leg_crossing_recurrence": "NO_BLOCKING_RECURRENCE",
+    "out_toed_recurrence": "NO_BLOCKING_RECURRENCE",
+    "non_blocking_polish": [
+      "slightly wide tactical gait base",
+      "limited heel/toe roll with flat-footed boot motion",
+      "small torso/pelvis counter-motion",
+      "some rear-diagonal depth readability reduction"
+    ]
+  },
+  "important_scope_note": "The web review approved only the NE/NW R7 pilot appearance and runtime evidence. It did not override the independent Ponytail FULL HOLD for decoded raster root cadence, and it did not approve eight-direction production promotion."
+}

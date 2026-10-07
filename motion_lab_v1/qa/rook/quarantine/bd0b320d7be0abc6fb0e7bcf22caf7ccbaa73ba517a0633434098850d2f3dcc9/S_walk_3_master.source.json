@@ -1,0 +1,33 @@
+{
+  "generator": "Codex built-in ImageGen",
+  "importedUTC": "2026-09-12T01:37:09.251990+00:00",
+  "sha256": "bd0b320d7be0abc6fb0e7bcf22caf7ccbaa73ba517a0633434098850d2f3dcc9",
+  "native": [
+    1024,
+    1536
+  ],
+  "destination": "art/rook/S_walk_3_master.png",
+  "toolResponse": {
+    "path": "qa/rook/incoming/rook_luna_20260912_Swalk3/tool-response.json",
+    "sha256": "37d2e941ce78a8ebce56dc0ecdade188d8242e9f99f85e8ddc505d8ab84a07c2"
+  },
+  "sourceMaster": {
+    "path": "qa/rook/incoming/rook_luna_20260912_Swalk3/S_walk_3_luna_raw.png",
+    "sha256": "9a7da9084180fd7f09649a5b00974ea0dc12166cd31d756dc56521a89a4dd3e1"
+  },
+  "derivation": {
+    "kind": "edge-connected green matte normalization only; no source-art redraw",
+    "normalization": {
+      "path": "qa/rook/normalized_candidates/S_walk_3_luna_20260912.json",
+      "sha256": "b14e32e4440e8eeaa2bec21f2e89656cc03785779ca051b3fefb12de7c126b98"
+    },
+    "mask": {
+      "path": "qa/rook/normalized_candidates/S_walk_3_luna_20260912_mask.png",
+      "sha256": "087fa368300512cbc4986c04bfc4a6288f0f73831478c09139cab7535daee378"
+    },
+    "resampling": false,
+    "anatomicalWarp": false,
+    "subjectPixelsByteExact": true,
+    "backgroundPixels": 1139341
+  }
+}

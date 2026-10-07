@@ -1,0 +1,6 @@
+1. old reference bodies (renamed) equal the new ref_old_* bodies: True
+2. check lines: 19 in 4f86d3af, 21 in 89d30934; missing now: 0; new: 2
+   + if longer_plans <= 3: failures.append("%s plan %s -> %s length %s exceeds old %s" % [mission, origin, goal, fast_length, old_length])
+   + _same(longer_plans == 0, "%s: new routes are no longer than the old planner's routes (%d regressions)" % [mission, longer_plans])
+3. production symbols read by the new reference planner: ['NAV.CORNER_CLEARANCE', 'NAV.MAX_GRAPH_EDGE']
+   production planner entry points it calls (must be empty): []

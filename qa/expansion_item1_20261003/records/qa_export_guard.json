@@ -1,0 +1,6 @@
+{
+  "checked_utc": "2026-10-03T02:05:34.853634+00:00",
+  "runner_process_count": 0,
+  "check_command": "@(Get-CimInstance Win32_Process | Where-Object { $_.Name -match '^python' -and $_.CommandLine -match 'run_regression_suite\\.py' }).Count",
+  "qa_writes_only_after_baseline_runner_ended": true
+}

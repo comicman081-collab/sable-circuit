@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "operation": "edge-connected green matte normalization only; no source-art redraw",
+  "source_author": "built-in ImageGen",
+  "input": "motion_lab_v1/qa/rook/incoming/rook_previous_Eidle/E_idle_0_original.png",
+  "input_sha256": "b9dfe8625b9c77a6358c84b5a83880d3fa5d4725eb1f2d460095299980416023",
+  "output": "motion_lab_v1/qa/rook/normalized_candidates/E_idle_0_normalized_20260912_master.png",
+  "output_sha256": "25a7b794ff66598e6b09634ee8f3b198dbed706afee42a6f971ee5b97f6b88ee",
+  "mask": "motion_lab_v1/qa/rook/normalized_candidates/E_idle_0_normalized_20260912_mask.png",
+  "mask_sha256": "e65eaca0966b254f563d79765725994fadf019aed0acdad4e278e331024c39f8",
+  "input_resolution": [
+    1024,
+    1536
+  ],
+  "edge_median_rgb": [
+    7,
+    248,
+    6
+  ],
+  "exact_green_rgb": [
+    0,
+    255,
+    0
+  ],
+  "edge_connected_background_coverage": 0.6729723612467448,
+  "subject_pixels_byte_exact": true,
+  "alpha_ready": true
+}

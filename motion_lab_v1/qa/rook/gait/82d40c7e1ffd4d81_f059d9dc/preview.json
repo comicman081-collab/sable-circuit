@@ -1,0 +1,88 @@
+{
+  "sourceDigest": "82d40c7e1ffd4d81a99313845999fc4ba073da15cf991bc75911361aceb7f3bd",
+  "sourceFrames": [
+    {
+      "path": "art\\rook\\NE_idle_0_master.png",
+      "sha256": "b5ca8a47605c7c06a0eda49546a2849f1613903567281fd567929c2055cb3b63"
+    }
+  ],
+  "nativeEvidence": [
+    [
+      2128,
+      1626
+    ]
+  ],
+  "pixelUpscaling": false,
+  "pairEvidence": [
+    "qa\\rook\\gait\\82d40c7e1ffd4d81_f059d9dc\\NE_idle_pair0_native_2128x1626.png"
+  ],
+  "clip": {
+    "image": "assets/atlas/rook/NE_idle.webp",
+    "cell": [
+      768,
+      768
+    ],
+    "columns": 1,
+    "frames": 1,
+    "root": [
+      384,
+      716
+    ],
+    "height": 656,
+    "authoredFrames": 1,
+    "muzzles": [
+      [
+        557.2134940624237,
+        108.37078833580017
+      ]
+    ],
+    "sources": [
+      {
+        "source": "art/rook/NE_idle_0_master.png",
+        "sha256": "b5ca8a47605c7c06a0eda49546a2849f1613903567281fd567929c2055cb3b63",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          242,
+          25,
+          893,
+          1449
+        ],
+        "hipX": 514.0,
+        "scale": 0.4606741573033708,
+        "matrix": [
+          [
+            0.4606741666793823,
+            0.0,
+            147.21348571777344
+          ],
+          [
+            0.0,
+            0.4606741666793823,
+            48.48314666748047
+          ]
+        ],
+        "muzzle": [
+          557.2134940624237,
+          108.37078833580017
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            258.69663405418396,
+            60.00000083446503
+          ],
+          [
+            558.5955165624619,
+            716.0000141859055
+          ]
+        ]
+      }
+    ]
+  },
+  "sequence": "qa\\rook\\gait\\82d40c7e1ffd4d81_f059d9dc\\reference\\atlas\\rook\\NE_idle.gif",
+  "contact": "qa\\rook\\gait\\82d40c7e1ffd4d81_f059d9dc\\reference\\atlas\\rook\\NE_idle_keyframes.png",
+  "visualApproval": false
+}

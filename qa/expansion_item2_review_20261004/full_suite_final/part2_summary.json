@@ -1,0 +1,289 @@
+{
+ "suite": "custom",
+ "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+ "started": "2026-10-05T21:00:52",
+ "git_head": "04eba6c3451e981401e7efec83ba93ea6baea903",
+ "git_dirty": 0,
+ "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+ "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+ "workers": 1,
+ "seconds": 3803,
+ "overall": "FAIL",
+ "guard": {
+  "changed": [],
+  "removed": [],
+  "added": []
+ },
+ "results": [
+  {
+   "test": "battle_flow",
+   "status": "PASS",
+   "seconds": 13.0,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_BATTLE_FLOW: PASS",
+   "notes": []
+  },
+  {
+   "test": "combat_entry",
+   "status": "PASS",
+   "seconds": 7.6,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "",
+   "notes": []
+  },
+  {
+   "test": "contract_ui",
+   "status": "PASS",
+   "seconds": 9.2,
+   "exit_code": 0,
+   "checks": 484,
+   "status_line": "RUN_CONTRACT_UI_SMOKE: PASS (484 checks)",
+   "notes": []
+  },
+  {
+   "test": "hazard_expansion",
+   "status": "PASS",
+   "seconds": 27.9,
+   "exit_code": 0,
+   "checks": 438,
+   "status_line": "HAZARD_EXPANSION_SMOKE: PASS (438 checks, 15 rooms) res://qa/regression_runs/20261005_210052_custom/out/hazard_expansion/hazard_expansion.json",
+   "notes": []
+  },
+  {
+   "test": "full_op_01",
+   "status": "PASS",
+   "seconds": 133.6,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_02",
+   "status": "PASS",
+   "seconds": 123.6,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_03",
+   "status": "PASS",
+   "seconds": 144.1,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_04",
+   "status": "PASS",
+   "seconds": 162.0,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_05",
+   "status": "PASS",
+   "seconds": 160.9,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_06",
+   "status": "FAIL",
+   "seconds": 164.9,
+   "exit_code": 1,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: FAIL",
+   "notes": []
+  },
+  {
+   "test": "full_op_07",
+   "status": "PASS",
+   "seconds": 233.9,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_08",
+   "status": "PASS",
+   "seconds": 197.1,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_09",
+   "status": "PASS",
+   "seconds": 180.6,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "full_op_10",
+   "status": "FAIL",
+   "seconds": 176.0,
+   "exit_code": 1,
+   "checks": null,
+   "status_line": "SITE7_FULL_OPERATION_SMOKE: FAIL",
+   "notes": []
+  },
+  {
+   "test": "boss_capture_geometry",
+   "status": "PASS",
+   "seconds": 22.1,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_BOSS_PATTERN_CAPTURE: PASS res://qa/regression_runs/20261005_210052_custom/out/boss_capture_geometry",
+   "notes": []
+  },
+  {
+   "test": "variety_capture",
+   "status": "PASS",
+   "seconds": 14.0,
+   "exit_code": 0,
+   "checks": 96,
+   "status_line": "EXPANSION_ITEM1_CAPTURE: PASS (96 checks) res://qa/regression_runs/20261005_210052_custom/out/variety_capture",
+   "notes": []
+  },
+  {
+   "test": "nav_pockets",
+   "status": "PASS",
+   "seconds": 71.3,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "NAV_POCKET_AUDIT: PASS (0 dead-end cells in 0 of 30 rooms, cell 12 px)",
+   "notes": []
+  },
+  {
+   "test": "connector_alignment",
+   "status": "PASS",
+   "seconds": 1436.8,
+   "exit_code": 0,
+   "checks": 1060,
+   "status_line": "SITE7_CONNECTOR_ALIGNMENT PASS (1060 checks)",
+   "notes": []
+  },
+  {
+   "test": "battle_geometry",
+   "status": "PASS",
+   "seconds": 30.3,
+   "exit_code": 0,
+   "checks": 5039,
+   "status_line": "SITE7_BATTLE_GEOMETRY_SMOKE: PASS (5039 checks)",
+   "notes": []
+  },
+  {
+   "test": "walk_graph_capture",
+   "status": "PASS",
+   "seconds": 6.4,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_WALK_GRAPH_HEADLESS: PASS (15 plates)",
+   "notes": []
+  },
+  {
+   "test": "combat_sfx",
+   "status": "PASS",
+   "seconds": 7.2,
+   "exit_code": 0,
+   "checks": 572,
+   "status_line": "COMBAT_SFX_R04: PASS / 572 checks",
+   "notes": []
+  },
+  {
+   "test": "demo_integration",
+   "status": "PASS",
+   "seconds": 8.8,
+   "exit_code": 0,
+   "checks": 26,
+   "status_line": "DEMO_INTEGRATION PASS / 26 checks",
+   "notes": []
+  },
+  {
+   "test": "m7_visual",
+   "status": "PASS",
+   "seconds": 5.4,
+   "exit_code": 0,
+   "checks": 84,
+   "status_line": "M7_AUTHORED_VISUAL_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "m10_intel",
+   "status": "PASS",
+   "seconds": 5.0,
+   "exit_code": 0,
+   "checks": 39,
+   "status_line": "M10_INTEL_LOADOUT_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "m13_loadout",
+   "status": "PASS",
+   "seconds": 5.8,
+   "exit_code": 0,
+   "checks": 46,
+   "status_line": "M13_WEAPON_LOADOUT_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "campaign",
+   "status": "PASS",
+   "seconds": 25.3,
+   "exit_code": 0,
+   "checks": 235,
+   "status_line": "SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://qa/regression_runs/20261005_210052_custom/out/campaign",
+   "notes": []
+  },
+  {
+   "test": "rook_app",
+   "status": "PASS",
+   "seconds": 98.4,
+   "exit_code": 0,
+   "checks": 1895,
+   "status_line": "ROOK_MOTION_LAB_APP_SMOKE: PASS (1895 checks, 0 failures)",
+   "notes": []
+  },
+  {
+   "test": "motion_lab_runtime",
+   "status": "PASS",
+   "seconds": 11.8,
+   "exit_code": 0,
+   "checks": 106,
+   "status_line": "MOTION_LAB_CHARACTER_RUNTIME_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "motion_lab_python",
+   "status": "PASS",
+   "seconds": 269.3,
+   "exit_code": 0,
+   "checks": 137,
+   "status_line": "OK",
+   "notes": []
+  },
+  {
+   "test": "motion_lab_js",
+   "status": "PASS",
+   "seconds": 0.4,
+   "exit_code": 0,
+   "checks": 30,
+   "status_line": "",
+   "notes": []
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+127.0.0.1 - - [11/Sep/2026 13:58:03] "GET /standalone/aster.html HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:58:06] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 13:58:06] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 14:13:01] "GET /standalone/aster.html HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 14:13:21] "GET /qa/capture-motion.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 14:14:00] "POST /__qa/aster_motion_v8_native.webm HTTP/1.1" 201 -
+127.0.0.1 - - [11/Sep/2026 14:14:00] "POST /__qa/aster_motion_v8_native.json HTTP/1.1" 201 -
+127.0.0.1 - - [11/Sep/2026 14:14:21] "GET /qa/locomotion-checks.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 14:15:10] "GET /qa/locomotion-checks.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 14:15:10] "POST /__qa/aster_locomotion_v8_browser.json HTTP/1.1" 201 -
+127.0.0.1 - - [11/Sep/2026 14:15:42] "GET /qa/combat-checks.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 14:15:46] "GET /qa/combat-checks.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 14:15:46] "POST /__qa/aster_combat_v8_browser.json HTTP/1.1" 201 -
+127.0.0.1 - - [11/Sep/2026 14:19:53] "GET /qa/capture-motion.js?v=bound HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 14:20:31] "POST /__qa/aster_motion_v8_bound.webm HTTP/1.1" 201 -
+127.0.0.1 - - [11/Sep/2026 14:20:31] "GET /qa/capture-motion.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 14:20:31] "POST /__qa/aster_motion_v8_bound.json HTTP/1.1" 201 -
+127.0.0.1 - - [11/Sep/2026 14:21:41] "POST /__qa/aster_runtime_v8_native.png HTTP/1.1" 201 -

@@ -1,0 +1,176 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_R01/attempt01/S10_R01_GAME.png",
+  "luma": 0.1998571902513504,
+  "p10": 0.1481686383485794,
+  "p90": 0.2352941334247589,
+  "saturation": 0.052738259354274133,
+  "hue": 138.1048075388009,
+  "axis": 23.819964307848306,
+  "problems": [],
+  "plate": "S10_R01",
+  "attempt": 1,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      141,
+      483
+    ],
+    [
+      818,
+      233
+    ],
+    [
+      1126,
+      342
+    ],
+    [
+      1150,
+      327
+    ],
+    [
+      1348,
+      240
+    ],
+    [
+      1368,
+      398
+    ],
+    [
+      1535,
+      487
+    ],
+    [
+      823,
+      821
+    ]
+  ],
+  "doors_px": {
+    "NE": [
+      1248,
+      351,
+      245
+    ]
+  },
+  "raw_sha256": "ef3c182c060bf975fb5392a39415e6ee96919c46d0e95e179aaf6d6b9ed7bda0",
+  "master_sha256": "ef3c182c060bf975fb5392a39415e6ee96919c46d0e95e179aaf6d6b9ed7bda0",
+  "game_sha256": "396f012fc967dc02c0b92aafa48e8c46a2694a1657ad8a67d4ec99be3bb61ac5",
+  "game_exposure_factor_srgb": 0.8521,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-6e7fc67a-ddfd-490b-845b-1965af00cdf9.png",
+  "inspection": "S3와 비교: 팬 원판은 없어졌으나 같은 중앙 코너 기둥과 반복 리브 간격, 동일 벽 베이 배치가 남음. 실제 윤곽은 수동 추적 후 원본 크기 검토.",
+  "floor_area_px2": 434957.5,
+  "floor_area_fraction": 0.2764527581876147,
+  "floor_bounds_px": [
+    141,
+    233,
+    1535,
+    821
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1672,
+      941
+    ],
+    "actual_size": [
+      1672,
+      941
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "NE": [
+        [
+          1126,
+          342
+        ],
+        [
+          1348,
+          240
+        ],
+        [
+          1373,
+          390
+        ],
+        [
+          1241,
+          457
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      141,
+      233,
+      1535,
+      821
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.08433014354066985,
+      0.24760892667375134,
+      0.0819377990430622,
+      0.1275239107332625
+    ],
+    "whole_floor_bounds_px": [
+      141,
+      233,
+      1535,
+      821
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.08433014354066985,
+      0.24760892667375134,
+      0.0819377990430622,
+      0.1275239107332625
+    ],
+    "main_floor_area_px2": 406522
+  },
+  "apron_stats": {
+    "NE": {
+      "luma": 0.22570264339447021,
+      "saturation": 0.05366503049431764,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  },
+  "prompt": "EXACT OPEN SIDES: NE. CLOSED SIDES: NW, SW, SE. Closed sides have continuous solid back walls or uninterrupted low foreground rails; NO other openings, aprons, floor tongues or doorway-like recesses. Do not copy the extra doors of Image 1. Exactly 1 open threshold(s).\nGEOMETRY FIRST: exactly 1672 x 941 RGB canvas. Main walkable floor diamond (185,476),(835,151),(1485,476),(835,801). NE apron is a coplanar rectangle (1055,261),(1205,186),(1473,320),(1323,395); its outer edge (1205,186)-(1473,320) is diagonal, parallel to its doorway width, not vertical. The COMPLETE painted floor outline INCLUDING apron tips is (185,476),(835,151),(1055,261),(1205,186),(1473,320),(1323,395),(1485,476),(835,801). Keep these extents well inside the canvas: at least 8% from borders. All opposing diamond edges are parallel at 26.6 degrees. One NE opening only. A broad 1300 x 650 open neutral deck.\nUse case: stylized-concept. ONE new finished opaque RGB room plate S10_R01, R01_DESCENT. Image 1 is only fixed camera, scale, neutral standard deck, minimum floor size and doorway dimensions. Image 2 is only premium hard-surface material quality; ignore its actors, markings and UI.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nROOM PLATE. The walkable floor is a dimetric diamond or elongated hexagon whose sides face NW (upper-left), NE (upper-right), SE (lower-right) and SW (lower-left). Back walls rise only along the NW and NE sides; the SW and SE sides end in a low lip or railing with no wall so nothing hides the floor. Keep the floor at least 8% away from every image border.\nDOORS: open doorways exactly on these sides: NE. Each doorway is an unobstructed opening about 2.3 adult-heights wide with a heavy steel frame (a framed opening in a back wall, or a gap in the lip railing on the SW/SE side); no door leaf, no shutter. The same standard deck and the same neutral-white overhead light continue through every doorway for about 1.5 adult-heights on both sides of the threshold.\nROOM TYPE: non-combat room — walkable floor at least 850 x 450 (long x short, in the scale above).\nIDENTITY: sealed descent shaft terminus: monolithic dark-alloy wall plating with a single glowing seam low on the wall and a heavy sealed hatch frame. Accent colour cold white, on walls and fixtures only.\nExactly 1 usable opening(s), only NE. All other sides (NW, SW, SE) are continuous closed walls or continuous low foreground railings: no rail gaps, floor tongues, passages, apparent doorway recesses or shutters there.\nCRITICAL NEW WALL SILHOUETTE: redraw the wall architecture and machinery from the IDENTITY above; do not copy Image 1 wall masses, fans, consoles or machine arrangement. This room must differ from other operation-10 rooms and all earlier operation plates. Black alloy and red seams stay on the WALL architecture; include a few distinct small practical wall lamps in the required accent, with visible lamp cores and a restrained local wall glow. No lettering-like floor patterns, red light bloom, black floor or coloured floor. The floor is standard neutral gunmetal grey, mean sRGB luminance 0.17-0.24; doorway apron saturation at most 0.10. The exposed outside remains uniform #07090D.\nDoor apron outer edges are oblique and parallel to the attached deck; no vertical-cut pocket. All main floor AND apron tips must remain at least 8% inside each image border. Floor material and light are neutral, with no red wash or black alloy on the deck. Several clear perimeter lamp cores illuminate the wall only.\nCRITICAL NEW WALL SILHOUETTE: two enormous uninterrupted offset black-alloy slabs, one long low horizontal reinforcing collar, and a single squared blind hatch FRAME on the closed NW wall with SOLID infill; it is not a door. Do not copy S3_R01 circular fans, pipes, turbine disks, repeated narrow mechanical wall bays, or its central corner support arrangement. Use smooth monolithic dark slabs with a few thick asymmetric buttresses, a thin white seam low on the wall and three cold-white practical lights. NE is the only framed OPEN doorway. Red hairlines only in wall joints; no red floor. Flat #07090D beyond all architecture.",
+  "references": [
+    "assets/environments/site7_v2/stage03/S3_R01/S3_R01_GAME.png",
+    "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png"
+  ],
+  "status": "REJECTED",
+  "reason": "S3_R01의 중앙 코너 기둥과 반복 리브 간격·동일 벽 베이 배치가 남았다. 원형 팬 제거와 색 변경만으로 새 벽 구조가 되지 않아 거절. 축 23.820°, 휘도 0.199857, 채도 0.052738, 문 NE 하나·여백·크기는 통과.",
+  "reference_sha256": {
+    "assets/environments/site7_v2/stage03/S3_R01/S3_R01_GAME.png": "cef30c50a90eb5cba2f81b290e79bf07861536b43f92e1075ddb47b7d4f3c805",
+    "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de"
+  },
+  "raw": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt01/S10_R01_RAW_NATIVE.png",
+  "master": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt01/S10_R01_MASTER.png",
+  "game": "art_src/environments/site7_v2/_quarantine/S10_R01/attempt01/S10_R01_GAME.png",
+  "manual_checks": {
+    "door_sides": [
+      "NE"
+    ],
+    "closed_sides": [
+      "NW",
+      "SW",
+      "SE"
+    ],
+    "central_floor_uncluttered": true,
+    "wall_identity": "FAIL / S3_R01 NE repeated bay and support silhouette",
+    "evidence_class": "authored candidate review, not gameplay",
+    "measurement_method": "manual tracing of visible painted floor; no standard contour substitution",
+    "registration_status": "NOT_REGISTERED: quarantine-only",
+    "alignment": "NOT_RUN: no accepted room/connector pair; 15-plate integration not started"
+  },
+  "problems_manual": [
+    "S3_R01의 중앙 코너 기둥과 반복 리브 간격·동일 벽 베이 배치가 남았다. 원형 팬 제거와 색 변경만으로 새 벽 구조가 되지 않아 거절. 축 23.820°, 휘도 0.199857, 채도 0.052738, 문 NE 하나·여백·크기는 통과."
+  ]
+}

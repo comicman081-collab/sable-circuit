@@ -1,0 +1,162 @@
+[
+  {
+    "asset": ".cache/diag/site7_ops_e/candidates/S10_C01/attempt01/S10_C01_GAME.png",
+    "luma": 0.20006632804870605,
+    "p10": 0.14347843825817108,
+    "p90": 0.24269020557403564,
+    "saturation": 0.007975826098398189,
+    "hue": 122.06122341179152,
+    "axis": 26.14998571170721,
+    "problems": [],
+    "plate": "S10_C01",
+    "attempt": 1,
+    "native_size": [
+      1774,
+      887
+    ],
+    "source_scale": 1.0,
+    "actual_floor_px": [
+      [
+        0,
+        811
+      ],
+      [
+        1674,
+        0
+      ],
+      [
+        1774,
+        0
+      ],
+      [
+        1774,
+        256
+      ],
+      [
+        511,
+        887
+      ],
+      [
+        0,
+        887
+      ]
+    ],
+    "doors_px": {},
+    "raw_sha256": "14c4b7d84e8e6243c61c6246822684fc97cb4a8fc11647981d2d27fdc285d7f5",
+    "master_sha256": "14c4b7d84e8e6243c61c6246822684fc97cb4a8fc11647981d2d27fdc285d7f5",
+    "game_sha256": "b9743811e38ba02620a7cfb24e401661e2296908ec36e6d8a45c00dc485c9aaf",
+    "game_exposure_factor_srgb": 0.7891,
+    "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-ce32ae8f-1a02-4c33-99d1-b453b9168009.png",
+    "inspection": "벽 하부와 데크 바깥 턱의 실제 경계 추적. 왼쪽 밀폐 해치 면, 오른쪽 릴레이 블록; S3_C01 원통·벤트 베이 대신 다른 장비. 양끝 흰색·붉은 벽 조명. 빈 바닥.",
+    "floor_area_px2": 496254.5,
+    "floor_area_fraction": 0.31537497028988176,
+    "floor_bounds_px": [
+      0,
+      0,
+      1774,
+      887
+    ],
+    "native_size_acceptance": {
+      "target_size": [
+        1774,
+        887
+      ],
+      "actual_size": [
+        1774,
+        887
+      ],
+      "tolerance_each_axis_px": 2,
+      "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+    },
+    "width_sections_px": [
+      [
+        600,
+        522,
+        835
+      ],
+      [
+        1000,
+        328,
+        637
+      ],
+      [
+        1400,
+        135,
+        437
+      ]
+    ],
+    "vertical_widths_px": [
+      313,
+      309,
+      302
+    ],
+    "width_measurement": "Vertical sections between actual wall base and outer painted deck lip; clipped image-corner fragments are not full cross-sections.",
+    "width_acceptance": {
+      "minimum_px": 220,
+      "prompt_target_px": 260,
+      "source": "2026-10-01 explicit user decision; branch +/-15% additionally retained"
+    },
+    "connector_apron_end_stats": [
+      {
+        "end": "image_left",
+        "luma": 0.2311573475599289,
+        "saturation": 0.024196156663509487,
+        "hue": 143.5277249737116,
+        "sampling": "actual floor within image end 10%; no ideal outline replacement",
+        "saturation_limit": 0.1
+      },
+      {
+        "end": "image_right",
+        "luma": 0.18889926373958588,
+        "saturation": 0.011856760489307325,
+        "hue": -11.860821503708893,
+        "sampling": "actual floor within image end 10%; no ideal outline replacement",
+        "saturation_limit": 0.1
+      }
+    ],
+    "preintegration_end_comparison": [
+      {
+        "end": "image_left",
+        "room": "S10_R01",
+        "door": "NE",
+        "deck_luma": 0.22589723765850067,
+        "deck_saturation": 0.017601673233403017,
+        "room_apron_luma": 0.22735720872879028,
+        "room_apron_saturation": 0.038085024743159765,
+        "step": 0.008540416368806345,
+        "problems": [],
+        "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+      },
+      {
+        "end": "image_right",
+        "room": "S10_R02",
+        "door": "SW",
+        "deck_luma": 0.19095379114151,
+        "deck_saturation": 0.004827774558010551,
+        "room_apron_luma": 0.23278146982192993,
+        "room_apron_saturation": 0.03572638574250521,
+        "step": 0.26096369536137987,
+        "problems": [],
+        "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+      }
+    ],
+    "prompt": "GEOMETRY FIRST: EXACT native1774x887 RGB landscape. ONE straight ASCENDING deck from lower-left to upper-right; two long boundaries parallel at26.6deg, vertical deck width at least260px CONSTANT through full unclipped cross-sections. Suggested wall-base top boundary (0,680) to (1360,0); bottom deck-lip boundary (0,940) to (1774,53); clip both at image borders. Entire deck crosses canvas continuously, no widening/fanning, no end doors, no artificial darkness at border. A back wall only along upper-left side, reference height; opposite lower-right side is plain black rail. Deck is empty neutral grey, average luminance0.17-0.24, both ends saturation<=0.10.\nUse case: stylized-concept. ONE new finished opaque RGB connector S10_C01. Image 1 is deck geometry, scale and camera only; Image 2 is hard-surface material quality only; Image 3 is lower-left room and Image 4 is upper-right room, for wall transition and matching neutral doorway aprons.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nCONNECTOR CORRIDOR PLATE. One straight deck crosses the whole image along the lower-left to upper-right (ascending) 2:1 diagonal. Both ends of the deck are cut cleanly by the image edges at full brightness: no fade, no darkening, no end wall, no door at either end. The deck is about 2.2 adult-heights wide, constant along its whole length, and completely empty.\nA back wall runs along the upper-left side of the deck; the other side ends in a waist-high railing over the void. The corridor cross-section (deck width, wall height, railing height) matches a standard doorway, so these walls continue straight into the door frames of the rooms at each end.\nAt both ends the deck and light are identical to a doorway apron: standard deck, even neutral-white overhead light. Wall accents are cold white near the lower-left end, changing to warning red near the upper-right end, on walls only.\nIDENTITY: origin approach: monolithic dark-alloy wall plating, exposed structural ribs and a single glowing seam low on the back wall only; the railing is a plain black rail over the void; sealed hatch frame and dark-alloy plating becoming relay obelisks in wall alcoves.\nCRITICAL NEW WALL SILHOUETTE: do not copy reference wall forms or machine placement. Keep all fixtures against the one back wall; the other side is only a slim rail over uniform #07090D. Use clear practical accent lamps at BOTH ends and restrained wall-local glow. The whole neutral floor, particularly both aprons, has no coloured wash, red wash, black patches, lettering-like markings or bloom. No mirror, rotation, shear or end doors.\nWALL CONTENT CRITERION: the shared map-kit corner/end columns, wall bays, door gap and door-flanking columns may match Image 1. The equipment and panel configuration INSIDE each bay must be new and specific to this IDENTITY, different from the same-slot S3 plate and the other operation-10 plates. Do not reproduce the reference bay contents with only recolouring.\nSPECIFIC NEW BAY CONTENT: LOWER-LEFT cold white: long shallow sealed hatch reinforcing collar and smooth offset alloy plating. UPPER-RIGHT warning red: short blunt recessed relay obelisk faces with white ceramic connector plates. No reference hanging cylindrical canisters, horizontal pipe manifold or grille/vent-panel bay contents. Common structural ribs may match map-kit skeleton, but equipment/panel contents must differ. Keep fixtures shallow inside wall band. Both specified accent colours remain visible as small practical wall lights. No red, violet, green or amber coloured wash on the floor, no floor bloom. Main deck width prompt target260px, and both apron ends maintain uniform grey material and neutral white lighting. The wall transition follows Images3 and4; their door aprons are the actual colour/light targets. Outside uniform#07090D.\nMATCH NEUTRAL END APRONS: image_left: S10_R01 NE actual grey-apron mean sRGB luminance 0.227, low saturation 0.038; image_right: S10_R02 SW actual grey-apron mean sRGB luminance 0.233, low saturation 0.036. Preserve comparable unobstructed grey end surfaces, no coloured practical-light reflection at either end.",
+    "references": [
+      "assets/environments/site7_v2/stage03/S3_C01/S3_C01_GAME.png",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png",
+      "assets/environments/site7_v2/stage10/S10_R01/S10_R01_GAME.png",
+      "assets/environments/site7_v2/stage10/S10_R02/S10_R02_GAME.png"
+    ],
+    "status": "SELECTED",
+    "reason": "",
+    "reference_sha256": {
+      "assets/environments/site7_v2/stage03/S3_C01/S3_C01_GAME.png": "3b3d21d42d6144ac892f1c0149eb033c726a41e1b6ce6a6e19b76895796fdd98",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de",
+      "assets/environments/site7_v2/stage10/S10_R01/S10_R01_GAME.png": "e567a57d15a61df6f042a51c79ee4222f8bd807945bb2599e428b01e3d2569eb",
+      "assets/environments/site7_v2/stage10/S10_R02/S10_R02_GAME.png": "ac97f989f9516bfea70b114f1c5e55980d106150f4d036b3ea0e49fa9ab1c00a"
+    },
+    "raw": "art_src/environments/site7_v2/stage10/S10_C01/S10_C01_RAW_NATIVE.png",
+    "master": "art_src/environments/site7_v2/stage10/S10_C01/S10_C01_MASTER.png",
+    "game": "assets/environments/site7_v2/stage10/S10_C01/S10_C01_GAME.png"
+  }
+]

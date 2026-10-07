@@ -1,0 +1,27 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS: chapter 1 scenario data exists
+PASS: chapter 1 mission graph exists
+PASS: mission graph parses
+PASS: main story route has exactly 6 ordered rooms
+PASS: mission has exactly 2 optional rooms
+PASS: story room types follow authored scenario order
+PASS: game boots to title, not combat arena
+PASS: title screen is active view
+PASS: title enters operations base lobby
+PASS: base lobby scene is active
+PASS: mission selection opens story briefing
+PASS: briefing scene is active
+M7_RASTER_QUARANTINED identity=aster status=partial chunks=2 encoded=20000 present=15000 declared=94718
+PASS: briefing deploys chapter 1 stage
+PASS: authored StoryStage01 scene is active
+PASS: runtime stage loaded six main story rooms
+PASS: runtime stage loaded two optional rooms
+PASS: story stage deploys all three animated operators
+PASS: story completion expands route bounds instead of allowing stage skip
+PASS: stage result secures story-critical ledger
+PASS: optional research reward can be secured
+PASS: stage completion opens result debrief
+PASS: mission result scene is active
+PASS: result debrief returns to operations base
+M2_STORY_FLOW_SMOKE: PASS

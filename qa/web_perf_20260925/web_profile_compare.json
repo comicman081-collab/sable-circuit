@@ -1,0 +1,317 @@
+{
+  "base": {
+    "profiled_ms": 18175.4,
+    "functions": {
+      "GDScriptFunction::call (GDScript VM)": {
+        "function": "wasm-function[2238]",
+        "self_share": 0.3902,
+        "inclusive_share": 0.7063
+      },
+      "GDScript::callp": {
+        "function": "wasm-function[43559]",
+        "self_share": 0.0033,
+        "inclusive_share": 0.3396
+      },
+      "Main::iteration": {
+        "function": "wasm-function[18792]",
+        "self_share": 0.0006,
+        "inclusive_share": 0.9683
+      },
+      "SceneTree::physics_process": {
+        "function": "wasm-function[65213]",
+        "self_share": 0.0001,
+        "inclusive_share": 0.622
+      },
+      "SceneTree::process": {
+        "function": "wasm-function[65205]",
+        "self_share": 0.0001,
+        "inclusive_share": 0.1189
+      },
+      "RendererViewport::draw_viewports": {
+        "function": "wasm-function[18718]",
+        "self_share": 0.0003,
+        "inclusive_share": 0.2242
+      },
+      "RasterizerCanvasGLES3::canvas_render_items": {
+        "function": "wasm-function[67320]",
+        "self_share": 0.0003,
+        "inclusive_share": 0.0323
+      },
+      "CanvasItem::_redraw_callback": {
+        "function": "wasm-function[65926]",
+        "self_share": 0.0012,
+        "inclusive_share": 0.0822
+      },
+      "RasterizerCanvasGLES3::request_polygon": {
+        "function": "wasm-function[67307]",
+        "self_share": 0.0018,
+        "inclusive_share": 0.0318
+      },
+      "RasterizerCanvasGLES3::free_polygon": {
+        "function": "wasm-function[67306]",
+        "self_share": 0.0012,
+        "inclusive_share": 0.0164
+      },
+      "getParameter": {
+        "function": "getParameter",
+        "self_share": 0.1835,
+        "inclusive_share": 0.1835
+      },
+      "isEnabled": {
+        "function": "isEnabled",
+        "self_share": 0.0,
+        "inclusive_share": 0.0
+      },
+      "createVertexArray": {
+        "function": "createVertexArray",
+        "self_share": 0.0056,
+        "inclusive_share": 0.0056
+      },
+      "deleteVertexArray": {
+        "function": "deleteVertexArray",
+        "self_share": 0.0085,
+        "inclusive_share": 0.0085
+      },
+      "createBuffer": {
+        "function": "createBuffer",
+        "self_share": 0.0041,
+        "inclusive_share": 0.0041
+      },
+      "bufferData": {
+        "function": "bufferData",
+        "self_share": 0.0048,
+        "inclusive_share": 0.0048
+      },
+      "checkFramebufferStatus": {
+        "function": "checkFramebufferStatus",
+        "self_share": 0.0035,
+        "inclusive_share": 0.0035
+      },
+      "(idle)": {
+        "function": "(idle)",
+        "self_share": 0.0006,
+        "inclusive_share": 0.0006
+      },
+      "(program)": {
+        "function": "(program)",
+        "self_share": 0.0121,
+        "inclusive_share": 0.0121
+      },
+      "(garbage collector)": {
+        "function": "(garbage collector)",
+        "self_share": 0.0022,
+        "inclusive_share": 0.0022
+      }
+    }
+  },
+  "new": {
+    "profiled_ms": 16505.5,
+    "functions": {
+      "GDScriptFunction::call (GDScript VM)": {
+        "function": "wasm-function[2238]",
+        "self_share": 0.184,
+        "inclusive_share": 0.5149
+      },
+      "GDScript::callp": {
+        "function": "wasm-function[43559]",
+        "self_share": 0.0012,
+        "inclusive_share": 0.1107
+      },
+      "Main::iteration": {
+        "function": "wasm-function[18792]",
+        "self_share": 0.0013,
+        "inclusive_share": 0.7635
+      },
+      "SceneTree::physics_process": {
+        "function": "wasm-function[65213]",
+        "self_share": 0.0001,
+        "inclusive_share": 0.2369
+      },
+      "SceneTree::process": {
+        "function": "wasm-function[65205]",
+        "self_share": 0.0002,
+        "inclusive_share": 0.3638
+      },
+      "RendererViewport::draw_viewports": {
+        "function": "wasm-function[18718]",
+        "self_share": 0.0004,
+        "inclusive_share": 0.1576
+      },
+      "RasterizerCanvasGLES3::canvas_render_items": {
+        "function": "wasm-function[67320]",
+        "self_share": 0.0009,
+        "inclusive_share": 0.1155
+      },
+      "CanvasItem::_redraw_callback": {
+        "function": "wasm-function[65926]",
+        "self_share": 0.0041,
+        "inclusive_share": 0.2138
+      },
+      "RasterizerCanvasGLES3::request_polygon": {
+        "function": "wasm-function[67307]",
+        "self_share": 0.0045,
+        "inclusive_share": 0.0867
+      },
+      "RasterizerCanvasGLES3::free_polygon": {
+        "function": "wasm-function[67306]",
+        "self_share": 0.0026,
+        "inclusive_share": 0.0405
+      },
+      "getParameter": {
+        "function": "getParameter",
+        "self_share": 0.0001,
+        "inclusive_share": 0.0001
+      },
+      "isEnabled": {
+        "function": "isEnabled",
+        "self_share": 0.0,
+        "inclusive_share": 0.0
+      },
+      "createVertexArray": {
+        "function": "createVertexArray",
+        "self_share": 0.0157,
+        "inclusive_share": 0.0157
+      },
+      "deleteVertexArray": {
+        "function": "deleteVertexArray",
+        "self_share": 0.0231,
+        "inclusive_share": 0.0231
+      },
+      "createBuffer": {
+        "function": "createBuffer",
+        "self_share": 0.0118,
+        "inclusive_share": 0.0118
+      },
+      "bufferData": {
+        "function": "bufferData",
+        "self_share": 0.0148,
+        "inclusive_share": 0.0148
+      },
+      "checkFramebufferStatus": {
+        "function": "checkFramebufferStatus",
+        "self_share": 0.026,
+        "inclusive_share": 0.026
+      },
+      "(idle)": {
+        "function": "(idle)",
+        "self_share": 0.1726,
+        "inclusive_share": 0.1726
+      },
+      "(program)": {
+        "function": "(program)",
+        "self_share": 0.026,
+        "inclusive_share": 0.026
+      },
+      "(garbage collector)": {
+        "function": "(garbage collector)",
+        "self_share": 0.0041,
+        "inclusive_share": 0.0041
+      }
+    }
+  },
+  "final": {
+    "profiled_ms": 16417.8,
+    "functions": {
+      "GDScriptFunction::call (GDScript VM)": {
+        "function": "wasm-function[2238]",
+        "self_share": 0.2247,
+        "inclusive_share": 0.5944
+      },
+      "GDScript::callp": {
+        "function": "wasm-function[43559]",
+        "self_share": 0.0023,
+        "inclusive_share": 0.138
+      },
+      "Main::iteration": {
+        "function": "wasm-function[18792]",
+        "self_share": 0.0012,
+        "inclusive_share": 0.8302
+      },
+      "SceneTree::physics_process": {
+        "function": "wasm-function[65213]",
+        "self_share": 0.0001,
+        "inclusive_share": 0.3003
+      },
+      "SceneTree::process": {
+        "function": "wasm-function[65205]",
+        "self_share": 0.0005,
+        "inclusive_share": 0.3685
+      },
+      "RendererViewport::draw_viewports": {
+        "function": "wasm-function[18718]",
+        "self_share": 0.0005,
+        "inclusive_share": 0.1561
+      },
+      "RasterizerCanvasGLES3::canvas_render_items": {
+        "function": "wasm-function[67320]",
+        "self_share": 0.0008,
+        "inclusive_share": 0.1367
+      },
+      "CanvasItem::_redraw_callback": {
+        "function": "wasm-function[65926]",
+        "self_share": 0.002,
+        "inclusive_share": 0.2063
+      },
+      "RasterizerCanvasGLES3::request_polygon": {
+        "function": "wasm-function[67307]",
+        "self_share": 0.004,
+        "inclusive_share": 0.0851
+      },
+      "RasterizerCanvasGLES3::free_polygon": {
+        "function": "wasm-function[67306]",
+        "self_share": 0.0029,
+        "inclusive_share": 0.0417
+      },
+      "getParameter": {
+        "function": "getParameter",
+        "self_share": 0.0,
+        "inclusive_share": 0.0
+      },
+      "isEnabled": {
+        "function": "isEnabled",
+        "self_share": 0.0001,
+        "inclusive_share": 0.0001
+      },
+      "createVertexArray": {
+        "function": "createVertexArray",
+        "self_share": 0.0135,
+        "inclusive_share": 0.0135
+      },
+      "deleteVertexArray": {
+        "function": "deleteVertexArray",
+        "self_share": 0.0219,
+        "inclusive_share": 0.0219
+      },
+      "createBuffer": {
+        "function": "createBuffer",
+        "self_share": 0.01,
+        "inclusive_share": 0.01
+      },
+      "bufferData": {
+        "function": "bufferData",
+        "self_share": 0.0132,
+        "inclusive_share": 0.0132
+      },
+      "checkFramebufferStatus": {
+        "function": "checkFramebufferStatus",
+        "self_share": 0.0002,
+        "inclusive_share": 0.0002
+      },
+      "(idle)": {
+        "function": "(idle)",
+        "self_share": 0.0963,
+        "inclusive_share": 0.0963
+      },
+      "(program)": {
+        "function": "(program)",
+        "self_share": 0.0293,
+        "inclusive_share": 0.0293
+      },
+      "(garbage collector)": {
+        "function": "(garbage collector)",
+        "self_share": 0.0028,
+        "inclusive_share": 0.0028
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "tool": "image_gen.imagegen",
+  "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-b4a27ae9-7f30-48a8-8326-3fb7607ce4c1.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c as C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c\\exec-b4a27ae9-7f30-48a8-8326-3fb7607ce4c1.png by default. If you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it. The generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "qa/rook/luna_repair_20260913/E_walk_pair2_luna_raw.png",
+  "projectCopySHA256": "918141b846be13e92e10216dd31e8965df354d7afed35f91e696dd9fee61ff2e",
+  "inputReferences": [
+    "reference/ual_guides/E_walk_pair2.png",
+    "art/rook/identity_reference.png"
+  ],
+  "promptSummary": "Native 1536x1024 ROOK E phase 2/5 pair with left-support/right-forward pass then right-support/left-forward pass; exact identity/weapon; clean alpha preferred and uniform green fallback requested.",
+  "inspection": {
+    "nativeSize": [1536, 1024],
+    "mode": "RGB",
+    "background": "green gradient, not alpha",
+    "decision": "FAIL_NOT_PROMOTABLE",
+    "notes": "Both figures repeat the same planted screen-left and lifted screen-right leg arrangement instead of exchanging anatomical support; no distinct phase-5 opposite pass. Background is not genuine alpha and is not exact uniform green. Not imported."
+  }
+}

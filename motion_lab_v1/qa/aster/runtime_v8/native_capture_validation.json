@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-11T05:26:44.186748+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster_motion_v8_bound.webm",
+      "error": null,
+      "kind": "video",
+      "evidence_class": "dynamic_capture",
+      "decoder": "opencv",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": 29.91869062968713,
+      "frames": 1138,
+      "decode_samples": [
+        {
+          "frame_index": 0,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 284,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 569,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 853,
+          "decoded_at_reported_resolution": true
+        },
+        {
+          "frame_index": 1137,
+          "decoded_at_reported_resolution": true
+        }
+      ],
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 7648081,
+      "sha256": "bd4ff9d37bdacaa7b7f31a3e468a4cad557b0f65ee08993132be0ae6f939e2b9"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\aster_runtime_v8_native.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 235399,
+      "sha256": "454036db17b0c95cba36ee6a8d6c027e2ad3f052a56689ea931426e24a65a856"
+    }
+  ]
+}

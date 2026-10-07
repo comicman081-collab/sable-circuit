@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "reviewer": "Ponytail FULL r13_n_gate",
+  "review_date": "2026-09-04",
+  "candidate": "MICA_C03_V8_R14_NE_NW_SHARED_R8C_SUBPIXEL_WORLD_GRID",
+  "status": "PASS_FOR_NE_NW_SINGLE_DIRECTION_PILOTS",
+  "promotion": {
+    "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+    "ne_direction": "HOLD",
+    "nw_direction": "HOLD",
+    "eight_direction_visual_runtime": "HOLD",
+    "production": "HOLD"
+  },
+  "evidence_reviewed": [
+    "artifacts/mica_c03_v8_r14_ne_shared_handoff_r8_review/MICA_C03_V8_R14_NE_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+    "artifacts/mica_c03_v8_r14_ne_shared_handoff_r8_review/MICA_C03_V8_R14_NE_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json",
+    "artifacts/mica_c03_v8_r14_nw_shared_handoff_r8_review/MICA_C03_V8_R14_NW_SHARED_R8C_SUBPIXEL_WORLD_GRID_5S_1920X1080.mp4",
+    "artifacts/mica_c03_v8_r14_nw_shared_handoff_r8_review/MICA_C03_V8_R14_NW_SHARED_R8C_SUBPIXEL_RUNTIME_ROOT_TRACK.json"
+  ],
+  "gates": {
+    "A_gait_readability_and_alternation": "PASS",
+    "B_scale_volume_and_waist_stability": "PASS",
+    "C_ankle_boot_ground_and_no_skate": "PASS",
+    "D_sole_lock_handoff_and_cadence": "PASS_CAPTURE_EVIDENCE_ONLY",
+    "E_torso_hip_coat_weapon_composite_and_alpha": "PASS",
+    "F_production_and_eight_direction_completeness": "HOLD"
+  },
+  "decoded_metrics": {
+    "frame_count": 120,
+    "ne": {
+      "raster_root_min_px": 1.0,
+      "raster_root_max_px": 2.828427,
+      "raster_root_zero_step_count": 0,
+      "progress_axis_px": "0.707-2.828",
+      "reverse_motion": false,
+      "support_sole_axis_span_px": {"left": 0.707, "right": 0.0},
+      "decoded_marker_max_drift_px": 0.707,
+      "track_support_drift_px": {"left": 0.530330, "right": 0.568441},
+      "subpixel_upper_rgb_mae": {"subpixel": 3.190, "untranslated": 5.283}
+    },
+    "nw": {
+      "raster_root_min_px": 1.0,
+      "raster_root_max_px": 2.828427,
+      "raster_root_zero_step_count": 0,
+      "progress_axis_px": "0.707-2.828",
+      "reverse_motion": false,
+      "support_sole_axis_span_px": {"left": 0.0, "right": 0.707},
+      "decoded_marker_max_drift_px": 0.707,
+      "track_support_drift_px": {"left": 0.827980, "right": 0.584132},
+      "subpixel_upper_rgb_mae": {"subpixel": 3.384, "untranslated": 5.993}
+    }
+  },
+  "specific_findings": {
+    "leg_crossing_recurrence": "NO_BLOCKING_RECURRENCE",
+    "out_toed_recurrence": "NO_BLOCKING_RECURRENCE",
+    "calf_balloon_or_rubber_leg": "NOT_OBSERVED",
+    "waist_snap": "NOT_OBSERVED",
+    "boot_rotation": "0_DEGREES_OBSERVED",
+    "support_handoff": "PASS_F11_TO_F12_AND_F23_TO_F00",
+    "raster_cadence_pulse": "NOT_REPRODUCED",
+    "runtime_scope": "CAPTURE_ONLY_SUBPIXEL_DERIVATIVE_NOT_PRODUCTION_INTEGRATION",
+    "non_blocking_note": "Raw float root speed remains variable (NE 0.690627-3.176960px; NW 0.586234-3.582340px), but no visible zero-step/catch-up blocker was found in this capture."
+  },
+  "quarantine_policy": {
+    "prior_r4_r7_and_r8_r8b_assets": "PRESERVE_IN_QUARANTINE",
+    "delete_or_retire_now": false,
+    "retirement_manifest_required_before_disposal": true
+  }
+}

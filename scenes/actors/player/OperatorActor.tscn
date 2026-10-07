@@ -1,0 +1,77 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="Script" path="res://scripts/actors/operator_actor.gd" id="1_actor"]
+[ext_resource type="Script" path="res://scripts/animation/operator_visual.gd" id="2_visual"]
+[ext_resource type="Script" path="res://scripts/animation/premium_operator_presentation.gd" id="3_premium"]
+[ext_resource type="Script" path="res://scripts/animation/operator_ground_shadow.gd" id="4_shadow"]
+[ext_resource type="Script" path="res://scripts/animation/premium_sprite_shading.gd" id="5_shading"]
+[ext_resource type="Script" path="res://scripts/animation/diagonal_locomotion_presentation.gd" id="6_diagonal"]
+[ext_resource type="Script" path="res://scripts/animation/operator_weapon_ik.gd" id="7_ik"]
+[ext_resource type="Script" path="res://scripts/animation/upright_stance_presentation.gd" id="8_upright"]
+[ext_resource type="Script" path="res://scripts/animation/operator_detail_overlay_presentation.gd" id="9_detail"]
+[ext_resource type="Script" path="res://scripts/animation/operator_sector_silhouette_presentation.gd" id="10_sector"]
+[ext_resource type="Script" path="res://scripts/animation/operator_directional_scale_guard.gd" id="11_scale_guard"]
+[ext_resource type="Script" path="res://scripts/animation/operator_authored_raster_presentation.gd" id="12_raster"]
+[ext_resource type="Script" path="res://scripts/combat/operator_skill_controller.gd" id="13_skills"]
+[ext_resource type="Script" path="res://scripts/animation/aster_v4_locomotion_preview.gd" id="14_aster_v4"]
+[ext_resource type="Script" path="res://scripts/animation/fast_character_runtime.gd" id="15_fast_runtime"]
+[ext_resource type="Script" path="res://scripts/animation/motion_lab_character_runtime.gd" id="16_motion_lab"]
+
+[sub_resource type="CapsuleShape2D" id="Capsule_operator"]
+radius = 14.0
+height = 36.0
+
+[node name="OperatorActor" type="CharacterBody2D"]
+script = ExtResource("1_actor")
+collision_layer = 4
+collision_mask = 3
+
+[node name="GroundShadow" type="Node2D" parent="."]
+script = ExtResource("4_shadow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -18)
+shape = SubResource("Capsule_operator")
+
+[node name="VisualRoot" type="Node2D" parent="."]
+scale = Vector2(0.72, 0.72)
+script = ExtResource("2_visual")
+
+[node name="PremiumPresentation" type="Node2D" parent="."]
+script = ExtResource("3_premium")
+
+[node name="DiagonalLocomotionPresentation" type="Node2D" parent="."]
+script = ExtResource("6_diagonal")
+
+[node name="UprightStancePresentation" type="Node2D" parent="."]
+script = ExtResource("8_upright")
+
+[node name="SectorSilhouettePresentation" type="Node2D" parent="."]
+script = ExtResource("10_sector")
+
+[node name="DirectionalScaleGuard" type="Node" parent="."]
+script = ExtResource("11_scale_guard")
+
+[node name="OperatorWeaponIK" type="Node2D" parent="."]
+script = ExtResource("7_ik")
+
+[node name="DetailOverlayPresentation" type="Node" parent="."]
+script = ExtResource("9_detail")
+
+[node name="PremiumSpriteShading" type="Node" parent="."]
+script = ExtResource("5_shading")
+
+[node name="AuthoredRasterPresentation" type="Node2D" parent="."]
+script = ExtResource("12_raster")
+
+[node name="AsterV4LocomotionPreview" type="Node2D" parent="."]
+script = ExtResource("14_aster_v4")
+
+[node name="FastCharacterRuntime" type="Node2D" parent="."]
+script = ExtResource("15_fast_runtime")
+
+[node name="MotionLabCharacterRuntime" type="Node2D" parent="."]
+script = ExtResource("16_motion_lab")
+
+[node name="SkillController" type="Node" parent="."]
+script = ExtResource("13_skills")

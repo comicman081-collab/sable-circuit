@@ -1,0 +1,18 @@
+Geometry smoke (tests/smoke/site7_battle_geometry_smoke.gd) with the new contact-field guard, run directly with Godot 4.7.1 headless.
+Before the guard the smoke had 3988 checks (Codex's 16:15 run); the guard adds 50.
+
+== base
+      1 SITE7_BATTLE_GEOMETRY_SMOKE: PASS (4038 checks)
+== M1
+      1 ERROR: Contact field misses its plate's wall S8 (59 of 120 edge points)
+      1 SITE7_BATTLE_GEOMETRY_SMOKE: FAIL (4038 checks)
+== M2
+      1 ERROR: Abyss contact atlas is missing S8
+      1 ERROR: Abyss contact fields do not follow the plates S8
+      1 SITE7_BATTLE_GEOMETRY_SMOKE: FAIL (4006 checks)
+== base2
+      1 SITE7_BATTLE_GEOMETRY_SMOKE: PASS (4038 checks)
+
+M1 = the contact rectangle loses its padding offset (scripts/missions/site7_room_art_layer.gd: 'sprite.global_position - size * 0.5 - padding' -> 'sprite.global_position - size * 0.5'): every field sits 72 px off its plate.
+M2 = the fields never reach the backdrop (setup(..., glows, contacts) -> setup(..., glows)).
+Each mutation was applied to the working file, run once and restored; the restored file's SHA-256 matched the backup (0a71bd648636...), and base2 is the baseline again after both.

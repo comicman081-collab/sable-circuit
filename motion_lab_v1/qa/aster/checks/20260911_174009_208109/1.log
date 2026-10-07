@@ -1,0 +1,37 @@
+✔ An authored profile ignores leftover character-specific fire and leg-warp bundles (1.9147ms)
+✔ Shared authored route keeps identical leg phases with and without fire (0.6821ms)
+✔ Authored contact timing holds planted steps while preserving phase order (0.221ms)
+✔ Shared recoil transform cannot move support feet (0.521ms)
+✔ Full-body walk AND run select all six phases, never recoil recovery frame 5 (1.3762ms)
+✔ Locomotion is distance phase driven, not wall-clock or firing cadence (0.1646ms)
+✔ Live Actor → full-body renderer traverses walk/run cycles at 30/60/120 Hz (13.7937ms)
+✔ A cursor between the character and illustrated muzzle cannot make a bullet fly behind the facing (2.4811ms)
+✔ Turning throughout held moving fire keeps every projectile and rendered facing on one aim at 30/60/120 Hz (25.4106ms)
+✔ A fresh movement chord can take aim during held mouse fire and the next mouse move can take it back (0.7114ms)
+✔ An exactly centred cursor retains the previous aim instead of forcing east (0.171ms)
+✔ One muzzle-aware solution preserves actual cursor hits and body/shot alignment throughout a turn (2.8637ms)
+✔ A target inside weapon reach cannot turn only the bullet backwards (0.2523ms)
+✔ All four WASD diagonals work in either press order, with Korean/English/Shift/IME event values (4.6788ms)
+✔ Arrow key pairs drive all four diagonals through the same actor (0.1635ms)
+✔ Releasing one key returns to the remaining direction; opposite-key and alias chords do not stick (0.1529ms)
+✔ A new movement chord takes facing from an idle pointer, but key repeat does not cancel active mouse aim (0.1748ms)
+✔ Shift and Space continue to work with diagonal motion and independent mouse firing (0.386ms)
+✔ Settings controls allow WASD without swallowing text editing or native slider/checkbox keys (0.6032ms)
+✔ Keyboard movement, reload, and fire all clear on focus loss (0.1987ms)
+✔ A click shorter than one render frame fires once without a held button (3.8315ms)
+✔ All eight movement directions and all eight independent firing facings, at three display rates (22.777ms)
+✔ Diagonal keys do not create a speed advantage (0.5733ms)
+✔ Stop, resume and speed switch retain a valid continuous locomotion phase (1.3309ms)
+✔ Held fire consumes ammunition, automatically reloads, and remains rate independent (2.8711ms)
+✔ Reload prevents shots and restores the magazine only when complete (0.2839ms)
+✔ Obstacles and world bounds constrain actual position (1.7849ms)
+✔ Swept projectile collision catches thin targets between ticks (0.3079ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 153.7091
+

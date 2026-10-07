@@ -1,0 +1,107 @@
+[
+  {
+    "mutation": "boss_accepts_affix",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (248 checks, 1 failures) || FAIL: boss refuses SHIELDED at application boundary | "
+  },
+  {
+    "mutation": "beacon_protects_itself",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (248 checks, 1 failures) || FAIL: a beacon does not protect itself | "
+  },
+  {
+    "mutation": "beacon_cap_removed_data_0_5",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (248 checks, 5 failures) || FAIL: beacon data stays inside reduction and link limits | "
+  },
+  {
+    "mutation": "brood_three_babies",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (252 checks, 3 failures) || FAIL: both hatchlings are counted before the parent decrements | "
+  },
+  {
+    "mutation": "hatch_short_0_2",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (248 checks, 6 failures) || FAIL: hatch warning lasts at least 0.6 s | "
+  },
+  {
+    "mutation": "hatchling_fires_during_hatch",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (248 checks, 4 failures) || FAIL: no projectile, legacy attack or normal controller attack during hatch | "
+  },
+  {
+    "mutation": "spore_damage_in_warning",
+    "test": "tests/smoke/hazard_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "HAZARD_EXPANSION_SMOKE: FAIL (438 checks, 15 rooms) res://.cache/mut_report.json || FAIL: SPORE_CLOUD does no damage through the warning | "
+  },
+  {
+    "mutation": "spore_source_unattributed",
+    "test": "tests/smoke/hazard_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "HAZARD_EXPANSION_SMOKE: FAIL (438 checks, 15 rooms) res://.cache/mut_report.json || FAIL: SPORE_CLOUD attributes all operator damage | "
+  },
+  {
+    "mutation": "spore_warning_0_8",
+    "test": "tests/smoke/hazard_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "HAZARD_EXPANSION_SMOKE: FAIL (438 checks, 15 rooms) res://.cache/mut_report.json || FAIL: SPORE_CLOUD innermost escape fits its warning at 138 px/s plus 0.25s | "
+  },
+  {
+    "mutation": "frost_cleanup_leaks",
+    "test": "tests/smoke/hazard_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "HAZARD_EXPANSION_SMOKE: FAIL (438 checks, 15 rooms) res://.cache/mut_report.json || FAIL: room cleanup removes frost and its factor in the same stack | "
+  },
+  {
+    "mutation": "dash_compounds_frost",
+    "test": "tests/smoke/hazard_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "HAZARD_EXPANSION_SMOKE: FAIL (438 checks, 15 rooms) res://.cache/mut_report.json || FAIL: SPACE dash uses 0.7 once and never compounds it on later frames | "
+  },
+  {
+    "mutation": "hazards_not_spread",
+    "test": "tests/smoke/hazard_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "HAZARD_EXPANSION_SMOKE: FAIL (438 checks, 15 rooms) res://.cache/mut_report.json || FAIL: MIS_CH01_04 R04_LINE spreads mixed hazard bounding radii apart | "
+  },
+  {
+    "mutation": "hazards_not_spread",
+    "test": "tests/smoke/zone_hazard_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "FAIL: MIS_CH01_04 R04_LINE: vents are spread apart | FAIL: MIS_CH01_04 R04_LINE: vents are spread apart | FAIL: MIS_CH01_05 R02_DEFENSE: vents are spread apart | "
+  },
+  {
+    "mutation": "affix_tints_actor_modulate",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 0,
+    "verdict": "MISSED",
+    "summary": "ELITE_EXPANSION_SMOKE: PASS (248 checks) || "
+  },
+  {
+    "mutation": "affix_tints_sprite_modulate",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (248 checks, 10 failures) || FAIL: SHIELDED keeps common sprite material/modulation at HighResVisualRoot/UniqueMasterSprite | "
+  }
+]

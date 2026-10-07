@@ -1,0 +1,20 @@
+import sys, json, importlib.util
+from pathlib import Path
+from PIL import Image
+root = Path(__file__).resolve().parents[2]
+spec = importlib.util.spec_from_file_location('audit', root/'tools/environment/audit_site7_plate_lighting.py')
+audit = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(audit)
+polys = {1:[[110,470],[835,137],[1567,477],[839,898]],2:[[166,494],[833,199],[1497,494],[836,809]],3:[[169,493],[837,197],[1494,491],[836,812]]}
+rows=[]
+for attempt, points in polys.items():
+    asset=f'art_src/environments/site7_v2/_quarantine/S1_R02/attempt{attempt:02}/S1_R02_RAW_NATIVE.png'
+    im=Image.open(root/asset)
+    w,h=im.size
+    plate=audit.wl.Plate('S1_R02',asset,1.,[[x/w,y/h] for x,y in points])
+    row=audit.plate_floor(plate)
+    row.update(attempt=attempt,native_size=[w,h],mode=im.mode,floor_trace_pixels=points,scope='Main floor only; door aprons and geometry reviewed separately; no runtime promotion')
+    rows.append(row)
+out=root/'.cache/site7_v2_pilot/candidate_audit.json'
+out.write_text(json.dumps(rows,indent=2)+'\n',encoding='utf-8')
+print(json.dumps(rows,indent=2))

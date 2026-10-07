@@ -1,0 +1,753 @@
+{
+  "planned_files": 105,
+  "gates": {
+    "native_png": "7/7 validated; final QA hashes matched",
+    "active_runner": 0,
+    "quick": "20261006_003832_quick 56/56 PASS",
+    "full_only": "20261006_004731_custom 3/3 PASS"
+  },
+  "authorization": "User: remove unneeded materials and test copies after work",
+  "scope": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\.cache\\diag\\expansion_item3_20261006",
+  "status": "COMPLETE",
+  "schema": 1,
+  "deleted_files": 105,
+  "bytes": 19818578,
+  "rows": [
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/art_hashes.log",
+      "sha256": "cd10edcc5b5c66d31a30866cf17123029697eb5415d760fe3d43109653558dbf",
+      "bytes": 35,
+      "replacement": "qa/expansion_item3_20261006/records/art_hashes.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/base_ui_first_stdout.log",
+      "sha256": "7c2fef7a2c1d1f96485c4945c8b262b4f2175118787c1db29fce157cecadffda",
+      "bytes": 2924,
+      "replacement": "qa/expansion_item3_20261006/records/base_ui_first_stdout.log"
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/base_ui_first.log",
+      "sha256": "55d502380b55610d6c9403506565f534e5ccee2e18a78e404023bbeabcadebd5",
+      "bytes": 2878,
+      "replacement": null
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/base_ui_fixed_stdout.log",
+      "sha256": "38eb12cf23d9b9e0e44d5c4005f3f9bbb9a6a481fa58f34a2d7314fafcb1fa82",
+      "bytes": 648,
+      "replacement": "qa/expansion_item3_20261006/records/base_ui_fixed_stdout.log"
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/base_ui_fixed.log",
+      "sha256": "7b13634f663e606f0c59fe0afbd0ae62e999ff23b371b529310905b728f170b9",
+      "bytes": 635,
+      "replacement": null
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/baseline_contract_save.log",
+      "sha256": "a8e4748da43d4592dceb2a078ded53ba31518f2076bf1cc9472b74004061d46c",
+      "bytes": 115,
+      "replacement": "qa/expansion_item3_20261006/records/baseline_contract_save.log"
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/baseline_save.json",
+      "sha256": "879eb61d5ee091bc336a2b425b2f5a1263a2b044b2dd088da4affb469286b194",
+      "bytes": 16331,
+      "replacement": null
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/cleanup.ps1",
+      "sha256": "a53e0b49a97a5220feba4eefbbf57b2c9c86f9018981e4fa5a4089d70fa1687e",
+      "bytes": 5058,
+      "replacement": "qa/expansion_item3_20261006/tools/cleanup.ps1"
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/edit_intel.py",
+      "sha256": "d4ad2720cb1d521f6938ae79707c0b41abbf2b5a73e0ce643a6f334d3e8a2df7",
+      "bytes": 4924,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/edit_lab.py",
+      "sha256": "0d71c14d5a4b5f210e5fd897624a94bfd0388a414273b2b0da29cde1d01fb807",
+      "bytes": 1669,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/finish_report.py",
+      "sha256": "c3d44ea2311c912f98e57863f441322e5895a5b71b211e5562e5e27412e29ede",
+      "bytes": 5979,
+      "replacement": null
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/import_intel.log",
+      "sha256": "5c24d613119842d83ce8fa07380b504c6b10ae0d46ab24aca1357484f1c58a18",
+      "bytes": 2611,
+      "replacement": "qa/expansion_item3_20261006/records/import_intel.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_mutations.py",
+      "sha256": "a9b3709a16719831908f8b73471088f726fbd3c9300cd2e62c14ce069c4fa090",
+      "bytes": 2357,
+      "replacement": "qa/expansion_item3_20261006/tools/intel_mutations.py"
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_supply_first.log",
+      "sha256": "e35ff9bbb955acb04b2889aefb27c9fd88a7bf39a0c134b7f80d6b3736db7f48",
+      "bytes": 110,
+      "replacement": null
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_supply.json",
+      "sha256": "9ba0f489238d47e0a3b1b9cb60dd76cf17d670a58ceace3147418246c0c5e9ae",
+      "bytes": 952,
+      "replacement": "qa/expansion_item3_20261006/records/intel_supply.json"
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/lab_block.gd",
+      "sha256": "486242c34bf55e44ad0fde353471accf317ab1df7bc78cfe4107e40a4e353095",
+      "bytes": 7551,
+      "replacement": null
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/lab_first_stdout.log",
+      "sha256": "ce3e268d993974b1567439cc2b0746bd266b20e1a5fdcd8c7230c40b3db4bd4b",
+      "bytes": 16732,
+      "replacement": "qa/expansion_item3_20261006/records/lab_first_stdout.log"
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/lab_first.log",
+      "sha256": "2d813752a5851d17a701f79af096ef7ee97de943e32fbec88215ddeb2659362a",
+      "bytes": 16386,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/lab_fit_boxes.py",
+      "sha256": "3645b7ee120f8fd31baa69153add6966843e6ff11a14482aef46d801a3ef9863",
+      "bytes": 577,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/lab_fixed_stdout.log",
+      "sha256": "238b9cba493c31ebb7b7a86279bf33af216601949ec134bea919bceb5c7f3707",
+      "bytes": 16127,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/lab_fixed.log",
+      "sha256": "d66d4c9ddd725ea3f0fef4e859ad4d6024a258786e88cc6da74d057ff15efc76",
+      "bytes": 15665,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/lab_fixed2_stdout.log",
+      "sha256": "5b538674fc17f11e5810ccf53898465f9378f98998a7e7750ea32257276702c2",
+      "bytes": 15878,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/lab_fixed2.log",
+      "sha256": "d66d4c9ddd725ea3f0fef4e859ad4d6024a258786e88cc6da74d057ff15efc76",
+      "bytes": 15665,
+      "replacement": null
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/lab_size_stdout.log",
+      "sha256": "f54cfd593be5b8316799d5cbe60f3e37bdb2f46fdfc259d78f4bc7c24224d117",
+      "bytes": 10718,
+      "replacement": "qa/expansion_item3_20261006/records/lab_size_stdout.log"
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/lab_size.log",
+      "sha256": "4121b33676894c8e6ccee71381b0de49380125320f89bf4f357931312bb7ca01",
+      "bytes": 10595,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/lab_spacing.py",
+      "sha256": "83634ac7cae60e6a47183bf669eb85f60c80708ec3e4177d1855ba2674decdbc",
+      "bytes": 356,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/lab.json",
+      "sha256": "b5407f8a3cfccdb6f97263f54de33c88135b8761422447536015d9f41497755b",
+      "bytes": 51513,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_first.log",
+      "sha256": "a514115e2b2ddbed60c75d53eeb5a24782be8c59cfab898e095b4d14a6b2da1f",
+      "bytes": 6806,
+      "replacement": null
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_mutations.py",
+      "sha256": "043a06e5a0d155216e6bd2a5155833013fd139f6827f337952fb9d149afd8a10",
+      "bytes": 2283,
+      "replacement": "qa/expansion_item3_20261006/tools/module_mutations.py"
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module.json",
+      "sha256": "ed05df79c901d6e86a686f1523e8b9bcdd68e71a45b783e1bb5029f7b4125555",
+      "bytes": 1466,
+      "replacement": null
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/native_engine.log",
+      "sha256": "a6cd81259e38f02c5bcb55b353cac845db06e2f4074d92ba4d97fb94303a7add",
+      "bytes": 10700,
+      "replacement": "qa/expansion_item3_20261006/records/native_engine.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/native_stdout.log",
+      "sha256": "075f8ecaba07ab47bc4de24e86600808805377ec4ecef2d21cf13ad25d47b8dc",
+      "bytes": 10824,
+      "replacement": "qa/expansion_item3_20261006/records/native_stdout.log"
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/preload_intel.py",
+      "sha256": "dc386218830b4e1694a686decf9ef51bf68eca8e1ae77abdb349b972a6962ccc",
+      "bytes": 629,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/README_KO.draft.md",
+      "sha256": "92086912156d613a306a42cee5cfca9162b17eed75701d6b9bbdfb69b4f4042d",
+      "bytes": 17299,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/save6.json",
+      "sha256": "879eb61d5ee091bc336a2b425b2f5a1263a2b044b2dd088da4affb469286b194",
+      "bytes": 16331,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/save6.log",
+      "sha256": "b11af80ea280ae4b69562ae75eb433cdfa77f437cbb2d577afa217874843df48",
+      "bytes": 116,
+      "replacement": null
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/scope_audit.json",
+      "sha256": "71f6fb57d92e9d644a08f49c5ce9dcffa19a77ed44b45785ece9cc744b2a92b2",
+      "bytes": 1646,
+      "replacement": "qa/expansion_item3_20261006/records/scope_audit.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/scope_audit.py",
+      "sha256": "57c70122a4c46cfcc3d8fef52411b3451f8293dc22a93b7e89e4f4e80dec4e5e",
+      "bytes": 2666,
+      "replacement": "qa/expansion_item3_20261006/tools/scope_audit.py"
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/visual_validation.json",
+      "sha256": "645240aa7d913df619200d6bc3eea4cf881bd6a87cc29c6e8f629045e646dfc2",
+      "bytes": 4156,
+      "replacement": null
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_first.log",
+      "sha256": "ed72405eac19b0401d72312d6dfdbe81e827064c10f18fd27a5a25f4d4048fe5",
+      "bytes": 6807,
+      "replacement": null
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_mutations.py",
+      "sha256": "39dd9610f8099c7a5bf1383a732a0db3bda18d050a7a7d1044ea645dcc7fe4c1",
+      "bytes": 2438,
+      "replacement": "qa/expansion_item3_20261006/tools/weapon_mutations.py"
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_verbose_stdout.log",
+      "sha256": "66e8b310f76ab1188d0dd1ea9e5b2abdb74aef5477dac102af418c7cda0b076a",
+      "bytes": 46786,
+      "replacement": null
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_verbose.json",
+      "sha256": "4b928e3249ff8e24ea4560d9949793086b9b244860c0a69735edfd213cf159a2",
+      "bytes": 549,
+      "replacement": "qa/expansion_item3_20261006/records/weapon_expansion.json"
+    },
+    {
+      "reason": "Superseded item-3 editing or intermediate test scratch; final test evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_verbose.log",
+      "sha256": "240fbbcdcedc07010e75981649cb13bdb1cbc48ae0b5b8ed8cf9512fbef1a842",
+      "bytes": 46262,
+      "replacement": null
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon.json",
+      "sha256": "4b928e3249ff8e24ea4560d9949793086b9b244860c0a69735edfd213cf159a2",
+      "bytes": 549,
+      "replacement": "qa/expansion_item3_20261006/records/weapon_expansion.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/write_v5_fixture.gd",
+      "sha256": "eaf5b5232c468370ad7e3c5686a660d79416ec7bf2d149ae661d827fad38a2f9",
+      "bytes": 1042,
+      "replacement": "qa/expansion_item3_20261006/records/write_v5_fixture.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/write_v5_fixture.log",
+      "sha256": "df4e2cd79c9f39f160156bee1b20dd38366de8b8615d5a46c6b9c6112dabf8a1",
+      "bytes": 166,
+      "replacement": "qa/expansion_item3_20261006/records/write_v5_fixture.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_controls/summary.json",
+      "sha256": "0ee825e7929836fbd0889dd8ed6936a689aece1ffda174851f8c55377be7ef7e",
+      "bytes": 364,
+      "replacement": "qa/expansion_item3_20261006/controls/intel/summary.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_controls/generic_boss_first/godot.log",
+      "sha256": "8e896532aabadc5d61ab267e05c4c52f1e82d65e73f830b683c3f093850778c0",
+      "bytes": 8087,
+      "replacement": "qa/expansion_item3_20261006/controls/intel/generic_boss_first/godot.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_controls/generic_boss_first/intel.gd",
+      "sha256": "4b7045e22f396b36721461db884bf69960dbe6fdf567fa1e22fe9fa60835a228",
+      "bytes": 1833,
+      "replacement": "qa/expansion_item3_20261006/controls/intel/generic_boss_first/intel.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_controls/generic_boss_first/measurement.json",
+      "sha256": "f49fc6aca2123c36182042395e1ffe08d91ca616c4251cc0ef2e010aafe07001",
+      "bytes": 2254,
+      "replacement": "qa/expansion_item3_20261006/controls/intel/generic_boss_first/measurement.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_controls/generic_boss_first/stage.gd",
+      "sha256": "44f06d8549801be941fcab00ae6eb4478fbca542008086ff6d0aea18ef2ddfcd",
+      "bytes": 515,
+      "replacement": "qa/expansion_item3_20261006/controls/intel/generic_boss_first/stage.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_controls/generic_boss_first/stdout.log",
+      "sha256": "e51b93fd86abd811ceb4329fcf2dc49e76aa68eded7a6cc42ddc44361b7b7cb9",
+      "bytes": 8195,
+      "replacement": "qa/expansion_item3_20261006/controls/intel/generic_boss_first/stdout.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_controls/generic_boss_first/test.gd",
+      "sha256": "c82101244c4656599f9f6c1b9d7452604a4a5577fd9ea3fa3b3798fc18c8344d",
+      "bytes": 4892,
+      "replacement": "qa/expansion_item3_20261006/controls/intel/generic_boss_first/test.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_controls/missing_origin_key/godot.log",
+      "sha256": "b7ea0eaae354f97bb35736a7773ca3cff965ba6ec49015232bda6870adeccb9b",
+      "bytes": 3020,
+      "replacement": "qa/expansion_item3_20261006/controls/intel/missing_origin_key/godot.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_controls/missing_origin_key/intel.gd",
+      "sha256": "cdb481f5223fb16f3579a8ef084a7ba6b1ec6d64c6c357d41e1334e776cf28d8",
+      "bytes": 1778,
+      "replacement": "qa/expansion_item3_20261006/controls/intel/missing_origin_key/intel.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_controls/missing_origin_key/measurement.json",
+      "sha256": "d9bcfab0bc1f52c0a0cc08e0c9571b986b17a90b8f6495615cfe5bc3f71c22f1",
+      "bytes": 1320,
+      "replacement": "qa/expansion_item3_20261006/controls/intel/missing_origin_key/measurement.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_controls/missing_origin_key/stage.gd",
+      "sha256": "80ce9af1646604b8b13a61d6215de536c555425acbb72095b0a0aacb60f52a66",
+      "bytes": 515,
+      "replacement": "qa/expansion_item3_20261006/controls/intel/missing_origin_key/stage.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_controls/missing_origin_key/stdout.log",
+      "sha256": "1dad7b6ace081b20d4aaba5b75cc45c206d0cd3eaa96bf00555f701443521f0b",
+      "bytes": 3063,
+      "replacement": "qa/expansion_item3_20261006/controls/intel/missing_origin_key/stdout.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/intel_controls/missing_origin_key/test.gd",
+      "sha256": "bd169a18740f1619a80222554c89701ecf05849afeafbf53dbb817490053add2",
+      "bytes": 4892,
+      "replacement": "qa/expansion_item3_20261006/controls/intel/missing_origin_key/test.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/summary.json",
+      "sha256": "865239d24bd6dd354b59900605e51f1a8002d712787ccfb38c717fa8558125b3",
+      "bytes": 406,
+      "replacement": "qa/expansion_item3_20261006/controls/module/summary.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/ECHO_RELAY/controller.gd",
+      "sha256": "2881a03aa3c72c56322b81bb6ade657e60dc550c377950bf9f041c1bb55fa818",
+      "bytes": 139,
+      "replacement": "qa/expansion_item3_20261006/controls/module/ECHO_RELAY/controller.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/ECHO_RELAY/godot.log",
+      "sha256": "adca9fee93dc0c6a16329e638b5f9f5b2b7e2ab8ff2444801712e0a46f0b5176",
+      "bytes": 7458,
+      "replacement": "qa/expansion_item3_20261006/controls/module/ECHO_RELAY/godot.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/ECHO_RELAY/measurement.json",
+      "sha256": "925c54c2d07d729806f9e2ecf9c7629b0d25d0f199ddcecf8f2aac49b0136c1e",
+      "bytes": 1543,
+      "replacement": "qa/expansion_item3_20261006/controls/module/ECHO_RELAY/measurement.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/ECHO_RELAY/stdout.log",
+      "sha256": "0224c965f0196080202bbfffc7003ccc7e9de9b9747fad81e3aa3d91a456d838",
+      "bytes": 7547,
+      "replacement": "qa/expansion_item3_20261006/controls/module/ECHO_RELAY/stdout.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/ECHO_RELAY/test.gd",
+      "sha256": "1c68a9265954b75cacf3fd42ffc45f34f95955918a2d70a6a7f611dce9d05cfd",
+      "bytes": 7427,
+      "replacement": "qa/expansion_item3_20261006/controls/module/ECHO_RELAY/test.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/FROST_LENS/controller.gd",
+      "sha256": "74efffd0ad9bb4edddbbd74f53924d33013d2e53019a6132545ed473161b6fe6",
+      "bytes": 242,
+      "replacement": "qa/expansion_item3_20261006/controls/module/FROST_LENS/controller.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/FROST_LENS/godot.log",
+      "sha256": "6881f8ecd202732ee293868c4306365879855dafc3a54735a9b8bafdbbde7e1b",
+      "bytes": 7458,
+      "replacement": "qa/expansion_item3_20261006/controls/module/FROST_LENS/godot.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/FROST_LENS/measurement.json",
+      "sha256": "9137e84a688b77c8f5e6f8f9abd7fc4126e47bd75d7557a731f029a24df1cb77",
+      "bytes": 1543,
+      "replacement": "qa/expansion_item3_20261006/controls/module/FROST_LENS/measurement.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/FROST_LENS/stdout.log",
+      "sha256": "4af6b01bcb37d58c2ad4ae30fb7883ac9acfd18739f1603129a065203a41e531",
+      "bytes": 7547,
+      "replacement": "qa/expansion_item3_20261006/controls/module/FROST_LENS/stdout.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/FROST_LENS/test.gd",
+      "sha256": "48affecf7e8183e482850a746724d2eef46474cb9dd230a1c3b0d3ecf0320cef",
+      "bytes": 7427,
+      "replacement": "qa/expansion_item3_20261006/controls/module/FROST_LENS/test.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/NULL_ANCHOR/controller.gd",
+      "sha256": "8af6f94883d03a1593ff5ea85ec1ec256b1c4f1d8f042d7e308c94d2d8d54a8e",
+      "bytes": 143,
+      "replacement": "qa/expansion_item3_20261006/controls/module/NULL_ANCHOR/controller.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/NULL_ANCHOR/godot.log",
+      "sha256": "524e193c82c9bf17340c69642f935f0a34681c8310de83e66ef0c58b5e602b7b",
+      "bytes": 7469,
+      "replacement": "qa/expansion_item3_20261006/controls/module/NULL_ANCHOR/godot.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/NULL_ANCHOR/measurement.json",
+      "sha256": "a778e924f52f25d515e7cd4acc2aa7002c97f70a004fdc586fd294993d35b223",
+      "bytes": 1544,
+      "replacement": "qa/expansion_item3_20261006/controls/module/NULL_ANCHOR/measurement.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/NULL_ANCHOR/stdout.log",
+      "sha256": "025dd9f2c008ea5e00d5dceb65fda6b257d1e7596f3c217f031e62eb2d3de881",
+      "bytes": 7558,
+      "replacement": "qa/expansion_item3_20261006/controls/module/NULL_ANCHOR/stdout.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/NULL_ANCHOR/test.gd",
+      "sha256": "1ab357b009505154cc48c454ea92c6160bd4015ce595b0a1c13ca2028f05616c",
+      "bytes": 7428,
+      "replacement": "qa/expansion_item3_20261006/controls/module/NULL_ANCHOR/test.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/RAIL_SPOOL/controller.gd",
+      "sha256": "382e4c6f182caf3d7a85575ccfe1e785fe642ab23eb94372b1669efaf44fb8dd",
+      "bytes": 323,
+      "replacement": "qa/expansion_item3_20261006/controls/module/RAIL_SPOOL/controller.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/RAIL_SPOOL/godot.log",
+      "sha256": "638dee1ba68eb82f85aa947c350831f3fd8710dea8dc1e212c3bc2da09aa9044",
+      "bytes": 7799,
+      "replacement": "qa/expansion_item3_20261006/controls/module/RAIL_SPOOL/godot.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/RAIL_SPOOL/measurement.json",
+      "sha256": "b3f0555662bfdd8ee86a62c6c715d68466f7e0bc010dac9b2bff6393799423c1",
+      "bytes": 1579,
+      "replacement": "qa/expansion_item3_20261006/controls/module/RAIL_SPOOL/measurement.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/RAIL_SPOOL/stdout.log",
+      "sha256": "75e2776466f6c058e3a16f640c2c04dcd41e4c0211d6a749c5d7b8c9b1414572",
+      "bytes": 7893,
+      "replacement": "qa/expansion_item3_20261006/controls/module/RAIL_SPOOL/stdout.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/RAIL_SPOOL/test.gd",
+      "sha256": "9063dd624ae8977580422dbbf3006fc9e6ee10ec5dcaff5dae577ca4c0a4a8cc",
+      "bytes": 7427,
+      "replacement": "qa/expansion_item3_20261006/controls/module/RAIL_SPOOL/test.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/SPORE_FILTER/controller.gd",
+      "sha256": "0d2fce2714245aa407cf07367eae6b16375a6679302abb99a603c5a44e850bf3",
+      "bytes": 141,
+      "replacement": "qa/expansion_item3_20261006/controls/module/SPORE_FILTER/controller.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/SPORE_FILTER/godot.log",
+      "sha256": "ccb30a58b88762278296440787fb310d7b03085928fef7797e473f311cbb3725",
+      "bytes": 7480,
+      "replacement": "qa/expansion_item3_20261006/controls/module/SPORE_FILTER/godot.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/SPORE_FILTER/measurement.json",
+      "sha256": "968a7a9939c0cbf889ed1362af5bd12dd16ba55d8ead3d4526200cf7c5da94b9",
+      "bytes": 1545,
+      "replacement": "qa/expansion_item3_20261006/controls/module/SPORE_FILTER/measurement.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/SPORE_FILTER/stdout.log",
+      "sha256": "3c7cc65f810e7d9b8faa8a67b6991e929f9cc8560dfaee9e10daffc46cec9e48",
+      "bytes": 7569,
+      "replacement": "qa/expansion_item3_20261006/controls/module/SPORE_FILTER/stdout.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/module_controls/SPORE_FILTER/test.gd",
+      "sha256": "405c3641820268c876af50328017232697e91c337f3296eb4f13a03daad90b00",
+      "bytes": 7429,
+      "replacement": "qa/expansion_item3_20261006/controls/module/SPORE_FILTER/test.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/native/capture_report.json",
+      "sha256": "0508f7cb3c0458b7bfcade9a954c344d81e46b245eb75641157011da081f1973",
+      "bytes": 2465,
+      "replacement": "qa/expansion_item3_20261006/records/native_capture_report.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/native/field_intel8.png",
+      "sha256": "680dbf1c94f31a5ad11311072202d27b27b41cdd13349ad3ab1e0d3f952101d3",
+      "bytes": 2348516,
+      "replacement": "qa/expansion_item3_20261006/captures/field_intel8.png"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/native/lab_module_cycle.png",
+      "sha256": "6a5c19f07f7296af71e4f29a41b1db98d6e09ae7d4927ce2dc98a05bf7342deb",
+      "bytes": 3116010,
+      "replacement": "qa/expansion_item3_20261006/captures/lab_module_cycle.png"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/native/lab_page1.png",
+      "sha256": "44ffe63c5ca0fd38f5ce5930aac636add69294fefd8e33de95c196969834007f",
+      "bytes": 3131328,
+      "replacement": "qa/expansion_item3_20261006/captures/lab_page1.png"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/native/lab_page3.png",
+      "sha256": "239164b728975153f253fb29abaa7c7d9b7bdc8798bb8f60d10b62044091f97d",
+      "bytes": 3097700,
+      "replacement": "qa/expansion_item3_20261006/captures/lab_page3.png"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/native/results_intel8.png",
+      "sha256": "5df7572da2bb796841c1dcb097d8af06e3c873d95a54324076a15c9e947733f3",
+      "bytes": 2833426,
+      "replacement": "qa/expansion_item3_20261006/captures/results_intel8.png"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/native/vfx_wpn_dmr_rail_01.png",
+      "sha256": "6a406af0b278730b3219c17265194ee28cb718ac280584969ddd9636246c5765",
+      "bytes": 2332908,
+      "replacement": "qa/expansion_item3_20261006/captures/vfx_wpn_dmr_rail_01.png"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/native/vfx_wpn_shotgun_null_01.png",
+      "sha256": "5ec7386985cdd2d4cc6cb8dcea78e245c0297e4dd5514b8d5da224f01aced37f",
+      "bytes": 2333440,
+      "replacement": "qa/expansion_item3_20261006/captures/vfx_wpn_shotgun_null_01.png"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_controls/summary.json",
+      "sha256": "8aee90762bfa3e996b2131ff850921166cc7152bbc7def191ff3a4955af85548",
+      "bytes": 437,
+      "replacement": "qa/expansion_item3_20261006/controls/weapon/summary.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_controls/WPN_DMR_RAIL_01/actor.gd",
+      "sha256": "355c640481a6ba0ee11e665bad3d8f577bcfb791ecd51aba260e28925864ae5d",
+      "bytes": 926,
+      "replacement": "qa/expansion_item3_20261006/controls/weapon/WPN_DMR_RAIL_01/actor.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_controls/WPN_DMR_RAIL_01/godot.log",
+      "sha256": "e9530fbe063b95dbaf00511fbaa71ad52b23c0076e871f86d0ab90b4e7095250",
+      "bytes": 8607,
+      "replacement": "qa/expansion_item3_20261006/controls/weapon/WPN_DMR_RAIL_01/godot.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_controls/WPN_DMR_RAIL_01/measurement.json",
+      "sha256": "f72c1b1221e12a8941796841bb88cfd7b6fbf28ef56c6312509827856c7d6bf3",
+      "bytes": 779,
+      "replacement": "qa/expansion_item3_20261006/controls/weapon/WPN_DMR_RAIL_01/measurement.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_controls/WPN_DMR_RAIL_01/stdout.log",
+      "sha256": "37b436cbc9f03f8db1054e8cec75707de5b00660f66ceed9814b428640c643c7",
+      "bytes": 8961,
+      "replacement": "qa/expansion_item3_20261006/controls/weapon/WPN_DMR_RAIL_01/stdout.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_controls/WPN_DMR_RAIL_01/test.gd",
+      "sha256": "68e5432167522541a32b6faa1cba55507646c35f43f4f71964bade1571e4b719",
+      "bytes": 8182,
+      "replacement": "qa/expansion_item3_20261006/controls/weapon/WPN_DMR_RAIL_01/test.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_controls/WPN_SHOTGUN_NULL_01/actor.gd",
+      "sha256": "79065db8fd527914acd1e212ea34f9cdba6f5fbf8bdef4ead4d293593429f848",
+      "bytes": 930,
+      "replacement": "qa/expansion_item3_20261006/controls/weapon/WPN_SHOTGUN_NULL_01/actor.gd"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_controls/WPN_SHOTGUN_NULL_01/godot.log",
+      "sha256": "1b0f3757e4aa08f6875fb85683581c2148d634c78f19b876a619b9539f9db2d1",
+      "bytes": 8671,
+      "replacement": "qa/expansion_item3_20261006/controls/weapon/WPN_SHOTGUN_NULL_01/godot.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_controls/WPN_SHOTGUN_NULL_01/measurement.json",
+      "sha256": "8467528726e46cc7f20616a0b494d4607d5bedfc8b24305e80373fffb5785e0f",
+      "bytes": 779,
+      "replacement": "qa/expansion_item3_20261006/controls/weapon/WPN_SHOTGUN_NULL_01/measurement.json"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_controls/WPN_SHOTGUN_NULL_01/stdout.log",
+      "sha256": "2cf07c4acac0147aabb55bfc8f9af1bae77cd505a2a598a09cac6358f1377abb",
+      "bytes": 9025,
+      "replacement": "qa/expansion_item3_20261006/controls/weapon/WPN_SHOTGUN_NULL_01/stdout.log"
+    },
+    {
+      "reason": "Byte-identical final QA evidence retained",
+      "path": ".cache/diag/expansion_item3_20261006/weapon_controls/WPN_SHOTGUN_NULL_01/test.gd",
+      "sha256": "32846c4c1d38e2030b84b5d3959c4b5bf97e9f058672f9d1ba79b2a967390188",
+      "bytes": 8186,
+      "replacement": "qa/expansion_item3_20261006/controls/weapon/WPN_SHOTGUN_NULL_01/test.gd"
+    }
+  ],
+  "disposed_at_utc": "2026-10-05T15:50:40.0769489Z"
+}

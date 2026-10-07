@@ -1,0 +1,538 @@
+{
+  "note": "CRYO COMPRESSOR frost_sweep phase 3: the length of the axis lane from the compressor toward the target, measured with the real-floor fairness smoke (site7_boss_room_fairness_smoke.gd) on operation 6 R05_ATRIUM and operation 7 R05_VAULT. The reach was set through a temporary environment override that is not in the committed code; the committed value is FROST_AXIS_REACH = 300. 900 was the shipped value before the fix. Limits unchanged: gap 180 px, escape margin 0.25 s.",
+  "limits": {
+    "gap_limit_px": 180,
+    "escape_margin_s": 0.25,
+    "slowest_walk_px_per_s": 138
+  },
+  "rows": [
+    {
+      "axis_lane_reach_px": 900,
+      "grid_px": 20.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 7260,
+        "failing": 20,
+        "nearest_clear_floor_worst_px": 210,
+        "tightest_escape_margin_s": -0.86
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 5814,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 900,
+      "grid_px": 25.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 4680,
+        "failing": 10,
+        "nearest_clear_floor_worst_px": 210,
+        "tightest_escape_margin_s": -0.22
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 3720,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 900,
+      "grid_px": 30.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 3300,
+        "failing": 12,
+        "nearest_clear_floor_worst_px": 240,
+        "tightest_escape_margin_s": -0.44
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 2604,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 400,
+      "grid_px": 20.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 7260,
+        "failing": 14,
+        "nearest_clear_floor_worst_px": 210,
+        "tightest_escape_margin_s": -0.22
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 5814,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 400,
+      "grid_px": 25.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 4680,
+        "failing": 8,
+        "nearest_clear_floor_worst_px": 210,
+        "tightest_escape_margin_s": -0.22
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 3720,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 400,
+      "grid_px": 30.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 3300,
+        "failing": 8,
+        "nearest_clear_floor_worst_px": 210,
+        "tightest_escape_margin_s": -0.22
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 2604,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 340,
+      "grid_px": 20.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 7260,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 5814,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 340,
+      "grid_px": 25.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 4680,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 3720,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 340,
+      "grid_px": 30.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 3300,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 2604,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 20.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 7260,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 5814,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 21.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 6594,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 5250,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 22.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 6036,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 4728,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 23.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 5490,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 4392,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 24.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 5070,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 4026,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 25.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 4680,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 3720,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 26.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 4296,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 3450,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 27.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 4020,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 3162,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 28.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 3738,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.45
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 2904,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 29.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 3438,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 2736,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 30.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 3300,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 2604,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 31.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 3072,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 2436,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 32.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 2820,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 2268,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 33.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 2652,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 2118,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 34.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 2538,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.65
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 2016,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 35.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 2364,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.65
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 1908,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 36.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 2262,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 1788,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 37.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 2130,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.65
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 1710,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 38.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 2028,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 1620,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 39.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 1926,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.43
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 1542,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": 300,
+      "grid_px": 40.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 1818,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 120,
+        "tightest_escape_margin_s": 0.65
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 1458,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": "none",
+      "grid_px": 20.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 7260,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 0.65
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 5814,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": "none",
+      "grid_px": 25.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 4680,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 0.67
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 3720,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    },
+    {
+      "axis_lane_reach_px": "none",
+      "grid_px": 30.0,
+      "op7_r05_vault": {
+        "attacks_evaluated": 3300,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 0.65
+      },
+      "op6_r05_atrium": {
+        "attacks_evaluated": 2604,
+        "failing": 0,
+        "nearest_clear_floor_worst_px": 90,
+        "tightest_escape_margin_s": 1.05
+      }
+    }
+  ]
+}

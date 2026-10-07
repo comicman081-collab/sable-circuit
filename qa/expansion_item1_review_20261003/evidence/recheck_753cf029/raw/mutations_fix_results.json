@@ -1,0 +1,159 @@
+[
+  {
+    "mutation": "NONE",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 0,
+    "summary": "ELITE_EXPANSION_SMOKE: PASS (438 checks) || "
+  },
+  {
+    "mutation": "NONE",
+    "test": "tests/smoke/hazard_expansion_smoke.gd",
+    "exit": 0,
+    "summary": "HAZARD_EXPANSION_SMOKE: PASS (438 checks, 15 rooms) res://.cache/mut_report.json || "
+  },
+  {
+    "mutation": "NONE",
+    "test": "tests/smoke/elite_affix_smoke.gd",
+    "exit": 0,
+    "summary": "ELITE_AFFIX_SMOKE: PASS (71 checks) || "
+  },
+  {
+    "mutation": "NONE",
+    "test": "tests/smoke/zone_hazard_smoke.gd",
+    "exit": 0,
+    "summary": "ZONE_HAZARD_SMOKE: PASS (366 checks, 15 rooms) || "
+  },
+  {
+    "mutation": "boss_accepts_affix",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 1 failures) || FAIL: boss refuses SHIELDED at application boundary | "
+  },
+  {
+    "mutation": "beacon_protects_itself",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 1 failures) || FAIL: a beacon does not protect itself | "
+  },
+  {
+    "mutation": "beacon_cap_removed_data_0_5",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 5 failures) || FAIL: beacon data stays inside reduction and link limits | "
+  },
+  {
+    "mutation": "brood_three_babies",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (442 checks, 3 failures) || FAIL: both hatchlings are counted before the parent decrements | "
+  },
+  {
+    "mutation": "hatch_short_0_2",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 6 failures) || FAIL: hatch warning lasts at least 0.6 s | "
+  },
+  {
+    "mutation": "hatchling_fires_during_hatch",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 4 failures) || FAIL: no projectile, legacy attack or normal controller attack during hatch | "
+  },
+  {
+    "mutation": "affix_tints_actor_modulate",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 180 failures) || FAIL: SHIELDED keeps the entire sprite-to-actor CanvasItem chain at HighResVisualRoot/UniqueMasterSprite | "
+  },
+  {
+    "mutation": "affix_tints_sprite_modulate",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 20 failures) || FAIL: SHIELDED keeps common sprite material/modulation at HighResVisualRoot/UniqueMasterSprite | "
+  },
+  {
+    "mutation": "affix_tints_visual_root",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 170 failures) || FAIL: SHIELDED keeps the entire sprite-to-actor CanvasItem chain at HighResVisualRoot/UniqueMasterSprite | "
+  },
+  {
+    "mutation": "affix_tints_sprite_self_modulate",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 280 failures) || FAIL: SHIELDED keeps common sprite material/modulation at HighResVisualRoot/UniqueMasterSprite | "
+  },
+  {
+    "mutation": "affix_tints_actor_self_modulate",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 180 failures) || FAIL: SHIELDED keeps the entire sprite-to-actor CanvasItem chain at HighResVisualRoot/UniqueMasterSprite | "
+  },
+  {
+    "mutation": "affix_clears_sprite_material",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 20 failures) || FAIL: SHIELDED keeps common sprite material/modulation at AuthoredMachine/AuthoredMachinePixels | "
+  },
+  {
+    "mutation": "affix_tints_machine_sprite_node",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 10 failures) || FAIL: SHIELDED keeps the entire sprite-to-actor CanvasItem chain at AuthoredMachine/AuthoredMachinePixels |  [fired]"
+  },
+  {
+    "mutation": "affix_tints_machine_sprite_node_self",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 10 failures) || FAIL: SHIELDED keeps the entire sprite-to-actor CanvasItem chain at AuthoredMachine/AuthoredMachinePixels |  [fired]"
+  },
+  {
+    "mutation": "affix_tints_visual_root_self",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 170 failures) || FAIL: SHIELDED keeps the entire sprite-to-actor CanvasItem chain at HighResVisualRoot/UniqueMasterSprite |  [fired]"
+  },
+  {
+    "mutation": "affix_visual_root_material",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 170 failures) || FAIL: SHIELDED keeps the entire sprite-to-actor CanvasItem chain at HighResVisualRoot/UniqueMasterSprite |  [fired]"
+  },
+  {
+    "mutation": "affix_actor_root_material",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 180 failures) || FAIL: SHIELDED keeps the entire sprite-to-actor CanvasItem chain at HighResVisualRoot/UniqueMasterSprite |  [fired]"
+  },
+  {
+    "mutation": "affix_weathering_wear_changed",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 20 failures) || FAIL: SHIELDED keeps common sprite material/modulation at AuthoredMachine/AuthoredMachinePixels |  [fired]"
+  },
+  {
+    "mutation": "affix_pulses_root_modulate",
+    "test": "tests/smoke/elite_expansion_smoke.gd",
+    "exit": 1,
+    "verdict": "CAUGHT",
+    "summary": "ELITE_EXPANSION_SMOKE: FAIL (438 checks, 180 failures) || FAIL: SHIELDED keeps the entire sprite-to-actor CanvasItem chain at HighResVisualRoot/UniqueMasterSprite |  [fired]"
+  }
+]

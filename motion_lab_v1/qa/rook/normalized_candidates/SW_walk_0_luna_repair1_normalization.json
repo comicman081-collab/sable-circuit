@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "operation": "edge-connected green matte normalization only; no source-art redraw",
+  "source_author": "built-in ImageGen",
+  "input": "motion_lab_v1/qa/rook/incoming/rook_luna_20260912_SWwalk0_repair1/SW_walk_0_luna_raw.png",
+  "input_sha256": "3cfa606bd6558ba04cfd4cb0e368f4550ed65889436173e5bc3d80cac8484e98",
+  "output": "motion_lab_v1/qa/rook/normalized_candidates/SW_walk_0_luna_repair1_normalized.png",
+  "output_sha256": "9cce51f64728355e220ff4104f3e5c7d4aa22712ed668373d0cc3b5f91f0e9eb",
+  "mask": "motion_lab_v1/qa/rook/normalized_candidates/SW_walk_0_luna_repair1_mask.png",
+  "mask_sha256": "0d82af0a00272793928883c55ad6b8083aaec4018d46f85053ead9b19015ac8e",
+  "input_resolution": [
+    1024,
+    1536
+  ],
+  "edge_median_rgb": [
+    6,
+    249,
+    3
+  ],
+  "exact_green_rgb": [
+    0,
+    255,
+    0
+  ],
+  "edge_connected_background_coverage": 0.6612497965494791,
+  "subject_pixels_byte_exact": true,
+  "alpha_ready": true
+}

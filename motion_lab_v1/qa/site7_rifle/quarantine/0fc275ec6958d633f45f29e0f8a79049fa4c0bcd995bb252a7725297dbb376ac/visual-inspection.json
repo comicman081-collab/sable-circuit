@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "character": "site7_rifle",
+  "slot": "S/walk/0",
+  "candidate": "art/site7_rifle/S_walk_0_master.png",
+  "candidateSHA256": "0fc275ec6958d633f45f29e0f8a79049fa4c0bcd995bb252a7725297dbb376ac",
+  "native": [1024, 1536],
+  "reviewType": "source-scale matte inspection only",
+  "reviewer": "Codex Luna worker",
+  "decision": "PREPARED_NOT_APPROVED",
+  "evidence": {
+    "light": "qa/site7_rifle/luna_s_front_20260913/S_walk_0_master_luna_20260913_v2_light_preview.png",
+    "dark": "qa/site7_rifle/luna_s_front_20260913/S_walk_0_master_luna_20260913_v2_dark_preview.png",
+    "rgbaPreview": "qa/site7_rifle/luna_s_front_20260913/S_walk_0_master_luna_20260913_v2_rgba_preview.png"
+  },
+  "observations": [
+    "Full hood-to-boot silhouette and rifle remain inside the 1024x1536 source canvas; no crop was observed.",
+    "The straight-front candidate visibly contains two boot silhouettes and the intended forward/trailing leg separation, but anatomical chain continuity and phase correspondence remain unapproved source-review work.",
+    "A narrow bright-green fringe/spill is visible around several subject edges on both light and dark previews, especially hood/antenna, shoulder/arm contours and lower legs; the normalized derivative preserves subject pixels exactly and does not repair this spill.",
+    "The light/dark composites are QA previews derived from the binary matte only; they are not runtime or 1920x1080 evidence."
+  ],
+  "gates": {
+    "sourceReview": "NOT_RUN",
+    "cycleReview": "NOT_RUN",
+    "runtimeReview": "NOT_RUN",
+    "delivery": "NOT_RUN"
+  }
+}

@@ -1,0 +1,1197 @@
+{
+  "failures": [],
+  "rows": [
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/E_windup_start.webp",
+      "label": "E_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(1210.0, 635.0)",
+        "emitter_visible": true,
+        "emitter_world": "(754.5891, 290.0143)",
+        "facing": "E",
+        "gait_claim": false,
+        "heading_world": "(1.0, 0.0)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1477.0, 803.0)",
+        "texture_sha256": "1b578c4ceab99cc27487f6e5c3fa91c85dbf393a9eef64cf740a6fb9c86fc93f",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 39,
+      "sha256": "54c43fea9f4286cdc0e6bd8ed6dc522e2ec2b647797e6839d785e524f1e903af",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(0.999952, -0.009756)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.48
+      },
+      "target_aim_point": "(913.0802, 286.9399)",
+      "wall_ms": 5129
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/E_windup_mid.webp",
+      "label": "E_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(1210.0, 635.0)",
+        "emitter_visible": true,
+        "emitter_world": "(754.5891, 291.4751)",
+        "facing": "E",
+        "gait_claim": false,
+        "heading_world": "(1.0, 0.0)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1477.0, 803.0)",
+        "texture_sha256": "1b578c4ceab99cc27487f6e5c3fa91c85dbf393a9eef64cf740a6fb9c86fc93f",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 63,
+      "sha256": "6af9cf40e743072805c39259b3fd9f2bab41bc90356ec2ff0ded85091b125a07",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(0.999952, -0.009756)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.213333333333333
+      },
+      "target_aim_point": "(913.0802, 286.9399)",
+      "wall_ms": 5599
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [
+        {
+          "actor_id": 78752253629,
+          "attack_serial": 1,
+          "direction": [
+            0.999952435493469,
+            -0.00975627172738314
+          ],
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "ordinal": 0,
+          "origin": [
+            754.589050292969,
+            289.984527587891
+          ],
+          "owner_id": 79708554954,
+          "owner_path": "/root/StoryStage01/@CharacterBody2D@83/Tactics",
+          "physics_tick": 84,
+          "projectile_id": 86100674975
+        }
+      ],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/E_actual_emission.webp",
+      "label": "E_actual_emission",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(1210.0, 635.0)",
+        "emitter_visible": true,
+        "emitter_world": "(754.5891, 289.7609)",
+        "facing": "E",
+        "gait_claim": false,
+        "heading_world": "(1.0, 0.0)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1477.0, 803.0)",
+        "texture_sha256": "1b578c4ceab99cc27487f6e5c3fa91c85dbf393a9eef64cf740a6fb9c86fc93f",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 85,
+      "sha256": "54bd493548a8a7567ee74494fba97461b0537f3c5fe05f35a82d532944d4eafe",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(0.999952, -0.009756)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 1,
+        "state": "RECOVER",
+        "state_left": 0.85
+      },
+      "target_aim_point": "(913.0802, 286.9399)",
+      "wall_ms": 6049
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/SE_windup_start.webp",
+      "label": "SE_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(870.0, 790.0)",
+        "emitter_visible": true,
+        "emitter_world": "(705.4843, 300.8722)",
+        "facing": "SE",
+        "gait_claim": false,
+        "heading_world": "(0.707107, 0.707107)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1490.0, 888.0)",
+        "texture_sha256": "3eafb4bf8536f048f5e51b1c89ef498b5d8f9cbd9396e1f948316d5abc4be0a7",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 133,
+      "sha256": "f6e1651b4aeb33b8e556a432efeb6103e209c5142f6418a9655b115ea2b27e6f",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(0.704313, 0.709889)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.48
+      },
+      "target_aim_point": "(817.3697, 412.1315)",
+      "wall_ms": 8809
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/SE_windup_mid.webp",
+      "label": "SE_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(870.0, 790.0)",
+        "emitter_visible": true,
+        "emitter_world": "(705.4843, 302.3585)",
+        "facing": "SE",
+        "gait_claim": false,
+        "heading_world": "(0.707107, 0.707107)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1490.0, 888.0)",
+        "texture_sha256": "3eafb4bf8536f048f5e51b1c89ef498b5d8f9cbd9396e1f948316d5abc4be0a7",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 156,
+      "sha256": "df47160fb665f151b6235ef6f945a1d6ac06bbbaa4aa5b3637a4f1f1bc2a6715",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(0.704313, 0.709889)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.213333333333333
+      },
+      "target_aim_point": "(817.3697, 412.1315)",
+      "wall_ms": 9286
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [
+        {
+          "actor_id": 117138523712,
+          "attack_serial": 1,
+          "direction": [
+            0.704313457012177,
+            0.709889113903046
+          ],
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "ordinal": 0,
+          "origin": [
+            705.484252929688,
+            301.127197265625
+          ],
+          "owner_id": 118094825657,
+          "owner_path": "/root/StoryStage01/@CharacterBody2D@183/Tactics",
+          "physics_tick": 176,
+          "projectile_id": 124218508902
+        }
+      ],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/SE_actual_emission.webp",
+      "label": "SE_actual_emission",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(870.0, 790.0)",
+        "emitter_visible": true,
+        "emitter_world": "(705.4843, 300.9887)",
+        "facing": "SE",
+        "gait_claim": false,
+        "heading_world": "(0.707107, 0.707107)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1490.0, 888.0)",
+        "texture_sha256": "3eafb4bf8536f048f5e51b1c89ef498b5d8f9cbd9396e1f948316d5abc4be0a7",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 177,
+      "sha256": "bf97f1214a4aeabf56adf4c8d62e79436f585c98d87e5abda68f021d06dce9e2",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(0.704313, 0.709889)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 1,
+        "state": "RECOVER",
+        "state_left": 0.85
+      },
+      "target_aim_point": "(817.3697, 412.1315)",
+      "wall_ms": 9712
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/S_windup_start.webp",
+      "label": "S_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(679.0, 789.0)",
+        "emitter_visible": true,
+        "emitter_world": "(690.25, 301.6586)",
+        "facing": "S",
+        "gait_claim": false,
+        "heading_world": "(-0.0, 1.0)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1354.0, 880.0)",
+        "texture_sha256": "1bd591cb950dfdf1a20b72c0af2e7ac68d78966cd01e535cf60bc6d31f567b27",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 220,
+      "sha256": "8d80d85a9a4bcdfc825eddbab1bb94bd788bf1aaef0dfed8a62adda5c8d7a6f9",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.007676, 0.999971)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.48
+      },
+      "target_aim_point": "(689.0218, 460.134)",
+      "wall_ms": 12431
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/S_windup_mid.webp",
+      "label": "S_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(679.0, 789.0)",
+        "emitter_visible": true,
+        "emitter_world": "(690.25, 303.1175)",
+        "facing": "S",
+        "gait_claim": false,
+        "heading_world": "(-0.0, 1.0)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1354.0, 880.0)",
+        "texture_sha256": "1bd591cb950dfdf1a20b72c0af2e7ac68d78966cd01e535cf60bc6d31f567b27",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 244,
+      "sha256": "f10151a19e068a9df0fc551be11ed328d067ac6d24b219d32358e74d8e6a8446",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.007676, 0.999971)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.213333333333333
+      },
+      "target_aim_point": "(689.0218, 460.134)",
+      "wall_ms": 12914
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [
+        {
+          "actor_id": 155256358442,
+          "attack_serial": 1,
+          "direction": [
+            -0.00767565704882145,
+            0.999970555305481
+          ],
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "ordinal": 0,
+          "origin": [
+            690.25,
+            301.640167236328
+          ],
+          "owner_id": 156212660198,
+          "owner_path": "/root/StoryStage01/@CharacterBody2D@283/Tactics",
+          "physics_tick": 265,
+          "projectile_id": 162336344130
+        }
+      ],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/S_actual_emission.webp",
+      "label": "S_actual_emission",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(679.0, 789.0)",
+        "emitter_visible": true,
+        "emitter_world": "(690.25, 301.4932)",
+        "facing": "S",
+        "gait_claim": false,
+        "heading_world": "(-0.0, 1.0)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1354.0, 880.0)",
+        "texture_sha256": "1bd591cb950dfdf1a20b72c0af2e7ac68d78966cd01e535cf60bc6d31f567b27",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 266,
+      "sha256": "3129f95937b3b7c92a1ea38497433fcb9acd2ab59a604479414327a938efb675",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.007676, 0.999971)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 1,
+        "state": "RECOVER",
+        "state_left": 0.85
+      },
+      "target_aim_point": "(689.0218, 460.134)",
+      "wall_ms": 13357
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/SW_windup_start.webp",
+      "label": "SW_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(601.0, 818.0)",
+        "emitter_visible": true,
+        "emitter_world": "(677.4646, 301.1537)",
+        "facing": "SW",
+        "gait_claim": false,
+        "heading_world": "(-0.707107, 0.707107)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1411.0, 917.0)",
+        "texture_sha256": "cff84ee24f5a7c03ed6d56360c0a4d997da8a16da5860ecf3bf927a541b702b7",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 308,
+      "sha256": "ac4c7fd55d8f42f512f3b1863b87b8012801c31a4561f03cfb6e487974f9dee9",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.709911, 0.704291)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.48
+      },
+      "target_aim_point": "(563.1011, 413.0826)",
+      "wall_ms": 16051
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/SW_windup_mid.webp",
+      "label": "SW_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(601.0, 818.0)",
+        "emitter_visible": true,
+        "emitter_world": "(677.4646, 302.6009)",
+        "facing": "SW",
+        "gait_claim": false,
+        "heading_world": "(-0.707107, 0.707107)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1411.0, 917.0)",
+        "texture_sha256": "cff84ee24f5a7c03ed6d56360c0a4d997da8a16da5860ecf3bf927a541b702b7",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 333,
+      "sha256": "4589224c8f552682a88bb048e0881b9141d477f9f70516326169b908380923f1",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.709911, 0.704291)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.213333333333333
+      },
+      "target_aim_point": "(563.1011, 413.0826)",
+      "wall_ms": 16549
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [
+        {
+          "actor_id": 193374193719,
+          "attack_serial": 1,
+          "direction": [
+            -0.709911048412323,
+            0.70429140329361
+          ],
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "ordinal": 0,
+          "origin": [
+            677.464599609375,
+            301.021514892578
+          ],
+          "owner_id": 194330494825,
+          "owner_path": "/root/StoryStage01/@CharacterBody2D@383/Tactics",
+          "physics_tick": 354,
+          "projectile_id": 200454179225
+        }
+      ],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/SW_actual_emission.webp",
+      "label": "SW_actual_emission",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(601.0, 818.0)",
+        "emitter_visible": true,
+        "emitter_world": "(677.4646, 300.7938)",
+        "facing": "SW",
+        "gait_claim": false,
+        "heading_world": "(-0.707107, 0.707107)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1411.0, 917.0)",
+        "texture_sha256": "cff84ee24f5a7c03ed6d56360c0a4d997da8a16da5860ecf3bf927a541b702b7",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 355,
+      "sha256": "c468fb5ce1acc172c41bc72a5abc197de0db51a301716c1cae54b0616ad4d2c2",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.709911, 0.704291)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 1,
+        "state": "RECOVER",
+        "state_left": 0.85
+      },
+      "target_aim_point": "(563.1011, 413.0826)",
+      "wall_ms": 16987
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/W_windup_start.webp",
+      "label": "W_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(108.0, 644.0)",
+        "emitter_visible": true,
+        "emitter_world": "(614.7241, 281.2834)",
+        "facing": "W",
+        "gait_claim": false,
+        "heading_world": "(-1.0, -0.0)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1456.0, 906.0)",
+        "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 395,
+      "sha256": "8dae1a01371a937dd5772c010a4a187bad9f144c09b73eb365993d90449454cf",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.999932, 0.011691)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.48
+      },
+      "target_aim_point": "(453.0015, 281.5807)",
+      "wall_ms": 19607
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/W_windup_mid.webp",
+      "label": "W_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(108.0, 644.0)",
+        "emitter_visible": true,
+        "emitter_world": "(614.7241, 282.6823)",
+        "facing": "W",
+        "gait_claim": false,
+        "heading_world": "(-1.0, -0.0)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1456.0, 906.0)",
+        "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 418,
+      "sha256": "9da7685da754e0821e9e2fe5b7a1710f8d0cf606854c120ca5b7c697350496cd",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.999932, 0.011691)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.213333333333333
+      },
+      "target_aim_point": "(453.0015, 281.5807)",
+      "wall_ms": 20053
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [
+        {
+          "actor_id": 231492028203,
+          "attack_serial": 1,
+          "direction": [
+            -0.999931693077087,
+            0.0116908764466643
+          ],
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "ordinal": 0,
+          "origin": [
+            614.724060058594,
+            281.204803466797
+          ],
+          "owner_id": 232448329957,
+          "owner_path": "/root/StoryStage01/@CharacterBody2D@483/Tactics",
+          "physics_tick": 439,
+          "projectile_id": 238572013992
+        }
+      ],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/W_actual_emission.webp",
+      "label": "W_actual_emission",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(108.0, 644.0)",
+        "emitter_visible": true,
+        "emitter_world": "(614.7241, 281.0576)",
+        "facing": "W",
+        "gait_claim": false,
+        "heading_world": "(-1.0, -0.0)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1456.0, 906.0)",
+        "texture_sha256": "5d2a75ea9d2051bd29d0fe20d86d92ab0729cefee61371135a6f23097f62bfc0",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 440,
+      "sha256": "69d47564f29b4546b51148175b2fbe8aac2f9e4dc99b96b41058a31427e4816e",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.999932, 0.011691)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 1,
+        "state": "RECOVER",
+        "state_left": 0.85
+      },
+      "target_aim_point": "(453.0015, 281.5807)",
+      "wall_ms": 20503
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/NW_windup_start.webp",
+      "label": "NW_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(170.0, 337.0)",
+        "emitter_visible": true,
+        "emitter_world": "(627.4555, 241.8057)",
+        "facing": "NW",
+        "gait_claim": false,
+        "heading_world": "(-0.707107, -0.707107)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1426.0, 955.0)",
+        "texture_sha256": "81a941bb695ab9a037dfdd16a5ff0f80fe3998fc51bd5e0776e644b7089125d9",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 487,
+      "sha256": "e1e48c6062f9ed534b8882d6bc656ec62b03ca54c4fd0dc0664a58809bcb50c5",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.719898, -0.69408)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.48
+      },
+      "target_aim_point": "(511.7013, 128.714)",
+      "wall_ms": 23196
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/NW_windup_mid.webp",
+      "label": "NW_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(170.0, 337.0)",
+        "emitter_visible": true,
+        "emitter_world": "(627.4555, 243.3056)",
+        "facing": "NW",
+        "gait_claim": false,
+        "heading_world": "(-0.707107, -0.707107)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1426.0, 955.0)",
+        "texture_sha256": "81a941bb695ab9a037dfdd16a5ff0f80fe3998fc51bd5e0776e644b7089125d9",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 511,
+      "sha256": "bc792f6cbbc99ca6ca058d50e0f1966521c964c9c4514265e69f3e97b6c8d034",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.719898, -0.69408)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.213333333333333
+      },
+      "target_aim_point": "(511.7013, 128.714)",
+      "wall_ms": 23675
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [
+        {
+          "actor_id": 269609863383,
+          "attack_serial": 1,
+          "direction": [
+            -0.719898343086243,
+            -0.694079518318176
+          ],
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "ordinal": 0,
+          "origin": [
+            627.455505371094,
+            241.969100952148
+          ],
+          "owner_id": 270566164495,
+          "owner_path": "/root/StoryStage01/@CharacterBody2D@583/Tactics",
+          "physics_tick": 531,
+          "projectile_id": 276689847897
+        }
+      ],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/NW_actual_emission.webp",
+      "label": "NW_actual_emission",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(170.0, 337.0)",
+        "emitter_visible": true,
+        "emitter_world": "(627.4555, 241.7532)",
+        "facing": "NW",
+        "gait_claim": false,
+        "heading_world": "(-0.707107, -0.707107)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1426.0, 955.0)",
+        "texture_sha256": "81a941bb695ab9a037dfdd16a5ff0f80fe3998fc51bd5e0776e644b7089125d9",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 532,
+      "sha256": "da785b7cab9c34ed9587bf2aede65e41b5db068ec1e63dc93391b12394c2c04e",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.719898, -0.69408)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 1,
+        "state": "RECOVER",
+        "state_left": 0.85
+      },
+      "target_aim_point": "(511.7013, 128.714)",
+      "wall_ms": 24097
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/N_windup_start.webp",
+      "label": "N_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(740.0, 598.0)",
+        "emitter_visible": true,
+        "emitter_world": "(689.8701, 280.6145)",
+        "facing": "N",
+        "gait_claim": false,
+        "heading_world": "(0.0, -1.0)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1482.0, 847.0)",
+        "texture_sha256": "99760feeeded647bacb643dba1c04ecc9ded35616fcec535701b78e926cc97c6",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 574,
+      "sha256": "3fdcf4b468ad1b2072766ab09bc04270ea3dacb945fe0e860cbd7472be723ce9",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.010902, -0.999941)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.48
+      },
+      "target_aim_point": "(688.1259, 119.187)",
+      "wall_ms": 26797
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/N_windup_mid.webp",
+      "label": "N_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(740.0, 598.0)",
+        "emitter_visible": true,
+        "emitter_world": "(689.8701, 282.1578)",
+        "facing": "N",
+        "gait_claim": false,
+        "heading_world": "(0.0, -1.0)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1482.0, 847.0)",
+        "texture_sha256": "99760feeeded647bacb643dba1c04ecc9ded35616fcec535701b78e926cc97c6",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 598,
+      "sha256": "145faab815c0073aa2cf635894123d8a220d60699f880f90497a51036039e84f",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.010902, -0.999941)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.213333333333333
+      },
+      "target_aim_point": "(688.1259, 119.187)",
+      "wall_ms": 27271
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [
+        {
+          "actor_id": 307727697924,
+          "attack_serial": 1,
+          "direction": [
+            -0.0109022939577699,
+            -0.999940574169159
+          ],
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "ordinal": 0,
+          "origin": [
+            689.8701171875,
+            280.914978027344
+          ],
+          "owner_id": 308683999114,
+          "owner_path": "/root/StoryStage01/@CharacterBody2D@683/Tactics",
+          "physics_tick": 618,
+          "projectile_id": 314807682688
+        }
+      ],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/N_actual_emission.webp",
+      "label": "N_actual_emission",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(740.0, 598.0)",
+        "emitter_visible": true,
+        "emitter_world": "(689.8701, 280.7105)",
+        "facing": "N",
+        "gait_claim": false,
+        "heading_world": "(0.0, -1.0)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1482.0, 847.0)",
+        "texture_sha256": "99760feeeded647bacb643dba1c04ecc9ded35616fcec535701b78e926cc97c6",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 619,
+      "sha256": "82c15a94d7c30f1c9e64220dfebf6c7eb0bf9602a9c2d510f4e90d9370b76ed2",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(-0.010902, -0.999941)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 1,
+        "state": "RECOVER",
+        "state_left": 0.85
+      },
+      "target_aim_point": "(688.1259, 119.187)",
+      "wall_ms": 27706
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/NE_windup_start.webp",
+      "label": "NE_windup_start",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(1176.0, 527.0)",
+        "emitter_visible": true,
+        "emitter_world": "(746.4911, 263.5575)",
+        "facing": "NE",
+        "gait_claim": false,
+        "heading_world": "(0.707107, -0.707107)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1367.0, 959.0)",
+        "texture_sha256": "9cef709e38e1e514f937f7b81ef902b7dc7400bd0662e5ea979f07ff4213def2",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 661,
+      "sha256": "90cd68572da5585a9701d7e63c0acd7b474faf1097b2ef80854f3854ab9adeb6",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(0.695981, -0.71806)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.48
+      },
+      "target_aim_point": "(857.4611, 147.458)",
+      "wall_ms": 30453
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/NE_windup_mid.webp",
+      "label": "NE_windup_mid",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(1176.0, 527.0)",
+        "emitter_visible": true,
+        "emitter_world": "(746.4911, 264.9395)",
+        "facing": "NE",
+        "gait_claim": false,
+        "heading_world": "(0.707107, -0.707107)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1367.0, 959.0)",
+        "texture_sha256": "9cef709e38e1e514f937f7b81ef902b7dc7400bd0662e5ea979f07ff4213def2",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 684,
+      "sha256": "c07473f2e8db9027eb135f5145bc91013ef0a69b9c40492df7f69c7850b8c3cb",
+      "tactics": {
+        "attacks": 0,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(0.695981, -0.71806)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 0,
+        "state": "WINDUP",
+        "state_left": 0.213333333333333
+      },
+      "target_aim_point": "(857.4611, 147.458)",
+      "wall_ms": 30911
+    },
+    {
+      "actor_position": "(690.0, 350.0)",
+      "actual_emissions": [
+        {
+          "actor_id": 345845532549,
+          "attack_serial": 1,
+          "direction": [
+            0.695981025695801,
+            -0.718060195446014
+          ],
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "ordinal": 0,
+          "origin": [
+            746.491149902344,
+            263.574066162109
+          ],
+          "owner_id": 346801833653,
+          "owner_path": "/root/StoryStage01/@CharacterBody2D@783/Tactics",
+          "physics_tick": 704,
+          "projectile_id": 352925517894
+        }
+      ],
+      "image": "res://qa/stage1_implementation_20260913/facing_native_1789285783_092/NE_actual_emission.webp",
+      "label": "NE_actual_emission",
+      "machine": {
+        "art_warp": false,
+        "configured": true,
+        "display_height": 110.0,
+        "emitter_px": "(1176.0, 527.0)",
+        "emitter_visible": true,
+        "emitter_world": "(746.4911, 263.4345)",
+        "facing": "NE",
+        "gait_claim": false,
+        "heading_world": "(0.707107, -0.707107)",
+        "kind": "hover_machine",
+        "mirrored": false,
+        "native_size": "(1367.0, 959.0)",
+        "texture_sha256": "9cef709e38e1e514f937f7b81ef902b7dc7400bd0662e5ea979f07ff4213def2",
+        "view_count": 8
+      },
+      "native": [
+        1920,
+        1080
+      ],
+      "physics_tick": 705,
+      "sha256": "e80ecab466b05fa3ef2fb4af8f62d2da003cae238a321b8c7fb1ca80c107d405",
+      "tactics": {
+        "attacks": 1,
+        "contract_is_intent_not_validation": true,
+        "locked_aim": "(0.695981, -0.71806)",
+        "lunge_radius": 58.0,
+        "lunge_reach": 151.2,
+        "lunges": 0,
+        "phase": 1,
+        "role": "drone",
+        "shots": 1,
+        "state": "RECOVER",
+        "state_left": 0.85
+      },
+      "target_aim_point": "(857.4611, 147.458)",
+      "wall_ms": 31336
+    }
+  ],
+  "sha256": {
+    "res://motion_lab_v1/qa/stage1_enemies_20260913/machine_preview_specs.json": "49ef9bd2b71887529b7007da31e1316954db553492f27a1d005e1077ffb4eb3a",
+    "res://scripts/actors/enemy_actor.gd": "6960d7b99d0df3098399645cb389e4ed4fee4ae51397af8ebeb81560cf0e7b95",
+    "res://scripts/animation/site7_machine_sprite.gd": "986d9b4f34c33ee9c07d4737c286bad32c0acd84b78361e4b7f7a7fbcdc338c8",
+    "res://scripts/combat/site7_enemy_tactics.gd": "efacd6facda231852c947cb26572cc873ed022d62bb5ddf1ef55b2c8b260bd02",
+    "res://tests/render/site7_enemy_facing_capture.gd": "9c34cfdc491ae1a04bea7035924c7dfdde713fb6ffc3fb49262c06eb6a6474fb"
+  },
+  "status": "CAPTURED_CONTROLLED_CASES_NOT_VISUAL_APPROVAL"
+}

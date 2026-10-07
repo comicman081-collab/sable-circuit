@@ -1,0 +1,614 @@
+{
+  "audits": {
+    "audits": {
+      "baseline12": {
+        "cell_px": 12.0,
+        "rooms": 30,
+        "walkable_cells": 105535,
+        "dead_cells": 70,
+        "dead_rooms": 4,
+        "sha256": "5350c371feab59e8de61053c7cdc8813f35fbdca2f6536887b45d938764b4edb",
+        "path": ".cache/diag/nav_pockets_20261003/baseline12.json"
+      },
+      "fixed12": {
+        "cell_px": 12.0,
+        "rooms": 30,
+        "walkable_cells": 105535,
+        "dead_cells": 0,
+        "dead_rooms": 0,
+        "sha256": "6e443aa8967a7e9d6c6ad8905c14a52c9c4ca73cb44ac9494ba5452e1c26b1e3",
+        "path": "qa/regression_runs/20261003_152407_custom/out/nav_pockets/nav_pockets.json"
+      },
+      "fixed8": {
+        "cell_px": 8.0,
+        "rooms": 30,
+        "walkable_cells": 237208,
+        "dead_cells": 0,
+        "dead_rooms": 0,
+        "sha256": "34b651c66448e272e5d8e8cf522ee4c348d322906a76935af80bf0df99226889",
+        "path": ".cache/diag/nav_pockets_20261003/fixed8.json"
+      },
+      "reverted12": {
+        "cell_px": 12.0,
+        "rooms": 30,
+        "walkable_cells": 105535,
+        "dead_cells": 70,
+        "dead_rooms": 4,
+        "sha256": "5350c371feab59e8de61053c7cdc8813f35fbdca2f6536887b45d938764b4edb",
+        "path": ".cache/diag/nav_pockets_20261003/reverted_project/.cache/reverted12.json"
+      }
+    },
+    "reverted_json_byte_identical_to_baseline": true,
+    "same_12px_sampled_floor_and_cover_counts": true,
+    "navigation_and_audit_script_sha256": {
+      "scripts/combat/cover_navigation.gd": {
+        "baseline": "cf73f545f4b7511e382c24c0ac73d83a335691d8869236a64a5b6c076e794960",
+        "fixed": "3d0c6a0c662df7be8f7298d6b9238d80d77a39d5c5ac800b0ed52dbfe4ea2031",
+        "reverted": "cf73f545f4b7511e382c24c0ac73d83a335691d8869236a64a5b6c076e794960"
+      },
+      "scripts/combat/site7_enemy_tactics.gd": {
+        "baseline": "eea21cbe0be02073304cae3b9be4b6cf7c3169ab3636ff81f0943e88bd0e0bc2",
+        "fixed": "de728e8d4129d7aa1bf522770ad260404b95b848b013adf33f44508f6798e7cb",
+        "reverted": "eea21cbe0be02073304cae3b9be4b6cf7c3169ab3636ff81f0943e88bd0e0bc2"
+      },
+      "tools/environment/audit_nav_pockets.gd": {
+        "baseline": "622f3edcc7cd7c6616b8dea439c6debb69a58246a62b607095fb08ec68ebf243",
+        "fixed": "622f3edcc7cd7c6616b8dea439c6debb69a58246a62b607095fb08ec68ebf243",
+        "reverted": "622f3edcc7cd7c6616b8dea439c6debb69a58246a62b607095fb08ec68ebf243"
+      }
+    },
+    "data_files_compared": 37,
+    "data_files_changed": [],
+    "runtime_12px": {
+      "before_seconds": 69.4929759,
+      "after_seconds": 77.8,
+      "ratio": 1.1195376078289374,
+      "limit_ratio": 1.25
+    }
+  },
+  "bots": [
+    {
+      "group": "baseline_bots",
+      "test": "full_op_01",
+      "stamp": "20261003_153434_custom",
+      "runner_status": "PASS",
+      "exit_code": 0,
+      "wall_seconds": 126.7,
+      "outcome": "EXTRACTED",
+      "game_seconds": 120.275969666641,
+      "last_tick": 6600,
+      "full_route_cleared": true,
+      "failures": [],
+      "damage_total": 245.0,
+      "sha256": "5a50339d878a3ca31d7660d96f1553da9dca81d1f1c36434af957c71dfbc0656"
+    },
+    {
+      "group": "baseline_bots",
+      "test": "full_op_05",
+      "stamp": "20261003_153434_custom",
+      "runner_status": "PASS",
+      "exit_code": 0,
+      "wall_seconds": 161.5,
+      "outcome": "EXTRACTED",
+      "game_seconds": 152.544330666678,
+      "last_tick": 9000,
+      "full_route_cleared": true,
+      "failures": [],
+      "damage_total": 515.25,
+      "sha256": "6344d511ace6b577c7465d8d7e73a8ee260afbb853f3ee51fa50ab9d4923dd23"
+    },
+    {
+      "group": "baseline_bots",
+      "test": "full_op_10",
+      "stamp": "20261003_153434_custom",
+      "runner_status": "PASS",
+      "exit_code": 0,
+      "wall_seconds": 239.2,
+      "outcome": "EXTRACTED",
+      "game_seconds": 233.607353333472,
+      "last_tick": 13800,
+      "full_route_cleared": true,
+      "failures": [],
+      "damage_total": 732.05,
+      "sha256": "2a2af7fb0f8200fff44fffc8ab18bdd4b00edf572a23608a7bb26f6ac1c49ee5"
+    },
+    {
+      "group": "fixed_bots",
+      "test": "full_op_01",
+      "stamp": "20261003_154433_custom",
+      "runner_status": "PASS",
+      "exit_code": 0,
+      "wall_seconds": 132.0,
+      "outcome": "EXTRACTED",
+      "game_seconds": 126.607798999971,
+      "last_tick": 7200,
+      "full_route_cleared": true,
+      "failures": [],
+      "damage_total": 310.1,
+      "sha256": "7ea90feb0f88efcc79bd277081a5ab7f282c2712f694b1f9026244ad9e5d972a"
+    },
+    {
+      "group": "fixed_bots",
+      "test": "full_op_05",
+      "stamp": "20261003_154433_custom",
+      "runner_status": "PASS",
+      "exit_code": 0,
+      "wall_seconds": 158.9,
+      "outcome": "EXTRACTED",
+      "game_seconds": 153.412240333344,
+      "last_tick": 9000,
+      "full_route_cleared": true,
+      "failures": [],
+      "damage_total": 497.2,
+      "sha256": "2d04573b9a2fec63920cf51d66736c1941d9c2c254017fe028f220ce9e8436a4"
+    },
+    {
+      "group": "fixed_bots",
+      "test": "full_op_09",
+      "stamp": "20261003_154433_custom",
+      "runner_status": "PASS",
+      "exit_code": 0,
+      "wall_seconds": 170.8,
+      "outcome": "EXTRACTED",
+      "game_seconds": 165.324328222253,
+      "last_tick": 9600,
+      "full_route_cleared": true,
+      "failures": [],
+      "damage_total": 412.6,
+      "sha256": "79175e4d8e9e7eeb624fc4eec10beaf77058fe56ea623bbf5e409f8e76b44476"
+    },
+    {
+      "group": "fixed_bots",
+      "test": "full_op_10",
+      "stamp": "20261003_154433_custom",
+      "runner_status": "FAIL",
+      "exit_code": 1,
+      "wall_seconds": 138.4,
+      "outcome": "WIPED",
+      "game_seconds": 133.235811333311,
+      "last_tick": 7800,
+      "full_route_cleared": false,
+      "failures": [
+        "Live combat and extraction succeed without cheats",
+        "All six rooms reached; not early extraction",
+        "Both optional rooms recovered",
+        "All authored waves and boss defeated through real damage"
+      ],
+      "damage_total": 413.2,
+      "sha256": "7d2d0af125b35493867239575c7faadecc6187334d4628b22d25340e9775b381"
+    },
+    {
+      "group": "repeat_9_2",
+      "test": "full_op_09",
+      "stamp": "20261003_155720_custom",
+      "runner_status": "PASS",
+      "exit_code": 0,
+      "wall_seconds": 169.8,
+      "outcome": "EXTRACTED",
+      "game_seconds": 163.066666666676,
+      "last_tick": 9600,
+      "full_route_cleared": true,
+      "failures": [],
+      "damage_total": 358.1,
+      "sha256": "b1125891e5ef5f6cd0b68218bd2b8967311085eae175bf3ce50a41af4c056513"
+    },
+    {
+      "group": "repeat_9_2",
+      "test": "full_op_10",
+      "stamp": "20261003_155720_custom",
+      "runner_status": "PASS",
+      "exit_code": 0,
+      "wall_seconds": 212.6,
+      "outcome": "EXTRACTED",
+      "game_seconds": 204.677053333411,
+      "last_tick": 12000,
+      "full_route_cleared": true,
+      "failures": [],
+      "damage_total": 872.0,
+      "sha256": "936fa1673776272b4b1e049c7d0624d586151f41fc46817f40d9ee96a96b7331"
+    },
+    {
+      "group": "repeat_9_3",
+      "test": "full_op_09",
+      "stamp": "20261003_160946_custom",
+      "runner_status": "PASS",
+      "exit_code": 0,
+      "wall_seconds": 185.7,
+      "outcome": "EXTRACTED",
+      "game_seconds": 180.529200000011,
+      "last_tick": 10200,
+      "full_route_cleared": true,
+      "failures": [],
+      "damage_total": 487.3,
+      "sha256": "225ff02f7535043dfac488f3c1bc972a7f1bf0ca2b0fcbd657f77e200a6629c0"
+    },
+    {
+      "group": "baseline_bots_repeat",
+      "test": "full_op_10",
+      "stamp": "20261003_160508_custom",
+      "runner_status": "PASS",
+      "exit_code": 0,
+      "wall_seconds": 234.8,
+      "outcome": "EXTRACTED",
+      "game_seconds": 227.045349666792,
+      "last_tick": 13200,
+      "full_route_cleared": true,
+      "failures": [],
+      "damage_total": 610.9,
+      "sha256": "576b0e1e003fdc0fe56ae7d0f1f1f96b286ca0b63e6c5da6e93969e60d81dceb"
+    }
+  ],
+  "paired_outcomes": [
+    {
+      "test": "full_op_01",
+      "before": [
+        "EXTRACTED"
+      ],
+      "after": [
+        "EXTRACTED"
+      ],
+      "same_kinds": true
+    },
+    {
+      "test": "full_op_05",
+      "before": [
+        "EXTRACTED"
+      ],
+      "after": [
+        "EXTRACTED"
+      ],
+      "same_kinds": true
+    },
+    {
+      "test": "full_op_10",
+      "before": [
+        "EXTRACTED",
+        "EXTRACTED"
+      ],
+      "after": [
+        "WIPED",
+        "EXTRACTED"
+      ],
+      "same_kinds": false
+    }
+  ],
+  "nine_finished_without_600s_stall": true,
+  "wiped_before": 0,
+  "wiped_after": 1,
+  "baseline_enemy_cases": 29,
+  "fixed_enemy_cases": 29,
+  "approved_art_unchanged": 17,
+  "summaries": {
+    "baseline_navigation": {
+      "suite": "custom",
+      "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\.cache\\diag\\nav_pockets_20261003\\baseline_project",
+      "started": "2026-10-03T14:51:23",
+      "git_head": "753cf02957bb104ac30450918deca10139b427d9",
+      "git_dirty": 0,
+      "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+      "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+      "workers": 1,
+      "seconds": 145,
+      "overall": "PASS",
+      "guard": {
+        "changed": [],
+        "removed": [],
+        "added": []
+      },
+      "results": [
+        {
+          "test": "cover_navigation",
+          "status": "PASS",
+          "seconds": 2.4,
+          "exit_code": 0,
+          "checks": 15,
+          "status_line": "COVER_NAVIGATION_SMOKE: PASS / 15 checks",
+          "notes": []
+        },
+        {
+          "test": "firing_lane",
+          "status": "PASS",
+          "seconds": 30.5,
+          "exit_code": 0,
+          "checks": 325,
+          "status_line": "FIRING_LANE_SEARCH_SMOKE: PASS (325 checks)",
+          "notes": []
+        },
+        {
+          "test": "enemy_cover_nav",
+          "status": "PASS",
+          "seconds": 43.9,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "ENEMY_COVER_NAVIGATION PASS res://qa/regression_runs/20261003_145123_custom/out/enemy_cover_nav []",
+          "notes": []
+        },
+        {
+          "test": "cover_ai",
+          "status": "PASS",
+          "seconds": 39.9,
+          "exit_code": 0,
+          "checks": 46,
+          "status_line": "",
+          "notes": []
+        },
+        {
+          "test": "world_route",
+          "status": "PASS",
+          "seconds": 23.5,
+          "exit_code": 0,
+          "checks": 94,
+          "status_line": "SITE7_WORLD_ROUTE_NAVIGATION: PASS (94 checks)",
+          "notes": []
+        }
+      ]
+    },
+    "fixed_navigation": {
+      "suite": "custom",
+      "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+      "started": "2026-10-03T15:24:38",
+      "git_head": "cce3e6244c07783ff555cf04761e955f6ba34f38",
+      "git_dirty": 4,
+      "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+      "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+      "workers": 1,
+      "seconds": 246,
+      "overall": "PASS",
+      "guard": {
+        "changed": [],
+        "removed": [],
+        "added": []
+      },
+      "results": [
+        {
+          "test": "cover_navigation",
+          "status": "PASS",
+          "seconds": 19.8,
+          "exit_code": 0,
+          "checks": 43,
+          "status_line": "COVER_NAVIGATION_SMOKE: PASS / 43 checks",
+          "notes": []
+        },
+        {
+          "test": "firing_lane",
+          "status": "PASS",
+          "seconds": 29.7,
+          "exit_code": 0,
+          "checks": 325,
+          "status_line": "FIRING_LANE_SEARCH_SMOKE: PASS (325 checks)",
+          "notes": []
+        },
+        {
+          "test": "enemy_cover_nav",
+          "status": "PASS",
+          "seconds": 41.3,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "ENEMY_COVER_NAVIGATION PASS res://qa/regression_runs/20261003_152407_custom/out/enemy_cover_nav []",
+          "notes": []
+        },
+        {
+          "test": "cover_ai",
+          "status": "PASS",
+          "seconds": 38.9,
+          "exit_code": 0,
+          "checks": 46,
+          "status_line": "",
+          "notes": []
+        },
+        {
+          "test": "world_route",
+          "status": "PASS",
+          "seconds": 22.5,
+          "exit_code": 0,
+          "checks": 94,
+          "status_line": "SITE7_WORLD_ROUTE_NAVIGATION: PASS (94 checks)",
+          "notes": []
+        },
+        {
+          "test": "nav_pockets",
+          "status": "PASS",
+          "seconds": 77.8,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "NAV_POCKET_AUDIT: PASS (0 dead-end cells in 0 of 30 rooms, cell 12 px)",
+          "notes": []
+        }
+      ]
+    },
+    "baseline_bots": {
+      "suite": "custom",
+      "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\.cache\\diag\\nav_pockets_20261003\\baseline_project",
+      "started": "2026-10-03T15:34:34",
+      "git_head": "cce3e6244c07783ff555cf04761e955f6ba34f38",
+      "git_dirty": 4,
+      "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+      "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+      "workers": 1,
+      "seconds": 540,
+      "overall": "PASS",
+      "guard": {
+        "changed": [],
+        "removed": [],
+        "added": []
+      },
+      "results": [
+        {
+          "test": "full_op_01",
+          "status": "PASS",
+          "seconds": 126.7,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+          "notes": []
+        },
+        {
+          "test": "full_op_05",
+          "status": "PASS",
+          "seconds": 161.5,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+          "notes": []
+        },
+        {
+          "test": "full_op_10",
+          "status": "PASS",
+          "seconds": 239.2,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+          "notes": []
+        }
+      ]
+    },
+    "fixed_bots": {
+      "suite": "custom",
+      "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+      "started": "2026-10-03T15:44:33",
+      "git_head": "cce3e6244c07783ff555cf04761e955f6ba34f38",
+      "git_dirty": 4,
+      "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+      "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+      "workers": 1,
+      "seconds": 614,
+      "overall": "FAIL",
+      "guard": {
+        "changed": [],
+        "removed": [],
+        "added": []
+      },
+      "results": [
+        {
+          "test": "full_op_01",
+          "status": "PASS",
+          "seconds": 132.0,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+          "notes": []
+        },
+        {
+          "test": "full_op_05",
+          "status": "PASS",
+          "seconds": 158.9,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+          "notes": []
+        },
+        {
+          "test": "full_op_09",
+          "status": "PASS",
+          "seconds": 170.8,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+          "notes": []
+        },
+        {
+          "test": "full_op_10",
+          "status": "FAIL",
+          "seconds": 138.4,
+          "exit_code": 1,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: FAIL",
+          "notes": []
+        }
+      ]
+    },
+    "repeat_9_2": {
+      "suite": "custom",
+      "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+      "started": "2026-10-03T15:57:20",
+      "git_head": "cce3e6244c07783ff555cf04761e955f6ba34f38",
+      "git_dirty": 4,
+      "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+      "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+      "workers": 1,
+      "seconds": 399,
+      "overall": "PASS",
+      "guard": {
+        "changed": [],
+        "removed": [],
+        "added": []
+      },
+      "results": [
+        {
+          "test": "full_op_09",
+          "status": "PASS",
+          "seconds": 169.8,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+          "notes": []
+        },
+        {
+          "test": "full_op_10",
+          "status": "PASS",
+          "seconds": 212.6,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+          "notes": []
+        }
+      ]
+    },
+    "repeat_9_3": {
+      "suite": "custom",
+      "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+      "started": "2026-10-03T16:09:46",
+      "git_head": "cce3e6244c07783ff555cf04761e955f6ba34f38",
+      "git_dirty": 4,
+      "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+      "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+      "workers": 1,
+      "seconds": 200,
+      "overall": "PASS",
+      "guard": {
+        "changed": [],
+        "removed": [],
+        "added": []
+      },
+      "results": [
+        {
+          "test": "full_op_09",
+          "status": "PASS",
+          "seconds": 185.7,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+          "notes": []
+        }
+      ]
+    },
+    "baseline_bots_repeat": {
+      "suite": "custom",
+      "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\.cache\\diag\\nav_pockets_20261003\\baseline_project",
+      "started": "2026-10-03T16:05:08",
+      "git_head": "cce3e6244c07783ff555cf04761e955f6ba34f38",
+      "git_dirty": 4,
+      "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+      "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+      "workers": 1,
+      "seconds": 240,
+      "overall": "PASS",
+      "guard": {
+        "changed": [],
+        "removed": [],
+        "added": []
+      },
+      "results": [
+        {
+          "test": "full_op_10",
+          "status": "PASS",
+          "seconds": 234.8,
+          "exit_code": 0,
+          "checks": null,
+          "status_line": "SITE7_FULL_OPERATION_SMOKE: PASS",
+          "notes": []
+        }
+      ]
+    }
+  }
+}

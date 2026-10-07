@@ -1,0 +1,44 @@
+{
+  "status": "PREPARED_NOT_APPROVED",
+  "source": "art/site7_rifle/SE_walk_4_master.png",
+  "sourceSHA256": "dee503427137561a35474a1648aba211694476c2acf544e8ad8878201a29c8f4",
+  "sourceNative": [
+    1024,
+    1536
+  ],
+  "provenanceSHA256": "195fe85f9b2dd59dddba8d430f1bc7ee11249a62d45ba503fabec249408caaa0",
+  "images": [
+    {
+      "path": "qa/site7_rifle/source_panels/dee503427137_3f539202/full_1920x1080.png",
+      "sha256": "f4c41af2f6873df80bfb583293cb39e0cc7c12fc0f51cb832df5c176fccdb0a1",
+      "native": [
+        1920,
+        1080
+      ],
+      "source_pixel_scale": "fit-down-only"
+    },
+    {
+      "path": "qa/site7_rifle/source_panels/dee503427137_3f539202/native_upper_1920x1080.png",
+      "sha256": "762144ff590b3591e85c48960226dfb69c96823dcde1a74d427dd7888ba7a192",
+      "native": [
+        1920,
+        1080
+      ],
+      "source_pixel_scale": 1
+    },
+    {
+      "path": "qa/site7_rifle/source_panels/dee503427137_3f539202/native_lower_1920x1080.png",
+      "sha256": "548be7b3c736c2ac82ee4fa0e86d2b4c108a724922befcf099212a3131a4da29",
+      "native": [
+        1920,
+        1080
+      ],
+      "source_pixel_scale": 1
+    }
+  ],
+  "implementationDependencies": {
+    "prepare_slot_review.py": "e19ddd992d0222e586e16d9eac491d55ba55c34f2c0baf9adb869ca8946fd961",
+    "build_atlas.py": "1395b21aa409e4605ce769479e9984968f0a88912adda648879b6869d2dd527f",
+    "source_provenance.py": "d6da53bb5321ad08008e52a0e371e7b712e9eb72c762baa545083f008fe5256d"
+  }
+}

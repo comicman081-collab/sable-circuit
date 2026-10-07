@@ -1,0 +1,736 @@
+{
+  "status": "PASS",
+  "checks": 117,
+  "selected_plate_count": 15,
+  "mission_count": 3,
+  "plate_count_per_mission": 15,
+  "seam_count_per_mission": 14,
+  "results": [
+    {
+      "check": "generation:15-selected-one-rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "generation:max-three-attempts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "generation:C04-attempt1-quarantined",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R01:source-identical",
+      "pass": true,
+      "detail": [
+        "2e7561080c39716accd142f3d0a6cca75589d06844069abb2fb0ea2991a5225b",
+        "2e7561080c39716accd142f3d0a6cca75589d06844069abb2fb0ea2991a5225b",
+        "2e7561080c39716accd142f3d0a6cca75589d06844069abb2fb0ea2991a5225b",
+        "cef30c50a90eb5cba2f81b290e79bf07861536b43f92e1075ddb47b7d4f3c805"
+      ]
+    },
+    {
+      "check": "S3_R01:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.602
+    },
+    {
+      "check": "S3_R01:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1672,
+        941
+      ]
+    },
+    {
+      "check": "S3_R01:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R01:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R01:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R02:source-identical",
+      "pass": true,
+      "detail": [
+        "5b50b42a70d47a19ac3a975a7ae08442ed7e55fab1663f380d6d220b40d4d5e6",
+        "5b50b42a70d47a19ac3a975a7ae08442ed7e55fab1663f380d6d220b40d4d5e6",
+        "5b50b42a70d47a19ac3a975a7ae08442ed7e55fab1663f380d6d220b40d4d5e6",
+        "6207f50270d9d5cd265ac55bcfbb995444aa506e162e7b33777f54fcd44813ca"
+      ]
+    },
+    {
+      "check": "S3_R02:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.766
+    },
+    {
+      "check": "S3_R02:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1671,
+        941
+      ]
+    },
+    {
+      "check": "S3_R02:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R02:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R02:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R03:source-identical",
+      "pass": true,
+      "detail": [
+        "65761de9a3486f66efd26831a1745481115a8c961997829ccd50cec9f10a3097",
+        "65761de9a3486f66efd26831a1745481115a8c961997829ccd50cec9f10a3097",
+        "65761de9a3486f66efd26831a1745481115a8c961997829ccd50cec9f10a3097",
+        "d85f9608cee942d37bbeb9122d2869485f7c0da9b50861c190e875dac1a80c04"
+      ]
+    },
+    {
+      "check": "S3_R03:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.667
+    },
+    {
+      "check": "S3_R03:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1672,
+        941
+      ]
+    },
+    {
+      "check": "S3_R03:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R03:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R03:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R04:source-identical",
+      "pass": true,
+      "detail": [
+        "aa3169b38f8ee095744873cc02646040b05983f2309fb844940c111d434505b5",
+        "aa3169b38f8ee095744873cc02646040b05983f2309fb844940c111d434505b5",
+        "aa3169b38f8ee095744873cc02646040b05983f2309fb844940c111d434505b5",
+        "408b83a7a14a8f1c2844c7a534296ec55c8092c02715b71f356070e4dc7770a4"
+      ]
+    },
+    {
+      "check": "S3_R04:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.735
+    },
+    {
+      "check": "S3_R04:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1774,
+        887
+      ]
+    },
+    {
+      "check": "S3_R04:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R04:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R04:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R05:source-identical",
+      "pass": true,
+      "detail": [
+        "c3a1f3674ac4991efdf75586f58ad09ec0e2af4f8d21bd508cffe84760afa053",
+        "c3a1f3674ac4991efdf75586f58ad09ec0e2af4f8d21bd508cffe84760afa053",
+        "c3a1f3674ac4991efdf75586f58ad09ec0e2af4f8d21bd508cffe84760afa053",
+        "57af7b9d1f90297c8213fbfd013248949e76dd32c7192212175e205135558624"
+      ]
+    },
+    {
+      "check": "S3_R05:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.713
+    },
+    {
+      "check": "S3_R05:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1672,
+        941
+      ]
+    },
+    {
+      "check": "S3_R05:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R05:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R05:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R06:source-identical",
+      "pass": true,
+      "detail": [
+        "dc2c95cefbebcdfed940697ecb61c80ff4d1054e57e6456a67abf303fdda93dc",
+        "dc2c95cefbebcdfed940697ecb61c80ff4d1054e57e6456a67abf303fdda93dc",
+        "dc2c95cefbebcdfed940697ecb61c80ff4d1054e57e6456a67abf303fdda93dc",
+        "5d0a23110915add2b317b8cdc4196499f2a049b4e6e0c72352d2bf0ac13966c6"
+      ]
+    },
+    {
+      "check": "S3_R06:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.792
+    },
+    {
+      "check": "S3_R06:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1672,
+        941
+      ]
+    },
+    {
+      "check": "S3_R06:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R06:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_R06:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_O01:source-identical",
+      "pass": true,
+      "detail": [
+        "29e752a322dc6505db685782d4feed59630a408d17e4c143b6b9896754cd480b",
+        "29e752a322dc6505db685782d4feed59630a408d17e4c143b6b9896754cd480b",
+        "29e752a322dc6505db685782d4feed59630a408d17e4c143b6b9896754cd480b",
+        "cf89ae0a4c0e288a11d7206700be7917f9637d6129465cb943a1e1ed27532e8e"
+      ]
+    },
+    {
+      "check": "S3_O01:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.684
+    },
+    {
+      "check": "S3_O01:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1672,
+        941
+      ]
+    },
+    {
+      "check": "S3_O01:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_O01:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_O01:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_O02:source-identical",
+      "pass": true,
+      "detail": [
+        "f7012dae168d513b8a43a692f8eed94c4c699aae5dac9e78338bf92313a7bd9b",
+        "f7012dae168d513b8a43a692f8eed94c4c699aae5dac9e78338bf92313a7bd9b",
+        "f7012dae168d513b8a43a692f8eed94c4c699aae5dac9e78338bf92313a7bd9b",
+        "59d3bdc8428390562032d7c0ff73b009a621a5f9f5ffcec44514de09bdb45a28"
+      ]
+    },
+    {
+      "check": "S3_O02:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.67
+    },
+    {
+      "check": "S3_O02:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1672,
+        941
+      ]
+    },
+    {
+      "check": "S3_O02:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_O02:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_O02:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C01:source-identical",
+      "pass": true,
+      "detail": [
+        "fd27acaf44d7f728683c66713427e10072bb2b934a14db0ff1d77eb24154f3bc",
+        "fd27acaf44d7f728683c66713427e10072bb2b934a14db0ff1d77eb24154f3bc",
+        "fd27acaf44d7f728683c66713427e10072bb2b934a14db0ff1d77eb24154f3bc",
+        "3b3d21d42d6144ac892f1c0149eb033c726a41e1b6ce6a6e19b76895796fdd98"
+      ]
+    },
+    {
+      "check": "S3_C01:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.713
+    },
+    {
+      "check": "S3_C01:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1774,
+        887
+      ]
+    },
+    {
+      "check": "S3_C01:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C01:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C01:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C02:source-identical",
+      "pass": true,
+      "detail": [
+        "095ca21a6544169def06c38356d968c78b67e759833c72fc2803fcccc0fa25fc",
+        "095ca21a6544169def06c38356d968c78b67e759833c72fc2803fcccc0fa25fc",
+        "095ca21a6544169def06c38356d968c78b67e759833c72fc2803fcccc0fa25fc",
+        "215ba57cf8ad88330bf12eebe9c293d4ea68e973cd9d25f8027d58cab0b76f05"
+      ]
+    },
+    {
+      "check": "S3_C02:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.648
+    },
+    {
+      "check": "S3_C02:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1774,
+        887
+      ]
+    },
+    {
+      "check": "S3_C02:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C02:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C02:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C03:source-identical",
+      "pass": true,
+      "detail": [
+        "1aea51af3183451071a467253565103db6608b157065d67f61efeef2972051fa",
+        "1aea51af3183451071a467253565103db6608b157065d67f61efeef2972051fa",
+        "1aea51af3183451071a467253565103db6608b157065d67f61efeef2972051fa",
+        "e0cd1dae9819f574e4a5165ec9f26406735c37aa503eefefc410fc361f6f5eaf"
+      ]
+    },
+    {
+      "check": "S3_C03:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.722
+    },
+    {
+      "check": "S3_C03:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1774,
+        887
+      ]
+    },
+    {
+      "check": "S3_C03:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C03:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C03:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C04:source-identical",
+      "pass": true,
+      "detail": [
+        "803bc7f550883f1025e7101cddb7a37888d6592cf4495f9293a7aea0dc373a4e",
+        "803bc7f550883f1025e7101cddb7a37888d6592cf4495f9293a7aea0dc373a4e",
+        "803bc7f550883f1025e7101cddb7a37888d6592cf4495f9293a7aea0dc373a4e",
+        "e63562c064d359136752af99e2aa14c6bf6fea51d7990392be5db262d8f45c4f"
+      ]
+    },
+    {
+      "check": "S3_C04:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.671
+    },
+    {
+      "check": "S3_C04:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1774,
+        887
+      ]
+    },
+    {
+      "check": "S3_C04:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C04:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C04:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C05:source-identical",
+      "pass": true,
+      "detail": [
+        "d4db4d2f20f738e5ea850a5a7ab8ad4c99cba60420f0e6d70a42ecdc53755099",
+        "d4db4d2f20f738e5ea850a5a7ab8ad4c99cba60420f0e6d70a42ecdc53755099",
+        "d4db4d2f20f738e5ea850a5a7ab8ad4c99cba60420f0e6d70a42ecdc53755099",
+        "dadb191e9fc95c18e1e8a2577b0273f3ce012775d65cd1d570099a101342370c"
+      ]
+    },
+    {
+      "check": "S3_C05:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.724
+    },
+    {
+      "check": "S3_C05:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1774,
+        887
+      ]
+    },
+    {
+      "check": "S3_C05:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C05:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C05:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C06:source-identical",
+      "pass": true,
+      "detail": [
+        "adde22992307bb811bf11f43028f9897bf0e46f339bee1728d25060f87c1c318",
+        "adde22992307bb811bf11f43028f9897bf0e46f339bee1728d25060f87c1c318",
+        "adde22992307bb811bf11f43028f9897bf0e46f339bee1728d25060f87c1c318",
+        "80efaf478a8924811ded0c62faad5d0b0c298908ec60f6cd48541fe8f530654e"
+      ]
+    },
+    {
+      "check": "S3_C06:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.729
+    },
+    {
+      "check": "S3_C06:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "check": "S3_C06:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C06:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C06:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C07:source-identical",
+      "pass": true,
+      "detail": [
+        "2d80fc78b6b30fc011789ffac9a31f6172b68e5166b627aa7bd446351ab04c2e",
+        "2d80fc78b6b30fc011789ffac9a31f6172b68e5166b627aa7bd446351ab04c2e",
+        "2d80fc78b6b30fc011789ffac9a31f6172b68e5166b627aa7bd446351ab04c2e",
+        "85700380a53f70e7b86b95bf7d284ac225bf78d867b892f82b974c054207bb43"
+      ]
+    },
+    {
+      "check": "S3_C07:whole-frame-one-srgb-gain",
+      "pass": true,
+      "detail": 0.79
+    },
+    {
+      "check": "S3_C07:native-rgb-size",
+      "pass": true,
+      "detail": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "check": "S3_C07:godot-lossless-no-mipmaps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C07:managed-staging-retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "S3_C07:floor-and-mood",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "MIS_CH01_03:room-order",
+      "pass": true,
+      "detail": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06"
+      ]
+    },
+    {
+      "check": "MIS_CH01_03:15-v2-scale-one",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "MIS_CH01_03:authored-decks",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "MIS_CH01_03:strict-audit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "MIS_CH01_04:room-order",
+      "pass": true,
+      "detail": [
+        "R06",
+        "R04",
+        "R01",
+        "R02",
+        "R05",
+        "R03"
+      ]
+    },
+    {
+      "check": "MIS_CH01_04:15-v2-scale-one",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "MIS_CH01_04:authored-decks",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "MIS_CH01_04:strict-audit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "MIS_CH01_05:room-order",
+      "pass": true,
+      "detail": [
+        "R01",
+        "R05",
+        "R03",
+        "R04",
+        "R02",
+        "R06"
+      ]
+    },
+    {
+      "check": "MIS_CH01_05:15-v2-scale-one",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "MIS_CH01_05:authored-decks",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "MIS_CH01_05:strict-audit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "MIS_CH01_01:strict-audit-unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "MIS_CH01_02:strict-audit-unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "site7_battle_art.json:MIS_CH01_01-unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "site7_battle_art.json:MIS_CH01_02-unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "site7_battle_layouts.json:MIS_CH01_01-unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "site7_battle_layouts.json:MIS_CH01_02-unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "site7_world_layout.json:MIS_CH01_01-unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "site7_world_layout.json:MIS_CH01_02-unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "site7_seam_light.json:MIS_CH01_01-unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "site7_seam_light.json:MIS_CH01_02-unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "title:stage3-r05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "sealed:three-missions-four-each",
+      "pass": true,
+      "detail": null
+    }
+  ]
+}

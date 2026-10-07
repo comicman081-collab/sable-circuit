@@ -1,0 +1,185 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_R05/attempt03/S9_R05_GAME.png",
+  "luma": 0.200029656291008,
+  "p10": 0.16732940077781677,
+  "p90": 0.2374705970287323,
+  "saturation": 0.07495310618582804,
+  "hue": 143.86923246419042,
+  "axis": 25.75145167630377,
+  "problems": [
+    "main floor border margin 6.280% below 7%",
+    "boss open main arena below 490000 px2"
+  ],
+  "plate": "S9_R05",
+  "attempt": 3,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      108,
+      474
+    ],
+    [
+      800,
+      237
+    ],
+    [
+      1096,
+      304
+    ],
+    [
+      1110,
+      283
+    ],
+    [
+      1244,
+      192
+    ],
+    [
+      1288,
+      267
+    ],
+    [
+      1281,
+      390
+    ],
+    [
+      1567,
+      506
+    ],
+    [
+      844,
+      852
+    ],
+    [
+      388,
+      620
+    ],
+    [
+      234,
+      716
+    ],
+    [
+      86,
+      635
+    ],
+    [
+      206,
+      560
+    ]
+  ],
+  "doors_px": {
+    "NE": [
+      1189,
+      347,
+      218
+    ],
+    "SW": [
+      297,
+      590,
+      192
+    ]
+  },
+  "raw_sha256": "2c3d33e0be172d4d66af425fd70972c347f99901f3a4bff12e635975b774260a",
+  "master_sha256": "2c3d33e0be172d4d66af425fd70972c347f99901f3a4bff12e635975b774260a",
+  "game_sha256": "293e3b51ba0eff3e4f05f59c577cdd547522a8fe1cf526bf6e2845bb1a250e68",
+  "game_exposure_factor_srgb": 0.775,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-11d0b9d3-e3ee-4492-8e3e-1517780a2be6.png",
+  "inspection": "3차 역시 실제 주 바닥 양쪽이 테두리의 7% 안쪽으로 들어오지 않음. NE/SW 문, NW/SE 닫힘. 벽 부착 직사각 읽기 헤드와 메모리 랙, 중앙 열린 바닥. 사용자 승인 없는 기준 완화 없이 HOLD.",
+  "floor_area_px2": 510410.5,
+  "floor_area_fraction": 0.3244096044623199,
+  "floor_bounds_px": [
+    86,
+    192,
+    1567,
+    852
+  ],
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "main_floor_minimum": 0.07,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "NE": [
+        [
+          1096,
+          304
+        ],
+        [
+          1110,
+          283
+        ],
+        [
+          1244,
+          192
+        ],
+        [
+          1288,
+          267
+        ],
+        [
+          1281,
+          390
+        ]
+      ],
+      "SW": [
+        [
+          206,
+          560
+        ],
+        [
+          388,
+          620
+        ],
+        [
+          234,
+          716
+        ],
+        [
+          86,
+          635
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      108,
+      237,
+      1567,
+      852
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.0645933014354067,
+      0.2518597236981934,
+      0.06279904306220095,
+      0.09458023379383634
+    ],
+    "whole_floor_bounds_px": [
+      86,
+      192,
+      1567,
+      852
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.05143540669856459,
+      0.20403825717321997,
+      0.06279904306220095,
+      0.09458023379383634
+    ],
+    "main_floor_area_px2": 466650
+  },
+  "apron_stats": {
+    "NE": {
+      "luma": 0.23686879873275757,
+      "saturation": 0.06807126710280727,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "SW": {
+      "luma": 0.22251206636428833,
+      "saturation": 0.07408878817965125,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  }
+}

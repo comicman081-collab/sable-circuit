@@ -1,0 +1,90 @@
+87b7828f Intake operation 10 R01-R04 and record R05 HOLD
+ .../site7_v2/SITE7_OP10_STAGE_E_MANIFEST.md        |  304 +++
+ .../site7_v2/_quarantine/S10_R01/README_KO.md      |    4 +
+ .../_quarantine/S10_R01/attempt03/REJECTION.md     |    6 +
+ .../_quarantine/S10_R02/attempt01/REJECTION.md     |    5 +
+ .../_quarantine/S10_R02/attempt01/S10_R02_GAME.png |  Bin 0 -> 1751823 bytes
+ .../S10_R02/attempt01/S10_R02_MASTER.png           |  Bin 0 -> 2049413 bytes
+ .../S10_R02/attempt01/S10_R02_RAW_NATIVE.png       |  Bin 0 -> 2049413 bytes
+ .../_quarantine/S10_R02/attempt01/generation.json  |  247 ++
+ .../S10_R02/attempt01/measurements.json            |  233 ++
+ .../_quarantine/S10_R02/attempt01/request.json     |   20 +
+ .../site7_v2/_quarantine/S10_R05/README_KO.md      |  139 ++
+ .../_quarantine/S10_R05/attempt01/REJECTION.md     |    5 +
+ .../_quarantine/S10_R05/attempt01/S10_R05_GAME.png |  Bin 0 -> 1593870 bytes
+ .../S10_R05/attempt01/S10_R05_MASTER.png           |  Bin 0 -> 1893568 bytes
+ .../S10_R05/attempt01/S10_R05_RAW_NATIVE.png       |  Bin 0 -> 1893568 bytes
+ .../_quarantine/S10_R05/attempt01/generation.json  |  257 +++
+ .../S10_R05/attempt01/measurements.json            |  243 ++
+ .../_quarantine/S10_R05/attempt01/request.json     |   20 +
+ .../_quarantine/S10_R05/attempt02/REJECTION.md     |    5 +
+ .../_quarantine/S10_R05/attempt02/S10_R05_GAME.png |  Bin 0 -> 1679721 bytes
+ .../S10_R05/attempt02/S10_R05_MASTER.png           |  Bin 0 -> 1991463 bytes
+ .../S10_R05/attempt02/S10_R05_RAW_NATIVE.png       |  Bin 0 -> 1991463 bytes
+ .../_quarantine/S10_R05/attempt02/generation.json  |  257 +++
+ .../S10_R05/attempt02/measurements.json            |  243 ++
+ .../_quarantine/S10_R05/attempt02/request.json     |   20 +
+ .../_quarantine/S10_R05/attempt03/REJECTION.md     |    5 +
+ .../_quarantine/S10_R05/attempt03/S10_R05_GAME.png |  Bin 0 -> 1585478 bytes
+ .../S10_R05/attempt03/S10_R05_MASTER.png           |  Bin 0 -> 1782730 bytes
+ .../S10_R05/attempt03/S10_R05_RAW_NATIVE.png       |  Bin 0 -> 1782730 bytes
+ .../_quarantine/S10_R05/attempt03/generation.json  |  274 +++
+ .../S10_R05/attempt03/measurements.json            |  260 +++
+ .../_quarantine/S10_R05/attempt03/request.json     |   20 +
+ .../S10_R01_attempt03_floor_native_1920x1080.webp  |  Bin 0 -> 1083434 bytes
+ .../S10_R01_attempt03_vs_S3_native_3840x1080.webp  |  Bin 0 -> 2272340 bytes
+ .../S10_R02_attempt01_floor_native_1920x1080.webp  |  Bin 0 -> 1284858 bytes
+ .../S10_R02_attempt01_vs_S3_native_3840x1080.webp  |  Bin 0 -> 2640428 bytes
+ .../S10_R02_attempt02_floor_native_1920x1080.webp  |  Bin 0 -> 1124960 bytes
+ .../S10_R02_attempt02_vs_S3_native_3840x1080.webp  |  Bin 0 -> 2470764 bytes
+ .../S10_R03_attempt01_floor_native_1920x1080.webp  |  Bin 0 -> 1161284 bytes
+ .../S10_R03_attempt01_vs_S3_native_3840x1080.webp  |  Bin 0 -> 2322080 bytes
+ .../S10_R04_attempt01_floor_native_1920x1080.webp  |  Bin 0 -> 1155668 bytes
+ .../S10_R04_attempt01_vs_S3_native_3840x1080.webp  |  Bin 0 -> 2467932 bytes
+ .../S10_R05_HOLD_review_native_1920x1080.webp      |  Bin 0 -> 564380 bytes
+ .../S10_R05_attempt01_floor_native_1920x1080.webp  |  Bin 0 -> 1129430 bytes
+ ...igin_silhouette_COMPOSITE_native_1920x1080.webp |  Bin 0 -> 1149204 bytes
+ .../S10_R05_attempt01_vs_S3_native_3840x1080.webp  |  Bin 0 -> 2348416 bytes
+ .../S10_R05_attempt02_floor_native_1920x1080.webp  |  Bin 0 -> 1189736 bytes
+ ...igin_silhouette_COMPOSITE_native_1920x1080.webp |  Bin 0 -> 1213694 bytes
+ .../S10_R05_attempt02_vs_S3_native_3840x1080.webp  |  Bin 0 -> 2417184 bytes
+ .../S10_R05_attempt03_floor_native_1920x1080.webp  |  Bin 0 -> 1142602 bytes
+ ...igin_silhouette_COMPOSITE_native_1920x1080.webp |  Bin 0 -> 1167318 bytes
+ .../S10_R05_attempt03_vs_S3_native_3840x1080.webp  |  Bin 0 -> 2374208 bytes
+ .../evidence/S10_selected_4_native_3840x2160.webp  |  Bin 0 -> 4585440 bytes
+ .../site7_v2/_quarantine/S10_R05/generation.json   | 2353 ++++++++++++++++++++
+ .../site7_v2/_quarantine/S10_R05/godot_import.log  |   53 +
+ .../site7_v2/_quarantine/S10_R05/measurements.json | 2100 +++++++++++++++++
+ .../S10_R05/runner_processes_before_commit.json    |   12 +
+ .../S10_R05/runner_processes_before_report.json    |   12 +
+ .../site7_v2/_quarantine/S10_R05/selected.json     |  833 +++++++
+ .../S10_R05/silhouette_measurements.json           |   68 +
+ .../_quarantine/S10_R05/source_integrity.json      |  179 ++
+ .../_quarantine/S10_R05/texture_intake_check.gd    |   27 +
+ .../_quarantine/S10_R05/texture_intake_check.json  |   46 +
+ .../_quarantine/S10_R05/texture_intake_check.log   |   19 +
+ .../_quarantine/S10_R05/visual_evidence_1080p.json |  332 +++
+ .../site7_v2/stage10/S10_R01/S10_R01_MASTER.png    |  Bin 0 -> 1774660 bytes
+ .../stage10/S10_R01/S10_R01_RAW_NATIVE.png         |  Bin 0 -> 1774660 bytes
+ .../site7_v2/stage10/S10_R01/adoption.json         |  347 +++
+ .../site7_v2/stage10/S10_R02/S10_R02_MASTER.png    |  Bin 0 -> 1765592 bytes
+ .../stage10/S10_R02/S10_R02_RAW_NATIVE.png         |  Bin 0 -> 1765592 bytes
+ .../site7_v2/stage10/S10_R02/generation.json       |  245 ++
+ .../site7_v2/stage10/S10_R02/measurements.json     |  231 ++
+ .../site7_v2/stage10/S10_R03/S10_R03_MASTER.png    |  Bin 0 -> 1875400 bytes
+ .../stage10/S10_R03/S10_R03_RAW_NATIVE.png         |  Bin 0 -> 1875400 bytes
+ .../site7_v2/stage10/S10_R03/generation.json       |  201 ++
+ .../site7_v2/stage10/S10_R03/measurements.json     |  187 ++
+ .../site7_v2/stage10/S10_R04/S10_R04_MASTER.png    |  Bin 0 -> 1988338 bytes
+ .../stage10/S10_R04/S10_R04_RAW_NATIVE.png         |  Bin 0 -> 1988338 bytes
+ .../site7_v2/stage10/S10_R04/generation.json       |  201 ++
+ .../site7_v2/stage10/S10_R04/measurements.json     |  187 ++
+ .../site7_v2/stage10/S10_R01/S10_R01_GAME.png      |  Bin 0 -> 1513387 bytes
+ .../stage10/S10_R01/S10_R01_GAME.png.import        |   40 +
+ .../site7_v2/stage10/S10_R02/S10_R02_GAME.png      |  Bin 0 -> 1559925 bytes
+ .../stage10/S10_R02/S10_R02_GAME.png.import        |   40 +
+ .../site7_v2/stage10/S10_R03/S10_R03_GAME.png      |  Bin 0 -> 1606943 bytes
+ .../stage10/S10_R03/S10_R03_GAME.png.import        |   40 +
+ .../site7_v2/stage10/S10_R04/S10_R04_GAME.png      |  Bin 0 -> 1613192 bytes
+ .../stage10/S10_R04/S10_R04_GAME.png.import        |   40 +
+ 88 files changed, 10360 insertions(+)

@@ -1,0 +1,22 @@
+{
+  "plate": "S10_C05",
+  "attempt": 2,
+  "scope": "formal RAW only; MASTER, candidate RAW and GAME unchanged",
+  "changed_sha256": "596c702ac0314271008839c9fa7bee21bfc5abd0d3d930ef70be88da9203fac3",
+  "restored_sha256": "253f75a8244b3267dbe081a789193b23d2ce19820276edb20a6c9ab599b0cfa1",
+  "changed_byte_offsets": [
+    1394858
+  ],
+  "changed_byte_values": [
+    {
+      "offset": 1394858,
+      "before": 165,
+      "restored": 173
+    }
+  ],
+  "saved_changed_file": ".cache/diag/site7_ops_e/integrity_incident_c05/S10_C05_RAW_NATIVE_changed.png",
+  "verified_against": "unchanged MASTER and retained candidate RAW; generation SHA",
+  "cause": "unknown external/shared-worktree change; no process terminated",
+  "status": "RESTORED_VERIFIED",
+  "formal_quarantine_copy": "art_src/environments/site7_v2/_quarantine/S10_C05/source_integrity_incident_20261001/S10_C05_RAW_NATIVE_changed.png"
+}

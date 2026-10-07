@@ -1,0 +1,28 @@
+Python data checks on the corrected tree (Claude, 2026-10-01 15:11-15:13, after Codex's last data write at 15:02:48; the same commands the quick runner uses).
+
+$ python -B tools/environment/build_site7_world_layout.py --check
+SITE7_WORLD_LAYOUT PASS 9 missions
+
+$ python -B tools/environment/build_site7_mood_light.py --check
+SITE7_MOOD_LIGHT PASS 135 plates 708 pools 135 void masks 15 contact shadows
+
+$ python -B tests/test_site7_plate_lighting_axis.py   (runner: plate_axis)
+..
+----------------------------------------------------------------------
+Ran 2 tests in 2.292s
+
+OK
+
+$ python -B tests/test_site7_plate_lighting_seam_waiver.py   (runner: seam_waiver)
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 1.635s
+
+OK
+
+$ python -B tests/test_site7_mood_contact_compare.py   (runner: mood_contact)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.156s
+
+OK

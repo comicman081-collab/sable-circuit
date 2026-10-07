@@ -1,0 +1,48 @@
+{
+  "plate": "S8_O02",
+  "method": "intake_one.py sRGB LUT: one rounded coefficient over every RGB channel of the full RAW image; no other colour processing",
+  "target_registered_floor_luma": 0.18,
+  "old_factor": 0.5396,
+  "new_factor": 0.5831,
+  "old_game_sha256": "0d5f1e24c79830668ecd05ed068e3eda6758256dbc637fc6937197a91bdc1b78",
+  "new_game_sha256": "d5cda0850278044cd06108a08d6f030a309b0af888a4e3fe5669c0ac4ce6567e",
+  "raw_sha256": "95999fdb6d60fa3e030834b340bd85b25761a863a80f9d57a0f7d0293b7116aa",
+  "master_sha256": "95999fdb6d60fa3e030834b340bd85b25761a863a80f9d57a0f7d0293b7116aa",
+  "raw_master_unchanged": true,
+  "old_game_preserved_at": "art_src/environments/site7_v2/_quarantine/S8_O02/game_exposure_20260930_before/S8_O02_GAME.png",
+  "new_game_path": "assets/environments/site7_v2/stage08/S8_O02/S8_O02_GAME.png",
+  "scale": 1.0,
+  "native_size": [
+    1672,
+    941
+  ],
+  "histogram_luma_estimate": {
+    "old": 0.16652240987946623,
+    "new": 0.1798944219756239
+  },
+  "audit_actual_registered_floor": {
+    "before": {
+      "asset": "assets/environments/site7_v2/stage08/S8_O02/S8_O02_GAME.png",
+      "luma": 0.16635510325431824,
+      "p10": 0.10268627107143402,
+      "p90": 0.22250981628894806,
+      "saturation": 0.0723106123520655,
+      "hue": 142.09893810705142,
+      "axis": 25.550212271519378,
+      "problems": [
+        "floor luminance 0.166 outside (0.17, 0.24)"
+      ]
+    },
+    "after": {
+      "asset": "assets/environments/site7_v2/stage08/S8_O02/S8_O02_GAME.png",
+      "luma": 0.1798289269208908,
+      "p10": 0.11097647249698639,
+      "p90": 0.24066667258739471,
+      "saturation": 0.07247579391714308,
+      "hue": 142.12622103986456,
+      "axis": 25.550212271519378,
+      "problems": []
+    }
+  },
+  "audit_note": "Histogram float64 estimate selected the LUT factor; audited floor values are the actual float32 auditor means, not the estimate."
+}

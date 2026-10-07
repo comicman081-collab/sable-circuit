@@ -1,0 +1,8 @@
+{
+  "character": "mica",
+  "scope": "runtime package binding repair only",
+  "previousRecipeSHA256": "608c7a23b9a2712658ec3e70d71cca7120afd5c31f232a40748e9e0add04767e",
+  "currentRecipeSHA256": "5bd6f0af6f5314a230e9d11950552ed3a6adac70a2289d9dc73f5442aa86c260",
+  "reason": "The historical standalone package was bound to an older byte formatting of the unchanged legacy recipe. The current profile is rebound to the current exact recipe bytes before rebuilding the Motion Studio standalone. No source art, clip selection, gameplay value, or atlas pixels changed in this metadata repair.",
+  "requiredNext": "Regenerate the standalone from current public simulation.js, atlas-renderer.js, keyboard-input.js, combat-aim.js, and studio.js; visually inspect its direct whole-body frames."
+}

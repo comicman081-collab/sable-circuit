@@ -1,0 +1,22 @@
+## Claude probe (conn_probe.gd, mission 9, connector 0 only) on the tree before the R02 NE door correction
+# source: .cache/claude_scratch/op9_conn/probe.out.txt
+PROBE after to_door fwd=true actor=(1215.087, 647.9048) door_a=(1191.525, 671.27) door_b=(-441.209, 1410.359) from=(1283.984, 633.1734) to=(-536.1101, 1441.883)
+PROBE after follow fwd=true actor=(175.0471, 1158.778)
+PROBE after to_door fwd=false actor=(-464.7713, 1433.045) door_a=(1191.525, 671.27) door_b=(-441.209, 1410.359) from=(-536.1101, 1441.883) to=(1283.984, 633.1734)
+PROBE after follow fwd=false actor=(-418.5099, 1372.899)
+CONNECTOR_BLOCK {"actor":"(-423.2628, 1313.065)","connector":0,"forward":false,"from":"(-536.1101, 1441.883)","mission":"MIS_CH01_09","to":"(1283.984, 633.1734)","walkable":true}
+CONNECTOR_STAGE {"connectors":7,"failed":1,"mission":"MIS_CH01_09"}
+SITE7_CONNECTOR_ALIGNMENT ["MIS_CH01_09/link_0 crossed back with WASD"] (16 checks)
+
+## Codex's direct run before the correction (same failure)
+# source: .cache/diag/site7_ops_d/integration/connector_op9_retry.log
+CONNECTOR_BLOCK {"actor":"(-423.2628, 1313.065)","connector":0,"forward":false,"from":"(-536.1101, 1441.883)","mission":"MIS_CH01_09","to":"(1283.984, 633.1734)","walkable":true}
+ERROR: MIS_CH01_09/link_0 crossed back with WASD
+CONNECTOR_STAGE {"connectors":7,"failed":1,"mission":"MIS_CH01_09"}
+SITE7_CONNECTOR_ALIGNMENT ["MIS_CH01_09/link_0 crossed back with WASD"] (106 checks)
+
+## Codex's direct run after the correction (registered S9_R02 NE door moved from (1155,359) to (1170,346) px)
+# source: .cache/diag/site7_ops_d/integration/connector_op9_corrected.log
+CONNECTOR_STAGE {"connectors":7,"failed":0,"mission":"MIS_CH01_09"}
+SITE7_CONNECTOR_ALIGNMENT PASS (106 checks)
+

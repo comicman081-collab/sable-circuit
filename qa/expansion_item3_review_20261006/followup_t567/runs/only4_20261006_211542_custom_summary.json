@@ -1,0 +1,55 @@
+{
+ "suite": "custom",
+ "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+ "started": "2026-10-06T21:15:42",
+ "git_head": "e88d64597e2e6194e2b8665aa163ae4eb037b938",
+ "git_dirty": 5,
+ "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+ "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+ "workers": 1,
+ "seconds": 54,
+ "overall": "PASS",
+ "guard": {
+  "changed": [],
+  "removed": [],
+  "added": []
+ },
+ "results": [
+  {
+   "test": "lab_capture_geometry",
+   "status": "PASS",
+   "seconds": 6.6,
+   "exit_code": 0,
+   "checks": 5,
+   "status_line": "EXPANSION_ITEM3_CAPTURE: PASS (5 checks)",
+   "notes": []
+  },
+  {
+   "test": "m10_intel",
+   "status": "PASS",
+   "seconds": 4.4,
+   "exit_code": 0,
+   "checks": 39,
+   "status_line": "M10_INTEL_LOADOUT_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "m13_loadout",
+   "status": "PASS",
+   "seconds": 4.4,
+   "exit_code": 0,
+   "checks": 53,
+   "status_line": "M13_WEAPON_LOADOUT_SMOKE: PASS",
+   "notes": []
+  },
+  {
+   "test": "campaign",
+   "status": "PASS",
+   "seconds": 23.1,
+   "exit_code": 0,
+   "checks": 235,
+   "status_line": "SITE7_CAMPAIGN_PROGRESSION: PASS (235 checks) res://qa/regression_runs/20261006_211542_custom/out/campaign",
+   "notes": []
+  }
+ ]
+}

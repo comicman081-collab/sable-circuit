@@ -1,0 +1,74 @@
+{
+  "tool": "image_gen.imagegen",
+  "attempt": "luna_max_v6_green_bridge",
+  "worker": "gpt-5.6-luna",
+  "reasoningEffort": "max",
+  "mode": "GENERATION",
+  "returnedPath": "C:\\Users\\AAA\\.codex\\generated_images\\01a09aa0-43f8-7190-b88c-a5318c96f39d\\exec-0447638e-dca3-41da-961c-a3805a7d8cb8.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a09aa0-43f8-7190-b88c-a5318c96f39d as C:\\Users\\AAA\\.codex\\generated_images\\01a09aa0-43f8-7190-b88c-a5318c96f39d\\exec-0447638e-dca3-41da-961c-a3805a7d8cb8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "qa/site7_rifle/quarantine/970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584/S_walk_0_master_luna_max_20260913_v6_green_bridge.png",
+  "projectCopySHA256": "970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584",
+  "request": {
+    "character": "site7_rifle",
+    "slot": "S/walk/0",
+    "direction": "S",
+    "action": "walk",
+    "frame": 0,
+    "phaseName": "left_contact",
+    "referenceImage1": "D:/AI 종합 폴더/Games/Sable-circuit/motion_lab_v1/art/site7_rifle/identity_reference.png",
+    "referenceImage1Role": "Rook appearance and identity authority",
+    "referenceImage2": "D:/AI 종합 폴더/Games/Sable-circuit/motion_lab_v1/reference/ual_guides/S_Walk_Loop_0.png",
+    "referenceImage2Role": "straight-front camera and lower-leg contact guide only",
+    "referenceImage1SHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "referenceImage2SHA256": "bfc98ae8f3528ffd823bf9f470c130cbb67662f62b8c3d711e47307f7f3c0553",
+    "inputOrder": [
+      "D:/AI 종합 폴더/Games/Sable-circuit/motion_lab_v1/art/site7_rifle/identity_reference.png",
+      "D:/AI 종합 폴더/Games/Sable-circuit/motion_lab_v1/reference/ual_guides/S_Walk_Loop_0.png"
+    ],
+    "background": "flat_uniform_pure_green_requested",
+    "sourceStatus": "WEB_ALPHA_BRIDGE_ONLY",
+    "prompt": "GENERATION MODE ONLY. Create exactly one high-resolution full-body green-screen source illustration for the SABLE CIRCUIT Rook SITE-7 rifle trooper, slot S/walk/0. Use image 1 only as the appearance/identity authority: preserve the same Rook hooded dark tactical suit, weathered silver/red armor, backpack/radio, boots, face/visor, single anatomical-right thigh holster, gloves, and bullpup rifle. Use image 2 only as the straight-front camera and LOWER-LEG S_Walk_Loop_0 contact guide; ignore image 2's mannequin appearance, arms, hands, torso, costume, and weapon. Do not use, blend, or reference any other character, conversation image, staging image, or background.\n\nPose must be straight front, one centered Rook only, exactly two anatomically connected legs. S/walk/0 left_contact: anatomical LEFT leg is forward and planted on viewer-right; the holster-bearing anatomical RIGHT leg trails behind on viewer-left. Never reverse the legs, add a third knee/shin/foot, duplicate limb, fused leg, or detached boot. The torso faces camera and actively aims the rifle straight forward: buttstock seated at the character's RIGHT shoulder (viewer-left), right trigger hand, left supporting hand, and a visible short foreshortened muzzle pointing toward camera. Never muzzle-down, vertical carry, side-profile carry, or rifle hanging toward the thigh. Preserve the Rook identity, armor continuity, holster asymmetry, hands, hood, boots, and complete rifle.\n\nThis is a green-screen bridge master for a later GPT web alpha-conversion request, not a transparent source. Fill the entire background with a perfectly flat, uniform pure RGB #00FF00 green. No gradient, vignette, checkerboard, backdrop variation, floor, cast shadow, glow, reflection, text, watermark, panel, border, scenery, prop, or other character. Keep a clean hard subject/background separation with no green spill or green tint on the Rook edges, armor, hands, boots, face, or weapon. One complete figure and rifle inside the canvas with generous margins, subject at least 1300 pixels tall. Preserve the generated green master exactly; do not create transparency, key it, crop it, redraw it, or composite it in this generation. Mark this candidate conceptually WEB_ALPHA_BRIDGE_ONLY; it must not be directly intaked or source-approved."
+  },
+  "rawInspection": {
+    "path": "qa/site7_rifle/quarantine/970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584/S_walk_0_master_luna_max_20260913_v6_green_bridge.png",
+    "size": [1024, 1536],
+    "mode": "RGB",
+    "format": "PNG",
+    "bytes": 1838192,
+    "sha256": "970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584",
+    "alphaMin": 255,
+    "alphaMax": 255,
+    "alphaUniqueCount": 1,
+    "transparentPixels": 0,
+    "visiblePixels": 1572864,
+    "partialAlphaPixels": 0,
+    "alpha255Pixels": 1572864,
+    "cornerPixels": [[20, 241, 18], [19, 240, 14], [22, 240, 20], [17, 244, 13]],
+    "exactPureGreenPixels": 0,
+    "exactPureGreenFraction": 0.0,
+    "nearGreenPixels": 1184972,
+    "nearGreenFraction": 0.7533849080403646,
+    "status": "FAIL_BRIDGE_BACKGROUND_NOT_UNIFORM",
+    "reason": "Returned RGB green-screen master has no native alpha and its requested pure #00FF00 background is varied near-green rather than exact uniform green; no local keying or cleanup was attempted."
+  },
+  "sourceAlphaPolicy": {
+    "status": "NOT_APPLICABLE",
+    "reason": "This is explicitly isolated as WEB_ALPHA_BRIDGE_ONLY; it is not a native-alpha source and must not be directly intaked."
+  },
+  "status": "WEB_ALPHA_BRIDGE_ONLY_HOLD",
+  "webAlphaConversion": "NOT_REQUESTED",
+  "intake": "FORBIDDEN",
+  "prepareSlotReview": "NOT_RUN",
+  "sourceReview": "NOT_RUN",
+  "runtimeReview": "NOT_RUN",
+  "delivery": "NOT_RUN",
+  "preservation": {
+    "rawPreserved": true,
+    "actualResponsePreserved": true,
+    "activeS0Mutated": false,
+    "approvedESEMutated": false,
+    "additionalGenerationAuthorized": false
+  }
+}

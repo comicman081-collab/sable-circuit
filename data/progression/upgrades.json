@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "upgrades": [
+    {
+      "upgrade_id": "ARMORY_CALIBRATION",
+      "facility": "ARMORY",
+      "levels": [
+        {"research": 140, "salvage": 1, "fragments": 0},
+        {"research": 240, "salvage": 2, "fragments": 0},
+        {"research": 340, "salvage": 3, "fragments": 0},
+        {"research": 440, "salvage": 5, "fragments": 1},
+        {"research": 540, "salvage": 7, "fragments": 2},
+        {"research": 640, "salvage": 9, "fragments": 3}
+      ]
+    },
+    {
+      "upgrade_id": "LAB_SIGNAL_ANALYSIS",
+      "facility": "LAB",
+      "levels": [
+        {"research": 100, "salvage": 0, "fragments": 1},
+        {"research": 220, "salvage": 0, "fragments": 1},
+        {"research": 340, "salvage": 0, "fragments": 1},
+        {"research": 460, "salvage": 2, "fragments": 2},
+        {"research": 580, "salvage": 3, "fragments": 3},
+        {"research": 700, "salvage": 4, "fragments": 4}
+      ]
+    }
+  ]
+}

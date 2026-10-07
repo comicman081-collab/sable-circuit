@@ -1,0 +1,155 @@
+{
+  "suite": "custom",
+  "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+  "started": "2026-10-01T20:25:34",
+  "git_head": "e72e9526ce4ffc55109a7130bd4788bb4de4465a",
+  "git_dirty": 53,
+  "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+  "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+  "workers": 1,
+  "seconds": 2764,
+  "overall": "PASS",
+  "guard": {
+    "changed": [],
+    "removed": [],
+    "added": []
+  },
+  "results": [
+    {
+      "test": "combat_density",
+      "status": "PASS",
+      "seconds": 22.3,
+      "exit_code": 0,
+      "checks": 67,
+      "status_line": "COMBAT_DENSITY_SMOKE PASS (67 checks) {\"attacks_started\":32,\"drone_orbit_split\":[2,2],\"frames_with_two_or_more_attackers\":305,\"hostiles\":7,\"max_concurrent_attackers\":3,\"mission\":\"MIS_CH01_02\",\"operato",
+      "notes": []
+    },
+    {
+      "test": "floor_segment",
+      "status": "PASS",
+      "seconds": 50.6,
+      "exit_code": 0,
+      "checks": 23,
+      "status_line": "FLOOR_SEGMENT_SMOKE: PASS (23 checks)",
+      "notes": []
+    },
+    {
+      "test": "campaign_data",
+      "status": "PASS",
+      "seconds": 1.6,
+      "exit_code": 0,
+      "checks": 297,
+      "status_line": "SITE7_CAMPAIGN_DATA: PASS (297 checks)",
+      "notes": []
+    },
+    {
+      "test": "elite_affix",
+      "status": "PASS",
+      "seconds": 9.5,
+      "exit_code": 0,
+      "checks": 69,
+      "status_line": "ELITE_AFFIX_SMOKE: PASS (69 checks)",
+      "notes": []
+    },
+    {
+      "test": "zone_hazard",
+      "status": "PASS",
+      "seconds": 58.4,
+      "exit_code": 0,
+      "checks": 345,
+      "status_line": "ZONE_HAZARD_SMOKE: PASS (345 checks, 15 rooms)",
+      "notes": []
+    },
+    {
+      "test": "firing_lane",
+      "status": "PASS",
+      "seconds": 37.5,
+      "exit_code": 0,
+      "checks": 325,
+      "status_line": "FIRING_LANE_SEARCH_SMOKE: PASS (325 checks)",
+      "notes": []
+    },
+    {
+      "test": "world_layout",
+      "status": "PASS",
+      "seconds": 26.1,
+      "exit_code": 0,
+      "checks": null,
+      "status_line": "SITE7_WORLD_LAYOUT PASS 10 missions",
+      "notes": []
+    },
+    {
+      "test": "mood_light",
+      "status": "PASS",
+      "seconds": 107.8,
+      "exit_code": 0,
+      "checks": null,
+      "status_line": "SITE7_MOOD_LIGHT PASS 150 plates 788 pools 150 void masks 15 contact shadows",
+      "notes": []
+    },
+    {
+      "test": "plate_axis",
+      "status": "PASS",
+      "seconds": 5.4,
+      "exit_code": 0,
+      "checks": 2,
+      "status_line": "OK",
+      "notes": []
+    },
+    {
+      "test": "seam_waiver",
+      "status": "PASS",
+      "seconds": 4.1,
+      "exit_code": 0,
+      "checks": 10,
+      "status_line": "OK",
+      "notes": []
+    },
+    {
+      "test": "mood_contact",
+      "status": "PASS",
+      "seconds": 1.8,
+      "exit_code": 0,
+      "checks": 5,
+      "status_line": "OK",
+      "notes": []
+    },
+    {
+      "test": "traversal_audit",
+      "status": "PASS",
+      "seconds": 899.1,
+      "exit_code": 0,
+      "checks": 2394,
+      "status_line": "SITE7_TRAVERSAL_AUDIT: PASS (2394 checks, 0 failures)",
+      "notes": []
+    },
+    {
+      "test": "world_route",
+      "status": "PASS",
+      "seconds": 28.0,
+      "exit_code": 0,
+      "checks": 94,
+      "status_line": "SITE7_WORLD_ROUTE_NAVIGATION: PASS (94 checks)",
+      "notes": []
+    },
+    {
+      "test": "connector_alignment",
+      "status": "PASS",
+      "seconds": 1438.0,
+      "exit_code": 0,
+      "checks": 1060,
+      "status_line": "SITE7_CONNECTOR_ALIGNMENT PASS (1060 checks)",
+      "notes": []
+    },
+    {
+      "test": "battle_geometry",
+      "status": "PASS",
+      "seconds": 31.4,
+      "exit_code": 0,
+      "checks": 5039,
+      "status_line": "SITE7_BATTLE_GEOMETRY_SMOKE: PASS (5039 checks)",
+      "notes": []
+    }
+  ],
+  "run_dir": "qa/regression_runs/20261001_202459_custom"
+}

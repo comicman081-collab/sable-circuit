@@ -1,0 +1,46 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+ERROR: EnemyDetailOverlayPresentation missing identity mapping: ENM_SITE7_RIFLE_01
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _bind (res://scripts/animation/enemy_detail_overlay_presentation.gd:20)
+
+================================================================
+CrashHandlerException: Program crashed with signal 11
+Engine version: Godot Engine v4.7.1.stable.official (a13da4feb8d8aefc283c3763d33a2f170a18d541)
+Dumping the backtrace. Please include this when reporting the bug on: https://github.com/godotengine/godot/issues
+Load address: 7ff618290000
+
+[1] 7ff75c3624a1 (main+40d24a1) - D:\AI 종합 폴더\Godot\4.7.1-standard\Godot_v4.7.1-stable_win64.exe
+[2] 7ffe79ca4702 (ntdll.dll+124702) - failed to read executable information
+[3] 7ffe79ce54fe (ntdll.dll+1654fe) - failed to read executable information
+[4] 7ffe79c4bd24 (ntdll.dll+cbd24) - failed to read executable information
+[5] 7ffe79ce4e3d (ntdll.dll+164e3d) - failed to read executable information
+[6] 7ff75bdb9914 (main+3b29914) - failed to read executable information
+[7] 7ff75c09cdaa (main+3e0cdaa) - failed to read executable information
+[8] 7ff75c09e12a (main+3e0e12a) - failed to read executable information
+[9] 7ff75c09e33e (main+3e0e33e) - failed to read executable information
+[10] 7ff75c0a1886 (main+3e11886) - failed to read executable information
+[11] 7ff75e288b32 (main+5ff8b32) - failed to read executable information
+[12] 7ff7588e39b5 (main+6539b5) - failed to read executable information
+[13] 7ff7587c4317 (main+534317) - failed to read executable information
+[14] 7ff75c0a593e (main+3e1593e) - failed to read executable information
+[15] 7ff75bdbb2bd (main+3b2b2bd) - failed to read executable information
+[16] 7ff75c09c131 (main+3e0c131) - failed to read executable information
+[17] 7ff75c09c338 (main+3e0c338) - failed to read executable information
+[18] 7ff75a72134e (main+249134e) - failed to read executable information
+[19] 7ff7582ed22f (main+5d22f) - failed to read executable information
+[20] 7ff758292ef0 (main+2ef0) - failed to read executable information
+[21] 7ff7582e25c1 (main+525c1) - failed to read executable information
+[22] 7ff7582e25fd (main+525fd) - failed to read executable information
+[23] 7ff7582910c8 (main+10c8) - failed to read executable information
+[24] 7ff7582913f5 (main+13f5) - failed to read executable information
+[25] 7ffe793ecd86 (kernel32.dll+2cd86) - failed to read executable information
+[26] 7ffe79c2caeb (ntdll.dll+acaeb) - failed to read executable information
+[27] -1 (main+-7ff758290001) - failed to read executable information
+-- END OF C++ BACKTRACE --
+================================================================
+GDScript backtrace (most recent call first):
+    [0] _apply (res://scripts/animation/enemy_field_scale_presentation.gd:16)
+-- END OF GDSCRIPT BACKTRACE --
+================================================================

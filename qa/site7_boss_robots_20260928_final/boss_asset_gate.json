@@ -1,0 +1,43 @@
+{
+  "batch": "site7_boss_robots_20260928",
+  "generator": "Codex built-in ImageGen",
+  "runtime_status": "PROMOTED_USER_ALPHA255_OVERRIDE",
+  "source_alpha_policy": "native_rgba_alpha_0_254_v1",
+  "source_alpha_policy_result": "FAIL_ALPHA_RANGE_0_254_REQUIRED_ONLY",
+  "user_override": "The user explicitly accepted native alpha 255 interiors for the new bosses after the failed 0..254 attempts, and instructed completion of all new bosses. This exception is limited to the two exact selected PNG hashes below; general future-asset policy remains 0..254.",
+  "source_bytes_edited": false,
+  "generated_candidates": [
+    {
+      "enemy_id": "BOSS_SITE7_RELAY_01",
+      "selected_candidate": "motion_lab_v1/art/site7_enemies_raw/quarantine/relay_sentinel/attempt04.png",
+      "master": "motion_lab_v1/art/site7_enemies_raw/relay_sentinel_master.png",
+      "runtime": "assets/enemies/stage2_relay_sentinel/authored_core_v1/RELAY_SENTINEL.png",
+      "sha256_all_three": "dd13595d0e559bd8c74306c3c3311d6fffa71c99213ff4c6d10d8ba17bd7ee3a",
+      "native_size": [1254, 1254],
+      "mode": "RGBA",
+      "alpha_range": [0, 255],
+      "alpha_255_pixels": 496,
+      "transparent_fraction": 0.48561604460622343,
+      "near_opaque_visible_fraction": 0.9271236541526091,
+      "corner_alpha": [0, 0, 0, 0],
+      "visual_review": "PASS on light and dark original-size crop sheets and in-game 1080p boss room"
+    },
+    {
+      "enemy_id": "BOSS_SITE7_REMNANT_01",
+      "selected_candidate": "motion_lab_v1/art/site7_enemies_raw/quarantine/resonance_remnant/attempt01.png",
+      "imagegen_managed_staging": "C:/Users/AAA/.codex/generated_images/01a0e05b-ff4b-7d40-953c-3c9973c59ddf/exec-5a516463-7410-4986-864e-9a82e4ad98c7.png",
+      "master": "motion_lab_v1/art/site7_enemies_raw/resonance_remnant_master.png",
+      "runtime": "assets/enemies/stage3_resonance_remnant/authored_core_v1/RESONANCE_REMNANT.png",
+      "sha256_all_three": "f5dd2d399f3375bd2f8a200d0ddab2b5cb14ff3f4468818eda217802cd8eeb18",
+      "native_size": [1179, 1334],
+      "mode": "RGBA",
+      "alpha_range": [0, 255],
+      "alpha_255_pixels": 380,
+      "transparent_fraction": 0.6228495167174682,
+      "near_opaque_visible_fraction": 0.8983928911606485,
+      "corner_alpha": [0, 0, 0, 0],
+      "visual_review": "PASS on light and dark original-size crop sheets and in-game 1080p boss room"
+    }
+  ],
+  "provenance_note": "Prior RELAY attempts 01–03 and 05–06 and their HOLD records remain quarantined; this receipt supersedes HOLD only for the two selected exact candidates. No alpha clamping, keying, crop or resize was applied to runtime art. QA composites do not alter runtime assets."
+}

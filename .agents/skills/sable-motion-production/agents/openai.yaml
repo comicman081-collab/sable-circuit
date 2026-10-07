@@ -1,0 +1,6 @@
+interface:
+  display_name: "SABLE Motion Production"
+  short_description: "Source-to-runtime gates for SABLE character motion"
+  default_prompt: "Use $sable-motion-production to resume the current SABLE character job from its verified generation gate."
+policy:
+  allow_implicit_invocation: true

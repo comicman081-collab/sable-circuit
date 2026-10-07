@@ -1,0 +1,138 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_C04/attempt01/S10_C04_GAME.png",
+  "luma": 0.19958306849002838,
+  "p10": 0.13333334028720856,
+  "p90": 0.2537725567817688,
+  "saturation": 0.023714582148407364,
+  "hue": 140.47348288895154,
+  "axis": 23.35761469934463,
+  "problems": [],
+  "plate": "S10_C04",
+  "attempt": 1,
+  "native_size": [
+    1774,
+    887
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      0,
+      756
+    ],
+    [
+      1774,
+      5
+    ],
+    [
+      1774,
+      250
+    ],
+    [
+      334,
+      887
+    ],
+    [
+      0,
+      887
+    ]
+  ],
+  "doors_px": {},
+  "raw_sha256": "a913710b30522e5ae5b337401e55e0b35b173797643b189f194619d60846c23f",
+  "master_sha256": "a913710b30522e5ae5b337401e55e0b35b173797643b189f194619d60846c23f",
+  "game_sha256": "d908a755c6fd570dcdb960ba3798588649a4f58ac5dede5c17f8430d5e9dd08c",
+  "game_exposure_factor_srgb": 0.7132,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-32b09028-afad-48a7-84c1-8706502d6d20.png",
+  "inspection": "좌측 x350–440, x535–630의 루버 패널 베이가 S3_C04와 같아 벽 내용 반복으로 거절. 중앙·오른쪽은 바뀌었지만 해당 베이 반복은 남음.",
+  "floor_area_px2": 439891.0,
+  "floor_area_fraction": 0.2795553713987206,
+  "floor_bounds_px": [
+    0,
+    5,
+    1774,
+    887
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1774,
+      887
+    ],
+    "actual_size": [
+      1774,
+      887
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "width_sections_px": [
+    [
+      600,
+      502,
+      767
+    ],
+    [
+      1000,
+      333,
+      588
+    ],
+    [
+      1400,
+      163,
+      410
+    ]
+  ],
+  "vertical_widths_px": [
+    265,
+    255,
+    247
+  ],
+  "width_measurement": "Vertical sections between actual wall base and outer painted deck lip; clipped image-corner fragments are not full cross-sections.",
+  "width_acceptance": {
+    "minimum_px": 220,
+    "prompt_target_px": 260,
+    "source": "2026-10-01 explicit user decision; branch +/-15% additionally retained"
+  },
+  "connector_apron_end_stats": [
+    {
+      "end": "image_left",
+      "luma": 0.23319214582443237,
+      "saturation": 0.05775331012685894,
+      "hue": 144.0956810301569,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    },
+    {
+      "end": "image_right",
+      "luma": 0.20445434749126434,
+      "saturation": 0.011436067279586034,
+      "hue": 124.2762342115064,
+      "sampling": "actual floor within image end 10%; no ideal outline replacement",
+      "saturation_limit": 0.1
+    }
+  ],
+  "preintegration_end_comparison": [
+    {
+      "end": "image_left",
+      "room": "S10_R04",
+      "door": "NE",
+      "deck_luma": 0.21296906471252441,
+      "deck_saturation": 0.043997413303566935,
+      "room_apron_luma": 0.2288307547569275,
+      "room_apron_saturation": 0.04380444620508034,
+      "step": 0.09502641309540932,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    },
+    {
+      "end": "image_right",
+      "room": "S10_R05",
+      "door": "SW",
+      "deck_luma": 0.2030545026063919,
+      "deck_saturation": 0.011662674836206659,
+      "room_apron_luma": 0.23050403594970703,
+      "room_apron_saturation": 0.07595554802421288,
+      "step": 0.1674375764936349,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    }
+  ]
+}

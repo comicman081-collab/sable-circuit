@@ -1,0 +1,146 @@
+{
+  "chapter_id": "CH01",
+  "missions": [
+    {
+      "mission_id": "MIS_CH01_01", "title": "BLACKOUT AT SITE-7", "requires": "",
+      "synopsis": "Recover the missing team ledger. Cross the containment sector, disable its anchor and extract through the emergency lift.",
+      "evidence_room": "R03_ARCHIVE", "evidence_label": "TEAM LEDGER",
+      "story_path": "res://data/story/chapter_01.json"
+    },
+    {
+      "mission_id": "MIS_CH01_02", "title": "RECOVERY SWEEP", "requires": "MIS_CH01_01",
+      "synopsis": "Follow the lower relay chain through flooded maintenance. Recover the routing log and disable the sublevel sentinel.",
+      "evidence_room": "R03_RELAY_ARCHIVE", "evidence_label": "RELAY ROUTING LOG",
+      "briefing": [
+        {"speaker":"COMMAND","text":"The first anchor is offline, but its carrier did not stop. Re-enter through the service uplink and follow the lower relay chain."},
+        {"speaker":"MICA","text":"The flooded maintenance run still has active security sensors. I can trace their firing lanes; use the machinery as cover."},
+        {"speaker":"ROOK","text":"Recover the reserve cache before the quarantine crossing. The relay sentinel runs the sublevel shield cycle. Keep an escape lane open."},
+        {"speaker":"ASTER","text":"Routing log first, relay second. Extract early if the squad cannot continue. Full clearance opens the core approach."}
+      ],
+      "post_mission": [
+        {"speaker":"MICA","text":"The routing log isolates the final carrier path. It runs beneath the bulkhead into the resonance core."},
+        {"speaker":"COMMAND","text":"Recovery sweep complete. Refit at base; Core Pressure is now available."}
+      ]
+    },
+    {
+      "mission_id": "MIS_CH01_03", "title": "CORE PRESSURE", "requires": "MIS_CH01_02",
+      "synopsis": "Breach the inner defense, recover the carrier trace and shut down the resonance anchor. Return through the escape shaft.",
+      "evidence_room": "R03_TRACE", "evidence_label": "CARRIER TRACE",
+      "briefing": [
+        {"speaker":"COMMAND","text":"The relay is down. Its log exposes the core approach. Recover the carrier trace before entering the bulkhead."},
+        {"speaker":"ROOK","text":"More armored drones, no clear corridor. Use the barriers, reload behind machinery and move on the warning gaps."},
+        {"speaker":"MICA","text":"The final anchor's resonance core survived its broken mast. The arc fork on top is the emitter; the shield phase still blocks our shots."},
+        {"speaker":"ASTER","text":"Secure the resonance sample, disable the anchor, then reach the escape shaft. No one stays behind."}
+      ],
+      "post_mission": [
+        {"speaker":"MICA","text":"Site-7 is silent. The resonance sample still carries a trace toward the offshore network."},
+        {"speaker":"COMMAND","text":"Chapter 01 complete. All three operations remain available for recovery runs and upgrades. The offshore operation is not deployed yet."}
+      ]
+    },
+    {
+      "mission_id": "MIS_CH01_04", "title": "FORGE DESCENT", "requires": "MIS_CH01_03",
+      "synopsis": "Descend into Site-7's thermal fabrication spine, disable the Forge Warden and recover the heat-map trace.",
+      "evidence_room": "R03_TRACE", "evidence_label": "HEAT-MAP TRACE",
+      "briefing": [
+        {"speaker":"COMMAND","text":"The carrier trace enters the thermal fabrication spine. Heat is building behind every sealed gate."},
+        {"speaker":"ROOK","text":"The new prism skimmers are built for the narrow lanes. Use the barriers, then hit the Warden's exposed furnace."},
+        {"speaker":"MICA","text":"The heat-map should reveal its cycling window. Do not stand in front of the tracked fortress when the core opens."},
+        {"speaker":"ASTER","text":"Recover the trace, disable the Warden and leave before the service lock repressurizes."}
+      ],
+      "post_mission": [
+        {"speaker":"MICA","text":"The Warden's trace points beyond Site-7. The offshore relay is carrying the carrier's null-space signature."},
+        {"speaker":"COMMAND","text":"Forge Descent complete. The offshore operation is unlocked."}
+      ]
+    },
+    {
+      "mission_id": "MIS_CH01_05", "title": "OFFSHORE NULL", "requires": "MIS_CH01_04",
+      "synopsis": "Cross the offshore transit relay, collapse the jammer array and destroy Carrier Null before the route desynchronizes.",
+      "evidence_room": "R03_TRACE", "evidence_label": "NULL CARRIER TRACE",
+      "briefing": [
+        {"speaker":"COMMAND","text":"The offshore relay is isolated but still broadcasting. This is the carrier's last stable aperture."},
+        {"speaker":"MICA","text":"Null pylons are suppressing the relay. Their lenses are fixed, but their warning circles will bypass cover."},
+        {"speaker":"ROOK","text":"Break the array, keep an escape lane open and do not let the carrier pin the squad against the deck."},
+        {"speaker":"ASTER","text":"Destroy Carrier Null. When the aperture collapses, extract immediately."}
+      ],
+      "post_mission": [
+        {"speaker":"MICA","text":"Carrier Null is gone. The offshore trace ends, but something answered from beyond the relay."},
+        {"speaker":"COMMAND","text":"Offshore Null complete. The answer signal is tracing back into Site-7's sealed lower wings. Verdant Lock is now available."}
+      ]
+    },
+    {
+      "mission_id": "MIS_CH01_06", "title": "VERDANT LOCK", "requires": "MIS_CH01_05",
+      "synopsis": "Cut through the sealed hydroponic wing, recover the germination log and silence the aerator tower that keeps the answer signal alive.",
+      "evidence_room": "R03_LAB", "evidence_label": "GERMINATION LOG",
+      "briefing": [
+        {"speaker":"COMMAND","text":"The answer signal is coming back through Site-7's sealed lower wings. The hydroponic wing is the first relay, and its air handlers are broadcasting it."},
+        {"speaker":"MICA","text":"Null pylons and mortar nests sit behind the planter troughs. The troughs stop shots but not blasts; watch the landing circles."},
+        {"speaker":"ROOK","text":"Long galleries, few gaps. Hold the troughs, let them come to you and never stand still on a vent grate."},
+        {"speaker":"ASTER","text":"Recover the germination log, silence the aerator tower and lift out."}
+      ],
+      "post_mission": [
+        {"speaker":"MICA","text":"The aerator tower is offline. The germination log points down to the cryo archive; the answer is being stored, not just relayed."},
+        {"speaker":"COMMAND","text":"Verdant Lock complete. Cold Storage is now available."}
+      ]
+    },
+    {
+      "mission_id": "MIS_CH01_07", "title": "COLD STORAGE", "requires": "MIS_CH01_06",
+      "synopsis": "Descend into the cryo archive, recover the thermal ledger and shut down the compressor that keeps the answer from decaying.",
+      "evidence_room": "R03_LEDGER", "evidence_label": "THERMAL LEDGER",
+      "briefing": [
+        {"speaker":"COMMAND","text":"The germination log leads down to the cryo archive. Something is being stored there, and its compressors keep the answer from decaying."},
+        {"speaker":"ROOK","text":"Rams and shield crawlers will use the frozen aisles as lanes. Break their line with the vault racks and keep moving."},
+        {"speaker":"MICA","text":"The compressor stack cycles on a sweep. I can read its frost bars; do not stand where the next one is about to land."},
+        {"speaker":"ASTER","text":"Recover the thermal ledger, shut the compressor down and leave through the cargo lock."}
+      ],
+      "post_mission": [
+        {"speaker":"MICA","text":"The archive kept the answer on cold media. The dispatch orders in the ledger send it out along the maglev yard."},
+        {"speaker":"COMMAND","text":"Cold Storage complete. Switchyard is now available."}
+      ]
+    },
+    {
+      "mission_id": "MIS_CH01_08", "title": "SWITCHYARD", "requires": "MIS_CH01_07",
+      "synopsis": "Cross the surface maglev yard at dawn, recover the dispatch orders and bring down the signal gantry before the route reroutes.",
+      "evidence_room": "R03_TOWER", "evidence_label": "DISPATCH ORDERS",
+      "briefing": [
+        {"speaker":"COMMAND","text":"The dispatch orders route the answer through a surface maglev yard. It is open ground; expect fire from every lane."},
+        {"speaker":"MICA","text":"Prism skimmers hold the guideways and mortars sit on the switch platforms. Rail-lane warnings will cross the whole yard."},
+        {"speaker":"ROOK","text":"Wide lanes and thin cover. Use the depot racks, keep your squad off the rail lines and do not bunch up."},
+        {"speaker":"ASTER","text":"Recover the dispatch orders, bring down the signal gantry and board the departure capsule."}
+      ],
+      "post_mission": [
+        {"speaker":"MICA","text":"The gantry is down. The last dispatch order ends at a vault that is on no Site-7 map."},
+        {"speaker":"COMMAND","text":"Switchyard complete. Memory Vault is now available."}
+      ]
+    },
+    {
+      "mission_id": "MIS_CH01_09", "title": "MEMORY VAULT", "requires": "MIS_CH01_08",
+      "synopsis": "Enter the sealed memory vault, recover the vault index and erase the spire that remembers every step.",
+      "evidence_room": "R03_CHAPEL", "evidence_label": "VAULT INDEX",
+      "briefing": [
+        {"speaker":"COMMAND","text":"The vault index gives the origin's address. Its stacks answer to a memory spire that remembers where you stood."},
+        {"speaker":"MICA","text":"The spire echoes: warnings will appear where you were a moment ago. Never stop, and never walk the same line twice."},
+        {"speaker":"ROOK","text":"Drones and pylons hold the nave. Fight from behind the racks and break their lens lines before you advance."},
+        {"speaker":"ASTER","text":"Recover the vault index, erase the spire and extract."}
+      ],
+      "post_mission": [
+        {"speaker":"MICA","text":"The index is complete. The origin's address is a shaft beneath the vault, straight down."},
+        {"speaker":"COMMAND","text":"Memory Vault complete. Zero Point is now available."}
+      ]
+    },
+    {
+      "mission_id": "MIS_CH01_10", "title": "ZERO POINT", "requires": "MIS_CH01_09",
+      "synopsis": "Descend the origin shaft, recover the answer log and destroy the origin core. Then get out.",
+      "evidence_room": "R03_LOG", "evidence_label": "ANSWER LOG",
+      "briefing": [
+        {"speaker":"COMMAND","text":"This is the source of the answer: one core at the bottom of Site-7. Everything the carrier did was for it."},
+        {"speaker":"MICA","text":"The core adapts. Its warning lanes converge on you from every side; do not leave the gaps."},
+        {"speaker":"ROOK","text":"Everything we have met is down here. Ration your reloads, keep an escape lane open and hold every corner."},
+        {"speaker":"ASTER","text":"Recover the answer log, destroy the origin core and get out. No one stays behind."}
+      ],
+      "post_mission": [
+        {"speaker":"MICA","text":"The core is silent. The answer has stopped, and Site-7 is quiet for the first time since the blackout."},
+        {"speaker":"COMMAND","text":"Chapter 01 complete. All ten operations are available for recovery runs and upgrades."}
+      ]
+    }
+  ]
+}

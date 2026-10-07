@@ -1,0 +1,322 @@
+[
+  {
+    "asset": ".cache/diag/site7_ops_e/candidates/S10_C05/attempt01/S10_C05_GAME.png",
+    "luma": 0.19969512522220612,
+    "p10": 0.13478432595729828,
+    "p90": 0.24661177396774292,
+    "saturation": 0.016096778357328066,
+    "hue": 149.76592857605635,
+    "axis": 25.861169410435398,
+    "problems": [],
+    "plate": "S10_C05",
+    "attempt": 1,
+    "native_size": [
+      1774,
+      887
+    ],
+    "source_scale": 1.0,
+    "actual_floor_px": [
+      [
+        0,
+        789
+      ],
+      [
+        1645,
+        0
+      ],
+      [
+        1774,
+        0
+      ],
+      [
+        1774,
+        231
+      ],
+      [
+        438,
+        887
+      ],
+      [
+        0,
+        887
+      ]
+    ],
+    "doors_px": {},
+    "raw_sha256": "0fc01efe88462b716db70e172fdf2b744b7a53e74dcbadbc43061328c006f71b",
+    "master_sha256": "0fc01efe88462b716db70e172fdf2b744b7a53e74dcbadbc43061328c006f71b",
+    "game_sha256": "fa0f1f1314d188dd01f715d2cbd86ee0db387ab5aa43b3545aa21ff098e7435d",
+    "game_exposure_factor_srgb": 0.75,
+    "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-3bbe0cbf-108a-4b76-8b1c-a353b85069fa.png",
+    "inspection": "Actual wall-base and outer deck lip traced; new slab brackets/linear lift guides replace S3 cylinders and wall panels.",
+    "floor_area_px2": 486377.5,
+    "floor_area_fraction": 0.309098032586439,
+    "floor_bounds_px": [
+      0,
+      0,
+      1774,
+      887
+    ],
+    "native_size_acceptance": {
+      "target_size": [
+        1774,
+        887
+      ],
+      "actual_size": [
+        1774,
+        887
+      ],
+      "tolerance_each_axis_px": 2,
+      "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+    },
+    "width_sections_px": [
+      [
+        600,
+        501,
+        806
+      ],
+      [
+        1000,
+        309,
+        609
+      ],
+      [
+        1400,
+        117,
+        413
+      ]
+    ],
+    "vertical_widths_px": [
+      305,
+      300,
+      296
+    ],
+    "width_measurement": "Vertical sections between actual wall base and outer painted deck lip; clipped image-corner fragments are not full cross-sections.",
+    "width_acceptance": {
+      "minimum_px": 220,
+      "prompt_target_px": 260,
+      "source": "2026-10-01 explicit user decision; branch +/-15% additionally retained"
+    },
+    "connector_apron_end_stats": [
+      {
+        "end": "image_left",
+        "luma": 0.22937239706516266,
+        "saturation": 0.050099759453128244,
+        "hue": 135.15168252504847,
+        "sampling": "actual floor within image end 10%; no ideal outline replacement",
+        "saturation_limit": 0.1
+      },
+      {
+        "end": "image_right",
+        "luma": 0.19804991781711578,
+        "saturation": 0.010619095966456552,
+        "hue": 159.851822442307,
+        "sampling": "actual floor within image end 10%; no ideal outline replacement",
+        "saturation_limit": 0.1
+      }
+    ],
+    "preintegration_end_comparison": [
+      {
+        "end": "image_left",
+        "room": "S10_R05",
+        "door": "NE",
+        "deck_luma": 0.20954836905002594,
+        "deck_saturation": 0.03187989351089783,
+        "room_apron_luma": 0.193653404712677,
+        "room_apron_saturation": 0.09342588216128216,
+        "step": -0.10352587415170256,
+        "problems": [],
+        "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+      },
+      {
+        "end": "image_right",
+        "room": "S10_R06",
+        "door": "SW",
+        "deck_luma": 0.19661638140678406,
+        "deck_saturation": 0.013248591921676621,
+        "room_apron_luma": 0.24947157502174377,
+        "room_apron_saturation": 0.07200923341441598,
+        "step": 0.314990750047784,
+        "problems": [],
+        "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+      }
+    ],
+    "prompt": "GEOMETRY FIRST: EXACT native1774x887 RGB landscape. ONE straight ASCENDING deck from lower-left to upper-right; two long boundaries parallel at26.6deg, vertical deck width at least260px CONSTANT through full unclipped cross-sections. Suggested wall-base top boundary (0,680) to (1360,0); bottom deck-lip boundary (0,940) to (1774,53); clip both at image borders. Entire deck crosses canvas continuously, no widening/fanning, no end doors, no artificial darkness at border. A back wall only along upper-left side, reference height; opposite lower-right side is plain black rail. Deck is empty neutral grey, average luminance0.17-0.24, both ends saturation<=0.10.\nUse case: stylized-concept. ONE new finished opaque RGB connector S10_C05. Image 1 is deck geometry, scale and camera only; Image 2 is hard-surface material quality only; Image 3 is lower-left room and Image 4 is upper-right room, for wall transition and matching neutral doorway aprons.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nCONNECTOR CORRIDOR PLATE. One straight deck crosses the whole image along the lower-left to upper-right (ascending) 2:1 diagonal. Both ends of the deck are cut cleanly by the image edges at full brightness: no fade, no darkening, no end wall, no door at either end. The deck is about 2.2 adult-heights wide, constant along its whole length, and completely empty.\nA back wall runs along the upper-left side of the deck; the other side ends in a waist-high railing over the void. The corridor cross-section (deck width, wall height, railing height) matches a standard doorway, so these walls continue straight into the door frames of the rooms at each end.\nAt both ends the deck and light are identical to a doorway apron: standard deck, even neutral-white overhead light. Wall accents are white-red near the lower-left end, changing to green near the upper-right end, on walls only.\nIDENTITY: origin approach: monolithic dark-alloy wall plating, exposed structural ribs and a single glowing seam low on the back wall only; the railing is a plain black rail over the void; origin-core monolith housing becoming service lift guide rails.\nCRITICAL NEW WALL SILHOUETTE: do not copy reference wall forms or machine placement. Keep all fixtures against the one back wall; the other side is only a slim rail over uniform #07090D. Use clear practical accent lamps at BOTH ends and restrained wall-local glow. The whole neutral floor, particularly both aprons, has no coloured wash, red wash, black patches, lettering-like markings or bloom. No mirror, rotation, shear or end doors.\nWALL CONTENT CRITERION: the shared map-kit corner/end columns, wall bays, door gap and door-flanking columns may match Image 1. The equipment and panel configuration INSIDE each bay must be new and specific to this IDENTITY, different from the same-slot S3 plate and the other operation-10 plates. Do not reproduce the reference bay contents with only recolouring.\nSPECIFIC NEW BAY CONTENT: LOWER-LEFT white-red: broad low smooth monolith brackets with a red joint. UPPER-RIGHT green: shallow linear lift-guide channels and ladderlike counterweight sliders. No mast, tall lift tower, round rope drum or reference tank/vent equipment. REPLACE EQUIPMENT IN EVERY BAY, including central and clipped end bays. No original S3 two-louvre rectangular vent, hanging canister or unchanged panel configuration remains. Common structural ribs may match map-kit skeleton, but equipment/panel contents must differ. Keep fixtures shallow inside wall band. Both specified accent colours remain visible as small practical wall lights. No red, violet, green or amber coloured wash on the floor, no floor bloom. Main deck width prompt target260px, and both apron ends maintain uniform grey material and neutral white lighting. The wall transition follows Images3 and4; their door aprons are the actual colour/light targets. Outside uniform#07090D.\nMATCH NEUTRAL END APRONS: image_left: S10_R05 NE actual grey-apron mean sRGB luminance 0.194, low saturation 0.093; image_right: S10_R06 SW actual grey-apron mean sRGB luminance 0.249, low saturation 0.072. Preserve comparable unobstructed grey end surfaces, no coloured practical-light reflection at either end.",
+    "references": [
+      "assets/environments/site7_v2/stage03/S3_C05/S3_C05_GAME.png",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png",
+      "assets/environments/site7_v2/stage10/S10_R05/S10_R05_GAME.png",
+      "assets/environments/site7_v2/stage10/S10_R06/S10_R06_GAME.png"
+    ],
+    "status": "REJECTED",
+    "reason": "Wall bay-content repetition: lower-left wide square closed panel with attached narrow control box and lower vent retains S3_C05 equipment arrangement; upper-right large closed-panel bay also remains substantially the reference configuration. Numeric inspection passes; changed accents and middle grille alone do not clear all repeated bays.",
+    "reference_sha256": {
+      "assets/environments/site7_v2/stage03/S3_C05/S3_C05_GAME.png": "dadb191e9fc95c18e1e8a2577b0273f3ce012775d65cd1d570099a101342370c",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de",
+      "assets/environments/site7_v2/stage10/S10_R05/S10_R05_GAME.png": "49cd7a027eda96db253555775111379d11214e7b4f26444610f77c9ac4050b57",
+      "assets/environments/site7_v2/stage10/S10_R06/S10_R06_GAME.png": "6a165077bb11d98e8e0d367dd65a1ed3e382d9c509a2943551230a5c98bd4ab0"
+    },
+    "raw": "art_src/environments/site7_v2/_quarantine/S10_C05/attempt01/S10_C05_RAW_NATIVE.png",
+    "master": "art_src/environments/site7_v2/_quarantine/S10_C05/attempt01/S10_C05_MASTER.png",
+    "game": "art_src/environments/site7_v2/_quarantine/S10_C05/attempt01/S10_C05_GAME.png"
+  },
+  {
+    "asset": ".cache/diag/site7_ops_e/candidates/S10_C05/attempt02/S10_C05_GAME.png",
+    "luma": 0.19964611530303955,
+    "p10": 0.1411764770746231,
+    "p90": 0.24269020557403564,
+    "saturation": 0.010551110399759827,
+    "hue": 147.25408248244776,
+    "axis": 25.861169410435398,
+    "problems": [],
+    "plate": "S10_C05",
+    "attempt": 2,
+    "native_size": [
+      1774,
+      887
+    ],
+    "source_scale": 1.0,
+    "actual_floor_px": [
+      [
+        0,
+        789
+      ],
+      [
+        1645,
+        0
+      ],
+      [
+        1774,
+        0
+      ],
+      [
+        1774,
+        231
+      ],
+      [
+        438,
+        887
+      ],
+      [
+        0,
+        887
+      ]
+    ],
+    "doors_px": {},
+    "raw_sha256": "253f75a8244b3267dbe081a789193b23d2ce19820276edb20a6c9ab599b0cfa1",
+    "master_sha256": "253f75a8244b3267dbe081a789193b23d2ce19820276edb20a6c9ab599b0cfa1",
+    "game_sha256": "3bd354aa975e1b105cfc9b4b990f35435b9633dd9e26cac6ba5b40351880849f",
+    "game_exposure_factor_srgb": 0.7537,
+    "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-36ba9eea-c43e-489d-8425-c13625278ed2.png",
+    "inspection": "Every left bay uses diagonal monolith brace plates; right bays use linear lift guides and square runners. Actual floor traced at wall base and outer lip; common frame only retained.",
+    "floor_area_px2": 486377.5,
+    "floor_area_fraction": 0.309098032586439,
+    "floor_bounds_px": [
+      0,
+      0,
+      1774,
+      887
+    ],
+    "native_size_acceptance": {
+      "target_size": [
+        1774,
+        887
+      ],
+      "actual_size": [
+        1774,
+        887
+      ],
+      "tolerance_each_axis_px": 2,
+      "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+    },
+    "width_sections_px": [
+      [
+        600,
+        501,
+        806
+      ],
+      [
+        1000,
+        309,
+        609
+      ],
+      [
+        1400,
+        117,
+        413
+      ]
+    ],
+    "vertical_widths_px": [
+      305,
+      300,
+      296
+    ],
+    "width_measurement": "Vertical sections between actual wall base and outer painted deck lip; clipped image-corner fragments are not full cross-sections.",
+    "width_acceptance": {
+      "minimum_px": 220,
+      "prompt_target_px": 260,
+      "source": "2026-10-01 explicit user decision; branch +/-15% additionally retained"
+    },
+    "connector_apron_end_stats": [
+      {
+        "end": "image_left",
+        "luma": 0.22476069629192352,
+        "saturation": 0.04828917028283388,
+        "hue": 135.5713201076957,
+        "sampling": "actual floor within image end 10%; no ideal outline replacement",
+        "saturation_limit": 0.1
+      },
+      {
+        "end": "image_right",
+        "luma": 0.2004566490650177,
+        "saturation": 0.004483138415624698,
+        "hue": 156.31195819251857,
+        "sampling": "actual floor within image end 10%; no ideal outline replacement",
+        "saturation_limit": 0.1
+      }
+    ],
+    "preintegration_end_comparison": [
+      {
+        "end": "image_left",
+        "room": "S10_R05",
+        "door": "NE",
+        "deck_luma": 0.2049470990896225,
+        "deck_saturation": 0.02771724216297716,
+        "room_apron_luma": 0.193653404712677,
+        "room_apron_saturation": 0.09342588216128216,
+        "step": -0.07431345455787117,
+        "problems": [],
+        "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+      },
+      {
+        "end": "image_right",
+        "room": "S10_R06",
+        "door": "SW",
+        "deck_luma": 0.19698193669319153,
+        "deck_saturation": 0.005621097525404794,
+        "room_apron_luma": 0.24947157502174377,
+        "room_apron_saturation": 0.07200923341441598,
+        "step": 0.31255815332493625,
+        "problems": [],
+        "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+      }
+    ],
+    "prompt": "EVERY BAY CONTENT MUST CHANGE FROM IMAGE1: no wide square closed access panel with a narrow side control box, no small lower vent. LOWER-LEFT bays contain only broad shallow diagonal monolith brace plates, three overlapping solid triangular brackets with thin red joint slits, no rectangular equipment cabinets or grille. UPPER-RIGHT bays contain only paired exposed linear lift-guide slides and small square counterweight runners, no large flat closed access panel. Keep map-kit corner/end posts and pipe backbone, but replace equipment inside EVERY bay including clipped image edges.\nGEOMETRY FIRST: EXACT native1774x887 RGB landscape. ONE straight ASCENDING deck from lower-left to upper-right; two long boundaries parallel at26.6deg, vertical deck width at least260px CONSTANT through full unclipped cross-sections. Suggested wall-base top boundary (0,680) to (1360,0); bottom deck-lip boundary (0,940) to (1774,53); clip both at image borders. Entire deck crosses canvas continuously, no widening/fanning, no end doors, no artificial darkness at border. A back wall only along upper-left side, reference height; opposite lower-right side is plain black rail. Deck is empty neutral grey, average luminance0.17-0.24, both ends saturation<=0.10.\nUse case: stylized-concept. ONE new finished opaque RGB connector S10_C05. Image 1 is deck geometry, scale and camera only; Image 2 is hard-surface material quality only; Image 3 is lower-left room and Image 4 is upper-right room, for wall transition and matching neutral doorway aprons.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nCONNECTOR CORRIDOR PLATE. One straight deck crosses the whole image along the lower-left to upper-right (ascending) 2:1 diagonal. Both ends of the deck are cut cleanly by the image edges at full brightness: no fade, no darkening, no end wall, no door at either end. The deck is about 2.2 adult-heights wide, constant along its whole length, and completely empty.\nA back wall runs along the upper-left side of the deck; the other side ends in a waist-high railing over the void. The corridor cross-section (deck width, wall height, railing height) matches a standard doorway, so these walls continue straight into the door frames of the rooms at each end.\nAt both ends the deck and light are identical to a doorway apron: standard deck, even neutral-white overhead light. Wall accents are white-red near the lower-left end, changing to green near the upper-right end, on walls only.\nIDENTITY: origin approach: monolithic dark-alloy wall plating, exposed structural ribs and a single glowing seam low on the back wall only; the railing is a plain black rail over the void; origin-core monolith housing becoming service lift guide rails.\nCRITICAL NEW WALL SILHOUETTE: do not copy reference wall forms or machine placement. Keep all fixtures against the one back wall; the other side is only a slim rail over uniform #07090D. Use clear practical accent lamps at BOTH ends and restrained wall-local glow. The whole neutral floor, particularly both aprons, has no coloured wash, red wash, black patches, lettering-like markings or bloom. No mirror, rotation, shear or end doors.\nWALL CONTENT CRITERION: the shared map-kit corner/end columns, wall bays, door gap and door-flanking columns may match Image 1. The equipment and panel configuration INSIDE each bay must be new and specific to this IDENTITY, different from the same-slot S3 plate and the other operation-10 plates. Do not reproduce the reference bay contents with only recolouring.\nSPECIFIC NEW BAY CONTENT: LOWER-LEFT white-red: broad low smooth monolith brackets with a red joint. UPPER-RIGHT green: shallow linear lift-guide channels and ladderlike counterweight sliders. No mast, tall lift tower, round rope drum or reference tank/vent equipment. REPLACE EQUIPMENT IN EVERY BAY, including central and clipped end bays. No original S3 two-louvre rectangular vent, hanging canister or unchanged panel configuration remains. Common structural ribs may match map-kit skeleton, but equipment/panel contents must differ. Keep fixtures shallow inside wall band. Both specified accent colours remain visible as small practical wall lights. No red, violet, green or amber coloured wash on the floor, no floor bloom. Main deck width prompt target260px, and both apron ends maintain uniform grey material and neutral white lighting. The wall transition follows Images3 and4; their door aprons are the actual colour/light targets. Outside uniform#07090D.\nMATCH NEUTRAL END APRONS: image_left: S10_R05 NE actual grey-apron mean sRGB luminance 0.194, low saturation 0.093; image_right: S10_R06 SW actual grey-apron mean sRGB luminance 0.249, low saturation 0.072. Preserve comparable unobstructed grey end surfaces, no coloured practical-light reflection at either end.\nSTRICT NEW BAY DESIGN: Lower-left brace bays each have three blunt diagonal ribs forming an offset open Z-bracket face on a smooth backing, small red seam at their attachment. Upper-right lift bays each have two slim guide channels and short square sliders at staggered heights. These devices fit inside existing wall bays, never project over floor or above wall. No reference access-panel plus side-control-box combination remains. No cylindrical tank, no louvre vent, no grille bank, no broad rectangular cabinet face. Neutral grey deck remains constant width, no coloured reflection on ends.",
+    "references": [
+      "assets/environments/site7_v2/stage03/S3_C05/S3_C05_GAME.png",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png",
+      "assets/environments/site7_v2/stage10/S10_R05/S10_R05_GAME.png",
+      "assets/environments/site7_v2/stage10/S10_R06/S10_R06_GAME.png"
+    ],
+    "status": "SELECTED",
+    "reason": "",
+    "reference_sha256": {
+      "assets/environments/site7_v2/stage03/S3_C05/S3_C05_GAME.png": "dadb191e9fc95c18e1e8a2577b0273f3ce012775d65cd1d570099a101342370c",
+      "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de",
+      "assets/environments/site7_v2/stage10/S10_R05/S10_R05_GAME.png": "49cd7a027eda96db253555775111379d11214e7b4f26444610f77c9ac4050b57",
+      "assets/environments/site7_v2/stage10/S10_R06/S10_R06_GAME.png": "6a165077bb11d98e8e0d367dd65a1ed3e382d9c509a2943551230a5c98bd4ab0"
+    },
+    "raw": "art_src/environments/site7_v2/stage10/S10_C05/S10_C05_RAW_NATIVE.png",
+    "master": "art_src/environments/site7_v2/stage10/S10_C05/S10_C05_MASTER.png",
+    "game": "assets/environments/site7_v2/stage10/S10_C05/S10_C05_GAME.png"
+  }
+]

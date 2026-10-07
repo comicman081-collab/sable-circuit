@@ -1,0 +1,105 @@
+{
+  "asset": ".cache/diag/site7_ops_d/candidates/S9_C04/attempt01/S9_C04_GAME.png",
+  "luma": 0.1999659240245819,
+  "p10": 0.12361961603164673,
+  "p90": 0.25169020891189575,
+  "saturation": 0.04036079114541557,
+  "hue": 142.55312694511034,
+  "axis": 23.258826122268264,
+  "problems": [
+    "actual full deck section width below 260 px"
+  ],
+  "plate": "S9_C04",
+  "attempt": 1,
+  "native_size": [
+    1774,
+    887
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      0,
+      754
+    ],
+    [
+      1774,
+      8
+    ],
+    [
+      1774,
+      252
+    ],
+    [
+      335,
+      887
+    ],
+    [
+      0,
+      887
+    ]
+  ],
+  "doors_px": {},
+  "raw_sha256": "405bb0e58398260d56b643c51eeeb47afa8b5c582408dbdc312742e6bf0555e5",
+  "master_sha256": "405bb0e58398260d56b643c51eeeb47afa8b5c582408dbdc312742e6bf0555e5",
+  "game_sha256": "c5316df1c370deb924ed30b9ead1e9a7166d58d960b3b82150a957642103de64",
+  "game_exposure_factor_srgb": 0.7208,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-5a7b9b1e-16a5-42f3-8763-dbc687bcbded.png",
+  "inspection": "New rectangular shaft/read-head housings distinct from S3 tanks, white-gold lower-left and blue upper-right. Actual floor tapers toward right end, width below 260 px; reject.",
+  "floor_area_px2": 440761.5,
+  "floor_area_fraction": 0.2801085833325919,
+  "floor_bounds_px": [
+    0,
+    8,
+    1774,
+    887
+  ],
+  "width_sections_px": [
+    [
+      1000,
+      334,
+      592
+    ],
+    [
+      1400,
+      165,
+      416
+    ],
+    [
+      1774,
+      8,
+      252
+    ]
+  ],
+  "vertical_widths_px": [
+    258,
+    251,
+    244
+  ],
+  "width_measurement": "Vertical sections between actual wall base and outer painted deck lip; clipped image-corner fragments are not full cross-sections.",
+  "preintegration_end_comparison": [
+    {
+      "end": "image_left",
+      "room": "S9_R05",
+      "door": "NE",
+      "deck_luma": 0.22356489300727844,
+      "deck_saturation": 0.08075430096097796,
+      "room_apron_luma": 0.23686879873275757,
+      "room_apron_saturation": 0.06807126710280727,
+      "step": 0.07672545916677889,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    },
+    {
+      "end": "image_right",
+      "room": "S9_R04",
+      "door": "SW",
+      "deck_luma": 0.1947544515132904,
+      "deck_saturation": 0.012735272531981794,
+      "room_apron_luma": 0.2357000708580017,
+      "room_apron_saturation": 0.006029038585175334,
+      "step": 0.2517645239560247,
+      "problems": [],
+      "basis": "actual end band and actual room apron; provisional, exact strict seams after world solve"
+    }
+  ]
+}

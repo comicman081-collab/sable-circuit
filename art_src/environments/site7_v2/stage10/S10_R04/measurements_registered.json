@@ -1,0 +1,201 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_R04/attempt01/S10_R04_GAME.png",
+  "luma": 0.19997751712799072,
+  "p10": 0.16918431222438812,
+  "p90": 0.23512551188468933,
+  "saturation": 0.05656452712167865,
+  "hue": 146.9999354701613,
+  "axis": 22.831851199977816,
+  "problems": [],
+  "plate": "S10_R04",
+  "attempt": 1,
+  "native_size": [
+    1774,
+    887
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      134,
+      483
+    ],
+    [
+      909,
+      201
+    ],
+    [
+      1174,
+      305
+    ],
+    [
+      1308,
+      209
+    ],
+    [
+      1320,
+      216
+    ],
+    [
+      1320,
+      356
+    ],
+    [
+      1662,
+      490
+    ],
+    [
+      815,
+      815
+    ],
+    [
+      481,
+      699
+    ],
+    [
+      330,
+      774
+    ],
+    [
+      112,
+      661
+    ],
+    [
+      283,
+      586
+    ]
+  ],
+  "doors_px": {
+    "SW": [
+      382,
+      642,
+      224
+    ],
+    "NE": [
+      1248,
+      334,
+      223
+    ]
+  },
+  "raw_sha256": "10dae607a9624cf28555af3e67e4be3b301d92d1a479d2aeafa23beeb67e31f7",
+  "master_sha256": "10dae607a9624cf28555af3e67e4be3b301d92d1a479d2aeafa23beeb67e31f7",
+  "game_sha256": "7277efe6504c0392d7283cf665369c71280219cd96e3a686d0cf6994b96aade9",
+  "game_exposure_factor_srgb": 0.6446,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-259d6eb2-da3d-4f8c-8848-4a4fd224188e.png",
+  "inspection": "1774×887 전투 복도. S3 파손 벽과 돌무더기 베이 대신 검은 쌍갈래 널 방출기 행. R02의 흰 커넥터 오벨리스크/R03 기록 카트리지와 내용이 다름. SW/NE 두 문만, SE 연속 난간. 실제 바닥을 추적.",
+  "floor_area_px2": 532405.0,
+  "floor_area_fraction": 0.33834899443165656,
+  "floor_bounds_px": [
+    112,
+    201,
+    1662,
+    815
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1774,
+      887
+    ],
+    "actual_size": [
+      1774,
+      887
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "SW": [
+        [
+          283,
+          586
+        ],
+        [
+          112,
+          661
+        ],
+        [
+          330,
+          774
+        ],
+        [
+          481,
+          699
+        ]
+      ],
+      "NE": [
+        [
+          1174,
+          305
+        ],
+        [
+          1308,
+          209
+        ],
+        [
+          1320,
+          216
+        ],
+        [
+          1320,
+          356
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      134,
+      201,
+      1662,
+      815
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.07553551296505073,
+      0.2266065388951522,
+      0.06313416009019165,
+      0.08117249154453213
+    ],
+    "whole_floor_bounds_px": [
+      112,
+      201,
+      1662,
+      815
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.06313416009019165,
+      0.2266065388951522,
+      0.06313416009019165,
+      0.08117249154453213
+    ],
+    "main_floor_area_px2": 487794
+  },
+  "apron_stats": {
+    "SW": {
+      "luma": 0.21065007150173187,
+      "saturation": 0.05331931475948057,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "NE": {
+      "luma": 0.2288307547569275,
+      "saturation": 0.04380444620508034,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  },
+  "prompt": "EXACT OPEN SIDES: SW, NE. CLOSED SIDES: NW, SE. Closed sides have continuous solid back walls or uninterrupted low foreground rails; NO other openings, aprons, floor tongues or doorway-like recesses. Do not copy the extra doors of Image 1. Exactly 2 open threshold(s).\nGEOMETRY FIRST: native 1774x887 RGB, exact 2:1 LANDSCAPE canvas. Broad combat-corridor diamond main floor (150,476),(887,152),(1624,476),(887,800), 1474x648 open neutral steel. Opposing dimetric edges near 26.6 degrees. SW apron (320,551),(160,626),(414,751),(574,676). NE apron (1120,254),(1270,184),(1500,290),(1350,362). Complete drawn floor outline INCLUDING apron outer tips: (150,476),(887,152),(1120,254),(1270,184),(1500,290),(1350,362),(1624,476),(887,800),(574,676),(414,751),(160,626),(320,551). Keep main floor AND apron tips at least 8% inside every canvas edge. Only SW and NE are OPEN; SE and NW are CLOSED. No SE apron from Image 1. Neutral uncoloured empty floor. The actual combat floor must remain at least 1300x380. Each apron outer boundary is diagonal, not a vertical-cut corner pocket.\nUse case: stylized-concept. ONE new finished opaque RGB room plate S10_R04, R04_GALLERY. Image 1 is only fixed camera, scale, neutral standard deck, minimum floor size and doorway dimensions. Image 2 is only premium hard-surface material quality; ignore its actors, markings and UI.\nPremium 2.5D tactical sci-fi game environment plate for SABLE CIRCUIT, underground research facility SITE-7.\nCAMERA: fixed near-orthographic three-quarter top-down dimetric view. Floor panel seams and wall bases run at exactly a 2:1 slope (26.6 degrees from horizontal) in both diagonal directions. No perspective convergence, no fisheye, no tilted horizon.\nSCALE: a standing adult would be about 1/12 of the image width tall. Square floor panels about one adult-height wide; waist-high railings; door frames about 1.6 adult-heights tall.\nFLOOR: one clean, open, flat SITE-7 standard deck of dark gunmetal steel plates with fine seams and light wear, bounded by a wall base or a low raised lip. The floor is uncluttered: no text, no markings with letters or numbers, no objects in the open floor.\nLIGHT: even neutral-white overhead industrial light (about 6000K) across the entire walkable floor. No hot spots, no pitch-black patches, no vignette, no darkened corners, no fog or haze over the floor. The floor stays neutral grey steel and is never tinted by room colour.\nCOLOUR IDENTITY: only on walls, machinery, fixtures and small practical lamps along the perimeter; their light spill on the floor is subtle and never reaches within one adult-height of a doorway.\nOUTSIDE: everything beyond the architecture is flat near-black void (#07090D) with no gradient.\nEXCLUDE: characters, creatures, robots, weapons, UI, HUD, text, signage, numbers, logos, projectiles, explosions, smoke over the floor, translucent or doubled geometry, black borders or frames.\nSTYLE: premium stylized realism with hard-surface wall thickness, recessed panels, structural supports and cast contact shadows. Not low-poly, not flat vector, not generic neon cyberpunk, not blurry concept art.\nROOM PLATE. The walkable floor is a dimetric diamond or elongated hexagon whose sides face NW (upper-left), NE (upper-right), SE (lower-right) and SW (lower-left). Back walls rise only along the NW and NE sides; the SW and SE sides end in a low lip or railing with no wall so nothing hides the floor. Keep the floor at least 8% away from every image border.\nDOORS: open doorways exactly on these sides: SW, NE. Each doorway is an unobstructed opening about 2.3 adult-heights wide with a heavy steel frame (a framed opening in a back wall, or a gap in the lip railing on the SW/SE side); no door leaf, no shutter. The same standard deck and the same neutral-white overhead light continue through every doorway for about 1.5 adult-heights on both sides of the threshold.\nROOM TYPE: combat corridor — walkable floor at least 1300 x 380 (long x short, in the scale above).\nIDENTITY: null gallery: two rows of tall black-alloy null emitters set into the back walls, hairline red seams between the panels. Accent colour bone white, on walls and fixtures only.\nExactly 2 usable opening(s), only SW, NE. All other sides (NW, SE) are continuous closed walls or continuous low foreground railings: no rail gaps, floor tongues, passages, apparent doorway recesses or shutters there.\nCRITICAL NEW WALL SILHOUETTE: redraw the wall architecture and machinery from the IDENTITY above; do not copy Image 1 wall masses, fans, consoles or machine arrangement. This room must differ from other operation-10 rooms and all earlier operation plates. Black alloy and red seams stay on the WALL architecture; include a few distinct small practical wall lamps in the required accent, with visible lamp cores and a restrained local wall glow. No lettering-like floor patterns, red light bloom, black floor or coloured floor. The floor is standard neutral gunmetal grey, mean sRGB luminance 0.17-0.24; doorway apron saturation at most 0.10. The exposed outside remains uniform #07090D.\nDoor apron outer edges are oblique and parallel to the attached deck; no vertical-cut pocket. All main floor AND apron tips must remain at least 8% inside each image border. Floor material and light are neutral, with no red wash or black alloy on the deck. Several clear perimeter lamp cores illuminate the wall only.\nWALL CONTENT CRITERION: the shared map-kit corner/end columns, wall bays, door gap and door-flanking columns may match Image 1. The equipment and panel configuration INSIDE each bay must be new and specific to this IDENTITY, different from the same-slot S3 plate and the other operation-10 plates. Do not reproduce the reference bay contents with only recolouring.\nSPECIFIC NEW BAY CONTENT: TWO ROWS of tall paired-fork black-alloy NULL EMITTERS recessed into the back-wall equipment bays. Each emitter is a blunt U-shaped twin fin surrounding a deep dark narrow channel, with a small bone-white emitter core near its upper third; no white full-height connector face as in R02, no memory cartridges or reader consoles as in R03. Hairline red seams between solid wall panels. No broken wall sections or rubble bank from S3_R04. Intact clean black-alloy housing. Common map-kit frame columns may remain. Several visible small bone-white wall lamps, wall-local glow only. SW/NE aprons have zero red/white light pools and saturation <=0.10. SE foreground railing must be continuous, without a gap or a floor tongue.",
+  "references": [
+    "assets/environments/site7_v2/stage03/S3_R04/S3_R04_GAME.png",
+    "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png"
+  ],
+  "status": "SELECTED",
+  "reason": "",
+  "reference_sha256": {
+    "assets/environments/site7_v2/stage03/S3_R04/S3_R04_GAME.png": "408b83a7a14a8f1c2844c7a534296ec55c8092c02715b71f356070e4dc7770a4",
+    "art_src/environments/site7/references/IMAGE_A_ENVIRONMENT_QUALITY_REFERENCE.png": "435c3b2c8965808d7a2f1480b699e8b74bdd98c4763c3da85b440c8ab3f438de"
+  },
+  "raw": "art_src/environments/site7_v2/stage10/S10_R04/S10_R04_RAW_NATIVE.png",
+  "master": "art_src/environments/site7_v2/stage10/S10_R04/S10_R04_MASTER.png",
+  "game": "assets/environments/site7_v2/stage10/S10_R04/S10_R04_GAME.png"
+}

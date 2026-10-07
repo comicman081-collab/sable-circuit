@@ -1,0 +1,33 @@
+{
+  "generator": "Codex built-in ImageGen",
+  "importedUTC": "2026-09-12T01:01:15.784655+00:00",
+  "sha256": "25a7b794ff66598e6b09634ee8f3b198dbed706afee42a6f971ee5b97f6b88ee",
+  "native": [
+    1024,
+    1536
+  ],
+  "destination": "art/rook/E_idle_0_master.png",
+  "toolResponse": {
+    "path": "qa/rook/incoming/rook_previous_Eidle/tool-response.json",
+    "sha256": "0b666fd8e770066ac0759fb7d44a7a3afe1568932b52964bfe7c03916e45c052"
+  },
+  "sourceMaster": {
+    "path": "qa/rook/incoming/rook_previous_Eidle/E_idle_0_original.png",
+    "sha256": "b9dfe8625b9c77a6358c84b5a83880d3fa5d4725eb1f2d460095299980416023"
+  },
+  "derivation": {
+    "kind": "edge-connected green matte normalization only; no source-art redraw",
+    "normalization": {
+      "path": "qa/rook/normalized_candidates/E_idle_0_normalized_20260912.json",
+      "sha256": "d90d5af86410cd2f4870836dd3911c0c998ca968d2f2572217af5c3f03f21145"
+    },
+    "mask": {
+      "path": "qa/rook/normalized_candidates/E_idle_0_normalized_20260912_mask.png",
+      "sha256": "e65eaca0966b254f563d79765725994fadf019aed0acdad4e278e331024c39f8"
+    },
+    "resampling": false,
+    "anatomicalWarp": false,
+    "subjectPixelsByteExact": true,
+    "backgroundPixels": 1058494
+  }
+}

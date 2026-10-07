@@ -1,0 +1,249 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS: M8 campaign starts with zero research
+PASS: M8 campaign starts with zero salvage
+PASS: M8 campaign starts with zero signal fragments
+PASS: extracted run commits exactly once
+PASS: extraction deposits secured research
+PASS: extraction deposits secured salvage
+PASS: extraction deposits secured signal fragment
+PASS: mission transaction is idempotent
+PASS: duplicate result cannot double-credit research
+PASS: ARMORY calibration purchases with secured resources
+PASS: ARMORY reaches level 1
+PASS: ARMORY cost is deducted authoritatively
+PASS: ARMORY level 1 grants +8 percent projectile damage
+PASS: LAB analysis purchases with research and signal fragment
+PASS: LAB reaches level 1
+PASS: LAB cost is deducted authoritatively
+PASS: LAB level 1 grants +12 percent secured research
+PASS: upgrade purchase cannot drive campaign currency negative
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/E.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/SE.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/S.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/SW.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/W.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/NW.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/N.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/recon_drone/authored_yaw8_v1/NE.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/E.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/SE.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/S.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/SW.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/W.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/NW.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/N.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/bulwark/authored_yaw8_v1/NE.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/enemies/signal_anchor_guardian/authored_core_v1/anchor.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] _decode_view (res://scripts/animation/site7_machine_sprite.gd:127)
+       [1] _read_view (res://scripts/animation/site7_machine_sprite.gd:155)
+       [2] warm (res://scripts/animation/site7_machine_sprite.gd:71)
+       [3] warm_art (res://scripts/actors/enemy_actor.gd:469)
+       [4] _warm_enemy_art (res://scripts/missions/story_stage_01.gd:262)
+       [5] _load_mission (res://scripts/missions/story_stage_01.gd:218)
+       [6] _ready (res://scripts/missions/story_stage_01.gd:94)
+       [7] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:45)
+M7_RASTER_QUARANTINED identity=aster status=partial chunks=2 encoded=20000 present=15000 declared=94718
+PASS: M8 stage retains three-operator squad
+PASS: ASTER receives ARMORY damage multiplier
+PASS: ROOK receives ARMORY damage multiplier
+PASS: MICA receives ARMORY damage multiplier
+PASS: HUD exposes common/high-value/salvage/fragment cargo
+PASS: M8 can resolve deliberate extraction
+PASS: depth 5 extraction is marked early
+PASS: LAB multiplier applies to all research secured by extraction
+PASS: extraction secures all salvage
+PASS: extraction secures signal fragment
+PASS: deliberate extraction loses no cargo
+PASS: results distinguish found signal fragment from secured fragment
+PASS: M8 can resolve squad wipe
+PASS: wipe recovers half common research then applies LAB multiplier
+PASS: wipe recovers half common salvage
+PASS: wipe loses unsecured signal fragment
+PASS: wipe loses high-value research plus unrecovered common half
+PASS: story-critical ledger survives wipe
+PASS: found signal fragment is not falsely reported as secured after wipe
+PASS: Archive Annex actual node opens extraction decision gate
+PASS: HUD makes Archive extraction decision visible
+PASS: continue resumes route at Containment Junction
+PASS: Containment Junction actual node opens extraction decision gate
+PASS: continue resumes route at Core C
+ERROR: FAIL: Core C actual node opens extraction decision gate
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/smoke/m8_extraction_progression_smoke.gd:99)
+       [1] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:83)
+ERROR: FAIL: M8 extraction IDs match authored mission data
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/smoke/m8_extraction_progression_smoke.gd:99)
+       [1] _run (res://tests/smoke/m8_extraction_progression_smoke.gd:86)
+PASS: wipe common-cargo retain ratio is frozen at 50 percent
+PASS: high-value research remains risk cargo until extraction
+PASS: signal fragments remain risk cargo until extraction
+PASS: story progression is not erased by economic wipe
+M8_EXTRACTION_PROGRESSION_SMOKE: FAIL (2)
+ - Core C actual node opens extraction decision gate
+ - M8 extraction IDs match authored mission data

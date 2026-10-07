@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.gd text eol=lf
+*.tscn text eol=lf
+*.tres text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Review transcripts that embed raw stderr (with CR bytes) are kept byte-exact
+qa/stage1_implementation_20260913/gpt6pro_harness_review_round*.md -text

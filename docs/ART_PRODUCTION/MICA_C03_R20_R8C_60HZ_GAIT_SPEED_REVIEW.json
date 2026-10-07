@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "role": "MICA C03 R20 R8C 60Hz gait-speed runtime candidate review ledger",
+  "generated_at": "2026-09-05",
+  "actor_id": "CHR_PROTO_03",
+  "costume_id": "MICA_RECON_C03",
+  "candidate": "MICA_C03_R20_R8C_60HZ_GAIT_SPEED",
+  "candidate_root": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_r20_r8c_gait_speed",
+  "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+  "promotion": "HOLD_PENDING_PONYTAIL_FULL_CHATGPT_WEB_VISUAL_RUNTIME_GATE_AND_POINTER_PACKAGE_GATE",
+  "source_art_modified": false,
+  "motion_source": "Previously reviewed Blender + UAL R8C unique move cells; deterministic Godot runtime root-speed calibration",
+  "source_review_line": {
+    "source_motion": "MICA C03 V8 R14 R8C Blender+UAL capture pilot",
+    "source_visual_status": "pilot_reviewed; runtime_scale_recapture_pending",
+    "source_art_authority": "Codex-authored MICA C03 source art remains unchanged",
+    "new_generation_used": false
+  },
+  "frame_contract": {
+    "cell_size": 384,
+    "directions": ["E", "SE", "S", "SW", "W", "NW", "N", "NE"],
+    "unique_move_frames_per_direction": 24,
+    "captured_move_samples_per_direction": 120,
+    "cycles_per_direction": 2,
+    "capture_fps": 60,
+    "root_motion_factor": 0.258947368,
+    "move_root_sync": "enabled; samples_per_pose=1; calibrated from approximately 1.64px authored root travel per 24fps cell",
+    "camera_mode": "fixed_world_camera_no_sprite_scale",
+    "sprite_scale_override": 1.0,
+    "temporal_guard": "native 60Hz cursor holds each authored cell 4–6 ticks; max hold 3 ticks; one 23→00 wrap",
+    "fire_capture": "not included; required before promotion"
+  },
+  "candidate_files": {
+    "runtime_descriptor": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_r20_r8c_gait_speed/runtime_descriptor.json",
+    "runtime_descriptor_sha256": "81ee8f3fb2a0574b4dfcfd0987006aa32a330c0fa8ea0d2483877f225f71b6ae",
+    "source_candidate_manifest": "art_src/characters/mica/fast_pipeline/motion/candidate_mica_c03_r20_r8c_gait_speed/MICA_C03_R14_R8C_UNIQUE_RUNTIME_CANDIDATE.json",
+    "source_candidate_manifest_sha256": "af04e858dd44df13b5bac42d35a8192640c8d2867dd84851fe4bbdf6ab915473"
+  },
+  "local_runtime_evidence": {
+    "capture_script": "tests/render/mica_c03_v5_r16_candidate_runtime_capture.gd",
+    "evidence": "artifacts/mica_c03_r20_r8c_60hz_runtime_capture_r3/MICA_C03_R20_RUNTIME_60HZ_EVIDENCE.json",
+    "evidence_sha256": "c8a3762f35f56c45e9ac773b30cd19fe2b11c7c42b80a610b1b433e6e6d0b3b1",
+    "result": "PASS",
+    "native_resolution": [1920, 1080],
+    "fps": 60,
+    "frame_count": 960,
+    "directions": 8,
+    "samples_per_direction": 120,
+    "active_frame_sequence": "PASS; 00..23 twice, 4–6 samples per authored cell, one wrap, active_frame_verified=true",
+    "continuous_root_gate": "PASS technical; root step approximately 0.6559–0.6561px per 60Hz tick",
+    "root_motion_factor": 0.258947368,
+    "descriptor_load_and_activation": "PASS",
+    "direction_vector_and_sector_match": "PASS",
+    "two_cycle_cadence": "PASS technical",
+    "camera_and_scale": "PASS config; fixed world camera zoom 2.6, no sprite-only scale",
+    "godot_process_after_capture": "none",
+    "visual_promotion": "BLOCKED_PENDING_PONYTAIL_FULL_AND_CHATGPT_WEB_REVIEW"
+  },
+  "video_evidence": {
+    "path": "artifacts/mica_c03_r20_r8c_60hz_runtime_capture_r3/MICA_C03_R20_R8C_60HZ_NATIVE_1920X1080_R3.mp4",
+    "sha256": "9c69532fc34b236c07cad53cefdf3a16c0c90efb7cbfe870551811a35e524e0b",
+    "manifest": "artifacts/mica_c03_r20_r8c_60hz_runtime_capture_r3/MICA_C03_R20_R8C_60HZ_VIDEO_MANIFEST_R3.json",
+    "manifest_sha256": "640bb36db839f62f2f5da3b89d848bf5f634b864e7c4923f8fce63e8ed737f49",
+    "native_dynamic_validation": "PASS_CONTAINER_DECODE_ONLY",
+    "native_dynamic_validation_path": "artifacts/mica_c03_r20_r8c_60hz_runtime_capture_r3/MICA_C03_R20_R8C_60HZ_NATIVE_1920X1080_R3_VALIDATION.json",
+    "validation_sha256": "ad29b41452c558f45cf7ca961ed43bd9e35c511bd4f7d552c4895c05a56bd602",
+    "native_resolution": [1920, 1080],
+    "fps": 60,
+    "frames": 960,
+    "duration_seconds": 16.0,
+    "evidence_scope": "technical container/decode and runtime ledger; visual quality and sole/muzzle gates require independent review"
+  },
+  "html_fallback_evidence": {
+    "preview_root": "artifacts/mica_c03_r20_r8c_interactive_preview",
+    "html": "artifacts/mica_c03_r20_r8c_interactive_preview/MICA_C03_INTERACTIVE_STRIDE_FIRE.html",
+    "html_sha256": "2198ed6f4d3108ebcda2804fbe662d47ec2704a8680afc5e1282e27823a0050a",
+    "descriptor": "artifacts/mica_c03_r20_r8c_interactive_preview/MICA_C03_RUNTIME_DESCRIPTOR.json",
+    "bundle": "artifacts/mica_c03_r20_r8c_interactive_preview/MICA_C03_INTERACTIVE_RUNTIME_BUNDLE.json",
+    "bundle_sha256": "4b77b8c5201fa77fb81028dc406155f1495678e3426f7f72f7358ad6e467e701",
+    "html_validation": "artifacts/mica_c03_r20_r8c_interactive_preview/MICA_C03_R20_HTML_VALIDATION.json",
+    "html_validation_sha256": "952f0ea03db299acb11f36130bfd71d7a70bbca8ec069dcc82bd47bd38545f4a",
+    "static_gate": "PASS_STATIC_RUNTIME_BUNDLE_AND_PASS_STATIC_CONFIG_ONLY",
+    "dynamic_visual_gate": "NOT_CLAIMED; Godot 60Hz MP4 is the dynamic evidence"
+  },
+  "review_packet": {
+    "path": "artifacts/MICA_C03_R20_R8C_60HZ_GAIT_SPEED_REVIEW_PACKET_R3_FINAL.zip",
+    "sha256": "3efb2d8ff9d4585c8207a882c90983eac8edf4c031c5fbb6c758621dcc7e0bdf",
+    "entry_count": 37,
+    "contains": [
+      "R20 60Hz native MP4 and container validation",
+      "R20 runtime evidence and video manifest",
+      "portable HTML with all 8-direction RGBA runtime atlases",
+      "candidate descriptor and source manifest",
+      "this review ledger and A-to-F Ponytail/Web review request"
+    ]
+  },
+  "known_blockers_before_review": [
+    "R19 web/Ponytail reviews found support sole slide and root-cadence pulse; R20 must be checked at production-scale transform",
+    "R20 reuses the R8C move atlas and existing muzzle table; SW visible barrel direction is not yet corrected",
+    "moving-fire/projectile birth is not included in the move-only R20 MP4",
+    "per-frame visible muzzle socket and barrel-axis agreement are not yet independently proven",
+    "active-frame overlay versus visible atlas row must be checked at the new 60Hz capture"
+  ],
+  "gate_status": {
+    "technical_runtime": "PASS",
+    "temporal_unique_frames": "PASS",
+    "native_1080p_dynamic_container": "PASS",
+    "interactive_html_static_bundle": "PASS",
+    "ponytail_full_visual_gate": "REQUESTED",
+    "chatgpt_web_visual_gate": "R20_REVIEW_REQUESTED",
+    "runtime_pointer_promotion": "HOLD",
+    "overall": "HOLD_DO_NOT_PROMOTE"
+  },
+  "quarantine": {
+    "retain_failed_assets": true,
+    "preserve_paths": [
+      "artifacts/mica_c03_r17_pose_switch_interactive_preview",
+      "artifacts/mica_c03_r18_sw_fix_interactive_preview",
+      "artifacts/mica_c03_r19_r8c_runtime_capture",
+      "artifacts/mica_c03_r20_r8c_60hz_runtime_capture",
+      "artifacts/mica_c03_r20_r8c_60hz_runtime_capture_r1",
+      "artifacts/mica_c03_r20_r8c_60hz_runtime_capture_r2"
+    ],
+    "disposal": "not_allowed_until_completed replacement passes visual, Ponytail FULL, runtime, technical, pointer/package gates and retirement manifest records paths and hashes"
+  },
+  "review_gate": {
+    "ponytail_full": {
+      "status": "REQUESTED",
+      "reviewed_candidate": "MICA_C03_R20_R8C_60HZ_GAIT_SPEED",
+      "requested_video_sha256": "9c69532fc34b236c07cad53cefdf3a16c0c90efb7cbfe870551811a35e524e0b",
+      "direction_gates": "PENDING_A_TO_F_FOR_E_SE_S_SW_W_NW_N_NE",
+      "review_scope": "Actual 60Hz Godot MP4 plus portable HTML/atlas; sole lock, handoff, cadence, body stability, muzzle axis and fire-readiness",
+      "asset_action": "retain_candidate_hold; no pointer change; preserve all prior FAIL/HOLD assets"
+    },
+    "chatgpt_web_planning_conversation": {
+      "status": "REQUESTED_R20_REVIEW",
+      "conversation": "https://chatgpt.com/c/6a93c84f-fb1c-83e8-9d88-959e708b2463",
+      "r19_result": "FAIL_NOT_PROMOTABLE",
+      "r19_blockers_to_recheck": [
+        "support sole slides with root",
+        "periodic fast-slow root cadence",
+        "move muzzle socket/contact mismatch",
+        "SW barrel/projectile axis opposite",
+        "moving-fire evidence absent"
+      ]
+    },
+    "do_not_promote_before_all_gates": true
+  }
+}

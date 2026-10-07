@@ -1,0 +1,41 @@
+=== v3 ===
+  old code: snapshot after save+reload equal=True  file stable after a second save=True  schema in written file=5.0  keys=31
+  new code: snapshot after save+reload equal=True  file stable after a second save=True  schema in written file=6.0  keys=31
+  keys with different values (4):
+    - discoveries: 3 old rows, 8 new rows; old rows changed=[] lost=[]; rows added=['ANL_AERATOR_SPORE_PROFILE', 'ANL_CRYO_COMPRESSOR_MODEL', 'ANL_GANTRY_RAIL_MODEL', 'ANL_ARCHIVE_ECHO_MODEL', 'ANL_ORIGIN_NULL_MODEL']
+    - intel_samples: old three keys equal=True; extra new keys={'AERATOR': 0, 'ARCHIVE': 0, 'CRYO': 0, 'GANTRY': 0, 'ORIGIN': 0}
+    - schema_version: old=5 new=6
+    - weapon_catalog: 6 old rows, 8 new rows; old rows changed=[] lost=[]; rows added=['WPN_DMR_RAIL_01', 'WPN_SHOTGUN_NULL_01']
+  old-only keys: []   new-only keys: []
+=== v4 ===
+  old code: snapshot after save+reload equal=True  file stable after a second save=True  schema in written file=5.0  keys=31
+  new code: snapshot after save+reload equal=True  file stable after a second save=True  schema in written file=6.0  keys=31
+  keys with different values (4):
+    - discoveries: 3 old rows, 8 new rows; old rows changed=[] lost=[]; rows added=['ANL_AERATOR_SPORE_PROFILE', 'ANL_CRYO_COMPRESSOR_MODEL', 'ANL_GANTRY_RAIL_MODEL', 'ANL_ARCHIVE_ECHO_MODEL', 'ANL_ORIGIN_NULL_MODEL']
+    - intel_samples: old three keys equal=True; extra new keys={'AERATOR': 0, 'ARCHIVE': 0, 'CRYO': 0, 'GANTRY': 0, 'ORIGIN': 0}
+    - schema_version: old=5 new=6
+    - weapon_catalog: 6 old rows, 8 new rows; old rows changed=[] lost=[]; rows added=['WPN_DMR_RAIL_01', 'WPN_SHOTGUN_NULL_01']
+  old-only keys: []   new-only keys: []
+=== v5 ===
+  old code: snapshot after save+reload equal=True  file stable after a second save=True  schema in written file=5.0  keys=31
+  new code: snapshot after save+reload equal=True  file stable after a second save=True  schema in written file=6.0  keys=31
+  keys with different values (4):
+    - discoveries: 3 old rows, 8 new rows; old rows changed=[] lost=[]; rows added=['ANL_AERATOR_SPORE_PROFILE', 'ANL_CRYO_COMPRESSOR_MODEL', 'ANL_GANTRY_RAIL_MODEL', 'ANL_ARCHIVE_ECHO_MODEL', 'ANL_ORIGIN_NULL_MODEL']
+    - intel_samples: old three keys equal=True; extra new keys={'AERATOR': 0, 'ARCHIVE': 0, 'CRYO': 0, 'GANTRY': 0, 'ORIGIN': 0}
+    - schema_version: old=5 new=6
+    - weapon_catalog: 6 old rows, 8 new rows; old rows changed=[] lost=[]; rows added=['WPN_DMR_RAIL_01', 'WPN_SHOTGUN_NULL_01']
+  old-only keys: []   new-only keys: []
+=== rich6 ===
+  old code: snapshot after save+reload equal=True  file stable after a second save=True  schema in written file=5.0  keys=31
+  new code: snapshot after save+reload equal=True  file stable after a second save=True  schema in written file=6.0  keys=31
+  keys with different values (9):
+    - analyzed_intel: old=["ANL_SECURITY_ARC_GAP", "ANL_ABERRANT_JOINT_MAP", "ANL_ANCHOR_SIGNAL_MODEL"] new=["ANL_SECURITY_ARC_GAP", "ANL_ABERRANT_JOINT_MAP", "ANL_ANCHOR_SIGNAL_MODEL", "ANL_AERATOR_SPORE_PROFILE", "ANL_CRYO_COM
+    - discoveries: 3 old rows, 8 new rows; old rows changed=[] lost=[]; rows added=['ANL_AERATOR_SPORE_PROFILE', 'ANL_CRYO_COMPRESSOR_MODEL', 'ANL_GANTRY_RAIL_MODEL', 'ANL_ARCHIVE_ECHO_MODEL', 'ANL_ORIGIN_NULL_MODEL']
+    - equipped_modules: old={"CHR_PROTO_01": "", "CHR_PROTO_02": "", "CHR_PROTO_03": ""} new={"CHR_PROTO_01": "MOD_RAIL_SPOOL", "CHR_PROTO_02": "MOD_NULL_ANCHOR", "CHR_PROTO_03": "MOD_ECHO_RELAY"}
+    - equipped_weapons: old={"CHR_PROTO_01": "WPN_AR_COIL_01", "CHR_PROTO_02": "WPN_SHOTGUN_MAG_01", "CHR_PROTO_03": "WPN_SMG_SENSOR_01"} new={"CHR_PROTO_01": "WPN_DMR_RAIL_01", "CHR_PROTO_02": "WPN_SHOTGUN_NULL_01", "CHR_PROTO_03": "WPN_SMG_SENSOR_01"}
+    - intel_samples: old three keys equal=True; extra new keys={'AERATOR': 2, 'ARCHIVE': 0, 'CRYO': 0, 'GANTRY': 1, 'ORIGIN': 3}
+    - schema_version: old=5 new=6
+    - unlocked_modules: old=["MOD_PRISM_FOCUS", "MOD_BREACH_LINER", "MOD_SENSOR_ARRAY"] new=["MOD_PRISM_FOCUS", "MOD_BREACH_LINER", "MOD_SENSOR_ARRAY", "MOD_SPORE_FILTER", "MOD_FROST_LENS", "MOD_RAIL_SPOOL", "MOD
+    - unlocked_weapons: old=["WPN_AR_COIL_01", "WPN_SHOTGUN_MAG_01", "WPN_SMG_SENSOR_01", "WPN_SPECIAL_ARC_01"] new=["WPN_AR_COIL_01", "WPN_SHOTGUN_MAG_01", "WPN_SMG_SENSOR_01", "WPN_SPECIAL_ARC_01", "WPN_DMR_RAIL_01", "WPN_SHOTGUN_NULL
+    - weapon_catalog: 6 old rows, 8 new rows; old rows changed=[] lost=[]; rows added=['WPN_DMR_RAIL_01', 'WPN_SHOTGUN_NULL_01']
+  old-only keys: []   new-only keys: []

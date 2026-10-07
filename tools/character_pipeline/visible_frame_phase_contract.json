@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "scope": "PHASE_AWARE_SINGLE_IMAGEGEN_FRAME_CANDIDATE",
+  "profile_stride_floor_applies_to": {
+    "run": ["contact_l", "flight_l", "contact_r", "flight_r"],
+    "walk": ["contact_l", "contact_r"]
+  },
+  "profile_stride_floor_uses_existing_contract_values": true,
+  "other_phases_require_independent_anatomical_and_support_review": true,
+  "matte_policies": ["connected_chroma_green_costume_excludes_chroma_green", "explicit_reviewed_interior_subject_protection"],
+  "protection_mask": "native nonempty binary; subset of chroma classifier; excludes edge-connected background; exact RGB retained",
+  "additional_frame_review_checks": ["phase_specific_stride_and_support", "explicit_alpha_mask_preserves_source_subject"],
+  "production_ready": false
+}

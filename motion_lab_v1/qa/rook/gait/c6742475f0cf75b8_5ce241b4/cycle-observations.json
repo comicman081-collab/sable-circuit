@@ -1,0 +1,319 @@
+{
+  "kind": "sable-cycle-observation",
+  "character": "rook",
+  "direction": "NW",
+  "action": "walk",
+  "inputs": {
+    "character": "rook",
+    "direction": "NW",
+    "action": "walk",
+    "recipe": {
+      "path": "characters/rook.json",
+      "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+    },
+    "identity": {
+      "path": "art/rook/identity_reference.png",
+      "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+    },
+    "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+    "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+    "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+    "sources": [
+      {
+        "slot": "NW/walk/0",
+        "path": "art/rook/NW_walk_0_master.png",
+        "sha256": "f97a8e4bd76d433a1735144dfa9bedd0795404cfd461a0b2b0f5f2a228472b7f"
+      },
+      {
+        "slot": "NW/walk/1",
+        "path": "art/rook/NW_walk_1_master.png",
+        "sha256": "5f0e879c750ddce62fe0310928f08cf4251a9380248517487b0414c9c572cdad"
+      },
+      {
+        "slot": "NW/walk/2",
+        "path": "art/rook/NW_walk_2_master.png",
+        "sha256": "80f469477653e4f42fb2637c59d6efc05797a0b66fd99fc02270c5ebbd9a6a50"
+      },
+      {
+        "slot": "NW/walk/3",
+        "path": "art/rook/NW_walk_3_master.png",
+        "sha256": "f41a7641d5c2de75cabd6bba2666c8ea6b67e9b271218fd194e081338ebcbe7f"
+      },
+      {
+        "slot": "NW/walk/4",
+        "path": "art/rook/NW_walk_4_master.png",
+        "sha256": "a2a9704062f30edf5b3097a6313bb53cb61400552a5a73e58e060630ffcf154d"
+      },
+      {
+        "slot": "NW/walk/5",
+        "path": "art/rook/NW_walk_5_master.png",
+        "sha256": "3744aab1565f8cd7cb49edd69af7921d9fce542d3e76636842a261d2beb1b4d6"
+      }
+    ]
+  },
+  "preview": {
+    "path": "qa/rook/gait/c6742475f0cf75b8_5ce241b4/cycle-preview.json",
+    "sha256": "928408544fe6ee86950bf6748e6b481e9b8b28a8792bb1895a56ceb7ba610fa5"
+  },
+  "decision": "approved",
+  "reviewer": "Astra direct native anatomy review, browser 1x and chronological decoded samples",
+  "legMarkers": {
+    "left": "Near rear-left hip and clean cargo thigh in foreground; visible kneeplate edge and heel distinguish crossing left leg.",
+    "right": "Rear-right hip with cylinders when exposed; the far right thigh becomes occluded in2/3/4, traced by far knee and heel."
+  },
+  "frames": [
+    {
+      "index": 0,
+      "phase": "left_contact",
+      "support": "double",
+      "landmarks": {
+        "leftHip": [
+          362,
+          385
+        ],
+        "leftKnee": [
+          292,
+          478
+        ],
+        "leftSole": [
+          275,
+          672
+        ],
+        "rightHip": [
+          415,
+          382
+        ],
+        "rightKnee": [
+          449,
+          506
+        ],
+        "rightSole": [
+          522,
+          701
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "phase": "right_swing",
+      "support": "left",
+      "landmarks": {
+        "leftHip": [
+          362,
+          378
+        ],
+        "leftKnee": [
+          318,
+          486
+        ],
+        "leftSole": [
+          341,
+          706
+        ],
+        "rightHip": [
+          410,
+          378
+        ],
+        "rightKnee": [
+          408,
+          493
+        ],
+        "rightSole": [
+          516,
+          677
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "phase": "right_passing",
+      "support": "left",
+      "landmarks": {
+        "leftHip": [
+          376,
+          371
+        ],
+        "leftKnee": [
+          365,
+          498
+        ],
+        "leftSole": [
+          379,
+          704
+        ],
+        "rightHip": [
+          409,
+          367
+        ],
+        "rightKnee": [
+          324,
+          420
+        ],
+        "rightSole": [
+          437,
+          636
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "phase": "right_contact",
+      "support": "double",
+      "landmarks": {
+        "leftHip": [
+          359,
+          352
+        ],
+        "leftKnee": [
+          379,
+          490
+        ],
+        "leftSole": [
+          452,
+          704
+        ],
+        "rightHip": [
+          413,
+          352
+        ],
+        "rightKnee": [
+          366,
+          498
+        ],
+        "rightSole": [
+          335,
+          646
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "phase": "left_swing",
+      "support": "right",
+      "landmarks": {
+        "leftHip": [
+          356,
+          360
+        ],
+        "leftKnee": [
+          350,
+          492
+        ],
+        "leftSole": [
+          466,
+          696
+        ],
+        "rightHip": [
+          410,
+          360
+        ],
+        "rightKnee": [
+          390,
+          479
+        ],
+        "rightSole": [
+          373,
+          702
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "phase": "left_passing",
+      "support": "right",
+      "landmarks": {
+        "leftHip": [
+          348,
+          364
+        ],
+        "leftKnee": [
+          295,
+          442
+        ],
+        "leftSole": [
+          331,
+          612
+        ],
+        "rightHip": [
+          421,
+          367
+        ],
+        "rightKnee": [
+          410,
+          490
+        ],
+        "rightSole": [
+          414,
+          709
+        ]
+      }
+    }
+  ],
+  "observations": {
+    "oppositeContacts": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.68,
+        1.28,
+        1.88
+      ],
+      "notes": "Clean left boot leads toward upper-left in0, far right boot leads upper-left in3 behind crossing left calf. Heel/toe orientation and hip-knee chain verify exchange."
+    },
+    "passingAndSwing": {
+      "decision": "pass",
+      "seconds": [
+        0.28,
+        0.48,
+        0.88,
+        1.08
+      ],
+      "notes": "Right rear swing1 shows sole then right passing2 shows far forward knee and side heel; left rear swing4 then left passing5 raises near knee. Different support legs, not source0 repeated."
+    },
+    "loopSeam": {
+      "decision": "pass",
+      "seconds": [
+        1.08,
+        1.28,
+        2.28,
+        2.48
+      ],
+      "notes": "Frame5 near passing advances to near left contact0 on each sampled loop. Narrow rear-three-quarter crossing frames broaden at contacts without a same-leg repeated step."
+    },
+    "footSliding": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.28,
+        0.48,
+        0.68
+      ],
+      "notes": "Alternating support and distinct heel lift visible against ground; no full-cycle rigid lower body. Some held-frame slip and discrete pose jumps remain, no continuous IK claim."
+    },
+    "bodyContinuity": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.48,
+        0.88,
+        1.08
+      ],
+      "notes": "Short cape with gold hem and white bob retained across all six; no torso-leg cut or green fill. Pocket/buckle small variation and narrowed silhouettes3/4 are visible at native scale."
+    },
+    "weaponContinuity": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.48,
+        0.88,
+        1.08
+      ],
+      "notes": "Twin shotgun remains raised up-left with consistent left gold support forearm, hands and muzzle. No lowered carry frame within fire-ready walk."
+    }
+  },
+  "annotationMethod": {
+    "coordinates": "Manual tracing on compiled cells, native pixel coordinates; costume plus hip-knee-boot continuity, not metadata as anatomy authority.",
+    "videoSamples": "qa/rook/astra_repair_20260913/NW_final_cycle_samples/samples.json",
+    "scope": "Source cycle approval only. Actual game runtime still needs separate verification."
+  }
+}

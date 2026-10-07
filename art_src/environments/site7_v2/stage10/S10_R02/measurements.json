@@ -1,0 +1,231 @@
+{
+  "asset": ".cache/diag/site7_ops_e/candidates/S10_R02/attempt02/S10_R02_GAME.png",
+  "luma": 0.20028692483901978,
+  "p10": 0.1536666750907898,
+  "p90": 0.2504078447818756,
+  "saturation": 0.03437160951771261,
+  "hue": 143.6171627418535,
+  "axis": 26.672900685183382,
+  "problems": [],
+  "plate": "S10_R02",
+  "attempt": 2,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_scale": 1.0,
+  "actual_floor_px": [
+    [
+      236,
+      485
+    ],
+    [
+      810,
+      228
+    ],
+    [
+      1073,
+      339
+    ],
+    [
+      1238,
+      256
+    ],
+    [
+      1260,
+      267
+    ],
+    [
+      1260,
+      396
+    ],
+    [
+      1450,
+      491
+    ],
+    [
+      1357,
+      591
+    ],
+    [
+      1522,
+      669
+    ],
+    [
+      1357,
+      771
+    ],
+    [
+      1199,
+      679
+    ],
+    [
+      800,
+      815
+    ],
+    [
+      470,
+      678
+    ],
+    [
+      299,
+      763
+    ],
+    [
+      136,
+      663
+    ],
+    [
+      317,
+      579
+    ]
+  ],
+  "doors_px": {
+    "SW": [
+      394,
+      628,
+      180
+    ],
+    "NE": [
+      1165,
+      370,
+      220
+    ],
+    "SE": [
+      1278,
+      635,
+      181
+    ]
+  },
+  "raw_sha256": "787f34dbbd408c6bb232f7241d89eded7f71028ef3b242fce6e222e9bc18c2da",
+  "master_sha256": "787f34dbbd408c6bb232f7241d89eded7f71028ef3b242fce6e222e9bc18c2da",
+  "game_sha256": "ac97f989f9516bfea70b114f1c5e55980d106150f4d036b3ea0e49fa9ab1c00a",
+  "game_exposure_factor_srgb": 0.8279,
+  "managed_staging": "C:/Users/AAA/.codex/generated_images/01a0eb3d-4439-7d93-836c-3d488c9bfaa1/exec-00e35181-6e3d-4757-9f33-06496d08fb9f.png",
+  "inspection": "벽 공통 골조 허용. S3 R02의 얇은 비상 패널·배관 대신 흰 커넥터면을 갖는 세로 릴레이 오벨리스크를 베이에 넣었고 R01의 긴 해치와 구분. 문 SW/NE/SE, NW 폐쇄. 에이프런까지 실제 바닥 추적. 좌우 에이프런 여백 확보.",
+  "floor_area_px2": 475929.5,
+  "floor_area_fraction": 0.3024939746477584,
+  "floor_bounds_px": [
+    136,
+    228,
+    1522,
+    815
+  ],
+  "native_size_acceptance": {
+    "target_size": [
+      1672,
+      941
+    ],
+    "actual_size": [
+      1672,
+      941
+    ],
+    "tolerance_each_axis_px": 2,
+    "source": "2026-10-01 explicit user decision; no resize/crop/stretch"
+  },
+  "margin_acceptance": {
+    "date": "2026-10-01",
+    "source": "latest user decision: main >=5%, whole >=4%, boss dimensions include aprons",
+    "main_floor_minimum": 0.05,
+    "whole_floor_minimum": 0.04,
+    "prompt_target": 0.08,
+    "apron_polygons_px": {
+      "SW": [
+        [
+          317,
+          579
+        ],
+        [
+          136,
+          663
+        ],
+        [
+          299,
+          763
+        ],
+        [
+          470,
+          678
+        ]
+      ],
+      "NE": [
+        [
+          1073,
+          339
+        ],
+        [
+          1238,
+          256
+        ],
+        [
+          1260,
+          267
+        ],
+        [
+          1260,
+          396
+        ]
+      ],
+      "SE": [
+        [
+          1357,
+          591
+        ],
+        [
+          1522,
+          669
+        ],
+        [
+          1357,
+          771
+        ],
+        [
+          1199,
+          679
+        ]
+      ]
+    },
+    "main_floor_bounds_px": [
+      236,
+      228,
+      1450,
+      815
+    ],
+    "main_floor_margins_ltrb_fraction": [
+      0.14114832535885166,
+      0.24229543039319873,
+      0.13277511961722488,
+      0.1339001062699256
+    ],
+    "whole_floor_bounds_px": [
+      136,
+      228,
+      1522,
+      815
+    ],
+    "whole_floor_margins_ltrb_fraction": [
+      0.08133971291866028,
+      0.24229543039319873,
+      0.08971291866028708,
+      0.1339001062699256
+    ],
+    "main_floor_area_px2": 402455
+  },
+  "apron_stats": {
+    "SW": {
+      "luma": 0.23278146982192993,
+      "saturation": 0.03572638574250521,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "NE": {
+      "luma": 0.2197001576423645,
+      "saturation": 0.021853636555357596,
+      "sampling": "actual apron polygon inset 10%"
+    },
+    "SE": {
+      "luma": 0.21765932440757751,
+      "saturation": 0.03492475593523259,
+      "sampling": "actual apron polygon inset 10%"
+    }
+  }
+}

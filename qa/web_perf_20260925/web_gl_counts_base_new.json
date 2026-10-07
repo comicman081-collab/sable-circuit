@@ -1,0 +1,226 @@
+{
+  "builds": {
+    "base": "http://127.0.0.1:8801/index.html",
+    "new": "http://127.0.0.1:8804/index.html"
+  },
+  "rounds": 2,
+  "devtools_port": 8012,
+  "runs": [
+    {
+      "build": "base",
+      "url": "http://127.0.0.1:8801/index.html",
+      "tag": "gl1",
+      "ready_s": 8.2,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 59.4,
+        "frames": 237,
+        "p50_ms": 20,
+        "p95_ms": 20.1,
+        "max_ms": 30,
+        "over_33ms": 0,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 27.5,
+        "frames": 275,
+        "p50_ms": 30,
+        "p95_ms": 79.9,
+        "max_ms": 209.9,
+        "over_33ms": 106,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 26.9,
+        "frames": 161,
+        "p50_ms": 30,
+        "p95_ms": 80,
+        "max_ms": 170,
+        "over_33ms": 65,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8801/index.html",
+      "valid": true,
+      "gl_per_frame_late": {
+        "frames": 158,
+        "createVertexArray": 270.8,
+        "deleteVertexArray": 270.83,
+        "createBuffer": 390.23,
+        "deleteBuffer": 390.28,
+        "bufferData": 405.22,
+        "bufferSubData": 6,
+        "getParameter": 2,
+        "isEnabled": 0,
+        "drawElements": 0,
+        "drawArrays": 1,
+        "drawElementsInstanced": 248.28,
+        "drawArraysInstanced": 163.62
+      }
+    },
+    {
+      "build": "new",
+      "url": "http://127.0.0.1:8804/index.html",
+      "tag": "gl1",
+      "ready_s": 8.2,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 58.8,
+        "frames": 235,
+        "p50_ms": 20,
+        "p95_ms": 29.9,
+        "max_ms": 30.1,
+        "over_33ms": 0,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 59.4,
+        "frames": 594,
+        "p50_ms": 19.9,
+        "p95_ms": 30,
+        "max_ms": 90,
+        "over_33ms": 15,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 94.6,
+        "frames": 566,
+        "p50_ms": 10,
+        "p95_ms": 10.1,
+        "max_ms": 50.1,
+        "over_33ms": 4,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8804/index.html",
+      "valid": true,
+      "gl_per_frame_late": {
+        "frames": 567,
+        "createVertexArray": 106.84,
+        "deleteVertexArray": 106.84,
+        "createBuffer": 153.95,
+        "deleteBuffer": 153.94,
+        "bufferData": 168.72,
+        "bufferSubData": 6,
+        "getParameter": 1,
+        "isEnabled": 1,
+        "drawElements": 0,
+        "drawArrays": 1,
+        "drawElementsInstanced": 244.02,
+        "drawArraysInstanced": 161.79
+      }
+    },
+    {
+      "build": "new",
+      "url": "http://127.0.0.1:8804/index.html",
+      "tag": "gl2",
+      "ready_s": 8.2,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 49,
+        "frames": 196,
+        "p50_ms": 20,
+        "p95_ms": 30,
+        "max_ms": 30.1,
+        "over_33ms": 0,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 72.2,
+        "frames": 720,
+        "p50_ms": 10,
+        "p95_ms": 20.1,
+        "max_ms": 70,
+        "over_33ms": 7,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 93.2,
+        "frames": 559,
+        "p50_ms": 10,
+        "p95_ms": 12.5,
+        "max_ms": 59.8,
+        "over_33ms": 4,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8804/index.html",
+      "valid": true,
+      "gl_per_frame_late": {
+        "frames": 558,
+        "createVertexArray": 108.4,
+        "deleteVertexArray": 108.37,
+        "createBuffer": 157.4,
+        "deleteBuffer": 157.35,
+        "bufferData": 171.78,
+        "bufferSubData": 6,
+        "getParameter": 1,
+        "isEnabled": 1,
+        "drawElements": 0,
+        "drawArrays": 1,
+        "drawElementsInstanced": 242.89,
+        "drawArraysInstanced": 161.28
+      }
+    },
+    {
+      "build": "base",
+      "url": "http://127.0.0.1:8801/index.html",
+      "tag": "gl2",
+      "ready_s": 8.2,
+      "title_fps": {
+        "seconds": 4,
+        "fps": 52,
+        "frames": 207,
+        "p50_ms": 20,
+        "p95_ms": 29.9,
+        "max_ms": 30.1,
+        "over_33ms": 0,
+        "lost": 0
+      },
+      "field_fps_10s": {
+        "seconds": 10,
+        "fps": 16.6,
+        "frames": 165,
+        "p50_ms": 50.1,
+        "p95_ms": 119.9,
+        "max_ms": 160.1,
+        "over_33ms": 131,
+        "lost": 0
+      },
+      "field_fps_late_6s": {
+        "seconds": 6,
+        "fps": 20.7,
+        "frames": 124,
+        "p50_ms": 39.9,
+        "p95_ms": 120,
+        "max_ms": 170,
+        "over_33ms": 65,
+        "lost": 0
+      },
+      "context_lost": 0,
+      "final_url": "http://127.0.0.1:8801/index.html",
+      "valid": true,
+      "gl_per_frame_late": {
+        "frames": 124,
+        "createVertexArray": 270.73,
+        "deleteVertexArray": 270.56,
+        "createBuffer": 389.66,
+        "deleteBuffer": 389.33,
+        "bufferData": 404.48,
+        "bufferSubData": 6,
+        "getParameter": 2,
+        "isEnabled": 0,
+        "drawElements": 0,
+        "drawArrays": 1,
+        "drawElementsInstanced": 254.69,
+        "drawArraysInstanced": 166.23
+      }
+    }
+  ]
+}

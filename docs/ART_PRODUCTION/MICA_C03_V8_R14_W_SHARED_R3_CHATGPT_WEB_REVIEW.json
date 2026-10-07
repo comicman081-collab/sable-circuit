@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "role": "MICA C03 V8 R14 W shared-center R3 existing ChatGPT web cross-review",
+  "reviewed_at_utc": "2026-09-04T11:51:00Z",
+  "conversation": {
+    "url": "https://chatgpt.com/c/6a93c84f-fb1c-83e8-9d88-959e708b2463",
+    "reused_existing": true,
+    "service": "ChatGPT web",
+    "work_cloud_used": false
+  },
+  "evidence": {
+    "static": {
+      "path": "artifacts/mica_c03_v8_r14_w_shared_handoff_r3_review/MICA_C03_V8_R14_W_SHARED_R3_W_GAIT_REVIEW_2304X1080.png",
+      "sha256": "8104a2a4a478112aa672368629f44aa365b9d3f5c6fd4af7588b9ab3dfe46d45"
+    },
+    "fixed_video": {
+      "path": "artifacts/mica_c03_v8_r14_w_shared_handoff_r3_review/MICA_C03_V8_R14_W_SHARED_R3_FIXED_GRID_5S_1920X1080.mp4",
+      "sha256": "ca9f8f01e974345e7412cd8f3ef75fc569dace0f6e14ee9b76e14340c4f5219c"
+    },
+    "world_video": {
+      "path": "artifacts/mica_c03_v8_r14_w_shared_handoff_r3_review/MICA_C03_V8_R14_W_SHARED_R3_WORLD_GRID_5S_1920X1080.mp4",
+      "sha256": "1e798e03eb8153f0a9bf0caab95c63d3996e5928139d685fd85e2ea402dc5563"
+    },
+    "local_validator": "artifacts/mica_c03_v8_r14_e_w_shared_handoff_r3_recap_visual_evidence_validation.json"
+  },
+  "verdict": {
+    "A_gait_readability": "PASS",
+    "B_scale_and_volume": "PASS",
+    "C_ankle_boot_ground": "PASS",
+    "D_sole_lock_and_handoffs": "PASS",
+    "E_composite_stability": "PASS",
+    "F_pilot_scope_blocker": "PASS_NO_BLOCKER",
+    "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+    "w_direction_production_promotion": "HOLD",
+    "eight_direction_visual_runtime_promotion": "HOLD",
+    "prior_w_r1_r2_and_failed_evidence": "QUARANTINED_PRESERVE"
+  },
+  "final_state_code": "W_R14_SHARED_R3_GAIT_READABILITY=PASS W_R14_SHARED_R3_SCALE_AND_VOLUME_GATE=PASS W_R14_SHARED_R3_ANKLE_BOOT_GROUND_GATE=PASS W_R14_SHARED_R3_LEFT_SUPPORT_SOLE_LOCK=PASS W_R14_SHARED_R3_RIGHT_SUPPORT_SOLE_LOCK=PASS W_R14_SHARED_R3_MID_HANDOFF=PASS W_R14_SHARED_R3_WRAP_HANDOFF=PASS W_R14_SHARED_R3_HANDOFF_BALANCE=PASS W_R14_SHARED_R3_COMPOSITE_STABILITY=PASS W_R14_SHARED_R3_PILOT_GATE=PASS W_R14_SHARED_R3_CANDIDATE_STATE=UNREVIEWED_DO_NOT_PROMOTE W_DIRECTION_PRODUCTION_PROMOTION=HOLD EIGHT_DIRECTION_VISUAL_RUNTIME_PROMOTION=HOLD W_R1_R2_AND_PRIOR_FAILED_EVIDENCE=QUARANTINED_PRESERVE",
+  "deletion": {
+    "performed": false,
+    "reason": "Promotion remains HOLD; prior candidates and evidence remain quarantined under the global failed-asset policy."
+  }
+}

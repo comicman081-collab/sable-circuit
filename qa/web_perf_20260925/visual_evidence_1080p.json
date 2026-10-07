@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-25T09:39:34.581641+00:00",
+  "gate": "PASS",
+  "container_gate": "PASS",
+  "dynamic_capture_gate": "PASS",
+  "dynamic_capture_required": true,
+  "minimum_native_review_resolution": [
+    1920,
+    1080
+  ],
+  "scope": "review_container_resolution_and_decode_only",
+  "quality_claim": false,
+  "anti_upscale_note": "A PASS proves only a native-size review container. Source/master/runtime resolution and any scaling remain mandatory in the producing manifest.",
+  "evidence": [
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\.claude\\worktrees\\jovial-sammet-5a160f\\qa\\web_perf_20260925\\web_op1_field_base_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2422618,
+      "sha256": "6c6d3a16426811f0ada92aa627288926fe3d9447d4cb7ca514f806268b0c9931"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\.claude\\worktrees\\jovial-sammet-5a160f\\qa\\web_perf_20260925\\web_op1_field_final_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2235373,
+      "sha256": "e8a6fe506ef8f0a8483f1b6d3251db46d2c3e1ce1bf0153e10832c8b53821540"
+    },
+    {
+      "path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\.claude\\worktrees\\jovial-sammet-5a160f\\qa\\web_perf_20260925\\tools\\field_reference_1080p.png",
+      "error": null,
+      "kind": "image",
+      "evidence_class": "dynamic_or_authored_review_frame",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "decodable": true,
+      "native_1080p_container": true,
+      "size_bytes": 2239584,
+      "sha256": "a22caffca9bca1539fc1fc2e68bb9cc4cf19388b67de84e322fb75130b92ebf5"
+    }
+  ]
+}

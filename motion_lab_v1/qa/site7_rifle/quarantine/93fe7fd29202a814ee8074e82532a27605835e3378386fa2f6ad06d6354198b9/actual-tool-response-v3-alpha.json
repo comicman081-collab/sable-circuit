@@ -1,0 +1,59 @@
+{
+  "tool": "image_gen.imagegen",
+  "attempt": "v3_alpha",
+  "returnedPath": "C:\\Users\\AAA\\.codex\\generated_images\\01a09aa0-43f8-7190-b88c-a5318c96f39d\\exec-b620c09c-a002-426c-97a8-425bff317c87.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a09aa0-43f8-7190-b88c-a5318c96f39d as C:\\Users\\AAA\\.codex\\generated_images\\01a09aa0-43f8-7190-b88c-a5318c96f39d\\exec-b620c09c-a002-426c-97a8-425bff317c87.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "art/site7_rifle/S_walk_0_master_luna_20260913_v3_alpha.png",
+  "projectCopySHA256": "93fe7fd29202a814ee8074e82532a27605835e3378386fa2f6ad06d6354198b9",
+  "request": {
+    "character": "site7_rifle",
+    "slot": "S/walk/0",
+    "direction": "S",
+    "action": "walk",
+    "frame": 0,
+    "phaseName": "left_contact",
+    "reference": "art/site7_rifle/identity_reference.png",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "poseGuide": "reference/ual_guides/S_Walk_Loop_0.png",
+    "poseGuideSHA256": "bfc98ae8f3528ffd823bf9f470c130cbb67662f62b8c3d711e47307f7f3c0553",
+    "inputOrder": [
+      "reference/ual_guides/S_Walk_Loop_0.png",
+      "art/site7_rifle/identity_reference.png"
+    ],
+    "background": "transparent_alpha",
+    "alphaPolicy": "native RGBA PNG; background alpha 0; visible alpha 1..254; interior alpha 254; no green/chroma/keying/clamping",
+    "prompt": "Use case: stylized-concept\nAsset type: SABLE CIRCUIT SITE-7 rifle trooper authored motion source frame, native alpha master\nPrimary request: Create exactly one native high-resolution full-body RGBA PNG for the unfinished S/walk/0 source slot. Use input image 1 (S_Walk_Loop_0.png) only as the straight-front camera and lower-body gait/contact authority; ignore its mannequin arms and weapon. Use input image 2 (identity_reference.png) only as the appearance/identity authority; do not copy its side camera.\nPose and lower body: straight front camera. Walk phase is left contact: anatomical left foot is forward in contact, appearing on the viewer's right; anatomical right leg trails behind on the viewer's left. Match the guide's pelvis/root and two-leg contact geometry, with exactly two continuous hip-to-knee-to-ankle-to-boot chains. Keep both soles readable and the viewer-right/anatomical-left forward foot planted.\nUpper body and weapon: the torso faces the camera and the rifle is actively shouldered and aimed toward the camera, never carried vertically or pointed down. Buttstock is seated at the character's right shoulder (viewer left), right hand is the trigger hand on the grip, left hand supports the fore-end, and a short foreshortened front muzzle/barrel opening is visibly aimed toward the camera. Keep both hands attached to the same rifle and arms anatomically connected; do not use the guide's mannequin arm pose.\nAppearance: one adult human SITE-7 rifle trooper only, exact identity from input image 2: dark hooded tactical suit, visor, weathered silver armor with red markings, backpack/radio, right-only thigh holster, compact bullpup rifle materials and silhouette. Preserve the established hood, face/visor, armor plates, holster asymmetry, boots, gloves and weapon identity without adding characters or props.\nComposition/framing: complete figure from hood and antenna to both boot soles, centered with generous margins; entire rifle, muzzle, hood and both boots inside canvas; subject at least 1300 pixels tall.\nAlpha and background (hard requirement): deliver an actual native RGBA PNG. Every background pixel must have alpha 0. Subject-visible pixels may have alpha 1 through 254 only, with solid-looking interior pixels at alpha 254; no alpha 255 anywhere. No green/chroma background, no checkerboard, no backdrop, no matte, no floor, no cast shadow, no glow, no reflection, no text, no panel, no border, no watermark, and no alpha clamping or keyed substitute. Preserve the generated alpha exactly.\nAnatomy/continuity: exactly one character, two connected anatomical legs, no extra knee, shin, calf, foot, duplicate limb, fused leg, detached boot or hidden third branch. Keep the right-only holster and armor continuity readable. Do not crop or redraw after generation."
+  },
+  "rawInspection": {
+    "path": "art/site7_rifle/S_walk_0_master_luna_20260913_v3_alpha.png",
+    "size": [1024, 1536],
+    "mode": "RGB",
+    "format": "PNG",
+    "bytes": 2119253,
+    "alphaMin": 255,
+    "alphaMax": 255,
+    "alphaUniqueCount": 1,
+    "transparentPixels": 0,
+    "visiblePixels": 1572864,
+    "partialAlphaPixels": 0,
+    "alpha255Pixels": 1572864,
+    "visibleAlpha254Fraction": 0.0,
+    "exactGreenPixels": 0,
+    "subjectBBox": [0, 0, 1024, 1536],
+    "subjectHeight": 1536
+  },
+  "sourceAlphaPolicy": {
+    "command": "source_alpha_policy.py --source art/site7_rifle/S_walk_0_master_luna_20260913_v3_alpha.png",
+    "status": "FAIL",
+    "error": "NATIVE_ALPHA_REQUIRED: returned master must be an actual RGBA PNG; RGB, green and painted checkerboard are rejected",
+    "exitCode": 1
+  },
+  "status": "HOLD",
+  "intake": "NOT_RUN",
+  "prepareSlotReview": "NOT_RUN",
+  "sourceReview": "NOT_RUN",
+  "runtimeReview": "NOT_RUN",
+  "delivery": "NOT_RUN"
+}

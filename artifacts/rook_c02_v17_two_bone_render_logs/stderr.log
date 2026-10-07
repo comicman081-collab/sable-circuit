@@ -1,0 +1,14 @@
+D:\AI 종합 폴더\Games\Sable-circuit\tools\character_pipeline\render_fast_motion_blender_ual.py:189: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material.use_nodes = True
+Traceback (most recent call last):
+  File "D:\AI 종합 폴더\Games\Sable-circuit\tools\character_pipeline\render_fast_motion_blender_ual.py", line 761, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "D:\AI 종합 폴더\Games\Sable-circuit\tools\character_pipeline\render_fast_motion_blender_ual.py", line 707, in main
+    rig = build_subject_rig(rgb, mask, direction)
+  File "D:\AI 종합 폴더\Games\Sable-circuit\tools\character_pipeline\render_fast_motion_blender_ual.py", line 339, in build_subject_rig
+    full_plane = build_subject_plane(rgb_path, mask_path, "ROOK_FAST_UAL_STATIC_MASTER")
+  File "D:\AI 종합 폴더\Games\Sable-circuit\tools\character_pipeline\render_fast_motion_blender_ual.py", line 216, in build_subject_plane
+    separate = nodes.new("ShaderNodeSeparateRGB")
+RuntimeError: Error: Node type ShaderNodeSeparateRGB undefined
+

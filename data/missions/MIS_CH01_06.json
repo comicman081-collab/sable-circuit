@@ -1,0 +1,384 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "mission_id": "MIS_CH01_06",
+  "chapter_id": "CH01",
+  "title": "VERDANT LOCK",
+  "zone": "Site-7 Hydroponic Wing",
+  "objectives": [
+    {
+      "id": "OBJ_VERDANT_AIRLOCK",
+      "kind": "PRIMARY",
+      "source_room": "R01_AIRLOCK",
+      "title": "Cycle the hydro airlock",
+      "prerequisites": [],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_VERDANT_GALLERY",
+      "kind": "PRIMARY",
+      "source_room": "R02_GALLERY",
+      "title": "Clear the planter gallery",
+      "prerequisites": [
+        "OBJ_VERDANT_AIRLOCK"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_VERDANT_LAB",
+      "kind": "PRIMARY",
+      "source_room": "R03_LAB",
+      "title": "Recover the germination log",
+      "prerequisites": [
+        "OBJ_VERDANT_GALLERY"
+      ],
+      "required_for_extraction": true
+    },
+    {
+      "id": "OBJ_VERDANT_PUMPS",
+      "kind": "DEEP",
+      "source_room": "R04_PUMPS",
+      "title": "Break the irrigation pump line",
+      "prerequisites": [
+        "OBJ_VERDANT_LAB"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_VERDANT_AERATOR",
+      "kind": "BOSS",
+      "source_room": "R05_ATRIUM",
+      "title": "Silence the aerator tower",
+      "prerequisites": [
+        "OBJ_VERDANT_PUMPS"
+      ],
+      "required_for_extraction": false
+    },
+    {
+      "id": "OBJ_VERDANT_EXIT",
+      "kind": "PRIMARY",
+      "source_room": "R06_LIFT",
+      "title": "Extract by the seed lift",
+      "prerequisites": [
+        "OBJ_VERDANT_AERATOR"
+      ],
+      "required_for_extraction": false
+    }
+  ],
+  "main_route": [
+    {
+      "id": "R01_AIRLOCK",
+      "objective_id": "OBJ_VERDANT_AIRLOCK",
+      "type": "EVENT",
+      "title": "Hydro Airlock",
+      "x": 280,
+      "y": 560,
+      "objective": "Cycle the hydro airlock",
+      "story": "The wing's outer lock cycles open by itself. The air beyond is warm and wet, and every grow lamp is still lit.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 32
+        }
+      ]
+    },
+    {
+      "id": "R02_GALLERY",
+      "objective_id": "OBJ_VERDANT_GALLERY",
+      "encounter_id": "ENC_VERDANT_GALLERY_01",
+      "type": "COMBAT",
+      "title": "Planter Gallery",
+      "x": 660,
+      "y": 240,
+      "objective": "Clear the planter gallery",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 1
+        },
+        {
+          "type": "SPORE_CLOUD",
+          "count": 1
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "health": 220,
+          "offset_x": 218,
+          "offset_y": 96
+        },
+        {
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "health": 148,
+          "offset_x": 298,
+          "offset_y": -20
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 196,
+          "offset_x": 222,
+          "offset_y": -108
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 114,
+          "offset_x": 262,
+          "offset_y": 24
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 44
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 170
+          },
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 196
+          },
+          {
+            "enemy_id": "ENM_SITE7_BULWARK_01",
+            "health": 254
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 114
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R03_LAB",
+      "objective_id": "OBJ_VERDANT_LAB",
+      "type": "RESEARCH",
+      "title": "Germination Lab",
+      "x": 1040,
+      "y": 560,
+      "objective": "Recover the germination log",
+      "story": "The germination log shows the answer signal broadcast through the wing's antenna beds, one bed for every relay.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 54
+        },
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 30
+        }
+      ]
+    },
+    {
+      "id": "R04_PUMPS",
+      "objective_id": "OBJ_VERDANT_PUMPS",
+      "encounter_id": "ENC_VERDANT_PUMPS_01",
+      "type": "ELITE",
+      "title": "Irrigation Pumps",
+      "x": 1420,
+      "y": 240,
+      "objective": "Break the irrigation pump line",
+      "hazards": [
+        {
+          "type": "ARC_VENT",
+          "count": 1
+        },
+        {
+          "type": "SPORE_CLOUD",
+          "count": 1
+        }
+      ],
+      "encounter": [
+        {
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "affix": "SHIELDED",
+          "health": 220,
+          "offset_x": 212,
+          "offset_y": 64
+        },
+        {
+          "enemy_id": "ENM_SITE7_NULL_PYLON_01",
+          "health": 220,
+          "offset_x": 302,
+          "offset_y": 90
+        },
+        {
+          "enemy_id": "ENM_SITE7_MORTAR_01",
+          "affix": "BROODING",
+          "health": 148,
+          "offset_x": 292,
+          "offset_y": -96
+        },
+        {
+          "enemy_id": "ENM_SITE7_RAM_01",
+          "affix": "OVERCHARGED",
+          "health": 170,
+          "offset_x": 250,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 52
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 196
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "affix": "VOLATILE",
+            "health": 114
+          },
+          {
+            "enemy_id": "ENM_SITE7_BULWARK_01",
+            "health": 254
+          },
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 196
+          }
+        ]
+      ],
+      "reinforce_at": 2
+    },
+    {
+      "id": "R05_ATRIUM",
+      "objective_id": "OBJ_VERDANT_AERATOR",
+      "encounter_id": "ENC_VERDANT_ATRIUM_01",
+      "type": "BOSS",
+      "title": "Grow Atrium",
+      "x": 1800,
+      "y": 560,
+      "objective": "Silence the aerator tower",
+      "encounter": [
+        {
+          "enemy_id": "BOSS_SITE7_AERATOR_01",
+          "health": 1560,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_PRISM_01",
+          "health": 156,
+          "offset_x": 240,
+          "offset_y": 0
+        },
+        {
+          "enemy_id": "ENM_SITE7_DRONE_01",
+          "health": 114,
+          "offset_x": 240,
+          "offset_y": 0
+        }
+      ],
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 130
+        }
+      ],
+      "reinforcements": [
+        [
+          {
+            "enemy_id": "ENM_SITE7_RAM_01",
+            "health": 170
+          },
+          {
+            "enemy_id": "ENM_SITE7_PRISM_01",
+            "health": 156
+          }
+        ],
+        [
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 114
+          },
+          {
+            "enemy_id": "ENM_SITE7_DRONE_01",
+            "health": 106
+          }
+        ]
+      ],
+      "reinforce_at": 1
+    },
+    {
+      "id": "R06_LIFT",
+      "objective_id": "OBJ_VERDANT_EXIT",
+      "type": "EXTRACTION",
+      "title": "Seed Lift",
+      "x": 2180,
+      "y": 240,
+      "objective": "Extract by the seed lift",
+      "story": "The aerator is silent and the wing is going dark. The seed-pallet lift is the only way back up.",
+      "loot": []
+    }
+  ],
+  "optional_rooms": [
+    {
+      "id": "O01_STORES",
+      "from": "R01_AIRLOCK",
+      "objective_id": "OBJ_VERDANT_SUPPLY",
+      "type": "SUPPLY",
+      "title": "Seed Stores",
+      "x": 280,
+      "y": 800,
+      "reward": "cold_chain_supplies",
+      "story": "Cold-chain seed lockers still hold sealed field rations and spare salvage.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_COMMON",
+          "quantity": 34
+        },
+        {
+          "loot_id": "LOT_SALVAGE_FIELD",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "id": "O02_NURSERY",
+      "from": "R03_LAB",
+      "objective_id": "OBJ_VERDANT_RESEARCH",
+      "type": "RESEARCH",
+      "title": "Antenna Nursery",
+      "x": 1040,
+      "y": 800,
+      "objective": "Read the antenna beds",
+      "reward": "answer_map",
+      "story": "Rows of antenna masts grow in the raised beds. Each one repeats the answer signal a fraction of a second late.",
+      "loot": [
+        {
+          "loot_id": "LOT_RESEARCH_HIGH_VALUE",
+          "quantity": 68
+        },
+        {
+          "loot_id": "LOT_SIGNAL_FRAGMENT",
+          "quantity": 3
+        },
+        {
+          "loot_id": "LOT_INTEL_MECHANICAL",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "extraction_offer_room_ids": [
+    "R03_LAB",
+    "R04_PUMPS",
+    "R05_ATRIUM"
+  ],
+  "enemy_roster_revision": 4,
+  "new_enemy_ids": [
+    "BOSS_SITE7_AERATOR_01"
+  ]
+}

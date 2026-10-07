@@ -1,0 +1,37 @@
+{
+ "suite": "custom",
+ "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+ "started": "2026-10-03T15:19:42",
+ "git_head": "cce3e6244c07783ff555cf04761e955f6ba34f38",
+ "git_dirty": 4,
+ "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+ "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+ "workers": 1,
+ "seconds": 112,
+ "overall": "FAIL",
+ "guard": {
+  "changed": [],
+  "removed": [],
+  "added": []
+ },
+ "results": [
+  {
+   "test": "cover_navigation",
+   "status": "FAIL",
+   "seconds": 19.7,
+   "exit_code": 1,
+   "checks": 41,
+   "status_line": "COVER_NAVIGATION_SMOKE: FAIL / 41 checks",
+   "notes": []
+  },
+  {
+   "test": "nav_pockets",
+   "status": "PASS",
+   "seconds": 75.8,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "NAV_POCKET_AUDIT: PASS (0 dead-end cells in 0 of 30 rooms, cell 12 px)",
+   "notes": []
+  }
+ ]
+}

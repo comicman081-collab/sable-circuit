@@ -1,0 +1,25 @@
+{
+  "kind": "agent-summary-of-actually-observed-external-review-not-verbatim",
+  "conversation": "https://chatgpt.com/c/6aa629cc-15f0-83ee-996c-b42d58eefe91",
+  "observedLocalTime": "2026-09-13 19:34 KST",
+  "responseProcessingTimeObserved": "9m 49s",
+  "packageSHA256": "f562ebce285598b42a52875ecac8f60b230ef90a714c2aa26e1878837979b90a",
+  "decision": "R9-H01_AND_R9-H02_CLOSED_IN_REQUESTED_SCOPE",
+  "additionalFixesRequested": [],
+  "closed": {
+    "R9-H01": "Same prior counterexample now selects E whole-cycle review for pending/stale E, E repair preserves source-art versus timing scope, explicit source repairs and incomplete E sources retain priority.",
+    "R9-H02": "Cycle and source-slot actions propagate to both shared commands; actual prepare-cycle argparse/dispatch calls preserve run; idle intentionally maps to walk. Same counterexample dispatches walk on round9 and run on round10."
+  },
+  "externalReviewerReportedDirectChecks": {
+    "frozenFileHashesMatchedBeforeAndAfter": 5,
+    "unchangedPreviousRoutingConditionsPassed": 10,
+    "additionalScopeAndPriorityConditionsPassed": 9,
+    "actualPrepareCLIParserDispatchCalls": 10,
+    "fixtures": "Controlled source/cycle state; only artifact generation replaced by a callback recording arguments."
+  },
+  "notIndependentlyRerunByExternalReviewer": ["Full local 105-test suite", "Godot", "Real source ledger validation", "Whole-cycle validator", "Compiler", "Preview video creation", "Luna end-to-end generation"],
+  "localEvidenceAcknowledgedSeparately": "105 tests / 196.860 seconds / OK",
+  "R8ClosureMaintained": true,
+  "artOrMVPApproval": false,
+  "lunaReproductionApproval": false
+}

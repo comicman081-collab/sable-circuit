@@ -1,0 +1,242 @@
+{
+  "scope": "SABLE CIRCUIT current Motion Studio; new/changed source originals",
+  "policy": "native_rgba_alpha_0_254_v1",
+  "requirements": {
+    "mode": "RGBA PNG",
+    "alpha": [
+      0,
+      254
+    ],
+    "backgroundAlpha": 0,
+    "nearOpaqueInteriorAlpha": 254,
+    "greenGeneration": false,
+    "greenFallback": false,
+    "localAlphaClampOrKeyAsNativeOriginal": false,
+    "userAuthorizedGreenBridge": "bridge-only fallback: quarantine input -> existing GPT web alpha conversion -> native-alpha gate; never direct intake"
+  },
+  "implementation": {
+    "newMasterChecks": [
+      "intake_frame.py",
+      "intake_pair.py",
+      "character_workflow.py source_status/review-source",
+      "source_alpha_policy.py project-owned reference guard"
+    ],
+    "retiredIntake": "intake_derived_frame.py: new chroma intake raises before writing; historical verifier retained",
+    "currentRequestManifests": [
+      "site7_rifle",
+      "aster",
+      "rook"
+    ],
+    "historicalMica": "No request file exists; next scaffold/intake uses common policy.",
+    "preservedCycleSignatures": {
+      "E": "f0d5bdfc5037074cb408a56ad57ba1d15c5a6ec3e19567002f030f48f2b6af3e",
+      "SE": "25d56a87f61fd90496d537c014e1085946f5b764bf01ba58586b8424bf2eb8fc"
+    },
+    "approvedRifleSources": 14,
+    "webAlphaBridge": {
+      "helper": "motion_lab_v1/web_alpha_bridge.py",
+      "intake": "motion_lab_v1/intake_web_alpha.py",
+      "status": "implemented_and_tested",
+      "sourcePolicy": "green candidate remains quarantine-only; no local keying"
+    }
+  },
+  "checks": {
+    "sourceAlpha": 12,
+    "workflow": 30,
+    "reuseHandoff": 30,
+    "historicalDerivative": 4,
+    "webAlphaBridge": 5,
+    "webAlphaIntake": 3,
+    "focusedPolicyTotal": 84,
+    "total": 84,
+    "skillValidation": "Skill is valid!",
+    "focusedPolicySuite": {
+      "command": "python -m unittest motion_lab_v1.tests.test_web_alpha_bridge motion_lab_v1.tests.test_web_alpha_intake motion_lab_v1.tests.test_source_alpha_policy motion_lab_v1.tests.test_reuse_improvements -v",
+      "tests": 50,
+      "status": "PASS"
+    },
+    "fullMotionLabSuite": {
+      "command": "python -m unittest discover -s motion_lab_v1/tests -p 'test_*.py' -v",
+      "tests": 135,
+      "elapsedSeconds": 174.992,
+      "status": "PASS"
+    }
+  },
+  "actualNativeSourceProbe": {
+    "chunk_id": "a60b17",
+    "wall_time_seconds": 0.6134417,
+    "exit_code": 0,
+    "original_token_count": 98,
+    "output": "{\"policy\": \"native_rgba_alpha_0_254_v1\", \"status\": \"PASS_ALPHA_FORMAT_ONLY\", \"sourceSHA256\": \"7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096\", \"native\": [1024, 1536], \"mode\": \"RGBA\", \"alphaMin\": 0, \"alphaMax\": 254, \"transparentPixels\": 1030520, \"visiblePixels\": 542344, \"cornerAlpha\": [0, 0, 0, 0], \"nearOpaqueVisibleFraction\": 0.9143145309987757, \"visualApproved\": false}\r\n"
+  },
+  "actualGreenRejection": {
+    "chunk_id": "c35700",
+    "wall_time_seconds": 0.5914901,
+    "exit_code": 1,
+    "original_token_count": 144,
+    "output": "Traceback (most recent call last):\r\n  File \"D:\\AI ���� ����\\Games\\Sable-circuit\\motion_lab_v1\\source_alpha_policy.py\", line 77, in <module>\r\n    print(json.dumps(inspect_master(args.source)))\r\n  File \"D:\\AI ���� ����\\Games\\Sable-circuit\\motion_lab_v1\\source_alpha_policy.py\", line 36, in inspect_master\r\n    raise ValueError('NATIVE_ALPHA_REQUIRED: returned master must be an actual RGBA PNG; RGB, green and painted checkerboard are rejected')\r\nValueError: NATIVE_ALPHA_REQUIRED: returned master must be an actual RGBA PNG; RGB, green and painted checkerboard are rejected\r\n"
+  },
+  "webAlphaConversion": {
+    "conversationUrl": "https://chatgpt.com/c/6aa629cc-15f0-83ee-996c-b42d58eefe91",
+    "input": {
+      "path": "motion_lab_v1/qa/site7_rifle/quarantine/970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584/S_walk_0_master_luna_max_20260913_v6_green_bridge.png",
+      "sha256": "970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584",
+      "native": [1024, 1536]
+    },
+    "attemptsReceipt": "motion_lab_v1/qa/site7_rifle/qa/web_alpha_returns/gpt-web-alpha-conversion-attempts-20260913.json",
+    "attemptsReceiptSHA256": "a24d0bcc9f04ab6e1cbc979d44ad7de39c95aef2828ff9bf8ec113d7a8653c4f",
+    "attempts": [
+      {
+        "attempt": 1,
+        "assetId": "0a6d8a3022776b04",
+        "projectCopy": "motion_lab_v1/qa/site7_rifle/qa/web_alpha_returns/S_walk_0_master_gpt_web_alpha_20260913.png",
+        "projectCopySHA256": "c1b7dee0fb4c4b99d413dc88ae91a6819a6cc012ac2a2298853e8aa4f470cf44",
+        "native": [1024, 1536],
+        "mode": "RGBA",
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "gate": "FAIL_VISUAL_IDENTITY_REGENERATED"
+      },
+      {
+        "attempt": 2,
+        "assetId": "7214fd5b32084610",
+        "filename": "S_walk_0_RGBA.png",
+        "projectCopy": "motion_lab_v1/qa/site7_rifle/qa/web_alpha_returns/S_walk_0_master_gpt_web_alpha_20260913_retry.png",
+        "projectCopySHA256": "d24481c094994df4cbcc49aad1013227687d86b5307d2af07175a80d8f62125f",
+        "native": [1024, 1536],
+        "mode": "RGBA",
+        "alphaMin": 255,
+        "alphaMax": 255,
+        "transparentPixels": 0,
+        "gate": "FAIL_NATIVE_ALPHA_REQUIRED"
+      }
+    ],
+    "intake": "FORBIDDEN",
+    "runtimePromotion": "FORBIDDEN",
+    "status": "WEB_ALPHA_CONVERSION_FAILED_HOLD"
+  },
+  "quarantine": [
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\31ec49e4d3396c2bb22638cbcde31100d30ccb049f24373bd112e632fa284033\\S_walk_0_master_luna_20260913_v1.png",
+      "SHA256": "31ec49e4d3396c2bb22638cbcde31100d30ccb049f24373bd112e632fa284033"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\31ec49e4d3396c2bb22638cbcde31100d30ccb049f24373bd112e632fa284033\\actual-tool-response.json",
+      "SHA256": "a8bef7a7670f198365d159259c84824dd2a6bdc658bed55da535833255ea7918"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\0fc275ec6958d633f45f29e0f8a79049fa4c0bcd995bb252a7725297dbb376ac\\S_walk_0_master_luna_20260913_v2_green.png",
+      "SHA256": "a240ddaaa3513ba7f0492b7137f27c48a582ddd79df53c172ddae1cadf8c78cf"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\0fc275ec6958d633f45f29e0f8a79049fa4c0bcd995bb252a7725297dbb376ac\\actual-tool-response-attempt2.json",
+      "SHA256": "407c687ae29cd416e71fda27aa95671f67a678bf8402f8eb0cbad1913fd054ba"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\0fc275ec6958d633f45f29e0f8a79049fa4c0bcd995bb252a7725297dbb376ac\\S_walk_0_master_luna_20260913_v2_normalization.json",
+      "SHA256": "4d631ed0e3174182934ad421c10b74a5cd4efd319e727e7dab811add00ea6942"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\0fc275ec6958d633f45f29e0f8a79049fa4c0bcd995bb252a7725297dbb376ac\\S_walk_0_master_luna_20260913_v2_mask.png",
+      "SHA256": "0de25e7a043a3b9ed7dd2cc053c9e307fd4249f084fec843deeee9ab1c7dc770"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\0fc275ec6958d633f45f29e0f8a79049fa4c0bcd995bb252a7725297dbb376ac\\visual-inspection.json",
+      "SHA256": "065606c30f2467e82faf17170d41fb2e67da04effca78e1ea5746c88da4b0db3"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\93fe7fd29202a814ee8074e82532a27605835e3378386fa2f6ad06d6354198b9\\S_walk_0_master_luna_20260913_v3_alpha.png",
+      "SHA256": "93fe7fd29202a814ee8074e82532a27605835e3378386fa2f6ad06d6354198b9"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\93fe7fd29202a814ee8074e82532a27605835e3378386fa2f6ad06d6354198b9\\actual-tool-response-v3-alpha.json",
+      "SHA256": "6dea14fc4015c22520d8f4def633b7f21d2a9a1acdddb1144bb9e765c483915a"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\290192c8f75124804e13cb7013eefef9afa429af9698277e8b96b85deaa64cc5\\S_walk_0_master_luna_max_20260913_v4_mixed.png",
+      "SHA256": "290192c8f75124804e13cb7013eefef9afa429af9698277e8b96b85deaa64cc5"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\290192c8f75124804e13cb7013eefef9afa429af9698277e8b96b85deaa64cc5\\actual-tool-response-luna-max-v4.json",
+      "SHA256": "d626233b87037fe3a44c9c1b2dd6df14e688a6fc3a92cd6369fed53ea6b3a830"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\0d5569f84f877bf0e40a34a20a1666b85ddcd051ea5046793b9e2443d2551ce7\\S_walk_0_master_luna_max_20260913_v5_edit.png",
+      "SHA256": "0d5569f84f877bf0e40a34a20a1666b85ddcd051ea5046793b9e2443d2551ce7"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\0d5569f84f877bf0e40a34a20a1666b85ddcd051ea5046793b9e2443d2551ce7\\actual-tool-response-luna-max-v5-edit.json",
+      "SHA256": "41b893b4480cba9b9f5cd5e4b2eb65c5cffd31f29cfab42161f8a4315ca773b3"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584\\S_walk_0_master_luna_max_20260913_v6_green_bridge.png",
+      "SHA256": "970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584\\actual-tool-response-luna-max-v6-green.json",
+      "SHA256": "7defc81c3d04c0da694ffab4315ce2a00637bdc8fcf654969188364959751dfd"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\quarantine\\970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584\\web-alpha-bridge-manifest-v2.json",
+      "SHA256": "0b726e6244f4b7c402af2247e7d781db2ed926d9fe0d59bdb01a29dd309d46d0"
+    }
+  ],
+  "webAlphaReturns": [
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\qa\\web_alpha_returns\\S_walk_0_master_gpt_web_alpha_20260913.png",
+      "SHA256": "c1b7dee0fb4c4b99d413dc88ae91a6819a6cc012ac2a2298853e8aa4f470cf44",
+      "status": "FAIL_VISUAL_IDENTITY_REGENERATED"
+    },
+    {
+      "Path": "D:\\AI 종합 폴더\\Games\\Sable-circuit\\motion_lab_v1\\qa\\site7_rifle\\qa\\web_alpha_returns\\S_walk_0_master_gpt_web_alpha_20260913_retry.png",
+      "SHA256": "d24481c094994df4cbcc49aad1013227687d86b5307d2af07175a80d8f62125f",
+      "status": "FAIL_NATIVE_ALPHA_REQUIRED"
+    }
+  ],
+  "artStatus": "S/walk/0 remains repair-only. Luna Max v6 green bridge was preserved in quarantine; both authorized GPT web alpha-conversion attempts failed (first regenerated a different soldier, second retained opaque green). No intake, source review, cycle approval or runtime promotion.",
+  "gptReviewScope": "The existing GPT web planning conversation was used only for the user-authorized alpha-conversion bridge. It did not approve this source, motion cycle, runtime, MVP or Luna end-to-end generation.",
+  "lunaEndToEndPassed": false,
+  "projectReferenceGuard": {
+    "helper": "motion_lab_v1/source_alpha_policy.py:require_project_reference",
+    "scope": "appearance and pose inputs",
+    "managedStagingAllowedOnlyFor": "newly returned output before project copy",
+    "tests": "test_source_alpha_policy.py::test_generation_references_must_be_project_owned"
+  },
+  "actualLunaMaxAttempt": {
+    "character": "site7_rifle",
+    "slot": "S/walk/0",
+    "workerModel": "gpt-5.6-luna",
+    "reasoningEffort": "max",
+    "status": "HOLD_NOT_INTAKED",
+    "sourceSHA256": "290192c8f75124804e13cb7013eefef9afa429af9698277e8b96b85deaa64cc5",
+    "responseSHA256": "d626233b87037fe3a44c9c1b2dd6df14e688a6fc3a92cd6369fed53ea6b3a830",
+    "raw": "PNG 1024x1536 RGB opaque; native alpha absent",
+    "sourceAlphaGate": "FAIL NATIVE_ALPHA_REQUIRED",
+    "intake": "NOT_RUN",
+    "additionalGenerationAuthorized": false
+  },
+  "actualLunaMaxEditAttempt": {
+    "character": "site7_rifle",
+    "slot": "S/walk/0",
+    "workerModel": "gpt-5.6-luna",
+    "reasoningEffort": "max",
+    "status": "HOLD_NOT_INTAKED",
+    "sourceSHA256": "0d5569f84f877bf0e40a34a20a1666b85ddcd051ea5046793b9e2443d2551ce7",
+    "responseSHA256": "41b893b4480cba9b9f5cd5e4b2eb65c5cffd31f29cfab42161f8a4315ca773b3",
+    "raw": "PNG 1024x1536 RGB opaque; native alpha absent",
+    "sourceAlphaGate": "FAIL NATIVE_ALPHA_REQUIRED",
+    "referenceOrder": [
+      "art/site7_rifle/identity_reference.png",
+      "reference/ual_guides/S_Walk_Loop_0.png"
+    ],
+    "intake": "NOT_RUN",
+    "additionalGenerationAuthorized": false
+  },
+  "currentHandoff": {
+    "path": "motion_lab_v1/qa/site7_rifle/handoffs/20260913_235056_718689.json",
+    "inputSHA256": "472c7db44a5c7f7dbe765fe3a83904af9ecca6cdf33058536b8774b4a7be430c",
+    "verify": "CURRENT_HANDOFF",
+    "nextAction": "REPAIR_REPORTED_SOURCE",
+    "nextSource": "S/walk/0"
+  }
+}

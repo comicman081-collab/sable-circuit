@@ -1,0 +1,320 @@
+{
+  "kind": "sable-cycle-observation",
+  "character": "rook",
+  "direction": "SE",
+  "action": "walk",
+  "inputs": {
+    "character": "rook",
+    "direction": "SE",
+    "action": "walk",
+    "recipe": {
+      "path": "characters/rook.json",
+      "sha256": "daeeff8ebd7f363fccba4dd8beab824acfdcc4faa26bc8bdafdd8292ece164c9"
+    },
+    "identity": {
+      "path": "art/rook/identity_reference.png",
+      "sha256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a"
+    },
+    "contractSHA256": "4ae6c752df2dfa70f87766809da10f694a8fc53bcebff95345677d8e2e8b1192",
+    "compilerSHA256": "fc6948f478b92952e99abc1667f8f85c15d0e77db4c38da7fbb0eb922ae2d8ac",
+    "reviewCodeSHA256": "f30af549dc7097a296aa3c1f197fa5f4a586f995ece077f3c15cc712145292ab",
+    "sources": [
+      {
+        "slot": "SE/walk/0",
+        "path": "art/rook/SE_walk_0_master.png",
+        "sha256": "c3bb7f5d4dae25c62e6319f670d00bfd6395476896e83d49e001e8d861781468"
+      },
+      {
+        "slot": "SE/walk/1",
+        "path": "art/rook/SE_walk_1_master.png",
+        "sha256": "62b3df1143ce2fc7033ed935d5787a0ec96a7269d6189360c904a17a063f009f"
+      },
+      {
+        "slot": "SE/walk/2",
+        "path": "art/rook/SE_walk_2_master.png",
+        "sha256": "2ee1228011e8b5b34a92cda6c3d1ae33ed27f66a26389af7bcb39d1d2b40f336"
+      },
+      {
+        "slot": "SE/walk/3",
+        "path": "art/rook/SE_walk_3_master.png",
+        "sha256": "3a7f59bcd1780a661be074a08fd75f0178443f1061801ca155825e15dcd751fc"
+      },
+      {
+        "slot": "SE/walk/4",
+        "path": "art/rook/SE_walk_4_master.png",
+        "sha256": "3d6c5a5751b9855b500e991c012da322a07dea5a03bba5bc9d2c8bc2b04f0ac3"
+      },
+      {
+        "slot": "SE/walk/5",
+        "path": "art/rook/SE_walk_5_master.png",
+        "sha256": "876772a663afadfcfddfcf5586c0bf3e02f110b9a2fbcb0c2533fa33858c3ecc"
+      }
+    ]
+  },
+  "preview": {
+    "path": "qa/rook/gait/b758e1f5cbea490d_d5575df6/cycle-preview.json",
+    "sha256": "06daa277b3888a8c329164d5ab2ec3d68a4c7eec64a53664e4af2968a9e64116"
+  },
+  "decision": "approved",
+  "reviewer": "Astra — direct native sheet tracing, live 1x playback and sequential decoded video",
+  "legMarkers": {
+    "left": "Clean anatomical left thigh, without paired cylinders; follow knee and boot even when far leg overlaps in passing.",
+    "right": "Paired black gold-ended ammo canisters on anatomical right thigh; near leg's tilt and knee identify it, not screen x alone."
+  },
+  "frames": [
+    {
+      "index": 0,
+      "phase": "left_contact",
+      "support": "double",
+      "landmarks": {
+        "leftHip": [
+          424,
+          365
+        ],
+        "leftKnee": [
+          460,
+          490
+        ],
+        "leftSole": [
+          515,
+          705
+        ],
+        "rightHip": [
+          347,
+          366
+        ],
+        "rightKnee": [
+          324,
+          481
+        ],
+        "rightSole": [
+          280,
+          599
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "phase": "right_swing",
+      "support": "left",
+      "landmarks": {
+        "leftHip": [
+          425,
+          365
+        ],
+        "leftKnee": [
+          436,
+          489
+        ],
+        "leftSole": [
+          438,
+          704
+        ],
+        "rightHip": [
+          356,
+          368
+        ],
+        "rightKnee": [
+          340,
+          491
+        ],
+        "rightSole": [
+          228,
+          571
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "phase": "right_passing",
+      "support": "left",
+      "landmarks": {
+        "leftHip": [
+          435,
+          365
+        ],
+        "leftKnee": [
+          420,
+          458
+        ],
+        "leftSole": [
+          391,
+          664
+        ],
+        "rightHip": [
+          370,
+          365
+        ],
+        "rightKnee": [
+          402,
+          497
+        ],
+        "rightSole": [
+          366,
+          703
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "phase": "right_contact",
+      "support": "double",
+      "landmarks": {
+        "leftHip": [
+          413,
+          362
+        ],
+        "leftKnee": [
+          359,
+          505
+        ],
+        "leftSole": [
+          332,
+          590
+        ],
+        "rightHip": [
+          367,
+          378
+        ],
+        "rightKnee": [
+          412,
+          489
+        ],
+        "rightSole": [
+          458,
+          702
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "phase": "left_swing",
+      "support": "right",
+      "landmarks": {
+        "leftHip": [
+          423,
+          364
+        ],
+        "leftKnee": [
+          377,
+          504
+        ],
+        "leftSole": [
+          302,
+          586
+        ],
+        "rightHip": [
+          369,
+          372
+        ],
+        "rightKnee": [
+          408,
+          492
+        ],
+        "rightSole": [
+          438,
+          704
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "phase": "left_passing",
+      "support": "right",
+      "landmarks": {
+        "leftHip": [
+          424,
+          365
+        ],
+        "leftKnee": [
+          459,
+          480
+        ],
+        "leftSole": [
+          426,
+          631
+        ],
+        "rightHip": [
+          364,
+          368
+        ],
+        "rightKnee": [
+          373,
+          497
+        ],
+        "rightSole": [
+          383,
+          704
+        ]
+      }
+    }
+  ],
+  "observations": {
+    "oppositeContacts": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.68,
+        1.28,
+        1.88
+      ],
+      "notes": "Clean left boot extends forward in 0; the canister-connected right boot extends forward in 3. Distinct anatomical exchange, despite both silhouettes having one screen-left trailing foot."
+    },
+    "passingAndSwing": {
+      "decision": "pass",
+      "seconds": [
+        0.28,
+        0.48,
+        0.88,
+        1.08
+      ],
+      "notes": "Right rear swing transitions into close crossed right passing; left rear swing transitions into left passing. Passing2 far support leg partly occluded; knee and boot edge remain traceable, so this is not a duplicated standing image."
+    },
+    "loopSeam": {
+      "decision": "pass",
+      "seconds": [
+        1.08,
+        1.28,
+        2.28,
+        2.48
+      ],
+      "notes": "Left passing returns into wide left contact without a repeated same-foot step. Discrete six-image cadence remains."
+    },
+    "footSliding": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.28,
+        0.48,
+        0.68
+      ],
+      "notes": "Support leg changes from forward extended to beneath pelvis while ground translates, then swaps. No whole-cycle rigid stance. Six-frame holds retain small intra-hold slip; not claiming continuous IK foot pinning."
+    },
+    "bodyContinuity": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.28,
+        0.48,
+        0.68
+      ],
+      "notes": "Connected full-body illustration with stable white bob, short cape and belt. Contact3 is narrower due to crossing/occlusion; no split waist. Minor pouch/kneeplate detail variations remain at native scale."
+    },
+    "weaponContinuity": {
+      "decision": "pass",
+      "seconds": [
+        0.08,
+        0.48,
+        0.88,
+        1.08
+      ],
+      "notes": "Same double muzzle shoulder-aimed down-right shotgun, stable two-hand grip, near-constant muzzle height. No lowered-gun fire pose or green residual region."
+    }
+  },
+  "annotationMethod": {
+    "coordinates": "Direct manual observations on native 2304x1536 compiled sheet; each 768x768 cell locally indexed. Occluded left passing2 knee inferred at visible trouser contour; visible sole edge used.",
+    "videoSamples": "qa/rook/astra_repair_20260913/SE_final_cycle_samples/samples.json",
+    "scope": "Source cycle only, not game runtime approval.",
+    "currentPreview": "Reobserved current bound video at 1x, 1920x1080 and all 35 sequential samples after S/N muzzle recipe revision; unchanged SE source landmarks reused."
+  }
+}

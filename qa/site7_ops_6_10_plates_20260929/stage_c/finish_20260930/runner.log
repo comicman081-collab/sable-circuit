@@ -1,0 +1,8 @@
+Godot 리소스 가져오기(스크립트 변경)...
+  가져오기: PASS
+실행 폴더: qa/regression_runs/20260930_161555_custom | 테스트 4개
+[ 1/4] PASS         world_layout              -     10s  SITE7_WORLD_LAYOUT PASS 8 missions
+[ 2/4] PASS         mood_light                -     54s  SITE7_MOOD_LIGHT PASS 120 plates 620 pools 120 void masks 15 contact shadows
+[ 3/4] TIMEOUT      connector_alignment       -    900s  
+[ 4/4] PASS         battle_geometry        3988     20s  SITE7_BATTLE_GEOMETRY_SMOKE: PASS (3988 checks)
+REGRESSION_SUITE: FAIL (3/4 PASS) -> qa/regression_runs/20260930_161555_custom/SUMMARY_KO.md

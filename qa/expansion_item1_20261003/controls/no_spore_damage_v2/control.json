@@ -1,0 +1,9 @@
+{
+  "name": "no_spore_damage_v2",
+  "path": "scripts/combat/zone_hazard.gd",
+  "before_sha256": "e4da9515baa27cfb4150ee84d1adac8e936f1141d70e9774381b99308893450e",
+  "after_sha256": "0abbc6734e37a188b8565904cd0af9bb36c3eb876299e23a25f50b302b267dfe",
+  "mutation": "func _continuous_damage(delta: float) -> void:\n    if delta <= 0.0: return",
+  "expected": "FAIL, not SCRIPT_ERROR",
+  "resources": "read-only junction inputs; no import command runs in this copy"
+}

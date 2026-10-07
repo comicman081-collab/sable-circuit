@@ -1,0 +1,53 @@
+{
+  "gate": "PASS",
+  "scope": "three v2 plates and the C01-v2/R02-v2 join only; v1-involved joins are reference-only by stage0 contract",
+  "plates": [
+    {
+      "asset": "assets/environments/site7_v2/stage01/S1_R02/S1_R02_GAME.png",
+      "luma": 0.21219150722026825,
+      "p10": 0.17489412426948547,
+      "p90": 0.24620786309242249,
+      "saturation": 0.010432564472990017,
+      "hue": 147.25232162266343,
+      "axis": 26.1126661955377,
+      "problems": []
+    },
+    {
+      "asset": "assets/environments/site7_v2/stage01/S1_C01/S1_C01_GAME.png",
+      "luma": 0.21009033918380737,
+      "p10": 0.1628509759902954,
+      "p90": 0.24474117159843445,
+      "saturation": 0.009565388680579674,
+      "hue": 143.7742952373234,
+      "axis": 27.199026065677078,
+      "problems": []
+    },
+    {
+      "asset": "assets/environments/site7_v2/stage01/S1_C06/S1_C06_GAME.png",
+      "luma": 0.20933853089809418,
+      "p10": 0.16163529455661774,
+      "p90": 0.24543923139572144,
+      "saturation": 0.003942327028075822,
+      "hue": 10.876574895687117,
+      "axis": 28.75112536839295,
+      "problems": []
+    }
+  ],
+  "new_to_new_seam": {
+    "connector": "C0",
+    "asset": "assets/environments/site7_v2/stage01/S1_C01/S1_C01_GAME.png",
+    "room": "R02_CORRIDOR",
+    "mirror": false,
+    "cells": 72,
+    "step": -0.11430490644316361,
+    "deck_saturation": 0.1021258549244786,
+    "room_saturation": 0.0184276841243213,
+    "deck_hue": -37.36197913044253,
+    "room_hue": 133.49934766296872,
+    "hue_gap": 170.86132679341125,
+    "problems": []
+  },
+  "whole_mission_result": "FAIL",
+  "whole_mission_off_target_count": 21,
+  "user_visual_approval": false
+}

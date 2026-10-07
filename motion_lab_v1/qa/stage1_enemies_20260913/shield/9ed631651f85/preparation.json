@@ -1,0 +1,34 @@
+{
+  "id": "shield",
+  "status": "CANDIDATE_NOT_REVIEWED",
+  "source": "art\\site7_enemies_raw\\shield_master.png",
+  "sourceSHA256": "9ed631651f858922d9483bf84f2ef8b354033174ddda49717745a069491f3e1e",
+  "toolResponse": {
+    "path": "qa\\stage1_enemies_20260913\\shield_master_tool_response.json",
+    "sha256": "962125389b75d177b652b6f454f1a0f89f8f6aec0befb8acb156c944edc766c3"
+  },
+  "sourceNative": [
+    1024,
+    1536
+  ],
+  "box": [
+    94,
+    4,
+    800,
+    1468
+  ],
+  "candidate": "qa\\stage1_enemies_20260913\\shield\\9ed631651f85\\candidate_rgba.png",
+  "candidateSHA256": "a6e1ee7030b8c7fbdb72aef71d16664df5cb675b96725dee73b887c577b71c0e",
+  "candidateNative": [
+    706,
+    1464
+  ],
+  "native_review": [
+    1920,
+    1080
+  ],
+  "operation": "existing key_image chroma/alpha separation then native crop only",
+  "resampling": false,
+  "anatomicalWarp": false,
+  "runtimePromotion": false
+}

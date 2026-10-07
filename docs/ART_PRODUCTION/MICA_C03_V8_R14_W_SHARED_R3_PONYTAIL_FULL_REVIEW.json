@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "reviewer": "Ponytail FULL",
+  "project": "SABLE CIRCUIT",
+  "reviewed_at_utc": "2026-09-04",
+  "revision": "V8_R14_W_SHARED_R3",
+  "evidence": {
+    "static": {
+      "path": "artifacts/mica_c03_v8_r14_w_shared_handoff_r3_review/MICA_C03_V8_R14_W_SHARED_R3_W_GAIT_REVIEW_2304X1080.png",
+      "sha256": "8104a2a4a478112aa672368629f44aa365b9d3f5c6fd4af7588b9ab3dfe46d45"
+    },
+    "fixed_video": {
+      "path": "artifacts/mica_c03_v8_r14_w_shared_handoff_r3_review/MICA_C03_V8_R14_W_SHARED_R3_FIXED_GRID_5S_1920X1080.mp4",
+      "sha256": "ca9f8f01e974345e7412cd8f3ef75fc569dace0f6e14ee9b76e14340c4f5219c"
+    },
+    "world_video": {
+      "path": "artifacts/mica_c03_v8_r14_w_shared_handoff_r3_review/MICA_C03_V8_R14_W_SHARED_R3_WORLD_GRID_5S_1920X1080.mp4",
+      "sha256": "1e798e03eb8153f0a9bf0caab95c63d3996e5928139d685fd85e2ea402dc5563"
+    }
+  },
+  "verdict": {
+    "A_gait_readability": "PASS",
+    "B_scale_and_volume": "PASS",
+    "C_ankle_boot_ground": "PASS",
+    "D_sole_lock_and_handoffs": "PASS",
+    "E_composite_stability": "PASS",
+    "F_pilot_scope": "HOLD",
+    "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+    "w_direction_production_promotion": "HOLD",
+    "eight_direction_visual_runtime_promotion": "HOLD"
+  },
+  "notes": [
+    "Actual continuous frames show alternating W-side gait, stable sole locks and balanced handoffs; no blocker was found within the pilot scope.",
+    "Minor flat heel/toe roll and low swing clearance are non-blocking polish only; do not reintroduce non-uniform scale or cross-leg weighting."
+  ],
+  "preservation": {
+    "prior_r1_r2_and_failed_evidence": "QUARANTINED_PRESERVE",
+    "deletion_performed": false,
+    "retirement_manifest_required_before_disposal": true
+  }
+}

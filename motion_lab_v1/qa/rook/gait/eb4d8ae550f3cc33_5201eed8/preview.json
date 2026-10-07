@@ -1,0 +1,88 @@
+{
+  "sourceDigest": "eb4d8ae550f3cc330bbd41dbd998b71aa1c190a6356aff1fa44e1b1ed7859d32",
+  "sourceFrames": [
+    {
+      "path": "art\\rook\\SE_idle_0_master.png",
+      "sha256": "fa07e085d9c1691b14babb719b72a7542435654c123f82485421b7eaf1029585"
+    }
+  ],
+  "nativeEvidence": [
+    [
+      2128,
+      1626
+    ]
+  ],
+  "pixelUpscaling": false,
+  "pairEvidence": [
+    "qa\\rook\\gait\\eb4d8ae550f3cc33_5201eed8\\SE_idle_pair0_native_2128x1626.png"
+  ],
+  "clip": {
+    "image": "assets/atlas/rook/SE_idle.webp",
+    "cell": [
+      768,
+      768
+    ],
+    "columns": 1,
+    "frames": 1,
+    "root": [
+      384,
+      716
+    ],
+    "height": 656,
+    "authoredFrames": 1,
+    "muzzles": [
+      [
+        522.2590679526329,
+        242.3221320360899
+      ]
+    ],
+    "sources": [
+      {
+        "source": "art/rook/SE_idle_0_master.png",
+        "sha256": "fa07e085d9c1691b14babb719b72a7542435654c123f82485421b7eaf1029585",
+        "native": [
+          1024,
+          1536
+        ],
+        "bounds": [
+          154,
+          22,
+          907,
+          1481
+        ],
+        "hipX": 498.5,
+        "scale": 0.44962302947224125,
+        "matrix": [
+          [
+            0.4496230185031891,
+            0.0,
+            159.8629150390625
+          ],
+          [
+            0.0,
+            0.4496230185031891,
+            50.10829162597656
+          ]
+        ],
+        "muzzle": [
+          522.2590679526329,
+          242.3221320360899
+        ],
+        "opaqueGreenPixels": 0,
+        "alphaBounds": [
+          [
+            229.10485988855362,
+            59.99999803304672
+          ],
+          [
+            567.670992821455,
+            715.9999820291996
+          ]
+        ]
+      }
+    ]
+  },
+  "sequence": "qa\\rook\\gait\\eb4d8ae550f3cc33_5201eed8\\reference\\atlas\\rook\\SE_idle.gif",
+  "contact": "qa\\rook\\gait\\eb4d8ae550f3cc33_5201eed8\\reference\\atlas\\rook\\SE_idle_keyframes.png",
+  "visualApproval": false
+}

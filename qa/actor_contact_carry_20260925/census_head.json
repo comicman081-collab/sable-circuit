@@ -1,0 +1,110 @@
+{
+ "build": "95efd37ad (unmodified)",
+ "timing": "real time, five missions run in parallel",
+ "missions": {
+  "MIS_CH01_01": {
+   "by_rider": {},
+   "config": {
+    "motion_mode": 0,
+    "platform_floor_layers": 4294967295,
+    "platform_on_leave": 0
+   },
+   "longest_rides": [],
+   "mission": "MIS_CH01_01",
+   "outcome": "EXTRACTED",
+   "physics_hz": 60,
+   "physics_ticks": 7317,
+   "rides": 0,
+   "robot_attack_ticks_carried": 0
+  },
+  "MIS_CH01_02": {
+   "by_rider": {},
+   "config": {
+    "motion_mode": 0,
+    "platform_floor_layers": 4294967295,
+    "platform_on_leave": 0
+   },
+   "longest_rides": [],
+   "mission": "MIS_CH01_02",
+   "outcome": "EXTRACTED",
+   "physics_hz": 60,
+   "physics_ticks": 7697,
+   "rides": 0,
+   "robot_attack_ticks_carried": 0
+  },
+  "MIS_CH01_03": {
+   "by_rider": {},
+   "config": {
+    "motion_mode": 0,
+    "platform_floor_layers": 4294967295,
+    "platform_on_leave": 0
+   },
+   "longest_rides": [],
+   "mission": "MIS_CH01_03",
+   "outcome": "EXTRACTED",
+   "physics_hz": 60,
+   "physics_ticks": 7929,
+   "rides": 0,
+   "robot_attack_ticks_carried": 0
+  },
+  "MIS_CH01_04": {
+   "by_rider": {
+    "operator (follower)": {
+     "carried_px": 25.67,
+     "carried_ticks": 3,
+     "floor_ticks": 7,
+     "floors": {
+      "robot ENM_SITE7_RAM_01": 7
+     },
+     "max_step_px": 23.21
+    }
+   },
+   "config": {
+    "motion_mode": 0,
+    "platform_floor_layers": 4294967295,
+    "platform_on_leave": 0
+   },
+   "longest_rides": [
+    {
+     "floor": "robot ENM_SITE7_RAM_01",
+     "max_speed": 1392.3,
+     "px": 23.21,
+     "rider": "operator (follower)",
+     "step": 4,
+     "tick": 6445,
+     "ticks": 1
+    },
+    {
+     "floor": "robot ENM_SITE7_RAM_01",
+     "max_speed": 107.2,
+     "px": 2.46,
+     "rider": "operator (follower)",
+     "step": 4,
+     "tick": 6465,
+     "ticks": 2
+    }
+   ],
+   "mission": "MIS_CH01_04",
+   "outcome": "EXTRACTED",
+   "physics_hz": 60,
+   "physics_ticks": 7772,
+   "rides": 2,
+   "robot_attack_ticks_carried": 0
+  },
+  "MIS_CH01_05": {
+   "by_rider": {},
+   "config": {
+    "motion_mode": 0,
+    "platform_floor_layers": 4294967295,
+    "platform_on_leave": 0
+   },
+   "longest_rides": [],
+   "mission": "MIS_CH01_05",
+   "outcome": "EXTRACTED",
+   "physics_hz": 60,
+   "physics_ticks": 8027,
+   "rides": 0,
+   "robot_attack_ticks_carried": 0
+  }
+ }
+}

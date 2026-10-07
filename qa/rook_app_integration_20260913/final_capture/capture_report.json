@@ -1,0 +1,117 @@
+{
+  "failures": [],
+  "input": "Input.parse_input_event and live regular Godot renderer; not physical keyboard testing",
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "stages": [
+    {
+      "ammo_after": 7,
+      "ammo_before": 9,
+      "diagonal_delta": [
+        45.53759765625,
+        45.5376281738281
+      ],
+      "reloading": true,
+      "runtime": {
+        "action": "idle",
+        "active": true,
+        "character_id": "rook",
+        "direction": "E",
+        "directions": 8,
+        "display_height_px": 129.6,
+        "display_scale": 0.197560975609756,
+        "frame": 0,
+        "ground_anchor_local": "(0.0, 0.0)",
+        "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911",
+        "muzzle_global": "(672.9048, 424.7189)",
+        "phase": 0.747499777376651,
+        "profile_path": "res://motion_lab_v1/public/assets/atlas/rook/profile.json",
+        "run_cycle_distance": 195.0,
+        "sector": 0,
+        "status": "active",
+        "walk_cycle_distance": 160.0,
+        "whole_body_fire_policy": "shared_walk_or_idle_frame"
+      },
+      "stage": 1,
+      "walk_frames": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "ammo_after": 7,
+      "ammo_before": 9,
+      "diagonal_delta": [
+        45.53759765625,
+        45.53759765625
+      ],
+      "reloading": true,
+      "runtime": {
+        "action": "idle",
+        "active": true,
+        "character_id": "rook",
+        "direction": "E",
+        "directions": 8,
+        "display_height_px": 129.6,
+        "display_scale": 0.197560975609756,
+        "frame": 0,
+        "ground_anchor_local": "(0.0, 0.0)",
+        "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911",
+        "muzzle_global": "(640.9075, 310.3008)",
+        "phase": 0.574999158084393,
+        "profile_path": "res://motion_lab_v1/public/assets/atlas/rook/profile.json",
+        "run_cycle_distance": 195.0,
+        "sector": 0,
+        "status": "active",
+        "walk_cycle_distance": 160.0,
+        "whole_body_fire_policy": "shared_walk_or_idle_frame"
+      },
+      "stage": 2,
+      "walk_frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "ammo_after": 7,
+      "ammo_before": 9,
+      "diagonal_delta": [
+        45.53759765625,
+        45.53759765625
+      ],
+      "reloading": true,
+      "runtime": {
+        "action": "idle",
+        "active": true,
+        "character_id": "rook",
+        "direction": "NE",
+        "directions": 8,
+        "display_height_px": 129.6,
+        "display_scale": 0.197560975609756,
+        "frame": 0,
+        "ground_anchor_local": "(0.0, 0.0)",
+        "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911",
+        "muzzle_global": "(620.319, 293.1053)",
+        "phase": 0.646874016523361,
+        "profile_path": "res://motion_lab_v1/public/assets/atlas/rook/profile.json",
+        "run_cycle_distance": 195.0,
+        "sector": 7,
+        "status": "active",
+        "walk_cycle_distance": 160.0,
+        "whole_body_fire_policy": "shared_walk_or_idle_frame"
+      },
+      "stage": 3,
+      "walk_frames": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "status": "PASS_INPUT_AND_CAPTURE_ONLY"
+}

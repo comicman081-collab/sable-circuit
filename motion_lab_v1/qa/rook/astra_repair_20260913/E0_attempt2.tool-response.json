@@ -1,0 +1,13 @@
+{
+  "tool": "image_gen.imagegen",
+  "returnedPath": "C:/Users/AAA/.codex/generated_images/01a086a7-e4ef-7d23-99b9-7afc5fb60942/exec-b9bc87ca-5e3e-4ae8-b83f-aa6b10e22339.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a086a7-e4ef-7d23-99b9-7afc5fb60942 as C:\\Users\\AAA\\.codex\\generated_images\\01a086a7-e4ef-7d23-99b9-7afc5fb60942\\exec-b9bc87ca-5e3e-4ae8-b83f-aa6b10e22339.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "prompt": "Use case: identity-preserve. Single ROOK full-body animation frame, native 1024x1536.\nImage 1: take ONLY THE LEFT FIGURE as the POSE TARGET. Discard its right figure. The LEFT FIGURE has the ammo canisters on its BACKWARD leg, with the clean leg forward. Preserve this exact LEFT FIGURE leg configuration and exact anatomical attachment of the canisters.\nImage 2: appearance/upper-body/camera authority for the finished frame. Match this slimmer upright ROOK, white bob, mature face, cape shape, detailed black-and-gold shotgun held horizontally shoulder-aimed right, same clothing, boots and proportions. Do not copy image 2's bent rear knee; use image 1 LEFT FIGURE's two-foot CONTACT pose.\nImage 3: pose-only guide, again ONLY ITS LEFT FIGURE, to reinforce backward NEAR thigh and forward FAR leg. Never show guide colors or mannequin geometry.\nOnly modest normal walking stride. Near/right canister thigh slopes BACKWARD to screen left, near canister knee and boot are BEHIND the hip on screen left; clean far/left leg planted FORWARD to screen right. Do not place canisters over forward thigh. The rear boot heel is slightly lifted while toe remains at ground; forward boot planted. No running, lunge or crouch.\nFlat completely uniform pure green #00FF00 backdrop. NO transparency checkerboard. NO gradients, shadows or ground. One whole character only, all boots and muzzle within margin; no words or markings.",
+  "inputReferences": [
+    "qa/rook/luna_repair_20260913/green_attempt_02/E_walk_pair0_normalized.png",
+    "art/rook/E_walk_1_master.png",
+    "reference/ual_guides/E_walk_pair0.png"
+  ]
+}

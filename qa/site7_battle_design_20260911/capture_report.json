@@ -1,0 +1,589 @@
+{
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "stages": [
+    {
+      "art": {
+        "combat_plate_lock": "R02_CORRIDOR",
+        "connector_plate_count": 7,
+        "continuous_route_preserved": true,
+        "max_visible_plates": 1,
+        "procedural_fallback_active": false,
+        "production_assets_available": true,
+        "room_plate_count": 8,
+        "selected_mission_id": "MIS_CH01_01",
+        "traversal_selection": "spatial_nearest_with_hysteresis",
+        "uncropped_continuity_overscan": true,
+        "world_anchored_opaque_segment_streaming": true
+      },
+      "aster_runtime": {
+        "action": "idle",
+        "active": true,
+        "character_id": "aster",
+        "direction": "E",
+        "directions": 8,
+        "display_height_px": 129.6,
+        "display_scale": 0.197560975609756,
+        "frame": 0,
+        "ground_anchor_local": "(0.0, 0.0)",
+        "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911",
+        "muzzle_global": "(729.8882, 353.8409)",
+        "phase": 0.137499344348907,
+        "profile_path": "res://motion_lab_v1/public/assets/atlas/aster/profile.json",
+        "run_cycle_distance": 195.0,
+        "sector": 0,
+        "status": "active",
+        "walk_cycle_distance": 160.0,
+        "whole_body_fire_policy": "shared_walk_or_idle_frame"
+      },
+      "diagonal_delta": [
+        15.55615234375,
+        15.556396484375
+      ],
+      "encounter_step": 1,
+      "floor": {
+        "active": true,
+        "body_depth_sort": true,
+        "ground_before_gait_commit": true,
+        "room_id": "R02_CORRIDOR",
+        "vertices": 4,
+        "world_polygon": [
+          "(205.7888, 397.784)",
+          "(715.4848, 101.5232)",
+          "(1212.438, 302.216)",
+          "(779.1968, 703.6016)"
+        ]
+      },
+      "live_shots": 1,
+      "mission": "MIS_CH01_01",
+      "native_capture": true,
+      "streaming": {
+        "opacities": {
+          "ENV_S01_DECON": 1.0
+        },
+        "visible_ids": [
+          "ENV_S01_DECON"
+        ]
+      }
+    },
+    {
+      "art": {
+        "combat_plate_lock": "R04_CONTAINMENT",
+        "connector_plate_count": 7,
+        "continuous_route_preserved": true,
+        "max_visible_plates": 1,
+        "procedural_fallback_active": false,
+        "production_assets_available": true,
+        "room_plate_count": 8,
+        "selected_mission_id": "MIS_CH01_01",
+        "traversal_selection": "spatial_nearest_with_hysteresis",
+        "uncropped_continuity_overscan": true,
+        "world_anchored_opaque_segment_streaming": true
+      },
+      "aster_runtime": {
+        "action": "idle",
+        "active": true,
+        "character_id": "aster",
+        "direction": "E",
+        "directions": 8,
+        "display_height_px": 129.6,
+        "display_scale": 0.197560975609756,
+        "frame": 0,
+        "ground_anchor_local": "(0.0, 0.0)",
+        "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911",
+        "muzzle_global": "(1547.565, 348.3849)",
+        "phase": 0.275000834465027,
+        "profile_path": "res://motion_lab_v1/public/assets/atlas/aster/profile.json",
+        "run_cycle_distance": 195.0,
+        "sector": 0,
+        "status": "active",
+        "walk_cycle_distance": 160.0,
+        "whole_body_fire_policy": "shared_walk_or_idle_frame"
+      },
+      "diagonal_delta": [
+        15.556640625,
+        15.556396484375
+      ],
+      "encounter_step": 3,
+      "floor": {
+        "active": true,
+        "body_depth_sort": true,
+        "ground_before_gait_commit": true,
+        "room_id": "R04_CONTAINMENT",
+        "vertices": 4,
+        "world_polygon": [
+          "(1023.395, 458.1344)",
+          "(1793.853, 106.6976)",
+          "(2023.638, 223.8432)",
+          "(1226.147, 620.336)"
+        ]
+      },
+      "live_shots": 1,
+      "mission": "MIS_CH01_01",
+      "native_capture": true,
+      "streaming": {
+        "opacities": {
+          "ENV_S01_CONTAINMENT": 1.0
+        },
+        "visible_ids": [
+          "ENV_S01_CONTAINMENT"
+        ]
+      }
+    },
+    {
+      "art": {
+        "combat_plate_lock": "R05_CORE",
+        "connector_plate_count": 7,
+        "continuous_route_preserved": true,
+        "max_visible_plates": 1,
+        "procedural_fallback_active": false,
+        "production_assets_available": true,
+        "room_plate_count": 8,
+        "selected_mission_id": "MIS_CH01_01",
+        "traversal_selection": "spatial_nearest_with_hysteresis",
+        "uncropped_continuity_overscan": true,
+        "world_anchored_opaque_segment_streaming": true
+      },
+      "aster_runtime": {
+        "action": "idle",
+        "active": true,
+        "character_id": "aster",
+        "direction": "E",
+        "directions": 8,
+        "display_height_px": 129.6,
+        "display_scale": 0.197560975609756,
+        "frame": 0,
+        "ground_anchor_local": "(0.0, 0.0)",
+        "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911",
+        "muzzle_global": "(1896.756, 539.4526)",
+        "phase": 0.41250125169754,
+        "profile_path": "res://motion_lab_v1/public/assets/atlas/aster/profile.json",
+        "run_cycle_distance": 195.0,
+        "sector": 0,
+        "status": "active",
+        "walk_cycle_distance": 160.0,
+        "whole_body_fire_policy": "shared_walk_or_idle_frame"
+      },
+      "diagonal_delta": [
+        15.556640625,
+        15.55615234375
+      ],
+      "encounter_step": 4,
+      "floor": {
+        "active": true,
+        "body_depth_sort": true,
+        "ground_before_gait_commit": true,
+        "room_id": "R05_CORE",
+        "vertices": 6,
+        "world_polygon": [
+          "(1355.28, 576.88)",
+          "(2166.16, 207.64)",
+          "(2484.72, 424.84)",
+          "(2325.44, 685.48)",
+          "(2006.88, 815.8)",
+          "(1673.84, 870.1)"
+        ]
+      },
+      "live_shots": 1,
+      "mission": "MIS_CH01_01",
+      "native_capture": true,
+      "streaming": {
+        "opacities": {
+          "ENV_S01_CORE": 1.0
+        },
+        "visible_ids": [
+          "ENV_S01_CORE"
+        ]
+      }
+    },
+    {
+      "art": {
+        "combat_plate_lock": "R02_MAINTENANCE",
+        "connector_plate_count": 7,
+        "continuous_route_preserved": true,
+        "max_visible_plates": 1,
+        "procedural_fallback_active": false,
+        "production_assets_available": true,
+        "room_plate_count": 8,
+        "selected_mission_id": "MIS_CH01_02",
+        "traversal_selection": "spatial_nearest_with_hysteresis",
+        "uncropped_continuity_overscan": true,
+        "world_anchored_opaque_segment_streaming": true
+      },
+      "aster_runtime": {
+        "action": "idle",
+        "active": true,
+        "character_id": "aster",
+        "direction": "E",
+        "directions": 8,
+        "display_height_px": 129.6,
+        "display_scale": 0.197560975609756,
+        "frame": 0,
+        "ground_anchor_local": "(0.0, 0.0)",
+        "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911",
+        "muzzle_global": "(693.9745, 231.0808)",
+        "phase": 0.137499344348907,
+        "profile_path": "res://motion_lab_v1/public/assets/atlas/aster/profile.json",
+        "run_cycle_distance": 195.0,
+        "sector": 0,
+        "status": "active",
+        "walk_cycle_distance": 160.0,
+        "whole_body_fire_policy": "shared_walk_or_idle_frame"
+      },
+      "diagonal_delta": [
+        15.55615234375,
+        15.556396484375
+      ],
+      "encounter_step": 1,
+      "floor": {
+        "active": true,
+        "body_depth_sort": true,
+        "ground_before_gait_commit": true,
+        "room_id": "R02_MAINTENANCE",
+        "vertices": 4,
+        "world_polygon": [
+          "(130.3104, 521.5472)",
+          "(1086.694, -58.1088)",
+          "(1263.258, 49.54161)",
+          "(365.728, 587.7936)"
+        ]
+      },
+      "live_shots": 1,
+      "mission": "MIS_CH01_02",
+      "native_capture": true,
+      "streaming": {
+        "opacities": {
+          "ENV_S02_MAINTENANCE": 1.0
+        },
+        "visible_ids": [
+          "ENV_S02_MAINTENANCE"
+        ]
+      }
+    },
+    {
+      "art": {
+        "combat_plate_lock": "R04_QUARANTINE",
+        "connector_plate_count": 7,
+        "continuous_route_preserved": true,
+        "max_visible_plates": 1,
+        "procedural_fallback_active": false,
+        "production_assets_available": true,
+        "room_plate_count": 8,
+        "selected_mission_id": "MIS_CH01_02",
+        "traversal_selection": "spatial_nearest_with_hysteresis",
+        "uncropped_continuity_overscan": true,
+        "world_anchored_opaque_segment_streaming": true
+      },
+      "aster_runtime": {
+        "action": "idle",
+        "active": true,
+        "character_id": "aster",
+        "direction": "E",
+        "directions": 8,
+        "display_height_px": 129.6,
+        "display_scale": 0.197560975609756,
+        "frame": 0,
+        "ground_anchor_local": "(0.0, 0.0)",
+        "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911",
+        "muzzle_global": "(1453.975, 231.0808)",
+        "phase": 0.275000834465027,
+        "profile_path": "res://motion_lab_v1/public/assets/atlas/aster/profile.json",
+        "run_cycle_distance": 195.0,
+        "sector": 0,
+        "status": "active",
+        "walk_cycle_distance": 160.0,
+        "whole_body_fire_policy": "shared_walk_or_idle_frame"
+      },
+      "diagonal_delta": [
+        15.556640625,
+        15.556396484375
+      ],
+      "encounter_step": 3,
+      "floor": {
+        "active": true,
+        "body_depth_sort": true,
+        "ground_before_gait_commit": true,
+        "room_id": "R04_QUARANTINE",
+        "vertices": 4,
+        "world_polygon": [
+          "(860.8832, 513.2664)",
+          "(1861.408, -33.26639)",
+          "(2023.258, 66.1032)",
+          "(1111.014, 579.5128)"
+        ]
+      },
+      "live_shots": 1,
+      "mission": "MIS_CH01_02",
+      "native_capture": true,
+      "streaming": {
+        "opacities": {
+          "ENV_S02_QUARANTINE": 1.0
+        },
+        "visible_ids": [
+          "ENV_S02_QUARANTINE"
+        ]
+      }
+    },
+    {
+      "art": {
+        "combat_plate_lock": "R05_RELAY",
+        "connector_plate_count": 7,
+        "continuous_route_preserved": true,
+        "max_visible_plates": 1,
+        "procedural_fallback_active": false,
+        "production_assets_available": true,
+        "room_plate_count": 8,
+        "selected_mission_id": "MIS_CH01_02",
+        "traversal_selection": "spatial_nearest_with_hysteresis",
+        "uncropped_continuity_overscan": true,
+        "world_anchored_opaque_segment_streaming": true
+      },
+      "aster_runtime": {
+        "action": "idle",
+        "active": true,
+        "character_id": "aster",
+        "direction": "E",
+        "directions": 8,
+        "display_height_px": 129.6,
+        "display_scale": 0.197560975609756,
+        "frame": 0,
+        "ground_anchor_local": "(0.0, 0.0)",
+        "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911",
+        "muzzle_global": "(1761.076, 590.6026)",
+        "phase": 0.41250125169754,
+        "profile_path": "res://motion_lab_v1/public/assets/atlas/aster/profile.json",
+        "run_cycle_distance": 195.0,
+        "sector": 0,
+        "status": "active",
+        "walk_cycle_distance": 160.0,
+        "whole_body_fire_policy": "shared_walk_or_idle_frame"
+      },
+      "diagonal_delta": [
+        15.556640625,
+        15.55615234375
+      ],
+      "encounter_step": 4,
+      "floor": {
+        "active": true,
+        "body_depth_sort": true,
+        "ground_before_gait_commit": true,
+        "room_id": "R05_RELAY",
+        "vertices": 6,
+        "world_polygon": [
+          "(1382.0, 672.92)",
+          "(2000.64, 362.39)",
+          "(2284.88, 475.31)",
+          "(2151.12, 691.74)",
+          "(1783.28, 870.53)",
+          "(1465.6, 832.89)"
+        ]
+      },
+      "live_shots": 1,
+      "mission": "MIS_CH01_02",
+      "native_capture": true,
+      "streaming": {
+        "opacities": {
+          "ENV_S02_RELAY": 1.0
+        },
+        "visible_ids": [
+          "ENV_S02_RELAY"
+        ]
+      }
+    },
+    {
+      "art": {
+        "combat_plate_lock": "R02_DEFENSE",
+        "connector_plate_count": 7,
+        "continuous_route_preserved": true,
+        "max_visible_plates": 1,
+        "procedural_fallback_active": false,
+        "production_assets_available": true,
+        "room_plate_count": 8,
+        "selected_mission_id": "MIS_CH01_03",
+        "traversal_selection": "spatial_nearest_with_hysteresis",
+        "uncropped_continuity_overscan": true,
+        "world_anchored_opaque_segment_streaming": true
+      },
+      "aster_runtime": {
+        "action": "idle",
+        "active": true,
+        "character_id": "aster",
+        "direction": "E",
+        "directions": 8,
+        "display_height_px": 129.6,
+        "display_scale": 0.197560975609756,
+        "frame": 0,
+        "ground_anchor_local": "(0.0, 0.0)",
+        "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911",
+        "muzzle_global": "(693.9745, 231.0808)",
+        "phase": 0.137499344348907,
+        "profile_path": "res://motion_lab_v1/public/assets/atlas/aster/profile.json",
+        "run_cycle_distance": 195.0,
+        "sector": 0,
+        "status": "active",
+        "walk_cycle_distance": 160.0,
+        "whole_body_fire_policy": "shared_walk_or_idle_frame"
+      },
+      "diagonal_delta": [
+        15.55615234375,
+        15.556396484375
+      ],
+      "encounter_step": 1,
+      "floor": {
+        "active": true,
+        "body_depth_sort": true,
+        "ground_before_gait_commit": true,
+        "room_id": "R02_DEFENSE",
+        "vertices": 4,
+        "world_polygon": [
+          "(100.8832, 538.1088)",
+          "(1086.694, -58.1088)",
+          "(1219.117, 57.8224)",
+          "(336.3008, 562.9512)"
+        ]
+      },
+      "live_shots": 1,
+      "mission": "MIS_CH01_03",
+      "native_capture": true,
+      "streaming": {
+        "opacities": {
+          "ENV_S03_DEFENSE": 1.0
+        },
+        "visible_ids": [
+          "ENV_S03_DEFENSE"
+        ]
+      }
+    },
+    {
+      "art": {
+        "combat_plate_lock": "R04_BULKHEAD",
+        "connector_plate_count": 7,
+        "continuous_route_preserved": true,
+        "max_visible_plates": 1,
+        "procedural_fallback_active": false,
+        "production_assets_available": true,
+        "room_plate_count": 8,
+        "selected_mission_id": "MIS_CH01_03",
+        "traversal_selection": "spatial_nearest_with_hysteresis",
+        "uncropped_continuity_overscan": true,
+        "world_anchored_opaque_segment_streaming": true
+      },
+      "aster_runtime": {
+        "action": "idle",
+        "active": true,
+        "character_id": "aster",
+        "direction": "E",
+        "directions": 8,
+        "display_height_px": 129.6,
+        "display_scale": 0.197560975609756,
+        "frame": 0,
+        "ground_anchor_local": "(0.0, 0.0)",
+        "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911",
+        "muzzle_global": "(1453.975, 231.0808)",
+        "phase": 0.275000834465027,
+        "profile_path": "res://motion_lab_v1/public/assets/atlas/aster/profile.json",
+        "run_cycle_distance": 195.0,
+        "sector": 0,
+        "status": "active",
+        "walk_cycle_distance": 160.0,
+        "whole_body_fire_policy": "shared_walk_or_idle_frame"
+      },
+      "diagonal_delta": [
+        15.556640625,
+        15.556396484375
+      ],
+      "encounter_step": 3,
+      "floor": {
+        "active": true,
+        "body_depth_sort": true,
+        "ground_before_gait_commit": true,
+        "room_id": "R04_BULKHEAD",
+        "vertices": 4,
+        "world_polygon": [
+          "(890.3104, 529.828)",
+          "(1876.122, -8.424011)",
+          "(1993.83, 66.1032)",
+          "(1081.587, 579.5128)"
+        ]
+      },
+      "live_shots": 1,
+      "mission": "MIS_CH01_03",
+      "native_capture": true,
+      "streaming": {
+        "opacities": {
+          "ENV_S03_BULKHEAD": 1.0
+        },
+        "visible_ids": [
+          "ENV_S03_BULKHEAD"
+        ]
+      }
+    },
+    {
+      "art": {
+        "combat_plate_lock": "R05_ANCHOR",
+        "connector_plate_count": 7,
+        "continuous_route_preserved": true,
+        "max_visible_plates": 1,
+        "procedural_fallback_active": false,
+        "production_assets_available": true,
+        "room_plate_count": 8,
+        "selected_mission_id": "MIS_CH01_03",
+        "traversal_selection": "spatial_nearest_with_hysteresis",
+        "uncropped_continuity_overscan": true,
+        "world_anchored_opaque_segment_streaming": true
+      },
+      "aster_runtime": {
+        "action": "idle",
+        "active": true,
+        "character_id": "aster",
+        "direction": "E",
+        "directions": 8,
+        "display_height_px": 129.6,
+        "display_scale": 0.197560975609756,
+        "frame": 0,
+        "ground_anchor_local": "(0.0, 0.0)",
+        "map_scale_policy": "129_6px_authored_subject_height_user_enlarged_20260911",
+        "muzzle_global": "(1761.076, 590.6026)",
+        "phase": 0.41250125169754,
+        "profile_path": "res://motion_lab_v1/public/assets/atlas/aster/profile.json",
+        "run_cycle_distance": 195.0,
+        "sector": 0,
+        "status": "active",
+        "walk_cycle_distance": 160.0,
+        "whole_body_fire_policy": "shared_walk_or_idle_frame"
+      },
+      "diagonal_delta": [
+        15.556640625,
+        15.55615234375
+      ],
+      "encounter_step": 4,
+      "floor": {
+        "active": true,
+        "body_depth_sort": true,
+        "ground_before_gait_commit": true,
+        "room_id": "R05_ANCHOR",
+        "vertices": 4,
+        "world_polygon": [
+          "(1214.8, 578.82)",
+          "(1883.6, 352.98)",
+          "(2418.64, 597.64)",
+          "(1866.88, 861.12)"
+        ]
+      },
+      "live_shots": 1,
+      "mission": "MIS_CH01_03",
+      "native_capture": true,
+      "streaming": {
+        "opacities": {
+          "ENV_S03_ANCHOR": 1.0
+        },
+        "visible_ids": [
+          "ENV_S03_ANCHOR"
+        ]
+      }
+    }
+  ],
+  "status": "PASS_TECHNICAL_ONLY"
+}

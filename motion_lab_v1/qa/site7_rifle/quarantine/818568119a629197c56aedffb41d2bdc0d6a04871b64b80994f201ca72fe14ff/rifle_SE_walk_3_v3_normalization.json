@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "operation": "edge-connected green matte normalization only; no source-art redraw",
+  "source_author": "built-in ImageGen",
+  "input": "motion_lab_v1/art/site7_enemies_raw/rifle_SE_walk_3_v3.png",
+  "input_sha256": "655b5b9ba82379fb7c4193c53fa68daa6f2dfdf466362c786a13c6ad96ac1844",
+  "output": "motion_lab_v1/art/site7_enemies_raw/rifle_SE_walk_3_v3_green.png",
+  "output_sha256": "818568119a629197c56aedffb41d2bdc0d6a04871b64b80994f201ca72fe14ff",
+  "mask": "motion_lab_v1/art/site7_enemies_raw/rifle_SE_walk_3_v3_mask.png",
+  "mask_sha256": "3a84a50478006019d17720aa044e4aaaf8967ca0fd5c891f536dc7ba9fd15715",
+  "input_resolution": [
+    1024,
+    1536
+  ],
+  "edge_median_rgb": [
+    7,
+    248,
+    6
+  ],
+  "exact_green_rgb": [
+    0,
+    255,
+    0
+  ],
+  "edge_connected_background_coverage": 0.7351652781168619,
+  "subject_pixels_byte_exact": true,
+  "alpha_ready": true
+}

@@ -1,0 +1,444 @@
+{
+  "checks": 52,
+  "failures": [
+    "Visible on-screen artwork accepted",
+    "Visibility restored after negatives"
+  ],
+  "hashes": {
+    "data/art_profiles/enemy_profiles.json": "549ca45d47ec39ea740776c9eccfd52323a00775da0a29b38e969baf4ec951a3",
+    "qa/stage1_implementation_20260913/r8_fixtures/malformed_spec.json": "b8694d125b7538e56df8a71d0c37e9288493a73c6ae6fa8cb0d80ed6b5216ff2",
+    "qa/stage1_implementation_20260913/r8_fixtures/no_warning_tactics.gd": "68a6711fd27459998a19e72b80552ffe1d5485136b83fbb8927067f7e75ac96b",
+    "scripts/combat/site7_attack_warning.gd": "a2b237db6016c2dd85ed0c346784723ae53a0bbd1cd81a463291df267a3b4f39",
+    "scripts/combat/site7_enemy_tactics.gd": "efacd6facda231852c947cb26572cc873ed022d62bb5ddf1ef55b2c8b260bd02",
+    "tests/render/site7_anchor_candidate_capture.gd": "76cea8625513abd8ecfa551831854256888042fbe6e36af76aa5109688a25095",
+    "tests/render/site7_anchor_capture_smoke.gd": "f7256bf0f7dd53a120e378e6c408358c240ff78f8c0f3edc04a5e9b0daae4d29"
+  },
+  "native": [
+    1920,
+    1080
+  ],
+  "observed": [
+    {
+      "before": [
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52579796664,
+          "kind": "circle",
+          "position": "(650.0, -30.0)",
+          "ray": "(1.0, 0.0)",
+          "visible": true,
+          "windup": 1.15
+        }
+      ],
+      "health_after": 76.0,
+      "health_before": 96.0,
+      "hz": 30,
+      "impact": [
+        {
+          "elapsed": 1.36666666666667,
+          "fired": true,
+          "id": 52579796664,
+          "kind": "circle",
+          "position": "(650.0, -30.0)",
+          "ray": "(1.0, 0.0)",
+          "visible": true,
+          "windup": 1.15
+        }
+      ],
+      "phase": 2
+    },
+    {
+      "before": [
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52596573880,
+          "kind": "circle",
+          "position": "(650.0, -30.0)",
+          "ray": "(1.0, 0.0)",
+          "visible": true,
+          "windup": 1.15
+        },
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52613351097,
+          "kind": "lane",
+          "position": "(860.465, -9.632419)",
+          "ray": "(-0.99535, -0.096324)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52630128314,
+          "kind": "lane",
+          "position": "(969.6324, -99.535)",
+          "ray": "(0.096324, -0.99535)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52646905531,
+          "kind": "lane",
+          "position": "(1059.535, 9.632428)",
+          "ray": "(0.99535, 0.096324)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52663682748,
+          "kind": "lane",
+          "position": "(950.3676, 99.535)",
+          "ray": "(-0.096324, 0.99535)",
+          "visible": true,
+          "windup": 1.35
+        }
+      ],
+      "health_after": 56.0,
+      "health_before": 96.0,
+      "hz": 30,
+      "impact": [
+        {
+          "elapsed": 1.36666666666667,
+          "fired": true,
+          "id": 52596573880,
+          "kind": "circle",
+          "position": "(650.0, -30.0)",
+          "ray": "(1.0, 0.0)",
+          "visible": true,
+          "windup": 1.15
+        },
+        {
+          "elapsed": 1.36666666666667,
+          "fired": true,
+          "id": 52613351097,
+          "kind": "lane",
+          "position": "(860.465, -9.632419)",
+          "ray": "(-0.99535, -0.096324)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 1.36666666666667,
+          "fired": true,
+          "id": 52630128314,
+          "kind": "lane",
+          "position": "(969.6324, -99.535)",
+          "ray": "(0.096324, -0.99535)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 1.36666666666667,
+          "fired": true,
+          "id": 52646905531,
+          "kind": "lane",
+          "position": "(1059.535, 9.632428)",
+          "ray": "(0.99535, 0.096324)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 1.36666666666667,
+          "fired": true,
+          "id": 52663682748,
+          "kind": "lane",
+          "position": "(950.3676, 99.535)",
+          "ray": "(-0.096324, 0.99535)",
+          "visible": true,
+          "windup": 1.35
+        }
+      ],
+      "phase": 3
+    },
+    {
+      "before": [
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52680459964,
+          "kind": "circle",
+          "position": "(650.0, -30.0)",
+          "ray": "(1.0, 0.0)",
+          "visible": true,
+          "windup": 1.15
+        }
+      ],
+      "health_after": 76.0,
+      "health_before": 96.0,
+      "hz": 60,
+      "impact": [
+        {
+          "elapsed": 1.36666666666667,
+          "fired": true,
+          "id": 52680459964,
+          "kind": "circle",
+          "position": "(650.0, -30.0)",
+          "ray": "(1.0, 0.0)",
+          "visible": true,
+          "windup": 1.15
+        }
+      ],
+      "phase": 2
+    },
+    {
+      "before": [
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52697237180,
+          "kind": "circle",
+          "position": "(650.0, -30.0)",
+          "ray": "(1.0, 0.0)",
+          "visible": true,
+          "windup": 1.15
+        },
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52714014395,
+          "kind": "lane",
+          "position": "(860.465, -9.632419)",
+          "ray": "(-0.99535, -0.096324)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52730791610,
+          "kind": "lane",
+          "position": "(969.6324, -99.535)",
+          "ray": "(0.096324, -0.99535)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52747568825,
+          "kind": "lane",
+          "position": "(1059.535, 9.632428)",
+          "ray": "(0.99535, 0.096324)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52764346040,
+          "kind": "lane",
+          "position": "(950.3676, 99.535)",
+          "ray": "(-0.096324, 0.99535)",
+          "visible": true,
+          "windup": 1.35
+        }
+      ],
+      "health_after": 56.0,
+      "health_before": 96.0,
+      "hz": 60,
+      "impact": [
+        {
+          "elapsed": 1.36666666666667,
+          "fired": true,
+          "id": 52697237180,
+          "kind": "circle",
+          "position": "(650.0, -30.0)",
+          "ray": "(1.0, 0.0)",
+          "visible": true,
+          "windup": 1.15
+        },
+        {
+          "elapsed": 1.36666666666667,
+          "fired": true,
+          "id": 52714014395,
+          "kind": "lane",
+          "position": "(860.465, -9.632419)",
+          "ray": "(-0.99535, -0.096324)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 1.36666666666667,
+          "fired": true,
+          "id": 52730791610,
+          "kind": "lane",
+          "position": "(969.6324, -99.535)",
+          "ray": "(0.096324, -0.99535)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 1.36666666666667,
+          "fired": true,
+          "id": 52747568825,
+          "kind": "lane",
+          "position": "(1059.535, 9.632428)",
+          "ray": "(0.99535, 0.096324)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 1.36666666666667,
+          "fired": true,
+          "id": 52764346040,
+          "kind": "lane",
+          "position": "(950.3676, 99.535)",
+          "ray": "(-0.096324, 0.99535)",
+          "visible": true,
+          "windup": 1.35
+        }
+      ],
+      "phase": 3
+    },
+    {
+      "before": [
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52781123256,
+          "kind": "circle",
+          "position": "(650.0, -30.0)",
+          "ray": "(1.0, 0.0)",
+          "visible": true,
+          "windup": 1.15
+        }
+      ],
+      "health_after": 76.0,
+      "health_before": 96.0,
+      "hz": 120,
+      "impact": [
+        {
+          "elapsed": 1.36666666666666,
+          "fired": true,
+          "id": 52781123256,
+          "kind": "circle",
+          "position": "(650.0, -30.0)",
+          "ray": "(1.0, 0.0)",
+          "visible": true,
+          "windup": 1.15
+        }
+      ],
+      "phase": 2
+    },
+    {
+      "before": [
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52797900472,
+          "kind": "circle",
+          "position": "(650.0, -30.0)",
+          "ray": "(1.0, 0.0)",
+          "visible": true,
+          "windup": 1.15
+        },
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52814677689,
+          "kind": "lane",
+          "position": "(860.465, -9.632419)",
+          "ray": "(-0.99535, -0.096324)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52831454906,
+          "kind": "lane",
+          "position": "(969.6324, -99.535)",
+          "ray": "(0.096324, -0.99535)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52848232123,
+          "kind": "lane",
+          "position": "(1059.535, 9.632428)",
+          "ray": "(0.99535, 0.096324)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 0.0,
+          "fired": false,
+          "id": 52865009340,
+          "kind": "lane",
+          "position": "(950.3676, 99.535)",
+          "ray": "(-0.096324, 0.99535)",
+          "visible": true,
+          "windup": 1.35
+        }
+      ],
+      "health_after": 56.0,
+      "health_before": 96.0,
+      "hz": 120,
+      "impact": [
+        {
+          "elapsed": 1.36666666666666,
+          "fired": true,
+          "id": 52797900472,
+          "kind": "circle",
+          "position": "(650.0, -30.0)",
+          "ray": "(1.0, 0.0)",
+          "visible": true,
+          "windup": 1.15
+        },
+        {
+          "elapsed": 1.36666666666666,
+          "fired": true,
+          "id": 52814677689,
+          "kind": "lane",
+          "position": "(860.465, -9.632419)",
+          "ray": "(-0.99535, -0.096324)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 1.36666666666666,
+          "fired": true,
+          "id": 52831454906,
+          "kind": "lane",
+          "position": "(969.6324, -99.535)",
+          "ray": "(0.096324, -0.99535)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 1.36666666666666,
+          "fired": true,
+          "id": 52848232123,
+          "kind": "lane",
+          "position": "(1059.535, 9.632428)",
+          "ray": "(0.99535, 0.096324)",
+          "visible": true,
+          "windup": 1.35
+        },
+        {
+          "elapsed": 1.36666666666666,
+          "fired": true,
+          "id": 52865009340,
+          "kind": "lane",
+          "position": "(950.3676, 99.535)",
+          "ray": "(-0.096324, 0.99535)",
+          "visible": true,
+          "windup": 1.35
+        }
+      ],
+      "phase": 3
+    }
+  ],
+  "status": "FAIL",
+  "visual_art_approval": false
+}

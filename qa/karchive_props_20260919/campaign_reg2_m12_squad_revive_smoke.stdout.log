@@ -1,0 +1,29 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+M7_RASTER_QUARANTINED identity=aster status=partial chunks=2 encoded=20000 present=15000 declared=94718
+PASS: ROOK enters downed state at zero HP
+PASS: active operator remains controllable when a companion goes down
+PASS: downed operator cannot be selected directly
+PASS: nearby downed squadmate is a revivable target
+PASS: nearby revive reserves shared F interaction before mission actions
+PASS: holding F begins authoritative revive transaction
+PASS: revive authority records reviver and target
+PASS: one second produces partial progress on 2.2 second revive
+PASS: partial revive never restores target early
+PASS: releasing F cancels and resets revive progress
+PASS: out-of-range target cannot accumulate revive progress
+PASS: revive can restart after cancellation
+PASS: changing reviver resets in-progress revive transaction
+PASS: revive remains downed before full 2.2 second hold
+PASS: full uninterrupted hold revives downed squadmate
+PASS: revived operator returns at exactly 35 percent HP
+PASS: squad records exactly one completed revive
+PASS: revive grants 1.25 second 65 percent protection
+PASS: revive protection changes actual incoming damage authority
+PASS: revived operator can be downed again normally
+PASS: second revive begins normally
+PASS: moving reviver outside range cancels revive progress
+PASS: test extraction window is active
+PASS: revive priority remains active inside extraction window
+PASS: campaign persistence contains no revive transaction state
+M12_SQUAD_REVIVE_SMOKE: PASS

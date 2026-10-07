@@ -1,0 +1,21 @@
+{
+  "tool": "image_gen.imagegen",
+  "returnedPath": "C:/Users/AAA/.codex/generated_images/01a09641-ef13-7963-8d07-d2c5860f071c/exec-93066cd6-a5ff-4c99-93ea-ec12f76ad1a1.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c as C:\\Users\\AAA\\.codex\\generated_images\\01a09641-ef13-7963-8d07-d2c5860f071c\\exec-93066cd6-a5ff-4c99-93ea-ec12f76ad1a1.png by default. If you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it. The generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "qa/rook/luna_repair_20260913/E_walk_pair0_luna_raw.png",
+  "projectCopySHA256": "2f900e9b32bafc1e4f72673dfa51897c38c32cb3b2eab59fa2c3407a52a5ccac",
+  "inputReferences": [
+    "reference/ual_guides/E_walk_pair0.png",
+    "art/rook/identity_reference.png"
+  ],
+  "promptSummary": "Native 1536x1024 ROOK E phase 0/3 pair with left anatomical support then right anatomical support, exact identity/weapon, transparent alpha requested.",
+  "inspection": {
+    "nativeSize": [1536, 1024],
+    "mode": "RGB",
+    "alpha": "missing",
+    "decision": "FAIL_NOT_PROMOTABLE",
+    "notes": "Returned RGB checkerboard is a painted/non-alpha backdrop; both figures retain the same screen-left trailing/screen-right planted arrangement instead of exchanging anatomical support roles. Not imported."
+  }
+}

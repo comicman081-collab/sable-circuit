@@ -1,0 +1,95 @@
+{
+  "actors": [
+    {
+      "actual_hp": 138.0,
+      "authored_hp": 92.0,
+      "enemy": "ENM_SITE7_DRONE_01",
+      "interval": 0.8,
+      "speed": 1.15
+    },
+    {
+      "actual_hp": 102.0,
+      "authored_hp": 68.0,
+      "enemy": "ENM_SITE7_DRONE_01",
+      "interval": 0.8,
+      "speed": 1.15
+    },
+    {
+      "actual_hp": 162.0,
+      "authored_hp": 108.0,
+      "enemy": "ENM_SITE7_BULWARK_01",
+      "interval": 0.8,
+      "speed": 1.15
+    },
+    {
+      "actual_hp": 108.0,
+      "authored_hp": 72.0,
+      "enemy": "ENM_SITE7_DRONE_01",
+      "interval": 0.8,
+      "speed": 1.15
+    },
+    {
+      "actual_hp": 930.0,
+      "authored_hp": 620.0,
+      "enemy": "BOSS_SITE7_ANCHOR_01",
+      "interval": 1.0,
+      "speed": 1.0
+    },
+    {
+      "actual_hp": 120.0,
+      "authored_hp": 80.0,
+      "enemy": "ENM_SITE7_DRONE_01",
+      "interval": 0.8,
+      "speed": 1.15
+    },
+    {
+      "actual_hp": 120.0,
+      "authored_hp": 80.0,
+      "enemy": "ENM_SITE7_DRONE_01",
+      "interval": 0.8,
+      "speed": 1.15
+    }
+  ],
+  "balance_approval": false,
+  "checks": 77,
+  "failures": [],
+  "human_play": false,
+  "proposal": {
+    "enemy_attack_interval_multiplier": 0.8,
+    "enemy_damage_multiplier": 1.35,
+    "enemy_health_multiplier": 1.5,
+    "enemy_speed_multiplier": 1.15,
+    "fragment_reward_multiplier": 2.4,
+    "hazard_id": "REDLINE",
+    "hazard_title": "REDLINE",
+    "opportunity_id": "REDLINE_RECOVERY",
+    "opportunity_title": "MAXIMUM RECOVERY",
+    "redline": true,
+    "research_reward_multiplier": 2.4,
+    "risk_score": 5,
+    "run_id": "REDLINE-ACTORS",
+    "run_only_boosts": [
+      {
+        "energy_gain_multiplier": 1.0,
+        "id": "FIELD_STIM",
+        "incoming_damage_multiplier": 0.9,
+        "operator_speed_multiplier": 1.1,
+        "primary_damage_multiplier": 1.0,
+        "source_room": "O01_SUPPLY",
+        "title": "FIELD STIM"
+      },
+      {
+        "energy_gain_multiplier": 1.2,
+        "id": "OVERCHARGE_CELL",
+        "incoming_damage_multiplier": 1.0,
+        "operator_speed_multiplier": 1.0,
+        "primary_damage_multiplier": 1.08,
+        "source_room": "O02_RESEARCH",
+        "title": "OVERCHARGE CELL"
+      }
+    ],
+    "salvage_reward_multiplier": 2.4,
+    "schema_version": 1,
+    "seed_signature": 1258771051
+  }
+}

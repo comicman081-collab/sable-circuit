@@ -1,0 +1,1432 @@
+[
+  {
+    "recordedAt": "2026-09-11T13:50:07.879723+00:00",
+    "slot": "E/walk/0",
+    "decision": "repair",
+    "reviewer": "Codex current visual inspection",
+    "notes": "Compiled six-frame chronological sheet inspected. Opposite contact source exists but frame 0 silhouette and weapon/body scale differ from paired frames; support depth and passing transition remain visually unverified. HOLD full gait, no runtime promotion. New source detail does not establish natural walking.",
+    "sourceSHA256": "79b039cd8b7cfdd5b7c17a2985ade1094f9f76d78de24a3ac124c8c247b8b4b0",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/251372e28d25c823/reference/atlas/rook/E_walk_keyframes.png",
+      "sha256": "cd752ccb1b93045b9113eb1bdd596f835f7e08a29bf71b6c3fd85b50b615cf04"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T00:58:04.546829+00:00",
+    "slot": "E/walk/0",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "The replacement is the actual ROOK identity: white bob and clip, face, black-gold cape/suit, pouches, boots and scattergun remain continuous. Both legs are fully connected and readable in a real right-facing contact stride; one support sole is planted and the opposite leg trails with heel lifted. Weapon remains shoulder-seated and level. The ImageGen RGB backdrop was deterministically normalized to exact #00FF00 with subject pixels byte-identical, and the derived RGBA edge view has no visible green edge residue. Adjacent E walk frames remain independently unreviewed, so this approves only E/walk/0 and does not approve the full gait.",
+    "sourceSHA256": "6784b966c3f2eb44ecb45b964c38c0a31fe157ac7a44faccf9c7a0247347ee38",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "art/rook/E_walk_0_master.png",
+      "sha256": "6784b966c3f2eb44ecb45b964c38c0a31fe157ac7a44faccf9c7a0247347ee38"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:01:42.888636+00:00",
+    "slot": "E/idle/0",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "Native-scale E idle inspected on exact-green master and RGBA derivative: ROOK identity, face/hair clip, black-gold tactical costume, boots and scattergun are continuous; both soles are planted and the two-handed shoulder-fire posture is stationary. Green normalization changed only connected backdrop pixels, and the edge view showed no visible green fringe. This approves only E/idle/0; other directions remain unreviewed.",
+    "sourceSHA256": "25a7b794ff66598e6b09634ee8f3b198dbed706afee42a6f971ee5b97f6b88ee",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "art/rook/E_idle_0_master.png",
+      "sha256": "25a7b794ff66598e6b09634ee8f3b198dbed706afee42a6f971ee5b97f6b88ee"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:02:15.102995+00:00",
+    "slot": "E/walk/1",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "Chronological E walk contact sheet and source inspected at native evidence scale. This phase reads as a real walk follow-through: one support sole stays grounded while the opposite leg trails with the heel lifted; knees and hips remain connected, and the rifle stays shoulder-seated and level. Identity and weapon match the E cycle. This approves only E/walk/1.",
+    "sourceSHA256": "c405edc9234ed939b62eba17ef22cfa9eec2d38b57dd64eb6c5cf64c22c69057",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/e3fc6a5d99f82196/reference/atlas/rook/E_walk_keyframes.png",
+      "sha256": "7588eafd378a660e518217e4850acf8eb9cd38bdfe524a25d05679491ceaea44"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:02:15.927418+00:00",
+    "slot": "E/walk/2",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "Chronological E walk contact sheet and source inspected at native evidence scale. This phase reads as the passing/knee-forward transition with one planted support foot and the other leg clearly crossing forward; both legs connect anatomically and the rifle, face and costume remain continuous. This approves only E/walk/2.",
+    "sourceSHA256": "2ed6088339b3bed4e24a8d03b15b3300816fffb7a524c7d6796acc6bea6c9534",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/e3fc6a5d99f82196/reference/atlas/rook/E_walk_keyframes.png",
+      "sha256": "7588eafd378a660e518217e4850acf8eb9cd38bdfe524a25d05679491ceaea44"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:02:16.844442+00:00",
+    "slot": "E/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "Chronological E walk contact sheet and source inspected at native evidence scale. This phase supplies the opposite contact with a planted forward sole and trailing leg, clear pelvis support and no split-leg artifact; the shoulder-fire weapon and costume match the cycle. This approves only E/walk/3.",
+    "sourceSHA256": "475e0c25df1d7e0211dc0e10f2f7cc2907dfb801f9b68bfac911f13ce32bce61",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/e3fc6a5d99f82196/reference/atlas/rook/E_walk_keyframes.png",
+      "sha256": "7588eafd378a660e518217e4850acf8eb9cd38bdfe524a25d05679491ceaea44"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:02:17.736083+00:00",
+    "slot": "E/walk/4",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "Chronological E walk contact sheet and source inspected at native evidence scale. This phase reads as the opposite follow-through: trailing heel lifted, support leg under the pelvis, connected knees/ankles and stable shoulder-fire upper body. Identity and weapon continuity are preserved. This approves only E/walk/4.",
+    "sourceSHA256": "8d1b3832b4acd59a21e172c2882cd3f260713bf68d97131888fc9e0a3124e843",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/e3fc6a5d99f82196/reference/atlas/rook/E_walk_keyframes.png",
+      "sha256": "7588eafd378a660e518217e4850acf8eb9cd38bdfe524a25d05679491ceaea44"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:02:18.465450+00:00",
+    "slot": "E/walk/5",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "Chronological E walk contact sheet and source inspected at native evidence scale. This phase reads as the return passing transition with a single support foot and the opposite knee moving forward; the stride remains a walk rather than a run or idle pose, with continuous ROOK identity and weapon. This approves only E/walk/5.",
+    "sourceSHA256": "4408d8ee52069fba927e24004cfb45dd99f8b12b8f33f488db9274ba6ce165b4",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/e3fc6a5d99f82196/reference/atlas/rook/E_walk_keyframes.png",
+      "sha256": "7588eafd378a660e518217e4850acf8eb9cd38bdfe524a25d05679491ceaea44"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:06:06.628298+00:00",
+    "slot": "SE/walk/0",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "The SE front-right three-quarter replacement was inspected at native source scale and in the RGBA edge view. ROOK identity, black-gold tactical costume, face/hair clip, boots and scattergun are continuous with the approved E source. The pose reads as a genuine walking contact: one boot is the support sole under the lowered pelvis and the other leg trails with a lifted heel; both legs connect through the knees and ankles, with no floating or split lower body. The weapon remains seated to the shoulder and points into the SE direction. The green master is exact-normalized without changing subject pixels. This approves only SE/walk/0; the remaining SE frames and idle remain unreviewed.",
+    "sourceSHA256": "2d7946176b66df9aa0d03d6eab8bb671f6d6891c89961b69f6577345f04507d0",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/normalized_candidates/SE_walk_0_luna_20260912_rgba.png",
+      "sha256": "4da41048e8b0dccc6120a44801933659a2242eb5662483823aaf382af6e77b99"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:08:31.216069+00:00",
+    "slot": "SE/walk/1",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "SE frame 1 was inspected in the source and RGBA edge view. It continues the SE/walk/0 silhouette and weapon scale while moving into the next support phase: the forward support boot is grounded beneath the pelvis and the opposite leg is clearly lifted behind with a flexed knee and heel off the floor. Hips, knees, ankles and boots are connected; no skating, floating, split lower body or idle stance. Hair, face, black-gold costume and scattergun remain the ROOK identity. The exact-green master was produced by byte-preserving matte normalization. This approves only SE/walk/1; remaining SE frames and idle remain unreviewed.",
+    "sourceSHA256": "5138255013dc62834a5b31e114ac174d075df858ce4fb303843ead5dc4819c5c",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/normalized_candidates/SE_walk_1_luna_20260912_rgba.png",
+      "sha256": "ab850873bae20b99b58b16c0e8443c1347a4976a2e9540560dacdd634d3ec77c"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:11:16.790365+00:00",
+    "slot": "SE/walk/2",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "SE frame 2 was inspected in the source and RGBA edge view. It continues the same front-right camera and ROOK appearance while reading as the passing/knee-forward phase: one support boot stays planted below the pelvis and the opposite leg crosses forward with a clear bent knee and connected ankle/boot. The rifle remains a stable two-handed shoulder-fire pose aimed SE; no skating, floating, merged or split legs. Exact-green normalization preserved all subject RGB bytes. This approves only SE/walk/2; later SE frames and idle remain unreviewed.",
+    "sourceSHA256": "6693cacb04edcb81f643bbe4485211eee40902ca9510045be8e7969042007115",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/normalized_candidates/SE_walk_2_luna_20260912_rgba.png",
+      "sha256": "52d5c3481ef6fb42ab2ad41baedf64fdd6db20a8b543f5165c8f00f633f2424f"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:16:03.327259+00:00",
+    "slot": "SE/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "SE frame 3 was inspected in the source and RGBA edge view. It gives the opposite contact after frame 2: the forward boot is planted, the other leg extends behind with the heel off the floor, and the pelvis/shoulders carry a readable weight transfer. Hips, knees, ankles and boots are connected; there is no skating or split lower body. The front-right view, white bob/clip, black-gold tactical suit, boots and shoulder-seated scattergun stay continuous with the approved SE frames. Exact-green normalization preserved all subject pixels. This approves only SE/walk/3; SE/walk/4-5 and idle remain unreviewed.",
+    "sourceSHA256": "6f15e9fad6b7bb3504cbd342f22065b2c0987b82bc662c2cbbef26fc19600551",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/normalized_candidates/SE_walk_3_luna_20260912_rgba.png",
+      "sha256": "85f59b91d454463db92d1ccf3f7d3216ee74066e853bd8764bf628ffd2239eea"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:18:45.423117+00:00",
+    "slot": "SE/walk/4",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "SE frame 4 was inspected in the source and RGBA edge view. The front-right view continues the approved ROOK appearance and weapon scale, while the legs move through a clear follow-through: one boot is planted beneath the pelvis and the opposite leg swings behind with a lifted heel and connected knee/ankle. It reads as a grounded walk rather than idle, skating or a run. No split or floating lower body is visible and the matte edge is clean. This approves only SE/walk/4; SE/walk/5 and idle remain unreviewed.",
+    "sourceSHA256": "19c1129be2a76c3521ee42264c46ff55e2a0b73a5aa0c3766ec4807b95d567ee",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/normalized_candidates/SE_walk_4_luna_20260912_rgba.png",
+      "sha256": "bb9d7b6e51b5f5eb7aee9cfa407f224b2578263174f07bd9e1106f2881a2a0cd"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:21:30.953117+00:00",
+    "slot": "SE/walk/5",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "SE frame 5 was inspected in the source and RGBA edge view as the return passing phase. The raised/advancing knee and single grounded support foot read as a natural walk that can return to SE frame 0; both legs remain connected through knees and ankles. ROOK face, white bob/clip, black-gold tactical costume, boots and shoulder-seated scattergun remain continuous. No skating, split or floating lower body is visible, and exact-green normalization preserved subject pixels. This approves only SE/walk/5; SE/idle/0 remains unreviewed.",
+    "sourceSHA256": "d0b5a01fdb55aa09ab3d2ea341864fc9ac701c7e40a373a4496d256bf976fdd0",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/normalized_candidates/SE_walk_5_luna_20260912_rgba.png",
+      "sha256": "53620c9ae502cf89c8422b60b9e96399a06ec80d200297127bd176b2279fe913"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:24:38.495142+00:00",
+    "slot": "SE/idle/0",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "SE idle was inspected in the exact-green source and RGBA edge view. Both soles are planted on one floor plane with relaxed knees and centered pelvis; there is no lifted heel, stride or run. The ready-to-fire upper body keeps the stock at the shoulder, both hands on the scattergun and the muzzle aimed SE. Face, white bob/clip, charcoal-black and gold costume, pouches, knee armor and boots continue the ROOK identity. No green edge residue is visible and subject pixels remain byte-identical through matte normalization. This approves only SE/idle/0; S, SW, W, NW, N and NE remain unreviewed.",
+    "sourceSHA256": "de1371effcd6da960950c4c726e0422ff952ee34b96fcf1af583765fd5215b6a",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/normalized_candidates/SE_idle_0_luna_20260912_rgba.png",
+      "sha256": "1dcfd0837ea59e4a27f152c7957a77b7f4174a2476926ed88212a27755b5c817"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:32:03.213695+00:00",
+    "slot": "S/walk/0",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "Straight-front S frame 0 inspected at native source scale and in the RGBA edge view. ROOK identity, white bob and orange-black clip, charcoal-black hooded cape/tactical suit with orange-gold trim, pouches, knee armor, heavy boots and the bullpup scattergun remain continuous with the approved E and SE sources. The pose is a readable human walking contact: the forward boot is weight-bearing under the pelvis while the opposite leg trails with heel lifted; hips, knees, ankles and both feet are connected with no skating, floating or split lower body. Both hands hold the weapon at the shoulder, the twin muzzle is aimed straight toward camera, and the matte edge has no visible green fringe. This approves only S/walk/0; the remaining S phases and all other directions remain unreviewed.",
+    "sourceSHA256": "580b0dc1c9ef7d984cd3da40d5a69c19610195aa88a6c7a0776cf2ff675a68b2",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/normalized_candidates/S_walk_0_luna_20260912_rgba.png",
+      "sha256": "14acb723e0c31b7a86b748bcbdb350383f3156b59aab2bbc07fcdcc5bdc4ecfc"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:33:58.576150+00:00",
+    "slot": "S/walk/1",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "Straight-front S frame 1 inspected in source and RGBA edge view. It continues the S/walk/0 camera, scale, ROOK identity and shoulder-fired twin-bore scattergun. The support boot remains grounded beneath the pelvis while the opposite leg swings back with a lifted heel and connected bent knee; the stride reads as a real human follow-through, not skating, floating or idle. Both hands remain on the weapon and the muzzle points toward camera. Exact-green normalization preserved subject pixels and no visible green fringe remains. This approves only S/walk/1; later S phases, idle and other directions remain unreviewed.",
+    "sourceSHA256": "aa9854dfc76d62101daec237ee5625f4328c7db7c637cad689c4e635692d80c4",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/normalized_candidates/S_walk_1_luna_20260912_rgba.png",
+      "sha256": "c7c75230f76ea2ad917828acd4a5e8f84068ee94151edd38c8b0592960a42beb"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:35:39.725796+00:00",
+    "slot": "S/walk/2",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "Straight-front S frame 2 inspected in source and RGBA edge view. This is the passing/knee-forward phase: one boot supports beneath the pelvis while the opposite knee lifts and crosses forward with a connected ankle and boot, so the lower body reads as a real walk transition rather than skating or a static stance. ROOK identity, black-gold costume, white bob/clip and shoulder-seated twin-bore scattergun remain continuous, with the muzzle aimed toward camera and both hands on the weapon. Exact-green normalization preserved subject pixels and the edge view is clean. This approves only S/walk/2; later S phases, idle and other directions remain unreviewed.",
+    "sourceSHA256": "97f16aafee013e562648bb07004df4eb978bf180cde8c2c7909e485979becb03",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/normalized_candidates/S_walk_2_luna_20260912_rgba.png",
+      "sha256": "c5ffced63bfbc15e941cabc341ccc49a859bc2abcfb5349f0005900f221a1938"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:37:25.691542+00:00",
+    "slot": "S/walk/3",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "Straight-front S frame 3 inspected in source and RGBA edge view. It supplies the opposite contact: the forward boot is firmly planted beneath the pelvis while the other leg trails with heel lifted and knee flexed, showing a natural weight transfer and connected lower body. The frame remains a walk phase rather than idle/run or skating; no floating, duplicate or fused limbs. ROOK face, white bob/clip, black-gold tactical suit, boots and the shoulder-seated twin-bore scattergun continue across S frames, with both hands on the weapon and the muzzle aimed forward. Exact-green normalization preserved subject pixels and the edge view is clean. This approves only S/walk/3; later S phases, idle and other directions remain unreviewed.",
+    "sourceSHA256": "bd0b320d7be0abc6fb0e7bcf22caf7ccbaa73ba517a0633434098850d2f3dcc9",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/normalized_candidates/S_walk_3_luna_20260912_rgba.png",
+      "sha256": "317459a7a4b743c71065c509ffd941bba118d7a7427769ca65b8c12a569461c3"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:39:23.008350+00:00",
+    "slot": "S/walk/4",
+    "decision": "approved",
+    "reviewer": "Codex native-scale visual review 2026-09-12",
+    "notes": "Straight-front S frame 4 inspected in source and RGBA edge view. The frame continues the front-facing ROOK identity and weapon scale while showing a grounded walk follow-through: one boot supports under the pelvis and the other leg moves back with heel lifted and connected knee/ankle. The stride is distinct from idle and run, with no skating, floating, duplicate or fused limbs. Both hands keep the twin-bore scattergun seated at the shoulder and aimed forward. Exact-green normalization preserves source pixels and the edge view is clean. This approves only S/walk/4; S/walk/5, idle and other directions remain unreviewed.",
+    "sourceSHA256": "2b398077c7424a811bd2a17b17c6aad29193ed19e0713d7a6003ec617cc61a7c",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/normalized_candidates/S_walk_4_luna_20260912_rgba.png",
+      "sha256": "9ca272c12a312963cb8fd2470c208cc09f4949b8137cbfedaa9039f06d4ca3b4"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:43:37.264960+00:00",
+    "slot": "S/walk/5",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Luna-targeted built-in ImageGen source copied into project; normalized master exact #00FF00 with deterministic edge-connected matte only; RGBA candidate inspected at native 1024x1536. Final forward-contact phase has one boot planted beneath pelvis, opposite foot lifted in follow-through, knees bent for stride, shoulders braced and scattergun held at eye line toward camera. No visible green residual or boundary halo; costume/weapon continuity matches ROOK identity.",
+    "sourceSHA256": "f80ef405ce84c87dd9cb47a25be5ad3f4d1ad7be30d2a98d18d764b89b4dbaa0",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Swalk5/S_walk_5_luna_rgba_candidate.png",
+      "sha256": "6195561cc74a780b554be715dc1e32c8b7292892ed40e5b1845bb63c38335e27"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:45:47.095717+00:00",
+    "slot": "S/idle/0",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "S 방향 정지 사격 프레임을 native 1024x1536에서 원본/정규화/RGBA 경계로 검수했습니다. ROOK의 흰색 bob·주황/검정 헤어 클립, charcoal-black hooded cape/tactical suit, orange-gold trim, 파우치·무릎 보호대·중장 부츠와 black-gold twin-bore scattergun이 기존 E/SE/S 보행과 연속됩니다. 양 발은 어깨 너비로 완전히 지면에 접지되고 무게중심은 골반 아래에 있으며, 양손이 총을 어깨에 고정해 조준선이 카메라를 향합니다. 정규화는 연결된 배경만 변경했고 RGBA 경계에 보이는 초록 fringe가 없습니다. 이 승인은 S/idle/0 슬롯에만 적용됩니다.",
+    "sourceSHA256": "d9d15f0d901d9958a442c4c540ef3f24e6bce00a495e73e83bea9919c3da29a9",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Sidle/S_idle_0_luna_rgba_candidate.png",
+      "sha256": "f98aaeab8f27186da78e5f64ca3cbc4ef033699c95068178518158b3d8db26d9"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:48:37.150550+00:00",
+    "slot": "SW/walk/0",
+    "decision": "repair",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Source repair required: the three-quarter-left grounded contact pose, ROOK identity, connected legs and shoulder-seated scattergun are usable, but native RGBA inspection shows a visible green spill/rim along the hair and cape edge (38 strong-green residual pixels in the derivation report). Do not promote this source; regenerate the same SW contact phase with a clean non-green subject boundary.",
+    "sourceSHA256": "cfbdc52e75227cf96e038e23ce60f2c1b6c9d14ad31fe30c2f891ba86fdfa3cc",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_SWwalk0/SW_walk_0_luna_rgba_candidate.png",
+      "sha256": "5a8d02a8b183b87fe8e431f0bb6beb63f22ba4314bda69b4a0ebf5e5b8404065"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:50:25.770400+00:00",
+    "slot": "SW/walk/0",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "SW 좌전방 사선 방향의 접촉 프레임을 native 1024x1536에서 승인했습니다. 새 소스는 첫 결과의 green spill을 보정한 재생성본이며, ROOK의 흰 bob·orange-black clip, charcoal-black cape/suit, orange-gold trim, rig/pouches/knee armor/heavy boots와 twin-bore scattergun이 E·SE·S 방향과 이어집니다. 앞쪽 부츠가 골반 아래에 확실히 접지되고 반대쪽 다리는 뒤로 뻗어 뒤꿈치가 들린 실제 보행 접촉이며, 양손 총기는 어깨/눈높이에 고정되어 화면 왼쪽을 향합니다. RGBA 경계에서 눈에 띄는 초록 fringe가 없어 승인합니다. 이전 SW/walk/0 실패 후보는 quarantine에 보존됩니다.",
+    "sourceSHA256": "9cce51f64728355e220ff4104f3e5c7d4aa22712ed668373d0cc3b5f91f0e9eb",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_SWwalk0_repair1/SW_walk_0_luna_rgba_candidate.png",
+      "sha256": "0033866d0a44c53d91ba094fdf54959e70183c56edc1c3ec24b4a04b67bcf28c"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:52:04.129337+00:00",
+    "slot": "SW/walk/1",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "SW 좌전방 사선 통과 프레임을 native 1024x1536에서 승인했습니다. 지지 발이 골반 아래에 접지되고 반대쪽 무릎이 자연스럽게 앞으로 들리며 발목·부츠가 연결되어 보행의 passing phase가 읽힙니다. 양손 scattergun은 어깨/눈높이에 고정되어 화면 왼쪽을 향하고, ROOK의 흰 bob/clip·black-gold cape/suit·파우치·무릎 보호대·중장 부츠 연속성이 유지됩니다. RGBA 경계에 눈에 띄는 초록 fringe가 없습니다. 이 승인은 SW/walk/1 슬롯에만 적용됩니다.",
+    "sourceSHA256": "fcc5060e881a67bbe91a7917fc05932a247f126f7748f638c483810e072be100",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_SWwalk1/SW_walk_1_luna_rgba_candidate.png",
+      "sha256": "4c23eb91f1aac2ee272feb150aeff67516891b15f760a8db71bb37a2ee5aabd0"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:53:32.903886+00:00",
+    "slot": "SW/walk/2",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "SW 좌전방 사선의 knee-forward passing 프레임을 승인했습니다. 지지 부츠가 골반 아래에 접지되고 반대쪽 무릎이 전방으로 올라가며 발끝이 들려 체중 이동이 명확하고, 양 다리 연결과 관절이 자연스럽습니다. 총은 양손으로 어깨/눈높이에 고정되어 화면 왼쪽을 향합니다. 흰 bob·orange-black clip·black-gold cape/suit·pouches·knee armor·boots의 ROOK 연속성과 RGBA 외곽의 깨끗한 분리가 확인되었습니다. 이 승인은 SW/walk/2 슬롯에만 적용됩니다.",
+    "sourceSHA256": "d9b6997f897fb62a2ad1f33069fcfe11086204f7153554f7cdd0052a37a33a45",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_SWwalk2/SW_walk_2_luna_rgba_candidate.png",
+      "sha256": "4752983d7afaa46a6a1d336b3d37b134d65f27e613e2d8fb95a0487690ac46b3"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T01:59:03.790255+00:00",
+    "slot": "SW/walk/3",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max SW walk frame 3: opposite grounded contact, trailing heel lifted, shoulder-fire weapon held at eye line, clean keyed edge at native 1024x1536.",
+    "sourceSHA256": "c3e0a39271f5ccf5d456badbdca4d0c74f95d620909aacc5c966dcbfb2933fa7",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_SWwalk3/SW_walk_3_luna_rgba_candidate.png",
+      "sha256": "5aa3846107d0edaf376ea3a207da8e3695d5de8c2acd5b9b705df50f72ed23ca"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:03:17.124990+00:00",
+    "slot": "SW/walk/4",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max SW walk frame 4 replacement: grounded follow-through with one support boot carrying weight, other foot lifted in stride, coherent hip/shoulder motion, shoulder-fire weapon at eye line, clean keyed edge at native 1024x1536.",
+    "sourceSHA256": "befac6c62c283c219122d226fc3bd7f2e2f57d09b5cdccd3fa718318c23fe325",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_SWwalk4_repair1/SW_walk_4_luna_rgba_candidate.png",
+      "sha256": "947386b4a612ff44fe78d03358b1ea46c285430aa0495ace3eb3f9d9c875034d"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:07:16.246874+00:00",
+    "slot": "SW/walk/5",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max SW walk frame 5 replacement: final opposite contact with far boot planted under pelvis and near leg trailing heel-up, grounded stride, coherent three-quarter facing and stable shoulder-fire weapon, clean keyed edge at native 1024x1536.",
+    "sourceSHA256": "aa6c47214d2cf79ea0243456bf02ed769e3ec4e63a29a0e230d850752510c2d1",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_SWwalk5_repair2/SW_walk_5_luna_rgba_candidate.png",
+      "sha256": "200f62fcc244d468c869c73f729fa4041f89f18ee34c277d315569577d8910f2"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:09:24.537801+00:00",
+    "slot": "SW/idle/0",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max SW idle frame: both boots planted in a stable three-quarter combat stance, shotgun held at shoulder/eye line screen-left, consistent ROOK costume and clean keyed edge at native 1024x1536.",
+    "sourceSHA256": "3304498467b21bc06532d8f62d5ce475ede02b994efa98f7f57cc2a00556e776",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_SWidle/SW_idle_0_luna_rgba_candidate.png",
+      "sha256": "887e00c95bf37c94d01bb5bc8adbd71b67658106d455fae4f4f6b0cf7a94d6da"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:12:54.983953+00:00",
+    "slot": "W/walk/0",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max W walk frame 0: left-facing grounded contact, front boot planted under pelvis with opposite heel lifted, two-handed shoulder-fire weapon, coherent side profile and clean keyed edge at native 1024x1536.",
+    "sourceSHA256": "e2deeb2da977f812cf2133e951907b4ccd777412d1bab2ff71010439705c139d",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Wwalk0/W_walk_0_luna_rgba_candidate.png",
+      "sha256": "f064fceda9931121afee8bffe8a60bb011bb45cc658fb30d62d8828fe9220e15"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:15:00.193410+00:00",
+    "slot": "W/walk/1",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max W walk frame 1: passing phase with support boot under pelvis and opposite knee/heel lifted, stable left-facing shoulder-fire, coherent side profile and clean keyed edge at native 1024x1536.",
+    "sourceSHA256": "d13a26e9bd22f774c8d6a1c336a2427cc2c0dd53b34ef78e0cebb11c15ef9c47",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Wwalk1/W_walk_1_luna_rgba_candidate.png",
+      "sha256": "0d0ba0d267a6847120d0e9fc6c67bba507a683c339e0a777a2722706a85d5f31"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:17:26.747263+00:00",
+    "slot": "W/walk/2",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max W walk frame 2: high knee passing phase with support boot grounded under pelvis, clear weight transfer, stable left-facing shoulder-fire, consistent proportions and clean keyed edge at native 1024x1536.",
+    "sourceSHA256": "58b4bfb42d01af28dca236c58164b44dd9b8dc6db53d79557716489c9f5e0fee",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Wwalk2/W_walk_2_luna_rgba_candidate.png",
+      "sha256": "cdbcf22f722ff8bb51142ede6861ea8b78d09073253a9adc5c06d4616596eab2"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:19:37.111191+00:00",
+    "slot": "W/walk/3",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max W walk frame 3: opposite contact with rear support boot planted and forward heel lifted, natural side-profile stride, stable shoulder-fire and clean keyed edge at native 1024x1536.",
+    "sourceSHA256": "6b14f3f58b9a86ed0074899787e2df74f0c3d679df7cfdd87f033f462be308d8",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Wwalk3/W_walk_3_luna_rgba_candidate.png",
+      "sha256": "6fe2e514207a6aa3d63a29b834de1b3113a23e9e2760a4402d7490e66575fd19"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:21:58.644916+00:00",
+    "slot": "W/walk/4",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max W walk frame 4: grounded follow-through with front support boot carrying weight and rear heel lifted, coherent left-facing weapon line and clean keyed edge at native 1024x1536.",
+    "sourceSHA256": "cc80bc6c3a5915ff7084cfe74104de2a418cb066d0a1c5a7f29f5203edc527de",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Wwalk4/W_walk_4_luna_rgba_candidate.png",
+      "sha256": "ebbaf3b33b0f087221cda8016d897447ff54a3a47fd908a014984af60ca90da7"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:27:10.036129+00:00",
+    "slot": "W/walk/5",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max W walk frame 5: grounded side-profile stride, both legs separated with trailing foot lifted, shotgun held at shoulder and eye line, clean edges without visible green spill.",
+    "sourceSHA256": "f9b1ea920646b69175c1f5e27a60d9689e124985c1d62d42779e348744f6c07a",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Wwalk5/W_walk_5_luna_rgba_candidate.png",
+      "sha256": "df26ff0e1684b80f2dcdce010b6d90ec955b05b97bf8efcdc9c63f35ac39fdd1"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:29:16.392792+00:00",
+    "slot": "W/idle/0",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max W idle frame: stable left-facing side profile, both boots planted and knees relaxed, shotgun held at shoulder and eye line, uniform green removed cleanly with no visible spill.",
+    "sourceSHA256": "eec695746327c4c78018d6e8fc8722e03cb54dab1e761576a8412c1af9cf47f2",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Widle/W_idle_0_luna_rgba_candidate.png",
+      "sha256": "70e910b577f310d23e952d04645afc296efcb4a1d1c7d16762c248aa80738d08"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:31:15.235659+00:00",
+    "slot": "NW/walk/0",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NW walk frame 0: three-quarter rear-left stride with one planted support foot and a separated stepping foot, shotgun held at shoulder/eye line and aimed upper-left, clean silhouette and no visible green spill.",
+    "sourceSHA256": "e32bf111c753f37bce398c47630a8b052eef9c322fa859365923a123ec41b831",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NWwalk0/NW_walk_0_luna_rgba_candidate.png",
+      "sha256": "b7f5094617eb2a15c95b6e2641779b6737b1680b458bcfc1f521adaa1b5ddb1d"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:32:42.402349+00:00",
+    "slot": "NW/walk/1",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NW walk frame 1: natural passing transition with one support foot and one forward stepping foot, coherent upper-body counter-rotation and stable shoulder-level aim, clean silhouette.",
+    "sourceSHA256": "eeebb8a5391bfc6b44094b7f7f6da874692006f41777005dc711b433da2995e6",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NWwalk1/NW_walk_1_luna_rgba_candidate.png",
+      "sha256": "57c0f3acf24005a4d00279a778ff4853e8a59806d5f7fe4b59585e0eed6bbf99"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:34:02.481612+00:00",
+    "slot": "NW/walk/2",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NW walk frame 2: clear down/compression phase with planted support foot, heel-off push foot, lowered pelvis and flexed knees, stable shoulder-level aim and clean silhouette.",
+    "sourceSHA256": "b6c1747fb9330a327655d0e03f09a031f9379596ebfb79b424b1be90ecb836e0",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NWwalk2/NW_walk_2_luna_rgba_candidate.png",
+      "sha256": "52428cd03491246fa3211904a6d403529a64afb3c000a3b52e525f06f34ef333"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:35:32.733351+00:00",
+    "slot": "NW/walk/3",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NW walk frame 3: lifted-foot mid-stride with clear support leg, natural hip/shoulder counter-rotation and stable upper-body shotgun aim, clean silhouette.",
+    "sourceSHA256": "78bf709560d45a65eb88e5c720269c53efb95f56c40d95308019e6a0edf99cbf",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NWwalk3/NW_walk_3_luna_rgba_candidate.png",
+      "sha256": "cd4a3124298e8d57dd50fa501d08762632b2661a9fb5413bcec7c4c008ef826c"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:37:09.256771+00:00",
+    "slot": "NW/walk/4",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NW walk frame 4: late-stance step with clear toe push-off and reaching forward foot, grounded weight transfer toward upper-left, stable weapon aim and clean edges.",
+    "sourceSHA256": "417d6b6ccb91e8a559410406377329a882601de8079533da5f64973ed6c1c1ea",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NWwalk4/NW_walk_4_luna_rgba_candidate.png",
+      "sha256": "dc5425d16b62e8999ccabcd2a3fbfc90361054de13e846c33a52c38004bf91fb"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:38:43.226316+00:00",
+    "slot": "NW/walk/5",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NW walk frame 5: forward contact/recovery with softly planted lead foot and trailing heel lift, believable weight transfer upper-left, stable shouldered shotgun and clean edges.",
+    "sourceSHA256": "83df05b330d7027c353116c6949dac9b7b371d489cbb02a44cbd5e1fc7e1bd16",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NWwalk5/NW_walk_5_luna_rgba_candidate.png",
+      "sha256": "05d569ea7d3f40606031f5fd9732138390ce822933546d71e7665ee8407f51fe"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:42:23.496242+00:00",
+    "slot": "NW/idle/0",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NW idle repair: stable three-quarter rear-left combat stance with both boots fully planted, shotgun correctly supported at shoulder and eye line toward upper-left, uniform green matte removed without visible spill; replaces quarantined black-background attempt.",
+    "sourceSHA256": "b104d2e384d85efd4ab30532200828ec6db1116bef17208372550c612f7149aa",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NWidle_repair1/NW_idle_0_luna_repair1_rgba_candidate.png",
+      "sha256": "219268ee5c130209439bc316970b9a3e64bcd042493180f5e90eb1f5565acb8c"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:44:05.600397+00:00",
+    "slot": "N/walk/0",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max N walk frame 0: readable rear-facing contact stride toward north with one planted support boot and one reaching leg, coherent poncho/foot silhouette and stable shoulder-level shotgun posture, clean matte.",
+    "sourceSHA256": "1e1db289162225026aba729fa8ace09dc13d2263a6def979d2030ecc9f1ca891",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Nwalk0/N_walk_0_luna_rgba_candidate.png",
+      "sha256": "9c2962d4f873928d926eec6eb8bd41454951758a70ba1aa2731f4bb8688f4bf5"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:45:35.273069+00:00",
+    "slot": "N/walk/1",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max N walk frame 1: rear-facing passing phase with one leg advancing north and the other under the hips, natural poncho sway and stable shouldered shotgun, clean green separation.",
+    "sourceSHA256": "4f6f5b082c1aeb37831b6b0ae6ec92ff40721fe278735bbf526650628e38fcc2",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Nwalk1/N_walk_1_luna_rgba_candidate.png",
+      "sha256": "8c75642092ccb024458183f986ec759e40aee34bb7d9373f85b7a1c27fb7f9b7"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:47:17.308594+00:00",
+    "slot": "N/walk/2",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max N walk frame 2: rear-facing compression phase with lead support foot planted, trailing heel lifted, pelvis lowered and knees flexed, stable shotgun posture and clean matte.",
+    "sourceSHA256": "ad5fe8932b8aefa01304c77c9957619d29abc0fa9d481c5b7c330a91c8d5c97e",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Nwalk2/N_walk_2_luna_rgba_candidate.png",
+      "sha256": "8dfee36ac292e39f10a5c4a4cd2a9406b5111ef00506ef13b8a8efcda7d725dd"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:49:11.680381+00:00",
+    "slot": "N/walk/3",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max N walk frame 3: clear rear-facing mid-stance with one planted support boot and opposite toe lifted in natural northward travel, stable shouldered shotgun and clean separation.",
+    "sourceSHA256": "2f1680fe4033790339e8c0ad76938d782e0989a8b7a04ba56543e40380e11849",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Nwalk3/N_walk_3_luna_rgba_candidate.png",
+      "sha256": "9bd300f515f625c0651e148e00440e0ae3b7ae05cbbcaa8774e6595830c6e486"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:50:53.834701+00:00",
+    "slot": "N/walk/4",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max N walk frame 4: rear-facing late stance with toe push-off and reaching northward foot, natural weight transfer and stable shotgun at shoulder/eye line, clean separation.",
+    "sourceSHA256": "fb84ba7a4014801a181112fc89ce28ddd2b6e60b73784234183994cee5b207f5",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Nwalk4/N_walk_4_luna_rgba_candidate.png",
+      "sha256": "f877db360881be50a992a2ecc97184f97c7d8d9b4d92531f3e270befa0828421"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:52:53.819525+00:00",
+    "slot": "N/walk/5",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max N walk frame 5: rear-facing recovery/contact with lead boot flat and trailing heel lifted, grounded northward weight transfer, stable shotgun aim and clean edge separation.",
+    "sourceSHA256": "be94fcd071f81ae46ce0e6393c48041c5cc887a760c2768428dd8e7d10780359",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Nwalk5/N_walk_5_luna_rgba_candidate.png",
+      "sha256": "5550daab91865f2e2835c880dea7ec91a0a78155d58280885cd59a9ca061a298"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:57:36.953072+00:00",
+    "slot": "N/idle/0",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max N idle repair: stable rear-facing combat stance with both boots flat and planted, shotgun correctly shouldered toward north, clean green-screen separation; replaces quarantined studio-background attempts.",
+    "sourceSHA256": "b8afe35660435577fc16444ac58ef7a45e99b68e1e14b0521f969c1bf2c80057",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_Nidle_repair1/N_idle_0_luna_repair1_rgba_candidate.png",
+      "sha256": "25845b7b3b5a526f6ac4bfe92fd2df1626d9a8deb9798479cb20cfee10cb268a"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T02:59:28.862943+00:00",
+    "slot": "NE/walk/0",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NE walk frame 0: three-quarter rear-right contact stride toward upper-right with one planted support boot and one reaching foot, shotgun held at shoulder/eye line, clean silhouette.",
+    "sourceSHA256": "f6b664ee812bdde68bdd1fbdfab981a777abe3cef8bfcdc6c261964c69d7ea1c",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NEwalk0/NE_walk_0_luna_rgba_candidate.png",
+      "sha256": "cf733c8346c866dd3909db9d501764f433e3d3826739033bbc6d00d213d368d8"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T03:01:35.560452+00:00",
+    "slot": "NE/walk/1",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NE walk frame 1: three-quarter rear-right passing phase with natural forward weight transfer toward upper-right, stable shoulder/eye-line shotgun aim, clean matte separation.",
+    "sourceSHA256": "587f5c24f9d1d4e21fc6ba9a22a0070ac23609ee07421db91e75d45821e30196",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NEwalk1/NE_walk_1_luna_rgba_candidate.png",
+      "sha256": "a752c945e0084add9bca32cbb317a8ea0fa0d26957b7ccf6371f5f61950db6fb"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T03:03:42.875415+00:00",
+    "slot": "NE/walk/2",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NE walk frame 2: clear compression/down phase with planted support boot, lifted trailing heel, flexed knees and aligned upper-right travel, stable shotgun aim and clean edges.",
+    "sourceSHA256": "461a480ebf92d3cd260cfddf4745e433ff4b93fb66512fdc54371c3fe9a4bfca",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NEwalk2/NE_walk_2_luna_rgba_candidate.png",
+      "sha256": "f92f19fa51d09aab905affa69e6aa640b535c1f37f0561675249fb31fa511e6f"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T03:05:56.452483+00:00",
+    "slot": "NE/walk/3",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NE walk frame 3: rising mid-stance with one support foot and opposite toe lifted, natural upper-right travel and poncho motion, stable shouldered shotgun and clean separation.",
+    "sourceSHA256": "dd5644014282f60bb80f206c1558b45a1e4b17005dbb40db7620e1fdbf64e326",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NEwalk3/NE_walk_3_luna_rgba_candidate.png",
+      "sha256": "570631f31423759dbb1e1edbb47fd47d0700ddde61d9d0451b51578915818f6c"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T03:08:35.509383+00:00",
+    "slot": "NE/walk/4",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NE walk frame 4: late stance with toe push-off and reaching upper-right foot, coherent grounded weight transfer and stable shouldered shotgun, clean edge separation.",
+    "sourceSHA256": "8fcb97a51c0e057ef1f0c930a6f5bae1540acfa1cbb663c4047b5791244fc4d5",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NEwalk4/NE_walk_4_luna_rgba_candidate.png",
+      "sha256": "e33471e455d4e389a6bf8e00980c75c90efa17c6436f7e3915bed0fe19939d66"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T03:10:47.712744+00:00",
+    "slot": "NE/walk/5",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NE walk frame 5: final upper-right contact/recovery with lead boot flat and trailing heel lifted, natural grounded weight transfer, stable shoulder/eye-line shotgun and clean separation.",
+    "sourceSHA256": "6bb4f58cbf295a9e30972de2d4d9a96850fde1263d25fc891dde6d2b8c124208",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NEwalk5/NE_walk_5_luna_rgba_candidate.png",
+      "sha256": "f73e60ec54587f25812f8af43d541ec441584acc921894a2d9aa96ce29ec233a"
+    }
+  },
+  {
+    "recordedAt": "2026-09-12T03:12:58.759324+00:00",
+    "slot": "NE/idle/0",
+    "decision": "approved",
+    "reviewer": "codex-visual-review-2026-09-12",
+    "notes": "Approved Luna Max NE idle frame: stable three-quarter rear-right combat stance with both boots planted, shotgun correctly held at shoulder and eye line toward upper-right, clean green separation.",
+    "sourceSHA256": "5a130d483a515486cd6bbda16b3f0711137cbe673b7c172c058f805d311254ec",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/incoming/rook_luna_20260912_NEidle/NE_idle_0_luna_rgba_candidate.png",
+      "sha256": "c464c975b905b6c4253754a06eed9fc332fd582d1bd27ee2400413854d2bc42e"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T00:07:09.880937+00:00",
+    "slot": "E/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra direct visual review",
+    "notes": "Anatomical RIGHT ammo-canister thigh traces backward through the near knee to rear toe, LEFT unmarked thigh traces forward to planted boot; opposite to current E3. Shoulder aim and mature white-bob identity retained. Compiled RGBA has zero opaque-green pixels; contact silhouette and boot margins complete.",
+    "sourceSHA256": "d32d44523076e15c8d27634d95a53bfdae7744bb2df02b69addb603ec3957ab2",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/c40bbc782875b030_fb068983/E_walk_pair0_native_2128x1626.png",
+      "sha256": "f6997f041cc1125a2c5e08ebe66528028b31704858a8b32916e0a8f5441370f2"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T00:14:42.145468+00:00",
+    "slot": "E/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra direct visual review",
+    "notes": "Right canister thigh passes forward with bent knee, boot now close beside left support ankle instead of extended high kick. Face, cloak, horizontal shotgun grip preserved. Native light/dark cutout inspected; no opaque green background.",
+    "sourceSHA256": "f7cb7aa596b3c4607b6a5cc4bca9e01c4efdc1b6f4f38a850631d114972de9b2",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/136415e57b315633_98b25de7/E_walk_pair2_native_1920x1080.png",
+      "sha256": "3646abaacb0761950e5f956c902037a6ecdec4ec04fcec2397289a9ef1963737"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T00:14:42.462974+00:00",
+    "slot": "E/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra direct visual review",
+    "notes": "Right canister leg supports under hip; far clean left knee passes forward with boot close to the right ankle. Counterpart differs by connected near/far hip-knee chain. Native light/dark edges clean; black/gold appearance maintained with illustrated detail variation.",
+    "sourceSHA256": "2718c5741bec8847beaa5bc5b298a967399d198428076a66b18576c8f893a6c7",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/136415e57b315633_98b25de7/E_walk_pair2_native_1920x1080.png",
+      "sha256": "3646abaacb0761950e5f956c902037a6ecdec4ec04fcec2397289a9ef1963737"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:43:14.145516+00:00",
+    "slot": "S/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra native source review",
+    "notes": "Front ROOK left_contact: right thigh cylinders stay screen left; correct opposite boot chain and whole-body connection. Black gold short cape and shouldered shotgun retained. Native keyed hair/boot edges inspected on contrasting panels; no opaque green background. Minor knee plate variation retained for illustrated MVP.",
+    "sourceSHA256": "9cc6a0e82949400e1327fadc549a644448e5371ed8e2c7648c9d780627525c12",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/0eb5071db470346b_ad179d51/S_walk_pair0_native_1920x1090.png",
+      "sha256": "dad4a5da74f51fed738713523ddbf0fa93d0f52ac9a8ca87e3890eb23c875454"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:43:15.366451+00:00",
+    "slot": "S/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra native source review",
+    "notes": "Front ROOK right_swing: right thigh cylinders stay screen left; correct opposite boot chain and whole-body connection. Black gold short cape and shouldered shotgun retained. Native keyed hair/boot edges inspected on contrasting panels; no opaque green background. Minor knee plate variation retained for illustrated MVP.",
+    "sourceSHA256": "d2a10f9ee5b139a9b12606914ebc93f807479564b52b935b5e84bf36ab85481b",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/0eb5071db470346b_ad179d51/S_walk_pair1_native_2128x1626.png",
+      "sha256": "628d334a646b1f350188fdd37ff69992a1a2e7a99896e1496adaa4349823f991"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:43:16.634979+00:00",
+    "slot": "S/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra native source review",
+    "notes": "Front ROOK right_passing: right thigh cylinders stay screen left; correct opposite boot chain and whole-body connection. Black gold short cape and shouldered shotgun retained. Native keyed hair/boot edges inspected on contrasting panels; no opaque green background. Minor knee plate variation retained for illustrated MVP.",
+    "sourceSHA256": "c93b5bc72d2aea18fc29a19175529aaadc426ae593125a43f5bb393736442286",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/0eb5071db470346b_ad179d51/S_walk_pair2_native_1920x1080.png",
+      "sha256": "c3ab295cf5b8646ef221a36657bf953b6979ee93cffa75ac88ff42fd6c390e16"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:43:17.868735+00:00",
+    "slot": "S/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra native source review",
+    "notes": "Front ROOK right_contact: right thigh cylinders stay screen left; correct opposite boot chain and whole-body connection. Black gold short cape and shouldered shotgun retained. Native keyed hair/boot edges inspected on contrasting panels; no opaque green background. Minor knee plate variation retained for illustrated MVP.",
+    "sourceSHA256": "6a5b1a89ddf49e1c2103c89d9e4c65b7b10a266c3486d42a8d8f228afdf08830",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/0eb5071db470346b_ad179d51/S_walk_pair0_native_1920x1090.png",
+      "sha256": "dad4a5da74f51fed738713523ddbf0fa93d0f52ac9a8ca87e3890eb23c875454"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:43:19.114444+00:00",
+    "slot": "S/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra native source review",
+    "notes": "Front ROOK left_swing: right thigh cylinders stay screen left; correct opposite boot chain and whole-body connection. Black gold short cape and shouldered shotgun retained. Native keyed hair/boot edges inspected on contrasting panels; no opaque green background. Minor knee plate variation retained for illustrated MVP.",
+    "sourceSHA256": "a9501979e2df93cbe99cfc0edad0b577ba15c2990dce4e8b48d9f7f0befa411f",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/0eb5071db470346b_ad179d51/S_walk_pair1_native_2128x1626.png",
+      "sha256": "628d334a646b1f350188fdd37ff69992a1a2e7a99896e1496adaa4349823f991"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:43:20.435285+00:00",
+    "slot": "S/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra native source review",
+    "notes": "Front ROOK left_passing: right thigh cylinders stay screen left; correct opposite boot chain and whole-body connection. Black gold short cape and shouldered shotgun retained. Native keyed hair/boot edges inspected on contrasting panels; no opaque green background. Minor knee plate variation retained for illustrated MVP.",
+    "sourceSHA256": "054aff582114b85969fc0312d5ad1e14a665f9ebc4888f165faea1a58b42d87e",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/0eb5071db470346b_ad179d51/S_walk_pair2_native_1920x1080.png",
+      "sha256": "c3ab295cf5b8646ef221a36657bf953b6979ee93cffa75ac88ff42fd6c390e16"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:49:47.831497+00:00",
+    "slot": "SE/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra native source review",
+    "notes": "Observed current native dark/light pair: connected whole-body anatomy, shoulder-held double shotgun, no green background; opposite legs traced through right-thigh cylinders. Minor pouch and plate outline variation retained, not identical-mesh appearance.",
+    "sourceSHA256": "c3bb7f5d4dae25c62e6319f670d00bfd6395476896e83d49e001e8d861781468",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/b758e1f5cbea490d_d5575df6/SE_walk_pair0_native_1920x1080.png",
+      "sha256": "ebe820e272bbbdc6d3b202f802c99b9bfb7cb5a0a91927b2a94208f05b5b0244"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:49:49.588293+00:00",
+    "slot": "SE/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra native source review",
+    "notes": "Observed current native dark/light pair: connected whole-body anatomy, shoulder-held double shotgun, no green background; opposite legs traced through right-thigh cylinders. Minor pouch and plate outline variation retained, not identical-mesh appearance.",
+    "sourceSHA256": "62b3df1143ce2fc7033ed935d5787a0ec96a7269d6189360c904a17a063f009f",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/b758e1f5cbea490d_d5575df6/SE_walk_pair1_native_1920x1080.png",
+      "sha256": "bfb219928551ae70f45c00262158cb2e3d813b7c746ee4eb9bc93c3acc89829d"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:49:51.181351+00:00",
+    "slot": "SE/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra native source review",
+    "notes": "Observed current native dark/light pair: connected whole-body anatomy, shoulder-held double shotgun, no green background; opposite legs traced through right-thigh cylinders. Minor pouch and plate outline variation retained, not identical-mesh appearance.",
+    "sourceSHA256": "2ee1228011e8b5b34a92cda6c3d1ae33ed27f66a26389af7bcb39d1d2b40f336",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/b758e1f5cbea490d_d5575df6/SE_walk_pair2_native_1920x1080.png",
+      "sha256": "410a8deb848aca13bea66a366699f5f339b11630708ba5caeca5489eb046a9e9"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:49:52.599527+00:00",
+    "slot": "SE/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra native source review",
+    "notes": "Observed current native dark/light pair: connected whole-body anatomy, shoulder-held double shotgun, no green background; opposite legs traced through right-thigh cylinders. Minor pouch and plate outline variation retained, not identical-mesh appearance.",
+    "sourceSHA256": "3a7f59bcd1780a661be074a08fd75f0178443f1061801ca155825e15dcd751fc",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/b758e1f5cbea490d_d5575df6/SE_walk_pair0_native_1920x1080.png",
+      "sha256": "ebe820e272bbbdc6d3b202f802c99b9bfb7cb5a0a91927b2a94208f05b5b0244"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:49:54.356975+00:00",
+    "slot": "SE/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra native source review",
+    "notes": "Observed current native dark/light pair: connected whole-body anatomy, shoulder-held double shotgun, no green background; opposite legs traced through right-thigh cylinders. Minor pouch and plate outline variation retained, not identical-mesh appearance.",
+    "sourceSHA256": "3d6c5a5751b9855b500e991c012da322a07dea5a03bba5bc9d2c8bc2b04f0ac3",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/b758e1f5cbea490d_d5575df6/SE_walk_pair1_native_1920x1080.png",
+      "sha256": "bfb219928551ae70f45c00262158cb2e3d813b7c746ee4eb9bc93c3acc89829d"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:49:56.156087+00:00",
+    "slot": "SE/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra native source review",
+    "notes": "Observed current native dark/light pair: connected whole-body anatomy, shoulder-held double shotgun, no green background; opposite legs traced through right-thigh cylinders. Minor pouch and plate outline variation retained, not identical-mesh appearance.",
+    "sourceSHA256": "876772a663afadfcfddfcf5586c0bf3e02f110b9a2fbcb0c2533fa33858c3ecc",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/b758e1f5cbea490d_d5575df6/SE_walk_pair2_native_1920x1080.png",
+      "sha256": "410a8deb848aca13bea66a366699f5f339b11630708ba5caeca5489eb046a9e9"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:58:29.558219+00:00",
+    "slot": "SW/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Observed all three native pair panels, corrected frame4 right support and left swing, clean genuine alpha and connected body. Short black gold cape and shoulder-aimed weapon preserved; frame4 upper body leaner and equipment details vary mildly at native scale.",
+    "sourceSHA256": "c19962022ae6bea448c07bf39f1bd03c3db016a9256d92604675dc0d19c3e350",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/88f9b26dcdbfbb21_1aeb9c07/SW_walk_pair0_native_2200x1574.png",
+      "sha256": "98606e4d6f1e82c3ef2ef4e63500d9bfd91bc9283f911816e3c78cc8e31fe235"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:58:30.982553+00:00",
+    "slot": "SW/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Observed all three native pair panels, corrected frame4 right support and left swing, clean genuine alpha and connected body. Short black gold cape and shoulder-aimed weapon preserved; frame4 upper body leaner and equipment details vary mildly at native scale.",
+    "sourceSHA256": "6871c8bb3e949edec3909888a4343cdd1fc2ebfaf43670d9570f190a6d04ac8b",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/88f9b26dcdbfbb21_1aeb9c07/SW_walk_pair1_native_2128x1626.png",
+      "sha256": "3c9b55f28530c7584941f804e7b72959b234fe261ca981e943882e6fcce0402c"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:58:32.303417+00:00",
+    "slot": "SW/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Observed all three native pair panels, corrected frame4 right support and left swing, clean genuine alpha and connected body. Short black gold cape and shoulder-aimed weapon preserved; frame4 upper body leaner and equipment details vary mildly at native scale.",
+    "sourceSHA256": "ceeb5ee0c6b47698cb3c86404e3ad059a95304478fb9e0d709758ae2d232bd71",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/88f9b26dcdbfbb21_1aeb9c07/SW_walk_pair2_native_2204x1574.png",
+      "sha256": "ca81c1ba3e330ad513e49096875d98ec35a3900c59c108d343c150afb0213a16"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:58:33.931046+00:00",
+    "slot": "SW/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Observed all three native pair panels, corrected frame4 right support and left swing, clean genuine alpha and connected body. Short black gold cape and shoulder-aimed weapon preserved; frame4 upper body leaner and equipment details vary mildly at native scale.",
+    "sourceSHA256": "faa2b6ef5b9e7b6d8295638310ef239f79b9a6fc0fa29e4b5c1ab393a8735f89",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/88f9b26dcdbfbb21_1aeb9c07/SW_walk_pair0_native_2200x1574.png",
+      "sha256": "98606e4d6f1e82c3ef2ef4e63500d9bfd91bc9283f911816e3c78cc8e31fe235"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:58:35.370771+00:00",
+    "slot": "SW/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Observed all three native pair panels, corrected frame4 right support and left swing, clean genuine alpha and connected body. Short black gold cape and shoulder-aimed weapon preserved; frame4 upper body leaner and equipment details vary mildly at native scale.",
+    "sourceSHA256": "2a5472dfb35b10091055348436e15c092addf0c32f43ef8017aa8b4da49cc424",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/88f9b26dcdbfbb21_1aeb9c07/SW_walk_pair1_native_2128x1626.png",
+      "sha256": "3c9b55f28530c7584941f804e7b72959b234fe261ca981e943882e6fcce0402c"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T01:58:36.784242+00:00",
+    "slot": "SW/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Observed all three native pair panels, corrected frame4 right support and left swing, clean genuine alpha and connected body. Short black gold cape and shoulder-aimed weapon preserved; frame4 upper body leaner and equipment details vary mildly at native scale.",
+    "sourceSHA256": "09b5707b6e43914152d15eb57d7e506c5f0a81ad02ae7d70466add0d3ef7997d",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/88f9b26dcdbfbb21_1aeb9c07/SW_walk_pair2_native_2204x1574.png",
+      "sha256": "ca81c1ba3e330ad513e49096875d98ec35a3900c59c108d343c150afb0213a16"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:00:10.201086+00:00",
+    "slot": "W/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native dark/light pairs and corrected passing2 inspected. Left clean near support and far right passing now distinct, shouldered twin gun, short cape and genuine alpha. Some kneeplate, pouch and body-width variation remains; not exact 3D mesh continuity.",
+    "sourceSHA256": "828946f0e1e4a2d1f9146a39efde30ae7c293c87cc7080a406d0ae5402872900",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/41c04d610ae9df9e_ec020c11/W_walk_pair0_native_1920x1080.png",
+      "sha256": "3fb2e16817521a3c22cf1248aab06dac60ad32dde4ba800a024557480b711b1c"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:00:12.051042+00:00",
+    "slot": "W/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native dark/light pairs and corrected passing2 inspected. Left clean near support and far right passing now distinct, shouldered twin gun, short cape and genuine alpha. Some kneeplate, pouch and body-width variation remains; not exact 3D mesh continuity.",
+    "sourceSHA256": "d20b930c7df41de96a37773b52e9c5ca549ff5257046acf3fc997cda36ac1f90",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/41c04d610ae9df9e_ec020c11/W_walk_pair1_native_2128x1626.png",
+      "sha256": "22c37c5a36036ecbb4e09aa9443201fd56bb33b1c18ec30a132c01f2b6a09224"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:00:14.095316+00:00",
+    "slot": "W/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native dark/light pairs and corrected passing2 inspected. Left clean near support and far right passing now distinct, shouldered twin gun, short cape and genuine alpha. Some kneeplate, pouch and body-width variation remains; not exact 3D mesh continuity.",
+    "sourceSHA256": "af2f6ddcfa9c34cc99a7b45e7eb7363395aae2e545f1a24bea30f6a9799cd858",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/41c04d610ae9df9e_ec020c11/W_walk_pair2_native_2128x1626.png",
+      "sha256": "4abb40a5e6ebc48a79e3e4743765e33d0e636fac87f72f8d26efec627f6a91c4"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:00:16.096983+00:00",
+    "slot": "W/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native dark/light pairs and corrected passing2 inspected. Left clean near support and far right passing now distinct, shouldered twin gun, short cape and genuine alpha. Some kneeplate, pouch and body-width variation remains; not exact 3D mesh continuity.",
+    "sourceSHA256": "b88f49152cd6c66aac660ead2bfae3c379ba26b6b7cb3cddf8c95f7f2fb9fb96",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/41c04d610ae9df9e_ec020c11/W_walk_pair0_native_1920x1080.png",
+      "sha256": "3fb2e16817521a3c22cf1248aab06dac60ad32dde4ba800a024557480b711b1c"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:00:18.026915+00:00",
+    "slot": "W/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native dark/light pairs and corrected passing2 inspected. Left clean near support and far right passing now distinct, shouldered twin gun, short cape and genuine alpha. Some kneeplate, pouch and body-width variation remains; not exact 3D mesh continuity.",
+    "sourceSHA256": "fd6e7f1dbdd06c17bd6fbdeddbdd59504085e095ad60bbd93888a6f179ed3aef",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/41c04d610ae9df9e_ec020c11/W_walk_pair1_native_2128x1626.png",
+      "sha256": "22c37c5a36036ecbb4e09aa9443201fd56bb33b1c18ec30a132c01f2b6a09224"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:00:20.319008+00:00",
+    "slot": "W/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native dark/light pairs and corrected passing2 inspected. Left clean near support and far right passing now distinct, shouldered twin gun, short cape and genuine alpha. Some kneeplate, pouch and body-width variation remains; not exact 3D mesh continuity.",
+    "sourceSHA256": "441ae4e3c1a421c83a38ce9e00af8dbea9a3da43dd9211de268507cc6ff70623",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/41c04d610ae9df9e_ec020c11/W_walk_pair2_native_2128x1626.png",
+      "sha256": "4abb40a5e6ebc48a79e3e4743765e33d0e636fac87f72f8d26efec627f6a91c4"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:02:03.010106+00:00",
+    "slot": "NW/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "All native source pairs inspected: near left clean and far right marked legs exchange, visible side heels in both passing frames. Gold cape hem retained, no green background or waist cut. Far-leg occlusion and small pouch and silhouette changes documented in cycle observations.",
+    "sourceSHA256": "f97a8e4bd76d433a1735144dfa9bedd0795404cfd461a0b2b0f5f2a228472b7f",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/c6742475f0cf75b8_5ce241b4/NW_walk_pair0_native_2128x1626.png",
+      "sha256": "67e1afd1d2f93aa2469e5d1f1536006401dae8d297e5f774d8ebc9f8344e873a"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:02:04.360827+00:00",
+    "slot": "NW/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "All native source pairs inspected: near left clean and far right marked legs exchange, visible side heels in both passing frames. Gold cape hem retained, no green background or waist cut. Far-leg occlusion and small pouch and silhouette changes documented in cycle observations.",
+    "sourceSHA256": "5f0e879c750ddce62fe0310928f08cf4251a9380248517487b0414c9c572cdad",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/c6742475f0cf75b8_5ce241b4/NW_walk_pair1_native_2128x1626.png",
+      "sha256": "6e39c380d8a656d907b07fd04030b5a0db2e940c6e7a98482bbe0cf9cefce5c0"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:02:05.807792+00:00",
+    "slot": "NW/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "All native source pairs inspected: near left clean and far right marked legs exchange, visible side heels in both passing frames. Gold cape hem retained, no green background or waist cut. Far-leg occlusion and small pouch and silhouette changes documented in cycle observations.",
+    "sourceSHA256": "80f469477653e4f42fb2637c59d6efc05797a0b66fd99fc02270c5ebbd9a6a50",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/c6742475f0cf75b8_5ce241b4/NW_walk_pair2_native_2128x1626.png",
+      "sha256": "59071315e5ad5a120320f6b7e0828da33c762d3669958475e139bf186c008ac1"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:02:07.254339+00:00",
+    "slot": "NW/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "All native source pairs inspected: near left clean and far right marked legs exchange, visible side heels in both passing frames. Gold cape hem retained, no green background or waist cut. Far-leg occlusion and small pouch and silhouette changes documented in cycle observations.",
+    "sourceSHA256": "f41a7641d5c2de75cabd6bba2666c8ea6b67e9b271218fd194e081338ebcbe7f",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/c6742475f0cf75b8_5ce241b4/NW_walk_pair0_native_2128x1626.png",
+      "sha256": "67e1afd1d2f93aa2469e5d1f1536006401dae8d297e5f774d8ebc9f8344e873a"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:02:08.620913+00:00",
+    "slot": "NW/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "All native source pairs inspected: near left clean and far right marked legs exchange, visible side heels in both passing frames. Gold cape hem retained, no green background or waist cut. Far-leg occlusion and small pouch and silhouette changes documented in cycle observations.",
+    "sourceSHA256": "a2a9704062f30edf5b3097a6313bb53cb61400552a5a73e58e060630ffcf154d",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/c6742475f0cf75b8_5ce241b4/NW_walk_pair1_native_2128x1626.png",
+      "sha256": "6e39c380d8a656d907b07fd04030b5a0db2e940c6e7a98482bbe0cf9cefce5c0"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:02:10.069299+00:00",
+    "slot": "NW/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "All native source pairs inspected: near left clean and far right marked legs exchange, visible side heels in both passing frames. Gold cape hem retained, no green background or waist cut. Far-leg occlusion and small pouch and silhouette changes documented in cycle observations.",
+    "sourceSHA256": "3744aab1565f8cd7cb49edd69af7921d9fce542d3e76636842a261d2beb1b4d6",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/c6742475f0cf75b8_5ce241b4/NW_walk_pair2_native_2128x1626.png",
+      "sha256": "59071315e5ad5a120320f6b7e0828da33c762d3669958475e139bf186c008ac1"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:04:10.611434+00:00",
+    "slot": "N/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native pairs confirm correct screen-left clean and screen-right cylinder legs, two heels and whole body. Passing versus rear swing differ by knee and sole orientation. Alpha clean; contact0 trim differs and rear-camera gun slightly off-center, noted in cycle packet.",
+    "sourceSHA256": "dc66009174a535b992c39e9011d35f2a526e8c843da067f9d74ba6f2e80f8a80",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/c0f50320f5ccd202_05893d25/N_walk_pair0_native_2128x1626.png",
+      "sha256": "d5446f096913ae52928d4c43eac0658088951549632d1ff13ba5c722766908ba"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:04:12.198210+00:00",
+    "slot": "N/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native pairs confirm correct screen-left clean and screen-right cylinder legs, two heels and whole body. Passing versus rear swing differ by knee and sole orientation. Alpha clean; contact0 trim differs and rear-camera gun slightly off-center, noted in cycle packet.",
+    "sourceSHA256": "ad985fa24393a869fe48ccd27f0a53ebd58bacf85739e608ff91b3e63e260dbb",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/c0f50320f5ccd202_05893d25/N_walk_pair1_native_2128x1626.png",
+      "sha256": "7b897ee087a57bf40a0bdfd9f3e345e4f5d24eb4916e4d8ea8acc3d9d6165a0d"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:04:13.652585+00:00",
+    "slot": "N/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native pairs confirm correct screen-left clean and screen-right cylinder legs, two heels and whole body. Passing versus rear swing differ by knee and sole orientation. Alpha clean; contact0 trim differs and rear-camera gun slightly off-center, noted in cycle packet.",
+    "sourceSHA256": "c402aba5c351e6cc7cf4f36cd788376b892d5d10b344cd04b7103cdfb9a0fe8a",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/c0f50320f5ccd202_05893d25/N_walk_pair2_native_2226x1626.png",
+      "sha256": "95fdfc64c6e41e44f0ec373690f3afe9a846bb5949f1d76869a4624251c658e1"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:04:15.407488+00:00",
+    "slot": "N/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native pairs confirm correct screen-left clean and screen-right cylinder legs, two heels and whole body. Passing versus rear swing differ by knee and sole orientation. Alpha clean; contact0 trim differs and rear-camera gun slightly off-center, noted in cycle packet.",
+    "sourceSHA256": "a3e373c08645e89038241cf0767864a76631407ac5edbb6848220d9b3dbd5daf",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/c0f50320f5ccd202_05893d25/N_walk_pair0_native_2128x1626.png",
+      "sha256": "d5446f096913ae52928d4c43eac0658088951549632d1ff13ba5c722766908ba"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:04:16.997005+00:00",
+    "slot": "N/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native pairs confirm correct screen-left clean and screen-right cylinder legs, two heels and whole body. Passing versus rear swing differ by knee and sole orientation. Alpha clean; contact0 trim differs and rear-camera gun slightly off-center, noted in cycle packet.",
+    "sourceSHA256": "9734d3074eaee4705af978258c4935f1b65aad012a1e7707fec35f1dd030d60a",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/c0f50320f5ccd202_05893d25/N_walk_pair1_native_2128x1626.png",
+      "sha256": "7b897ee087a57bf40a0bdfd9f3e345e4f5d24eb4916e4d8ea8acc3d9d6165a0d"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:04:18.608094+00:00",
+    "slot": "N/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native pairs confirm correct screen-left clean and screen-right cylinder legs, two heels and whole body. Passing versus rear swing differ by knee and sole orientation. Alpha clean; contact0 trim differs and rear-camera gun slightly off-center, noted in cycle packet.",
+    "sourceSHA256": "6bf16de0beb04e18e26503268e1ea76ec83ca90f3e88ff1d9c1a566774442cf6",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/c0f50320f5ccd202_05893d25/N_walk_pair2_native_2226x1626.png",
+      "sha256": "95fdfc64c6e41e44f0ec373690f3afe9a846bb5949f1d76869a4624251c658e1"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:08:56.930412+00:00",
+    "slot": "NE/walk/0",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Reviewed all three native light/dark pairs and 35 actual decoded game-scale samples across three cycles; played native WebM at 1x. Near anatomical right leg with cylinders changes from trailing contact to leading contact, with separate passing and opposite support phases. Far left passing clears ground; intact shoulders and gun. Minor silhouette/trim variation remains in six-frame MVP; landmarks are visible contour observations, not gait targets.",
+    "sourceSHA256": "4e3cc7ac9afd2355f12909d3b705f4512a271d34d0c026942529ae6381d36331",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/b871bb8a65e36286_30ecee6d/NE_walk_pair0_native_2128x1626.png",
+      "sha256": "bfce428c42ab8a4851ca37c08919041abc4de927351c06fd19a4fc8dfb617902"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:08:58.970160+00:00",
+    "slot": "NE/walk/1",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Reviewed all three native light/dark pairs and 35 actual decoded game-scale samples across three cycles; played native WebM at 1x. Near anatomical right leg with cylinders changes from trailing contact to leading contact, with separate passing and opposite support phases. Far left passing clears ground; intact shoulders and gun. Minor silhouette/trim variation remains in six-frame MVP; landmarks are visible contour observations, not gait targets.",
+    "sourceSHA256": "8038a365ecf44e2c90cb632b9f22b573969dbab29956d49841b9e143b803f5e4",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/b871bb8a65e36286_30ecee6d/NE_walk_pair1_native_2128x1626.png",
+      "sha256": "e724b1b646e906da2be1b85df471e5244a069f07b6b877d8de9c00d7215de4fd"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:09:00.928339+00:00",
+    "slot": "NE/walk/2",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Reviewed all three native light/dark pairs and 35 actual decoded game-scale samples across three cycles; played native WebM at 1x. Near anatomical right leg with cylinders changes from trailing contact to leading contact, with separate passing and opposite support phases. Far left passing clears ground; intact shoulders and gun. Minor silhouette/trim variation remains in six-frame MVP; landmarks are visible contour observations, not gait targets.",
+    "sourceSHA256": "b2d542efed9169b00d8d38ee57e40e21bad11e2c77b968d671bc0eb035360d3e",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/b871bb8a65e36286_30ecee6d/NE_walk_pair2_native_2128x1626.png",
+      "sha256": "b99ff6eab1fbc5e8496c0826d51f466ab2830723d0d6f15260a2569583e1d72e"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:09:02.974029+00:00",
+    "slot": "NE/walk/3",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Reviewed all three native light/dark pairs and 35 actual decoded game-scale samples across three cycles; played native WebM at 1x. Near anatomical right leg with cylinders changes from trailing contact to leading contact, with separate passing and opposite support phases. Far left passing clears ground; intact shoulders and gun. Minor silhouette/trim variation remains in six-frame MVP; landmarks are visible contour observations, not gait targets.",
+    "sourceSHA256": "5665c5dbabab6f4ad156a866a97babd38169dbac07820fe898d55e0f460e7476",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/b871bb8a65e36286_30ecee6d/NE_walk_pair0_native_2128x1626.png",
+      "sha256": "bfce428c42ab8a4851ca37c08919041abc4de927351c06fd19a4fc8dfb617902"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:09:05.445827+00:00",
+    "slot": "NE/walk/4",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Reviewed all three native light/dark pairs and 35 actual decoded game-scale samples across three cycles; played native WebM at 1x. Near anatomical right leg with cylinders changes from trailing contact to leading contact, with separate passing and opposite support phases. Far left passing clears ground; intact shoulders and gun. Minor silhouette/trim variation remains in six-frame MVP; landmarks are visible contour observations, not gait targets.",
+    "sourceSHA256": "d5e5c9458964e03e177f9e614ae539e66df96310f0621870c0a8b98c6bd99efc",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/b871bb8a65e36286_30ecee6d/NE_walk_pair1_native_2128x1626.png",
+      "sha256": "e724b1b646e906da2be1b85df471e5244a069f07b6b877d8de9c00d7215de4fd"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:09:07.731422+00:00",
+    "slot": "NE/walk/5",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Reviewed all three native light/dark pairs and 35 actual decoded game-scale samples across three cycles; played native WebM at 1x. Near anatomical right leg with cylinders changes from trailing contact to leading contact, with separate passing and opposite support phases. Far left passing clears ground; intact shoulders and gun. Minor silhouette/trim variation remains in six-frame MVP; landmarks are visible contour observations, not gait targets.",
+    "sourceSHA256": "f1180a97b4efbad0fd2a8199f6fe807a03ec4936e402bfdb9f064de67e3e1483",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/b871bb8a65e36286_30ecee6d/NE_walk_pair2_native_2128x1626.png",
+      "sha256": "b99ff6eab1fbc5e8496c0826d51f466ab2830723d0d6f15260a2569583e1d72e"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:09:30.088857+00:00",
+    "slot": "SE/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native light/dark alpha pair inspected. White bob, short black gold cape, shouldered twin barrel gun and planted stable legs match the walk art; cool rim highlights are not residual green.",
+    "sourceSHA256": "fa07e085d9c1691b14babb719b72a7542435654c123f82485421b7eaf1029585",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/eb4d8ae550f3cc33_5201eed8/SE_idle_pair0_native_2128x1626.png",
+      "sha256": "f6afadbf5139cfd57081dfc8892846648ec7b0ecf508a93518f239c999f85df0"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:09:31.520319+00:00",
+    "slot": "S/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native light/dark alpha pair inspected. Front stationary braced gun stance; both boots flat, continuous hip and torso, clean hair/weapon separation. Right thigh cylinders remain on anatomical right.",
+    "sourceSHA256": "c3d3925c8996ad62965e6b2e73393dafe962bc87a77b43482a7e9bf14b847eca",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/f7271c13a8643ae2_16cb56f7/S_idle_pair0_native_2128x1626.png",
+      "sha256": "ff193815561bfc5a30d61a9481e114aa5749ea46fe1bc1f65351572efca7f818"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:09:32.945332+00:00",
+    "slot": "SW/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native light/dark alpha pair inspected. Near left leg supports planted stance, far right cylinders partly occluded naturally; gun held to shoulder, clean alpha and continuous full-body art.",
+    "sourceSHA256": "22fc8b2077b8a6a907797f8dc5520f4cdc8da3309fcb2d12c6c2659394353e62",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/20b23f173f23206e_c94a0345/SW_idle_pair0_native_2128x1626.png",
+      "sha256": "d76c60329d5899b15fb5e9aa86964476ae60474364fbfaa287c8f487ed3a4f65"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:09:34.335578+00:00",
+    "slot": "W/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native light/dark alpha pair inspected. Stable planted profile with shouldered gun and far right cylinder at outer thigh edge. No separated waist or green patch.",
+    "sourceSHA256": "d978f66c3b7c2401030ab8dbcfd4b6c6635f73189e3e0fc504a8a899ab6e9002",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/2915f6eadf9724a9_ca96bde9/W_idle_pair0_native_2128x1626.png",
+      "sha256": "877cd04691eddbd0dcc9270def0f68d64539e1e0ec66e8512326cf4aa16de9c1"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:09:35.847525+00:00",
+    "slot": "NW/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native light/dark alpha pair inspected. Rear left view: planted boots, continuous hips, short cape, raised twin barrels and gold support forearm. One of paired right cylinders is naturally occluded.",
+    "sourceSHA256": "25648ad2ea24f2c8d18fa1817fdfd6a3521d5d2aa11c3d50dc73e90c7a1a49c6",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/4d4ccacec6f90696_0bf18ab4/NW_idle_pair0_native_2128x1626.png",
+      "sha256": "4c8fe60ea03d3a44ca4ff32dac1a14f0b3a5b502960ddd1afbb031717c94b4cf"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:09:37.295073+00:00",
+    "slot": "N/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native light/dark alpha pair inspected. Rear planted stance, right-thigh twin cylinders, continuous cape/hips, visible twin muzzle above right shoulder. Gun is slightly off-center in rear perspective; raw muzzle socket explicitly calibrated.",
+    "sourceSHA256": "2c406cde250603da55cf28c55c87d7e71f54f7a85ca9692ac9d59389efebdc09",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/866cf23e4c3fc003_7e5db2fc/N_idle_pair0_native_2128x1626.png",
+      "sha256": "c5541342346ab4bfc8f5a780e90a723e41f53dfd06c0923b53bfcc632772abd9"
+    }
+  },
+  {
+    "recordedAt": "2026-09-13T02:09:38.769038+00:00",
+    "slot": "NE/idle/0",
+    "decision": "approved",
+    "reviewer": "Astra native art inspection",
+    "notes": "Native light/dark alpha pair inspected. Rear right planted stance with visible right-thigh twin cylinders, gun shoulder height, gold forearm, clean bob and boot alpha. Matches current directional walk appearance; discrete stance transition requires runtime review.",
+    "sourceSHA256": "b5ca8a47605c7c06a0eda49546a2849f1613903567281fd567929c2055cb3b63",
+    "referenceSHA256": "b42104b24afebc18ca664b8ca6af9a80be30e8a64a3aa4a3f1e401a49ba0d65a",
+    "evidence": {
+      "path": "qa/rook/gait/82d40c7e1ffd4d81_f059d9dc/NE_idle_pair0_native_2128x1626.png",
+      "sha256": "d239e84d0574eb1441334a56df76f4d95de50cfcb897772f94b605b445ec5669"
+    }
+  }
+]

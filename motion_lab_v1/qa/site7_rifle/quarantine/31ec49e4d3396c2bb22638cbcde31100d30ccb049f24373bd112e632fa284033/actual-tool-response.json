@@ -1,0 +1,45 @@
+{
+  "tool": "image_gen.imagegen",
+  "returnedPath": "C:\\Users\\AAA\\.codex\\generated_images\\01a09aa0-43f8-7190-b88c-a5318c96f39d\\exec-0417f86d-dc4a-496a-b087-8200380d932a.png",
+  "result": {
+    "output_hint": "Generated images are saved to C:\\Users\\AAA\\.codex\\generated_images\\01a09aa0-43f8-7190-b88c-a5318c96f39d as C:\\Users\\AAA\\.codex\\generated_images\\01a09aa0-43f8-7190-b88c-a5318c96f39d\\exec-0417f86d-dc4a-496a-b087-8200380d932a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  "projectCopy": "art/site7_rifle/S_walk_0_master_luna_20260913_v1.png",
+  "projectCopySHA256": "31ec49e4d3396c2bb22638cbcde31100d30ccb049f24373bd112e632fa284033",
+  "request": {
+    "character": "site7_rifle",
+    "slot": "S/walk/0",
+    "direction": "S",
+    "action": "walk",
+    "frame": 0,
+    "phaseName": "left_contact",
+    "background": "transparent_alpha",
+    "reference": "art/site7_rifle/identity_reference.png",
+    "referenceSHA256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096",
+    "poseGuide": "reference/ual_guides/S_Walk_Loop_0.png",
+    "poseGuideSHA256": "bfc98ae8f3528ffd823bf9f470c130cbb67662f62b8c3d711e47307f7f3c0553",
+    "inputOrder": [
+      "reference/ual_guides/S_Walk_Loop_0.png",
+      "art/site7_rifle/identity_reference.png"
+    ]
+  },
+  "rawInspection": {
+    "path": "art/site7_rifle/S_walk_0_master_luna_20260913_v1.png",
+    "size": [1086, 1448],
+    "mode": "RGB",
+    "format": "PNG",
+    "bytes": 2033624,
+    "alphaMin": 255,
+    "alphaMax": 255,
+    "alphaUniqueCount": 1,
+    "transparentPixels": 0,
+    "opaquePixels": 1572528,
+    "partialAlphaPixels": 0,
+    "status": "HOLD_NOT_INTAKED",
+    "reason": "Returned image contains an opaque painted checkerboard; it is not genuine alpha and is not near-green, so the prescribed green normalization route does not apply."
+  },
+  "intake": {
+    "attempted": false,
+    "reason": "Exact returned master preserved but invalid for transparent-alpha intake; no active slot or source review record was created."
+  }
+}

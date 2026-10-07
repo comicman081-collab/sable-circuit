@@ -1,0 +1,64 @@
+{
+ "suite": "custom",
+ "project": "D:\\AI 종합 폴더\\Games\\Sable-circuit",
+ "started": "2026-09-30T19:19:36",
+ "git_head": "2d7a51a9a9a5b8c558d1cd3fe589ff00c55c9878",
+ "git_dirty": 15,
+ "godot": "D:\\AI 종합 폴더\\Godot\\4.7.1-standard\\Godot_v4.7.1-stable_win64_console.exe",
+ "motion_python": "C:\\AI_ENVS\\pair_pipeline_env\\Scripts\\python.exe",
+ "workers": 1,
+ "seconds": 1237,
+ "overall": "PASS",
+ "guard": {
+  "changed": [],
+  "removed": [],
+  "added": []
+ },
+ "results": [
+  {
+   "test": "world_layout",
+   "status": "PASS",
+   "seconds": 11.0,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_WORLD_LAYOUT PASS 8 missions",
+   "notes": []
+  },
+  {
+   "test": "mood_light",
+   "status": "PASS",
+   "seconds": 53.1,
+   "exit_code": 0,
+   "checks": null,
+   "status_line": "SITE7_MOOD_LIGHT PASS 120 plates 620 pools 120 void masks 15 contact shadows",
+   "notes": []
+  },
+  {
+   "test": "mood_contact",
+   "status": "PASS",
+   "seconds": 0.4,
+   "exit_code": 0,
+   "checks": 5,
+   "status_line": "OK",
+   "notes": []
+  },
+  {
+   "test": "connector_alignment",
+   "status": "PASS",
+   "seconds": 1138.1,
+   "exit_code": 0,
+   "checks": 848,
+   "status_line": "SITE7_CONNECTOR_ALIGNMENT PASS (848 checks)",
+   "notes": []
+  },
+  {
+   "test": "battle_geometry",
+   "status": "PASS",
+   "seconds": 23.1,
+   "exit_code": 0,
+   "checks": 4038,
+   "status_line": "SITE7_BATTLE_GEOMETRY_SMOKE: PASS (4038 checks)",
+   "notes": []
+  }
+ ]
+}

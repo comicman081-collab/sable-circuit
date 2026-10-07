@@ -1,0 +1,62 @@
+{
+  "manifestType": "SABLE_CIRCUIT_WEB_ALPHA_BRIDGE_INPUT",
+  "schema": "web_alpha_bridge_only_v1",
+  "character": "site7_rifle",
+  "slot": "S/walk/0",
+  "attempt": "luna_max_v6_green_bridge",
+  "sourceStatus": "WEB_ALPHA_BRIDGE_ONLY_HOLD",
+  "directIntakeAllowed": false,
+  "sourceApproval": "NOT_REQUESTED",
+  "runtimeRegistration": "NOT_REQUESTED",
+  "rawMaster": "S_walk_0_master_luna_max_20260913_v6_green_bridge.png",
+  "rawMasterSHA256": "970419f45bb2c2517c04edd6d8a62d9fea64540735f76d70fcd1582c1a5c1584",
+  "rawMasterMode": "RGB",
+  "rawMasterSize": [1024, 1536],
+  "rawMasterBytes": 1838192,
+  "backgroundRequest": {
+    "color": "#00FF00",
+    "uniformRequired": true,
+    "shadowAllowed": false,
+    "spillAllowed": false,
+    "checkerboardAllowed": false
+  },
+  "backgroundObserved": {
+    "exactPureGreenPixels": 0,
+    "exactPureGreenFraction": 0.0,
+    "nearGreenPixels": 1184972,
+    "nearGreenFraction": 0.7533849080403646,
+    "cornerPixels": [[20, 241, 18], [19, 240, 14], [22, 240, 20], [17, 244, 13]],
+    "uniformity": "FAIL_NOT_EXACT_UNIFORM_GREEN"
+  },
+  "references": {
+    "image1": {
+      "path": "D:/AI 종합 폴더/Games/Sable-circuit/motion_lab_v1/art/site7_rifle/identity_reference.png",
+      "role": "Rook appearance/identity authority",
+      "sha256": "7deb2c01ea66450a39174a268b4bbf080b239122e8d908162d7f18f74ff5c096"
+    },
+    "image2": {
+      "path": "D:/AI 종합 폴더/Games/Sable-circuit/motion_lab_v1/reference/ual_guides/S_Walk_Loop_0.png",
+      "role": "straight-front camera and lower-leg contact guide only",
+      "sha256": "bfc98ae8f3528ffd823bf9f470c130cbb67662f62b8c3d711e47307f7f3c0553"
+    }
+  },
+  "poseContract": {
+    "camera": "straight front",
+    "phase": "left_contact",
+    "anatomicalLeftFoot": "viewer-right forward contact",
+    "anatomicalRightHolsterFoot": "viewer-left trailing",
+    "weapon": "shouldered at right shoulder, aimed forward toward camera",
+    "extraLimbs": false
+  },
+  "actualToolResponse": "actual-tool-response-luna-max-v6-green.json",
+  "webAlphaConversion": {
+    "requested": false,
+    "status": "NOT_REQUESTED",
+    "nextExternalStep": "GPT web alpha conversion only after human/user direction; retain this RGB master unchanged"
+  },
+  "notes": [
+    "This candidate is isolated and cannot be used as a runtime or source-art master.",
+    "No local chroma normalization, keying, alpha conversion, cropping, redraw, or compositing was performed.",
+    "The actual ImageGen response and unchanged raw bytes are preserved in this SHA quarantine directory."
+  ]
+}

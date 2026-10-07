@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "reviewer": "Codex local technical QA",
+  "review_date": "2026-09-05",
+  "candidate": "MICA_C03_V5_RUNTIME_TEMPORAL_R13",
+  "scope": "R13 capture-only runtime synchronization and evidence audit; not a visual promotion decision.",
+  "evidence": {
+    "video": "artifacts/mica_c03_v5_runtime_temporal_capture/MICA_C03_V5_RUNTIME_TEMPORAL_8DIR_24FRAME_NATIVE_1920X1080_R13.mp4",
+    "video_sha256": "16695233dad675f76aee6ecf72d82c8100e8995e4f8f659ab8b0150d01658ddb",
+    "ledger": "artifacts/mica_c03_v5_runtime_temporal_capture/MICA_C03_V5_RUNTIME_TEMPORAL_EVIDENCE_R13.json",
+    "validator": "artifacts/mica_c03_v5_runtime_temporal_capture/MICA_C03_V5_RUNTIME_TEMPORAL_1080P_VALIDATION_R13.json",
+    "contact_sheet": "artifacts/mica_c03_v5_runtime_temporal_capture/MICA_C03_V5_RUNTIME_TEMPORAL_CONTACT_R13.png",
+    "contact_validation": "artifacts/mica_c03_v5_runtime_temporal_capture/MICA_C03_V5_RUNTIME_TEMPORAL_CONTACT_R13_VALIDATION.json",
+    "resolution": [1920, 1080],
+    "fps": 24,
+    "frames": 192,
+    "direction_order": ["E", "SE", "S", "SW", "W", "NW", "N", "NE"]
+  },
+  "changes_verified": {
+    "legacy_duplicate_body": "AuthoredRasterPresentation is deactivated only after FastCharacterRuntime validates and activates a complete atlas.",
+    "camera_lag": "Capture uses a fixed world camera path without Camera2D follow lag; the evidence-only sprite scale does not alter the shipped descriptor.",
+    "collision_isolation": "Hidden squad bodies and the active actor have capture-only collision isolation.",
+    "root_sync": "move_root_sync uses samples_per_pose=2, advance_scale=2.0, hold_scale=0.0 for the 12 unique poses sampled into 24 UAL slots."
+  },
+  "local_technical_gates": {
+    "native_1080p_video_container": "PASS",
+    "native_1080p_contact_container": "PASS",
+    "all_eight_directions_active_frames_00_to_23": "PASS",
+    "state_and_sector_match": "PASS",
+    "duplicate_root_pairs": "PASS",
+    "cadence_scale_contract": "PASS",
+    "fast_runtime_smoke": "PASS",
+    "m7_authored_visual_smoke": "PASS",
+    "pipeline_smoke": "PASS",
+    "godot_processes_after_capture": "NONE"
+  },
+  "promotion": {
+    "result": "PASS_CAPTURE_ONLY",
+    "candidate_state": "UNREVIEWED_DO_NOT_PROMOTE",
+    "visual_gate": "PONYTAIL_FULL_REVIEW_REQUIRED",
+    "chatgpt_web_gate": "PENDING",
+    "production": "HOLD",
+    "quarantine": "All prior FAIL/HOLD candidates remain preserved; no disposal performed."
+  }
+}

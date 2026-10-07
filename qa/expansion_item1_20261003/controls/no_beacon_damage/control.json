@@ -1,0 +1,9 @@
+{
+  "name": "no_beacon_damage",
+  "path": "scripts/combat/elite_affix.gd",
+  "before_sha256": "0ba7165c695f261ced4c95438c12a819788bbbb1e9639c62101314f3040f7683",
+  "after_sha256": "e5ff8ac4a0911d4096bd96ab3fbe86cfa63ec828b4cb62498240b1d533df689a",
+  "mutation": "return amount * (1.0 - clampf(float(beacon.spec.get(\"beacon_reduction\", 0.0)), 0.0, 0.35)) if beacon != null else amount",
+  "expected": "FAIL, not SCRIPT_ERROR",
+  "resources": "read-only junction inputs; no import command runs in this copy"
+}

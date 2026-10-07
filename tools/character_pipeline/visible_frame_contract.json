@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "directions": ["E", "SE", "S", "SW", "W", "NW", "N", "NE"],
+  "motions": {
+    "run": ["contact_l", "down_l", "passing_l", "flight_l", "contact_r", "down_r", "passing_r", "flight_r"],
+    "walk": ["contact_l", "down_l", "passing_l", "up_l", "contact_r", "down_r", "passing_r", "up_r"]
+  },
+  "phase_semantics": {
+    "run": {
+      "contact_l": "left foot initial contact; right leg trailing; left begins support",
+      "down_l": "left stance loading; pelvis lowers; right leg swings forward",
+      "passing_l": "left foot supports; right swing foot passes the left support leg",
+      "flight_l": "flight after left toe-off; right leg leads; neither foot supports",
+      "contact_r": "right foot initial contact; left leg trailing; right begins support",
+      "down_r": "right stance loading; pelvis lowers; left leg swings forward",
+      "passing_r": "right foot supports; left swing foot passes the right support leg",
+      "flight_r": "flight after right toe-off; left leg leads; neither foot supports"
+    },
+    "walk": {
+      "contact_l": "left foot initial contact; right leg trailing; left begins support",
+      "down_l": "left stance loading with brief double support; right toe leaves ground",
+      "passing_l": "left foot supports; right swing foot passes the left support leg",
+      "up_l": "left terminal stance; body rises; right leg leads toward contact",
+      "contact_r": "right foot initial contact; left leg trailing; right begins support",
+      "down_r": "right stance loading with brief double support; left toe leaves ground",
+      "passing_r": "right foot supports; left swing foot passes the right support leg",
+      "up_r": "right terminal stance; body rises; left leg leads toward contact"
+    }
+  },
+  "minimum_canvas": [1024, 1024],
+  "minimum_subject_height_pixels": 768,
+  "run_profile_stride_over_height_min": 0.35,
+  "walk_profile_stride_over_height_min": 0.18,
+  "minimum_visible_muzzle_axis_over_height": 0.03,
+  "frame_review_roles": ["visual", "Ponytail FULL"],
+  "pose_guide_review_roles": ["visual", "Ponytail FULL"],
+  "repair_target_review_roles": ["visual", "Ponytail FULL"],
+  "repair_target_review_checks": [
+    "exact_failed_target_hash",
+    "requested_phase_laterality_already_present",
+    "preserve_scope_is_visually_present",
+    "change_scope_is_explicit_and_minimal",
+    "failed_target_remains_non_promotable",
+    "imagegen_only_visible_art_boundary"
+  ],
+  "pose_guide_review_checks": [
+    "exact_direction",
+    "action_identity",
+    "phase_support_mapping",
+    "feet_and_ankles",
+    "torso_silhouette",
+    "full_body_visibility",
+    "pose_guide_only_boundary"
+  ],
+  "frame_review_checks": [
+    "identity_and_costume",
+    "anatomy_and_limb_count",
+    "whole_body_direction",
+    "phase_and_stride",
+    "feet_ankles_and_contact",
+    "weapon_hands_and_visible_muzzle",
+    "matte_edges_and_subject_preservation"
+  ]
+}

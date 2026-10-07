@@ -1,0 +1,269 @@
+{
+ "cells_before": 105535,
+ "cells_after": 105535,
+ "totals": {
+  "fixed_dead": 70,
+  "broken": 0,
+  "both_dead": 0,
+  "turn_gt2": 7961,
+  "turn_gt15": 2358,
+  "turn_gt45": 646,
+  "turn_gt90": 164,
+  "identical": 96733,
+  "newly_blocked": 14,
+  "newly_unblocked": 27,
+  "blocked_before": 3253,
+  "blocked_after": 3240,
+  "plen_shorter": 8309,
+  "plen_longer": 0,
+  "plen_same": 97156,
+  "plen_longer_cells": []
+ },
+ "mean_plen_gain_px_on_shorter": 8.7,
+ "rooms_with_any_change": {
+  "MIS_CH01_01 R02_CORRIDOR": {
+   "cells": 2972,
+   "identical": 2643,
+   "turn_gt2": 247,
+   "plen_shorter": 318,
+   "turn_gt15": 120,
+   "turn_gt45": 45,
+   "fixed_dead": 23,
+   "newly_blocked": 1,
+   "turn_gt90": 5
+  },
+  "MIS_CH01_01 R04_CONTAINMENT": {
+   "cells": 4234,
+   "identical": 3770,
+   "turn_gt2": 426,
+   "turn_gt15": 97,
+   "plen_shorter": 573,
+   "turn_gt45": 24,
+   "turn_gt90": 6
+  },
+  "MIS_CH01_01 R05_CORE": {
+   "cells": 3939,
+   "identical": 3696,
+   "turn_gt2": 240,
+   "plen_shorter": 327,
+   "turn_gt15": 50,
+   "turn_gt45": 14,
+   "turn_gt90": 3
+  },
+  "MIS_CH01_02 R02_MAINTENANCE": {
+   "cells": 3761,
+   "turn_gt2": 482,
+   "plen_shorter": 471,
+   "identical": 3264,
+   "turn_gt15": 63,
+   "turn_gt45": 13,
+   "turn_gt90": 1
+  },
+  "MIS_CH01_02 R04_QUARANTINE": {
+   "cells": 3968,
+   "turn_gt2": 189,
+   "plen_shorter": 162,
+   "identical": 3779,
+   "turn_gt15": 56,
+   "turn_gt45": 14,
+   "turn_gt90": 1
+  },
+  "MIS_CH01_02 R05_RELAY": {
+   "cells": 3793,
+   "identical": 3615,
+   "turn_gt2": 178,
+   "turn_gt15": 59,
+   "turn_gt45": 15,
+   "plen_shorter": 162,
+   "turn_gt90": 3
+  },
+  "MIS_CH01_03 R02_DEFENSE": {
+   "cells": 3432,
+   "turn_gt2": 349,
+   "plen_shorter": 349,
+   "identical": 3082,
+   "turn_gt15": 51,
+   "turn_gt45": 9,
+   "turn_gt90": 1
+  },
+  "MIS_CH01_03 R04_BULKHEAD": {
+   "cells": 3249,
+   "identical": 2803,
+   "turn_gt2": 445,
+   "turn_gt15": 150,
+   "turn_gt45": 34,
+   "plen_shorter": 423,
+   "turn_gt90": 6
+  },
+  "MIS_CH01_03 R05_ANCHOR": {
+   "cells": 3740,
+   "identical": 3298,
+   "turn_gt2": 414,
+   "turn_gt15": 95,
+   "turn_gt45": 17,
+   "turn_gt90": 4,
+   "plen_shorter": 378
+  },
+  "MIS_CH01_04 R02_GATE": {
+   "cells": 2934,
+   "identical": 2528,
+   "turn_gt2": 406,
+   "plen_shorter": 404,
+   "turn_gt15": 109,
+   "turn_gt45": 21,
+   "turn_gt90": 2
+  },
+  "MIS_CH01_04 R04_LINE": {
+   "cells": 3696,
+   "identical": 2910,
+   "turn_gt2": 761,
+   "turn_gt15": 218,
+   "turn_gt45": 45,
+   "turn_gt90": 6,
+   "plen_shorter": 776,
+   "newly_blocked": 3
+  },
+  "MIS_CH01_04 R05_WARDEN": {
+   "cells": 3173,
+   "identical": 3006,
+   "turn_gt2": 159,
+   "turn_gt15": 52,
+   "plen_shorter": 154,
+   "turn_gt45": 14,
+   "turn_gt90": 6,
+   "newly_blocked": 1
+  },
+  "MIS_CH01_05 R02_DEFENSE": {
+   "cells": 3673,
+   "identical": 3237,
+   "turn_gt2": 336,
+   "turn_gt15": 90,
+   "turn_gt45": 31,
+   "plen_shorter": 709,
+   "turn_gt90": 9
+  },
+  "MIS_CH01_05 R04_ARRAY": {
+   "cells": 3501,
+   "identical": 3082,
+   "plen_shorter": 401,
+   "turn_gt2": 300,
+   "turn_gt15": 129,
+   "turn_gt45": 40,
+   "turn_gt90": 10
+  },
+  "MIS_CH01_05 R05_CARRIER": {
+   "cells": 2760,
+   "identical": 2626,
+   "turn_gt2": 84,
+   "turn_gt15": 18,
+   "plen_shorter": 42,
+   "fixed_dead": 9,
+   "turn_gt45": 4
+  },
+  "MIS_CH01_06 R02_GALLERY": {
+   "cells": 3166,
+   "identical": 2897,
+   "turn_gt2": 237,
+   "turn_gt15": 57,
+   "turn_gt45": 13,
+   "plen_shorter": 215,
+   "turn_gt90": 3,
+   "newly_blocked": 1
+  },
+  "MIS_CH01_06 R04_PUMPS": {
+   "cells": 3118,
+   "identical": 2913,
+   "turn_gt2": 205,
+   "turn_gt15": 118,
+   "turn_gt45": 35,
+   "plen_shorter": 194,
+   "turn_gt90": 4,
+   "newly_blocked": 1
+  },
+  "MIS_CH01_06 R05_ATRIUM": {
+   "cells": 3188,
+   "identical": 2879,
+   "turn_gt2": 301,
+   "turn_gt15": 104,
+   "turn_gt45": 21,
+   "plen_shorter": 273,
+   "turn_gt90": 6
+  },
+  "MIS_CH01_07 R02_FREEZE": {
+   "cells": 3700,
+   "identical": 3507,
+   "turn_gt2": 192,
+   "turn_gt15": 85,
+   "plen_shorter": 182,
+   "turn_gt45": 43,
+   "turn_gt90": 28,
+   "newly_blocked": 6
+  },
+  "MIS_CH01_07 R04_COMPRESSORS": {
+   "cells": 3045,
+   "identical": 2473,
+   "turn_gt2": 431,
+   "turn_gt15": 71,
+   "turn_gt45": 15,
+   "plen_shorter": 351,
+   "turn_gt90": 1,
+   "newly_blocked": 1
+  },
+  "MIS_CH01_08 R02_MARSHALLING": {
+   "cells": 2996,
+   "identical": 2812,
+   "turn_gt2": 164,
+   "turn_gt15": 56,
+   "plen_shorter": 118,
+   "turn_gt45": 12,
+   "turn_gt90": 4
+  },
+  "MIS_CH01_08 R04_JUNCTION": {
+   "cells": 3647,
+   "identical": 3125,
+   "turn_gt2": 458,
+   "turn_gt15": 131,
+   "turn_gt45": 41,
+   "plen_shorter": 440,
+   "turn_gt90": 6
+  },
+  "MIS_CH01_09 R02_NAVE": {
+   "cells": 3252,
+   "identical": 3067,
+   "turn_gt2": 185,
+   "plen_shorter": 163,
+   "turn_gt15": 89,
+   "turn_gt45": 49,
+   "turn_gt90": 37
+  },
+  "MIS_CH01_09 R04_GALLERY": {
+   "cells": 3859,
+   "identical": 3648,
+   "turn_gt2": 145,
+   "turn_gt15": 65,
+   "turn_gt45": 16,
+   "plen_shorter": 131,
+   "fixed_dead": 23,
+   "turn_gt90": 3
+  },
+  "MIS_CH01_10 R02_RELAY": {
+   "cells": 3448,
+   "identical": 2980,
+   "turn_gt2": 460,
+   "turn_gt15": 126,
+   "turn_gt45": 32,
+   "plen_shorter": 427,
+   "turn_gt90": 6
+  },
+  "MIS_CH01_10 R04_GALLERY": {
+   "cells": 3456,
+   "identical": 3258,
+   "turn_gt2": 167,
+   "turn_gt15": 99,
+   "turn_gt45": 29,
+   "plen_shorter": 166,
+   "fixed_dead": 15,
+   "turn_gt90": 3
+  }
+ }
+}

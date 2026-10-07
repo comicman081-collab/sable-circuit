@@ -1,0 +1,199 @@
+{
+  "app_registry_unchanged": true,
+  "art_approval": false,
+  "audio": false,
+  "clock": "Godot --fixed-fps 60; native rendered viewport readback, not a wall-clock performance measurement",
+  "duration_seconds": 10,
+  "fps": 60,
+  "frames": 600,
+  "initial_encounter_step": 1,
+  "input": "WASD / Shift / mouse aim / LMB / reload / F next encounter via Input.parse_input_event",
+  "mission": "MIS_CH01_03",
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "normal_ai_and_damage": true,
+  "observations": [
+    {
+      "ammo": 23,
+      "encounter_step": 1,
+      "frame": 0,
+      "health": 96.0,
+      "hostiles": 3,
+      "position": [
+        618.609191894531,
+        322.808013916016
+      ],
+      "squad_projectiles": 7,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01",
+        "ENM_SITE7_MORTAR_01",
+        "ENM_SITE7_RAM_01"
+      ]
+    },
+    {
+      "ammo": 15,
+      "encounter_step": 1,
+      "frame": 60,
+      "health": 96.0,
+      "hostiles": 2,
+      "position": [
+        775.698059082031,
+        311.356475830078
+      ],
+      "squad_projectiles": 30,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01",
+        "ENM_SITE7_RAM_01"
+      ]
+    },
+    {
+      "ammo": 6,
+      "encounter_step": 1,
+      "frame": 120,
+      "health": 96.0,
+      "hostiles": 2,
+      "position": [
+        790.925537109375,
+        302.663146972656
+      ],
+      "squad_projectiles": 39,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01",
+        "ENM_SITE7_RAM_01"
+      ]
+    },
+    {
+      "ammo": 0,
+      "encounter_step": 1,
+      "frame": 180,
+      "health": 96.0,
+      "hostiles": 2,
+      "position": [
+        668.367614746094,
+        323.961608886719
+      ],
+      "squad_projectiles": 58,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01",
+        "ENM_SITE7_RAM_01"
+      ]
+    },
+    {
+      "ammo": 24,
+      "encounter_step": 1,
+      "frame": 240,
+      "health": 96.0,
+      "hostiles": 1,
+      "position": [
+        588.617614746094,
+        323.961608886719
+      ],
+      "squad_projectiles": 67,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01"
+      ]
+    },
+    {
+      "ammo": 23,
+      "encounter_step": 1,
+      "frame": 300,
+      "health": 96.0,
+      "hostiles": 1,
+      "position": [
+        588.702331542969,
+        323.961608886719
+      ],
+      "squad_projectiles": 68,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01"
+      ]
+    },
+    {
+      "ammo": 15,
+      "encounter_step": 1,
+      "frame": 360,
+      "health": 96.0,
+      "hostiles": 1,
+      "position": [
+        679.173522949219,
+        322.758605957031
+      ],
+      "squad_projectiles": 76,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01"
+      ]
+    },
+    {
+      "ammo": 6,
+      "encounter_step": 1,
+      "frame": 420,
+      "health": 96.0,
+      "hostiles": 1,
+      "position": [
+        741.010620117188,
+        243.540969848633
+      ],
+      "squad_projectiles": 86,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01"
+      ]
+    },
+    {
+      "ammo": 0,
+      "encounter_step": 1,
+      "frame": 480,
+      "health": 96.0,
+      "hostiles": 1,
+      "position": [
+        733.146728515625,
+        178.713592529297
+      ],
+      "squad_projectiles": 100,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01"
+      ]
+    },
+    {
+      "ammo": 21,
+      "encounter_step": 1,
+      "frame": 540,
+      "health": 96.0,
+      "hostiles": 1,
+      "position": [
+        748.939575195313,
+        180.937728881836
+      ],
+      "squad_projectiles": 108,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01"
+      ]
+    },
+    {
+      "ammo": 13,
+      "encounter_step": 1,
+      "frame": 599,
+      "health": 96.0,
+      "hostiles": 1,
+      "position": [
+        753.577819824219,
+        184.24250793457
+      ],
+      "squad_projectiles": 126,
+      "visible_enemy_ids": [
+        "ENM_SITE7_BULWARK_01"
+      ]
+    }
+  ],
+  "render_content_scale": [
+    1280,
+    720
+  ],
+  "scene": "res://scenes/mission/StoryStage01.tscn",
+  "seen_enemy_ids": [
+    "ENM_SITE7_BULWARK_01",
+    "ENM_SITE7_MORTAR_01",
+    "ENM_SITE7_RAM_01"
+  ]
+}
