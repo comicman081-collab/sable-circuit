@@ -12,4 +12,4 @@ This branch (web-build) holds only the built game (Godot 4.7.1 Web export, singl
 - 시험용 빌드입니다. 균형과 플레이는 아직 사람이 검증하지 않았습니다 / A test build: balance and play have not been checked by a person yet.
 - 크레딧은 게임 타이틀 화면에 있습니다 / Credits are on the game's title screen.
 
-Built 2026-10-07 from the author's local commit cf51aa8b.
+Built 2026-10-08 from the author's local commit 480c5bee.
